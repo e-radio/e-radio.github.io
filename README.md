@@ -1,23 +1,86 @@
-# e-radio
-e-radio.github.io
+# e-Radio Greece
 
-# Astro Starter Kit: Basics
+A modern web application for streaming Greek radio stations, built with [Astro](https://astro.build).
 
-```sh
-npm create astro@latest -- --template basics
+## Features
+
+- 📻 Browse all Greek radio stations
+- 🎵 Stream audio directly from the browser
+- 📱 Fully responsive design
+- 🌍 Search and filter by location (state)
+- ♿ Accessible UI
+- 📊 Sitemap for SEO
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Fetch Greek radio stations data:
+   ```bash
+   node tools/fetch-greece-stations.mjs
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open http://localhost:3000 in your browser
+
+## Project Structure
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro       # Main page layout
+│   ├── pages/
+│   │   ├── index.astro        # Home page
+│   │   ├── [slug].astro       # Station detail pages
+│   │   └── sitemap.xml.ts     # Dynamic sitemap
+│   ├── data/
+│   │   └── stations-gr.json   # Radio station data (generated)
+│   └── lib/
+│       └── slug.ts            # Slug generation utilities
+├── tools/
+│   └── fetch-greece-stations.mjs  # Script to fetch station data
 ├── public/
 │   └── favicon.svg
-├── src
+└── astro.config.mjs           # Astro configuration
+```
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+## Data Source
+
+Radio station data is fetched from the [Radio Browser API](https://www.radio-browser.info/), which provides information about thousands of radio stations worldwide.
+
+## Building for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+The built site will be in `dist/` directory.
+
+## License
+
+MIT - Feel free to use this project for your own purposes.
 │   ├── assets
 │   │   └── astro.svg
 │   ├── components

@@ -1,0 +1,70 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogType?: string;
+  keywords?: string;
+  robots?: string;
+  language?: string;
+  author?: string;
+  structuredData?: any;
+  prevUrl?: string;
+  nextUrl?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  ogType = "website",
+  keywords,
+  robots = "index, follow",
+  language = "English",
+  author = "E-Radio Greece",
+  structuredData,
+  prevUrl,
+  nextUrl,
+} = Astro.props;
+---
+
+{title && <title>{title}</title>}
+{description && <meta name="description" content={description} />}
+{canonical && <link rel="canonical" href={canonical} />}
+{keywords && <meta name="keywords" content={keywords} />}
+{robots && <meta name="robots" content={robots} />}
+{language && <meta name="language" content={language} />}
+{author && <meta name="author" content={author} />}
+<meta name="revisit-after" content="7 days" />
+
+{/* Pagination links */}
+{prevUrl && <link rel="prev" href={prevUrl} />}
+{nextUrl && <link rel="next" href={nextUrl} />}
+
+{/* Open Graph Tags */}
+{ogType && <meta property="og:type" content={ogType} />}
+{ogTitle && <meta property="og:title" content={ogTitle} />}
+{ogDescription && <meta property="og:description" content={ogDescription} />}
+{canonical && <meta property="og:url" content={canonical} />}
+{ogImage && <meta property="og:image" content={ogImage} />}
+{ogImage && <meta property="og:image:alt" content={ogTitle || "E-Radio Logo"} />}
+<meta property="og:site_name" content="E-Radio Greece" />
+<meta property="og:locale" content="en_US" />
+
+{/* Twitter Card Tags */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eradiogreece" />
+{ogTitle && <meta name="twitter:title" content={ogTitle} />}
+{ogDescription && <meta name="twitter:description" content={ogDescription} />}
+{ogImage && <meta name="twitter:image" content={ogImage} />}
+
+{/* JSON-LD Structured Data */}
+{structuredData && (
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+)}

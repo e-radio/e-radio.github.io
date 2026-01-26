@@ -1,23 +1,60 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "e-Radio Greece", description = "Listen to live radio stations from Greece" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#007bff" />
+    
+    <!-- Global SEO Tags -->
+    <meta name="twitter:site" content="@eradiogreece" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO slot -->
+    <slot name="seo" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <header class="bg-light border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-lg">
+          <a href="/" class="navbar-brand fw-bold d-flex align-items-center gap-2">
+            <span class="fs-4">📻</span>
+            <span>e-Radio Greece</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1">
+      <div class="container-lg py-5">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="bg-light border-top mt-auto">
+      <div class="container-lg py-4 text-center text-muted">
+        <p class="mb-2">&copy; 2026 e-Radio Greece. All rights reserved.</p>
+        <p class="mb-0">Powered by <a href="https://astro.build" class="text-decoration-none">Astro</a> and <a href="https://getbootstrap.com" class="text-decoration-none">Bootstrap</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

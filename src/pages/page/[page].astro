@@ -1,25 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SEO from '../components/SEO.astro';
-import rawStations from "../data/stations-gr.json";
-import radioAppIcon from "../assets/radddio-app-icon.png";
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import rawStations from "../../data/stations-gr.json";
+import radioAppIcon from "../../assets/radddio-app-icon.png";
 
-// Sort by votes (popularity) descending, treating null as 0
-const allStations = rawStations
-  .sort((a, b) => (b.votes || 0) - (a.votes || 0));
+export async function getStaticPaths() {
+  // Sort stations
+  const allStations = rawStations.sort((a, b) => (b.votes || 0) - (a.votes || 0));
+  
+  const STATIONS_PER_PAGE = 50;
+  const totalPages = Math.ceil(allStations.length / STATIONS_PER_PAGE);
+  
+  // Generate paths for each page
+  const paths = [];
+  for (let i = 1; i <= totalPages; i++) {
+    paths.push({
+      params: { page: String(i) },
+      props: { allStations, currentPage: i, totalPages }
+    });
+  }
+  
+  return paths;
+}
+
+interface Props {
+  allStations: typeof rawStations;
+  currentPage: number;
+  totalPages: number;
+}
+
+const { allStations, currentPage, totalPages } = Astro.props as Props;
 
 // Pagination settings
 const STATIONS_PER_PAGE = 50;
-const page = 1;
+const page = currentPage;
 const totalStations = allStations.length;
-const totalPages = Math.ceil(totalStations / STATIONS_PER_PAGE);
 
 // Get stations for this page
 const startIndex = (page - 1) * STATIONS_PER_PAGE;
 const endIndex = startIndex + STATIONS_PER_PAGE;
 const topStations = allStations.slice(startIndex, endIndex);
 
-// Generate page numbers to display (show current and nearby pages)
+// Generate page numbers to display
 const generatePageNumbers = () => {
   const pages = [];
   const maxPagesToShow = 5;
@@ -39,25 +61,29 @@ const generatePageNumbers = () => {
 const pageNumbers = generatePageNumbers();
 
 const siteRoot = "https://e-radio.github.io";
-const canonical = `${siteRoot}/`;
-const pageTitle = "Radio Stations in Greece – Live Online | E-Radio";
-const pageDescription = `Discover and listen to ${totalStations} most popular live Greek radio stations. Stream your favorite music, news, and talk radio online.`;
+const canonical = page === 1 ? `${siteRoot}/` : `${siteRoot}/page/${page}/`;
+const pageTitle = `Radio Stations in Greece – Page ${page} – Live Online | E-Radio`;
+const pageDescription = `Browse the most popular live Greek radio stations. Sorted by community votes. Page ${page} of ${totalPages}.`;
 
 // Structured data (JSON-LD)
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "E-Radio Greece",
-  "url": siteRoot,
+  "@type": "CollectionPage",
+  "name": pageTitle,
+  "url": canonical,
   "description": pageDescription,
   "image": radioAppIcon.src,
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": `${siteRoot}?s={search_term_string}`
-    }
-  }
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "E-Radio Greece",
+    "url": siteRoot
+  },
+  "hasPart": topStations.map(station => ({
+    "@type": "RadioStation",
+    "name": station.name,
+    "url": `${siteRoot}/stations/${station.slug}/`,
+    "areaServed": station.state || "Greece"
+  }))
 };
 ---
 
@@ -73,6 +99,8 @@ const structuredData = {
     keywords="Greek radio, live radio, Greece stations, online radio, radio streaming"
     robots="index, follow"
     author="E-Radio Greece"
+    prevUrl={page > 1 ? page === 2 ? `${siteRoot}/` : `${siteRoot}/page/${page - 1}/` : undefined}
+    nextUrl={page < totalPages ? `${siteRoot}/page/${page + 1}/` : undefined}
     structuredData={structuredData}
   />
   <div class="mb-4">
@@ -84,7 +112,7 @@ const structuredData = {
   <div class="space-y-3">
     {topStations.map((station, index) => (
       <a href={`/stations/${station.slug}/`} class="text-decoration-none">
-        <div class="card border border-light-subtle shadow-sm transition-hover" style="transition: transform 0.2s, box-shadow 0.2s;">
+        <div class="card border shadow-sm transition-hover" style="transition: transform 0.2s, box-shadow 0.2s;">
           <div class="card-body p-3">
             <div class="row align-items-center g-3">
               {/* Rank */}
@@ -143,7 +171,7 @@ const structuredData = {
     <ul class="pagination justify-content-center">
       {/* Previous Button */}
       <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
-        <a class="page-link" href={page > 1 ? (page - 1 === 1 ? '/' : `/page/${page - 1}/`) : '#'}>
+        <a class="page-link" href={page > 1 ? page === 2 ? '/' : `/page/${page - 1}/` : '#'}>
           Previous
         </a>
       </li>
