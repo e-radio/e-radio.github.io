@@ -131,29 +131,35 @@ const structuredData = {
   "image": ogImageUrl,
   "logo": ogImageUrl,
   "identifier": station.stationuuid,
-  ...(station.genres.length > 0 ? { "genre": station.genres } : {}),
-  ...(station.language ? { "inLanguage": station.language } : {}),
   ...(station.homepage ? { "sameAs": [station.homepage] } : {}),
-  "broadcastArea": {
-    "@type": "Country",
-    "name": station.country || "Greece",
-    "identifier": String(station.countrycode || "GR").toUpperCase()
-  },
   ...(station.state
     ? {
         "areaServed": {
           "@type": "AdministrativeArea",
-          "name": station.state
+          "name": station.state,
+          "containedInPlace": {
+            "@type": "Country",
+            "name": station.country || "Greece",
+            "identifier": String(station.countrycode || "GR").toUpperCase()
+          }
         }
       }
-    : {}),
+    : {
+        "areaServed": {
+          "@type": "Country",
+          "name": station.country || "Greece",
+          "identifier": String(station.countrycode || "GR").toUpperCase()
+        }
+      }),
   ...(station.stream_url
     ? {
         "subjectOf": {
           "@type": "AudioObject",
           "name": `${station.name} Live Stream`,
           "contentUrl": station.stream_url,
-          ...(encodingFormat ? { "encodingFormat": encodingFormat } : {})
+          ...(encodingFormat ? { "encodingFormat": encodingFormat } : {}),
+          ...(station.language ? { "inLanguage": station.language } : {}),
+          ...(station.genres.length > 0 ? { "genre": station.genres } : {})
         }
       }
     : {})
