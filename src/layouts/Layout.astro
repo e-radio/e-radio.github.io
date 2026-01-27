@@ -1,5 +1,6 @@
 ---
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/global.css';
 
 interface Props {
   title?: string;
@@ -37,7 +38,7 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-lg">
           <a href="/" class="navbar-brand fw-bold d-flex align-items-center gap-2">
-            <span class="fs-4">📻</span>
+			<img src="/public/favicon.svg" width="32" height="32" alt="e-Radio Greece app icon featuring a red radio tuner dial on a dark background">
             <span>e-Radio Greece</span>
           </a>
         </div>
@@ -45,7 +46,7 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
     </header>
 
     <main class="flex-grow-1">
-      <div class="container-lg py-5">
+      <div class="container py-4">
         <slot />
       </div>
     </main>
@@ -53,7 +54,7 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
     <footer class="bg-light border-top mt-auto">
       <div class="container-lg py-4 text-center text-muted">
         <p class="mb-2">&copy; 2026 e-Radio Greece. All rights reserved.</p>
-        <p class="mb-0">Powered by <a href="https://astro.build" class="text-decoration-none">Astro</a> and <a href="https://getbootstrap.com" class="text-decoration-none">Bootstrap</a></p>
+        <p class="mb-0">Powered by <a href="https://radddio.com" class="text-decoration-none">Radddio.com</a></p>
       </div>
     </footer>
   </body>

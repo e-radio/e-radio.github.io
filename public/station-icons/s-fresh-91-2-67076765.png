@@ -1,0 +1,166 @@
+<head><link rel="canonical" href="https://yesradio.gr/live" /></head>
+
+
+<!DOCTYPE html>
+<html lang="el" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yes! 91,2 Πάτρα – Live Radio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Άκουσε ζωντανά το Yes! 91,2 – Το Top 40 ραδιόφωνο της Πάτρας με τις μεγαλύτερες επιτυχίες.">
+  <link rel="canonical" href="https://yesradio.gr/live" />
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yes! 91,2 – Live Stream">
+  <meta property="og:description" content="Άκου live το Yes! 91,2 Πάτρας – οι καλύτερες επιτυχίες Top 40.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yesradio.gr/live">
+  <meta property="og:image" content="https://yesradio.gr/images/logo-white.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yes! 91,2 – Live Radio">
+  <meta name="twitter:description" content="Ζωντανό ραδιόφωνο από την Πάτρα. Άκου τώρα το Yes! 91,2.">
+  <meta name="twitter:image" content="https://yesradio.gr/images/logo-white.png">
+
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display:flex; min-height:70vh; align-items:center; justify-content:center;
+      background:white; color:#111;
+    }
+    .wrap { text-align:center; padding:24px; }
+    /* Λευκό logo πάνω σε λευκό φόντο -> ελαφρύ drop-shadow για ορατότητα */
+    .brand {
+      max-width: 480px; width: 90%; height: auto;
+      filter: drop-shadow(0 0 8px rgba(0,0,0,.08)) drop-shadow(0 2px 6px rgba(0,0,0,.15));
+    }
+    .player { margin: 20px auto 8px; }
+    audio { width: 92%; max-width: 420px; }
+    .note { font-size: .95rem; opacity:.75; margin-top:10px; }
+    footer { margin-top: 24px; font-size: .9rem; opacity:.7; }
+    a { color: #005bbb; }
+    .btn { display:inline-block; padding:10px 16px; border:1px solid #ddd; border-radius:10px; text-decoration:none; }
+    .hidden { display:none; }
+
+    /* Visually-hidden για SEO/ΑΜΑ: αόρατο, αλλά αναγνώσιμο από Google & screen readers */
+    .sr-only {
+      position: absolute !important;
+      width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 1px, 1px); clip-path: inset(50%);
+      white-space: nowrap; border: 0;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data (RadioStation + WebSite + WebPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "RadioStation",
+        "name": "Yes! 91,2",
+        "url": "https://yesradio.gr/",
+        "areaServed": "Patras, GR",
+        "slogan": "Ραδιόφωνο όπως το θες",
+        "sameAs": [],
+        "image": "https://yesradio.gr/images/logo-white.png",
+        "description": "Yes Radio 91,2 Πάτρα – σύγχρονο Top 40 ραδιόφωνο με live stream, μεγαλύτερες επιτυχίες και νέες κυκλοφορίες."
+      },
+      {
+        "@type": "WebSite",
+        "name": "Yes Radio",
+        "url": "https://yesradio.gr/",
+        "inLanguage": "el-GR",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yesradio.gr/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "name": "Yes! 91,2 – Live Radio",
+        "url": "https://yesradio.gr/live",
+        "isPartOf": { "@id": "https://yesradio.gr/#website" },
+        "description": "Άκουσε ζωντανά το Yes! 91,2 – Το Top 40 ραδιόφωνο της Πάτρας με τις μεγαλύτερες επιτυχίες.",
+        "primaryImageOfPage": "https://yesradio.gr/images/logo-white.png",
+        "inLanguage": "el-GR"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <!-- Σημ.: χρησιμοποιείς JPG. Αν έχεις PNG λευκό/transparent, άλλαξε σε logo-white.png -->
+    <img src="/images//logorel.jpg"  alt="Yes! 91,2 — Λογότυπο" class="brand" loading="eager" fetchpriority="high">
+
+    <div class="player">
+      <!-- Autostart: θα προσπαθήσει να παίξει onload -->
+      <audio id="yes-player" controls preload="none" aria-label="Yes! 91,2 Live Stream" autoplay>
+        <source src="https://ams-pioneer02.dedicateware.com:1060/;?type=http&nocache=1741695167" type="audio/mpeg">
+        Ο περιηγητής σου δεν υποστηρίζει audio tag.
+        <a href="https://ams-pioneer02.dedicateware.com:1060/;?type=http">Κατέβασε το stream</a>
+      </audio>
+
+      <!-- Fallback CTA αν ο browser μπλοκάρει το autoplay -->
+      <div id="fallback" class="note hidden">
+        Ο περιηγητής μπλόκαρε το αυτόματο ξεκίνημα. Πάτησε <button id="startBtn" class="btn" aria-label="Ξεκίνα την αναπαραγωγή τώρα">Play</button> για να ακούσεις.
+      </div>
+    </div>
+
+    <!-- SEO ΚΕΙΜΕΝΟ: visually-hidden, όχι cloaking -->
+    <section class="sr-only">
+      <h1>Yes! 91,2 – Το Top 40 ραδιόφωνο της Πάτρας</h1>
+      <p>Το <strong>Yes Radio 91,2</strong> είναι το ραδιόφωνο που έφερε στην Πάτρα την πιο φρέσκια μουσική εμπειρία. Από την πρώτη μέρα λειτουργίας του μέχρι και σήμερα, παραμένει πιστό στο σύνθημα «Ραδιόφωνο όπως το θες». Με καθημερινό πρόγραμμα, επιλεγμένες επιτυχίες από την Ελλάδα και το εξωτερικό και ζωντανό χαρακτήρα, το Yes! 91,2 αποτελεί σημείο αναφοράς για όσους αγαπούν το σύγχρονο <strong>Top 40 ραδιόφωνο</strong>.</p>
+      <p>Συντονίσου στο <strong>live stream</strong> και άκουσε non-stop μουσική με τα μεγαλύτερα hits της εποχής, αποκλειστικά remixes και νέες κυκλοφορίες. Το <strong>Yes Radio Πάτρας</strong> συνδυάζει διαρκώς την παγκόσμια μουσική σκηνή με τον παλμό της πόλης, δημιουργώντας την τέλεια ατμόσφαιρα είτε βρίσκεσαι στο σπίτι, στη δουλειά ή στον δρόμο.</p>
+      <p>Το <strong>Yes! 91,2</strong> δεν είναι απλά ένας ραδιοφωνικός σταθμός· είναι η συντροφιά σου όλη μέρα. Με καθαρό ήχο μέσω internet streaming, μπορείς να μας ακούσεις από τον υπολογιστή, το κινητό ή το tablet σου. Μπες τώρα στο <strong>yesradio.gr</strong> και απόλαυσε την εμπειρία ενός σύγχρονου <strong>ελληνικού ραδιοφώνου</strong> που σε βάζει πάντα στο κέντρο της μουσικής.</p>
+    </section>
+
+    <footer><b>© 2010–2023 YES! Media</b> — <a class="btn" href="/cdn-cgi/l/email-protection#85fce0f6f5e4f1f7e4f6c5e2e8e4ece9abe6eae8">Επικοινωνία</a></footer>
+  </main>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="951e7b6db6c915973e3fe3bc-text/javascript">
+    // Προσπάθεια autoplay με ήχο. Αν αποτύχει (policy), δείχνουμε fallback CTA.
+    (function(){
+      var audio = document.getElementById('yes-player');
+      var fallback = document.getElementById('fallback');
+      var startBtn = document.getElementById('startBtn');
+
+      function tryPlay(){
+        if (!audio) return;
+        var p = audio.play();
+        if (p && typeof p.catch === 'function') {
+          p.catch(function(){
+            // Autoplay blocked -> δείξε fallback κουμπί
+            fallback.classList.remove('hidden');
+          });
+        }
+      }
+
+      // 1) Δοκίμασε αμέσως
+      tryPlay();
+
+      // 2) Αν ο χρήστης αλληλεπιδράσει με τη σελίδα, ξαναδοκίμασε (μερικοί browsers επιτρέπουν τότε).
+      ['click','touchend','keydown'].forEach(function(evt){
+        window.addEventListener(evt, function once(){
+          tryPlay(); window.removeEventListener(evt, once, {once:true});
+        }, {once:true});
+      });
+
+      // 3) Χειροκίνητο κουμπί
+      if (startBtn) {
+        startBtn.addEventListener('click', function(){
+          audio.play().then(function(){ fallback.classList.add('hidden'); });
+        });
+      }
+    })();
+  </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="951e7b6db6c915973e3fe3bc-|49" defer></script></body>
+</html>

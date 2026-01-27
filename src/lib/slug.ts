@@ -14,7 +14,17 @@ export function stationSlug(station: {
   city?: string;
   stationuuid?: string;
 }): string {
-  const base = slugify([station.name, station.city ?? station.state].filter(Boolean).join(" "));
+  const name = station.name ?? "";
+  const location = station.city ?? station.state ?? "";
+  const normalizedName = name.toLowerCase();
+  const parts: string[] = [];
+
+  if (name) parts.push(name);
+  if (location && !normalizedName.includes(location.toLowerCase())) {
+    parts.push(location);
+  }
+
+  const base = slugify(parts.join(" "));
   const suffix = station.stationuuid ? station.stationuuid.slice(0, 8) : "station";
   return base ? base : `station-${suffix}`;
 }

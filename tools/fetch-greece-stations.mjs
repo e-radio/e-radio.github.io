@@ -33,7 +33,16 @@ function slugify(input) {
 }
 
 function makeSlug({ name, state, stationuuid }) {
-  const base = slugify([name, state].filter(Boolean).join(" "));
+  const trimmedName = (name || "").trim();
+  const trimmedState = (state || "").trim();
+  const normalizedName = trimmedName.toLowerCase();
+  const parts = [trimmedName];
+
+  if (trimmedState && !normalizedName.includes(trimmedState.toLowerCase())) {
+    parts.push(trimmedState);
+  }
+
+  const base = slugify(parts.filter(Boolean).join(" "));
   const fallback = stationuuid ? stationuuid.slice(0, 8) : "unknown";
   return base ? base : `station-${fallback}`;
 }

@@ -1,3 +1,4 @@
+/* CSS Custom Properties */
 :root {
   --color-primary: #0066cc;
   --color-primary-dark: #0052a3;
@@ -7,6 +8,7 @@
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -26,119 +28,119 @@ body {
   min-height: 100vh;
 }
 
-header {
-  border-bottom: 1px solid var(--color-border);
-  background-color: #fafafa;
-}
-
-.navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.navbar-content {
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  color: var(--color-primary);
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.logo:hover {
-  color: var(--color-primary-dark);
-}
-
-.logo-icon {
-  font-size: 1.5rem;
-}
-
 main {
   flex: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 2rem;
 }
 
-footer {
-  border-top: 1px solid var(--color-border);
-  background-color: #fafafa;
-  padding: 2rem;
-  text-align: center;
-  color: #666;
-  margin-top: auto;
+/* Custom Components */
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 2rem;
+  justify-content: center;
 }
 
-footer a {
+.pagination .page-item.active .page-link {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.pagination .page-link:hover {
   color: var(--color-primary);
-  text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
+/* Station Grouping */
+.station-list {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
-h1, h2, h3 {
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
+.station-item {
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 2rem;
+.station-item:hover {
+  background-color: #f8f9fa;
 }
 
-h2 {
-  font-size: 1.5rem;
+.station-item a.stretched-link {
+  z-index: 2;
 }
 
-a {
-  color: var(--color-primary);
-  text-decoration: none;
+/* Legacy column spacing */
+.space-y-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-a:hover {
-  text-decoration: underline;
+.radddio-badge img {
+  transition: box-shadow 0.2s;
 }
 
-/* List styles */
-ul {
-  list-style: none;
+.radddio-badge:hover img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
 }
 
-li {
-  margin-bottom: 0.5rem;
+/* Transition Effects */
+.transition-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Audio player */
-audio {
-  width: 100%;
-  margin: 1rem 0;
+.transition-hover:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.075) !important;
 }
 
-/* Responsive */
+/* Ranking Circle */
+.rank-circle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6c757d;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+/* Votes Badge */
+.votes-badge {
+  font-size: 0.875rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.badge-text {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 0.65rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  main {
-    padding: 1rem;
+  body {
+    font-size: 0.95rem;
   }
 
-  .navbar-content {
-    padding: 0.75rem 1rem;
+  .pagination {
+    margin-top: 1.5rem;
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.25rem;
+  .votes-badge {
+    width: 45px;
+    height: 45px;
   }
 }

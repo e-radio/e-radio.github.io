@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import rawStations from "../../data/stations-gr.json";
-import radioAppIcon from "../../assets/radddio-app-icon.png";
+
 
 export async function getStaticPaths() {
   return rawStations.map((station) => ({
@@ -15,6 +15,9 @@ interface Props {
   station: typeof rawStations[0];
 }
 
+const radddioURL = "https://apple.co/4lNPQAH";
+const radioAppIconUrl = "/radddio-app-icon.png";
+const radddioBadgeUrl = "/radddio-badge.svg";
 const { station } = Astro.props;
 
 // Get recommended stations based on genre and location
@@ -53,6 +56,60 @@ const recommendedStations = getRecommendedStations();
 
 const siteRoot = "https://e-radio.github.io";
 const canonical = `${siteRoot}/stations/${station.slug}/`;
+const ogImageUrl = station.favicon && station.favicon.startsWith("http")
+  ? station.favicon
+  : station.favicon
+    ? `${siteRoot}${station.favicon}`
+    : `${siteRoot}${radioAppIconUrl}`;
+
+const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
+  const streamUrl = String(currentStation.stream_url ?? "").toLowerCase();
+  const codec = String(currentStation.codec ?? "").toLowerCase();
+
+  if (currentStation.hls || streamUrl.includes(".m3u8")) {
+    return "application/vnd.apple.mpegurl";
+  }
+
+  switch (codec) {
+    case "mp3":
+    case "mpeg":
+    case "audio/mpeg":
+      return "audio/mpeg";
+    case "aac":
+    case "aac+":
+    case "aacplus":
+    case "aacp":
+    case "audio/aac":
+      return "audio/aac";
+    case "ogg":
+    case "oga":
+      return "audio/ogg";
+    case "opus":
+      return "audio/opus";
+    case "flac":
+      return "audio/flac";
+    case "wav":
+      return "audio/wav";
+    case "wma":
+      return "audio/x-ms-wma";
+    default:
+      break;
+  }
+
+  if (streamUrl.endsWith(".aac")) {
+    return "audio/aac";
+  }
+  if (streamUrl.endsWith(".mp3")) {
+    return "audio/mpeg";
+  }
+  if (streamUrl.endsWith(".ogg") || streamUrl.endsWith(".oga")) {
+    return "audio/ogg";
+  }
+
+  return undefined;
+};
+
+const encodingFormat = resolveEncodingFormat(station);
 
 const title = `${station.name} – Live Radio Station in Greece | E-Radio`;
 const description = station.state
@@ -63,30 +120,43 @@ const description = station.state
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "RadioStation",
+  "@id": `${canonical}#radiostation`,
   "name": station.name,
   "url": canonical,
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": station.state || "Greece",
-    "addressCountry": "GR"
-  },
-  "potentialAction": {
-    "@type": "ListenAction",
-    "target": station.stream_url || ""
-  },
-  "image": station.favicon || radioAppIcon.src,
   "description": description,
-  "sameAs": station.homepage ? [station.homepage] : undefined,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonical
+  },
+  "image": ogImageUrl,
+  "logo": ogImageUrl,
   "identifier": station.stationuuid,
-  "genre": station.genres.length > 0 ? station.genres : undefined,
-  "broadcasts": {
-    "@type": "BroadcastEvent",
-    "name": station.name,
-    "broadcastOfEvent": {
-      "@type": "Event",
-      "name": station.name
-    }
-  }
+  ...(station.genres.length > 0 ? { "genre": station.genres } : {}),
+  ...(station.language ? { "inLanguage": station.language } : {}),
+  ...(station.homepage ? { "sameAs": [station.homepage] } : {}),
+  "broadcastArea": {
+    "@type": "Country",
+    "name": station.country || "Greece",
+    "identifier": String(station.countrycode || "GR").toUpperCase()
+  },
+  ...(station.state
+    ? {
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": station.state
+        }
+      }
+    : {}),
+  ...(station.stream_url
+    ? {
+        "subjectOf": {
+          "@type": "AudioObject",
+          "name": `${station.name} Live Stream`,
+          "contentUrl": station.stream_url,
+          ...(encodingFormat ? { "encodingFormat": encodingFormat } : {})
+        }
+      }
+    : {})
 };
 ---
 
@@ -99,20 +169,28 @@ const structuredData = {
     canonical={canonical}
     ogTitle={title}
     ogDescription={description}
-    ogImage={station.favicon || radioAppIcon.src}
+    ogImage={ogImageUrl}
     ogType="music.radio_station"
     keywords={`${station.name}, ${station.state || "Greece"}, radio, live, ${station.genres.join(", ")}`}
     robots="index, follow"
     author="E-Radio Greece"
     structuredData={structuredData}
   />
+  <div class="d-flex mb-3">
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="/">All Stations</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{station.name}</li>
+      </ol>
+    </nav>
+  </div>
   <div class="row mb-4">
     <div class="col-12">
       <div class="d-flex align-items-center gap-3 p-4 border border-light-subtle rounded">
         {station.favicon ? (
           <img src={station.favicon} alt={`${station.name} Logo`} class="rounded" style="width: 100px; height: 100px; object-fit: cover;" />
         ) : (
-          <img src={radioAppIcon.src} alt="Radio App Icon" class="rounded" style="width: 100px; height: 100px; object-fit: cover;" />
+          <img src={radioAppIconUrl} alt="Radio App Icon" class="rounded" style="width: 100px; height: 100px; object-fit: cover;" />
         )}
         <div class="flex-grow-1">
           <h1 class="mb-2">{station.name}</h1>
@@ -129,15 +207,14 @@ const structuredData = {
         </div>
         {station.votes && (
           <div class="text-end">
-            <div class="fs-5 fw-bold">{station.votes || 0}</div>
-            <div class="small text-muted">Community Votes</div>
+            <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio" style="position:relative;z-index:3;"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
           </div>
         )}
       </div>
     </div>
   </div>
 
-  <div class="row g-4">
+  <div class="row mb-4">
     <div class="col-12">
       <div class="card border border-light-subtle">
         <div class="card-header bg-light">
@@ -146,37 +223,45 @@ const structuredData = {
         <div class="card-body">
           {station.stream_url ? (
             <>
-              <audio controls class="w-100 mb-3" itemprop="url">
-                <source src={station.stream_url} />
+              <audio controls src={station.stream_url} class="w-100 mb-3" preload="none">
                 Your browser does not support the audio element.
               </audio>
-              <div class="row">
-                <div class="col-md-6">
-                  <h3 class="fs-6">Stream Information</h3>
-                  <ul class="list-unstyled">
-                    {station.bitrate && (
-                      <li><strong>Bitrate:</strong> <span itemprop="bitrate">{station.bitrate}</span> kbps</li>
-                    )}
-                    {station.codec && (
-                      <li><strong>Codec:</strong> <span itemprop="encodingFormat">{station.codec}</span></li>
-                    )}
-                    {station.language && (
-                      <li><strong>Language:</strong> <span itemprop="inLanguage">{station.language}</span></li>
-                    )}
-                  </ul>
-                </div>
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <a href={station.stream_url} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  Open Stream
+                </a>
+                <a href={radddioURL} class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+                  Listen on Radddio
+                </a>
               </div>
+              {(station.bitrate || station.codec) && (
+                <p class="text-muted small mb-0">
+                  Stream quality: {station.bitrate ? `${station.bitrate} kbps` : "Unknown"}{station.codec ? ` • ${station.codec}` : ""}
+                </p>
+              )}
             </>
           ) : (
-            <div class="alert alert-warning mb-0">
-              Stream is currently unavailable.
+            <div class="d-flex flex-wrap gap-2">
+              <a href={radddioURL} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Listen on Radddio
+              </a>
+              {station.homepage && (
+                <a href={station.homepage} class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
+                  Visit Station Website
+                </a>
+              )}
+              <p class="text-muted small mb-0 w-100">
+                Stream is currently unavailable.
+              </p>
             </div>
           )}
         </div>
       </div>
     </div>
+  </div>
 
-    {(station.homepage || station.genres.length > 0) && (
+  {(station.homepage || station.genres.length > 0) && (
+    <div class="row mb-4">
       <div class="col-12">
         <div class="card border border-light-subtle">
           <div class="card-header bg-light">
@@ -197,7 +282,7 @@ const structuredData = {
                 {station.genres.map((genre, idx) => (
                   <>
                     {idx > 0 && ""}
-                    <span class="badge bg-secondary" itemprop="genre">{genre}</span>
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill" itemprop="genre">{genre}</span>
                   </>
                 ))}
               </p>
@@ -207,68 +292,63 @@ const structuredData = {
                 <strong>Community Votes:</strong> <span itemprop="aggregateRating">{station.votes}</span>
               </p>
             )}
-          </div>
-        </div>
-      </div>
-    )}
-  </div>
-
-  <div class="text-center mt-4">
-    <a href="/" class="btn btn-outline-primary">
-      &larr; Back to all stations
-    </a>
-  </div>
-
-  {/* Recommended Stations Section - SEO Best Practice */}
-  {recommendedStations.length > 0 && (
-    <div class="mt-5">
-      <div class="card border border-light-subtle">
-        <div class="card-header bg-light">
-          <h2 class="mb-0 fs-5">📻 Recommended Stations</h2>
-        </div>
-        <div class="card-body">
-          <div class="row g-3">
-            {recommendedStations.map((recStation) => (
-              <div class="col-md-6 col-lg-4">
-                  <a href={`/stations/${recStation.slug}/`} class="text-decoration-none">
-                    <div class="card h-100 shadow-sm transition-hover" style="transition: transform 0.2s, box-shadow 0.2s;">
-                      <div class="card-body">
-                        <div class="d-flex gap-2 mb-3">
-                          {recStation.favicon ? (
-                            <img src={recStation.favicon} alt={recStation.name} class="rounded" style="width: 50px; height: 50px; object-fit: cover; flex-shrink: 0;" />
-                          ) : (
-                            <img src={radioAppIcon.src} alt="Radio Icon" class="rounded" style="width: 50px; height: 50px; object-fit: cover; flex-shrink: 0;" />
-                          )}
-                          <div style="flex: 1; min-width: 0;">
-                            <h5 class="mb-1 text-dark" style="font-size: 0.95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                              {recStation.name}
-                            </h5>
-                            {recStation.state && (
-                              <small class="text-muted">📍 {recStation.state}</small>
-                            )}
-                          </div>
-                        </div>
-                        {recStation.genres.length > 0 && (
-                          <div class="mb-2">
-                            {recStation.genres.slice(0, 2).map((genre) => (
-                              <span class="badge bg-info-subtle text-info-emphasis me-1" style="font-size: 0.75rem;">
-                                {genre}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                        <div class="d-flex justify-content-between align-items-center">
-                          <small class="text-muted">{recStation.votes || 0} votes</small>
-                          <small class="text-primary fw-bold">Listen →</small>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-            ))}
+            {station.stationuuid && (
+              <p class="mb-0">
+                <strong>Statuin ID:</strong> <span itemprop="aggregateRating">{station.stationuuid}</span>
+              </p>
+            )}
           </div>
         </div>
       </div>
     </div>
   )}
+  {/* More Stations Section */}
+  {recommendedStations.length > 0 ? (
+    <div class="mt-5">
+      <h2 class="fs-5">More Stations</h2>
+      <div>
+        <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+          {recommendedStations.map((recStation, index) => {
+            return (
+              <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+                <a href={`/stations/${recStation.slug}/`} class="stretched-link" style="position:absolute;inset:0;z-index:2;" aria-label={`Go to ${recStation.name}`}></a>
+                <div class="station-item-body p-3">
+                  <div class="row align-items-center g-3">
+                    <div class="col-auto">
+                      <div class="votes-badge bg-light rounded d-flex flex-column align-items-center justify-content-center p-2" style="width: 50px; height: 50px;">
+                        <span class="small fw-bold">{recStation.votes || 0}</span>
+                        <span class="badge-text small" style="font-size: 0.65rem;">votes</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      {recStation.favicon ? (
+                        <img src={recStation.favicon} alt={`${recStation.name} Logo`} class="rounded" style="width: 60px; height: 60px; object-fit: cover;" />
+                      ) : (
+                        <img src={radioAppIconUrl} alt="Radddio App Icon" class="rounded" style="width: 60px; height: 60px; object-fit: cover;" />
+                      )}
+                    </div>
+                    <div class="col flex-grow-1">
+                      <h3 class="mb-1 fs-6 fw-bold text-dark">{recStation.name}</h3>
+                      <p class="mb-2 small text-muted" style="margin: 0;">
+                        {recStation.state ? <span>📍 {recStation.state}</span> : null}
+                        {recStation.bitrate ? <span class="ms-2">🎵 {recStation.bitrate} kbps</span> : null}
+                      </p>
+                      <div class="d-flex gap-2 flex-wrap">
+                        {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
+                          <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div class="col-auto text-end d-none d-md-block">
+                      <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio" style="position:relative;z-index:3;"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  ) : null}
 </Layout>
