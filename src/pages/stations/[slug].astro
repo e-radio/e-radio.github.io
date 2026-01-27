@@ -56,11 +56,12 @@ const recommendedStations = getRecommendedStations();
 
 const siteRoot = "https://e-radio.github.io";
 const canonical = `${siteRoot}/stations/${station.slug}/`;
+const ogImage = "/e-radio-og-image.png";
 const ogImageUrl = station.favicon && station.favicon.startsWith("http")
   ? station.favicon
   : station.favicon
     ? `${siteRoot}${station.favicon}`
-    : `${siteRoot}${radioAppIconUrl}`;
+    : `${siteRoot}${ogImage}`;
 
 const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
   const streamUrl = String(currentStation.stream_url ?? "").toLowerCase();

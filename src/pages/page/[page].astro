@@ -5,6 +5,7 @@ import rawStations from "../../data/stations-gr.json";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
+const ogImage = "/e-radio-og-image.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 
 export async function getStaticPaths() {
@@ -67,7 +68,7 @@ const siteRoot = "https://e-radio.github.io";
 const canonical = page === 1 ? `${siteRoot}/` : `${siteRoot}/page/${page}/`;
 const pageTitle = `Radio Stations in Greece – Page ${page} – Live Online | E-Radio`;
 const pageDescription = `Browse the most popular live Greek radio stations. Sorted by community votes. Page ${page} of ${totalPages}.`;
-const ogImageUrl = `${siteRoot}${radioAppIconUrl}`;
+const ogImageUrl = `${siteRoot}${ogImage}`;
 
 // Structured data (JSON-LD)
 const structuredData = {
