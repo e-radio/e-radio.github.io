@@ -66,7 +66,21 @@ main {
 }
 
 .station-item a.stretched-link {
+  position: absolute;
+  inset: 0;
   z-index: 2;
+}
+
+.station-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.station-logo-lg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 /* Legacy column spacing */
@@ -74,6 +88,11 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.radddio-badge {
+  position: relative;
+  z-index: 3;
 }
 
 .radddio-badge img {
@@ -143,4 +162,8 @@ main {
     width: 45px;
     height: 45px;
   }
+}
+
+.bg-success-subtle {
+  background-color: #cdf0e1 !important;
 }

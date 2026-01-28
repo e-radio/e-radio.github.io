@@ -195,9 +195,9 @@ const structuredData = {
     <div class="col-12">
       <div class="d-flex align-items-center gap-3 p-4 border border-light-subtle rounded">
         {station.favicon ? (
-          <img src={station.favicon} alt={`${station.name} Logo`} class="rounded" style="width: 100px; height: 100px; object-fit: cover;" />
+          <img src={station.favicon} alt={`${station.name} Logo`} class="rounded station-logo-lg" />
         ) : (
-          <img src={radioAppIconUrl} alt="Radio App Icon" class="rounded" style="width: 100px; height: 100px; object-fit: cover;" />
+          <img src={radioAppIconUrl} alt="Radio App Icon" class="rounded station-logo-lg" />
         )}
         <div class="flex-grow-1">
           <h1 class="mb-2">{station.name}</h1>
@@ -214,7 +214,7 @@ const structuredData = {
         </div>
         {station.votes && (
           <div class="text-end">
-            <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio" style="position:relative;z-index:3;"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
+            <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
           </div>
         )}
       </div>
@@ -318,25 +318,25 @@ const structuredData = {
           {recommendedStations.map((recStation, index) => {
             return (
               <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
-                <a href={`/stations/${recStation.slug}/`} class="stretched-link" style="position:absolute;inset:0;z-index:2;" aria-label={`Go to ${recStation.name}`}></a>
+                <a href={`/stations/${recStation.slug}/`} class="stretched-link" aria-label={`Go to ${recStation.name}`}></a>
                 <div class="station-item-body p-3">
                   <div class="row align-items-center g-3">
                     <div class="col-auto">
-                      <div class="votes-badge bg-light rounded d-flex flex-column align-items-center justify-content-center p-2" style="width: 50px; height: 50px;">
+                      <div class="votes-badge bg-light rounded d-flex flex-column align-items-center justify-content-center p-2">
                         <span class="small fw-bold">{recStation.votes || 0}</span>
-                        <span class="badge-text small" style="font-size: 0.65rem;">votes</span>
+                        <span class="badge-text small">votes</span>
                       </div>
                     </div>
                     <div class="col-auto">
                       {recStation.favicon ? (
-                        <img src={recStation.favicon} alt={`${recStation.name} Logo`} class="rounded" style="width: 60px; height: 60px; object-fit: cover;" />
+                        <img src={recStation.favicon} alt={`${recStation.name} Logo`} class="rounded station-logo" />
                       ) : (
-                        <img src={radioAppIconUrl} alt="Radddio App Icon" class="rounded" style="width: 60px; height: 60px; object-fit: cover;" />
+                        <img src={radioAppIconUrl} alt="Radddio App Icon" class="rounded station-logo" />
                       )}
                     </div>
                     <div class="col flex-grow-1">
                       <h3 class="mb-1 fs-6 fw-bold text-dark">{recStation.name}</h3>
-                      <p class="mb-2 small text-muted" style="margin: 0;">
+                      <p class="small text-muted mb-1">
                         {recStation.state ? <span>📍 {recStation.state}</span> : null}
                         {recStation.bitrate ? <span class="ms-2">🎵 {recStation.bitrate} kbps</span> : null}
                       </p>
@@ -347,7 +347,7 @@ const structuredData = {
                       </div>
                     </div>
                     <div class="col-auto text-end d-none d-md-block">
-                      <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio" style="position:relative;z-index:3;"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
+                      <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
                     </div>
                   </div>
                 </div>
