@@ -15,7 +15,6 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
     <meta name="theme-color" content="#007bff" />
     
     <!-- Global SEO Tags -->
@@ -26,11 +25,13 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     
-    <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
     <!-- SEO slot -->
-    <slot name="seo" />
+    <slot name="seo">
+      <title>{title}</title>
+      {description && <meta name="description" content={description} />}
+    </slot>
     <meta name="google-site-verification" content="lQfQGR6ZHNk4_xpou2o4dn4dTItSP8G9YVR8rWACGls" />
   </head>
 

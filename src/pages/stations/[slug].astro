@@ -203,12 +203,12 @@ const structuredData = {
           <h1 class="mb-2">{station.name}</h1>
           {station.state && (
             <p class="text-muted mb-0">
-              📍 <span itemprop="areaServed">{station.state}, Greece</span>
+              📍 <span>{station.state}, Greece</span>
             </p>
           )}
           {station.genres.length > 0 && (
             <p class="text-muted mb-0 small">
-              🎵 <span itemprop="genre">{station.genres.slice(0, 3).join(", ")}</span>
+              🎵 <span>{station.genres.slice(0, 3).join(", ")}</span>
             </p>
           )}
         </div>
@@ -278,7 +278,7 @@ const structuredData = {
             {station.homepage && (
               <p>
                 <strong>Website:</strong> 
-                <a href={station.homepage} target="_blank" rel="noopener noreferrer" class="ms-2" itemprop="url">
+                <a href={station.homepage} target="_blank" rel="noopener noreferrer" class="ms-2">
                   {station.homepage}
                 </a>
               </p>
@@ -289,19 +289,19 @@ const structuredData = {
                 {station.genres.map((genre, idx) => (
                   <>
                     {idx > 0 && ""}
-                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill" itemprop="genre">{genre}</span>
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
                   </>
                 ))}
               </p>
             )}
             {station.votes && (
               <p class="mb-0">
-                <strong>Community Votes:</strong> <span itemprop="aggregateRating">{station.votes}</span>
+                <strong>Community Votes:</strong> <span>{station.votes}</span>
               </p>
             )}
             {station.stationuuid && (
               <p class="mb-0">
-                <strong>Statuin ID:</strong> <span itemprop="aggregateRating">{station.stationuuid}</span>
+                <strong>Station ID:</strong> <span>{station.stationuuid}</span>
               </p>
             )}
           </div>

@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fetch stations": "node tools/fetch-greece-stations.mjs"
+    "fetch stations": "node tools/fetch-greece-stations.mjs",
+    "git push": "git add . && git commit -m \"update\" && git push"
   },
   "dependencies": {
     "astro": "^5.16.15",
