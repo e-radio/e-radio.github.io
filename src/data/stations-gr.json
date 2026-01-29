@@ -4408,7 +4408,7 @@
     "state": null,
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "http://cast3.radiohost.ovh:8352/",
+    "stream_url": "http://cast3.radiohost.ovh:8352/;",
     "homepage": "http://bluesradio.gr/",
     "favicon": "/station-icons/blues-radio.jpg",
     "genres": [
@@ -4478,7 +4478,7 @@
     "state": "Athens",
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "http://cast3.radiohost.ovh:8352/",
+    "stream_url": "http://cast3.radiohost.ovh:8352/;",
     "homepage": "http://bluesradio.gr/",
     "favicon": "/station-icons/blues-radio-athens-b9e1f76e.png",
     "genres": [
@@ -4546,7 +4546,7 @@
     "state": "Athens",
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "http://cast3.radiohost.ovh:8352/",
+    "stream_url": "http://cast3.radiohost.ovh:8352/;",
     "homepage": "http://bluesradio.gr/",
     "favicon": "/station-icons/blues-radio-greece-athens.png",
     "genres": [
@@ -4592,7 +4592,7 @@
     "state": null,
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "http://cast3.radiohost.ovh:8352/",
+    "stream_url": "http://cast3.radiohost.ovh:8352/;",
     "homepage": "http://bluesradio.gr/",
     "favicon": "/station-icons/blues-radio-greece-ce7e3407.png",
     "genres": [
@@ -33396,7 +33396,7 @@
     "state": null,
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "https://cast.streams.ovh:2199/tunein/tranceathena.pls",
+    "stream_url": "http://cast.streams.ovh:8008/stream",
     "homepage": "https://www.tranceathena.com/",
     "favicon": "/station-icons/trance-athena.jpg",
     "genres": [
@@ -40836,7 +40836,7 @@
     "state": "Patra",
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "http://stream.myip.gr:9214/;listen.pls;listen.pls",
+    "stream_url": "https://tls-chrome.live24.gr/775?http://stream.myip.gr:9214/",
     "homepage": "https://www.mousikilampsi.gr/",
     "favicon": "/station-icons/103-3-patra.png",
     "genres": [],

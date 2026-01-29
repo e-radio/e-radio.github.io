@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SEO from '../components/SEO.astro';
+
+const title = "Demo – E-Radio Greece";
+const description = "Explore a demo page showcasing how station listings and badges render on E-Radio Greece.";
+const canonical = "https://e-radio.github.io/demo/";
+const demoIcon = "/radddio-app-icon.png";
+const radddioURL = "https://apple.co/4lNPQAH";
+const radddioBadgeUrl = "/radddio-badge.svg";
+const demoStations = [
+  {
+    name: "Aegean Chill",
+    state: "Cyclades",
+    votes: 1245,
+    bitrate: 128,
+    genres: ["Chillout", "Lounge", "Ambient"],
+  },
+  {
+    name: "Athens Rock FM",
+    state: "Attica",
+    votes: 987,
+    bitrate: 192,
+    genres: ["Rock", "Alternative"],
+  },
+  {
+    name: "Thessaloniki Beats",
+    state: "Central Macedonia",
+    votes: 562,
+    bitrate: 256,
+    genres: ["Electronic", "Dance"],
+  },
+];
+---
+
+<Layout title={title} description={description}>
+  <SEO 
+    slot="seo"
+    title={title}
+    description={description}
+    canonical={canonical}
+    ogTitle={title}
+    ogDescription={description}
+    ogImage="/e-radio-og-image.png"
+  />
+
+  <section class="mb-5">
+    <h1 class="display-5 fw-bold mb-3">Design Demo</h1>
+    <p class="lead text-muted mb-0">
+      Use this page to validate typography, spacing, and badge styles without touching production data.
+      The components below reuse the same CSS classes as the live station listings.
+    </p>
+  </section>
+
+  <section class="mb-5">
+    <h2 class="fs-4 fw-semibold mb-3">Station Card Preview</h2>
+    <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+      {demoStations.map((station, index) => (
+        <div class={`station-item position-relative ${index !== demoStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+          <div class="station-item-body p-3">
+            <div class="row align-items-center g-3">
+              <div class="col-auto">
+                <img src={demoIcon} alt="Demo station icon" class="rounded station-logo" />
+              </div>
+
+              <div class="col flex-grow-1">
+                <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
+                <p class="small text-muted mb-0">
+                  📍 {station.state}
+                </p>
+                <div class="d-flex gap-2 flex-wrap align-items-center mt-2">
+                  <span class="badge d-inline-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle">
+                    <i class="bi bi-stars px-1" aria-hidden="true"></i>
+                    Votes
+                    <span class="vr mx-2"></span>
+                    {station.votes.toLocaleString()}
+                  </span>
+                  <span class="badge d-inline-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle">
+                    <i class="bi bi-soundwave px-1" aria-hidden="true"></i>
+                    Bitrate
+                    <span class="vr mx-2"></span>
+                    {station.bitrate} kbps
+                  </span>
+                  {station.genres.map((genre) => (
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div class="col-auto text-end d-none d-md-block">
+                <a href={radddioURL} class="text-decoration-none radddio-badge" aria-label="Listen On Radddio" role="link" target="_blank" rel="noopener noreferrer">
+                  <img src={radddioBadgeUrl} alt="Radddio App Badge" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="mb-5">
+    <h2 class="fs-4 fw-semibold mb-3">Badge Palette</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge d-inline-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle">
+        <i class="bi bi-stars px-1" aria-hidden="true"></i>
+        Votes
+        <span class="vr mx-2"></span>
+        9,999
+      </span>
+      <span class="badge d-inline-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle">
+        <i class="bi bi-soundwave px-1" aria-hidden="true"></i>
+        Bitrate
+        <span class="vr mx-2"></span>
+        320 kbps
+      </span>
+      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Jazz</span>
+      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Talk</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="fs-4 fw-semibold mb-3">Implementation Notes</h2>
+    <ul class="list-unstyled text-muted mb-0">
+      <li class="mb-2">✔️ Reuses <code>.station-list</code>, <code>.station-item</code>, and badge utilities from global.css.</li>
+      <li class="mb-2">✔️ Icons sourced from Bootstrap Icons CDN already included in the base layout.</li>
+      <li class="mb-2">✔️ No scripts or extra styles required—safe to remove when no longer needed.</li>
+    </ul>
+  </section>
+  </Layout>

@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import rawStations from "../../data/stations-gr.json";
+import { slugify } from "../../lib/slug";
 
 
 export async function getStaticPaths() {
@@ -20,6 +21,28 @@ const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 const { station } = Astro.props;
 
+const hasStream = Boolean(station.stream_url);
+const formattedVotes = station.votes ? new Intl.NumberFormat("en-US").format(Number(station.votes)) : null;
+const locationLabel = station.state
+  ? `${station.state}${station.country ? `, ${station.country}` : ""}`
+  : station.country || "Greece";
+const genres = (station.genres || []).filter(Boolean);
+const displayGenres = genres.slice(0, 3);
+const streamQualityParts = [
+  station.codec ? String(station.codec).toUpperCase() : null,
+  station.bitrate ? `${station.bitrate} kbps` : null,
+].filter(Boolean);
+const streamQualityLabel = streamQualityParts.join(" · ");
+const streamDetailMeta = [
+  station.codec ? `Codec: ${String(station.codec).toUpperCase()}` : null,
+  station.bitrate ? `Bitrate: ${station.bitrate} kbps` : null,
+  station.hls ? "Stream type: HLS" : null,
+]
+  .filter(Boolean)
+  .join(" · ");
+const languageLabel = station.language ? station.language : null;
+const streamUrl = station.stream_url || "";
+
 // Get recommended stations based on genre and location
 const getRecommendedStations = () => {
   const recommended: typeof rawStations = rawStations
@@ -28,11 +51,11 @@ const getRecommendedStations = () => {
       let score = 0;
       // Genre match (highest priority)
       if (station.genres.some((g: string) => (s.genres as string[]).includes(g))) {
-        score += 12;
+        score += 10;
       }
       // Same state (medium priority)
       if (station.state && s.state === station.state) {
-        score += 6;
+        score += 5;
       }
       // Same country (lowest priority)
       if (s.country === station.country) {
@@ -46,7 +69,7 @@ const getRecommendedStations = () => {
       if (b.score !== a.score) return b.score - a.score;
       return (b.station.votes || 0) - (a.station.votes || 0);
     })
-    .slice(0, 6) // Get top 5
+    .slice(0, 5) // Get top 5
     .map((item) => item.station);
 
   return recommended;
@@ -117,6 +140,14 @@ const description = station.state
   ? `Listen to ${station.name} live from Greece. Stream ${station.genres.length > 0 ? station.genres.slice(0, 2).join(", ") : "your favorite"} radio online.`
   : `Stream ${station.name} live from ${station.state}, Greece. ${station.genres.length > 0 ? `Listen to ${station.genres.slice(0, 2).join(", ")} radio online.` : "Listen to live radio online."}`;
 
+const playerScriptConfig = {
+  hasStream,
+  streamUrl,
+  shareTitle: station.name,
+  shareText: `Listen live: ${station.name}`,
+  shareUrl: canonical,
+};
+
 // Structured data (JSON-LD)
 const structuredData = {
   "@context": "https://schema.org",
@@ -167,7 +198,7 @@ const structuredData = {
 };
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} bodyClass="station-detail-body">
   <!-- SEO Meta Tags -->
   <SEO 
     slot="seo"
@@ -183,179 +214,492 @@ const structuredData = {
     author="E-Radio Greece"
     structuredData={structuredData}
   />
-  <div class="d-flex mb-3">
+  <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
     <nav aria-label="Breadcrumb">
-      <ol class="breadcrumb justify-content-center mb-0">
+      <ol class="breadcrumb mb-0 bg-transparent p-0">
         <li class="breadcrumb-item"><a href="/">All Stations</a></li>
         <li class="breadcrumb-item active" aria-current="page">{station.name}</li>
       </ol>
     </nav>
-  </div>
-  <div class="row mb-4">
-    <div class="col-12">
-      <div class="d-flex align-items-center gap-3 p-4 border border-light-subtle rounded">
-        {station.favicon ? (
-          <img src={station.favicon} alt={`${station.name} Logo`} class="rounded station-logo-lg" />
-        ) : (
-          <img src={radioAppIconUrl} alt="Radio App Icon" class="rounded station-logo-lg" />
-        )}
-        <div class="flex-grow-1">
-          <h1 class="mb-2">{station.name}</h1>
-          {station.state && (
-            <p class="text-muted mb-0">
-              📍 <span>{station.state}, Greece</span>
-            </p>
-          )}
-          {station.genres.length > 0 && (
-            <p class="text-muted mb-0 small">
-              🎵 <span>{station.genres.slice(0, 3).join(", ")}</span>
-            </p>
-          )}
-        </div>
-        {station.votes && (
-          <div class="text-end">
-            <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
-          </div>
-        )}
-      </div>
+    <div class="small-muted">
+      Updated {new Date().toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
     </div>
   </div>
 
-  <div class="row mb-4">
-    <div class="col-12">
-      <div class="card border border-light-subtle">
-        <div class="card-header bg-light">
-          <h2 class="mb-0 fs-5">Listen Live</h2>
-        </div>
-        <div class="card-body">
-          {station.stream_url ? (
-            <>
-              <audio controls src={station.stream_url} class="w-100 mb-3" preload="none">
-                Your browser does not support the audio element.
-              </audio>
-              <div class="d-flex flex-wrap gap-2 mb-2">
-                <a href={station.stream_url} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                  Open Stream
-                </a>
-                <a href={radddioURL} class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
-                  Listen on Radddio
-                </a>
+  <div class="row g-4">
+    <div class="col-12 col-lg-8">
+      <section class="glass rounded-3 p-3 p-md-4">
+        <div class="d-flex align-items-start justify-content-between gap-3">
+          <div class="d-flex align-items-start gap-3">
+            {station.favicon ? (
+              <img
+                class="station-cover shadow-sm"
+                src={station.favicon}
+                alt={`${station.name} logo`}
+                loading="lazy"
+              />
+            ) : (
+              <img
+                class="station-cover shadow-sm"
+                src={radioAppIconUrl}
+                alt="Radddio app icon"
+                loading="lazy"
+              />
+            )}
+            <div class="pt-1">
+              <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
+                <h1 class="h4 fw-bold mb-0">{station.name}</h1>
+                {hasStream && <span class="badge rounded-pill badge-soft">Live</span>}
+                {hasStream && <span class="badge rounded-pill text-bg-light border">Verified stream</span>}
               </div>
-              {(station.bitrate || station.codec) && (
-                <p class="text-muted small mb-0">
-                  Stream quality: {station.bitrate ? `${station.bitrate} kbps` : "Unknown"}{station.codec ? ` • ${station.codec}` : ""}
-                </p>
-              )}
-            </>
-          ) : (
-            <div class="d-flex flex-wrap gap-2">
-              <a href={radddioURL} class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Listen on Radddio
-              </a>
-              {station.homepage && (
-                <a href={station.homepage} class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">
-                  Visit Station Website
-                </a>
-              )}
-              <p class="text-muted small mb-0 w-100">
-                Stream is currently unavailable.
-              </p>
+              <div class="d-flex flex-wrap gap-3 small-muted">
+                {locationLabel && (
+                  <span><i class="bi bi-geo-alt me-1"></i>{locationLabel}</span>
+                )}
+                {displayGenres.length > 0 && (
+                  <span><i class="bi bi-music-note-beamed me-1"></i>{displayGenres.join(", ")}</span>
+                )}
+                {formattedVotes && (
+                  <span><i class="bi bi-bar-chart me-1"></i>{formattedVotes} votes</span>
+                )}
+              </div>
             </div>
-          )}
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <!-- <button class="btn btn-light border rounded-circle btn-icon" type="button" id="btnFavorite" aria-label="Toggle favorite">
+              <i class="bi bi-heart"></i>
+            </button> -->
+            <button class="btn btn-light border rounded-circle btn-icon" type="button" id="btnShare" aria-label="Share station">
+              <i class="bi bi-share"></i>
+            </button>
+            <a class="btn btn-light border rounded-circle btn-icon" href="#details" aria-label="Jump to station details">
+              <i class="bi bi-info-circle"></i>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  {(station.homepage || station.genres.length > 0) && (
-    <div class="row mb-4">
-      <div class="col-12">
-        <div class="card border border-light-subtle">
-          <div class="card-header bg-light">
-            <h2 class="mb-0 fs-5">About</h2>
-          </div>
-          <div class="card-body">
-            {station.homepage && (
-              <p>
-                <strong>Website:</strong> 
-                <a href={station.homepage} target="_blank" rel="noopener noreferrer" class="ms-2">
-                  {station.homepage}
-                </a>
-              </p>
-            )}
-            {station.genres.length > 0 && (
-              <p>
-                <strong>Genres:</strong> 
-                {station.genres.map((genre, idx) => (
-                  <>
-                    {idx > 0 && ""}
-                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
-                  </>
-                ))}
-              </p>
-            )}
-            {station.votes && (
-              <p class="mb-0">
-                <strong>Community Votes:</strong> <span>{station.votes}</span>
-              </p>
-            )}
-            {station.stationuuid && (
-              <p class="mb-0">
-                <strong>Station ID:</strong> <span>{station.stationuuid}</span>
-              </p>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  )}
-  {/* More Stations Section */}
-  {recommendedStations.length > 0 ? (
-    <div class="mt-5">
-      <h2 class="fs-5">More Stations</h2>
-      <div>
-        <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
-          {recommendedStations.map((recStation, index) => {
-            return (
-              <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
-                <a href={`/stations/${recStation.slug}/`} class="stretched-link" aria-label={`Go to ${recStation.name}`}></a>
-                <div class="station-item-body p-3">
-                  <div class="row align-items-center g-3">
-                    <div class="col-auto">
-                      <div class="votes-badge bg-light rounded d-flex flex-column align-items-center justify-content-center p-2">
-                        <span class="small fw-bold">{recStation.votes || 0}</span>
-                        <span class="badge-text small">votes</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      {recStation.favicon ? (
-                        <img src={recStation.favicon} alt={`${recStation.name} Logo`} class="rounded station-logo" />
-                      ) : (
-                        <img src={radioAppIconUrl} alt="Radddio App Icon" class="rounded station-logo" />
-                      )}
-                    </div>
-                    <div class="col flex-grow-1">
-                      <h3 class="mb-1 fs-6 fw-bold text-dark">{recStation.name}</h3>
-                      <p class="small text-muted mb-1">
-                        {recStation.state ? <span>📍 {recStation.state}</span> : null}
-                        {recStation.bitrate ? <span class="ms-2">🎵 {recStation.bitrate} kbps</span> : null}
-                      </p>
-                      <div class="d-flex gap-2 flex-wrap">
-                        {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
-                          <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
-                        ))}
-                      </div>
-                    </div>
-                    <div class="col-auto text-end d-none d-md-block">
-                      <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen On Radddio"><img src={radddioBadgeUrl} alt="Radddio App Badge" /></a>
-                    </div>
+        <hr class="my-4" />
+
+        {hasStream ? (
+          <div class="row g-3 align-items-center">
+            <div class="col-12">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-primary rounded-pill px-4" id="btnPlay" type="button">
+                    <i class="bi bi-play-fill me-1"></i> Play
+                  </button>
+
+                  <button class="btn btn-outline-secondary rounded-pill" id="btnStop" type="button">
+                    <i class="bi bi-stop-fill me-1"></i> Stop
+                  </button>
+
+                  <div class="d-none d-sm-flex align-items-center gap-2 ms-1">
+                    <i class="bi bi-volume-up"></i>
+                    <input
+                      id="volume"
+                      class="form-range volume-range"
+                      type="range"
+                      min="0"
+                      max="1"
+                      step="0.01"
+                      value="1"
+                      aria-label="Volume"
+                    />
                   </div>
                 </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill text-bg-light border">
+                    <i class="bi bi-soundwave me-1"></i>
+                    <span class="mono" id="quality">{streamQualityLabel || "Quality not reported"}</span>
+                  </span>
+                  <span class="badge rounded-pill text-bg-light border">
+                    <i class="bi bi-wifi me-1"></i>
+                    <span id="statusText">Idle</span>
+                  </span>
+                </div>
               </div>
-            );
-          })}
+            </div>
+
+            <div class="col-12">
+              <div class="progress progress-thin" role="progressbar" aria-label="Buffer status">
+                <div class="progress-bar" id="bufferBar" style="width: 0%"></div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 small-muted">
+                <span id="nowPlayingLabel">Now playing: <span class="text-dark" id="nowPlaying">{station.name}</span></span>
+                <span class="mono" id="timeHint">00:00</span>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <audio
+                id="audio"
+                preload="none"
+                crossorigin="anonymous"
+                src={streamUrl}
+              >
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        ) : (
+          <div class="text-center py-4">
+            <p class="small-muted mb-3">Stream is currently unavailable.</p>
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="noopener">
+                <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
+              </a>
+              {station.homepage && (
+                <a class="btn btn-outline-secondary rounded-pill" href={station.homepage} target="_blank" rel="noopener">
+                  <i class="bi bi-globe2 me-1"></i> Visit website
+                </a>
+              )}
+            </div>
+          </div>
+        )}
+
+        {hasStream && (
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            {station.homepage && (
+              <a class="btn btn-outline-primary rounded-pill" href={station.homepage} target="_blank" rel="noopener">
+                <i class="bi bi-globe2 me-1"></i> Website
+              </a>
+            )}
+            <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="noopener">
+              <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
+            </a>
+            <a class="btn btn-outline-secondary rounded-pill" href={streamUrl} target="_blank" rel="noopener">
+              <i class="bi bi-link-45deg me-1"></i> Open stream
+            </a>
+            <button class="btn btn-outline-secondary rounded-pill" id="btnCopyLink" type="button">
+              <i class="bi bi-clipboard me-1"></i> Copy link
+            </button>
+            <button class="btn btn-outline-danger rounded-pill" id="btnReport" type="button">
+              <i class="bi bi-bug me-1"></i> Report stream issue
+            </button>
+          </div>
+        )}
+      </section>
+
+      <section class="glass rounded-3 p-3 p-md-4 mt-4">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h6 fw-bold mb-0"><i class="bi bi-disc me-2"></i> Recently played</h2>
+          <span class="small-muted">Auto filled when metadata is available</span>
         </div>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="p-3 bg-white rounded-3 border border-light-subtle">
+              <div class="small-muted mb-1">Previous</div>
+              <div class="fw-semibold">Unknown</div>
+              <div class="small-muted">Artist · 00:00</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-3 bg-white rounded-3 border border-light-subtle">
+              <div class="small-muted mb-1">Up next</div>
+              <div class="fw-semibold">Unknown</div>
+              <div class="small-muted">Artist · 00:00</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {recommendedStations.length > 0 && (
+    <section class="glass rounded-3 p-3 p-md-4 mt-4">
+      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2"></i> More stations</h2>
+      <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+        {recommendedStations.map((recStation, index) => (
+          <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+            <a href={`/stations/${recStation.slug}/`} class="stretched-link" aria-label={`Go to ${recStation.name}`}></a>
+            <div class="station-item-body p-3">
+              <div class="row align-items-center g-3">
+                <div class="col-auto">
+                  {recStation.favicon ? (
+                    <img src={recStation.favicon} alt={`${recStation.name} logo`} class="rounded station-logo" />
+                  ) : (
+                    <img src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" />
+                  )}
+                </div>
+                <div class="col flex-grow-1">
+                  <h3 class="mb-1 fs-6 fw-bold text-dark">{recStation.name}</h3>
+                  <p class="small text-muted mb-1">
+                    {recStation.state ? <span><i class="bi bi-geo-alt me-1"></i>{recStation.state}</span> : null}
+                    {recStation.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{recStation.bitrate} kbps</span> : null}
+                  </p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
+                      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                    ))}
+                  </div>
+                </div>
+                <div class="col-auto text-end d-none d-md-block">
+                  <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
+    </section>
+  )}
     </div>
-  ) : null}
+
+    <div class="col-12 col-lg-4">
+      <aside id="details" class="glass rounded-3 p-3 p-md-4">
+        <h2 class="h6 fw-bold mb-3"><i class="bi bi-card-text me-2"></i> Station details</h2>
+
+        <div class="vstack gap-3">
+          {station.stationuuid && (
+            <div class="p-3 bg-white border border-light-subtle rounded-3">
+              <div class="small-muted mb-1">Station ID</div>
+              <div class="mono">{station.stationuuid}</div>
+            </div>
+          )}
+
+          {hasStream && (
+            <div class="p-3 bg-white border border-light-subtle  rounded-3">
+              <div class="small-muted mb-1">Stream URL</div>
+              <a class="mono link-muted d-block text-truncate" href={streamUrl} target="_blank" rel="noopener">
+                {streamUrl}
+              </a>
+            </div>
+          )}
+
+          {hasStream && (
+            <div class="p-3 bg-white border border-light-subtle  rounded-3">
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <div>
+                  <div class="small-muted">Stream quality</div>
+                  <div class="fw-semibold">{streamQualityLabel || "Not reported"}</div>
+                </div>
+                <i class="bi bi-soundwave fs-4 text-primary"></i>
+              </div>
+              {streamDetailMeta && <div class="small-muted">{streamDetailMeta}</div>}
+            </div>
+          )}
+
+          {genres.length > 0 && (
+            <div class="p-3 bg-white border border-light-subtle  rounded-3">
+              <div class="small-muted mb-2">Genres</div>
+              <div class="d-flex flex-wrap gap-2">
+                {genres.map((genre) => (
+                  <a class="badge rounded-pill text-bg-light border text-decoration-none" href={`/genres/${slugify(genre)}/`}>
+                    {genre}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div class="p-3 bg-white border border-light-subtle  rounded-3">
+            <div class="small-muted mb-2">Popularity</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <div class="fw-semibold" id="votes">{formattedVotes ? `${formattedVotes} votes` : "No votes recorded"}</div>
+                <div class="small-muted">Updated daily</div>
+              </div>
+              <button class="btn btn-outline-primary rounded-pill btn-sm" type="button" id="btnVote">
+                <i class="bi bi-hand-thumbs-up me-1"></i> Vote
+              </button>
+            </div>
+          </div>
+
+          <div class="p-3 bg-white border border-light-subtle rounded-3">
+            <div class="small-muted mb-2">Location</div>
+            <div class="fw-semibold">{locationLabel}</div>
+            <div class="small-muted">
+              Country: {station.country || "Greece"}
+              {languageLabel && <> · Language: {languageLabel}</>}
+            </div>
+          </div>
+
+          <div class="p-3 bg-white border border-light-subtle rounded-3">
+            <div class="small-muted mb-2">More</div>
+            <div class="d-grid gap-2">
+              <a class="btn btn-outline-primary rounded-pill" href="/countries/greece/">
+                <i class="bi bi-geo me-1"></i> Browse Greece stations
+              </a>
+              <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="noopener">
+                <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
+              </a>
+              {station.homepage && (
+                <a class="btn btn-outline-primary rounded-pill" href={station.homepage} target="_blank" rel="noopener">
+                  <i class="bi bi-globe2 me-1"></i> Station website
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="glass rounded-3 p-3 p-md-4 mt-4">
+        <h2 class="h6 fw-bold mb-3"><i class="bi bi-question-circle me-2"></i> Tips</h2>
+        <ul class="small-muted mb-0">
+          <li>If playback stops, try switching networks or refresh the page.</li>
+          <li>Some stations limit connections; retry after 10–30 seconds.</li>
+          <li>Prefer streams 128 kbps or higher for best quality.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div id="player-config" data-config={JSON.stringify(playerScriptConfig)} hidden></div>
+  <script>
+// @ts-nocheck
+    const configEl = document.getElementById('player-config');
+    const defaultConfig = {
+      hasStream: false,
+      streamUrl: '',
+      shareTitle: document.title,
+      shareText: document.title,
+      shareUrl: window.location.href,
+    };
+    const playerConfig = configEl instanceof HTMLElement
+      ? JSON.parse(configEl.dataset.config || '{}')
+      : defaultConfig;
+    if (configEl instanceof HTMLElement) {
+      configEl.remove();
+    }
+
+    const audio = /** @type {HTMLAudioElement | null} */ (document.getElementById('audio'));
+    const btnPlay = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnPlay'));
+    const btnStop = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnStop'));
+    const statusText = /** @type {HTMLElement | null} */ (document.getElementById('statusText'));
+    const bufferBar = /** @type {HTMLElement | null} */ (document.getElementById('bufferBar'));
+    const volume = /** @type {HTMLInputElement | null} */ (document.getElementById('volume'));
+    const timeHint = /** @type {HTMLElement | null} */ (document.getElementById('timeHint'));
+    const btnCopyLink = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnCopyLink'));
+    const btnReport = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnReport'));
+    const btnShare = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnShare'));
+    const btnFavorite = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnFavorite'));
+    const btnVote = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnVote'));
+
+    /**
+     * @param {string} text
+     */
+    const setStatus = (text) => {
+      if (statusText) {
+        statusText.textContent = text;
+      }
+    };
+
+    /**
+     * @param {number} percent
+     */
+    const setBuffer = (percent) => {
+      if (!bufferBar) return;
+      const safe = Math.max(0, Math.min(100, percent));
+      bufferBar.style.width = `${safe}%`;
+    };
+
+    if (!playerConfig.hasStream) {
+      setStatus('Unavailable');
+      btnPlay?.setAttribute('disabled', 'true');
+      btnStop?.setAttribute('disabled', 'true');
+    }
+
+    if (playerConfig.hasStream && audio && btnPlay && btnStop) {
+      btnPlay.addEventListener('click', async () => {
+        try {
+          setStatus('Connecting');
+          await audio.play();
+        } catch (err) {
+          setStatus('Play blocked');
+          console.error(err);
+        }
+      });
+
+      btnStop.addEventListener('click', () => {
+        audio.pause();
+        audio.currentTime = 0;
+        setStatus('Stopped');
+        setBuffer(0);
+      });
+
+      volume?.addEventListener('input', (event) => {
+        const target = event.currentTarget;
+        if (target instanceof HTMLInputElement) {
+          audio.volume = Number(target.value);
+        }
+      });
+
+      audio.addEventListener('playing', () => setStatus('Playing'));
+      audio.addEventListener('pause', () => setStatus('Paused'));
+      audio.addEventListener('waiting', () => setStatus('Buffering'));
+      audio.addEventListener('ended', () => setStatus('Ended'));
+      audio.addEventListener('error', () => setStatus('Stream error'));
+
+      let seconds = 0;
+      setInterval(() => {
+        if (!audio.paused && !audio.ended) {
+          seconds += 1;
+          const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
+          const ss = String(seconds % 60).padStart(2, '0');
+          if (timeHint) {
+            timeHint.textContent = `${mm}:${ss}`;
+          }
+        }
+      }, 1000);
+
+      audio.addEventListener('progress', () => {
+        try {
+          if (audio.buffered.length) {
+            const end = audio.buffered.end(audio.buffered.length - 1);
+            const current = audio.currentTime || 0;
+            const delta = Math.max(0, end - current);
+            setBuffer(Math.min(100, (delta / 20) * 100));
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    }
+
+    btnCopyLink?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(playerConfig.shareUrl);
+        setStatus(playerConfig.hasStream ? 'Link copied' : 'Copied');
+        setTimeout(() => setStatus(playerConfig.hasStream ? 'Idle' : 'Unavailable'), 1200);
+      } catch (error) {
+        console.error(error);
+      }
+    });
+
+    btnReport?.addEventListener('click', () => {
+      alert('Thanks. Please describe the issue on the report page.');
+    });
+
+    btnShare?.addEventListener('click', async () => {
+      try {
+        if (navigator.share) {
+          await navigator.share({
+            title: playerConfig.shareTitle,
+            text: playerConfig.shareText,
+            url: playerConfig.shareUrl,
+          });
+        } else {
+          await navigator.clipboard.writeText(playerConfig.shareUrl);
+          setStatus('Link copied');
+          setTimeout(() => setStatus(playerConfig.hasStream ? 'Idle' : 'Unavailable'), 1200);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    });
+
+    btnFavorite?.addEventListener('click', (event) => {
+      const target = event.currentTarget;
+      if (!(target instanceof HTMLElement)) return;
+      const icon = target.querySelector('i');
+      if (!icon) return;
+      const isFav = icon.classList.contains('bi-heart-fill');
+      icon.classList.toggle('bi-heart', isFav);
+      icon.classList.toggle('bi-heart-fill', !isFav);
+      setStatus(!isFav ? 'Saved to favorites' : 'Removed from favorites');
+      setTimeout(() => setStatus(playerConfig.hasStream ? 'Idle' : 'Unavailable'), 1200);
+    });
+
+    btnVote?.addEventListener('click', () => {
+      alert('Vote submitted. Thank you.');
+    });
+  </script>
 </Layout>

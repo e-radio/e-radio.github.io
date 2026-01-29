@@ -5,9 +5,14 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  bodyClass?: string;
 }
 
-const { title = "e-Radio Greece", description = "Listen to live radio stations from Greece" } = Astro.props;
+const {
+  title = "e-Radio Greece",
+  description = "Listen to live radio stations from Greece",
+  bodyClass = "",
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -27,6 +32,14 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="application-name" content="E-Radio Greece" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="E-Radio" />
     
     <!-- SEO slot -->
     <slot name="seo">
@@ -36,12 +49,12 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
     <meta name="google-site-verification" content="lQfQGR6ZHNk4_xpou2o4dn4dTItSP8G9YVR8rWACGls" />
   </head>
 
-  <body class="d-flex flex-column min-vh-100">
+  <body class={`d-flex flex-column min-vh-100 ${bodyClass}`.trim()}>
     <header class="bg-light border-bottom">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-lg">
           <a href="/" class="navbar-brand fw-bold d-flex align-items-center gap-2">
-			<img src="/favicon.svg" width="32" height="32" alt="e-Radio Greece app icon featuring a red radio tuner dial on a dark background">
+            <img src="/icons/icon-32x32.png" width="32" height="32" alt="E-Radio Greece app icon" />
             <span>e-Radio Greece</span>
           </a>
         </div>
@@ -57,7 +70,7 @@ const { title = "e-Radio Greece", description = "Listen to live radio stations f
     <footer class="bg-light border-top mt-auto">
       <div class="container-lg py-4 text-center text-muted">
         <p class="mb-2">&copy; 2026 e-Radio Greece. All rights reserved.</p>
-        <p class="mb-0">Powered by <a href="https://radddio.com" class="text-decoration-none">Radddio.com</a></p>
+        <p class="mb-2">Powered by <a href="https://radddio.com" class="text-decoration-none">Radddio.com</a></p>
       </div>
     </footer>
   </body>

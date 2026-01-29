@@ -6,6 +6,7 @@
   --color-text: #333333;
   --color-border: #e0e0e0;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --card-radius: 1.25rem;
 }
 
 /* Global Reset */
@@ -26,6 +27,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.station-detail-body {
+  background: #f7f8fb;
 }
 
 main {
@@ -81,6 +86,63 @@ main {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+
+.station-cover {
+  width: 84px;
+  height: 84px;
+  border-radius: var(--card-radius);
+  object-fit: cover;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.rounded-2xl {
+  border-radius: var(--card-radius);
+}
+
+.badge-soft {
+  background: rgba(13, 110, 253, 0.08);
+  border: 1px solid rgba(13, 110, 253, 0.18);
+  color: #0d6efd;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.btn-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-thin {
+  height: 6px;
+}
+
+.small-muted {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.link-muted {
+  color: #495057;
+  text-decoration: none;
+}
+
+.link-muted:hover {
+  text-decoration: underline;
+}
+
+.volume-range {
+  width: 140px;
 }
 
 /* Legacy column spacing */
