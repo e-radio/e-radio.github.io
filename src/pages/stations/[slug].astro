@@ -43,7 +43,29 @@ const streamDetailMeta = [
 const languageLabel = station.language ? station.language : null;
 const streamUrl = station.stream_url || "";
 
+const AZURACAST_NOW_PLAYING_OVERRIDES: Record<string, string> = {
+  "disco-cafe-athens": "https://azuracast.streams.ovh/api/nowplaying/discocafe",
+  "emerson-athens-athens": "https://azuracast.streams.ovh/api/nowplaying/radioemerson",
+  "energy-radio-greece": "https://azuracast.streams.ovh/api/nowplaying/energy",
+  "freespirits-services": "https://aphrodite.freespirits.gr/api/nowplaying/freespirits_radio",
+  "kaseta-radio": "https://azuracast.streams.gr/api/nowplaying/kasetaradio",
+  "kyklos": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+  "radio-kyklos": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+  "radiokyklos-greek-hiphop": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+  "rock-angels-athens": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+  "rock-angels": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+  "rock-angels-radio": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+  "studio-545": "https://azuracast.streams.ovh/api/nowplaying/studio_545",
+  "vips-radio-athens-athens": "https://azuracast.streams.gr/api/nowplaying/vipsradio",
+  "live-thessaloniki": "https://azuracast.streams.gr/api/nowplaying/paulosvasileioulive",
+};
+
 const resolveNowPlayingEndpoint = (inputStreamUrl: string | undefined, stationData: typeof rawStations[0]) => {
+  const overridden = AZURACAST_NOW_PLAYING_OVERRIDES[stationData.slug];
+  if (overridden) {
+    return overridden;
+  }
+
   if (!inputStreamUrl) return null;
 
   try {
@@ -71,6 +93,18 @@ const resolveNowPlayingEndpoint = (inputStreamUrl: string | undefined, stationDa
 
       if (publicSlug) {
         return `${url.origin}/api/nowplaying/${publicSlug}`;
+      }
+
+      const sanitize = (value: string | null | undefined) =>
+        (value || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
+      const nameCandidate = sanitize(stationData.name);
+      if (nameCandidate) {
+        return `${url.origin}/api/nowplaying/${nameCandidate}`;
+      }
+
+      const slugCandidate = sanitize(stationData.slug);
+      if (slugCandidate) {
+        return `${url.origin}/api/nowplaying/${slugCandidate}`;
       }
     }
   } catch (error) {
