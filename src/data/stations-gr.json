@@ -4454,7 +4454,7 @@
     "state": "Athens",
     "country": "Greece",
     "countrycode": "GR",
-    "stream_url": "http://cast3.radiohost.ovh:8352/",
+    "stream_url": "http://cast3.radiohost.ovh:8352/;",
     "homepage": "http://bluesradio.gr/",
     "favicon": "/station-icons/blues-radio-athens.png",
     "genres": [
