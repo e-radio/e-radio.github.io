@@ -31,6 +31,30 @@ const demoStations = [
     genres: ["Electronic", "Dance"],
   },
 ];
+
+const metadataStations = [
+  {
+    name: "Dice Radio",
+    slug: "dice-radio",
+    platform: "Radio.co",
+    streamUrl: "https://s2.radio.co/s4648f1c61/listen",
+    nowPlayingEndpoint: "https://public.radio.co/station/s4648f1c61/nowplaying",
+  },
+  {
+    name: "Kyklos",
+    slug: "kyklos",
+    platform: "AzuraCast",
+    streamUrl: "https://azuracast.streams.ovh/radio/8120/radio.mp3",
+    nowPlayingEndpoint: "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+  },
+  {
+    name: "Kaseta Radio",
+    slug: "kaseta-radio",
+    platform: "AzuraCast",
+    streamUrl: "https://azuracast.streams.gr/listen/kasetaradio/radio.mp3",
+    nowPlayingEndpoint: "https://azuracast.streams.gr/api/nowplaying/kasetaradio",
+  },
+];
 ---
 
 <Layout title={title} description={description}>
@@ -119,6 +143,40 @@ const demoStations = [
     </div>
   </section>
 
+  <section class="mb-5">
+    <h2 class="fs-4 fw-semibold mb-3">Now Playing API Experiments</h2>
+    <p class="text-muted mb-4">
+      Many stations use platforms like Radio.co or AzuraCast that expose simple JSON endpoints. The recipe is straightforward:
+      <span class="d-block mt-2">• fetch the <span class="fw-semibold">nowPlayingUrl</span> every 10–20 seconds</span>
+      <span class="d-block">• update the UI with the returned artist and title</span>
+    </p>
+    <div class="row g-4">
+      {metadataStations.map((station, index) => (
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 border border-light-subtle" data-nowplaying-endpoint={station.nowPlayingEndpoint} data-refresh-ms="15000">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-3">
+                <h3 class="h6 fw-semibold mb-1">{station.name}</h3>
+                <p class="text-muted small mb-0">Platform: {station.platform}</p>
+              </div>
+              <dl class="small text-muted mb-3">
+                <dt class="fw-semibold">Stream URL</dt>
+                <dd class="mb-2"><code>{station.streamUrl}</code></dd>
+                <dt class="fw-semibold">Now Playing endpoint</dt>
+                <dd class="mb-0"><code>{station.nowPlayingEndpoint}</code></dd>
+              </dl>
+              <div class="bg-light-subtle border border-light-subtle rounded p-2 mt-auto">
+                <p class="small text-muted mb-1">Latest response:</p>
+                <pre class="bg-white rounded p-2 small mb-0 overflow-auto" style="max-height: 180px;" id={`nowplaying-${index}`}>Waiting…</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="small text-muted mt-3 mb-0">CORS policies come from the station. If you see errors, the endpoint may block browser access and will need a proxy.</p>
+  </section>
+
   <section>
     <h2 class="fs-4 fw-semibold mb-3">Implementation Notes</h2>
     <ul class="list-unstyled text-muted mb-0">
@@ -127,4 +185,28 @@ const demoStations = [
       <li class="mb-2">✔️ No scripts or extra styles required—safe to remove when no longer needed.</li>
     </ul>
   </section>
+  <script type="module">
+    const cards = document.querySelectorAll('[data-nowplaying-endpoint]');
+
+    const fetchNowPlaying = async (card, output) => {
+      const endpoint = card.getAttribute('data-nowplaying-endpoint');
+      if (!endpoint) return;
+      try {
+        const response = await fetch(endpoint, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        const data = await response.json();
+        output.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        output.textContent = `Error: ${error.message}`;
+      }
+    };
+
+    cards.forEach((card, index) => {
+      const output = card.querySelector(`#nowplaying-${index}`);
+      if (!output) return;
+      const refreshMs = Number(card.getAttribute('data-refresh-ms') || 15000);
+      fetchNowPlaying(card, output);
+      setInterval(() => fetchNowPlaying(card, output), refreshMs);
+    });
+  </script>
   </Layout>

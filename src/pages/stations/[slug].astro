@@ -43,6 +43,45 @@ const streamDetailMeta = [
 const languageLabel = station.language ? station.language : null;
 const streamUrl = station.stream_url || "";
 
+const resolveNowPlayingEndpoint = (inputStreamUrl: string | undefined, stationData: typeof rawStations[0]) => {
+  if (!inputStreamUrl) return null;
+
+  try {
+    const url = new URL(inputStreamUrl);
+    const hostname = url.hostname.toLowerCase();
+    const pathnameSegments = url.pathname.split("/").filter(Boolean);
+
+    if (hostname.includes("radio.co")) {
+      const match = pathnameSegments.find((segment) => /^s[a-z0-9]{9}$/i.test(segment));
+      if (match) {
+        return `https://public.radio.co/station/${match}/nowplaying`;
+      }
+    }
+
+    if (hostname.includes("azuracast")) {
+      const listenIndex = pathnameSegments.indexOf("listen");
+      if (listenIndex !== -1 && pathnameSegments[listenIndex + 1]) {
+        const shortName = pathnameSegments[listenIndex + 1];
+        return `${url.origin}/api/nowplaying/${shortName}`;
+      }
+
+      const publicSlug = stationData.homepage && stationData.homepage.includes("/public/")
+        ? stationData.homepage.split("/").filter(Boolean).pop() ?? null
+        : null;
+
+      if (publicSlug) {
+        return `${url.origin}/api/nowplaying/${publicSlug}`;
+      }
+    }
+  } catch (error) {
+    /* no-op */
+  }
+
+  return null;
+};
+
+const nowPlayingEndpoint = resolveNowPlayingEndpoint(streamUrl, station);
+
 // Get recommended stations based on genre and location
 const getRecommendedStations = () => {
   const recommended: typeof rawStations = rawStations
@@ -146,6 +185,7 @@ const playerScriptConfig = {
   shareTitle: station.name,
   shareText: `Listen live: ${station.name}`,
   shareUrl: canonical,
+  nowPlayingEndpoint,
 };
 
 // Structured data (JSON-LD)
@@ -376,23 +416,29 @@ const structuredData = {
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
         <div class="d-flex align-items-center justify-content-between mb-3">
           <h2 class="h6 fw-bold mb-0"><i class="bi bi-disc me-2"></i> Recently played</h2>
-          <span class="small-muted">Auto filled when metadata is available</span>
+          <span class="small-muted" id="recently-played-hint">Waiting for station metadata…</span>
         </div>
-        <div class="row g-3">
+        <div class="row g-3" id="recently-played">
           <div class="col-12 col-md-6">
-            <div class="p-3 bg-white rounded-3 border border-light-subtle">
+            <div class="p-3 bg-white rounded-3 border border-light-subtle h-100">
               <div class="small-muted mb-1">Previous</div>
-              <div class="fw-semibold">Unknown</div>
-              <div class="small-muted">Artist · 00:00</div>
+              <div class="fw-semibold" id="recent-previous-title">Waiting for metadata</div>
+              <div class="small-muted" id="recent-previous-meta">Tune in to update</div>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="p-3 bg-white rounded-3 border border-light-subtle">
+            <div class="p-3 bg-white rounded-3 border border-light-subtle h-100">
               <div class="small-muted mb-1">Up next</div>
-              <div class="fw-semibold">Unknown</div>
-              <div class="small-muted">Artist · 00:00</div>
+              <div class="fw-semibold" id="recent-next-title">Waiting for metadata</div>
+              <div class="small-muted" id="recent-next-meta">Tune in to update</div>
             </div>
           </div>
+        </div>
+        <div class="mt-3 pt-3 border-top border-light-subtle">
+          <div class="small-muted mb-2">Song history</div>
+          <ul class="list-unstyled mb-0 small" id="recent-history" data-default-message="Waiting for station metadata…">
+            <li class="small-muted">Waiting for station metadata…</li>
+          </ul>
         </div>
       </section>
       {recommendedStations.length > 0 && (
@@ -538,10 +584,12 @@ const structuredData = {
       shareTitle: document.title,
       shareText: document.title,
       shareUrl: window.location.href,
+      nowPlayingEndpoint: null,
     };
-    const playerConfig = configEl instanceof HTMLElement
-      ? JSON.parse(configEl.dataset.config || '{}')
-      : defaultConfig;
+    const playerConfig = {
+      ...defaultConfig,
+      ...(configEl instanceof HTMLElement ? JSON.parse(configEl.dataset.config || '{}') : {}),
+    };
     if (configEl instanceof HTMLElement) {
       configEl.remove();
     }
@@ -558,6 +606,19 @@ const structuredData = {
     const btnShare = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnShare'));
     const btnFavorite = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnFavorite'));
     const btnVote = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnVote'));
+    const nowPlayingEl = /** @type {HTMLElement | null} */ (document.getElementById('nowPlaying'));
+    const nowPlayingDefault = nowPlayingEl?.textContent || '';
+    const previousTitleEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-previous-title'));
+    const previousMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-previous-meta'));
+    const nextTitleEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-title'));
+    const nextMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-meta'));
+    const recentlyPlayedHint = /** @type {HTMLElement | null} */ (document.getElementById('recently-played-hint'));
+    const recentlyPlayedHintDefault = recentlyPlayedHint?.textContent || 'Waiting for station metadata…';
+    const recentlyPlayedHintUpdated = 'Updated just now';
+    const historyListEl = /** @type {HTMLUListElement | null} */ (document.getElementById('recent-history'));
+    const historyDefaultMessage = historyListEl?.dataset?.defaultMessage || 'Waiting for station metadata…';
+    const defaultTrackTitle = 'Waiting for metadata';
+    const defaultTrackMeta = 'Tune in to update';
 
     /**
      * @param {string} text
@@ -576,6 +637,184 @@ const structuredData = {
       const safe = Math.max(0, Math.min(100, percent));
       bufferBar.style.width = `${safe}%`;
     };
+
+    const setTrackCard = (titleEl, metaEl, info) => {
+      if (!titleEl || !metaEl) return;
+      if (info && info.primary) {
+        titleEl.textContent = info.primary;
+        metaEl.textContent = info.meta || defaultTrackMeta;
+      } else {
+        titleEl.textContent = defaultTrackTitle;
+        metaEl.textContent = defaultTrackMeta;
+      }
+    };
+
+    const setHistoryMessage = (message) => {
+      if (!historyListEl) return;
+      historyListEl.innerHTML = '';
+      const placeholder = document.createElement('li');
+      placeholder.className = 'small-muted';
+      placeholder.textContent = message;
+      historyListEl.appendChild(placeholder);
+    };
+
+    const resetHistoryList = () => {
+      setHistoryMessage(historyDefaultMessage);
+    };
+
+    const resetTrackCards = () => {
+      setTrackCard(previousTitleEl, previousMetaEl, null);
+      setTrackCard(nextTitleEl, nextMetaEl, null);
+      if (recentlyPlayedHint) {
+        recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
+      }
+    };
+
+    const toDate = (value) => {
+      if (!value) return null;
+      if (typeof value === 'number') {
+        const ms = value > 1e12 ? value : value * 1000;
+        const date = new Date(ms);
+        return Number.isNaN(date.getTime()) ? null : date;
+      }
+      if (typeof value === 'string') {
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? null : date;
+      }
+      return null;
+    };
+
+    const formatSongEntry = (entry) => {
+      if (!entry) return null;
+      const base = entry.song ? { ...entry.song } : { ...entry };
+      if (!base) return null;
+
+      const playedAt = entry.played_at ?? entry.timestamp ?? entry.time ?? entry.played ?? entry.cued_at ?? base.played_at;
+      if (playedAt && !base.played_at) {
+        base.played_at = playedAt;
+      }
+
+      const primaryCandidates = [
+        typeof base.text === 'string' ? base.text.trim() : '',
+        [base.artist, base.title].filter((part) => typeof part === 'string' && part.trim()).join(' – '),
+        typeof base.title === 'string' ? base.title.trim() : '',
+        typeof base.name === 'string' ? base.name.trim() : '',
+        typeof base.song === 'string' ? base.song.trim() : '',
+      ].map((value) => value && value.trim()).filter(Boolean);
+
+      const primary = primaryCandidates.find((candidate) => candidate && candidate.length > 0) || null;
+
+      const metaParts = [];
+      const artistTitle = [base.artist, base.title]
+        .filter((part) => typeof part === 'string' && part.trim())
+        .join(' · ');
+      if (artistTitle && artistTitle !== primary) {
+        metaParts.push(artistTitle);
+      } else if (typeof base.artist === 'string' && base.artist.trim() && base.artist.trim() !== primary) {
+        metaParts.push(base.artist.trim());
+      }
+
+      if (typeof base.album === 'string' && base.album.trim()) {
+        metaParts.push(base.album.trim());
+      }
+
+      const playedDate = toDate(base.played_at ?? entry.cued_at_timestamp);
+      if (playedDate) {
+        metaParts.push(playedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+      }
+
+      const meta = metaParts.length > 0 ? metaParts.join(' · ') : null;
+
+      if (!primary && !meta) {
+        return null;
+      }
+
+      return { primary: primary || meta || null, meta };
+    };
+
+    const updateHistoryList = (payload) => {
+      if (!historyListEl) return false;
+      const historyEntries = Array.isArray(payload?.song_history) ? payload.song_history : [];
+      const rendered = historyEntries
+        .map((entry) => formatSongEntry(entry))
+        .filter((info) => Boolean(info));
+
+      if (rendered.length === 0) {
+        setHistoryMessage(historyDefaultMessage);
+        return false;
+      }
+
+      historyListEl.innerHTML = '';
+      rendered.forEach((info, index) => {
+        if (!info) return;
+        const item = document.createElement('li');
+        const classes = ['py-2'];
+        if (index) {
+          classes.push('border-top', 'border-light-subtle');
+        }
+        item.className = classes.join(' ');
+
+        const title = document.createElement('div');
+        title.className = 'fw-semibold';
+        title.textContent = info.primary || historyDefaultMessage;
+        item.appendChild(title);
+
+        if (info.meta) {
+          const meta = document.createElement('div');
+          meta.className = 'small-muted';
+          meta.textContent = info.meta;
+          item.appendChild(meta);
+        }
+
+        historyListEl.appendChild(item);
+      });
+
+      return historyListEl.children.length > 0;
+    };
+
+    const extractRecentTracks = (payload) => {
+      if (!payload || typeof payload !== 'object') {
+        return { previous: null, next: null };
+      }
+
+      const previousCandidates = [];
+      if (Array.isArray(payload.song_history)) previousCandidates.push(...payload.song_history);
+      if (Array.isArray(payload.previous_tracks)) previousCandidates.push(...payload.previous_tracks);
+      if (Array.isArray(payload.history)) previousCandidates.push(...payload.history);
+
+      const nextCandidates = [];
+      if (payload.playing_next) nextCandidates.push(payload.playing_next);
+      if (payload.next_track) nextCandidates.push(payload.next_track);
+      if (Array.isArray(payload.queue)) nextCandidates.push(...payload.queue);
+
+      const previous = previousCandidates.map((entry) => formatSongEntry(entry)).find(Boolean) || null;
+      const next = nextCandidates.map((entry) => formatSongEntry(entry)).find(Boolean) || null;
+
+      return { previous, next };
+    };
+
+    const applyRecentTracks = (payload) => {
+      if (!previousTitleEl || !previousMetaEl || !nextTitleEl || !nextMetaEl) {
+        updateHistoryList(payload);
+        return;
+      }
+
+      const { previous, next } = extractRecentTracks(payload);
+      setTrackCard(previousTitleEl, previousMetaEl, previous);
+      setTrackCard(nextTitleEl, nextMetaEl, next);
+
+      const historyUpdated = updateHistoryList(payload);
+
+      if (recentlyPlayedHint) {
+        if ((previous && previous.primary) || (next && next.primary) || historyUpdated) {
+          recentlyPlayedHint.textContent = recentlyPlayedHintUpdated;
+        } else {
+          recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
+        }
+      }
+    };
+
+    resetHistoryList();
 
     if (!playerConfig.hasStream) {
       setStatus('Unavailable');
@@ -687,5 +926,78 @@ const structuredData = {
     btnVote?.addEventListener('click', () => {
       alert('Vote submitted. Thank you.');
     });
+
+    const extractNowPlayingText = (payload) => {
+      if (!payload) return null;
+
+      if (payload.now_playing?.song) {
+        const { artist, title, text } = payload.now_playing.song;
+        if (text) return text;
+        const parts = [];
+        if (artist) parts.push(artist);
+        if (title) parts.push(title);
+        if (parts.length > 0) return parts.join(' – ');
+      }
+
+      if (payload.current_track) {
+        const { artist, title } = payload.current_track;
+        if (artist || title) {
+          return [artist, title].filter(Boolean).join(' – ');
+        }
+      }
+
+      if (Array.isArray(payload.now_playing) && payload.now_playing.length > 0) {
+        const entry = payload.now_playing[0];
+        const { artist, title, song } = entry;
+        if (song) return song;
+        if (artist || title) return [artist, title].filter(Boolean).join(' – ');
+      }
+
+      if (typeof payload.title === 'string' && payload.title.trim()) {
+        return payload.title.trim();
+      }
+
+      if (typeof payload.song === 'string' && payload.song.trim()) {
+        return payload.song.trim();
+      }
+
+      if (payload.artist || payload.track) {
+        return [payload.artist, payload.track].filter(Boolean).join(' – ');
+      }
+
+      const text = payload.text || payload.message;
+      if (typeof text === 'string' && text.trim()) {
+        return text.trim();
+      }
+
+      return null;
+    };
+
+    const pollNowPlaying = async () => {
+      if (!playerConfig.nowPlayingEndpoint || !nowPlayingEl) return;
+
+      try {
+        const response = await fetch(playerConfig.nowPlayingEndpoint, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        const data = await response.json();
+        const text = extractNowPlayingText(data);
+        if (text && nowPlayingEl.textContent !== text) {
+          nowPlayingEl.textContent = text;
+        }
+        applyRecentTracks(data);
+      } catch (error) {
+        console.error('Now playing request failed', error);
+        if (nowPlayingEl.textContent !== nowPlayingDefault) {
+          nowPlayingEl.textContent = nowPlayingDefault;
+        }
+        resetTrackCards();
+        resetHistoryList();
+      }
+    };
+
+    if (playerConfig.nowPlayingEndpoint) {
+      pollNowPlaying();
+      setInterval(pollNowPlaying, 20000);
+    }
   </script>
 </Layout>
