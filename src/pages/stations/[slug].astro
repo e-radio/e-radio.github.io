@@ -229,7 +229,7 @@ const structuredData = {
   <div class="row g-4">
     <div class="col-12 col-lg-8">
       <section class="glass rounded-3 p-3 p-md-4">
-        <div class="d-flex align-items-start justify-content-between gap-3">
+        <div class="d-flex align-items-start justify-content-between gap-3 align-items-center">
           <div class="d-flex align-items-start gap-3">
             {station.favicon ? (
               <img
@@ -265,7 +265,7 @@ const structuredData = {
               </div>
             </div>
           </div>
-          <div class="col-auto text-end d-none d-md-block">
+          <div class="col-auto text-end d-md-block">
             <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
           </div>
         </div>
@@ -397,7 +397,7 @@ const structuredData = {
       </section>
       {recommendedStations.length > 0 && (
     <section class="glass rounded-3 p-3 p-md-4 mt-4">
-      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2"></i> More stations</h2>
+      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2"></i>More stations</h2>
       <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
         {recommendedStations.map((recStation, index) => (
           <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
@@ -423,7 +423,7 @@ const structuredData = {
                     ))}
                   </div>
                 </div>
-                <div class="col-auto text-end d-none d-md-block">
+                <div class="col-auto text-end d-md-block">
                   <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
                 </div>
               </div>
@@ -437,18 +437,18 @@ const structuredData = {
 
     <div class="col-12 col-lg-4">
       <aside id="details" class="glass rounded-3 p-3 p-md-4">
-        <h2 class="h6 fw-bold mb-3"><i class="bi bi-card-text me-2"></i> Station details</h2>
+        <h2 class="h6 fw-bold mb-3"><i class="bi bi-card-text me-2"></i>Station details</h2>
 
         <div class="vstack gap-3">
           {station.stationuuid && (
-            <div class="p-3 bg-white border border-light-subtle rounded-3">
+            <div>
               <div class="small-muted mb-1">Station ID</div>
               <div class="mono">{station.stationuuid}</div>
             </div>
           )}
 
           {hasStream && (
-            <div class="p-3 bg-white border border-light-subtle  rounded-3">
+            <div>
               <div class="small-muted mb-1">Stream URL</div>
               <a class="mono link-muted d-block text-truncate" href={streamUrl} target="_blank" rel="noopener">
                 {streamUrl}
@@ -457,7 +457,7 @@ const structuredData = {
           )}
 
           {hasStream && (
-            <div class="p-3 bg-white border border-light-subtle  rounded-3">
+            <div>
               <div class="d-flex align-items-center justify-content-between mb-2">
                 <div>
                   <div class="small-muted">Stream quality</div>
@@ -470,7 +470,7 @@ const structuredData = {
           )}
 
           {genres.length > 0 && (
-            <div class="p-3 bg-white border border-light-subtle  rounded-3">
+            <div>
               <div class="small-muted mb-2">Genres</div>
               <div class="d-flex flex-wrap gap-2">
                 {genres.map((genre) => (
@@ -482,7 +482,7 @@ const structuredData = {
             </div>
           )}
 
-          <div class="p-3 bg-white border border-light-subtle  rounded-3">
+          <div>
             <div class="small-muted mb-2">Popularity</div>
             <div class="d-flex align-items-center justify-content-between">
               <div>
@@ -495,7 +495,7 @@ const structuredData = {
             </div>
           </div>
 
-          <div class="p-3 bg-white border border-light-subtle rounded-3">
+          <div>
             <div class="small-muted mb-2">Location</div>
             <div class="fw-semibold">{locationLabel}</div>
             <div class="small-muted">
@@ -504,27 +504,21 @@ const structuredData = {
             </div>
           </div>
 
-          <div class="p-3 bg-white border border-light-subtle rounded-3">
+          <div>
             <div class="small-muted mb-2">More</div>
-            <div class="d-grid gap-2">
-              <a class="btn btn-outline-primary rounded-pill" href="/countries/greece/">
-                <i class="bi bi-geo me-1"></i> Browse Greece stations
-              </a>
-              <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="noopener">
-                <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
-              </a>
+            <div class="d-grid gap-1">
+              <a href="/" class="text-decoration-none">Browse Greece stations</a>
+              <a href={radddioURL} target="_blank" rel="noopener" class="text-decoration-none">Listen on Radddio</a>
               {station.homepage && (
-                <a class="btn btn-outline-primary rounded-pill" href={station.homepage} target="_blank" rel="noopener">
-                  <i class="bi bi-globe2 me-1"></i> Station website
-                </a>
-              )}
+              <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station website</a>
+               )}
             </div>
           </div>
         </div>
       </aside>
 
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
-        <h2 class="h6 fw-bold mb-3"><i class="bi bi-question-circle me-2"></i> Tips</h2>
+        <h2 class="h6 fw-bold mb-3"><i class="bi bi-question-circle me-2"></i>Useful Tips</h2>
         <ul class="small-muted mb-0">
           <li>If playback stops, try switching networks or refresh the page.</li>
           <li>Some stations limit connections; retry after 10–30 seconds.</li>
