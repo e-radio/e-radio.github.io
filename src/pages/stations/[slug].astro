@@ -491,7 +491,7 @@ const structuredData = {
                 {hasStream && <span class="badge rounded-pill badge-soft">Live</span>}
                 {hasStream && <span class="badge rounded-pill text-bg-light border">Verified stream</span>}
               </div>
-              <div class="d-flex flex-wrap gap-3 small-muted">
+              <div class="d-flex flex-wrap gap-2 gap-md-3 small-muted">
                 {locationLabel && (
                   <span><i class="bi bi-geo-alt me-1"></i>{locationLabel}</span>
                 )}
@@ -503,9 +503,6 @@ const structuredData = {
                 )}
               </div>
             </div>
-          </div>
-          <div class="col-auto text-end d-md-block">
-            <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
           </div>
         </div>
 
@@ -590,24 +587,17 @@ const structuredData = {
         )}
 
         {hasStream && (
-          <div class="d-flex flex-wrap gap-2 mt-4">
-            {station.homepage && (
-              <a class="btn btn-outline-primary rounded-pill" href={station.homepage} target="_blank" rel="noopener">
-                <i class="bi bi-globe2 me-1"></i> Website
+          <div class="d-flex flex-wrap justify-content-center mt-4">
+            <div class="text-center">
+              <a
+                href={radddioURL}
+                class="text-decoration-none radddio-badge"
+                target="_blank"
+                aria-label="Listen on Radddio"
+              >
+                <img src={radddioBadgeUrl} alt="Radddio app badge" />
               </a>
-            )}
-            <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="noopener">
-              <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
-            </a>
-            <a class="btn btn-outline-secondary rounded-pill" href={streamUrl} target="_blank" rel="noopener">
-              <i class="bi bi-link-45deg me-1"></i> Open stream
-            </a>
-            <button class="btn btn-outline-secondary rounded-pill" id="btnCopyLink" type="button">
-              <i class="bi bi-clipboard me-1"></i> Copy link
-            </button>
-            <button class="btn btn-outline-danger rounded-pill" id="btnReport" type="button">
-              <i class="bi bi-bug me-1"></i> Report stream issue
-            </button>
+            </div>
           </div>
         )}
       </section>
@@ -752,11 +742,14 @@ const structuredData = {
           <div>
             <div class="small-muted mb-2">More</div>
             <div class="d-grid gap-1">
-              <a href="/" class="text-decoration-none">Browse Greece stations</a>
+              <a href="/" class="text-decoration-none">Browse Greece Stations</a>
               <a href={radddioURL} target="_blank" rel="noopener" class="text-decoration-none">Listen on Radddio</a>
               {station.homepage && (
-              <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station website</a>
+              <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station Website</a>
                )}
+              <button id="btnCopyLink" type="button" class="btn btn-link p-0 text-decoration-none text-start text-secondary">Copy Link</button>
+            <a class="text-decoration-none text-secondary" href={streamUrl} target="_blank" rel="noopener">Open Stream</a>
+            <button class="btn btn-link p-0 text-danger text-decoration-none text-start" id="btnReport" type="button">Report Stream Issue</button>
             </div>
           </div>
         </div>
