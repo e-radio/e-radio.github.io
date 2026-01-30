@@ -820,6 +820,11 @@ const structuredData = {
     const historyDefaultMessage = historyListEl?.dataset?.defaultMessage || 'Waiting for station metadata…';
     const defaultTrackTitle = 'Waiting for metadata';
     const defaultTrackMeta = 'Tune in to update';
+    const HISTORY_REFRESH_INTERVAL = 60000;
+    let lastHistoryFetch = 0;
+    let lastNowPlayingText = null;
+    let lastHistoryRenderedSignature = null;
+    let historyDisabled = !playerConfig.historyEndpoint;
 
     /**
      * @param {string} text
@@ -857,6 +862,7 @@ const structuredData = {
       placeholder.className = 'small-muted';
       placeholder.textContent = message;
       historyListEl.appendChild(placeholder);
+      lastHistoryRenderedSignature = null;
     };
 
     const resetHistoryList = () => {
@@ -869,6 +875,42 @@ const structuredData = {
       if (recentlyPlayedHint) {
         recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
       }
+    };
+
+    const gatherSongHistory = (payload) => {
+      if (!payload || typeof payload !== 'object') {
+        return [];
+      }
+
+      const collected = [];
+      const pushEntry = (source) => {
+        if (!source) return;
+        const clone = { ...source };
+        const playedAt = clone.played_at ?? clone.playedat ?? clone.playedat_ts ?? clone.played ?? clone.timestamp ?? clone.date;
+        if (playedAt && !clone.played_at) {
+          clone.played_at = playedAt;
+        }
+        if (!clone.time && clone.played_at) {
+          clone.time = clone.played_at;
+        }
+        if (clone.song && typeof clone.song === 'string') {
+          clone.song = { text: clone.song };
+        }
+        collected.push(clone);
+      };
+
+      const candidates = [
+        Array.isArray(payload.song_history) ? payload.song_history : null,
+        Array.isArray(payload.songhistory) ? payload.songhistory : null,
+        Array.isArray(payload.history) ? payload.history : null,
+      ];
+
+      candidates.forEach((items) => {
+        if (!items) return;
+        items.forEach((entry) => pushEntry(entry));
+      });
+
+      return collected;
     };
 
     const toDate = (value) => {
@@ -935,7 +977,7 @@ const structuredData = {
 
     const updateHistoryList = (payload) => {
       if (!historyListEl) return false;
-      const historyEntries = Array.isArray(payload?.song_history) ? payload.song_history : [];
+      const historyEntries = gatherSongHistory(payload);
       const rendered = historyEntries
         .map((entry) => formatSongEntry(entry))
         .filter((info) => Boolean(info));
@@ -943,6 +985,11 @@ const structuredData = {
       if (rendered.length === 0) {
         setHistoryMessage(historyDefaultMessage);
         return false;
+      }
+
+      const signature = JSON.stringify(rendered);
+      if (signature === lastHistoryRenderedSignature) {
+        return historyListEl.children.length > 0;
       }
 
       historyListEl.innerHTML = '';
@@ -970,6 +1017,7 @@ const structuredData = {
         historyListEl.appendChild(item);
       });
 
+      lastHistoryRenderedSignature = signature;
       return historyListEl.children.length > 0;
     };
 
@@ -978,10 +1026,8 @@ const structuredData = {
         return { previous: null, next: null };
       }
 
-      const previousCandidates = [];
-      if (Array.isArray(payload.song_history)) previousCandidates.push(...payload.song_history);
+      const previousCandidates = gatherSongHistory(payload);
       if (Array.isArray(payload.previous_tracks)) previousCandidates.push(...payload.previous_tracks);
-      if (Array.isArray(payload.history)) previousCandidates.push(...payload.history);
 
       const nextCandidates = [];
       if (payload.playing_next) nextCandidates.push(payload.playing_next);
@@ -1286,8 +1332,14 @@ const structuredData = {
       return entries;
     };
 
-    const fetchAndApplyHistory = async () => {
-      if (!playerConfig.historyEndpoint) return false;
+    const fetchAndApplyHistory = async (options = {}) => {
+      if (!playerConfig.historyEndpoint || historyDisabled) return false;
+
+      const force = Boolean(options.force);
+      const now = Date.now();
+      if (!force && lastHistoryFetch && now - lastHistoryFetch < HISTORY_REFRESH_INTERVAL) {
+        return false;
+      }
 
       try {
         const response = await fetch(playerConfig.historyEndpoint, { cache: 'no-store' });
@@ -1302,16 +1354,30 @@ const structuredData = {
             if (fallbackText && nowPlayingEl && nowPlayingEl.textContent !== fallbackText) {
               nowPlayingEl.textContent = fallbackText;
             }
+            lastHistoryFetch = Date.now();
+            if (historyApplied) {
+              historyDisabled = false;
+            }
             return historyApplied;
           } catch (parseError) {
             console.error('Failed to parse JSON history response', parseError);
+            lastHistoryFetch = Date.now();
+            if (playerConfig.serverType === 'shoutcast') {
+              historyDisabled = true;
+            }
             return false;
           }
         }
 
         const raw = await response.text();
         const entries = parseHistoryEntries(raw, playerConfig.serverType || 'unknown');
-        if (!entries.length) return false;
+        if (!entries.length) {
+          lastHistoryFetch = Date.now();
+          if (playerConfig.serverType === 'shoutcast') {
+            historyDisabled = true;
+          }
+          return false;
+        }
 
         const [current, ...rest] = entries;
         const historyEntries = rest.map((entry) => ({
@@ -1337,9 +1403,16 @@ const structuredData = {
           updatedNowPlaying = true;
         }
 
-        return historyApplied || updatedNowPlaying;
+        const result = historyApplied || updatedNowPlaying;
+        lastHistoryFetch = Date.now();
+        historyDisabled = false;
+        return result;
       } catch (error) {
         console.error('History request failed', error);
+        lastHistoryFetch = Date.now();
+        if (playerConfig.serverType === 'shoutcast') {
+          historyDisabled = true;
+        }
         return false;
       }
     };
@@ -1355,12 +1428,16 @@ const structuredData = {
           throw new Error('Empty now playing payload');
         }
         const text = extractNowPlayingText(data);
+        const textChanged = Boolean(text && text !== lastNowPlayingText);
         if (text && nowPlayingEl.textContent !== text) {
           nowPlayingEl.textContent = text;
         }
+        if (text) {
+          lastNowPlayingText = text;
+        }
         const historyApplied = applyRecentTracks(data);
-        if (!historyApplied) {
-          await fetchAndApplyHistory();
+        if (!historyApplied && !historyDisabled) {
+          await fetchAndApplyHistory({ force: textChanged });
         }
       } catch (error) {
         console.error('Now playing request failed', error);
@@ -1369,6 +1446,9 @@ const structuredData = {
         }
         resetTrackCards();
         resetHistoryList();
+        lastNowPlayingText = null;
+        lastHistoryFetch = 0;
+        historyDisabled = historyDisabled || !playerConfig.historyEndpoint;
       }
     };
 
