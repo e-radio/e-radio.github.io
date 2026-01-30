@@ -1038,7 +1038,7 @@
       "house",
       "pop",
       "rap",
-      "rnb",
+      "r&b",
       "rock"
     ],
     "language": "greek",
@@ -1417,7 +1417,7 @@
       "dance",
       "house",
       "techno",
-      "top40"
+      "top 40"
     ],
     "language": "english",
     "bitrate": 192,
@@ -1586,7 +1586,8 @@
     "homepage": null,
     "favicon": "/station-icons/ak-radio-placeholder.webp",
     "genres": [
-      "r&b/urban"
+      "r&b",
+      "urban"
     ],
     "language": null,
     "bitrate": 256,
@@ -1612,7 +1613,7 @@
     "genres": [
       "funk",
       "jazz",
-      "rnb",
+      "r&b",
       "soul"
     ],
     "language": "greek",
@@ -3678,7 +3679,7 @@
     "homepage": "http://www.berock-radio.com/",
     "favicon": "/station-icons/berock-radio-placeholder.webp",
     "genres": [
-      "80s rock",
+      "80s",
       "rock"
     ],
     "language": "english",
@@ -3778,7 +3779,6 @@
     "favicon": "/station-icons/best-92-6.webp",
     "genres": [
       "best",
-      "best 92.6",
       "bestara"
     ],
     "language": "greek",
@@ -5180,7 +5180,7 @@
     "genres": [
       "dance",
       "electronic",
-      "hiphop",
+      "hip-hop",
       "techno"
     ],
     "language": null,
@@ -5934,7 +5934,7 @@
     "genres": [
       "dance",
       "electronic",
-      "hiphop",
+      "hip-hop",
       "pop",
       "trance"
     ],
@@ -6417,7 +6417,7 @@
       "nu disco",
       "nu funk",
       "soul",
-      "triphop"
+      "trip-hop"
     ],
     "language": "english",
     "bitrate": 192,
@@ -6490,7 +6490,7 @@
     "genres": [
       "90s",
       "classic hits",
-      "dance 90s",
+      "dance",
       "oldies"
     ],
     "language": "english",
@@ -6635,7 +6635,7 @@
     "favicon": "/station-icons/deejay-97-5-greece-corfu.webp",
     "genres": [
       "hits",
-      "top40"
+      "top 40"
     ],
     "language": "greek",
     "bitrate": 192,
@@ -9015,8 +9015,7 @@
     "homepage": "https://www.ertecho.gr/radio/958fm/",
     "favicon": "/station-icons/ert-958fm.webp",
     "genres": [
-      "22.9444° e",
-      "40.6401° n"
+      "pop"
     ],
     "language": "greek",
     "bitrate": 192,
@@ -10155,8 +10154,8 @@
     "homepage": "http://www.fishbone-radio.gr/",
     "favicon": "/station-icons/fishbone-thessaloniki.png",
     "genres": [
-      "hiphop",
-      "r & b",
+      "hip-hop",
+      "r&b",
       "reggae"
     ],
     "language": null,
@@ -12320,7 +12319,7 @@
     "favicon": "/station-icons/home-89-1-chalkida.png",
     "genres": [
       "dance",
-      "hiphop",
+      "hip-hop",
       "pop",
       "reggae",
       "rock",
@@ -12612,7 +12611,8 @@
     "homepage": "https://www.ianos.gr/",
     "favicon": "/station-icons/ianos-radio-thessaloniki.png",
     "genres": [
-      "ambient and relaxation music"
+      "ambient",
+      "relaxation music"
     ],
     "language": null,
     "bitrate": 256,
@@ -13952,7 +13952,8 @@
     "homepage": "http://www.orionmedia.gr/",
     "favicon": "/station-icons/kiss-fm-100-4-karditsa.webp",
     "genres": [
-      "adult hits & dance - adult hits/adult"
+      "hits",
+      "dance"
     ],
     "language": null,
     "bitrate": 128,
@@ -14028,7 +14029,7 @@
     "favicon": "/station-icons/kiss-mjt-101-5-lesvos-placeholder.webp",
     "genres": [
       "dance",
-      "hiphop",
+      "hip-hop",
       "pop"
     ],
     "language": "greek",
@@ -14469,7 +14470,7 @@
     "favicon": "/station-icons/kyklos.png",
     "genres": [
       "greek",
-      "hiphop"
+      "hip-hop"
     ],
     "language": null,
     "bitrate": 320,
@@ -15531,7 +15532,7 @@
     "homepage": "https://www.loveradio.gr/",
     "favicon": "/station-icons/love-trap-athens.png",
     "genres": [
-      "hiphop",
+      "hip-hop",
       "rap",
       "trap"
     ],
@@ -16359,7 +16360,7 @@
     "genres": [
       "dance",
       "electronic",
-      "hiphop",
+      "hip-hop",
       "pop"
     ],
     "language": "greek",
@@ -16954,7 +16955,8 @@
     "homepage": null,
     "favicon": "/station-icons/metropolis-95-5-c8f270d9-placeholder.webp",
     "genres": [
-      "talk & speech"
+      "talk",
+      "speech"
     ],
     "language": null,
     "bitrate": 128,
@@ -17882,7 +17884,7 @@
     "favicon": "/station-icons/music-corner-placeholder.webp",
     "genres": [
       "disco",
-      "rnb",
+      "r&b",
       "smooth jazz",
       "soul"
     ],
@@ -19949,7 +19951,7 @@
       "greek music",
       "hits",
       "pop",
-      "top40"
+      "top 40"
     ],
     "language": "greek",
     "bitrate": 128,
@@ -21247,10 +21249,10 @@
     "homepage": "https://www.facebook.com/934deejay/",
     "favicon": "/station-icons/preveza-dee-jay-93-4-preveza.png",
     "genres": [
-      "hiphop",
+      "hip-hop",
       "pop",
       "rap",
-      "rnb"
+      "r&b"
     ],
     "language": "greek",
     "bitrate": 128,
@@ -21300,7 +21302,7 @@
     "genres": [
       "dance",
       "electronic",
-      "hiphop",
+      "hip-hop",
       "pop",
       "trance"
     ],
@@ -21473,8 +21475,6 @@
     "homepage": "https://www.psyndora.com/",
     "favicon": "/station-icons/psyndora-chillout-hellas.png",
     "genres": [
-      "2 stations",
-      "24/7",
       "chill",
       "chillout",
       "non-stop music",
@@ -22142,7 +22142,6 @@
     "homepage": "https://www.radioart.com/",
     "favicon": "/station-icons/radio-art-a-cappella.jpg",
     "genres": [
-      "a cappella",
       "music"
     ],
     "language": "english",
@@ -22789,7 +22788,6 @@
     "homepage": "https://www.radioart.com/",
     "favicon": "/station-icons/radio-art-chillout.jpg",
     "genres": [
-      "#chillout",
       "chillout",
       "electronic"
     ],
@@ -23118,7 +23116,6 @@
     "homepage": "https://www.radioart.com/",
     "favicon": "/station-icons/radio-art-didgeridoo.ico",
     "genres": [
-      "didgeridoo",
       "relaxing"
     ],
     "language": "english",
@@ -23447,8 +23444,7 @@
     "favicon": "/station-icons/radio-art-george-handel.jpg",
     "genres": [
       "classical",
-      "easy listening",
-      "george handel"
+      "easy listening"
     ],
     "language": "english",
     "bitrate": 96,
@@ -27074,7 +27070,6 @@
     "favicon": "/station-icons/radio-galaxy-99.png",
     "genres": [
       "dance",
-      "galaxy99",
       "hits",
       "house"
     ],
@@ -27363,7 +27358,7 @@
       "classic hits",
       "greek music",
       "hits",
-      "top40"
+      "top 40"
     ],
     "language": "greek",
     "bitrate": 128,
@@ -28224,12 +28219,10 @@
     "favicon": "/station-icons/radiokyklos-greek-hiphop.png",
     "genres": [
       "greek",
-      "hip hop",
       "hip-hop",
-      "hip-hop and rap oldies",
-      "hiphop",
+      "oldies",
       "rap",
-      "rap hiphop rnb"
+      "r&b"
     ],
     "language": null,
     "bitrate": 128,
@@ -28513,7 +28506,8 @@
     "homepage": null,
     "favicon": "/station-icons/real-fm.png",
     "genres": [
-      "talk & speech"
+      "talk",
+      "speech"
     ],
     "language": null,
     "bitrate": 192,
@@ -28895,7 +28889,6 @@
     "homepage": "http://www.republicradio.gr/",
     "favicon": "/station-icons/republic-radio-thessaloniki-placeholder.webp",
     "genres": [
-      "g+i=♡",
       "mixed"
     ],
     "language": "english",
@@ -30754,7 +30747,7 @@
       "pop",
       "pop dance",
       "pop music",
-      "rnb",
+      "r&b",
       "top hits"
     ],
     "language": "english",
@@ -30781,15 +30774,13 @@
     "genres": [
       "bossa nova",
       "bossanova",
-      "chillout+lounge",
+      "chillout",
       "easy listening",
       "eclectic",
       "lounge",
       "lounge music",
       "smooth lounge",
-      "trip hop",
-      "trip-hop",
-      "triphop"
+      "trip-hop"
     ],
     "language": "english",
     "bitrate": 72,
@@ -34171,7 +34162,7 @@
     "genres": [
       "dance",
       "electronic",
-      "hiphop",
+      "hip-hop",
       "pop",
       "trance"
     ],
@@ -34224,9 +34215,9 @@
     "favicon": "/station-icons/volos-dee-jay-104-5-volos-placeholder.webp",
     "genres": [
       "electronic",
-      "hiphop",
+      "hip-hop",
       "pop",
-      "rnb",
+      "r&b",
       "trance"
     ],
     "language": "greek",
@@ -34472,7 +34463,7 @@
     "favicon": "/station-icons/x-radio-91-3-livadia.ico",
     "genres": [
       "dance",
-      "hiphop",
+      "hip-hop",
       "mainstream",
       "pop"
     ],
@@ -34521,9 +34512,9 @@
     "favicon": "/station-icons/xanthi-dee-jay-94-6-xanthi-placeholder.webp",
     "genres": [
       "electronic",
-      "hiphop",
+      "hip-hop",
       "pop",
-      "rnb",
+      "r&b",
       "techno"
     ],
     "language": "greek",
@@ -38362,8 +38353,7 @@
       "ert",
       "i foni tis elladas",
       "public radio",
-      "voice of greece",
-      "voiceofgreece"
+      "voice of greece"
     ],
     "language": "greek",
     "bitrate": 256,
@@ -39448,7 +39438,7 @@
     "favicon": "/station-icons/100-3-heraclion.png",
     "genres": [
       "greek traditional",
-      "talk radio"
+      "talk"
     ],
     "language": "greek",
     "bitrate": 96,
@@ -40165,9 +40155,7 @@
     "stream_url": "http://eu1.radiolydia.com:1086/;",
     "homepage": "http://www.radiolydia.com/",
     "favicon": "/station-icons/fm-94-2-placeholder.webp",
-    "genres": [
-      "undefined"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
