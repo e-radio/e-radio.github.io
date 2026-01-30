@@ -60,23 +60,174 @@ const AZURACAST_NOW_PLAYING_OVERRIDES: Record<string, string> = {
   "live-thessaloniki": "https://azuracast.streams.gr/api/nowplaying/paulosvasileioulive",
 };
 
-const resolveNowPlayingEndpoint = (inputStreamUrl: string | undefined, stationData: typeof rawStations[0]) => {
+const wrapWithCorsProxy = (rawUrl: string) => {
+  if (!rawUrl) return rawUrl;
+  if (/^https:\/\/r\.jina\.ai\//i.test(rawUrl)) {
+    return rawUrl;
+  }
+  const normalized = rawUrl.replace(/^https?:\/\//i, (protocol) => protocol.toLowerCase());
+  return `https://r.jina.ai/${normalized}`;
+};
+
+type ServerKind =
+  | "azuracast"
+  | "centovacast"
+  | "shoutcast"
+  | "icecast"
+  | "radio.co"
+  | "unknown";
+
+const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationData: typeof rawStations[0]) => {
   const overridden = AZURACAST_NOW_PLAYING_OVERRIDES[stationData.slug];
   if (overridden) {
-    return overridden;
+    return { nowPlaying: overridden, history: null, serverType: "azuracast" as ServerKind };
   }
 
-  if (!inputStreamUrl) return null;
+  if (!inputStreamUrl) {
+    return { nowPlaying: null, history: null, serverType: "unknown" as ServerKind };
+  }
+
+  let nowPlaying: string | null = null;
+  let history: string | null = null;
+  let serverType: ServerKind = "unknown";
 
   try {
     const url = new URL(inputStreamUrl);
     const hostname = url.hostname.toLowerCase();
     const pathnameSegments = url.pathname.split("/").filter(Boolean);
+    const lowerSegments = pathnameSegments.map((segment) => segment.toLowerCase());
+
+    const firstNumericSegment = pathnameSegments.find((segment) => /^\d+$/.test(segment));
+    const portFromPath = firstNumericSegment && Number(firstNumericSegment) > 32 ? firstNumericSegment : null;
+    const pathLower = url.pathname.toLowerCase();
+    const isStreamsOvhHost = /streams\.ovh$/i.test(hostname);
+    const isStreamsOvhINode = /^i\d+\.streams\.ovh$/.test(hostname);
+    const usesShoutcastStylePath = pathLower.includes(";");
+    const hasListenPls = pathLower.includes("listen.pls") || pathLower.endsWith(".pls");
+    const hasShoutcastQuery = url.searchParams.has("sid") || url.searchParams.has("type") || url.searchParams.has("icy");
+    const hasShoutcastIndicators = usesShoutcastStylePath || hasListenPls || hasShoutcastQuery;
+
+    const sidFromQuery = url.searchParams.get("sid");
+    const sidFromPath = pathnameSegments.find((segment) => /^sid\d+$/i.test(segment));
+    const numericSidSegment = pathnameSegments.find((segment) => {
+      if (!/^\d+$/.test(segment)) return false;
+      if (segment === portFromPath) return false;
+      return Number(segment) <= 32;
+    });
+
+    const guessShoutcastSid = () => {
+      if (sidFromQuery && /^\d+$/.test(sidFromQuery)) {
+        return sidFromQuery;
+      }
+      if (sidFromPath) {
+        const extracted = sidFromPath.replace(/[^0-9]/g, "");
+        if (extracted) return extracted;
+      }
+      if (numericSidSegment) {
+        return numericSidSegment;
+      }
+      return "1";
+    };
+
+    const resolveShoutcastBase = () => {
+      const portValue = url.port || portFromPath;
+      if (portValue) {
+        return `${url.protocol}//${hostname}:${portValue}`;
+      }
+      return url.origin;
+    };
+
+    const sanitizeMount = (segment: string | undefined | null) => {
+      if (!segment) return null;
+      const cleaned = segment.split(/[.;?]/)[0];
+      return cleaned ? cleaned.trim() : null;
+    };
+
+    const deriveIcecastMount = () => {
+      const mpParam = url.searchParams.get("mp") || url.searchParams.get("mount");
+      if (mpParam) {
+        return mpParam.startsWith("/") ? mpParam : `/${mpParam}`;
+      }
+
+      const icIndex = lowerSegments.indexOf("ic");
+      if (icIndex !== -1 && pathnameSegments[icIndex + 1]) {
+        return `/${pathnameSegments[icIndex + 1]}`;
+      }
+
+      if (pathnameSegments.length > 0) {
+        const last = pathnameSegments[pathnameSegments.length - 1];
+        const secondLast = pathnameSegments[pathnameSegments.length - 2];
+        if (last && last !== "stream" && !last.includes(".")) {
+          return `/${last}`;
+        }
+        if (last === "stream" && secondLast && secondLast !== "ic") {
+          return `/${secondLast}`;
+        }
+      }
+
+      return "/stream";
+    };
+
+    const looksLikeIcecast = () => {
+      if (hostname.startsWith("ice.")) return true;
+      if (hostname.includes(".ice.")) return true;
+      if (lowerSegments.includes("ic")) return true;
+      if (url.searchParams.has("mp") || url.searchParams.has("mount")) return true;
+      if (pathnameSegments.some((segment) => segment.endsWith(".ogg") || segment.endsWith(".opus"))) return true;
+      if (isStreamsOvhINode && !hasShoutcastIndicators) return true;
+      return false;
+    };
+
+    if (isStreamsOvhHost) {
+      const mountCarrierIndex = lowerSegments.findIndex((segment) => ["sc", "ssl", "ic"].includes(segment));
+      if (mountCarrierIndex !== -1) {
+        const mount = sanitizeMount(pathnameSegments[mountCarrierIndex + 1]);
+        if (mount) {
+          const baseRpc = `https://${hostname}:2199/rpc/${mount}`;
+          nowPlaying = wrapWithCorsProxy(`${baseRpc}/streaminfo.get`);
+          serverType = "centovacast";
+          return { nowPlaying, history, serverType };
+        }
+      }
+
+      if (looksLikeIcecast()) {
+        const mount = deriveIcecastMount();
+        const base = url.port ? `${url.protocol}//${hostname}:${url.port}` : url.origin;
+        const encodedMount = encodeURIComponent(mount);
+        nowPlaying = wrapWithCorsProxy(`${base}/status-json.xsl?mount=${encodedMount}`);
+        history = wrapWithCorsProxy(`${base}/status.xsl?mount=${encodedMount}`);
+        serverType = "icecast";
+        return { nowPlaying, history, serverType };
+      }
+
+      const sid = guessShoutcastSid();
+      const portValue = url.port || portFromPath;
+      if (portValue) {
+        const base = `${url.protocol}//${hostname}:${portValue}`;
+        nowPlaying = wrapWithCorsProxy(`${base}/stats?sid=${sid}&json=1`);
+        history = wrapWithCorsProxy(`${base}/played.html?sid=${sid}`);
+        serverType = "shoutcast";
+        return { nowPlaying, history, serverType };
+      }
+    }
+
+    const isLikelyShoutcastHost = /radiohost|shoutca\.st|radioca\.st|myradiostream|onweb\.gr|streamwithq|fastcast4u|magicstreams|viastreaming|dedicateware|proradio|viastream/i.test(hostname);
+
+    if (isLikelyShoutcastHost || hasShoutcastIndicators) {
+      const sid = guessShoutcastSid();
+      const base = resolveShoutcastBase();
+      nowPlaying = wrapWithCorsProxy(`${base}/stats?sid=${sid}&json=1`);
+      history = wrapWithCorsProxy(`${base}/played.html?sid=${sid}`);
+      serverType = "shoutcast";
+      return { nowPlaying, history, serverType };
+    }
 
     if (hostname.includes("radio.co")) {
       const match = pathnameSegments.find((segment) => /^s[a-z0-9]{9}$/i.test(segment));
       if (match) {
-        return `https://public.radio.co/station/${match}/nowplaying`;
+        nowPlaying = `https://public.radio.co/station/${match}/nowplaying`;
+        serverType = "radio.co";
+        return { nowPlaying, history, serverType };
       }
     }
 
@@ -84,7 +235,9 @@ const resolveNowPlayingEndpoint = (inputStreamUrl: string | undefined, stationDa
       const listenIndex = pathnameSegments.indexOf("listen");
       if (listenIndex !== -1 && pathnameSegments[listenIndex + 1]) {
         const shortName = pathnameSegments[listenIndex + 1];
-        return `${url.origin}/api/nowplaying/${shortName}`;
+        nowPlaying = `${url.origin}/api/nowplaying/${shortName}`;
+        serverType = "azuracast";
+        return { nowPlaying, history, serverType };
       }
 
       const publicSlug = stationData.homepage && stationData.homepage.includes("/public/")
@@ -92,29 +245,39 @@ const resolveNowPlayingEndpoint = (inputStreamUrl: string | undefined, stationDa
         : null;
 
       if (publicSlug) {
-        return `${url.origin}/api/nowplaying/${publicSlug}`;
+        nowPlaying = `${url.origin}/api/nowplaying/${publicSlug}`;
+        serverType = "azuracast";
+        return { nowPlaying, history, serverType };
       }
 
       const sanitize = (value: string | null | undefined) =>
         (value || "").toLowerCase().replace(/[^a-z0-9]+/g, "");
       const nameCandidate = sanitize(stationData.name);
       if (nameCandidate) {
-        return `${url.origin}/api/nowplaying/${nameCandidate}`;
+        nowPlaying = `${url.origin}/api/nowplaying/${nameCandidate}`;
+        serverType = "azuracast";
+        return { nowPlaying, history, serverType };
       }
 
       const slugCandidate = sanitize(stationData.slug);
       if (slugCandidate) {
-        return `${url.origin}/api/nowplaying/${slugCandidate}`;
+        nowPlaying = `${url.origin}/api/nowplaying/${slugCandidate}`;
+        serverType = "azuracast";
+        return { nowPlaying, history, serverType };
       }
     }
   } catch (error) {
     /* no-op */
   }
 
-  return null;
+  return { nowPlaying, history, serverType };
 };
 
-const nowPlayingEndpoint = resolveNowPlayingEndpoint(streamUrl, station);
+const {
+  nowPlaying: nowPlayingEndpoint,
+  history: historyEndpoint,
+  serverType,
+} = resolveMetadataEndpoints(streamUrl, station);
 
 // Get recommended stations based on genre and location
 const getRecommendedStations = () => {
@@ -220,6 +383,8 @@ const playerScriptConfig = {
   shareText: `Listen live: ${station.name}`,
   shareUrl: canonical,
   nowPlayingEndpoint,
+  historyEndpoint,
+  serverType,
 };
 
 // Structured data (JSON-LD)
@@ -619,6 +784,8 @@ const structuredData = {
       shareText: document.title,
       shareUrl: window.location.href,
       nowPlayingEndpoint: null,
+      historyEndpoint: null,
+      serverType: "unknown",
     };
     const playerConfig = {
       ...defaultConfig,
@@ -830,7 +997,7 @@ const structuredData = {
     const applyRecentTracks = (payload) => {
       if (!previousTitleEl || !previousMetaEl || !nextTitleEl || !nextMetaEl) {
         updateHistoryList(payload);
-        return;
+        return false;
       }
 
       const { previous, next } = extractRecentTracks(payload);
@@ -838,6 +1005,7 @@ const structuredData = {
       setTrackCard(nextTitleEl, nextMetaEl, next);
 
       const historyUpdated = updateHistoryList(payload);
+      const cardsUpdated = Boolean(previous?.primary) || Boolean(next?.primary);
 
       if (recentlyPlayedHint) {
         if ((previous && previous.primary) || (next && next.primary) || historyUpdated) {
@@ -846,6 +1014,8 @@ const structuredData = {
           recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
         }
       }
+
+      return historyUpdated || cardsUpdated;
     };
 
     resetHistoryList();
@@ -964,6 +1134,48 @@ const structuredData = {
     const extractNowPlayingText = (payload) => {
       if (!payload) return null;
 
+      if (payload.icestats) {
+        const sourceData = (() => {
+          const { source } = payload.icestats;
+          if (Array.isArray(source)) {
+            return source.find((entry) => entry && (entry.yp_currently_playing || entry.title || entry.songtitle)) || source[0];
+          }
+          return source;
+        })();
+
+        if (sourceData) {
+          const { yp_currently_playing, title, songtitle, artist, server_name } = sourceData;
+          const candidates = [yp_currently_playing, title, songtitle]
+            .concat(artist && title ? `${artist} – ${title}` : null)
+            .concat(server_name && title ? `${server_name} – ${title}` : null)
+            .filter((value) => typeof value === 'string' && value.trim());
+          const resolved = candidates.find((value) => Boolean(value?.trim()));
+          if (resolved) {
+            return resolved.trim();
+          }
+        }
+      }
+
+      if (Array.isArray(payload.data) && payload.data.length > 0) {
+        const entry = payload.data[0];
+        if (entry) {
+          if (typeof entry.song === 'string' && entry.song.trim()) {
+            return entry.song.trim();
+          }
+          if (entry.track) {
+            const { artist, title } = entry.track;
+            const candidates = [artist, title].filter((value) => typeof value === 'string' && value.trim());
+            if (candidates.length > 0) {
+              return candidates.join(' – ');
+            }
+          }
+          if (typeof entry.summary === 'string' && entry.summary.trim()) {
+            const summary = entry.summary.replace(/<[^>]+>/g, '').trim();
+            if (summary) return summary;
+          }
+        }
+      }
+
       if (payload.now_playing?.song) {
         const { artist, title, text } = payload.now_playing.song;
         if (text) return text;
@@ -999,6 +1211,10 @@ const structuredData = {
         return [payload.artist, payload.track].filter(Boolean).join(' – ');
       }
 
+      if (typeof payload.songtitle === 'string' && payload.songtitle.trim()) {
+        return payload.songtitle.trim();
+      }
+
       const text = payload.text || payload.message;
       if (typeof text === 'string' && text.trim()) {
         return text.trim();
@@ -1007,18 +1223,145 @@ const structuredData = {
       return null;
     };
 
+    const parseNowPlayingResponse = async (response) => {
+      const contentType = response.headers?.get?.('content-type') || '';
+      if (contentType && contentType.includes('application/json')) {
+        try {
+          return await response.json();
+        } catch (error) {
+          console.error('Failed to parse JSON response', error);
+        }
+      }
+
+      try {
+        const rawText = await response.text();
+        if (!rawText) {
+          return null;
+        }
+
+        const trimmed = rawText.trim();
+        const bracesIndex = trimmed.indexOf('{');
+        const bracketIndex = trimmed.indexOf('[');
+        const candidateIndices = [bracesIndex, bracketIndex].filter((index) => index >= 0);
+        const jsonStart = candidateIndices.length > 0 ? Math.min(...candidateIndices) : -1;
+        const payload = jsonStart > 0 ? trimmed.slice(jsonStart) : trimmed;
+
+        return JSON.parse(payload);
+      } catch (error) {
+        console.error('Failed to parse text response', error);
+        return null;
+      }
+    };
+
+    const parseHistoryEntries = (rawText, type) => {
+      if (!rawText) return [];
+      const cleanedText = rawText.replace(/\r/g, '');
+      const lines = cleanedText.split('\n').map((line) => line.trim()).filter(Boolean);
+
+      if (type === 'icecast') {
+        const currentLine = lines.find((line) => /^current song[:：]/i.test(line));
+        if (currentLine) {
+          const title = currentLine.replace(/^[^:]+:\s*/, '').trim();
+          if (title) {
+            return [{ time: null, title }];
+          }
+        }
+        return [];
+      }
+
+      const timePattern = /^(\d{2}:\d{2}:\d{2})/;
+      const entries = [];
+
+      lines.forEach((line) => {
+        const match = line.match(timePattern);
+        if (!match) return;
+        let title = line.slice(match[0].length).trim();
+        title = title.replace(/\*\*Current Song\*\*/gi, '').replace(/Current Song/gi, '').trim();
+        title = title.replace(/^[-–—\s]+/, '').trim();
+        title = title.replace(/\*{2}/g, '').trim();
+        if (!title) return;
+        entries.push({ time: match[1], title });
+      });
+
+      return entries;
+    };
+
+    const fetchAndApplyHistory = async () => {
+      if (!playerConfig.historyEndpoint) return false;
+
+      try {
+        const response = await fetch(playerConfig.historyEndpoint, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+        const contentType = response.headers?.get?.('content-type') || '';
+
+        if (contentType.includes('application/json')) {
+          try {
+            const jsonPayload = await response.json();
+            const historyApplied = applyRecentTracks(jsonPayload);
+            const fallbackText = extractNowPlayingText(jsonPayload);
+            if (fallbackText && nowPlayingEl && nowPlayingEl.textContent !== fallbackText) {
+              nowPlayingEl.textContent = fallbackText;
+            }
+            return historyApplied;
+          } catch (parseError) {
+            console.error('Failed to parse JSON history response', parseError);
+            return false;
+          }
+        }
+
+        const raw = await response.text();
+        const entries = parseHistoryEntries(raw, playerConfig.serverType || 'unknown');
+        if (!entries.length) return false;
+
+        const [current, ...rest] = entries;
+        const historyEntries = rest.map((entry) => ({
+          text: entry.title,
+          played_at: entry.time,
+          time: entry.time,
+        }));
+
+        const fallbackPayload = {};
+        if (current && current.title) {
+          fallbackPayload.now_playing = { song: { text: current.title } };
+        }
+        if (historyEntries.length > 0) {
+          fallbackPayload.song_history = historyEntries;
+        }
+
+        const historyApplied = historyEntries.length > 0 ? applyRecentTracks(fallbackPayload) : false;
+
+        const fallbackText = extractNowPlayingText(fallbackPayload);
+        let updatedNowPlaying = false;
+        if (fallbackText && nowPlayingEl && nowPlayingEl.textContent !== fallbackText) {
+          nowPlayingEl.textContent = fallbackText;
+          updatedNowPlaying = true;
+        }
+
+        return historyApplied || updatedNowPlaying;
+      } catch (error) {
+        console.error('History request failed', error);
+        return false;
+      }
+    };
+
     const pollNowPlaying = async () => {
       if (!playerConfig.nowPlayingEndpoint || !nowPlayingEl) return;
 
       try {
         const response = await fetch(playerConfig.nowPlayingEndpoint, { cache: 'no-store' });
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-        const data = await response.json();
+        const data = await parseNowPlayingResponse(response);
+        if (!data) {
+          throw new Error('Empty now playing payload');
+        }
         const text = extractNowPlayingText(data);
         if (text && nowPlayingEl.textContent !== text) {
           nowPlayingEl.textContent = text;
         }
-        applyRecentTracks(data);
+        const historyApplied = applyRecentTracks(data);
+        if (!historyApplied) {
+          await fetchAndApplyHistory();
+        }
       } catch (error) {
         console.error('Now playing request failed', error);
         if (nowPlayingEl.textContent !== nowPlayingDefault) {
