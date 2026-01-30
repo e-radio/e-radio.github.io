@@ -53,7 +53,8 @@ A modern web application for streaming Greek radio stations, built with [Astro](
 │   └── lib/
 │       └── slug.ts            # Slug generation utilities
 ├── tools/
-│   └── fetch-greece-stations.mjs  # Script to fetch station data
+│   ├── fetch-greece-stations.mjs       # Script to fetch station data
+│   └── fetch-missing-station-icons.mjs # Fetches/caches station icons
 ├── public/
 │   └── favicon.svg
 └── astro.config.mjs           # Astro configuration
@@ -64,10 +65,15 @@ A modern web application for streaming Greek radio stations, built with [Astro](
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+- `npm run fix favicons` - Cache missing station icons, resize to 128px, and create branded placeholders
 
 ## Data Source
 
 Radio station data is fetched from the [Radio Browser API](https://www.radio-browser.info/), which provides information about thousands of radio stations worldwide.
+
+## Icon Maintenance
+
+Run `npm run fix favicons` whenever new stations are added or existing assets go missing. The tool will try homepage link icons first, then `og:image`, fall back to `/favicon.ico`, resize the best result to 128×128, and finally generate a branded SVG placeholder with station initials if no icon can be recovered.
 
 ## Building for Production
 

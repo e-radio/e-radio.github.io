@@ -1,0 +1,43 @@
+---
+interface Category {
+  key: "stations" | "top-rated" | "city" | "high-quality" | "genres";
+  label: string;
+  href: string;
+  icon: string;
+}
+
+interface Props {
+  current: Category["key"];
+}
+
+const { current } = Astro.props;
+
+const categories: Category[] = [
+  { key: "stations", label: "Stations", href: "/", icon: "bi-broadcast" },
+  { key: "top-rated", label: "Top Rated", href: "/top-rated/", icon: "bi-star" },  
+  { key: "high-quality", label: "High Quality", href: "/high-quality/", icon: "bi-soundwave" },
+  { key: "city", label: "By City", href: "/city/", icon: "bi-geo-alt" },
+  { key: "genres", label: "Genres", href: "/genres/", icon: "bi-music-note-list" },
+];
+---
+<nav aria-label="Station categories" class="category-switch mb-4">
+  <div class="d-inline-flex bg-light rounded-3 p-1 flex-wrap gap-2" role="group">
+    {categories.map((category) => {
+      const isActive = category.key === current;
+      const baseClasses = "btn btn px-3 fw-semibold";
+      const activeClasses = "bg-white shadow-sm rounded-3 text-primary border border-primary-subtle";
+      const inactiveClasses = "text-secondary";
+      const classes = `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`;
+      return (
+        <a
+          href={category.href}
+          class={classes}
+          aria-current={isActive ? "page" : undefined}
+        >
+          <i class={`bi ${category.icon} me-1`}></i>
+          {category.label}
+        </a>
+      );
+    })}
+  </div>
+</nav>

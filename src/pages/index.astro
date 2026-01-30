@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SEO from '../components/SEO.astro';
+import CategorySwitch from "../components/CategorySwitch.astro";
 import rawStations from "../data/stations-gr.json";
 
 const radddioURL = "https://apple.co/4lNPQAH";
@@ -78,6 +79,7 @@ const structuredData = {
     <p class="lead text-muted">Discover {totalStations} live radio stations from Greece. Sorted by popularity.</p>
     <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
   </div>
+  <CategorySwitch current="stations" />
   <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
     {topStations.map((station, index) => (
       <div class={`station-item position-relative ${index !== topStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>

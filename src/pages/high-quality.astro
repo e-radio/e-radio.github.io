@@ -1,0 +1,94 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SEO from "../components/SEO.astro";
+import CategorySwitch from "../components/CategorySwitch.astro";
+import rawStations from "../data/stations-gr.json";
+
+const radddioURL = "https://apple.co/4lNPQAH";
+const radioAppIconUrl = "/radddio-app-icon.png";
+const radddioBadgeUrl = "/radddio-badge.svg";
+const ogImage = "/e-radio-og-image.png";
+
+const HIGH_BITRATE_THRESHOLD = 320;
+const highQualityStations = rawStations
+  .filter((station) => Number(station.bitrate || 0) >= HIGH_BITRATE_THRESHOLD)
+  .sort((a, b) => (b.bitrate || 0) - (a.bitrate || 0));
+
+const siteRoot = "https://e-radio.github.io";
+const canonical = `${siteRoot}/high-quality/`;
+const pageTitle = "High Quality (320 kbps) Greek Radio Streams | E-Radio";
+const pageDescription = `Listen to ${highQualityStations.length} Greek radio streams broadcasting in 320 kbps or higher.`;
+const ogImageUrl = `${siteRoot}${ogImage}`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${canonical}#collection`,
+  name: pageTitle,
+  url: canonical,
+  description: pageDescription,
+  image: ogImageUrl,
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <SEO
+    slot="seo"
+    title={pageTitle}
+    description={pageDescription}
+    canonical={canonical}
+    ogTitle={pageTitle}
+    ogDescription={pageDescription}
+    ogImage={ogImageUrl}
+    keywords="high quality radio, 320 kbps radio streams, greek radio"
+    robots="index, follow"
+    author="E-Radio Greece"
+    structuredData={structuredData}
+  />
+  <div class="mb-4">
+    <h1 class="display-5 fw-bold mb-2">Greek High Quality Radio Streams</h1>
+    <p class="lead text-muted">Only stations broadcasting at 320 kbps or higher.</p>
+    <p class="text-muted small">Found {highQualityStations.length} high-bitrate station{highQualityStations.length === 1 ? "" : "s"}.</p>
+  </div>
+  <CategorySwitch current="high-quality" />
+  {highQualityStations.length === 0 ? (
+    <div class="alert alert-warning" role="status">
+      No stations currently meet the 320 kbps threshold.
+    </div>
+  ) : (
+    <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+      {highQualityStations.map((station, index) => (
+        <div class={`station-item position-relative ${index !== highQualityStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+          <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`}></a>
+          <div class="station-item-body p-3">
+            <div class="row align-items-center g-3">
+              <div class="col-auto">
+                {station.favicon ? (
+                  <img src={station.favicon} alt={`${station.name} logo`} class="rounded station-logo" />
+                ) : (
+                  <img src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" />
+                )}
+              </div>
+              <div class="col flex-grow-1">
+                <h2 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h2>
+                <p class="small text-muted mb-1">
+                  {station.state ? <span><i class="bi bi-geo-alt me-1"></i>{station.state}</span> : null}
+                  <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span>
+                  {station.codec ? <span class="ms-2"><i class="bi bi-file-music me-1"></i>{String(station.codec).toUpperCase()}</span> : null}
+                </p>
+                <div class="d-flex gap-2 flex-wrap">
+                  {station.genres && station.genres.slice(0, 3).map((genre) => (
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                  ))}
+                </div>
+              </div>
+              <div class="col-auto text-end d-md-block">
+                <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+</Layout>

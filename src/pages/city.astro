@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SEO from "../components/SEO.astro";
+import CategorySwitch from "../components/CategorySwitch.astro";
+import rawStations from "../data/stations-gr.json";
+import { slugify } from "../lib/slug";
+
+const radddioURL = "https://apple.co/4lNPQAH";
+const radioAppIconUrl = "/radddio-app-icon.png";
+const radddioBadgeUrl = "/radddio-badge.svg";
+const ogImage = "/e-radio-og-image.png";
+
+const grouped = new Map<string, typeof rawStations>();
+for (const station of rawStations) {
+  const city = (station.state || "Other").trim() || "Other";
+  if (!grouped.has(city)) {
+    grouped.set(city, []);
+  }
+  grouped.get(city)?.push(station);
+}
+
+const cityEntries = [...grouped.entries()]
+  .map(([city, stations]) => [
+    city,
+    stations
+      .slice()
+      .sort((a, b) => (b.votes || 0) - (a.votes || 0)),
+  ] as const)
+  .sort(([cityA], [cityB]) => cityA.localeCompare(cityB, undefined, { sensitivity: "base" }));
+
+const cityBadgeEntries = cityEntries
+  .slice()
+  .sort(([cityA, stationsA], [cityB, stationsB]) => {
+    if (stationsB.length !== stationsA.length) {
+      return stationsB.length - stationsA.length;
+    }
+    return cityA.localeCompare(cityB, undefined, { sensitivity: "base" });
+  });
+
+const siteRoot = "https://e-radio.github.io";
+const canonical = `${siteRoot}/city/`;
+const pageTitle = "Greek Radio Stations by City | E-Radio";
+const pageDescription = "Browse live Greek radio stations grouped by city to discover local favorites.";
+const ogImageUrl = `${siteRoot}${ogImage}`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${canonical}#collection`,
+  name: pageTitle,
+  url: canonical,
+  description: pageDescription,
+  image: ogImageUrl,
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <SEO
+    slot="seo"
+    title={pageTitle}
+    description={pageDescription}
+    canonical={canonical}
+    ogTitle={pageTitle}
+    ogDescription={pageDescription}
+    ogImage={ogImageUrl}
+    keywords="greece radio cities, greek radio by city"
+    robots="index, follow"
+    author="E-Radio Greece"
+    structuredData={structuredData}
+  />
+  <div class="mb-4">
+    <h1 class="display-5 fw-bold mb-2">Greek Radio Stations by City</h1>
+    <p class="lead text-muted">Find stations broadcast from your city or explore new areas.</p>
+    <p class="text-muted small">Cities arranged alphabetically; stations within each city sorted by votes.</p>
+  </div>
+  <CategorySwitch current="city" />
+  <div class="mb-4">
+    <h2 class="h6 text-muted text-uppercase">Jump to city</h2>
+    <div class="d-flex flex-wrap gap-2">
+      {cityBadgeEntries.map(([city, stations]) => {
+        const anchor = slugify(city) || "other";
+        return (
+          <a class="badge border text-decoration-none text-secondary-emphasis bg-light" href={`#${anchor}`}>
+            {city}<span class="vr mx-2"></span>{stations.length}
+          </a>
+        );
+      })}
+    </div>
+  </div>
+  {cityEntries.map(([city, stations]) => {
+    const anchor = slugify(city) || "other";
+    return (
+      <section id={anchor} class="mb-5">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h2 class="h5 fw-bold mb-0">{city}</h2>
+          <span class="small text-muted">{stations.length} station{stations.length === 1 ? "" : "s"}</span>
+        </div>
+        <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+          {stations.map((station, index) => (
+            <div class={`station-item position-relative ${index !== stations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+              <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`}></a>
+              <div class="station-item-body p-3">
+                <div class="row align-items-center g-3">
+                  <div class="col-auto">
+                    {station.favicon ? (
+                      <img src={station.favicon} alt={`${station.name} logo`} class="rounded station-logo" />
+                    ) : (
+                      <img src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" />
+                    )}
+                  </div>
+                  <div class="col flex-grow-1">
+                    <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
+                    <p class="small text-muted mb-1">
+                      {station.bitrate ? <span><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
+                      {station.genres && station.genres.length > 0 ? (
+                        <span class="ms-2">
+                          <i class="bi bi-music-note-beamed me-1"></i>{station.genres.slice(0, 2).join(", ")}
+                        </span>
+                      ) : null}
+                    </p>
+                  </div>
+                  <div class="col-auto text-end d-md-block">
+                    <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  })}
+</Layout>

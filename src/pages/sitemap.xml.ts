@@ -32,6 +32,30 @@ export async function GET() {
       priority: "1.0",
     },
     {
+      loc: `${ROOT_URL}/top-rated/`,
+      lastmod,
+      changefreq: "weekly",
+      priority: "0.8",
+    },
+    {
+      loc: `${ROOT_URL}/city/`,
+      lastmod,
+      changefreq: "weekly",
+      priority: "0.8",
+    },
+    {
+      loc: `${ROOT_URL}/high-quality/`,
+      lastmod,
+      changefreq: "weekly",
+      priority: "0.8",
+    },
+    {
+      loc: `${ROOT_URL}/genres/`,
+      lastmod,
+      changefreq: "weekly",
+      priority: "0.8",
+    },
+    {
       loc: `${ROOT_URL}/demo/`,
       lastmod,
       changefreq: "monthly",
