@@ -10953,7 +10953,7 @@
     "countrycode": "GR",
     "stream_url": "https://sonic.serverps.gr/8018/stream",
     "homepage": "http://www.galaxiasfm.gr/",
-    "favicon": "/station-icons/galaxias-fm-92-1-mhz.bmp",
+    "favicon": "/station-icons/galaxias-fm-92-1-mhz.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -17218,7 +17218,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast.radiohost.ovh/mks801fm?mp=/stream",
     "homepage": "https://olddj.gr/",
-    "favicon": "/station-icons/mks-801-fm.mp4",
+    "favicon": "/station-icons/mks-801-fm.webp",
     "genres": [
       "oldies"
     ],
@@ -35675,7 +35675,7 @@
     "countrycode": "GR",
     "stream_url": "http://s4.onweb.gr:8842/;",
     "homepage": "http://www.anemos92.gr/",
-    "favicon": "/station-icons/92-trikala.ico",
+    "favicon": "/station-icons/92-trikala.webp",
     "genres": [
       "folk",
       "greek"
@@ -37276,7 +37276,7 @@
     "countrycode": "GR",
     "stream_url": "http://netradio.live24.gr/orange9320",
     "homepage": "http://www.ellinikos932.fm/",
-    "favicon": "/station-icons/93-2-athens-greece.ico",
+    "favicon": "/station-icons/93-2-athens-greece.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 128,
@@ -37298,7 +37298,7 @@
     "countrycode": "GR",
     "stream_url": "http://netradio.live24.gr/orange9320",
     "homepage": "http://www.ellinikos932.fm/",
-    "favicon": "/station-icons/93-2-athens-greece-98ddb392.ico",
+    "favicon": "/station-icons/93-2-athens-greece-98ddb392.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
