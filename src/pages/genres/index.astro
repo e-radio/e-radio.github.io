@@ -83,9 +83,10 @@ const structuredData = {
       {genreBadgeEntries.map(([genre, stations]) => {
         const anchor = slugify(genre) || "other";
         return (
-          <a class="badge border text-decoration-none text-secondary-emphasis bg-light" href={`#${anchor}`}>
-            {genre}<span class="vr mx-2"></span>{stations.length}
-          </a>
+        <a class="text-decoration-none d-inline-flex align-items-center" href={`#${anchor}`} aria-label={`${genre} radio stations (${stations.length})`}>
+            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{genre}</span>
+            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{stations.length}</span>
+        </a>
         );
       })}
     </div>

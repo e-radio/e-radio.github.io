@@ -80,9 +80,14 @@ const structuredData = {
       {cityBadgeEntries.map(([city, stations]) => {
         const anchor = slugify(city) || "other";
         return (
-          <a class="badge border text-decoration-none text-secondary-emphasis bg-light" href={`#${anchor}`}>
-            {city}<span class="vr mx-2"></span>{stations.length}
-          </a>
+        //   <a class="badge bg-light text-decoration-none px-0" href={`#${anchor}`} aria-label={`${city} radio stations (${stations.length})`}>
+        //     <span class="border rounded-0 bg-light-subtle text-light-emphasis rounded-start px-2 py-1">{city}</span>
+        //     <span class="border rounded-0 border-secondary-subtle text-secondary-emphasis bg-secondary-subtle rounded-end px-2 py-1">{stations.length}</span>
+        //   </a>
+        <a class="text-decoration-none d-inline-flex align-items-center" href={`#${anchor}`} aria-label={`${city} radio stations (${stations.length})`}>
+            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{city}</span>
+            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{stations.length}</span>
+        </a>
         );
       })}
     </div>
