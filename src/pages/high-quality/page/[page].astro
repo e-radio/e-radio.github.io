@@ -1,9 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import SEO from "../components/SEO.astro";
-import CategorySwitch from "../components/CategorySwitch.astro";
-import rawStations from "../data/stations-gr.json";
-import { slugify } from "../lib/slug";
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import CategorySwitch from "../../../components/CategorySwitch.astro";
+import rawStations from "../../../data/stations-gr.json";
+import { slugify } from "../../../lib/slug";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
@@ -11,12 +11,32 @@ const radddioBadgeUrl = "/radddio-badge.svg";
 const ogImage = "/e-radio-og-image.png";
 
 const HIGH_BITRATE_THRESHOLD = 320;
+const PAGE_SIZE = 20;
+
+export function getStaticPaths() {
+  const HIGH_BITRATE_THRESHOLD = 320;
+  const PAGE_SIZE = 20;
+  const highQualityStations = rawStations
+    .filter((station) => Number(station.bitrate || 0) >= HIGH_BITRATE_THRESHOLD)
+    .sort((a, b) => (b.bitrate || 0) - (a.bitrate || 0));
+
+  const totalPages = Math.ceil(highQualityStations.length / PAGE_SIZE);
+  if (totalPages <= 1) return [];
+
+  const paths = [];
+  for (let page = 2; page <= totalPages; page += 1) {
+    paths.push({ params: { page: String(page) } });
+  }
+
+  return paths;
+}
+
+const { page: pageParam } = Astro.params as { page?: string };
+const page = Number(pageParam || 1);
 const highQualityStations = rawStations
   .filter((station) => Number(station.bitrate || 0) >= HIGH_BITRATE_THRESHOLD)
   .sort((a, b) => (b.bitrate || 0) - (a.bitrate || 0));
 
-const PAGE_SIZE = 20;
-const page = 1;
 const totalStations = highQualityStations.length;
 const totalPages = Math.ceil(totalStations / PAGE_SIZE);
 const startIndex = (page - 1) * PAGE_SIZE;
@@ -24,9 +44,9 @@ const endIndex = startIndex + PAGE_SIZE;
 const pagedStations = highQualityStations.slice(startIndex, endIndex);
 
 const siteRoot = "https://e-radio.github.io";
-const canonical = `${siteRoot}/high-quality/`;
-const pageTitle = "High Quality (320 kbps) Greek Radio Streams | E-Radio";
-const pageDescription = `Listen to ${totalStations} Greek radio streams broadcasting in 320 kbps or higher for premium sound, clearer vocals, and richer music across popular stations.`;
+const canonical = `${siteRoot}/high-quality/page/${page}/`;
+const pageTitle = `High Quality (320 kbps) Greek Radio Streams – Page ${page} | E-Radio`;
+const pageDescription = `Page ${page} of ${totalPages}. Listen to ${totalStations} Greek radio streams broadcasting in 320 kbps or higher for premium sound and richer music.`;
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -55,15 +75,13 @@ const structuredData = {
     structuredData={structuredData}
   />
   <div class="mb-4">
+    <p class="small text-muted mb-2"><a class="link-muted" href="/high-quality/">← Back to high quality</a></p>
     <h1 class="display-5 fw-bold mb-2">Greek High Quality Radio Streams</h1>
     <h2 class="lead text-muted">Only stations broadcasting at 320 kbps or higher.</h2>
-    <p class="text-muted small">Found {totalStations} high-bitrate station{totalStations === 1 ? "" : "s"}.</p>
-    {totalPages > 1 && (
-      <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
-    )}
+    <p class="text-muted small">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
   </div>
   <CategorySwitch current="high-quality" />
-  {totalStations === 0 ? (
+  {pagedStations.length === 0 ? (
     <div class="alert alert-warning" role="status">
       No stations currently meet the 320 kbps threshold.
     </div>

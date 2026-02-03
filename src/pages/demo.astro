@@ -81,15 +81,15 @@ const metadataStations = [
     <h2 class="fs-4 fw-semibold mb-3">Station Card Preview</h2>
     <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
       {demoStations.map((station, index) => (
-        <div class={`station-item position-relative ${index !== demoStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+        <div class={`station-item position-relative ${index !== demoStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
           <div class="station-item-body p-3">
             <div class="row align-items-center g-3">
               <div class="col-auto">
-                <img src={demoIcon} alt="Demo station icon" class="rounded station-logo" />
+                <img src={demoIcon} alt="Demo station icon" class="rounded station-logo" itemprop="image" />
               </div>
 
               <div class="col flex-grow-1">
-                <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
+                <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{station.name}</h3>
                 <p class="small text-muted mb-0">
                   📍 {station.state}
                 </p>
