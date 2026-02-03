@@ -37,11 +37,8 @@ const {
 {title && <title>{title}</title>}
 {description && <meta name="description" content={description} />}
 {canonical && <link rel="canonical" href={canonical} />}
-{keywords && <meta name="keywords" content={keywords} />}
 {robots && <meta name="robots" content={robots} />}
-{language && <meta name="language" content={language} />}
 {author && <meta name="author" content={author} />}
-<meta name="revisit-after" content="7 days" />
 
 {/* Pagination links */}
 {prevUrl && <link rel="prev" href={prevUrl} />}
