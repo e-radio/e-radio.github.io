@@ -79,20 +79,23 @@ main {
 .station-logo {
   width: 60px;
   height: 60px;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 .station-logo-lg {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 .station-cover {
   width: 84px;
   height: 84px;
   border-radius: var(--card-radius);
-  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 .glass {

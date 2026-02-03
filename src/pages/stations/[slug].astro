@@ -372,9 +372,12 @@ const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
 const encodingFormat = resolveEncodingFormat(station);
 
 const title = `${station.name} – Live Radio Station in Greece | E-Radio`;
+const genreLabel = station.genres.length > 0
+  ? station.genres.slice(0, 2).join(", ").toLowerCase()
+  : "live";
 const description = station.state
-  ? `Listen to ${station.name} live from Greece. Stream ${station.genres.length > 0 ? station.genres.slice(0, 2).join(", ") : "your favorite"} radio online.`
-  : `Stream ${station.name} live from ${station.state}, Greece. ${station.genres.length > 0 ? `Listen to ${station.genres.slice(0, 2).join(", ")} radio online.` : "Listen to live radio online."}`;
+  ? `Listen to ${station.name} live from ${station.state}, Greece. Stream ${genreLabel} radio online with reliable playback, station details, and the latest stream quality info.`
+  : `Listen to ${station.name} live from Greece. Stream ${genreLabel} radio online with reliable playback, station details, and the latest stream quality info.`;
 
 const playerScriptConfig = {
   hasStream,
