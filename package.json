@@ -7,9 +7,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "git push": "git add . && git commit -m \"update\" && git push",
     "fetch stations": "node tools/fetch-greece-stations.mjs",
     "fix favicons": "node tools/fetch-missing-station-icons.mjs",
-    "git push": "git add . && git commit -m \"update\" && git push"
+    "fill state": "python3 tools/fill-state-from-homepage.py"
   },
   "dependencies": {
     "astro": "^5.16.15",

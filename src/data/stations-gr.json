@@ -4410,7 +4410,7 @@
     "countrycode": "GR",
     "stream_url": "http://cast3.radiohost.ovh:8352/;",
     "homepage": "http://bluesradio.gr/",
-    "favicon": "/station-icons/blues-radio.jpg",
+    "favicon": "/station-icons/blues-radio.webp",
     "genres": [
       "blues"
     ],
@@ -5780,7 +5780,7 @@
     "countrycode": "GR",
     "stream_url": "https://music.cocktailwebradio.com:1045/stream",
     "homepage": "https://www.cocktailwebradio.com/",
-    "favicon": "/station-icons/cocktail-web-radio.png",
+    "favicon": "/station-icons/cocktail-web-radio.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 128,
@@ -6178,7 +6178,7 @@
     "countrycode": "GR",
     "stream_url": "https://sc2.streamwithq.com:2000/stream/offifans",
     "homepage": "https://cretafans.com/",
-    "favicon": "/station-icons/creta-fans-crete.png",
+    "favicon": "/station-icons/creta-fans-crete.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 256,
@@ -10393,8 +10393,8 @@
     "country": "Greece",
     "countrycode": "GR",
     "stream_url": "http://s6.onweb.gr:8044/;",
-    "homepage": "https://www.facebook.com/groups/44936861303/",
-    "favicon": "/station-icons/fm-life-105-3-kalymnos.png",
+    "homepage": "https://www.fmlife.gr/",
+    "favicon": "/station-icons/fm-life-105-3-kalymnos.webp",
     "genres": [
       "pop"
     ],
@@ -10443,7 +10443,7 @@
     "countrycode": "GR",
     "stream_url": "http://s3.onweb.gr:8014/stream?type=http&nocache=120452",
     "homepage": "https://www.facebook.com/888focus/",
-    "favicon": "/station-icons/focus-88-8-alexandroupolis.png",
+    "favicon": "/station-icons/focus-88-8-alexandroupolis.webp",
     "genres": [
       "folk",
       "greek",
@@ -29777,7 +29777,7 @@
     "slug": "s-fresh-91-2-67076765",
     "stationuuid": "67076765-05ae-4904-af33-dc6a5b1fa45f",
     "name": "S-Fresh 91.2",
-    "state": null,
+    "state": "Patras",
     "country": "Greece",
     "countrycode": "GR",
     "stream_url": "https://ams-pioneer02.dedicateware.com:1060/;?type=http&nocache=1680528746",
@@ -31557,7 +31557,7 @@
     "countrycode": "GR",
     "stream_url": "https://centova.gr-net.gr/proxy/radiostar955/stream",
     "homepage": "http://www.facebook.com/star955/",
-    "favicon": "/station-icons/star-95-5-chalkidiki.png",
+    "favicon": "/station-icons/star-95-5-chalkidiki.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 192,
@@ -39159,7 +39159,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream-51.zeno.fm/qnfg7n52ekhvv?zs=HDbwf-SeQdqpBAoJPkshWg",
     "homepage": "https://ekklisianeasilata.com/",
-    "favicon": "/station-icons/chalkidiki.png",
+    "favicon": "/station-icons/chalkidiki.webp",
     "genres": [
       "orthodox christian",
       "religion"

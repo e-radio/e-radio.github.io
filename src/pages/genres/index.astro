@@ -3,11 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import CategorySwitch from "../../components/CategorySwitch.astro";
 import rawStations from "../../data/stations-gr.json";
-import { slugify } from "../../lib/slug";
 
-const radddioURL = "https://apple.co/4lNPQAH";
-const radioAppIconUrl = "/radddio-app-icon.png";
-const radddioBadgeUrl = "/radddio-badge.svg";
 const ogImage = "/e-radio-og-image.png";
 
 const genreMap = new Map<string, typeof rawStations>();
@@ -22,22 +18,39 @@ for (const station of rawStations) {
   }
 }
 
+const baseGenreSlug = (genre: string) =>
+  (genre || "")
+    .toLowerCase()
+    .trim()
+    .replace(/['"]/g, "")
+    .replace(/[^\p{L}\p{N}]+/gu, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80) || "other";
+
+const slugCounts = new Map<string, number>();
 const genreEntries = [...genreMap.entries()]
-  .map(([genre, stations]) => [
-    genre,
-    stations
-      .slice()
-      .sort((a, b) => (b.votes || 0) - (a.votes || 0)),
-  ] as const)
-  .sort(([genreA], [genreB]) => genreA.localeCompare(genreB, undefined, { sensitivity: "base" }));
+  .map(([genre, stations]) => {
+    const base = baseGenreSlug(genre);
+    const nextCount = (slugCounts.get(base) || 0) + 1;
+    slugCounts.set(base, nextCount);
+    const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
+    return {
+      genre,
+      slug,
+      stations: stations
+        .slice()
+        .sort((a, b) => (b.votes || 0) - (a.votes || 0)),
+    } as const;
+  })
+  .sort((a, b) => a.genre.localeCompare(b.genre, undefined, { sensitivity: "base" }));
 
 const genreBadgeEntries = genreEntries
   .slice()
-  .sort(([genreA, stationsA], [genreB, stationsB]) => {
-    if (stationsB.length !== stationsA.length) {
-      return stationsB.length - stationsA.length;
+  .sort((a, b) => {
+    if (b.stations.length !== a.stations.length) {
+      return b.stations.length - a.stations.length;
     }
-    return genreA.localeCompare(genreB, undefined, { sensitivity: "base" });
+    return a.genre.localeCompare(b.genre, undefined, { sensitivity: "base" });
   });
 
 const siteRoot = "https://e-radio.github.io";
@@ -78,12 +91,11 @@ const structuredData = {
   </div>
   <CategorySwitch current="genres" />
   <div class="mb-4">
-    <h2 class="h6 text-muted text-uppercase">Jump to genre</h2>
+    <h2 class="h6 text-muted text-uppercase">Browse genres</h2>
     <div class="d-flex flex-wrap gap-2">
-      {genreBadgeEntries.map(([genre, stations]) => {
-        const anchor = slugify(genre) || "other";
+      {genreBadgeEntries.map(({ genre, stations, slug }) => {
         return (
-        <a class="text-decoration-none d-inline-flex align-items-center" href={`#${anchor}`} aria-label={`${genre} radio stations (${stations.length})`}>
+        <a class="text-decoration-none d-inline-flex align-items-center" href={`/genres/${slug}/`} aria-label={`${genre} radio stations (${stations.length})`}>
             <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{genre}</span>
             <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{stations.length}</span>
         </a>
@@ -91,43 +103,23 @@ const structuredData = {
       })}
     </div>
   </div>
-  {genreEntries.map(([genre, stations]) => {
-    const anchor = slugify(genre) || "other";
-    return (
-      <section id={anchor} class="mb-5">
-        <div class="d-flex align-items-center justify-content-between mb-3">
-          <h2 class="h5 fw-bold mb-0">{genre}</h2>
-          <span class="small text-muted">{stations.length} station{stations.length === 1 ? "" : "s"}</span>
-        </div>
-        <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
-          {stations.map((station, index) => (
-            <div class={`station-item position-relative ${index !== stations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
-              <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`}></a>
-              <div class="station-item-body p-3">
-                <div class="row align-items-center g-3">
-                  <div class="col-auto">
-                    {station.favicon ? (
-                      <img src={station.favicon} alt={`${station.name} logo`} class="rounded station-logo" />
-                    ) : (
-                      <img src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" />
-                    )}
-                  </div>
-                  <div class="col flex-grow-1">
-                    <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
-                    <p class="small text-muted mb-1">
-                      {station.state ? <span><i class="bi bi-geo-alt me-1"></i>{station.state}</span> : null}
-                      {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
-                    </p>
-                  </div>
-                  <div class="col-auto text-end d-md-block">
-                    <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
-                  </div>
-                </div>
+  <div class="row g-3">
+    {genreEntries.map(({ genre, stations, slug }) => {
+      const topStations = stations.slice(0, 3).map((station) => station.name).join(", ");
+      return (
+        <div class="col-12 col-md-6 col-xl-4">
+          <a href={`/genres/${slug}/`} class="text-decoration-none">
+            <div class="border rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="h6 fw-bold text-dark mb-1">{genre}</h2>
+                <p class="small text-muted mb-2">{stations.length} station{stations.length === 1 ? "" : "s"}</p>
+                <p class="small text-muted mb-0">Top: {topStations || "Explore stations"}</p>
               </div>
+              <span class="small text-primary fw-semibold mt-3">View stations →</span>
             </div>
-          ))}
+          </a>
         </div>
-      </section>
-    );
-  })}
+      );
+    })}
+  </div>
 </Layout>
