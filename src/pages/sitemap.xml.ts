@@ -1,65 +1,88 @@
 import rawStations from "../data/stations-gr.json";
 
 const ROOT_URL = "https://e-radio.github.io";
-const STATIONS_PER_PAGE = 50;
+const HOMEPAGE_PER_PAGE = 50;
+const HUB_PER_PAGE = 20;
+const HIGH_BITRATE_THRESHOLD = 320;
 
 const formatUrlEntry = (entry: {
   loc: string;
-  lastmod: string;
-  changefreq: string;
-  priority: string;
+  lastmod?: string;
 }) => {
   return [
     "  <url>",
     `    <loc>${entry.loc}</loc>`,
-    `    <lastmod>${entry.lastmod}</lastmod>`,
-    `    <changefreq>${entry.changefreq}</changefreq>`,
-    `    <priority>${entry.priority}</priority>`,
+    entry.lastmod ? `    <lastmod>${entry.lastmod}</lastmod>` : null,
     "  </url>",
-  ].join("\n");
+  ]
+    .filter(Boolean)
+    .join("\n");
 };
 
 export async function GET() {
   const buildDate = new Date();
   const lastmod = buildDate.toISOString().split("T")[0];
-  const totalPages = Math.max(1, Math.ceil(rawStations.length / STATIONS_PER_PAGE));
+  const totalPages = Math.max(1, Math.ceil(rawStations.length / HOMEPAGE_PER_PAGE));
+  const highQualityStations = rawStations.filter((station) => Number(station.bitrate || 0) >= HIGH_BITRATE_THRESHOLD);
+  const highQualityPages = Math.max(1, Math.ceil(highQualityStations.length / HUB_PER_PAGE));
+
+  const transliterateGreek = (input: string) => {
+    const map: Record<string, string> = {
+      Α: "a", Β: "v", Γ: "g", Δ: "d", Ε: "e", Ζ: "z", Η: "i", Θ: "th", Ι: "i", Κ: "k", Λ: "l", Μ: "m",
+      Ν: "n", Ξ: "x", Ο: "o", Π: "p", Ρ: "r", Σ: "s", Τ: "t", Υ: "y", Φ: "f", Χ: "ch", Ψ: "ps", Ω: "o",
+      α: "a", β: "v", γ: "g", δ: "d", ε: "e", ζ: "z", η: "i", θ: "th", ι: "i", κ: "k", λ: "l", μ: "m",
+      ν: "n", ξ: "x", ο: "o", π: "p", ρ: "r", σ: "s", ς: "s", τ: "t", υ: "y", φ: "f", χ: "ch", ψ: "ps", ω: "o",
+    };
+    return input
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .split("")
+      .map((char) => map[char] ?? char)
+      .join("");
+  };
+
+  const baseCitySlug = (city: string) =>
+    transliterateGreek(city || "")
+      .toLowerCase()
+      .trim()
+      .replace(/['"]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80) || "other";
+
+  const baseGenreSlug = (genre: string) =>
+    transliterateGreek(genre || "")
+      .toLowerCase()
+      .trim()
+      .replace(/['"]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80) || "other";
 
   const staticPages = [
     {
       loc: `${ROOT_URL}/`,
       lastmod,
-      changefreq: "daily",
-      priority: "1.0",
     },
     {
       loc: `${ROOT_URL}/top-rated/`,
       lastmod,
-      changefreq: "weekly",
-      priority: "0.8",
     },
     {
       loc: `${ROOT_URL}/city/`,
       lastmod,
-      changefreq: "weekly",
-      priority: "0.8",
     },
     {
       loc: `${ROOT_URL}/high-quality/`,
       lastmod,
-      changefreq: "weekly",
-      priority: "0.8",
     },
     {
       loc: `${ROOT_URL}/genres/`,
       lastmod,
-      changefreq: "weekly",
-      priority: "0.8",
     },
     {
       loc: `${ROOT_URL}/demo/`,
       lastmod,
-      changefreq: "monthly",
-      priority: "0.3",
     },
   ];
 
@@ -68,19 +91,98 @@ export async function GET() {
     return {
       loc: `${ROOT_URL}/page/${pageNumber}/`,
       lastmod,
-      changefreq: "weekly",
-      priority: "0.7",
     };
+  });
+
+  const highQualityPagination = Array.from({ length: Math.max(0, highQualityPages - 1) }, (_, index) => {
+    const pageNumber = index + 2;
+    return {
+      loc: `${ROOT_URL}/high-quality/page/${pageNumber}/`,
+      lastmod,
+    };
+  });
+
+  const cityMap = new Map<string, typeof rawStations>();
+  for (const station of rawStations) {
+    const city = (station.state || "Other").trim() || "Other";
+    if (!cityMap.has(city)) {
+      cityMap.set(city, []);
+    }
+    cityMap.get(city)?.push(station);
+  }
+
+  const citySlugCounts = new Map<string, number>();
+  const cityPages = [...cityMap.entries()].map(([city, stations]) => {
+    const base = baseCitySlug(city);
+    const nextCount = (citySlugCounts.get(base) || 0) + 1;
+    citySlugCounts.set(base, nextCount);
+    const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
+    return {
+      loc: `${ROOT_URL}/city/${slug}/`,
+      lastmod,
+      slug,
+      stations,
+    };
+  });
+
+  const cityPagination = cityPages.flatMap((cityPage) => {
+    const total = Math.ceil(cityPage.stations.length / HUB_PER_PAGE);
+    if (total <= 1) return [];
+    return Array.from({ length: total - 1 }, (_, index) => ({
+      loc: `${ROOT_URL}/city/${cityPage.slug}/page/${index + 2}/`,
+      lastmod,
+    }));
+  });
+
+  const genreMap = new Map<string, typeof rawStations>();
+  for (const station of rawStations) {
+    const genres = Array.isArray(station.genres) && station.genres.length > 0 ? station.genres : ["Other"];
+    for (const genre of genres) {
+      const key = genre.trim() || "Other";
+      if (!genreMap.has(key)) {
+        genreMap.set(key, []);
+      }
+      genreMap.get(key)?.push(station);
+    }
+  }
+
+  const genreSlugCounts = new Map<string, number>();
+  const genrePages = [...genreMap.entries()].map(([genre, stations]) => {
+    const base = baseGenreSlug(genre);
+    const nextCount = (genreSlugCounts.get(base) || 0) + 1;
+    genreSlugCounts.set(base, nextCount);
+    const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
+    return {
+      loc: `${ROOT_URL}/genres/${slug}/`,
+      lastmod,
+      slug,
+      stations,
+    };
+  });
+
+  const genrePagination = genrePages.flatMap((genrePage) => {
+    const total = Math.ceil(genrePage.stations.length / HUB_PER_PAGE);
+    if (total <= 1) return [];
+    return Array.from({ length: total - 1 }, (_, index) => ({
+      loc: `${ROOT_URL}/genres/${genrePage.slug}/page/${index + 2}/`,
+      lastmod,
+    }));
   });
 
   const stationPages = rawStations.map((station) => ({
     loc: `${ROOT_URL}/stations/${station.slug}/`,
-    lastmod,
-    changefreq: "weekly",
-    priority: "0.6",
   }));
 
-  const urls = [...staticPages, ...paginationPages, ...stationPages];
+  const urls = [
+    ...staticPages,
+    ...paginationPages,
+    ...highQualityPagination,
+    ...cityPages.map(({ loc, lastmod }) => ({ loc, lastmod })),
+    ...genrePages.map(({ loc, lastmod }) => ({ loc, lastmod })),
+    ...cityPagination,
+    ...genrePagination,
+    ...stationPages,
+  ];
 
   const body = [
     "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
