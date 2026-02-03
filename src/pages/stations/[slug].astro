@@ -657,7 +657,12 @@ const structuredData = {
                   </p>
                   <div class="d-flex gap-2 flex-wrap">
                     {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
-                      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                      <a
+                        href={`/genres/${slugify(genre)}/`}
+                        class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
+                      >
+                        {genre}
+                      </a>
                     ))}
                   </div>
                 </div>

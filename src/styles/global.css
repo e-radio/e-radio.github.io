@@ -160,6 +160,11 @@ main {
   z-index: 3;
 }
 
+.genre-badge-link {
+  position: relative;
+  z-index: 3;
+}
+
 .radddio-badge img {
   transition: box-shadow 0.2s;
 }

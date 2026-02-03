@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SEO from '../components/SEO.astro';
+import { slugify } from "../lib/slug";
 
 const title = "Demo – E-Radio Greece";
 const description = "Explore a demo page showcasing station listings, badges, and layout styles for E-Radio Greece, including sample cards, icons, and interactions used across the site.";
@@ -106,7 +107,12 @@ const metadataStations = [
                     {station.bitrate} kbps
                   </span>
                   {station.genres.map((genre) => (
-                    <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                    <a
+                      href={`/genres/${slugify(genre)}/`}
+                      class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
+                    >
+                      {genre}
+                    </a>
                   ))}
                 </div>
               </div>
@@ -138,8 +144,8 @@ const metadataStations = [
         <span class="vr mx-2"></span>
         320 kbps
       </span>
-      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Jazz</span>
-      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">Talk</span>
+      <a href={`/genres/${slugify("Jazz")}/`} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">Jazz</a>
+      <a href={`/genres/${slugify("Talk")}/`} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">Talk</a>
     </div>
   </section>
 

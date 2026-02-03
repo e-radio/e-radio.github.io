@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import SEO from '../components/SEO.astro';
 import CategorySwitch from "../components/CategorySwitch.astro";
 import rawStations from "../data/stations-gr.json";
+import { slugify } from "../lib/slug";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
@@ -76,7 +77,7 @@ const structuredData = {
   />
   <div class="mb-4">
     <h1 class="display-5 fw-bold mb-2">Greek Radio Stations</h1>
-    <p class="lead text-muted">Discover {totalStations} live radio stations from Greece. Sorted by popularity.</p>
+    <h2 class="lead text-muted">Discover {totalStations} live radio stations from Greece. Sorted by popularity.</h2>
     <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
   </div>
   <CategorySwitch current="stations" />
@@ -99,14 +100,19 @@ const structuredData = {
 
               {/* Station Info */}
               <div class="col flex-grow-1">
-                  <h2 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h2>
+                  <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
                   <p class="small text-muted mb-1">
-                    {station.state ? <span><i class="bi bi-geo-alt me-1"></i>{station.state}</span> : null}
-                    {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
+                    {station.state ? <span itemprop="addressLocality"><i class="bi bi-geo-alt me-1" aria-hidden="true"></i>{station.state}</span> : null}
+                    {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" aria-hidden="true"></i>{station.bitrate} kbps</span> : null}
                   </p>
                   <div class="d-flex gap-2 flex-wrap">
                     {station.genres && station.genres.slice(0, 3).map((genre) => (
-                      <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill">{genre}</span>
+                      <a
+                        href={`/genres/${slugify(genre)}/`}
+                        class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
+                      >
+                        {genre}
+                      </a>
                     ))}
                   </div>
               </div>

@@ -101,7 +101,7 @@ const structuredData = {
   />
   <div class="mb-4">
     <h1 class="display-5 fw-bold mb-2">Stations by Genre</h1>
-    <p class="lead text-muted">Browse stations grouped by their primary genres.</p>
+    <h2 class="lead text-muted">Browse stations grouped by their primary genres.</h2>
     <p class="text-muted small">Genres arranged alphabetically; stations in each genre sorted by votes.</p>
   </div>
   <CategorySwitch current="genres" />
@@ -126,7 +126,7 @@ const structuredData = {
           <a href={`/genres/${slug}/`} class="text-decoration-none">
             <div class="border rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
               <div>
-                <h2 class="h6 fw-bold text-dark mb-1">{genre}</h2>
+                <h3 class="h6 fw-bold text-dark mb-1">{genre}</h3>
                 <p class="small text-muted mb-2">{stations.length} station{stations.length === 1 ? "" : "s"}</p>
                 <p class="small text-muted mb-0">Top: {topStations || "Explore stations"}</p>
               </div>

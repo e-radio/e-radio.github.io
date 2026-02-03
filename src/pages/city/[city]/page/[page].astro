@@ -1,8 +1,9 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
-import SEO from "../../../components/SEO.astro";
-import CategorySwitch from "../../../components/CategorySwitch.astro";
-import rawStations from "../../../data/stations-gr.json";
+import Layout from "../../../../layouts/Layout.astro";
+import SEO from "../../../../components/SEO.astro";
+import CategorySwitch from "../../../../components/CategorySwitch.astro";
+import rawStations from "../../../../data/stations-gr.json";
+import { slugify } from "../../../../lib/slug";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
@@ -55,7 +56,7 @@ export function getStaticPaths() {
     const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
     const sorted = stations
       .slice()
-      .sort((a, b) => (b.votes || 0) - (a.votes || 0));
+      .sort((a: typeof rawStations[0], b: typeof rawStations[0]) => (b.votes || 0) - (a.votes || 0));
 
     const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
     if (totalPages <= 1) continue;
@@ -111,12 +112,12 @@ const structuredData = {
   <div class="mb-4">
     <p class="small text-muted mb-2"><a class="link-muted" href={`/city/${slug}/`}>← Back to {city}</a></p>
     <h1 class="display-6 fw-bold mb-2">{city} Radio Stations</h1>
-    <p class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
+    <h2 class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</h2>
   </div>
   <CategorySwitch current="city" />
   <section class="mt-4">
     <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
-      {pagedStations.map((station, index) => (
+      {pagedStations.map((station: typeof rawStations[0], index: number) => (
         <div class={`station-item position-relative ${index !== pagedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
           <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`}></a>
           <div class="station-item-body p-3">
@@ -150,12 +151,17 @@ const structuredData = {
                 <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
                 <p class="small text-muted mb-1">
                   {station.bitrate ? <span><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
-                  {station.genres && station.genres.length > 0 ? (
-                    <span class="ms-2">
-                      <i class="bi bi-music-note-beamed me-1"></i>{station.genres.slice(0, 2).join(", ")}
-                    </span>
-                  ) : null}
                 </p>
+                <div class="d-flex gap-2 flex-wrap">
+                  {station.genres && station.genres.slice(0, 3).map((genre) => (
+                    <a
+                      href={`/genres/${slugify(genre)}/`}
+                      class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
+                    >
+                      {genre}
+                    </a>
+                  ))}
+                </div>
               </div>
               <div class="col-auto text-end d-md-block">
                 <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" loading="lazy" decoding="async" fetchpriority="low" /></a>
