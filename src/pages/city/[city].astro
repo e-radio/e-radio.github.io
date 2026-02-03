@@ -60,6 +60,14 @@ export function getStaticPaths() {
 
 const { city, stations, slug } = Astro.props;
 
+const STATIONS_PER_PAGE = 20;
+const page = 1;
+const totalStations = stations.length;
+const totalPages = Math.ceil(totalStations / STATIONS_PER_PAGE);
+const startIndex = (page - 1) * STATIONS_PER_PAGE;
+const endIndex = startIndex + STATIONS_PER_PAGE;
+const pagedStations = stations.slice(startIndex, endIndex);
+
 const siteRoot = "https://e-radio.github.io";
 const canonical = `${siteRoot}/city/${slug}/`;
 const pageTitle = `${city} Radio Stations | E-Radio`;
@@ -95,12 +103,15 @@ const structuredData = {
     <p class="small text-muted mb-2"><a class="link-muted" href="/city/">← Back to cities</a></p>
     <h1 class="display-6 fw-bold mb-2">{city} Radio Stations</h1>
     <p class="lead text-muted mb-0">Browse {stations.length} station{stations.length === 1 ? "" : "s"} from {city}.</p>
+    {totalPages > 1 && (
+      <p class="text-muted small mt-2">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
+    )}
   </div>
   <CategorySwitch current="city" />
   <section class="mt-4">
     <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
-      {stations.map((station, index) => (
-        <div class={`station-item position-relative ${index !== stations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
+      {pagedStations.map((station, index) => (
+        <div class={`station-item position-relative ${index !== pagedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`}>
           <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`}></a>
           <div class="station-item-body p-3">
             <div class="row align-items-center g-3">
@@ -149,4 +160,27 @@ const structuredData = {
       ))}
     </div>
   </section>
+  {totalPages > 1 && (
+    <nav aria-label="City pagination" class="mt-5">
+      <ul class="pagination justify-content-center">
+        <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
+          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/city/${slug}/` : `/city/${slug}/page/${page - 1}/`) : '#'}>
+            Previous
+          </a>
+        </li>
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+          <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
+            <a class="page-link" href={pageNum === 1 ? `/city/${slug}/` : `/city/${slug}/page/${pageNum}/`}>
+              {pageNum}
+            </a>
+          </li>
+        ))}
+        <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
+          <a class="page-link" href={page < totalPages ? `/city/${slug}/page/${page + 1}/` : '#'}>
+            Next
+          </a>
+        </li>
+      </ul>
+    </nav>
+  )}
 </Layout>

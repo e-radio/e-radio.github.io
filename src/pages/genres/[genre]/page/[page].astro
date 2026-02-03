@@ -1,15 +1,18 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import SEO from "../../components/SEO.astro";
-import CategorySwitch from "../../components/CategorySwitch.astro";
-import rawStations from "../../data/stations-gr.json";
+import Layout from "../../../../layouts/Layout.astro";
+import SEO from "../../../../components/SEO.astro";
+import CategorySwitch from "../../../../components/CategorySwitch.astro";
+import rawStations from "../../../../data/stations-gr.json";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 const ogImage = "/e-radio-og-image.png";
 
+const PAGE_SIZE = 20;
+
 export function getStaticPaths() {
+  const PAGE_SIZE = 20;
   const transliterateGreek = (input: string) => {
     const map: Record<string, string> = {
       Α: "a", Β: "v", Γ: "g", Δ: "d", Ε: "e", Ζ: "z", Η: "i", Θ: "th", Ι: "i", Κ: "k", Λ: "l", Μ: "m",
@@ -47,36 +50,41 @@ export function getStaticPaths() {
   }
 
   const slugCounts = new Map<string, number>();
-  return [...genreMap.entries()]
-    .map(([genre, stations]) => {
-      const base = baseGenreSlug(genre);
-      const nextCount = (slugCounts.get(base) || 0) + 1;
-      slugCounts.set(base, nextCount);
-      const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
-      const sorted = stations
-        .slice()
-        .sort((a, b) => (b.votes || 0) - (a.votes || 0));
-      return {
-        params: { genre: slug },
-        props: { genre, slug, stations: sorted },
-      };
-    });
+  const paths: { params: { genre: string; page: string }; props: { genre: string; slug: string; stations: typeof rawStations; page: number; totalPages: number } }[] = [];
+
+  for (const [genre, stations] of genreMap.entries()) {
+    const base = baseGenreSlug(genre);
+    const nextCount = (slugCounts.get(base) || 0) + 1;
+    slugCounts.set(base, nextCount);
+    const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
+    const sorted = stations
+      .slice()
+      .sort((a, b) => (b.votes || 0) - (a.votes || 0));
+
+    const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+    if (totalPages <= 1) continue;
+
+    for (let page = 2; page <= totalPages; page += 1) {
+      paths.push({
+        params: { genre: slug, page: String(page) },
+        props: { genre, slug, stations: sorted, page, totalPages },
+      });
+    }
+  }
+
+  return paths;
 }
 
-const { genre, stations, slug } = Astro.props;
-
-const STATIONS_PER_PAGE = 20;
-const page = 1;
+const { genre, stations, slug, page, totalPages } = Astro.props;
 const totalStations = stations.length;
-const totalPages = Math.ceil(totalStations / STATIONS_PER_PAGE);
-const startIndex = (page - 1) * STATIONS_PER_PAGE;
-const endIndex = startIndex + STATIONS_PER_PAGE;
+const startIndex = (page - 1) * PAGE_SIZE;
+const endIndex = startIndex + PAGE_SIZE;
 const pagedStations = stations.slice(startIndex, endIndex);
 
 const siteRoot = "https://e-radio.github.io";
-const canonical = `${siteRoot}/genres/${slug}/`;
-const pageTitle = `${genre} Radio Stations | E-Radio`;
-const pageDescription = `Listen to ${genre} radio stations from Greece and explore curated picks, popular streams, and related stations that match this sound and mood.`;
+const canonical = `${siteRoot}/genres/${slug}/page/${page}/`;
+const pageTitle = `${genre} Radio Stations – Page ${page} | E-Radio`;
+const pageDescription = `Listen to ${genre} radio stations from Greece. Page ${page} of ${totalPages} with curated picks, popular streams, and related stations.`;
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -105,12 +113,9 @@ const structuredData = {
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <p class="small text-muted mb-2"><a class="link-muted" href="/genres/">← Back to genres</a></p>
+    <p class="small text-muted mb-2"><a class="link-muted" href={`/genres/${slug}/`}>← Back to {genre}</a></p>
     <h1 class="display-6 fw-bold mb-2">{genre} Stations</h1>
-    <p class="lead text-muted mb-0">Browse {stations.length} station{stations.length === 1 ? "" : "s"} in {genre}.</p>
-    {totalPages > 1 && (
-      <p class="text-muted small mt-2">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
-    )}
+    <p class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
   </div>
   <CategorySwitch current="genres" />
   <section class="mt-4">
@@ -161,27 +166,25 @@ const structuredData = {
       ))}
     </div>
   </section>
-  {totalPages > 1 && (
-    <nav aria-label="Genre pagination" class="mt-5">
-      <ul class="pagination justify-content-center">
-        <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
-          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page - 1}/`) : '#'}>
-            Previous
+  <nav aria-label="Genre pagination" class="mt-5">
+    <ul class="pagination justify-content-center">
+      <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
+        <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page - 1}/`) : '#'}>
+          Previous
+        </a>
+      </li>
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+        <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
+          <a class="page-link" href={pageNum === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${pageNum}/`}>
+            {pageNum}
           </a>
         </li>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-          <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
-            <a class="page-link" href={pageNum === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${pageNum}/`}>
-              {pageNum}
-            </a>
-          </li>
-        ))}
-        <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
-          <a class="page-link" href={page < totalPages ? `/genres/${slug}/page/${page + 1}/` : '#'}>
-            Next
-          </a>
-        </li>
-      </ul>
-    </nav>
-  )}
+      ))}
+      <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
+        <a class="page-link" href={page < totalPages ? `/genres/${slug}/page/${page + 1}/` : '#'}>
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
 </Layout>

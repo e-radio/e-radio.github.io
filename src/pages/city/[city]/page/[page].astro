@@ -1,13 +1,15 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import SEO from "../../components/SEO.astro";
-import CategorySwitch from "../../components/CategorySwitch.astro";
-import rawStations from "../../data/stations-gr.json";
+import Layout from "../../../layouts/Layout.astro";
+import SEO from "../../../components/SEO.astro";
+import CategorySwitch from "../../../components/CategorySwitch.astro";
+import rawStations from "../../../data/stations-gr.json";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 const ogImage = "/e-radio-og-image.png";
+
+const PAGE_SIZE = 20;
 
 export function getStaticPaths() {
   const transliterateGreek = (input: string) => {
@@ -25,8 +27,8 @@ export function getStaticPaths() {
       .join("");
   };
 
-  const baseGenreSlug = (genre: string) =>
-    transliterateGreek(genre || "")
+  const baseCitySlug = (city: string) =>
+    transliterateGreek(city || "")
       .toLowerCase()
       .trim()
       .replace(/['"]/g, "")
@@ -34,49 +36,51 @@ export function getStaticPaths() {
       .replace(/^-+|-+$/g, "")
       .slice(0, 80) || "other";
 
-  const genreMap = new Map<string, typeof rawStations>();
+  const grouped = new Map<string, typeof rawStations>();
   for (const station of rawStations) {
-    const genres = Array.isArray(station.genres) && station.genres.length > 0 ? station.genres : ["Other"];
-    for (const genre of genres) {
-      const key = genre.trim() || "Other";
-      if (!genreMap.has(key)) {
-        genreMap.set(key, []);
-      }
-      genreMap.get(key)?.push(station);
+    const city = (station.state || "Other").trim() || "Other";
+    if (!grouped.has(city)) {
+      grouped.set(city, []);
     }
+    grouped.get(city)?.push(station);
   }
 
   const slugCounts = new Map<string, number>();
-  return [...genreMap.entries()]
-    .map(([genre, stations]) => {
-      const base = baseGenreSlug(genre);
-      const nextCount = (slugCounts.get(base) || 0) + 1;
-      slugCounts.set(base, nextCount);
-      const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
-      const sorted = stations
-        .slice()
-        .sort((a, b) => (b.votes || 0) - (a.votes || 0));
-      return {
-        params: { genre: slug },
-        props: { genre, slug, stations: sorted },
-      };
-    });
+  const paths: { params: { city: string; page: string }; props: { city: string; slug: string; stations: typeof rawStations; page: number; totalPages: number } }[] = [];
+
+  for (const [city, stations] of grouped.entries()) {
+    const base = baseCitySlug(city);
+    const nextCount = (slugCounts.get(base) || 0) + 1;
+    slugCounts.set(base, nextCount);
+    const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
+    const sorted = stations
+      .slice()
+      .sort((a, b) => (b.votes || 0) - (a.votes || 0));
+
+    const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+    if (totalPages <= 1) continue;
+
+    for (let page = 2; page <= totalPages; page += 1) {
+      paths.push({
+        params: { city: slug, page: String(page) },
+        props: { city, slug, stations: sorted, page, totalPages },
+      });
+    }
+  }
+
+  return paths;
 }
 
-const { genre, stations, slug } = Astro.props;
-
-const STATIONS_PER_PAGE = 20;
-const page = 1;
+const { city, stations, slug, page, totalPages } = Astro.props;
 const totalStations = stations.length;
-const totalPages = Math.ceil(totalStations / STATIONS_PER_PAGE);
-const startIndex = (page - 1) * STATIONS_PER_PAGE;
-const endIndex = startIndex + STATIONS_PER_PAGE;
+const startIndex = (page - 1) * PAGE_SIZE;
+const endIndex = startIndex + PAGE_SIZE;
 const pagedStations = stations.slice(startIndex, endIndex);
 
 const siteRoot = "https://e-radio.github.io";
-const canonical = `${siteRoot}/genres/${slug}/`;
-const pageTitle = `${genre} Radio Stations | E-Radio`;
-const pageDescription = `Listen to ${genre} radio stations from Greece and explore curated picks, popular streams, and related stations that match this sound and mood.`;
+const canonical = `${siteRoot}/city/${slug}/page/${page}/`;
+const pageTitle = `${city} Radio Stations – Page ${page} | E-Radio`;
+const pageDescription = `Listen to live radio stations from ${city}. Page ${page} of ${totalPages} with local favorites, popular streams, and community picks.`;
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -99,20 +103,17 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords={`${genre} radio, ${genre} live radio, greek radio ${genre}`}
+    keywords={`${city} radio, ${city} live radio, greek radio ${city}`}
     robots="index, follow"
     author="E-Radio Greece"
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <p class="small text-muted mb-2"><a class="link-muted" href="/genres/">← Back to genres</a></p>
-    <h1 class="display-6 fw-bold mb-2">{genre} Stations</h1>
-    <p class="lead text-muted mb-0">Browse {stations.length} station{stations.length === 1 ? "" : "s"} in {genre}.</p>
-    {totalPages > 1 && (
-      <p class="text-muted small mt-2">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
-    )}
+    <p class="small text-muted mb-2"><a class="link-muted" href={`/city/${slug}/`}>← Back to {city}</a></p>
+    <h1 class="display-6 fw-bold mb-2">{city} Radio Stations</h1>
+    <p class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
   </div>
-  <CategorySwitch current="genres" />
+  <CategorySwitch current="city" />
   <section class="mt-4">
     <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
       {pagedStations.map((station, index) => (
@@ -148,8 +149,12 @@ const structuredData = {
               <div class="col flex-grow-1">
                 <h3 class="mb-1 fs-6 fw-bold text-dark">{station.name}</h3>
                 <p class="small text-muted mb-1">
-                  {station.state ? <span><i class="bi bi-geo-alt me-1"></i>{station.state}</span> : null}
-                  {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
+                  {station.bitrate ? <span><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
+                  {station.genres && station.genres.length > 0 ? (
+                    <span class="ms-2">
+                      <i class="bi bi-music-note-beamed me-1"></i>{station.genres.slice(0, 2).join(", ")}
+                    </span>
+                  ) : null}
                 </p>
               </div>
               <div class="col-auto text-end d-md-block">
@@ -161,27 +166,25 @@ const structuredData = {
       ))}
     </div>
   </section>
-  {totalPages > 1 && (
-    <nav aria-label="Genre pagination" class="mt-5">
-      <ul class="pagination justify-content-center">
-        <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
-          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page - 1}/`) : '#'}>
-            Previous
+  <nav aria-label="City pagination" class="mt-5">
+    <ul class="pagination justify-content-center">
+      <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
+        <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/city/${slug}/` : `/city/${slug}/page/${page - 1}/`) : '#'}>
+          Previous
+        </a>
+      </li>
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+        <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
+          <a class="page-link" href={pageNum === 1 ? `/city/${slug}/` : `/city/${slug}/page/${pageNum}/`}>
+            {pageNum}
           </a>
         </li>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
-          <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
-            <a class="page-link" href={pageNum === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${pageNum}/`}>
-              {pageNum}
-            </a>
-          </li>
-        ))}
-        <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
-          <a class="page-link" href={page < totalPages ? `/genres/${slug}/page/${page + 1}/` : '#'}>
-            Next
-          </a>
-        </li>
-      </ul>
-    </nav>
-  )}
+      ))}
+      <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
+        <a class="page-link" href={page < totalPages ? `/city/${slug}/page/${page + 1}/` : '#'}>
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
 </Layout>
