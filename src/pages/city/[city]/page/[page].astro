@@ -13,6 +13,7 @@ const ogImage = "/e-radio-og-image.png";
 const PAGE_SIZE = 20;
 
 export function getStaticPaths() {
+  const PAGE_SIZE = 20;
   const transliterateGreek = (input: string) => {
     const map: Record<string, string> = {
       Α: "a", Β: "v", Γ: "g", Δ: "d", Ε: "e", Ζ: "z", Η: "i", Θ: "th", Ι: "i", Κ: "k", Λ: "l", Μ: "m",
