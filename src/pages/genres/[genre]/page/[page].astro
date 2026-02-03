@@ -3,6 +3,7 @@ import Layout from "../../../../layouts/Layout.astro";
 import SEO from "../../../../components/SEO.astro";
 import CategorySwitch from "../../../../components/CategorySwitch.astro";
 import rawStations from "../../../../data/stations-gr.json";
+import { Image } from "astro:assets";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
@@ -127,27 +128,27 @@ const structuredData = {
             <div class="row align-items-center g-3">
               <div class="col-auto">
                 {station.favicon ? (
-                  <img
+                  <Image
                     src={station.favicon}
                     alt={`${station.name} logo`}
                     class="rounded station-logo"
                     loading="lazy"
                     decoding="async"
                     fetchpriority="low"
-                    width="60"
-                    height="60"
+                    width={60}
+                    height={60}
                     itemprop="image"
                   />
                 ) : (
-                  <img
+                  <Image
                     src={radioAppIconUrl}
                     alt="Radddio app icon"
                     class="rounded station-logo"
                     loading="lazy"
                     decoding="async"
                     fetchpriority="low"
-                    width="60"
-                    height="60"
+                    width={60}
+                    height={60}
                     itemprop="image"
                   />
                 )}
@@ -160,7 +161,7 @@ const structuredData = {
                 </p>
               </div>
               <div class="col-auto text-end d-md-block">
-                <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}><img src={radddioBadgeUrl} alt="Radddio app badge" loading="lazy" decoding="async" fetchpriority="low" /></a>
+                <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}><Image src={radddioBadgeUrl} alt="Radddio app badge" width={144} height={47} loading="lazy" decoding="async" fetchpriority="low" /></a>
               </div>
             </div>
           </div>
@@ -170,8 +171,8 @@ const structuredData = {
   </section>
   <nav aria-label="Genre pagination" class="mt-5">
     <ul class="pagination justify-content-center">
-      <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
-        <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page - 1}/`) : '#'}>
+        <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
+          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page - 1}/`) : (page === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page}/`)}>
           Previous
         </a>
       </li>
@@ -182,8 +183,8 @@ const structuredData = {
           </a>
         </li>
       ))}
-      <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
-        <a class="page-link" href={page < totalPages ? `/genres/${slug}/page/${page + 1}/` : '#'}>
+        <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
+          <a class="page-link" href={page < totalPages ? `/genres/${slug}/page/${page + 1}/` : (page === 1 ? `/genres/${slug}/` : `/genres/${slug}/page/${page}/`)}>
           Next
         </a>
       </li>

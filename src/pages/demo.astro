@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import SEO from '../components/SEO.astro';
 import { slugify } from "../lib/slug";
+import { Image } from "astro:assets";
 
 const title = "Demo – E-Radio Greece";
 const description = "Explore a demo page showcasing station listings, badges, and layout styles for E-Radio Greece, including sample cards, icons, and interactions used across the site.";
@@ -85,7 +86,7 @@ const metadataStations = [
           <div class="station-item-body p-3">
             <div class="row align-items-center g-3">
               <div class="col-auto">
-                <img src={demoIcon} alt="Demo station icon" class="rounded station-logo" itemprop="image" />
+                <Image src={demoIcon} alt="Demo station icon" class="rounded station-logo" width={60} height={60} itemprop="image" />
               </div>
 
               <div class="col flex-grow-1">
@@ -119,7 +120,7 @@ const metadataStations = [
 
               <div class="col-auto text-end d-none d-md-block">
                 <a href={radddioURL} class="text-decoration-none radddio-badge" aria-label={`Listen to ${station.name} on Radddio App`} role="link" target="_blank" rel="nofollow noopener">
-                  <img src={radddioBadgeUrl} alt="Radddio App Badge" />
+                  <Image src={radddioBadgeUrl} alt="Radddio App Badge" width={144} height={47} />
                 </a>
               </div>
             </div>
