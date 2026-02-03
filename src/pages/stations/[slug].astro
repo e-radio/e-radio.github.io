@@ -577,7 +577,7 @@ const structuredData = {
           <div class="text-center py-4">
             <p class="small-muted mb-3">Stream is currently unavailable.</p>
             <div class="d-flex justify-content-center flex-wrap gap-2">
-              <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="noopener">
+              <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}>
                 <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
               </a>
               {station.homepage && (
@@ -596,7 +596,8 @@ const structuredData = {
                 href={radddioURL}
                 class="text-decoration-none radddio-badge"
                 target="_blank"
-                aria-label="Listen on Radddio"
+                rel="nofollow noopener"
+                aria-label={`Listen to ${station.name} on Radddio App`}
               >
                 <img src={radddioBadgeUrl} alt="Radddio app badge" />
               </a>
@@ -667,7 +668,7 @@ const structuredData = {
                   </div>
                 </div>
                 <div class="col-auto text-end d-md-block">
-                  <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" aria-label="Listen on Radddio"><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
+                  <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${recStation.name} on Radddio App`}><img src={radddioBadgeUrl} alt="Radddio app badge" /></a>
                 </div>
               </div>
             </div>
@@ -751,7 +752,7 @@ const structuredData = {
             <div class="small-muted mb-2">More</div>
             <div class="d-grid gap-1">
               <a href="/" class="text-decoration-none">Browse Greece Stations</a>
-              <a href={radddioURL} target="_blank" rel="noopener" class="text-decoration-none">Listen on Radddio</a>
+              <a href={radddioURL} target="_blank" rel="nofollow noopener" class="text-decoration-none" aria-label={`Listen to ${station.name} on Radddio App`}>Listen on Radddio</a>
               {station.homepage && (
               <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station Website</a>
                )}
