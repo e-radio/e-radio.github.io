@@ -13,6 +13,7 @@
     "fff brobe": "python3 tools/ffprobe-metadata.py --url https://derti.live24.gr/derty1000"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
     "astro": "^5.16.15",
     "bootstrap": "^5.3.8",
     "sharp": "^0.33.5"
