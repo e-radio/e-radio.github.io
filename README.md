@@ -1,4 +1,5 @@
 # e-Radio Greece
+Check the website: https://e-radio.github.io/
 
 A modern web application for streaming Greek radio stations, built with [Astro](https://astro.build).
 
