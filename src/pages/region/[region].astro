@@ -104,12 +104,12 @@ const structuredData = {
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <p class="small text-muted mb-2"><a class="link-muted" href="/region/">← Back to regions</a></p>
-    <h1 class="display-6 fw-bold mb-2">{region} Radio Stations</h1>
-    <p class="lead text-muted mb-0">Browse {stations.length} station{stations.length === 1 ? "" : "s"} from {region}.</p>
+    <h1 class="display-5 fw-bold mb-2">{region} Radio Stations</h1>
+    <h2 class="lead text-muted">Browse {stations.length} station{stations.length === 1 ? "" : "s"} from {region}.</h2>
     {totalPages > 1 && (
       <p class="text-muted small mt-2">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
     )}
+    <p class="small text-muted mb-2"><a href="/region/">← Back to regions</a></p>
   </div>
   <CategorySwitch current="region" />
   <section class="mt-4">

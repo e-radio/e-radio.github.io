@@ -114,9 +114,9 @@ const structuredData = {
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <p class="small text-muted mb-2"><a class="link-muted" href={`/genres/${slug}/`}>← Back to {genre}</a></p>
-    <h1 class="display-6 fw-bold mb-2">{genre} Stations</h1>
+    <h1 class="display-5 fw-bold mb-2">{genre} Stations</h1>
     <p class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
+    <p class="small text-muted mb-2"><a href={`/genres/${slug}/`}>← Back to {genre}</a></p>
   </div>
   <CategorySwitch current="genres" />
   <section class="mt-4">

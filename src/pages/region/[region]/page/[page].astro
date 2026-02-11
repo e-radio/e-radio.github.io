@@ -112,9 +112,9 @@ const structuredData = {
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <p class="small text-muted mb-2"><a class="link-muted" href={`/region/${slug}/`}>← Back to {region}</a></p>
-    <h1 class="display-6 fw-bold mb-2">{region} Radio Stations</h1>
+    <h1 class="display-5 fw-bold mb-2">{region} Radio Stations</h1>
     <h2 class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</h2>
+    <p class="small text-muted mb-2"><a href={`/region/${slug}/`}>← Back to {region}</a></p>
   </div>
   <CategorySwitch current="region" />
   <section class="mt-4">
