@@ -41,7 +41,7 @@ export function getStaticPaths() {
 
   const grouped = new Map<string, typeof rawStations>();
   for (const station of rawStations) {
-    const city = (station.state || "Other").trim() || "Other";
+    const city = (station.city || "Other").trim() || "Other";
     if (!grouped.has(city)) {
       grouped.set(city, []);
     }

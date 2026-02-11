@@ -27,26 +27,28 @@ export function getStaticPaths() {
       .join("");
   };
 
-  const baseCitySlug = (city: string) =>
-    transliterateGreek(city || "")
+  const baseRegionSlug = (region: string) =>
+    transliterateGreek(region || "")
       .toLowerCase()
       .trim()
       .replace(/['"]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "")
       .slice(0, 80) || "other";
+
   const grouped = new Map<string, typeof rawStations>();
   for (const station of rawStations) {
-    const city = (station.city || "Other").trim() || "Other";
-    if (!grouped.has(city)) {
-      grouped.set(city, []);
+    const region = (station.state || "Other").trim() || "Other";
+    if (!grouped.has(region)) {
+      grouped.set(region, []);
     }
-    grouped.get(city)?.push(station);
+    grouped.get(region)?.push(station);
   }
+
   const slugCounts = new Map<string, number>();
   return [...grouped.entries()]
-    .map(([city, stations]) => {
-      const base = baseCitySlug(city);
+    .map(([region, stations]) => {
+      const base = baseRegionSlug(region);
       const nextCount = (slugCounts.get(base) || 0) + 1;
       slugCounts.set(base, nextCount);
       const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
@@ -54,13 +56,13 @@ export function getStaticPaths() {
         .slice()
         .sort((a, b) => (b.votes || 0) - (a.votes || 0));
       return {
-        params: { city: slug },
-        props: { city, slug, stations: sorted },
+        params: { region: slug },
+        props: { region, slug, stations: sorted },
       };
     });
 }
 
-const { city, stations, slug } = Astro.props;
+const { region, stations, slug } = Astro.props;
 
 const STATIONS_PER_PAGE = 20;
 const page = 1;
@@ -71,9 +73,9 @@ const endIndex = startIndex + STATIONS_PER_PAGE;
 const pagedStations = stations.slice(startIndex, endIndex);
 
 const siteRoot = "https://e-radio.github.io";
-const canonical = `${siteRoot}/city/${slug}/`;
-const pageTitle = `${city} Radio Stations | E-Radio`;
-const pageDescription = `Listen to live radio stations from ${city} and explore curated local favorites, popular streams, and community picks from this area.`;
+const canonical = `${siteRoot}/region/${slug}/`;
+const pageTitle = `${region} Radio Stations | E-Radio`;
+const pageDescription = `Listen to live radio stations from ${region} and explore curated local favorites, popular streams, and community picks from this region.`;
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -96,20 +98,20 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords={`${city} radio, ${city} live radio, greek radio ${city}`}
+    keywords={`${region} radio, ${region} live radio, greek radio ${region}`}
     robots="index, follow"
     author="E-Radio Greece"
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <p class="small text-muted mb-2"><a class="link-muted" href="/city/">← Back to cities</a></p>
-    <h1 class="display-6 fw-bold mb-2">{city} Radio Stations</h1>
-    <p class="lead text-muted mb-0">Browse {stations.length} station{stations.length === 1 ? "" : "s"} from {city}.</p>
+    <p class="small text-muted mb-2"><a class="link-muted" href="/region/">← Back to regions</a></p>
+    <h1 class="display-6 fw-bold mb-2">{region} Radio Stations</h1>
+    <p class="lead text-muted mb-0">Browse {stations.length} station{stations.length === 1 ? "" : "s"} from {region}.</p>
     {totalPages > 1 && (
       <p class="text-muted small mt-2">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
     )}
   </div>
-  <CategorySwitch current="city" />
+  <CategorySwitch current="region" />
   <section class="mt-4">
     <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
       {pagedStations.map((station, index) => (
@@ -170,22 +172,22 @@ const structuredData = {
     </div>
   </section>
   {totalPages > 1 && (
-    <nav aria-label="City pagination" class="mt-5">
+    <nav aria-label="Region pagination" class="mt-5">
       <ul class="pagination justify-content-center">
         <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
-          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/city/${slug}/` : `/city/${slug}/page/${page - 1}/`) : `/city/${slug}/`}>
+          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? `/region/${slug}/` : `/region/${slug}/page/${page - 1}/`) : `/region/${slug}/`}>
             Previous
           </a>
         </li>
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
           <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
-            <a class="page-link" href={pageNum === 1 ? `/city/${slug}/` : `/city/${slug}/page/${pageNum}/`}>
+            <a class="page-link" href={pageNum === 1 ? `/region/${slug}/` : `/region/${slug}/page/${pageNum}/`}>
               {pageNum}
             </a>
           </li>
         ))}
         <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
-          <a class="page-link" href={page < totalPages ? `/city/${slug}/page/${page + 1}/` : (page === 1 ? `/city/${slug}/` : `/city/${slug}/page/${page}/`)}>
+          <a class="page-link" href={page < totalPages ? `/region/${slug}/page/${page + 1}/` : (page === 1 ? `/region/${slug}/` : `/region/${slug}/page/${page}/`)}>
             Next
           </a>
         </li>

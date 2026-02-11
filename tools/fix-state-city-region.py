@@ -9,29 +9,43 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 DATA_PATH = Path("src/data/stations-gr.json")
-DEFAULT_PROGRESS_PATH = Path("tools/state-geo-progress.json")
+DEFAULT_PROGRESS_PATH = Path("tools/state-region-progress.json")
 USER_AGENT = "Mozilla/5.0 (compatible; E-RadioBot/1.0; +https://e-radio.github.io)"
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/reverse"
 
-CITY_PRIORITY = (
-    "city",
-    "town",
-    "village",
-    "municipality",
-    "county",
-    "city_district",
-    "suburb",
+REGIONS = (
+    "Attica",
+    "Central Macedonia",
+    "West Macedonia",
+    "East Macedonia and Thrace",
+    "Thessaly",
+    "Epirus",
+    "Western Greece",
+    "Central Greece",
+    "Peloponnese",
+    "North Aegean",
+    "South Aegean",
+    "Ionian Islands",
+    "Crete",
 )
 
-STATE_PRIORITY = (
-    "state",
-    "state_district",
-    "region",
-    "county",
-    "province",
-)
+REGION_ALIASES = {
+    "Attica": ["attica", "attiki"],
+    "Central Macedonia": ["central macedonia"],
+    "West Macedonia": ["west macedonia", "western macedonia"],
+    "East Macedonia and Thrace": ["east macedonia and thrace", "eastern macedonia and thrace"],
+    "Thessaly": ["thessaly", "thessalia"],
+    "Epirus": ["epirus", "ipeiros"],
+    "Western Greece": ["western greece", "west greece"],
+    "Central Greece": ["central greece", "sterea ellada", "steria ellada", "sterea"],
+    "Peloponnese": ["peloponnese", "peloponnisos", "peloponnesos"],
+    "North Aegean": ["north aegean"],
+    "South Aegean": ["south aegean"],
+    "Ionian Islands": ["ionian islands", "ionian isles"],
+    "Crete": ["crete", "kriti"],
+}
 
-CLEAN_PREFIXES = (
+CITY_PREFIXES = (
     "municipality of ",
     "municipal unit of ",
     "city of ",
@@ -43,7 +57,7 @@ CLEAN_PREFIXES = (
     "metropolitan area of ",
 )
 
-CLEAN_SUFFIXES = (
+CITY_SUFFIXES = (
     " municipality",
     " municipal unit",
     " city",
@@ -53,6 +67,8 @@ CLEAN_SUFFIXES = (
     " county",
     " district",
 )
+
+ADDRESS_FIELDS = ("state", "region", "state_district", "county")
 
 
 def reverse_geocode(lat: float, lon: float, language: str) -> dict:
@@ -74,7 +90,14 @@ def reverse_geocode(lat: float, lon: float, language: str) -> dict:
         return json.loads(resp.read(1024 * 1024).decode("utf-8", errors="ignore"))
 
 
-def clean_name(value: str) -> str:
+def normalize_text(value: str) -> str:
+    cleaned = value.strip().lower()
+    cleaned = re.sub(r"[\s\-_/]+", " ", cleaned)
+    cleaned = re.sub(r"\s*\(.*?\)\s*", " ", cleaned)
+    return " ".join(cleaned.split())
+
+
+def clean_city(value: str) -> str:
     cleaned = " ".join(value.strip().split())
 
     if "," in cleaned:
@@ -84,13 +107,13 @@ def clean_name(value: str) -> str:
     cleaned = " ".join(cleaned.split())
 
     lower = cleaned.lower()
-    for prefix in CLEAN_PREFIXES:
+    for prefix in CITY_PREFIXES:
         if lower.startswith(prefix):
             cleaned = cleaned[len(prefix) :].strip()
             break
 
     lower = cleaned.lower()
-    for suffix in CLEAN_SUFFIXES:
+    for suffix in CITY_SUFFIXES:
         if lower.endswith(suffix):
             cleaned = cleaned[: -len(suffix)].strip()
             break
@@ -98,19 +121,24 @@ def clean_name(value: str) -> str:
     return cleaned
 
 
-def pick_from_address(address: dict, keys: tuple[str, ...]) -> str | None:
-    for key in keys:
-        value = address.get(key)
-        if isinstance(value, str) and value.strip():
-            cleaned = clean_name(value)
-            if cleaned:
-                return cleaned
+def map_region(address: dict) -> str | None:
+    for field in ADDRESS_FIELDS:
+        value = address.get(field)
+        if not isinstance(value, str) or not value.strip():
+            continue
+        normalized = normalize_text(value)
+        for region, aliases in REGION_ALIASES.items():
+            for alias in aliases:
+                if alias in normalized:
+                    return region
     return None
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Fill station city/state from geo coordinates via reverse geocoding."
+        description=(
+            "Normalize city/state: move city-like state to city and set state to one of 13 Greece regions."
+        )
     )
     parser.add_argument("--max", type=int, default=0, help="Max stations to process in one run (0 = no limit)")
     parser.add_argument(
@@ -124,11 +152,6 @@ def main() -> int:
         type=Path,
         default=DEFAULT_PROGRESS_PATH,
         help="Path to progress file for skipped stations",
-    )
-    parser.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Overwrite existing city/state values (default: only fill missing)",
     )
     parser.add_argument(
         "--lang",
@@ -154,78 +177,52 @@ def main() -> int:
             skipped = set()
 
     try:
-        while processed < max_items:
-            target = None
-            for station in data:
-                has_city = station.get("city") not in (None, "")
-                has_state = station.get("state") not in (None, "")
-                needs_city = args.overwrite or not has_city
-                needs_state = args.overwrite or not has_state
-                if not (needs_city or needs_state):
-                    continue
-                if station.get("stationuuid") in skipped:
-                    continue
-                target = station
+        for station in data:
+            if processed >= max_items:
                 break
-
-            if not target:
-                print("No more stations to process.")
-                return 0
-
-            lat = target.get("geo_lat")
-            lon = target.get("geo_long")
-            if lat in (None, "") or lon in (None, ""):
-                print(f"Missing geo coordinates for station: {target.get('name')} ({target.get('stationuuid')})")
-                skipped.add(target.get("stationuuid"))
-                args.progress_file.write_text(
-                    json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n",
-                    encoding="utf-8",
-                )
+            station_id = station.get("stationuuid")
+            if station_id in skipped:
                 continue
 
-            print(f"Checking: {target.get('name')} ({target.get('stationuuid')})")
+            state_value = station.get("state")
+            state_is_region = isinstance(state_value, str) and state_value in REGIONS
+            city_value = station.get("city")
+
+            lat = station.get("geo_lat")
+            lon = station.get("geo_long")
+            if lat in (None, "") or lon in (None, ""):
+                skipped.add(station_id)
+                continue
+
+            print(f"Checking: {station.get('name')} ({station_id})")
             print(f"Geo: {lat}, {lon}")
 
             try:
                 payload = reverse_geocode(float(lat), float(lon), args.lang)
             except Exception as exc:
                 print(f"Failed to reverse-geocode: {exc}")
-                skipped.add(target.get("stationuuid"))
-                args.progress_file.write_text(
-                    json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n",
-                    encoding="utf-8",
-                )
+                skipped.add(station_id)
                 continue
 
             address = payload.get("address") or {}
-            city = pick_from_address(address, CITY_PRIORITY) if needs_city else None
-            state = pick_from_address(address, STATE_PRIORITY) if needs_state else None
-
-            updated_any = False
-            if city:
-                target["city"] = city
-                updated_any = True
-            if state:
-                target["state"] = state
-                updated_any = True
-
-            if not updated_any:
-                print("No suitable address field found. No changes made.")
-                skipped.add(target.get("stationuuid"))
-                args.progress_file.write_text(
-                    json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n",
-                    encoding="utf-8",
-                )
+            region = map_region(address)
+            if not region:
+                print("No region match found. No changes made.")
+                skipped.add(station_id)
                 continue
 
+            city_candidate = None
+            if isinstance(city_value, str) and city_value.strip():
+                city_candidate = clean_city(city_value)
+            elif isinstance(state_value, str) and state_value.strip() and not state_is_region:
+                city_candidate = clean_city(state_value)
+
+            if city_candidate:
+                station["city"] = city_candidate
+
+            station["state"] = region
             DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            if city and state:
-                print(f"✓ Updated city to: {city}")
-                print(f"✓ Updated state to: {state}")
-            elif city:
-                print(f"✓ Updated city to: {city}")
-            elif state:
-                print(f"✓ Updated state to: {state}")
+            print(f"✓ Updated state to: {region}")
             processed += 1
 
             if args.sleep > 0 and processed < max_items:
@@ -238,6 +235,10 @@ def main() -> int:
         )
         return 130
 
+    args.progress_file.write_text(
+        json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     return 0
 
 

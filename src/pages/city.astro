@@ -8,7 +8,7 @@ const ogImage = "/e-radio-og-image.png";
 
 const grouped = new Map<string, typeof rawStations>();
 for (const station of rawStations) {
-  const city = (station.state || "Other").trim() || "Other";
+  const city = (station.city || "Other").trim() || "Other";
   if (!grouped.has(city)) {
     grouped.set(city, []);
   }
@@ -65,6 +65,9 @@ const cityBadgeEntries = cityEntries
     return a.city.localeCompare(b.city, undefined, { sensitivity: "base" });
   });
 
+const totalCities = cityEntries.length;
+const totalStations = rawStations.length;
+
 const siteRoot = "https://e-radio.github.io";
 const canonical = `${siteRoot}/city/`;
 const pageTitle = "Greek Radio Stations by City | E-Radio";
@@ -100,6 +103,7 @@ const structuredData = {
     <h1 class="display-5 fw-bold mb-2">Greek Radio Stations by City</h1>
     <h2 class="lead text-muted">Find stations broadcast from your city or explore new areas.</h2>
     <p class="text-muted small">Cities arranged alphabetically; stations within each city sorted by votes.</p>
+    <p class="text-muted small">Showing {totalCities} cities across {totalStations} stations.</p>
   </div>
   <CategorySwitch current="city" />
   <div class="mb-4">

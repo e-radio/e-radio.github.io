@@ -1,21 +1,18 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import SEO from "../../components/SEO.astro";
-import CategorySwitch from "../../components/CategorySwitch.astro";
-import rawStations from "../../data/stations-gr.json";
+import Layout from "../layouts/Layout.astro";
+import SEO from "../components/SEO.astro";
+import CategorySwitch from "../components/CategorySwitch.astro";
+import rawStations from "../data/stations-gr.json";
 
 const ogImage = "/e-radio-og-image.png";
 
-const genreMap = new Map<string, typeof rawStations>();
+const grouped = new Map<string, typeof rawStations>();
 for (const station of rawStations) {
-  const genres = Array.isArray(station.genres) && station.genres.length > 0 ? station.genres : ["Other"];
-  for (const genre of genres) {
-    const key = genre.trim() || "Other";
-    if (!genreMap.has(key)) {
-      genreMap.set(key, []);
-    }
-    genreMap.get(key)?.push(station);
+  const region = (station.state || "Other").trim() || "Other";
+  if (!grouped.has(region)) {
+    grouped.set(region, []);
   }
+  grouped.get(region)?.push(station);
 }
 
 const transliterateGreek = (input: string) => {
@@ -33,8 +30,8 @@ const transliterateGreek = (input: string) => {
     .join("");
 };
 
-const baseGenreSlug = (genre: string) =>
-  transliterateGreek(genre || "")
+const baseRegionSlug = (region: string) =>
+  transliterateGreek(region || "")
     .toLowerCase()
     .trim()
     .replace(/['"]/g, "")
@@ -43,38 +40,38 @@ const baseGenreSlug = (genre: string) =>
     .slice(0, 80) || "other";
 
 const slugCounts = new Map<string, number>();
-const genreEntries = [...genreMap.entries()]
-  .map(([genre, stations]) => {
-    const base = baseGenreSlug(genre);
+const regionEntries = [...grouped.entries()]
+  .map(([region, stations]) => {
+    const base = baseRegionSlug(region);
     const nextCount = (slugCounts.get(base) || 0) + 1;
     slugCounts.set(base, nextCount);
     const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
     return {
-      genre,
+      region,
       slug,
       stations: stations
         .slice()
         .sort((a, b) => (b.votes || 0) - (a.votes || 0)),
     } as const;
   })
-  .sort((a, b) => a.genre.localeCompare(b.genre, undefined, { sensitivity: "base" }));
+  .sort((a, b) => a.region.localeCompare(b.region, undefined, { sensitivity: "base" }));
 
-const genreBadgeEntries = genreEntries
+const regionBadgeEntries = regionEntries
   .slice()
   .sort((a, b) => {
     if (b.stations.length !== a.stations.length) {
       return b.stations.length - a.stations.length;
     }
-    return a.genre.localeCompare(b.genre, undefined, { sensitivity: "base" });
+    return a.region.localeCompare(b.region, undefined, { sensitivity: "base" });
   });
 
-const totalGenres = genreEntries.length;
+const totalRegions = regionEntries.length;
 const totalStations = rawStations.length;
 
 const siteRoot = "https://e-radio.github.io";
-const canonical = `${siteRoot}/genres/`;
-const pageTitle = "Greek Radio Stations by Genre | E-Radio";
-const pageDescription = "Explore Greek radio stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.";
+const canonical = `${siteRoot}/region/`;
+const pageTitle = "Greek Radio Stations by Region | E-Radio";
+const pageDescription = "Browse live Greek radio stations grouped by region to discover local favorites across Greece's official regions.";
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -97,26 +94,25 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="greek radio genres, music genres greece radio"
+    keywords="greece radio regions, greek radio by region"
     robots="index, follow"
     author="E-Radio Greece"
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Stations by Genre</h1>
-    <h2 class="lead text-muted">Browse stations grouped by their primary genres.</h2>
-    <p class="text-muted small">Genres arranged alphabetically; stations in each genre sorted by votes.</p>
-    <p class="text-muted small">Showing {totalGenres} genres across {totalStations} stations.</p>
-
+    <h1 class="display-5 fw-bold mb-2">Greek Radio Stations by Region</h1>
+    <h2 class="lead text-muted">Explore stations across Greece's official regions.</h2>
+    <p class="text-muted small">Regions arranged alphabetically; stations within each region sorted by votes.</p>
+    <p class="text-muted small">Showing {totalRegions} regions across {totalStations} stations.</p>
   </div>
-  <CategorySwitch current="genres" />
+  <CategorySwitch current="region" />
   <div class="mb-4">
-    <h2 class="h6 text-muted text-uppercase">Browse genres</h2>
+    <h2 class="h6 text-muted text-uppercase">Browse regions</h2>
     <div class="d-flex flex-wrap gap-2">
-      {genreBadgeEntries.map(({ genre, stations, slug }) => {
+      {regionBadgeEntries.map(({ region, stations, slug }) => {
         return (
-        <a class="text-decoration-none d-inline-flex align-items-center" href={`/genres/${slug}/`} aria-label={`${genre} radio stations (${stations.length})`}>
-            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{genre}</span>
+        <a class="text-decoration-none d-inline-flex align-items-center" href={`/region/${slug}/`} aria-label={`${region} radio stations (${stations.length})`}>
+            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{region}</span>
             <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{stations.length}</span>
         </a>
         );
@@ -124,14 +120,14 @@ const structuredData = {
     </div>
   </div>
   <div class="row g-3">
-    {genreEntries.map(({ genre, stations, slug }) => {
+    {regionEntries.map(({ region, stations, slug }) => {
       const topStations = stations.slice(0, 3).map((station) => station.name).join(", ");
       return (
         <div class="col-12 col-md-6 col-xl-4">
-          <a href={`/genres/${slug}/`} class="text-decoration-none">
+          <a href={`/region/${slug}/`} class="text-decoration-none">
             <div class="border rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
               <div>
-                <h3 class="h6 fw-bold text-dark mb-1">{genre}</h3>
+                <h3 class="h6 fw-bold text-dark mb-1">{region}</h3>
                 <p class="small text-muted mb-2">{stations.length} station{stations.length === 1 ? "" : "s"}</p>
                 <p class="small text-muted mb-0">Top: {topStations || "Explore stations"}</p>
               </div>

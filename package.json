@@ -10,7 +10,7 @@
     "git push": "git add . && git commit -m \"update\" && git push",
     "fix favicons": "node tools/fetch-missing-station-icons.mjs",
     "fill state": "python3 tools/fill-state-from-homepage.py --max 0 --sleep 1",
-    "fillgeo": "python3 tools/fill-state-from-geo.py",
+    "fillgeo": "python3 tools/fix-stations-geo.py",
     "fff brobe": "python3 tools/ffprobe-metadata.py --url https://derti.live24.gr/derty1000"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 ---
 interface Category {
-  key: "stations" | "top-rated" | "city" | "high-quality" | "genres";
+  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres";
   label: string;
   href: string;
   icon: string;
@@ -17,6 +17,7 @@ const categories: Category[] = [
   { key: "top-rated", label: "Top Rated", href: "/top-rated/", icon: "bi-star" },  
   { key: "high-quality", label: "High Quality", href: "/high-quality/", icon: "bi-soundwave" },
   { key: "city", label: "By City", href: "/city/", icon: "bi-geo-alt" },
+  { key: "region", label: "By Region", href: "/region/", icon: "bi-map" },
   { key: "genres", label: "Genres", href: "/genres/", icon: "bi-music-note-list" },
 ];
 ---
