@@ -50,6 +50,15 @@ export async function GET() {
       .replace(/^-+|-+$/g, "")
       .slice(0, 80) || "other";
 
+  const baseRegionSlug = (region: string) =>
+    transliterateGreek(region || "")
+      .toLowerCase()
+      .trim()
+      .replace(/['"]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80) || "other";
+
   const baseGenreSlug = (genre: string) =>
     transliterateGreek(genre || "")
       .toLowerCase()
@@ -81,7 +90,15 @@ export async function GET() {
       lastmod,
     },
     {
+      loc: `${ROOT_URL}/region/`,
+      lastmod,
+    },
+    {
       loc: `${ROOT_URL}/demo/`,
+      lastmod,
+    },
+    {
+      loc: `${ROOT_URL}/dmca/`,
       lastmod,
     },
   ];
@@ -104,7 +121,10 @@ export async function GET() {
 
   const cityMap = new Map<string, typeof rawStations>();
   for (const station of rawStations) {
-    const city = (station.state || "Other").trim() || "Other";
+    const city = (station.city || "").trim();
+    if (!city || city.toLowerCase() === "other") {
+      continue;
+    }
     if (!cityMap.has(city)) {
       cityMap.set(city, []);
     }
@@ -130,6 +150,41 @@ export async function GET() {
     if (total <= 1) return [];
     return Array.from({ length: total - 1 }, (_, index) => ({
       loc: `${ROOT_URL}/city/${cityPage.slug}/page/${index + 2}/`,
+      lastmod,
+    }));
+  });
+
+  const regionMap = new Map<string, typeof rawStations>();
+  for (const station of rawStations) {
+    const region = (station.state || "").trim();
+    if (!region || region.toLowerCase() === "other") {
+      continue;
+    }
+    if (!regionMap.has(region)) {
+      regionMap.set(region, []);
+    }
+    regionMap.get(region)?.push(station);
+  }
+
+  const regionSlugCounts = new Map<string, number>();
+  const regionPages = [...regionMap.entries()].map(([region, stations]) => {
+    const base = baseRegionSlug(region);
+    const nextCount = (regionSlugCounts.get(base) || 0) + 1;
+    regionSlugCounts.set(base, nextCount);
+    const slug = nextCount > 1 ? `${base}-${nextCount}` : base;
+    return {
+      loc: `${ROOT_URL}/region/${slug}/`,
+      lastmod,
+      slug,
+      stations,
+    };
+  });
+
+  const regionPagination = regionPages.flatMap((regionPage) => {
+    const total = Math.ceil(regionPage.stations.length / HUB_PER_PAGE);
+    if (total <= 1) return [];
+    return Array.from({ length: total - 1 }, (_, index) => ({
+      loc: `${ROOT_URL}/region/${regionPage.slug}/page/${index + 2}/`,
       lastmod,
     }));
   });
@@ -178,8 +233,10 @@ export async function GET() {
     ...paginationPages,
     ...highQualityPagination,
     ...cityPages.map(({ loc, lastmod }) => ({ loc, lastmod })),
+    ...regionPages.map(({ loc, lastmod }) => ({ loc, lastmod })),
     ...genrePages.map(({ loc, lastmod }) => ({ loc, lastmod })),
     ...cityPagination,
+    ...regionPagination,
     ...genrePagination,
     ...stationPages,
   ];
