@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SEO from "../components/SEO.astro";
+
+const siteRoot = "https://e-radio.github.io";
+const canonical = `${siteRoot}/dmca/`;
+const pageTitle = "DMCA | e-Radio Greece";
+const pageDescription = "Digital Millennium Copyright Act (DMCA) policy for e-Radio Greece.";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonical}#dmca`,
+  name: pageTitle,
+  url: canonical,
+  description: pageDescription,
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <SEO
+    slot="seo"
+    title={pageTitle}
+    description={pageDescription}
+    canonical={canonical}
+    ogTitle={pageTitle}
+    ogDescription={pageDescription}
+    ogImage={`${siteRoot}/e-radio-og-image.png`}
+    robots="index, follow"
+    author="E-Radio Greece"
+    structuredData={structuredData}
+  />
+  <div class="mb-4">
+    <h1 class="display-5 fw-bold mb-2">DMCA</h1>
+    <h2 class="lead text-muted">Digital Millennium Copyright Act</h2>
+  </div>
+  <div class="bg-white border rounded-3 p-4">
+    <p>
+      e-Radio Greece is a portal of music streaming directory that is available through the internet.
+      Here we provide many worldwide internet radio and music stations to listen freely with various genres.
+      e-Radio Greece does not broadcast any streaming content and copyright information, except station information
+      and their official website links. We focus on making it easier for listeners who are looking for appropriate stations.
+      We are always ready to help broadcasters and listeners. Our hope is to give internet radio stations a portal to worldwide listeners.
+    </p>
+    <p>
+      e-Radio Greece takes matters of Intellectual Property very seriously and is committed to meeting the needs of content owners
+      while helping them manage publication of their content online. It should be noted that e-Radio Greece is a radio station portal
+      linking to third-party websites. Any content on these third-party websites is the responsibility of those sites and not e-Radio Greece.
+      We have no knowledge of whether content on third-party websites is or is not authorized by the content owner as that is a matter between
+      the site that hosts the audio content and the content owner. e-Radio Greece does not host any audio content on its servers or network.
+    </p>
+    <p>
+      e-Radio Greece is not the owner of the media streaming and the copyright or ownership of any radio station remains with the broadcaster.
+      Users must agree with the terms and conditions of the station owners. We respect the broadcaster's privacy policy. If you are the content owner
+      of any radio station and want removal from this site, please contact us.
+    </p>
+  </div>
+</Layout>

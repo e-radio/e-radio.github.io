@@ -144,6 +144,15 @@ main {
   text-decoration: underline;
 }
 
+.text-primary-hover .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.text-primary-hover .nav-link:hover,
+.text-primary-hover .nav-link:focus {
+  color: #0d6efd;
+}
+
 .volume-range {
   width: 140px;
 }
