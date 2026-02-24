@@ -46811,5 +46811,32 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null
+	}
+  ,
+  {
+    "slug": "melodia-99-2",
+    "stationuuid": "05444D01-76EF-4DC6-B85B-9B433EE20236",
+    "name": "Melodia 99.2",
+    "state": "Attica",
+    "country": "Greece",
+    "city": "Athens",
+    "countrycode": "GR",
+    "stream_url": "https://stream.rcs.revma.com/8tdwa6ez1duvv",
+    "homepage": "https://www.melodiapatras.gr/",
+    "favicon": "/station-icons/melodia-99-2.webp",
+    "genres": [
+      "folk",
+      "greek"
+    ],
+    "language": "greek",
+    "bitrate": 127,
+    "codec": "AAC",
+    "clickcount": 1,
+    "lastcheckok": 1,
+    "votes": 82,
+    "hls": 0,
+    "ssl_error": 0,
+    "geo_lat": null,
+    "geo_long": null
   }
 ]
