@@ -46885,7 +46885,7 @@
     "countrycode": "GR",
     "stream_url": "https://streams.enjoyfm.gr:48502/aroma.mp3",
     "homepage": "https://aromafm.com/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/50872e8e-613b-4b92-95ca-60f862dfbc27.png",
+    "favicon": "/station-icons/88-2-patra.webp",
     "genres": [
       "greek music"
     ],
@@ -46911,7 +46911,7 @@
     "countrycode": "GR",
     "stream_url": "https://n0a.radiojar.com/kokkino-ath.mp3?rj-ttl=5&rj-tok=AAABh-0eIcYAVz1x8OviF1g8jw",
     "homepage": "https://www.avgi.gr/sto-kokkino",
-    "favicon": "https://typologies.gr/wp-content/uploads/2019/10/kokkino.jpg",
+    "favicon": "/station-icons/01-105-5-attica-athens.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -46933,7 +46933,7 @@
     "countrycode": "GR",
     "stream_url": "https://n01.radiojar.com/red-source?rj-ttl=5&rj-tok=AAABnLUVSBIA9XQwmBGZQZzHJw",
     "homepage": "https://www.avgi.gr/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxfvZhF7CF0bfvL3fBv4zHbF810SnNdii4pw&s",
+    "favicon": "/station-icons/03-107-7-patra.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -46957,7 +46957,7 @@
     "countrycode": "GR",
     "stream_url": "https://athina984.live24.gr/athina984",
     "homepage": "https://athina984.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/10138d0b-ce3f-4eee-8f8c-11ea5b92500e.jpg",
+    "favicon": "/station-icons/04-984-athens-greece.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 128,
@@ -46980,7 +46980,7 @@
     "countrycode": "GR",
     "stream_url": "https://radio.libero.fm:10750/live",
     "homepage": "https://libero.fm/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZp80adEqwrDiPfkdUmKV468BuQwZxpU3lewPKZtjPQ&s=10",
+    "favicon": "/station-icons/08-libero-107-4-south-macedonia.webp",
     "genres": [],
     "language": "ancient greek",
     "bitrate": 64,
@@ -47003,7 +47003,7 @@
     "countrycode": "GR",
     "stream_url": "https://radio.libero.fm:10770/live?178383342258",
     "homepage": "https://libero.fm/",
-    "favicon": "https://cdn-profiles.tunein.com/s78742/images/logog.png?t=1",
+    "favicon": "/station-icons/08-libero-107-4-fm-thessaloniki-notia-macedonia.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 64,
@@ -47025,7 +47025,7 @@
     "countrycode": "GR",
     "stream_url": "https://tls-chrome.live24.gr/650?http://stream.radiojar.com/gby4re6bhnuvv",
     "homepage": "http://www.radioaliveri1.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/b40c9957-1a7a-4380-8f87-70fa8c0d3554.jpg",
+    "favicon": "/station-icons/102-2-1-chalkida.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47048,7 +47048,7 @@
     "countrycode": "GR",
     "stream_url": "https://105fm.espiv.net/listen/105fm/stream.mp3",
     "homepage": "https://105fm.espivblogs.net/",
-    "favicon": "https://105fm.espivblogs.net/files/2021/03/cropped-12743964_703014563171709_2224467389008393465_n-e1510166020583.png",
+    "favicon": "/station-icons/105fm-mytilini.webp",
     "genres": [
       "antifa news",
       "electronic",
@@ -47081,7 +47081,7 @@
     "countrycode": "GR",
     "stream_url": "https://www.1431am.org:8001/1431high",
     "homepage": "https://www.1431am.org/",
-    "favicon": "https://www.1431am.org/wp-content/uploads/2021/12/logo-full-gr-white-site.png",
+    "favicon": "/station-icons/1431am-thessaloniki.webp",
     "genres": [
       "antifa news",
       "electronic",
@@ -47114,7 +47114,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.newageradio.gr/listen/flac_gr/radio.aac",
     "homepage": "https://newageradio.gr/",
-    "favicon": "https://newageradio.gr/Greek_Hits_1200x1200.png",
+    "favicon": "/station-icons/1st-greek-hits-flac-non-stop-radio-athens-greece.webp",
     "genres": [
       "aac",
       "adult contemporary",
@@ -47146,7 +47146,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.newageradio.gr/listen/flac_gr/radio.flac",
     "homepage": "https://newageradio.gr/",
-    "favicon": "https://newageradio.gr/Greek_Hits_1200x1200.png",
+    "favicon": "/station-icons/1st-greek-hits-flac-radio-lossless-athens-greece.webp",
     "genres": [
       "audiophile",
       "flac",
@@ -47177,7 +47177,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.newageradio.gr/listen/flac_gr/radio.mp3",
     "homepage": "https://newageradio.gr/",
-    "favicon": "https://newageradio.gr/Greek_Hits_1200x1200.png",
+    "favicon": "/station-icons/1st-greek-hits-radio-mp3-athens-greece.webp",
     "genres": [
       "greece",
       "greek hits",
@@ -47208,7 +47208,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.newageradio.gr/listen/hq/radio.mp3",
     "homepage": "https://newageradio.gr/",
-    "favicon": "https://play-lh.googleusercontent.com/wK06vvfvAtyKKLTPztd39a9bPePyTw9vwckJHuX4LH3nZxiDWxNZwX4VDQLd6C81IQtaZKWYe-RzfKIFwhA2cQ=w480-h960-rw",
+    "favicon": "/station-icons/1st-greek-new-age-flac-radio-attiki.webp",
     "genres": [
       "new age"
     ],
@@ -47233,7 +47233,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.newageradio.gr/listen/hq/radio.flac",
     "homepage": "https://newageradio.gr/",
-    "favicon": "https://newageradio.gr/Greek_New_Age_1200x1200.png",
+    "favicon": "/station-icons/1st-greek-new-age-flac-radio-flac-stream-attica-athens.webp",
     "genres": [
       "ambient",
       "audiophile radio",
@@ -47270,7 +47270,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.newageradio.gr/listen/hq/radio.aac",
     "homepage": "https://newageradio.gr/",
-    "favicon": "https://newageradio.gr/Greek_New_Age_1200x1200.png",
+    "favicon": "/station-icons/1st-greek-new-age-flac-radio-aac-320kbps-attica-athens.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -47292,7 +47292,7 @@
     "countrycode": "GR",
     "stream_url": "https://s3.unlimitedradiohosting.com/stream/two-thousand-on-fm",
     "homepage": "https://www.2000stafm.gr/",
-    "favicon": "https://www.2000stafm.gr/favicon2.png",
+    "favicon": "/station-icons/2000stafm-corfu.webp",
     "genres": [
       "80s",
       "90s",
@@ -47323,7 +47323,7 @@
     "countrycode": "GR",
     "stream_url": "http://radiostreaming.ert.gr/ert-958fm",
     "homepage": "https://www.ertecho.gr/radio/958fm/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6uBlfZFQV_Yo0fJvH2FZuP7MRbKXmM8-4D470nsh2Aw&s",
+    "favicon": "/station-icons/22-95-8-culture-channel-thessaloniki-notia-macedonia.webp",
     "genres": [],
     "language": "ancient greek",
     "bitrate": 192,
@@ -47346,7 +47346,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream-177.surfernetwork.com/wqcp8gq67vzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ3cWNwOGdxNjd2enV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiI1QXVXUUVWVlEtbXRmdkdlbGpfS2pRIiwiaWF0IjoxNzgzMjM2Mzk4LCJleHAiOjE3ODMyMzY0NTh9._KLlJ1vaBpYmPNbwc2e6XyHsZ1qjagJUjgbwOoIem18",
     "homepage": "https://zeno.fm/radio/pame-rebetiko-kai-laiko/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7ibS8vSiQJo6x-i29lqjtxZaNpi8Eefk6UEoSF0PrA&s=10",
+    "favicon": "/station-icons/23-athens-greece.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 0,
@@ -47369,7 +47369,7 @@
     "countrycode": "GR",
     "stream_url": "https://live.radioart.com/fRebetika.mp3",
     "homepage": "https://www.radioart.com/",
-    "favicon": "https://distomo.espivblogs.net/files/2017/05/18449592_1682196368753064_4196091443884444977_o.jpg",
+    "favicon": "/station-icons/25-radio-art-rebetika-athens-greece.webp",
     "genres": [
       "ρεμπέτικα"
     ],
@@ -47394,7 +47394,7 @@
     "countrycode": "GR",
     "stream_url": "https://n06.radiojar.com/r87tq342z8tvv?rj-ttl=5&rj-tok=AAABnzElkmgAbnMC3VroB2rrMg",
     "homepage": "https://i-radio.gr/radio-rempetika/",
-    "favicon": "https://i-radio.gr/wp-content/uploads/2025/02/radio-rempetiko-avt.jpg",
+    "favicon": "/station-icons/28.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -47417,7 +47417,7 @@
     "countrycode": "GR",
     "stream_url": "https://radio.aptaliko.gr/radio/8000/radio.mp3",
     "homepage": "https://live.aptaliko.gr/radio",
-    "favicon": "https://www.radioguide.fm/uploads/images/radiostation/logocal.png",
+    "favicon": "/station-icons/29.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47439,7 +47439,7 @@
     "countrycode": "GR",
     "stream_url": "https://premium.streams.gr/sc/2day1045/stream",
     "homepage": "https://2day1045.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/f23f8f77-9dac-4e63-a674-820d728bd322.png",
+    "favicon": "/station-icons/2day-104-5-agrinio.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -47466,7 +47466,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr:8905/stream?type=http&nocache=13",
     "homepage": "https://905rock.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/7bc317de-bd14-4119-bec9-7293121b8040.png",
+    "favicon": "/station-icons/905-rock-90-5-larisa.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -47488,7 +47488,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr:8905/stream",
     "homepage": "https://905rock.gr/",
-    "favicon": "https://905rock.gr/wp-content/uploads/2015/08/101rock_tran-300x126.png",
+    "favicon": "/station-icons/905rock-larisa.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -47511,7 +47511,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.radiojar.com/t0x7dyqmsuhvv",
     "homepage": "https://99fm.gr/",
-    "favicon": "https://99fm.gr/wp-content/uploads/2023/09/logo_app.png",
+    "favicon": "/station-icons/99fm-radio-1-thessaloniki.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -47535,7 +47535,7 @@
     "countrycode": "GR",
     "stream_url": "https://push-int.siliconweb.com/actionlive/actiontv/icecast.audio",
     "homepage": "https://www.action24.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/e3b52bad-8dbf-4347-9ec5-ddda79bbe1a5.png",
+    "favicon": "/station-icons/action-24-athens.webp",
     "genres": [
       "news",
       "news talk"
@@ -47584,7 +47584,7 @@
     "countrycode": "GR",
     "stream_url": "https://hamsat.eu/relay",
     "homepage": "https://afterpm.eu/#hero",
-    "favicon": "https://cdn.onlineradiobox.com/img/l/2/107662.v3.png",
+    "favicon": "/station-icons/after-pm.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47607,7 +47607,7 @@
     "countrycode": "GR",
     "stream_url": "https://n01.radiojar.com/xcdg6yggzfeuv?rj-ttl=5&rj-tok=AAABnRcNrMsAzlw1G4CV9i2qaw",
     "homepage": "https://alpharadio989.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/f3e2cf1e-c45b-4f8f-b1f1-fbbb1210d49d.png",
+    "favicon": "/station-icons/alpha-98-9-athens.webp",
     "genres": [
       "news",
       "news talk"
@@ -47632,7 +47632,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast5.asurahosting.com/proxy/antenna/stream",
     "homepage": "https://antenna-star.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/786b7d09-640f-46e3-9755-a10200f3bc52.png",
+    "favicon": "/station-icons/antenna-star-103-5-agrinio.webp",
     "genres": [
       "greek music",
       "news",
@@ -47659,7 +47659,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.myip.gr/proxy/greekap?mp=/stream",
     "homepage": "https://www.appsradio.gr/",
-    "favicon": "https://www.appsradio.gr/wp-content/uploads/2020/06/logogreek.png",
+    "favicon": "/station-icons/apps-greek-96-6-alexandroupolis.webp",
     "genres": [
       "greek music"
     ],
@@ -47684,7 +47684,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.myip.gr/proxy/rocksis?mp=/stream",
     "homepage": "https://www.appsradio.gr/",
-    "favicon": "https://www.appsradio.gr/wp-content/uploads/2020/06/rock-logo.png",
+    "favicon": "/station-icons/apps-rock-96-6-alexandroupolis.webp",
     "genres": [
       "rock"
     ],
@@ -47710,7 +47710,7 @@
     "countrycode": "GR",
     "stream_url": "https://ice2.onestreaming.com/arionkids",
     "homepage": "https://www.arionradio.com/",
-    "favicon": "https://cdn.e-radio.gr/logos/gr/big/arionkids.png",
+    "favicon": "/station-icons/arion-kids-athens.webp",
     "genres": [
       "kids"
     ],
@@ -47735,7 +47735,7 @@
     "countrycode": "GR",
     "stream_url": "https://ice2.onestreaming.com/arionlaikos",
     "homepage": "https://www.arionradio.com/arionlaikos/player",
-    "favicon": "https://www.arionradio.com/_img/logos/arionlaikos.png",
+    "favicon": "/station-icons/arion-laikos.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47758,7 +47758,7 @@
     "countrycode": "GR",
     "stream_url": "http://ice.onestreaming.com/arion",
     "homepage": "https://www.arionradio.com/",
-    "favicon": "https://www.arionradio.com/_img/logos/arionradio.png",
+    "favicon": "/station-icons/arion-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47781,7 +47781,7 @@
     "countrycode": "GR",
     "stream_url": "https://link.onestreaming.com/arion",
     "homepage": "https://www.arionradio.com/_img/logos/arionradio.png",
-    "favicon": "https://www.arionradio.com/_img/logos/arionradio.png",
+    "favicon": "/station-icons/arion-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47804,7 +47804,7 @@
     "countrycode": "GR",
     "stream_url": "https://ice2.onestreaming.com/arionstigmes",
     "homepage": "https://www.arionradio.com/",
-    "favicon": "https://cdn.e-radio.gr/logos/gr/big/arionstigmes.png",
+    "favicon": "/station-icons/arion-athens.webp",
     "genres": [
       "greek music"
     ],
@@ -47829,7 +47829,7 @@
     "countrycode": "GR",
     "stream_url": "https://n03a-eu.rcs.revma.com/sm9b1svehkcwv?rj-ttl=5&rj-tok=AAABnRxstscALCtwiZerZ3718g",
     "homepage": "https://www.atticaradios.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/fee95347-f0eb-4299-9edd-9d9b42ee23f6.png",
+    "favicon": "/station-icons/athens-rock-96-9.webp",
     "genres": [
       "rock"
     ],
@@ -47853,7 +47853,7 @@
     "countrycode": "GR",
     "stream_url": "https://avantifm.live24.gr/avantifm",
     "homepage": "https://avantifm.gr/",
-    "favicon": "https://avantifm.gr/wp-content/uploads/2022/01/avantifm_1076.png",
+    "favicon": "/station-icons/avanti-107-6-larisa.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47877,7 +47877,7 @@
     "countrycode": "GR",
     "stream_url": "https://radiospromo.com/listen/tracksaudio.com_-_old_school/radio.mp3",
     "homepage": "https://www.backtorave.com/",
-    "favicon": "https://www.backtorave.com/wp-content/uploads/2025/12/cropped-512x512-1-180x180.png",
+    "favicon": "/station-icons/backtorave-com-old-school-techno-rave.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47900,7 +47900,7 @@
     "countrycode": "GR",
     "stream_url": "https://i8.streams.ovh/sc/baila/stream",
     "homepage": "https://bailaradio.com/",
-    "favicon": "https://bailaradio.com/wp-content/uploads/2023/07/cropped-512-x-512-bailaradio-logo-black-192x192.jpg",
+    "favicon": "/station-icons/baila-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -47922,7 +47922,7 @@
     "countrycode": "GR",
     "stream_url": "https://ice.greekstream.net/diavlos93",
     "homepage": "https://www.ble.fm/",
-    "favicon": "https://www.ble.fm/images/logo-ble-web.png",
+    "favicon": "/station-icons/ble-93-drama.webp",
     "genres": [],
     "language": null,
     "bitrate": 160,
@@ -47993,7 +47993,7 @@
     "countrycode": "GR",
     "stream_url": "https://s6.onweb.gr/8046/;",
     "homepage": "https://samostoday.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/bd104f88-351a-4690-a462-ca9ce750a925.jpg",
+    "favicon": "/station-icons/cafe-102-4-samos.webp",
     "genres": [
       "news",
       "news talk",
@@ -48021,7 +48021,7 @@
     "countrycode": "GR",
     "stream_url": "https://i4.streams.ovh:2200/ssl/captainr?mp=/stream",
     "homepage": "http://captain-radio.com/#",
-    "favicon": "https://captain-radio.com/images/logo/logo.png",
+    "favicon": "/station-icons/captain-radio-com.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -48044,7 +48044,7 @@
     "countrycode": "GR",
     "stream_url": "https://tls-chrome.live24.gr/613?http://84.254.32.49:9200/",
     "homepage": "https://www.cityfm92.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/90b2abf1-9661-4859-aeff-f8ca88f13e8a.jpg",
+    "favicon": "/station-icons/city-92-livadia.webp",
     "genres": [
       "mainstream",
       "pop"
@@ -48139,7 +48139,7 @@
     "countrycode": "GR",
     "stream_url": "https://dancewave.online/dance.mp3",
     "homepage": "https://dancewave.online/",
-    "favicon": "https://dancewave.online/dw_logo.png",
+    "favicon": "/station-icons/dance-wave.webp",
     "genres": [
       "club",
       "dance",
@@ -48167,7 +48167,7 @@
     "countrycode": "GR",
     "stream_url": "https://netradio.live24.gr/deejay957",
     "homepage": "https://www.deejay.gr/",
-    "favicon": "https://www.deejay.gr/wp-content/uploads/2024/02/logo.jpg",
+    "favicon": "/station-icons/deejay-95-7.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -48191,7 +48191,7 @@
     "countrycode": "GR",
     "stream_url": "https://s1.viastreaming.net:8525/stream.mp3",
     "homepage": "https://www.deepinradio.com/#",
-    "favicon": "https://www.deepinradio.com/wp-content/uploads/2018/03/deepinradio-logo-170x170.png",
+    "favicon": "/station-icons/deepinradio-com-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -48213,7 +48213,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr:9050/;",
     "homepage": "https://derti905.gr/",
-    "favicon": "https://derti905.gr/wp-content/uploads/2025/11/derti_web_150-1.png",
+    "favicon": "/station-icons/derti-web-radio-larisa.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -48237,7 +48237,7 @@
     "countrycode": "GR",
     "stream_url": "https://n05a-eu.rcs.revma.com/gkfwrhqxbfhvv",
     "homepage": "https://diesi.gr/",
-    "favicon": "https://diesi.gr/wp-content/uploads/2024/03/favicon-2.png",
+    "favicon": "/station-icons/diesi-101-3.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -48260,7 +48260,7 @@
     "countrycode": "GR",
     "stream_url": "http://radio2.discomaniaradio.com:7000/live",
     "homepage": "https://www.discomania.gr/",
-    "favicon": "https://cdn.onlineradiobox.com/img/l/7/15387.v4.png",
+    "favicon": "/station-icons/discomania-athens.webp",
     "genres": [
       "disco"
     ],
@@ -48284,7 +48284,7 @@
     "countrycode": "GR",
     "stream_url": "http://uk15freenew.listen2myradio.com:5003/",
     "homepage": "https://dreamer.radio12345.com/",
-    "favicon": "https://cdn-profiles.tunein.com/s354349/images/logod.jpg?t=639098080660000000",
+    "favicon": "/station-icons/dreamer-thessaloniki.webp",
     "genres": [
       "ambient",
       "chillout",
@@ -48403,7 +48403,7 @@
     "countrycode": "GR",
     "stream_url": "https://n32a-eu.rcs.revma.com/wvt5ty5r4a0uv?rj-ttl=5&rj-tok=AAABnRyLl80AVJHYnMSEDODixA",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/1easy-80s_4ad3b3a8e96832fac2880542307b45f5.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/easy-80s-athens.webp",
     "genres": [
       "80s",
       "adult pop"
@@ -48429,7 +48429,7 @@
     "countrycode": "GR",
     "stream_url": "https://n02a-eu.rcs.revma.com/qhx9z05r4a0uv?rj-ttl=5&rj-tok=AAABnSFRnI0Af8LBaTRQQYvwhw",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/2easy-90s_1ca0c12cacd5415f091e65ddce1df63a.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/easy-90s-athens.webp",
     "genres": [
       "90s",
       "adult pop"
@@ -48455,7 +48455,7 @@
     "countrycode": "GR",
     "stream_url": "https://n23a-eu.rcs.revma.com/qzzyq25r4a0uv?rj-ttl=5&rj-tok=AAABnSFlqbcAYnB2Hy7gBDYntg",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/4easy-chill_a2bc639a880f6723980b9d5090b6ae60.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/easy-chill-athens.webp",
     "genres": [
       "chillout"
     ],
@@ -48480,7 +48480,7 @@
     "countrycode": "GR",
     "stream_url": "https://n21a-eu.rcs.revma.com/y318r45r4a0uv?rj-ttl=5&rj-tok=AAABnRyYndQAXLB03IDeWAV6Ww",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/5easy-classic_a6507fd46c05644626f82eac6307f887.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/easy-classic-athens.webp",
     "genres": [
       "golden oldies"
     ],
@@ -48505,7 +48505,7 @@
     "countrycode": "GR",
     "stream_url": "https://n38a-eu.rcs.revma.com/bptnk55r4a0uv?rj-ttl=5&rj-tok=AAABnSFc6w8A1ss5-tQkut_jyA",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/3easy-love_1d87b4c2e649ccae5c8a5c483c217dcf.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/easy-love-athens.webp",
     "genres": [
       "ballads",
       "love songs"
@@ -48531,7 +48531,7 @@
     "countrycode": "GR",
     "stream_url": "https://everestcast.streams.ovh/ejectradio",
     "homepage": "https://www.ejectradio.com/",
-    "favicon": "https://blogger.googleusercontent.com/img/a/AVvXsEgpg-_Y55TE7nZOSvzcyp4rYd8kCWTEk6kfT--tAvx-y-mXSMEgu9ezcZFcz2I-EgPJ-MId6Gg--nH9VZtVTcfoyd3Y9fD6sIsLVcJr9G9N26afvdtrxzEs5OGijQEfAU1iHt0NlRwOT2gRGVXPQ0xfNQOnM99GDey1KkiUisHcWN-BhZfDWAIHouC7_Z2P=s250",
+    "favicon": "/station-icons/ejectradio.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -48554,7 +48554,7 @@
     "countrycode": "GR",
     "stream_url": "http://stream.ellada943.gr:10308/live.ogg",
     "homepage": "https://elladafm.gr/",
-    "favicon": "https://elladafm.gr/wp-content/uploads/2025/12/NEW-1.jpg",
+    "favicon": "/station-icons/ellada-94-3-fm-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -48600,7 +48600,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.radiojar.com/2rsrhmepefq.mp3?1783946757550",
     "homepage": "https://www.empneusi.gr/#!",
-    "favicon": "https://www.empneusi.gr/wp-content/uploads/2018/08/empneusi-512x512-170x170.png",
+    "favicon": "/station-icons/empneusi-107-fm.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -48623,7 +48623,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid67.streamupsolutions.com/proxy/wvsivbgn/stream",
     "homepage": "https://www.emusic.site/",
-    "favicon": "https://www.emusic.site/favicon.png",
+    "favicon": "/station-icons/emusic-site-attica-athens.webp",
     "genres": [
       "alternative"
     ],
@@ -48671,7 +48671,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.radiojar.com/enlefko877",
     "homepage": "https://www.enlefko.fm/",
-    "favicon": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.bStSmhUef-wuXI2zp9RWDgHaHa%3Fpid%3DApi&f=1&ipt=7ce71bf9cd41ac63772b1b9811f67dd0961766461665eff192ee3a41656fdd39&ipo=images",
+    "favicon": "/station-icons/enlefko-87-7-attica-athens.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -48694,7 +48694,7 @@
     "countrycode": "GR",
     "stream_url": "https://s2.free-shoutcast.com/stream/18148",
     "homepage": "https://www.figarodisco.com/",
-    "favicon": "https://figarodisco.odoo.com/web/image/465-9d3163ba/DALL%C2%B7E%202025-01-22%2013.07.42%20-%20A%20vibrant%20and%20dynamic%20design%20representing%20a%20disco%20theme%20with%20a%20red%20and%20black%20color%20palette.%20The%20image%20features%20a%20retro-style%20disco%20ball%20reflecting%20col.webp",
+    "favicon": "/station-icons/figaro-discotheque.webp",
     "genres": [
       "disco",
       "italo disco"
@@ -48720,7 +48720,7 @@
     "countrycode": "GR",
     "stream_url": "https://fireage.servegame.com/webradio5/",
     "homepage": null,
-    "favicon": "https://fireage.servegame.com/webradio5/index.php?art=0",
+    "favicon": "/station-icons/fireage-web-radio-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -48742,7 +48742,7 @@
     "countrycode": "GR",
     "stream_url": "https://netradio.live24.gr/flash994thes",
     "homepage": "https://flash994.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/369f5b3c-7b1f-46e4-ba43-4d83ffc779ac.png",
+    "favicon": "/station-icons/flash-99-4-thessaloniki.webp",
     "genres": [
       "news",
       "news talk"
@@ -48769,7 +48769,7 @@
     "countrycode": "GR",
     "stream_url": "https://play.streams.gr/ic/flashkritis/stream",
     "homepage": "https://www.flash958.gr/",
-    "favicon": "https://www.flash958.gr/logo.png",
+    "favicon": "/station-icons/flash-95-8-heraklion-crete.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -48792,7 +48792,7 @@
     "countrycode": "GR",
     "stream_url": "https://eco.onestreaming.com/proxy/flykriti/stream",
     "homepage": "https://flyfm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/5a9741d1-94dc-4fd9-ab34-69d5ffdab74e.png",
+    "favicon": "/station-icons/fly-88-1-heraklion-crete.webp",
     "genres": [
       "pop",
       "techno",
@@ -48818,7 +48818,7 @@
     "countrycode": "GR",
     "stream_url": "https://panel.gwebstream.com/stream/fm100skg/stream",
     "homepage": "https://www.fm100.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/c95bfa47-b7ce-480d-b89d-ca1cc4e6528d.png",
+    "favicon": "/station-icons/fm-100-thessaloniki.webp",
     "genres": [
       "greek music",
       "municipal",
@@ -48846,7 +48846,7 @@
     "countrycode": "GR",
     "stream_url": "https://panel.gwebstream.com/stream/fm1006stream/stream",
     "homepage": "https://www.fm100.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/585d666f-618c-40fc-b454-1108f000780d.png",
+    "favicon": "/station-icons/fm-100-6-thessaloniki.webp",
     "genres": [
       "culture",
       "municipal",
@@ -48874,7 +48874,7 @@
     "countrycode": "GR",
     "stream_url": "http://node-21.zeno.fm/x7zhhtrmcd0uv",
     "homepage": "https://fm-agathi.blogspot.com/",
-    "favicon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5qje4JNvXyWtxMdqbHX3_d7Cb-M6lczaNjHOox7iWjHzNTka0tCmfq4wN8IBgrcn6d0V21hdS79U9Fvgcf-0Q6UYx6D4iyYZftqTP-_YntcofDCnXXcKnRY-fE-a7eA/s113/%CE%BB%CE%AE%CF%88%CE%B7.jpg",
+    "favicon": "/station-icons/fm-agathi-lamia-greece.webp",
     "genres": [],
     "language": "english",
     "bitrate": 0,
@@ -48896,7 +48896,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr/8014/stream",
     "homepage": "https://focus889.gr/",
-    "favicon": "https://onradio.gr/wp-content/uploads/2020/04/focus_889.jpg",
+    "favicon": "/station-icons/focus-88-9-alexandroupolis.webp",
     "genres": [
       "greek music"
     ],
@@ -48922,7 +48922,7 @@
     "countrycode": "GR",
     "stream_url": "https://ais-edge89-dal02.cdnstream.com/b05055_128mp3?nocache=1782635203259",
     "homepage": "https://folegandrosradio.top/",
-    "favicon": "https://folegandrosradio.top/wp-content/themes/folegandros-radio-full-rss-inside-2026/assets/img/logo.png",
+    "favicon": "/station-icons/folegandros-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -48945,7 +48945,7 @@
     "countrycode": "GR",
     "stream_url": "https://radio.onlinehost.ro/listen/freshfm/radio.mp3",
     "homepage": "https://freshfm.ro/",
-    "favicon": "https://freshfm.ro/wp-content/uploads/2021/04/Sigla-FRESH-FM-mare-removebg-preview.png",
+    "favicon": "/station-icons/freshfm.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -48968,7 +48968,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid9.streamupsolutions.com/proxy/wpgqrttp/stream",
     "homepage": "https://www.funfm.gr/",
-    "favicon": "https://www.funfm.gr/gallery_gen/e99117ac8dc507686a897d2da9df43d6_fit.png?ts=1772906686",
+    "favicon": "/station-icons/fun-radio-104-3-loutraki.webp",
     "genres": [
       "80s",
       "90s",
@@ -48995,7 +48995,7 @@
     "countrycode": "GR",
     "stream_url": "http://s4.onweb.gr:8444/;stream",
     "homepage": "https://mytuner-radio.com/radio/phustiki-radio-486860/",
-    "favicon": "https://static2.mytuner.mobi/media/tvos_radios/fzagq666hbwk.jpg",
+    "favicon": "/station-icons/fystiki-95-8.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -49018,7 +49018,7 @@
     "countrycode": "GR",
     "stream_url": "https://n06.radiojar.com/garavelas-radio-gr.m4a",
     "homepage": "https://www.gradio.gr/",
-    "favicon": "https://www.gradio.gr/wp-content/themes/vice-child/images/favico/apple-icon-57x57.png",
+    "favicon": "/station-icons/g-radio-garavelas-radio.webp",
     "genres": [
       "ballads",
       "country",
@@ -49045,7 +49045,7 @@
     "countrycode": "GR",
     "stream_url": "https://radiogold.live24.gr/radiogold",
     "homepage": "https://www.radiogold.com/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/80f185d1-d7a3-4637-8bb6-a22406431719.bmp",
+    "favicon": "/station-icons/gold-athens-placeholder.webp",
     "genres": [
       "classic rock"
     ],
@@ -49070,7 +49070,7 @@
     "countrycode": "GR",
     "stream_url": "https://radiogold.live24.gr/radiogoldies",
     "homepage": "https://www.radiogold.com/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/4aef6f64-cca6-40a9-9639-cc253a100f40.png",
+    "favicon": "/station-icons/gold-2-athens.webp",
     "genres": [
       "60s",
       "evergreens",
@@ -49097,7 +49097,7 @@
     "countrycode": "GR",
     "stream_url": "https://shoutcast.k-planet.eu:8032/stream",
     "homepage": "https://goldradio.gr/",
-    "favicon": "https://goldradio.gr/wp-content/uploads/2025/07/goldradio-newlogo-4444.png",
+    "favicon": "/station-icons/gold-radio-gr.webp",
     "genres": [
       "rock"
     ],
@@ -49121,7 +49121,7 @@
     "countrycode": "GR",
     "stream_url": "https://one.cloudstreaming.eu/proxy/lounge/stream",
     "homepage": "https://greca994.gr/",
-    "favicon": "https://greca994.gr/wp-content/uploads/2024/11/Greca-Lounge-Png-Official.png",
+    "favicon": "/station-icons/greca-lounge-pyrgos.webp",
     "genres": [
       "lounge"
     ],
@@ -49146,7 +49146,7 @@
     "countrycode": "GR",
     "stream_url": "https://one.cloudstreaming.eu/proxy/party/stream",
     "homepage": "https://greca994.gr/",
-    "favicon": "https://greca994.gr/wp-content/uploads/2020/06/party-1-1-1.webp",
+    "favicon": "/station-icons/greca-party-pyrgos.webp",
     "genres": [
       "party hits"
     ],
@@ -49171,7 +49171,7 @@
     "countrycode": "GR",
     "stream_url": "https://one.cloudstreaming.eu/proxy/glenti/stream",
     "homepage": "https://greca994.gr/",
-    "favicon": "https://greca994.gr/wp-content/uploads/2025/04/Greca-%CE%93%CE%BB%CE%AD%CE%BD%CF%84%CE%B9-Png-Mayro-1.png",
+    "favicon": "/station-icons/greca-pyrgos.webp",
     "genres": [
       "greek traditional"
     ],
@@ -49196,7 +49196,7 @@
     "countrycode": "GR",
     "stream_url": "https://one.cloudstreaming.eu/proxy/entexno/stream",
     "homepage": "https://greca994.gr/",
-    "favicon": "https://greca994.gr/wp-content/uploads/2020/06/entexnopng-1-1.webp",
+    "favicon": "/station-icons/greca-pyrgos.webp",
     "genres": [
       "greek music"
     ],
@@ -49221,7 +49221,7 @@
     "countrycode": "GR",
     "stream_url": "https://one.cloudstreaming.eu/proxy/erwtiko/stream",
     "homepage": "https://greca994.gr/",
-    "favicon": "https://greca994.gr/wp-content/uploads/2020/06/erwtikopng-1.webp",
+    "favicon": "/station-icons/greca-pyrgos.webp",
     "genres": [
       "love songs"
     ],
@@ -49246,7 +49246,7 @@
     "countrycode": "GR",
     "stream_url": "https://one.cloudstreaming.eu/proxy/laiko/stream",
     "homepage": "https://greca994.gr/",
-    "favicon": "https://greca994.gr/wp-content/uploads/2020/06/Laikopng-1-1.webp",
+    "favicon": "/station-icons/greca-pyrgos.webp",
     "genres": [
       "greek folk"
     ],
@@ -49272,7 +49272,7 @@
     "countrycode": "GR",
     "stream_url": "https://s4.voscast.com:8899/stream",
     "homepage": "https://greekgoldclassicradio.com/",
-    "favicon": "https://greekgoldclassicradio.com/wp-content/uploads/sites/2/2026/01/cropped-GGCR_Logo_2026.jpg",
+    "favicon": "/station-icons/greek-gold-classic-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -49295,7 +49295,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast.magicstreams.gr/ic/grooveradio/hits",
     "homepage": "https://grooveradio.ovh/",
-    "favicon": "https://grooveradio.ovh/wp-content/uploads/groovefav.png",
+    "favicon": "/station-icons/groove-radio-hits.webp",
     "genres": [
       "hits"
     ],
@@ -49320,7 +49320,7 @@
     "countrycode": "GR",
     "stream_url": "https://ath10400fm.live24.gr/ath10400fm",
     "homepage": "https://www.happy104.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/b645533c-e045-47a4-a26c-68ff22064b7c.png",
+    "favicon": "/station-icons/happy-104-athens.webp",
     "genres": [
       "adult pop"
     ],
@@ -49344,7 +49344,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid1.streamupsolutions.com/proxy/neukptkl?mp=/stream?ver=415922",
     "homepage": "https://heatradio.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/9c1e3a88-9abe-40c6-b0a8-9d88af6c797f.png",
+    "favicon": "/station-icons/heat-classic-alexandroupolis.webp",
     "genres": [
       "adult hits"
     ],
@@ -49370,7 +49370,7 @@
     "countrycode": "GR",
     "stream_url": "https://n10a-eu.rcs.revma.com/e4661aft4c3vv?rj-ttl=5&rj-tok=AAABnRbVaDAA1aczyKJ3F05MOw",
     "homepage": "https://www.hit889.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/0ee12f2d-3bbc-4d01-befc-b8edc3c229b6.jpg",
+    "favicon": "/station-icons/hit-88-9-athens.webp",
     "genres": [
       "mainstream",
       "pop"
@@ -49418,7 +49418,7 @@
     "countrycode": "GR",
     "stream_url": "https://centova.gr-net.gr/proxy/iraklisradio/stream",
     "homepage": "https://iraklisradio.gr/",
-    "favicon": "https://iraklisradio.gr/ira_radio_logo.png",
+    "favicon": "/station-icons/iraklis-radio-thessaloniki-placeholder.webp",
     "genres": [
       "diy",
       "football",
@@ -49483,7 +49483,7 @@
     "countrycode": "GR",
     "stream_url": "https://n03.rcs.revma.com/n7d6z9ez1duvv",
     "homepage": "https://www.kidsradio.com/",
-    "favicon": "https://sao.fm/wp-content/uploads/20240824164954119.jpg",
+    "favicon": "/station-icons/kids-radio.webp",
     "genres": [
       "children",
       "music",
@@ -49510,7 +49510,7 @@
     "countrycode": "GR",
     "stream_url": "https://s6.e-resellers.gr/8064/stream",
     "homepage": "https://kiss1012.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/fe69d463-993c-4cd0-9c48-53f5955d09cd.png",
+    "favicon": "/station-icons/kiss-101-2-chalkida.webp",
     "genres": [
       "mainstream",
       "pop"
@@ -49535,7 +49535,7 @@
     "countrycode": "GR",
     "stream_url": "https://tls-chrome.live24.gr/4178?http://37.157.242.104:6456/",
     "homepage": "https://klikfmkos.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/fc977d92-8fd8-4cc2-aea4-096d084a64d9.png",
+    "favicon": "/station-icons/klik-93-kos.webp",
     "genres": [
       "mainstream",
       "pop"
@@ -49585,7 +49585,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast5.magicstreams.gr/sc/laikofono/stream",
     "homepage": "https://laikofono.gr/",
-    "favicon": "https://laikofono.gr/wp-content/uploads/2021/05/cropped-laikofono-favicon-180x180.png",
+    "favicon": "/station-icons/laikofono-gr.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -49608,7 +49608,7 @@
     "countrycode": "GR",
     "stream_url": "http://sp2.streams.ovh:8106/;stream",
     "homepage": "https://www.laikosradio.gr/",
-    "favicon": "https://www.laikosradio.gr/laikosfm_logo.gif",
+    "favicon": "/station-icons/laikos-105-7.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -49630,7 +49630,7 @@
     "countrycode": "GR",
     "stream_url": "https://a6.asurahosting.com:7030/radio.mp3",
     "homepage": "https://www.deejay.gr/",
-    "favicon": "https://www.deejay.gr/wp-content/uploads/2024/02/logo.jpg",
+    "favicon": "/station-icons/larissa-deejay-95-7-larisa.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -49654,7 +49654,7 @@
     "countrycode": "GR",
     "stream_url": "https://laterna.kafeneio.social:8000/radio.mp3",
     "homepage": "https://laterna.kafeneio.social/public/",
-    "favicon": "https://e-radio.github.io/icons/icon-32x32.png",
+    "favicon": "/station-icons/laterna.webp",
     "genres": [
       "rock"
     ],
@@ -49679,7 +49679,7 @@
     "countrycode": "GR",
     "stream_url": "https://neos.win:59652/stream",
     "homepage": "http://www.lelevose.gr/radio.html",
-    "favicon": "https://www.lelevose.gr/wp-content/uploads/siteimgs/radiolelevose_frontpage.png",
+    "favicon": "/station-icons/lelevose.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -49702,7 +49702,7 @@
     "countrycode": "GR",
     "stream_url": "https://s2.e-resellers.gr/proxy/live978/stream",
     "homepage": "https://www.live978.gr/",
-    "favicon": "https://www.live978.gr/images/coming.png",
+    "favicon": "/station-icons/livefm-97-8.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -49725,7 +49725,7 @@
     "countrycode": "GR",
     "stream_url": "https://loveradio.live24.gr/loveradio-1000",
     "homepage": "https://www.loveradio.gr/",
-    "favicon": "https://live24.gr/resrc/styles/custom-popups/loveradio/header-loveradio-new.png",
+    "favicon": "/station-icons/love-97-5-athens.webp",
     "genres": [
       "adult pop"
     ],
@@ -49749,7 +49749,7 @@
     "countrycode": "GR",
     "stream_url": "https://i4.streams.ovh/sc/madradio/stream",
     "homepage": "https://www.madradio107.net/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/1b37a9ea-f3eb-41af-81a8-e9556dfc45e9.jpg",
+    "favicon": "/station-icons/mad-107-agrinio.webp",
     "genres": [
       "mainstream",
       "pop music"
@@ -49776,7 +49776,7 @@
     "countrycode": "GR",
     "stream_url": "https://i6.streams.ovh:16012/stream",
     "homepage": "https://www.manstaradio.gr/",
-    "favicon": "https://www.manstaradio.gr/favicon.ico",
+    "favicon": "/station-icons/mansta-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -49799,7 +49799,7 @@
     "countrycode": "GR",
     "stream_url": "https://www.meganews1046.gr/",
     "homepage": "https://www.meganews1046.gr/",
-    "favicon": "https://www.newsit.gr/wp-content/uploads/2026/08/sima-radiofono-meganews-960x768.jpg",
+    "favicon": "/station-icons/mega-news-104-6-athens-greece.webp",
     "genres": [
       "news talk"
     ],
@@ -49824,7 +49824,7 @@
     "countrycode": "GR",
     "stream_url": "https://nmcdn-ea00263bf2fa4959b1207c5b169d1517.msvdn.net/icecastRelay/S92303783/lih0S0uubyJi/icecast",
     "homepage": "https://www.meganews1046.gr/",
-    "favicon": "https://cdn-profiles.tunein.com/s360461/images/logod.png?t=639234200530000000",
+    "favicon": "/station-icons/mega-news-104-6-athens.webp",
     "genres": [
       "news",
       "news talk"
@@ -49850,7 +49850,7 @@
     "countrycode": "GR",
     "stream_url": "https://netradio.live24.gr/menta88ath?1782575285",
     "homepage": "http://www.menta88.gr/player/",
-    "favicon": "https://menta88.gr/wp-content/uploads/2021/12/-LOGO-02-2021-e1639364215612.jpg",
+    "favicon": "/station-icons/menta-88.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -49872,7 +49872,7 @@
     "countrycode": "GR",
     "stream_url": "http://cast.metalourgio.com:8427/stream192.pls",
     "homepage": "https://metalourgio.com/",
-    "favicon": "https://www.metalourgio.com/wp-content/uploads/2024/03/Metalourgio_avatar_1710105257-192x192.png",
+    "favicon": "/station-icons/metalourgio-radio.webp",
     "genres": [
       "avant-garde metal",
       "black metal",
@@ -49935,7 +49935,7 @@
     "countrycode": "GR",
     "stream_url": "http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
     "homepage": "https://www.impt.gr/radiolive.html",
-    "favicon": "https://cdn.e-radio.gr/logos/gr/big/monaxikidiakonia.png",
+    "favicon": "/station-icons/monahiki-diakonia.webp",
     "genres": [],
     "language": null,
     "bitrate": 24,
@@ -49958,7 +49958,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast.mndbng.com/listen/mondobongo/radio.mp3",
     "homepage": "https://www.mondobongoradio.com/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzLk8rbRpsh8wM4UNRqW5TN_gy6WKx-weWDbuU50tyHk4v_pMYy_YfwtI&s=10",
+    "favicon": "/station-icons/mondo-bongo-radio.webp",
     "genres": [
       "eclectic",
       "freestyle",
@@ -49985,7 +49985,7 @@
     "countrycode": "GR",
     "stream_url": "http://stream.radiojar.com/5tyqrwpgpfeuv?1777639242",
     "homepage": "https://monkeybros.gr/",
-    "favicon": "https://monkeybros.gr/wp-content/uploads/2018/09/Untitled-1-2.png",
+    "favicon": "/station-icons/monkey-bros-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -50031,7 +50031,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid2.streamupsolutions.com/proxy/vbgivnwz?mp=/stream",
     "homepage": "http://www.mustfm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/a8377e45-6e74-4e39-901e-75644b2c1c5b.png",
+    "favicon": "/station-icons/must-97-nafpli.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -50057,7 +50057,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.radiomustathens.com/must-x",
     "homepage": "https://app.radiomustathens.com/",
-    "favicon": "https://app.radiomustathens.com/assets/artwork_must_x.png",
+    "favicon": "/station-icons/must-x.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -50105,7 +50105,7 @@
     "countrycode": "GR",
     "stream_url": "https://visual.shoutca.st:8616/stream",
     "homepage": "https://www.my-radio.gr/",
-    "favicon": "https://cdn-profiles.tunein.com/s347915/images/logod.png?t=639234185550000000",
+    "favicon": "/station-icons/my-radio-gr-athens.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -50131,7 +50131,7 @@
     "countrycode": "GR",
     "stream_url": "http://radio.streamings.gr:8064/stream",
     "homepage": "https://nauagos.net/",
-    "favicon": "https://nauagos.net/wp-content/uploads/2025/04/NAUAGOS.png",
+    "favicon": "/station-icons/nauagos-net.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -50153,7 +50153,7 @@
     "countrycode": "GR",
     "stream_url": "https://nt00.xyz/listen/escape_the_algorithm/radio.mp3",
     "homepage": "https://radio.nt00.xyz/",
-    "favicon": "https://radio.nt00.xyz/favicon-32x32.png",
+    "favicon": "/station-icons/nt00-radio.webp",
     "genres": [
       "alternative",
       "beats",
@@ -50189,7 +50189,7 @@
     "countrycode": "GR",
     "stream_url": "https://netradio.live24.gr/orama1017",
     "homepage": "https://radio-orama.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/7f6faefa-6756-4b35-859b-d068242dff3f.png",
+    "favicon": "/station-icons/orama-101-7-agrinio.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -50215,7 +50215,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr:7024/stream?type=http&amp;nocache=120882",
     "homepage": "https://party971.gr/",
-    "favicon": "https://party971.gr/wp-content/uploads/2024/07/party-icon.png",
+    "favicon": "/station-icons/party-97-1-larisa.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -50239,7 +50239,7 @@
     "countrycode": "GR",
     "stream_url": "https://impradio2.bytemasters.gr/8002/stream",
     "homepage": "https://www.peradio.com/",
-    "favicon": "https://www.peradio.com/wp-content/uploads/2018/11/logo.png",
+    "favicon": "/station-icons/peiraiki-ekklesia-91-2.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -50261,7 +50261,7 @@
     "countrycode": "GR",
     "stream_url": "https://s6.e-resellers.gr/8062/stream",
     "homepage": "https://polis911.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/a5847bb7-3ee2-4f02-bc36-e635a12c17f0.jpg",
+    "favicon": "/station-icons/polis-91-1-chalkida.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -50287,7 +50287,7 @@
     "countrycode": "GR",
     "stream_url": "https://s2.e-resellers.gr/proxy/poliskids/stream/;",
     "homepage": "https://polis911.gr/",
-    "favicon": "https://akoustakalytera.gr/polis911/wp-content/uploads/2017/01/polis-logo-pedika.webp",
+    "favicon": "/station-icons/polis-91-1-heykids-chalkida.webp",
     "genres": [
       "kids"
     ],
@@ -50312,7 +50312,7 @@
     "countrycode": "GR",
     "stream_url": "https://s6.e-resellers.gr:8092/;",
     "homepage": "https://polis911.gr/",
-    "favicon": "https://akoustakalytera.gr/polis911/wp-content/uploads/2017/01/polis-logo-hip-hop.webp",
+    "favicon": "/station-icons/polis-91-1-hip-hop-chalkida.webp",
     "genres": [
       "hip hop"
     ],
@@ -50337,7 +50337,7 @@
     "countrycode": "GR",
     "stream_url": "https://s2.e-resellers.gr/proxy/polisentexnos/stream",
     "homepage": "https://polis911.gr/",
-    "favicon": "https://akoustakalytera.gr/polis911/wp-content/uploads/2017/01/polis-logo-entexna.webp",
+    "favicon": "/station-icons/polis-91-1-chalkida.webp",
     "genres": [
       "greek music"
     ],
@@ -50362,7 +50362,7 @@
     "countrycode": "GR",
     "stream_url": "https://s2.e-resellers.gr/proxy/polislaikos/stream/;",
     "homepage": "https://polis911.gr/",
-    "favicon": "https://akoustakalytera.gr/polis911/wp-content/uploads/2018/03/polis-logo-palia-laika.webp",
+    "favicon": "/station-icons/polis-91-1-chalkida.webp",
     "genres": [
       "greek folk",
       "oldies"
@@ -50389,7 +50389,7 @@
     "countrycode": "GR",
     "stream_url": "https://sp1.32bit.gr/8002/stream",
     "homepage": "https://powerfm932.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/5b3c4bbb-f3ee-4213-896c-5de9cad81df4.jpg",
+    "favicon": "/station-icons/power-93-2-larisa.webp",
     "genres": [
       "rock"
     ],
@@ -50413,7 +50413,7 @@
     "countrycode": "GR",
     "stream_url": "https://radio.prime1037.gr/radio/prime",
     "homepage": "https://radio.prime1037.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/b1d34ccd-d683-4f13-86b4-135de14f31d1.png",
+    "favicon": "/station-icons/prime-103-7-rhodes.webp",
     "genres": [
       "news talk",
       "sports news"
@@ -50440,7 +50440,7 @@
     "countrycode": "GR",
     "stream_url": "https://rdst.win:37845/stream",
     "homepage": "https://liveonlineradio.net/radio-78kai45",
-    "favicon": "https://liveonlineradio.net/wp-content/uploads/2013/10/radio-78kai45-100x47.jpeg",
+    "favicon": "/station-icons/radio-78kai45.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -50485,7 +50485,7 @@
     "countrycode": "GR",
     "stream_url": "https://meraklis.ddns.net:8545/live",
     "homepage": "https://meraklis.ddns.net/rebetis.html",
-    "favicon": "https://meraklis.ddns.net/logo.png",
+    "favicon": "/station-icons/radio-ariadni-agrinio-placeholder.webp",
     "genres": [
       "greek",
       "rock"
@@ -50512,7 +50512,7 @@
     "countrycode": "GR",
     "stream_url": "https://neos.win:59454/stream",
     "homepage": "https://www.radioepirus.gr/",
-    "favicon": "https://www.radioepirus.gr/img/logo.png",
+    "favicon": "/station-icons/radio-epirus-94-5.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -50534,7 +50534,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream1.468.gr:7005/stream",
     "homepage": "https://radiogardenia.com/",
-    "favicon": "https://radiogardenia.com/images/radiogardenia260x260.png",
+    "favicon": "/station-icons/radio-gardenia.webp",
     "genres": [
       "jazz",
       "oldies",
@@ -50563,7 +50563,7 @@
     "countrycode": "GR",
     "stream_url": "https://eu10.fastcast4u.com:15360/;?type=http&nocache=1737135527",
     "homepage": "https://radiogrey.online/",
-    "favicon": "https://radiogrey.online/favicon.ico",
+    "favicon": "/station-icons/radio-grey-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -50585,7 +50585,7 @@
     "countrycode": "GR",
     "stream_url": "https://play.streams.gr:22082/stream",
     "homepage": "https://www.kostv.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/b2185ca5-6769-4057-ac84-4a214451738a.png",
+    "favicon": "/station-icons/radio-kos-98-fm.webp",
     "genres": [
       "greek music",
       "municipal",
@@ -50614,7 +50614,7 @@
     "countrycode": "GR",
     "stream_url": "https://whsh4u-panel.com/proxy/zukqpfqm?mp=/stream",
     "homepage": "https://locomotiva-cooperativa.org/",
-    "favicon": "https://locomotiva-cooperativa.org/wp-content/uploads/2018/06/logo360.jpg",
+    "favicon": "/station-icons/radio-locomotiva-athens-greece.webp",
     "genres": [
       "punk rock"
     ],
@@ -50639,7 +50639,7 @@
     "countrycode": "GR",
     "stream_url": "https://meraklis.ddns.net:8443/live",
     "homepage": "https://meraklis.ddns.net/",
-    "favicon": "https://meraklis.ddns.net/logo.png",
+    "favicon": "/station-icons/radio-meraklis-placeholder.webp",
     "genres": [
       "greek folk",
       "rebetico",
@@ -50665,7 +50665,7 @@
     "countrycode": "GR",
     "stream_url": "https://meraklis.ddnsfree.com:8443/live",
     "homepage": "https://meraklis.ddnsfree.com/",
-    "favicon": "https://meraklis.ddnsfree.com/logo.png",
+    "favicon": "/station-icons/radio-meraklis-agrinio.webp",
     "genres": [
       "greek folk",
       "rebetico"
@@ -50715,7 +50715,7 @@
     "countrycode": "GR",
     "stream_url": "https://eco.streams.ovh:8081/musicfactory/tracks-v1a1/mono.m3u8",
     "homepage": "https://musicfactory.gr/",
-    "favicon": "https://musicfactory.gr/wp-content/uploads/2018/12/cropped-Untitled-document-2-e1588354666566-192x192.jpg",
+    "favicon": "/station-icons/radio-music-factory.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -50738,7 +50738,7 @@
     "countrycode": "GR",
     "stream_url": "http://stream.radiomustathens.com/aacp",
     "homepage": "https://radiomustathens.com/",
-    "favicon": "https://assets.radiomustathens.com/images/pwa/icons/icon-1024x1024-apple-touch.png",
+    "favicon": "/station-icons/radio-must-athens.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -50761,7 +50761,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream13.shoutcastsolutions.com/proxy/bntailia?mp=/stream",
     "homepage": "https://www.radionyxtopoyli.com/",
-    "favicon": "https://www.radionyxtopoyli.com/wp-content/uploads/2016/11/cropped-Capture2-192x192.png",
+    "favicon": "/station-icons/radio-nyxtopoyli.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -50807,7 +50807,7 @@
     "countrycode": "GR",
     "stream_url": "https://eco.onestreaming.com/proxy/politia/stream",
     "homepage": "https://politiaradio.gr/",
-    "favicon": "https://politiaradio.gr/images/logo.png",
+    "favicon": "/station-icons/radio-politia.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -50830,7 +50830,7 @@
     "countrycode": "GR",
     "stream_url": "https://rebetis.duckdns.org:8545/live",
     "homepage": "https://rebetis.duckdns.org/",
-    "favicon": "https://rebetis.duckdns.org/rebetis.png",
+    "favicon": "/station-icons/radio-rebetikes-melodies-agrinio-greece.webp",
     "genres": [
       "greek folk",
       "rebetico"
@@ -50855,7 +50855,7 @@
     "countrycode": "GR",
     "stream_url": "https://meraklis.ddnsfree.com:8545/live",
     "homepage": "https://meraklis.ddnsfree.com/myradio.html",
-    "favicon": "https://mearaklis.ddnsfree.com/rebetis.png",
+    "favicon": "/station-icons/radio-rebetis-agrinio-placeholder.webp",
     "genres": [
       "greek",
       "rock"
@@ -50881,7 +50881,7 @@
     "countrycode": "GR",
     "stream_url": "https://meraklis.ddnsfree.com:8546/live",
     "homepage": "https://meraklis.ddnsfree.com/myradio.html",
-    "favicon": "https://mearaklis.ddnsfree.com/rebetis.png",
+    "favicon": "/station-icons/radio-rebetis-agrinio-placeholder.webp",
     "genres": [
       "greek",
       "rock"
@@ -50907,7 +50907,7 @@
     "countrycode": "GR",
     "stream_url": "https://meraklis.ddns.net:8546/live",
     "homepage": "https://meraklis.ddns.net/rebetis.html",
-    "favicon": "https://meraklis.ddns.net/rebetis.png",
+    "favicon": "/station-icons/radio-rebetis-agrinio-placeholder.webp",
     "genres": [
       "greek",
       "rock"
@@ -51003,7 +51003,7 @@
     "countrycode": "GR",
     "stream_url": "https://live.radiq.gr/listen/radiq/radio.mp3",
     "homepage": "https://www.radiq.gr/#",
-    "favicon": "https://www.radiq.gr/assets/logo-Djw34_iB.png",
+    "favicon": "/station-icons/radiq-happy.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -51026,7 +51026,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid67.streamupsolutions.com/proxy/olrbkxdl?mp=//Stream",
     "homepage": "https://www.razordinoradio.gr/",
-    "favicon": "https://static.wixstatic.com/media/d4387f_405ab2cb45f7422f89ed7df9fdd1c998~mv2.jpg/v1/fill/w_520,h_166,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/d4387f_405ab2cb45f7422f89ed7df9fdd1c998~mv2.jpg",
+    "favicon": "/station-icons/razordino-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -51049,7 +51049,7 @@
     "countrycode": "GR",
     "stream_url": "https://netradio.live24.gr/realclassic",
     "homepage": "https://www.real.gr/realplayer/",
-    "favicon": "https://www.real.gr/realplayer/wp-content/uploads/2024/03/real-classic.jpg",
+    "favicon": "/station-icons/real-classic-athens.webp",
     "genres": [
       "classical"
     ],
@@ -51074,7 +51074,7 @@
     "countrycode": "GR",
     "stream_url": "https://n05a-eu.rcs.revma.com/40uryq80ubuvv?rj-ttl=5&rj-tok=AAABnOjqRgEAESnKWr05BOFxAg&_=477903",
     "homepage": "https://www.redfm.gr/",
-    "favicon": "https://mmo.aiircdn.com/342/5e57ce157389c.png",
+    "favicon": "/station-icons/red-80s-athens.webp",
     "genres": [
       "80s",
       "adult hits"
@@ -51100,7 +51100,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream-158.zeno.fm/uft90xvk4nhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ1ZnQ5MHh2azRuaHZ2IiwiaG9zdCI6InN0cmVhbS0xNTguemVuby5mbSIsInJ0dGwiOjUsImp0aSI6InZqckgxRUNnUzBlb2d2N3FsS3ZSc1EiLCJpYXQiOjE3NzQyOTI2MDUsImV4cCI6MTc3NDI5MjY2NX0.80JAXUzwg3uZeEedkW03zS17Mo2QpUK6HZrePcrT0sc&acu-uid=727435602967&triton-uid=cookie%3A83ca5b14-582e-4c12-a5ab-255cdb39e2cb",
     "homepage": "https://zeno.fm/radio/rock-club-classic-rock/",
-    "favicon": "https://zeno.fm/_ipx/_/https://images.zeno.fm/pKAG3ZHg-XElfhuo8kpifrK6VYVW5wH2EQ1HB1Rhbro/rs:fill:288:288/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ0kwZl82cFFzTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ0luZW1VandzTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTY4NTI0NTU4MzAwMA.webp",
+    "favicon": "/station-icons/rock-club-athens.webp",
     "genres": [
       "classic rock"
     ],
@@ -51125,7 +51125,7 @@
     "countrycode": "GR",
     "stream_url": "https://shoutcast.k-planet.eu:9898/stream",
     "homepage": "https://rockstationgr.blogspot.com/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/599159b0-6f39-46b0-b6de-49bdbb0056c0.gif",
+    "favicon": "/station-icons/rock-station-gr-nafplio.webp",
     "genres": [
       "rock"
     ],
@@ -51150,7 +51150,7 @@
     "countrycode": "GR",
     "stream_url": "https://free.rcast.net/62225",
     "homepage": "http://www.rockstation.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/fdff08c2-4bc8-447b-a953-09e4a4a87270.jpg",
+    "favicon": "/station-icons/rock-velvet.webp",
     "genres": [
       "rock"
     ],
@@ -51243,7 +51243,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr/8812/;/chillout.mp3?type=http&nocache=377274",
     "homepage": "https://www.shook.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/7642cd7d-9df3-437f-93fd-1757d418c790.jpg",
+    "favicon": "/station-icons/shook-104-4-thessaloniki.webp",
     "genres": [
       "pop"
     ],
@@ -51268,7 +51268,7 @@
     "countrycode": "GR",
     "stream_url": "https://ice.streams.ovh:1765/stream",
     "homepage": "https://www.simpleradio.gr/",
-    "favicon": "https://www.simpleradio.gr/wp-content/uploads/2023/12/logo_small.jpg",
+    "favicon": "/station-icons/simple-radio-attica-athens.webp",
     "genres": [
       "80s",
       "90's",
@@ -51295,7 +51295,7 @@
     "countrycode": "GR",
     "stream_url": "https://media.skyradio.gr:9920/stream",
     "homepage": "https://www.skyradio.gr/",
-    "favicon": "https://cdn.e-radio.gr/logos/gr/big/skyradio992.jpg",
+    "favicon": "/station-icons/sky-radio-epirus.webp",
     "genres": [
       "eurobeat",
       "eurodance",
@@ -51328,7 +51328,7 @@
     "countrycode": "GR",
     "stream_url": "https://a10.asurahosting.com:8140/radio.mp3",
     "homepage": "https://skyline-thessaloniki.com/",
-    "favicon": "https://skyline-thessaloniki.com/logos/logo.jpg",
+    "favicon": "/station-icons/skyline-thessaloniki.webp",
     "genres": [
       "afro house",
       "ambient",
@@ -51361,7 +51361,7 @@
     "countrycode": "GR",
     "stream_url": "https://n04.radiojar.com/819r8wupdrruv?1776102680",
     "homepage": "https://skylos90fm.gr/",
-    "favicon": "https://skylos90fm.gr/wp-content/uploads/2019/12/cropped-mad-designer-768x623.png",
+    "favicon": "/station-icons/skylos-fm-athens-greece.webp",
     "genres": [
       "rebetico"
     ],
@@ -51386,7 +51386,7 @@
     "countrycode": "GR",
     "stream_url": "http://stream.crete.ovh:8000/1",
     "homepage": "https://studio19.gr/",
-    "favicon": "https://studio19.gr/images/Studio19_logo2.png",
+    "favicon": "/station-icons/studio-19.webp",
     "genres": [
       "greek hellenic music"
     ],
@@ -51411,7 +51411,7 @@
     "countrycode": "GR",
     "stream_url": "https://admin.stream.rinse.fm/proxy/swu/stream",
     "homepage": "https://www.rinse.fm/channels/swu",
-    "favicon": "https://image.rinse.fm/_/Mobile_2025-01-06-104951_hyzv.png?w=1200",
+    "favicon": "/station-icons/swu-fm.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -51434,7 +51434,7 @@
     "countrycode": "GR",
     "stream_url": "https://technolocos.net/listen/technolocos/radio.mp3",
     "homepage": "https://technolocos.net/public/technolocos",
-    "favicon": "https://technolocos.net/static/uploads/album_art.1730362857.jpg",
+    "favicon": "/station-icons/technolocos-deep-web-radio-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -51508,7 +51508,7 @@
     "countrycode": "GR",
     "stream_url": "https://eco.onestreaming.com/proxy/toxotis/stream",
     "homepage": "https://toxotisfm.gr/",
-    "favicon": "https://toxotisfm.gr/favicon.ico",
+    "favicon": "/station-icons/toxotis-fm-western-greece.webp",
     "genres": [
       "greece",
       "greek",
@@ -51538,7 +51538,7 @@
     "countrycode": "GR",
     "stream_url": "https://radiospromo.com/listen/tracksaudio.com_-_80s_music/radio.mp3",
     "homepage": "https://www.tracksaudio.com/",
-    "favicon": "https://www.tracksaudio.com/wp-content/uploads/2024/02/cropped-cropped-TracksAudio-Logo-Trans-1-80-black-180x180.png",
+    "favicon": "/station-icons/tracksaudio-com-80s-music.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -51561,7 +51561,7 @@
     "countrycode": "GR",
     "stream_url": "https://radiospromo.com/listen/tracksaudio.com_-_chill_house_music/radio.mp3",
     "homepage": "https://www.tracksaudio.com/",
-    "favicon": "https://www.tracksaudio.com/wp-content/uploads/2024/02/cropped-cropped-TracksAudio-Logo-Trans-1-80-black-180x180.png",
+    "favicon": "/station-icons/tracksaudio-com-chill-house-music.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -51629,7 +51629,7 @@
     "countrycode": "GR",
     "stream_url": "https://metromedia.live24.gr/velvetbaladsthess",
     "homepage": "https://velvet968.gr/",
-    "favicon": "https://radiodune.com/api/logos/96_8_velvet_fm___ballads_web.jpg",
+    "favicon": "/station-icons/velvet-ballads-96-8-thessaloniki.webp",
     "genres": [
       "ballads"
     ],
@@ -51678,7 +51678,7 @@
     "countrycode": "GR",
     "stream_url": "http://152.53.229.53:8000/radio.mp3",
     "homepage": "http://v2202605357352458399.happysrv.de/velvet-jazz/",
-    "favicon": "http://v2202605357352458399.happysrv.de/img/velvet_radio.png",
+    "favicon": "/station-icons/velvet-jazz-radio.webp",
     "genres": [
       "jazz",
       "smooth jazz"
@@ -51703,7 +51703,7 @@
     "countrycode": "GR",
     "stream_url": "https://metromedia.live24.gr/velvetrockthess",
     "homepage": "https://velvet968.gr/",
-    "favicon": "https://radiodune.com/api/logos/96_8_velvet_fm___rock_web.jpg",
+    "favicon": "/station-icons/velvet-rock-96-8-thessaloniki.webp",
     "genres": [
       "rock"
     ],
@@ -51729,7 +51729,7 @@
     "countrycode": "GR",
     "stream_url": "http://5.104.111.225:8040/stream",
     "homepage": "https://www.viralfm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/7e8e4bbb-4993-4e17-85ea-3ed951448d06.png",
+    "favicon": "/station-icons/viral-102-7-athens.webp",
     "genres": [
       "news",
       "news talk",
@@ -51757,7 +51757,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.radiojar.com/u52ufw1qayduv?1777638187",
     "homepage": "https://www.voice1025.gr/",
-    "favicon": "https://www.voice1025.gr/wp-content/uploads/2025/02/cropped-voice_logo.png",
+    "favicon": "/station-icons/voice-102-5.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -51780,7 +51780,7 @@
     "countrycode": "GR",
     "stream_url": "https://n06.radiojar.com/u52ufw1qayduv?1781887837=&rj-tok=AAABnuDWDg4A78oF2Dg_3w1egw&rj-ttl=5",
     "homepage": "https://www.voice1025.gr/",
-    "favicon": "https://www.athensvoice.gr/images/120x120/jpg/files/2026-06-19/voice-radio-logo2.webp",
+    "favicon": "/station-icons/voice-radio-gr-athens.webp",
     "genres": [
       "pop rock"
     ],
@@ -51804,7 +51804,7 @@
     "countrycode": "GR",
     "stream_url": "https://radio.1055rock.gr:32667/live",
     "homepage": "https://weradio.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/b4d7fa92-e97d-45a4-abfe-d23114dbc18a.png",
+    "favicon": "/station-icons/we-radio-89-4-thessaloniki.webp",
     "genres": [
       "mainstream",
       "pop"
@@ -51831,7 +51831,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid2.streamupsolutions.com/proxy/yavljnhi?mp=/stream",
     "homepage": "https://www.cosmos995.gr/",
-    "favicon": "https://www.cosmos995.gr/wp-content/uploads/2016/02/cosmos-fm.png",
+    "favicon": "/station-icons/www-cosmos995-gr.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -51853,7 +51853,7 @@
     "countrycode": "GR",
     "stream_url": "https://n36a-eu.rcs.revma.com/5n5k2wm6xxcwv?rj-ttl=5&rj-tok=AAABnW5oFsYAXuAUPNbj-TcyNw&dist=karteliasweb&lsid=cookie%3Af4d76d5a-f2df-4379-8afa-fa5f8743b41b&gdpr=1&gdpr_consent=CQiStoAQiStoAAKA9AENCZFgAAAAAEPgAAyIAAATOgIgALAAqACAAGQARQAmABdAD8AIQAZUA7gDvAIsAe0BKoC8wGWATOAA.ILOQHoAFAAWABWADAAMgAgABaADIAIsATABNACkAFsALoAXwAwgB-gEGAQgAyoB3AHeARaAuoC7AHAAPaAfsBGICVQEsgLzAYyAywCZwFnAA.YAAAAAAAAAAA",
     "homepage": "https://lalala.gr/",
-    "favicon": "https://lalala.gr/wp-content/uploads/2023/01/playbar-zrock.jpg",
+    "favicon": "/station-icons/z-rock-chalkida.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -51876,7 +51876,7 @@
     "countrycode": "GR",
     "stream_url": "https://premium.streams.gr/ic/orfeas101/stream",
     "homepage": "https://www.alitis971.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/2669d1ac-797b-46db-87af-743f37342e04.png",
+    "favicon": "/station-icons/97-1-giannitsa.webp",
     "genres": [
       "greek folk"
     ],
@@ -51901,7 +51901,7 @@
     "countrycode": "GR",
     "stream_url": "https://sp1.19cloudsnetwork.gr/8014/stream",
     "homepage": "https://www.anoixifm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/99045acd-8efe-493c-9984-506c59947812.png",
+    "favicon": "/station-icons/100-7-patra.webp",
     "genres": [
       "greek music"
     ],
@@ -51927,7 +51927,7 @@
     "countrycode": "GR",
     "stream_url": "https://24streams.gr:8100/stream?ver=461868",
     "homepage": "https://argolida-fm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/6d68107c-47f0-4993-938b-aacea826aace.png",
+    "favicon": "/station-icons/fm-103-8-nafplio.webp",
     "genres": [
       "mainstream",
       "pop"
@@ -51952,7 +51952,7 @@
     "countrycode": "GR",
     "stream_url": "https://rdst.win:48312/;",
     "homepage": "https://radiofonoorestiadas.blogspot.com/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/3ff18eaa-807d-4582-b8a5-9cd706d755d1.jpg",
+    "favicon": "/station-icons/101-5-orestiada.webp",
     "genres": [
       "municipal"
     ],
@@ -51978,7 +51978,7 @@
     "countrycode": "GR",
     "stream_url": "https://n40a-eu.rcs.revma.com/gkfwrhqxbfhvv?rj-ttl=5&rj-tok=AAABnRe7-WsA_lpg8q-UnaVe8w&7252=",
     "homepage": "https://diesi.gr/",
-    "favicon": "https://www.radio.net/175/diesi.png?version=13ec69f804a5fbb7d6b5b74456c940960b14425a",
+    "favicon": "/station-icons/101-3-athens.webp",
     "genres": [
       "greek music"
     ],
@@ -52003,7 +52003,7 @@
     "countrycode": "GR",
     "stream_url": "https://eu1.fastcast4u.com/proxy/diktyofm?mp=/1&1669757862949&1769842426192",
     "homepage": "https://diktyofm.gr/",
-    "favicon": "https://diktyofm.gr/wp-content/uploads/2022/01/social-share-diktyofm.png",
+    "favicon": "/station-icons/fm-91-5-chania-greece.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 128,
@@ -52025,7 +52025,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast5.asurahosting.com/proxy/sinidisi/stream",
     "homepage": "https://dytikafm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/85d6c6eb-a442-4516-b264-a5a1ab48d724.png",
+    "favicon": "/station-icons/92-8-agrinio.webp",
     "genres": [
       "greek folk",
       "news",
@@ -52053,7 +52053,7 @@
     "countrycode": "GR",
     "stream_url": "https://webradio-server.n-t.gr/listen/webradio.n-t.gr/radio.mp3",
     "homepage": "https://webradio.n-t.gr/",
-    "favicon": "https://webradio.n-t.gr/public/assets/images/webradio_logo.png",
+    "favicon": "/station-icons/athens.webp",
     "genres": [
       "art",
       "art talk",
@@ -52082,7 +52082,7 @@
     "countrycode": "GR",
     "stream_url": "https://orange.live24.gr/orange9320",
     "homepage": "https://ellinikos932.gr/",
-    "favicon": "https://live24.gr/resrc/styles/custom-popups/ellinikos/logo.jpg",
+    "favicon": "/station-icons/93-2-athens.webp",
     "genres": [
       "greek music"
     ],
@@ -52107,7 +52107,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.rcs.revma.com/s1m17r30ubuvv",
     "homepage": "https://www.enlefko.fm/player/en-lefko-world-music/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVbu_X8sQumCCj_5tTBxJtB25JkllTT_nRJQ&s",
+    "favicon": "/station-icons/world-music-athens-greece.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 0,
@@ -52152,7 +52152,7 @@
     "countrycode": "GR",
     "stream_url": "https://eu1.fastcast4u.com/proxy/nmarog01?mp=/1",
     "homepage": "https://www.eroticos.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/40ce9140-b7b5-4bb0-ae32-cdd248f3897e.png",
+    "favicon": "/station-icons/94-8-thessaloniki.webp",
     "genres": [
       "greek music"
     ],
@@ -52177,7 +52177,7 @@
     "countrycode": "GR",
     "stream_url": "http://212.95.39.229:2740/stream",
     "homepage": "https://radioimchalkidos977fm.blogspot.com/",
-    "favicon": "https://blogger.googleusercontent.com/img/a/AVvXsEgAlz8de3VlyNNzUirB3ClZwKeawUjAhkwgWuctKIii-MKC9JXEhQCGvEDyMt-CA59fKQIRm3tcW3MxmTJO3ccG-oN-5qeylP3wGdZ04bh9LjMrShIdQehYzbn_DqMhpx5wCMgauO9Jy9_kEPXCe8HKx3K3iDgptxSKPxMdIE0u11-ipdYeJVebe6VoJIyp=s246",
+    "favicon": "/station-icons/chalkida.webp",
     "genres": [
       "christian orthodox"
     ],
@@ -52202,7 +52202,7 @@
     "countrycode": "GR",
     "stream_url": "https://freakout.stream.laut.fm/freakout",
     "homepage": "https://www.facebook.com/klikfmrodos?locale=el_GR",
-    "favicon": "https://resources.live24.gr/resources/images/stations/7344f620-f463-4e71-bda2-90f33050007d.jpg",
+    "favicon": "/station-icons/106-2-rhodes.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -52225,7 +52225,7 @@
     "countrycode": "GR",
     "stream_url": "http://radio.myaegean.gr:8000/lofosradio.mp3",
     "homepage": "http://my.aegean.gr/radio/Lesvos/",
-    "favicon": "http://my.aegean.gr/radio/Lesvos/pix/now-playing-lofosbox3.png",
+    "favicon": "/station-icons/lesvos.webp",
     "genres": [
       "student radio"
     ],
@@ -52250,7 +52250,7 @@
     "countrycode": "GR",
     "stream_url": "https://tls-chrome.live24.gr/271?http://eu1.radiolydia.com:1086/stream",
     "homepage": "https://radiolydia.com/",
-    "favicon": "https://radiolydia.com/wp-content/uploads/2024/12/radio-lidia-logo-2024.jpg",
+    "favicon": "/station-icons/94-2-thessaloniki.webp",
     "genres": [
       "orthodox christian",
       "religion"
@@ -52276,7 +52276,7 @@
     "countrycode": "GR",
     "stream_url": "https://eco.onestreaming.com/proxy/lyxnari/stream",
     "homepage": "https://www.lihnarifm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/67df9a42-33f9-4ce0-842a-d39310db1a9c.jpg",
+    "favicon": "/station-icons/91-4-rhodes.webp",
     "genres": [
       "greek music"
     ],
@@ -52302,7 +52302,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.rcs.revma.com/h9mge780ubuvv",
     "homepage": "https://www.melodia.gr/on-air/kasetes-tou-melodia/",
-    "favicon": "https://media.real.gr/filesystem/images/20190719/low/130_252863_161531.JPG",
+    "favicon": "/station-icons/athens.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 0,
@@ -52325,7 +52325,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.rcs.revma.com/xecq4980ubuvv",
     "homepage": "https://www.melodia.gr/player/ta-megala-klasika/",
-    "favicon": "https://mmo.aiircdn.com/342/5e7387070f626.jpg",
+    "favicon": "/station-icons/athens.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 0,
@@ -52348,7 +52348,7 @@
     "countrycode": "GR",
     "stream_url": "https://n41a-eu.rcs.revma.com/cdkb8a90ubuvv?rj-ttl=5&rj-tok=AAABnTgXywsAO9h7Cu0OQ1C0ww",
     "homepage": "https://www.melodia.gr/player/ta-tragoydia-toy-90/",
-    "favicon": "https://mmo.aiircdn.com/342/5e6bb56b0bfba.jpg",
+    "favicon": "/station-icons/90-athens-greece.webp",
     "genres": [
       "greek hellenic music"
     ],
@@ -52373,7 +52373,7 @@
     "countrycode": "GR",
     "stream_url": "https://n17-eu.rcs.revma.com/9r5r1hm6xxcwv?rj-ttl=5&rj-tok=AAABnzP3sjQA-BbDLjwir4lmMQ&dist=karteliasweb&lsid=cookie%3Ad01d26ef-9d3e-40b2-a0c9-bc730d010f7b&gdpr=1&gdpr_consent=CQm4DEAQm4DEAAKA9AENCmFgAAAAAEPgAAyIAAATOgIAALAAqACAAGQARQAmABdAD8AISAdwB3gEWAPaAlUBeYDLAJnAAAAA.ILOQHYAFAAWABWADAAMgAgABaADIAIsATABNACkAFsALoAXwAwgB-gEGAQkA7gDvAItAXUBdgDgAHtAP2AjEBKoCWQF5gMZAZYBM4Czg.YAAAAAAAAAAA",
     "homepage": "https://karteliasmediagroup.gr/",
-    "favicon": "https://karteliasmediagroup.gr/wp-content/uploads/2023/08/mple.png",
+    "favicon": "/station-icons/99-chalkida.webp",
     "genres": [
       "greek music"
     ],
@@ -52397,7 +52397,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream.mythosradio.gr/listen/mythos/radio.mp3",
     "homepage": "https://www.mythosradio.gr/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vxqSypp0DL3YjplX4Ia5iM5QDOo0Gj80Vw&s",
+    "favicon": "/station-icons/93-4-thessaloniki.webp",
     "genres": [
       "greek music"
     ],
@@ -52423,7 +52423,7 @@
     "countrycode": "GR",
     "stream_url": "https://cast.magicstreams.gr/ic/raxfm/stream",
     "homepage": "https://xiromero883.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/d6db6ac6-be84-45e9-be16-9a5f14d31b2d.png",
+    "favicon": "/station-icons/88-3.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -52449,7 +52449,7 @@
     "countrycode": "GR",
     "stream_url": "https://n05a-eu.rcs.revma.com/z0ymkz80ubuvv?rj-ttl=5&rj-tok=AAABnTOPb9IAgSkT3Tk_osIdmw",
     "homepage": "https://www.melodia.gr/player/o-neos-freedom/",
-    "favicon": "https://mmo.aiircdn.com/342/5e6bb5698d92d.jpg",
+    "favicon": "/station-icons/freedom-athens.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 0,
@@ -52471,7 +52471,7 @@
     "countrycode": "GR",
     "stream_url": "https://panel.gwebstream.com/stream/imlagada/stream",
     "homepage": "https://www.imlagada.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/221df493-b08c-46e1-9975-51aedf6d7809.jpg",
+    "favicon": "/station-icons/106-8-thessaloniki.webp",
     "genres": [
       "orthodox christian",
       "religion"
@@ -52497,7 +52497,7 @@
     "countrycode": "GR",
     "stream_url": "https://rasp35.ddnsfree.com:3535/radio_el",
     "homepage": "https://rasp35.ddnsfree.com/",
-    "favicon": "https://rasp35.ddnsfree.com/icons/grafi.jpg",
+    "favicon": "/station-icons/station-27a54c65.webp",
     "genres": [
       "ομιλίες",
       "ορθοδοξία",
@@ -52524,7 +52524,7 @@
     "countrycode": "GR",
     "stream_url": "https://rasp35.ddnsfree.com:3535/pss",
     "homepage": "https://rasp35.ddnsfree.com/",
-    "favicon": "https://rasp35.ddnsfree.com/icons/pss.jpg",
+    "favicon": "/station-icons/station-b5eed20e.webp",
     "genres": [
       "ομιλίες",
       "ορθοδοξία",
@@ -52551,7 +52551,7 @@
     "countrycode": "GR",
     "stream_url": "https://rasp35.ddnsfree.com:3535/mtlns",
     "homepage": "https://rasp35.ddnsfree.com/",
-    "favicon": "https://rasp35.ddnsfree.com/icons/mtlns.webp",
+    "favicon": "/station-icons/station-8ff2c530.webp",
     "genres": [
       "ομιλίες",
       "ορθοδοξία",
@@ -52578,7 +52578,7 @@
     "countrycode": "GR",
     "stream_url": "https://rasp35.ddnsfree.com:3535/pngpls",
     "homepage": "https://rasp35.ddnsfree.com/",
-    "favicon": "https://rasp35.ddnsfree.com/icons/pngpls.jpg",
+    "favicon": "/station-icons/heraclion.webp",
     "genres": [
       "ομιλίες",
       "ορθοδοξία",
@@ -52605,7 +52605,7 @@
     "countrycode": "GR",
     "stream_url": "https://rasp35.ddnsfree.com:3535/strpls",
     "homepage": "https://rasp35.ddnsfree.com/",
-    "favicon": "https://rasp35.ddnsfree.com/icons/strpls.jpg",
+    "favicon": "/station-icons/heraclion.webp",
     "genres": [
       "ομιλίες",
       "ορθοδοξία",
@@ -52632,7 +52632,7 @@
     "countrycode": "GR",
     "stream_url": "https://rasp35.ddnsfree.com:3535/ymnoi",
     "homepage": "https://rasp35.ddnsfree.com/",
-    "favicon": "https://rasp35.ddnsfree.com/icons/ortdx.jpg",
+    "favicon": "/station-icons/heraklion-crete.webp",
     "genres": [
       "ύμνοι"
     ],
@@ -52657,7 +52657,7 @@
     "countrycode": "GR",
     "stream_url": "https://sh.onweb.gr/8546/stream",
     "homepage": "https://ort.gr/",
-    "favicon": "https://onradio.gr/wp-content/uploads/2020/04/ORT-FM-1.png",
+    "favicon": "/station-icons/92-3-pyrgos.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -52683,7 +52683,7 @@
     "countrycode": "GR",
     "stream_url": "http://netradio.live24.gr/panorama984",
     "homepage": "http://www.panorama984.gr/",
-    "favicon": "https://live24.gr/resrc/styles/custom-popups/panorama/images/logo-panorama-new.png",
+    "favicon": "/station-icons/98-4-thessaloniki.webp",
     "genres": [
       "greek pop",
       "mainstream"
@@ -52710,7 +52710,7 @@
     "countrycode": "GR",
     "stream_url": "https://shoutcast.k-planet.eu/9800/stream;",
     "homepage": "https://www.peiratikos.com/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/dd64c89b-d42a-4c98-b2ee-ac7b9899e6c8.png",
+    "favicon": "/station-icons/99-5-athens.webp",
     "genres": [
       "greek folk music",
       "oldies"
@@ -52735,7 +52735,7 @@
     "countrycode": "GR",
     "stream_url": "https://s6.e-resellers.gr:8098/stream?type=http&nocache=25",
     "homepage": "https://ptisifm.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/7626146b-676d-4b31-9e72-a8f755792424.png",
+    "favicon": "/station-icons/103-2-chalkida.webp",
     "genres": [
       "greek folk"
     ],
@@ -52786,7 +52786,7 @@
     "countrycode": "GR",
     "stream_url": "https://station.aptaliko.gr/radio/8000/radio.mp3",
     "homepage": "https://live.aptaliko.gr/radio",
-    "favicon": "https://www.radioguide.fm/uploads/images/radiostation/logocal.png",
+    "favicon": "/station-icons/athens.webp",
     "genres": [
       "oldies"
     ],
@@ -52811,7 +52811,7 @@
     "countrycode": "GR",
     "stream_url": "https://i4.streams.ovh/sc/difono/stream?1769840900373",
     "homepage": "https://radio-difono.gr/#!/page_SPLASH",
-    "favicon": "https://cdn.e-radio.gr/logos/gr/500/RadioDifono.png",
+    "favicon": "/station-icons/station-0fcc408a.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 320,
@@ -52857,7 +52857,7 @@
     "countrycode": "GR",
     "stream_url": "https://solid1.streamupsolutions.com/proxy/cqbyibwg?mp=/stream",
     "homepage": "https://radio.garden/listen/magkas/yi9AJcF0?hl=el",
-    "favicon": "https://www.radioguide.fm/uploads/images/radiostation/rmptixs6.jpg",
+    "favicon": "/station-icons/station-6ae2e2dd.webp",
     "genres": [
       "παλιά λαϊκά"
     ],
@@ -52882,7 +52882,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream-177.zeno.fm/wqcp8gq67vzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ3cWNwOGdxNjd2enV2IiwiaG9zdCI6InN0cmVhbS0xNzcuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Imd3bDUyOGR0UzJxWXkzX0xwUkdJVGciLCJpYXQiOjE3NzQ2NzYwNTYsImV4cCI6MTc3NDY3NjExNn0.Zj53dXOszIlXNR6FQQotK2mPos1MLdXqCDRf5rm97zE",
     "homepage": "https://rempetikogialigous.gr/",
-    "favicon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyKDyi698zBn5VdVEAM-ikPZTZukadkwWvpyR9SSqYZB62BmYdN461THNl3ibErvA77UfoWrm9ZbitcvWwQNQu3mou4rWl9ekRk3crUDrNIaTy_AjLkHgj-0oNUGx_fLBEVaLgCntdvvQ/s400/rempetiko-gia-ligous.jpg",
+    "favicon": "/station-icons/athens.webp",
     "genres": [
       "rebetico"
     ],
@@ -52906,7 +52906,7 @@
     "countrycode": "GR",
     "stream_url": "https://stream-178.zeno.fm/037xwzg0h2zuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIwMzd4d3pnMGgyenV2IiwiaG9zdCI6InN0cmVhbS0xNzguemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImZINGdHOU5OUUFTRmx2WmFPQXIyLVEiLCJpYXQiOjE3NzE0Mzk2ODYsImV4cCI6MTc3MTQzOTc0Nn0.ziAsHudyfI6c2A-LtJf-bi8MGkpo_6iwkK0FzPsSd-0",
     "homepage": "https://zeno.fm/radio/rythmos-947/",
-    "favicon": "https://zeno.fm/_ipx/_/https://images.zeno.fm/f1hJ-k9DYFdsWYESavjvZO480fP2ggthbKTYBThAXKI/rs:fill:288:288/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ1FpZUhsdUFnTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ1E2YjNuNHdnTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTY2MTYxMjcwODAwMA.webp",
+    "favicon": "/station-icons/93-7-agrinio.webp",
     "genres": [
       "greek music"
     ],
@@ -52932,7 +52932,7 @@
     "countrycode": "GR",
     "stream_url": "https://n43a-eu.rcs.revma.com/dm9td34r4a0uv?rj-ttl=5&rj-tok=AAABnSF3GscA_ycXIcHcH5wvWg",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/8rythmos-ballads_6ae1237e2a81f57b4e94ccc64bcfd848.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/ballads-athens.webp",
     "genres": [
       "ballads",
       "greek pop"
@@ -52958,7 +52958,7 @@
     "countrycode": "GR",
     "stream_url": "https://n17a-eu.rcs.revma.com/m2r3yy4r4a0uv?rj-ttl=5&rj-tok=AAABnSF80GgAaqH7kKQLK_ofXQ",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundis.gr/resized/streams/2024/01/09/10rythmos-dalika_410ffaf44cc7c11fe3be5815cd503d23.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/dalika-athens.webp",
     "genres": [
       "greek folk"
     ],
@@ -52983,7 +52983,7 @@
     "countrycode": "GR",
     "stream_url": "https://n07a-eu.rcs.revma.com/ff4abx8q4a0uv?rj-ttl=5&rj-tok=AAABnSGE_d8A8FSjXz4pfremJw",
     "homepage": "https://www.soundis.gr/",
-    "favicon": "https://api.soundisgr-prod.cloudworks.ro/resized/streams/2024/01/09/6rythmos-kassetofwno_56e8ca9c4af4ba339ab1475cd756a49f.jpg?w=120&h=120&c=1",
+    "favicon": "/station-icons/athens.webp",
     "genres": [
       "greek pop"
     ],
@@ -53008,7 +53008,7 @@
     "countrycode": "GR",
     "stream_url": "https://eco.onestreaming.com/proxy/mesologgi/stream",
     "homepage": "https://mesradio92.gr/",
-    "favicon": "https://mesradio92.gr/wp-content/uploads/2017/01/mesradio92_opengraph-270x180@2x.jpg",
+    "favicon": "/station-icons/station-0230a16a.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -53031,7 +53031,7 @@
     "countrycode": "GR",
     "stream_url": "https://tls-chrome.live24.gr/171?http://cast3.radiohost.ovh:8280/stream",
     "homepage": "http://www.sfaira.gr/",
-    "favicon": "https://resources.live24.gr/resources/images/stations/53dd2173-6cf6-4a49-925a-5d5dd1be6639.png",
+    "favicon": "/station-icons/101-6-larisa.webp",
     "genres": [
       "greek music"
     ],
