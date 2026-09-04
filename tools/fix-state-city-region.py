@@ -5,6 +5,7 @@ import re
 import sys
 import time
 from pathlib import Path
+from typing import Optional
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -121,7 +122,7 @@ def clean_city(value: str) -> str:
     return cleaned
 
 
-def map_region(address: dict) -> str | None:
+def map_region(address: dict) -> Optional[str]:
     for field in ADDRESS_FIELDS:
         value = address.get(field)
         if not isinstance(value, str) or not value.strip():
@@ -151,7 +152,7 @@ def main() -> int:
         "--progress-file",
         type=Path,
         default=DEFAULT_PROGRESS_PATH,
-        help="Path to progress file for skipped stations",
+        help="Path to progress file for stations already handled",
     )
     parser.add_argument(
         "--lang",
@@ -188,6 +189,18 @@ def main() -> int:
             state_is_region = isinstance(state_value, str) and state_value in REGIONS
             city_value = station.get("city")
 
+            # Older runs may have updated the station before successful IDs were
+            # written to the progress file. Recognize those completed records so
+            # they do not require another reverse-geocoding request.
+            existing_region = (
+                map_region({"state": state_value})
+                if isinstance(state_value, str)
+                else None
+            )
+            if isinstance(city_value, str) and city_value.strip() and existing_region:
+                skipped.add(station_id)
+                continue
+
             lat = station.get("geo_lat")
             lon = station.get("geo_long")
             if lat in (None, "") or lon in (None, ""):
@@ -222,6 +235,11 @@ def main() -> int:
 
             station["state"] = region
             DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            skipped.add(station_id)
+            args.progress_file.write_text(
+                json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
             print(f"✓ Updated state to: {region}")
             processed += 1
 
