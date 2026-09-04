@@ -5,28 +5,18 @@ import { pathToFileURL } from "node:url";
 
 const DATA_PATH = path.join("src", "data", "stations-gr.json");
 const UPDATE_REVIEW_PATH = path.join("src", "data", "station-update-review.json");
-const NEW_STATIONS_REVIEW_PATH = path.join("src", "data", "new-stations-review.json");
+const NEW_STATIONS_REPORT_PATH = path.join("src", "data", "new-stations-import-report.json");
 const API_BATCH_SIZE = 1000;
 
-const OPERATIONAL_FIELDS = [
-  "votes",
-  "clickcount",
-  "lastcheckok",
+const REMOTE_UPDATE_FIELDS = [
+  "language",
   "bitrate",
   "codec",
+  "clickcount",
+  "lastcheckok",
+  "votes",
   "hls",
-  "ssl_error"
-];
-
-const CURATED_FIELDS = [
-  "name",
-  "state",
-  "city",
-  "homepage",
-  "favicon",
-  "genres",
-  "language",
-  "stream_url",
+  "ssl_error",
   "geo_lat",
   "geo_long"
 ];
@@ -86,33 +76,11 @@ async function getStationsByCountryCode(baseUrl, countryCode) {
   }
 }
 
-function isMissing(value) {
-  return value == null || value === "" || (Array.isArray(value) && value.length === 0);
-}
-
 function valuesEqual(left, right) {
   if (Array.isArray(left) || Array.isArray(right)) {
     return JSON.stringify(left ?? []) === JSON.stringify(right ?? []);
   }
   return left === right;
-}
-
-function normalizeStreamUrl(value) {
-  if (!value) return null;
-  try {
-    const url = new URL(value);
-    url.hash = "";
-    url.hostname = url.hostname.toLowerCase();
-    if ((url.protocol === "http:" && url.port === "80") ||
-        (url.protocol === "https:" && url.port === "443")) {
-      url.port = "";
-    }
-    if (url.pathname.length > 1) url.pathname = url.pathname.replace(/\/+$/, "");
-    url.searchParams.sort();
-    return url.toString();
-  } catch {
-    return String(value).trim();
-  }
 }
 
 async function readLocalStations(filePath) {
@@ -156,73 +124,60 @@ function mergeStations(localStations, apiStations) {
   const localByUuid = new Map();
   const localByUrl = new Map();
   const matchedLocalIndexes = new Set();
-  const conflicts = [];
   const automaticUpdates = [];
-  const newStations = [];
+  const automaticallyAddedStations = [];
+  const rejectedDuplicateStreams = [];
 
   localStations.forEach((station, index) => {
     if (station.stationuuid) localByUuid.set(station.stationuuid, index);
-    const normalizedUrl = normalizeStreamUrl(station.stream_url);
-    if (normalizedUrl) {
-      const indexes = localByUrl.get(normalizedUrl) ?? [];
+    if (station.stream_url) {
+      const indexes = localByUrl.get(station.stream_url) ?? [];
       indexes.push(index);
-      localByUrl.set(normalizedUrl, indexes);
+      localByUrl.set(station.stream_url, indexes);
     }
   });
 
-  const merged = localStations.map((station) => ({ ...station }));
+  const merged = localStations.map((station) => ({ city: null, ...station }));
 
   for (const apiStation of apiStations) {
     let localIndex = apiStation.stationuuid
       ? localByUuid.get(apiStation.stationuuid)
       : undefined;
-    let matchedBy = "stationuuid";
-
     if (localIndex == null) {
-      const normalizedUrl = normalizeStreamUrl(apiStation.stream_url);
-      const urlMatches = normalizedUrl ? localByUrl.get(normalizedUrl) ?? [] : [];
-      if (urlMatches.length === 1 && !matchedLocalIndexes.has(urlMatches[0])) {
-        [localIndex] = urlMatches;
-        matchedBy = "stream_url";
+      const urlMatches = apiStation.stream_url
+        ? localByUrl.get(apiStation.stream_url) ?? []
+        : [];
+      if (urlMatches.length > 0) {
+        urlMatches.forEach((index) => matchedLocalIndexes.add(index));
+        rejectedDuplicateStreams.push({
+          reason: "exact_stream_url_match",
+          stream_url: apiStation.stream_url,
+          remote: apiStation,
+          matchingStations: urlMatches.map((index) => merged[index])
+        });
+        continue;
       }
-    }
 
-    if (localIndex == null) {
-      newStations.push(apiStation);
+      const newIndex = merged.length;
+      merged.push({ ...apiStation });
+      automaticallyAddedStations.push(apiStation);
+      if (apiStation.stream_url) {
+        const indexes = localByUrl.get(apiStation.stream_url) ?? [];
+        indexes.push(newIndex);
+        localByUrl.set(apiStation.stream_url, indexes);
+      }
       continue;
     }
 
     matchedLocalIndexes.add(localIndex);
     const local = merged[localIndex];
     const changedAutomatically = {};
-    const needsReview = {};
 
-    if (!local.stationuuid && apiStation.stationuuid) {
-      changedAutomatically.stationuuid = {
-        local: local.stationuuid ?? null,
-        api: apiStation.stationuuid
-      };
-      local.stationuuid = apiStation.stationuuid;
-    }
-
-    for (const field of OPERATIONAL_FIELDS) {
+    for (const field of REMOTE_UPDATE_FIELDS) {
       const apiValue = apiStation[field];
-      if (!isMissing(apiValue) && !valuesEqual(local[field], apiValue)) {
+      if (!valuesEqual(local[field], apiValue)) {
         changedAutomatically[field] = { local: local[field] ?? null, api: apiValue };
         local[field] = apiValue;
-      }
-    }
-
-    for (const field of CURATED_FIELDS) {
-      const localValue = local[field];
-      const apiValue = apiStation[field];
-      if (isMissing(apiValue) || valuesEqual(localValue, apiValue)) continue;
-
-      if (isMissing(localValue)) {
-        changedAutomatically[field] = { local: localValue ?? null, api: apiValue };
-        local[field] = apiValue;
-      } else {
-        needsReview[field] = { local: localValue, api: apiValue };
       }
     }
 
@@ -230,17 +185,8 @@ function mergeStations(localStations, apiStations) {
       automaticUpdates.push({
         stationuuid: local.stationuuid ?? apiStation.stationuuid,
         name: local.name || apiStation.name,
-        matchedBy,
+        matchedBy: "stationuuid",
         fields: changedAutomatically
-      });
-    }
-
-    if (Object.keys(needsReview).length > 0) {
-      conflicts.push({
-        stationuuid: local.stationuuid ?? apiStation.stationuuid,
-        name: local.name || apiStation.name,
-        matchedBy,
-        fields: needsReview
       });
     }
   }
@@ -253,7 +199,13 @@ function mergeStations(localStations, apiStations) {
       stream_url: station.stream_url ?? null
     }));
 
-  return { merged, conflicts, automaticUpdates, newStations, missingFromApi };
+  return {
+    merged,
+    automaticUpdates,
+    automaticallyAddedStations,
+    rejectedDuplicateStreams,
+    missingFromApi
+  };
 }
 
 async function main() {
@@ -312,6 +264,7 @@ async function main() {
       stationuuid,
       name,
       state: cityOrState || null,
+      city: null,
       country: "Greece",
       countrycode: "GR",
       stream_url,
@@ -334,12 +287,12 @@ async function main() {
   // 4) Filter invalid API entries before comparison.
   const cleaned = mapped.filter((s) => s.name && s.stationuuid && s.stream_url);
 
-  // 5) Preserve curated values and separate uncertain changes for review.
+  // 5) Update remote-managed metadata and separate new stations for review.
   console.log("Step 4: Comparing with local stations...");
   const outDir = path.join(process.cwd(), "src", "data");
   const outFile = path.join(process.cwd(), DATA_PATH);
   const updateReviewFile = path.join(process.cwd(), UPDATE_REVIEW_PATH);
-  const newStationsReviewFile = path.join(process.cwd(), NEW_STATIONS_REVIEW_PATH);
+  const newStationsReportFile = path.join(process.cwd(), NEW_STATIONS_REPORT_PATH);
 
   if (!existsSync(outDir)) {
     await mkdir(outDir, { recursive: true });
@@ -352,14 +305,14 @@ async function main() {
   await writeJsonAtomic(updateReviewFile, {
     generatedAt,
     server: baseUrl,
-    conflicts: result.conflicts,
     automaticUpdates: result.automaticUpdates,
     missingFromApi: result.missingFromApi
   });
-  await writeJsonAtomic(newStationsReviewFile, {
+  await writeJsonAtomic(newStationsReportFile, {
     generatedAt,
     server: baseUrl,
-    stations: result.newStations
+    automaticallyAddedStations: result.automaticallyAddedStations,
+    rejectedDuplicateStreams: result.rejectedDuplicateStreams
   });
   // Replace the primary dataset only after both review files were written.
   await writeJsonAtomic(outFile, result.merged);
@@ -370,12 +323,12 @@ async function main() {
   console.log(`  Valid API records: ${cleaned.length}`);
   console.log(`  Existing local records: ${localStations.length}`);
   console.log(`  Automatic updates: ${result.automaticUpdates.length}`);
-  console.log(`  Conflicts for review: ${result.conflicts.length}`);
-  console.log(`  New stations for review: ${result.newStations.length}`);
+  console.log(`  New stations added automatically: ${result.automaticallyAddedStations.length}`);
+  console.log(`  Rejected duplicate stream URLs: ${result.rejectedDuplicateStreams.length}`);
   console.log(`  Local stations missing from API: ${result.missingFromApi.length}`);
   console.log(`  Safely merged: ${outFile}`);
   console.log(`  Review changes: ${updateReviewFile}`);
-  console.log(`  Review new stations: ${newStationsReviewFile}`);
+  console.log(`  New-station import report: ${newStationsReportFile}`);
 }
 
 const isDirectRun = process.argv[1] &&

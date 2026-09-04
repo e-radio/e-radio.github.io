@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
 DATA_PATH = Path("src/data/stations-gr.json")
 DEFAULT_PROGRESS_PATH = Path("tools/state-city-only-progress.json")
 CITY_REGION_MAP_PATH = Path("tools/city-region-map.json")
+CITY_NAME_MAP_PATH = Path("tools/city-name-map.json")
 
 REGIONS = (
     "Attica",
@@ -31,7 +33,7 @@ def normalize_text(value: str) -> str:
     return cleaned
 
 
-def load_city_region_map(path: Path) -> dict:
+def load_string_map(path: Path) -> dict:
     if not path.exists():
         return {}
     try:
@@ -41,17 +43,46 @@ def load_city_region_map(path: Path) -> dict:
     if not isinstance(payload, dict):
         return {}
     normalized = {}
-    for city, region in payload.items():
-        if not isinstance(city, str) or not isinstance(region, str):
+    for source, target in payload.items():
+        if not isinstance(source, str) or not isinstance(target, str):
             continue
-        normalized[normalize_text(city)] = region.strip()
+        normalized[normalize_text(source)] = target.strip()
     return normalized
+
+
+def is_english_city(value: str) -> bool:
+    """Allow English letters plus common separators used in place names."""
+    return bool(re.fullmatch(r"[A-Za-z .'-]+", value))
+
+
+def looks_misspelled(value: str, known_cities: set[str]) -> bool:
+    """Flag an unknown city when it is one edit away from a known city."""
+    normalized = normalize_text(value)
+    if normalized in known_cities:
+        return False
+    for known in known_cities:
+        if abs(len(normalized) - len(known)) > 1:
+            continue
+        previous = range(len(known) + 1)
+        for row_index, source_char in enumerate(normalized, start=1):
+            current = [row_index]
+            for column_index, target_char in enumerate(known, start=1):
+                current.append(min(
+                    current[-1] + 1,
+                    previous[column_index] + 1,
+                    previous[column_index - 1] + (source_char != target_char),
+                ))
+            previous = current
+        if previous[-1] <= 1:
+            return True
+    return False
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Fix only the case where state holds a city: move state to city and set state to a region."
+            "Move city values out of state, normalize cities to canonical English names, "
+            "and flag unknown or potentially misspelled names for review."
         )
     )
     parser.add_argument("--max", type=int, default=0, help="Max stations to process in one run (0 = no limit)")
@@ -71,7 +102,13 @@ def main() -> int:
     processed = 0
     max_items = args.max if args.max and args.max > 0 else float("inf")
 
-    city_region_map = load_city_region_map(CITY_REGION_MAP_PATH)
+    city_region_map = load_string_map(CITY_REGION_MAP_PATH)
+    city_name_map = load_string_map(CITY_NAME_MAP_PATH)
+    known_cities = (
+        set(city_name_map)
+        | {normalize_text(city) for city in city_name_map.values()}
+        | set(city_region_map)
+    )
     unknown_cities = set()
 
     skipped = set()
@@ -91,7 +128,23 @@ def main() -> int:
             city_value = station.get("city")
             state_is_region = isinstance(state_value, str) and state_value in REGIONS
 
-            if state_is_region or city_value:
+            if isinstance(city_value, str) and city_value.strip():
+                city = city_value.strip()
+                canonical_city = city_name_map.get(normalize_text(city), city)
+                needs_review = not is_english_city(canonical_city) or looks_misspelled(canonical_city, known_cities)
+                if needs_review and normalize_text(city) not in city_name_map:
+                    unknown_cities.add(city)
+                    skipped.add(station_id)
+                    continue
+                if canonical_city != city_value:
+                    station["city"] = canonical_city
+                    DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                    print(f"✓ Normalized city: {city_value} -> {canonical_city}")
+                    processed += 1
+                    skipped.discard(station_id)
+                continue
+
+            if state_is_region:
                 continue
 
             if not isinstance(state_value, str) or not state_value.strip():
@@ -103,10 +156,11 @@ def main() -> int:
 
             print(f"Checking: {station.get('name')} ({station_id})")
 
-            city = state_value.strip()
-            region = city_region_map.get(city_lookup)
+            original_city = state_value.strip()
+            city = city_name_map.get(city_lookup, original_city)
+            region = city_region_map.get(city_lookup) or city_region_map.get(normalize_text(city))
             if not region:
-                unknown_cities.add(city)
+                unknown_cities.add(original_city)
                 skipped.add(station_id)
                 continue
             if region not in REGIONS:

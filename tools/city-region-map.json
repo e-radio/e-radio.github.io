@@ -16,6 +16,7 @@
   "Argostoli": "Ionian Islands",
   "Aridea": "Central Macedonia",
   "Arta": "Epirus",
+  "Athens": "Attica",
   "Athos": "Central Macedonia",
   "Chalkida": "Central Greece",
   "Chios": "North Aegean",
@@ -73,7 +74,9 @@
   "Molaoi": "Peloponnese",
   "Moschato": "Attica",
   "Mykonos": "South Aegean",
+  "Mytilene": "North Aegean",
   "Nafpaktos": "Western Greece",
+  "Nafplion": "Peloponnese",
   "Naxos": "South Aegean",
   "Nea Mesimvria": "Central Macedonia",
   "Nea Styra": "Central Greece",
@@ -120,5 +123,6 @@
   "Βέροια": "Central Macedonia",
   "Κέρκυρα": "Ionian Islands",
   "Καστοριά": "Western Macedonia",
-  "Μακεδονία": "Central Macedonia"
+  "Μακεδονία": "Central Macedonia",
+  "Νέα Καλλικράτεια": "Central Macedonia"
 }

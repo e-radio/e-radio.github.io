@@ -66,7 +66,7 @@ A modern web application for streaming Greek radio stations, built with [Astro](
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
-- `npm run fix favicons` - Cache missing station icons, resize to 128px, and create branded placeholders
+- `npm run fix favicons` - Fetch and cache missing station icons as 256×256 WebP files
 
 ## Data Source
 
@@ -74,7 +74,15 @@ Radio station data is fetched from the [Radio Browser API](https://www.radio-bro
 
 ## Icon Maintenance
 
-Run `npm run fix favicons` whenever new stations are added or existing assets go missing. The tool will try homepage link icons first, then `og:image`, fall back to `/favicon.ico`, resize the best result to 128×128, and finally generate a branded SVG placeholder with station initials if no icon can be recovered.
+Run `npm run fix favicons` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks the station's existing remote favicon and homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It converts the first usable image to a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
+
+## Removing Duplicate Stations
+
+Run `python3 tools/remove-duplicate-stations.py` from the project root. The script groups stations by exact `stream_url`, keeps the entry with the best clean slug (then the shortest slug), and removes the others from `src/data/stations-gr.json`. It also deletes station icons that were used only by removed entries. Because the script edits data and icons directly, review the Git diff afterward.
+
+## Fixing City and Region Fields
+
+Run `python3 tools/fix-state-city-only.py` from the project root. The script finds stations whose `state` contains a city while `city` is empty, moves that value to `city`, and uses `tools/city-region-map.json` to set the correct Greek region in `state`. It also converts known Greek names and spelling variants to canonical English city names using `tools/city-name-map.json`. Unknown, non-English, or potentially misspelled cities are recorded for review, and `--max N` can limit how many stations are updated in one run.
 
 ## Building for Production
 
