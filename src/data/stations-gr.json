@@ -12378,7 +12378,7 @@
     "city": null,
     "countrycode": "GR",
     "stream_url": "http://live.e-streaming.eu:8100/",
-    "homepage": null,
+    "homepage": "http://akroamaradio.gr",
     "favicon": "/station-icons/griechenland-akroama-placeholder.webp",
     "genres": [
       "pop",
@@ -12405,7 +12405,7 @@
     "city": null,
     "countrycode": "GR",
     "stream_url": "http://live.e-streaming.eu:8110/",
-    "homepage": null,
+    "homepage": "https://aktinaradio.gr",
     "favicon": "/station-icons/griechenland-aktina-radio-placeholder.webp",
     "genres": [
       "pop",
@@ -17639,7 +17639,7 @@
     "city": "Thessaloniki",
     "countrycode": "GR",
     "stream_url": "http://metropolis.live24.gr/metropolis955thess",
-    "homepage": null,
+    "homepage": "http://www.metrosport.gr",
     "favicon": "/station-icons/metropolis-95-5-c8f270d9-placeholder.webp",
     "genres": [
       "talk",
@@ -29665,7 +29665,7 @@
     "city": null,
     "countrycode": "GR",
     "stream_url": "https://realfm2.live24.gr/realfm",
-    "homepage": null,
+    "homepage": "https://real.gr",
     "favicon": "/station-icons/real-fm.png",
     "genres": [
       "talk",
@@ -47780,7 +47780,7 @@
     "country": "Greece",
     "countrycode": "GR",
     "stream_url": "https://link.onestreaming.com/arion",
-    "homepage": "https://www.arionradio.com/_img/logos/arionradio.png",
+    "homepage": "https://www.arionradio.com/",
     "favicon": "/station-icons/arion-radio.webp",
     "genres": [],
     "language": null,

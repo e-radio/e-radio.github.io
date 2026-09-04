@@ -11,7 +11,7 @@
     "fix favicons": "node tools/fetch-missing-station-icons.mjs",
     "fill state": "python3 tools/fill-state-from-homepage.py --max 0 --sleep 1",
     "fill geo": "python3 tools/fill-state-from-geo.py",
-    "fff brobe": "python3 tools/ffprobe-metadata.py --url https://derti.live24.gr/derty1000",
+    "fff brobe": "python3 tools/ffprobe-metadata.py --url https://fireage.servegame.com/webradio5/",
     "get stations from radio browser api": "node tools/fetch-greece-stations.mjs",
     "1-fix-state-city-region": "python3 tools/fix-state-city-region.py --max 10 --sleep 1"
   },

@@ -2,8 +2,11 @@
 import Layout from "../../../../layouts/Layout.astro";
 import SEO from "../../../../components/SEO.astro";
 import CategorySwitch from "../../../../components/CategorySwitch.astro";
+import RegionSeoHeader from "../../../../components/RegionSeoHeader.astro";
+import RegionSeoFooter from "../../../../components/RegionSeoFooter.astro";
 import rawStations from "../../../../data/stations-gr.json";
 import { slugify } from "../../../../lib/slug";
+import { buildRegionSeo } from "../../../../lib/regionSeo";
 import { Image } from "astro:assets";
 
 const radddioURL = "https://apple.co/4lNPQAH";
@@ -82,8 +85,8 @@ const pagedStations = stations.slice(startIndex, endIndex);
 
 const siteRoot = "https://e-radio.github.io";
 const canonical = `${siteRoot}/region/${slug}/page/${page}/`;
-const pageTitle = `${region} Radio Stations – Page ${page} | E-Radio`;
-const pageDescription = `Listen to live radio stations from ${region}. Page ${page} of ${totalPages} with local favorites, popular streams, and community picks.`;
+const seo = buildRegionSeo(region, stations, startIndex + 1, Math.min(endIndex, totalStations), page);
+const { pageTitle, pageDescription } = seo;
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -111,11 +114,14 @@ const structuredData = {
     author="E-Radio Greece"
     structuredData={structuredData}
   />
-  <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">{region} Radio Stations</h1>
-    <h2 class="lead text-muted mb-0">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</h2>
-    <p class="small text-muted mb-2"><a href={`/region/${slug}/`}>← Back to {region}</a></p>
-  </div>
+  <RegionSeoHeader
+    heading={seo.heading}
+    subtitle={seo.subtitle}
+    introduction={seo.introduction}
+    rangeLabel={seo.rangeLabel}
+    backHref={`/region/${slug}/`}
+    backLabel={`Back to ${region}`}
+  />
   <CategorySwitch current="region" />
   <section class="mt-4">
     <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
@@ -176,6 +182,7 @@ const structuredData = {
       ))}
     </div>
   </section>
+  <RegionSeoFooter heading={seo.footerHeading} text={seo.footerText} />
   <nav aria-label="Region pagination" class="mt-5">
     <ul class="pagination justify-content-center">
         <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>

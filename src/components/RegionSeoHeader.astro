@@ -1,0 +1,27 @@
+---
+interface Props {
+  heading: string;
+  subtitle: string;
+  introduction: string;
+  rangeLabel: string;
+  backHref?: string;
+  backLabel?: string;
+}
+
+const {
+  heading,
+  subtitle,
+  introduction,
+  rangeLabel,
+  backHref = "/region/",
+  backLabel = "Back to regions",
+} = Astro.props;
+---
+
+<div class="mb-4">
+  <h1 class="display-5 fw-bold mb-2">{heading}</h1>
+  <h2 class="lead text-muted">{subtitle}</h2>
+  <p class="text-muted mt-3">{introduction}</p>
+  <p class="text-muted small mt-2">{rangeLabel}</p>
+  <p class="small text-muted mb-2"><a href={backHref}>← {backLabel}</a></p>
+</div>
