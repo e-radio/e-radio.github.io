@@ -1,6 +1,5 @@
 type CityStation = {
   state?: string | null;
-  country?: string | null;
 };
 
 const cleanText = (value: unknown) =>
@@ -34,7 +33,7 @@ export const buildCitySeo = (
   const region = hasCity
     ? selectMostCommon(stations.map((station) => station.state), [city])
     : "";
-  const country = selectMostCommon(stations.map((station) => station.country), [city, region].filter(Boolean));
+  const country = "Greece";
   const locationParts = [city, region, country].filter(Boolean);
   const location = locationParts.join(", ") || "Greece";
   const stationCount = stations.length;

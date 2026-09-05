@@ -1,6 +1,5 @@
 type RegionStation = {
   city?: string | null;
-  country?: string | null;
 };
 
 const REGION_NAMES = new Set([
@@ -46,15 +45,6 @@ const isUsefulCity = (city: string, region: string, country: string) => {
   return !REGION_NAMES.has(key);
 };
 
-const selectCountry = (stations: RegionStation[]) => {
-  const counts = new Map<string, number>();
-  for (const station of stations) {
-    const country = cleanText(station.country);
-    if (country) counts.set(country, (counts.get(country) || 0) + 1);
-  }
-  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0]?.[0] || "";
-};
-
 export const selectRegionCities = (
   stations: RegionStation[],
   region: string,
@@ -91,7 +81,7 @@ export const buildRegionSeo = (
   page = 1,
 ) => {
   const region = cleanText(regionValue) || "Greece";
-  const country = selectCountry(stations);
+  const country = "Greece";
   const location = country ? `${region}, ${country}` : region;
   const stationCount = stations.length;
   const stationWord = stationCount === 1 ? "station" : "stations";

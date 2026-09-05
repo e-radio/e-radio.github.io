@@ -265,8 +265,6 @@ async function main() {
       name,
       state: cityOrState || null,
       city: null,
-      country: "Greece",
-      countrycode: "GR",
       stream_url,
       homepage: s.homepage || null,
       favicon: s.favicon || null,

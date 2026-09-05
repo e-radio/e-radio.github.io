@@ -45,19 +45,48 @@ const languageLabel = station.language ? station.language : null;
 const streamUrl = station.stream_url || "";
 
 const AZURACAST_NOW_PLAYING_OVERRIDES: Record<string, string> = {
+  "1st-greek-hits-flac-non-stop-radio-athens-greece": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+  "1st-greek-hits-flac-radio-lossless-athens-greece": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+  "1st-greek-hits-radio-mp3-athens-greece": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+  "1st-greek-new-age-flac-radio-aac-320kbps-attica-athens": "https://stream.newageradio.gr/api/nowplaying/hq",
+  "1st-greek-new-age-flac-radio-attiki": "https://stream.newageradio.gr/api/nowplaying/hq",
+  "1st-greek-new-age-flac-radio-flac-stream-attica-athens": "https://stream.newageradio.gr/api/nowplaying/hq",
+  "93-4-thessaloniki": "https://stream.mythosradio.gr/api/nowplaying/mythos",
+  "abdulbasit-abdulsamad": "https://radio.mp3islam.com/api/nowplaying/abdulbasit",
+  "aegean-vibes-athens-greece": "https://a9.asurahosting.com/api/nowplaying/aegean_vibes",
+  "athens-noise-rocks": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+  "athens-noise-rocks-attiki": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+  "athensnoise-rocks": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+  "backtorave-com-old-school-techno-rave": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_old_school",
+  "creative-commons-radio": "https://ccradio.ellak.gr/api/nowplaying/gfoss_ccradio",
   "disco-cafe-athens": "https://azuracast.streams.ovh/api/nowplaying/discocafe",
   "emerson-athens-athens": "https://azuracast.streams.ovh/api/nowplaying/radioemerson",
+  "energy-88-9-drama": "https://casty.youmix.gr/api/nowplaying/energyradio889",
   "energy-radio-greece": "https://azuracast.streams.ovh/api/nowplaying/energy",
   "freespirits-services": "https://aphrodite.freespirits.gr/api/nowplaying/freespirits_radio",
+  "hook-radio": "https://stream3.proradio.gr/api/nowplaying/hook",
+  "ionion-95-5-pirgos": "https://stream3.proradio.gr/api/nowplaying/ionion",
   "kaseta-radio": "https://azuracast.streams.gr/api/nowplaying/kasetaradio",
   "kyklos": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+  "loco-radio-live": "https://cast.iplayradio.net/api/nowplaying/locoradio",
+  "nt00-radio": "https://nt00.xyz/api/nowplaying/escape_the_algorithm",
+  "olympos-101-5-katerini": "https://streamer.stordia.net/api/nowplaying/olympos",
+  "radio-mpoufalo": "https://a1.my-control-panel.com/api/nowplaying/minas",
   "radio-kyklos": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+  "radiq-happy": "https://live.radiq.gr/api/nowplaying/radiq",
   "radiokyklos-greek-hiphop": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
   "rock-angels-athens": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
   "rock-angels": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
   "rock-angels-radio": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+  "star-93-5-drama": "https://casty.youmix.gr/api/nowplaying/starfm935",
   "studio-545": "https://azuracast.streams.ovh/api/nowplaying/studio_545",
+  "super-89-8-drama": "https://casty.youmix.gr/api/nowplaying/superfm898",
+  "tracksaudio-com-80s-music": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_80s_music",
+  "tracksaudio-com-chill-house-music": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_chill_house_music",
+  "up-radio": "https://athensupradio.evostream.gr/api/nowplaying/up_radio_-_athens",
+  "vip-radio-gr-athens": "https://stream3.proradio.gr/api/nowplaying/vipradio",
   "vips-radio-athens-athens": "https://azuracast.streams.gr/api/nowplaying/vipsradio",
+  "xalastra-web-radio-thessaloniki": "https://azuralive.streams.ovh/api/nowplaying/xalastraradio",
   "live-thessaloniki": "https://azuracast.streams.gr/api/nowplaying/paulosvasileioulive",
 };
 
@@ -476,15 +505,19 @@ const structuredData = {
           <div class="d-flex align-items-start gap-3">
             {station.favicon ? (
               <img
+                id="stationCover"
                 class="station-cover shadow-sm"
                 src={station.favicon}
+                data-fallback-src={station.favicon}
                 alt={`${station.name} logo`}
                 loading="lazy"
               />
             ) : (
               <img
+                id="stationCover"
                 class="station-cover shadow-sm"
                 src={radioAppIconUrl}
+                data-fallback-src={radioAppIconUrl}
                 alt="Radddio app icon"
                 loading="lazy"
               />
@@ -609,22 +642,34 @@ const structuredData = {
 
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
         <div class="d-flex align-items-center justify-content-between mb-3">
-          <h2 class="h6 fw-bold mb-0"><i class="bi bi-disc me-2"></i> Recently played</h2>
+          <h2 class="h6 fw-bold mb-0"><i class="bi bi-disc me-2"></i>Recently played</h2>
           <span class="small-muted" id="recently-played-hint">Waiting for station metadata…</span>
         </div>
         <div class="row g-3" id="recently-played">
           <div class="col-12 col-md-6">
-            <div class="p-3 bg-white rounded-3 border border-light-subtle h-100">
-              <div class="small-muted mb-1">Previous</div>
-              <div class="fw-semibold" id="recent-previous-title">Waiting for metadata</div>
-              <div class="small-muted" id="recent-previous-meta">Tune in to update</div>
+            <div class="recent-track-card p-3 bg-white rounded-3 border border-light-subtle h-100 d-flex align-items-center gap-3">
+              <img id="recent-previous-art" class="track-art rounded object-fit-cover flex-shrink-0" width="56" height="56" alt="" hidden />
+              <div class="track-details flex-grow-1">
+                <div class="small-muted mb-1">Previous</div>
+                <div class="d-flex align-items-baseline justify-content-between gap-3">
+                  <div class="fw-semibold text-truncate" id="recent-previous-title">Waiting for metadata</div>
+                  <time class="small-muted flex-shrink-0" id="recent-previous-time"></time>
+                </div>
+                <div class="small-muted" id="recent-previous-meta">Tune in to update</div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <div class="p-3 bg-white rounded-3 border border-light-subtle h-100">
-              <div class="small-muted mb-1">Up next</div>
-              <div class="fw-semibold" id="recent-next-title">Waiting for metadata</div>
-              <div class="small-muted" id="recent-next-meta">Tune in to update</div>
+            <div class="recent-track-card p-3 bg-white rounded-3 border border-light-subtle h-100 d-flex align-items-center gap-3">
+              <img id="recent-next-art" class="track-art rounded object-fit-cover flex-shrink-0" width="56" height="56" alt="" hidden />
+              <div class="track-details flex-grow-1">
+                <div class="small-muted mb-1">Up next</div>
+                <div class="d-flex align-items-baseline justify-content-between gap-3">
+                  <div class="fw-semibold text-truncate" id="recent-next-title">Waiting for metadata</div>
+                  <time class="small-muted flex-shrink-0" id="recent-next-time"></time>
+                </div>
+                <div class="small-muted" id="recent-next-meta">Tune in to update</div>
+              </div>
             </div>
           </div>
         </div>
@@ -812,10 +857,16 @@ const structuredData = {
     const btnVote = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnVote'));
     const nowPlayingEl = /** @type {HTMLElement | null} */ (document.getElementById('nowPlaying'));
     const nowPlayingDefault = nowPlayingEl?.textContent || '';
+    const stationCoverEl = /** @type {HTMLImageElement | null} */ (document.getElementById('stationCover'));
+    const stationCoverFallback = stationCoverEl?.dataset.fallbackSrc || stationCoverEl?.getAttribute('src') || '';
     const previousTitleEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-previous-title'));
     const previousMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-previous-meta'));
+    const previousTimeEl = /** @type {HTMLTimeElement | null} */ (document.getElementById('recent-previous-time'));
+    const previousArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('recent-previous-art'));
     const nextTitleEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-title'));
     const nextMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-meta'));
+    const nextTimeEl = /** @type {HTMLTimeElement | null} */ (document.getElementById('recent-next-time'));
+    const nextArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('recent-next-art'));
     const recentlyPlayedHint = /** @type {HTMLElement | null} */ (document.getElementById('recently-played-hint'));
     const recentlyPlayedHintDefault = recentlyPlayedHint?.textContent || 'Waiting for station metadata…';
     const recentlyPlayedHintUpdated = 'Updated just now';
@@ -847,15 +898,35 @@ const structuredData = {
       bufferBar.style.width = `${safe}%`;
     };
 
-    const setTrackCard = (titleEl, metaEl, info) => {
+    const setTrackArtwork = (artEl, info) => {
+      if (!artEl) return;
+      if (!info?.artwork) {
+        artEl.hidden = true;
+        artEl.removeAttribute('src');
+        artEl.alt = '';
+        return;
+      }
+      artEl.src = info.artwork;
+      artEl.alt = info.primary ? `Artwork for ${info.primary}` : 'Track artwork';
+      artEl.hidden = false;
+      artEl.onerror = () => {
+        artEl.hidden = true;
+        artEl.removeAttribute('src');
+      };
+    };
+
+    const setTrackCard = (titleEl, metaEl, timeEl, artEl, info) => {
       if (!titleEl || !metaEl) return;
       if (info && info.primary) {
         titleEl.textContent = info.primary;
         metaEl.textContent = info.meta || defaultTrackMeta;
+        if (timeEl) timeEl.textContent = info.time || '';
       } else {
         titleEl.textContent = defaultTrackTitle;
         metaEl.textContent = defaultTrackMeta;
+        if (timeEl) timeEl.textContent = '';
       }
+      setTrackArtwork(artEl, info);
     };
 
     const setHistoryMessage = (message) => {
@@ -873,8 +944,8 @@ const structuredData = {
     };
 
     const resetTrackCards = () => {
-      setTrackCard(previousTitleEl, previousMetaEl, null);
-      setTrackCard(nextTitleEl, nextMetaEl, null);
+      setTrackCard(previousTitleEl, previousMetaEl, previousTimeEl, previousArtEl, null);
+      setTrackCard(nextTitleEl, nextMetaEl, nextTimeEl, nextArtEl, null);
       if (recentlyPlayedHint) {
         recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
       }
@@ -940,42 +1011,43 @@ const structuredData = {
         base.played_at = playedAt;
       }
 
-      const primaryCandidates = [
-        typeof base.text === 'string' ? base.text.trim() : '',
-        [base.artist, base.title].filter((part) => typeof part === 'string' && part.trim()).join(' – '),
-        typeof base.title === 'string' ? base.title.trim() : '',
-        typeof base.name === 'string' ? base.name.trim() : '',
-        typeof base.song === 'string' ? base.song.trim() : '',
-      ].map((value) => value && value.trim()).filter(Boolean);
+      let title = typeof base.title === 'string' ? base.title.trim() : '';
+      let artist = typeof base.artist === 'string' ? base.artist.trim() : '';
+      const combinedText = [base.text, base.song, base.name]
+        .find((value) => typeof value === 'string' && value.trim())?.trim() || '';
 
-      const primary = primaryCandidates.find((candidate) => candidate && candidate.length > 0) || null;
-
-      const metaParts = [];
-      const artistTitle = [base.artist, base.title]
-        .filter((part) => typeof part === 'string' && part.trim())
-        .join(' · ');
-      if (artistTitle && artistTitle !== primary) {
-        metaParts.push(artistTitle);
-      } else if (typeof base.artist === 'string' && base.artist.trim() && base.artist.trim() !== primary) {
-        metaParts.push(base.artist.trim());
+      if (!title && combinedText) {
+        const parts = combinedText.split(/\s+[–—-]\s+/).map((part) => part.trim()).filter(Boolean);
+        if (parts.length >= 2) {
+          if (!artist) artist = parts.shift() || '';
+          title = parts.join(' – ');
+        } else {
+          title = combinedText;
+        }
       }
 
-      if (typeof base.album === 'string' && base.album.trim()) {
-        metaParts.push(base.album.trim());
-      }
+      const playedDate = toDate(
+        base.played_at
+        ?? entry.cued_at_timestamp
+        ?? entry.cued_at
+        ?? entry.scheduled_at
+        ?? entry.timestamp
+        ?? entry.time
+      );
+      const time = playedDate
+        ? playedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        : '';
 
-      const playedDate = toDate(base.played_at ?? entry.cued_at_timestamp);
-      if (playedDate) {
-        metaParts.push(playedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
-      }
-
-      const meta = metaParts.length > 0 ? metaParts.join(' · ') : null;
-
-      if (!primary && !meta) {
+      if (!title && !artist) {
         return null;
       }
 
-      return { primary: primary || meta || null, meta };
+      return {
+        primary: title || artist,
+        meta: artist || null,
+        time,
+        artwork: extractArtworkUrl(entry),
+      };
     };
 
     const updateHistoryList = (payload) => {
@@ -999,24 +1071,52 @@ const structuredData = {
       rendered.forEach((info, index) => {
         if (!info) return;
         const item = document.createElement('li');
-        const classes = ['py-2'];
+        const classes = ['history-track-item', 'py-2', 'd-flex', 'align-items-center', 'gap-3'];
         if (index) {
           classes.push('border-top', 'border-light-subtle');
         }
         item.className = classes.join(' ');
 
+        if (info.artwork) {
+          const artwork = document.createElement('img');
+          artwork.src = info.artwork;
+          artwork.alt = info.primary ? `Artwork for ${info.primary}` : 'Track artwork';
+          artwork.width = 48;
+          artwork.height = 48;
+          artwork.className = 'rounded object-fit-cover flex-shrink-0';
+          artwork.loading = 'lazy';
+          artwork.addEventListener('error', () => artwork.remove());
+          item.appendChild(artwork);
+        }
+
+        const details = document.createElement('div');
+        details.className = 'track-details flex-grow-1';
+
+        const titleRow = document.createElement('div');
+        titleRow.className = 'd-flex align-items-baseline justify-content-between gap-3';
+
         const title = document.createElement('div');
-        title.className = 'fw-semibold';
+        title.className = 'fw-semibold text-truncate';
         title.textContent = info.primary || historyDefaultMessage;
-        item.appendChild(title);
+        titleRow.appendChild(title);
+
+        if (info.time) {
+          const time = document.createElement('time');
+          time.className = 'small-muted flex-shrink-0';
+          time.textContent = info.time;
+          titleRow.appendChild(time);
+        }
+
+        details.appendChild(titleRow);
 
         if (info.meta) {
           const meta = document.createElement('div');
           meta.className = 'small-muted';
           meta.textContent = info.meta;
-          item.appendChild(meta);
+          details.appendChild(meta);
         }
 
+        item.appendChild(details);
         historyListEl.appendChild(item);
       });
 
@@ -1050,8 +1150,8 @@ const structuredData = {
       }
 
       const { previous, next } = extractRecentTracks(payload);
-      setTrackCard(previousTitleEl, previousMetaEl, previous);
-      setTrackCard(nextTitleEl, nextMetaEl, next);
+      setTrackCard(previousTitleEl, previousMetaEl, previousTimeEl, previousArtEl, previous);
+      setTrackCard(nextTitleEl, nextMetaEl, nextTimeEl, nextArtEl, next);
 
       const historyUpdated = updateHistoryList(payload);
       const cardsUpdated = Boolean(previous?.primary) || Boolean(next?.primary);
@@ -1272,6 +1372,87 @@ const structuredData = {
       return null;
     };
 
+    const extractArtworkUrl = (payload) => {
+      if (!payload || typeof payload !== 'object') return null;
+
+      const candidates = [];
+      const addArtworkFields = (source) => {
+        if (!source || typeof source !== 'object') return;
+        for (const key of ['art', 'art_url', 'artwork', 'artwork_url', 'cover', 'cover_url', 'image', 'image_url']) {
+          const value = source[key];
+          if (typeof value === 'string') {
+            candidates.push(value);
+          } else if (value && typeof value === 'object') {
+            for (const nestedKey of ['url', 'src', 'large', 'medium', 'small']) {
+              if (typeof value[nestedKey] === 'string') candidates.push(value[nestedKey]);
+            }
+          }
+        }
+      };
+
+      addArtworkFields(payload);
+      addArtworkFields(payload.song);
+      addArtworkFields(payload.track);
+      addArtworkFields(payload.now_playing);
+      addArtworkFields(payload.now_playing?.song);
+      addArtworkFields(payload.current_track);
+
+      if (Array.isArray(payload.now_playing)) {
+        payload.now_playing.forEach((entry) => {
+          addArtworkFields(entry);
+          addArtworkFields(entry?.song);
+        });
+      }
+
+      if (Array.isArray(payload.data)) {
+        payload.data.forEach((entry) => {
+          addArtworkFields(entry);
+          addArtworkFields(entry?.track);
+        });
+      }
+
+      if (payload.icestats?.source) {
+        const sources = Array.isArray(payload.icestats.source)
+          ? payload.icestats.source
+          : [payload.icestats.source];
+        sources.forEach(addArtworkFields);
+      }
+
+      for (const candidate of candidates) {
+        const value = candidate.trim();
+        if (!value || value.startsWith('data:') || value.startsWith('javascript:')) continue;
+        try {
+          const resolved = new URL(value, playerConfig.nowPlayingEndpoint || window.location.href);
+          if (resolved.protocol === 'http:' || resolved.protocol === 'https:') return resolved.href;
+        } catch (error) {
+          // Ignore malformed artwork values and keep checking candidates.
+        }
+      }
+
+      return null;
+    };
+
+    const updateStationCover = (payload) => {
+      if (!stationCoverEl) return;
+      const artworkUrl = extractArtworkUrl(payload);
+      const nextSrc = artworkUrl || stationCoverFallback;
+      if (nextSrc && stationCoverEl.src !== new URL(nextSrc, window.location.href).href) {
+        stationCoverEl.src = nextSrc;
+        stationCoverEl.alt = artworkUrl
+          ? `Current artwork for ${playerConfig.shareTitle}`
+          : `${playerConfig.shareTitle} logo`;
+      }
+    };
+
+    stationCoverEl?.addEventListener('error', () => {
+      if (!stationCoverEl || !stationCoverFallback) return;
+      const fallbackUrl = new URL(stationCoverFallback, window.location.href).href;
+      if (stationCoverEl.src !== fallbackUrl) {
+        stationCoverEl.src = stationCoverFallback;
+        stationCoverEl.alt = `${playerConfig.shareTitle} logo`;
+      }
+    });
+
     const parseNowPlayingResponse = async (response) => {
       const contentType = response.headers?.get?.('content-type') || '';
       if (contentType && contentType.includes('application/json')) {
@@ -1438,6 +1619,7 @@ const structuredData = {
         if (text) {
           lastNowPlayingText = text;
         }
+        updateStationCover(data);
         const historyApplied = applyRecentTracks(data);
         if (!historyApplied && !historyDisabled) {
           await fetchAndApplyHistory({ force: textChanged });

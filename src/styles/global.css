@@ -98,6 +98,25 @@ main {
   object-fit: contain;
 }
 
+.track-details {
+  min-width: 0;
+}
+
+.track-art {
+  background: var(--bs-tertiary-bg);
+  box-shadow: 0 2px 8px rgb(15 23 42 / 10%);
+}
+
+.recent-track-card,
+.history-track-item {
+  transition: background-color 160ms ease;
+}
+
+.recent-track-card:hover,
+.history-track-item:hover {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);

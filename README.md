@@ -84,6 +84,10 @@ Run `python3 tools/remove-duplicate-stations.py` from the project root. The scri
 
 Run `python3 tools/fix-state-city-only.py` from the project root. The script finds stations whose `state` contains a city while `city` is empty, moves that value to `city`, and uses `tools/city-region-map.json` to set the correct Greek region in `state`. It also converts known Greek names and spelling variants to canonical English city names using `tools/city-name-map.json`. Unknown, non-English, or potentially misspelled cities are recorded for review, and `--max N` can limit how many stations are updated in one run.
 
+## Filling Missing States from Homepages
+
+Run `python3 tools/fill-state-from-homepage.py` from the project root. For stations whose `state` is empty, the script downloads the station homepage and looks for location information in its JSON-LD structured data. When it finds a locality, region, served area, or named location, it saves that value to `state` in `src/data/stations-gr.json`. Stations with missing homepages, fetch errors, or no usable location are recorded in `tools/state-fill-progress.json` so they can be skipped on later runs. Use `--max N` to limit successful updates and `--sleep N` to pause between them.
+
 ## Building for Production
 
 ```bash
