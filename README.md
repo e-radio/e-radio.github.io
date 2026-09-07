@@ -134,3 +134,25 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+### Metadata fetching: direct or Jina.ai
+
+Edit `src/data/metadata-config.json`:
+
+```json
+{
+  "mode": "auto",
+  "pollIntervalMs": 15000,
+  "requestTimeoutMs": 10000
+}
+```
+
+- `auto` (default) preserves the existing routing: saved Shoutcast/Icecast endpoints use Jina.ai; AzuraCast, Radio.co, and secure CentovaCast endpoints use direct requests. Existing `metadata_direct: true` overrides remain supported for saved HTTPS endpoints.
+- `direct` disables Jina.ai and fetches the original metadata and history URLs from the browser. Endpoints must support HTTPS and allow your website through CORS. Opening a URL in a browser tab does not prove CORS support. HTTP URLs are not automatically upgraded.
+- `jina` routes both metadata and history through `https://r.jina.ai/`. This retains the proxy option, but Jina may reject a server response or impose limits. It does not guarantee availability.
+
+To override the global setting for one station, add `"metadata_mode": "direct"`, `"metadata_mode": "jina"`, or `"metadata_mode": "auto"` to its record in `src/data/stations-gr.json`. For example, a CORS-enabled AzuraCast station can use `"metadata_mode": "direct"` with `"nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos"`. Explicit modes take precedence over the legacy `metadata_direct` flag. There is no automatic failover between modes.
+
+Restart development or rebuild and deploy GitHub Pages after configuration changes: these settings are embedded at build time. Run `npm run build` to rebuild. Metadata discovery still checks the original server URLs; saved results are not a browser/CORS health check.
+
+Polling waits 15 seconds after each completed update by default (minimum configurable interval: 5 seconds), prevents overlapping updates, pauses scheduling in hidden tabs, and refreshes when the tab becomes visible. An in-flight request may finish after hiding the tab. Requests time out after 10 seconds by default and reject unsuccessful HTTP responses. Temporary failures retain the last successful song/history and history requests retry on later polls. Missing track fields use the existing fallbacks; unavailable artwork and listener counts are hidden. Artwork remains confined to track cards and never replaces the station icon.

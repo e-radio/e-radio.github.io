@@ -1,0 +1,5 @@
+{
+  "mode": "direct",
+  "pollIntervalMs": 15000,
+  "requestTimeoutMs": 10000
+}

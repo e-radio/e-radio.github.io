@@ -592,6 +592,13 @@
       "metadata_server": "shoutcast"
     },
     {
+      "slug": "live-89-6-chalkida",
+      "name": "Live 89.6",
+      "nowplaying_url": "https://s6.e-resellers.gr:8088/stats?sid=1&json=1",
+      "history_url": "https://s6.e-resellers.gr:8088/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
       "slug": "love-88-2-lesvos",
       "name": "Love 88.2",
       "nowplaying_url": "http://solid1.streamupsolutions.com:24929/status-json.xsl?mount=%2Fstream",
@@ -2671,7 +2678,6 @@
     "life-news-102-9-corfu",
     "liquid-fm-attika",
     "live-101-fm",
-    "live-89-6-chalkida",
     "live-97-8-agrinio",
     "lobby-101-8-kavala",
     "love-102-8-heraclion",

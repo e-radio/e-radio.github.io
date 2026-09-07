@@ -14947,8 +14947,8 @@
     "name": "Live 89.6",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "http://netradio.live24.gr/livefm896",
-    "homepage": "https://www.livefm.gr/",
+    "stream_url": "https://s6.e-resellers.gr/8088/;",
+    "homepage": "https://live896.gr/",
     "favicon": "/station-icons/live-89-6-chalkida.webp",
     "genres": [
       "greek",
@@ -14964,7 +14964,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s6.e-resellers.gr:8088/stats?sid=1&json=1",
+    "history_url": "https://s6.e-resellers.gr:8088/played?sid=1&type=json",
+    "metadata_server": "shoutcast"
   },
   {
     "slug": "live-97-8-agrinio",
@@ -31637,7 +31640,7 @@
     "name": "STUDIO 545",
     "state": null,
     "city": null,
-    "stream_url": "https://azuracast.streams.ovh/public/studio_545/playlist.pls",
+    "stream_url": "https://azuracast.streams.ovh/listen/studio_545/radio.mp3",
     "homepage": "https://azuracast.streams.ovh/public/studio_545",
     "favicon": "/station-icons/studio-545.png",
     "genres": [],

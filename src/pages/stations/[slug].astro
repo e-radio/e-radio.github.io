@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import rawStations from "../../data/stations-gr.json";
+import metadataConfig from "../../data/metadata-config.json";
 import { slugify } from "../../lib/slug";
 import { Image } from "astro:assets";
 
@@ -279,10 +280,24 @@ const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationDat
 };
 
 const {
-  nowPlaying: nowPlayingEndpoint,
-  history: historyEndpoint,
+  nowPlaying: detectedNowPlayingEndpoint,
+  history: detectedHistoryEndpoint,
   serverType,
 } = resolveMetadataEndpoints(streamUrl, station);
+
+// Auto preserves the existing provider routing; explicit modes override it.
+const metadataMode = (station as typeof station & { metadata_mode?: string }).metadata_mode || metadataConfig.mode;
+if (!["auto", "direct", "jina"].includes(metadataMode)) {
+  throw new Error(`Invalid metadata mode: ${metadataMode}`);
+}
+const routeMetadataEndpoint = (endpoint: string | null) => {
+  if (!endpoint || metadataMode === "auto") return endpoint;
+  const direct = endpoint.replace(/^https:\/\/r\.jina\.ai\//i, "");
+  return metadataMode === "jina" ? wrapWithCorsProxy(direct) : direct;
+};
+const nowPlayingEndpoint = routeMetadataEndpoint(detectedNowPlayingEndpoint);
+const historyEndpoint = routeMetadataEndpoint(detectedHistoryEndpoint);
+
 
 // Get recommended stations based on genre and location
 const getRecommendedStations = () => {
@@ -393,6 +408,8 @@ const playerScriptConfig = {
   nowPlayingEndpoint,
   historyEndpoint,
   serverType,
+  pollIntervalMs: Math.max(5000, Number(metadataConfig.pollIntervalMs) || 15000),
+  requestTimeoutMs: Math.max(1000, Number(metadataConfig.requestTimeoutMs) || 10000),
 };
 
 // Structured data (JSON-LD)
@@ -516,7 +533,6 @@ const structuredData = {
           </div>
         </div>
 
-
         {hasStream ? (
           <div class="row g-3 align-items-center">
             <div class="col-12">
@@ -525,8 +541,6 @@ const structuredData = {
                   <button class="btn btn-primary rounded-pill px-4" id="btnPlay" type="button">
                     <i class="bi bi-play-fill me-1" aria-hidden="true"></i> <span>Play</span>
                   </button>
-
-
                   <div class="d-none d-sm-flex align-items-center gap-2 ms-1">
                     <i class="bi bi-volume-up"></i>
                     <input
@@ -583,9 +597,9 @@ const structuredData = {
             </div>
           </div>
         )}
-
-        {hasStream && (
-          <div class="mt-4">
+      </section>
+      <section>
+        <div class="mt-4">
             <div class="ff-app-banner px-4 py-3">
               <div class="d-flex flex-column flex-sm-row align-items-center gap-4">
                 <div class="flex-shrink-0">
@@ -599,7 +613,7 @@ const structuredData = {
                   <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 mb-1">
                     <h3 class="h5 mb-0 fw-bold text-white">Get the Radddio app</h3>
                   </div>
-                  <p class="mb-2 small text-white text-opacity-75">Enjoy {station.name} on the go with Radddio. Tune in to your favorite sounds wherever life takes you—start listening now!</p>
+                  <p class="mb-1 small text-white text-opacity-75">Listen to {station.name} anytime, anywhere on the Radddio app.</p>
                   <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-3 small ff-meta">
                     <span class="d-inline-flex align-items-center gap-1">
                       <span class="ff-stars" aria-hidden="true">★★★★★</span>
@@ -609,13 +623,12 @@ const structuredData = {
                     <span>100K+ Downloads</span>
                   </div>
                 </div>
-                <a href="https://apple.co/3E6YPM2" target="_blank" rel="noopener noreferrer" aria-label="Download QR File Transfer from the App Store">
-                  <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1618444800" alt="Download QR File Transfer on the App Store" width="142" decoding="async" loading="lazy" />
+                <a href={radddioURL} target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}>
+                  <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1618444800" alt="Download Radddio on the App Store" width="142" decoding="async" loading="lazy" />
                 </a>
               </div>
             </div>
           </div>
-        )}
       </section>
 
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
@@ -634,6 +647,7 @@ const structuredData = {
             </div>
           </div>
           <div id="now-playing-card">
+            <p id="nowPlayingListeners" class="small-muted mb-2" hidden></p>
             <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
               <h2 class="h3 fw-normal mb-0 small-muted">Now playing</h2><span class="badge rounded-pill badge-soft-green">Live</span>
             </div>
@@ -1443,15 +1457,6 @@ const structuredData = {
     };
 
     const parseNowPlayingResponse = async (response) => {
-      const contentType = response.headers?.get?.('content-type') || '';
-      if (contentType && contentType.includes('application/json')) {
-        try {
-          return await response.json();
-        } catch (error) {
-          console.error('Failed to parse JSON response', error);
-        }
-      }
-
       try {
         const rawText = await response.text();
         if (!rawText) {
@@ -1505,6 +1510,16 @@ const structuredData = {
       return entries;
     };
 
+    // Keep the timeout active until the response body has been consumed.
+    const fetchMetadata = async (endpoint) => {
+      const response = await fetch(endpoint, {
+        cache: 'no-store',
+        signal: AbortSignal.timeout(playerConfig.requestTimeoutMs || 10000),
+      });
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      return response;
+    };
+
     const fetchAndApplyHistory = async (options = {}) => {
       if (!playerConfig.historyEndpoint || historyDisabled) return false;
 
@@ -1515,7 +1530,7 @@ const structuredData = {
       }
 
       try {
-        const response = await fetch(playerConfig.historyEndpoint, { cache: 'no-store' });
+        const response = await fetchMetadata(playerConfig.historyEndpoint);
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
         const contentType = response.headers?.get?.('content-type') || '';
         const raw = await response.text();
@@ -1545,9 +1560,7 @@ const structuredData = {
           } catch (parseError) {
             console.error('Failed to parse JSON history response', parseError);
             lastHistoryFetch = Date.now();
-            if (playerConfig.serverType === 'shoutcast') {
-              historyDisabled = true;
-            }
+
             return false;
           }
         }
@@ -1555,9 +1568,7 @@ const structuredData = {
         const entries = parseHistoryEntries(raw, playerConfig.serverType || 'unknown');
         if (!entries.length) {
           lastHistoryFetch = Date.now();
-          if (playerConfig.serverType === 'shoutcast') {
-            historyDisabled = true;
-          }
+
           return false;
         }
 
@@ -1592,22 +1603,29 @@ const structuredData = {
       } catch (error) {
         console.error('History request failed', error);
         lastHistoryFetch = Date.now();
-        if (playerConfig.serverType === 'shoutcast') {
-          historyDisabled = true;
-        }
+
         return false;
       }
     };
 
+    let metadataPollInFlight = false;
     const pollNowPlaying = async () => {
-      if (!playerConfig.nowPlayingEndpoint || !nowPlayingEl) return;
+      if (document.hidden || metadataPollInFlight || !playerConfig.nowPlayingEndpoint || !nowPlayingEl) return;
+      metadataPollInFlight = true;
 
       try {
-        const response = await fetch(playerConfig.nowPlayingEndpoint, { cache: 'no-store' });
+        const response = await fetchMetadata(playerConfig.nowPlayingEndpoint);
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
         const data = await parseNowPlayingResponse(response);
         if (!data) {
           throw new Error('Empty now playing payload');
+        }
+        const listenersEl = document.getElementById('nowPlayingListeners');
+        const listeners = data?.listeners?.current ?? data?.currentlisteners;
+        if (listenersEl) {
+          const valid = (typeof listeners === 'number' || typeof listeners === 'string') && String(listeners).trim() !== '' && Number.isFinite(Number(listeners)) && Number(listeners) >= 0;
+          listenersEl.textContent = valid ? `Listeners: ${Number(listeners).toLocaleString()}` : '';
+          listenersEl.hidden = !valid;
         }
         const text = extractNowPlayingText(data);
         const textChanged = Boolean(text && text !== lastNowPlayingText);
@@ -1623,25 +1641,28 @@ const structuredData = {
         }
       } catch (error) {
         console.error('Now playing request failed', error);
-        if (nowPlayingEl.textContent !== nowPlayingDefault) {
-          nowPlayingEl.textContent = nowPlayingDefault;
-        }
-        if (nowPlayingMetaEl) {
-          nowPlayingMetaEl.textContent = nowPlayingMetaDefault;
-          nowPlayingMetaEl.hidden = false;
-        }
-        setTrackArtwork(nowPlayingArtEl, null);
-        resetTrackCards();
-        resetHistoryList();
-        lastNowPlayingText = null;
-        lastHistoryFetch = 0;
-        historyDisabled = historyDisabled || !playerConfig.historyEndpoint;
+        // Preserve the last successful song and history during temporary failures.
+        await fetchAndApplyHistory();
+      } finally {
+        metadataPollInFlight = false;
       }
     };
 
     if (playerConfig.nowPlayingEndpoint) {
-      pollNowPlaying();
-      setInterval(pollNowPlaying, 20000);
+      let metadataTimer;
+      const refreshMetadata = async () => {
+        clearTimeout(metadataTimer);
+        await pollNowPlaying();
+        clearTimeout(metadataTimer);
+        if (!document.hidden) {
+          metadataTimer = setTimeout(refreshMetadata, playerConfig.pollIntervalMs || 15000);
+        }
+      };
+      document.addEventListener('visibilitychange', () => {
+        clearTimeout(metadataTimer);
+        if (!document.hidden) refreshMetadata();
+      });
+      refreshMetadata();
     }
   </script>
   <style>
