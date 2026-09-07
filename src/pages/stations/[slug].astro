@@ -14,14 +14,19 @@ export async function getStaticPaths() {
   }));
 }
 
+type Station = typeof rawStations[number] & {
+  country?: string | null;
+  countrycode?: string | null;
+};
+
 interface Props {
-  station: typeof rawStations[0];
+  station: Station;
 }
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
-const { station } = Astro.props;
+const { station } = Astro.props as Props;
 
 const hasStream = Boolean(station.stream_url);
 const formattedVotes = station.votes ? new Intl.NumberFormat("en-US").format(Number(station.votes)) : null;
@@ -302,8 +307,8 @@ const historyEndpoint = routeMetadataEndpoint(detectedHistoryEndpoint);
 // Get recommended stations based on genre and location
 const getRecommendedStations = () => {
   const recommended: typeof rawStations = rawStations
-    .filter((s: typeof rawStations[0]) => s.slug !== station.slug) // Exclude current station
-    .map((s: typeof rawStations[0]) => {
+    .filter((s: Station) => s.slug !== station.slug) // Exclude current station
+    .map((s: Station) => {
       let score = 0;
       // Genre match (highest priority)
       if (station.genres.some((g: string) => (s.genres as string[]).includes(g))) {
@@ -492,7 +497,7 @@ const structuredData = {
 
   <div class="row g-4">
     <div class="col-12 col-lg-8">
-      <section class="glass rounded-3 p-3 p-md-4">
+      <section class="glass rounded-3 px-3 pt-3 p-md-4 pb-md-0">
         <div class="d-flex align-items-center justify-content-between gap-3 pb-4">
           <div class="d-flex align-items-center gap-3 w-100">
             {station.favicon ? (
@@ -541,19 +546,7 @@ const structuredData = {
                   <button class="btn btn-primary rounded-pill px-4" id="btnPlay" type="button">
                     <i class="bi bi-play-fill me-1" aria-hidden="true"></i> <span>Play</span>
                   </button>
-                  <div class="d-none d-sm-flex align-items-center gap-2 ms-1">
-                    <i class="bi bi-volume-up"></i>
-                    <input
-                      id="volume"
-                      class="form-range volume-range"
-                      type="range"
-                      min="0"
-                      max="1"
-                      step="0.01"
-                      value="1"
-                      aria-label="Volume"
-                    />
-                  </div>
+
                 </div>
 
                 <div class="d-flex flex-wrap gap-2">
@@ -566,8 +559,15 @@ const structuredData = {
             </div>
 
             <div class="col-12">
-              <div class="progress progress-thin" role="progressbar" aria-label="Buffer status">
-                <div class="progress-bar" id="bufferBar" style="width: 0%"></div>
+              <div class="audio-control-strip">
+                <div class="audio-buffer" role="progressbar" aria-label="Buffered audio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title="Buffered audio (live stream)">
+                  <div class="audio-buffer-fill" id="bufferBar" style="width: 0%"></div>
+                </div>
+                <span id="audioElapsed" class="mono audio-elapsed" aria-label="Listening time">00:00</span>
+                <div class="audio-volume">
+                  <i class="bi bi-volume-up-fill" aria-hidden="true"></i>
+                  <input id="volume" class="audio-volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume" style="--volume-level: 100%" />
+                </div>
               </div>
             </div>
 
@@ -614,7 +614,7 @@ const structuredData = {
                     <h3 class="h5 mb-0 fw-bold text-white">Get the Radddio app</h3>
                   </div>
                   <p class="mb-1 small text-white text-opacity-75">Listen to {station.name} anytime, anywhere on the Radddio app.</p>
-                  <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-3 small ff-meta">
+                  <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 small ff-meta">
                     <span class="d-inline-flex align-items-center gap-1">
                       <span class="ff-stars" aria-hidden="true">★★★★★</span>
                       <span class="ms-1">4.8</span>
@@ -656,10 +656,10 @@ const structuredData = {
               <div class="track-details flex-grow-1">
                 <div class="d-flex align-items-baseline justify-content-between gap-3">
                   <div class="fw-semibold text-truncate" id="nowPlaying">{station.name}</div>
-                  <span class="mono small-muted flex-shrink-0" id="timeHint">00:00</span>
                 </div>
                 <div class="small-muted text-truncate" id="nowPlayingMeta">Live broadcast</div>
               </div>
+              <time class="small-muted flex-shrink-0" id="nowPlayingTime" hidden></time>
             </div>
           </div>
         </div>
@@ -702,9 +702,6 @@ const structuredData = {
                       </a>
                     ))}
                   </div>
-                </div>
-                <div class="col-auto text-end d-md-block">
-                  <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${recStation.name} on Radddio App`}><Image src={radddioBadgeUrl} alt="Radddio app badge" width={144} height={47} /></a>
                 </div>
               </div>
             </div>
@@ -883,6 +880,7 @@ const structuredData = {
       if (!bufferBar) return;
       const safe = Math.max(0, Math.min(100, percent));
       bufferBar.style.width = `${safe}%`;
+      bufferBar.parentElement?.setAttribute('aria-valuenow', String(Math.round(safe)));
     };
 
     const setTrackArtwork = (artEl, info) => {
@@ -894,7 +892,7 @@ const structuredData = {
         return;
       }
       artEl.src = info.artwork;
-      artEl.alt = info.primary ? `Artwork for ${info.primary}` : 'Track artwork';
+      artEl.alt = info.primary ? `Cover artwork for ${info.primary}` : 'Track artwork';
       artEl.hidden = false;
       artEl.onerror = () => {
         artEl.hidden = true;
@@ -1048,6 +1046,17 @@ const structuredData = {
     const updateNowPlayingTrack = (payload, fallbackText) => {
       if (!nowPlayingEl) return;
       const info = formatCurrentTrack(payload, fallbackText);
+      const timeEl = document.getElementById('nowPlayingTime');
+      if (timeEl) {
+        const timestamp = Number(payload?.now_playing?.played_at ?? payload?.played_at ?? payload?.playedat);
+        const startedAt = new Date(timestamp * 1000);
+        const valid = Number.isFinite(timestamp) && timestamp > 0 && !Number.isNaN(startedAt.getTime());
+        timeEl.hidden = !valid;
+        timeEl.textContent = valid ? startedAt.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true }) : '';
+        if (valid) timeEl.setAttribute('datetime', startedAt.toISOString());
+        else timeEl.removeAttribute('datetime');
+      }
+
       nowPlayingEl.textContent = info?.primary || fallbackText || nowPlayingDefault;
       setTrackArtwork(nowPlayingArtEl, info);
       if (nowPlayingMetaEl) {
@@ -1082,7 +1091,7 @@ const structuredData = {
         if (info.artwork) {
           const artwork = document.createElement('img');
           artwork.src = info.artwork;
-          artwork.alt = info.primary ? `Artwork for ${info.primary}` : 'Track artwork';
+          artwork.alt = info.primary ? `Cover artwork for ${info.primary}` : 'Track artwork';
           artwork.width = 48;
           artwork.height = 48;
           artwork.className = 'rounded object-fit-cover flex-shrink-0';
@@ -1202,9 +1211,19 @@ const structuredData = {
       volume?.addEventListener('input', (event) => {
         const target = event.currentTarget;
         if (target instanceof HTMLInputElement) {
+          audio.muted = false;
           audio.volume = Number(target.value);
         }
       });
+
+      const syncVolumeControl = () => {
+        if (!volume) return;
+        const level = audio.muted ? 0 : audio.volume;
+        volume.value = String(level);
+        volume.style.setProperty('--volume-level', `${level * 100}%`);
+      };
+      audio.addEventListener('volumechange', syncVolumeControl);
+      syncVolumeControl();
 
       audio.addEventListener('play', () => updatePlaybackButton(true));
       audio.addEventListener('playing', () => { updatePlaybackButton(true); setStatus('Playing'); });
@@ -1219,6 +1238,8 @@ const structuredData = {
           seconds += 1;
           const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
           const ss = String(seconds % 60).padStart(2, '0');
+          const elapsedEl = document.getElementById('audioElapsed');
+          if (elapsedEl) elapsedEl.textContent = `${mm}:${ss}`;
           if (timeHint) {
             timeHint.textContent = `${mm}:${ss}`;
           }
@@ -1540,7 +1561,7 @@ const structuredData = {
             const parsed = JSON.parse(raw);
             const jsonPayload = Array.isArray(parsed) && playerConfig.serverType === 'shoutcast'
               ? {
-                  now_playing: { song: { text: parsed[0]?.title || '' } },
+                  now_playing: { song: { text: parsed[0]?.title || '' }, played_at: parsed[0]?.playedat },
                   song_history: parsed.slice(1).map((track) => ({
                     song: { text: track.title },
                     played_at: track.playedat,
@@ -1666,6 +1687,58 @@ const structuredData = {
     }
   </script>
   <style>
+    .audio-control-strip {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #fff;
+      border-radius: 0.75rem;
+    }
+    .audio-buffer {
+      flex: 1;
+      min-width: 2rem;
+      height: 6px;
+      border-radius: 999px;
+      background: #e2e5e9;
+    }
+    .audio-buffer-fill {
+      position: relative;
+      height: 100%;
+      border-radius: inherit;
+      background: #2463eb;
+      transition: width 0.3s ease;
+    }
+    .audio-elapsed { color: #64748b; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+    .audio-volume { display: flex; align-items: center; gap: 0.65rem; color: #64748b; }
+    .audio-volume i { font-size: 1.5rem; }
+    .audio-volume-slider {
+      appearance: none;
+      width: clamp(60px, 12vw, 110px);
+      height: 6px;
+      border-radius: 999px;
+      background: linear-gradient(to right, #2463eb var(--volume-level), #e2e5e9 var(--volume-level));
+      cursor: pointer;
+    }
+    .audio-volume-slider::-webkit-slider-thumb {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #dce0e5;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px #0002;
+    }
+    .audio-volume-slider::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #dce0e5;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px #0002;
+    }
+    .audio-volume-slider:focus-visible { outline: 2px solid #2463eb; outline-offset: 8px; }
+    @media (max-width: 400px) { .audio-control-strip { gap: 0.65rem; } }
+    @media (prefers-reduced-motion: reduce) { .audio-buffer-fill { transition: none; } }
     .ff-app-banner {
       background: linear-gradient(135deg, #0b0f1f 0%, #16122a 35%, #241437 65%, #2b153b 100%);
       border: 1px solid rgba(112, 72, 72, 0.1);

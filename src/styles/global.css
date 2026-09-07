@@ -311,3 +311,16 @@ main {
 .bg-success-subtle {
   background-color: #cdf0e1 !important;
 }
+
+
+/* Live Tracks */
+.live-track-list { display: grid; gap: 1rem; }
+  .live-track-list .live-track { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 1rem; background: white; }
+  .live-track-list .track-cover { object-fit: cover; flex-shrink: 0; }
+  .live-track-list .track-copy { flex: 1; min-width: 0; }
+  .live-track-list .track-title, .live-track-list .track-copy p { overflow-wrap: anywhere; }
+  .live-track-list .track-play { flex-shrink: 0; width: 44px; height: 44px; --bs-btn-color: #1d4ed8; --bs-btn-bg: #eff6ff; --bs-btn-border-color: #bfdbfe; --bs-btn-hover-color: #fff; --bs-btn-hover-bg: #2563eb; --bs-btn-hover-border-color: #2563eb; --bs-btn-active-color: #fff; --bs-btn-active-bg: #1d4ed8; --bs-btn-active-border-color: #1d4ed8; --bs-btn-focus-shadow-rgb: 37, 99, 235; font-size: 1.4rem; padding: 0; line-height: 1; display: grid; place-items: center; }
+  .live-track-list .track-play i { display: flex; align-items: center; justify-content: center; line-height: 1; }
+  .live-track-list .track-play i::before { display: block; line-height: 1; }
+  .live-track-list .track-play .bi-play-fill { transform: translateX(1px); }
+  @media (max-width: 575px) { .live-track-list .live-track { padding: .85rem; gap: .75rem; } .live-track-list .track-cover { width: 56px; height: 56px; } .live-track-list .track-title { font-size: 1rem; } .live-track-list .track-copy p { font-size: .85rem; } }

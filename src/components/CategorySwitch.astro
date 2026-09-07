@@ -1,6 +1,6 @@
 ---
 interface Category {
-  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres" | "now-playing";
+  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres" | "now-playing" | "live-tracks";
   label: string;
   href: string;
   icon: string;
@@ -13,13 +13,14 @@ interface Props {
 const { current } = Astro.props;
 
 const categories: Category[] = [
-  { key: "now-playing", label: "Now Playing", href: "/now-playing/", icon: "bi-music-note-beamed" },
   { key: "stations", label: "Stations", href: "/", icon: "bi-broadcast" },
   { key: "top-rated", label: "Top Rated", href: "/top-rated/", icon: "bi-star" },  
   { key: "high-quality", label: "High Quality", href: "/high-quality/", icon: "bi-soundwave" },
   { key: "city", label: "By City", href: "/city/", icon: "bi-geo-alt" },
   { key: "region", label: "By Region", href: "/region/", icon: "bi-map" },
   { key: "genres", label: "Genres", href: "/genres/", icon: "bi-music-note-list" },
+  { key: "live-tracks", label: "Live Tracks", href: "/live-tracks/", icon: "bi-disc" },
+  { key: "now-playing", label: "Now Playing", href: "/now-playing/", icon: "bi-music-note-beamed" },
 ];
 ---
 <nav aria-label="Station categories" class="category-switch mb-4 overflow-auto px-2 px-md-0">

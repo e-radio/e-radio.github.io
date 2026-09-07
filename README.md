@@ -156,3 +156,9 @@ To override the global setting for one station, add `"metadata_mode": "direct"`,
 Restart development or rebuild and deploy GitHub Pages after configuration changes: these settings are embedded at build time. Run `npm run build` to rebuild. Metadata discovery still checks the original server URLs; saved results are not a browser/CORS health check.
 
 Polling waits 15 seconds after each completed update by default (minimum configurable interval: 5 seconds), prevents overlapping updates, pauses scheduling in hidden tabs, and refreshes when the tab becomes visible. An in-flight request may finish after hiding the tab. Requests time out after 10 seconds by default and reject unsuccessful HTTP responses. Temporary failures retain the last successful song/history and history requests retry on later polls. Missing track fields use the existing fallbacks; unavailable artwork and listener counts are hidden. Artwork remains confined to track cards and never replaces the station icon.
+
+### Unique station URLs
+
+Every station must have a unique slug. The importer preserves existing slugs and adds a station-ID suffix when a new slug collides. Astro checks uniqueness before development or builds, preventing duplicate station pages from being generated.
+
+Run `node tools/fix-station-slugs.mjs` to repair existing collisions. The first occurrence retains its URL; later occurrences receive a unique suffix, with all other station fields preserved. Changes are recorded in `reports/station-slug-changes.json`. Existing favicon paths remain unchanged. Category links and the sitemap use the updated slugs on the next build. A previously shared URL cannot redirect to every station that used it; use the new URLs for renamed records.

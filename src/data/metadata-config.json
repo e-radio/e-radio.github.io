@@ -1,5 +1,5 @@
 {
-  "mode": "direct",
+  "mode": "auto",
   "pollIntervalMs": 15000,
   "requestTimeoutMs": 10000
 }

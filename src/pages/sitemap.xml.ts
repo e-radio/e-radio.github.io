@@ -71,6 +71,7 @@ export async function GET() {
       .slice(0, 80) || "other";
 
   const staticPages = [
+    { loc: `${ROOT_URL}/live-tracks/`, lastmod },
     {
       loc: `${ROOT_URL}/`,
       lastmod,

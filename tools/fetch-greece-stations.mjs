@@ -1,3 +1,4 @@
+import { ensureUniqueStationSlugs, assertUniqueStationSlugs } from "./lib/station-slugs.mjs";
 import { readFile, rename, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
@@ -298,6 +299,9 @@ async function main() {
 
   const localStations = await readLocalStations(outFile);
   const result = mergeStations(localStations, cleaned);
+  const slugChanges = ensureUniqueStationSlugs(result.merged);
+  assertUniqueStationSlugs(result.merged);
+  console.log(`Assigned ${slugChanges.length} unique station slugs.`);
   const generatedAt = new Date().toISOString();
 
   await writeJsonAtomic(updateReviewFile, {

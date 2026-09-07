@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SEO from '../components/SEO.astro';
+import CategorySwitch from '../components/CategorySwitch.astro';
+import rawStations from '../data/stations-gr.json';
+const stations = rawStations.filter(s => s.metadata_server === 'azuracast' && s.nowplaying_url)
+  .sort((a,b) => a.name.localeCompare(b.name));
+const title = 'Live Tracks — Now Playing on Greek Radio | E-Radio';
+const description = 'Discover what is playing right now on AzuraCast radio stations. Browse songs, artists, and stations, and listen live.';
+---
+<Layout title={title} description={description}>
+  <SEO slot="seo" title={title} description={description} canonical="https://e-radio.github.io/live-tracks/" />
+  <h1 class="display-5 fw-bold mb-2">Live Tracks</h1>
+  <p class="lead text-muted">What’s playing right now across {stations.length} AzuraCast stations.</p>
+  <CategorySwitch current="live-tracks" />
+    <div class="d-flex align-items-center flex-nowrap gap-2 mb-2">
+        <h2 class="h6 mb-0">On Air</h2><span class="badge rounded-pill badge-soft-green">Live</span>
+    </div>
+  <div class="live-track-list">
+    {stations.map(station => (
+      <article class="live-track p-3" data-endpoint={station.nowplaying_url} data-stream={station.stream_url} data-name={station.name}>
+        <img class="track-cover rounded" src={station.favicon || '/radddio-app-icon.png'} data-fallback={station.favicon || '/radddio-app-icon.png'} alt={`${station.name} cover artwork`} width="60" height="60" loading="lazy" />
+        <div class="track-copy">
+          <h3 class="track-title h6 fw-semibold mb-0">Loading song…</h3>
+          <p class="text-muted mb-0"><span class="track-artist"></span><a href={`/stations/${station.slug}/`} class="text-reset">{station.name}</a>{station.city ? ` · ${station.city}` : ''}</p>
+          <span class="track-listeners small text-muted me-2" hidden></span>
+          <span class="track-status small text-muted" role="status"></span>
+        </div>
+        <button class="track-play btn rounded-circle" type="button" aria-label={`Play ${station.name}`}><i class="bi bi-play-fill" aria-hidden="true"></i></button>
+      </article>
+    ))}
+  </div>
+  <audio id="live-tracks-audio" preload="none"></audio>
+</Layout>
+<script>
+  const cards = [...document.querySelectorAll<HTMLElement>('.live-track')];
+  const audio = document.querySelector<HTMLAudioElement>('#live-tracks-audio')!;
+  let active: HTMLElement | null = null;
+  let requestId = 0;
+  const resetButton = (card: HTMLElement) => {
+    card.querySelector('button')!.setAttribute('aria-label', `Play ${card.dataset.name}`);
+    card.querySelector('button i')!.className = 'bi bi-play-fill';
+  };
+  cards.forEach(card => {
+    const cover = card.querySelector<HTMLImageElement>('img')!;
+    cover.addEventListener('error', () => {
+      const fallback = new URL(cover.dataset.fallback!, location.href).href;
+      if (cover.src !== fallback) cover.src = fallback;
+    });
+    card.querySelector('button')!.addEventListener('click', async () => {
+      const currentRequest = ++requestId;
+      const previous = active;
+      audio.pause();
+      if (previous) { resetButton(previous); previous.querySelector('.track-status')!.textContent = ''; }
+      if (previous === card) { active = null; return; }
+      active = card;
+      card.querySelector('button')!.setAttribute('aria-label', `Stop ${card.dataset.name}`);
+      card.querySelector('button i')!.className = 'bi bi-stop-fill';
+      card.querySelector('.track-status')!.textContent = 'Connecting…';
+      audio.src = card.dataset.stream!.replace(/^http:\/\//, 'https://');
+      try {
+        await audio.play();
+        if (currentRequest === requestId) card.querySelector('.track-status')!.textContent = '';
+      } catch {
+        if (currentRequest !== requestId) return;
+        card.querySelector('.track-status')!.textContent = 'Unable to play. Open the station for more options.';
+        resetButton(card); active = null;
+      }
+    });
+  });
+  audio.addEventListener('error', () => {
+    if (!active) return;
+    active.querySelector('.track-status')!.textContent = 'Stream unavailable.';
+    resetButton(active); active = null;
+  });
+  audio.addEventListener('ended', () => { if (active) resetButton(active); active = null; });
+  const groups = new Map<string, HTMLElement[]>();
+  cards.forEach(card => {
+    const endpoint = card.dataset.endpoint!;
+    groups.set(endpoint, [...(groups.get(endpoint) || []), card]);
+  });
+  let refreshing = false;
+  let timer: ReturnType<typeof setTimeout>;
+  async function refresh() {
+    clearTimeout(timer);
+    if (document.hidden || refreshing) return;
+    refreshing = true;
+    const queue = [...groups.entries()];
+    async function worker() {
+      while (queue.length && !document.hidden) {
+        const [endpoint, entries] = queue.shift()!;
+        try {
+          const response = await fetch(endpoint, { signal: AbortSignal.timeout(10000) });
+          if (!response.ok) throw new Error(String(response.status));
+          const data = await response.json();
+          const song = data?.now_playing?.song;
+          for (const card of entries) {
+            const listenersEl = card.querySelector<HTMLElement>('.track-listeners')!;
+            const count = data?.listeners?.current;
+            const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;
+            listenersEl.textContent = hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '';
+            listenersEl.hidden = !hasCount;
+            card.querySelector('.track-title')!.textContent = song?.title || song?.text || 'Song information unavailable';
+            card.querySelector('.track-artist')!.textContent = song?.artist ? `${song.artist} · ` : '';
+            const cover = card.querySelector<HTMLImageElement>('img')!;
+            let artwork = cover.dataset.fallback!;
+            try {
+              const url = new URL(song?.art);
+              if (url.protocol === 'https:') artwork = url.href;
+            } catch { /* Missing artwork uses the station logo. */ }
+            if (cover.src !== new URL(artwork, location.href).href) cover.src = artwork;
+            cover.alt = artwork === cover.dataset.fallback ? `${card.dataset.name} logo` : `${song?.title || 'Current song'} cover artwork`;
+            card.dataset.loaded = 'true';
+            card.querySelector('.track-title')!.removeAttribute('title');
+          }
+        } catch {
+          entries.forEach(card => {
+            if (!card.dataset.loaded) card.querySelector('.track-title')!.textContent = 'Song information unavailable';
+            card.querySelector('.track-title')!.setAttribute('title', 'Metadata could not be refreshed. Retrying shortly.');
+          });
+        }
+      }
+    }
+    try { await Promise.all(Array.from({ length: 6 }, worker)); }
+    finally {
+      refreshing = false;
+      if (!document.hidden) timer = setTimeout(refresh, 15000);
+    }
+  }
+  document.addEventListener('visibilitychange', () => { clearTimeout(timer); if (!document.hidden) refresh(); });
+  refresh();
+</script>
+

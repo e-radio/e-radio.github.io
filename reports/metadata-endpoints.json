@@ -1,2214 +1,91 @@
 {
-  "checkedAt": "2026-09-07T00:38:24.879Z",
-  "checked": 1974,
-  "saved": 338,
+  "checkedAt": "2026-09-07T13:34:48.343Z",
+  "checked": 1634,
+  "saved": 13,
   "dryRun": false,
   "scope": "Selected station streams; direct server checks, not browser/CORS verification",
   "verified": [
     {
-      "slug": "02-dance-radio-piraeus",
-      "name": "02 Dance Radio",
-      "nowplaying_url": "https://centova.gr-net.gr/rpc/dimitrio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "80smania-gr",
-      "name": "80smania GR",
-      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/glzzkced/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "88miso-thessaloniki",
-      "name": "88miso",
-      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/sxxaojkx/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "action-98-2-ioannina",
-      "name": "Action 98.2",
-      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/jkzjmwru/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "anemos-95-6-samos",
-      "name": "Anemos 95.6",
-      "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/vqdawvmf/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "aqua-radio-the-80s",
-      "name": "Aqua Radio The 80s",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/aquadisco80s/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "arty-thessaloniki",
-      "name": "Arty",
-      "nowplaying_url": "https://radio.streamings.gr/rpc/artyradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "bar-legend-radio-larisa",
-      "name": "Bar Legend Radio",
-      "nowplaying_url": "https://solid24.streamupsolutions.com/rpc/nilxzqeg/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "black-radio",
-      "name": "Black Radio",
-      "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/qcnwnozj/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "chania-rock-fm-96-8-chania",
-      "name": "Chania Rock FM 96.8",
-      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/alaqatab/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "city-100-heraclion",
-      "name": "City 100",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/cityfm/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "coffee-web-radio",
-      "name": "Coffee Web Radio",
-      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/teqgebwz/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "creta-radio",
-      "name": "Creta Radio",
-      "nowplaying_url": "https://everest.streams.ovh:1145/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "cretaradio",
-      "name": "CretaRadio",
-      "nowplaying_url": "https://everest.streams.ovh:1145/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "d-code-96-2-chania-greece",
-      "name": "D-Code 96,2",
-      "nowplaying_url": "http://176.31.118.39:13980/stats?sid=1&json=1",
-      "history_url": "http://176.31.118.39:13980/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "deejay-94-2-korinthos",
-      "name": "DeeJay 94.2",
-      "nowplaying_url": "http://usa2-vn.mixstream.net:8018/stats?sid=1&json=1",
-      "history_url": "http://usa2-vn.mixstream.net:8018/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "deejay-97-5",
-      "name": "DeeJay 97.5",
-      "nowplaying_url": "http://s4.onweb.gr:8470/stats?sid=1&json=1",
-      "history_url": "http://s4.onweb.gr:8470/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "deejay-97-5-greece-corfu",
-      "name": "DeeJay 97.5 Greece Corfu",
-      "nowplaying_url": "https://sh.onweb.gr:7083/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:7083/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "deejay-radio-97-5-fm-corfu-greece",
-      "name": "DeeJay Radio 97.5 fm Corfu Greece",
-      "nowplaying_url": "http://s4.onweb.gr:8470/stats?sid=1&json=1",
-      "history_url": "http://s4.onweb.gr:8470/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "demostream-von-streamserver24-com",
-      "name": "Demostream von Streamserver24.com",
-      "nowplaying_url": "http://s10.streamingcloud.online:13686/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "derti-107-7-heraclion",
-      "name": "Derti 107.7",
-      "nowplaying_url": "http://i5.streams.ovh:14008/stats?sid=1&json=1",
-      "history_url": "http://i5.streams.ovh:14008/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "deseo-radio",
-      "name": "Deseo Radio",
-      "nowplaying_url": "https://ec4.yesstreaming.net:2090/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "diva-106-1-tripoli",
-      "name": "Diva 106.1",
-      "nowplaying_url": "http://divafm.yourstreaming.gr:9996/stats?sid=1&json=1",
-      "history_url": "http://divafm.yourstreaming.gr:9996/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "diva-91-6-kozani",
-      "name": "Diva 91.6",
-      "nowplaying_url": "http://176.31.120.166:6404/stats?sid=1&json=1",
-      "history_url": "http://176.31.120.166:6404/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "diva-fm",
-      "name": "Diva FM",
-      "nowplaying_url": "http://176.31.120.166:6404/stats?sid=1&json=1",
-      "history_url": "http://176.31.120.166:6404/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "dj-grigoris-306",
-      "name": "Dj Grigoris 306",
-      "nowplaying_url": "https://rdst.win:48140/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "dream-88-1",
-      "name": "Dream 88.1",
-      "nowplaying_url": "https://solid41.streamupsolutions.com/rpc/jhhzdwjo/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "dream-city",
-      "name": "Dream City",
-      "nowplaying_url": "http://cast.streams.ovh:9362/stats?sid=1&json=1",
-      "history_url": "http://cast.streams.ovh:9362/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "dreamcity",
-      "name": "DreamCity",
-      "nowplaying_url": "https://cast.streams.ovh:9362/stats?sid=1&json=1",
-      "history_url": "https://cast.streams.ovh:9362/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "dreamcity-d6188b08",
-      "name": "DreamCity",
-      "nowplaying_url": "http://cast.streams.ovh:9362/stats?sid=1&json=1",
-      "history_url": "http://cast.streams.ovh:9362/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "e-103-serres",
-      "name": "E 103",
-      "nowplaying_url": "http://cast.radiohost.ovh:9035/stats?sid=1&json=1",
-      "history_url": "http://cast.radiohost.ovh:9035/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "easy-105-3-trikala",
-      "name": "Easy 105.3",
-      "nowplaying_url": "http://s4.onweb.gr:8076/stats?sid=1&json=1",
-      "history_url": "http://s4.onweb.gr:8076/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "easy-fm-105-3",
-      "name": "Easy FM 105.3",
-      "nowplaying_url": "https://sh.onweb.gr:7073/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:7073/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "edit-gr",
-      "name": "Edit GR",
-      "nowplaying_url": "https://sc.cast-control.eu:8054/stats?sid=1&json=1",
-      "history_url": "https://sc.cast-control.eu:8054/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "ellinadiko-fm",
-      "name": "Ellinadiko FM",
-      "nowplaying_url": "http://ellinadikofm.gr:8020/stats?sid=1&json=1",
-      "history_url": "http://ellinadikofm.gr:8020/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "ellinikos-90-3",
-      "name": "Ellinikos 90.3",
-      "nowplaying_url": "http://live.sugarweb.gr/status-json.xsl?mount=%2F903.aac",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "energy-88-3",
-      "name": "Energy 88.3",
-      "nowplaying_url": "http://s1.onweb.gr:8412/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8412/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "entasi-radio-93-5",
-      "name": "Entasi Radio 93.5",
-      "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
-      "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "entropia-thessaloniki",
-      "name": "Entropia",
-      "nowplaying_url": "https://radio.hostchefs.net/rpc/entropiaradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "epic-radio",
-      "name": "Epic Radio",
-      "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "euro-sky-100-4-orestiada",
-      "name": "Euro Sky 100.4",
-      "nowplaying_url": "http://cast4.magicstreams.gr:10155/stats?sid=1&json=1",
-      "history_url": "http://cast4.magicstreams.gr:10155/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "eurofans-radio",
-      "name": "Eurofans Radio",
-      "nowplaying_url": "https://radio.hostchefs.net/rpc/eurofansradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "evripos-90-chalkida",
-      "name": "Evripos 90",
-      "nowplaying_url": "http://hyades.shoutca.st:8570/stats?sid=1&json=1",
-      "history_url": "http://hyades.shoutca.st:8570/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "evripos-90fm",
-      "name": "Evripos 90FM",
-      "nowplaying_url": "http://hyades.shoutca.st:8570/stats?sid=1&json=1",
-      "history_url": "http://hyades.shoutca.st:8570/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "fahrenheit",
-      "name": "Fahrenheit",
-      "nowplaying_url": "http://88.198.70.25:8477/stats?sid=1&json=1",
-      "history_url": "http://88.198.70.25:8477/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "farsala-web-radio-farsala",
-      "name": "Farsala Web Radio",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "flocafe-london",
-      "name": "Flocafe London",
-      "nowplaying_url": "http://radio.anim8.gr:1290/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "fly-104",
-      "name": "FLY 104",
-      "nowplaying_url": "https://imagine2.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://imagine2.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "fly-104-48faa3f4",
-      "name": "Fly 104",
-      "nowplaying_url": "https://imagine2.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://imagine2.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "fly-fm-crete",
-      "name": "Fly FM",
-      "nowplaying_url": "http://eco.onestreaming.com:8602/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8602/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "focus-88-8-alexandroupolis",
-      "name": "Focus 88.8",
-      "nowplaying_url": "http://s3.onweb.gr:8014/stats?sid=1&json=1",
-      "history_url": "http://s3.onweb.gr:8014/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "freakout",
-      "name": "Freakout",
-      "nowplaying_url": "http://192.99.14.191:8004/stats?sid=1&json=1",
-      "history_url": "http://192.99.14.191:8004/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "free-central-greece-trikala",
-      "name": "Free Central Greece",
-      "nowplaying_url": "http://sh.onweb.gr:8634/stats?sid=1&json=1",
-      "history_url": "http://sh.onweb.gr:8634/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "free-gr-kalamata",
-      "name": "Free GR",
-      "nowplaying_url": "http://63.141.244.222:59540/stats?sid=1&json=1",
-      "history_url": "http://63.141.244.222:59540/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "fresh-web-radio-gr",
-      "name": "Fresh Web Radio GR",
-      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/bfwxkhir/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "future-web-radio-gr-moschato",
-      "name": "Future Web Radio GR",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1685/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "gnomi-93-7-fm-makedonia",
-      "name": "GNOMI 93.7 FM",
-      "nowplaying_url": "http://ice.greekstream.net/status-json.xsl?mount=%2Fgnomi",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "greek-otaku-radio",
-      "name": "Greek Otaku Radio",
-      "nowplaying_url": "http://usa2.fastcast4u.com:3684/stats?sid=1&json=1",
-      "history_url": "http://usa2.fastcast4u.com:3684/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "greek-otaku-radio-2f217384",
-      "name": "Greek Otaku Radio",
-      "nowplaying_url": "https://usa2.fastcast4u.com/rpc/greekota/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "heat-alexandroupolis",
-      "name": "Heat",
-      "nowplaying_url": "http://solid67.streamupsolutions.com:15037/stats?sid=1&json=1",
-      "history_url": "http://solid67.streamupsolutions.com:15037/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "hit-classic",
-      "name": "Hit classic",
-      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/smzyynlm/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "hit-ellinikos",
-      "name": "Hit Ellinikos",
-      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/zvbgdllc/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "hit-radio",
-      "name": "Hit Radio",
-      "nowplaying_url": "http://solid2.streamupsolutions.com:24952/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "i-r-a-106-7-aridea",
-      "name": "I.R.A 106.7",
-      "nowplaying_url": "http://radio.streamings.gr:8027/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "ianos-radio-thessaloniki",
-      "name": "Ianos Radio",
-      "nowplaying_url": "https://radio.streamings.gr/rpc/feelmusic2021/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "imagine-89-7",
-      "name": "Imagine 89.7",
-      "nowplaying_url": "https://imagine897.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://imagine897.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "imagine-radio-897-thessaloniki-greece-thessaloniki",
-      "name": "Imagine Radio 897 Thessaloniki Greece",
-      "nowplaying_url": "https://imagine897.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://imagine897.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "imera-fm-90-4",
-      "name": "Imera FM 90.4",
-      "nowplaying_url": "http://molonotiradio.gr:8000/status-json.xsl?mount=%2Fmolonoti-radio-stream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "jackson-palace",
-      "name": "Jackson Palace",
-      "nowplaying_url": "https://jacksonspalace.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://jacksonspalace.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "jackson-palace-d49fdaa4",
-      "name": "Jackson Palace",
-      "nowplaying_url": "https://jacksonspalace.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://jacksonspalace.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "jockey",
-      "name": "Jockey",
-      "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "jockey-radio",
-      "name": "Jockey Radio",
-      "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "katerini-gas-katerini",
-      "name": "Katerini Gas",
-      "nowplaying_url": "http://radio.katerinigas.gr:8000/stats?sid=1&json=1",
-      "history_url": "http://radio.katerinigas.gr:8000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "kifissia-kifissia",
-      "name": "Kifissia",
-      "nowplaying_url": "http://cast.streams.ovh:12097/stats?sid=1&json=1",
-      "history_url": "http://cast.streams.ovh:12097/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "kiis-extra-92-2-patra",
-      "name": "KIIS Extra 92.2",
-      "nowplaying_url": "https://streams.enjoyfm.gr:48502/status-json.xsl?mount=%2Fkiis.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "kiis-extra-93-8-korinthos",
-      "name": "KIIS Extra 93.8",
-      "nowplaying_url": "http://stream.kiisextra.gr:48500/status-json.xsl?mount=%2Fkiis.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "kiss-98-volos",
-      "name": "Kiss 98",
-      "nowplaying_url": "https://s6.onweb.gr:7029/stats?sid=1&json=1",
-      "history_url": "https://s6.onweb.gr:7029/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "kiss-98-thessaly",
-      "name": "Kiss 98",
-      "nowplaying_url": "https://s6.onweb.gr:7029/stats?sid=1&json=1",
-      "history_url": "https://s6.onweb.gr:7029/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "kiss-mjt-101-5-lesvos",
-      "name": "Kiss MJT 101.5",
-      "nowplaying_url": "http://eco.onestreaming.com:8550/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8550/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "kliktv-radio",
-      "name": "KlikTV Radio",
-      "nowplaying_url": "http://everest.streams.ovh:1170/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "kokkini-velona",
-      "name": "Kokkini Velona",
-      "nowplaying_url": "https://radio.streamings.gr/rpc/kokkinos2023/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "kriti-fm-87-5-crete",
-      "name": "Kriti FM 87.5",
-      "nowplaying_url": "http://s3.onweb.gr:8878/stats?sid=1&json=1",
-      "history_url": "http://s3.onweb.gr:8878/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "lampsi-92-3",
-      "name": "Lampsi 92.3",
-      "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "lampsi-fm-92-3",
-      "name": "Lampsi FM 92.3",
-      "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "limnos-100-limnos",
-      "name": "Limnos 100",
-      "nowplaying_url": "http://radio.limnosfm100.gr:9998/stats?sid=1&json=1",
-      "history_url": "http://radio.limnosfm100.gr:9998/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "loop",
-      "name": "loop",
-      "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "loop-695d1d91",
-      "name": "loop",
-      "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "loud-88-8-trikala",
-      "name": "Loud 88.8",
-      "nowplaying_url": "http://s3.onweb.gr:8888/stats?sid=1&json=1",
-      "history_url": "http://s3.onweb.gr:8888/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "loutraki-87-5-korinthos",
-      "name": "Loutraki 87.5",
-      "nowplaying_url": "http://s3.onweb.gr:8472/stats?sid=1&json=1",
-      "history_url": "http://s3.onweb.gr:8472/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "love-106-5-thessaloniki",
-      "name": "Love 106.5",
-      "nowplaying_url": "http://server.insms.gr:45104/stats?sid=1&json=1",
-      "history_url": "http://server.insms.gr:45104/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "live-89-6-chalkida",
-      "name": "Live 89.6",
-      "nowplaying_url": "https://s6.e-resellers.gr:8088/stats?sid=1&json=1",
-      "history_url": "https://s6.e-resellers.gr:8088/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "love-88-2-lesvos",
-      "name": "Love 88.2",
-      "nowplaying_url": "http://solid1.streamupsolutions.com:24929/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "mad-radio-106-2-athens",
-      "name": "Mad Radio 106.2",
-      "nowplaying_url": "http://mediaserver.mad.tv/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "mad-radio-106-2-fm",
-      "name": "Mad Radio 106.2 FM",
-      "nowplaying_url": "http://mediaserver.mad.tv/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "magia-104-7-xiromero",
-      "name": "Magia 104.7",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/magiafm1047/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "mancode",
-      "name": "Mancode",
-      "nowplaying_url": "http://comet.shoutca.st:8366/stats?sid=1&json=1",
-      "history_url": "http://comet.shoutca.st:8366/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "manos-103-4-pieria",
-      "name": "Manos 103.4",
-      "nowplaying_url": "http://i5.streams.ovh:14123/status-json.xsl?mount=%2Flive",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "max-100-2-chania",
-      "name": "Max 100.2",
-      "nowplaying_url": "http://solid9.streamupsolutions.com:8066/stats?sid=1&json=1",
-      "history_url": "http://solid9.streamupsolutions.com:8066/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "melody-96-7-limnos",
-      "name": "Melody 96.7",
-      "nowplaying_url": "https://eu4.fastcast4u.com/rpc/jlwmwogj/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "mercury-radio-69fd8450",
-      "name": "Mercury Radio",
-      "nowplaying_url": "http://10203.cloudrad.io:9024/stats?sid=1&json=1",
-      "history_url": "http://10203.cloudrad.io:9024/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "metal-city-radio",
-      "name": "Metal city radio",
-      "nowplaying_url": "http://i6.streams.ovh:16036/stats?sid=1&json=1",
-      "history_url": "http://i6.streams.ovh:16036/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "metal-zone-athens",
-      "name": "METAL ZONE",
-      "nowplaying_url": "https://neos.win:48282/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "metalzone-athens",
-      "name": "Metalzone",
-      "nowplaying_url": "https://neos.win:48282/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "metro-mall-radio-athens",
-      "name": "Metro Mall Radio",
-      "nowplaying_url": "https://srv.radiocaster.gr:9300/stats?sid=1&json=1",
-      "history_url": "https://srv.radiocaster.gr:9300/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "metro-radio-heraclion",
-      "name": "Metro Radio",
-      "nowplaying_url": "https://stream.crete.ovh:8443/status-json.xsl?mount=%2Fmetro",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "metropolis-97-2-serres",
-      "name": "Metropolis 97.2",
-      "nowplaying_url": "http://s6.onweb.gr:8092/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8092/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "mikis-radio",
-      "name": "Mikis Radio",
-      "nowplaying_url": "http://radio.hostchefs.net:8046/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "minima",
-      "name": "Minima",
-      "nowplaying_url": "http://62.171.166.54:8010/stats?sid=1&json=1",
-      "history_url": "http://62.171.166.54:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "molonoti-radio",
-      "name": "molonoti radio",
-      "nowplaying_url": "http://molonotiradio.gr:8000/status-json.xsl?mount=%2Fmolonoti-radio-stream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "mood-radio",
-      "name": "Mood Radio",
-      "nowplaying_url": "http://198.7.59.28:10034/stats?sid=1&json=1",
-      "history_url": "http://198.7.59.28:10034/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "mousikotherapia",
-      "name": "Mousikotherapia",
-      "nowplaying_url": "https://everestcast.streams.ovh:1940/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "music-art-club",
-      "name": "Music Art Club",
-      "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "music-factory-radio-athens",
-      "name": "MUSIC FACTORY RADIO",
-      "nowplaying_url": "http://radio.musicfactory.gr:9000/stats?sid=1&json=1",
-      "history_url": "http://radio.musicfactory.gr:9000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "music-life-95-1-agrinio",
-      "name": "Music Life 95.1",
-      "nowplaying_url": "http://neos.win:9501/stats?sid=1&json=1",
-      "history_url": "http://neos.win:9501/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "musicartclub-thessaloniki",
-      "name": "MusicArtclub",
-      "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "musicartclub-thessaloniki-1ac2e8a4",
-      "name": "MusicArtclub",
-      "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "musicartclub-radio",
-      "name": "MusicArtclub Radio",
-      "nowplaying_url": "http://eu9.fastcast4u.com:8090/stats?sid=1&json=1",
-      "history_url": "http://eu9.fastcast4u.com:8090/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "ng-radio",
-      "name": "NG Radio",
-      "nowplaying_url": "https://rdst.win:59178/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "notes-106-serres",
-      "name": "Notes 106",
-      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/evllufwn/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "nrg-89-5-kozani",
-      "name": "NRG 89.5",
-      "nowplaying_url": "http://i4.streams.ovh:8078/stats?sid=1&json=1",
-      "history_url": "http://i4.streams.ovh:8078/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "nrg-92-4-lamia",
-      "name": "NRG 92.4",
-      "nowplaying_url": "http://s6.onweb.gr:9240/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:9240/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "nrg-radio-88-3-macedonia",
-      "name": "NRG Radio 88.3",
-      "nowplaying_url": "http://s1.onweb.gr:8412/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8412/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "oasis-gr",
-      "name": "Oasis GR",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:2315/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "ok-94-5-volos",
-      "name": "OK 94.5",
-      "nowplaying_url": "http://www.gointernet.gr:8034/stats?sid=1&json=1",
-      "history_url": "http://www.gointernet.gr:8034/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "onar-athens",
-      "name": "Onar",
-      "nowplaying_url": "http://cast4.magicstreams.gr:10316/stats?sid=1&json=1",
-      "history_url": "http://cast4.magicstreams.gr:10316/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "opa",
-      "name": "Opa",
-      "nowplaying_url": "https://eu3.fastcast4u.com/rpc/opar/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "oxygen-web-radio",
-      "name": "Oxygen Web Radio",
-      "nowplaying_url": "https://i8.streams.ovh:18039/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "paidaki-97-5-thessaloniki",
-      "name": "Paidaki 97.5",
-      "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "paidaki-fm-thessaloniki",
-      "name": "Paidaki FM",
-      "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "palmos-102-7-poros",
-      "name": "Palmos 102.7",
-      "nowplaying_url": "http://s6.onweb.gr:8010/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "palmos-radio",
-      "name": "Palmos Radio",
-      "nowplaying_url": "http://live.onweb.gr:8010/stats?sid=1&json=1",
-      "history_url": "http://live.onweb.gr:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "palmos-radio-102-7-fm",
-      "name": "Palmos Radio 102.7 Fm",
-      "nowplaying_url": "http://s6.onweb.gr:8010/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "panic-93-7-ierapetra",
-      "name": "Panic 93.7",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/club937/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "panikos",
-      "name": "Panikos",
-      "nowplaying_url": "http://toradio.cc:8010/stats?sid=1&json=1",
-      "history_url": "http://toradio.cc:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "party-97-1-elassona",
-      "name": "Party 97.1",
-      "nowplaying_url": "http://s1.onweb.gr:8824/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8824/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "party-vibe-radio-dubstep",
-      "name": "PARTY VIBE RADIO : DUBSTEP",
-      "nowplaying_url": "http://94.130.242.5:8040/stats?sid=1&json=1",
-      "history_url": "http://94.130.242.5:8040/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "pathos-radio",
-      "name": "Pathos Radio",
-      "nowplaying_url": "http://dione.shoutca.st:8628/stats?sid=1&json=1",
-      "history_url": "http://dione.shoutca.st:8628/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "play-91-5-xanthi",
-      "name": "Play 91.5",
-      "nowplaying_url": "http://s6.onweb.gr:8058/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8058/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "play-radio-patra",
-      "name": "Play radio",
-      "nowplaying_url": "http://eco.onestreaming.com:8222/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8222/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "plus-102-6-thessaloniki",
-      "name": "Plus 102.6",
-      "nowplaying_url": "http://eco.onestreaming.com:8039/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8039/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "plus-radio-macedonia",
-      "name": "Plus Radio",
-      "nowplaying_url": "http://eco.onestreaming.com:8039/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8039/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "point-radio-thessaloniki",
-      "name": "Point Radio",
-      "nowplaying_url": "http://radio.streamings.gr:8029/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "point-radio-thessaloniki-9754dd31",
-      "name": "Point-Radio",
-      "nowplaying_url": "http://radio.streamings.gr:8029/status-json.xsl?mount=%2Fstream2",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "polis-102-6-evros",
-      "name": "Polis 102.6",
-      "nowplaying_url": "http://eco.onestreaming.com:8334/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8334/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "pop-102-1-corfu",
-      "name": "Pop 102.1",
-      "nowplaying_url": "http://s1.onweb.gr:8422/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8422/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "power-100-2-volos",
-      "name": "Power 100.2",
-      "nowplaying_url": "http://s1.onweb.gr:8854/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8854/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "power-90-2-katerini",
-      "name": "Power 90.2",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/powerkaterini/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "power-93-2-larisa",
-      "name": "Power 93.2",
-      "nowplaying_url": "http://mediacp.32bit.gr:8002/stats?sid=1&json=1",
-      "history_url": "http://mediacp.32bit.gr:8002/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "prime-100-3-syros",
-      "name": "Prime 100.3",
-      "nowplaying_url": "http://s20.myradiostream.com:6738/stats?sid=1&json=1",
-      "history_url": "http://s20.myradiostream.com:6738/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "prisma-91-8-sifnos",
-      "name": "Prisma 91.8",
-      "nowplaying_url": "http://eco.onestreaming.com:8414/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8414/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "psyndora-chillout-hellas",
-      "name": "Psyndora Chillout",
-      "nowplaying_url": "http://cast.magicstreams.gr:9125/stats?sid=1&json=1",
-      "history_url": "http://cast.magicstreams.gr:9125/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "psyndora-psytrance-hellas",
-      "name": "Psyndora Psytrance",
-      "nowplaying_url": "https://cast.magicstreams.gr:9111/stats?sid=1&json=1",
-      "history_url": "https://cast.magicstreams.gr:9111/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "pulsar-radio",
-      "name": "PULSAR Radio",
-      "nowplaying_url": "https://rs-pulsar.doomdns.org:8443/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "pylos-live-pylos",
-      "name": "Pylos Live",
-      "nowplaying_url": "http://s4.myradiostream.com:14374/stats?sid=1&json=1",
-      "history_url": "http://s4.myradiostream.com:14374/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-88miso-thessaloniki",
-      "name": "Radio 88miso",
-      "nowplaying_url": "http://solid33.streamupsolutions.com:30000/stats?sid=1&json=1",
-      "history_url": "http://solid33.streamupsolutions.com:30000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-9-thessaloniki",
-      "name": "Radio 9 Θεσσαλονίκη",
-      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/gygasbfj/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "radio-anemos",
-      "name": "Radio Anemos",
-      "nowplaying_url": "http://168.119.74.185:9008/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "radio-beat-radio",
-      "name": "Radio Beat Radio",
-      "nowplaying_url": "http://62.38.241.82:8000/stats?sid=1&json=1",
-      "history_url": "http://62.38.241.82:8000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-elliniko",
-      "name": "Radio Elliniko",
-      "nowplaying_url": "http://168.119.74.185:9888/status-json.xsl?mount=%2Fautodj",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "radio-galaxy-99",
-      "name": "Radio Galaxy 99",
-      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/tfcgioyq/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "radio-galilea",
-      "name": "Radio Galilea",
-      "nowplaying_url": "http://s1.onweb.gr:8446/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8446/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-madness",
-      "name": "Radio Madness",
-      "nowplaying_url": "http://s2.onweb.gr:8044/stats?sid=1&json=1",
-      "history_url": "http://s2.onweb.gr:8044/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-martino",
-      "name": "Radio Martino",
-      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "radio-mires-97-1",
-      "name": "Radio Mires 97,1",
-      "nowplaying_url": "http://s6.onweb.gr:8034/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8034/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-mytilini",
-      "name": "Radio Mytilini",
-      "nowplaying_url": "http://cast5.magicstreams.gr:8041/stats?sid=1&json=1",
-      "history_url": "http://cast5.magicstreams.gr:8041/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-nostalgia",
-      "name": "Radio Nostalgia",
-      "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
-      "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-nostalgia-gr",
-      "name": "Radio Nostalgia GR",
-      "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
-      "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-oi-athens",
-      "name": "Radio Oi",
-      "nowplaying_url": "http://eu4.fastcast4u.com/rpc/nikoud00/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "radio-play-91-5-fm-stereo-gr-xanthi-xanthi",
-      "name": "Radio Play 91.5 Fm Stereo (Gr Xanthi)",
-      "nowplaying_url": "http://s6.onweb.gr:8058/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8058/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-play-91-5-fm-stereo-gr-xanthi",
-      "name": "Radio Play 91.5 Fm Stereo (Gr Xanthi)",
-      "nowplaying_url": "https://s6.onweb.gr:7026/stats?sid=1&json=1",
-      "history_url": "https://s6.onweb.gr:7026/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "r-dio-p-lis-99-4",
-      "name": "Rádio Pólis 99.4",
-      "nowplaying_url": "https://sh.onweb.gr:7060/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:7060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-sfakia",
-      "name": "Radio Sfakia",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1215/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "radio-ta-asteria",
-      "name": "Radio Ta Asteria",
-      "nowplaying_url": "https://cast.serverps.gr/rpc/radioasteria/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "radio-yellow-gr",
-      "name": "Radio Yellow GR",
-      "nowplaying_url": "http://radio.streamings.gr/rpc/radioyellow/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "rain-music-radio-athens",
-      "name": "Rain Music Radio",
-      "nowplaying_url": "https://thanasis.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://thanasis.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "rewind-radio-gr",
-      "name": "Rewind Radio GR",
-      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/zcpyirtp/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "rock-fm-96-9",
-      "name": "Rock FM 96.9",
-      "nowplaying_url": "https://az10.yesstreaming.net:8060/stats?sid=1&json=1",
-      "history_url": "https://az10.yesstreaming.net:8060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "rock-melodic-radio-964ff6ca",
-      "name": "Rock Melodic Radio",
-      "nowplaying_url": "http://live.rockmelodic-radio.com:8124/stats?sid=1&json=1",
-      "history_url": "http://live.rockmelodic-radio.com:8124/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "rockarolla-radio-athens-greece",
-      "name": "Rockarolla Radio",
-      "nowplaying_url": "https://solid2.streamupsolutions.com/rpc/msoepowo/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "s-fresh-91-2",
-      "name": "S-Fresh 91.2",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
-      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "s-fresh-91-2-d5a65430",
-      "name": "S-Fresh 91.2",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
-      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "s-fresh-91-2-67076765",
-      "name": "S-Fresh 91.2",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
-      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "samothraki-web-radio-samothraki",
-      "name": "Samothraki Web Radio",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/samothraki/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "santorini-fm-106-4-santorini",
-      "name": "Santorini FM 106,4",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/santorini1/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "sferikos-alexandroupolis",
-      "name": "Sferikos Αλεξανδρούπολης",
-      "nowplaying_url": "http://eco.onestreaming.com:8012/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8012/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "sin-athens",
-      "name": "Sin",
-      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/lqomhdjk/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "sky-91-3-rethimno",
-      "name": "Sky 91.3",
-      "nowplaying_url": "http://cressida.shoutca.st:9158/stats?sid=1&json=1",
-      "history_url": "http://cressida.shoutca.st:9158/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "slam-101-5-lesvos",
-      "name": "Slam 101.5",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/slam/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "smok-web-radio",
-      "name": "Smok Web Radio",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/smokradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "smooth-radio-thessaloniki-thessaloniki",
-      "name": "Smooth Radio Thessaloniki",
-      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/lrazisyb/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "spirto-web-radio",
-      "name": "Spirto Web Radio",
-      "nowplaying_url": "http://cast4.magicstreams.gr:10149/stats?sid=1&json=1",
-      "history_url": "http://cast4.magicstreams.gr:10149/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "star-95-5-chalkidiki",
-      "name": "Star 95.5",
-      "nowplaying_url": "https://centova.gr-net.gr/rpc/radiostar955/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "star-97-7-chania",
-      "name": "Star 97.7",
-      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/vkpzhens/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "statusradio-94-2",
-      "name": "StatusRadio 94.2",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/statusradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "studio-254-athens",
-      "name": "Studio 254",
-      "nowplaying_url": "https://eu8.fastcast4u.com/rpc/s254/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "studio12-22",
-      "name": "Studio12-22",
-      "nowplaying_url": "https://cast6.asurahosting.com/rpc/radiosky/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "suburbia-parties-athens-hardcore-radio",
-      "name": "Suburbia Parties - Athens Hardcore Radio",
-      "nowplaying_url": "https://s9.webradio-hosting.com/rpc/suburbiaparties/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "super-fm-101-thessaloniki",
-      "name": "Super FM 101 Thessaloniki",
-      "nowplaying_url": "http://ice.greekstream.net/status-json.xsl?mount=%2Fsuperfm",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "super-fm-thessaloniki",
-      "name": "Super FM Thessaloniki",
-      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fsuperfm",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "synora-98-7-kilkis",
-      "name": "Synora 98.7",
-      "nowplaying_url": "http://sh.onweb.gr:8816/stats?sid=1&json=1",
-      "history_url": "http://sh.onweb.gr:8816/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "thessradio-thessaloniki",
-      "name": "ThessRadio",
-      "nowplaying_url": "https://noc.ezhellas.com:30580/stats?sid=1&json=1",
-      "history_url": "https://noc.ezhellas.com:30580/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "thrakifm-99-8",
-      "name": "Thrakifm 99.8",
-      "nowplaying_url": "http://eco.onestreaming.com:8010/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "time-90-9-kalamata",
-      "name": "Time 90.9",
-      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/rmjbkagy/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "tivoli-thessaloniki",
-      "name": "Tivoli",
-      "nowplaying_url": "https://radio.streamings.gr/rpc/yellownewstream/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "toc-radio-athens",
-      "name": "Toc Radio",
-      "nowplaying_url": "https://ec5.yesstreaming.net:1245/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "top-106-5-chania",
-      "name": "Top 106.5",
-      "nowplaying_url": "http://sc2.streamwithq.com:8086/stats?sid=1&json=1",
-      "history_url": "http://sc2.streamwithq.com:8086/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "trance-athena",
-      "name": "Trance Athena",
-      "nowplaying_url": "http://cast.streams.ovh:8008/stats?sid=1&json=1",
-      "history_url": "http://cast.streams.ovh:8008/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "tyflos-gr",
-      "name": "Tyflos GR",
-      "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/monaytgo/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "vanilla-radio-smooth-flavors",
-      "name": "Vanilla Radio Smooth Flavors",
-      "nowplaying_url": "https://smooth.vanillaradio.com:8032/status-json.xsl?mount=%2Flive",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "vanilla-radio-com-fresh-flavours-stream",
-      "name": "Vanilla Radio.com - Fresh Flavours Stream",
-      "nowplaying_url": "https://fresh.vanillaradio.com:8028/status-json.xsl?mount=%2Flive",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "velvet-96-8",
-      "name": "VELVET 96.8",
-      "nowplaying_url": "http://s10.voscast.com:9942/stats?sid=1&json=1",
-      "history_url": "http://s10.voscast.com:9942/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "viva-88-3-katerini",
-      "name": "Viva 88.3",
-      "nowplaying_url": "http://s3.onweb.gr:8030/stats?sid=1&json=1",
-      "history_url": "http://s3.onweb.gr:8030/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "viva-fm-95-3-kozani",
-      "name": "Viva FM 95.3",
-      "nowplaying_url": "http://s17.myradiostream.com:8742/stats?sid=1&json=1",
-      "history_url": "http://s17.myradiostream.com:8742/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "volos-rtv-87-9-volos",
-      "name": "Volos RTV 87.9",
-      "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
-      "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "volosrtv-volos",
-      "name": "VolosRTV",
-      "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
-      "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "wild-radio",
-      "name": "Wild Radio",
-      "nowplaying_url": "http://sip.wildradio.gr:8037/stats?sid=1&json=1",
-      "history_url": "http://sip.wildradio.gr:8037/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "x-radio",
-      "name": "X Radio",
-      "nowplaying_url": "http://cast.radiohost.ovh:8850/stats?sid=1&json=1",
-      "history_url": "http://cast.radiohost.ovh:8850/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "x-radio-91-3-livadia",
-      "name": "X Radio 91.3",
-      "nowplaying_url": "https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "xfm-gr",
-      "name": "XFM GR",
-      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/zizthduh/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "yellow-thessaloniki",
-      "name": "Yellow",
-      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fyellow",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "yes-91-2-patra",
-      "name": "Yes! 91.2",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
-      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "you-98-7-alexandroupolis",
-      "name": "You 98.7",
-      "nowplaying_url": "http://eco.onestreaming.com:8880/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "zooradio-90-8",
-      "name": "ZooRadio 90.8",
-      "nowplaying_url": "http://s10.voscast.com:9940/stats?sid=1&json=1",
-      "history_url": "http://s10.voscast.com:9940/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "92-5-karditsa",
-      "name": "Άγιος Δαμιανός 92.5",
-      "nowplaying_url": "https://fra-pioneer01.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "92-8-lesvos",
-      "name": "Αίολος 92.8",
-      "nowplaying_url": "http://eco.onestreaming.com:8552/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8552/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "104-3-fm",
-      "name": "Ακούστε το Χριστιανισμό 104,3 FM",
-      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/afreeapo/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "94-6-serres",
-      "name": "Ακρόαμα 94.6",
-      "nowplaying_url": "http://s1.onweb.gr:8066/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8066/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "106-3-katerini",
-      "name": "Αλέξανδρος 106.3",
-      "nowplaying_url": "http://proxima.shoutca.st:9012/stats?sid=1&json=1",
-      "history_url": "http://proxima.shoutca.st:9012/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "1134-chania",
-      "name": "Ασύρματος 1134",
-      "nowplaying_url": "https://eu8.fastcast4u.com/rpc/chaniaradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "gr",
-      "name": "Αυθεντικό GR",
-      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/xbygwcwv/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "larisa",
-      "name": "Γαλιλαία",
-      "nowplaying_url": "http://s2.onweb.gr:8446/stats?sid=1&json=1",
-      "history_url": "http://s2.onweb.gr:8446/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "station-da7a1343",
-      "name": "γκρίκς",
-      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/vlerkait/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "93-7-thessaloniki",
-      "name": "Γνώμη 93.7",
-      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fgnomi",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "alexandroupolis",
-      "name": "Δέλτα Αλεξανδρούπολη",
-      "nowplaying_url": "http://81.171.10.41:1088/stats?sid=1&json=1",
-      "history_url": "http://81.171.10.41:1088/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "preveza",
-      "name": "Δημοτικό Ραδιόφωνο Πρέβεζας",
-      "nowplaying_url": "http://sc2.streamwithq.com:8028/stats?sid=1&json=1",
-      "history_url": "http://sc2.streamwithq.com:8028/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "99-2-kalamata",
-      "name": "Δίαυλος 99.2",
-      "nowplaying_url": "http://rdst.win:7060/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "fm-99-2",
-      "name": "ΔΙΑΥΛΟΣ FM 99.2",
-      "nowplaying_url": "https://server.el1.info:37060/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "91-5-chania",
-      "name": "Δίκτυο 91.5",
-      "nowplaying_url": "http://eu1.fastcast4u.com:3688/stats?sid=1&json=1",
-      "history_url": "http://eu1.fastcast4u.com:3688/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "104-alexandroupolis",
-      "name": "Ελλάδα 104",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/elladafm/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "90-3-livadia",
-      "name": "Ελληνικός 90.3",
-      "nowplaying_url": "http://live.ellinikos.gr:8010/status-json.xsl?mount=%2F903.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "90-3-livadia-3ad1a11e",
-      "name": "Ελληνικός 90.3",
-      "nowplaying_url": "http://live.ellinikos.gr:8010/status-json.xsl?mount=%2F903.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "93-5-chania",
-      "name": "Ένταση 93.5",
-      "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
-      "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "93-9-larisa",
-      "name": "Ζημιά 93.9",
-      "nowplaying_url": "http://www.gointernet.gr:8012/stats?sid=1&json=1",
-      "history_url": "http://www.gointernet.gr:8012/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "94-5-volos",
-      "name": "Ζημιά 94.5",
-      "nowplaying_url": "https://www.gointernet.gr:9034/stats?sid=1&json=1",
-      "history_url": "https://www.gointernet.gr:9034/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "96-5-volos",
-      "name": "Ζημιά 96.5",
-      "nowplaying_url": "https://www.gointernet.gr:9012/stats?sid=1&json=1",
-      "history_url": "https://www.gointernet.gr:9012/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "94-5-ioannina",
-      "name": "Ήπειρος 94.5",
-      "nowplaying_url": "https://rdst.win:59450/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "100-8-karditsa",
-      "name": "Ηχόραμα 100.8",
-      "nowplaying_url": "http://sp2.streams.ovh:8084/stats?sid=1&json=1",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "106-6-larisa",
-      "name": "Ηχόραμα 106.6",
-      "nowplaying_url": "http://sp2.streams.ovh:8104/stats?sid=1&json=1",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "paros",
-      "name": "Ηχώ Πάρος",
-      "nowplaying_url": "http://eco.onestreaming.com:8280/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8280/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "samos",
-      "name": "Θάλασσα και Παράδοση",
-      "nowplaying_url": "http://i.streams.ovh:9391/stats?sid=1&json=1",
-      "history_url": "http://i.streams.ovh:9391/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "98-7-patra",
-      "name": "Θέμα 98.7",
-      "nowplaying_url": "https://radio.themapatras.gr/status-json.xsl?mount=%2Fradio",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "99-8-alexandroupolis",
-      "name": "Θράκη 99.8",
-      "nowplaying_url": "http://eco.onestreaming.com:8010/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8010/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "106-6-arta-greece",
-      "name": "Ιερά Μητρόπολις Άρτης 106.6",
-      "nowplaying_url": "http://i.streams.ovh:9566/stats?sid=1&json=1",
-      "history_url": "http://i.streams.ovh:9566/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "95-4-syros",
-      "name": "Ιερά Μητρόπολις Σύρου 95.4",
-      "nowplaying_url": "http://sh.onweb.gr:8852/stats?sid=1&json=1",
-      "history_url": "http://sh.onweb.gr:8852/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "station-051a9421",
-      "name": "Λαϊκή Κιβωτός",
-      "nowplaying_url": "http://everest.streams.ovh:1310/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "station-3e64ce47",
-      "name": "Λαϊκό Ραδιόφωνο",
-      "nowplaying_url": "http://i2.streams.ovh:7017/stats?sid=1&json=1",
-      "history_url": "http://i2.streams.ovh:7017/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "96-2-agrinio",
-      "name": "Λαϊκός 96.2",
-      "nowplaying_url": "http://sonic.streams.ovh:9870/stats?sid=1&json=1",
-      "history_url": "http://sonic.streams.ovh:9870/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "88-6-volos",
-      "name": "Λάμψη 88.6",
-      "nowplaying_url": "http://s6.onweb.gr:8036/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8036/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "97-9-limnos",
-      "name": "Λήμνος 97,9",
-      "nowplaying_url": "https://streaming.sbzsystems.com/rpc/fm00/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "102-4-kozani",
-      "name": "Μελωδία 102.4",
-      "nowplaying_url": "https://radio.streamings.gr/rpc/melodia1024/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "97-1-heraclion",
-      "name": "Μοίρες 97.1",
-      "nowplaying_url": "http://s6.onweb.gr:8034/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8034/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "athens-09fdaca2",
-      "name": "Μουσικοθεραπεία",
-      "nowplaying_url": "http://everestcast.streams.ovh:1940/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "90-lesvos",
-      "name": "Μυτιλήνη 90",
-      "nowplaying_url": "http://cast5.magicstreams.gr:8041/stats?sid=1&json=1",
-      "history_url": "http://cast5.magicstreams.gr:8041/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "patra-023f335f",
-      "name": "Νοσταλγία",
-      "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
-      "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "mesologgi",
-      "name": "Ορφέας",
-      "nowplaying_url": "https://radio.streamings.gr/rpc/orfeasradio/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "106-6-larisa-32c6a3fd",
-      "name": "Παραδοσιακός 106.6",
-      "nowplaying_url": "http://sp2.streams.ovh:8104/stats?sid=1&json=1",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "94-komotini",
-      "name": "Παρατηρητής 94",
-      "nowplaying_url": "http://s6.onweb.gr:8020/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8020/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "106-arta",
-      "name": "Πήγασος 106",
-      "nowplaying_url": "https://rdst.win:59412/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "104-2-pieria",
-      "name": "Πιερία 104.2",
-      "nowplaying_url": "https://rpieria.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://rpieria.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "99-4-larisa",
-      "name": "Πόλις 99.4",
-      "nowplaying_url": "http://s2.e-resellers.gr:8020/stats?sid=1&json=1",
-      "history_url": "http://s2.e-resellers.gr:8020/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "99-4-larisa-6ee57039",
-      "name": "Πόλις 99.4",
-      "nowplaying_url": "https://sh.onweb.gr:7060/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:7060/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "kavala",
-      "name": "Πρωινή Καβάλα",
-      "nowplaying_url": "http://62.103.31.151:8000/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "farsala",
-      "name": "Πρώτος Τύπος Φαρσάλων",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "95-4-syros-de3c16f9",
-      "name": "Ρ/Σ Ιερά Μητρόπολις Σύρου 95.4",
-      "nowplaying_url": "http://s2.onweb.gr:8852/stats?sid=1&json=1",
-      "history_url": "http://s2.onweb.gr:8852/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "101-5-grevena",
-      "name": "Ράδιο Γρεβενά 101.5",
-      "nowplaying_url": "https://a8.asurahosting.com:6770/stats?sid=1&json=1",
-      "history_url": "https://a8.asurahosting.com:6770/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "station-753aef0e",
-      "name": "Ράδιο Μαρτίνο",
-      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "crete",
-      "name": "Ράδιο Σφακιά",
-      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1215/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "korinthos",
-      "name": "Ραδιοενέργεια",
-      "nowplaying_url": "http://s1.onweb.gr:8828/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8828/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "97-8-larisa",
-      "name": "Ραδιοφωνία Κισσάβου 97.8",
-      "nowplaying_url": "http://eco.onestreaming.com:8103/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8103/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "89-2-trikala",
-      "name": "Ρυθμός 89.2",
-      "nowplaying_url": "http://s4.onweb.gr:8892/stats?sid=1&json=1",
-      "history_url": "http://s4.onweb.gr:8892/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "94-3-zakynthos",
-      "name": "Ρυθμός 94.3",
-      "nowplaying_url": "http://eco.onestreaming.com:8217/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8217/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "web-argolida",
-      "name": "Ρυθμός Web Αργολίδας",
-      "nowplaying_url": "https://24streams.gr:8088/stats?sid=1&json=1",
-      "history_url": "https://24streams.gr:8088/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "102-4-serres",
-      "name": "Σοκολάτα 102.4",
-      "nowplaying_url": "http://radio.streamings.gr:8043/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "99-5-kozani",
-      "name": "Σταθμός 99.5",
-      "nowplaying_url": "https://s7.myradiostream.com:10432/stats?sid=1&json=1",
-      "history_url": "https://s7.myradiostream.com:10432/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "104-9-karpenisi",
-      "name": "Στόχος 104.9",
-      "nowplaying_url": "https://rdst.win:37777/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "emerson-846-athens",
-      "name": "Στράτος Emerson 846",
-      "nowplaying_url": "https://media.streambrothers.com:8552/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "103-9-aliveri",
-      "name": "Ταμυναϊκή Ραδιοφωνία 103.9",
-      "nowplaying_url": "https://stream.iplayradio.net/rpc/taminaikiradiofonia/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "pella",
-      "name": "Τοξότης Πέλλα",
-      "nowplaying_url": "http://eco.onestreaming.com:8240/stats?sid=1&json=1",
-      "history_url": "http://eco.onestreaming.com:8240/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "trikala-4294896a",
-      "name": "Τρίκαλα",
-      "nowplaying_url": "http://s6.onweb.gr:8004/stats?sid=1&json=1",
-      "history_url": "http://s6.onweb.gr:8004/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "1431am-thessaloniki",
-      "name": "1431AM",
-      "nowplaying_url": "https://www.1431am.org:8001/status-json.xsl?mount=%2F1431high",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "905-rock-90-5-larisa",
-      "name": "905 Rock 90.5",
-      "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "905rock-larisa",
-      "name": "905ROCK",
-      "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "ble-93-drama",
-      "name": "Ble 93",
-      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fdiavlos93",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "dance-wave",
-      "name": "Dance Wave!",
-      "nowplaying_url": "https://dancewave.online/status-json.xsl?mount=%2Fdance.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "deepinradio-com",
-      "name": "Deepinradio.com",
-      "nowplaying_url": "https://s1.viastreaming.net:8525/stats?sid=1&json=1",
-      "history_url": "https://s1.viastreaming.net:8525/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "derti-web-radio-larisa",
-      "name": "derti web radio",
-      "nowplaying_url": "https://sh.onweb.gr:9050/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:9050/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "dreamer-thessaloniki",
-      "name": "DREAMER",
-      "nowplaying_url": "https://cast1.asurahosting.com/rpc/ermis/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "emusic-site-attica-athens",
-      "name": "eMusic Site",
-      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/wvsivbgn/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "fly-88-1-heraklion-crete",
-      "name": "Fly 88.1",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/flykriti/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "fun-radio-104-3-loutraki",
-      "name": "Fun Radio 104.3",
-      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/wpgqrttp/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "greek-gold-classic-radio",
-      "name": "Greek-gold Classic Radio",
-      "nowplaying_url": "https://s4.voscast.com:8899/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "heat-classic-alexandroupolis",
-      "name": "Heat Classic",
-      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/neukptkl/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "kouklakia-radio-attica-athens",
-      "name": "KOUKLAKIA RADIO",
-      "nowplaying_url": "http://mcr.streams.gr:10340/stats?sid=1&json=1",
-      "history_url": "http://mcr.streams.gr:10340/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "larissa-deejay-95-7-larisa",
-      "name": "Larissa DeeJay 95.7",
-      "nowplaying_url": "https://a6.asurahosting.com:7030/stats?sid=1&json=1",
-      "history_url": "https://a6.asurahosting.com:7030/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "laterna",
-      "name": "Laterna",
-      "nowplaying_url": "https://laterna.kafeneio.social:8000/status-json.xsl?mount=%2Fradio.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "metalourgio-radio",
-      "name": "Metalourgio Radio",
-      "nowplaying_url": "http://cast.metalourgio.com:8427/stats?sid=1&json=1",
-      "history_url": "http://cast.metalourgio.com:8427/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "my-laikos-thessaloniki",
-      "name": "My Laikos",
-      "nowplaying_url": "http://mcr.streams.gr:10200/stats?sid=1&json=1",
-      "history_url": "http://mcr.streams.gr:10200/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "my-radio-gr-athens",
-      "name": "My Radio GR",
-      "nowplaying_url": "https://visual.shoutca.st:8616/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "party-97-1-larisa",
-      "name": "Party 97.1",
-      "nowplaying_url": "https://sh.onweb.gr:7024/stats?sid=1&json=1",
-      "history_url": "https://sh.onweb.gr:7024/played?sid=1&type=json",
+      "slug": "aigaio-news-syros",
+      "name": "Aigaio News",
+      "nowplaying_url": "http://europa.shoutca.st:8721/stats?sid=1&json=1",
+      "history_url": "http://europa.shoutca.st:8721/played?sid=1&type=json",
       "metadata_server": "shoutcast"
     },
     {
-      "slug": "polis-91-1-heykids-chalkida",
-      "name": "Polis 91.1 HeyKids Παιδικά",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/poliskids/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "polis-91-1-hip-hop-chalkida",
-      "name": "Polis 91.1 Hip Hop",
-      "nowplaying_url": "https://s6.e-resellers.gr:8092/stats?sid=1&json=1",
-      "history_url": "https://s6.e-resellers.gr:8092/played?sid=1&type=json",
+      "slug": "family-89-5-heraclion",
+      "name": "Family 89.5",
+      "nowplaying_url": "http://193.227.111.111:8002/stats?sid=1&json=1",
+      "history_url": "http://193.227.111.111:8002/played?sid=1&type=json",
       "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-epirus-94-5",
-      "name": "RADIO EPIRUS 94.5",
-      "nowplaying_url": "https://neos.win:59454/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
     },
     {
-      "slug": "radio-grey",
-      "name": "Radio Grey",
-      "nowplaying_url": "https://eu10.fastcast4u.com:15360/stats?sid=1&json=1",
-      "history_url": "https://eu10.fastcast4u.com:15360/played?sid=1&type=json",
+      "slug": "jay",
+      "name": "Jay",
+      "nowplaying_url": "http://s2.e-resellers.gr:8000/stats?sid=1&json=1",
+      "history_url": "http://s2.e-resellers.gr:8000/played?sid=1&type=json",
       "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-kos-98-fm",
-      "name": "Radio Kos 98 FM",
-      "nowplaying_url": "https://play.streams.gr:22082/status-json.xsl?mount=%2Fstream",
-      "metadata_server": "icecast"
     },
     {
-      "slug": "radio-locomotiva-athens-greece",
-      "name": "Radio Locomotiva",
-      "nowplaying_url": "https://whsh4u-panel.com/rpc/zukqpfqm/streaminfo.get",
+      "slug": "lemon-radio",
+      "name": "Lemon Radio",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
       "metadata_server": "centovacast"
-    },
-    {
-      "slug": "radio-meraklis-agrinio",
-      "name": "Radio Meraklis",
-      "nowplaying_url": "https://meraklis.ddnsfree.com:8443/status-json.xsl?mount=%2Flive",
-      "metadata_server": "icecast"
     },
     {
-      "slug": "radio-nyxtopoyli",
-      "name": "Radio Nyxtopoyli",
-      "nowplaying_url": "https://stream13.shoutcastsolutions.com/rpc/bntailia/streaminfo.get",
+      "slug": "lemon-web-radio",
+      "name": "Lemon Web Radio",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
       "metadata_server": "centovacast"
     },
     {
-      "slug": "radio-pieria-104-2-fm",
-      "name": "Radio Pieria 104.2 FM",
-      "nowplaying_url": "https://rpieria.radioca.st/stats?sid=1&json=1",
-      "history_url": "https://rpieria.radioca.st/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "radio-rebetikes-melodies-agrinio-greece",
-      "name": "Radio Rebetikes Melodies",
-      "nowplaying_url": "https://rebetis.duckdns.org:8545/status-json.xsl?mount=%2Flive",
+      "slug": "setta",
+      "name": "Setta",
+      "nowplaying_url": "http://cast.magicstreams.gr:9028/status-json.xsl?mount=%2Flive",
       "metadata_server": "icecast"
     },
     {
-      "slug": "razordino-radio",
-      "name": "Razordino Radio",
-      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/olrbkxdl/streaminfo.get",
+      "slug": "status-107-7-thessaloniki",
+      "name": "Status 107.7",
+      "nowplaying_url": "https://loki.mental-media.gr/rpc/statusf1/streaminfo.get",
       "metadata_server": "centovacast"
-    },
-    {
-      "slug": "rock-station-gr-nafplio",
-      "name": "Rock Station GR",
-      "nowplaying_url": "https://shoutcast.k-planet.eu:9898/stats?sid=1&json=1",
-      "history_url": "https://shoutcast.k-planet.eu:9898/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "satradio",
-      "name": "Satradio",
-      "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1370/stats?sid=1&json=1",
-      "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "satradio",
-      "name": "Satradio",
-      "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1370/stats?sid=1&json=1",
-      "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
     },
     {
-      "slug": "simple-radio-attica-athens",
-      "name": "Simple Radio",
-      "nowplaying_url": "https://ice.streams.ovh:1765/status-json.xsl?mount=%2Fstream",
+      "slug": "underground-gr-xanthi",
+      "name": "Underground GR",
+      "nowplaying_url": "https://duthradio.ddns.net:8000/status-json.xsl?mount=%2Fradio.mp3",
       "metadata_server": "icecast"
     },
     {
-      "slug": "skyline-thessaloniki",
-      "name": "SKYLINE THESSALONIKI",
-      "nowplaying_url": "https://a10.asurahosting.com:8140/stats?sid=1&json=1",
-      "history_url": "https://a10.asurahosting.com:8140/played?sid=1&type=json",
+      "slug": "venus-radio",
+      "name": "Venus Radio",
+      "nowplaying_url": "http://s1.onweb.gr:8410/stats?sid=1&json=1",
+      "history_url": "http://s1.onweb.gr:8410/played?sid=1&type=json",
       "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "swu-fm",
-      "name": "SWU FM",
-      "nowplaying_url": "https://admin.stream.rinse.fm/rpc/swu/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "toxotis-fm-western-greece",
-      "name": "Toxotis FM",
-      "nowplaying_url": "https://eco.onestreaming.com/rpc/toxotis/streaminfo.get",
-      "metadata_server": "centovacast"
     },
     {
-      "slug": "viral-102-7-athens",
-      "name": "Viral 102.7",
-      "nowplaying_url": "http://5.104.111.225:8040/stats?sid=1&json=1",
-      "history_url": "http://5.104.111.225:8040/played?sid=1&type=json",
+      "slug": "amfissa",
+      "name": "Άμφισσα",
+      "nowplaying_url": "http://stream3.468.gr:8104/stats?sid=1&json=1",
+      "history_url": "http://stream3.468.gr:8104/played?sid=1&type=json",
       "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "we-radio-89-4-thessaloniki",
-      "name": "We Radio 89.4",
-      "nowplaying_url": "https://radio.1055rock.gr:32667/status-json.xsl?mount=%2Flive",
-      "metadata_server": "icecast"
     },
     {
-      "slug": "fm-91-5-chania-greece",
-      "name": "Δίκτυο FM 91.5",
-      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/diktyofm/streaminfo.get",
+      "slug": "greca-party-pyrgos",
+      "name": "Greca Party",
+      "nowplaying_url": "https://one.cloudstreaming.eu/rpc/party/streaminfo.get",
       "metadata_server": "centovacast"
-    },
-    {
-      "slug": "athens",
-      "name": "Εθνικό Θέατρο",
-      "nowplaying_url": "https://webradio-server.n-t.gr/api/nowplaying/webradio.n-t.gr",
-      "metadata_server": "azuracast"
-    },
-    {
-      "slug": "station-27a54c65",
-      "name": "Ορθοδοξία - Αγία Γραφή",
-      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fradio_el",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "station-b5eed20e",
-      "name": "Ορθοδοξία Άγιος Παϊσιος",
-      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fpss",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "station-8ff2c530",
-      "name": "Ορθοδοξία Μυτηλιναίος",
-      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fmtlns",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "heraclion",
-      "name": "Ορθοδοξία Παναγώπουλος",
-      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fpngpls",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "heraclion",
-      "name": "Ορθοδοξία Σωτηρόπουλος",
-      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fstrpls",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "heraklion-crete",
-      "name": "Ορθοδοξία Ύμνοι",
-      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fymnoi",
-      "metadata_server": "icecast"
     },
     {
-      "slug": "station-fa890617",
-      "name": "Ράδιο Ελληνικά Ακούσματα",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/kviwebradio/streaminfo.get",
+      "slug": "polis-91-1-chalkida-c563dc48",
+      "name": "Polis 91.1 Έντεχνα",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/polisentexnos/streaminfo.get",
       "metadata_server": "centovacast"
     },
     {
-      "slug": "station-6ae2e2dd",
-      "name": "Ράδιο Μάγκας",
-      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/cqbyibwg/streaminfo.get",
+      "slug": "polis-91-1-chalkida-66766c24",
+      "name": "Polis 91.1 Παλιά Λαϊκά",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/polislaikos/streaminfo.get",
       "metadata_server": "centovacast"
     }
   ],
@@ -2257,7 +134,6 @@
     "afn-360-souda-bay-kreta",
     "agrinio-agrinio",
     "agrinio-93-7-agrinio",
-    "aigaio-news-syros",
     "ak-radio",
     "ak-radio-heraclion",
     "akous-80s-athens",
@@ -2403,7 +279,6 @@
     "derti-attiki",
     "derti-105-7-patra",
     "derti-107-7-heraklion-crete",
-    "derti-90-5-larisa",
     "derti-98-6",
     "derti-fm-98-6-attica",
     "derti-radio",
@@ -2504,7 +379,6 @@
     "f-radio-gr-attica",
     "f-radio-gr-deep-lounge-piraeus",
     "fade-radio-athens",
-    "family-89-5-heraclion",
     "fancy-trance-piraeus",
     "fanos-gr",
     "fasma-99-7-patra",
@@ -2608,7 +482,6 @@
     "istiaia-100-4-istiaia",
     "jadore",
     "jadore-c9702714",
-    "jay",
     "jazz-breeze-athens",
     "jazz-cafe-athens",
     "jazz-tune-radio",
@@ -2669,8 +542,6 @@
     "legend-101-6-xanthi",
     "legend-fm-88-6",
     "lemon-88-8-serres",
-    "lemon-radio",
-    "lemon-web-radio",
     "lepanto-nafpaktos",
     "libero-fm-107-4",
     "life-106-3-aridea",
@@ -3172,7 +1043,6 @@
     "scanner-102-2-larisa",
     "scorpios-athens-radio-athens",
     "serra",
-    "setta",
     "seven-news-94-4-kavala",
     "sevi",
     "sfera-attiki",
@@ -3232,7 +1102,6 @@
     "star-radio-athens",
     "star-grevena",
     "star-lamia",
-    "status-107-7-thessaloniki",
     "status-alexandroupolis",
     "stegi-radio-athens-greece",
     "steigi-radio-1-athens",
@@ -3291,7 +1160,6 @@
     "true-story-102-8-ptolemaida",
     "ubm-gr-athens",
     "uncut-gr-chania",
-    "underground-gr-xanthi",
     "uniwa-drm-athens",
     "up-92-9-heraclion",
     "vanilla-radio-deep-flavors",
@@ -3306,7 +1174,6 @@
     "venus-91-chania",
     "venus-fm-105-1-greece",
     "venus-mykonos-athens",
-    "venus-radio",
     "venus-radio-99-3",
     "virus-105-5-xanthi",
     "volos-98-6-volos",
@@ -3350,7 +1217,6 @@
     "98-1-preveza",
     "web-radio",
     "91-2-florina",
-    "amfissa",
     "103-5-korinthos",
     "91-heraclion",
     "92-trikala",
@@ -3674,7 +1540,7 @@
     "08-libero-107-4-fm-thessaloniki-notia-macedonia",
     "102-2-1-chalkida",
     "105fm-mytilini",
-    "2000stafm-corfu",
+    "2000stafm-corfu-77f50e29",
     "22-95-8-culture-channel-thessaloniki-notia-macedonia",
     "23-athens-greece",
     "25-radio-art-rebetika-athens-greece",
@@ -3684,21 +1550,21 @@
     "99fm-radio-1-thessaloniki",
     "action-24-athens",
     "after-pm",
-    "alpha-98-9-athens",
+    "alpha-98-9-athens-4232c4aa",
     "antenna-star-103-5-agrinio",
     "apps-greek-96-6-alexandroupolis",
     "apps-rock-96-6-alexandroupolis",
     "arion-kids-athens",
     "arion-laikos",
     "arion-radio",
-    "arion-radio",
+    "arion-radio-12030c75",
     "arion-athens",
     "athens-rock-96-9",
-    "avanti-107-6-larisa",
+    "avanti-107-6-larisa-c66b2edc",
     "baila-radio",
     "burradio",
     "bwin-fm-94-6-athens-greece",
-    "cafe-102-4-samos",
+    "cafe-102-4-samos-6c435795",
     "captain-radio-com",
     "city-92-livadia",
     "coolradio-attica-athens",
@@ -3708,7 +1574,7 @@
     "diesi-101-3",
     "discomania-athens",
     "dreamer-thessaloniki",
-    "dreamer-thessaloniki",
+    "dreamer-thessaloniki-8378930e",
     "dreamer-thessloniki",
     "easy-80s-athens",
     "easy-90s-athens",
@@ -3737,13 +1603,12 @@
     "gold-2-athens",
     "gold-radio-gr",
     "greca-lounge-pyrgos",
-    "greca-party-pyrgos",
     "greca-pyrgos",
-    "greca-pyrgos",
-    "greca-pyrgos",
-    "greca-pyrgos",
+    "greca-pyrgos-c4ba72f1",
+    "greca-pyrgos-364bedcb",
+    "greca-pyrgos-fe9aa97d",
     "groove-radio-hits",
-    "happy-104-athens",
+    "happy-104-athens-68a322ff",
     "hit-88-9-athens",
     "http-wz0liw-scahw-com-au-live-backyard-bbq-stream-playlist-m3u8",
     "iraklis-radio-thessaloniki",
@@ -3760,7 +1625,7 @@
     "mansta-radio",
     "mega-news-104-6-athens-greece",
     "mega-news-104-6-athens",
-    "menta-88",
+    "menta-88-9a5dbc8a",
     "metalwar",
     "monahiki-diakonia",
     "mondo-bongo-radio",
@@ -3772,21 +1637,19 @@
     "orama-101-7-agrinio",
     "peiraiki-ekklesia-91-2",
     "polis-91-1-chalkida",
-    "polis-91-1-chalkida",
-    "polis-91-1-chalkida",
-    "power-93-2-larisa",
+    "power-93-2-larisa-2824696c",
     "prime-103-7-rhodes",
     "radio-78kai45",
     "radio-akou-athens",
     "radio-ariadni-agrinio",
     "radio-gardenia",
     "radio-meraklis",
-    "radio-music-factory",
+    "radio-music-factory-8859a3fc",
     "radio-must-athens",
     "radio-politia",
     "radio-rebetis-agrinio",
-    "radio-rebetis-agrinio",
-    "radio-rebetis-agrinio",
+    "radio-rebetis-agrinio-3e18b68a",
+    "radio-rebetis-agrinio-39db61a1",
     "radiofonia-cycladon",
     "radiomore",
     "radiopoll",
@@ -3798,7 +1661,7 @@
     "shook-104-4-thessaloniki",
     "sky-radio-epirus",
     "skylos-fm-athens-greece",
-    "studio-19",
+    "studio-19-3baed355",
     "technolocos-deep-web-radio",
     "tiamo-gr",
     "top-fm-102-4-south-aegean",
@@ -3812,7 +1675,7 @@
     "www-cosmos995-gr",
     "z-rock-chalkida",
     "97-1-giannitsa",
-    "100-7-patra",
+    "100-7-patra-a09d796d",
     "fm-103-8-nafplio",
     "101-5-orestiada",
     "101-3-athens",
@@ -3820,16 +1683,16 @@
     "93-2-athens",
     "world-music-athens-greece",
     "station-819f2cad",
-    "94-8-thessaloniki",
-    "chalkida",
+    "94-8-thessaloniki-476a2ada",
+    "chalkida-6e853aa8",
     "106-2-rhodes",
-    "lesvos",
-    "94-2-thessaloniki",
-    "91-4-rhodes",
-    "athens",
-    "athens",
+    "lesvos-dd315f35",
+    "94-2-thessaloniki-c65371aa",
+    "91-4-rhodes-1bd39b12",
+    "athens-b5d641af",
+    "athens-309fad42",
     "90-athens-greece",
-    "99-chalkida",
+    "99-chalkida-0c5f714b",
     "88-3",
     "freedom-athens",
     "106-8-thessaloniki",
@@ -3838,14 +1701,14 @@
     "99-5-athens",
     "103-2-chalkida",
     "1-aliveri",
-    "athens",
+    "athens-0d05da31",
     "station-0fcc408a",
-    "athens",
+    "athens-f223edcf",
     "93-7-agrinio",
     "ballads-athens",
     "dalika-athens",
-    "athens",
+    "athens-456c6d86",
     "station-0230a16a",
-    "101-6-larisa"
+    "101-6-larisa-cdfd4050"
   ]
 }

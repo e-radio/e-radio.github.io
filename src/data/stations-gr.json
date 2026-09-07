@@ -1537,7 +1537,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://europa.shoutca.st:8721/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://europa.shoutca.st:8721/played?sid=1&type=json"
   },
   {
     "slug": "ak-radio",
@@ -3139,8 +3142,8 @@
     "slug": "athens-noise-rocks",
     "stationuuid": "873bc6e5-2632-424c-a044-5b08b9655c19",
     "name": "Athens Noise Rocks",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://radio.athensnoise.rocks/listen/athensnoise.rocks/radio.mp3",
     "homepage": "https://www.athensnoise.rocks/radio/",
     "favicon": "/station-icons/athens-noise-rocks-placeholder.webp",
@@ -3174,7 +3177,7 @@
     "stationuuid": "dc1bec0a-0665-4510-bec6-f33565c783e0",
     "name": "Athens Noise Rocks",
     "state": "Attica",
-    "city": null,
+    "city": "Athens",
     "stream_url": "https://radio.athensnoise.rocks/listen/athensnoise.rocks/radio.mp3",
     "homepage": "https://www.athensnoise.rocks/",
     "favicon": "/station-icons/athens-noise-rocks-attiki-placeholder.webp",
@@ -3200,8 +3203,8 @@
     "slug": "athens-radio-trance",
     "stationuuid": "7e990e80-cf13-493b-9a7d-5cdc7e79fe02",
     "name": "Athens Radio Trance",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://cast.streams.ovh:8008/;",
     "homepage": "https://www.tranceathena.com/",
     "favicon": "/station-icons/athens-radio-trance.webp",
@@ -3272,8 +3275,8 @@
     "slug": "athensnoise-rocks",
     "stationuuid": "420f85b3-b8d0-4132-906e-7bbd64c333f2",
     "name": "Athensnoise.rocks",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://radio.athensnoise.rocks/listen/athensnoise.rocks/radio.mp3",
     "homepage": "https://www.athensnoise.rocks/",
     "favicon": "/station-icons/athensnoise-rocks-placeholder.webp",
@@ -6770,7 +6773,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 39.639045132131045,
-    "geo_long": 22.416679859161377
+    "geo_long": 22.416679859161377,
+    "nowplaying_url": "https://sh.onweb.gr:9050/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:9050/played?sid=1&type=json"
   },
   {
     "slug": "derti-98-6",
@@ -9813,7 +9819,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://193.227.111.111:8002/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://193.227.111.111:8002/played?sid=1&type=json"
   },
   {
     "slug": "fancy-trance-piraeus",
@@ -11409,7 +11418,7 @@
     "name": "Glenti 892",
     "state": "Western Greece",
     "city": "Agrinio",
-    "stream_url": "http://s2.e-resellers.gr:8076/stream",
+    "stream_url": "https://s2.e-resellers.gr/proxy/glenti892/;",
     "homepage": "https://www.glenti892.gr/",
     "favicon": "/station-icons/glenti-892-agrinio-28e218a4.png",
     "genres": [
@@ -12898,7 +12907,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s2.e-resellers.gr:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s2.e-resellers.gr:8000/played?sid=1&type=json"
   },
   {
     "slug": "jazz-breeze-athens",
@@ -14719,7 +14731,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "lemon-web-radio",
@@ -14742,7 +14756,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "lepanto-nafpaktos",
@@ -29441,7 +29457,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.magicstreams.gr:9028/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "seven-news-94-4-kavala",
@@ -31139,7 +31157,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://loki.mental-media.gr/rpc/statusf1/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "status-alexandroupolis",
@@ -32947,7 +32967,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://duthradio.ddns.net:8000/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "uniwa-drm-athens",
@@ -33369,7 +33391,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8410/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8410/played?sid=1&type=json"
   },
   {
     "slug": "venus-radio-99-3",
@@ -34949,7 +34974,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream3.468.gr:8104/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream3.468.gr:8104/played?sid=1&type=json"
   },
   {
     "slug": "103-5-korinthos",
@@ -36011,7 +36039,7 @@
     "name": "Διαχρονικό Ταξίδι",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://i3.streams.ovh:12110/live",
+    "stream_url": "https://i3.streams.ovh:12110/live",
     "homepage": "https://www.diaxronikotaxidi.gr/",
     "favicon": "/station-icons/athens-placeholder.webp",
     "genres": [
@@ -41442,7 +41470,6 @@
     "homepage": "https://www.praktoreiofm.gr/",
     "favicon": "/station-icons/thessaloniki-a013301d-placeholder.webp",
     "genres": [
-      "mna",
       "music",
       "news",
       "talk"
@@ -44539,7 +44566,7 @@
     "metadata_server": "azuracast"
   },
   {
-    "slug": "2000stafm-corfu",
+    "slug": "2000stafm-corfu-77f50e29",
     "stationuuid": "77f50e29-3910-4fe4-9ff4-a9564cce410d",
     "name": "2000staFM",
     "state": "Ionian Islands",
@@ -44590,7 +44617,7 @@
   {
     "slug": "23-athens-greece",
     "stationuuid": "63df793a-5816-451d-ad09-33e30161ad41",
-    "name": "23.\tΠάμε Ρεμπέτικο και Λαϊκό",
+    "name": "23. Πάμε Ρεμπέτικο και Λαϊκό",
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream-177.surfernetwork.com/wqcp8gq67vzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ3cWNwOGdxNjd2enV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiI1QXVXUUVWVlEtbXRmdkdlbGpfS2pRIiwiaWF0IjoxNzgzMjM2Mzk4LCJleHAiOjE3ODMyMzY0NTh9._KLlJ1vaBpYmPNbwc2e6XyHsZ1qjagJUjgbwOoIem18",
@@ -44835,7 +44862,7 @@
     "geo_long": null
   },
   {
-    "slug": "alpha-98-9-athens",
+    "slug": "alpha-98-9-athens-4232c4aa",
     "stationuuid": "4232c4aa-662a-41d1-877f-b8b13635e375",
     "name": "Alpha 98.9",
     "state": "Attica",
@@ -44995,7 +45022,7 @@
     "geo_long": null
   },
   {
-    "slug": "arion-radio",
+    "slug": "arion-radio-12030c75",
     "stationuuid": "12030c75-9560-4d64-b856-00d19eb6da31",
     "name": "ARION RADIO",
     "state": null,
@@ -45062,7 +45089,7 @@
     "geo_long": null
   },
   {
-    "slug": "avanti-107-6-larisa",
+    "slug": "avanti-107-6-larisa-c66b2edc",
     "stationuuid": "c66b2edc-42e9-4fb1-b878-43a0d080c2db",
     "name": "Avanti 107.6",
     "state": "Thessaly",
@@ -45194,7 +45221,7 @@
     "geo_long": null
   },
   {
-    "slug": "cafe-102-4-samos",
+    "slug": "cafe-102-4-samos-6c435795",
     "stationuuid": "6c435795-218c-4388-b23c-bb7459bfda1f",
     "name": "Cafe 102.4",
     "state": "North Aegean",
@@ -45498,7 +45525,7 @@
     "city": "Thessaloniki"
   },
   {
-    "slug": "dreamer-thessaloniki",
+    "slug": "dreamer-thessaloniki-8378930e",
     "stationuuid": "8378930e-32f2-4ff2-b3be-a1c9ad6c2752",
     "name": "DREAMER",
     "state": "Central Macedonia",
@@ -45552,7 +45579,7 @@
     "geo_long": null
   },
   {
-    "slug": "dreamer-thessaloniki",
+    "slug": "dreamer-thessaloniki-9795c59e",
     "stationuuid": "9795c59e-5e49-41d1-87c6-f8f50bba90ca",
     "name": "DREAMER",
     "state": "Central Macedonia",
@@ -46291,7 +46318,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Pyrgos"
+    "city": "Pyrgos",
+    "nowplaying_url": "https://one.cloudstreaming.eu/rpc/party/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greca-pyrgos",
@@ -46317,7 +46346,7 @@
     "city": "Pyrgos"
   },
   {
-    "slug": "greca-pyrgos",
+    "slug": "greca-pyrgos-c4ba72f1",
     "stationuuid": "c4ba72f1-5a1d-4e2a-afb7-c3f3fa3ef4dc",
     "name": "Greca Έντεχνο",
     "state": "Western Greece",
@@ -46340,7 +46369,7 @@
     "city": "Pyrgos"
   },
   {
-    "slug": "greca-pyrgos",
+    "slug": "greca-pyrgos-364bedcb",
     "stationuuid": "364bedcb-4478-413b-ab22-2418936a9355",
     "name": "Greca Ερωτικό",
     "state": "Western Greece",
@@ -46363,7 +46392,7 @@
     "city": "Pyrgos"
   },
   {
-    "slug": "greca-pyrgos",
+    "slug": "greca-pyrgos-fe9aa97d",
     "stationuuid": "fe9aa97d-fa10-412f-ba56-312c695a2bc3",
     "name": "Greca Λαϊκό",
     "state": "Western Greece",
@@ -46432,7 +46461,7 @@
     "geo_long": null
   },
   {
-    "slug": "happy-104-athens",
+    "slug": "happy-104-athens-68a322ff",
     "stationuuid": "68a322ff-d715-40c5-a661-7519856a566b",
     "name": "Happy 104",
     "state": "Attica",
@@ -46930,7 +46959,7 @@
     "geo_long": null
   },
   {
-    "slug": "menta-88",
+    "slug": "menta-88-9a5dbc8a",
     "stationuuid": "9a5dbc8a-6eb6-45ce-828c-634bdf5b364c",
     "name": "Menta 88",
     "state": null,
@@ -47398,7 +47427,7 @@
     "history_url": "https://s6.e-resellers.gr:8092/played?sid=1&type=json"
   },
   {
-    "slug": "polis-91-1-chalkida",
+    "slug": "polis-91-1-chalkida-c563dc48",
     "stationuuid": "c563dc48-484f-43e0-85d9-087bc36d956a",
     "name": "Polis 91.1 Έντεχνα",
     "state": "Central Greece",
@@ -47418,10 +47447,12 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Chalkida"
+    "city": "Chalkida",
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/polisentexnos/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
-    "slug": "polis-91-1-chalkida",
+    "slug": "polis-91-1-chalkida-66766c24",
     "stationuuid": "66766c24-aa84-4321-a93d-46deaf46b8ef",
     "name": "Polis 91.1 Παλιά Λαϊκά",
     "state": "Central Greece",
@@ -47442,10 +47473,12 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Chalkida"
+    "city": "Chalkida",
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/polislaikos/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
-    "slug": "power-93-2-larisa",
+    "slug": "power-93-2-larisa-2824696c",
     "stationuuid": "2824696c-5e3d-48ac-8568-7ececcd2f99a",
     "name": "Power 93.2",
     "state": "Thessaly",
@@ -47758,7 +47791,7 @@
     "metadata_server": "azuracast"
   },
   {
-    "slug": "radio-music-factory",
+    "slug": "radio-music-factory-8859a3fc",
     "stationuuid": "8859a3fc-9d87-45fc-8e7d-35150c97b7d7",
     "name": "Radio Music Factory",
     "state": null,
@@ -47782,8 +47815,8 @@
     "slug": "radio-must-athens",
     "stationuuid": "5b14e0db-3bcc-4a3d-9700-508cfccb5a82",
     "name": "Radio Must Athens",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "http://stream.radiomustathens.com/aacp",
     "homepage": "https://radiomustathens.com/",
     "favicon": "/station-icons/radio-must-athens.webp",
@@ -47918,7 +47951,7 @@
     "city": "Agrinio"
   },
   {
-    "slug": "radio-rebetis-agrinio",
+    "slug": "radio-rebetis-agrinio-3e18b68a",
     "stationuuid": "3e18b68a-a1e6-4422-bc74-61f05a6d7f63",
     "name": "Radio Rebetis",
     "state": "Western Greece",
@@ -47942,7 +47975,7 @@
     "city": "Agrinio"
   },
   {
-    "slug": "radio-rebetis-agrinio",
+    "slug": "radio-rebetis-agrinio-39db61a1",
     "stationuuid": "39db61a1-032c-42f7-806c-bd50828ec86e",
     "name": "Radio Rebetis",
     "state": "Western Greece",
@@ -48218,7 +48251,7 @@
     "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json"
   },
   {
-    "slug": "satradio",
+    "slug": "satradio-0731ecb1",
     "stationuuid": "0731ecb1-a6ea-40ff-a3ce-ce71f878b16c",
     "name": "Satradio",
     "state": null,
@@ -48400,7 +48433,7 @@
     "geo_long": null
   },
   {
-    "slug": "studio-19",
+    "slug": "studio-19-3baed355",
     "stationuuid": "3baed355-d292-49ee-9cfc-70720f057e0f",
     "name": "Studio 19",
     "state": null,
@@ -48757,7 +48790,7 @@
     "slug": "voice-102-5",
     "stationuuid": "e0855f9e-c17f-434d-979a-902df2b2e1d2",
     "name": "Voice 102.5",
-    "state": null,
+    "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream.radiojar.com/u52ufw1qayduv?1777638187",
     "homepage": "https://www.voice1025.gr/",
@@ -48889,7 +48922,7 @@
     "city": "Giannitsa"
   },
   {
-    "slug": "100-7-patra",
+    "slug": "100-7-patra-a09d796d",
     "stationuuid": "a09d796d-14eb-4f80-bc63-22f6a8968f8f",
     "name": "Άνοιξη 100.7",
     "state": "Western Greece",
@@ -49030,7 +49063,7 @@
     "city": "Agrinio"
   },
   {
-    "slug": "athens",
+    "slug": "ethniko-theatro-athens",
     "stationuuid": "b8ec4bb2-8d87-41ad-826e-279f177bd4c8",
     "name": "Εθνικό Θέατρο",
     "state": "Attica",
@@ -49124,7 +49157,7 @@
     "geo_long": null
   },
   {
-    "slug": "94-8-thessaloniki",
+    "slug": "94-8-thessaloniki-476a2ada",
     "stationuuid": "476a2ada-4fa4-4111-a605-01c411e10ba7",
     "name": "Ερωτικός 94.8",
     "state": "Central Macedonia",
@@ -49147,7 +49180,7 @@
     "city": "Thessaloniki"
   },
   {
-    "slug": "chalkida",
+    "slug": "chalkida-6e853aa8",
     "stationuuid": "6e853aa8-5b64-4876-8d2c-cf9d5e7e239d",
     "name": "ΙΕΡΑ ΜΗΤΡΟΠΟΛΗ ΧΑΛΚΙΔΟΣ",
     "state": "Central Greece",
@@ -49191,7 +49224,7 @@
     "city": "Rhodes"
   },
   {
-    "slug": "lesvos",
+    "slug": "lesvos-dd315f35",
     "stationuuid": "dd315f35-ee9f-4ec6-a138-8c539452f7b0",
     "name": "Λόφος",
     "state": "North Aegean",
@@ -49214,7 +49247,7 @@
     "city": "Lesvos"
   },
   {
-    "slug": "94-2-thessaloniki",
+    "slug": "94-2-thessaloniki-c65371aa",
     "stationuuid": "c65371aa-b3c5-45b0-aee8-ec798b84e6cb",
     "name": "Λυδία 94.2",
     "state": "Central Macedonia",
@@ -49238,7 +49271,7 @@
     "city": "Thessaloniki"
   },
   {
-    "slug": "91-4-rhodes",
+    "slug": "91-4-rhodes-1bd39b12",
     "stationuuid": "1bd39b12-3577-4020-8cf9-b2cc4e0f619b",
     "name": "Λυχνάρι 91.4",
     "state": "South Aegean",
@@ -49261,7 +49294,7 @@
     "city": "Rhodes"
   },
   {
-    "slug": "athens",
+    "slug": "athens-b5d641af",
     "stationuuid": "b5d641af-b9e2-44e9-872c-a5726f8af714",
     "name": "Μελωδία Κασέτες",
     "state": "Attica",
@@ -49282,7 +49315,7 @@
     "geo_long": null
   },
   {
-    "slug": "athens",
+    "slug": "athens-309fad42",
     "stationuuid": "309fad42-825b-4f0d-926a-012081ea5454",
     "name": "Μελωδία Τα Μεγάλα Κλασικά",
     "state": "Attica",
@@ -49326,7 +49359,7 @@
     "geo_long": null
   },
   {
-    "slug": "99-chalkida",
+    "slug": "99-chalkida-0c5f714b",
     "stationuuid": "0c5f714b-9582-48f2-adc4-468d3ba65e62",
     "name": "Μπλε 99",
     "state": "Central Greece",
@@ -49524,7 +49557,7 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "heraclion",
+    "slug": "heraclion-52323e46",
     "stationuuid": "52323e46-20ac-4a2e-b54d-ca5f1f7ecb07",
     "name": "Ορθοδοξία Παναγώπουλος",
     "state": "Crete",
@@ -49551,7 +49584,7 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "heraclion",
+    "slug": "heraclion-9f1bc476",
     "stationuuid": "9f1bc476-2b13-4122-a39a-26c03c742c90",
     "name": "Ορθοδοξία Σωτηρόπουλος",
     "state": "Crete",
@@ -49578,7 +49611,7 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "heraklion-crete",
+    "slug": "heraklion-crete-c00c62fc",
     "stationuuid": "c00c62fc-1259-4811-813b-624957da4451",
     "name": "Ορθοδοξία Ύμνοι",
     "state": "Crete",
@@ -49721,7 +49754,7 @@
     "city": "Aliveri"
   },
   {
-    "slug": "athens",
+    "slug": "athens-0d05da31",
     "stationuuid": "0d05da31-7fe2-4643-a0f4-d20c0a80c322",
     "name": "Ράδιο Απτάλικο",
     "state": "Attica",
@@ -49813,7 +49846,7 @@
     "metadata_server": "centovacast"
   },
   {
-    "slug": "athens",
+    "slug": "athens-f223edcf",
     "stationuuid": "f223edcf-6b85-40e5-98e2-3adec1370749",
     "name": "Ρεμπέτικο για λίγους",
     "state": "Attica",
@@ -49906,7 +49939,7 @@
     "geo_long": null
   },
   {
-    "slug": "athens",
+    "slug": "athens-456c6d86",
     "stationuuid": "456c6d86-07d6-4a49-9772-ac98dab234db",
     "name": "Ρυθμός στο Κασετόφωνο",
     "state": "Attica",
@@ -49950,7 +49983,7 @@
     "geo_long": null
   },
   {
-    "slug": "101-6-larisa",
+    "slug": "101-6-larisa-cdfd4050",
     "stationuuid": "cdfd4050-287b-4259-ad1d-d8a6b6413ea2",
     "name": "Σφαίρα Θεσσαλίας 101.6",
     "state": "Thessaly",
