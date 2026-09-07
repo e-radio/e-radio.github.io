@@ -62,7 +62,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://centova.gr-net.gr/rpc/dimitrio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "1-news",
@@ -178,7 +180,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sh.onweb.gr:9110/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sh.onweb.gr:9110/played?sid=1&type=json"
   },
   {
     "slug": "102-2-1-aliveri",
@@ -269,7 +274,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json"
   },
   {
     "slug": "1055-rock-thessaloniki",
@@ -293,7 +301,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 40.60526085001808,
-    "geo_long": 22.959824502468113
+    "geo_long": 22.959824502468113,
+    "nowplaying_url": "https://radio.1055rock.gr:31056/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "1055-rock-thessaloniki-radio2",
@@ -314,7 +324,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json"
   },
   {
     "slug": "1055-rock-thessaloniki-bcc64d4b",
@@ -335,7 +348,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json"
   },
   {
     "slug": "12-gods-cafe-pylos",
@@ -364,7 +380,7 @@
     "name": "1o Ερασιτεχνικό Πρόγραμμα Γαργαλιάνων",
     "state": "Peloponnese",
     "city": "Gargaliani",
-    "stream_url": "http://i2.streams.ovh:7109/stream?type=http&nocache=11373",
+    "stream_url": "http://i2.streams.ovh:7109/stream",
     "homepage": "https://trelostonfm.blogspot.com/",
     "favicon": "/station-icons/1o-gargaliani-placeholder.webp",
     "genres": [
@@ -379,7 +395,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i2.streams.ovh:7109/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i2.streams.ovh:7109/played?sid=1&type=json"
   },
   {
     "slug": "1st-greek-new-age-radio",
@@ -387,8 +406,8 @@
     "name": "1st Greek New Age Radio",
     "state": null,
     "city": null,
-    "stream_url": "https://stream-156.zeno.fm/9yu82xwmdc9uv?zs=kfRTbEsBT1S-LI24kc6lVg",
-    "homepage": "https://zeno.fm/radio/1st-greek-new-age-radio/",
+    "stream_url": "https://stream.newageradio.gr/listen/hq/radio.mp3",
+    "homepage": "https://www.newageradio.gr/",
     "favicon": "/station-icons/1st-greek-new-age-radio.webp",
     "genres": [],
     "language": null,
@@ -400,7 +419,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1-88-8-gargaliani",
@@ -754,7 +775,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://158.69.114.190:8024/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://158.69.114.190:8024/played?sid=1&type=json"
   },
   {
     "slug": "80smania-gr",
@@ -777,7 +801,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/glzzkced/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "87-6-studio-1-corfu",
@@ -802,7 +828,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s3.onweb.gr:8872/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s3.onweb.gr:8872/played?sid=1&type=json"
   },
   {
     "slug": "88-fm-radio-1-rhodes",
@@ -846,7 +875,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://ams-pioneer02.dedicateware.com:1750/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "88-6-kanali-20-kalamata",
@@ -870,7 +901,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server.el1.info:37086/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "88miso-thessaloniki",
@@ -891,7 +924,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/sxxaojkx/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "89-rainbow-christmas-thessaloniki",
@@ -933,7 +968,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sp3.streams.ovh:8089/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sp3.streams.ovh:8089/played?sid=1&type=json"
   },
   {
     "slug": "902-gr",
@@ -1163,7 +1201,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.kncdn.net:7512/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.kncdn.net:7512/played?sid=1&type=json"
   },
   {
     "slug": "a-patras-94-4-patra",
@@ -1275,28 +1316,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "abdulbasit-abdulsamad",
-    "stationuuid": "e9af978d-8da9-48e1-a349-9f48ea2b3c7f",
-    "name": "Abdulbasit Abdulsamad",
-    "state": null,
-    "city": null,
-    "stream_url": "https://radio.mp3islam.com/listen/abdulbasit/radio.mp3",
-    "homepage": "https://mp3islam.com/",
-    "favicon": "/station-icons/abdulbasit-abdulsamad-placeholder.webp",
-    "genres": [],
-    "language": "arabic",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 4,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://195.154.217.103:8069/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://195.154.217.103:8069/played?sid=1&type=json"
   },
   {
     "slug": "acropol-1242",
@@ -1342,7 +1365,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/jkzjmwru/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "action-radio-98-2",
@@ -1368,7 +1393,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 38.002655740556705,
-    "geo_long": 23.73939514160157
+    "geo_long": 23.73939514160157,
+    "nowplaying_url": "http://solid1.streamupsolutions.com:11026/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "adelin-107-3-kythira",
@@ -1414,7 +1441,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sh.onweb.gr:7000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7000/played?sid=1&type=json"
   },
   {
     "slug": "afn-360-souda-bay-kreta",
@@ -1777,7 +1807,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sc2.streamwithq.com:8016/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sc2.streamwithq.com:8016/played?sid=1&type=json"
   },
   {
     "slug": "aktina-104-7-corfu-175c64bb",
@@ -2195,7 +2228,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.innviweb.com:9030/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.innviweb.com:9030/played?sid=1&type=json"
   },
   {
     "slug": "amore-87-5-chania",
@@ -2244,7 +2280,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ice.streams.ovh:1195/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "andromeda-essential-mix",
@@ -2312,7 +2350,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/vqdawvmf/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "angel-102-8-karditsa",
@@ -2337,7 +2377,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s5.onweb.gr:8502/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s5.onweb.gr:8502/played?sid=1&type=json"
   },
   {
     "slug": "anoixi-100-7",
@@ -2438,7 +2481,7 @@
     "name": "Antena Aegina",
     "state": null,
     "city": null,
-    "stream_url": "http://i3.streams.ovh:12043/autodj",
+    "stream_url": "https://i3.streams.ovh:12043/autodj",
     "homepage": "https://www.antenaaegina.com/",
     "favicon": "/station-icons/antena-aegina.webp",
     "genres": [
@@ -2454,7 +2497,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i3.streams.ovh:12043/status-json.xsl?mount=%2Fautodj",
+    "metadata_server": "icecast"
   },
   {
     "slug": "antenna-94-grevena",
@@ -2624,7 +2669,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/aquadisco80s/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "aquarius-pyrgos",
@@ -2836,7 +2883,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.streamings.gr/rpc/artyradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "asteras-92-andros",
@@ -2859,7 +2908,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast4.magicstreams.gr:12108/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://cast4.magicstreams.gr:12108/played?sid=1&type=json"
   },
   {
     "slug": "astra-93-2-lesvos",
@@ -2884,7 +2936,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8554/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8554/played?sid=1&type=json"
   },
   {
     "slug": "astra-97-3-volos",
@@ -3075,7 +3130,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mmr.yourstreaming.gr:9300/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mmr.yourstreaming.gr:9300/played?sid=1&type=json"
   },
   {
     "slug": "athens-noise-rocks",
@@ -3106,7 +3164,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks"
   },
   {
     "slug": "athens-noise-rocks-attiki",
@@ -3130,7 +3191,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks"
   },
   {
     "slug": "athens-radio-trance",
@@ -3154,7 +3218,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast.streams.ovh:8008/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://cast.streams.ovh:8008/played?sid=1&type=json"
   },
   {
     "slug": "athens-rock-96-9-athens",
@@ -3220,7 +3287,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks"
   },
   {
     "slug": "athina-984-attiki",
@@ -3444,7 +3514,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid24.streamupsolutions.com:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://solid24.streamupsolutions.com:8010/played?sid=1&type=json"
   },
   {
     "slug": "bar-legend-radio-larisa",
@@ -3469,7 +3542,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 39.638544182137466,
-    "geo_long": 22.416298985481266
+    "geo_long": 22.416298985481266,
+    "nowplaying_url": "https://solid24.streamupsolutions.com/rpc/nilxzqeg/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "baraza-radio",
@@ -3538,7 +3613,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid55.streamupsolutions.com:30013/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://solid55.streamupsolutions.com:30013/played?sid=1&type=json"
   },
   {
     "slug": "berock-radio-b3b5204f",
@@ -3561,7 +3639,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid55.streamupsolutions.com:30013/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://solid55.streamupsolutions.com:30013/played?sid=1&type=json"
   },
   {
     "slug": "best-103-1-rhodes",
@@ -3663,7 +3744,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://i2.streams.ovh:9470/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://i2.streams.ovh:9470/played?sid=1&type=json"
   },
   {
     "slug": "best-97-3-kalamata",
@@ -3687,7 +3771,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.best973.gr/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.best973.gr/played?sid=1&type=json",
+    "metadata_direct": true
   },
   {
     "slug": "best-radio",
@@ -3775,7 +3863,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://i2.streams.ovh:9470/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://i2.streams.ovh:9470/played?sid=1&type=json"
   },
   {
     "slug": "beton7-art-athens",
@@ -3863,7 +3954,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/qcnwnozj/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "ble-thessaloniki",
@@ -3887,7 +3980,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream1",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ble-92-5",
@@ -3929,7 +4024,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream1",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ble-93-1-thessaloniki",
@@ -3971,7 +4068,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8004/status-json.xsl?mount=%2Fstream3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ble-93-3-kozani-48d768e9",
@@ -3992,7 +4091,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ble-93-3-kozani-824fe4a0",
@@ -4036,7 +4137,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8004/status-json.xsl?mount=%2Fstream1",
+    "metadata_server": "icecast"
   },
   {
     "slug": "blu-lounge-radio",
@@ -4171,7 +4274,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sip.blueradio.gr:8033/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sip.blueradio.gr:8033/played?sid=1&type=json"
   },
   {
     "slug": "blue-space",
@@ -4239,7 +4345,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blues-radio-2cc1fd64",
@@ -4283,7 +4392,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blues-radio-athens-b9e1f76e",
@@ -4306,7 +4418,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blues-radio-alternative-athens",
@@ -4348,7 +4463,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i4.streams.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i4.streams.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blues-radio-greece-athens",
@@ -4371,7 +4489,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blues-radio-greece",
@@ -4392,7 +4513,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i4.streams.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i4.streams.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blues-radio-greece-ce7e3407",
@@ -4415,7 +4539,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json"
   },
   {
     "slug": "blueswave-radio-attiki",
@@ -4438,7 +4565,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.997,
-    "geo_long": 23.715
+    "geo_long": 23.715,
+    "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+    "metadata_server": "icecast"
   },
   {
     "slug": "blueswave-radio",
@@ -4461,7 +4590,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.997,
-    "geo_long": 23.715
+    "geo_long": 23.715,
+    "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+    "metadata_server": "icecast"
   },
   {
     "slug": "blueswave-radio-4ee8e52f",
@@ -4484,7 +4615,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.997,
-    "geo_long": 23.715
+    "geo_long": 23.715,
+    "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+    "metadata_server": "icecast"
   },
   {
     "slug": "blueswave-radio-f56d5e78",
@@ -4505,7 +4638,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://blueswave.radio:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://blueswave.radio:8000/played?sid=1&type=json"
   },
   {
     "slug": "blueswave-radio-attiki-31fc7950",
@@ -4529,7 +4665,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.99744582873541,
-    "geo_long": 23.718339800834656
+    "geo_long": 23.718339800834656,
+    "nowplaying_url": "https://blueswave.radio:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://blueswave.radio:8000/played?sid=1&type=json"
   },
   {
     "slug": "blueswave-radio-attiki-3bd46a05",
@@ -4552,7 +4691,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.997,
-    "geo_long": 23.715
+    "geo_long": 23.715,
+    "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Fhifiblues",
+    "metadata_server": "icecast"
   },
   {
     "slug": "blueswave-radio-10010d86",
@@ -4575,7 +4716,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.997,
-    "geo_long": 23.715
+    "geo_long": 23.715,
+    "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+    "metadata_server": "icecast"
   },
   {
     "slug": "bobos-family-athens",
@@ -4722,7 +4865,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://proradio.gr:8004/status-json.xsl?mount=%2Fbrake",
+    "metadata_server": "icecast"
   },
   {
     "slug": "bravo-89-6-zakynthos",
@@ -4862,7 +5007,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:59354/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "capital-107-kavala",
@@ -4883,7 +5030,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://neos.win:59350/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "capital-90-7",
@@ -4956,7 +5105,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s5.onweb.gr:8488/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s5.onweb.gr:8488/played?sid=1&type=json"
   },
   {
     "slug": "cavo-paradiso-mykonos",
@@ -4982,7 +5134,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s5.onweb.gr:8488/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s5.onweb.gr:8488/played?sid=1&type=json"
   },
   {
     "slug": "central-103-3-rethimno",
@@ -5053,7 +5208,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s4.onweb.gr:8434/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s4.onweb.gr:8434/played?sid=1&type=json"
   },
   {
     "slug": "chania-rock-fm-96-8-chania",
@@ -5076,7 +5234,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/alaqatab/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "chill-fm-gr",
@@ -5201,7 +5361,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eu1.fastcast4u.com:9326/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eu1.fastcast4u.com:9326/played?sid=1&type=json"
   },
   {
     "slug": "chroma-105-8-thessaloniki",
@@ -5267,7 +5430,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/cityfm/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "city-102-8-katerini",
@@ -5316,7 +5481,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server.el1.info:37027/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "city-106-1",
@@ -5408,7 +5575,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8012/status-json.xsl?mount=%2Fstream5",
+    "metadata_server": "icecast"
   },
   {
     "slug": "city-of-primo-106-1-thessaloniki",
@@ -5433,7 +5602,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.lancom.gr:8014/status-json.xsl?mount=%2Fstream6",
+    "metadata_server": "icecast"
   },
   {
     "slug": "classic-love-97-5-athens-greece",
@@ -5509,7 +5680,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://fra-pioneer01.dedicateware.com:1090/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "club-fm-gr-thessaloniki",
@@ -5582,7 +5755,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/teqgebwz/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "comfuzio-24-athens",
@@ -5707,7 +5882,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sh.onweb.gr:7083/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7083/played?sid=1&type=json"
   },
   {
     "slug": "cosmoradio-95-1-thessaloniki",
@@ -5731,7 +5909,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8689/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8689/played?sid=1&type=json"
   },
   {
     "slug": "cosmos-103-8-katerini",
@@ -5805,7 +5986,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://neos.win:59320/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "cosmos-97-1-drama",
@@ -5829,7 +6012,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:59710/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast",
+    "history_url": "https://rdst.win:59710/status.xsl?mount=%2Fstream"
   },
   {
     "slug": "cosmos-99-5-karditsa",
@@ -5918,7 +6104,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ccradio.ellak.gr/api/nowplaying/gfoss_ccradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "creta-fans-crete",
@@ -5981,7 +6169,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everest.streams.ovh:1145/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "creta-tv-crete",
@@ -6023,7 +6213,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everest.streams.ovh:1145/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "crystal-athens",
@@ -6118,7 +6310,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://176.31.118.39:13980/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://176.31.118.39:13980/played?sid=1&type=json"
   },
   {
     "slug": "d-code-96-2",
@@ -6304,7 +6499,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://usa2-vn.mixstream.net:8018/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://usa2-vn.mixstream.net:8018/played?sid=1&type=json"
   },
   {
     "slug": "deejay-97-5",
@@ -6330,7 +6528,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s4.onweb.gr:8470/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s4.onweb.gr:8470/played?sid=1&type=json"
   },
   {
     "slug": "deejay-97-5-greece-corfu",
@@ -6354,7 +6555,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sh.onweb.gr:7083/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7083/played?sid=1&type=json"
   },
   {
     "slug": "deejay-radio-97-5-fm-corfu-greece",
@@ -6377,7 +6581,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s4.onweb.gr:8470/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s4.onweb.gr:8470/played?sid=1&type=json"
   },
   {
     "slug": "deep-web-radio-trikala",
@@ -6442,7 +6649,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s10.streamingcloud.online:13686/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "derti-attiki",
@@ -6535,7 +6744,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i5.streams.ovh:14008/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i5.streams.ovh:14008/played?sid=1&type=json"
   },
   {
     "slug": "derti-90-5-larisa",
@@ -6691,7 +6903,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ec4.yesstreaming.net:2090/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "diathesh",
@@ -6846,7 +7060,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/discocafe",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "disco-net-athens",
@@ -6923,7 +7139,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://divafm.yourstreaming.gr:9996/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://divafm.yourstreaming.gr:9996/played?sid=1&type=json"
   },
   {
     "slug": "diva-91-6-kozani",
@@ -6948,7 +7167,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://176.31.120.166:6404/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://176.31.120.166:6404/played?sid=1&type=json"
   },
   {
     "slug": "diva-fm",
@@ -6969,7 +7191,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://176.31.120.166:6404/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://176.31.120.166:6404/played?sid=1&type=json"
   },
   {
     "slug": "diva-fm-106-1-greece",
@@ -7011,7 +7236,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:48140/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dmst",
@@ -7123,7 +7350,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid41.streamupsolutions.com/rpc/jhhzdwjo/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "dream-city",
@@ -7146,7 +7375,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.streams.ovh:9362/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.streams.ovh:9362/played?sid=1&type=json"
   },
   {
     "slug": "dream-fm-90-7",
@@ -7214,7 +7446,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast.streams.ovh:9362/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://cast.streams.ovh:9362/played?sid=1&type=json"
   },
   {
     "slug": "dreamcity-d6188b08",
@@ -7237,7 +7472,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.streams.ovh:9362/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.streams.ovh:9362/played?sid=1&type=json"
   },
   {
     "slug": "drs-95-3",
@@ -7327,7 +7565,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.radiohost.ovh:9035/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.radiohost.ovh:9035/played?sid=1&type=json"
   },
   {
     "slug": "easy-attiki",
@@ -7375,7 +7616,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s4.onweb.gr:8076/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s4.onweb.gr:8076/played?sid=1&type=json"
   },
   {
     "slug": "easy-93-2-chania",
@@ -7467,7 +7711,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 39.5531789878667,
-    "geo_long": 21.767100580466273
+    "geo_long": 21.767100580466273,
+    "nowplaying_url": "https://sh.onweb.gr:7073/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7073/played?sid=1&type=json"
   },
   {
     "slug": "easy-fm-972",
@@ -7604,7 +7851,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sc.cast-control.eu:8054/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sc.cast-control.eu:8054/played?sid=1&type=json"
   },
   {
     "slug": "ekfrasi",
@@ -7880,7 +8130,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.91300095212903,
-    "geo_long": 23.695523439866967
+    "geo_long": 23.695523439866967,
+    "nowplaying_url": "http://ellinadikofm.gr:8020/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://ellinadikofm.gr:8020/played?sid=1&type=json"
   },
   {
     "slug": "ellinikos-90-3",
@@ -7901,7 +8154,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://live.sugarweb.gr/status-json.xsl?mount=%2F903.aac",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ellinikos-93-2-athens",
@@ -7991,7 +8246,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radioemerson",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "energy-101-5-ioannina",
@@ -8035,7 +8292,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 38.47480874111792,
-    "geo_long": 22.25113099839674
+    "geo_long": 22.25113099839674,
+    "nowplaying_url": "http://s1.onweb.gr:8412/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8412/played?sid=1&type=json"
   },
   {
     "slug": "energy-88-9-drama",
@@ -8059,7 +8319,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://casty.youmix.gr/api/nowplaying/energyradio889",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "energy-94-2-agrinio",
@@ -8104,7 +8366,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/energy",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "entasi-radio-93-5",
@@ -8125,7 +8389,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json"
   },
   {
     "slug": "entropia-thessaloniki",
@@ -8146,7 +8413,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.hostchefs.net/rpc/entropiaradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "envy",
@@ -8215,7 +8484,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "epiloges-kilkis",
@@ -9317,7 +9588,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast4.magicstreams.gr:10155/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast4.magicstreams.gr:10155/played?sid=1&type=json"
   },
   {
     "slug": "eurofans-radio",
@@ -9342,7 +9616,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.hostchefs.net/rpc/eurofansradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "european-school-radio",
@@ -9388,7 +9664,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://hyades.shoutca.st:8570/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://hyades.shoutca.st:8570/played?sid=1&type=json"
   },
   {
     "slug": "evripos-90fm",
@@ -9409,7 +9688,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://hyades.shoutca.st:8570/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://hyades.shoutca.st:8570/played?sid=1&type=json"
   },
   {
     "slug": "f-radio-gr-attica",
@@ -9504,7 +9786,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://88.198.70.25:8477/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://88.198.70.25:8477/played?sid=1&type=json"
   },
   {
     "slug": "family-89-5-heraclion",
@@ -9591,7 +9876,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "fasma-99-7-patra",
@@ -9776,7 +10063,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.anim8.gr:1290/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "fly-104",
@@ -9797,7 +10086,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://imagine2.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://imagine2.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "fly-104-48faa3f4",
@@ -9820,7 +10112,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 40.636761002335504,
-    "geo_long": 22.95146942138672
+    "geo_long": 22.95146942138672,
+    "nowplaying_url": "https://imagine2.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://imagine2.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "fly-95-9-rethimno",
@@ -9866,7 +10161,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8602/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8602/played?sid=1&type=json"
   },
   {
     "slug": "fly-sparti",
@@ -10007,7 +10305,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s3.onweb.gr:8014/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s3.onweb.gr:8014/played?sid=1&type=json"
   },
   {
     "slug": "focus-99-6-kalamata",
@@ -10195,7 +10496,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://192.99.14.191:8004/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://192.99.14.191:8004/played?sid=1&type=json"
   },
   {
     "slug": "free-central-greece-trikala",
@@ -10219,7 +10523,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sh.onweb.gr:8634/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sh.onweb.gr:8634/played?sid=1&type=json"
   },
   {
     "slug": "free-gr-kalamata",
@@ -10242,7 +10549,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://63.141.244.222:59540/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://63.141.244.222:59540/played?sid=1&type=json"
   },
   {
     "slug": "free-radio",
@@ -10284,7 +10594,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://aphrodite.freespirits.gr/api/nowplaying/freespirits_radio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "fresh-105-chania",
@@ -10380,7 +10692,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/bfwxkhir/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "freshradio-thessaloniki",
@@ -10446,7 +10760,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1685/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "g92-attiki",
@@ -11152,7 +11468,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://ice.greekstream.net/status-json.xsl?mount=%2Fgnomi",
+    "metadata_server": "icecast"
   },
   {
     "slug": "goal-105-1-xanthi",
@@ -11333,7 +11651,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://usa2.fastcast4u.com:3684/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://usa2.fastcast4u.com:3684/played?sid=1&type=json"
   },
   {
     "slug": "greek-otaku-radio-2f217384",
@@ -11354,7 +11675,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://usa2.fastcast4u.com/rpc/greekota/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "greek-weather-radio-athens",
@@ -11610,7 +11933,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid67.streamupsolutions.com:15037/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://solid67.streamupsolutions.com:15037/played?sid=1&type=json"
   },
   {
     "slug": "hero-attica",
@@ -11683,7 +12009,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/smzyynlm/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "hit-eclectic",
@@ -11729,7 +12057,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/zvbgdllc/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "hit-radio",
@@ -11753,7 +12083,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid2.streamupsolutions.com:24952/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hit-radio-greece",
@@ -11848,7 +12180,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream3.proradio.gr/api/nowplaying/hook",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "hot-fm-104-6-greece-athens",
@@ -12058,7 +12392,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.streamings.gr:8027/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ianos-radio-thessaloniki",
@@ -12082,7 +12418,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.streamings.gr/rpc/feelmusic2021/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "if-radio",
@@ -12172,7 +12510,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://imagine897.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://imagine897.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "imagine-897-thessaloniki-gr-thessaloniki",
@@ -12220,7 +12561,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://imagine897.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://imagine897.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "imera-fm-90-4",
@@ -12241,7 +12585,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://molonotiradio.gr:8000/status-json.xsl?mount=%2Fmolonoti-radio-stream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "in-kefalonia-89-2-kefalonia",
@@ -12356,7 +12702,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream3.proradio.gr/api/nowplaying/ionion",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "island-88-6-zakynthos",
@@ -12450,7 +12798,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://jacksonspalace.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://jacksonspalace.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "jackson-palace-d49fdaa4",
@@ -12477,7 +12828,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://jacksonspalace.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://jacksonspalace.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "jadore",
@@ -12632,7 +12986,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "jockey-radio",
@@ -12653,7 +13009,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "just-93-chalkida",
@@ -12856,7 +13214,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.gr/api/nowplaying/kasetaradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "kasseta-athens",
@@ -12951,7 +13311,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.katerinigas.gr:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radio.katerinigas.gr:8000/played?sid=1&type=json"
   },
   {
     "slug": "kavala-news-kavala",
@@ -13022,7 +13385,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.streams.ovh:12097/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.streams.ovh:12097/played?sid=1&type=json"
   },
   {
     "slug": "kiis-95-8-corfu",
@@ -13066,7 +13432,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streams.enjoyfm.gr:48502/status-json.xsl?mount=%2Fkiis.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kiis-extra-93-8-korinthos",
@@ -13090,7 +13458,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.kiisextra.gr:48500/status-json.xsl?mount=%2Fkiis.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kiss-100-4-karditsa",
@@ -13297,7 +13667,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s6.onweb.gr:7029/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://s6.onweb.gr:7029/played?sid=1&type=json"
   },
   {
     "slug": "kiss-98-thessaly",
@@ -13322,7 +13695,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s6.onweb.gr:7029/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://s6.onweb.gr:7029/played?sid=1&type=json"
   },
   {
     "slug": "kiss-fm-100-4",
@@ -13441,7 +13817,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8550/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8550/played?sid=1&type=json"
   },
   {
     "slug": "kissmas-athens",
@@ -13506,7 +13885,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://everest.streams.ovh:1170/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "koinoniko-radiofono-xaniwn",
@@ -13555,7 +13936,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.streamings.gr/rpc/kokkinos2023/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "korinthos-korinthos",
@@ -13589,7 +13972,7 @@
     "name": "Korinthos 105.6",
     "state": "Peloponnese",
     "city": "Korinthos",
-    "stream_url": "http://cast.radiohost.ovh:9004/stream?1501748611584.mp3",
+    "stream_url": "https://cast.radiohost.ovh:9004/stream",
     "homepage": "https://www.radiokorinthos.gr/",
     "favicon": "/station-icons/korinthos-105-6-korinthos.webp",
     "genres": [
@@ -13818,7 +14201,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s3.onweb.gr:8878/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s3.onweb.gr:8878/played?sid=1&type=json"
   },
   {
     "slug": "kritikos-88-7",
@@ -13863,7 +14249,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "kyparissia-93-6-kyparissia",
@@ -14120,7 +14508,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "lampsi-fm-92-3",
@@ -14141,7 +14531,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "lampsi-gr-lesvos",
@@ -14494,7 +14886,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.limnosfm100.gr:9998/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radio.limnosfm100.gr:9998/played?sid=1&type=json"
   },
   {
     "slug": "liquid-fm-attika",
@@ -14642,7 +15037,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast.iplayradio.net/api/nowplaying/locoradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "loop",
@@ -14667,7 +15064,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "loop-695d1d91",
@@ -14692,7 +15091,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "loud-88-8-trikala",
@@ -14716,7 +15117,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s3.onweb.gr:8888/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s3.onweb.gr:8888/played?sid=1&type=json"
   },
   {
     "slug": "loutraki-87-5-korinthos",
@@ -14739,7 +15143,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s3.onweb.gr:8472/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s3.onweb.gr:8472/played?sid=1&type=json"
   },
   {
     "slug": "love-102-8-heraclion",
@@ -14787,7 +15194,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server.insms.gr:45104/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server.insms.gr:45104/played?sid=1&type=json"
   },
   {
     "slug": "love-88-2-lesvos",
@@ -14811,7 +15221,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid1.streamupsolutions.com:24929/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "love-classic-athens",
@@ -15020,7 +15432,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserver.mad.tv/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mad-radio-106-2-fm",
@@ -15041,7 +15455,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserver.mad.tv/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "madness-95-ierapetra",
@@ -15088,7 +15504,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/magiafm1047/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "magic-102-4-sitia",
@@ -15182,7 +15600,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://comet.shoutca.st:8366/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://comet.shoutca.st:8366/played?sid=1&type=json"
   },
   {
     "slug": "mancode-radio",
@@ -15250,7 +15671,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i5.streams.ovh:14123/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mansta-radio-thessaloniki",
@@ -15461,7 +15884,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid9.streamupsolutions.com:8066/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://solid9.streamupsolutions.com:8066/played?sid=1&type=json"
   },
   {
     "slug": "max-93-4-patra",
@@ -15704,7 +16130,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu4.fastcast4u.com/rpc/jlwmwogj/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "melody-music-volos",
@@ -15906,7 +16334,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://10203.cloudrad.io:9024/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://10203.cloudrad.io:9024/played?sid=1&type=json"
   },
   {
     "slug": "metal-city-radio",
@@ -15927,7 +16358,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i6.streams.ovh:16036/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i6.streams.ovh:16036/played?sid=1&type=json"
   },
   {
     "slug": "metal-lab",
@@ -15975,7 +16409,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://neos.win:48282/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "metalradio-gr",
@@ -16019,7 +16455,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://neos.win:48282/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "metro-90-3-lamia",
@@ -16113,7 +16551,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://srv.radiocaster.gr:9300/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://srv.radiocaster.gr:9300/played?sid=1&type=json"
   },
   {
     "slug": "metro-radio-heraclion",
@@ -16136,7 +16577,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.crete.ovh:8443/status-json.xsl?mount=%2Fmetro",
+    "metadata_server": "icecast"
   },
   {
     "slug": "metropolis-macedonia",
@@ -16273,7 +16716,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8092/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8092/played?sid=1&type=json"
   },
   {
     "slug": "mikel-radio-athens",
@@ -16317,7 +16763,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.hostchefs.net:8046/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "minima",
@@ -16340,7 +16788,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://62.171.166.54:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://62.171.166.54:8010/played?sid=1&type=json"
   },
   {
     "slug": "miniwatt-1125-athens",
@@ -16545,7 +16996,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://molonotiradio.gr:8000/status-json.xsl?mount=%2Fmolonoti-radio-stream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "monkey-bros-thessaloniki",
@@ -16591,7 +17044,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://198.7.59.28:10034/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://198.7.59.28:10034/played?sid=1&type=json"
   },
   {
     "slug": "more-103-9-alexandroupolis",
@@ -16781,7 +17237,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everestcast.streams.ovh:1940/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mousiradio",
@@ -17051,7 +17509,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "music-club-105-8-heraclion",
@@ -17161,7 +17621,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.musicfactory.gr:9000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radio.musicfactory.gr:9000/played?sid=1&type=json"
   },
   {
     "slug": "music-life-95-1-agrinio",
@@ -17182,7 +17645,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://neos.win:9501/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://neos.win:9501/played?sid=1&type=json"
   },
   {
     "slug": "music-radio-gr",
@@ -17340,7 +17806,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "musicartclub-thessaloniki-1ac2e8a4",
@@ -17361,7 +17829,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "musicartclub-radio",
@@ -17384,7 +17854,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eu9.fastcast4u.com:8090/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eu9.fastcast4u.com:8090/played?sid=1&type=json"
   },
   {
     "slug": "must-athens",
@@ -17781,7 +18254,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:59178/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "nice-radio",
@@ -17966,7 +18441,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/evllufwn/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "notos-news-97-8-rhodes",
@@ -18144,7 +18621,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i4.streams.ovh:8078/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i4.streams.ovh:8078/played?sid=1&type=json"
   },
   {
     "slug": "nrg-91-larisa",
@@ -18192,7 +18672,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:9240/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:9240/played?sid=1&type=json"
   },
   {
     "slug": "nrg-95-chalkida",
@@ -18262,7 +18745,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8412/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8412/played?sid=1&type=json"
   },
   {
     "slug": "oasis-fm-gr",
@@ -18307,7 +18793,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:2315/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "off-radio-athens-athens",
@@ -18456,7 +18944,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www.gointernet.gr:8034/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www.gointernet.gr:8034/played?sid=1&type=json"
   },
   {
     "slug": "ok-web-radio-kilkis",
@@ -18570,7 +19061,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streamer.stordia.net/api/nowplaying/olympos",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "olytsikas",
@@ -18643,7 +19136,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast4.magicstreams.gr:10316/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast4.magicstreams.gr:10316/played?sid=1&type=json"
   },
   {
     "slug": "opa",
@@ -18668,7 +19164,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu3.fastcast4u.com/rpc/opar/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "orange-88-3-kavala",
@@ -18789,7 +19287,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://i8.streams.ovh:18039/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "paidaki-97-5-thessaloniki",
@@ -18810,7 +19310,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "paidaki-97-5-thessaloniki-aa160835",
@@ -18852,7 +19355,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 40.64605318337046,
-    "geo_long": 22.94151306152344
+    "geo_long": 22.94151306152344,
+    "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "palace-91-4-larisa",
@@ -18902,7 +19408,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8010/played?sid=1&type=json"
   },
   {
     "slug": "palmos-103-2",
@@ -19126,7 +19635,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://live.onweb.gr:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://live.onweb.gr:8010/played?sid=1&type=json"
   },
   {
     "slug": "palmos-radio-102-7-fm",
@@ -19147,7 +19659,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8010/played?sid=1&type=json"
   },
   {
     "slug": "panic-93-7-ierapetra",
@@ -19171,7 +19686,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/club937/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "panikos",
@@ -19197,7 +19714,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://toradio.cc:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://toradio.cc:8010/played?sid=1&type=json"
   },
   {
     "slug": "paradise-101-6-poros",
@@ -19425,7 +19945,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8824/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8824/played?sid=1&type=json"
   },
   {
     "slug": "party-vibe-radio-dubstep",
@@ -19446,7 +19969,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://94.130.242.5:8040/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://94.130.242.5:8040/played?sid=1&type=json"
   },
   {
     "slug": "pathos-radio",
@@ -19475,7 +20001,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://dione.shoutca.st:8628/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://dione.shoutca.st:8628/played?sid=1&type=json"
   },
   {
     "slug": "peiratikos-fm",
@@ -19847,7 +20376,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8058/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8058/played?sid=1&type=json"
   },
   {
     "slug": "play-gold",
@@ -19918,7 +20450,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8222/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8222/played?sid=1&type=json"
   },
   {
     "slug": "play-radio-patra-7dfaa6c2",
@@ -20006,7 +20541,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8039/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8039/played?sid=1&type=json"
   },
   {
     "slug": "plus-radio-macedonia",
@@ -20032,7 +20570,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8039/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8039/played?sid=1&type=json"
   },
   {
     "slug": "point-radio-thessaloniki",
@@ -20056,7 +20597,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.streamings.gr:8029/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "point-radio-thessaloniki-9754dd31",
@@ -20081,7 +20624,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.streamings.gr:8029/status-json.xsl?mount=%2Fstream2",
+    "metadata_server": "icecast"
   },
   {
     "slug": "polis-100-serres",
@@ -20134,7 +20679,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8334/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8334/played?sid=1&type=json"
   },
   {
     "slug": "polisview-athens",
@@ -20205,7 +20753,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8422/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8422/played?sid=1&type=json"
   },
   {
     "slug": "power-100-2-volos",
@@ -20230,7 +20781,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8854/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8854/played?sid=1&type=json"
   },
   {
     "slug": "power-90-2-katerini",
@@ -20254,7 +20808,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/powerkaterini/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "power-92-3-arta",
@@ -20302,7 +20858,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediacp.32bit.gr:8002/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediacp.32bit.gr:8002/played?sid=1&type=json"
   },
   {
     "slug": "praktorio-f-m-thessaloniki",
@@ -20424,7 +20983,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s20.myradiostream.com:6738/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s20.myradiostream.com:6738/played?sid=1&type=json"
   },
   {
     "slug": "prisma-91-8-sifnos",
@@ -20448,7 +21010,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8414/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8414/played?sid=1&type=json"
   },
   {
     "slug": "prisma-preveza",
@@ -20593,7 +21158,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.magicstreams.gr:9125/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.magicstreams.gr:9125/played?sid=1&type=json"
   },
   {
     "slug": "psyndora-psytrance-hellas",
@@ -20601,7 +21169,7 @@
     "name": "Psyndora Psytrance",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://cast.magicstreams.gr:9111/stream",
+    "stream_url": "https://cast.magicstreams.gr:9111/stream",
     "homepage": "https://www.psyndora.com/",
     "favicon": "/station-icons/psyndora-psytrance-hellas.png",
     "genres": [
@@ -20620,7 +21188,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.magicstreams.gr:9111/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.magicstreams.gr:9111/played?sid=1&type=json"
   },
   {
     "slug": "psyndora-psytrance",
@@ -20683,7 +21254,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rs-pulsar.doomdns.org:8443/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "purple-athens",
@@ -20751,7 +21324,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s4.myradiostream.com:14374/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s4.myradiostream.com:14374/played?sid=1&type=json"
   },
   {
     "slug": "queen-greek-radio-athens",
@@ -20864,7 +21440,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://solid33.streamupsolutions.com:30000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://solid33.streamupsolutions.com:30000/played?sid=1&type=json"
   },
   {
     "slug": "radio-9-thessaloniki",
@@ -20887,7 +21466,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/gygasbfj/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-90-4-thessaloniki",
@@ -21068,7 +21649,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://168.119.74.185:9008/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-apollon-athens",
@@ -25708,7 +26291,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://62.38.241.82:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://62.38.241.82:8000/played?sid=1&type=json"
   },
   {
     "slug": "radio-cafe",
@@ -25847,7 +26433,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://168.119.74.185:9888/status-json.xsl?mount=%2Fautodj",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-evia-104-1-fm",
@@ -25966,7 +26554,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/tfcgioyq/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-galilea",
@@ -25987,7 +26577,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8446/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8446/played?sid=1&type=json"
   },
   {
     "slug": "radio-gold-net-athens",
@@ -26148,7 +26741,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-lady",
@@ -26241,7 +26836,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s2.onweb.gr:8044/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s2.onweb.gr:8044/played?sid=1&type=json"
   },
   {
     "slug": "radio-martino",
@@ -26267,7 +26865,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-megalonisos",
@@ -26361,7 +26961,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8034/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8034/played?sid=1&type=json"
   },
   {
     "slug": "radio-mires-97-1-1ad467e4",
@@ -26447,7 +27050,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 38.0091482264894,
-    "geo_long": 23.746261596679688
+    "geo_long": 23.746261596679688,
+    "nowplaying_url": "http://cast5.magicstreams.gr:8041/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast5.magicstreams.gr:8041/played?sid=1&type=json"
   },
   {
     "slug": "radio-nostalgia",
@@ -26473,7 +27079,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json"
   },
   {
     "slug": "radio-nostalgia-gr",
@@ -26496,7 +27105,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json"
   },
   {
     "slug": "radio-nowhere",
@@ -26542,7 +27154,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eu4.fastcast4u.com/rpc/nikoud00/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-paris-athens",
@@ -26650,7 +27264,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8058/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8058/played?sid=1&type=json"
   },
   {
     "slug": "radio-play-91-5-fm-stereo-gr-xanthi",
@@ -26671,7 +27288,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s6.onweb.gr:7026/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://s6.onweb.gr:7026/played?sid=1&type=json"
   },
   {
     "slug": "r-dio-p-lis-99-4",
@@ -26692,7 +27312,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sh.onweb.gr:7060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7060/played?sid=1&type=json"
   },
   {
     "slug": "radio-sfakia",
@@ -26713,7 +27336,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1215/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-stournareika-92-5-fm-stereo-trikala-greece",
@@ -26778,7 +27403,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast.serverps.gr/rpc/radioasteria/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-technis",
@@ -26846,7 +27473,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.streamings.gr/rpc/radioyellow/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-rizitis-crete-chania-kissamos",
@@ -27069,7 +27698,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radiomak-athens",
@@ -27202,7 +27833,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://thanasis.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://thanasis.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "rainbow-89-thessaloniki",
@@ -27350,7 +27984,7 @@
     "name": "Real FM 97.8",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://netradio.live24.gr/realfm",
+    "stream_url": "https://netradio.live24.gr/realfm",
     "homepage": "https://www.real.gr/",
     "favicon": "/station-icons/real-fm-97-8-athens-greece.png",
     "genres": [],
@@ -27756,7 +28390,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/zcpyirtp/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "rizes",
@@ -27874,7 +28510,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "rock-angels",
@@ -27897,7 +28535,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "rock-angels-radio",
@@ -27918,7 +28558,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "rock-club-classic-rock",
@@ -27967,7 +28609,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.9744515616818,
-    "geo_long": 23.733386993408207
+    "geo_long": 23.733386993408207,
+    "nowplaying_url": "https://az10.yesstreaming.net:8060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://az10.yesstreaming.net:8060/played?sid=1&type=json"
   },
   {
     "slug": "rock-hard-greece",
@@ -28103,7 +28748,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://live.rockmelodic-radio.com:8124/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://live.rockmelodic-radio.com:8124/played?sid=1&type=json"
   },
   {
     "slug": "rock-radio-station-rrs-athens",
@@ -28173,7 +28821,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid2.streamupsolutions.com/rpc/msoepowo/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "rockha-radio-athens",
@@ -28523,7 +29173,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json"
   },
   {
     "slug": "s-fresh-91-2-d5a65430",
@@ -28544,7 +29197,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json"
   },
   {
     "slug": "s-fresh-91-2-67076765",
@@ -28565,7 +29221,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json"
   },
   {
     "slug": "samothraki-web-radio-samothraki",
@@ -28589,7 +29248,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/samothraki/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "sampotaz",
@@ -28660,7 +29321,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/santorini1/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "santorini-jazz-radio-santorini",
@@ -29106,7 +29769,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8012/played?sid=1&type=json"
   },
   {
     "slug": "shook-thessaloniki",
@@ -29227,7 +29893,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/lqomhdjk/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "sin-radio",
@@ -29575,7 +30243,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cressida.shoutca.st:9158/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cressida.shoutca.st:9158/played?sid=1&type=json"
   },
   {
     "slug": "sky-99-2-ioannina",
@@ -29717,7 +30388,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/slam/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "smart-104-5-heraclion",
@@ -29765,7 +30438,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/smokradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "smooth-jazz-111-athens",
@@ -29810,7 +30485,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/lrazisyb/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "sohos-88-7-thessaloniki",
@@ -30011,7 +30688,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast4.magicstreams.gr:10149/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast4.magicstreams.gr:10149/played?sid=1&type=json"
   },
   {
     "slug": "splash-online-thessaloniki",
@@ -30228,7 +30908,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://casty.youmix.gr/api/nowplaying/starfm935",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "star-95-3-volos",
@@ -30273,7 +30955,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://centova.gr-net.gr/rpc/radiostar955/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "star-97-7-chania",
@@ -30297,7 +30981,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/vkpzhens/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "star-classic-radio-gr-thessaloniki",
@@ -30498,7 +31184,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/statusradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "stegi-radio-athens-greece",
@@ -30939,7 +31627,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu8.fastcast4u.com/rpc/s254/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "studio-545",
@@ -30960,7 +31650,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/studio_545",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "studio-a13-pyrgos",
@@ -31078,7 +31770,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast6.asurahosting.com/rpc/radiosky/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "styl-104-9-athens",
@@ -31168,7 +31862,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s9.webradio-hosting.com/rpc/suburbiaparties/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "super-104-1-korinthos",
@@ -31216,7 +31912,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://casty.youmix.gr/api/nowplaying/superfm898",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "super-90-4-heraclion",
@@ -31263,7 +31961,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 40.58866663610191,
-    "geo_long": 22.965100407600403
+    "geo_long": 22.965100407600403,
+    "nowplaying_url": "http://ice.greekstream.net/status-json.xsl?mount=%2Fsuperfm",
+    "metadata_server": "icecast"
   },
   {
     "slug": "super-fm-chania-crete",
@@ -31310,7 +32010,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fsuperfm",
+    "metadata_server": "icecast"
   },
   {
     "slug": "super-star-gr",
@@ -31400,7 +32102,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sh.onweb.gr:8816/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sh.onweb.gr:8816/played?sid=1&type=json"
   },
   {
     "slug": "syzefxi-web-radio-athens",
@@ -31630,7 +32335,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://noc.ezhellas.com:30580/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://noc.ezhellas.com:30580/played?sid=1&type=json"
   },
   {
     "slug": "thira-radio-santorini",
@@ -31699,7 +32407,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8010/played?sid=1&type=json"
   },
   {
     "slug": "ti-amo-greek-athens",
@@ -31770,7 +32481,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/rmjbkagy/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "tivoli-thessaloniki",
@@ -31791,7 +32504,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.streamings.gr/rpc/yellownewstream/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "to-pikap-thessaloniki",
@@ -31875,7 +32590,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ec5.yesstreaming.net:1245/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "top-102-4-rhodes",
@@ -31947,7 +32664,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sc2.streamwithq.com:8086/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sc2.streamwithq.com:8086/played?sid=1&type=json"
   },
   {
     "slug": "top-93-patra",
@@ -32040,7 +32760,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.streams.ovh:8008/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.streams.ovh:8008/played?sid=1&type=json"
   },
   {
     "slug": "trance-athena-radio-athens",
@@ -32154,7 +32877,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/monaytgo/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "ubm-gr-athens",
@@ -32342,7 +33067,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://smooth.vanillaradio.com:8032/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "vanilla-radio-com-fresh-flavours-stream",
@@ -32365,7 +33092,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://fresh.vanillaradio.com:8028/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "velvet-96-8",
@@ -32386,7 +33115,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s10.voscast.com:9942/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s10.voscast.com:9942/played?sid=1&type=json"
   },
   {
     "slug": "velvet-96-8-a97c49ec",
@@ -32682,7 +33414,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream3.proradio.gr/api/nowplaying/vipradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "vips-radio-athens-athens",
@@ -32707,7 +33441,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.gr/api/nowplaying/vipsradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "virus-105-5-xanthi",
@@ -32755,7 +33491,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s3.onweb.gr:8030/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s3.onweb.gr:8030/played?sid=1&type=json"
   },
   {
     "slug": "viva-fm-95-3-kozani",
@@ -32782,7 +33521,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s17.myradiostream.com:8742/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s17.myradiostream.com:8742/played?sid=1&type=json"
   },
   {
     "slug": "volos-98-6-volos",
@@ -32857,7 +33599,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json"
   },
   {
     "slug": "volosrtv-volos",
@@ -32880,7 +33625,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 39.35702961620431,
-    "geo_long": 22.97494988873726
+    "geo_long": 22.97494988873726,
+    "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json"
   },
   {
     "slug": "wave-fm-97-4",
@@ -32999,7 +33747,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sip.wildradio.gr:8037/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sip.wildradio.gr:8037/played?sid=1&type=json"
   },
   {
     "slug": "wit-radio",
@@ -33045,7 +33796,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast.radiohost.ovh:8850/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.radiohost.ovh:8850/played?sid=1&type=json"
   },
   {
     "slug": "x-radio-91-3-livadia",
@@ -33071,7 +33825,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
+    "metadata_server": "icecast"
   },
   {
     "slug": "xalastra-web-radio-thessaloniki",
@@ -33092,7 +33848,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuralive.streams.ovh/api/nowplaying/xalastraradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "xanthi-dee-jay-94-6-xanthi",
@@ -33140,7 +33898,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/zizthduh/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "xilia-diamantia",
@@ -33253,7 +34013,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fyellow",
+    "metadata_server": "icecast"
   },
   {
     "slug": "yes-91-2-patra",
@@ -33277,7 +34039,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json"
   },
   {
     "slug": "yolo-102-1-thiva",
@@ -33326,7 +34091,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8880/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "zarpa-news",
@@ -33515,7 +34282,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s10.voscast.com:9940/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s10.voscast.com:9940/played?sid=1&type=json"
   },
   {
     "slug": "zucca",
@@ -33581,7 +34351,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://fra-pioneer01.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "102-trikala-greece",
@@ -33758,7 +34530,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8552/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8552/played?sid=1&type=json"
   },
   {
     "slug": "104-3-fm",
@@ -33781,7 +34556,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu1.fastcast4u.com/rpc/afreeapo/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "thessaloniki",
@@ -33831,7 +34608,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8066/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8066/played?sid=1&type=json"
   },
   {
     "slug": "95-5-korinthos",
@@ -33879,7 +34659,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://proxima.shoutca.st:9012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://proxima.shoutca.st:9012/played?sid=1&type=json"
   },
   {
     "slug": "105-8",
@@ -34568,7 +35351,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu8.fastcast4u.com/rpc/chaniaradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "gr",
@@ -34589,7 +35374,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/xbygwcwv/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "eton7art-athens",
@@ -34764,7 +35551,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s2.onweb.gr:8446/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s2.onweb.gr:8446/played?sid=1&type=json"
   },
   {
     "slug": "patra",
@@ -34813,7 +35603,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/vlerkait/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "101-1-xanthi",
@@ -34905,7 +35697,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fgnomi",
+    "metadata_server": "icecast"
   },
   {
     "slug": "103-fm-volos",
@@ -34957,7 +35751,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://81.171.10.41:1088/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://81.171.10.41:1088/played?sid=1&type=json"
   },
   {
     "slug": "93-6-larisa",
@@ -35081,7 +35878,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sc2.streamwithq.com:8028/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sc2.streamwithq.com:8028/played?sid=1&type=json"
   },
   {
     "slug": "station-8bb62103",
@@ -35154,7 +35954,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://rdst.win:7060/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "fm-99-2",
@@ -35175,7 +35977,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.03777670662248,
-    "geo_long": 22.112560272216797
+    "geo_long": 22.112560272216797,
+    "nowplaying_url": "https://server.el1.info:37060/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "agios-nikolaos",
@@ -35270,7 +36074,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eu1.fastcast4u.com:3688/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eu1.fastcast4u.com:3688/played?sid=1&type=json"
   },
   {
     "slug": "105-6-korinthos",
@@ -35582,7 +36389,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/elladafm/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "102-fm",
@@ -35723,7 +36532,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 39.07887061851236,
-    "geo_long": 22.363902032375336
+    "geo_long": 22.363902032375336,
+    "nowplaying_url": "http://live.ellinikos.gr:8010/status-json.xsl?mount=%2F903.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "90-3-livadia-3ad1a11e",
@@ -35748,7 +36559,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://live.ellinikos.gr:8010/status-json.xsl?mount=%2F903.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "93-2-athens-greece",
@@ -36008,7 +36821,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json"
   },
   {
     "slug": "92-5-heraclion",
@@ -36705,7 +37521,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www.gointernet.gr:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www.gointernet.gr:8012/played?sid=1&type=json"
   },
   {
     "slug": "94-5-volos",
@@ -36726,7 +37545,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://www.gointernet.gr:9034/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://www.gointernet.gr:9034/played?sid=1&type=json"
   },
   {
     "slug": "96-5-volos",
@@ -36751,7 +37573,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://www.gointernet.gr:9012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://www.gointernet.gr:9012/played?sid=1&type=json"
   },
   {
     "slug": "trikala",
@@ -36848,7 +37673,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:59450/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "100-8-karditsa",
@@ -36872,7 +37699,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sp2.streams.ovh:8084/stats?sid=1&json=1",
+    "metadata_server": "shoutcast"
   },
   {
     "slug": "106-6-larisa",
@@ -36895,7 +37724,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sp2.streams.ovh:8104/stats?sid=1&json=1",
+    "metadata_server": "shoutcast"
   },
   {
     "slug": "98-1-argolida",
@@ -36966,7 +37797,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8280/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8280/played?sid=1&type=json"
   },
   {
     "slug": "station-a8456b46",
@@ -37010,7 +37844,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i.streams.ovh:9391/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i.streams.ovh:9391/played?sid=1&type=json"
   },
   {
     "slug": "102-1-evros",
@@ -37058,7 +37895,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.themapatras.gr/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "103-1-heraklion-crete",
@@ -37153,7 +37992,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8010/played?sid=1&type=json"
   },
   {
     "slug": "96-3-larisa",
@@ -37457,7 +38299,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i.streams.ovh:9566/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i.streams.ovh:9566/played?sid=1&type=json"
   },
   {
     "slug": "95-4-syros",
@@ -37481,7 +38326,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sh.onweb.gr:8852/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sh.onweb.gr:8852/played?sid=1&type=json"
   },
   {
     "slug": "volos-ab862554",
@@ -38035,7 +38883,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://everest.streams.ovh:1310/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "station-3e64ce47",
@@ -38061,7 +38911,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i2.streams.ovh:7017/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i2.streams.ovh:7017/played?sid=1&type=json"
   },
   {
     "slug": "100-6-lamia",
@@ -38227,7 +39080,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sonic.streams.ovh:9870/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://sonic.streams.ovh:9870/played?sid=1&type=json"
   },
   {
     "slug": "fm-1-lamia",
@@ -38325,7 +39181,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8036/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8036/played?sid=1&type=json"
   },
   {
     "slug": "92-3-ierapetra",
@@ -38490,7 +39349,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streaming.sbzsystems.com/rpc/fm00/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "94-2-thessaloniki",
@@ -38797,7 +39658,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.streamings.gr/rpc/melodia1024/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "106-6-heraclion",
@@ -39061,7 +39924,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8034/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8034/played?sid=1&type=json"
   },
   {
     "slug": "96-nafpaktos",
@@ -39232,7 +40098,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://everestcast.streams.ovh:1940/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "94-5-sparti",
@@ -39299,7 +40167,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cast5.magicstreams.gr:8041/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast5.magicstreams.gr:8041/played?sid=1&type=json"
   },
   {
     "slug": "95-4-nea-styra",
@@ -39416,7 +40287,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json"
   },
   {
     "slug": "96-athens",
@@ -39654,7 +40528,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.streamings.gr/rpc/orfeasradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "89-3-chania",
@@ -39910,7 +40786,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://sp2.streams.ovh:8104/stats?sid=1&json=1",
+    "metadata_server": "shoutcast"
   },
   {
     "slug": "fm-90-1-athens",
@@ -40006,7 +40884,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8020/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8020/played?sid=1&type=json"
   },
   {
     "slug": "98-5-paros",
@@ -40156,7 +41037,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.gr/api/nowplaying/paulosvasileioulive",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1-piraeus",
@@ -40317,7 +41200,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:59412/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "93-4-volos",
@@ -40365,7 +41250,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rpieria.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://rpieria.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "station-bc1610dc",
@@ -40434,7 +41322,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s2.e-resellers.gr:8020/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s2.e-resellers.gr:8020/played?sid=1&type=json"
   },
   {
     "slug": "99-4-larisa-6ee57039",
@@ -40455,7 +41346,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sh.onweb.gr:7060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7060/played?sid=1&type=json"
   },
   {
     "slug": "sparti",
@@ -40633,7 +41527,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://62.103.31.151:8000/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "99-karditsa",
@@ -40724,7 +41620,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "95-4-syros-de3c16f9",
@@ -40754,7 +41652,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s2.onweb.gr:8852/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s2.onweb.gr:8852/played?sid=1&type=json"
   },
   {
     "slug": "1-chalkida",
@@ -40968,7 +41869,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://a8.asurahosting.com:6770/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://a8.asurahosting.com:6770/played?sid=1&type=json"
   },
   {
     "slug": "mt",
@@ -41204,7 +42108,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "95-5-chania-greece",
@@ -41350,7 +42256,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1215/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "korinthos",
@@ -41375,7 +42283,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s1.onweb.gr:8828/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s1.onweb.gr:8828/played?sid=1&type=json"
   },
   {
     "slug": "102-6-rethimno",
@@ -41469,7 +42380,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8103/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8103/played?sid=1&type=json"
   },
   {
     "slug": "101-3-naxos",
@@ -41715,7 +42629,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s4.onweb.gr:8892/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s4.onweb.gr:8892/played?sid=1&type=json"
   },
   {
     "slug": "94-3-zakynthos",
@@ -41740,7 +42657,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8217/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8217/played?sid=1&type=json"
   },
   {
     "slug": "94-5-rhodes",
@@ -41885,7 +42805,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://24streams.gr:8088/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://24streams.gr:8088/played?sid=1&type=json"
   },
   {
     "slug": "94-9-patra",
@@ -42178,7 +43101,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.streamings.gr:8043/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kalambaka",
@@ -42227,7 +43152,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s7.myradiostream.com:10432/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://s7.myradiostream.com:10432/played?sid=1&type=json"
   },
   {
     "slug": "97-6-zakynthos",
@@ -42458,7 +43386,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rdst.win:37777/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "99-thasos",
@@ -42503,7 +43433,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://media.streambrothers.com:8552/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "heraklion-crete",
@@ -42618,7 +43550,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.iplayradio.net/rpc/taminaikiradiofonia/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "drama",
@@ -42667,7 +43601,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://eco.onestreaming.com:8240/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://eco.onestreaming.com:8240/played?sid=1&type=json"
   },
   {
     "slug": "100-3-thessaloniki",
@@ -42718,7 +43655,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s6.onweb.gr:8004/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s6.onweb.gr:8004/played?sid=1&type=json"
   },
   {
     "slug": "kythira",
@@ -43413,7 +44353,9 @@
     "ssl_error": 0,
     "geo_lat": 40.62562725126365,
     "geo_long": 22.959730606686445,
-    "city": "Thessaloniki"
+    "city": "Thessaloniki",
+    "nowplaying_url": "https://www.1431am.org:8001/status-json.xsl?mount=%2F1431high",
+    "metadata_server": "icecast"
   },
   {
     "slug": "1st-greek-hits-flac-non-stop-radio-athens-greece",
@@ -43443,7 +44385,9 @@
     "ssl_error": 0,
     "geo_lat": 37.9736396484529,
     "geo_long": 23.733386993408207,
-    "city": "Athens"
+    "city": "Athens",
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1st-greek-hits-flac-radio-lossless-athens-greece",
@@ -43472,7 +44416,9 @@
     "ssl_error": 0,
     "geo_lat": 37.94318218965711,
     "geo_long": 23.722229003906257,
-    "city": "Nea Smyrni"
+    "city": "Nea Smyrni",
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1st-greek-hits-radio-mp3-athens-greece",
@@ -43501,7 +44447,9 @@
     "ssl_error": 0,
     "geo_lat": 37.972223007512994,
     "geo_long": 23.729438781738285,
-    "city": "Athens"
+    "city": "Athens",
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1st-greek-new-age-flac-radio-attiki",
@@ -43524,7 +44472,9 @@
     "ssl_error": 0,
     "geo_lat": 37.921518877949914,
     "geo_long": 23.744201660156257,
-    "city": "Alimos"
+    "city": "Alimos",
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1st-greek-new-age-flac-radio-flac-stream-attica-athens",
@@ -43558,7 +44508,9 @@
     "ssl_error": 0,
     "geo_lat": 37.91616976538008,
     "geo_long": 23.768920898437504,
-    "city": "Argyroupoli"
+    "city": "Argyroupoli",
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "1st-greek-new-age-flac-radio-aac-320kbps-attica-athens",
@@ -43579,7 +44531,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "2000stafm-corfu",
@@ -43759,7 +44713,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json"
   },
   {
     "slug": "905rock-larisa",
@@ -43780,7 +44737,10 @@
     "ssl_error": 0,
     "geo_lat": 39.64076365238007,
     "geo_long": 22.421054894256827,
-    "city": "Larissa"
+    "city": "Larissa",
+    "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json"
   },
   {
     "slug": "99fm-radio-1-thessaloniki",
@@ -43846,7 +44806,9 @@
     "ssl_error": 0,
     "geo_lat": 37.39416407012379,
     "geo_long": 21.972656250000004,
-    "city": "Neda"
+    "city": "Neda",
+    "nowplaying_url": "https://a9.asurahosting.com/api/nowplaying/aegean_vibes",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "after-pm",
@@ -44079,7 +45041,7 @@
     "name": "Athens Rock 96.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n03a-eu.rcs.revma.com/sm9b1svehkcwv?rj-ttl=5&rj-tok=AAABnRxstscALCtwiZerZ3718g",
+    "stream_url": "https://stream.rcs.revma.com/sm9b1svehkcwv",
     "homepage": "https://www.atticaradios.gr/",
     "favicon": "/station-icons/athens-rock-96-9.webp",
     "genres": [
@@ -44136,7 +45098,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_old_school",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "baila-radio",
@@ -44178,7 +45142,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Drama"
+    "city": "Drama",
+    "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fdiavlos93",
+    "metadata_server": "icecast"
   },
   {
     "slug": "burradio",
@@ -44382,7 +45348,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://dancewave.online/status-json.xsl?mount=%2Fdance.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "deejay-95-7",
@@ -44424,7 +45392,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s1.viastreaming.net:8525/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://s1.viastreaming.net:8525/played?sid=1&type=json"
   },
   {
     "slug": "derti-web-radio-larisa",
@@ -44445,7 +45416,10 @@
     "ssl_error": 0,
     "geo_lat": 39.6372182549014,
     "geo_long": 22.425956856399825,
-    "city": "Larissa"
+    "city": "Larissa",
+    "nowplaying_url": "https://sh.onweb.gr:9050/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:9050/played?sid=1&type=json"
   },
   {
     "slug": "diesi-101-3",
@@ -44599,7 +45573,9 @@
     "ssl_error": 0,
     "geo_lat": 40.429805789077754,
     "geo_long": 23.03245604038239,
-    "city": "Thessaloniki"
+    "city": "Thessaloniki",
+    "nowplaying_url": "https://cast1.asurahosting.com/rpc/ermis/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "easy-80s-athens",
@@ -44607,7 +45583,7 @@
     "name": "Easy 80s",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n32a-eu.rcs.revma.com/wvt5ty5r4a0uv?rj-ttl=5&rj-tok=AAABnRyLl80AVJHYnMSEDODixA",
+    "stream_url": "https://n32a-eu.rcs.revma.com/wvt5ty5r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-80s-athens.webp",
     "genres": [
@@ -44631,7 +45607,7 @@
     "name": "Easy 90s",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n02a-eu.rcs.revma.com/qhx9z05r4a0uv?rj-ttl=5&rj-tok=AAABnSFRnI0Af8LBaTRQQYvwhw",
+    "stream_url": "https://n02a-eu.rcs.revma.com/qhx9z05r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-90s-athens.webp",
     "genres": [
@@ -44655,7 +45631,7 @@
     "name": "Easy Chill",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n23a-eu.rcs.revma.com/qzzyq25r4a0uv?rj-ttl=5&rj-tok=AAABnSFlqbcAYnB2Hy7gBDYntg",
+    "stream_url": "https://n23a-eu.rcs.revma.com/qzzyq25r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-chill-athens.webp",
     "genres": [
@@ -44678,7 +45654,7 @@
     "name": "Easy Classic",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n21a-eu.rcs.revma.com/y318r45r4a0uv?rj-ttl=5&rj-tok=AAABnRyYndQAXLB03IDeWAV6Ww",
+    "stream_url": "https://n21a-eu.rcs.revma.com/y318r45r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-classic-athens.webp",
     "genres": [
@@ -44701,7 +45677,7 @@
     "name": "Easy Love",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n38a-eu.rcs.revma.com/bptnk55r4a0uv?rj-ttl=5&rj-tok=AAABnSFc6w8A1ss5-tQkut_jyA",
+    "stream_url": "https://n38a-eu.rcs.revma.com/bptnk55r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-love-athens.webp",
     "genres": [
@@ -44824,7 +45800,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/wvsivbgn/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "en-lefko-87-7-attica",
@@ -44832,7 +45810,7 @@
     "name": "En Lefko 87.7",
     "state": "Attica",
     "city": null,
-    "stream_url": "https://n12a-eu.rcs.revma.com/trm75ret4c3vv?rj-ttl=5&rj-tok=AAABnHLBW28A7OTR3a298An3Yg",
+    "stream_url": "https://n12a-eu.rcs.revma.com/trm75ret4c3vv",
     "homepage": "https://www.enlefko.fm/",
     "favicon": "/station-icons/en-lefko-87-7-attica.webp",
     "genres": [],
@@ -44981,7 +45959,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/flykriti/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "fm-100-thessaloniki",
@@ -45143,7 +46123,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/wpgqrttp/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "fystiki-95-8",
@@ -45419,7 +46401,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s4.voscast.com:8899/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "groove-radio-hits",
@@ -45488,7 +46472,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Alexandroupolis"
+    "city": "Alexandroupolis",
+    "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/neukptkl/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "hit-88-9-athens",
@@ -45496,7 +46482,7 @@
     "name": "HiT 88.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n10a-eu.rcs.revma.com/e4661aft4c3vv?rj-ttl=5&rj-tok=AAABnRbVaDAA1aczyKJ3F05MOw",
+    "stream_url": "https://n10a-eu.rcs.revma.com/e4661aft4c3vv",
     "homepage": "https://www.hit889.gr/",
     "favicon": "/station-icons/hit-88-9-athens.webp",
     "genres": [
@@ -45687,7 +46673,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mcr.streams.gr:10340/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mcr.streams.gr:10340/played?sid=1&type=json"
   },
   {
     "slug": "laikofono-gr",
@@ -45750,7 +46739,10 @@
     "ssl_error": 0,
     "geo_lat": 39.63923932816319,
     "geo_long": 22.42606599113883,
-    "city": "Larissa"
+    "city": "Larissa",
+    "nowplaying_url": "https://a6.asurahosting.com:7030/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://a6.asurahosting.com:7030/played?sid=1&type=json"
   },
   {
     "slug": "laterna",
@@ -45773,7 +46765,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://laterna.kafeneio.social:8000/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "lelevose",
@@ -45984,7 +46978,10 @@
     "ssl_error": 0,
     "geo_lat": 37.90606638253806,
     "geo_long": 23.770678439866973,
-    "city": "Glyfada"
+    "city": "Glyfada",
+    "nowplaying_url": "http://cast.metalourgio.com:8427/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cast.metalourgio.com:8427/played?sid=1&type=json"
   },
   {
     "slug": "metalwar",
@@ -46165,7 +47162,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Thessaloniki"
+    "city": "Thessaloniki",
+    "nowplaying_url": "http://mcr.streams.gr:10200/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mcr.streams.gr:10200/played?sid=1&type=json"
   },
   {
     "slug": "my-radio-gr-athens",
@@ -46189,7 +47189,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://visual.shoutca.st:8616/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "nauagos-net",
@@ -46244,7 +47246,9 @@
     "ssl_error": 0,
     "geo_lat": 37.04294479348542,
     "geo_long": 22.116245627403263,
-    "city": "Leika"
+    "city": "Leika",
+    "nowplaying_url": "https://nt00.xyz/api/nowplaying/escape_the_algorithm",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "orama-101-7-agrinio",
@@ -46289,7 +47293,10 @@
     "ssl_error": 0,
     "geo_lat": 39.636527735977666,
     "geo_long": 22.42317430021516,
-    "city": "Larissa"
+    "city": "Larissa",
+    "nowplaying_url": "https://sh.onweb.gr:7024/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://sh.onweb.gr:7024/played?sid=1&type=json"
   },
   {
     "slug": "peiraiki-ekklesia-91-2",
@@ -46357,7 +47364,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Chalkida"
+    "city": "Chalkida",
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/poliskids/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "polis-91-1-hip-hop-chalkida",
@@ -46380,7 +47389,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Chalkida"
+    "city": "Chalkida",
+    "nowplaying_url": "https://s6.e-resellers.gr:8092/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://s6.e-resellers.gr:8092/played?sid=1&type=json"
   },
   {
     "slug": "polis-91-1-chalkida",
@@ -46561,7 +47573,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://neos.win:59454/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-gardenia",
@@ -46608,7 +47622,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu10.fastcast4u.com:15360/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://eu10.fastcast4u.com:15360/played?sid=1&type=json"
   },
   {
     "slug": "radio-kos-98-fm",
@@ -46634,7 +47651,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Kos"
+    "city": "Kos",
+    "nowplaying_url": "https://play.streams.gr:22082/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-locomotiva-athens-greece",
@@ -46657,7 +47676,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://whsh4u-panel.com/rpc/zukqpfqm/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-meraklis",
@@ -46706,7 +47727,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Agrinio"
+    "city": "Agrinio",
+    "nowplaying_url": "https://meraklis.ddnsfree.com:8443/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-mpoufalo",
@@ -46727,7 +47750,9 @@
     "ssl_error": 0,
     "geo_lat": 38.30070108345191,
     "geo_long": 24.11859512329102,
-    "city": "Kymi"
+    "city": "Kymi",
+    "nowplaying_url": "https://a1.my-control-panel.com/api/nowplaying/minas",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-music-factory",
@@ -46790,7 +47815,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream13.shoutcastsolutions.com/rpc/bntailia/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-pieria-104-2-fm",
@@ -46811,7 +47838,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rpieria.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://rpieria.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "radio-politia",
@@ -46856,7 +47886,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rebetis.duckdns.org:8545/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-rebetis-agrinio",
@@ -47012,7 +48044,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://live.radiq.gr/api/nowplaying/radiq",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "razordino-radio",
@@ -47033,7 +48067,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/olrbkxdl/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "real-classic-athens",
@@ -47064,7 +48100,7 @@
     "name": "Red 80s",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n05a-eu.rcs.revma.com/40uryq80ubuvv?rj-ttl=5&rj-tok=AAABnOjqRgEAESnKWr05BOFxAg&_=477903",
+    "stream_url": "https://n05a-eu.rcs.revma.com/40uryq80ubuvv",
     "homepage": "https://www.redfm.gr/",
     "favicon": "/station-icons/red-80s-athens.webp",
     "genres": [
@@ -47126,7 +48162,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://shoutcast.k-planet.eu:9898/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://shoutcast.k-planet.eu:9898/played?sid=1&type=json"
   },
   {
     "slug": "rock-velvet",
@@ -47170,7 +48209,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1370/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json"
   },
   {
     "slug": "satradio",
@@ -47191,7 +48233,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1370/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json"
   },
   {
     "slug": "schitul-buna-vestire-muntele-athos",
@@ -47260,7 +48305,9 @@
     "ssl_error": 0,
     "geo_lat": 37.9534023478249,
     "geo_long": 23.57666015625,
-    "city": "Perama"
+    "city": "Perama",
+    "nowplaying_url": "https://ice.streams.ovh:1765/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "sky-radio-epirus",
@@ -47321,7 +48368,10 @@
     "ssl_error": 0,
     "geo_lat": 40.62661903515333,
     "geo_long": 22.948457300663,
-    "city": "Thessaloniki"
+    "city": "Thessaloniki",
+    "nowplaying_url": "https://a10.asurahosting.com:8140/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://a10.asurahosting.com:8140/played?sid=1&type=json"
   },
   {
     "slug": "skylos-fm-athens-greece",
@@ -47388,7 +48438,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://admin.stream.rinse.fm/rpc/swu/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "technolocos-deep-web-radio",
@@ -47484,7 +48536,9 @@
     "ssl_error": 0,
     "geo_lat": 40.63846257839823,
     "geo_long": 22.38792166261973,
-    "city": "Nisi"
+    "city": "Nisi",
+    "nowplaying_url": "https://eco.onestreaming.com/rpc/toxotis/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "tracksaudio-com-80s-music",
@@ -47505,7 +48559,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_80s_music",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "tracksaudio-com-chill-house-music",
@@ -47526,7 +48582,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_chill_house_music",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "up-radio",
@@ -47547,7 +48605,9 @@
     "ssl_error": 0,
     "geo_lat": 37.96498819768848,
     "geo_long": 23.7469482421875,
-    "city": "Athens"
+    "city": "Athens",
+    "nowplaying_url": "https://athensupradio.evostream.gr/api/nowplaying/up_radio_-_athens",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "vanilla-deep-greece",
@@ -47685,7 +48745,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://5.104.111.225:8040/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://5.104.111.225:8040/played?sid=1&type=json"
   },
   {
     "slug": "voice-102-5",
@@ -47753,7 +48816,9 @@
     "ssl_error": 1,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Thessaloniki"
+    "city": "Thessaloniki",
+    "nowplaying_url": "https://radio.1055rock.gr:32667/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "www-cosmos995-gr",
@@ -47781,7 +48846,7 @@
     "stationuuid": "7a88a187-3404-4fb4-8bc7-96cb271c662e",
     "name": "Z Rock",
     "state": "Central Greece",
-    "stream_url": "https://n36a-eu.rcs.revma.com/5n5k2wm6xxcwv?rj-ttl=5&rj-tok=AAABnW5oFsYAXuAUPNbj-TcyNw&dist=karteliasweb&lsid=cookie%3Af4d76d5a-f2df-4379-8afa-fa5f8743b41b&gdpr=1&gdpr_consent=CQiStoAQiStoAAKA9AENCZFgAAAAAEPgAAyIAAATOgIgALAAqACAAGQARQAmABdAD8AIQAZUA7gDvAIsAe0BKoC8wGWATOAA.ILOQHoAFAAWABWADAAMgAgABaADIAIsATABNACkAFsALoAXwAwgB-gEGAQgAyoB3AHeARaAuoC7AHAAPaAfsBGICVQEsgLzAYyAywCZwFnAA.YAAAAAAAAAAA",
+    "stream_url": "https://stream.rcs.revma.com/5n5k2wm6xxcwv",
     "homepage": "https://lalala.gr/",
     "favicon": "/station-icons/z-rock-chalkida.webp",
     "genres": [],
@@ -47896,7 +48961,7 @@
     "name": "Δίεση 101.3",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n40a-eu.rcs.revma.com/gkfwrhqxbfhvv?rj-ttl=5&rj-tok=AAABnRe7-WsA_lpg8q-UnaVe8w&7252=",
+    "stream_url": "https://n40a-eu.rcs.revma.com/gkfwrhqxbfhvv",
     "homepage": "https://diesi.gr/",
     "favicon": "/station-icons/101-3-athens.webp",
     "genres": [
@@ -47932,7 +48997,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu1.fastcast4u.com/rpc/diktyofm/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "92-8-agrinio",
@@ -47984,7 +49051,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://webradio-server.n-t.gr/api/nowplaying/webradio.n-t.gr",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "93-2-athens",
@@ -48236,7 +49305,7 @@
     "name": "Μελωδία Τα τραγούδια του 90",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n41a-eu.rcs.revma.com/cdkb8a90ubuvv?rj-ttl=5&rj-tok=AAABnTgXywsAO9h7Cu0OQ1C0ww",
+    "stream_url": "https://n41a-eu.rcs.revma.com/cdkb8a90ubuvv",
     "homepage": "https://www.melodia.gr/player/ta-tragoydia-toy-90/",
     "favicon": "/station-icons/90-athens-greece.webp",
     "genres": [
@@ -48259,7 +49328,7 @@
     "name": "Μπλε 99",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "https://n17-eu.rcs.revma.com/9r5r1hm6xxcwv?rj-ttl=5&rj-tok=AAABnzP3sjQA-BbDLjwir4lmMQ&dist=karteliasweb&lsid=cookie%3Ad01d26ef-9d3e-40b2-a0c9-bc730d010f7b&gdpr=1&gdpr_consent=CQm4DEAQm4DEAAKA9AENCmFgAAAAAEPgAAyIAAATOgIAALAAqACAAGQARQAmABdAD8AISAdwB3gEWAPaAlUBeYDLAJnAAAAA.ILOQHYAFAAWABWADAAMgAgABaADIAIsATABNACkAFsALoAXwAwgB-gEGAQkA7gDvAItAXUBdgDgAHtAP2AjEBKoCWQF5gMZAZYBM4Czg.YAAAAAAAAAAA",
+    "stream_url": "https://n17-eu.rcs.revma.com/9r5r1hm6xxcwv",
     "homepage": "https://karteliasmediagroup.gr/",
     "favicon": "/station-icons/99-chalkida.webp",
     "genres": [
@@ -48297,7 +49366,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Thessaloniki"
+    "city": "Thessaloniki",
+    "nowplaying_url": "https://stream.mythosradio.gr/api/nowplaying/mythos",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "88-3",
@@ -48329,7 +49400,7 @@
     "name": "Ο νέος Freedom",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n05a-eu.rcs.revma.com/z0ymkz80ubuvv?rj-ttl=5&rj-tok=AAABnTOPb9IAgSkT3Tk_osIdmw",
+    "stream_url": "https://n05a-eu.rcs.revma.com/z0ymkz80ubuvv",
     "homepage": "https://www.melodia.gr/player/o-neos-freedom/",
     "favicon": "/station-icons/freedom-athens.webp",
     "genres": [],
@@ -48391,7 +49462,9 @@
     "ssl_error": 0,
     "geo_lat": 35.33745,
     "geo_long": 25.16434,
-    "city": "Nea Alikarnassos"
+    "city": "Nea Alikarnassos",
+    "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fradio_el",
+    "metadata_server": "icecast"
   },
   {
     "slug": "station-b5eed20e",
@@ -48416,7 +49489,9 @@
     "ssl_error": 0,
     "geo_lat": 35.33745,
     "geo_long": 25.16434,
-    "city": "Nea Alikarnassos"
+    "city": "Nea Alikarnassos",
+    "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fpss",
+    "metadata_server": "icecast"
   },
   {
     "slug": "station-8ff2c530",
@@ -48441,7 +49516,9 @@
     "ssl_error": 0,
     "geo_lat": 35.33745,
     "geo_long": 25.16434,
-    "city": "Nea Alikarnassos"
+    "city": "Nea Alikarnassos",
+    "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fmtlns",
+    "metadata_server": "icecast"
   },
   {
     "slug": "heraclion",
@@ -48466,7 +49543,9 @@
     "ssl_error": 0,
     "geo_lat": 35.33745,
     "geo_long": 25.16434,
-    "city": "Nea Alikarnassos"
+    "city": "Nea Alikarnassos",
+    "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fpngpls",
+    "metadata_server": "icecast"
   },
   {
     "slug": "heraclion",
@@ -48491,7 +49570,9 @@
     "ssl_error": 0,
     "geo_lat": 35.3325,
     "geo_long": 25.163,
-    "city": "Nea Alikarnassos"
+    "city": "Nea Alikarnassos",
+    "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fstrpls",
+    "metadata_server": "icecast"
   },
   {
     "slug": "heraklion-crete",
@@ -48514,7 +49595,9 @@
     "ssl_error": 0,
     "geo_lat": 35.33745,
     "geo_long": 25.16434,
-    "city": "Nea Alikarnassos"
+    "city": "Nea Alikarnassos",
+    "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fymnoi",
+    "metadata_server": "icecast"
   },
   {
     "slug": "92-3-pyrgos",
@@ -48616,7 +49699,7 @@
     "stationuuid": "30067f22-2373-4670-be32-7d2bf100332f",
     "name": "ΡΑΔΙΟ ΑΛΙΒΕΡΙ 1",
     "state": "Central Greece",
-    "stream_url": "http://stream.radiojar.com/gby4re6bhnuvv",
+    "stream_url": "https://stream.radiojar.com/gby4re6bhnuvv",
     "homepage": "https://www.radioaliveri1.gr/",
     "favicon": "/station-icons/1-aliveri.webp",
     "genres": [
@@ -48663,7 +49746,7 @@
     "name": "Ράδιο Δίφωνο",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "https://i4.streams.ovh/sc/difono/stream?1769840900373",
+    "stream_url": "https://i4.streams.ovh/sc/difono/stream",
     "homepage": "https://radio-difono.gr/#!/page_SPLASH",
     "favicon": "/station-icons/station-0fcc408a.webp",
     "genres": [],
@@ -48697,7 +49780,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://s2.e-resellers.gr/rpc/kviwebradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "station-6ae2e2dd",
@@ -48720,7 +49805,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/cqbyibwg/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "athens",
@@ -48750,7 +49837,8 @@
     "stationuuid": "3ed2bf64-3f38-4156-be9e-3ba240d77175",
     "name": "Ρυθμός 93.7",
     "state": "Western Greece",
-    "stream_url": "https://stream-178.zeno.fm/037xwzg0h2zuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIwMzd4d3pnMGgyenV2IiwiaG9zdCI6InN0cmVhbS0xNzguemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImZINGdHOU5OUUFTRmx2WmFPQXIyLVEiLCJpYXQiOjE3NzE0Mzk2ODYsImV4cCI6MTc3MTQzOTc0Nn0.ziAsHudyfI6c2A-LtJf-bi8MGkpo_6iwkK0FzPsSd-0",
+    "city": "Agrinio",
+    "stream_url": "https://stream-178.zeno.fm/037xwzg0h2zuv",
     "homepage": "https://zeno.fm/radio/rythmos-947/",
     "favicon": "/station-icons/93-7-agrinio.webp",
     "genres": [
@@ -48765,8 +49853,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "city": "Agrinio"
+    "geo_long": null
   },
   {
     "slug": "ballads-athens",
@@ -48774,7 +49861,7 @@
     "name": "Ρυθμός Ballads",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n43a-eu.rcs.revma.com/dm9td34r4a0uv?rj-ttl=5&rj-tok=AAABnSF3GscA_ycXIcHcH5wvWg",
+    "stream_url": "https://n43a-eu.rcs.revma.com/dm9td34r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/ballads-athens.webp",
     "genres": [
@@ -48798,7 +49885,7 @@
     "name": "Ρυθμός Dalika",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n17a-eu.rcs.revma.com/m2r3yy4r4a0uv?rj-ttl=5&rj-tok=AAABnSF80GgAaqH7kKQLK_ofXQ",
+    "stream_url": "https://n17a-eu.rcs.revma.com/m2r3yy4r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/dalika-athens.webp",
     "genres": [
@@ -48821,7 +49908,7 @@
     "name": "Ρυθμός στο Κασετόφωνο",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n07a-eu.rcs.revma.com/ff4abx8q4a0uv?rj-ttl=5&rj-tok=AAABnSGE_d8A8FSjXz4pfremJw",
+    "stream_url": "https://n07a-eu.rcs.revma.com/ff4abx8q4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/athens.webp",
     "genres": [

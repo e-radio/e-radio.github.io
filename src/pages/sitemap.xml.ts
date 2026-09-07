@@ -1,5 +1,7 @@
 import rawStations from "../data/stations-gr.json";
 
+import { metadataStations, METADATA_PAGE_SIZE } from "../lib/metadata-stations";
+
 const ROOT_URL = "https://e-radio.github.io";
 const HOMEPAGE_PER_PAGE = 50;
 const HUB_PER_PAGE = 20;
@@ -230,6 +232,10 @@ export async function GET() {
 
   const urls = [
     ...staticPages,
+    ...Array.from({ length: Math.max(1, Math.ceil(metadataStations.length / METADATA_PAGE_SIZE)) }, (_, index) => ({
+      loc: `${ROOT_URL}/now-playing/${index ? `page/${index + 1}/` : ""}`,
+      lastmod,
+    })),
     ...paginationPages,
     ...highQualityPagination,
     ...cityPages.map(({ loc, lastmod }) => ({ loc, lastmod })),

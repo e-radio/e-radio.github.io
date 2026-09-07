@@ -42,53 +42,10 @@ const streamDetailMeta = [
   .filter(Boolean)
   .join(" · ");
 const languageLabel = station.language ? station.language : null;
-const streamUrl = station.stream_url || "";
-
-const AZURACAST_NOW_PLAYING_OVERRIDES: Record<string, string> = {
-  "1st-greek-hits-flac-non-stop-radio-athens-greece": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
-  "1st-greek-hits-flac-radio-lossless-athens-greece": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
-  "1st-greek-hits-radio-mp3-athens-greece": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
-  "1st-greek-new-age-flac-radio-aac-320kbps-attica-athens": "https://stream.newageradio.gr/api/nowplaying/hq",
-  "1st-greek-new-age-flac-radio-attiki": "https://stream.newageradio.gr/api/nowplaying/hq",
-  "1st-greek-new-age-flac-radio-flac-stream-attica-athens": "https://stream.newageradio.gr/api/nowplaying/hq",
-  "93-4-thessaloniki": "https://stream.mythosradio.gr/api/nowplaying/mythos",
-  "abdulbasit-abdulsamad": "https://radio.mp3islam.com/api/nowplaying/abdulbasit",
-  "aegean-vibes-athens-greece": "https://a9.asurahosting.com/api/nowplaying/aegean_vibes",
-  "athens-noise-rocks": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
-  "athens-noise-rocks-attiki": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
-  "athensnoise-rocks": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
-  "backtorave-com-old-school-techno-rave": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_old_school",
-  "creative-commons-radio": "https://ccradio.ellak.gr/api/nowplaying/gfoss_ccradio",
-  "disco-cafe-athens": "https://azuracast.streams.ovh/api/nowplaying/discocafe",
-  "emerson-athens-athens": "https://azuracast.streams.ovh/api/nowplaying/radioemerson",
-  "energy-88-9-drama": "https://casty.youmix.gr/api/nowplaying/energyradio889",
-  "energy-radio-greece": "https://azuracast.streams.ovh/api/nowplaying/energy",
-  "freespirits-services": "https://aphrodite.freespirits.gr/api/nowplaying/freespirits_radio",
-  "hook-radio": "https://stream3.proradio.gr/api/nowplaying/hook",
-  "ionion-95-5-pirgos": "https://stream3.proradio.gr/api/nowplaying/ionion",
-  "kaseta-radio": "https://azuracast.streams.gr/api/nowplaying/kasetaradio",
-  "kyklos": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
-  "loco-radio-live": "https://cast.iplayradio.net/api/nowplaying/locoradio",
-  "nt00-radio": "https://nt00.xyz/api/nowplaying/escape_the_algorithm",
-  "olympos-101-5-katerini": "https://streamer.stordia.net/api/nowplaying/olympos",
-  "radio-mpoufalo": "https://a1.my-control-panel.com/api/nowplaying/minas",
-  "radio-kyklos": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
-  "radiq-happy": "https://live.radiq.gr/api/nowplaying/radiq",
-  "radiokyklos-greek-hiphop": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
-  "rock-angels-athens": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
-  "rock-angels": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
-  "rock-angels-radio": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
-  "star-93-5-drama": "https://casty.youmix.gr/api/nowplaying/starfm935",
-  "studio-545": "https://azuracast.streams.ovh/api/nowplaying/studio_545",
-  "super-89-8-drama": "https://casty.youmix.gr/api/nowplaying/superfm898",
-  "tracksaudio-com-80s-music": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_80s_music",
-  "tracksaudio-com-chill-house-music": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_chill_house_music",
-  "up-radio": "https://athensupradio.evostream.gr/api/nowplaying/up_radio_-_athens",
-  "vip-radio-gr-athens": "https://stream3.proradio.gr/api/nowplaying/vipradio",
-  "vips-radio-athens-athens": "https://azuracast.streams.gr/api/nowplaying/vipsradio",
-  "xalastra-web-radio-thessaloniki": "https://azuralive.streams.ovh/api/nowplaying/xalastraradio",
-  "live-thessaloniki": "https://azuracast.streams.gr/api/nowplaying/paulosvasileioulive",
-};
+const rawStreamUrl = station.stream_url || "";
+// GitHub Pages is HTTPS. Supplying an HTTP media URL still triggers a mixed-
+// content warning even when Chromium can automatically upgrade the request.
+const streamUrl = rawStreamUrl.replace(/^http:\/\//i, "https://");
 
 const wrapWithCorsProxy = (rawUrl: string) => {
   if (!rawUrl) return rawUrl;
@@ -108,9 +65,27 @@ type ServerKind =
   | "unknown";
 
 const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationData: typeof rawStations[0]) => {
-  const overridden = AZURACAST_NOW_PLAYING_OVERRIDES[stationData.slug];
-  if (overridden) {
-    return { nowPlaying: overridden, history: null, serverType: "azuracast" as ServerKind };
+  const savedMetadata = stationData as typeof stationData & {
+    nowplaying_url?: string | null;
+    history_url?: string | null;
+    metadata_server?: ServerKind | null;
+    metadata_direct?: boolean;
+  };
+  if (savedMetadata.nowplaying_url) {
+    const savedServerType = savedMetadata.metadata_server || "unknown";
+    const isSecureCentovaEndpoint = savedServerType === "centovacast" && /^https:\/\//i.test(savedMetadata.nowplaying_url);
+    const needsCorsProxy = ["shoutcast", "icecast", "centovacast"].includes(savedServerType) && !isSecureCentovaEndpoint;
+    const resolveSavedEndpoint = (endpoint: string) =>
+      savedMetadata.metadata_direct && /^https:\/\//i.test(endpoint)
+        ? endpoint
+        : (needsCorsProxy ? wrapWithCorsProxy(endpoint) : endpoint);
+    return {
+      nowPlaying: resolveSavedEndpoint(savedMetadata.nowplaying_url),
+      history: savedMetadata.history_url
+        ? resolveSavedEndpoint(savedMetadata.history_url)
+        : null,
+      serverType: savedServerType as ServerKind,
+    };
   }
 
   if (!inputStreamUrl) {
@@ -455,12 +430,12 @@ const structuredData = {
           "identifier": String(station.countrycode || "GR").toUpperCase()
         }
       }),
-  ...(station.stream_url
+  ...(streamUrl
     ? {
         "subjectOf": {
           "@type": "AudioObject",
           "name": `${station.name} Live Stream`,
-          "contentUrl": station.stream_url,
+          "contentUrl": streamUrl,
           ...(encodingFormat ? { "encodingFormat": encodingFormat } : {}),
           ...(station.language ? { "inLanguage": station.language } : {}),
           ...(station.genres.length > 0 ? { "genre": station.genres } : {})
@@ -525,8 +500,6 @@ const structuredData = {
             <div class="pt-1">
               <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
                 <h1 class="h4 fw-bold mb-0">{station.name}</h1>
-                {hasStream && <span class="badge rounded-pill badge-soft">Live</span>}
-                {hasStream && <span class="badge rounded-pill text-bg-light border">Verified stream</span>}
               </div>
               <div class="d-flex flex-wrap gap-2 gap-md-3 small-muted">
                 {locationLabel && (
@@ -590,10 +563,6 @@ const structuredData = {
               <div class="progress progress-thin" role="progressbar" aria-label="Buffer status">
                 <div class="progress-bar" id="bufferBar" style="width: 0%"></div>
               </div>
-              <div class="d-flex justify-content-between mt-2 small-muted">
-                <span id="nowPlayingLabel">Now playing: <span class="text-dark" id="nowPlaying">{station.name}</span></span>
-                <span class="mono" id="timeHint">00:00</span>
-              </div>
             </div>
 
             <div class="col-12">
@@ -624,58 +593,73 @@ const structuredData = {
         )}
 
         {hasStream && (
-          <div class="d-flex flex-wrap justify-content-center mt-4">
-            <div class="text-center">
-              <a
-                href={radddioURL}
-                class="text-decoration-none radddio-badge"
-                target="_blank"
-                rel="nofollow noopener"
-                aria-label={`Listen to ${station.name} on Radddio App`}
-              >
-                <Image src={radddioBadgeUrl} alt="Radddio app badge" width={144} height={47} />
-              </a>
+          <div class="mt-4 mb-2">
+            <div class="ff-app-banner px-4 py-3">
+              <div class="d-flex flex-column flex-sm-row align-items-center gap-4">
+                <div class="flex-shrink-0">
+                  <picture>
+                    <source srcset="/radddio-app-icon.webp" type="image/webp" />
+                    <source srcset={radioAppIconUrl} type="image/png" />
+                    <img src={radioAppIconUrl} alt="Radddio logo" class="ff-app-icon" loading="lazy" decoding="async" width="512" height="512" />
+                  </picture>
+                </div>
+                <div class="flex-grow-1 text-center text-sm-start">
+                  <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 mb-1">
+                    <h3 class="h5 mb-0 fw-bold text-white">Get the Radddio app</h3>
+                  </div>
+                  <p class="mb-2 small text-white text-opacity-75">Enjoy {station.name} on the go with Radddio. Tune in to your favorite sounds wherever life takes you—start listening now!</p>
+                  <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-3 small ff-meta">
+                    <span class="d-inline-flex align-items-center gap-1">
+                      <span class="ff-stars" aria-hidden="true">★★★★★</span>
+                      <span class="ms-1">4.8</span>
+                    </span>
+                    <span class="ff-divider">|</span>
+                    <span>100K+ Downloads</span>
+                  </div>
+                </div>
+                <a href="https://apple.co/3E6YPM2" target="_blank" rel="noopener noreferrer" aria-label="Download QR File Transfer from the App Store">
+                  <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1618444800" alt="Download QR File Transfer on the App Store" width="142" decoding="async" loading="lazy" />
+                </a>
+              </div>
             </div>
           </div>
         )}
       </section>
 
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
-        <div class="d-flex align-items-center justify-content-between mb-3">
-          <h2 class="h6 fw-bold mb-0"><i class="bi bi-disc me-2"></i>Recently played</h2>
-          <span class="small-muted" id="recently-played-hint">Waiting for station metadata…</span>
-        </div>
-        <div class="row g-3" id="recently-played">
-          <div class="col-12 col-md-6">
-            <div class="recent-track-card p-3 bg-white rounded-3 border border-light-subtle h-100 d-flex align-items-center gap-3">
-              <img id="recent-previous-art" class="track-art rounded object-fit-cover flex-shrink-0" width="56" height="56" alt="" hidden />
+        <div class="vstack gap-3" id="recently-played">
+          <div id="recent-next-card" hidden>
+            <h2 class="h3 fw-normal mb-0 small-muted mb-2">Up next</h2>
+            <div class="history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
+              <img id="recent-next-art" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt="" hidden />
               <div class="track-details flex-grow-1">
-                <div class="small-muted mb-1">Previous</div>
                 <div class="d-flex align-items-baseline justify-content-between gap-3">
-                  <div class="fw-semibold text-truncate" id="recent-previous-title">Waiting for metadata</div>
-                  <time class="small-muted flex-shrink-0" id="recent-previous-time"></time>
-                </div>
-                <div class="small-muted" id="recent-previous-meta">Tune in to update</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="recent-track-card p-3 bg-white rounded-3 border border-light-subtle h-100 d-flex align-items-center gap-3">
-              <img id="recent-next-art" class="track-art rounded object-fit-cover flex-shrink-0" width="56" height="56" alt="" hidden />
-              <div class="track-details flex-grow-1">
-                <div class="small-muted mb-1">Up next</div>
-                <div class="d-flex align-items-baseline justify-content-between gap-3">
-                  <div class="fw-semibold text-truncate" id="recent-next-title">Waiting for metadata</div>
+                  <div class="fw-semibold text-truncate" id="recent-next-title"></div>
                   <time class="small-muted flex-shrink-0" id="recent-next-time"></time>
                 </div>
-                <div class="small-muted" id="recent-next-meta">Tune in to update</div>
+                <div class="small-muted text-truncate" id="recent-next-meta"></div>
+              </div>
+            </div>
+          </div>
+          <div id="now-playing-card">
+            <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
+              <h2 class="h3 fw-normal mb-0 small-muted">Now playing</h2><span class="badge rounded-pill badge-soft-green">Live</span>
+            </div>
+            <div class="history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
+              <img id="nowPlayingArt" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt="" hidden />
+              <div class="track-details flex-grow-1">
+                <div class="d-flex align-items-baseline justify-content-between gap-3">
+                  <div class="fw-semibold text-truncate" id="nowPlaying">{station.name}</div>
+                  <span class="mono small-muted flex-shrink-0" id="timeHint">00:00</span>
+                </div>
+                <div class="small-muted text-truncate" id="nowPlayingMeta">Live broadcast</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="mt-3 pt-3 border-top border-light-subtle">
-          <div class="small-muted mb-2">Song history</div>
-          <ul class="list-unstyled mb-0 small" id="recent-history" data-default-message="Waiting for station metadata…">
+        <div class="mt-3 pt-3">
+          <h2 class="h3 fw-normal mb-0 small-muted mb-2">Recent tracks</h2>
+          <ul class="list-unstyled mb-0 small vstack gap-2" id="recent-history" data-default-message="Waiting for station metadata…">
             <li class="small-muted">Waiting for station metadata…</li>
           </ul>
         </div>
@@ -856,20 +840,15 @@ const structuredData = {
     const btnFavorite = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnFavorite'));
     const btnVote = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnVote'));
     const nowPlayingEl = /** @type {HTMLElement | null} */ (document.getElementById('nowPlaying'));
+    const nowPlayingMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('nowPlayingMeta'));
+    const nowPlayingArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('nowPlayingArt'));
     const nowPlayingDefault = nowPlayingEl?.textContent || '';
-    const stationCoverEl = /** @type {HTMLImageElement | null} */ (document.getElementById('stationCover'));
-    const stationCoverFallback = stationCoverEl?.dataset.fallbackSrc || stationCoverEl?.getAttribute('src') || '';
-    const previousTitleEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-previous-title'));
-    const previousMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-previous-meta'));
-    const previousTimeEl = /** @type {HTMLTimeElement | null} */ (document.getElementById('recent-previous-time'));
-    const previousArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('recent-previous-art'));
+    const nowPlayingMetaDefault = nowPlayingMetaEl?.textContent || '';
+    const nextCardEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-card'));
     const nextTitleEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-title'));
     const nextMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-meta'));
     const nextTimeEl = /** @type {HTMLTimeElement | null} */ (document.getElementById('recent-next-time'));
     const nextArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('recent-next-art'));
-    const recentlyPlayedHint = /** @type {HTMLElement | null} */ (document.getElementById('recently-played-hint'));
-    const recentlyPlayedHintDefault = recentlyPlayedHint?.textContent || 'Waiting for station metadata…';
-    const recentlyPlayedHintUpdated = 'Updated just now';
     const historyListEl = /** @type {HTMLUListElement | null} */ (document.getElementById('recent-history'));
     const historyDefaultMessage = historyListEl?.dataset?.defaultMessage || 'Waiting for station metadata…';
     const defaultTrackTitle = 'Waiting for metadata';
@@ -944,11 +923,8 @@ const structuredData = {
     };
 
     const resetTrackCards = () => {
-      setTrackCard(previousTitleEl, previousMetaEl, previousTimeEl, previousArtEl, null);
       setTrackCard(nextTitleEl, nextMetaEl, nextTimeEl, nextArtEl, null);
-      if (recentlyPlayedHint) {
-        recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
-      }
+      if (nextCardEl) nextCardEl.hidden = true;
     };
 
     const gatherSongHistory = (payload) => {
@@ -1050,6 +1026,28 @@ const structuredData = {
       };
     };
 
+    const formatCurrentTrack = (payload, fallbackText) => {
+      const dataEntry = Array.isArray(payload?.data) ? payload.data[0] : null;
+      const candidate = payload?.now_playing?.song
+        || dataEntry?.track
+        || payload?.current_track
+        || (typeof payload?.songtitle === 'string' ? { text: payload.songtitle } : null)
+        || (typeof dataEntry?.song === 'string' ? { text: dataEntry.song } : dataEntry)
+        || (fallbackText ? { text: fallbackText } : null);
+      return formatSongEntry(candidate);
+    };
+
+    const updateNowPlayingTrack = (payload, fallbackText) => {
+      if (!nowPlayingEl) return;
+      const info = formatCurrentTrack(payload, fallbackText);
+      nowPlayingEl.textContent = info?.primary || fallbackText || nowPlayingDefault;
+      setTrackArtwork(nowPlayingArtEl, info);
+      if (nowPlayingMetaEl) {
+        nowPlayingMetaEl.textContent = info?.meta || (info ? '' : nowPlayingMetaDefault);
+        nowPlayingMetaEl.hidden = Boolean(info && !info.meta);
+      }
+    };
+
     const updateHistoryList = (payload) => {
       if (!historyListEl) return false;
       const historyEntries = gatherSongHistory(payload);
@@ -1068,14 +1066,10 @@ const structuredData = {
       }
 
       historyListEl.innerHTML = '';
-      rendered.forEach((info, index) => {
+      rendered.forEach((info) => {
         if (!info) return;
         const item = document.createElement('li');
-        const classes = ['history-track-item', 'py-2', 'd-flex', 'align-items-center', 'gap-3'];
-        if (index) {
-          classes.push('border-top', 'border-light-subtle');
-        }
-        item.className = classes.join(' ');
+        item.className = 'history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3';
 
         if (info.artwork) {
           const artwork = document.createElement('img');
@@ -1126,43 +1120,31 @@ const structuredData = {
 
     const extractRecentTracks = (payload) => {
       if (!payload || typeof payload !== 'object') {
-        return { previous: null, next: null };
+        return { next: null };
       }
-
-      const previousCandidates = gatherSongHistory(payload);
-      if (Array.isArray(payload.previous_tracks)) previousCandidates.push(...payload.previous_tracks);
 
       const nextCandidates = [];
       if (payload.playing_next) nextCandidates.push(payload.playing_next);
       if (payload.next_track) nextCandidates.push(payload.next_track);
       if (Array.isArray(payload.queue)) nextCandidates.push(...payload.queue);
 
-      const previous = previousCandidates.map((entry) => formatSongEntry(entry)).find(Boolean) || null;
       const next = nextCandidates.map((entry) => formatSongEntry(entry)).find(Boolean) || null;
 
-      return { previous, next };
+      return { next };
     };
 
     const applyRecentTracks = (payload) => {
-      if (!previousTitleEl || !previousMetaEl || !nextTitleEl || !nextMetaEl) {
+      if (!nextTitleEl || !nextMetaEl) {
         updateHistoryList(payload);
         return false;
       }
 
-      const { previous, next } = extractRecentTracks(payload);
-      setTrackCard(previousTitleEl, previousMetaEl, previousTimeEl, previousArtEl, previous);
+      const { next } = extractRecentTracks(payload);
       setTrackCard(nextTitleEl, nextMetaEl, nextTimeEl, nextArtEl, next);
+      if (nextCardEl) nextCardEl.hidden = !next?.primary;
 
       const historyUpdated = updateHistoryList(payload);
-      const cardsUpdated = Boolean(previous?.primary) || Boolean(next?.primary);
-
-      if (recentlyPlayedHint) {
-        if ((previous && previous.primary) || (next && next.primary) || historyUpdated) {
-          recentlyPlayedHint.textContent = recentlyPlayedHintUpdated;
-        } else {
-          recentlyPlayedHint.textContent = recentlyPlayedHintDefault;
-        }
-      }
+      const cardsUpdated = Boolean(next?.primary);
 
       return historyUpdated || cardsUpdated;
     };
@@ -1283,11 +1265,28 @@ const structuredData = {
     const extractNowPlayingText = (payload) => {
       if (!payload) return null;
 
+      // Shoutcast's /stats?sid=1&json=1 response exposes the current track in
+      // `songtitle`; prefer it over server/station title fields.
+      if (playerConfig.serverType === 'shoutcast' && typeof payload.songtitle === 'string' && payload.songtitle.trim()) {
+        return payload.songtitle.trim();
+      }
+
       if (payload.icestats) {
         const sourceData = (() => {
           const { source } = payload.icestats;
           if (Array.isArray(source)) {
-            return source.find((entry) => entry && (entry.yp_currently_playing || entry.title || entry.songtitle)) || source[0];
+            const stream = new URL(playerConfig.streamUrl);
+            const mount = stream.searchParams.get('mp') || stream.searchParams.get('mount') || stream.pathname;
+            const normalizeMount = (value) => {
+              try { return decodeURIComponent(value).replace(/\/+$/, '') || '/'; }
+              catch { return value.replace(/\/+$/, '') || '/'; }
+            };
+            return source.find((entry) => {
+              const value = entry?.listenurl || entry?.mount;
+              if (typeof value !== 'string') return false;
+              try { return normalizeMount(new URL(value, stream.origin).pathname) === normalizeMount(mount.startsWith('/') ? mount : `/${mount}`); }
+              catch { return false; }
+            });
           }
           return source;
         })();
@@ -1378,7 +1377,7 @@ const structuredData = {
       const candidates = [];
       const addArtworkFields = (source) => {
         if (!source || typeof source !== 'object') return;
-        for (const key of ['art', 'art_url', 'artwork', 'artwork_url', 'cover', 'cover_url', 'image', 'image_url']) {
+        for (const key of ['art', 'art_url', 'artwork', 'artwork_url', 'cover', 'cover_url', 'image', 'image_url', 'imageurl']) {
           const value = source[key];
           if (typeof value === 'string') {
             candidates.push(value);
@@ -1431,27 +1430,6 @@ const structuredData = {
 
       return null;
     };
-
-    const updateStationCover = (payload) => {
-      if (!stationCoverEl) return;
-      const artworkUrl = extractArtworkUrl(payload);
-      const nextSrc = artworkUrl || stationCoverFallback;
-      if (nextSrc && stationCoverEl.src !== new URL(nextSrc, window.location.href).href) {
-        stationCoverEl.src = nextSrc;
-        stationCoverEl.alt = artworkUrl
-          ? `Current artwork for ${playerConfig.shareTitle}`
-          : `${playerConfig.shareTitle} logo`;
-      }
-    };
-
-    stationCoverEl?.addEventListener('error', () => {
-      if (!stationCoverEl || !stationCoverFallback) return;
-      const fallbackUrl = new URL(stationCoverFallback, window.location.href).href;
-      if (stationCoverEl.src !== fallbackUrl) {
-        stationCoverEl.src = stationCoverFallback;
-        stationCoverEl.alt = `${playerConfig.shareTitle} logo`;
-      }
-    });
 
     const parseNowPlayingResponse = async (response) => {
       const contentType = response.headers?.get?.('content-type') || '';
@@ -1529,14 +1507,24 @@ const structuredData = {
         const response = await fetch(playerConfig.historyEndpoint, { cache: 'no-store' });
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
         const contentType = response.headers?.get?.('content-type') || '';
+        const raw = await response.text();
 
-        if (contentType.includes('application/json')) {
+        if (contentType.includes('application/json') || /^[\s]*[\[{]/.test(raw)) {
           try {
-            const jsonPayload = await response.json();
+            const parsed = JSON.parse(raw);
+            const jsonPayload = Array.isArray(parsed) && playerConfig.serverType === 'shoutcast'
+              ? {
+                  now_playing: { song: { text: parsed[0]?.title || '' } },
+                  song_history: parsed.slice(1).map((track) => ({
+                    song: { text: track.title },
+                    played_at: track.playedat,
+                  })),
+                }
+              : parsed;
             const historyApplied = applyRecentTracks(jsonPayload);
             const fallbackText = extractNowPlayingText(jsonPayload);
-            if (fallbackText && nowPlayingEl && nowPlayingEl.textContent !== fallbackText) {
-              nowPlayingEl.textContent = fallbackText;
+            if (fallbackText && nowPlayingEl) {
+              updateNowPlayingTrack(jsonPayload, fallbackText);
             }
             lastHistoryFetch = Date.now();
             if (historyApplied) {
@@ -1553,7 +1541,6 @@ const structuredData = {
           }
         }
 
-        const raw = await response.text();
         const entries = parseHistoryEntries(raw, playerConfig.serverType || 'unknown');
         if (!entries.length) {
           lastHistoryFetch = Date.now();
@@ -1582,8 +1569,8 @@ const structuredData = {
 
         const fallbackText = extractNowPlayingText(fallbackPayload);
         let updatedNowPlaying = false;
-        if (fallbackText && nowPlayingEl && nowPlayingEl.textContent !== fallbackText) {
-          nowPlayingEl.textContent = fallbackText;
+        if (fallbackText && nowPlayingEl) {
+          updateNowPlayingTrack(fallbackPayload, fallbackText);
           updatedNowPlaying = true;
         }
 
@@ -1613,13 +1600,12 @@ const structuredData = {
         }
         const text = extractNowPlayingText(data);
         const textChanged = Boolean(text && text !== lastNowPlayingText);
-        if (text && nowPlayingEl.textContent !== text) {
-          nowPlayingEl.textContent = text;
+        if (text) {
+          updateNowPlayingTrack(data, text);
         }
         if (text) {
           lastNowPlayingText = text;
         }
-        updateStationCover(data);
         const historyApplied = applyRecentTracks(data);
         if (!historyApplied && !historyDisabled) {
           await fetchAndApplyHistory({ force: textChanged });
@@ -1629,6 +1615,11 @@ const structuredData = {
         if (nowPlayingEl.textContent !== nowPlayingDefault) {
           nowPlayingEl.textContent = nowPlayingDefault;
         }
+        if (nowPlayingMetaEl) {
+          nowPlayingMetaEl.textContent = nowPlayingMetaDefault;
+          nowPlayingMetaEl.hidden = false;
+        }
+        setTrackArtwork(nowPlayingArtEl, null);
         resetTrackCards();
         resetHistoryList();
         lastNowPlayingText = null;
@@ -1642,4 +1633,24 @@ const structuredData = {
       setInterval(pollNowPlaying, 20000);
     }
   </script>
+  <style>
+    .ff-app-banner {
+      background: linear-gradient(135deg, #0b0f1f 0%, #16122a 35%, #241437 65%, #2b153b 100%);
+      border: 1px solid rgba(112, 72, 72, 0.1);
+      border-radius: 1.25rem;
+    }
+
+    .ff-meta { color: rgba(255, 255, 255, 0.75); }
+    .ff-stars { color: #ffc107; }
+    .fw-black { font-weight: 900; }
+    .letter-spacing-wide { letter-spacing: 0.06em; }
+
+    .ff-app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 1rem;
+      object-fit: cover;
+      box-shadow: 0 12px 30px rgba(168, 85, 247, 0.20);
+    }
+  </style>
 </Layout>

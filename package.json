@@ -9,10 +9,11 @@
     "astro": "astro",
     "git push": "git add . && git commit -m \"update\" && git push",
     "fix favicons": "node tools/fetch-missing-station-icons.mjs",
+    "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "fill state": "python3 tools/fill-state-from-homepage.py --max 0 --sleep 1",
     "fill geo": "python3 tools/fill-state-from-geo.py",
     "fff brobe": "python3 tools/ffprobe-metadata.py --url https://fireage.servegame.com/webradio5/",
-    "get stations from radio browser api": "node tools/fetch-greece-stations.mjs",
+    "get stations from radio browser api": "node tools/find-station-metadata-endpoints.mjs",
     "1-fix-state-city-region": "python3 tools/fix-state-city-region.py --max 10 --sleep 1"
   },
   "dependencies": {

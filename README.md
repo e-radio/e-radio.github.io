@@ -67,6 +67,7 @@ A modern web application for streaming Greek radio stations, built with [Astro](
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run fix favicons` - Fetch and cache missing station icons as 256×256 WebP files
+- `npm run find metadata` - Discover and save verified station now-playing metadata endpoints
 
 ## Data Source
 
@@ -87,6 +88,10 @@ Run `python3 tools/fix-state-city-only.py` from the project root. The script fin
 ## Filling Missing States from Homepages
 
 Run `python3 tools/fill-state-from-homepage.py` from the project root. For stations whose `state` is empty, the script downloads the station homepage and looks for location information in its JSON-LD structured data. When it finds a locality, region, served area, or named location, it saves that value to `state` in `src/data/stations-gr.json`. Stations with missing homepages, fetch errors, or no usable location are recorded in `tools/state-fill-progress.json` so they can be skipped on later runs. Use `--max N` to limit successful updates and `--sleep N` to pause between them.
+
+## Finding Station Metadata Endpoints
+
+Run `npm run "find metadata"` to check stations without saved metadata. The script tests public AzuraCast, Shoutcast, Icecast, CentovaCast, and Radio.co APIs, accepts only endpoints that return usable current-track data, and stores `nowplaying_url`, `history_url` (when available), and `metadata_server` in `src/data/stations-gr.json`. The npm command saves results automatically; run `node tools/find-station-metadata-endpoints.mjs` for a dry run. Every scan writes verification results and unmatched slugs to `reports/metadata-endpoints.json`. Use `--slug SLUG`, `--max N`, `--concurrency N`, or `--timeout MS` to limit and control a scan; `--refresh` rechecks existing entries. Station pages prefer these verified fields and retain automatic endpoint detection as a fallback.
 
 ## Building for Production
 

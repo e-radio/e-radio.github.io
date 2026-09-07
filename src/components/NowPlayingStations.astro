@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SEO from "./SEO.astro";
+import CategorySwitch from "./CategorySwitch.astro";
+import { slugify } from "../lib/slug";
+import { Image } from "astro:assets";
+
+const radddioURL = "https://apple.co/4lNPQAH";
+const radioAppIconUrl = "/radddio-app-icon.png";
+const radddioBadgeUrl = "/radddio-badge.svg";
+const ogImage = "/e-radio-og-image.png";
+
+import { metadataStations, METADATA_PAGE_SIZE } from "../lib/metadata-stations";
+
+interface Props { page?: number }
+const { page = 1 } = Astro.props;
+const PAGE_SIZE = METADATA_PAGE_SIZE;
+const totalStations = metadataStations.length;
+const totalPages = Math.ceil(totalStations / PAGE_SIZE);
+const startIndex = (page - 1) * PAGE_SIZE;
+const endIndex = startIndex + PAGE_SIZE;
+const pagedStations = metadataStations.slice(startIndex, endIndex);
+
+const siteRoot = "https://e-radio.github.io";
+const canonical = `${siteRoot}${page === 1 ? "/now-playing/" : `/now-playing/page/${page}/`}`;
+const pageTitle = `Now Playing Radio Stations${page > 1 ? ` – Page ${page}` : ""} | E-Radio`;
+const pageDescription = `Discover ${totalStations} radio stations with song information. See what's playing and explore recent tracks where available.`;
+const ogImageUrl = `${siteRoot}${ogImage}`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": `${canonical}#collection`,
+  name: pageTitle,
+  url: canonical,
+  description: pageDescription,
+  image: ogImageUrl,
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <SEO
+    slot="seo"
+    title={pageTitle}
+    description={pageDescription}
+    canonical={canonical}
+    ogTitle={pageTitle}
+    ogDescription={pageDescription}
+    ogImage={ogImageUrl}
+    keywords="now playing radio, radio song information, greek radio"
+    robots="index, follow"
+    author="E-Radio Greece"
+    structuredData={structuredData}
+  />
+  <div class="mb-4">
+    <h1 class="display-5 fw-bold mb-2">Now Playing Radio</h1>
+    <h2 class="lead text-muted">Discover stations that share what’s playing.</h2>
+    <p class="text-muted">Open a station to see song information and, where available, recent tracks. Availability can vary by station.</p>
+    <p class="text-muted small">Found {totalStations} station{totalStations === 1 ? "" : "s"}.</p>
+    {totalPages > 1 && (
+      <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
+    )}
+  </div>
+  <CategorySwitch current="now-playing" />
+  {totalStations === 0 ? (
+    <div class="alert alert-warning" role="status">
+      No stations with verified song information are available yet.
+    </div>
+  ) : (
+    <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+      {pagedStations.map((station, index) => (
+        <div class={`station-item position-relative ${index !== pagedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
+          <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`} itemprop="url"></a>
+          <div class="station-item-body p-3">
+            <div class="row align-items-center g-3">
+              <div class="col-auto">
+                {station.favicon ? (
+                  <Image src={station.favicon} alt={`${station.name} logo`} class="rounded station-logo" width={60} height={60} itemprop="image" />
+                ) : (
+                  <Image src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" width={60} height={60} itemprop="image" />
+                )}
+              </div>
+              <div class="col flex-grow-1">
+                <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{station.name}</h3>
+                <p class="small text-muted mb-1">
+                  {station.state ? <span itemprop="addressLocality"><i class="bi bi-geo-alt me-1" aria-hidden="true"></i>{station.state}</span> : null}
+                  <span class="ms-2"><i class="bi bi-soundwave me-1" aria-hidden="true"></i>{station.bitrate} kbps</span>
+                  {station.codec ? <span class="ms-2"><i class="bi bi-file-music me-1" aria-hidden="true"></i>{String(station.codec).toUpperCase()}</span> : null}
+                </p>
+                <div class="d-flex gap-2 flex-wrap">
+                  {station.genres && station.genres.slice(0, 3).map((genre) => (
+                    <a
+                      href={`/genres/${slugify(genre)}/`}
+                      class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
+                    >
+                      {genre}
+                    </a>
+                  ))}
+                </div>
+              </div>
+              <div class="col-auto text-end d-md-block">
+                <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}><Image src={radddioBadgeUrl} alt="Radddio app badge" width={144} height={47} /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+  {totalPages > 1 && (
+    <nav aria-label="Now playing pagination" class="mt-5">
+      <ul class="pagination justify-content-center">
+        <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
+          <a class="page-link" href={page > 1 ? (page - 1 === 1 ? '/now-playing/' : `/now-playing/page/${page - 1}/`) : '/now-playing/'}>
+            Previous
+          </a>
+        </li>
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+          <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
+            <a class="page-link" href={pageNum === 1 ? '/now-playing/' : `/now-playing/page/${pageNum}/`}>
+              {pageNum}
+            </a>
+          </li>
+        ))}
+        <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
+          <a class="page-link" href={page < totalPages ? `/now-playing/page/${page + 1}/` : (page === 1 ? '/now-playing/' : `/now-playing/page/${page}/`)}>
+            Next
+          </a>
+        </li>
+      </ul>
+    </nav>
+  )}
+</Layout>

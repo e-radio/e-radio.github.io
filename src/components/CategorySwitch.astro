@@ -1,6 +1,6 @@
 ---
 interface Category {
-  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres";
+  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres" | "now-playing";
   label: string;
   href: string;
   icon: string;
@@ -13,6 +13,7 @@ interface Props {
 const { current } = Astro.props;
 
 const categories: Category[] = [
+  { key: "now-playing", label: "Now Playing", href: "/now-playing/", icon: "bi-music-note-beamed" },
   { key: "stations", label: "Stations", href: "/", icon: "bi-broadcast" },
   { key: "top-rated", label: "Top Rated", href: "/top-rated/", icon: "bi-star" },  
   { key: "high-quality", label: "High Quality", href: "/high-quality/", icon: "bi-soundwave" },
