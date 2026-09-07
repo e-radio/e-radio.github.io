@@ -24,7 +24,7 @@ const categories: Category[] = [
 ];
 ---
 <nav aria-label="Station categories" class="category-switch mb-4 overflow-auto px-2 px-md-0">
-  <div class="d-inline-flex bg-light rounded-3 p-1 flex-nowrap gap-2 mx-md-auto" role="group" style="min-width: max-content;">
+  <div class="d-inline-flex bg-light rounded-3 p-1 flex-nowrap gap-1 mx-md-auto" role="group" style="min-width: max-content;">
     {categories.map((category) => {
       const isActive = category.key === current;
       const baseClasses = "btn btn px-3 fw-semibold";

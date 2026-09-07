@@ -79,12 +79,14 @@ const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationDat
   };
   if (savedMetadata.nowplaying_url) {
     const savedServerType = savedMetadata.metadata_server || "unknown";
-    const isSecureCentovaEndpoint = savedServerType === "centovacast" && /^https:\/\//i.test(savedMetadata.nowplaying_url);
-    const needsCorsProxy = ["shoutcast", "icecast", "centovacast"].includes(savedServerType) && !isSecureCentovaEndpoint;
-    const resolveSavedEndpoint = (endpoint: string) =>
-      savedMetadata.metadata_direct && /^https:\/\//i.test(endpoint)
+    const resolveSavedEndpoint = (endpoint: string) => {
+      const isHttps = /^https:\/\//i.test(endpoint);
+      const needsCorsProxy = ["shoutcast", "icecast", "centovacast"].includes(savedServerType)
+        && !(savedServerType === "centovacast" && isHttps);
+      return savedMetadata.metadata_direct && isHttps
         ? endpoint
         : (needsCorsProxy ? wrapWithCorsProxy(endpoint) : endpoint);
+    };
     return {
       nowPlaying: resolveSavedEndpoint(savedMetadata.nowplaying_url),
       history: savedMetadata.history_url
@@ -814,6 +816,7 @@ const structuredData = {
   <div id="player-config" data-config={JSON.stringify(playerScriptConfig)} hidden></div>
   <script>
 // @ts-nocheck
+    import { centovaHistoryTracks } from "../../lib/centovacast-history.mjs";
     const configEl = document.getElementById('player-config');
     const defaultConfig = {
       hasStream: false,
@@ -1073,7 +1076,7 @@ const structuredData = {
         .filter((info) => Boolean(info));
 
       if (rendered.length === 0) {
-        setHistoryMessage(historyDefaultMessage);
+        // Now-playing-only responses and temporary empty results must not erase history.
         return false;
       }
 
@@ -1152,8 +1155,7 @@ const structuredData = {
 
     const applyRecentTracks = (payload) => {
       if (!nextTitleEl || !nextMetaEl) {
-        updateHistoryList(payload);
-        return false;
+        return updateHistoryList(payload);
       }
 
       const { next } = extractRecentTracks(payload);
@@ -1554,12 +1556,18 @@ const structuredData = {
         const response = await fetchMetadata(playerConfig.historyEndpoint);
         if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
         const contentType = response.headers?.get?.('content-type') || '';
-        const raw = await response.text();
+        const responseText = await response.text();
+        // Jina Reader wraps JSON in a plain-text Markdown Content section.
+        const raw = responseText.includes('Markdown Content:')
+          ? responseText.slice(responseText.indexOf('Markdown Content:') + 'Markdown Content:'.length).trim()
+          : responseText;
 
         if (contentType.includes('application/json') || /^[\s]*[\[{]/.test(raw)) {
           try {
             const parsed = JSON.parse(raw);
-            const jsonPayload = Array.isArray(parsed) && playerConfig.serverType === 'shoutcast'
+            const jsonPayload = playerConfig.serverType === 'centovacast'
+              ? { song_history: centovaHistoryTracks(parsed) }
+              : Array.isArray(parsed) && playerConfig.serverType === 'shoutcast'
               ? {
                   now_playing: { song: { text: parsed[0]?.title || '' }, played_at: parsed[0]?.playedat },
                   song_history: parsed.slice(1).map((track) => ({
@@ -1642,7 +1650,10 @@ const structuredData = {
           throw new Error('Empty now playing payload');
         }
         const listenersEl = document.getElementById('nowPlayingListeners');
-        const listeners = data?.listeners?.current ?? data?.currentlisteners;
+        const centovaEntry = playerConfig.serverType === 'centovacast' && data?.type === 'result' && Array.isArray(data?.data)
+          ? data.data[0]
+          : null;
+        const listeners = data?.listeners?.current ?? data?.currentlisteners ?? centovaEntry?.listeners ?? centovaEntry?.listenertotal;
         if (listenersEl) {
           const valid = (typeof listeners === 'number' || typeof listeners === 'string') && String(listeners).trim() !== '' && Number.isFinite(Number(listeners)) && Number(listeners) >= 0;
           listenersEl.textContent = valid ? `Listeners: ${Number(listeners).toLocaleString()}` : '';

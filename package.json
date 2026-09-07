@@ -10,7 +10,7 @@
     "git push": "git add . && git commit -m \"update\" && git push",
     "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "fill state": "python3 tools/fill-state-from-homepage.py --max 0 --sleep 1",
-    "fff brobe": "python3 tools/ffprobe-metadata.py --url https://s6.e-resellers.gr/8088/;",
+    "fff brobe": "python3 tools/ffprobe-metadata.py --url https://radio.streamings.gr/proxy/yellownewstream?mp=/stream",
     "get stations from radio browser api": "node tools/fetch-greece-stations.mjs",
     "helper": "node tools/find-station-metadata-endpoints.mjs --write",
     "check": "astro check"

@@ -64,7 +64,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://centova.gr-net.gr/rpc/dimitrio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=dimitrio&limit=10"
   },
   {
     "slug": "1-news",
@@ -803,7 +804,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/glzzkced/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=glzzkced&limit=10"
   },
   {
     "slug": "87-6-studio-1-corfu",
@@ -926,7 +928,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/sxxaojkx/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=sxxaojkx&limit=10"
   },
   {
     "slug": "89-rainbow-christmas-thessaloniki",
@@ -934,7 +937,7 @@
     "name": "89 Rainbow Christmas",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n11.radiojar.com/4nwwcyesv8hvv?rj-ttl=5&rj-tok=AAABhU7fB_gAoW9W9YLC5FGQ7Q",
+    "stream_url": "https://stream.radiojar.com/4nwwcyesv8hvv",
     "homepage": "https://89rainbow.gr/",
     "favicon": "/station-icons/89-rainbow-christmas-thessaloniki.webp",
     "genres": [],
@@ -1161,7 +1164,7 @@
     "name": "99 Ράδιο 1",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n13.radiojar.com/t0x7dyqmsuhvv?rj-ttl=5&rj-tok=AAABhH0rD-QAgA2xJnC5B93PWQ",
+    "stream_url": "https://stream.radiojar.com/t0x7dyqmsuhvv",
     "homepage": "https://www.99fm.gr/",
     "favicon": "/station-icons/99-1-thessaloniki.webp",
     "genres": [
@@ -1367,7 +1370,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/jkzjmwru/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=jkzjmwru&limit=10"
   },
   {
     "slug": "action-radio-98-2",
@@ -1845,7 +1849,7 @@
     "name": "Alepou Radio",
     "state": "Attica",
     "city": "Nikaia",
-    "stream_url": "http://n0e.radiojar.com/h693vkmhe5uvv?rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/h693vkmhe5uvv",
     "homepage": "https://www.alepou-radio.com/",
     "favicon": "/station-icons/alepou-radio.webp",
     "genres": [],
@@ -2003,7 +2007,7 @@
     "name": "Alpha 98.9",
     "state": null,
     "city": null,
-    "stream_url": "http://stream.radiojar.com/xcdg6yggzfeuv",
+    "stream_url": "https://stream.radiojar.com/xcdg6yggzfeuv",
     "homepage": "https://alpha989.gr/",
     "favicon": "/station-icons/alpha-98-9-placeholder.webp",
     "genres": [
@@ -2028,7 +2032,7 @@
     "name": "Alpha 98.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://stream.radiojar.com/xcdg6yggzfeuv",
+    "stream_url": "https://stream.radiojar.com/xcdg6yggzfeuv",
     "homepage": "https://alpha989.gr/",
     "favicon": "/station-icons/alpha-98-9-athens-placeholder.webp",
     "genres": [
@@ -2053,7 +2057,7 @@
     "name": "Alpha 98.9 Athens",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n0e.radiojar.com/xcdg6yggzfeuv?rj-ttl=5&rj-tok=AAABeGu7-YMAAjbbx7O97iNbyw",
+    "stream_url": "https://stream.radiojar.com/xcdg6yggzfeuv",
     "homepage": "https://www.alpha989.com/",
     "favicon": "/station-icons/alpha-98-9-athens-6f616c84-placeholder.webp",
     "genres": [
@@ -2189,7 +2193,7 @@
     "name": "Alpha Καστοριά",
     "state": "Western Macedonia",
     "city": "Kastoria",
-    "stream_url": "http://n09.radiojar.com/wxc5sezupy5tv?1516183875=&rj-tok=AAABePtbMkMA_HDtKIp2EyprKQ&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/wxc5sezupy5tv",
     "homepage": "https://www.alphafm.gr/",
     "favicon": "/station-icons/alpha-kastoria.webp",
     "genres": [
@@ -2355,7 +2359,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/vqdawvmf/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vqdawvmf&limit=10"
   },
   {
     "slug": "angel-102-8-karditsa",
@@ -2608,7 +2613,7 @@
     "name": "Apopsi GR",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n01.radiojar.com/radio-apopsi?rj-ttl=5&rj-tok=AAABjex_AsgA8qvCgqBfwSaMeQ",
+    "stream_url": "https://stream.radiojar.com/radio-apopsi",
     "homepage": "https://radioapopsi.gr/",
     "favicon": "/station-icons/apopsi-gr-thessaloniki.webp",
     "genres": [
@@ -2674,7 +2679,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/aquadisco80s/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=aquadisco80s&limit=10"
   },
   {
     "slug": "aquarius-pyrgos",
@@ -2728,7 +2734,7 @@
     "name": "Arcadia Τρίπολη",
     "state": "Peloponnese",
     "city": "Tripoli",
-    "stream_url": "https://n01.radiojar.com/g34k4f92n74tv?rj-ttl=5&rj-tok=AAABePYsSwQAd5jwm_Rp-BQitw",
+    "stream_url": "https://stream.radiojar.com/g34k4f92n74tv",
     "homepage": "https://www.arcadia938.gr/",
     "favicon": "/station-icons/arcadia-tripoli.webp",
     "genres": [
@@ -2888,7 +2894,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.streamings.gr/rpc/artyradio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=artyradio&limit=10"
   },
   {
     "slug": "asteras-92-andros",
@@ -3066,7 +3073,7 @@
     "name": "Athens Free Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n12.radiojar.com/e206r95qsp8uv?rj-ttl=5&rj-tok=AAABhMPbz3sAf9_4FoIJiUmkoA",
+    "stream_url": "https://stream.radiojar.com/e206r95qsp8uv",
     "homepage": "https://athensfreeradio.com/",
     "favicon": "/station-icons/athens-free-radio-athens.webp",
     "genres": [
@@ -3547,7 +3554,8 @@
     "geo_lat": 39.638544182137466,
     "geo_long": 22.416298985481266,
     "nowplaying_url": "https://solid24.streamupsolutions.com/rpc/nilxzqeg/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid24.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=nilxzqeg&limit=10"
   },
   {
     "slug": "baraza-radio",
@@ -3959,7 +3967,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/qcnwnozj/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=qcnwnozj&limit=10"
   },
   {
     "slug": "ble-thessaloniki",
@@ -4729,7 +4738,7 @@
     "name": "Bobos Family",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n05.radiojar.com/3h7ncy1y9vzuv?rj-ttl=5&rj-tok=AAABeKgazAUAdnYvDVxAK843MA",
+    "stream_url": "https://stream.radiojar.com/3h7ncy1y9vzuv",
     "homepage": "https://www.bobosartsfestival.com/",
     "favicon": "/station-icons/bobos-family-athens.jpg",
     "genres": [
@@ -4799,7 +4808,7 @@
     "name": "Bottle O' Groove",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n06.radiojar.com/n8buhxbsk9duv?rj-ttl=5&rj-tok=AAABeD060SkAnhYCEHekyrYV6g",
+    "stream_url": "https://stream.radiojar.com/n8buhxbsk9duv",
     "homepage": "https://www.bottleogroove.com/",
     "favicon": "/station-icons/bottle-o-groove.jpg",
     "genres": [
@@ -4945,7 +4954,7 @@
     "name": "Camara",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "https://n06.radiojar.com/252ry9dgytzuv?rj-ttl=5&rj-tok=AAABeKi3emcATmr2vFF6A41gwQ",
+    "stream_url": "https://stream.radiojar.com/252ry9dgytzuv",
     "homepage": "https://www.camararadio.com/",
     "favicon": "/station-icons/camara-thessaloniki.jpg",
     "genres": [
@@ -5239,7 +5248,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/alaqatab/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=alaqatab&limit=10"
   },
   {
     "slug": "chill-fm-gr",
@@ -5273,7 +5283,7 @@
     "name": "Chillout Tree Pines",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n0f.radiojar.com/n4dzb3znn3quv.mp3?rj-ttl=5&rj-tok=AAABeKi_TokAUTY4EzBEHHiJzQ",
+    "stream_url": "https://stream.radiojar.com/n4dzb3znn3quv.mp3",
     "homepage": "https://www.chillouttreepines.com/",
     "favicon": "/station-icons/chillout-tree-pines.webp",
     "genres": [
@@ -5298,7 +5308,7 @@
     "name": "Chillout TreePines",
     "state": null,
     "city": null,
-    "stream_url": "https://n07.radiojar.com/n4dzb3znn3quv.mp3?rj-ttl=5&rj-tok=AAABhNTTrbwAVrK_m_qtIxI5pQ",
+    "stream_url": "https://stream.radiojar.com/n4dzb3znn3quv.mp3",
     "homepage": "https://www.chillouttreepines.com/",
     "favicon": "/station-icons/chillout-treepines.jpg",
     "genres": [
@@ -5435,7 +5445,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eco.onestreaming.com/rpc/cityfm/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=cityfm&limit=10"
   },
   {
     "slug": "city-102-8-katerini",
@@ -5615,7 +5626,7 @@
     "name": "Classic Love 97.5",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n06.radiojar.com/gt0xy4z88f0uv?rj-ttl=5&rj-tok=AAABjTchKEYALPbenkCDtQIleQ",
+    "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
     "homepage": "https://classiclove.loveradio.gr/",
     "favicon": "/station-icons/classic-love-97-5-athens-greece.png",
     "genres": [
@@ -5760,7 +5771,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/teqgebwz/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=teqgebwz&limit=10"
   },
   {
     "slug": "comfuzio-24-athens",
@@ -5923,7 +5935,7 @@
     "name": "Cosmos 103.8",
     "state": "Central Macedonia",
     "city": "Katerini",
-    "stream_url": "http://n02.radiojar.com/duh3nm1v6hhvv?rj-ttl=5&rj-tok=AAABhLYSsOIAhf23KEeztv2SJw",
+    "stream_url": "https://stream.radiojar.com/duh3nm1v6hhvv",
     "homepage": "https://cosmosfm.gr/",
     "favicon": "/station-icons/cosmos-103-8-katerini.jpg",
     "genres": [
@@ -6071,7 +6083,7 @@
     "name": "CosmosFM 103.8",
     "state": null,
     "city": null,
-    "stream_url": "https://n03.radiojar.com/duh3nm1v6hhvv?rj-ttl=5&rj-tok=AAABf4h9XYsAPKpcpmHw2884vA",
+    "stream_url": "https://stream.radiojar.com/duh3nm1v6hhvv",
     "homepage": "https://cosmosfm.gr/",
     "favicon": "/station-icons/cosmosfm-103-8.png",
     "genres": [],
@@ -6203,7 +6215,7 @@
     "name": "CretaRadio",
     "state": "Crete",
     "city": null,
-    "stream_url": "https://everest.streams.ovh:1145/stream?x=1740380034235",
+    "stream_url": "https://everest.streams.ovh:1145/stream",
     "homepage": "https://cretaradio.gr/",
     "favicon": "/station-icons/cretaradio.png",
     "genres": [],
@@ -6226,7 +6238,7 @@
     "name": "Crystal",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n06.radiojar.com/htczr9epmchvv?rj-ttl=5&rj-tok=AAABhNhBqBYAE69MZAiHyDMI2Q",
+    "stream_url": "https://stream.radiojar.com/htczr9epmchvv",
     "homepage": "https://crystalradio.gr/",
     "favicon": "/station-icons/crystal-athens.webp",
     "genres": [
@@ -6466,8 +6478,8 @@
     "slug": "dalkas-88-2-62b8bab8",
     "stationuuid": "62b8bab8-3f84-4c5b-aa44-1fcc3eb6a1a8",
     "name": "DALKAS 88.2",
-    "state": null,
-    "city": null,
+    "state": "Central Greece",
+    "city": "Chalkida",
     "stream_url": "https://stream.radiojar.com/pr9r38w802hvv",
     "homepage": "https://www.dalkas.gr/",
     "favicon": "/station-icons/dalkas-88-2-62b8bab8-placeholder.webp",
@@ -6685,7 +6697,7 @@
     "name": "Derti 105.7",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "https://n06.radiojar.com/tzcb5k453quvv",
+    "stream_url": "https://stream.radiojar.com/tzcb5k453quvv",
     "homepage": "https://www.dertipatras.gr/",
     "favicon": "/station-icons/derti-105-7-patra-placeholder.webp",
     "genres": [
@@ -7252,7 +7264,7 @@
     "name": "DMST",
     "state": null,
     "city": null,
-    "stream_url": "http://n04.radiojar.com/opa-radio?rj-ttl=5&rj-tok=AAABeKlHl-AAZu5lL1pWJGUkog",
+    "stream_url": "https://stream.radiojar.com/opa-radio",
     "homepage": "https://issuu.com/dmst-media",
     "favicon": "/station-icons/dmst.png",
     "genres": [
@@ -7358,7 +7370,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid41.streamupsolutions.com/rpc/jhhzdwjo/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid41.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=jhhzdwjo&limit=10"
   },
   {
     "slug": "dream-city",
@@ -7679,7 +7692,7 @@
     "name": "Easy 97.2",
     "state": null,
     "city": null,
-    "stream_url": "http://stream.radiojar.com/cthtwxk5yvduv",
+    "stream_url": "https://stream.radiojar.com/cthtwxk5yvduv",
     "homepage": null,
     "favicon": "/station-icons/easy-97-2-placeholder.webp",
     "genres": [
@@ -7728,7 +7741,7 @@
     "name": "Easy FM 972",
     "state": null,
     "city": null,
-    "stream_url": "https://stream.radiojar.com/cthtwxk5yvduv.mp3",
+    "stream_url": "https://stream.radiojar.com/cthtwxk5yvduv",
     "homepage": "https://www.easy972.gr/",
     "favicon": "/station-icons/easy-fm-972-placeholder.webp",
     "genres": [
@@ -8262,7 +8275,7 @@
     "name": "Energy 101.5",
     "state": "Epirus",
     "city": "Ioannina",
-    "stream_url": "http://n08.radiojar.com/apb4wybq36duv.mp3?rj-ttl=5&rj-tok=AAABeR3Qk2sA5Lbsh1OB5-ln_w",
+    "stream_url": "https://stream.radiojar.com/apb4wybq36duv.mp3",
     "homepage": "https://epirusonline.gr/",
     "favicon": "/station-icons/energy-101-5-ioannina.png",
     "genres": [
@@ -8421,7 +8434,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.hostchefs.net/rpc/entropiaradio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.hostchefs.net/external/rpc.php?m=recenttracks.get&username=entropiaradio&limit=10"
   },
   {
     "slug": "envy",
@@ -9554,7 +9568,7 @@
     "name": "Eternal",
     "state": null,
     "city": null,
-    "stream_url": "http://n04.radiojar.com/su1eg54afzwtv?rj-ttl=5&rj-tok=AAABeK3YzL0AyUMdHHcNo4y0oA",
+    "stream_url": "https://stream.radiojar.com/su1eg54afzwtv",
     "homepage": "https://eternal-radio.net/",
     "favicon": "/station-icons/eternal.png",
     "genres": [
@@ -9624,7 +9638,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.hostchefs.net/rpc/eurofansradio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.hostchefs.net/external/rpc.php?m=recenttracks.get&username=eurofansradio&limit=10"
   },
   {
     "slug": "european-school-radio",
@@ -9753,7 +9768,7 @@
     "name": "Fade Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n13.radiojar.com/072mdmpbfq8uv",
+    "stream_url": "https://stream.radiojar.com/072mdmpbfq8uv",
     "homepage": "https://www.fade.radio/",
     "favicon": "/station-icons/fade-radio-athens.png",
     "genres": [
@@ -10569,7 +10584,7 @@
     "name": "Free radio",
     "state": null,
     "city": null,
-    "stream_url": "https://n09.radiojar.com/e206r95qsp8uv?rj-ttl=5&rj-tok=AAABjTeegtEAWNPK06lYDhypDQ",
+    "stream_url": "https://stream.radiojar.com/e206r95qsp8uv",
     "homepage": "https://www.athensfreeradio.com/",
     "favicon": "/station-icons/free-radio.webp",
     "genres": [],
@@ -10703,7 +10718,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/bfwxkhir/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=bfwxkhir&limit=10"
   },
   {
     "slug": "freshradio-thessaloniki",
@@ -11198,7 +11214,7 @@
     "name": "Garavelas",
     "state": null,
     "city": null,
-    "stream_url": "https://n0e.radiojar.com/garavelas-radio-gr?rj-ttl=5&rj-tok=AAABeK42LeQA8G2zyOZSZXxhnA",
+    "stream_url": "https://stream.radiojar.com/garavelas-radio-gr",
     "homepage": "https://www.gradio.gr/",
     "favicon": "/station-icons/garavelas.png",
     "genres": [
@@ -11221,7 +11237,7 @@
     "name": "garavelas-radio-gr",
     "state": null,
     "city": null,
-    "stream_url": "https://stream.radiojar.com/garavelas-radio-gr.m4a?1689432196",
+    "stream_url": "https://stream.radiojar.com/garavelas-radio-gr.m4a",
     "homepage": "https://www.gradio.gr/",
     "favicon": "/station-icons/garavelas-radio-gr.webp",
     "genres": [],
@@ -11686,7 +11702,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://usa2.fastcast4u.com/rpc/greekota/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://usa2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=greekota&limit=10"
   },
   {
     "slug": "greek-weather-radio-athens",
@@ -12020,7 +12037,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/smzyynlm/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=smzyynlm&limit=10"
   },
   {
     "slug": "hit-eclectic",
@@ -12068,7 +12086,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/zvbgdllc/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zvbgdllc&limit=10"
   },
   {
     "slug": "hit-radio",
@@ -12429,7 +12448,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.streamings.gr/rpc/feelmusic2021/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=feelmusic2021&limit=10"
   },
   {
     "slug": "if-radio",
@@ -12918,7 +12938,7 @@
     "name": "Jazz Breeze",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n03.radiojar.com/8tqwqkrhk48uv?rj-ttl=5&rj-tok=AAABhWUzD2oAZxpriF75OruLjw",
+    "stream_url": "https://stream.radiojar.com/8tqwqkrhk48uv",
     "homepage": "https://www.jazzbreezeradio.com/",
     "favicon": "/station-icons/jazz-breeze-athens.png",
     "genres": [
@@ -13950,7 +13970,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.streamings.gr/rpc/kokkinos2023/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=kokkinos2023&limit=10"
   },
   {
     "slug": "korinthos-korinthos",
@@ -14308,7 +14329,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast.magicstreams.gr:9010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://cast.magicstreams.gr:9010/played?sid=1&type=json"
   },
   {
     "slug": "la-vita-athens",
@@ -14601,7 +14625,7 @@
     "name": "Lefkatas 90.5",
     "state": "Ionian Islands",
     "city": "Lefkada",
-    "stream_url": "http://n0b.radiojar.com/kdf46t0c1quvv?rj-ttl=5&rj-tok=AAABlU31rIEAi6aFSgybyraWSg",
+    "stream_url": "https://stream.radiojar.com/kdf46t0c1quvv",
     "homepage": "https://lefkatasfm.gr/",
     "favicon": "/station-icons/lefkatas-90-5-lefkada.jpg",
     "genres": [
@@ -14733,7 +14757,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=radio888&limit=10"
   },
   {
     "slug": "lemon-web-radio",
@@ -14758,7 +14783,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=radio888&limit=10"
   },
   {
     "slug": "lepanto-nafpaktos",
@@ -15085,7 +15111,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "http://eu2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=loopradiostation&limit=10"
   },
   {
     "slug": "loop-695d1d91",
@@ -15112,7 +15139,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "http://eu2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=loopradiostation&limit=10"
   },
   {
     "slug": "loud-88-8-trikala",
@@ -15250,7 +15278,7 @@
     "name": "Love Classic",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n0f.radiojar.com/gt0xy4z88f0uv?rj-ttl=5&rj-tok=AAABeL0p0LoA-5x-FfgVSPOA6w",
+    "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
     "homepage": "https://www.loveradio.gr/",
     "favicon": "/station-icons/love-classic-athens.webp",
     "genres": [
@@ -15298,7 +15326,7 @@
     "name": "Love Trap",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n0a.radiojar.com/tkeve70hqd0uv?rj-ttl=5&rj-tok=AAABeL0yWmwArvLu3hf9O3iTGQ",
+    "stream_url": "https://stream.radiojar.com/tkeve70hqd0uv",
     "homepage": "https://www.loveradio.gr/",
     "favicon": "/station-icons/love-trap-athens.png",
     "genres": [
@@ -15323,7 +15351,7 @@
     "name": "Love Xmas",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n13.radiojar.com/gt0xy4z88f0uv?rj-ttl=5&rj-tok=AAABhPNinIcAf5w9qhiJzGOrIA",
+    "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
     "homepage": "https://xmas.loveradio.gr/",
     "favicon": "/station-icons/love-xmas-athens.webp",
     "genres": [],
@@ -15344,7 +15372,7 @@
     "name": "Love Z",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n0f.radiojar.com/20n2b23u7mruv?rj-ttl=5&rj-tok=AAABeL02zrIAXT8msu9V5ABUPw",
+    "stream_url": "https://stream.radiojar.com/20n2b23u7mruv",
     "homepage": "https://www.loveradio.gr/",
     "favicon": "/station-icons/love-z-athens.webp",
     "genres": [
@@ -15525,7 +15553,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/magiafm1047/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=magiafm1047&limit=10"
   },
   {
     "slug": "magic-102-4-sitia",
@@ -15630,7 +15659,7 @@
     "name": "MANCODE RADIO",
     "state": null,
     "city": null,
-    "stream_url": "https://stream.radiojar.com/2kqw1800x68uv?1690945099",
+    "stream_url": "https://stream.radiojar.com/2kqw1800x68uv",
     "homepage": "https://mancoderadio.com/",
     "favicon": "/station-icons/mancode-radio.webp",
     "genres": [],
@@ -15914,7 +15943,7 @@
     "name": "Max 93.4",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://n06.radiojar.com/qt9gf4hhdwzuv?rj-ttl=5&rj-tok=AAABePC4w-8AswP_xFbknsZD6g",
+    "stream_url": "https://stream.radiojar.com/qt9gf4hhdwzuv",
     "homepage": "https://maxfm.com.gr/",
     "favicon": "/station-icons/max-93-4-patra.webp",
     "genres": [
@@ -16151,7 +16180,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu4.fastcast4u.com/rpc/jlwmwogj/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu4.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=jlwmwogj&limit=10"
   },
   {
     "slug": "melody-music-volos",
@@ -17025,7 +17055,7 @@
     "name": "Monkey Bros",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n01.radiojar.com/5tyqrwpgpfeuv?rj-ttl=5&rj-tok=AAABeL13ku4Ae8jgeSRH6aWTyA",
+    "stream_url": "https://stream.radiojar.com/5tyqrwpgpfeuv",
     "homepage": "https://monkeybros.gr/",
     "favicon": "/station-icons/monkey-bros-thessaloniki.webp",
     "genres": [
@@ -17353,7 +17383,7 @@
     "name": "Mple 99 fm",
     "state": "Central Greece",
     "city": "Anthidon",
-    "stream_url": "https://n10.radiojar.com/f4pqr7wu48hvv?rand=604321&rj-tok=AAABhwia68IAEMa7tAHWaQFpDg&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/f4pqr7wu48hvv",
     "homepage": "https://lalala.gr/#mple",
     "favicon": "/station-icons/mple-99-fm-chalkida.png",
     "genres": [
@@ -17530,7 +17560,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10"
   },
   {
     "slug": "music-club-105-8-heraclion",
@@ -17740,7 +17771,7 @@
     "name": "Music Ward",
     "state": null,
     "city": null,
-    "stream_url": "http://n04.radiojar.com/opa-radio?rj-ttl=5&rj-tok=AAABeL2lZi0AP1rw53sYM5PgdA",
+    "stream_url": "https://stream.radiojar.com/opa-radio",
     "homepage": "https://music-ward-radio.radiojar.com/",
     "favicon": "/station-icons/music-ward.webp",
     "genres": [
@@ -17765,7 +17796,7 @@
     "name": "Music Ward",
     "state": null,
     "city": null,
-    "stream_url": "http://n11.radiojar.com/opa-radio?rj-ttl=5&rj-tok=AAABhPcvBa4AV9JCGDlegb2Ivw",
+    "stream_url": "https://stream.radiojar.com/opa-radio",
     "homepage": "https://music-ward-radio.radiojar.com/",
     "favicon": "/station-icons/music-ward-150b854c.png",
     "genres": [
@@ -17788,7 +17819,7 @@
     "name": "Musica Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://n11.radiojar.com/w6c6bssk95vtv?rj-ttl=5&rj-tok=AAABeL2tvXsA_W4ZZxft3G5omQ",
+    "stream_url": "https://stream.radiojar.com/w6c6bssk95vtv",
     "homepage": "https://musicaradio.gr/",
     "favicon": "/station-icons/musica-radio.png",
     "genres": [
@@ -17827,7 +17858,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10"
   },
   {
     "slug": "musicartclub-thessaloniki-1ac2e8a4",
@@ -17850,7 +17882,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10"
   },
   {
     "slug": "musicartclub-radio",
@@ -18304,7 +18337,7 @@
     "name": "Nitro 102.5",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n04.radiojar.com/29e98fkcks3vv?rj-ttl=5&rj-tok=AAABlNxcVVUAl7JDl2cmO8Vl5g",
+    "stream_url": "https://stream.radiojar.com/29e98fkcks3vv",
     "homepage": "https://www.athensnitroradio.gr/",
     "favicon": "/station-icons/nitro-102-5-athens.png",
     "genres": [
@@ -18462,7 +18495,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/evllufwn/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=evllufwn&limit=10"
   },
   {
     "slug": "notos-news-97-8-rhodes",
@@ -18599,7 +18633,7 @@
     "name": "NRG 101.5",
     "state": "Epirus",
     "city": "Ioannina",
-    "stream_url": "http://n04.radiojar.com/apb4wybq36duv.mp3?rj-ttl=5&rj-tok=AAABhIJxLQwAy78cDpx6RkU5Cg",
+    "stream_url": "https://stream.radiojar.com/apb4wybq36duv.mp3",
     "homepage": "https://epirusonline.gr/",
     "favicon": "/station-icons/nrg-101-5-ioannina.jpg",
     "genres": [
@@ -18702,7 +18736,7 @@
     "name": "NRG 95",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "http://n0b.radiojar.com/93c3avwu48hvv?rj-ttl=5&rj-tok=AAABicehzSoAu1CdSzRUrZVGLA",
+    "stream_url": "https://stream.radiojar.com/93c3avwu48hvv",
     "homepage": "https://www.nrg95.gr/",
     "favicon": "/station-icons/nrg-95-chalkida.png",
     "genres": [],
@@ -18898,7 +18932,7 @@
     "name": "Ogdoo",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n08.radiojar.com/u8c2yr3sp42vv?rj-ttl=5&rj-tok=AAABjO_P3SMAHC4ebCLTYoquwA",
+    "stream_url": "https://stream.radiojar.com/u8c2yr3sp42vv",
     "homepage": "https://www.ogdoo.gr/",
     "favicon": "/station-icons/ogdoo-athens.png",
     "genres": [
@@ -19185,7 +19219,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu3.fastcast4u.com/rpc/opar/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu3.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=opar&limit=10"
   },
   {
     "slug": "orange-88-3-kavala",
@@ -19707,7 +19742,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eco.onestreaming.com/rpc/club937/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=club937&limit=10"
   },
   {
     "slug": "panikos",
@@ -20101,7 +20137,7 @@
     "name": "Pemptousia",
     "state": null,
     "city": null,
-    "stream_url": "http://n11.radiojar.com/48cz219puzzuv?rj-ttl=5&rj-tok=AAABeRN9wesAFTQFvTg0K7vGZg",
+    "stream_url": "https://stream.radiojar.com/48cz219puzzuv",
     "homepage": "https://www.pemptousia.gr/",
     "favicon": "/station-icons/pemptousia.png",
     "genres": [
@@ -20125,7 +20161,7 @@
     "name": "Pemptousia FM",
     "state": "Central Macedonia",
     "city": "Athos",
-    "stream_url": "http://stream.radiojar.com/48cz219puzzuv",
+    "stream_url": "https://stream.radiojar.com/48cz219puzzuv",
     "homepage": "https://www.pemptousia.gr/",
     "favicon": "/station-icons/pemptousia-fm-athos.webp",
     "genres": [
@@ -20194,8 +20230,8 @@
     "name": "Pepper 96.6",
     "state": null,
     "city": null,
-    "stream_url": "http://pepper966.live24.gr/pepper9660",
-    "homepage": "https://pepper966.live24.gr/pepper9660",
+    "stream_url": "https://netradio.live24.gr/pepper9660",
+    "homepage": "https://www.pepper966.gr/",
     "favicon": "/station-icons/pepper-96-6-placeholder.webp",
     "genres": [
       "easy listening",
@@ -20263,7 +20299,7 @@
     "name": "Picasso",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://n0b.radiojar.com/s87smqqfewzuv?rj-ttl=5&rj-tok=AAABePDGEF4AVlnUeTPoZNV1Dw",
+    "stream_url": "https://stream.radiojar.com/s87smqqfewzuv",
     "homepage": "https://picassofm.gr/",
     "favicon": "/station-icons/picasso-patra.jpg",
     "genres": [
@@ -20288,7 +20324,7 @@
     "name": "Picasso 102.7",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://n12.radiojar.com/s87smqqfewzuv?rj-ttl=5&rj-tok=AAABhEP6hUMANppKTlsRRGUGvA",
+    "stream_url": "https://stream.radiojar.com/s87smqqfewzuv",
     "homepage": "https://picassofm.gr/",
     "favicon": "/station-icons/picasso-102-7-patra.webp",
     "genres": [
@@ -20406,7 +20442,7 @@
     "name": "Play Gold",
     "state": null,
     "city": null,
-    "stream_url": "http://n02.radiojar.com/431m8b6qcm5tv?rj-ttl=5&rj-tok=AAABeMb0Lj0AJxDa01j50hVL0Q",
+    "stream_url": "https://stream.radiojar.com/431m8b6qcm5tv",
     "homepage": "https://playradio.one/",
     "favicon": "/station-icons/play-gold.png",
     "genres": [
@@ -20480,7 +20516,7 @@
     "name": "Play Radio",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "https://n12.radiojar.com/0zs50dbr274tv?rj-ttl=5&rj-tok=AAABhP2aZowAREeJDqq73dSjNA",
+    "stream_url": "https://stream.radiojar.com/0zs50dbr274tv",
     "homepage": "https://playradio.one/",
     "favicon": "/station-icons/play-radio-patra-7dfaa6c2.ico",
     "genres": [
@@ -20709,7 +20745,7 @@
     "name": "PolisView",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n08.radiojar.com/gzr6836ty7zuv?rj-ttl=5&rj-tok=AAABivHNH-4AbHF6pR9GUjwu0w",
+    "stream_url": "https://stream.radiojar.com/gzr6836ty7zuv",
     "homepage": "https://polisview.com/",
     "favicon": "/station-icons/polisview-athens.jpg",
     "genres": [],
@@ -21239,7 +21275,7 @@
     "name": "Pucca Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n0a.radiojar.com/mecdkyuevp8uv?rj-ttl=5&rj-tok=AAABivHpWjgAT51mKlrhqKghhA",
+    "stream_url": "https://stream.radiojar.com/mecdkyuevp8uv",
     "homepage": "https://puccaradio.com/",
     "favicon": "/station-icons/pucca-radio.webp",
     "genres": [],
@@ -21283,7 +21319,7 @@
     "name": "Purple",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n11.radiojar.com/weqykpegsm5tv?rj-ttl=5&rj-tok=AAABeMeCQf8A2Jh75qr_M9worw",
+    "stream_url": "https://stream.radiojar.com/weqykpegsm5tv",
     "homepage": "https://purpleradioathens.com/",
     "favicon": "/station-icons/purple-athens-placeholder.webp",
     "genres": [
@@ -21487,7 +21523,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/gygasbfj/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=gygasbfj&limit=10"
   },
   {
     "slug": "radio-90-4-thessaloniki",
@@ -21722,7 +21759,7 @@
     "name": "Radio Apopsi",
     "state": null,
     "city": null,
-    "stream_url": "http://link.radiojar.com/radio-apopsi",
+    "stream_url": "https://stream.radiojar.com/radio-apopsi",
     "homepage": "https://www.radioapospi.gr/",
     "favicon": "/station-icons/radio-apopsi.png",
     "genres": [],
@@ -26295,7 +26332,7 @@
     "name": "Radio Beat Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://62.38.241.82:8000/",
+    "stream_url": "http://62.38.241.82:8000/;",
     "homepage": null,
     "favicon": "/station-icons/radio-beat-radio-placeholder.webp",
     "genres": [
@@ -26575,7 +26612,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/tfcgioyq/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=tfcgioyq&limit=10"
   },
   {
     "slug": "radio-galilea",
@@ -27175,7 +27213,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://eu4.fastcast4u.com/rpc/nikoud00/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "http://eu4.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=nikoud00&limit=10"
   },
   {
     "slug": "radio-paris-athens",
@@ -27183,7 +27222,7 @@
     "name": "Radio Paris",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n04.radiojar.com/kddqnna7yxmtv?rj-ttl=5&rj-tok=AAABeMfuEA8A3qd6CiQs8HFIVw",
+    "stream_url": "https://stream.radiojar.com/kddqnna7yxmtv",
     "homepage": "https://www.radio-paris.gr/",
     "favicon": "/station-icons/radio-paris-athens.jpg",
     "genres": [
@@ -27424,7 +27463,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://cast.serverps.gr/rpc/radioasteria/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://cast.serverps.gr/external/rpc.php?m=recenttracks.get&username=radioasteria&limit=10"
   },
   {
     "slug": "radio-technis",
@@ -27453,7 +27493,7 @@
     "name": "Radio X",
     "state": null,
     "city": null,
-    "stream_url": "https://n07.radiojar.com/yv5xu5h7zwwtv?rj-ttl=5&rj-tok=AAABeMgD8O4ADk3iEmxYJju41w",
+    "stream_url": "https://stream.radiojar.com/yv5xu5h7zwwtv",
     "homepage": "https://www.radiox.gr/",
     "favicon": "/station-icons/radio-x-placeholder.webp",
     "genres": [
@@ -27494,7 +27534,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://radio.streamings.gr/rpc/radioyellow/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "http://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=radioyellow&limit=10"
   },
   {
     "slug": "radio-rizitis-crete-chania-kissamos",
@@ -27627,7 +27668,7 @@
     "name": "Radiobird",
     "state": null,
     "city": null,
-    "stream_url": "http://n0c.radiojar.com/6uqfysrasm0uv?rj-ttl=5&rj-tok=AAABeMen5vMApu1v2srASlBaiw",
+    "stream_url": "https://stream.radiojar.com/6uqfysrasm0uv",
     "homepage": "https://www.radiobird.gr/",
     "favicon": "/station-icons/radiobird.png",
     "genres": [
@@ -27727,7 +27768,7 @@
     "name": "RadioMak",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://stream.radiojar.com/d3n35mr218hvv",
+    "stream_url": "https://stream.radiojar.com/d3n35mr218hvv",
     "homepage": "https://www.radiojar.com/widget/radio/d3n35mr218hvv/player/",
     "favicon": "/station-icons/radiomak-athens-placeholder.webp",
     "genres": [
@@ -27818,7 +27859,7 @@
     "name": "Radiotsambouno",
     "state": null,
     "city": null,
-    "stream_url": "http://stream.radiojar.com/gbrgkbcfnq5tv",
+    "stream_url": "https://stream.radiojar.com/gbrgkbcfnq5tv",
     "homepage": "https://www.e-dimitra.gr/",
     "favicon": "/station-icons/radiotsambouno.png",
     "genres": [],
@@ -27863,7 +27904,7 @@
     "name": "Rainbow 89",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n0e.radiojar.com/083wqknmsuhvv?rj-ttl=5&rj-tok=AAABhHgFMdoAMjpYSw5BtqF9Zg",
+    "stream_url": "https://stream.radiojar.com/083wqknmsuhvv",
     "homepage": "https://www.89rainbow.gr/",
     "favicon": "/station-icons/rainbow-89-thessaloniki.png",
     "genres": [
@@ -27888,7 +27929,7 @@
     "name": "Rainbow 89 Alternative",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "https://n0c.radiojar.com/vhknc3c8ktuvv?rj-ttl=5&rj-tok=AAABjW_ZdaoAXabhOqjfpH7GNg",
+    "stream_url": "https://stream.radiojar.com/vhknc3c8ktuvv",
     "homepage": "https://89rainbow.gr/",
     "favicon": "/station-icons/rainbow-89-alternative-thessaloniki.png",
     "genres": [],
@@ -27909,7 +27950,7 @@
     "name": "Rainbow 89 Christmas",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://stream.radiojar.com/4nwwcyesv8hvv",
+    "stream_url": "https://stream.radiojar.com/4nwwcyesv8hvv",
     "homepage": "https://89rainbow.gr/",
     "favicon": "/station-icons/rainbow-89-christmas-thessaloniki.webp",
     "genres": [
@@ -27935,7 +27976,7 @@
     "name": "Rainbow 89 Pop",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "https://n05.radiojar.com/ztqh29c8ktuvv?rj-ttl=5&rj-tok=AAABjW_eWdoAP4LPpPaNlupsMA",
+    "stream_url": "https://stream.radiojar.com/ztqh29c8ktuvv",
     "homepage": "https://89rainbow.gr/",
     "favicon": "/station-icons/rainbow-89-pop-thessaloniki.png",
     "genres": [],
@@ -27956,7 +27997,7 @@
     "name": "Rainbow 89 Μπλε",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "https://n06.radiojar.com/akf7zea5kzuvv?rj-ttl=5&rj-tok=AAABjW_i2S8Az6X2ujnqoLooNA",
+    "stream_url": "https://stream.radiojar.com/akf7zea5kzuvv",
     "homepage": "https://89rainbow.gr/",
     "favicon": "/station-icons/rainbow-89-thessaloniki-a0d7a649.png",
     "genres": [
@@ -28411,7 +28452,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/zcpyirtp/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zcpyirtp&limit=10"
   },
   {
     "slug": "rizes",
@@ -28842,7 +28884,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid2.streamupsolutions.com/rpc/msoepowo/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid2.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=msoepowo&limit=10"
   },
   {
     "slug": "rockha-radio-athens",
@@ -28967,7 +29010,7 @@
     "name": "Roxx",
     "state": null,
     "city": null,
-    "stream_url": "http://n0f.radiojar.com/aay95tkmb?rj-ttl=5&rj-tok=AAABeM0nPCUAKtKvym5LvOsNmQ",
+    "stream_url": "https://stream.radiojar.com/aay95tkmb",
     "homepage": "https://roxx.gr/",
     "favicon": "/station-icons/roxx.webp",
     "genres": [
@@ -28990,7 +29033,7 @@
     "name": "Roxx Radio",
     "state": "Central Greece",
     "city": "Sperchiada",
-    "stream_url": "http://n08.radiojar.com/aay95tkmb?1676622496=&rj-tok=AAABhl6Gxj0AhPNmYI0wOR0gkA&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/aay95tkmb",
     "homepage": "https://roxx.gr/radio/",
     "favicon": "/station-icons/roxx-radio.png",
     "genres": [
@@ -29105,7 +29148,7 @@
     "name": "Rythmos 94.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://stream.radiojar.com/aw1w2xfx1vduv",
+    "stream_url": "https://stream.radiojar.com/aw1w2xfx1vduv",
     "homepage": "https://soundis.gr/rythmos949/",
     "favicon": "/station-icons/rythmos-94-9-athens.webp",
     "genres": [
@@ -29130,7 +29173,7 @@
     "name": "Rythmos FM",
     "state": null,
     "city": null,
-    "stream_url": "http://ample.radiojar.com/aw1w2xfx1vduv.mp3",
+    "stream_url": "https://stream.radiojar.com/aw1w2xfx1vduv.mp3",
     "homepage": "https://www.rythmosfm.gr/",
     "favicon": "/station-icons/rythmos-fm-placeholder.webp",
     "genres": [],
@@ -29151,7 +29194,7 @@
     "name": "Rythmos FM.GR",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n01.radiojar.com/g4tyehk5yvduv.mp3",
+    "stream_url": "https://stream.radiojar.com/g4tyehk5yvduv.mp3",
     "homepage": "https://www.rythmosfm.gr/",
     "favicon": "/station-icons/rythmos-fm-gr-athens-placeholder.webp",
     "genres": [
@@ -29269,7 +29312,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eco.onestreaming.com/rpc/samothraki/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=samothraki&limit=10"
   },
   {
     "slug": "sampotaz",
@@ -29629,7 +29673,7 @@
     "name": "Sfera 96.6",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://n01.radiojar.com/mg2vq26eewzuv?rj-ttl=5&rj-tok=AAABePDKYnkA9kVa1QYWTKFxIQ",
+    "stream_url": "https://stream.radiojar.com/mg2vq26eewzuv",
     "homepage": "https://sferafm.gr/",
     "favicon": "/station-icons/sfera-96-6-patra.webp",
     "genres": [
@@ -29916,7 +29960,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/lqomhdjk/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lqomhdjk&limit=10"
   },
   {
     "slug": "sin-radio",
@@ -30411,7 +30456,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eco.onestreaming.com/rpc/slam/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=slam&limit=10"
   },
   {
     "slug": "smart-104-5-heraclion",
@@ -30461,7 +30507,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/smokradio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=smokradio&limit=10"
   },
   {
     "slug": "smooth-jazz-111-athens",
@@ -30508,7 +30555,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/lrazisyb/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lrazisyb&limit=10"
   },
   {
     "slug": "sohos-88-7-thessaloniki",
@@ -30646,7 +30694,7 @@
     "name": "Souxe",
     "state": null,
     "city": null,
-    "stream_url": "https://n09.radiojar.com/ugs98yvkb?rj-ttl=5&rj-tok=AAABhSUTgCAAJJ7vOqIw4wkuXw",
+    "stream_url": "https://stream.radiojar.com/ugs98yvkb",
     "homepage": "https://radiosouxe.com/",
     "favicon": "/station-icons/souxe.png",
     "genres": [
@@ -30741,7 +30789,7 @@
     "name": "Sport 96.3",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://n0b.radiojar.com/yb7bcbkfewzuv?rj-ttl=5&rj-tok=AAABhE8OfscAWLZ-gC5hhZqxPA",
+    "stream_url": "https://stream.radiojar.com/yb7bcbkfewzuv",
     "homepage": "https://sportfmpatras.gr/",
     "favicon": "/station-icons/sport-96-3-patra.png",
     "genres": [
@@ -30978,7 +31026,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://centova.gr-net.gr/rpc/radiostar955/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=radiostar955&limit=10"
   },
   {
     "slug": "star-97-7-chania",
@@ -31004,7 +31053,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/vkpzhens/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vkpzhens&limit=10"
   },
   {
     "slug": "star-classic-radio-gr-thessaloniki",
@@ -31159,7 +31209,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://loki.mental-media.gr/rpc/statusf1/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://loki.mental-media.gr/external/rpc.php?m=recenttracks.get&username=statusf1&limit=10"
   },
   {
     "slug": "status-alexandroupolis",
@@ -31340,7 +31391,7 @@
     "name": "stokokkino",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://stream.radiojar.com/kokkino-ath.mp3",
+    "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
     "homepage": "https://www.stokokkino.gr/",
     "favicon": "/station-icons/stokokkino-athens-placeholder.webp",
     "genres": [
@@ -31544,7 +31595,7 @@
     "name": "Strummer Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n02.radiojar.com/fg3tm92rxeruv?rj-ttl=5&rj-tok=AAABgyLgWysAEp7R4lXf-DlT1g",
+    "stream_url": "https://stream.radiojar.com/fg3tm92rxeruv",
     "homepage": "https://strummerradio.com/",
     "favicon": "/station-icons/strummer-radio-athens.png",
     "genres": [],
@@ -31795,7 +31846,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://cast6.asurahosting.com/rpc/radiosky/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://cast6.asurahosting.com/external/rpc.php?m=recenttracks.get&username=radiosky&limit=10"
   },
   {
     "slug": "styl-104-9-athens",
@@ -31887,7 +31939,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s9.webradio-hosting.com/rpc/suburbiaparties/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s9.webradio-hosting.com/external/rpc.php?m=recenttracks.get&username=suburbiaparties&limit=10"
   },
   {
     "slug": "super-104-1-korinthos",
@@ -32506,7 +32559,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/rmjbkagy/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=rmjbkagy&limit=10"
   },
   {
     "slug": "tivoli-thessaloniki",
@@ -32529,7 +32583,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.streamings.gr/rpc/yellownewstream/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=yellownewstream&limit=10"
   },
   {
     "slug": "to-pikap-thessaloniki",
@@ -32902,7 +32957,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/monaytgo/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=monaytgo&limit=10"
   },
   {
     "slug": "ubm-gr-athens",
@@ -32931,7 +32987,7 @@
     "name": "Uncut GR",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://n07.radiojar.com/s2kb0626cm8uv?rj-ttl=5&rj-tok=AAABiwFpkksAxnQw5rb38sGUsw",
+    "stream_url": "https://stream.radiojar.com/s2kb0626cm8uv",
     "homepage": "https://uncutradio.gr/",
     "favicon": "/station-icons/uncut-gr-chania.png",
     "genres": [],
@@ -33263,8 +33319,8 @@
     "name": "Venus",
     "state": "Western Greece",
     "city": "Amaliada",
-    "stream_url": "http://s3.onweb.gr:8808/",
-    "homepage": null,
+    "stream_url": "https://cast6.my-control-panel.com/proxy/venus1051/stream",
+    "homepage": "https://venusfm.gr/",
     "favicon": "/station-icons/venus-amaliada-placeholder.webp",
     "genres": [],
     "language": "greek",
@@ -33276,7 +33332,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast6.my-control-panel.com/proxy/venus1051/status-json.xsl?mount=%2Fstream",
+    "history_url": "https://cast6.my-control-panel.com/external/rpc.php?m=recenttracks.get&username=venus1051&limit=10",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "venus-105-1-amaliada",
@@ -33331,8 +33390,8 @@
     "slug": "venus-fm-105-1-greece",
     "stationuuid": "9d23634b-e3ff-4af5-bbfa-5f8c2b5d0804",
     "name": "Venus FM 105,1 GREECE",
-    "state": null,
-    "city": null,
+    "state": "Western Greece",
+    "city": "Amaliada",
     "stream_url": "https://sh.onweb.gr:7124/stream",
     "homepage": "https://venusfm.gr/",
     "favicon": "/station-icons/venus-fm-105-1-greece.png",
@@ -33739,7 +33798,7 @@
     "name": "Weird Fishes",
     "state": null,
     "city": null,
-    "stream_url": "http://n12.radiojar.com/w47v0ekgzp5tv.m4a?rj-ttl=5&rj-tok=AAABeNc8lwUA6BG833qwmOENGw",
+    "stream_url": "https://stream.radiojar.com/w47v0ekgzp5tv.m4a",
     "homepage": "https://www.weirdfishesradio.gr/",
     "favicon": "/station-icons/weird-fishes.webp",
     "genres": [
@@ -33928,7 +33987,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/zizthduh/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zizthduh&limit=10"
   },
   {
     "slug": "xilia-diamantia",
@@ -33960,7 +34020,7 @@
     "name": "Xmas Love 97.5",
     "state": "Attica",
     "city": "Tavros",
-    "stream_url": "https://n0e.radiojar.com/gt0xy4z88f0uv?rj-ttl=5&rj-tok=AAABi7fTOIkAxUgpckpuwZwLcQ",
+    "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
     "homepage": "https://xmas.loveradio.gr/",
     "favicon": "/station-icons/xmas-love-97-5-athens-greece.png",
     "genres": [],
@@ -34494,7 +34554,7 @@
     "name": "Αιγαίο Live 95.8",
     "state": "South Aegean",
     "city": "Syros",
-    "stream_url": "https://n10.radiojar.com/nkqh9th47vzuv?rj-ttl=5&rj-tok=AAABeQrkPYYAnOvxMouarvernQ",
+    "stream_url": "https://stream.radiojar.com/nkqh9th47vzuv",
     "homepage": "https://aigaiolive.gr/",
     "favicon": "/station-icons/live-95-8-syros.png",
     "genres": [
@@ -34586,7 +34646,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu1.fastcast4u.com/rpc/afreeapo/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=afreeapo&limit=10"
   },
   {
     "slug": "thessaloniki",
@@ -35384,7 +35445,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu8.fastcast4u.com/rpc/chaniaradio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu8.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=chaniaradio&limit=10"
   },
   {
     "slug": "gr",
@@ -35407,7 +35469,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/xbygwcwv/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=xbygwcwv&limit=10"
   },
   {
     "slug": "eton7art-athens",
@@ -35636,7 +35699,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/vlerkait/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vlerkait&limit=10"
   },
   {
     "slug": "101-1-xanthi",
@@ -35867,7 +35931,7 @@
     "name": "Δημοτικό Ραδιόφωνο Ιωαννίνων 98.7",
     "state": "Epirus",
     "city": "Ioannina",
-    "stream_url": "http://n11.radiojar.com/1qpu1agw4mzuv.m4a?1707324621=&rj-tok=AAABjYSEOYUAfcXal-0-vdyRnA&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/1qpu1agw4mzuv.m4a",
     "homepage": "https://www.dimotikoradiofono.gr/",
     "favicon": "/station-icons/98-7-ioannina.png",
     "genres": [
@@ -36422,7 +36486,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eco.onestreaming.com/rpc/elladafm/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=elladafm&limit=10"
   },
   {
     "slug": "102-fm",
@@ -36446,7 +36511,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://webradios.stream:8000/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "loverockradio",
@@ -36666,7 +36733,7 @@
     "name": "Έμπνευση",
     "state": "Attica",
     "city": null,
-    "stream_url": "https://stream.radiojar.com/2rsrhmepefq?1550062662",
+    "stream_url": "https://stream.radiojar.com/2rsrhmepefq",
     "homepage": "https://www.empneusi.gr/",
     "favicon": "/station-icons/attiki.png",
     "genres": [
@@ -39691,7 +39758,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://radio.streamings.gr/rpc/melodia1024/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=melodia1024&limit=10"
   },
   {
     "slug": "106-6-heraclion",
@@ -39868,7 +39936,7 @@
     "name": "Μεσόγειος 105.4",
     "state": "South Aegean",
     "city": "Santorini",
-    "stream_url": "http://n09.radiojar.com/g6eg7gpa6k5tv?rj-ttl=5&rj-tok=AAABlSnWkEEA8ZmTw1VTWeO_bw",
+    "stream_url": "https://stream.radiojar.com/g6eg7gpa6k5tv",
     "homepage": "https://agorapress.gr/",
     "favicon": "/station-icons/105-4-santorini.jpg",
     "genres": [
@@ -40162,7 +40230,7 @@
     "name": "Μπλε 99",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "https://n0f.radiojar.com/f4pqr7wu48hvv?rj-ttl=5&rj-tok=AAABicxLYqIAQqzDzWQMTQpzlQ",
+    "stream_url": "https://stream.radiojar.com/f4pqr7wu48hvv",
     "homepage": "https://mple99.gr/",
     "favicon": "/station-icons/99-chalkida.png",
     "genres": [],
@@ -40279,7 +40347,7 @@
     "name": "Νησιώτικα 24/7",
     "state": "South Aegean",
     "city": "Cyclades",
-    "stream_url": "https://n0f.radiojar.com/f4uubny2uexb?1709758100=&rj-tok=AAABjhWQEEQAcVrb65vN3wqd0A&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/f4uubny2uexb",
     "homepage": "https://www.nisiotika.gr/",
     "favicon": "/station-icons/24-7-cyclades.png",
     "genres": [
@@ -40778,7 +40846,7 @@
     "name": "Παραδοσιακό Radio",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n0a.radiojar.com/u34mus9cy72vv?1727633135=&rj-tok=AAABkj7_gH0A2IoFwxZxW1Zpsg&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/u34mus9cy72vv",
     "homepage": "https://www.paradosiako.net/",
     "favicon": "/station-icons/radio-thessaloniki.png",
     "genres": [
@@ -41440,7 +41508,7 @@
     "name": "Πορτοκαλί",
     "state": null,
     "city": null,
-    "stream_url": "https://n07.radiojar.com/un4tp96kb.mp3?rj-ttl=5&rj-tok=AAABeROITdYAtrTuiqqUuR0D8Q",
+    "stream_url": "https://stream.radiojar.com/un4tp96kb.mp3",
     "homepage": "https://el-gr.facebook.com/portokaliradiogr-1531348577122256/?ref=page_internal",
     "favicon": "/station-icons/station-f8d150f6.png",
     "genres": [
@@ -41613,7 +41681,7 @@
     "name": "Πρώτο Ραδιόφωνο Ρόδου",
     "state": "South Aegean",
     "city": "Rhodes",
-    "stream_url": "http://n11.radiojar.com/hw0e51y1pd3vv?rj-ttl=5&rj-tok=AAABkVK49M8A8loNqZIbmobSig",
+    "stream_url": "https://stream.radiojar.com/hw0e51y1pd3vv",
     "homepage": "https://protiekdosi.news/",
     "favicon": "/station-icons/rhodes.png",
     "genres": [
@@ -42201,7 +42269,7 @@
     "name": "Ράδιο Πάντειον",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n12.radiojar.com/ybz2g5nh5ehvv?rj-ttl=5&rj-tok=AAABltBgIPoA05fPk_ZUvUr5bA",
+    "stream_url": "https://stream.radiojar.com/ybz2g5nh5ehvv",
     "homepage": "https://radiopanteion.wordpress.com/",
     "favicon": "/station-icons/athens-ccba37c5.jpg",
     "genres": [
@@ -42224,7 +42292,7 @@
     "name": "Ράδιο Πάντειον Sports",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n08.radiojar.com/ypdwy53ce6hvv?rj-ttl=5&rj-tok=AAABltBjJgEAkIHr5-5FKqNkBQ",
+    "stream_url": "https://stream.radiojar.com/ypdwy53ce6hvv",
     "homepage": "https://radiopanteion.wordpress.com/",
     "favicon": "/station-icons/sports-athens.jpg",
     "genres": [
@@ -42349,7 +42417,7 @@
     "name": "Ραδιοτσάμπουνο",
     "state": "South Aegean",
     "city": "Karpathos",
-    "stream_url": "http://n0a.radiojar.com/gbrgkbcfnq5tv?1678194901=&rj-ttl=5&rj-tok=AAABirQNkmwAX4Gp0ntbR8tZ4A",
+    "stream_url": "https://stream.radiojar.com/gbrgkbcfnq5tv",
     "homepage": "https://www.facebook.com/radiotsambouno/",
     "favicon": "/station-icons/karpathos.png",
     "genres": [],
@@ -42895,7 +42963,7 @@
     "name": "Ρυθμός Κομοτηνής 103.1",
     "state": "Eastern Macedonia and Thrace",
     "city": "Komotini",
-    "stream_url": "http://n0f.radiojar.com/v1hkvv4gk72vv?rj-ttl=5&rj-tok=AAABjd0FotAAL9v4MaEcDKg6Qg",
+    "stream_url": "https://stream.radiojar.com/v1hkvv4gk72vv",
     "homepage": "https://live24.gr/radio/generic.jsp?sid=3104",
     "favicon": "/station-icons/103-1-komotini.png",
     "genres": [
@@ -43090,7 +43158,7 @@
     "name": "Σκύλος 90",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://n01.radiojar.com/819r8wupdrruv?rj-ttl=5&rj-tok=AAABePEMVGgAGH9g3lsAx7imBA",
+    "stream_url": "https://stream.radiojar.com/819r8wupdrruv",
     "homepage": "https://skylos90fm.gr/",
     "favicon": "/station-icons/90-patra.webp",
     "genres": [
@@ -43214,7 +43282,7 @@
     "name": "Στο κόκκινο 105,5 Αθήνα",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n06.radiojar.com/kokkino-ath.mp3?rj-ttl=5&rj-tok=AAABe5JM3SoATYdU3sO03CR5Pw",
+    "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
     "homepage": "https://www.stokokkino.gr/",
     "favicon": "/station-icons/105-5-athens-placeholder.webp",
     "genres": [],
@@ -43235,7 +43303,7 @@
     "name": "Στο κόκκινο 105.5",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n0a.radiojar.com/kokkino-ath.mp3",
+    "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
     "homepage": "https://www.avgi.gr/sto-kokkino",
     "favicon": "/station-icons/105-5.jpg",
     "genres": [],
@@ -43256,7 +43324,7 @@
     "name": "Στο Κόκκινο 105.5",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n06.radiojar.com/kokkino-ath.mp3?rj-ttl=5&rj-tok=AAABe5JM3SoATYdU3sO03CR5Pw",
+    "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
     "homepage": "https://www.stokokkino.gr/",
     "favicon": "/station-icons/105-5-athens-313dbd5d-placeholder.webp",
     "genres": [
@@ -43280,7 +43348,7 @@
     "name": "Στο Κόκκινο 105.5 Αθήνα",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://n06.radiojar.com/kokkino-ath.mp3?rj-ttl=5&rj-tok=AAABe5JM3SoATYdU3sO03CR5Pw",
+    "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
     "homepage": "https://www.stokokkino.gr/",
     "favicon": "/station-icons/105-5-athens-43a3c60b.png",
     "genres": [],
@@ -43301,7 +43369,7 @@
     "name": "Στο Κόκκινο ΘΕΣΣΑΛΟΝΙΚΗ 91,4 FM",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://n09.radiojar.com/275p8ssmb?rj-ttl=5&rj-tok=AAABe5KoPq0A-SETCU2cfsnBjA",
+    "stream_url": "https://stream.radiojar.com/275p8ssmb",
     "homepage": "https://www.stokokkino.gr/",
     "favicon": "/station-icons/91-4-fm-thessaloniki.png",
     "genres": [
@@ -43582,7 +43650,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://stream.iplayradio.net/rpc/taminaikiradiofonia/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://stream.iplayradio.net/external/rpc.php?m=recenttracks.get&username=taminaikiradiofonia&limit=10"
   },
   {
     "slug": "drama",
@@ -44203,7 +44272,7 @@
     "name": "01.Στο κόκκινο 105.5",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n0a.radiojar.com/kokkino-ath.mp3?rj-ttl=5&rj-tok=AAABh-0eIcYAVz1x8OviF1g8jw",
+    "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
     "homepage": "https://www.avgi.gr/sto-kokkino",
     "favicon": "/station-icons/01-105-5-attica-athens.webp",
     "genres": [],
@@ -44223,7 +44292,7 @@
     "stationuuid": "7738d084-913f-449b-8058-f0a19a288051",
     "name": "03.Στο κόκκινο Πάτρας 107,7",
     "state": "Western Greece",
-    "stream_url": "https://n01.radiojar.com/red-source?rj-ttl=5&rj-tok=AAABnLUVSBIA9XQwmBGZQZzHJw",
+    "stream_url": "https://stream.radiojar.com/red-source",
     "homepage": "https://www.avgi.gr/",
     "favicon": "/station-icons/03-107-7-patra.webp",
     "genres": [],
@@ -44307,8 +44376,8 @@
     "stationuuid": "227c167f-de9d-4748-8fa5-d7642c60b819",
     "name": "102.2 Αλιβέρι 1",
     "state": "Central Greece",
-    "stream_url": "https://tls-chrome.live24.gr/650?http://stream.radiojar.com/gby4re6bhnuvv",
-    "homepage": "http://www.radioaliveri1.gr/",
+    "stream_url": "https://stream.radiojar.com/gby4re6bhnuvv",
+    "homepage": "https://radioaliveri1.gr/",
     "favicon": "/station-icons/102-2-1-chalkida.webp",
     "genres": [],
     "language": null,
@@ -44664,7 +44733,7 @@
     "name": "28.ΡΕΜΠΕΤΙΚΟ",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n06.radiojar.com/r87tq342z8tvv?rj-ttl=5&rj-tok=AAABnzElkmgAbnMC3VroB2rrMg",
+    "stream_url": "https://stream.radiojar.com/r87tq342z8tvv",
     "homepage": "https://i-radio.gr/radio-rempetika/",
     "favicon": "/station-icons/28.webp",
     "genres": [],
@@ -44867,7 +44936,7 @@
     "name": "Alpha 98.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n01.radiojar.com/xcdg6yggzfeuv?rj-ttl=5&rj-tok=AAABnRcNrMsAzlw1G4CV9i2qaw",
+    "stream_url": "https://stream.radiojar.com/xcdg6yggzfeuv",
     "homepage": "https://alpharadio989.gr/",
     "favicon": "/station-icons/alpha-98-9-athens.webp",
     "genres": [
@@ -45457,7 +45526,7 @@
     "name": "Diesi 101.3",
     "state": null,
     "city": null,
-    "stream_url": "https://n05a-eu.rcs.revma.com/gkfwrhqxbfhvv",
+    "stream_url": "https://stream.rcs.revma.com/gkfwrhqxbfhvv",
     "homepage": "https://diesi.gr/",
     "favicon": "/station-icons/diesi-101-3.webp",
     "genres": [],
@@ -45605,7 +45674,8 @@
     "geo_long": 23.03245604038239,
     "city": "Thessaloniki",
     "nowplaying_url": "https://cast1.asurahosting.com/rpc/ermis/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://cast1.asurahosting.com/external/rpc.php?m=recenttracks.get&username=ermis&limit=10"
   },
   {
     "slug": "easy-80s-athens",
@@ -45613,7 +45683,7 @@
     "name": "Easy 80s",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n32a-eu.rcs.revma.com/wvt5ty5r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/wvt5ty5r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-80s-athens.webp",
     "genres": [
@@ -45637,7 +45707,7 @@
     "name": "Easy 90s",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n02a-eu.rcs.revma.com/qhx9z05r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/qhx9z05r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-90s-athens.webp",
     "genres": [
@@ -45661,7 +45731,7 @@
     "name": "Easy Chill",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n23a-eu.rcs.revma.com/qzzyq25r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/qzzyq25r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-chill-athens.webp",
     "genres": [
@@ -45684,7 +45754,7 @@
     "name": "Easy Classic",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n21a-eu.rcs.revma.com/y318r45r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/y318r45r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-classic-athens.webp",
     "genres": [
@@ -45707,7 +45777,7 @@
     "name": "Easy Love",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n38a-eu.rcs.revma.com/bptnk55r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/bptnk55r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/easy-love-athens.webp",
     "genres": [
@@ -45794,7 +45864,7 @@
     "name": "Empneusi 107 FM",
     "state": null,
     "city": null,
-    "stream_url": "https://stream.radiojar.com/2rsrhmepefq.mp3?1783946757550",
+    "stream_url": "https://stream.radiojar.com/2rsrhmepefq.mp3",
     "homepage": "https://www.empneusi.gr/#!",
     "favicon": "/station-icons/empneusi-107-fm.webp",
     "genres": [],
@@ -45840,7 +45910,7 @@
     "name": "En Lefko 87.7",
     "state": "Attica",
     "city": null,
-    "stream_url": "https://n12a-eu.rcs.revma.com/trm75ret4c3vv",
+    "stream_url": "https://stream.rcs.revma.com/trm75ret4c3vv",
     "homepage": "https://www.enlefko.fm/",
     "favicon": "/station-icons/en-lefko-87-7-attica.webp",
     "genres": [],
@@ -45991,7 +46061,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eco.onestreaming.com/rpc/flykriti/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=flykriti&limit=10"
   },
   {
     "slug": "fm-100-thessaloniki",
@@ -46155,7 +46226,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/wpgqrttp/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=wpgqrttp&limit=10"
   },
   {
     "slug": "fystiki-95-8",
@@ -46184,7 +46256,7 @@
     "name": "G Radio (Garavelas Radio)",
     "state": null,
     "city": null,
-    "stream_url": "https://n06.radiojar.com/garavelas-radio-gr.m4a",
+    "stream_url": "https://stream.radiojar.com/garavelas-radio-gr.m4a",
     "homepage": "https://www.gradio.gr/",
     "favicon": "/station-icons/g-radio-garavelas-radio.webp",
     "genres": [
@@ -46272,7 +46344,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://shoutcast.k-planet.eu:8032/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://shoutcast.k-planet.eu:8032/played?sid=1&type=json"
   },
   {
     "slug": "greca-lounge-pyrgos",
@@ -46506,7 +46581,8 @@
     "geo_long": null,
     "city": "Alexandroupolis",
     "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/neukptkl/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=neukptkl&limit=10"
   },
   {
     "slug": "hit-88-9-athens",
@@ -46514,7 +46590,7 @@
     "name": "HiT 88.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n10a-eu.rcs.revma.com/e4661aft4c3vv",
+    "stream_url": "https://stream.rcs.revma.com/e4661aft4c3vv",
     "homepage": "https://www.hit889.gr/",
     "favicon": "/station-icons/hit-88-9-athens.webp",
     "genres": [
@@ -46619,7 +46695,7 @@
     "name": "Kids Radio",
     "state": null,
     "city": null,
-    "stream_url": "https://n03.rcs.revma.com/n7d6z9ez1duvv",
+    "stream_url": "https://stream.rcs.revma.com/n7d6z9ez1duvv",
     "homepage": "https://www.kidsradio.com/",
     "favicon": "/station-icons/kids-radio.webp",
     "genres": [
@@ -47092,7 +47168,7 @@
     "name": "Monkey Bros Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://stream.radiojar.com/5tyqrwpgpfeuv?1777639242",
+    "stream_url": "https://stream.radiojar.com/5tyqrwpgpfeuv",
     "homepage": "https://monkeybros.gr/",
     "favicon": "/station-icons/monkey-bros-radio.webp",
     "genres": [],
@@ -47398,7 +47474,8 @@
     "geo_long": null,
     "city": "Chalkida",
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/poliskids/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=poliskids&limit=10"
   },
   {
     "slug": "polis-91-1-hip-hop-chalkida",
@@ -47449,7 +47526,8 @@
     "geo_long": null,
     "city": "Chalkida",
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/polisentexnos/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=polisentexnos&limit=10"
   },
   {
     "slug": "polis-91-1-chalkida-66766c24",
@@ -47475,7 +47553,8 @@
     "geo_long": null,
     "city": "Chalkida",
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/polislaikos/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=polislaikos&limit=10"
   },
   {
     "slug": "power-93-2-larisa-2824696c",
@@ -47714,7 +47793,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://whsh4u-panel.com/rpc/zukqpfqm/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://whsh4u-panel.com/external/rpc.php?m=recenttracks.get&username=zukqpfqm&limit=10"
   },
   {
     "slug": "radio-meraklis",
@@ -47853,7 +47933,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://stream13.shoutcastsolutions.com/rpc/bntailia/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://stream13.shoutcastsolutions.com/external/rpc.php?m=recenttracks.get&username=bntailia&limit=10"
   },
   {
     "slug": "radio-pieria-104-2-fm",
@@ -48105,7 +48186,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/olrbkxdl/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=olrbkxdl&limit=10"
   },
   {
     "slug": "real-classic-athens",
@@ -48136,7 +48218,7 @@
     "name": "Red 80s",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n05a-eu.rcs.revma.com/40uryq80ubuvv",
+    "stream_url": "https://stream.rcs.revma.com/40uryq80ubuvv",
     "homepage": "https://www.redfm.gr/",
     "favicon": "/station-icons/red-80s-athens.webp",
     "genres": [
@@ -48415,7 +48497,7 @@
     "name": "Skylos FM",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n04.radiojar.com/819r8wupdrruv?1776102680",
+    "stream_url": "https://stream.radiojar.com/819r8wupdrruv",
     "homepage": "https://skylos90fm.gr/",
     "favicon": "/station-icons/skylos-fm-athens-greece.webp",
     "genres": [
@@ -48476,7 +48558,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://admin.stream.rinse.fm/rpc/swu/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://admin.stream.rinse.fm/external/rpc.php?m=recenttracks.get&username=swu&limit=10"
   },
   {
     "slug": "technolocos-deep-web-radio",
@@ -48574,7 +48657,8 @@
     "geo_long": 22.38792166261973,
     "city": "Nisi",
     "nowplaying_url": "https://eco.onestreaming.com/rpc/toxotis/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=toxotis&limit=10"
   },
   {
     "slug": "tracksaudio-com-80s-music",
@@ -48792,7 +48876,7 @@
     "name": "Voice 102.5",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://stream.radiojar.com/u52ufw1qayduv?1777638187",
+    "stream_url": "https://stream.radiojar.com/u52ufw1qayduv",
     "homepage": "https://www.voice1025.gr/",
     "favicon": "/station-icons/voice-102-5.webp",
     "genres": [],
@@ -48813,7 +48897,7 @@
     "name": "Voice Radio GR",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n06.radiojar.com/u52ufw1qayduv?1781887837=&rj-tok=AAABnuDWDg4A78oF2Dg_3w1egw&rj-ttl=5",
+    "stream_url": "https://stream.radiojar.com/u52ufw1qayduv",
     "homepage": "https://www.voice1025.gr/",
     "favicon": "/station-icons/voice-radio-gr-athens.webp",
     "genres": [
@@ -48997,7 +49081,7 @@
     "name": "Δίεση 101.3",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n40a-eu.rcs.revma.com/gkfwrhqxbfhvv",
+    "stream_url": "https://stream.rcs.revma.com/gkfwrhqxbfhvv",
     "homepage": "https://diesi.gr/",
     "favicon": "/station-icons/101-3-athens.webp",
     "genres": [
@@ -49035,7 +49119,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://eu1.fastcast4u.com/rpc/diktyofm/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=diktyofm&limit=10"
   },
   {
     "slug": "92-8-agrinio",
@@ -49341,7 +49426,7 @@
     "name": "Μελωδία Τα τραγούδια του 90",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n41a-eu.rcs.revma.com/cdkb8a90ubuvv",
+    "stream_url": "https://stream.rcs.revma.com/cdkb8a90ubuvv",
     "homepage": "https://www.melodia.gr/player/ta-tragoydia-toy-90/",
     "favicon": "/station-icons/90-athens-greece.webp",
     "genres": [
@@ -49364,7 +49449,7 @@
     "name": "Μπλε 99",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "https://n17-eu.rcs.revma.com/9r5r1hm6xxcwv",
+    "stream_url": "https://stream.rcs.revma.com/9r5r1hm6xxcwv",
     "homepage": "https://karteliasmediagroup.gr/",
     "favicon": "/station-icons/99-chalkida.webp",
     "genres": [
@@ -49436,7 +49521,7 @@
     "name": "Ο νέος Freedom",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n05a-eu.rcs.revma.com/z0ymkz80ubuvv",
+    "stream_url": "https://stream.rcs.revma.com/z0ymkz80ubuvv",
     "homepage": "https://www.melodia.gr/player/o-neos-freedom/",
     "favicon": "/station-icons/freedom-athens.webp",
     "genres": [],
@@ -49818,7 +49903,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://s2.e-resellers.gr/rpc/kviwebradio/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=kviwebradio&limit=10"
   },
   {
     "slug": "station-6ae2e2dd",
@@ -49843,7 +49929,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/cqbyibwg/streaminfo.get",
-    "metadata_server": "centovacast"
+    "metadata_server": "centovacast",
+    "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=cqbyibwg&limit=10"
   },
   {
     "slug": "athens-f223edcf",
@@ -49897,7 +49984,7 @@
     "name": "Ρυθμός Ballads",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n43a-eu.rcs.revma.com/dm9td34r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/dm9td34r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/ballads-athens.webp",
     "genres": [
@@ -49921,7 +50008,7 @@
     "name": "Ρυθμός Dalika",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n17a-eu.rcs.revma.com/m2r3yy4r4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/m2r3yy4r4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/dalika-athens.webp",
     "genres": [
@@ -49944,7 +50031,7 @@
     "name": "Ρυθμός στο Κασετόφωνο",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://n07a-eu.rcs.revma.com/ff4abx8q4a0uv",
+    "stream_url": "https://stream.rcs.revma.com/ff4abx8q4a0uv",
     "homepage": "https://www.soundis.gr/",
     "favicon": "/station-icons/athens.webp",
     "genres": [

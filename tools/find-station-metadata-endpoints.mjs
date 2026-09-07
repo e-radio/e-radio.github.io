@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import { centovaHistoryTracks } from "../src/lib/centovacast-history.mjs";
+
 import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -226,6 +228,7 @@ const discover = async (station) => {
     // stats. It also commonly includes separate artist, title, and artwork.
     candidates.unshift({
       nowplaying_url: `${origin}/rpc/${encodeURIComponent(account)}/streaminfo.get`,
+      history_url: `${origin}/external/rpc.php?m=recenttracks.get&username=${encodeURIComponent(account)}&limit=10`,
       metadata_server: "centovacast",
       validate: (payload) => payload?.type !== "error" && Array.isArray(payload?.data) && hasNowPlayingText(payload),
     });
@@ -237,8 +240,11 @@ const discover = async (station) => {
       const { validate: _validate, ...savedCandidate } = candidate;
       if (savedCandidate.history_url) {
         const history = await fetchPayload(savedCandidate.history_url);
-        if (!Array.isArray(history) || !history.some((track) =>
-          typeof track?.title === "string" && track.title.trim() && Number.isFinite(Number(track.playedat)))) {
+        const hasHistory = savedCandidate.metadata_server === "centovacast"
+          ? centovaHistoryTracks(history).length > 0
+          : Array.isArray(history) && history.some((track) =>
+              typeof track?.title === "string" && track.title.trim() && Number.isFinite(Number(track.playedat)));
+        if (!hasHistory) {
           delete savedCandidate.history_url;
         }
       }

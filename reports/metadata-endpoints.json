@@ -1,92 +1,29 @@
 {
-  "checkedAt": "2026-09-07T13:34:48.343Z",
-  "checked": 1634,
-  "saved": 13,
+  "checkedAt": "2026-09-07T23:22:24.253Z",
+  "checked": 1619,
+  "saved": 3,
   "dryRun": false,
   "scope": "Selected station streams; direct server checks, not browser/CORS verification",
   "verified": [
     {
-      "slug": "aigaio-news-syros",
-      "name": "Aigaio News",
-      "nowplaying_url": "http://europa.shoutca.st:8721/stats?sid=1&json=1",
-      "history_url": "http://europa.shoutca.st:8721/played?sid=1&type=json",
+      "slug": "la-famiglia-athens",
+      "name": "La Famiglia",
+      "nowplaying_url": "https://cast.magicstreams.gr:9010/stats?sid=1&json=1",
+      "history_url": "https://cast.magicstreams.gr:9010/played?sid=1&type=json",
       "metadata_server": "shoutcast"
     },
     {
-      "slug": "family-89-5-heraclion",
-      "name": "Family 89.5",
-      "nowplaying_url": "http://193.227.111.111:8002/stats?sid=1&json=1",
-      "history_url": "http://193.227.111.111:8002/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "jay",
-      "name": "Jay",
-      "nowplaying_url": "http://s2.e-resellers.gr:8000/stats?sid=1&json=1",
-      "history_url": "http://s2.e-resellers.gr:8000/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "lemon-radio",
-      "name": "Lemon Radio",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "lemon-web-radio",
-      "name": "Lemon Web Radio",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "setta",
-      "name": "Setta",
-      "nowplaying_url": "http://cast.magicstreams.gr:9028/status-json.xsl?mount=%2Flive",
+      "slug": "102-fm",
+      "name": "Ελληνάδικο 102 FM",
+      "nowplaying_url": "https://webradios.stream:8000/status-json.xsl?mount=%2Fradio.mp3",
       "metadata_server": "icecast"
     },
     {
-      "slug": "status-107-7-thessaloniki",
-      "name": "Status 107.7",
-      "nowplaying_url": "https://loki.mental-media.gr/rpc/statusf1/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "underground-gr-xanthi",
-      "name": "Underground GR",
-      "nowplaying_url": "https://duthradio.ddns.net:8000/status-json.xsl?mount=%2Fradio.mp3",
-      "metadata_server": "icecast"
-    },
-    {
-      "slug": "venus-radio",
-      "name": "Venus Radio",
-      "nowplaying_url": "http://s1.onweb.gr:8410/stats?sid=1&json=1",
-      "history_url": "http://s1.onweb.gr:8410/played?sid=1&type=json",
+      "slug": "gold-radio-gr",
+      "name": "Gold Radio GR",
+      "nowplaying_url": "https://shoutcast.k-planet.eu:8032/stats?sid=1&json=1",
+      "history_url": "https://shoutcast.k-planet.eu:8032/played?sid=1&type=json",
       "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "amfissa",
-      "name": "Άμφισσα",
-      "nowplaying_url": "http://stream3.468.gr:8104/stats?sid=1&json=1",
-      "history_url": "http://stream3.468.gr:8104/played?sid=1&type=json",
-      "metadata_server": "shoutcast"
-    },
-    {
-      "slug": "greca-party-pyrgos",
-      "name": "Greca Party",
-      "nowplaying_url": "https://one.cloudstreaming.eu/rpc/party/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "polis-91-1-chalkida-c563dc48",
-      "name": "Polis 91.1 Έντεχνα",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/polisentexnos/streaminfo.get",
-      "metadata_server": "centovacast"
-    },
-    {
-      "slug": "polis-91-1-chalkida-66766c24",
-      "name": "Polis 91.1 Παλιά Λαϊκά",
-      "nowplaying_url": "https://s2.e-resellers.gr/rpc/polislaikos/streaminfo.get",
-      "metadata_server": "centovacast"
     }
   ],
   "notFound": [
@@ -526,7 +463,6 @@
     "kral-100-xanthi",
     "kritikos-88-7",
     "kyparissia-93-6-kyparissia",
-    "la-famiglia-athens",
     "la-vita-athens",
     "lab-radio-gr",
     "laiko-107-chania",
@@ -1169,7 +1105,6 @@
     "velvet-96-8-fm",
     "velvet-98-4-xanthi",
     "velvet-ballads-96-8-fm",
-    "venus-amaliada",
     "venus-105-1-amaliada",
     "venus-91-chania",
     "venus-fm-105-1-greece",
@@ -1265,7 +1200,6 @@
     "station-28824b3d",
     "97-kos",
     "88-4-elassona",
-    "102-fm",
     "loverockradio",
     "station-5aaf6603",
     "station-7d88d38b",
@@ -1601,7 +1535,6 @@
     "g-radio-garavelas-radio",
     "gold-athens",
     "gold-2-athens",
-    "gold-radio-gr",
     "greca-lounge-pyrgos",
     "greca-pyrgos",
     "greca-pyrgos-c4ba72f1",

@@ -1,3 +1,4 @@
+import { cleanStreamUrl } from "./lib/stream-urls.mjs";
 import { ensureUniqueStationSlugs, assertUniqueStationSlugs } from "./lib/station-slugs.mjs";
 import { readFile, rename, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -258,7 +259,7 @@ async function main() {
       .filter(Boolean);
 
     const stationuuid = s.stationuuid;
-    const stream_url = s.url_resolved || s.url;
+    const stream_url = cleanStreamUrl(s.url_resolved || s.url);
 
     return {
       slug: makeSlug({ name, state: cityOrState, stationuuid }),

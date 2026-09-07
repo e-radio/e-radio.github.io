@@ -1,0 +1,520 @@
+{
+  "checkedAt": "2026-09-07T23:13:17.761Z",
+  "checked": 87,
+  "verified": [
+    {
+      "slug": "88miso-thessaloniki",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=sxxaojkx&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "02-dance-radio-piraeus",
+      "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=dimitrio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "arty-thessaloniki",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=artyradio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "action-98-2-ioannina",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=jkzjmwru&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "80smania-gr",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=glzzkced&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "bar-legend-radio-larisa",
+      "history_url": "https://solid24.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=nilxzqeg&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "black-radio",
+      "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=qcnwnozj&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "chania-rock-fm-96-8-chania",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=alaqatab&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "coffee-web-radio",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=teqgebwz&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "city-100-heraclion",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=cityfm&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "ianos-radio-thessaloniki",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=feelmusic2021&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "anemos-95-6-samos",
+      "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vqdawvmf&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "entropia-thessaloniki",
+      "history_url": "https://radio.hostchefs.net/external/rpc.php?m=recenttracks.get&username=entropiaradio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "eurofans-radio",
+      "history_url": "https://radio.hostchefs.net/external/rpc.php?m=recenttracks.get&username=eurofansradio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "dream-88-1",
+      "history_url": "https://solid41.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=jhhzdwjo&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "hit-ellinikos",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zvbgdllc&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "fresh-web-radio-gr",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=bfwxkhir&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "kokkini-velona",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=kokkinos2023&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "hit-classic",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=smzyynlm&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "notes-106-serres",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=evllufwn&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "greek-otaku-radio-2f217384",
+      "history_url": "https://usa2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=greekota&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "melody-96-7-limnos",
+      "history_url": "https://eu4.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=jlwmwogj&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "music-art-club",
+      "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "musicartclub-thessaloniki-1ac2e8a4",
+      "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "musicartclub-thessaloniki",
+      "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "panic-93-7-ierapetra",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=club937&limit=10",
+      "cors": "*",
+      "tracks": 1
+    },
+    {
+      "slug": "opa",
+      "history_url": "https://eu3.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=opar&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "radio-galaxy-99",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=tfcgioyq&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "radio-9-thessaloniki",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=gygasbfj&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "radio-oi-athens",
+      "history_url": "http://eu4.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=nikoud00&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "aqua-radio-the-80s",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=aquadisco80s&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "magia-104-7-xiromero",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=magiafm1047&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "lemon-web-radio",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=radio888&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "samothraki-web-radio-samothraki",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=samothraki&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "lemon-radio",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=radio888&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "rewind-radio-gr",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zcpyirtp&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "sin-athens",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lqomhdjk&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "radio-yellow-gr",
+      "history_url": "http://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=radioyellow&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "loop-695d1d91",
+      "history_url": "http://eu2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=loopradiostation&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "loop",
+      "history_url": "http://eu2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=loopradiostation&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "rockarolla-radio-athens-greece",
+      "history_url": "https://solid2.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=msoepowo&limit=10",
+      "cors": "*",
+      "tracks": 9
+    },
+    {
+      "slug": "radio-ta-asteria",
+      "history_url": "https://cast.serverps.gr/external/rpc.php?m=recenttracks.get&username=radioasteria&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "smooth-radio-thessaloniki-thessaloniki",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lrazisyb&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "star-97-7-chania",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vkpzhens&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "slam-101-5-lesvos",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=slam&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "time-90-9-kalamata",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=rmjbkagy&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "star-95-5-chalkidiki",
+      "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=radiostar955&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "104-3-fm",
+      "history_url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=afreeapo&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "smok-web-radio",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=smokradio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "tyflos-gr",
+      "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=monaytgo&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "xfm-gr",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zizthduh&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "suburbia-parties-athens-hardcore-radio",
+      "history_url": "https://s9.webradio-hosting.com/external/rpc.php?m=recenttracks.get&username=suburbiaparties&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "gr",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=xbygwcwv&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "1134-chania",
+      "history_url": "https://eu8.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=chaniaradio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "status-107-7-thessaloniki",
+      "history_url": "https://loki.mental-media.gr/external/rpc.php?m=recenttracks.get&username=statusf1&limit=10",
+      "cors": "*",
+      "tracks": 1
+    },
+    {
+      "slug": "studio12-22",
+      "history_url": "https://cast6.asurahosting.com/external/rpc.php?m=recenttracks.get&username=radiosky&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "tivoli-thessaloniki",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=yellownewstream&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "station-da7a1343",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vlerkait&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "104-alexandroupolis",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=elladafm&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "102-4-kozani",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=melodia1024&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "fly-88-1-heraklion-crete",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=flykriti&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "heat-classic-alexandroupolis",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=neukptkl&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "fun-radio-104-3-loutraki",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=wpgqrttp&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "polis-91-1-heykids-chalkida",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=poliskids&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "fm-91-5-chania-greece",
+      "history_url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=diktyofm&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "polis-91-1-chalkida-c563dc48",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=polisentexnos&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "razordino-radio",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=olrbkxdl&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "venus-amaliada",
+      "history_url": "https://cast6.my-control-panel.com/external/rpc.php?m=recenttracks.get&username=venus1051&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "toxotis-fm-western-greece",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=toxotis&limit=10",
+      "cors": "*",
+      "tracks": 1
+    },
+    {
+      "slug": "polis-91-1-chalkida-66766c24",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=polislaikos&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "radio-locomotiva-athens-greece",
+      "history_url": "https://whsh4u-panel.com/external/rpc.php?m=recenttracks.get&username=zukqpfqm&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "station-6ae2e2dd",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=cqbyibwg&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "swu-fm",
+      "history_url": "https://admin.stream.rinse.fm/external/rpc.php?m=recenttracks.get&username=swu&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "103-9-aliveri",
+      "history_url": "https://stream.iplayradio.net/external/rpc.php?m=recenttracks.get&username=taminaikiradiofonia&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "station-fa890617",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=kviwebradio&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "radio-nyxtopoyli",
+      "history_url": "https://stream13.shoutcastsolutions.com/external/rpc.php?m=recenttracks.get&username=bntailia&limit=10",
+      "cors": "*",
+      "tracks": 10
+    },
+    {
+      "slug": "dreamer-thessaloniki-9795c59e",
+      "history_url": "https://cast1.asurahosting.com/external/rpc.php?m=recenttracks.get&username=ermis&limit=10",
+      "cors": "*",
+      "tracks": 10
+    }
+  ],
+  "notVerified": [
+    {
+      "slug": "radio-martino",
+      "url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=radiomartino&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "power-90-2-katerini",
+      "url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=powerkaterini&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "santorini-fm-106-4-santorini",
+      "url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=santorini1&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "statusradio-94-2",
+      "url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=statusradio&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "studio-254-athens",
+      "url": "https://eu8.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=s254&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "station-753aef0e",
+      "url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=radiomartino&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "emusic-site-attica-athens",
+      "url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=wvsivbgn&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "mesologgi",
+      "url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=orfeasradio&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "97-9-limnos",
+      "url": "https://streaming.sbzsystems.com/external/rpc.php?m=recenttracks.get&username=fm00&limit=10",
+      "status": 200
+    },
+    {
+      "slug": "greca-party-pyrgos",
+      "url": "https://one.cloudstreaming.eu/external/rpc.php?m=recenttracks.get&username=party&limit=10",
+      "status": 200
+    }
+  ]
+}

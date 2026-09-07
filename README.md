@@ -162,3 +162,9 @@ Polling waits 15 seconds after each completed update by default (minimum configu
 Every station must have a unique slug. The importer preserves existing slugs and adds a station-ID suffix when a new slug collides. Astro checks uniqueness before development or builds, preventing duplicate station pages from being generated.
 
 Run `node tools/fix-station-slugs.mjs` to repair existing collisions. The first occurrence retains its URL; later occurrences receive a unique suffix, with all other station fields preserved. Changes are recorded in `reports/station-slug-changes.json`. Existing favicon paths remain unchanged. Category links and the sitemap use the updated slugs on the next build. A previously shared URL cannot redirect to every station that used it; use the new URLs for renamed records.
+
+### CentovaCast song history
+
+Discovery checks `/external/rpc.php?m=recenttracks.get&username=ACCOUNT&limit=10` alongside CentovaCast now-playing RPC endpoints. It saves `history_url` only when `data[0]` contains usable track titles and timestamps. Recheck existing stations with `npm run "find metadata" -- --refresh --slug STATION-SLUG` to discover missing history.
+
+The player reads artist, title, artwork, and Unix timestamps from this nested response. History is kept separate from the current song, since the newest history entry may already have finished. Empty or disabled histories are not treated as verified endpoints. Secure CentovaCast endpoints use direct requests in `auto` mode; explicit metadata mode overrides still apply.
