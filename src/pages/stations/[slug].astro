@@ -625,7 +625,7 @@ const structuredData = {
       <section>
         <div class="mt-4">
             <div class="ff-app-banner px-4 py-3">
-              <div class="d-flex flex-column flex-sm-row align-items-center gap-4">
+              <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
                 <div class="flex-shrink-0">
                   <picture>
                     <source srcset="/radddio-app-icon.webp" type="image/webp" />
@@ -634,10 +634,10 @@ const structuredData = {
                   </picture>
                 </div>
                 <div class="flex-grow-1 text-center text-sm-start">
-                  <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 mb-1">
+                  <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2">
                     <h3 class="h5 mb-0 fw-bold text-white">Get the Radddio app</h3>
                   </div>
-                  <p class="mb-1 small text-white text-opacity-75">Listen to {station.name} anytime, anywhere on the Radddio app.</p>
+                  <p class="mb-0 small text-white text-opacity-75">Listen to {station.name} anytime, anywhere on the Radddio app.</p>
                   <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 small ff-meta">
                     <span class="d-inline-flex align-items-center gap-1">
                       <span class="ff-stars" aria-hidden="true">★★★★★</span>
@@ -1311,17 +1311,24 @@ const structuredData = {
       audio.addEventListener('ended', () => { updatePlaybackButton(false); setStatus('Ended'); });
       audio.addEventListener('error', () => showPlaybackError());
 
+      // Keep timer text nodes in place: textContent replaces children each second,
+      // which can trigger childList observers that rescan page resources.
+      const timerTextNodes = ['audioElapsed', 'timeHint'].flatMap(id => {
+        const element = document.getElementById(id);
+        if (!element) return [];
+        const node = element.firstChild;
+        if (node?.nodeType === Node.TEXT_NODE) return [node];
+        const text = document.createTextNode(element.textContent || '00:00');
+        element.replaceChildren(text);
+        return [text];
+      });
       let seconds = 0;
       setInterval(() => {
         if (!audio.paused && !audio.ended) {
           seconds += 1;
           const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
           const ss = String(seconds % 60).padStart(2, '0');
-          const elapsedEl = document.getElementById('audioElapsed');
-          if (elapsedEl) elapsedEl.textContent = `${mm}:${ss}`;
-          if (timeHint) {
-            timeHint.textContent = `${mm}:${ss}`;
-          }
+          timerTextNodes.forEach(node => { node.nodeValue = `${mm}:${ss}`; });
         }
       }, 1000);
 
