@@ -168,3 +168,11 @@ Run `node tools/fix-station-slugs.mjs` to repair existing collisions. The first 
 Discovery checks `/external/rpc.php?m=recenttracks.get&username=ACCOUNT&limit=10` alongside CentovaCast now-playing RPC endpoints. It saves `history_url` only when `data[0]` contains usable track titles and timestamps. Recheck existing stations with `npm run "find metadata" -- --refresh --slug STATION-SLUG` to discover missing history.
 
 The player reads artist, title, artwork, and Unix timestamps from this nested response. History is kept separate from the current song, since the newest history entry may already have finished. Empty or disabled histories are not treated as verified endpoints. Secure CentovaCast endpoints use direct requests in `auto` mode; explicit metadata mode overrides still apply.
+
+### Verify HTTPS stream upgrades
+
+Run `python3 tools/upgrade-streams-https.py` to audit HTTP stream URLs without changing station data. The script requires `ffprobe` on PATH. It tests the same URL with HTTPS, validates TLS certificates, rejects redirects to HTTP, and checks a bounded response sample for an audio stream. Run `python3 tools/upgrade-streams-https.py --write` to replace verified URLs in `src/data/stations-gr.json`. Results and failure reasons are saved to `reports/https-stream-audit.json`; failures and unrecognized responses remain unchanged. Playlist responses need manual review. A successful probe verifies server access and recognizable audio at audit time, not browser codec or CORS compatibility.
+
+### Remove redundant stream query parameters
+
+Run `python3 tools/clean-stream-query.py` to compare streams before and after removing `type=http` and `nocache` parameters. Add `--write` to apply verified replacements. Requires `curl` and `ffprobe`. Both URLs must return recognizable audio with matching codec details and station name headers (when available). Other parameters and embedded proxy URLs are preserved. Results are saved to `reports/stream-query-audit.json`. These short probes do not guarantee uninterrupted playback or identical programming when servers omit station identification.

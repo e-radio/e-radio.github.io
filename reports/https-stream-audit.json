@@ -1,0 +1,2575 @@
+{
+  "checked_urls": 427,
+  "verified_urls": 0,
+  "eligible_station_entries": 0,
+  "results": [
+    {
+      "http_url": "http://108.59.11.81:10073/stream",
+      "https_url": "https://108.59.11.81:10073/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://110.175.9.78:8001/8001",
+      "https_url": "https://110.175.9.78:8001/8001",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://152.53.229.53:8000/radio.mp3",
+      "https_url": "https://152.53.229.53:8000/radio.mp3",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
+      "https_url": "https://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://158.69.114.190:8024/stream",
+      "https_url": "https://158.69.114.190:8024/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://167.114.131.90:5192/;listen.pls",
+      "https_url": "https://167.114.131.90:5192/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://168.119.74.185:9008/stream",
+      "https_url": "https://168.119.74.185:9008/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://168.119.74.185:9110/stream",
+      "https_url": "https://168.119.74.185:9110/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://168.119.74.185:9652/stream",
+      "https_url": "https://168.119.74.185:9652/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://168.119.74.185:9888/autodj",
+      "https_url": "https://168.119.74.185:9888/autodj",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://176.31.118.39:13980/",
+      "https_url": "https://176.31.118.39:13980/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '176.31.118.39'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://176.31.120.166:6404/;",
+      "https_url": "https://176.31.120.166:6404/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '176.31.120.166'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://176.31.120.166:6404/stream",
+      "https_url": "https://176.31.120.166:6404/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '176.31.120.166'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://176.58.122.60:8000/stream",
+      "https_url": "https://176.58.122.60:8000/stream",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://178.33.135.244:3062/stream",
+      "https_url": "https://178.33.135.244:3062/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://178.33.135.246:5262/stream",
+      "https_url": "https://178.33.135.246:5262/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://185.14.203.115:8004/stream?type=http&nocache=109",
+      "https_url": "https://185.14.203.115:8004/stream?type=http&nocache=109",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://185.86.150.52:8000/live",
+      "https_url": "https://185.86.150.52:8000/live",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://192.99.14.191:8004/;stream&nocache=1",
+      "https_url": "https://192.99.14.191:8004/;stream&nocache=1",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://193.227.111.111:8002/;",
+      "https_url": "https://193.227.111.111:8002/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://193.227.111.111:8008/;",
+      "https_url": "https://193.227.111.111:8008/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://195.154.217.103:8069/stream",
+      "https_url": "https://195.154.217.103:8069/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://195.242.237.14:8020/stream",
+      "https_url": "https://195.242.237.14:8020/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://198.7.59.28:10034/stream",
+      "https_url": "https://198.7.59.28:10034/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://212.95.39.229:2740/stream",
+      "https_url": "https://212.95.39.229:2740/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://37.139.5.45:8000/more",
+      "https_url": "https://37.139.5.45:8000/more",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://5.104.111.225:8040/stream",
+      "https_url": "https://5.104.111.225:8040/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '5.104.111.225'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://51.91.170.243:8100/latofm?.mp3",
+      "https_url": "https://51.91.170.243:8100/latofm?.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://62.103.31.151:8000/stream",
+      "https_url": "https://62.103.31.151:8000/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://62.171.166.54:8010/radio.mp3",
+      "https_url": "https://62.171.166.54:8010/radio.mp3",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://62.38.241.82:8000/;",
+      "https_url": "https://62.38.241.82:8000/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://63.141.244.222:59540/;?type=http&nocache=1640597117?0.15577311888249712",
+      "https_url": "https://63.141.244.222:59540/;?type=http&nocache=1640597117?0.15577311888249712",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '63.141.244.222'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://65.108.133.10:8050/;",
+      "https_url": "https://65.108.133.10:8050/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://81.171.10.41:1088/;?",
+      "https_url": "https://81.171.10.41:1088/;?",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://85.17.75.146/echoes",
+      "https_url": "https://85.17.75.146/echoes",
+      "verified": false,
+      "reason": "<urlopen error [Errno 51] Network is unreachable>"
+    },
+    {
+      "http_url": "http://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+      "https_url": "https://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+      "verified": false,
+      "reason": "<urlopen error [Errno 51] Network is unreachable>"
+    },
+    {
+      "http_url": "http://88.198.70.25:8477/stream",
+      "https_url": "https://88.198.70.25:8477/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://88.99.171.20:8020/stream",
+      "https_url": "https://88.99.171.20:8020/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '88.99.171.20'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://88.99.239.52:9300/;",
+      "https_url": "https://88.99.239.52:9300/;",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252/8010/stream",
+      "https_url": "https://89.163.217.252/8010/stream",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:8040/;",
+      "https_url": "https://89.163.217.252:8040/;",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:8056/stream?type=http&nocache=91",
+      "https_url": "https://89.163.217.252:8056/stream?type=http&nocache=91",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:9400/;",
+      "https_url": "https://89.163.217.252:9400/;",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:9800/;",
+      "https_url": "https://89.163.217.252:9800/;",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:9898/stream?type=http&amp;nocache=8",
+      "https_url": "https://89.163.217.252:9898/stream?type=http&amp;nocache=8",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:9900/;",
+      "https_url": "https://89.163.217.252:9900/;",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://89.163.217.252:9920/;",
+      "https_url": "https://89.163.217.252:9920/;",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://94.130.242.5:8040/stream",
+      "https_url": "https://94.130.242.5:8040/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://95.216.13.28:18018/melwdos",
+      "https_url": "https://95.216.13.28:18018/melwdos",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://best926live.mdc.akamaized.net/strmBest/userBest/chunks.m3u8",
+      "https_url": "https://best926live.mdc.akamaized.net/strmBest/userBest/chunks.m3u8",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'best926live.mdc.akamaized.net'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast.innviweb.com:9030/stream?type=http&nocache=624478",
+      "https_url": "https://cast.innviweb.com:9030/stream?type=http&nocache=624478",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://cast.magicstreams.gr:8050/stream?type=http&nocache=368",
+      "https_url": "https://cast.magicstreams.gr:8050/stream?type=http&nocache=368",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast.metalourgio.com:8427/stream192.pls",
+      "https_url": "https://cast.metalourgio.com:8427/stream192.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://cast.radiohost.ovh:8850/stream?",
+      "https_url": "https://cast.radiohost.ovh:8850/stream?",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast.radiohost.ovh:9035/stream",
+      "https_url": "https://cast.radiohost.ovh:9035/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast.radiohost.ovh:9037/stream?type=http&nocache=57542",
+      "https_url": "https://cast.radiohost.ovh:9037/stream?type=http&nocache=57542",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast.streams.ovh:12097/;",
+      "https_url": "https://cast.streams.ovh:12097/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast.streams.ovh:9130/live",
+      "https_url": "https://cast.streams.ovh:9130/live",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast3.radiohost.ovh:8008/stream",
+      "https_url": "https://cast3.radiohost.ovh:8008/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://cast3.radiohost.ovh:8243/stream",
+      "https_url": "https://cast3.radiohost.ovh:8243/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://cast3.radiohost.ovh:8280/stream",
+      "https_url": "https://cast3.radiohost.ovh:8280/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://cast3.radiohost.ovh:8352/;",
+      "https_url": "https://cast3.radiohost.ovh:8352/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cast3.radiohost.ovh'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast4.magicstreams.gr:10149/live",
+      "https_url": "https://cast4.magicstreams.gr:10149/live",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast4.magicstreams.gr:10155/;stream.mp3",
+      "https_url": "https://cast4.magicstreams.gr:10155/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast4.magicstreams.gr:10316/stream?type=http&nocache=4",
+      "https_url": "https://cast4.magicstreams.gr:10316/stream?type=http&nocache=4",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://cast4.my-control-panel.com:9003/stream",
+      "https_url": "https://cast4.my-control-panel.com:9003/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://cast5.magicstreams.gr:8041/stream?",
+      "https_url": "https://cast5.magicstreams.gr:8041/stream?",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://comet.shoutca.st:8366/;",
+      "https_url": "https://comet.shoutca.st:8366/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://comet.shoutca.st:8430/live?1513679743968",
+      "https_url": "https://comet.shoutca.st:8430/live?1513679743968",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://cressida.shoutca.st:9158/stream?type=http&nocache=61",
+      "https_url": "https://cressida.shoutca.st:9158/stream?type=http&nocache=61",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://dione.shoutca.st:8443/;",
+      "https_url": "https://dione.shoutca.st:8443/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://dione.shoutca.st:8530/;?1644228381005",
+      "https_url": "https://dione.shoutca.st:8530/;?1644228381005",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://dione.shoutca.st:8548/;?1672008455757",
+      "https_url": "https://dione.shoutca.st:8548/;?1672008455757",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://dione.shoutca.st:8628/stream/;",
+      "https_url": "https://dione.shoutca.st:8628/stream/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://divafm.yourstreaming.gr:9996/;",
+      "https_url": "https://divafm.yourstreaming.gr:9996/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://dos.venus91.gr:9100/stream",
+      "https_url": "https://dos.venus91.gr:9100/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dos.venus91.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8010/",
+      "https_url": "https://eco.onestreaming.com:8010/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8010/stream",
+      "https_url": "https://eco.onestreaming.com:8010/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8012/stream?type=http&nocache=26376",
+      "https_url": "https://eco.onestreaming.com:8012/stream?type=http&nocache=26376",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8019/",
+      "https_url": "https://eco.onestreaming.com:8019/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8019/;stream.mp3",
+      "https_url": "https://eco.onestreaming.com:8019/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
+      "https_url": "https://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8021/;",
+      "https_url": "https://eco.onestreaming.com:8021/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8027/stream",
+      "https_url": "https://eco.onestreaming.com:8027/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8037/;",
+      "https_url": "https://eco.onestreaming.com:8037/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8039/",
+      "https_url": "https://eco.onestreaming.com:8039/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8039/streamexternal%20stream%20link",
+      "https_url": "https://eco.onestreaming.com:8039/streamexternal%20stream%20link",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8054/;",
+      "https_url": "https://eco.onestreaming.com:8054/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8075/stream?type=http&nocache=23463",
+      "https_url": "https://eco.onestreaming.com:8075/stream?type=http&nocache=23463",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8099/stream?type=http&nocache=146740",
+      "https_url": "https://eco.onestreaming.com:8099/stream?type=http&nocache=146740",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8103/stream?type=http&nocache=25309",
+      "https_url": "https://eco.onestreaming.com:8103/stream?type=http&nocache=25309",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8105/stream?type=http&nocache=117604",
+      "https_url": "https://eco.onestreaming.com:8105/stream?type=http&nocache=117604",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8107/;",
+      "https_url": "https://eco.onestreaming.com:8107/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8131/stream?type=http&nocache=129",
+      "https_url": "https://eco.onestreaming.com:8131/stream?type=http&nocache=129",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8146/;",
+      "https_url": "https://eco.onestreaming.com:8146/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8165/;",
+      "https_url": "https://eco.onestreaming.com:8165/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8217/;",
+      "https_url": "https://eco.onestreaming.com:8217/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8222/",
+      "https_url": "https://eco.onestreaming.com:8222/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8240/;listen.pls",
+      "https_url": "https://eco.onestreaming.com:8240/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8264/",
+      "https_url": "https://eco.onestreaming.com:8264/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8264/stream?type=http&nocache=234686",
+      "https_url": "https://eco.onestreaming.com:8264/stream?type=http&nocache=234686",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8272/;",
+      "https_url": "https://eco.onestreaming.com:8272/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8280/stream?type=http&nocache=44956",
+      "https_url": "https://eco.onestreaming.com:8280/stream?type=http&nocache=44956",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8316/stream?type=http&nocache=22964",
+      "https_url": "https://eco.onestreaming.com:8316/stream?type=http&nocache=22964",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8316/stream?type=http&nocache=55775",
+      "https_url": "https://eco.onestreaming.com:8316/stream?type=http&nocache=55775",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8334/;",
+      "https_url": "https://eco.onestreaming.com:8334/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8368/;",
+      "https_url": "https://eco.onestreaming.com:8368/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8414/;",
+      "https_url": "https://eco.onestreaming.com:8414/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8434/stream?type=http&nocache=107",
+      "https_url": "https://eco.onestreaming.com:8434/stream?type=http&nocache=107",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8498/",
+      "https_url": "https://eco.onestreaming.com:8498/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8498/;",
+      "https_url": "https://eco.onestreaming.com:8498/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8510/;",
+      "https_url": "https://eco.onestreaming.com:8510/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8520/;",
+      "https_url": "https://eco.onestreaming.com:8520/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8526/;?1492734743419.mp3",
+      "https_url": "https://eco.onestreaming.com:8526/;?1492734743419.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8536/;",
+      "https_url": "https://eco.onestreaming.com:8536/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8536/stream?type=http&nocache=48875",
+      "https_url": "https://eco.onestreaming.com:8536/stream?type=http&nocache=48875",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8548/",
+      "https_url": "https://eco.onestreaming.com:8548/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8548/;",
+      "https_url": "https://eco.onestreaming.com:8548/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8550/;",
+      "https_url": "https://eco.onestreaming.com:8550/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8552/;",
+      "https_url": "https://eco.onestreaming.com:8552/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8554/;",
+      "https_url": "https://eco.onestreaming.com:8554/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8556/",
+      "https_url": "https://eco.onestreaming.com:8556/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8564/",
+      "https_url": "https://eco.onestreaming.com:8564/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8604/;",
+      "https_url": "https://eco.onestreaming.com:8604/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8606/;",
+      "https_url": "https://eco.onestreaming.com:8606/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8667/stream/;",
+      "https_url": "https://eco.onestreaming.com:8667/stream/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8689/",
+      "https_url": "https://eco.onestreaming.com:8689/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eco.onestreaming.com:8880/stream",
+      "https_url": "https://eco.onestreaming.com:8880/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://eu1.fastcast4u.com:21624/stream",
+      "https_url": "https://eu1.fastcast4u.com:21624/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu1.fastcast4u.com:3688/stream?type=http&nocache=688",
+      "https_url": "https://eu1.fastcast4u.com:3688/stream?type=http&nocache=688",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu1.fastcast4u.com:9326/stream",
+      "https_url": "https://eu1.fastcast4u.com:9326/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu1.radiolydia.com:1086/;",
+      "https_url": "https://eu1.radiolydia.com:1086/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu1.radiolydia.com:1086/stream",
+      "https_url": "https://eu1.radiolydia.com:1086/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu2.fastcast4u.com/proxy/loopradiostation?mp=/;",
+      "https_url": "https://eu2.fastcast4u.com/proxy/loopradiostation?mp=/;",
+      "verified": false,
+      "reason": "ICY 200 OK\r\n"
+    },
+    {
+      "http_url": "http://eu4.fastcast4u.com:5248/;&type=mp3",
+      "https_url": "https://eu4.fastcast4u.com:5248/;&type=mp3",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://eu4.fastcast4u.com:5248/;stream.mp3",
+      "https_url": "https://eu4.fastcast4u.com:5248/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu5.fastcast4u.com:5020/stream",
+      "https_url": "https://eu5.fastcast4u.com:5020/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu7.fastcast4u.com:6130/listen.pls",
+      "https_url": "https://eu7.fastcast4u.com:6130/listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu7.fastcast4u.com:6130/stream/",
+      "https_url": "https://eu7.fastcast4u.com:6130/stream/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://eu9.fastcast4u.com:8090/;",
+      "https_url": "https://eu9.fastcast4u.com:8090/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://europa.shoutca.st:8721/stream?type=http&nocache=24274",
+      "https_url": "https://europa.shoutca.st:8721/stream?type=http&nocache=24274",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://everest.streams.ovh:1170/stream",
+      "https_url": "https://everest.streams.ovh:1170/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://everest.streams.ovh:1310/stream",
+      "https_url": "https://everest.streams.ovh:1310/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://everest.streams.ovh:2390/;",
+      "https_url": "https://everest.streams.ovh:2390/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://go.radioin.audio:8488/;",
+      "https_url": "https://go.radioin.audio:8488/;",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://hyades.shoutca.st:8570/;",
+      "https_url": "https://hyades.shoutca.st:8570/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://i.streams.ovh:9391/stream",
+      "https_url": "https://i.streams.ovh:9391/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i.streams.ovh:9519/stream?type=http&nocache=5",
+      "https_url": "https://i.streams.ovh:9519/stream?type=http&nocache=5",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i.streams.ovh:9521/stream",
+      "https_url": "https://i.streams.ovh:9521/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i.streams.ovh:9523/stream?type=http&nocache=373",
+      "https_url": "https://i.streams.ovh:9523/stream?type=http&nocache=373",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i.streams.ovh:9566/live",
+      "https_url": "https://i.streams.ovh:9566/live",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i2.streams.ovh:7017/;s.mp3%2613142580629?1561638450138",
+      "https_url": "https://i2.streams.ovh:7017/;s.mp3%2613142580629?1561638450138",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i2.streams.ovh:7058/stream1",
+      "https_url": "https://i2.streams.ovh:7058/stream1",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i3.streams.ovh:12022/stream",
+      "https_url": "https://i3.streams.ovh:12022/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i4.streams.ovh:8352/listen.pls?sid=1",
+      "https_url": "https://i4.streams.ovh:8352/listen.pls?sid=1",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://i5.streams.ovh:14008/stream?type=http&nocache=100540",
+      "https_url": "https://i5.streams.ovh:14008/stream?type=http&nocache=100540",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://ice.streamcloud.mediacdn.com/epiloges1028",
+      "https_url": "https://ice.streamcloud.mediacdn.com/epiloges1028",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+      "https_url": "https://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://ice.streamcloud.mediacdn.com/palmos983",
+      "https_url": "https://ice.streamcloud.mediacdn.com/palmos983",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://ice.streamcloud.mediacdn.com/rkykladwn",
+      "https_url": "https://ice.streamcloud.mediacdn.com/rkykladwn",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://icecast.902.gr:8000/904",
+      "https_url": "https://icecast.902.gr:8000/904",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://icecast.902.gr:8000/904.m3u",
+      "https_url": "https://icecast.902.gr:8000/904.m3u",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://in.icss.com.gr:8000/stream_007",
+      "https_url": "https://in.icss.com.gr:8000/stream_007",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://iphone.live24.gr/pamvotis1057ioannina",
+      "https_url": "https://iphone.live24.gr/pamvotis1057ioannina",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://live.boreioshxos.gr:9126/",
+      "https_url": "https://live.boreioshxos.gr:9126/",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://live.cast-control.eu:9102/;",
+      "https_url": "https://live.cast-control.eu:9102/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.cast-control.eu:9102/stream?type=http&nocache=144",
+      "https_url": "https://live.cast-control.eu:9102/stream?type=http&nocache=144",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.cast-control.eu:9118/stream;?1552397300972",
+      "https_url": "https://live.cast-control.eu:9118/stream;?1552397300972",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.e-streaming.eu:8100/",
+      "https_url": "https://live.e-streaming.eu:8100/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.e-streaming.eu:8100/1",
+      "https_url": "https://live.e-streaming.eu:8100/1",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.e-streaming.eu:8110/",
+      "https_url": "https://live.e-streaming.eu:8110/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.e-streaming.eu:8110/stream?type=http&nocache=1394",
+      "https_url": "https://live.e-streaming.eu:8110/stream?type=http&nocache=1394",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.e-streaming.eu:8120/;",
+      "https_url": "https://live.e-streaming.eu:8120/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.ellinikos.gr:8010/903.mp3",
+      "https_url": "https://live.ellinikos.gr:8010/903.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://live.isol.biz:8500/;stream.nsv",
+      "https_url": "https://live.isol.biz:8500/;stream.nsv",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.kanali1.gr:8000/kanali1",
+      "https_url": "https://live.kanali1.gr:8000/kanali1",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://live.onweb.gr:8010/;",
+      "https_url": "https://live.onweb.gr:8010/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'live.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://live.onweb.gr:8212/;",
+      "https_url": "https://live.onweb.gr:8212/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live.radioevros.gr:8000/live",
+      "https_url": "https://live.radioevros.gr:8000/live",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://live.rockmelodic-radio.com:8124/stream",
+      "https_url": "https://live.rockmelodic-radio.com:8124/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'live.rockmelodic-radio.com'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://live3.istoikona.com:8376/;",
+      "https_url": "https://live3.istoikona.com:8376/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://live3.istoikona.net:8324/stream",
+      "https_url": "https://live3.istoikona.net:8324/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://master.shoutcast.com:8000/104-4-radio-",
+      "https_url": "https://master.shoutcast.com:8000/104-4-radio-",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://mediacp.32bit.gr:8002/stream",
+      "https_url": "https://mediacp.32bit.gr:8002/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://mediacp.32bit.gr:8008/stream",
+      "https_url": "https://mediacp.32bit.gr:8008/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://mediacp.32bit.gr:8014/stream",
+      "https_url": "https://mediacp.32bit.gr:8014/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://mmr.yourstreaming.gr:9300/;",
+      "https_url": "https://mmr.yourstreaming.gr:9300/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mmr.yourstreaming.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://molonotiradio.gr:8000/molonoti-radio-stream",
+      "https_url": "https://molonotiradio.gr:8000/molonoti-radio-stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://mp96fm.live24.gr/monadikipolitia96",
+      "https_url": "https://mp96fm.live24.gr/monadikipolitia96",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://music.1host.gr:9045/stream/",
+      "https_url": "https://music.1host.gr:9045/stream/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://nemstream.ddns.net:12032/stream?type=http&nocache=25",
+      "https_url": "https://nemstream.ddns.net:12032/stream?type=http&nocache=25",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nemstream.ddns.net'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://neos.win:9501/stream?type=http&nocache=5",
+      "https_url": "https://neos.win:9501/stream?type=http&nocache=5",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://nitro.live24.gr/nitro4555?1378770360515.mp3",
+      "https_url": "https://nitro.live24.gr/nitro4555?1378770360515.mp3",
+      "verified": false,
+      "reason": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "http_url": "http://node-21.zeno.fm/x7zhhtrmcd0uv",
+      "https_url": "https://node-21.zeno.fm/x7zhhtrmcd0uv",
+      "verified": false,
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "http_url": "http://novafm106.media.friktoria.net:8000/novafm106.mp3",
+      "https_url": "https://novafm106.media.friktoria.net:8000/novafm106.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://okshop.live24.gr/okshop",
+      "https_url": "https://okshop.live24.gr/okshop",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://online-radio.eu/export/winamp/87702-echo-fm",
+      "https_url": "https://online-radio.eu/export/winamp/87702-echo-fm",
+      "verified": false,
+      "final_url": "https://online-radio.eu/export/winamp/87702-echo-fm",
+      "content_type": "audio/x-scpls; charset=UTF-8",
+      "codecs": [],
+      "reason": "No audio detected in response sample; manual review needed"
+    },
+    {
+      "http_url": "http://playerservices.streamtheworld.com/m3u/AFNE_SDB.m3u",
+      "https_url": "https://playerservices.streamtheworld.com/m3u/AFNE_SDB.m3u",
+      "verified": false,
+      "final_url": "https://playerservices.streamtheworld.com/m3u/AFNE_SDB.m3u",
+      "content_type": "audio/x-mpegurl; charset=UTF-8",
+      "codecs": [],
+      "reason": "No audio detected in response sample; manual review needed"
+    },
+    {
+      "http_url": "http://prech.kritikorama.eu:9382/prech",
+      "https_url": "https://prech.kritikorama.eu:9382/prech",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'prech.kritikorama.eu'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://proradio.gr:8004/alpharadio",
+      "https_url": "https://proradio.gr:8004/alpharadio",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://proradio.gr:8004/brake",
+      "https_url": "https://proradio.gr:8004/brake",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://proradio.gr:8004/radio981m",
+      "https_url": "https://proradio.gr:8004/radio981m",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://proradio.gr:8004/star933",
+      "https_url": "https://proradio.gr:8004/star933",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://proxima.shoutca.st:9012/;",
+      "https_url": "https://proxima.shoutca.st:9012/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://pstnet6.shoutcastnet.com:60160/stream",
+      "https_url": "https://pstnet6.shoutcastnet.com:60160/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.1055rock.gr:30000/1055?ver=324406",
+      "https_url": "https://radio.1055rock.gr:30000/1055?ver=324406",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://radio.1055rock.gr:30000/1055?ver=334672",
+      "https_url": "https://radio.1055rock.gr:30000/1055?ver=334672",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://radio.city93.gr:9996/stream?type=http&nocache=89",
+      "https_url": "https://radio.city93.gr:9996/stream?type=http&nocache=89",
+      "verified": false,
+      "reason": "<urlopen error [Errno 51] Network is unreachable>"
+    },
+    {
+      "http_url": "http://radio.ertopen.com/erasport",
+      "https_url": "https://radio.ertopen.com/erasport",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://radio.hostchefs.net:8046/stream?1520818130148",
+      "https_url": "https://radio.hostchefs.net:8046/stream?1520818130148",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.icehosting.com:8091/live.mp3",
+      "https_url": "https://radio.icehosting.com:8091/live.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://radio.katerinigas.gr:8000/;?type=http&nocache=233",
+      "https_url": "https://radio.katerinigas.gr:8000/;?type=http&nocache=233",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8004/stream1",
+      "https_url": "https://radio.lancom.gr:8004/stream1",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8004/stream3?1547809557220",
+      "https_url": "https://radio.lancom.gr:8004/stream3?1547809557220",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8006/stream1",
+      "https_url": "https://radio.lancom.gr:8006/stream1",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8006/stream2",
+      "https_url": "https://radio.lancom.gr:8006/stream2",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8006/stream3",
+      "https_url": "https://radio.lancom.gr:8006/stream3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8012/stream5",
+      "https_url": "https://radio.lancom.gr:8012/stream5",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.lancom.gr:8014/stream6",
+      "https_url": "https://radio.lancom.gr:8014/stream6",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.limnosfm100.gr:9998/;",
+      "https_url": "https://radio.limnosfm100.gr:9998/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://radio.lts-group.eu:52390/ANS",
+      "https_url": "https://radio.lts-group.eu:52390/ANS",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://radio.musicfactory.gr:9000/",
+      "https_url": "https://radio.musicfactory.gr:9000/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'radio.musicfactory.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://radio.myaegean.gr:8000/lofosradio.mp3",
+      "https_url": "https://radio.myaegean.gr:8000/lofosradio.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8002/stream",
+      "https_url": "https://radio.streamings.gr:8002/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8007/stream",
+      "https_url": "https://radio.streamings.gr:8007/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8027/stream",
+      "https_url": "https://radio.streamings.gr:8027/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8029/stream",
+      "https_url": "https://radio.streamings.gr:8029/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8029/stream2",
+      "https_url": "https://radio.streamings.gr:8029/stream2",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8043/stream?1546865665943",
+      "https_url": "https://radio.streamings.gr:8043/stream?1546865665943",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8064/stream",
+      "https_url": "https://radio.streamings.gr:8064/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio.streamings.gr:8115/stream",
+      "https_url": "https://radio.streamings.gr:8115/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://radio2.discomaniaradio.com:7000/live",
+      "https_url": "https://radio2.discomaniaradio.com:7000/live",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'radio2.discomaniaradio.com'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://radioanamnisi.live24.gr/radioanamnisi910",
+      "https_url": "https://radioanamnisi.live24.gr/radioanamnisi910",
+      "verified": false,
+      "reason": "<urlopen error timed out>"
+    },
+    {
+      "http_url": "http://radionostalgiagr.dyndns.org:2314/",
+      "https_url": "https://radionostalgiagr.dyndns.org:2314/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://radionostalgiagr.dyndns.org:2314/listen.pls",
+      "https_url": "https://radionostalgiagr.dyndns.org:2314/listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://radionostalgiagr.dyndns.org:2314/stream?type=http&nocache=167",
+      "https_url": "https://radionostalgiagr.dyndns.org:2314/stream?type=http&nocache=167",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://rdst.win:7060/stream",
+      "https_url": "https://rdst.win:7060/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://s1.nexuscast.com:8133/;",
+      "https_url": "https://s1.nexuscast.com:8133/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8008/stream?type=http&nocache=45171",
+      "https_url": "https://s1.onweb.gr:8008/stream?type=http&nocache=45171",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8028/;stream/1",
+      "https_url": "https://s1.onweb.gr:8028/;stream/1",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8052/;",
+      "https_url": "https://s1.onweb.gr:8052/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8066/;",
+      "https_url": "https://s1.onweb.gr:8066/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8074/stream?type=http&nocache=61679",
+      "https_url": "https://s1.onweb.gr:8074/stream?type=http&nocache=61679",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8098/;",
+      "https_url": "https://s1.onweb.gr:8098/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8410/;",
+      "https_url": "https://s1.onweb.gr:8410/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8412/listen.pls",
+      "https_url": "https://s1.onweb.gr:8412/listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8412/stream",
+      "https_url": "https://s1.onweb.gr:8412/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8422/stream?type=http&nocache=75401",
+      "https_url": "https://s1.onweb.gr:8422/stream?type=http&nocache=75401",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8446/;",
+      "https_url": "https://s1.onweb.gr:8446/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8812/;",
+      "https_url": "https://s1.onweb.gr:8812/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8820/stream?type=http&nocache=24195",
+      "https_url": "https://s1.onweb.gr:8820/stream?type=http&nocache=24195",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8824/stream?type=http&nocache=120392",
+      "https_url": "https://s1.onweb.gr:8824/stream?type=http&nocache=120392",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8828/;",
+      "https_url": "https://s1.onweb.gr:8828/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8830/stream?type=http&nocache=19162",
+      "https_url": "https://s1.onweb.gr:8830/stream?type=http&nocache=19162",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8834/stream?type=http&nocache=18995",
+      "https_url": "https://s1.onweb.gr:8834/stream?type=http&nocache=18995",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8838/;",
+      "https_url": "https://s1.onweb.gr:8838/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8848/stream",
+      "https_url": "https://s1.onweb.gr:8848/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8854/stream?type=http&nocache=113055",
+      "https_url": "https://s1.onweb.gr:8854/stream?type=http&nocache=113055",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s1.onweb.gr:8856/;",
+      "https_url": "https://s1.onweb.gr:8856/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s10.voscast.com:9940/",
+      "https_url": "https://s10.voscast.com:9940/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s10.voscast.com:9942/;",
+      "https_url": "https://s10.voscast.com:9942/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.e-resellers.gr:8000/stream?type=http&nocache=1555",
+      "https_url": "https://s2.e-resellers.gr:8000/stream?type=http&nocache=1555",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.e-resellers.gr:8020/stream?type=http&nocache=103230",
+      "https_url": "https://s2.e-resellers.gr:8020/stream?type=http&nocache=103230",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s2.e-resellers.gr:8022/stream?type=http&nocache=56185",
+      "https_url": "https://s2.e-resellers.gr:8022/stream?type=http&nocache=56185",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.e-resellers.gr:8076/stream",
+      "https_url": "https://s2.e-resellers.gr:8076/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.e-resellers.gr:9966/;",
+      "https_url": "https://s2.e-resellers.gr:9966/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.free-shoutcast.com:18132/;stream.mp3",
+      "https_url": "https://s2.free-shoutcast.com:18132/;stream.mp3",
+      "verified": false,
+      "reason": "HTTP Error 403: Service Forbidden"
+    },
+    {
+      "http_url": "http://s2.onweb.gr:8044/;",
+      "https_url": "https://s2.onweb.gr:8044/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.onweb.gr:8446/;",
+      "https_url": "https://s2.onweb.gr:8446/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's2.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s2.onweb.gr:8610/stream?type=http&nocache=17",
+      "https_url": "https://s2.onweb.gr:8610/stream?type=http&nocache=17",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.onweb.gr:8622/;",
+      "https_url": "https://s2.onweb.gr:8622/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.onweb.gr:8628/;",
+      "https_url": "https://s2.onweb.gr:8628/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s2.onweb.gr:8852/",
+      "https_url": "https://s2.onweb.gr:8852/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s26.myradiostream.com:18676/listen.mp3",
+      "https_url": "https://s26.myradiostream.com:18676/listen.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8012/;",
+      "https_url": "https://s3.onweb.gr:8012/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8014/stream?type=http&nocache=120452",
+      "https_url": "https://s3.onweb.gr:8014/stream?type=http&nocache=120452",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8016/stream?type=http&nocache=14923",
+      "https_url": "https://s3.onweb.gr:8016/stream?type=http&nocache=14923",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8016/stream?type=http&nocache=906097",
+      "https_url": "https://s3.onweb.gr:8016/stream?type=http&nocache=906097",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8030/stream?type=http&nocache=114707",
+      "https_url": "https://s3.onweb.gr:8030/stream?type=http&nocache=114707",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8038/stream?type=http&nocache=501",
+      "https_url": "https://s3.onweb.gr:8038/stream?type=http&nocache=501",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8436/;",
+      "https_url": "https://s3.onweb.gr:8436/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8438/stream?type=http&nocache=56820",
+      "https_url": "https://s3.onweb.gr:8438/stream?type=http&nocache=56820",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8452/",
+      "https_url": "https://s3.onweb.gr:8452/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8452/;",
+      "https_url": "https://s3.onweb.gr:8452/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8454/",
+      "https_url": "https://s3.onweb.gr:8454/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8454/stream?type=http&nocache=21370",
+      "https_url": "https://s3.onweb.gr:8454/stream?type=http&nocache=21370",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8462/",
+      "https_url": "https://s3.onweb.gr:8462/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8462/;",
+      "https_url": "https://s3.onweb.gr:8462/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8472/stream?type=http&nocache=204111",
+      "https_url": "https://s3.onweb.gr:8472/stream?type=http&nocache=204111",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8528/;",
+      "https_url": "https://s3.onweb.gr:8528/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8528/listen.pls",
+      "https_url": "https://s3.onweb.gr:8528/listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8530/;",
+      "https_url": "https://s3.onweb.gr:8530/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8536/;",
+      "https_url": "https://s3.onweb.gr:8536/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8540/",
+      "https_url": "https://s3.onweb.gr:8540/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8540/stream",
+      "https_url": "https://s3.onweb.gr:8540/stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8814/;",
+      "https_url": "https://s3.onweb.gr:8814/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8872/;",
+      "https_url": "https://s3.onweb.gr:8872/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8878/listen.pls",
+      "https_url": "https://s3.onweb.gr:8878/listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s3.onweb.gr:8888/stream?type=http&nocache=167224",
+      "https_url": "https://s3.onweb.gr:8888/stream?type=http&nocache=167224",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8076/stream?type=http&nocache=104869",
+      "https_url": "https://s4.onweb.gr:8076/stream?type=http&nocache=104869",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8080/;",
+      "https_url": "https://s4.onweb.gr:8080/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8434/stream?type=http&nocache=89825",
+      "https_url": "https://s4.onweb.gr:8434/stream?type=http&nocache=89825",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8442/;",
+      "https_url": "https://s4.onweb.gr:8442/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8444/;",
+      "https_url": "https://s4.onweb.gr:8444/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8444/;stream",
+      "https_url": "https://s4.onweb.gr:8444/;stream",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8466/;",
+      "https_url": "https://s4.onweb.gr:8466/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8468/",
+      "https_url": "https://s4.onweb.gr:8468/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8468/;",
+      "https_url": "https://s4.onweb.gr:8468/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8468/stream?type=http&nocache=62788",
+      "https_url": "https://s4.onweb.gr:8468/stream?type=http&nocache=62788",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8470/",
+      "https_url": "https://s4.onweb.gr:8470/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8470/;",
+      "https_url": "https://s4.onweb.gr:8470/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8842/;",
+      "https_url": "https://s4.onweb.gr:8842/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8862/",
+      "https_url": "https://s4.onweb.gr:8862/",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8862/;",
+      "https_url": "https://s4.onweb.gr:8862/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8876/;",
+      "https_url": "https://s4.onweb.gr:8876/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s4.onweb.gr:8892/stream?type=http&nocache=136101",
+      "https_url": "https://s4.onweb.gr:8892/stream?type=http&nocache=136101",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8488/",
+      "https_url": "https://s5.onweb.gr:8488/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8488/;",
+      "https_url": "https://s5.onweb.gr:8488/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8498/;",
+      "https_url": "https://s5.onweb.gr:8498/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8502/stream?type=http&nocache=77822",
+      "https_url": "https://s5.onweb.gr:8502/stream?type=http&nocache=77822",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's5.onweb.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8506/listen.pls",
+      "https_url": "https://s5.onweb.gr:8506/listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8508/",
+      "https_url": "https://s5.onweb.gr:8508/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s5.onweb.gr:8508/;",
+      "https_url": "https://s5.onweb.gr:8508/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s6.onweb.gr:8034/",
+      "https_url": "https://s6.onweb.gr:8034/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s6.onweb.gr:8034/stream?type=http&nocache=566163",
+      "https_url": "https://s6.onweb.gr:8034/stream?type=http&nocache=566163",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s6.onweb.gr:8058/",
+      "https_url": "https://s6.onweb.gr:8058/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s6.onweb.gr:8058/stream",
+      "https_url": "https://s6.onweb.gr:8058/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s6.onweb.gr:8068/stream",
+      "https_url": "https://s6.onweb.gr:8068/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://s7.onweb.gr:8044/stream?type=http&nocache=40904",
+      "https_url": "https://s7.onweb.gr:8044/stream?type=http&nocache=40904",
+      "verified": false,
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "http_url": "http://s7.onweb.gr:8554/;",
+      "https_url": "https://s7.onweb.gr:8554/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "http_url": "http://s8.onweb.gr:8702/;",
+      "https_url": "https://s8.onweb.gr:8702/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8006/",
+      "https_url": "https://sc2.streamwithq.com:8006/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8016/stream?type=http&nocache=65312",
+      "https_url": "https://sc2.streamwithq.com:8016/stream?type=http&nocache=65312",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8018/stream?type=http&nocache=1073",
+      "https_url": "https://sc2.streamwithq.com:8018/stream?type=http&nocache=1073",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8028/stream;",
+      "https_url": "https://sc2.streamwithq.com:8028/stream;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8034/;stream.mp3",
+      "https_url": "https://sc2.streamwithq.com:8034/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8040/stream/;",
+      "https_url": "https://sc2.streamwithq.com:8040/stream/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8042/;",
+      "https_url": "https://sc2.streamwithq.com:8042/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8046/;.mp3",
+      "https_url": "https://sc2.streamwithq.com:8046/;.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8048/",
+      "https_url": "https://sc2.streamwithq.com:8048/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8048/stream?type=http&nocache=17",
+      "https_url": "https://sc2.streamwithq.com:8048/stream?type=http&nocache=17",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8052/stream?type=http&nocache=556",
+      "https_url": "https://sc2.streamwithq.com:8052/stream?type=http&nocache=556",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8056/stream?type=http&nocache=1093",
+      "https_url": "https://sc2.streamwithq.com:8056/stream?type=http&nocache=1093",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8060/;",
+      "https_url": "https://sc2.streamwithq.com:8060/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8070/",
+      "https_url": "https://sc2.streamwithq.com:8070/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8070/;stream/1",
+      "https_url": "https://sc2.streamwithq.com:8070/;stream/1",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8086/stream?type=http&nocache=14592",
+      "https_url": "https://sc2.streamwithq.com:8086/stream?type=http&nocache=14592",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8092/;listen.pls",
+      "https_url": "https://sc2.streamwithq.com:8092/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8098/;listen.pls",
+      "https_url": "https://sc2.streamwithq.com:8098/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8120/;",
+      "https_url": "https://sc2.streamwithq.com:8120/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sc2.streamwithq.com:8130/;",
+      "https_url": "https://sc2.streamwithq.com:8130/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://server.insms.gr:45104/;stream",
+      "https_url": "https://server.insms.gr:45104/;stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://server.insms.gr:45114/;stream.mp3",
+      "https_url": "https://server.insms.gr:45114/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://sh.onweb.gr:8816/;stream",
+      "https_url": "https://sh.onweb.gr:8816/;stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sh.onweb.gr:8844/stream?type=http&nocache=1024",
+      "https_url": "https://sh.onweb.gr:8844/stream?type=http&nocache=1024",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sh.onweb.gr:8852/;stream",
+      "https_url": "https://sh.onweb.gr:8852/;stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sip.blueradio.gr:8033/stream?type=http&nocache=308275",
+      "https_url": "https://sip.blueradio.gr:8033/stream?type=http&nocache=308275",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sip.wildradio.gr:8037/stream?type=http&nocache=48915",
+      "https_url": "https://sip.wildradio.gr:8037/stream?type=http&nocache=48915",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sirius.shoutca.st:8713/stream",
+      "https_url": "https://sirius.shoutca.st:8713/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sitiafm.no-ip.info:8000/;",
+      "https_url": "https://sitiafm.no-ip.info:8000/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://smartradio1045.live24.gr/smartradio1045",
+      "https_url": "https://smartradio1045.live24.gr/smartradio1045",
+      "verified": false,
+      "reason": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "http_url": "http://solid1.streamupsolutions.com:11003/live",
+      "https_url": "https://solid1.streamupsolutions.com:11003/live",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid1.streamupsolutions.com:11004/coolfmnet?type=http&nocache=1258317",
+      "https_url": "https://solid1.streamupsolutions.com:11004/coolfmnet?type=http&nocache=1258317",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid1.streamupsolutions.com:11026/stream?1585721674694",
+      "https_url": "https://solid1.streamupsolutions.com:11026/stream?1585721674694",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid1.streamupsolutions.com:24929/stream",
+      "https_url": "https://solid1.streamupsolutions.com:24929/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid1.streamupsolutions.com:55023/stream",
+      "https_url": "https://solid1.streamupsolutions.com:55023/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid2.streamupsolutions.com:24896/stream",
+      "https_url": "https://solid2.streamupsolutions.com:24896/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid2.streamupsolutions.com:24950/stream",
+      "https_url": "https://solid2.streamupsolutions.com:24950/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid2.streamupsolutions.com:24952/stream",
+      "https_url": "https://solid2.streamupsolutions.com:24952/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid2.streamupsolutions.com:24977/stream?type=http&nocache=1049",
+      "https_url": "https://solid2.streamupsolutions.com:24977/stream?type=http&nocache=1049",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid24.streamupsolutions.com:8010/stream",
+      "https_url": "https://solid24.streamupsolutions.com:8010/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid33.streamupsolutions.com:30000/stream",
+      "https_url": "https://solid33.streamupsolutions.com:30000/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid33.streamupsolutions.com:30012/live",
+      "https_url": "https://solid33.streamupsolutions.com:30012/live",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid33.streamupsolutions.com:32014/stream",
+      "https_url": "https://solid33.streamupsolutions.com:32014/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://solid55.streamupsolutions.com:30013/stream",
+      "https_url": "https://solid55.streamupsolutions.com:30013/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid55.streamupsolutions.com:32015/stream",
+      "https_url": "https://solid55.streamupsolutions.com:32015/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid67.streamupsolutions.com:15037/stream",
+      "https_url": "https://solid67.streamupsolutions.com:15037/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://solid9.streamupsolutions.com:8066/stream",
+      "https_url": "https://solid9.streamupsolutions.com:8066/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sonic.streams.ovh:9870/;",
+      "https_url": "https://sonic.streams.ovh:9870/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp1.32bit.gr:8018/",
+      "https_url": "https://sp1.32bit.gr:8018/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8084/stream?type=http&nocache=114",
+      "https_url": "https://sp2.streams.ovh:8084/stream?type=http&nocache=114",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8096/;stream",
+      "https_url": "https://sp2.streams.ovh:8096/;stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8096/stream?type=http&nocache=176",
+      "https_url": "https://sp2.streams.ovh:8096/stream?type=http&nocache=176",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8096/stream?type=http&nocache=99",
+      "https_url": "https://sp2.streams.ovh:8096/stream?type=http&nocache=99",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8098/stream?type=http&nocache=556",
+      "https_url": "https://sp2.streams.ovh:8098/stream?type=http&nocache=556",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8100/stream?type=http&nocache=185",
+      "https_url": "https://sp2.streams.ovh:8100/stream?type=http&nocache=185",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8102/stream?type=http&nocache=70",
+      "https_url": "https://sp2.streams.ovh:8102/stream?type=http&nocache=70",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8104/stream?type=http&nocache=763",
+      "https_url": "https://sp2.streams.ovh:8104/stream?type=http&nocache=763",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8106/;stream",
+      "https_url": "https://sp2.streams.ovh:8106/;stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp2.streams.ovh:8106/stream?type=http&nocache=540",
+      "https_url": "https://sp2.streams.ovh:8106/stream?type=http&nocache=540",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://sp3.streams.ovh:8089/stream",
+      "https_url": "https://sp3.streams.ovh:8089/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://stream.crete.ovh:8000/1",
+      "https_url": "https://stream.crete.ovh:8000/1",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream.ellada943.gr:10308/live.ogg",
+      "https_url": "https://stream.ellada943.gr:10308/live.ogg",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://stream.kiisextra.gr:48500/kiis.mp3",
+      "https_url": "https://stream.kiisextra.gr:48500/kiis.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream.kncdn.net:7512/1/?1671793270131",
+      "https_url": "https://stream.kncdn.net:7512/1/?1671793270131",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://stream.melody888.gr:48500/melody.mp3",
+      "https_url": "https://stream.melody888.gr:48500/melody.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream.mousikopanorama.gr:8015/stream",
+      "https_url": "https://stream.mousikopanorama.gr:8015/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream.myip.gr:9214/;listen.pls",
+      "https_url": "https://stream.myip.gr:9214/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://stream.myip.gr:9220/stream",
+      "https_url": "https://stream.myip.gr:9220/stream",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream.myip.gr:9238/stream",
+      "https_url": "https://stream.myip.gr:9238/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://stream.radio-ikaria.gr:8000/;?type=http&nocache=4008",
+      "https_url": "https://stream.radio-ikaria.gr:8000/;?type=http&nocache=4008",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://stream.sy3dud.com:8000/stream",
+      "https_url": "https://stream.sy3dud.com:8000/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://stream.sy3dud.com:8000/stream/3/;",
+      "https_url": "https://stream.sy3dud.com:8000/stream/3/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://stream.zeno.fm/78pga7pvwk8uv",
+      "https_url": "https://stream.zeno.fm/78pga7pvwk8uv",
+      "verified": false,
+      "reason": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "http_url": "http://stream1.mousikokanali.gr:8100/mc?.mp3",
+      "https_url": "https://stream1.mousikokanali.gr:8100/mc?.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream2.proradio.gr:8004/alpharadio",
+      "https_url": "https://stream2.proradio.gr:8004/alpharadio",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream2.proradio.gr:8004/erotokritos",
+      "https_url": "https://stream2.proradio.gr:8004/erotokritos",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream2.proradio.gr:8004/lampsi",
+      "https_url": "https://stream2.proradio.gr:8004/lampsi",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://stream3.468.gr:8104/;listen.pls",
+      "https_url": "https://stream3.468.gr:8104/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://streams.enjoyfm.gr:48500/aroma.mp3",
+      "https_url": "https://streams.enjoyfm.gr:48500/aroma.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://streams.enjoyfm.gr:48500/kiis958.mp3",
+      "https_url": "https://streams.enjoyfm.gr:48500/kiis958.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://streams.enjoyfm.gr:48500/xroma.mp3",
+      "https_url": "https://streams.enjoyfm.gr:48500/xroma.mp3",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://streamyourdream.org:18042/imd",
+      "https_url": "https://streamyourdream.org:18042/imd",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://tachyon.shoutca.st:8594/stream",
+      "https_url": "https://tachyon.shoutca.st:8594/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://uk15freenew.listen2myradio.com:5003/",
+      "https_url": "https://uk15freenew.listen2myradio.com:5003/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://uk3freenew.listen2myradio.com:24503/",
+      "https_url": "https://uk3freenew.listen2myradio.com:24503/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://uk7freenew.listen2myradio.com:8035/",
+      "https_url": "https://uk7freenew.listen2myradio.com:8035/",
+      "verified": false,
+      "reason": "<urlopen error [Errno 61] Connection refused>"
+    },
+    {
+      "http_url": "http://usa2-vn.mixstream.net:8018/;",
+      "https_url": "https://usa2-vn.mixstream.net:8018/;",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://www.111.gr:8000/stream?type=http&nocache=181015",
+      "https_url": "https://www.111.gr:8000/stream?type=http&nocache=181015",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.111.gr'. (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://www.gointernet.gr:8003/;stream.mp3",
+      "https_url": "https://www.gointernet.gr:8003/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://www.gointernet.gr:8012/;listen.pls",
+      "https_url": "https://www.gointernet.gr:8012/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://www.gointernet.gr:8014/;stream.mp3",
+      "https_url": "https://www.gointernet.gr:8014/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://www.gointernet.gr:8030/;listen.pls",
+      "https_url": "https://www.gointernet.gr:8030/;listen.pls",
+      "verified": false,
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1018)>"
+    },
+    {
+      "http_url": "http://www.gointernet.gr:8034/;stream.mp3",
+      "https_url": "https://www.gointernet.gr:8034/;stream.mp3",
+      "verified": false,
+      "reason": "<urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "http_url": "http://www.katrafm.net:9000/live",
+      "https_url": "https://www.katrafm.net:9000/live",
+      "verified": false,
+      "reason": "<urlopen error _ssl.c:1001: The handshake operation timed out>"
+    },
+    {
+      "http_url": "http://www.radioin.link:8383/stream",
+      "https_url": "https://www.radioin.link:8383/stream",
+      "verified": false,
+      "reason": "<urlopen error [Errno 65] No route to host>"
+    },
+    {
+      "http_url": "http://zygos.onweb.gr:8870/;",
+      "https_url": "https://zygos.onweb.gr:8870/;",
+      "verified": false,
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'zygos.onweb.gr'. (_ssl.c:1018)>"
+    }
+  ]
+}
