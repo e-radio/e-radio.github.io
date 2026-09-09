@@ -574,6 +574,11 @@ const structuredData = {
             </div>
 
             <div class="col-12">
+              <div id="playbackError" class="alert alert-warning mb-3" role="alert" hidden>
+                <p id="playbackErrorMessage" class="mb-2"></p>
+                <span>Listen to this station in the Radddio app. </span>
+                <a href={radddioURL} target="_blank" rel="nofollow noopener">Download for free</a>.
+              </div>
               <audio
                 id="audio"
                 preload="none"
@@ -1176,6 +1181,32 @@ const structuredData = {
     }
 
     if (playerConfig.hasStream && audio && btnPlay) {
+      const errorPanel = document.getElementById('playbackError');
+      const errorMessage = document.getElementById('playbackErrorMessage');
+      const clearPlaybackError = () => {
+        if (errorPanel) errorPanel.hidden = true;
+        if (errorMessage) errorMessage.textContent = '';
+      };
+      const showPlaybackError = (err = null) => {
+        let message = 'This browser could not play the stream. The station may be unavailable, or the connection may have been blocked.';
+        if (navigator.onLine === false) {
+          message = 'Your browser appears to be offline. Check your internet connection and try again.';
+        } else if (err?.name === 'NotAllowedError') {
+          message = 'Your browser blocked audio playback. Allow sound for this site in your browser settings, then press Play.';
+        } else if (audio.error?.code === 2) {
+          message = 'The audio connection failed. The station may be offline, or a network or browser restriction may be blocking the stream.';
+        } else if (audio.error?.code === 3) {
+          message = 'Your browser could not decode the audio. The stream may be damaged or use an unsupported audio format.';
+        } else if (audio.error?.code === 4 || err?.name === 'NotSupportedError') {
+          message = 'Your browser could not load this audio source. Its format may be unsupported, or the server may be unavailable or blocking access.';
+        } else if (audio.error?.code === 1 || err?.name === 'AbortError') {
+          message = 'Audio loading was interrupted. Press Play to try again.';
+        }
+        if (errorMessage) errorMessage.textContent = message;
+        if (errorPanel) errorPanel.hidden = false;
+        updatePlaybackButton(false);
+        setStatus('Playback failed');
+      };
       let playbackRequested = false;
       let playbackRequestId = 0;
       const updatePlaybackButton = (active) => {
@@ -1198,14 +1229,15 @@ const structuredData = {
           setBuffer(0);
           return;
         }
+        clearPlaybackError();
         updatePlaybackButton(true);
         try {
+          if (audio.error) audio.load();
           setStatus('Connecting');
           await audio.play();
         } catch (err) {
           if (requestId !== playbackRequestId) return;
-          updatePlaybackButton(false);
-          setStatus('Play blocked');
+          showPlaybackError(err);
           console.error(err);
         }
       });
@@ -1228,11 +1260,11 @@ const structuredData = {
       syncVolumeControl();
 
       audio.addEventListener('play', () => updatePlaybackButton(true));
-      audio.addEventListener('playing', () => { updatePlaybackButton(true); setStatus('Playing'); });
-      audio.addEventListener('pause', () => { updatePlaybackButton(false); setStatus('Stopped'); });
+      audio.addEventListener('playing', () => { clearPlaybackError(); updatePlaybackButton(true); setStatus('Playing'); });
+      audio.addEventListener('pause', () => { updatePlaybackButton(false); if (!errorPanel || errorPanel.hidden) setStatus('Stopped'); });
       audio.addEventListener('waiting', () => setStatus('Buffering'));
       audio.addEventListener('ended', () => { updatePlaybackButton(false); setStatus('Ended'); });
-      audio.addEventListener('error', () => { updatePlaybackButton(false); setStatus('Stream error'); });
+      audio.addEventListener('error', () => showPlaybackError());
 
       let seconds = 0;
       setInterval(() => {
