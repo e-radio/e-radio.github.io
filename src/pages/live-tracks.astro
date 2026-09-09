@@ -44,6 +44,7 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
   <audio id="live-tracks-audio" preload="none"></audio>
 </Layout>
 <script>
+  import { updateTrackText, trackArtworkController } from '../lib/live-track-view.mjs';
   import { metadataPollDelay } from '../lib/metadata-polling.mjs';
   import { icecastTrack } from '../lib/icecast.mjs';
   import { radiojarSong } from '../lib/radiojar.mjs';
@@ -58,12 +59,10 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
     card.querySelector('button')!.setAttribute('aria-label', `Play ${card.dataset.name}`);
     card.querySelector('button i')!.className = 'bi bi-play-fill';
   };
+  const artworkControllers = new Map<HTMLElement, ReturnType<typeof trackArtworkController>>();
   cards.forEach(card => {
     const cover = card.querySelector<HTMLImageElement>('img')!;
-    cover.addEventListener('error', () => {
-      const fallback = new URL(cover.dataset.fallback!, location.href).href;
-      if (cover.src !== fallback) cover.src = fallback;
-    });
+    artworkControllers.set(card, trackArtworkController(cover, cover.dataset.fallback!, location.href));
     card.querySelector('button')!.addEventListener('click', async () => {
       const currentRequest = ++requestId;
       const previous = active;
@@ -124,25 +123,21 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
             const listenersEl = card.querySelector<HTMLElement>('.track-listeners')!;
             const count = icecast?.listeners ?? data?.listeners?.current ?? centova?.listeners ?? centova?.listenertotal;
             const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;
-            listenersEl.textContent = hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '';
+            updateTrackText(listenersEl, hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '');
             listenersEl.hidden = !hasCount;
-            card.querySelector('.track-title')!.textContent = song?.title || song?.text || 'Song information unavailable';
-            card.querySelector('.track-artist')!.textContent = song?.artist ? `${song.artist} · ` : '';
+            updateTrackText(card.querySelector('.track-title'), song?.title || song?.text || 'Song information unavailable');
+            updateTrackText(card.querySelector('.track-artist'), song?.artist ? `${song.artist} · ` : '');
             const cover = card.querySelector<HTMLImageElement>('img')!;
-            let artwork = cover.dataset.fallback!;
-            try {
-              const url = new URL(song?.art);
-              if (url.protocol === 'https:') artwork = url.href;
-            } catch { /* Missing artwork uses the station logo. */ }
-            if (cover.src !== new URL(artwork, location.href).href) cover.src = artwork;
-            cover.alt = artwork === cover.dataset.fallback ? `${card.dataset.name} logo` : `${song?.title || 'Current song'} cover artwork`;
+            const usesFallback = artworkControllers.get(card)!(song?.art);
+            const alt = usesFallback ? `${card.dataset.name} logo` : `${song?.title || 'Current song'} cover artwork`;
+            if (cover.alt !== alt) cover.alt = alt;
             card.dataset.loaded = 'true';
             card.querySelector('.track-title')!.removeAttribute('title');
           }
         } catch {
           nextRefresh.set(endpoint, Date.now() + pollInterval);
           entries.forEach(card => {
-            if (!card.dataset.loaded) card.querySelector('.track-title')!.textContent = 'Song information unavailable';
+            if (!card.dataset.loaded) updateTrackText(card.querySelector('.track-title'), 'Song information unavailable');
             card.querySelector('.track-title')!.setAttribute('title', 'Metadata could not be refreshed. Retrying shortly.');
           });
         }
