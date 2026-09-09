@@ -26663,7 +26663,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast4.magicstreams.gr:2199/rpc/nantia/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://cast4.magicstreams.gr:2199/rpc/nantia/recenttracks.get"
   },
   {
     "slug": "radio-galaxy-99",
