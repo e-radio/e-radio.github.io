@@ -176,3 +176,15 @@ Run `python3 tools/upgrade-streams-https.py` to audit HTTP stream URLs without c
 ### Remove redundant stream query parameters
 
 Run `python3 tools/clean-stream-query.py` to compare streams before and after removing `type=http` and `nocache` parameters. Add `--write` to apply verified replacements. Requires `curl` and `ffprobe`. Both URLs must return recognizable audio with matching codec details and station name headers (when available). Other parameters and embedded proxy URLs are preserved. Results are saved to `reports/stream-query-audit.json`. These short probes do not guarantee uninterrupted playback or identical programming when servers omit station identification.
+
+### Fill missing bitrate and codec
+
+Run `python3 tools/fill-stream-audio-info.py` to probe stations with zero/missing bitrate or empty/unknown codec using `ffprobe`. Add `--write` to fill identified values while preserving existing populated fields. Audio-stream bitrates are converted from bits per second to rounded kbps; variable-rate values may be estimates. Unavailable values remain unchanged. Results are saved to `reports/stream-audio-info.json`.
+
+### Check stream decoding
+
+Run `python3 tools/check-stream-decoding.py` (requires FFmpeg) to decode three seconds of audio from each unique stored stream URL. Use `--max 20` for a small sample or `--workers 10` to reduce concurrency. Each probe has a 15-second limit. The script writes progress and final results to `reports/stream-decoding-audit.json` without modifying station data. It distinguishes successful decoding, decoding with errors, failures, and timeouts. A successful result does not verify browser compatibility, CORS, TLS certificates, audible content, or sustained uptime. Station pages currently force HTTP URLs to HTTPS, so their actual playback URL may differ from the stored URL tested here.
+
+### Verify saved metadata endpoints
+
+Run `node tools/verify-metadata-endpoints.mjs` to recheck the exact saved now-playing and history URLs without modifying station data. The report at `reports/metadata-verification.json` distinguishes usable tracks, responses without matching track data, and request failures. Icecast responses are checked against the station mount. Verification confirms response data at scan time, not browser access or track freshness.

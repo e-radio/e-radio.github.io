@@ -1,0 +1,2381 @@
+{
+  "checked_urls": 189,
+  "target_entries": 232,
+  "changes": {
+    "1st-greek-new-age-radio": {
+      "bitrate": 128
+    },
+    "89-rainbow-christmas-thessaloniki": {
+      "bitrate": 128
+    },
+    "99-1-thessaloniki": {
+      "bitrate": 128
+    },
+    "alepou-radio": {
+      "bitrate": 192
+    },
+    "alepou-radio-athens-greece": {
+      "bitrate": 192
+    },
+    "alepou-radio-athens-greece-3219b33d": {
+      "bitrate": 192
+    },
+    "alpha-98-9": {
+      "bitrate": 192
+    },
+    "alpha-98-9-athens": {
+      "bitrate": 192
+    },
+    "alpha-98-9-athens-6f616c84": {
+      "bitrate": 192
+    },
+    "apopsi-gr-thessaloniki": {
+      "bitrate": 128
+    },
+    "arcadia-tripoli": {
+      "bitrate": 128
+    },
+    "athens-free-radio-athens": {
+      "bitrate": 192
+    },
+    "athens-jazz-athens": {
+      "bitrate": 56
+    },
+    "best-radio": {
+      "bitrate": 130,
+      "codec": "AAC"
+    },
+    "bobos-family-athens": {
+      "bitrate": 128
+    },
+    "bottle-o-groove": {
+      "bitrate": 128
+    },
+    "camara-thessaloniki": {
+      "bitrate": 128
+    },
+    "chill-fm-gr": {
+      "bitrate": 192
+    },
+    "chillout-tree-pines": {
+      "bitrate": 128
+    },
+    "chillout-treepines": {
+      "bitrate": 128
+    },
+    "club-fm-gr-thessaloniki": {
+      "bitrate": 192
+    },
+    "cosmos-103-8-katerini": {
+      "bitrate": 128
+    },
+    "cosmosfm-103-8": {
+      "bitrate": 128
+    },
+    "crystal-athens": {
+      "bitrate": 192
+    },
+    "dalkas-88-2": {
+      "bitrate": 64
+    },
+    "dalkas-88-2-62b8bab8": {
+      "bitrate": 64
+    },
+    "derti-105-7-patra": {
+      "bitrate": 160
+    },
+    "diathesh": {
+      "bitrate": 128
+    },
+    "disco-101-1": {
+      "bitrate": 192
+    },
+    "dmst": {
+      "bitrate": 128
+    },
+    "dp-radio-athens": {
+      "bitrate": 128
+    },
+    "easy-97-2": {
+      "bitrate": 128
+    },
+    "easy-fm-972": {
+      "bitrate": 128
+    },
+    "ecobeat-gr-karditsa": {
+      "bitrate": 138
+    },
+    "eternal": {
+      "bitrate": 320
+    },
+    "f-radio-gr-attica": {
+      "bitrate": 128
+    },
+    "f-radio-gr-deep-lounge-piraeus": {
+      "bitrate": 128
+    },
+    "fancy-trance-piraeus": {
+      "bitrate": 192
+    },
+    "fidelio-erotica": {
+      "bitrate": 128
+    },
+    "flashback": {
+      "bitrate": 128
+    },
+    "free-radio": {
+      "bitrate": 192
+    },
+    "frgfree-radio-greece": {
+      "bitrate": 192
+    },
+    "galaxy-music-acoustic-music-thessaloniki": {
+      "bitrate": 128
+    },
+    "galaxy-music-chillout-lounge-thessaloniki": {
+      "bitrate": 67
+    },
+    "galaxy-music-greek-mix-thessaloniki": {
+      "bitrate": 192
+    },
+    "galaxy-music-soft-acoustic-music-thessaloniki": {
+      "bitrate": 192
+    },
+    "galaxy-music-the-80s-channel-thessaloniki": {
+      "bitrate": 192
+    },
+    "galaxy-music-the-blues-rock-thessaloniki": {
+      "bitrate": 128
+    },
+    "galaxy-music-the-deep-house-thessaloniki": {
+      "bitrate": 192
+    },
+    "galaxy-music-the-love-songs-thessaloniki": {
+      "bitrate": 128
+    },
+    "galaxy-music-the-rock-thessaloniki": {
+      "bitrate": 192
+    },
+    "galaxy-music-the-rock-classic-thessaloniki": {
+      "bitrate": 192
+    },
+    "galaxy-music-the-rock-metal-ballads-thessaloniki": {
+      "bitrate": 128
+    },
+    "garavelas": {
+      "bitrate": 128
+    },
+    "garavelas-radio-gr": {
+      "bitrate": 128
+    },
+    "gemini-949": {
+      "bitrate": 128
+    },
+    "grande-rock": {
+      "bitrate": 128
+    },
+    "greek-weather-radio-athens": {
+      "bitrate": 128
+    },
+    "happy-radio-gr": {
+      "bitrate": 128
+    },
+    "jazz-breeze-athens": {
+      "bitrate": 320
+    },
+    "jazz-cafe-athens": {
+      "bitrate": 128
+    },
+    "klik-web-athens": {
+      "bitrate": 128
+    },
+    "koukla": {
+      "bitrate": 128
+    },
+    "koukou-radio": {
+      "bitrate": 128
+    },
+    "laiko-107-chania": {
+      "bitrate": 128
+    },
+    "lefkatas-90-5-lefkada": {
+      "bitrate": 192
+    },
+    "lefkatas-900-5-fm-lefkada": {
+      "bitrate": 192
+    },
+    "legend-fm-88-6": {
+      "bitrate": 128
+    },
+    "mancode-radio": {
+      "bitrate": 192
+    },
+    "max-93-4-patra": {
+      "bitrate": 256
+    },
+    "merakia-trikala": {
+      "bitrate": 132
+    },
+    "merakia-gr-thessaly": {
+      "bitrate": 132
+    },
+    "metal-lab": {
+      "bitrate": 128
+    },
+    "mix-fm-gr-chania": {
+      "bitrate": 128
+    },
+    "monkey-bros-thessaloniki": {
+      "bitrate": 128
+    },
+    "music-ward": {
+      "bitrate": 128
+    },
+    "music-ward-150b854c": {
+      "bitrate": 128
+    },
+    "musica-radio": {
+      "bitrate": 256
+    },
+    "my-radio-104-6": {
+      "bitrate": 128
+    },
+    "my-radio-104-6-athens": {
+      "bitrate": 128
+    },
+    "nea-tv-crete": {
+      "codec": "AAC"
+    },
+    "nova-106-volos": {
+      "bitrate": 128
+    },
+    "nrg-95-chalkida": {
+      "bitrate": 64
+    },
+    "ogdoo-athens": {
+      "bitrate": 129
+    },
+    "paradise-101-6-poros": {
+      "bitrate": 128
+    },
+    "paranomos-trikala": {
+      "bitrate": 128
+    },
+    "paros-radio-paros": {
+      "bitrate": 128
+    },
+    "pemptousia": {
+      "bitrate": 128
+    },
+    "pemptousia-fm-athos": {
+      "bitrate": 128
+    },
+    "pepper": {
+      "bitrate": 192
+    },
+    "pepper-c74ac34d": {
+      "bitrate": 192
+    },
+    "pepper-96-6-attica": {
+      "bitrate": 192
+    },
+    "picasso-patra": {
+      "bitrate": 320
+    },
+    "picasso-102-7-patra": {
+      "bitrate": 320
+    },
+    "play-gold": {
+      "bitrate": 128
+    },
+    "play-lounge": {
+      "bitrate": 128
+    },
+    "play-radio-patra-7dfaa6c2": {
+      "bitrate": 128
+    },
+    "polisview-athens": {
+      "bitrate": 128
+    },
+    "queen-greek-radio-athens": {
+      "bitrate": 128
+    },
+    "radio-apopsi": {
+      "bitrate": 128
+    },
+    "radio-paris-athens": {
+      "bitrate": 128
+    },
+    "radio-x": {
+      "bitrate": 128
+    },
+    "radiobird": {
+      "bitrate": 128
+    },
+    "radiomak-athens": {
+      "bitrate": 128
+    },
+    "radiotsambouno": {
+      "bitrate": 128
+    },
+    "rainbow-89-thessaloniki": {
+      "bitrate": 128
+    },
+    "rainbow-89-alternative-thessaloniki": {
+      "bitrate": 128
+    },
+    "rainbow-89-christmas-thessaloniki": {
+      "bitrate": 128
+    },
+    "rainbow-89-pop-thessaloniki": {
+      "bitrate": 128
+    },
+    "rainbow-89-thessaloniki-a0d7a649": {
+      "bitrate": 128
+    },
+    "rock-club-classic-rock": {
+      "bitrate": 128
+    },
+    "rock-lab-thessaloniki": {
+      "bitrate": 128
+    },
+    "rock-lab-ballads": {
+      "bitrate": 128
+    },
+    "rooftops": {
+      "bitrate": 128
+    },
+    "roxx": {
+      "bitrate": 128
+    },
+    "roxx-radio": {
+      "bitrate": 128
+    },
+    "rythmos-94-9-athens": {
+      "bitrate": 128
+    },
+    "rythmos-fm": {
+      "bitrate": 128
+    },
+    "rythmos-fm-gr-athens": {
+      "bitrate": 128
+    },
+    "santorini-jazz-radio-santorini": {
+      "bitrate": 128
+    },
+    "sfera-96-6-patra": {
+      "bitrate": 320
+    },
+    "souxe": {
+      "bitrate": 128
+    },
+    "stokokkino-athens": {
+      "bitrate": 128
+    },
+    "strummer-radio-athens": {
+      "bitrate": 128
+    },
+    "studio-a13-pyrgos": {
+      "bitrate": 128
+    },
+    "symi-radio-symi": {
+      "bitrate": 48
+    },
+    "techno-base-103-1": {
+      "bitrate": 128
+    },
+    "the-greek-radio": {
+      "bitrate": 192
+    },
+    "travellers-web-radio-thessaloniki": {
+      "bitrate": 128
+    },
+    "ubm-gr-athens": {
+      "bitrate": 128
+    },
+    "uncut-gr-chania": {
+      "bitrate": 128
+    },
+    "uniwa-drm-athens": {
+      "bitrate": 48
+    },
+    "weird-fishes": {
+      "bitrate": 128
+    },
+    "you-98-7-alexandroupolis": {
+      "bitrate": 128
+    },
+    "zeno-fm-pame-rebetiko-kai-laiko": {
+      "bitrate": 128
+    },
+    "live-95-8-syros": {
+      "bitrate": 320
+    },
+    "attiki": {
+      "bitrate": 128
+    },
+    "heraclion-f745ca25": {
+      "bitrate": 128
+    },
+    "chalkidiki": {
+      "bitrate": 128
+    },
+    "1-kalamata": {
+      "bitrate": 128
+    },
+    "24-7-cyclades": {
+      "bitrate": 64
+    },
+    "100-8-katerini": {
+      "bitrate": 128
+    },
+    "radio-thessaloniki": {
+      "bitrate": 128
+    },
+    "station-bc1610dc": {
+      "bitrate": 128
+    },
+    "station-f8d150f6": {
+      "bitrate": 128
+    },
+    "322": {
+      "bitrate": 320
+    },
+    "322x": {
+      "bitrate": 320
+    },
+    "karpathos": {
+      "bitrate": 128
+    },
+    "103-1-komotini": {
+      "bitrate": 128
+    },
+    "lechovo-0e790209": {
+      "bitrate": 128
+    },
+    "90-patra": {
+      "bitrate": 320
+    },
+    "105-5-athens": {
+      "bitrate": 128
+    },
+    "105-5": {
+      "bitrate": 128
+    },
+    "105-5-athens-313dbd5d": {
+      "bitrate": 128
+    },
+    "105-5-athens-43a3c60b": {
+      "bitrate": 128
+    },
+    "91-4-fm-thessaloniki": {
+      "bitrate": 128
+    },
+    "87-5-komotini": {
+      "bitrate": 128
+    },
+    "melodia-99-2": {
+      "bitrate": 128
+    },
+    "01-105-5-attica-athens": {
+      "bitrate": 128
+    },
+    "03-107-7-patra": {
+      "bitrate": 128
+    },
+    "23-athens-greece": {
+      "bitrate": 128
+    },
+    "28": {
+      "bitrate": 320
+    },
+    "99fm-radio-1-thessaloniki": {
+      "bitrate": 128
+    },
+    "alpha-98-9-athens-4232c4aa": {
+      "bitrate": 192
+    },
+    "athens-rock-96-9": {
+      "bitrate": 192
+    },
+    "diesi-101-3": {
+      "bitrate": 160
+    },
+    "easy-80s-athens": {
+      "bitrate": 128
+    },
+    "easy-90s-athens": {
+      "bitrate": 128
+    },
+    "easy-chill-athens": {
+      "bitrate": 128
+    },
+    "easy-classic-athens": {
+      "bitrate": 128
+    },
+    "easy-love-athens": {
+      "bitrate": 128
+    },
+    "empneusi-107-fm": {
+      "bitrate": 128
+    },
+    "en-lefko-87-7-attica": {
+      "bitrate": 128
+    },
+    "enlefko-87-7-attica-athens": {
+      "bitrate": 128
+    },
+    "fm-agathi-lamia-greece": {
+      "bitrate": 128
+    },
+    "g-radio-garavelas-radio": {
+      "bitrate": 128
+    },
+    "hit-88-9-athens": {
+      "bitrate": 127
+    },
+    "kids-radio": {
+      "bitrate": 128
+    },
+    "monkey-bros-radio": {
+      "bitrate": 128
+    },
+    "radio-music-factory-8859a3fc": {
+      "codec": "AAC"
+    },
+    "red-80s-athens": {
+      "bitrate": 128
+    },
+    "rock-club-athens": {
+      "bitrate": 128
+    },
+    "skylos-fm-athens-greece": {
+      "bitrate": 320
+    },
+    "voice-102-5": {
+      "bitrate": 256
+    },
+    "voice-radio-gr-athens": {
+      "bitrate": 256
+    },
+    "z-rock-chalkida": {
+      "bitrate": 127
+    },
+    "97-1-giannitsa": {
+      "bitrate": 150
+    },
+    "101-3-athens": {
+      "bitrate": 160
+    },
+    "92-8-agrinio": {
+      "bitrate": 128
+    },
+    "world-music-athens-greece": {
+      "bitrate": 128
+    },
+    "athens-b5d641af": {
+      "bitrate": 128
+    },
+    "athens-309fad42": {
+      "bitrate": 128
+    },
+    "90-athens-greece": {
+      "bitrate": 128
+    },
+    "99-chalkida-0c5f714b": {
+      "bitrate": 128
+    },
+    "freedom-athens": {
+      "bitrate": 128
+    },
+    "1-aliveri": {
+      "bitrate": 128
+    },
+    "athens-f223edcf": {
+      "bitrate": 128
+    },
+    "93-7-agrinio": {
+      "bitrate": 64
+    },
+    "ballads-athens": {
+      "bitrate": 128
+    },
+    "dalika-athens": {
+      "bitrate": 128
+    },
+    "athens-456c6d86": {
+      "bitrate": 128
+    }
+  },
+  "results": [
+    {
+      "url": "http://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+      "error": "[tcp @ 0x742c84000] Connection to tcp://85.17.75.147:1935 failed: Operation timed out\nhttp://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8: Operation timed out"
+    },
+    {
+      "url": "http://best926live.mdc.akamaized.net/strmBest/userBest/chunks.m3u8",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "130379"
+      },
+      "codec": "AAC",
+      "bitrate": 130
+    },
+    {
+      "url": "http://eco.onestreaming.com:8880/stream",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://live.kanali1.gr:8000/kanali1",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://node-21.zeno.fm/x7zhhtrmcd0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://novafm106.media.friktoria.net:8000/novafm106.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://stream.mousikopanorama.gr:8015/stream",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://stream.zeno.fm/78pga7pvwk8uv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "128293"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://cast.radiohost.ovh/radioxronos?mp=/default",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://cast5.asurahosting.com/proxy/sinidisi/stream",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://eco.streams.ovh:8081/musicfactory/tracks-v1a1/mono.m3u8",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio"
+      },
+      "codec": "AAC"
+    },
+    {
+      "url": "https://i7.streams.ovh/ic/rythmos1044/stream",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://live.neatv.gr:8888/hls/neatv_src/index.m3u8",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio"
+      },
+      "codec": "AAC"
+    },
+    {
+      "url": "https://music.wixstatic.com/mp3/6aa018_e43fa27d27c7437fb9306ff8dbb193c9.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "56000"
+      },
+      "codec": "MP3",
+      "bitrate": 56
+    },
+    {
+      "url": "https://premium.streams.gr/ic/orfeas101/stream",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "149958"
+      },
+      "codec": "MP3",
+      "bitrate": 150
+    },
+    {
+      "url": "https://radio.garden/listen/burradio/NUKLOk-K",
+      "error": "https://radio.garden/listen/burradio/NUKLOk-K: Server returned 403 Forbidden (access denied)"
+    },
+    {
+      "url": "https://rdst.win:48850/",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://sp1.32bit.gr/cp/links.php?p=8018&m=pls",
+      "error": "No audio stream identified"
+    },
+    {
+      "url": "https://sp3.streams.ovh/cp/links.php?p=8014&m=pls",
+      "error": "No audio stream identified"
+    },
+    {
+      "url": "https://sp3.streams.ovh/cp/links.php?p=8062&m=pls",
+      "error": "No audio stream identified"
+    },
+    {
+      "url": "https://stream.newageradio.gr/listen/hq/radio.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/072mdmpbfq8uv",
+      "error": "https://stream.radiojar.com/072mdmpbfq8uv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/083wqknmsuhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/0zs50dbr274tv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/1qpu1agw4mzuv.m4a",
+      "error": "https://stream.radiojar.com/1qpu1agw4mzuv.m4a: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/20n2b23u7mruv",
+      "error": "https://stream.radiojar.com/20n2b23u7mruv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/252ry9dgytzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/275p8ssmb",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/29e98fkcks3vv",
+      "error": "https://stream.radiojar.com/29e98fkcks3vv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/2kqw1800x68uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/2rsrhmepefq",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/2rsrhmepefq.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/3h7ncy1y9vzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/431m8b6qcm5tv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/48cz219puzzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/4nwwcyesv8hvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/5tyqrwpgpfeuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/6uqfysrasm0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/819r8wupdrruv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/8tqwqkrhk48uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/93c3avwu48hvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "64363"
+      },
+      "codec": "AAC",
+      "bitrate": 64
+    },
+    {
+      "url": "https://stream.radiojar.com/aay95tkmb",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/akf7zea5kzuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/apb4wybq36duv.mp3",
+      "error": "https://stream.radiojar.com/apb4wybq36duv.mp3: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/aw1w2xfx1vduv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/aw1w2xfx1vduv.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/cthtwxk5yvduv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/d3n35mr218hvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/duh3nm1v6hhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/e206r95qsp8uv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "192363"
+      },
+      "codec": "AAC",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/enlefko877",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "128200"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/f4pqr7wu48hvv",
+      "error": "https://stream.radiojar.com/f4pqr7wu48hvv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/f4uubny2uexb",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "63642"
+      },
+      "codec": "AAC",
+      "bitrate": 64
+    },
+    {
+      "url": "https://stream.radiojar.com/fg3tm92rxeruv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/g34k4f92n74tv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/g4tyehk5yvduv.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/g6eg7gpa6k5tv",
+      "error": "https://stream.radiojar.com/g6eg7gpa6k5tv: Server returned 5XX Server Error reply"
+    },
+    {
+      "url": "https://stream.radiojar.com/garavelas-radio-gr",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/garavelas-radio-gr.m4a",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/gbrgkbcfnq5tv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/gby4re6bhnuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/gphtvb4env5tv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/gt0xy4z88f0uv",
+      "error": "https://stream.radiojar.com/gt0xy4z88f0uv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/gzr6836ty7zuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/h693vkmhe5uvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/htczr9epmchvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/hw0e51y1pd3vv",
+      "error": "https://stream.radiojar.com/hw0e51y1pd3vv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/kddqnna7yxmtv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/kdf46t0c1quvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/kokkino-ath.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/mecdkyuevp8uv",
+      "error": "https://stream.radiojar.com/mecdkyuevp8uv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/mg2vq26eewzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/n4dzb3znn3quv.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/n6frf0ct274tv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/n8buhxbsk9duv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/nkqh9th47vzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/opa-radio",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/pepper",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/pepper.m4a",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/pr9r38w802hvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "64104"
+      },
+      "codec": "AAC",
+      "bitrate": 64
+    },
+    {
+      "url": "https://stream.radiojar.com/qt9gf4hhdwzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "256000"
+      },
+      "codec": "MP3",
+      "bitrate": 256
+    },
+    {
+      "url": "https://stream.radiojar.com/r87tq342z8tvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/radio-apopsi",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/red-source",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/s2kb0626cm8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/s87smqqfewzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/su1eg54afzwtv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.radiojar.com/t0x7dyqmsuhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/tkeve70hqd0uv",
+      "error": "https://stream.radiojar.com/tkeve70hqd0uv: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.radiojar.com/tzcb5k453quvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "159702"
+      },
+      "codec": "AAC",
+      "bitrate": 160
+    },
+    {
+      "url": "https://stream.radiojar.com/u34mus9cy72vv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/u52ufw1qayduv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "256000"
+      },
+      "codec": "MP3",
+      "bitrate": 256
+    },
+    {
+      "url": "https://stream.radiojar.com/u8c2yr3sp42vv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "128539"
+      },
+      "codec": "AAC",
+      "bitrate": 129
+    },
+    {
+      "url": "https://stream.radiojar.com/ugs98yvkb",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/un4tp96kb.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/v1hkvv4gk72vv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/vhknc3c8ktuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/w47v0ekgzp5tv.m4a",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/w6c6bssk95vtv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "256000"
+      },
+      "codec": "MP3",
+      "bitrate": 256
+    },
+    {
+      "url": "https://stream.radiojar.com/weqykpegsm5tv",
+      "error": "[tcp @ 0x994ca8000] Connection to tcp://n01.radiojar.com:80 failed: Operation timed out\nhttps://stream.radiojar.com/weqykpegsm5tv: Operation timed out"
+    },
+    {
+      "url": "https://stream.radiojar.com/wxc5sezupy5tv",
+      "error": "[tcp @ 0xc16c64000] Connection to tcp://n10.radiojar.com:80 failed: Operation timed out\nhttps://stream.radiojar.com/wxc5sezupy5tv: Operation timed out"
+    },
+    {
+      "url": "https://stream.radiojar.com/xcdg6yggzfeuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.radiojar.com/yb7bcbkfewzuv",
+      "error": "[tcp @ 0xab3064000] Connection to tcp://n06.radiojar.com:80 failed: Operation timed out\nhttps://stream.radiojar.com/yb7bcbkfewzuv: Operation timed out"
+    },
+    {
+      "url": "https://stream.radiojar.com/ybz2g5nh5ehvv",
+      "error": "[tcp @ 0x8c7088000] Connection to tcp://n07.radiojar.com:80 failed: Operation timed out\nhttps://stream.radiojar.com/ybz2g5nh5ehvv: Operation timed out"
+    },
+    {
+      "url": "https://stream.radiojar.com/ypdwy53ce6hvv",
+      "error": "[tcp @ 0x7a0ca8000] Connection to tcp://n03.radiojar.com:80 failed: Operation timed out\nhttps://stream.radiojar.com/ypdwy53ce6hvv: Operation timed out"
+    },
+    {
+      "url": "https://stream.radiojar.com/yv5xu5h7zwwtv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.radiojar.com/zeqcyyvu48hvv",
+      "error": "[tcp @ 0xc39010200] Connection to tcp://n04.radiojar.com:80 failed: Operation timed out\nhttps://stream.radiojar.com/zeqcyyvu48hvv: Operation timed out"
+    },
+    {
+      "url": "https://stream.radiojar.com/ztqh29c8ktuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/40uryq80ubuvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "127812"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/5n5k2wm6xxcwv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "127461"
+      },
+      "codec": "AAC",
+      "bitrate": 127
+    },
+    {
+      "url": "https://stream.rcs.revma.com/8tdwa6ez1duvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "127831"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/9r5r1hm6xxcwv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "127533"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/bptnk55r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/cdkb8a90ubuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/dm9td34r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/e4661aft4c3vv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "127392"
+      },
+      "codec": "AAC",
+      "bitrate": 127
+    },
+    {
+      "url": "https://stream.rcs.revma.com/ff4abx8q4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/gkfwrhqxbfhvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "160045"
+      },
+      "codec": "AAC",
+      "bitrate": 160
+    },
+    {
+      "url": "https://stream.rcs.revma.com/h9mge780ubuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/m2r3yy4r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/n7d6z9ez1duvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "127867"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/qhx9z05r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/qzzyq25r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/s1m17r30ubuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/sm9b1svehkcwv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "192209"
+      },
+      "codec": "AAC",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.rcs.revma.com/trm75ret4c3vv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "128015"
+      },
+      "codec": "AAC",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/wvt5ty5r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/xecq4980ubuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/y318r45r4a0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.rcs.revma.com/z0ymkz80ubuvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.santorinijazzradio.com/a2vmt89kd5uvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/037xwzg0h2zuv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "64046"
+      },
+      "codec": "AAC",
+      "bitrate": 64
+    },
+    {
+      "url": "https://stream.zeno.fm/22sad7fskkhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/2aqtgms0afhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/2me3a1e6ag0uv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "47996"
+      },
+      "codec": "AAC",
+      "bitrate": 48
+    },
+    {
+      "url": "https://stream.zeno.fm/2veaqcf5u7zuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/39ctbne6kfhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/58uqx820dnzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/6s35tuptxc9uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/718bfqy5muhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/8h3fwqrrm9duv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/8uhaz4x25bhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/8ynh3bbq8rhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/98g6y8a8m5zuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/af9c5urm9rhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/ahwwv9myuxhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/beda1nygec9uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/c4s3zquwe48uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/c5jgbgfbh4pvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/c5rxupaxvchvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/edgfmrfvvk8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/fe300c1tpuhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/g261akwwnuhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/hvjwojlkwotuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/hx6t4t15e8zuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/izyb6gtfozpuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/k11h6usv7hhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/kn8byvtb6uhvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "67058"
+      },
+      "codec": "AAC",
+      "bitrate": 67
+    },
+    {
+      "url": "https://stream.zeno.fm/mddaed0qkkhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/n4yfk24tm2zuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/n9kkufkbqtzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/p2rk6a1pfg0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/q38yd26rcg8uv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "47849"
+      },
+      "codec": "AAC",
+      "bitrate": 48
+    },
+    {
+      "url": "https://stream.zeno.fm/qdi2wkplpdwuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.zeno.fm/qnfg7n52ekhvv?zs=HDbwf-SeQdqpBAoJPkshWg",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/qq2btg0vp68uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/qs656ttnfuhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/quy1b86vgkhvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "137698"
+      },
+      "codec": "AAC",
+      "bitrate": 138
+    },
+    {
+      "url": "https://stream.zeno.fm/r4k1wdsshkhvv",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "131596"
+      },
+      "codec": "AAC",
+      "bitrate": 132
+    },
+    {
+      "url": "https://stream.zeno.fm/r8blmeuo8beuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/sgehc2mzwd0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/tkr863hrz68uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/tz0kctmyuk8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/uft90xvk4nhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/umvfr1q8tc9uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/vkq1uwm55uhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/wcp3bwwtruhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/wqcp8gq67vzuv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/x7e4uu23dm8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/xqyzz6vzmg8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/xw88vthshwwvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/ycvstp7s8hhvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/ygh3m8m7n48uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.zeno.fm/yhoqiahsuznuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ5aG9xaWFoc3V6bnV2IiwiaG9zdCI6InN0cmVhbS0xNzMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6InhHZnpNTXk4UUgtdVd0dVlTem45RVEiLCJpYXQiOjE3NDc1OTU5MzksImV4cCI6MTc0NzU5NTk5OX0.utqLjtoAO6rKWKcZimfvW7BCHeu_l7jmju5w1gjj-UI",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    },
+    {
+      "url": "https://stream.zeno.fm/yzgw9e9sua0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/z8cp1nqwhnruv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://streaming.myradio1046.fm/myradio1046",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://www.meganews1046.gr/",
+      "error": "https://www.meganews1046.gr/: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.vanillaradio.com/listen-vanilla-radio-deep-flavors/",
+      "error": "https://www.vanillaradio.com/listen-vanilla-radio-deep-flavors/: Invalid data found when processing input"
+    }
+  ]
+}

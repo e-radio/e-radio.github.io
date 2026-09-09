@@ -1,0 +1,4218 @@
+{
+  "checked_at": "2026-09-09T03:17:48.895Z",
+  "checked": 467,
+  "scope": "Saved endpoints; current response and matching Icecast mount. Does not establish browser/CORS compatibility, track freshness, or independent station identity for every server.",
+  "nowplaying": {
+    "verified": 448,
+    "no_matching_track": 16,
+    "request_failed": 3
+  },
+  "history": {
+    "verified": 297,
+    "request_failed": 3,
+    "no_tracks": 1
+  },
+  "results": [
+    {
+      "slug": "02-dance-radio-piraeus",
+      "nowplaying_url": "https://centova.gr-net.gr/rpc/dimitrio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Dientes Remix - ILUMINADO DJ Official Video",
+      "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=dimitrio&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "100-8-karditsa",
+      "nowplaying_url": "http://sp2.streams.ovh:8084/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: MARIZA RIZOY - BOSA NOVA"
+    },
+    {
+      "slug": "101-5-grevena",
+      "nowplaying_url": "https://a8.asurahosting.com:6770/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "RADIO GREVENA 101.5  FM STEREO",
+      "history_url": "https://a8.asurahosting.com:6770/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "101-rock-lamia-lamia",
+      "nowplaying_url": "http://sh.onweb.gr:9110/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "FONTAINES D.C. - MARIANNE",
+      "history_url": "http://sh.onweb.gr:9110/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "102-4-kozani",
+      "nowplaying_url": "https://radio.streamings.gr/rpc/melodia1024/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ÎÎÎÎ©ÎÎÎÎÎ£ ÎÎÎ©Î¡ÎÎÎ£ - ÎÎ ÎÎ Î¤Î©Î£ÎÎÎ£",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=melodia1024&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "102-4-serres",
+      "nowplaying_url": "http://radio.streamings.gr:8043/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "[global]"
+    },
+    {
+      "slug": "102-fm",
+      "nowplaying_url": "https://webradios.stream:8000/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "103-9-aliveri",
+      "nowplaying_url": "https://stream.iplayradio.net/rpc/taminaikiradiofonia/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΠΑΠΑΔΟΠΟΥΛΟΣ ΓΙΩΡΓΟΣ - ΣΑΝ ΤΡΕΛΟΣ",
+      "history_url": "https://stream.iplayradio.net/external/rpc.php?m=recenttracks.get&username=taminaikiradiofonia&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "104-2-pieria",
+      "nowplaying_url": "https://rpieria.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ZAVANTIAS SPOT NEA TRAGOYDIA 2026",
+      "history_url": "https://rpieria.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "104-3-fm",
+      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/afreeapo/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΕΕΕ Θ - 231 ΕΚΕΙ ΨΗΛΑ ΣΤΟΝ ΓΟΛΓΟΘΑ",
+      "history_url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=afreeapo&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "104-9-karpenisi",
+      "nowplaying_url": "https://rdst.win:37777/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "STOXOS FM 104.9 - ALL DAY MUSIC"
+    },
+    {
+      "slug": "104-alexandroupolis",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/elladafm/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΣΤΑΜΑΤΗΣ ΓΟΝΙΔΗΣ - ΦΥΓΕ",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=elladafm&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "1055-rock",
+      "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "STRANGLERS - NICE 'N' SLEAZY",
+      "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "1055-rock-thessaloniki",
+      "nowplaying_url": "https://radio.1055rock.gr:31056/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "STRANGLERS - NICE 'N' SLEAZY"
+    },
+    {
+      "slug": "1055-rock-thessaloniki-bcc64d4b",
+      "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "STRANGLERS - NICE 'N' SLEAZY",
+      "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "1055-rock-thessaloniki-radio2",
+      "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "STRANGLERS - NICE 'N' SLEAZY",
+      "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "106-3-katerini",
+      "nowplaying_url": "http://proxima.shoutca.st:9012/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Alexandros 106.3 Fm Katerini Pieria",
+      "history_url": "http://proxima.shoutca.st:9012/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "106-6-arta-greece",
+      "nowplaying_url": "http://i.streams.ovh:9566/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Αγνωστο - 05 05 Stamatis Spanoudakis [a1R]",
+      "history_url": "http://i.streams.ovh:9566/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "106-6-larisa",
+      "nowplaying_url": "http://sp2.streams.ovh:8104/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: ΛΑΘΡΕΠΙΒΑΤΕΣ - ΑΠΟΨΕ ΛΕΩ ΝΑ ΜΗΝ ΚΟΙΜΗΘΟΥΜΕ"
+    },
+    {
+      "slug": "106-6-larisa-32c6a3fd",
+      "nowplaying_url": "http://sp2.streams.ovh:8104/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: ΛΑΘΡΕΠΙΒΑΤΕΣ - ΑΠΟΨΕ ΛΕΩ ΝΑ ΜΗΝ ΚΟΙΜΗΘΟΥΜΕ"
+    },
+    {
+      "slug": "106-arta",
+      "nowplaying_url": "https://rdst.win:59412/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "1134-chania",
+      "nowplaying_url": "https://eu8.fastcast4u.com/rpc/chaniaradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Κανένα",
+      "history_url": "https://eu8.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=chaniaradio&limit=10",
+      "history_count": 0,
+      "history_status": "no_tracks"
+    },
+    {
+      "slug": "1431am-thessaloniki",
+      "nowplaying_url": "https://www.1431am.org:8001/status-json.xsl?mount=%2F1431high",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Mousikes Epiloges 1431AM"
+    },
+    {
+      "slug": "1o-gargaliani",
+      "nowplaying_url": "http://i2.streams.ovh:7109/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΚΟΥΡΚΟΥΛΗΣ - ΜΟΝΟΣ ΜΟΥ ΠΟΝΕΣΑ [VTp]",
+      "history_url": "http://i2.streams.ovh:7109/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "1st-greek-hits-flac-non-stop-radio-athens-greece",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "ΜΠΙΚΑΚΗΣ - ΜΠΙΚΑΚΗΣ 2010 - ΓΙΑ ΦΙΛΟΥΣ ΕΓΓΕΝΗΘΗΚΑ ΣΥΡΤΑ ΚΡΗΤΗΣ 01",
+      "played_at": 1788923516
+    },
+    {
+      "slug": "1st-greek-hits-flac-radio-lossless-athens-greece",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "ΜΠΙΚΑΚΗΣ - ΜΠΙΚΑΚΗΣ 2010 - ΓΙΑ ΦΙΛΟΥΣ ΕΓΓΕΝΗΘΗΚΑ ΣΥΡΤΑ ΚΡΗΤΗΣ 01",
+      "played_at": 1788923516
+    },
+    {
+      "slug": "1st-greek-hits-radio-mp3-athens-greece",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/flac_gr",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "ΜΠΙΚΑΚΗΣ - ΜΠΙΚΑΚΗΣ 2010 - ΓΙΑ ΦΙΛΟΥΣ ΕΓΓΕΝΗΘΗΚΑ ΣΥΡΤΑ ΚΡΗΤΗΣ 01",
+      "played_at": 1788923516
+    },
+    {
+      "slug": "1st-greek-new-age-flac-radio-aac-320kbps-attica-athens",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "The Ventures - Walk Don't Run , The Ventures",
+      "played_at": 1788922623
+    },
+    {
+      "slug": "1st-greek-new-age-flac-radio-attiki",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "The Ventures - Walk Don't Run , The Ventures",
+      "played_at": 1788922623
+    },
+    {
+      "slug": "1st-greek-new-age-flac-radio-flac-stream-attica-athens",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "The Ventures - Walk Don't Run , The Ventures",
+      "played_at": 1788922623
+    },
+    {
+      "slug": "1st-greek-new-age-radio",
+      "nowplaying_url": "https://stream.newageradio.gr/api/nowplaying/hq",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "The Ventures - Walk Don't Run , The Ventures",
+      "played_at": 1788922623
+    },
+    {
+      "slug": "80smania",
+      "nowplaying_url": "http://158.69.114.190:8024/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Genesis & Phil Collins - No Reply At All",
+      "history_url": "http://158.69.114.190:8024/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "80smania-gr",
+      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/glzzkced/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Paul Paul - Good Times",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=glzzkced&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "87-6-studio-1-corfu",
+      "nowplaying_url": "http://s3.onweb.gr:8872/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "STUDIO 1 87.6",
+      "history_url": "http://s3.onweb.gr:8872/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "88-5-radio-fm-8-chania",
+      "nowplaying_url": "http://ams-pioneer02.dedicateware.com:1750/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Belleruche - Anything You Want - Not That"
+    },
+    {
+      "slug": "88-6-kanali-20-kalamata",
+      "nowplaying_url": "https://server.el1.info:37086/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "88-6-volos",
+      "nowplaying_url": "http://s6.onweb.gr:8036/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΧΡΗΣΤΟΣ ΣΑΝΤΙΚΑΙ - ΑΝΑΠΝΟΗ ΑΝΑΤΟΛΗ",
+      "history_url": "http://s6.onweb.gr:8036/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "88miso-thessaloniki",
+      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/sxxaojkx/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Daisy Gray - Wicked Game",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=sxxaojkx&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "89-2-trikala",
+      "nowplaying_url": "http://s4.onweb.gr:8892/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "APON - ΡΕΜΠΕΤΙΚΟ",
+      "history_url": "http://s4.onweb.gr:8892/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "89-6-ioannina-deejay",
+      "nowplaying_url": "http://sp3.streams.ovh:8089/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Nico de Andrea feat. hazel - Compromise",
+      "history_url": "http://sp3.streams.ovh:8089/played?sid=1&type=json",
+      "history_count": 3,
+      "history_status": "verified"
+    },
+    {
+      "slug": "90-3-livadia",
+      "nowplaying_url": "http://live.ellinikos.gr:8010/status-json.xsl?mount=%2F903.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Sorry, this service is not available at the moment. Sorry, this service is not available at the moment."
+    },
+    {
+      "slug": "90-3-livadia-3ad1a11e",
+      "nowplaying_url": "http://live.ellinikos.gr:8010/status-json.xsl?mount=%2F903.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Sorry, this service is not available at the moment. Sorry, this service is not available at the moment."
+    },
+    {
+      "slug": "90-lesvos",
+      "nowplaying_url": "http://cast5.magicstreams.gr:8041/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "RADIO MYTILINI 90FM",
+      "history_url": "http://cast5.magicstreams.gr:8041/played?sid=1&type=json",
+      "history_count": 2,
+      "history_status": "verified"
+    },
+    {
+      "slug": "905-rock-90-5-larisa",
+      "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "STEVE MILLER BAND - SERENADE",
+      "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "905rock-larisa",
+      "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "STEVE MILLER BAND - SERENADE",
+      "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "91-5-chania",
+      "nowplaying_url": "http://eu1.fastcast4u.com:3688/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "dikyofm",
+      "history_url": "http://eu1.fastcast4u.com:3688/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "92-5-karditsa",
+      "nowplaying_url": "https://fra-pioneer01.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Dj Online"
+    },
+    {
+      "slug": "92-8-lesvos",
+      "nowplaying_url": "http://eco.onestreaming.com:8552/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "LES AU REVOIR - ΠΑΡΑΞΕΝΗ ΑΓΑΠΗ",
+      "history_url": "http://eco.onestreaming.com:8552/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "93-4-thessaloniki",
+      "nowplaying_url": "https://stream.mythosradio.gr/api/nowplaying/mythos",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "ΜΥΘ Ταμογλου Γ - Η μελωδια της Τριανταφυλλιας(Ορχηστρικό)",
+      "played_at": 1788687795
+    },
+    {
+      "slug": "93-5-chania",
+      "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Randy Travis - Forever and Ever, Amen",
+      "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "93-7-thessaloniki",
+      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fgnomi",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " Dimitris Mitropanos - Na Svisei Auto To Fos"
+    },
+    {
+      "slug": "93-9-larisa",
+      "nowplaying_url": "http://www.gointernet.gr:8012/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Zimia 93,9 Larisa Thl. 241 141 61 98",
+      "history_url": "http://www.gointernet.gr:8012/played?sid=1&type=json",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "94-3-zakynthos",
+      "nowplaying_url": "http://eco.onestreaming.com:8217/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: DANTIS CHRISTOS - KOMMATIA",
+      "history_url": "http://eco.onestreaming.com:8217/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "94-5-ioannina",
+      "nowplaying_url": "https://rdst.win:59450/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "RADIO EPIRUS LINK"
+    },
+    {
+      "slug": "94-5-volos",
+      "nowplaying_url": "https://www.gointernet.gr:9034/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Zimia 94,5 Volos thl. 2421 421 794",
+      "history_url": "https://www.gointernet.gr:9034/played?sid=1&type=json",
+      "history_count": 7,
+      "history_status": "verified"
+    },
+    {
+      "slug": "94-6-serres",
+      "nowplaying_url": "http://s1.onweb.gr:8066/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here",
+      "history_url": "http://s1.onweb.gr:8066/played?sid=1&type=json",
+      "history_count": 3,
+      "history_status": "verified"
+    },
+    {
+      "slug": "94-komotini",
+      "nowplaying_url": "http://s6.onweb.gr:8020/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here",
+      "history_url": "http://s6.onweb.gr:8020/played?sid=1&type=json",
+      "history_count": 14,
+      "history_status": "verified"
+    },
+    {
+      "slug": "95-4-syros",
+      "nowplaying_url": "http://sh.onweb.gr:8852/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΣΥΝΔΕΣΗ ΜΕ ΤΟΝ ΠΑΝΙΕΡΟ ΝΑΟ ΤΗΣ ΠΑΝΑΓΙΑΣ ΤΗΣ ΤΗΝΟΥ - PANAGIATINOU.GR",
+      "history_url": "http://sh.onweb.gr:8852/played?sid=1&type=json",
+      "history_count": 18,
+      "history_status": "verified"
+    },
+    {
+      "slug": "95-4-syros-de3c16f9",
+      "nowplaying_url": "http://s2.onweb.gr:8852/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΣΥΝΔΕΣΗ ΜΕ ΤΟΝ ΠΑΝΙΕΡΟ ΝΑΟ ΤΗΣ ΠΑΝΑΓΙΑΣ ΤΗΣ ΤΗΝΟΥ - PANAGIATINOU.GR",
+      "history_url": "http://s2.onweb.gr:8852/played?sid=1&type=json",
+      "history_count": 18,
+      "history_status": "verified"
+    },
+    {
+      "slug": "96-2-agrinio",
+      "nowplaying_url": "http://sonic.streams.ovh:9870/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "no_matching_track",
+      "history_url": "http://sonic.streams.ovh:9870/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "96-5-volos",
+      "nowplaying_url": "https://www.gointernet.gr:9012/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Zimia 93,9 Larisa Thl. 241 141 61 98",
+      "history_url": "https://www.gointernet.gr:9012/played?sid=1&type=json",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "97-1-heraclion",
+      "nowplaying_url": "http://s6.onweb.gr:8034/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ορφέας Περίδης - Τα τραγούδια μου τ' αμερικάνικα",
+      "history_url": "http://s6.onweb.gr:8034/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "97-8-larisa",
+      "nowplaying_url": "http://eco.onestreaming.com:8103/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Sorry, service not available.",
+      "history_url": "http://eco.onestreaming.com:8103/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "97-9-limnos",
+      "nowplaying_url": "https://streaming.sbzsystems.com/rpc/fm00/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Κανένα"
+    },
+    {
+      "slug": "98-7-patra",
+      "nowplaying_url": "https://radio.themapatras.gr/status-json.xsl?mount=%2Fradio",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Teenage Mutants - Falling for You"
+    },
+    {
+      "slug": "99-2-kalamata",
+      "nowplaying_url": "http://rdst.win:7060/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Î ÎÎ¤Î£Î Î ÎÎ ÎÎÎÎ ÎÎ¥ÎÎÎ¥, ÎÎÎ¥ÎÎÎ¡ÎÎ, Î ÎÎÎÎ¥ ÎÎÎÎ, ÎÎÎÎÎÎ ÎÎ£ÎÎÎÎÎÎÎ¥, ÎÎÎ¤Î©ÎÎÎ£ ÎÎÎ¡ÎÎÎ£ - ÎÎÎÎÎ¡Î©ÎÎÎ"
+    },
+    {
+      "slug": "99-4-larisa",
+      "nowplaying_url": "http://s2.e-resellers.gr:8020/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "MISTRESS OF THE SOUL",
+      "history_url": "http://s2.e-resellers.gr:8020/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "99-4-larisa-6ee57039",
+      "nowplaying_url": "https://sh.onweb.gr:7060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ANASTASIA - SPASTE TA",
+      "history_url": "https://sh.onweb.gr:7060/played?sid=1&type=json",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "99-5-kozani",
+      "nowplaying_url": "https://s7.myradiostream.com:10432/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "MARINELLA - Tipota de ginetai tuxaia",
+      "history_url": "https://s7.myradiostream.com:10432/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "99-7-1-tripoli",
+      "nowplaying_url": "http://stream.kncdn.net:7512/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Fengos Louis - Mattheos",
+      "history_url": "http://stream.kncdn.net:7512/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "99-8-alexandroupolis",
+      "nowplaying_url": "http://eco.onestreaming.com:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Rob Thomas - Smooth",
+      "history_url": "http://eco.onestreaming.com:8010/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "a48",
+      "nowplaying_url": "http://195.154.217.103:8069/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Nawal Abdechaffi - Mekhasmak",
+      "history_url": "http://195.154.217.103:8069/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "action-98-2-ioannina",
+      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/jkzjmwru/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ASAF AVIDAN - A PART OF THIS",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=jkzjmwru&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "action-radio-98-2",
+      "nowplaying_url": "http://solid1.streamupsolutions.com:11026/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "ASAF AVIDAN - A PART OF THIS"
+    },
+    {
+      "slug": "aegean-vibes-athens-greece",
+      "nowplaying_url": "https://a9.asurahosting.com/api/nowplaying/aegean_vibes",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Another Level - Hotel Costes, Vol. 2: La Suite - Guess I Was a Fool [MJ Cole Mix]",
+      "played_at": 1788923802
+    },
+    {
+      "slug": "aegean-voice",
+      "nowplaying_url": "https://sh.onweb.gr:7000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Hi-Fi Internet Stream",
+      "history_url": "https://sh.onweb.gr:7000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "aigaio-news-syros",
+      "nowplaying_url": "http://europa.shoutca.st:8721/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Alexander Rybak - Fairytale [2KGU]",
+      "history_url": "http://europa.shoutca.st:8721/played?sid=1&type=json",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "aktina-104-7-corfu",
+      "nowplaying_url": "http://sc2.streamwithq.com:8016/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "MICHAEL MCDONALD - SWEET FREEDOM",
+      "history_url": "http://sc2.streamwithq.com:8016/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "alexandroupolis",
+      "nowplaying_url": "http://81.171.10.41:1088/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here",
+      "history_url": "http://81.171.10.41:1088/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "amartia",
+      "nowplaying_url": "http://cast.innviweb.com:9030/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ar peritta nikos oikonomopoulos",
+      "history_url": "http://cast.innviweb.com:9030/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "amfissa",
+      "nowplaying_url": "http://stream3.468.gr:8104/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Amfissa 104.4",
+      "history_url": "http://stream3.468.gr:8104/played?sid=1&type=json",
+      "history_count": 11,
+      "history_status": "verified"
+    },
+    {
+      "slug": "amvrakia-91-9-arta",
+      "nowplaying_url": "https://ice.streams.ovh:1195/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Nico Fidenco - A casa d' Irene"
+    },
+    {
+      "slug": "anemos-95-6-samos",
+      "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/vqdawvmf/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "APON - KATHREFTIS",
+      "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vqdawvmf&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "angel-102-8-karditsa",
+      "nowplaying_url": "http://s5.onweb.gr:8502/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: Μελίνα Ασλανίδου - Άστο να πάει",
+      "history_url": "http://s5.onweb.gr:8502/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "antena-aegina",
+      "nowplaying_url": "http://i3.streams.ovh:12043/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Τι να σου προσφέρω [s8]"
+    },
+    {
+      "slug": "aqua-radio-the-80s",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/aquadisco80s/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Prince - KISS",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=aquadisco80s&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "arty-thessaloniki",
+      "nowplaying_url": "https://radio.streamings.gr/rpc/artyradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Zafirios.gr - B",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=artyradio&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "asteras-92-andros",
+      "nowplaying_url": "https://cast4.magicstreams.gr:12108/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ALEKSIS ALEKSIOY - ME TON ALEKSI",
+      "history_url": "https://cast4.magicstreams.gr:12108/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "astra-93-2-lesvos",
+      "nowplaying_url": "http://eco.onestreaming.com:8554/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "LILA - ΕΛΛΑΤΩΜΑ",
+      "history_url": "http://eco.onestreaming.com:8554/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "athens-09fdaca2",
+      "nowplaying_url": "http://everestcast.streams.ovh:1940/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "AutoDJ: φιλοι μιχ"
+    },
+    {
+      "slug": "athens-metro-mall-athens",
+      "nowplaying_url": "http://mmr.yourstreaming.gr:9300/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Metro Mall Radio - Cosmo Edition",
+      "history_url": "http://mmr.yourstreaming.gr:9300/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "athens-noise-rocks",
+      "nowplaying_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Asian Dub Foundation - Commited To Life",
+      "played_at": 1788923620,
+      "history_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "athens-noise-rocks-attiki",
+      "nowplaying_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Asian Dub Foundation - Commited To Life",
+      "played_at": 1788923620,
+      "history_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "athens-radio-trance",
+      "nowplaying_url": "https://cast.streams.ovh:8008/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "James Rae - Back Again (Sly One vs Jurranes Global Remix)",
+      "history_url": "https://cast.streams.ovh:8008/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "athensnoise-rocks",
+      "nowplaying_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Asian Dub Foundation - Commited To Life",
+      "played_at": 1788923620,
+      "history_url": "https://radio.athensnoise.rocks/api/nowplaying/athensnoise.rocks",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "backtorave-com-old-school-techno-rave",
+      "nowplaying_url": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_old_school",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Kerri Chandler - Mommy What's a record",
+      "played_at": 1788923657
+    },
+    {
+      "slug": "bar-legend-radio",
+      "nowplaying_url": "http://solid24.streamupsolutions.com:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Buddy Whittington Band, The - Help Me Through The Day",
+      "history_url": "http://solid24.streamupsolutions.com:8010/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "bar-legend-radio-larisa",
+      "nowplaying_url": "https://solid24.streamupsolutions.com/rpc/nilxzqeg/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Buddy Whittington Band, The - Help Me Through The Day",
+      "history_url": "https://solid24.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=nilxzqeg&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "beat-fm",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/beatfm",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": " - beat fm air july",
+      "played_at": 1788388639
+    },
+    {
+      "slug": "berock-radio",
+      "nowplaying_url": "http://solid55.streamupsolutions.com:30013/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Outloud - We Run",
+      "history_url": "http://solid55.streamupsolutions.com:30013/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "berock-radio-b3b5204f",
+      "nowplaying_url": "http://solid55.streamupsolutions.com:30013/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Outloud - We Run",
+      "history_url": "http://solid55.streamupsolutions.com:30013/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "best-94-7-heraclion",
+      "nowplaying_url": "https://i2.streams.ovh:9470/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ray Manzarek - Light my Fire (instrumental,1970, Boston) - Global Music Radio",
+      "history_url": "https://i2.streams.ovh:9470/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "best-97-3-kalamata",
+      "nowplaying_url": "https://stream.best973.gr/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Bent - I Can't Believe It's Over",
+      "history_url": "https://stream.best973.gr/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "best-radio-94-7-fm",
+      "nowplaying_url": "https://i2.streams.ovh:9470/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ray Manzarek - Light my Fire (instrumental,1970, Boston) - Global Music Radio",
+      "history_url": "https://i2.streams.ovh:9470/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "black-radio",
+      "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/qcnwnozj/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Gorillaz - Clint Eastwood",
+      "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=qcnwnozj&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "ble-93-1",
+      "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream1",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "ble-93-3-kozani",
+      "nowplaying_url": "http://radio.lancom.gr:8004/status-json.xsl?mount=%2Fstream3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "ble-93-3-kozani-48d768e9",
+      "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "ble-93-drama",
+      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fdiavlos93",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "ble-fm-thessaloniki",
+      "nowplaying_url": "http://radio.lancom.gr:8004/status-json.xsl?mount=%2Fstream1",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "ble-thessaloniki",
+      "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream1",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "blue-radio",
+      "nowplaying_url": "http://sip.blueradio.gr:8033/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "T. Randolph Scott - I Rely [WaQ]",
+      "history_url": "http://sip.blueradio.gr:8033/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio",
+      "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio-athens",
+      "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio-athens-b9e1f76e",
+      "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio-gr",
+      "nowplaying_url": "http://i4.streams.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://i4.streams.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio-greece",
+      "nowplaying_url": "http://i4.streams.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://i4.streams.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio-greece-athens",
+      "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blues-radio-greece-ce7e3407",
+      "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dave Bell - Blues For A Rainy Day",
+      "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blueswave-radio",
+      "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try"
+    },
+    {
+      "slug": "blueswave-radio-10010d86",
+      "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try"
+    },
+    {
+      "slug": "blueswave-radio-4ee8e52f",
+      "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try"
+    },
+    {
+      "slug": "blueswave-radio-attiki",
+      "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Ficyblues",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try"
+    },
+    {
+      "slug": "blueswave-radio-attiki-31fc7950",
+      "nowplaying_url": "https://blueswave.radio:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try",
+      "history_url": "https://blueswave.radio:8000/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "blueswave-radio-attiki-3bd46a05",
+      "nowplaying_url": "https://blueswave.radio:8100/status-json.xsl?mount=%2Fhifiblues",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try"
+    },
+    {
+      "slug": "blueswave-radio-f56d5e78",
+      "nowplaying_url": "https://blueswave.radio:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ira Walker - Let's Giv Love A Try",
+      "history_url": "https://blueswave.radio:8000/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "brake-korinthos",
+      "nowplaying_url": "http://proradio.gr:8004/status-json.xsl?mount=%2Fbrake",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "capital-104-8-serres",
+      "nowplaying_url": "https://rdst.win:59354/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Ariana  Grande - hate that i made you love me"
+    },
+    {
+      "slug": "capital-107-kavala",
+      "nowplaying_url": "https://neos.win:59350/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Madonna & Sabrina Carpenter - Bring Your Love"
+    },
+    {
+      "slug": "cavo-paradiso",
+      "nowplaying_url": "http://s5.onweb.gr:8488/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "F.physical - From 90S",
+      "history_url": "http://s5.onweb.gr:8488/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "cavo-paradiso-mykonos",
+      "nowplaying_url": "http://s5.onweb.gr:8488/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "F.physical - From 90S",
+      "history_url": "http://s5.onweb.gr:8488/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "chania-99-6-chania",
+      "nowplaying_url": "http://s4.onweb.gr:8434/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Soul Asylum - Runaway Train",
+      "history_url": "http://s4.onweb.gr:8434/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "chania-rock-fm-96-8-chania",
+      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/alaqatab/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - LINE",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=alaqatab&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "christianity-athens",
+      "nowplaying_url": "http://eu1.fastcast4u.com:9326/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΕΑΕΠ ΝΙΚΑΙΑΣ - 154 ΠΑΝΤΑ ΘΑ ΜΕΝΕΙ ΣΤΟ ΝΟΥ ΖΩΗΡΗ",
+      "history_url": "http://eu1.fastcast4u.com:9326/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "city-100-heraclion",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/cityfm/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: V-Sag - Feather",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=cityfm&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "city-103-8-kalamata",
+      "nowplaying_url": "https://server.el1.info:37027/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "CITY FM 103,8 - PROINO CITY ME TON GIORGO KRIPARO - CITY FM 103,8 - PROINO CITY ME TON GIORGO KRIPARO"
+    },
+    {
+      "slug": "city-international-thessaloniki",
+      "nowplaying_url": "http://radio.lancom.gr:8012/status-json.xsl?mount=%2Fstream5",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "city-of-primo-106-1-thessaloniki",
+      "nowplaying_url": "http://radio.lancom.gr:8014/status-json.xsl?mount=%2Fstream6",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here"
+    },
+    {
+      "slug": "clearjet",
+      "nowplaying_url": "http://fra-pioneer01.dedicateware.com:1090/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "AutoDJ: Κατερίνα Στικούδη, KG, GREG, VEGAS – Yalla & Tous Ponaei | Μad Video Music Awards 2022 από τη ΔΕΗ"
+    },
+    {
+      "slug": "coffee-web-radio",
+      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/teqgebwz/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Coffee vol 1h",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=teqgebwz&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "corfu-dee-jay-97-5-corfu",
+      "nowplaying_url": "https://sh.onweb.gr:7083/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ariana Grande - Thank u, next",
+      "history_url": "https://sh.onweb.gr:7083/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "cosmoradio-95-1-thessaloniki",
+      "nowplaying_url": "http://eco.onestreaming.com:8689/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΜΑΖΩΝΑΚΗΣ ΓΙΩΡΓΟΣ - Αν Μ'Ακούς",
+      "history_url": "http://eco.onestreaming.com:8689/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "cosmos-93-2-kavala",
+      "nowplaying_url": "https://neos.win:59320/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "ANASTASIA - SPASTE TA"
+    },
+    {
+      "slug": "cosmos-97-1-drama",
+      "nowplaying_url": "https://rdst.win:59710/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track",
+      "history_url": "https://rdst.win:59710/status.xsl?mount=%2Fstream",
+      "history_count": 0,
+      "history_status": "request_failed",
+      "history_error": "Unexpected token '<', \"<?xml vers\"... is not valid JSON"
+    },
+    {
+      "slug": "creative-commons-radio",
+      "nowplaying_url": "https://ccradio.ellak.gr/api/nowplaying/gfoss_ccradio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "The Agrarians - Your Prayers",
+      "played_at": 1788923711
+    },
+    {
+      "slug": "creta-radio",
+      "nowplaying_url": "https://everest.streams.ovh:1145/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "monoir osaka ft eat.brianna - the violin song extended-Vocal-Edit"
+    },
+    {
+      "slug": "cretaradio",
+      "nowplaying_url": "https://everest.streams.ovh:1145/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "monoir osaka ft eat.brianna - the violin song extended-Vocal-Edit"
+    },
+    {
+      "slug": "crete",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1215/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Litsa Diamanti - There is no happiness (Den iparhi eftihia)"
+    },
+    {
+      "slug": "d-code-96-2-chania-greece",
+      "nowplaying_url": "http://176.31.118.39:13980/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Phaeleh - Floods feat. Amy Kirkpatrick",
+      "history_url": "http://176.31.118.39:13980/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "dance-wave",
+      "nowplaying_url": "https://dancewave.online/status-json.xsl?mount=%2Fdance.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Dance Wave!"
+    },
+    {
+      "slug": "deejay-94-2-korinthos",
+      "nowplaying_url": "http://usa2-vn.mixstream.net:8018/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "rdj 942",
+      "history_url": "http://usa2-vn.mixstream.net:8018/played?sid=1&type=json",
+      "history_count": 17,
+      "history_status": "verified"
+    },
+    {
+      "slug": "deejay-97-5",
+      "nowplaying_url": "http://s4.onweb.gr:8470/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ariana Grande - Thank u, next",
+      "history_url": "http://s4.onweb.gr:8470/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "deejay-97-5-greece-corfu",
+      "nowplaying_url": "https://sh.onweb.gr:7083/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ariana Grande - Thank u, next",
+      "history_url": "https://sh.onweb.gr:7083/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "deejay-radio-97-5-fm-corfu-greece",
+      "nowplaying_url": "http://s4.onweb.gr:8470/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ariana Grande - Thank u, next",
+      "history_url": "http://s4.onweb.gr:8470/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "deepinradio-com",
+      "nowplaying_url": "https://s1.viastreaming.net:8525/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Hraach - Bajo El Cielo Azul (Original Mix)",
+      "history_url": "https://s1.viastreaming.net:8525/played?sid=1&type=json",
+      "history_count": 3,
+      "history_status": "verified"
+    },
+    {
+      "slug": "demostream-von-streamserver24-com",
+      "nowplaying_url": "http://s10.streamingcloud.online:13686/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Midnight Blues"
+    },
+    {
+      "slug": "derti-107-7-heraclion",
+      "nowplaying_url": "http://i5.streams.ovh:14008/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Kostas Kafasis - Eutuxos Pou Trelathika",
+      "history_url": "http://i5.streams.ovh:14008/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "derti-90-5-larisa",
+      "nowplaying_url": "https://sh.onweb.gr:9050/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΚΑΙΤΗ ΓΑΡΜΠΗ - ΒΙΑΣΤΗΚΑ",
+      "history_url": "https://sh.onweb.gr:9050/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "derti-web-radio-larisa",
+      "nowplaying_url": "https://sh.onweb.gr:9050/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΚΑΙΤΗ ΓΑΡΜΠΗ - ΒΙΑΣΤΗΚΑ",
+      "history_url": "https://sh.onweb.gr:9050/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "deseo-radio",
+      "nowplaying_url": "https://ec4.yesstreaming.net:2090/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Purple Avenue - Justify My Love"
+    },
+    {
+      "slug": "disco-cafe-athens",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/discocafe",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": " - ESTAS TONNE-FUSION",
+      "played_at": 1788923648
+    },
+    {
+      "slug": "diva-106-1-tripoli",
+      "nowplaying_url": "http://divafm.yourstreaming.gr:9996/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air:STEFANIA - PIANO FOTIA-REMIX",
+      "history_url": "http://divafm.yourstreaming.gr:9996/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "diva-91-6-kozani",
+      "nowplaying_url": "http://176.31.120.166:6404/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "TanKee - Turquoise Waters (Original Mix)",
+      "history_url": "http://176.31.120.166:6404/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "diva-fm",
+      "nowplaying_url": "http://176.31.120.166:6404/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "TanKee - Turquoise Waters (Original Mix)",
+      "history_url": "http://176.31.120.166:6404/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "dj-grigoris-306",
+      "nowplaying_url": "https://rdst.win:48140/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "ÎÎÎÎÎÎÎÎÎÎÎ£ ÎÎÎÎ©ÎÎÎ£ - ÎÎ ÎÎ¡ÎÎ 2011"
+    },
+    {
+      "slug": "dream-88-1",
+      "nowplaying_url": "https://solid41.streamupsolutions.com/rpc/jhhzdwjo/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Freeez - 7'' Version Remastered",
+      "history_url": "https://solid41.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=jhhzdwjo&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "dream-city",
+      "nowplaying_url": "http://cast.streams.ovh:9362/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Genesis P-Orridge & Astrid Monroe - I.T.",
+      "history_url": "http://cast.streams.ovh:9362/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "dreamcity",
+      "nowplaying_url": "https://cast.streams.ovh:9362/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Genesis P-Orridge & Astrid Monroe - I.T.",
+      "history_url": "https://cast.streams.ovh:9362/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "dreamcity-d6188b08",
+      "nowplaying_url": "http://cast.streams.ovh:9362/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Genesis P-Orridge & Astrid Monroe - I.T.",
+      "history_url": "http://cast.streams.ovh:9362/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "dreamer-thessaloniki-9795c59e",
+      "nowplaying_url": "https://cast1.asurahosting.com/rpc/ermis/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Fleursonseaux - Magnolia",
+      "history_url": "https://cast1.asurahosting.com/external/rpc.php?m=recenttracks.get&username=ermis&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "e-103-serres",
+      "nowplaying_url": "http://cast.radiohost.ovh:9035/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "RADIO E-103 SERRES",
+      "history_url": "http://cast.radiohost.ovh:9035/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "easy-105-3-trikala",
+      "nowplaying_url": "http://s4.onweb.gr:8076/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "PAT BENATAR - LOVE IS A BATTLEFIELD",
+      "history_url": "http://s4.onweb.gr:8076/played?sid=1&type=json",
+      "history_count": 19,
+      "history_status": "verified"
+    },
+    {
+      "slug": "easy-fm-105-3",
+      "nowplaying_url": "https://sh.onweb.gr:7073/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "PAT BENATAR - LOVE IS A BATTLEFIELD",
+      "history_url": "https://sh.onweb.gr:7073/played?sid=1&type=json",
+      "history_count": 19,
+      "history_status": "verified"
+    },
+    {
+      "slug": "edit-gr",
+      "nowplaying_url": "https://sc.cast-control.eu:8054/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Nu Frequency Feat Shara Nelson - Go That Deep (Charles Webster Reprise)",
+      "history_url": "https://sc.cast-control.eu:8054/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "ellinadiko-fm",
+      "nowplaying_url": "http://ellinadikofm.gr:8020/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Nikiforos - Erotas Ine",
+      "history_url": "http://ellinadikofm.gr:8020/played?sid=1&type=json",
+      "history_count": 9,
+      "history_status": "verified"
+    },
+    {
+      "slug": "ellinikos-90-3",
+      "nowplaying_url": "http://live.sugarweb.gr/status-json.xsl?mount=%2F903.aac",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Sorry, this service is not available at the moment. Sorry, this service is not available at the moment."
+    },
+    {
+      "slug": "emerson-846-athens",
+      "nowplaying_url": "https://media.streambrothers.com:8552/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "emerson-athens-athens",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radioemerson",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Pet Shop Boys - Go West (2003 Remaster)",
+      "played_at": 1788923654
+    },
+    {
+      "slug": "emusic-site-attica-athens",
+      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/wvsivbgn/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Radio Ξυπνητήρι... Χωρίς Snooze! \ud83cdf99️"
+    },
+    {
+      "slug": "energy-88-3",
+      "nowplaying_url": "http://s1.onweb.gr:8412/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ANOTR - TALK TO YOU",
+      "history_url": "http://s1.onweb.gr:8412/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "energy-88-9-drama",
+      "nowplaying_url": "https://casty.youmix.gr/api/nowplaying/energyradio889",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Paul Oakenfold x Markus Schulz x Grace - Not Over Yet",
+      "played_at": 1788923692
+    },
+    {
+      "slug": "energy-radio-greece",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/energy",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Nikos Xanthopoulos - Hits Rewind",
+      "played_at": 1788904807
+    },
+    {
+      "slug": "entasi-radio-93-5",
+      "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Randy Travis - Forever and Ever, Amen",
+      "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "entropia-thessaloniki",
+      "nowplaying_url": "https://radio.hostchefs.net/rpc/entropiaradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Philip Glass - Metamorphosis Three",
+      "history_url": "https://radio.hostchefs.net/external/rpc.php?m=recenttracks.get&username=entropiaradio&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "epic-radio",
+      "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "The Embassy - Related Artist"
+    },
+    {
+      "slug": "ethniko-theatro-athens",
+      "nowplaying_url": "https://webradio-server.n-t.gr/api/nowplaying/webradio.n-t.gr",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Staatsphilharmonie Rheinland-Pfalz - Les Heures Persanes (Persian Hours) - L'escalade obscure",
+      "played_at": 1788923728
+    },
+    {
+      "slug": "euro-sky-100-4-orestiada",
+      "nowplaying_url": "http://cast4.magicstreams.gr:10155/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: Panos Kiamos - LIVE",
+      "history_url": "http://cast4.magicstreams.gr:10155/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "eurofans-radio",
+      "nowplaying_url": "https://radio.hostchefs.net/rpc/eurofansradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Sarah Bonnici - Loop",
+      "history_url": "https://radio.hostchefs.net/external/rpc.php?m=recenttracks.get&username=eurofansradio&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "evripos-90-chalkida",
+      "nowplaying_url": "http://hyades.shoutca.st:8570/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Recorded 2025-08-16 20-58-58",
+      "history_url": "http://hyades.shoutca.st:8570/played?sid=1&type=json",
+      "history_count": 4,
+      "history_status": "verified"
+    },
+    {
+      "slug": "evripos-90fm",
+      "nowplaying_url": "http://hyades.shoutca.st:8570/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Recorded 2025-08-16 20-58-58",
+      "history_url": "http://hyades.shoutca.st:8570/played?sid=1&type=json",
+      "history_count": 4,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fahrenheit",
+      "nowplaying_url": "http://88.198.70.25:8477/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ANTUPAS - AIMA MOU (FAHRENHEIT HQ)",
+      "history_url": "http://88.198.70.25:8477/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "family-89-5-heraclion",
+      "nowplaying_url": "http://193.227.111.111:8002/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Use HTTP to feed the song name",
+      "history_url": "http://193.227.111.111:8002/played?sid=1&type=json",
+      "history_count": 9,
+      "history_status": "verified"
+    },
+    {
+      "slug": "farsala",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "ΣΚΑΪ 100.3"
+    },
+    {
+      "slug": "farsala-web-radio-farsala",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1955/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "ΣΚΑΪ 100.3"
+    },
+    {
+      "slug": "flocafe-london",
+      "nowplaying_url": "http://radio.anim8.gr:1290/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Taylor Swift - I Knew It, I Knew You"
+    },
+    {
+      "slug": "fly-104",
+      "nowplaying_url": "https://imagine2.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Valley - I Can't Take It",
+      "history_url": "https://imagine2.radioca.st/played?sid=1&type=json",
+      "history_count": 7,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fly-104-48faa3f4",
+      "nowplaying_url": "https://imagine2.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Valley - I Can't Take It",
+      "history_url": "https://imagine2.radioca.st/played?sid=1&type=json",
+      "history_count": 7,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fly-88-1-heraklion-crete",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/flykriti/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Morcheeba - The Sea",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=flykriti&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fly-fm-crete",
+      "nowplaying_url": "https://fly-spirosb.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Morcheeba - The Sea",
+      "history_url": "https://fly-spirosb.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fm-91-5-chania-greece",
+      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/diktyofm/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Dikyofm",
+      "history_url": "https://eu1.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=diktyofm&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fm-99-2",
+      "nowplaying_url": "https://server.el1.info:37060/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Î ÎÎ¤Î£Î Î ÎÎ ÎÎÎÎ ÎÎ¥ÎÎÎ¥, ÎÎÎ¥ÎÎÎ¡ÎÎ, Î ÎÎÎÎ¥ ÎÎÎÎ, ÎÎÎÎÎÎ ÎÎ£ÎÎÎÎÎÎÎ¥, ÎÎÎ¤Î©ÎÎÎ£ ÎÎÎ¡ÎÎÎ£ - ÎÎÎÎÎ¡Î©ÎÎÎ"
+    },
+    {
+      "slug": "focus-88-8-alexandroupolis",
+      "nowplaying_url": "http://s3.onweb.gr:8014/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ελευθερία Αρβανιτάκη - Της Καληνύχτας Τα Φιλιά",
+      "history_url": "http://s3.onweb.gr:8014/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "freakout",
+      "nowplaying_url": "http://192.99.14.191:8004/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dopelord - Pass The Bong [rR]",
+      "history_url": "http://192.99.14.191:8004/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "free-central-greece-trikala",
+      "nowplaying_url": "http://sh.onweb.gr:8634/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Papik Sarah Jane Morris Lovely Day (feat. Sarah Jane Mor - Papik Sarah Jane Morris Lovely Day",
+      "history_url": "http://sh.onweb.gr:8634/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "free-gr-kalamata",
+      "nowplaying_url": "http://63.141.244.222:59540/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "no_matching_track",
+      "history_url": "http://63.141.244.222:59540/played?sid=1&type=json",
+      "history_count": 6,
+      "history_status": "verified"
+    },
+    {
+      "slug": "freespirits-services",
+      "nowplaying_url": "https://aphrodite.freespirits.gr/api/nowplaying/freespirits_radio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "freespiritsgr - Whispering Leaves",
+      "played_at": 1788923754
+    },
+    {
+      "slug": "fresh-web-radio-gr",
+      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/bfwxkhir/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Fresh 1046a",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=bfwxkhir&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "fun-radio-104-3-loutraki",
+      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/wpgqrttp/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "The Verve - Bitter Sweet Symphony",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=wpgqrttp&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "future-web-radio-gr-moschato",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1685/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "FUTURE NEO PROGRAMMA 2026"
+    },
+    {
+      "slug": "gnomi-93-7-fm-makedonia",
+      "nowplaying_url": "http://ice.greekstream.net/status-json.xsl?mount=%2Fgnomi",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " Marianna Papamakariou - Ta Antikeimena"
+    },
+    {
+      "slug": "gold-radio-gr",
+      "nowplaying_url": "https://shoutcast.k-planet.eu:8032/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "request_failed",
+      "error": "getaddrinfo ENOTFOUND shoutcast.k-planet.eu",
+      "history_url": "https://shoutcast.k-planet.eu:8032/played?sid=1&type=json",
+      "history_count": 0,
+      "history_status": "request_failed",
+      "history_error": "getaddrinfo ENOTFOUND shoutcast.k-planet.eu"
+    },
+    {
+      "slug": "gr",
+      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/xbygwcwv/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Authentiko vol 2h",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=xbygwcwv&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "greca-party-pyrgos",
+      "nowplaying_url": "https://one.cloudstreaming.eu/rpc/party/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "greek-gold-classic-radio",
+      "nowplaying_url": "https://s4.voscast.com:8899/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " - 415.M'EKAPSES GITONISSA Stelios Kazantzidis & Marinella 20.2.1962(St.Kazantzidis-G.Korou)7PG 3101 5-169"
+    },
+    {
+      "slug": "greek-otaku-radio",
+      "nowplaying_url": "http://usa2.fastcast4u.com:3684/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ClariS - Forira [blCg]",
+      "history_url": "http://usa2.fastcast4u.com:3684/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "greek-otaku-radio-2f217384",
+      "nowplaying_url": "https://usa2.fastcast4u.com/rpc/greekota/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ClariS - Forira",
+      "history_url": "https://usa2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=greekota&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "heat-alexandroupolis",
+      "nowplaying_url": "http://solid67.streamupsolutions.com:15037/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Playing: Simple Minds - Don't You (Forget About Me)",
+      "history_url": "http://solid67.streamupsolutions.com:15037/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "heat-classic-alexandroupolis",
+      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/neukptkl/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: Adele - Set Fire To The Rain",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=neukptkl&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "heraclion-52323e46",
+      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fpngpls",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Δημήτριος Παναγόπουλος - Anoxi_Kyriou"
+    },
+    {
+      "slug": "heraclion-9f1bc476",
+      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fstrpls",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Νικόλαος Σωτηρόπουλος - Ο Απόστολος Φίλιππος"
+    },
+    {
+      "slug": "heraklion-crete-c00c62fc",
+      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fymnoi",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Βατοπαιδινοί_Η_Κεχαριτωμένη_χαίρε"
+    },
+    {
+      "slug": "hit-classic",
+      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/smzyynlm/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "TWO FACE - YOU",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=smzyynlm&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "hit-ellinikos",
+      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/zvbgdllc/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "IOULIA KALLIMANI - ÎÎ ÎÎÎÎÎ¨ÎÎ£",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zvbgdllc&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "hit-radio",
+      "nowplaying_url": "http://solid2.streamupsolutions.com:24952/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "OFENBACH - WASTED LOVE"
+    },
+    {
+      "slug": "hook-radio",
+      "nowplaying_url": "https://stream3.proradio.gr/api/nowplaying/hook",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Paul Anka - Having My Baby",
+      "played_at": 1788923765
+    },
+    {
+      "slug": "i-r-a-106-7-aridea",
+      "nowplaying_url": "http://radio.streamings.gr:8027/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Êùíóôáíôßíïò Áñãõñüò - Íá ôçò Ðåéò"
+    },
+    {
+      "slug": "ianos-radio-thessaloniki",
+      "nowplaying_url": "https://radio.streamings.gr/rpc/feelmusic2021/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Richard Galliano - Tango pour Claude",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=feelmusic2021&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "imagine-89-7",
+      "nowplaying_url": "https://imagine897.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Angie Stone - Wish I Didn't Miss You",
+      "history_url": "https://imagine897.radioca.st/played?sid=1&type=json",
+      "history_count": 6,
+      "history_status": "verified"
+    },
+    {
+      "slug": "imagine-radio-897-thessaloniki-greece-thessaloniki",
+      "nowplaying_url": "https://imagine897.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Angie Stone - Wish I Didn't Miss You",
+      "history_url": "https://imagine897.radioca.st/played?sid=1&type=json",
+      "history_count": 6,
+      "history_status": "verified"
+    },
+    {
+      "slug": "imera-fm-90-4",
+      "nowplaying_url": "http://molonotiradio.gr:8000/status-json.xsl?mount=%2Fmolonoti-radio-stream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "B.B. King on Imera FM 90.4 - My Own Fault Darlin'"
+    },
+    {
+      "slug": "ionion-95-5-pirgos",
+      "nowplaying_url": "https://stream3.proradio.gr/api/nowplaying/ionion",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": " - News from Greece"
+    },
+    {
+      "slug": "iraklis-radio-thessaloniki",
+      "nowplaying_url": "https://centova.gr-net.gr/rpc/iraklisradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "jackson-palace",
+      "nowplaying_url": "https://jacksonspalace.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Carl Carlton - She's A Bad Mama Jama [Extended] [1OwI]",
+      "history_url": "https://jacksonspalace.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "jackson-palace-d49fdaa4",
+      "nowplaying_url": "https://jacksonspalace.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Carl Carlton - She's A Bad Mama Jama [Extended] [1OwI]",
+      "history_url": "https://jacksonspalace.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "jay",
+      "nowplaying_url": "http://s2.e-resellers.gr:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Tash Sultana - JUNGLE [1qw3]",
+      "history_url": "http://s2.e-resellers.gr:8000/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "jockey",
+      "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "The Embassy - Related Artist"
+    },
+    {
+      "slug": "jockey-radio",
+      "nowplaying_url": "https://ec4.yesstreaming.net:2135/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "The Embassy - Related Artist"
+    },
+    {
+      "slug": "kaseta-radio",
+      "nowplaying_url": "https://azuracast.streams.gr/api/nowplaying/kasetaradio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": " - kaseta radio2",
+      "played_at": 1788896414
+    },
+    {
+      "slug": "katerini-gas-katerini",
+      "nowplaying_url": "http://radio.katerinigas.gr:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Μήδεια του Ζαν Ανούιγ του Ζαν Ανούιγ",
+      "history_url": "http://radio.katerinigas.gr:8000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kavala",
+      "nowplaying_url": "http://62.103.31.151:8000/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "LOCAL STUDIO"
+    },
+    {
+      "slug": "kifissia-kifissia",
+      "nowplaying_url": "http://cast.streams.ovh:12097/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Cool Million - MUSIQ (feat Jahah - Rivera Rotation remix) [1Mue]",
+      "history_url": "http://cast.streams.ovh:12097/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kiis-extra-92-2-patra",
+      "nowplaying_url": "https://streams.enjoyfm.gr:48502/status-json.xsl?mount=%2Fkiis.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " Puff Daddy - I'll be missing you"
+    },
+    {
+      "slug": "kiis-extra-93-8-korinthos",
+      "nowplaying_url": "http://stream.kiisextra.gr:48500/status-json.xsl?mount=%2Fkiis.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " Puff Daddy - I'll be missing you"
+    },
+    {
+      "slug": "kiss-98-thessaly",
+      "nowplaying_url": "https://s6.onweb.gr:7029/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "SALT n PEPA - WHATTA MAN",
+      "history_url": "https://s6.onweb.gr:7029/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kiss-98-volos",
+      "nowplaying_url": "https://s6.onweb.gr:7029/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "SALT n PEPA - WHATTA MAN",
+      "history_url": "https://s6.onweb.gr:7029/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kiss-mjt-101-5-lesvos",
+      "nowplaying_url": "http://eco.onestreaming.com:8550/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "PHARRELL WILLIAMS - Happy",
+      "history_url": "http://eco.onestreaming.com:8550/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kliktv-radio",
+      "nowplaying_url": "http://everest.streams.ovh:1170/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Radio.KlikTv.gr: 14. Georges Bodossian & Hayotz Hoki - Hayastan, La Memoire Eternelle (HQ)"
+    },
+    {
+      "slug": "kokkini-velona",
+      "nowplaying_url": "https://radio.streamings.gr/rpc/kokkinos2023/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Ethnic Pack",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=kokkinos2023&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "korinthos",
+      "nowplaying_url": "http://s1.onweb.gr:8828/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Energeia 106.4 Korinthos",
+      "history_url": "http://s1.onweb.gr:8828/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kouklakia-radio-attica-athens",
+      "nowplaying_url": "http://mcr.streams.gr:10340/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "KOUKLAKIA RADIO",
+      "history_url": "http://mcr.streams.gr:10340/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kriti-fm-87-5-crete",
+      "nowplaying_url": "http://s3.onweb.gr:8878/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΚΑΤΣΑΜΑΔΕΣ - ΗΝΤΑ ΤΣΗ ΚΑΝΕΙΣ ΤΗΣ ΚΑΡΔΙΑΣ",
+      "history_url": "http://s3.onweb.gr:8878/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "kyklos",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Ταφ Λάθος & Δώρο Θεού - Κοίταξέ με",
+      "played_at": 1788923849
+    },
+    {
+      "slug": "la-famiglia-athens",
+      "nowplaying_url": "https://cast.magicstreams.gr:9010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - ΓΙΑΝΝΗΣ ΤΟΤΣΙΚΑΣ ΝΥΧΤΑ LIVE PART 141 [32p9]",
+      "history_url": "https://cast.magicstreams.gr:9010/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "lampsi-92-3",
+      "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "White Noise 50"
+    },
+    {
+      "slug": "lampsi-fm-92-3",
+      "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "White Noise 50"
+    },
+    {
+      "slug": "larisa",
+      "nowplaying_url": "http://s2.onweb.gr:8446/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "02 - παιδικα 2ο μερος",
+      "history_url": "http://s2.onweb.gr:8446/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "larissa-deejay-95-7-larisa",
+      "nowplaying_url": "https://a6.asurahosting.com:7030/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Sickotoy, Misha Miller - Rakata",
+      "history_url": "https://a6.asurahosting.com:7030/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "laterna",
+      "nowplaying_url": "https://laterna.kafeneio.social:8000/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Letter"
+    },
+    {
+      "slug": "lemon-radio",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ASHKHABAD - Bayat",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=radio888&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "lemon-web-radio",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ASHKHABAD - Bayat",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=radio888&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "limnos-100-limnos",
+      "nowplaying_url": "http://radio.limnosfm100.gr:9998/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "RThess 128",
+      "history_url": "http://radio.limnosfm100.gr:9998/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "live-89-6-chalkida",
+      "nowplaying_url": "https://s6.e-resellers.gr:8088/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "TOQUEL, LILA - ΠΟΙΟΣ ΝΑ ΣΟΥ ΤΟ ΠΕΙ",
+      "history_url": "https://s6.e-resellers.gr:8088/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "live-thessaloniki",
+      "nowplaying_url": "https://azuracast.streams.gr/api/nowplaying/paulosvasileioulive",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Νότης Σφακιανάκης - Πρώτη φορά",
+      "played_at": 1788923704
+    },
+    {
+      "slug": "loco-radio-live",
+      "nowplaying_url": "https://cast.iplayradio.net/api/nowplaying/locoradio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Kat DeLuna ft Elephant Man - Whine Up",
+      "played_at": 1788923692
+    },
+    {
+      "slug": "loop",
+      "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "UMEK - Conversation Is Limited",
+      "history_url": "http://eu2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=loopradiostation&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "loop-695d1d91",
+      "nowplaying_url": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "UMEK - Conversation Is Limited",
+      "history_url": "http://eu2.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=loopradiostation&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "loud-88-8-trikala",
+      "nowplaying_url": "http://s3.onweb.gr:8888/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "DOECHII - Anxiety",
+      "history_url": "http://s3.onweb.gr:8888/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "loutraki-87-5-korinthos",
+      "nowplaying_url": "http://s3.onweb.gr:8472/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here",
+      "history_url": "http://s3.onweb.gr:8472/played?sid=1&type=json",
+      "history_count": 7,
+      "history_status": "verified"
+    },
+    {
+      "slug": "love-106-5-thessaloniki",
+      "nowplaying_url": "http://server.insms.gr:45104/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air:BACHATA - RITA RITAKI",
+      "history_url": "http://server.insms.gr:45104/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "love-88-2-lesvos",
+      "nowplaying_url": "http://solid1.streamupsolutions.com:24929/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<Schedule System=\"Jazler\">\r\n <Event status=\"happening\" startTime=\"06:17:09\" eventType=\"song\">\r\n  <Announcement Display=\"Now Playing:\"/>\r\n  <Song title=\"NOBODY WANTS TO BE LONELY\">\r\n   <Artist name=\"RICKY MARTIN\" URL=\"\"/>\r\n   <Jazler ID=\"669\"/>\r\n   <PlayLister ID=\"\"/>\r\n   <Media runTime=\"03:47\"/>\r\n   <Expire Time=\"06:20:56\"/>\r\n   <SongURL></SongURL>\r\n   <SongBarCode></SongBarCode>\r\n   <SongCDKey></SongCDKey>\r\n  </Song>\r\n </Event>\r\n</Schedule>"
+    },
+    {
+      "slug": "mad-radio-106-2-athens",
+      "nowplaying_url": "http://mediaserver.mad.tv/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing: DA TI - TAKE ME THERE"
+    },
+    {
+      "slug": "mad-radio-106-2-fm",
+      "nowplaying_url": "http://mediaserver.mad.tv/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing: DA TI - TAKE ME THERE"
+    },
+    {
+      "slug": "magia-104-7-xiromero",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/magiafm1047/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΚΩΣΤΑ ΤΟΥΡΝΑΣ - ΔΕΝ ΛΕΩ ΟΧΙ Σ`ΟΜΟΡΦΑ ΜΑΤΙΑ",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=magiafm1047&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "mancode",
+      "nowplaying_url": "http://comet.shoutca.st:8366/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "no_matching_track",
+      "history_url": "http://comet.shoutca.st:8366/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "manos-103-4-pieria",
+      "nowplaying_url": "http://i5.streams.ovh:14123/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Radio Manos 103.4 Fm"
+    },
+    {
+      "slug": "max-100-2-chania",
+      "nowplaying_url": "http://solid9.streamupsolutions.com:8066/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "BE VIRAL 9 - BE VIRAL 9/9 A",
+      "history_url": "http://solid9.streamupsolutions.com:8066/played?sid=1&type=json",
+      "history_count": 9,
+      "history_status": "verified"
+    },
+    {
+      "slug": "melody-96-7-limnos",
+      "nowplaying_url": "https://eu4.fastcast4u.com/rpc/jlwmwogj/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Radio Melody 96.7",
+      "history_url": "https://eu4.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=jlwmwogj&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "mercury-radio-69fd8450",
+      "nowplaying_url": "http://10203.cloudrad.io:9024/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Didacte - Nuage [Original Mix]",
+      "history_url": "http://10203.cloudrad.io:9024/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "mesologgi",
+      "nowplaying_url": "https://radio.streamings.gr/rpc/orfeasradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - 10 Gyrise piso"
+    },
+    {
+      "slug": "metal-city-radio",
+      "nowplaying_url": "http://i6.streams.ovh:16036/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Unknown Artist - Pariah (2013) [cgc]",
+      "history_url": "http://i6.streams.ovh:16036/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "metal-zone-athens",
+      "nowplaying_url": "https://neos.win:48282/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "METALZONE INTERNET RADIO - 24/7 HEAVY METAL"
+    },
+    {
+      "slug": "metalourgio-radio",
+      "nowplaying_url": "http://cast.metalourgio.com:8427/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Sunless - Born of Clay [2Xqc]",
+      "history_url": "http://cast.metalourgio.com:8427/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "metalzone-athens",
+      "nowplaying_url": "https://neos.win:48282/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "METALZONE INTERNET RADIO - 24/7 HEAVY METAL"
+    },
+    {
+      "slug": "metro-mall-radio-athens",
+      "nowplaying_url": "https://srv.radiocaster.gr:9300/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Metro Mall Radio - Cosmo Edition",
+      "history_url": "https://srv.radiocaster.gr:9300/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "metro-radio-heraclion",
+      "nowplaying_url": "https://stream.crete.ovh:8443/status-json.xsl?mount=%2Fmetro",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Mooglie - Spacer (Radio Mix)"
+    },
+    {
+      "slug": "metropolis-97-2-serres",
+      "nowplaying_url": "http://s6.onweb.gr:8092/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here",
+      "history_url": "http://s6.onweb.gr:8092/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "mikis-radio",
+      "nowplaying_url": "http://radio.hostchefs.net:8046/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Και περνούσαν τα τραμ  του Μανόλη Αναγνωστάκη - Ο Λάκης Χαλκιάς ερμηνεύει Μίκη Θεδωράκη συμμετέχει η Λαϊκή Ορχήστρα Μίκης Θεοδωράκης."
+    },
+    {
+      "slug": "minima",
+      "nowplaying_url": "http://62.171.166.54:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Live Broadcast",
+      "history_url": "http://62.171.166.54:8010/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "molonoti-radio",
+      "nowplaying_url": "http://molonotiradio.gr:8000/status-json.xsl?mount=%2Fmolonoti-radio-stream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "B.B. King on Imera FM 90.4 - My Own Fault Darlin'"
+    },
+    {
+      "slug": "mood-radio",
+      "nowplaying_url": "http://198.7.59.28:10034/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Eyecam - I'm Over",
+      "history_url": "http://198.7.59.28:10034/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "mousikotherapia",
+      "nowplaying_url": "https://everestcast.streams.ovh:1940/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "AutoDJ: φιλοι μιχ"
+    },
+    {
+      "slug": "music-art-club",
+      "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Yuri Petrovski - Radio Funk",
+      "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "music-factory-radio-athens",
+      "nowplaying_url": "http://radio.musicfactory.gr:9000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Navara, Highpass - Flash in the Night (Highpass Deep Club Remix)",
+      "history_url": "http://radio.musicfactory.gr:9000/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "music-life-95-1-agrinio",
+      "nowplaying_url": "http://neos.win:9501/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΗΛΙΑΣ ΒΡΕΤΤΟΣ - ΜΑΤΙΑ ΜΟΥ",
+      "history_url": "http://neos.win:9501/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "musicartclub-radio",
+      "nowplaying_url": "http://eu9.fastcast4u.com:8090/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Yuri Petrovski - Radio Funk",
+      "history_url": "http://eu9.fastcast4u.com:8090/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "musicartclub-thessaloniki",
+      "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Yuri Petrovski - Radio Funk",
+      "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "musicartclub-thessaloniki-1ac2e8a4",
+      "nowplaying_url": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Yuri Petrovski - Radio Funk",
+      "history_url": "https://eu9.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=musicart&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "my-laikos-thessaloniki",
+      "nowplaying_url": "http://mcr.streams.gr:10200/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΣΤΡΑΤΟΣ ΔΙΟΝΥΣΙΟΥ - ΚΑΛΥΤΕΡΑ ΜΑΖΙ ΣΟΥ ΚΑΙ ΤΡΕΛΟΣ",
+      "history_url": "http://mcr.streams.gr:10200/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "my-radio-gr-athens",
+      "nowplaying_url": "https://visual.shoutca.st:8616/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Μαζωνακης Γιωργος - Παρτα ολα δικα σου"
+    },
+    {
+      "slug": "ng-radio",
+      "nowplaying_url": "https://rdst.win:59178/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Nino - Apopse Den Pame Spiti"
+    },
+    {
+      "slug": "notes-106-serres",
+      "nowplaying_url": "https://solid33.streamupsolutions.com/rpc/evllufwn/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - NOTES 106 FM",
+      "history_url": "https://solid33.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=evllufwn&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "nrg-89-5-kozani",
+      "nowplaying_url": "http://i4.streams.ovh:8078/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "NRG 89,5 - THE LUCKY SOUND - NRG 89,5 - LUCKY SOUND",
+      "history_url": "http://i4.streams.ovh:8078/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "nrg-92-4-lamia",
+      "nowplaying_url": "http://s6.onweb.gr:9240/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "TAYLOR SWIFT - The Fate of Ophelia",
+      "history_url": "http://s6.onweb.gr:9240/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "nrg-radio-88-3-macedonia",
+      "nowplaying_url": "http://s1.onweb.gr:8412/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ANOTR - TALK TO YOU",
+      "history_url": "http://s1.onweb.gr:8412/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "nt00-radio",
+      "nowplaying_url": "https://nt00.xyz/api/nowplaying/escape_the_algorithm",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Kali - Mad Cow EP - Fanta Fruit Twist",
+      "played_at": 1788923665
+    },
+    {
+      "slug": "oasis-gr",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:2315/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Culture Club- Miss Me Blind"
+    },
+    {
+      "slug": "ok-94-5-volos",
+      "nowplaying_url": "http://www.gointernet.gr:8034/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Radio Zimia 94,5 Volos thl. 2421 421 794",
+      "history_url": "http://www.gointernet.gr:8034/played?sid=1&type=json",
+      "history_count": 7,
+      "history_status": "verified"
+    },
+    {
+      "slug": "olympos-101-5-katerini",
+      "nowplaying_url": "https://streamer.stordia.net/api/nowplaying/olympos",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Station Offline"
+    },
+    {
+      "slug": "onar-athens",
+      "nowplaying_url": "http://cast4.magicstreams.gr:10316/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Cutting Crew - (I Just) Died In Your Arms",
+      "history_url": "http://cast4.magicstreams.gr:10316/played?sid=1&type=json",
+      "history_count": 6,
+      "history_status": "verified"
+    },
+    {
+      "slug": "opa",
+      "nowplaying_url": "https://eu3.fastcast4u.com/rpc/opar/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Petros Iakovidis - Koritsaki mou",
+      "history_url": "https://eu3.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=opar&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "oxygen-web-radio",
+      "nowplaying_url": "https://i8.streams.ovh:18039/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Kings of Leon - Pyro"
+    },
+    {
+      "slug": "paidaki-97-5-thessaloniki",
+      "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Mazoo And The Zoo - O Kastoras",
+      "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "paidaki-fm-thessaloniki",
+      "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Mazoo And The Zoo - O Kastoras",
+      "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "palmos-102-7-poros",
+      "nowplaying_url": "http://s6.onweb.gr:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Αννα Βισση - Οχι Γιατι",
+      "history_url": "http://s6.onweb.gr:8010/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "palmos-radio",
+      "nowplaying_url": "http://live.onweb.gr:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Αννα Βισση - Οχι Γιατι",
+      "history_url": "http://live.onweb.gr:8010/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "palmos-radio-102-7-fm",
+      "nowplaying_url": "http://s6.onweb.gr:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Αννα Βισση - Οχι Γιατι",
+      "history_url": "http://s6.onweb.gr:8010/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "panic-93-7-ierapetra",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/club937/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "DJ Mike Llama - Llama Whippin' Intro",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=club937&limit=10",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "panikos",
+      "nowplaying_url": "http://toradio.cc:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΚΕΛΕΚΙΔΟΥ - ΚΙ ΟΛΟ ΠΙΝΩ",
+      "history_url": "http://toradio.cc:8010/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "paros",
+      "nowplaying_url": "http://eco.onestreaming.com:8280/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "LA CRUZ - PER MANO",
+      "history_url": "http://eco.onestreaming.com:8280/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "party-97-1-elassona",
+      "nowplaying_url": "http://s1.onweb.gr:8824/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Giorgos Sampanis - Ti Thelo Ego Me Sena",
+      "history_url": "http://s1.onweb.gr:8824/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "party-97-1-larisa",
+      "nowplaying_url": "https://sh.onweb.gr:7024/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Giorgos Sampanis - Ti Thelo Ego Me Sena",
+      "history_url": "https://sh.onweb.gr:7024/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "party-vibe-radio-dubstep",
+      "nowplaying_url": "http://94.130.242.5:8040/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Winter Kills - Deep Down Phrenik Remix",
+      "history_url": "http://94.130.242.5:8040/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "pathos-radio",
+      "nowplaying_url": "http://dione.shoutca.st:8628/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Efi Thodi - Agapame emena",
+      "history_url": "http://dione.shoutca.st:8628/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "patra-023f335f",
+      "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "AKOMA LIGES WRES [K.GKREY] 8F",
+      "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "pella",
+      "nowplaying_url": "http://eco.onestreaming.com:8240/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "DJ Mike Llama - Llama Whippin' Intro",
+      "history_url": "http://eco.onestreaming.com:8240/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "play-91-5-xanthi",
+      "nowplaying_url": "http://s6.onweb.gr:8058/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "﻿ΝΙΚΟΣ ΞΑΝΘΟΠΟΥΛΟΣ - ΧΡΙΣΤΙΑΝΑ - Ήρθα κι απόψε -",
+      "history_url": "http://s6.onweb.gr:8058/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "play-radio-patra",
+      "nowplaying_url": "http://eco.onestreaming.com:8222/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": " Ed Sheeran - Curtains",
+      "history_url": "http://eco.onestreaming.com:8222/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "plus-102-6-thessaloniki",
+      "nowplaying_url": "http://eco.onestreaming.com:8039/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Olivia Dean - Man I Need",
+      "history_url": "http://eco.onestreaming.com:8039/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "plus-radio-macedonia",
+      "nowplaying_url": "http://eco.onestreaming.com:8039/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Olivia Dean - Man I Need",
+      "history_url": "http://eco.onestreaming.com:8039/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "point-radio-thessaloniki",
+      "nowplaying_url": "http://radio.streamings.gr:8029/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Radio Roben - The best music on the net"
+    },
+    {
+      "slug": "point-radio-thessaloniki-9754dd31",
+      "nowplaying_url": "http://radio.streamings.gr:8029/status-json.xsl?mount=%2Fstream2",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Point - Radio Pop - The best music on the net"
+    },
+    {
+      "slug": "polis-102-6-evros",
+      "nowplaying_url": "http://eco.onestreaming.com:8334/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Polis 102.6",
+      "history_url": "http://eco.onestreaming.com:8334/played?sid=1&type=json",
+      "history_count": 2,
+      "history_status": "verified"
+    },
+    {
+      "slug": "polis-91-1-chalkida-66766c24",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/polislaikos/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΠΟΛΥΣ ΚΕΡΜΑΝΙΔΗΣ - Η ΛΟΓΙΚΗ ΥΟΥ ΜΕΛΟΝΤΟΣ",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=polislaikos&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "polis-91-1-chalkida-c563dc48",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/polisentexnos/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Αλεξιου Πορτοκαλογλου - Μπλεξαν Οι Γραμμεσ Μασ",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=polisentexnos&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "polis-91-1-heykids-chalkida",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/poliskids/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Lenka Peskou - A Little Girl",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=poliskids&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "polis-91-1-hip-hop-chalkida",
+      "nowplaying_url": "https://s6.e-resellers.gr:8092/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Sin Boy - Marijuana",
+      "history_url": "https://s6.e-resellers.gr:8092/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "pop-102-1-corfu",
+      "nowplaying_url": "http://s1.onweb.gr:8422/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΕΡΩΤΕΥΤΗΚΑ ΕΣΕΝΑ - ΝΙΚΟΣ ΒΕΡΤΗΣ",
+      "history_url": "http://s1.onweb.gr:8422/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "power-100-2-volos",
+      "nowplaying_url": "http://s1.onweb.gr:8854/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "TAYLOR SWIFT - OPALITE",
+      "history_url": "http://s1.onweb.gr:8854/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "power-90-2-katerini",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/powerkaterini/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "power-93-2-larisa",
+      "nowplaying_url": "http://mediacp.32bit.gr:8002/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "01 - Virtual Insanity",
+      "history_url": "http://mediacp.32bit.gr:8002/played?sid=1&type=json",
+      "history_count": 14,
+      "history_status": "verified"
+    },
+    {
+      "slug": "preveza",
+      "nowplaying_url": "http://sc2.streamwithq.com:8028/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Michalis Hatzigiannis - Den Fevgo",
+      "history_url": "http://sc2.streamwithq.com:8028/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "prime-100-3-syros",
+      "nowplaying_url": "http://s20.myradiostream.com:6738/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "TINA TURNER - PRIVATE DANCER",
+      "history_url": "http://s20.myradiostream.com:6738/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "prisma-91-8-sifnos",
+      "nowplaying_url": "http://eco.onestreaming.com:8414/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "PROTOPSALTH ALKHSTIS - TELEYTAIA FORA",
+      "history_url": "http://eco.onestreaming.com:8414/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "psyndora-chillout-hellas",
+      "nowplaying_url": "http://cast.magicstreams.gr:9125/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Chronos & Zero Cult - Cells In Harmony",
+      "history_url": "https://cast.magicstreams.gr:9125/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "psyndora-psytrance-hellas",
+      "nowplaying_url": "http://cast.magicstreams.gr:9111/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "EgoRythmia - Seraphim (Original Mix)",
+      "history_url": "http://cast.magicstreams.gr:9111/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "pulsar-radio",
+      "nowplaying_url": "https://rs-pulsar.doomdns.org:8443/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "PULSAR Radio - Now On Air:Andy Hull + Robert McDowell - Montage"
+    },
+    {
+      "slug": "pylos-live-pylos",
+      "nowplaying_url": "http://s4.myradiostream.com:14374/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Dan Fogelberg - Same Old Lang Syne",
+      "history_url": "http://s4.myradiostream.com:14374/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "r-dio-p-lis-99-4",
+      "nowplaying_url": "https://sh.onweb.gr:7060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ANASTASIA - SPASTE TA",
+      "history_url": "https://sh.onweb.gr:7060/played?sid=1&type=json",
+      "history_count": 5,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-88miso-thessaloniki",
+      "nowplaying_url": "http://solid33.streamupsolutions.com:30000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Daisy Gray - Wicked Game",
+      "history_url": "http://solid33.streamupsolutions.com:30000/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-9-thessaloniki",
+      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/gygasbfj/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - 4Track number1",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=gygasbfj&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-anemos",
+      "nowplaying_url": "http://168.119.74.185:9008/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Giannis Savvidakis - To Koritsi Mou Koimatai"
+    },
+    {
+      "slug": "radio-beat-radio",
+      "nowplaying_url": "http://62.38.241.82:8000/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Lusaint - Sweet Tooth",
+      "history_url": "http://62.38.241.82:8000/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-elliniko",
+      "nowplaying_url": "http://168.119.74.185:9888/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "lista-ta-kalitera-8-2-2014 - lista-ta-kalitera-8-2-2014"
+    },
+    {
+      "slug": "radio-epirus-94-5",
+      "nowplaying_url": "https://neos.win:59454/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "RADIO EPIRUS LINK"
+    },
+    {
+      "slug": "radio-galaxy-99",
+      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/tfcgioyq/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air:Dido - Slide",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=tfcgioyq&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-galilea",
+      "nowplaying_url": "http://s1.onweb.gr:8446/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "02 - παιδικα 2ο μερος",
+      "history_url": "http://s1.onweb.gr:8446/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-grey",
+      "nowplaying_url": "https://eu10.fastcast4u.com:15360/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Lana Del Rey - Dark Paradise (Parov Stelar Remix)",
+      "history_url": "https://eu10.fastcast4u.com:15360/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-kos-98-fm",
+      "nowplaying_url": "https://play.streams.gr:22082/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "ÎÎ¡ÎÎÎÎ ÎÎ¥ÎÎÎ¥ Î¦ÎÎÎ - Î Î©Î£ ÎÎ ÎÎ¡ÎÎÎ£"
+    },
+    {
+      "slug": "radio-kyklos",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Ταφ Λάθος & Δώρο Θεού - Κοίταξέ με",
+      "played_at": 1788923849
+    },
+    {
+      "slug": "radio-locomotiva-athens-greece",
+      "nowplaying_url": "https://whsh4u-panel.com/rpc/zukqpfqm/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Villa 21 - In the Darkened Night",
+      "history_url": "https://whsh4u-panel.com/external/rpc.php?m=recenttracks.get&username=zukqpfqm&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-madness",
+      "nowplaying_url": "http://s2.onweb.gr:8044/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Θοδωρής Φέρρης - Είπες",
+      "history_url": "http://s2.onweb.gr:8044/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-martino",
+      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Marinela - Kardoula Mou De Se Malono"
+    },
+    {
+      "slug": "radio-meraklis-agrinio",
+      "nowplaying_url": "https://meraklis.ddnsfree.com:8443/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Βαγγέλης Κορακάκης - Πρώτο φθινόπωρο"
+    },
+    {
+      "slug": "radio-mires-97-1",
+      "nowplaying_url": "http://s6.onweb.gr:8034/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ορφέας Περίδης - Τα τραγούδια μου τ' αμερικάνικα",
+      "history_url": "http://s6.onweb.gr:8034/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-mpoufalo",
+      "nowplaying_url": "https://a1.my-control-panel.com/api/nowplaying/minas",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Στιχόβολη - Όρκος",
+      "played_at": 1788923816
+    },
+    {
+      "slug": "radio-mytilini",
+      "nowplaying_url": "http://cast5.magicstreams.gr:8041/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "RADIO MYTILINI 90FM",
+      "history_url": "http://cast5.magicstreams.gr:8041/played?sid=1&type=json",
+      "history_count": 2,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-nostalgia",
+      "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "AKOMA LIGES WRES [K.GKREY] 8F",
+      "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-nostalgia-gr",
+      "nowplaying_url": "http://radionostalgiagr.dyndns.org:2314/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "AKOMA LIGES WRES [K.GKREY] 8F",
+      "history_url": "http://radionostalgiagr.dyndns.org:2314/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-nyxtopoyli",
+      "nowplaying_url": "https://stream13.shoutcastsolutions.com/rpc/bntailia/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Αντώνης Ρέμος & Γιάννης Βαρδής - Δωσ' Μου Μια Αγκαλιά [CD Σπασμένα Κομμάτια Της Καρδιάς 2016 Heaven Music Track 6/2016]",
+      "history_url": "https://stream13.shoutcastsolutions.com/external/rpc.php?m=recenttracks.get&username=bntailia&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-oi-athens",
+      "nowplaying_url": "http://eu4.fastcast4u.com/rpc/nikoud00/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Pressure Point - Boots N' Brooze",
+      "history_url": "http://eu4.fastcast4u.com/external/rpc.php?m=recenttracks.get&username=nikoud00&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-pieria-104-2-fm",
+      "nowplaying_url": "https://rpieria.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ZAVANTIAS SPOT NEA TRAGOYDIA 2026",
+      "history_url": "https://rpieria.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-play-91-5-fm-stereo-gr-xanthi",
+      "nowplaying_url": "https://s6.onweb.gr:7026/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "﻿ΝΙΚΟΣ ΞΑΝΘΟΠΟΥΛΟΣ - ΧΡΙΣΤΙΑΝΑ - Ήρθα κι απόψε -",
+      "history_url": "https://s6.onweb.gr:7026/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-play-91-5-fm-stereo-gr-xanthi-xanthi",
+      "nowplaying_url": "http://s6.onweb.gr:8058/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "﻿ΝΙΚΟΣ ΞΑΝΘΟΠΟΥΛΟΣ - ΧΡΙΣΤΙΑΝΑ - Ήρθα κι απόψε -",
+      "history_url": "http://s6.onweb.gr:8058/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-rebetikes-melodies-agrinio-greece",
+      "nowplaying_url": "https://rebetis.duckdns.org:8545/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Glikeria - Rembetika"
+    },
+    {
+      "slug": "radio-sfakia",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1215/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Litsa Diamanti - There is no happiness (Den iparhi eftihia)"
+    },
+    {
+      "slug": "radio-ta-asteria",
+      "nowplaying_url": "https://cast.serverps.gr/rpc/radioasteria/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Stelios Dionisiou - Alitika Vradia",
+      "history_url": "https://cast.serverps.gr/external/rpc.php?m=recenttracks.get&username=radioasteria&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radio-yellow-gr",
+      "nowplaying_url": "http://radio.streamings.gr/rpc/radioyellow/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΚΟΚΚΙΝΟΥ ΕΛΛΗ - ΑΝΔΡΙΚΗ ΚΟΛΩΝΙΑ",
+      "history_url": "http://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=radioyellow&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "radiokyklos-greek-hiphop",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/radiokyklos",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Ταφ Λάθος & Δώρο Θεού - Κοίταξέ με",
+      "played_at": 1788923849
+    },
+    {
+      "slug": "radiq-happy",
+      "nowplaying_url": "https://live.radiq.gr/api/nowplaying/radiq",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Beck - Devil's Haircut",
+      "played_at": 1788923854
+    },
+    {
+      "slug": "rain-music-radio-athens",
+      "nowplaying_url": "https://thanasis.radioca.st/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "rainmusicradio - bobo",
+      "history_url": "https://thanasis.radioca.st/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "razordino-radio",
+      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/olrbkxdl/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Hooverphonic - Eden",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=olrbkxdl&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "rewind-radio-gr",
+      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/zcpyirtp/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Everything but the Girl - Missing",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zcpyirtp&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "rock-angels",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "24- roy buchanan - my baby says shes gonna leave me (1973,thats what i am here for)",
+      "played_at": 1788923798
+    },
+    {
+      "slug": "rock-angels-athens",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "24- roy buchanan - my baby says shes gonna leave me (1973,thats what i am here for)",
+      "played_at": 1788923798
+    },
+    {
+      "slug": "rock-angels-radio",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/rockangels",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "24- roy buchanan - my baby says shes gonna leave me (1973,thats what i am here for)",
+      "played_at": 1788923798
+    },
+    {
+      "slug": "rock-fm-96-9",
+      "nowplaying_url": "https://az10.yesstreaming.net:8060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "60's Mega Mix - 60's Mega Mix",
+      "history_url": "https://az10.yesstreaming.net:8060/played?sid=1&type=json",
+      "history_count": 17,
+      "history_status": "verified"
+    },
+    {
+      "slug": "rock-melodic-radio-964ff6ca",
+      "nowplaying_url": "http://live.rockmelodic-radio.com:8124/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Solega (Angelos Georgiadis) - Bright Lights (2)",
+      "history_url": "http://live.rockmelodic-radio.com:8124/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "rock-station-gr-nafplio",
+      "nowplaying_url": "https://shoutcast.k-planet.eu:9898/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "request_failed",
+      "error": "getaddrinfo ENOTFOUND shoutcast.k-planet.eu",
+      "history_url": "https://shoutcast.k-planet.eu:9898/played?sid=1&type=json",
+      "history_count": 0,
+      "history_status": "request_failed",
+      "history_error": "getaddrinfo ENOTFOUND shoutcast.k-planet.eu"
+    },
+    {
+      "slug": "rockarolla-radio-athens-greece",
+      "nowplaying_url": "https://solid2.streamupsolutions.com/rpc/msoepowo/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Billy Idol - Eyes Without A Face",
+      "history_url": "https://solid2.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=msoepowo&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "s-fresh-91-2",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Shakira - Dai Dai (feat Burna Boy)",
+      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "s-fresh-91-2-67076765",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Shakira - Dai Dai (feat Burna Boy)",
+      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "s-fresh-91-2-d5a65430",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Shakira - Dai Dai (feat Burna Boy)",
+      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "samos",
+      "nowplaying_url": "http://i.streams.ovh:9391/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ÂÁÆÁÉÏÓ - Å×Ù ÁÃÁÐÇ ÔÏÓÇ",
+      "history_url": "http://i.streams.ovh:9391/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "samothraki-web-radio-samothraki",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/samothraki/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing: Odysseas Ellhnikos - Ela Konta Moy",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=samothraki&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "santorini-fm-106-4-santorini",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/santorini1/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "satradio",
+      "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1370/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Men At Work - Down Under",
+      "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "satradio-0731ecb1",
+      "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1370/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Men At Work - Down Under",
+      "history_url": "https://fra-pioneer08.dedicateware.com:1370/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "setta",
+      "nowplaying_url": "http://cast.magicstreams.gr:9028/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "sferikos-alexandroupolis",
+      "nowplaying_url": "http://eco.onestreaming.com:8012/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΜΑΡΤΑΚΗΣ ΚΩΣΤΑΣ - ΚΑΛΟΚΑΙΡΙ ΣΤΗΝ ΕΛΛΑΔΑ",
+      "history_url": "http://eco.onestreaming.com:8012/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "simple-radio-attica-athens",
+      "nowplaying_url": "https://ice.streams.ovh:1765/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "VILLE VALO & NATALIA AVELON - SUMMER WINE"
+    },
+    {
+      "slug": "sin-athens",
+      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/lqomhdjk/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Reverend Cleophus Robinson - God's Love",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lqomhdjk&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "sky-91-3-rethimno",
+      "nowplaying_url": "http://cressida.shoutca.st:9158/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: HLIAS VRETTOS - ALLOS ANTHROPOS",
+      "history_url": "http://cressida.shoutca.st:9158/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "skyline-thessaloniki",
+      "nowplaying_url": "https://a10.asurahosting.com:8140/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Giorgio Moroder - The Chase (Marat Taturas Coctail Pool Remix Radio Edit)",
+      "history_url": "https://a10.asurahosting.com:8140/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "slam-101-5-lesvos",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/slam/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "PHARRELL WILLIAMS - Happy",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=slam&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "smok-web-radio",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/smokradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - THALASSOMATA",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=smokradio&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "smooth-radio-thessaloniki-thessaloniki",
+      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/lrazisyb/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Pink Floyd - Comfortably Numb",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lrazisyb&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "spirto-web-radio",
+      "nowplaying_url": "http://cast4.magicstreams.gr:10149/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Def Leppard - Two Steps Behind",
+      "history_url": "http://cast4.magicstreams.gr:10149/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "star-93-5-drama",
+      "nowplaying_url": "https://casty.youmix.gr/api/nowplaying/starfm935",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Live broadcast",
+      "played_at": 1788610626
+    },
+    {
+      "slug": "star-95-5-chalkidiki",
+      "nowplaying_url": "https://centova.gr-net.gr/rpc/radiostar955/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air:BACHATA - RITA RITAKI",
+      "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=radiostar955&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "star-97-7-chania",
+      "nowplaying_url": "https://solid55.streamupsolutions.com/rpc/vkpzhens/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΚΩΝΣΤΑΝΤΙΝΟΣ ΑΡΓΥΡΟΣ - ΤΙ ΝΑ ΠΕΙΣ ΓΙΑ ΜΕΝΑ",
+      "history_url": "https://solid55.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vkpzhens&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "station-051a9421",
+      "nowplaying_url": "http://everest.streams.ovh:1310/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "AutoDJ: ΣΤΡΑΤΟΣ ΔΙΟΝΥΣΙΟΥ - ΚΑΨΕ-ΚΑΨΕ"
+    },
+    {
+      "slug": "station-27a54c65",
+      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fradio_el",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Διαβάζει η Πανάγιω Γεωργίου - ΚΑΘΙΣΜΑ 8 Ψαλμοί 55-63"
+    },
+    {
+      "slug": "station-3e64ce47",
+      "nowplaying_url": "http://i2.streams.ovh:7017/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "The Swingin Cats - The Swingin' Cats - Χρυσόψαρο | Σ'αγαπώ σ'όλες τις γλώσσες [JBc]",
+      "history_url": "http://i2.streams.ovh:7017/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "station-6ae2e2dd",
+      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/cqbyibwg/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "ΚΟΥΜΙΩΤΗ ΡΕΝΑ - ΤΟ ΚΑΙΝΟΥΡΓΙΟ ΜΟΥ ΦΕΓΓΑΡΙ",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=cqbyibwg&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "station-753aef0e",
+      "nowplaying_url": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Marinela - Kardoula Mou De Se Malono"
+    },
+    {
+      "slug": "station-8ff2c530",
+      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fmtlns",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "π. Ἀθανασίου Μυτιληναίου - 22ον"
+    },
+    {
+      "slug": "station-b5eed20e",
+      "nowplaying_url": "https://rasp35.ddnsfree.com:3535/status-json.xsl?mount=%2Fpss",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "O_Osios_Paisios_Opos_ton_Ezisa___Athanasios_Rakobalis_06_03_2017"
+    },
+    {
+      "slug": "station-da7a1343",
+      "nowplaying_url": "https://solid9.streamupsolutions.com/rpc/vlerkait/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - GGRIKS NEW 15",
+      "history_url": "https://solid9.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=vlerkait&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "station-fa890617",
+      "nowplaying_url": "https://s2.e-resellers.gr/rpc/kviwebradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Dimitrios Bitzenis - Όσα μου χάρισες πίσω παίρνεις",
+      "history_url": "https://s2.e-resellers.gr/external/rpc.php?m=recenttracks.get&username=kviwebradio&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "status-107-7-thessaloniki",
+      "nowplaying_url": "https://loki.mental-media.gr/rpc/statusf1/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "STATUS FM - STATHMOS STO RADIOFONO SOU!",
+      "history_url": "https://loki.mental-media.gr/external/rpc.php?m=recenttracks.get&username=statusf1&limit=10",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "statusradio-94-2",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/statusradio/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "no_matching_track"
+    },
+    {
+      "slug": "studio-254-athens",
+      "nowplaying_url": "https://eu8.fastcast4u.com/rpc/s254/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Studio254 - Auto Dj mix By254"
+    },
+    {
+      "slug": "studio-545",
+      "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/studio_545",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "ΔΙΑΦΟΡΟΙ - ΕΝΑΣ  ΑΝΤΡΑΣ  ΠΟΥ  ΑΓΑΠΟΥΣΕ  ΔΙΧΩΣ  ΟΡΙΑ",
+      "played_at": 1788912679
+    },
+    {
+      "slug": "studio12-22",
+      "nowplaying_url": "https://cast6.asurahosting.com/rpc/radiosky/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - 118 ΠΩΛΟΥΝΤΑΙ ΟΝΕΙΡΑ",
+      "history_url": "https://cast6.asurahosting.com/external/rpc.php?m=recenttracks.get&username=radiosky&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "suburbia-parties-athens-hardcore-radio",
+      "nowplaying_url": "https://s9.webradio-hosting.com/rpc/suburbiaparties/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "DJ Limited - Crowd exciter Dj Limited 16th of Febuary 2025 recorded show",
+      "history_url": "https://s9.webradio-hosting.com/external/rpc.php?m=recenttracks.get&username=suburbiaparties&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "super-89-8-drama",
+      "nowplaying_url": "https://casty.youmix.gr/api/nowplaying/superfm898",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Station Offline"
+    },
+    {
+      "slug": "super-fm-101-thessaloniki",
+      "nowplaying_url": "http://ice.greekstream.net/status-json.xsl?mount=%2Fsuperfm",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " Zero One - Think"
+    },
+    {
+      "slug": "super-fm-thessaloniki",
+      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fsuperfm",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": " Zero One - Think"
+    },
+    {
+      "slug": "swu-fm",
+      "nowplaying_url": "https://admin.stream.rinse.fm/rpc/swu/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Unknown - Now Playing info goes here",
+      "history_url": "https://admin.stream.rinse.fm/external/rpc.php?m=recenttracks.get&username=swu&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "synora-98-7-kilkis",
+      "nowplaying_url": "http://sh.onweb.gr:8816/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Ηλίας Βρεττός - Μάτια Μου",
+      "history_url": "http://sh.onweb.gr:8816/played?sid=1&type=json",
+      "history_count": 18,
+      "history_status": "verified"
+    },
+    {
+      "slug": "thessradio-thessaloniki",
+      "nowplaying_url": "https://noc.ezhellas.com:30580/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ARLETA - TA HSYXA VRADIA",
+      "history_url": "https://noc.ezhellas.com:30580/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "thrakifm-99-8",
+      "nowplaying_url": "http://eco.onestreaming.com:8010/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Rob Thomas - Smooth",
+      "history_url": "http://eco.onestreaming.com:8010/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "time-90-9-kalamata",
+      "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/rmjbkagy/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Thodoris Ferris - STASOY LIGO",
+      "history_url": "https://solid67.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=rmjbkagy&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "tivoli-thessaloniki",
+      "nowplaying_url": "https://radio.streamings.gr/rpc/yellownewstream/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Holy Science - Red Sky",
+      "history_url": "https://radio.streamings.gr/external/rpc.php?m=recenttracks.get&username=yellownewstream&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "toc-radio-athens",
+      "nowplaying_url": "https://ec5.yesstreaming.net:1245/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "mologa15122025andreas1214"
+    },
+    {
+      "slug": "top-106-5-chania",
+      "nowplaying_url": "http://sc2.streamwithq.com:8086/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air: Groove Armada - My Friend",
+      "history_url": "http://sc2.streamwithq.com:8086/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "toxotis-fm-western-greece",
+      "nowplaying_url": "https://eco.onestreaming.com/rpc/toxotis/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "DJ Mike Llama - Llama Whippin' Intro",
+      "history_url": "https://eco.onestreaming.com/external/rpc.php?m=recenttracks.get&username=toxotis&limit=10",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "tracksaudio-com-80s-music",
+      "nowplaying_url": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_80s_music",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": " - A Whiter Shade of Pale (Procol Harum)",
+      "played_at": 1788923586
+    },
+    {
+      "slug": "tracksaudio-com-chill-house-music",
+      "nowplaying_url": "https://radiospromo.com/api/nowplaying/tracksaudio.com_-_chill_house_music",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Tony brush aka dancephoria FR - Groovement-  A Music- Bottom Line Records – BLR-9016 -1992",
+      "played_at": 1788923385
+    },
+    {
+      "slug": "trance-athena",
+      "nowplaying_url": "http://cast.streams.ovh:8008/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "James Rae - Back Again (Sly One vs Jurranes Global Remix)",
+      "history_url": "http://cast.streams.ovh:8008/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "trikala-4294896a",
+      "nowplaying_url": "http://s6.onweb.gr:8004/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Giannis Kalatzis;Litsa Diamanti - Delfini Delfinaki",
+      "history_url": "http://s6.onweb.gr:8004/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "tyflos-gr",
+      "nowplaying_url": "https://solid48.streamupsolutions.com/rpc/monaytgo/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "NIKOS TATASOPOULOS, BOUZOUKI KINGS & GIORGOS ZAMBETAS - KONTA STA KSIMEROMATA",
+      "history_url": "https://solid48.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=monaytgo&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "underground-gr-xanthi",
+      "nowplaying_url": "https://duthradio.ddns.net:8000/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "AzuraCast is Live!"
+    },
+    {
+      "slug": "up-radio",
+      "nowplaying_url": "https://athensupradio.evostream.gr/api/nowplaying/up_radio_-_athens",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "CHANNO - Vertebrae",
+      "played_at": 1788923752
+    },
+    {
+      "slug": "vanilla-radio-com-fresh-flavours-stream",
+      "nowplaying_url": "https://fresh.vanillaradio.com:8028/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "The Brothers Macklovitch & A-Trak - Lots of Love (feat. DRAMA)"
+    },
+    {
+      "slug": "vanilla-radio-smooth-flavors",
+      "nowplaying_url": "https://smooth.vanillaradio.com:8032/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Meshell Ndegeocello & Lianne La Havas - Dont Look Any Further"
+    },
+    {
+      "slug": "velvet-96-8",
+      "nowplaying_url": "http://s10.voscast.com:9942/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "QUEEN - THE SHOW MUST GO ON",
+      "history_url": "http://s10.voscast.com:9942/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "venus-amaliada",
+      "nowplaying_url": "https://cast6.my-control-panel.com/proxy/venus1051/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "request_failed",
+      "error": "The operation was aborted due to timeout",
+      "history_url": "https://cast6.my-control-panel.com/external/rpc.php?m=recenttracks.get&username=venus1051&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "venus-radio",
+      "nowplaying_url": "http://s1.onweb.gr:8410/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "no_matching_track",
+      "history_url": "http://s1.onweb.gr:8410/played?sid=1&type=json",
+      "history_count": 14,
+      "history_status": "verified"
+    },
+    {
+      "slug": "vip-radio-gr-athens",
+      "nowplaying_url": "https://stream3.proradio.gr/api/nowplaying/vipradio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "Moloko - Sing It Back - Boris Dlugosch Mix",
+      "played_at": 1788923826
+    },
+    {
+      "slug": "vips-radio-athens-athens",
+      "nowplaying_url": "https://azuracast.streams.gr/api/nowplaying/vipsradio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": "velvet dreamer - blissful journey (original mix)",
+      "played_at": 1788923719
+    },
+    {
+      "slug": "viral-102-7-athens",
+      "nowplaying_url": "http://5.104.111.225:8040/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now Playing info goes here",
+      "history_url": "http://5.104.111.225:8040/played?sid=1&type=json",
+      "history_count": 17,
+      "history_status": "verified"
+    },
+    {
+      "slug": "viva-88-3-katerini",
+      "nowplaying_url": "http://s3.onweb.gr:8030/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Elli Kokkinou - Ti Sou Xrostao",
+      "history_url": "http://s3.onweb.gr:8030/played?sid=1&type=json",
+      "history_count": 20,
+      "history_status": "verified"
+    },
+    {
+      "slug": "viva-fm-95-3-kozani",
+      "nowplaying_url": "http://s17.myradiostream.com:8742/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Now On Air:THE XX - INTRO (HD AUDIO)",
+      "history_url": "http://s17.myradiostream.com:8742/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "volos-rtv-87-9-volos",
+      "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "VolosRTV 87.9 Free Radio",
+      "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "volosrtv-volos",
+      "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "VolosRTV 87.9 Free Radio",
+      "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json",
+      "history_count": 1,
+      "history_status": "verified"
+    },
+    {
+      "slug": "we-radio-89-4-thessaloniki",
+      "nowplaying_url": "https://radio.1055rock.gr:32667/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "PURPLE DISCO MACHINE & KUNGS - SUBSTITUTION"
+    },
+    {
+      "slug": "web-argolida",
+      "nowplaying_url": "https://24streams.gr:8088/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "ΖΕΥΓΑΡΑ ΛΕΝΑ - ΘΑ ΘΑ - 06:17:30",
+      "history_url": "https://24streams.gr:8088/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "wild-radio",
+      "nowplaying_url": "http://sip.wildradio.gr:8037/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Mayday Parade - One-Man Drinking Games [WUE]",
+      "history_url": "http://sip.wildradio.gr:8037/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "x-radio",
+      "nowplaying_url": "http://cast.radiohost.ovh:8850/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Celine Dion - A New Day Has Come (Radio Remix)",
+      "history_url": "http://cast.radiohost.ovh:8850/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "x-radio-91-3-livadia",
+      "nowplaying_url": "https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Robin Schulz & Rita Ora & Tiago PZK - I'll Be There"
+    },
+    {
+      "slug": "xalastra-web-radio-thessaloniki",
+      "nowplaying_url": "https://azuralive.streams.ovh/api/nowplaying/xalastraradio",
+      "metadata_server": "azuracast",
+      "nowplaying_status": "verified",
+      "track": " - mix xalastra radio το ραδιοφωνο στο ιντερνετ",
+      "played_at": 1788868560
+    },
+    {
+      "slug": "xfm-gr",
+      "nowplaying_url": "https://solid1.streamupsolutions.com/rpc/zizthduh/streaminfo.get",
+      "metadata_server": "centovacast",
+      "nowplaying_status": "verified",
+      "track": "Ivy - Thinking About You",
+      "history_url": "https://solid1.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=zizthduh&limit=10",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "yellow-thessaloniki",
+      "nowplaying_url": "https://ice.greekstream.net/status-json.xsl?mount=%2Fyellow",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "Yellow Radio 101.7 - To Radiofwno sthn polh tou Theou !"
+    },
+    {
+      "slug": "yes-91-2-patra",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1060/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "Shakira - Dai Dai (feat Burna Boy)",
+      "history_url": "https://ams-pioneer02.dedicateware.com:1060/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    },
+    {
+      "slug": "you-98-7-alexandroupolis",
+      "nowplaying_url": "http://eco.onestreaming.com:8880/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast",
+      "nowplaying_status": "verified",
+      "track": "﻿DAVE TEMS - RAINDANCE"
+    },
+    {
+      "slug": "zooradio-90-8",
+      "nowplaying_url": "http://s10.voscast.com:9940/stats?sid=1&json=1",
+      "metadata_server": "shoutcast",
+      "nowplaying_status": "verified",
+      "track": "JONAS BLUE & MALIVE - EDGE OF DESIRE",
+      "history_url": "http://s10.voscast.com:9940/played?sid=1&type=json",
+      "history_count": 10,
+      "history_status": "verified"
+    }
+  ]
+}
