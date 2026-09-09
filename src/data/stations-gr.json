@@ -8005,7 +8005,7 @@
       "melodic techno",
       "progressive house"
     ],
-    "language": "egnlish",
+    "language": "english",
     "bitrate": 192,
     "codec": "MP3",
     "clickcount": 21,
@@ -32233,7 +32233,7 @@
     "name": "Talos 88.6",
     "state": "Crete",
     "city": "Rethimno",
-    "stream_url": "https://tls-chrome.live24.gr/1206?http://eco.onestreaming.com:8840/stream",
+    "stream_url": "https://tls-chrome.live24.gr/1206",
     "homepage": "https://www.talosfm.gr/",
     "favicon": "/station-icons/talos-88-6-rethimno.jpg",
     "genres": [
@@ -46640,7 +46640,8 @@
     "geo_lat": 40.62783230918665,
     "geo_long": 22.9638022184372,
     "city": "Thessaloniki",
-    "nowplaying_url": "https://centova.gr-net.gr/rpc/iraklisradio/streaminfo.get"
+    "nowplaying_url": "https://centova.gr-net.gr/rpc/iraklisradio/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "kefalonication-radio-kefalonia",
@@ -47055,7 +47056,7 @@
       "speed metal",
       "thrash metal"
     ],
-    "language": "englsih",
+    "language": "english",
     "bitrate": 192,
     "codec": "MP3",
     "clickcount": 0,
@@ -47608,7 +47609,7 @@
     "slug": "radio-akou-athens",
     "stationuuid": "63e00df3-cf20-4845-842a-7013c1149560",
     "name": "Radio Akou+",
-    "state": "",
+    "state": "Attica",
     "stream_url": "https://everest.streams.ovh/akousyn",
     "homepage": "https://akousyn.de/",
     "favicon": "/station-icons/radio-akou-athens.webp",
@@ -48457,7 +48458,7 @@
       "electronic",
       "house"
     ],
-    "language": "deutch",
+    "language": "german",
     "bitrate": 192,
     "codec": "MP3",
     "clickcount": 1,
