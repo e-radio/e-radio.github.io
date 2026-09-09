@@ -1,0 +1,476 @@
+{
+  "checked": 67,
+  "verified": 51,
+  "added": 51,
+  "results": [
+    {
+      "slug": "classic-love-97-5-athens-greece",
+      "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "bottle-o-groove",
+      "endpoint": "https://www.radiojar.com/api/stations/n8buhxbsk9duv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "alpha-98-9",
+      "endpoint": "https://www.radiojar.com/api/stations/xcdg6yggzfeuv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "camara-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/252ry9dgytzuv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "cosmos-103-8-katerini",
+      "endpoint": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "alepou-radio",
+      "endpoint": "https://www.radiojar.com/api/stations/h693vkmhe5uvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "apopsi-gr-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/radio-apopsi/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "cosmosfm-103-8",
+      "endpoint": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "bobos-family-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/3h7ncy1y9vzuv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "athens-free-radio-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/e206r95qsp8uv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "89-rainbow-christmas-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/4nwwcyesv8hvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "free-radio",
+      "endpoint": "https://www.radiojar.com/api/stations/e206r95qsp8uv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "love-classic-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "99-1-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/t0x7dyqmsuhvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "love-xmas-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "love-trap-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/tkeve70hqd0uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "garavelas",
+      "endpoint": "https://www.radiojar.com/api/stations/garavelas-radio-gr/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "music-ward",
+      "endpoint": "https://www.radiojar.com/api/stations/opa-radio/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "crystal-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/htczr9epmchvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "eternal",
+      "endpoint": "https://www.radiojar.com/api/stations/su1eg54afzwtv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "lefkatas-90-5-lefkada",
+      "endpoint": "https://www.radiojar.com/api/stations/kdf46t0c1quvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "max-93-4-patra",
+      "endpoint": "https://www.radiojar.com/api/stations/qt9gf4hhdwzuv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "fade-radio-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/072mdmpbfq8uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "love-z-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/20n2b23u7mruv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "pepper-96-6",
+      "endpoint": "https://www.radiojar.com/api/stations/pepper/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "picasso-102-7-patra",
+      "endpoint": "https://www.radiojar.com/api/stations/s87smqqfewzuv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "jazz-breeze-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/8tqwqkrhk48uv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "purple-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/weqykpegsm5tv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "monkey-bros-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "radio-apopsi",
+      "endpoint": "https://www.radiojar.com/api/stations/radio-apopsi/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "polisview-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/gzr6836ty7zuv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "play-gold",
+      "endpoint": "https://www.radiojar.com/api/stations/431m8b6qcm5tv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "nitro-102-5-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/29e98fkcks3vv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "pemptousia",
+      "endpoint": "https://www.radiojar.com/api/stations/48cz219puzzuv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "ogdoo-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/u8c2yr3sp42vv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "rainbow-89-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/083wqknmsuhvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "play-lounge",
+      "endpoint": "https://www.radiojar.com/api/stations/n6frf0ct274tv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "musica-radio",
+      "endpoint": "https://www.radiojar.com/api/stations/w6c6bssk95vtv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 2
+    },
+    {
+      "slug": "pucca-radio",
+      "endpoint": "https://www.radiojar.com/api/stations/mecdkyuevp8uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "rainbow-89-alternative-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/vhknc3c8ktuvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "radio-paris-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/kddqnna7yxmtv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "radiotsambouno",
+      "endpoint": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 13
+    },
+    {
+      "slug": "radio-x",
+      "endpoint": "https://www.radiojar.com/api/stations/yv5xu5h7zwwtv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "rainbow-89-pop-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/ztqh29c8ktuvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "roxx",
+      "endpoint": "https://www.radiojar.com/api/stations/aay95tkmb/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "radiomak-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/d3n35mr218hvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "xmas-love-97-5-athens-greece",
+      "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "rainbow-89-thessaloniki-a0d7a649",
+      "endpoint": "https://www.radiojar.com/api/stations/akf7zea5kzuvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "radiobird",
+      "endpoint": "https://www.radiojar.com/api/stations/6uqfysrasm0uv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "karpathos",
+      "endpoint": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 13
+    },
+    {
+      "slug": "sfera-96-6-patra",
+      "endpoint": "https://www.radiojar.com/api/stations/mg2vq26eewzuv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "24-7-cyclades",
+      "endpoint": "https://www.radiojar.com/api/stations/f4uubny2uexb/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "souxe",
+      "endpoint": "https://www.radiojar.com/api/stations/ugs98yvkb/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "radio-thessaloniki",
+      "endpoint": "https://www.radiojar.com/api/stations/u34mus9cy72vv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "monkey-bros-radio",
+      "endpoint": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "live-95-8-syros",
+      "endpoint": "https://www.radiojar.com/api/stations/nkqh9th47vzuv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 13
+    },
+    {
+      "slug": "voice-102-5",
+      "endpoint": "https://www.radiojar.com/api/stations/u52ufw1qayduv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "90-patra",
+      "endpoint": "https://www.radiojar.com/api/stations/819r8wupdrruv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "voice-radio-gr-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/u52ufw1qayduv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "athens-ccba37c5",
+      "endpoint": "https://www.radiojar.com/api/stations/ybz2g5nh5ehvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "strummer-radio-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/fg3tm92rxeruv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "sports-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/ypdwy53ce6hvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "102-2-1-chalkida",
+      "endpoint": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "skylos-fm-athens-greece",
+      "endpoint": "https://www.radiojar.com/api/stations/819r8wupdrruv/tracks/",
+      "verified": false,
+      "added": false,
+      "tracks": 0
+    },
+    {
+      "slug": "enlefko-87-7-attica-athens",
+      "endpoint": "https://www.radiojar.com/api/stations/enlefko877/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "1-aliveri",
+      "endpoint": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    },
+    {
+      "slug": "uncut-gr-chania",
+      "endpoint": "https://www.radiojar.com/api/stations/s2kb0626cm8uv/tracks/",
+      "verified": true,
+      "added": true,
+      "tracks": 15
+    }
+  ]
+}

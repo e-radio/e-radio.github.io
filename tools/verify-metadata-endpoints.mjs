@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // Verify saved URLs without changing station records.
+import { radiojarHistoryTracks } from '../src/lib/radiojar.mjs';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { centovaHistoryTracks } from '../src/lib/centovacast-history.mjs';
 const root = new URL('../', import.meta.url);
@@ -46,6 +47,7 @@ function currentText(payload, station) {
   }
 }
 function historyCount(payload, server) {
+  if (server === 'radiojar') return radiojarHistoryTracks(payload).length;
   if (server === 'centovacast') return centovaHistoryTracks(payload).length;
   if (server === 'azuracast') return (payload?.song_history || []).filter(e => nonempty(e.song?.text) || nonempty(e.song?.title)).length;
   if (server === 'shoutcast') return (Array.isArray(payload) ? payload : []).filter(e => nonempty(e.title)).length;

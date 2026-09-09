@@ -1044,7 +1044,8 @@
         "bitrate": 128,
         "codec": "MP3"
       }
-    ]
+    ],
+    "history_url": "https://www.radiojar.com/api/stations/4nwwcyesv8hvv/tracks/"
   },
   {
     "slug": "89-6-ioannina-deejay",
@@ -1291,7 +1292,8 @@
         "bitrate": 128,
         "codec": "MP3"
       }
-    ]
+    ],
+    "history_url": "https://www.radiojar.com/api/stations/t0x7dyqmsuhvv/tracks/"
   },
   {
     "slug": "99-7-1-tripoli",
@@ -1987,7 +1989,8 @@
         "bitrate": 192,
         "codec": "MP3"
       }
-    ]
+    ],
+    "history_url": "https://www.radiojar.com/api/stations/h693vkmhe5uvv/tracks/"
   },
   {
     "slug": "alimos-alimos",
@@ -2688,7 +2691,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/radio-apopsi/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/radio-apopsi/tracks/"
   },
   {
     "slug": "apps-96-6-alexandroupolis",
@@ -3158,7 +3162,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/e206r95qsp8uv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/e206r95qsp8uv/tracks/"
   },
   {
     "slug": "athens-jazz-athens",
@@ -4551,7 +4556,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/3h7ncy1y9vzuv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/3h7ncy1y9vzuv/tracks/"
   },
   {
     "slug": "bootleg",
@@ -4605,7 +4611,7 @@
     "city": "Athens",
     "stream_url": "https://stream.radiojar.com/n8buhxbsk9duv",
     "homepage": "https://www.bottleogroove.com/",
-    "favicon": "/station-icons/bottle-o-groove.jpg",
+    "favicon": "/station-icons/bottle-o-groove.png",
     "genres": [
       "blues",
       "funk",
@@ -4624,7 +4630,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/n8buhxbsk9duv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/n8buhxbsk9duv/tracks/"
   },
   {
     "slug": "box-radio-104-9-rhodes",
@@ -4771,7 +4778,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/252ry9dgytzuv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/252ry9dgytzuv/tracks/"
   },
   {
     "slug": "candia-93-6-heraclion",
@@ -5757,7 +5765,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/tracks/"
   },
   {
     "slug": "cosmos-93-serres",
@@ -5904,7 +5913,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/tracks/"
   },
   {
     "slug": "creative-commons-radio",
@@ -6065,7 +6075,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/htczr9epmchvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/htczr9epmchvv/tracks/"
   },
   {
     "slug": "cult-99-8-lamia",
@@ -9379,7 +9390,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/su1eg54afzwtv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/su1eg54afzwtv/tracks/"
   },
   {
     "slug": "euro-sky-100-4-orestiada",
@@ -10400,7 +10412,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/e206r95qsp8uv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/e206r95qsp8uv/tracks/"
   },
   {
     "slug": "freespirits-services",
@@ -11034,7 +11047,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/garavelas-radio-gr/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/garavelas-radio-gr/tracks/"
   },
   {
     "slug": "garavelas-radio-gr",
@@ -12763,7 +12777,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/8tqwqkrhk48uv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/8tqwqkrhk48uv/tracks/"
   },
   {
     "slug": "jazz-cafe-athens",
@@ -14468,7 +14483,8 @@
         "bitrate": 192,
         "codec": "MP3"
       }
-    ]
+    ],
+    "history_url": "https://www.radiojar.com/api/stations/kdf46t0c1quvv/tracks/"
   },
   {
     "slug": "legend-101-6-xanthi",
@@ -16887,7 +16903,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/tracks/"
   },
   {
     "slug": "mood-radio",
@@ -17644,7 +17661,8 @@
         "bitrate": 128,
         "codec": "MP3"
       }
-    ]
+    ],
+    "history_url": "https://www.radiojar.com/api/stations/opa-radio/tracks/"
   },
   {
     "slug": "musica-radio",
@@ -17670,7 +17688,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/w6c6bssk95vtv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/w6c6bssk95vtv/tracks/"
   },
   {
     "slug": "musicartclub-radio",
@@ -18739,7 +18758,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/u8c2yr3sp42vv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/u8c2yr3sp42vv/tracks/"
   },
   {
     "slug": "oixalia-trikala",
@@ -20016,7 +20036,8 @@
       }
     ],
     "nowplaying_url": "https://www.radiojar.com/api/stations/pepper/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/pepper/tracks/"
   },
   {
     "slug": "picasso-102-7-patra",
@@ -20182,7 +20203,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/431m8b6qcm5tv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/431m8b6qcm5tv/tracks/"
   },
   {
     "slug": "play-lounge",
@@ -20207,7 +20229,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/n6frf0ct274tv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/n6frf0ct274tv/tracks/"
   },
   {
     "slug": "play-radio-patra",
@@ -20482,7 +20505,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/gzr6836ty7zuv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/gzr6836ty7zuv/tracks/"
   },
   {
     "slug": "politica-heraclion",
@@ -21079,7 +21103,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/weqykpegsm5tv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/weqykpegsm5tv/tracks/"
   },
   {
     "slug": "pylia",
@@ -21518,7 +21543,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/radio-apopsi/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/radio-apopsi/tracks/"
   },
   {
     "slug": "radio-arhaggelos",
@@ -26989,7 +27015,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/kddqnna7yxmtv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/kddqnna7yxmtv/tracks/"
   },
   {
     "slug": "radio-patra-106-5",
@@ -27264,7 +27291,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/yv5xu5h7zwwtv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/yv5xu5h7zwwtv/tracks/"
   },
   {
     "slug": "radio-yellow-gr",
@@ -27441,7 +27469,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/6uqfysrasm0uv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/6uqfysrasm0uv/tracks/"
   },
   {
     "slug": "radioegio-achaia",
@@ -27541,7 +27570,8 @@
     "geo_lat": 37.975262620149614,
     "geo_long": 23.73698854126296,
     "nowplaying_url": "https://www.radiojar.com/api/stations/d3n35mr218hvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/d3n35mr218hvv/tracks/"
   },
   {
     "slug": "radionotes-karystos",
@@ -27631,7 +27661,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/tracks/"
   },
   {
     "slug": "rain-music-radio-athens",
@@ -27682,7 +27713,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/083wqknmsuhvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/083wqknmsuhvv/tracks/"
   },
   {
     "slug": "rainbow-89-alternative-thessaloniki",
@@ -27705,7 +27737,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/vhknc3c8ktuvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/vhknc3c8ktuvv/tracks/"
   },
   {
     "slug": "rainbow-89-pop-thessaloniki",
@@ -27728,7 +27761,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/ztqh29c8ktuvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/ztqh29c8ktuvv/tracks/"
   },
   {
     "slug": "rainbow-89-thessaloniki-a0d7a649",
@@ -27753,7 +27787,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/akf7zea5kzuvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/akf7zea5kzuvv/tracks/"
   },
   {
     "slug": "real-fm",
@@ -28734,7 +28769,8 @@
         "bitrate": 128,
         "codec": "MP3"
       }
-    ]
+    ],
+    "history_url": "https://www.radiojar.com/api/stations/aay95tkmb/tracks/"
   },
   {
     "slug": "rso-91-7-thessaloniki",
@@ -30379,7 +30415,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/ugs98yvkb/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/ugs98yvkb/tracks/"
   },
   {
     "slug": "spirto-104-7-ioannina",
@@ -31274,7 +31311,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/fg3tm92rxeruv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/fg3tm92rxeruv/tracks/"
   },
   {
     "slug": "studio-19",
@@ -32666,7 +32704,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/s2kb0626cm8uv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/s2kb0626cm8uv/tracks/"
   },
   {
     "slug": "underground-gr-xanthi",
@@ -33637,8 +33676,8 @@
     "slug": "xfm-gr",
     "stationuuid": "c8314a30-b5ee-4323-9d90-e19d96cb43da",
     "name": "XFM GR",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://solid1.streamupsolutions.com/proxy/zizthduh?mp=/=stream",
     "homepage": "https://www.xfm.gr/",
     "favicon": "/station-icons/xfm-gr.png",
@@ -34241,7 +34280,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/nkqh9th47vzuv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/nkqh9th47vzuv/tracks/"
   },
   {
     "slug": "99-2-egio",
@@ -35126,7 +35166,7 @@
     "state": null,
     "city": null,
     "stream_url": "https://solid33.streamupsolutions.com/proxy/xbygwcwv/stream",
-    "homepage": "https://solid33.streamupsolutions.com/proxy/xbygwcwv/stream",
+    "homepage": "https://www.thewebradio.gr/",
     "favicon": "/station-icons/gr-placeholder.webp",
     "genres": [],
     "language": null,
@@ -35357,7 +35397,8 @@
     "favicon": "/station-icons/station-da7a1343.png",
     "genres": [
       "greek pop",
-      "mainstream"
+      "mainstream",
+      "top 40"
     ],
     "language": null,
     "bitrate": 128,
@@ -40043,7 +40084,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/f4uubny2uexb/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/f4uubny2uexb/tracks/"
   },
   {
     "slug": "patra-023f335f",
@@ -40544,7 +40586,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/u34mus9cy72vv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/u34mus9cy72vv/tracks/"
   },
   {
     "slug": "106-6-larisa-32c6a3fd",
@@ -41969,7 +42012,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/ybz2g5nh5ehvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/ybz2g5nh5ehvv/tracks/"
   },
   {
     "slug": "sports-athens",
@@ -41994,7 +42038,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/ypdwy53ce6hvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/ypdwy53ce6hvv/tracks/"
   },
   {
     "slug": "102-samos",
@@ -42119,7 +42164,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/tracks/"
   },
   {
     "slug": "station-4fa3c805",
@@ -44086,7 +44132,8 @@
     "geo_long": null,
     "city": "Chalkida",
     "nowplaying_url": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/tracks/"
   },
   {
     "slug": "105fm-mytilini",
@@ -45484,7 +45531,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/enlefko877/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/enlefko877/tracks/"
   },
   {
     "slug": "figaro-discotheque",
@@ -46682,7 +46730,8 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/tracks/"
   },
   {
     "slug": "more-fm-103-9-alexandroupoli-alexandroupolis",
@@ -48365,7 +48414,9 @@
     "stream_url": "https://stream.radiojar.com/u52ufw1qayduv",
     "homepage": "https://www.voice1025.gr/",
     "favicon": "/station-icons/voice-102-5.webp",
-    "genres": [],
+    "genres": [
+      "pop rock"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -48377,32 +48428,14 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://www.radiojar.com/api/stations/u52ufw1qayduv/now_playing/",
-    "metadata_server": "radiojar"
-  },
-  {
-    "slug": "voice-radio-gr-athens",
-    "stationuuid": "1008d7ee-d231-4ec0-a664-219b82eacc3d",
-    "name": "Voice Radio GR",
-    "state": "Attica",
-    "city": "Athens",
-    "stream_url": "https://stream.radiojar.com/u52ufw1qayduv",
-    "homepage": "https://www.voice1025.gr/",
-    "favicon": "/station-icons/voice-radio-gr-athens.webp",
-    "genres": [
-      "pop rock"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/u52ufw1qayduv/tracks/",
+    "aliases": [
+      "voice-radio-gr-athens"
     ],
-    "language": null,
-    "bitrate": 256,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://www.radiojar.com/api/stations/u52ufw1qayduv/now_playing/",
-    "metadata_server": "radiojar"
+    "alternate_stationuuids": [
+      "1008d7ee-d231-4ec0-a664-219b82eacc3d"
+    ]
   },
   {
     "slug": "we-radio-89-4-thessaloniki",
@@ -49329,7 +49362,8 @@
     "geo_long": 24.03809130191803,
     "city": "Aliveri",
     "nowplaying_url": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/now_playing/",
-    "metadata_server": "radiojar"
+    "metadata_server": "radiojar",
+    "history_url": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/tracks/"
   },
   {
     "slug": "athens-0d05da31",

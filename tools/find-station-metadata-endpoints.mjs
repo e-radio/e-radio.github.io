@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { radiojarEndpoint, radiojarHasTrack } from "../src/lib/radiojar.mjs";
+import { radiojarEndpoint, radiojarHasTrack, radiojarHistoryEndpoint, radiojarHistoryTracks } from "../src/lib/radiojar.mjs";
 
 import { centovaHistoryTracks } from "../src/lib/centovacast-history.mjs";
 
@@ -175,7 +175,10 @@ const discover = async (station) => {
   const radiojar = radiojarEndpoint(station.stream_url);
   if (radiojar) {
     const payload = await fetchPayload(radiojar);
-    return radiojarHasTrack(payload) ? { nowplaying_url: radiojar, metadata_server: "radiojar" } : null;
+    if (!radiojarHasTrack(payload)) return null;
+    const history = radiojarHistoryEndpoint(radiojar);
+    const tracks = history ? radiojarHistoryTracks(await fetchPayload(history)) : [];
+    return { nowplaying_url: radiojar, metadata_server: "radiojar", ...(tracks.length ? { history_url: history } : {}) };
   }
   const parts = streamParts(station.stream_url);
   if (!parts) return null;

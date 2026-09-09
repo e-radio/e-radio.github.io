@@ -9,6 +9,7 @@ assertUniqueStationSlugs(JSON.parse(readFileSync(new URL('./src/data/stations-gr
 export default defineConfig({
   output: "static",
   redirects: {
+    "/stations/voice-radio-gr-athens": "/stations/voice-102-5/",
     "/stations/picasso-patra": "/stations/picasso-102-7-patra/",
     "/stations/pemptousia-fm-athos": "/stations/pemptousia/",
     "/stations/dmst": "/stations/music-ward/",

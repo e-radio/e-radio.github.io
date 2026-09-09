@@ -838,6 +838,7 @@ const structuredData = {
   <div id="player-config" data-config={JSON.stringify(playerScriptConfig)} hidden></div>
   <script>
 // @ts-nocheck
+    import { radiojarHistoryTracks } from "../../lib/radiojar.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
     import { centovaHistoryTracks } from "../../lib/centovacast-history.mjs";
     const configEl = document.getElementById('player-config');
@@ -1641,7 +1642,9 @@ const structuredData = {
         if (contentType.includes('application/json') || /^[\s]*[\[{]/.test(raw)) {
           try {
             const parsed = JSON.parse(raw);
-            const jsonPayload = playerConfig.serverType === 'centovacast'
+            const jsonPayload = playerConfig.serverType === 'radiojar'
+              ? { song_history: radiojarHistoryTracks(parsed) }
+              : playerConfig.serverType === 'centovacast'
               ? { song_history: centovaHistoryTracks(parsed) }
               : Array.isArray(parsed) && playerConfig.serverType === 'shoutcast'
               ? {

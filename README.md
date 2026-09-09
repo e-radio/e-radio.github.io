@@ -207,4 +207,10 @@ Run `python3 tools/extract-centovacast-tls.py` to read `proxytuneinurltls` from 
 
 ### Radiojar now-playing endpoints
 
-Radiojar streams use `https://www.radiojar.com/api/stations/STREAM_ID/now_playing/`. The main metadata discovery script now checks this endpoint for Radiojar streams. Run `node tools/find-radiojar-metadata.mjs` to check Radiojar URLs in station defaults and saved stream alternatives, save verified endpoints only where metadata is missing, and write `reports/radiojar-metadata.json`. Existing metadata configurations are preserved. The player displays Radiojar artist/title and `thumb` artwork. Empty or failed responses are not added; no history endpoint is assumed.
+Radiojar streams use `https://www.radiojar.com/api/stations/STREAM_ID/now_playing/`. The main metadata discovery script now checks this endpoint for Radiojar streams. Run `node tools/find-radiojar-metadata.mjs` to check Radiojar URLs in station defaults and saved stream alternatives, save verified endpoints only where metadata is missing, and write `reports/radiojar-metadata.json`. Existing metadata configurations are preserved. The player displays Radiojar artist/title and `thumb` artwork. Empty or failed responses are not added.
+
+### Radiojar song history
+
+Radiojar history uses `https://www.radiojar.com/api/stations/STREAM_ID/tracks/`. Station pages display up to 15 completed tracks, newest first, with artist, title, available artwork, and playback time. History remains separate from the current song.
+
+Run `node tools/find-radiojar-history.mjs` to check configured Radiojar stations and save missing `history_url` fields only when usable history is returned. Results are written to `reports/radiojar-history.json`; existing history URLs are preserved. Main metadata discovery also checks history, and the endpoint verification tool understands Radiojar history responses. An empty response does not qualify as verified history.
