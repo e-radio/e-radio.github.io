@@ -44,6 +44,7 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
   <audio id="live-tracks-audio" preload="none"></audio>
 </Layout>
 <script>
+  import { metadataPollDelay } from '../lib/metadata-polling.mjs';
   import { icecastTrack } from '../lib/icecast.mjs';
   import { radiojarSong } from '../lib/radiojar.mjs';
   const settings = document.querySelector<HTMLElement>('#live-metadata-config')!;
@@ -95,13 +96,14 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
     const endpoint = card.dataset.endpoint!;
     groups.set(endpoint, [...(groups.get(endpoint) || []), card]);
   });
+  const nextRefresh = new Map<string, number>();
   let refreshing = false;
   let timer: ReturnType<typeof setTimeout>;
   async function refresh() {
     clearTimeout(timer);
     if (document.hidden || refreshing) return;
     refreshing = true;
-    const queue = [...groups.entries()];
+    const queue = [...groups.entries()].filter(([endpoint]) => (nextRefresh.get(endpoint) || 0) <= Date.now());
     async function worker() {
       while (queue.length && !document.hidden) {
         const [endpoint, entries] = queue.shift()!;
@@ -112,6 +114,8 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
           const raw = text.includes('Markdown Content:') ? text.split('Markdown Content:').slice(1).join('Markdown Content:').trim() : text;
           const data = JSON.parse(raw);
           if (data?.type === 'error') throw new Error('Metadata unavailable');
+          const delay = Math.min(...entries.map(card => metadataPollDelay(card.dataset.server, data, pollInterval)));
+          nextRefresh.set(endpoint, Date.now() + delay);
           for (const card of entries) {
             const centova = card.dataset.server === 'centovacast' && Array.isArray(data?.data) ? data.data[0] : null;
             const source = centova?.track;
@@ -136,6 +140,7 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
             card.querySelector('.track-title')!.removeAttribute('title');
           }
         } catch {
+          nextRefresh.set(endpoint, Date.now() + pollInterval);
           entries.forEach(card => {
             if (!card.dataset.loaded) card.querySelector('.track-title')!.textContent = 'Song information unavailable';
             card.querySelector('.track-title')!.setAttribute('title', 'Metadata could not be refreshed. Retrying shortly.');
@@ -146,7 +151,10 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
     try { await Promise.all(Array.from({ length: 6 }, worker)); }
     finally {
       refreshing = false;
-      if (!document.hidden) timer = setTimeout(refresh, pollInterval);
+      if (!document.hidden && groups.size) {
+        const due = Math.min(...[...groups.keys()].map(endpoint => nextRefresh.get(endpoint) || 0));
+        timer = setTimeout(refresh, Math.max(0, due - Date.now()));
+      }
     }
   }
   document.addEventListener('visibilitychange', () => { clearTimeout(timer); if (!document.hidden) refresh(); });

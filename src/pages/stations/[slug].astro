@@ -838,6 +838,7 @@ const structuredData = {
   <div id="player-config" data-config={JSON.stringify(playerScriptConfig)} hidden></div>
   <script>
 // @ts-nocheck
+    import { metadataPollDelay } from "../../lib/metadata-polling.mjs";
     import { radiojarHistoryTracks } from "../../lib/radiojar.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
     import { centovaHistoryTracks } from "../../lib/centovacast-history.mjs";
@@ -1724,9 +1725,11 @@ const structuredData = {
     };
 
     let metadataPollInFlight = false;
+    let nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
     const pollNowPlaying = async () => {
       if (document.hidden || metadataPollInFlight || !playerConfig.nowPlayingEndpoint || !nowPlayingEl) return;
       metadataPollInFlight = true;
+      nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
 
       try {
         const response = await fetchMetadata(playerConfig.nowPlayingEndpoint);
@@ -1757,6 +1760,7 @@ const structuredData = {
         if (!historyApplied && !historyDisabled) {
           await fetchAndApplyHistory({ force: textChanged });
         }
+        nextMetadataDelay = metadataPollDelay(playerConfig.serverType, data, playerConfig.pollIntervalMs || 15000);
       } catch (error) {
         console.error('Now playing request failed', error);
         // Preserve the last successful song and history during temporary failures.
@@ -1770,10 +1774,11 @@ const structuredData = {
       let metadataTimer;
       const refreshMetadata = async () => {
         clearTimeout(metadataTimer);
+        if (metadataPollInFlight) return;
         await pollNowPlaying();
         clearTimeout(metadataTimer);
         if (!document.hidden) {
-          metadataTimer = setTimeout(refreshMetadata, playerConfig.pollIntervalMs || 15000);
+          metadataTimer = setTimeout(refreshMetadata, nextMetadataDelay);
         }
       };
       document.addEventListener('visibilitychange', () => {
