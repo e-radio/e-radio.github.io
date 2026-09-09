@@ -1,0 +1,540 @@
+{
+  "checked": 90,
+  "extracted": 78,
+  "verified_upgrades": 0,
+  "written": true,
+  "results": [
+    {
+      "slug": "02-dance-radio-piraeus",
+      "endpoint": "https://centova.gr-net.gr/rpc/dimitrio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://centova.gr-net.gr/proxy/dimitrio/stream"
+    },
+    {
+      "slug": "102-4-kozani",
+      "endpoint": "https://radio.streamings.gr/rpc/melodia1024/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "103-9-aliveri",
+      "endpoint": "https://stream.iplayradio.net/rpc/taminaikiradiofonia/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://stream.iplayradio.net/proxy/taminaikiradiofonia/stream"
+    },
+    {
+      "slug": "104-3-fm",
+      "endpoint": "https://eu1.fastcast4u.com/rpc/afreeapo/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu1.fastcast4u.com/proxy/afreeapo/stream"
+    },
+    {
+      "slug": "104-alexandroupolis",
+      "endpoint": "https://eco.onestreaming.com/rpc/elladafm/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/elladafm/stream"
+    },
+    {
+      "slug": "1134-chania",
+      "endpoint": "https://eu8.fastcast4u.com/rpc/chaniaradio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu8.fastcast4u.com/proxy/chaniaradio/stream"
+    },
+    {
+      "slug": "80smania-gr",
+      "endpoint": "https://solid9.streamupsolutions.com/rpc/glzzkced/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid9.streamupsolutions.com/proxy/glzzkced/stream"
+    },
+    {
+      "slug": "88miso-thessaloniki",
+      "endpoint": "https://solid33.streamupsolutions.com/rpc/sxxaojkx/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid33.streamupsolutions.com/proxy/sxxaojkx/stream"
+    },
+    {
+      "slug": "97-9-limnos",
+      "endpoint": "https://streaming.sbzsystems.com/rpc/fm00/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://streaming.sbzsystems.com/proxy/fm00/stream"
+    },
+    {
+      "slug": "action-98-2-ioannina",
+      "endpoint": "https://solid1.streamupsolutions.com/rpc/jkzjmwru/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid1.streamupsolutions.com/proxy/jkzjmwru/stream"
+    },
+    {
+      "slug": "anemos-95-6-samos",
+      "endpoint": "https://solid48.streamupsolutions.com/rpc/vqdawvmf/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid48.streamupsolutions.com/proxy/vqdawvmf/stream"
+    },
+    {
+      "slug": "aqua-radio-the-80s",
+      "endpoint": "https://s2.e-resellers.gr/rpc/aquadisco80s/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/aquadisco80s/stream"
+    },
+    {
+      "slug": "aquarius-pyrgos",
+      "endpoint": "https://cast6.my-control-panel.com/rpc/aquarius1055/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://cast6.my-control-panel.com/proxy/aquarius1055/stream"
+    },
+    {
+      "slug": "arty-thessaloniki",
+      "endpoint": "https://radio.streamings.gr/rpc/artyradio/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "bar-legend-radio-larisa",
+      "endpoint": "https://solid24.streamupsolutions.com/rpc/nilxzqeg/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid24.streamupsolutions.com/proxy/nilxzqeg/stream"
+    },
+    {
+      "slug": "berock-radio-b3b5204f",
+      "endpoint": "https://solid55.streamupsolutions.com:2199/rpc/nblxvyrp/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid55.streamupsolutions.com/proxy/nblxvyrp/stream"
+    },
+    {
+      "slug": "black-radio",
+      "endpoint": "https://solid48.streamupsolutions.com/rpc/qcnwnozj/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid48.streamupsolutions.com/proxy/qcnwnozj/stream"
+    },
+    {
+      "slug": "chania-rock-fm-96-8-chania",
+      "endpoint": "https://solid33.streamupsolutions.com/rpc/alaqatab/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid33.streamupsolutions.com/proxy/alaqatab/stream"
+    },
+    {
+      "slug": "chios-chios",
+      "endpoint": "https://eagle.streemlion.com/rpc/experim1/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "city-100-heraclion",
+      "endpoint": "https://eco.onestreaming.com/rpc/cityfm/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/cityfm/stream"
+    },
+    {
+      "slug": "coffee-web-radio",
+      "endpoint": "https://solid9.streamupsolutions.com/rpc/teqgebwz/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid9.streamupsolutions.com/proxy/teqgebwz/stream"
+    },
+    {
+      "slug": "dream-88-1",
+      "endpoint": "https://solid41.streamupsolutions.com/rpc/jhhzdwjo/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid41.streamupsolutions.com/proxy/jhhzdwjo/stream"
+    },
+    {
+      "slug": "dreamer-thessaloniki-9795c59e",
+      "endpoint": "https://cast1.asurahosting.com/rpc/ermis/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://cast1.asurahosting.com/proxy/ermis/stream"
+    },
+    {
+      "slug": "easy-93-2",
+      "endpoint": "https://solid48.streamupsolutions.com/rpc/lhlamody/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid48.streamupsolutions.com/proxy/lhlamody/stream"
+    },
+    {
+      "slug": "emusic-site-attica-athens",
+      "endpoint": "https://solid67.streamupsolutions.com/rpc/wvsivbgn/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid67.streamupsolutions.com/proxy/wvsivbgn/stream"
+    },
+    {
+      "slug": "entropia-thessaloniki",
+      "endpoint": "https://radio.hostchefs.net/rpc/entropiaradio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://radio.hostchefs.net/proxy/entropiaradio/stream"
+    },
+    {
+      "slug": "eurofans-radio",
+      "endpoint": "https://radio.hostchefs.net/rpc/eurofansradio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://radio.hostchefs.net/proxy/eurofansradio/stream"
+    },
+    {
+      "slug": "fly-88-1-heraklion-crete",
+      "endpoint": "https://eco.onestreaming.com/rpc/flykriti/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/flykriti/stream"
+    },
+    {
+      "slug": "fm-91-5-chania-greece",
+      "endpoint": "https://eu1.fastcast4u.com/rpc/diktyofm/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu1.fastcast4u.com/proxy/diktyofm/stream"
+    },
+    {
+      "slug": "fresh-web-radio-gr",
+      "endpoint": "https://solid55.streamupsolutions.com/rpc/bfwxkhir/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid55.streamupsolutions.com/proxy/bfwxkhir/stream"
+    },
+    {
+      "slug": "fun-radio-104-3-loutraki",
+      "endpoint": "https://solid9.streamupsolutions.com/rpc/wpgqrttp/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid9.streamupsolutions.com/proxy/wpgqrttp/stream"
+    },
+    {
+      "slug": "gr",
+      "endpoint": "https://solid33.streamupsolutions.com/rpc/xbygwcwv/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid33.streamupsolutions.com/proxy/xbygwcwv/stream"
+    },
+    {
+      "slug": "greca-party-pyrgos",
+      "endpoint": "https://one.cloudstreaming.eu/rpc/party/streaminfo.get",
+      "error": "Expected one CentovaCast station response",
+      "status": "failed"
+    },
+    {
+      "slug": "greek-otaku-radio-2f217384",
+      "endpoint": "https://usa2.fastcast4u.com/rpc/greekota/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://usa2.fastcast4u.com/proxy/greekota/stream2"
+    },
+    {
+      "slug": "heat-classic-alexandroupolis",
+      "endpoint": "https://solid1.streamupsolutions.com/rpc/neukptkl/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid1.streamupsolutions.com/proxy/neukptkl/stream"
+    },
+    {
+      "slug": "hit-classic",
+      "endpoint": "https://solid67.streamupsolutions.com/rpc/smzyynlm/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid67.streamupsolutions.com/proxy/smzyynlm/stream"
+    },
+    {
+      "slug": "hit-ellinikos",
+      "endpoint": "https://solid9.streamupsolutions.com/rpc/zvbgdllc/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid9.streamupsolutions.com/proxy/zvbgdllc/stream"
+    },
+    {
+      "slug": "hit-radio-greece",
+      "endpoint": "https://solid2.streamupsolutions.com/rpc/lposuiem/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid2.streamupsolutions.com/proxy/lposuiem/stream"
+    },
+    {
+      "slug": "ianos-radio-thessaloniki",
+      "endpoint": "https://radio.streamings.gr/rpc/feelmusic2021/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "iraklis-radio-thessaloniki",
+      "endpoint": "https://centova.gr-net.gr/rpc/iraklisradio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://centova.gr-net.gr/proxy/iraklisradio/stream"
+    },
+    {
+      "slug": "kokkini-velona",
+      "endpoint": "https://radio.streamings.gr/rpc/kokkinos2023/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "lemon-radio",
+      "endpoint": "https://s2.e-resellers.gr/rpc/radio888/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/radio888/stream"
+    },
+    {
+      "slug": "loop",
+      "endpoint": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu2.fastcast4u.com/proxy/loopradiostation",
+      "upgrade_verified": false,
+      "upgrade_error": "No audio identified"
+    },
+    {
+      "slug": "loop-695d1d91",
+      "endpoint": "http://eu2.fastcast4u.com/rpc/loopradiostation/streaminfo.get",
+      "error": "[Errno 54] Connection reset by peer",
+      "status": "failed"
+    },
+    {
+      "slug": "mad-107-orestiada",
+      "endpoint": "https://cast6.my-control-panel.com/rpc/mad107/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://cast6.my-control-panel.com/proxy/mad107/stream"
+    },
+    {
+      "slug": "magia-104-7-xiromero",
+      "endpoint": "https://s2.e-resellers.gr/rpc/magiafm1047/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/magiafm1047/stream"
+    },
+    {
+      "slug": "melody-96-7-limnos",
+      "endpoint": "https://eu4.fastcast4u.com/rpc/jlwmwogj/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu4.fastcast4u.com/proxy/jlwmwogj/stream"
+    },
+    {
+      "slug": "mesologgi",
+      "endpoint": "https://radio.streamings.gr/rpc/orfeasradio/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "music-art-club",
+      "endpoint": "https://eu9.fastcast4u.com/rpc/musicart/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu9.fastcast4u.com/proxy/musicart/stream"
+    },
+    {
+      "slug": "mykonos-live-radio-mykonos",
+      "endpoint": "https://solid55.streamupsolutions.com/rpc/lsdmuqhb/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid55.streamupsolutions.com/proxy/lsdmuqhb/stream"
+    },
+    {
+      "slug": "notes-106-serres",
+      "endpoint": "https://solid33.streamupsolutions.com/rpc/evllufwn/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid33.streamupsolutions.com/proxy/evllufwn/stream"
+    },
+    {
+      "slug": "opa",
+      "endpoint": "https://eu3.fastcast4u.com/rpc/opar/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu3.fastcast4u.com/proxy/opar/stream"
+    },
+    {
+      "slug": "panic-93-7-ierapetra",
+      "endpoint": "https://eco.onestreaming.com/rpc/club937/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/club937/stream"
+    },
+    {
+      "slug": "polis-91-1-chalkida-66766c24",
+      "endpoint": "https://s2.e-resellers.gr/rpc/polislaikos/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/polislaikos/stream"
+    },
+    {
+      "slug": "polis-91-1-chalkida-c563dc48",
+      "endpoint": "https://s2.e-resellers.gr/rpc/polisentexnos/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/polisentexnos/stream"
+    },
+    {
+      "slug": "polis-91-1-heykids-chalkida",
+      "endpoint": "https://s2.e-resellers.gr/rpc/poliskids/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/poliskids/stream"
+    },
+    {
+      "slug": "radio-9-thessaloniki",
+      "endpoint": "https://solid55.streamupsolutions.com/rpc/gygasbfj/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid55.streamupsolutions.com/proxy/gygasbfj/stream"
+    },
+    {
+      "slug": "radio-filopoli",
+      "endpoint": "https://cast4.magicstreams.gr:2199/rpc/nantia/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "radio-galaxy-99",
+      "endpoint": "https://solid1.streamupsolutions.com/rpc/tfcgioyq/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid1.streamupsolutions.com/proxy/tfcgioyq/stream"
+    },
+    {
+      "slug": "radio-locomotiva-athens-greece",
+      "endpoint": "https://whsh4u-panel.com/rpc/zukqpfqm/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://whsh4u-clients.com/proxy/zukqpfqm/stream"
+    },
+    {
+      "slug": "radio-martino",
+      "endpoint": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu1.fastcast4u.com/proxy/radiomartino/stream"
+    },
+    {
+      "slug": "radio-nyxtopoyli",
+      "endpoint": "https://stream13.shoutcastsolutions.com/rpc/bntailia/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "radio-oi-athens",
+      "endpoint": "http://eu4.fastcast4u.com/rpc/nikoud00/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu4.fastcast4u.com/proxy/nikoud00/stream"
+    },
+    {
+      "slug": "radio-ta-asteria",
+      "endpoint": "https://cast.serverps.gr/rpc/radioasteria/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://cast.serverps.gr/proxy/radioasteria/stream"
+    },
+    {
+      "slug": "radio-yellow-gr",
+      "endpoint": "http://radio.streamings.gr/rpc/radioyellow/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "razordino-radio",
+      "endpoint": "https://solid67.streamupsolutions.com/rpc/olrbkxdl/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid67.streamupsolutions.com/proxy/olrbkxdl/stream"
+    },
+    {
+      "slug": "rewind-radio-gr",
+      "endpoint": "https://solid55.streamupsolutions.com/rpc/zcpyirtp/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid55.streamupsolutions.com/proxy/zcpyirtp/320mp3"
+    },
+    {
+      "slug": "rockarolla-radio-athens-greece",
+      "endpoint": "https://solid2.streamupsolutions.com/rpc/msoepowo/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid2.streamupsolutions.com/proxy/msoepowo/stream"
+    },
+    {
+      "slug": "samothraki-web-radio-samothraki",
+      "endpoint": "https://eco.onestreaming.com/rpc/samothraki/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/samothraki/stream"
+    },
+    {
+      "slug": "sin-athens",
+      "endpoint": "https://solid67.streamupsolutions.com/rpc/lqomhdjk/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid67.streamupsolutions.com/proxy/lqomhdjk/1"
+    },
+    {
+      "slug": "slam-101-5-lesvos",
+      "endpoint": "https://eco.onestreaming.com/rpc/slam/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/slam/stream"
+    },
+    {
+      "slug": "smok-web-radio",
+      "endpoint": "https://s2.e-resellers.gr/rpc/smokradio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/smokradio/stream"
+    },
+    {
+      "slug": "smooth-radio-thessaloniki-thessaloniki",
+      "endpoint": "https://solid9.streamupsolutions.com/rpc/lrazisyb/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid9.streamupsolutions.com/proxy/lrazisyb/stream"
+    },
+    {
+      "slug": "star-95-5-chalkidiki",
+      "endpoint": "https://centova.gr-net.gr/rpc/radiostar955/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://centova.gr-net.gr/proxy/radiostar955/stream"
+    },
+    {
+      "slug": "star-97-7-chania",
+      "endpoint": "https://solid55.streamupsolutions.com/rpc/vkpzhens/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid55.streamupsolutions.com/proxy/vkpzhens/stream"
+    },
+    {
+      "slug": "station-6ae2e2dd",
+      "endpoint": "https://solid1.streamupsolutions.com/rpc/cqbyibwg/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid1.streamupsolutions.com/proxy/cqbyibwg/stream"
+    },
+    {
+      "slug": "station-753aef0e",
+      "endpoint": "https://eu1.fastcast4u.com/rpc/radiomartino/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu1.fastcast4u.com/proxy/radiomartino/stream"
+    },
+    {
+      "slug": "station-da7a1343",
+      "endpoint": "https://solid9.streamupsolutions.com/rpc/vlerkait/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid9.streamupsolutions.com/proxy/vlerkait/stream"
+    },
+    {
+      "slug": "station-fa890617",
+      "endpoint": "https://s2.e-resellers.gr/rpc/kviwebradio/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s2.e-resellers.gr/proxy/kviwebradio/stream"
+    },
+    {
+      "slug": "status-107-7-thessaloniki",
+      "endpoint": "https://loki.mental-media.gr/rpc/statusf1/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://loki.mental-media.gr/proxy/statusf1/stream"
+    },
+    {
+      "slug": "studio-254-athens",
+      "endpoint": "https://eu8.fastcast4u.com/rpc/s254/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://eu8.fastcast4u.com/proxy/s254/stream"
+    },
+    {
+      "slug": "studio12-22",
+      "endpoint": "https://cast6.asurahosting.com/rpc/radiosky/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://cast6.my-control-panel.com/proxy/radiosky/stream"
+    },
+    {
+      "slug": "suburbia-parties-athens-hardcore-radio",
+      "endpoint": "https://s9.webradio-hosting.com/rpc/suburbiaparties/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://s9.webradio-hosting.com/proxy/suburbiaparties/stream"
+    },
+    {
+      "slug": "swu-fm",
+      "endpoint": "https://admin.stream.rinse.fm/rpc/swu/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://admin.stream.rinse.fm/proxy/swu/stream"
+    },
+    {
+      "slug": "time-90-9-kalamata",
+      "endpoint": "https://solid67.streamupsolutions.com/rpc/rmjbkagy/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid67.streamupsolutions.com/proxy/rmjbkagy/stream"
+    },
+    {
+      "slug": "tivoli-thessaloniki",
+      "endpoint": "https://radio.streamings.gr/rpc/yellownewstream/streaminfo.get",
+      "status": "not_available"
+    },
+    {
+      "slug": "toxotis-fm-western-greece",
+      "endpoint": "https://eco.onestreaming.com/rpc/toxotis/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://live3.istoikona.net/proxy/toxotis/stream"
+    },
+    {
+      "slug": "tyflos-gr",
+      "endpoint": "https://solid48.streamupsolutions.com/rpc/monaytgo/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid48.streamupsolutions.com/proxy/monaytgo/stream"
+    },
+    {
+      "slug": "venus-amaliada",
+      "endpoint": "https://cast6.my-control-panel.com/external/rpc.php?m=streaminfo.get&username=venus1051",
+      "status": "extracted",
+      "proxytuneinurltls": "https://cast6.my-control-panel.com/proxy/venus1051/stream"
+    },
+    {
+      "slug": "xfm-gr",
+      "endpoint": "https://solid1.streamupsolutions.com/rpc/zizthduh/streaminfo.get",
+      "status": "extracted",
+      "proxytuneinurltls": "https://solid1.streamupsolutions.com/proxy/zizthduh/stream"
+    }
+  ]
+}

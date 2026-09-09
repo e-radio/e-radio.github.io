@@ -11,15 +11,15 @@ const endpointFor = (station: typeof rawStations[number]) => {
   return mode === 'jina' || (mode === 'auto' && station.metadata_server === 'centovacast' && !direct.startsWith('https://'))
     ? `https://r.jina.ai/${direct}` : direct;
 };
-const stations = rawStations.filter(s => ['azuracast', 'centovacast'].includes(s.metadata_server || '') && s.nowplaying_url && s.stream_url)
+const stations = rawStations.filter(s => ['azuracast', 'centovacast', 'radiojar'].includes(s.metadata_server || '') && s.nowplaying_url && s.stream_url)
   .sort((a,b) => a.name.localeCompare(b.name));
 const title = 'Live Tracks — Now Playing on Greek Radio | E-Radio';
-const description = 'Discover what is playing right now on AzuraCast and CentovaCast radio stations. Browse songs, artists, and stations, and listen live.';
+const description = 'Discover what is playing right now on AzuraCast, CentovaCast, and Radiojar radio stations. Browse songs, artists, and stations, and listen live.';
 ---
 <Layout title={title} description={description}>
   <SEO slot="seo" title={title} description={description} canonical="https://e-radio.github.io/live-tracks/" />
   <h1 class="display-5 fw-bold mb-2">Live Tracks</h1>
-  <p class="lead text-muted">What’s playing right now across {stations.length} AzuraCast and CentovaCast stations.</p>
+  <p class="lead text-muted">What’s playing right now across {stations.length} AzuraCast, CentovaCast, and Radiojar stations.</p>
   <CategorySwitch current="live-tracks" />
     <div class="d-flex align-items-center flex-nowrap gap-2 mb-2">
         <h2 class="h6 mb-0">On Air</h2><span class="badge rounded-pill badge-soft-green">Live</span>
@@ -31,7 +31,7 @@ const description = 'Discover what is playing right now on AzuraCast and Centova
         <div class="track-copy">
           <h3 class="track-title h6 fw-semibold mb-0">Loading song…</h3>
           <p class="text-muted mb-0"><span class="track-artist"></span><a href={`/stations/${station.slug}/`} class="text-reset">{station.name}</a>{station.city ? ` · ${station.city}` : ''}</p>
-          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{station.metadata_server === 'azuracast' ? 'AzuraCast' : 'CentovaCast'}</span>
+          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{station.metadata_server === 'azuracast' ? 'AzuraCast' : station.metadata_server === 'radiojar' ? 'Radiojar' : 'CentovaCast'}</span>
           <span class="track-listeners small text-muted"></span>
           <span class="track-status small text-muted" role="status"></span>
         </div>
@@ -43,6 +43,7 @@ const description = 'Discover what is playing right now on AzuraCast and Centova
   <audio id="live-tracks-audio" preload="none"></audio>
 </Layout>
 <script>
+  import { radiojarSong } from '../lib/radiojar.mjs';
   const settings = document.querySelector<HTMLElement>('#live-metadata-config')!;
   const pollInterval = Math.max(5000, Number(settings.dataset.poll) || 15000);
   const requestTimeout = Math.max(1000, Number(settings.dataset.timeout) || 10000);
@@ -112,7 +113,7 @@ const description = 'Discover what is playing right now on AzuraCast and Centova
           for (const card of entries) {
             const centova = card.dataset.server === 'centovacast' && Array.isArray(data?.data) ? data.data[0] : null;
             const source = centova?.track;
-            const song = centova ? { title: source?.title, artist: source?.artist, text: centova.song, art: source?.imageurl || source?.image } : data?.now_playing?.song;
+            const song = card.dataset.server === 'radiojar' ? radiojarSong(data) : centova ? { title: source?.title, artist: source?.artist, text: centova.song, art: source?.imageurl || source?.image } : data?.now_playing?.song;
             const listenersEl = card.querySelector<HTMLElement>('.track-listeners')!;
             const count = data?.listeners?.current ?? centova?.listeners ?? centova?.listenertotal;
             const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;

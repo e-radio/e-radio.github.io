@@ -29,6 +29,7 @@ function fetchJson(url) {
 function currentText(payload, station) {
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) return null;
   switch (station.metadata_server) {
+    case 'radiojar': return [payload.title].find(nonempty);
     case 'azuracast': return [payload.now_playing?.song?.text, payload.now_playing?.song?.title].find(nonempty);
     case 'shoutcast': return [payload.songtitle].find(nonempty);
     case 'centovacast': return (Array.isArray(payload.data) ? payload.data : []).flatMap(e => [e.song, e.track?.title]).find(nonempty);

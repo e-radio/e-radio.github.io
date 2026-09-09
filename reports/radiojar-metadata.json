@@ -1,0 +1,1515 @@
+{
+  "checked": 122,
+  "verified": 81,
+  "added": 80,
+  "results": [
+    {
+      "slug": "alpha-98-9",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/xcdg6yggzfeuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Alpha 989"
+        }
+      ]
+    },
+    {
+      "slug": "alpha-98-9-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/xcdg6yggzfeuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Alpha 989"
+        }
+      ]
+    },
+    {
+      "slug": "alpha-98-9-athens-6f616c84",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/xcdg6yggzfeuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Alpha 989"
+        }
+      ]
+    },
+    {
+      "slug": "athens-free-radio-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/e206r95qsp8uv/now_playing/",
+          "verified": true,
+          "artist": "Bill Medley & Jennifer Warnes",
+          "title": "I've Had The Time Of My Life (Dirty Dancing OST)"
+        }
+      ]
+    },
+    {
+      "slug": "99-1-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/t0x7dyqmsuhvv/now_playing/",
+          "verified": true,
+          "artist": "ΣΑΜΠΑΝΗΣ ΓΙΩΡΓΟΣ",
+          "title": "ΠΡΟΣ ΤΟ ΠΑΡΟΝ"
+        }
+      ]
+    },
+    {
+      "slug": "arcadia-tripoli",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/g34k4f92n74tv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "alpha-kastoria",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/wxc5sezupy5tv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "alepou-radio",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/h693vkmhe5uvv/now_playing/",
+          "verified": true,
+          "artist": "Glykeria",
+          "title": "Kane Kati"
+        }
+      ]
+    },
+    {
+      "slug": "alepou-radio-athens-greece",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/h693vkmhe5uvv/now_playing/",
+          "verified": true,
+          "artist": "Glykeria",
+          "title": "Kane Kati"
+        }
+      ]
+    },
+    {
+      "slug": "alepou-radio-athens-greece-3219b33d",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/h693vkmhe5uvv/now_playing/",
+          "verified": true,
+          "artist": "Glykeria",
+          "title": "Kane Kati"
+        }
+      ]
+    },
+    {
+      "slug": "cosmos-103-8-katerini",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/now_playing/",
+          "verified": true,
+          "artist": "IOYLIA KALLIMANH",
+          "title": "STA KALYTERA POY ELKONTAI"
+        }
+      ]
+    },
+    {
+      "slug": "cosmosfm-103-8",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/duh3nm1v6hhvv/now_playing/",
+          "verified": true,
+          "artist": "IOYLIA KALLIMANH",
+          "title": "STA KALYTERA POY ELKONTAI"
+        }
+      ]
+    },
+    {
+      "slug": "dalkas-88-2",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/pr9r38w802hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "dalkas-88-2-62b8bab8",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/pr9r38w802hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "chillout-tree-pines",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/n4dzb3znn3quv.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "chillout-treepines",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/n4dzb3znn3quv.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "bobos-family-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/3h7ncy1y9vzuv/now_playing/",
+          "verified": true,
+          "artist": "Percy Faith",
+          "title": "Theme from a Summer Place"
+        }
+      ]
+    },
+    {
+      "slug": "crystal-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/htczr9epmchvv/now_playing/",
+          "verified": true,
+          "artist": "Gotcha",
+          "title": "You're Wrong"
+        }
+      ]
+    },
+    {
+      "slug": "camara-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/252ry9dgytzuv/now_playing/",
+          "verified": true,
+          "artist": "Jacob B feat. Kathy Brown",
+          "title": "You Give Good Love"
+        }
+      ]
+    },
+    {
+      "slug": "free-radio",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/e206r95qsp8uv/now_playing/",
+          "verified": true,
+          "artist": "Bill Medley & Jennifer Warnes",
+          "title": "I've Had The Time Of My Life (Dirty Dancing OST)"
+        }
+      ]
+    },
+    {
+      "slug": "classic-love-97-5-athens-greece",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/now_playing/",
+          "verified": true,
+          "artist": "JIM BRICKMAN",
+          "title": "Starbright "
+        }
+      ]
+    },
+    {
+      "slug": "derti-105-7-patra",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/tzcb5k453quvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "apopsi-gr-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/radio-apopsi/now_playing/",
+          "verified": true,
+          "artist": "All Things Break",
+          "title": "Dots"
+        }
+      ]
+    },
+    {
+      "slug": "dmst",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/opa-radio/now_playing/",
+          "verified": true,
+          "artist": "Unknown",
+          "title": "Δέσποινα Βανδή - Υποφέρω.mp3"
+        }
+      ]
+    },
+    {
+      "slug": "fade-radio-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/072mdmpbfq8uv/now_playing/",
+          "verified": true,
+          "artist": "Adhunik Shongeet w/ TITO+",
+          "title": "04-Adhunik Shongeet w_ TITO+ [ Fade Radio] - ONNO Collective.mp3"
+        }
+      ]
+    },
+    {
+      "slug": "89-rainbow-christmas-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/4nwwcyesv8hvv/now_playing/",
+          "verified": true,
+          "artist": "BRENDA LEE",
+          "title": "ROCKIN AROUND THE CHRISTMAS TREE"
+        }
+      ]
+    },
+    {
+      "slug": "love-classic-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/now_playing/",
+          "verified": true,
+          "artist": "JIM BRICKMAN",
+          "title": "Starbright "
+        }
+      ]
+    },
+    {
+      "slug": "easy-97-2",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/cthtwxk5yvduv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "easy-fm-972",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/cthtwxk5yvduv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "love-xmas-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/now_playing/",
+          "verified": true,
+          "artist": "JIM BRICKMAN",
+          "title": "Starbright "
+        }
+      ]
+    },
+    {
+      "slug": "garavelas",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/garavelas-radio-gr/now_playing/",
+          "verified": true,
+          "artist": "Lionel Richie with Kenny Rogers",
+          "title": "Lady"
+        }
+      ]
+    },
+    {
+      "slug": "garavelas-radio-gr",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/garavelas-radio-gr.m4a/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "eternal",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/su1eg54afzwtv/now_playing/",
+          "verified": true,
+          "artist": "Ματούλα Ζαμάνη",
+          "title": "Ικαρία"
+        }
+      ]
+    },
+    {
+      "slug": "jazz-breeze-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/8tqwqkrhk48uv/now_playing/",
+          "verified": true,
+          "artist": "Tony Bennett",
+          "title": "Don't Get Around Much Anymore"
+        }
+      ]
+    },
+    {
+      "slug": "music-ward",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/opa-radio/now_playing/",
+          "verified": true,
+          "artist": "Unknown",
+          "title": "Δέσποινα Βανδή - Υποφέρω.mp3"
+        }
+      ]
+    },
+    {
+      "slug": "music-ward-150b854c",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/opa-radio/now_playing/",
+          "verified": true,
+          "artist": "Unknown",
+          "title": "Δέσποινα Βανδή - Υποφέρω.mp3"
+        }
+      ]
+    },
+    {
+      "slug": "lefkatas-90-5-lefkada",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kdf46t0c1quvv/now_playing/",
+          "verified": true,
+          "artist": "ΗΛΙΑΣ ΒΡΕΤΤΟΣ",
+          "title": "ΜΑΤΙΑ ΜΟΥ"
+        }
+      ]
+    },
+    {
+      "slug": "lefkatas-900-5-fm-lefkada",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kdf46t0c1quvv/now_playing/",
+          "verified": true,
+          "artist": "ΗΛΙΑΣ ΒΡΕΤΤΟΣ",
+          "title": "ΜΑΤΙΑ ΜΟΥ"
+        }
+      ]
+    },
+    {
+      "slug": "energy-101-5-ioannina",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/apb4wybq36duv.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "nrg-101-5-ioannina",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/apb4wybq36duv.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "love-trap-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/tkeve70hqd0uv/now_playing/",
+          "verified": true,
+          "artist": "DJ Stephan x iLLEOo x Madclip",
+          "title": " Cruel Summer"
+        }
+      ]
+    },
+    {
+      "slug": "mancode-radio",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/2kqw1800x68uv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "max-93-4-patra",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/qt9gf4hhdwzuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "maxfm 93.4---www.maxfm.com.gr"
+        }
+      ]
+    },
+    {
+      "slug": "legend-fm-88-6",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gphtvb4env5tv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "bottle-o-groove",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/n8buhxbsk9duv/now_playing/",
+          "verified": true,
+          "artist": "James Brown",
+          "title": "That Dood It"
+        }
+      ]
+    },
+    {
+      "slug": "monkey-bros-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/now_playing/",
+          "verified": true,
+          "artist": "Το Σφάλμα",
+          "title": "Ίσες Αποστάσεις prod.Numberless"
+        }
+      ]
+    },
+    {
+      "slug": "love-z-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/20n2b23u7mruv/now_playing/",
+          "verified": true,
+          "artist": "ΚΟΥΚΑ ΚΑΤΕΡΙΝΑ",
+          "title": "Μόλις σε είδα"
+        }
+      ]
+    },
+    {
+      "slug": "nrg-95-chalkida",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/93c3avwu48hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "pemptousia",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/48cz219puzzuv/now_playing/",
+          "verified": true,
+          "artist": "K.Aggelidis G.Savvas",
+          "title": "Logos kai Melos"
+        }
+      ]
+    },
+    {
+      "slug": "pemptousia-fm-athos",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/48cz219puzzuv/now_playing/",
+          "verified": true,
+          "artist": "K.Aggelidis G.Savvas",
+          "title": "Logos kai Melos"
+        }
+      ]
+    },
+    {
+      "slug": "nitro-102-5-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/29e98fkcks3vv/now_playing/",
+          "verified": true,
+          "artist": "Maxi Priest",
+          "title": "Wild World"
+        }
+      ]
+    },
+    {
+      "slug": "mple-99-fm-chalkida",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/f4pqr7wu48hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "radio-apopsi",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/radio-apopsi/now_playing/",
+          "verified": true,
+          "artist": "All Things Break",
+          "title": "Dots"
+        }
+      ]
+    },
+    {
+      "slug": "picasso-patra",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/s87smqqfewzuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "picasso 102.7--www.picassofm.gr"
+        }
+      ]
+    },
+    {
+      "slug": "picasso-102-7-patra",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/s87smqqfewzuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "picasso 102.7--www.picassofm.gr"
+        }
+      ]
+    },
+    {
+      "slug": "musica-radio",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/w6c6bssk95vtv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "MESHMERI SPOT TELOS"
+        }
+      ]
+    },
+    {
+      "slug": "ogdoo-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/u8c2yr3sp42vv/now_playing/",
+          "verified": true,
+          "artist": "Ένα Μικρό Καράβι",
+          "title": "Γιάννης Κότσιρας"
+        }
+      ]
+    },
+    {
+      "slug": "purple-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/weqykpegsm5tv/now_playing/",
+          "verified": true,
+          "artist": "Metro Boomin feat. The Weeknd & 21 Savage",
+          "title": "Creepin'"
+        }
+      ]
+    },
+    {
+      "slug": "play-lounge",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/n6frf0ct274tv/now_playing/",
+          "verified": true,
+          "artist": "Mina",
+          "title": "Ancora Ancora (Mark Ronson Remix)"
+        }
+      ]
+    },
+    {
+      "slug": "radio-x",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/yv5xu5h7zwwtv/now_playing/",
+          "verified": true,
+          "artist": "waldeck",
+          "title": "make my day (parov stelar mix)"
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-89-christmas-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/4nwwcyesv8hvv/now_playing/",
+          "verified": true,
+          "artist": "BRENDA LEE",
+          "title": "ROCKIN AROUND THE CHRISTMAS TREE"
+        }
+      ]
+    },
+    {
+      "slug": "pepper-96-6",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/pepper.m4a/now_playing/",
+          "error": "HTTP 404"
+        },
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/pepper/now_playing/",
+          "verified": true,
+          "artist": "ROYKSOPP  feat. SUSANNE SUNDFOER",
+          "title": "OH, LOVER"
+        }
+      ]
+    },
+    {
+      "slug": "radiomak-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/d3n35mr218hvv/now_playing/",
+          "verified": true,
+          "artist": "Unknown",
+          "title": "THE CHAIN FLEETWOOD MAC.mp3"
+        }
+      ]
+    },
+    {
+      "slug": "pucca-radio",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/mecdkyuevp8uv/now_playing/",
+          "verified": true,
+          "artist": "luxxury",
+          "title": "black magic reaper"
+        }
+      ]
+    },
+    {
+      "slug": "play-radio-patra",
+      "verified": true,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/0zs50dbr274tv/now_playing/",
+          "verified": true,
+          "artist": "Bella Kay",
+          "title": "iloveitiloveitiloveit"
+        }
+      ]
+    },
+    {
+      "slug": "radiotsambouno",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/now_playing/",
+          "verified": true,
+          "artist": "ΠΡΕΑΡΗΣ ΜΗΝΑΣ",
+          "title": "ΣΚΟΠΟΙ, ΒΟΡΤΑ, ΠΑΝΩ ΧΟΡΟΣ"
+        }
+      ]
+    },
+    {
+      "slug": "polisview-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gzr6836ty7zuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Tom Walker,Burn,"
+        }
+      ]
+    },
+    {
+      "slug": "radiobird",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/6uqfysrasm0uv/now_playing/",
+          "verified": true,
+          "artist": "The Vagina Lips",
+          "title": "Typical Standards"
+        }
+      ]
+    },
+    {
+      "slug": "play-gold",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/431m8b6qcm5tv/now_playing/",
+          "verified": true,
+          "artist": "Mary J Blige",
+          "title": "Mary J Da Mvp"
+        }
+      ]
+    },
+    {
+      "slug": "radio-paris-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kddqnna7yxmtv/now_playing/",
+          "verified": true,
+          "artist": "Ακούστε αγαπημένα τραγούδια",
+          "title": "Σποτ"
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-89-alternative-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/vhknc3c8ktuvv/now_playing/",
+          "verified": true,
+          "artist": "SHIVAREE",
+          "title": "GOODNIGHT MOON"
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-89-thessaloniki-a0d7a649",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/akf7zea5kzuvv/now_playing/",
+          "verified": true,
+          "artist": "ΜΠΟΦΙΛΙΟΥ ΝΑΤΑΣΣΑ",
+          "title": "ΣΕ ΕΧΩ ΒΡΕΙ ΚΑΙ ΣΕ ΧΑΝΩ"
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-89-pop-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/ztqh29c8ktuvv/now_playing/",
+          "verified": true,
+          "artist": "CHARLES SHAW",
+          "title": "I M FEELING"
+        }
+      ]
+    },
+    {
+      "slug": "rythmos-94-9-athens",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/aw1w2xfx1vduv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-89-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/083wqknmsuhvv/now_playing/",
+          "verified": true,
+          "artist": "THE BANGLES",
+          "title": "HAZY SHADE OF WINTER"
+        }
+      ]
+    },
+    {
+      "slug": "rythmos-fm",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/aw1w2xfx1vduv.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "rythmos-fm-gr-athens",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/g4tyehk5yvduv.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "xmas-love-97-5-athens-greece",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gt0xy4z88f0uv/now_playing/",
+          "verified": true,
+          "artist": "JIM BRICKMAN",
+          "title": "Starbright "
+        }
+      ]
+    },
+    {
+      "slug": "roxx",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/aay95tkmb/now_playing/",
+          "verified": true,
+          "artist": "Motionless In White",
+          "title": "R.I.P. (feat. Skylar Grey)"
+        }
+      ]
+    },
+    {
+      "slug": "roxx-radio",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/aay95tkmb/now_playing/",
+          "verified": true,
+          "artist": "Motionless In White",
+          "title": "R.I.P. (feat. Skylar Grey)"
+        }
+      ]
+    },
+    {
+      "slug": "sok-fm-104-8",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/zeqcyyvu48hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "sokfm-104-8",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/zeqcyyvu48hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "99-chalkida",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/f4pqr7wu48hvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "sfera-96-6-patra",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/mg2vq26eewzuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "sfera 96.6--www.sferafm.gr"
+        }
+      ]
+    },
+    {
+      "slug": "strummer-radio-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/fg3tm92rxeruv/now_playing/",
+          "verified": true,
+          "artist": "Jefferson Airplane",
+          "title": "Good Shepherd"
+        }
+      ]
+    },
+    {
+      "slug": "souxe",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/ugs98yvkb/now_playing/",
+          "verified": true,
+          "artist": "Natasa Theodoridou/Pashalis Terzis",
+          "title": "Den Thelo Tetious Filous"
+        }
+      ]
+    },
+    {
+      "slug": "stokokkino-athens",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kokkino-ath.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "uncut-gr-chania",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/s2kb0626cm8uv/now_playing/",
+          "verified": true,
+          "artist": "Weird Sounding Dude",
+          "title": "Summer Dive "
+        }
+      ]
+    },
+    {
+      "slug": "sport-96-3-patra",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/yb7bcbkfewzuv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "karpathos",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gbrgkbcfnq5tv/now_playing/",
+          "verified": true,
+          "artist": "ΠΡΕΑΡΗΣ ΜΗΝΑΣ",
+          "title": "ΣΚΟΠΟΙ, ΒΟΡΤΑ, ΠΑΝΩ ΧΟΡΟΣ"
+        }
+      ]
+    },
+    {
+      "slug": "live-95-8-syros",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/nkqh9th47vzuv/now_playing/",
+          "verified": true,
+          "artist": "Peter Gabriel",
+          "title": "Sledgehammer"
+        }
+      ]
+    },
+    {
+      "slug": "weird-fishes",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/w47v0ekgzp5tv.m4a/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "105-5-athens",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kokkino-ath.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "105-5",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kokkino-ath.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "105-5-athens-313dbd5d",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kokkino-ath.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "105-5-athens-43a3c60b",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kokkino-ath.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "attiki",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/2rsrhmepefq/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "01-105-5-attica-athens",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/kokkino-ath.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "98-7-ioannina",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/1qpu1agw4mzuv.m4a/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "radio-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/u34mus9cy72vv/now_playing/",
+          "verified": true,
+          "artist": "Lou Rawls",
+          "title": "The Girl From Ipanema"
+        }
+      ]
+    },
+    {
+      "slug": "24-7-cyclades",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/f4uubny2uexb/now_playing/",
+          "verified": true,
+          "artist": "Maria Nomikou",
+          "title": "Ehi Apopse Panigiri (Live)"
+        }
+      ]
+    },
+    {
+      "slug": "99fm-radio-1-thessaloniki",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/t0x7dyqmsuhvv/now_playing/",
+          "verified": true,
+          "artist": "ΣΑΜΠΑΝΗΣ ΓΙΩΡΓΟΣ",
+          "title": "ΠΡΟΣ ΤΟ ΠΑΡΟΝ"
+        }
+      ]
+    },
+    {
+      "slug": "alpha-98-9-athens-4232c4aa",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/xcdg6yggzfeuv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Alpha 989"
+        }
+      ]
+    },
+    {
+      "slug": "station-f8d150f6",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/un4tp96kb.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "rhodes",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/hw0e51y1pd3vv/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "g-radio-garavelas-radio",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/garavelas-radio-gr.m4a/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "monkey-bros-radio",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/5tyqrwpgpfeuv/now_playing/",
+          "verified": true,
+          "artist": "Το Σφάλμα",
+          "title": "Ίσες Αποστάσεις prod.Numberless"
+        }
+      ]
+    },
+    {
+      "slug": "athens-ccba37c5",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/ybz2g5nh5ehvv/now_playing/",
+          "verified": true,
+          "artist": "ΓΙΩΡΓΟΣ ΚΑΡΑΔΗΜΟΣ",
+          "title": "ΕΓΩ ΠΟΥ ΤΟ ‘ΘΕΛΑ ΠΟΛΥ"
+        }
+      ]
+    },
+    {
+      "slug": "105-4-santorini",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/g6eg7gpa6k5tv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "sports-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/ypdwy53ce6hvv/now_playing/",
+          "verified": true,
+          "artist": "Madonna",
+          "title": "Like A Prayer"
+        }
+      ]
+    },
+    {
+      "slug": "103-1-komotini",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/v1hkvv4gk72vv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "102-2-1-chalkida",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/now_playing/",
+          "verified": true,
+          "artist": "The Beautiful South",
+          "title": "Perfect 10"
+        }
+      ]
+    },
+    {
+      "slug": "1-aliveri",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/gby4re6bhnuvv/now_playing/",
+          "verified": true,
+          "artist": "The Beautiful South",
+          "title": "Perfect 10"
+        }
+      ]
+    },
+    {
+      "slug": "28",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/r87tq342z8tvv/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "90-patra",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/819r8wupdrruv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Now Playing info goes here"
+        }
+      ]
+    },
+    {
+      "slug": "skylos-fm-athens-greece",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/819r8wupdrruv/now_playing/",
+          "verified": true,
+          "artist": null,
+          "title": "Now Playing info goes here"
+        }
+      ]
+    },
+    {
+      "slug": "empneusi-107-fm",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/2rsrhmepefq.mp3/now_playing/",
+          "error": "HTTP 404"
+        }
+      ]
+    },
+    {
+      "slug": "voice-102-5",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/u52ufw1qayduv/now_playing/",
+          "verified": true,
+          "artist": "Lykke Li",
+          "title": "Lucky Again"
+        }
+      ]
+    },
+    {
+      "slug": "voice-radio-gr-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/u52ufw1qayduv/now_playing/",
+          "verified": true,
+          "artist": "Lykke Li",
+          "title": "Lucky Again"
+        }
+      ]
+    },
+    {
+      "slug": "enlefko-87-7-attica-athens",
+      "verified": true,
+      "added": true,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/enlefko877/now_playing/",
+          "verified": true,
+          "artist": "Hozier",
+          "title": "Too Sweet"
+        }
+      ]
+    },
+    {
+      "slug": "91-4-fm-thessaloniki",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/275p8ssmb/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    },
+    {
+      "slug": "03-107-7-patra",
+      "verified": false,
+      "added": false,
+      "attempts": [
+        {
+          "endpoint": "https://www.radiojar.com/api/stations/red-source/now_playing/",
+          "error": "No current track title"
+        }
+      ]
+    }
+  ]
+}

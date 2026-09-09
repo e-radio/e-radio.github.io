@@ -129,13 +129,30 @@ function mergeStations(localStations, apiStations) {
   const automaticUpdates = [];
   const automaticallyAddedStations = [];
   const rejectedDuplicateStreams = [];
+  const recognizedMergedStations = [];
+  const registerUuid = (uuid, index) => {
+    if (!uuid) return;
+    if (localByUuid.has(uuid) && localByUuid.get(uuid) !== index) {
+      throw new Error(`Station UUID ${uuid} belongs to more than one local station.`);
+    }
+    localByUuid.set(uuid, index);
+  };
+  const registerUrl = (url, index) => {
+    if (!url) return;
+    const key = cleanStreamUrl(url);
+    const indexes = localByUrl.get(key) ?? [];
+    if (!indexes.includes(index)) indexes.push(index);
+    localByUrl.set(key, indexes);
+  };
 
   localStations.forEach((station, index) => {
-    if (station.stationuuid) localByUuid.set(station.stationuuid, index);
-    if (station.stream_url) {
-      const indexes = localByUrl.get(station.stream_url) ?? [];
-      indexes.push(index);
-      localByUrl.set(station.stream_url, indexes);
+    registerUuid(station.stationuuid, index);
+    for (const uuid of station.alternate_stationuuids || []) registerUuid(uuid, index);
+    registerUrl(station.stream_url, index);
+    for (const stream of station.unavailable_streams || []) registerUrl(stream.url, index);
+    for (const stream of station.streams || []) {
+      registerUrl(stream.url, index);
+      for (const url of stream.alternate_urls || []) registerUrl(url, index);
     }
   });
 
@@ -147,7 +164,7 @@ function mergeStations(localStations, apiStations) {
       : undefined;
     if (localIndex == null) {
       const urlMatches = apiStation.stream_url
-        ? localByUrl.get(apiStation.stream_url) ?? []
+        ? localByUrl.get(cleanStreamUrl(apiStation.stream_url)) ?? []
         : [];
       if (urlMatches.length > 0) {
         urlMatches.forEach((index) => matchedLocalIndexes.add(index));
@@ -163,16 +180,24 @@ function mergeStations(localStations, apiStations) {
       const newIndex = merged.length;
       merged.push({ ...apiStation });
       automaticallyAddedStations.push(apiStation);
-      if (apiStation.stream_url) {
-        const indexes = localByUrl.get(apiStation.stream_url) ?? [];
-        indexes.push(newIndex);
-        localByUrl.set(apiStation.stream_url, indexes);
-      }
+      registerUuid(apiStation.stationuuid, newIndex);
+      registerUrl(apiStation.stream_url, newIndex);
       continue;
     }
 
     matchedLocalIndexes.add(localIndex);
     const local = merged[localIndex];
+    // A remote record describes one variant, not the curated consolidated station.
+    // Keep its defaults, stream qualities, location and metadata intact for review.
+    if (local.alternate_stationuuids?.length || local.streams?.length) {
+      recognizedMergedStations.push({
+        stationuuid: local.stationuuid,
+        slug: local.slug,
+        matchedBy: apiStation.stationuuid === local.stationuuid ? "stationuuid" : "alternate_stationuuid",
+        remote: apiStation
+      });
+      continue;
+    }
     const changedAutomatically = {};
 
     for (const field of REMOTE_UPDATE_FIELDS) {
@@ -206,6 +231,7 @@ function mergeStations(localStations, apiStations) {
     automaticUpdates,
     automaticallyAddedStations,
     rejectedDuplicateStreams,
+    recognizedMergedStations,
     missingFromApi
   };
 }
@@ -315,6 +341,7 @@ async function main() {
     generatedAt,
     server: baseUrl,
     automaticallyAddedStations: result.automaticallyAddedStations,
+    recognizedMergedStations: result.recognizedMergedStations,
     rejectedDuplicateStreams: result.rejectedDuplicateStreams
   });
   // Replace the primary dataset only after both review files were written.
@@ -327,6 +354,7 @@ async function main() {
   console.log(`  Existing local records: ${localStations.length}`);
   console.log(`  Automatic updates: ${result.automaticUpdates.length}`);
   console.log(`  New stations added automatically: ${result.automaticallyAddedStations.length}`);
+  console.log(`  Recognized merged station records: ${result.recognizedMergedStations.length}`);
   console.log(`  Rejected duplicate stream URLs: ${result.rejectedDuplicateStreams.length}`);
   console.log(`  Local stations missing from API: ${result.missingFromApi.length}`);
   console.log(`  Safely merged: ${outFile}`);

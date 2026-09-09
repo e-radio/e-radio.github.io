@@ -1,4 +1,5 @@
 ---
+import { stationStreams } from "../../lib/station-streams.mjs";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import rawStations from "../../data/stations-gr.json";
@@ -28,6 +29,7 @@ const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 const { station } = Astro.props as Props;
 
+const streamOptions: Array<{ id: string; label: string; url: string; quality: string; bitrate?: number; codec?: string }> = stationStreams(station);
 const hasStream = Boolean(station.stream_url);
 const formattedVotes = station.votes ? new Intl.NumberFormat("en-US").format(Number(station.votes)) : null;
 const locationLabel = station.state
@@ -67,6 +69,7 @@ type ServerKind =
   | "centovacast"
   | "shoutcast"
   | "icecast"
+  | "radiojar"
   | "radio.co"
   | "unknown";
 
@@ -409,6 +412,7 @@ const description = station.state
 const playerScriptConfig = {
   hasStream,
   streamUrl,
+  streams: streamOptions,
   shareTitle: station.name,
   shareText: `Listen live: ${station.name}`,
   shareUrl: canonical,
@@ -560,6 +564,19 @@ const structuredData = {
               </div>
             </div>
 
+            {streamOptions.length > 0 && (station as Station & { streams?: unknown[] }).streams && (
+              <div class="col-12">
+                <label for="streamQuality" class="form-label">Stream quality</label>
+                <select id="streamQuality" class="form-select" disabled={streamOptions.length < 2}>
+                  {streamOptions.map(option => (
+                    <option value={option.url} selected={option.url === station.stream_url}>
+                      {option.label} · {option.quality}
+                    </option>
+                  ))}
+                </select>
+                {streamOptions.length < 2 && <div class="small-muted mt-1">This station currently offers one stream quality.</div>}
+              </div>
+            )}
             <div class="col-12">
               <div class="audio-control-strip">
                 <div class="audio-buffer" role="progressbar" aria-label="Buffered audio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title="Buffered audio (live stream)">
@@ -734,7 +751,7 @@ const structuredData = {
           {hasStream && (
             <div>
               <div class="small-muted mb-1">Stream URL</div>
-              <a class="mono link-muted d-block text-truncate" href={streamUrl} target="_blank" rel="noopener">
+              <a class="mono link-muted d-block text-truncate" data-stream-link href={streamUrl} target="_blank" rel="noopener">
                 {streamUrl}
               </a>
             </div>
@@ -752,7 +769,7 @@ const structuredData = {
                 </div>
                 <i class="bi bi-soundwave fs-4 text-primary"></i>
               </div>
-              {streamDetailMeta && <div class="small-muted">{streamDetailMeta}</div>}
+              {streamDetailMeta && <div class="small-muted" id="streamDetailMeta">{streamDetailMeta}</div>}
             </div>
           )}
 
@@ -800,7 +817,7 @@ const structuredData = {
               <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station Website</a>
                )}
               <button id="btnCopyLink" type="button" class="btn btn-link p-0 text-decoration-none text-start text-secondary">Copy Link</button>
-            <a class="text-decoration-none text-secondary" href={streamUrl} target="_blank" rel="noopener">Open Stream</a>
+            <a class="text-decoration-none text-secondary" data-stream-link href={streamUrl} target="_blank" rel="noopener">Open Stream</a>
             <button class="btn btn-link p-0 text-danger text-decoration-none text-start" id="btnReport" type="button">Report Stream Issue</button>
             </div>
           </div>
@@ -821,6 +838,7 @@ const structuredData = {
   <div id="player-config" data-config={JSON.stringify(playerScriptConfig)} hidden></div>
   <script>
 // @ts-nocheck
+    import { replaceStream } from "../../lib/station-streams.mjs";
     import { centovaHistoryTracks } from "../../lib/centovacast-history.mjs";
     const configEl = document.getElementById('player-config');
     const defaultConfig = {
@@ -1045,6 +1063,7 @@ const structuredData = {
       const candidate = payload?.now_playing?.song
         || dataEntry?.track
         || payload?.current_track
+        || (typeof payload?.title === 'string' && typeof payload?.artist === 'string' ? payload : null)
         || (typeof payload?.songtitle === 'string' ? { text: payload.songtitle } : null)
         || (typeof dataEntry?.song === 'string' ? { text: dataEntry.song } : dataEntry)
         || (fallbackText ? { text: fallbackText } : null);
@@ -1242,6 +1261,31 @@ const structuredData = {
         }
       });
 
+      document.getElementById('streamQuality')?.addEventListener('change', async (event) => {
+        const option = playerConfig.streams?.find(stream => stream.url === event.currentTarget.value);
+        if (!option) return;
+        const requestId = ++playbackRequestId;
+        clearPlaybackError();
+        const url = option.url;
+        const resume = replaceStream(audio, url, playbackRequested);
+        playerConfig.streamUrl = url;
+        setBuffer(0);
+        const quality = document.getElementById('quality');
+        if (quality) quality.textContent = option.quality || 'Quality not reported';
+        const details = document.getElementById('streamDetailMeta');
+        if (details) details.textContent = [option.codec ? `Codec: ${option.codec}` : null, option.bitrate ? `Bitrate: ${option.bitrate} kbps` : null].filter(Boolean).join(' · ');
+        document.querySelectorAll('[data-stream-link]').forEach(link => {
+          link.href = url;
+          if (link.classList.contains('mono')) link.textContent = url;
+        });
+        updatePlaybackButton(resume);
+        setStatus(resume ? 'Connecting' : 'Ready');
+        if (resume) {
+          try { await audio.play(); }
+          catch (error) { if (requestId === playbackRequestId) showPlaybackError(error); }
+        }
+      });
+
       volume?.addEventListener('input', (event) => {
         const target = event.currentTarget;
         if (target instanceof HTMLInputElement) {
@@ -1428,7 +1472,7 @@ const structuredData = {
       }
 
       if (typeof payload.title === 'string' && payload.title.trim()) {
-        return payload.title.trim();
+        return [payload.artist, payload.title].filter(value => typeof value === 'string' && value.trim()).map(value => value.trim()).join(' – ');
       }
 
       if (typeof payload.song === 'string' && payload.song.trim()) {
@@ -1457,7 +1501,7 @@ const structuredData = {
       const candidates = [];
       const addArtworkFields = (source) => {
         if (!source || typeof source !== 'object') return;
-        for (const key of ['art', 'art_url', 'artwork', 'artwork_url', 'cover', 'cover_url', 'image', 'image_url', 'imageurl']) {
+        for (const key of ['art', 'art_url', 'artwork', 'artwork_url', 'cover', 'cover_url', 'image', 'image_url', 'imageurl', 'thumb']) {
           const value = source[key];
           if (typeof value === 'string') {
             candidates.push(value);

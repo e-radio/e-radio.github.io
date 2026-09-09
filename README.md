@@ -188,3 +188,23 @@ Run `python3 tools/check-stream-decoding.py` (requires FFmpeg) to decode three s
 ### Verify saved metadata endpoints
 
 Run `node tools/verify-metadata-endpoints.mjs` to recheck the exact saved now-playing and history URLs without modifying station data. The report at `reports/metadata-verification.json` distinguishes usable tracks, responses without matching track data, and request failures. Icecast responses are checked against the station mount. Verification confirms response data at scan time, not browser access or track freshness.
+
+### Multiple stream qualities on one station page
+
+Keep one station record and retain `stream_url`, `bitrate`, and `codec` as the default for listings and existing tools. Add a `streams` array with `id`, `label`, `url`, `bitrate`, and `codec` for each distinct quality. The station player uses these options to switch sources, preserving volume and resuming only when playback was active or requested. Quality details and direct stream links follow the selected source. Streams currently share the station's metadata endpoints and must carry the same broadcast.
+
+AK Radio is merged under `ak-radio`; `ak-radio-heraclion` redirects to it through `astro.config.mjs`. The removed UUID is retained in `alternate_stationuuids`, and the old slug in `aliases` for reference. Both original records had the same 256 kbps MP3 URL, so the selector displays one disabled option until another verified quality URL is added. The server currently advertises only this one mount. Static hosting uses Astro's generated HTML redirect page.
+
+### Keep merged stations merged during Radio Browser imports
+
+`fetch-greece-stations.mjs` recognizes both `stationuuid` and every UUID in `alternate_stationuuids`. Original records for a merged station are recorded in `recognizedMergedStations` in the new-station import report; they do not create another page or overwrite the consolidated station's curated fields. This applies to its primary UUID too, so a remote quality-specific bitrate or codec cannot change the chosen default. Existing stream choices and metadata endpoints remain intact.
+
+Duplicate URL detection also checks `streams[].url` and `streams[].alternate_urls`, including when Radio Browser assigns a new UUID. Keep `alternate_stationuuids` when merging stations, and keep old slug redirects in `astro.config.mjs`. Completely new UUIDs with previously unseen URLs still import normally; they cannot reliably be identified as the same broadcast from a name alone. Conflicting UUID ownership across local stations stops the import before any files are written.
+
+### Extract CentovaCast HTTPS proxy URLs
+
+Run `python3 tools/extract-centovacast-tls.py` to read `proxytuneinurltls` from saved CentovaCast now-playing endpoints. Add `--write` to store available HTTPS URLs in station records. Existing HTTPS defaults stay unchanged; an HTTP default is upgraded only if FFprobe identifies audio through the returned HTTPS URL with certificate verification enabled. Matching stream options are updated together and retain their previous URL as an alias. See `reports/centovacast-tls.json` for missing fields and probe failures. An extracted URL alone is not proof of playback compatibility.
+
+### Radiojar now-playing endpoints
+
+Radiojar streams use `https://www.radiojar.com/api/stations/STREAM_ID/now_playing/`. The main metadata discovery script now checks this endpoint for Radiojar streams. Run `node tools/find-radiojar-metadata.mjs` to check Radiojar URLs in station defaults and saved stream alternatives, save verified endpoints only where metadata is missing, and write `reports/radiojar-metadata.json`. Existing metadata configurations are preserved. The player displays Radiojar artist/title and `thumb` artwork. Empty or failed responses are not added; no history endpoint is assumed.
