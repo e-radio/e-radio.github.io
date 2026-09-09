@@ -1,5 +1,28 @@
 [
   {
+    "slug": "beat-fm",
+    "stationuuid": "7a71946f-fea1-445b-8ab4-b51d398f9743",
+    "name": "Beat FM",
+    "state": null,
+    "city": null,
+    "stream_url": "https://azuracast.streams.ovh/radio/8150/live",
+    "homepage": "https://beatfm.gr",
+    "favicon": "/station-icons/beatfm.webp",
+    "genres": ["dance", "top 40"],
+    "language": null,
+    "bitrate": 320,
+    "codec": "MP3",
+    "clickcount": 0,
+    "lastcheckok": 0,
+    "votes": 0,
+    "hls": 0,
+    "ssl_error": 0,
+    "geo_lat": null,
+    "geo_long": null,
+    "nowplaying_url": "https://azuracast.streams.ovh/api/nowplaying/beatfm",
+    "metadata_server": "azuracast"
+  },
+  {
     "slug": "alexandroupolis-dee-jay-94-8-alexandroupolis",
     "stationuuid": "f43d2752-f2c0-4338-8bab-4a5c69564a3b",
     "name": "Alexandroupolis Dee Jay 94.8",
