@@ -1,8 +1,9 @@
-import rawStations from "../data/stations-gr.json";
+import { site, countryText } from "../../countries/site.mjs";
+import rawStations from "../lib/stations";
 
 import { metadataStations, METADATA_PAGE_SIZE } from "../lib/metadata-stations";
 
-const ROOT_URL = "https://e-radio.github.io";
+const ROOT_URL = site.siteUrl;
 const HOMEPAGE_PER_PAGE = 50;
 const HUB_PER_PAGE = 20;
 const HIGH_BITRATE_THRESHOLD = 320;

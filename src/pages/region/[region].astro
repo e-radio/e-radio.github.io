@@ -1,10 +1,11 @@
 ---
+import { site, countryText } from "../../../countries/site.mjs";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import CategorySwitch from "../../components/CategorySwitch.astro";
 import RegionSeoHeader from "../../components/RegionSeoHeader.astro";
 import RegionSeoFooter from "../../components/RegionSeoFooter.astro";
-import rawStations from "../../data/stations-gr.json";
+import rawStations from "../../lib/stations";
 import { slugify } from "../../lib/slug";
 import { buildRegionSeo } from "../../lib/regionSeo";
 import { Image } from "astro:assets";
@@ -75,7 +76,7 @@ const startIndex = (page - 1) * STATIONS_PER_PAGE;
 const endIndex = startIndex + STATIONS_PER_PAGE;
 const pagedStations = stations.slice(startIndex, endIndex);
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/region/${slug}/`;
 const seo = buildRegionSeo(region, stations, startIndex + 1, Math.min(endIndex, totalStations), page);
 const { pageTitle, pageDescription } = seo;
@@ -103,7 +104,7 @@ const structuredData = {
     ogImage={ogImageUrl}
     keywords={`${region} radio, ${region} live radio, greek radio ${region}`}
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <RegionSeoHeader

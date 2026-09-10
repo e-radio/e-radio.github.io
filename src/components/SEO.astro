@@ -1,4 +1,5 @@
 ---
+import { site, countryText } from "../../countries/site.mjs";
 interface Props {
   title?: string;
   description?: string;
@@ -27,7 +28,7 @@ const {
   keywords,
   robots = "index, follow",
   language = "English",
-  author = "E-Radio Greece",
+  author = countryText("E-Radio Greece"),
   structuredData,
   prevUrl,
   nextUrl,
@@ -51,7 +52,7 @@ const {
 {canonical && <meta property="og:url" content={canonical} />}
 {ogImage && <meta property="og:image" content={ogImage} />}
 {ogImage && <meta property="og:image:alt" content={ogTitle || "E-Radio Logo"} />}
-<meta property="og:site_name" content="E-Radio Greece" />
+<meta property="og:site_name" content={countryText("E-Radio Greece")} />
 <meta property="og:locale" content="en_US" />
 
 {/* Twitter Card Tags */}

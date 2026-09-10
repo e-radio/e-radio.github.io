@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../../countries/site.mjs";
 import { stationStreams } from "../../lib/station-streams.mjs";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
-import rawStations from "../../data/stations-gr.json";
+import rawStations from "../../lib/stations";
 import metadataConfig from "../../data/metadata-config.json";
 import { slugify } from "../../lib/slug";
 import { Image } from "astro:assets";
@@ -34,7 +35,7 @@ const hasStream = Boolean(station.stream_url);
 const formattedVotes = station.votes ? new Intl.NumberFormat("en-US").format(Number(station.votes)) : null;
 const locationLabel = station.state
   ? `${station.state}${station.country ? `, ${station.country}` : ""}`
-  : station.country || "Greece";
+  : station.country || countryText("Greece");
 const genres = (station.genres || []).filter(Boolean);
 const displayGenres = genres.slice(0, 3);
 const streamQualityParts = [
@@ -343,7 +344,7 @@ const getRecommendedStations = () => {
 
 const recommendedStations = getRecommendedStations();
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/stations/${station.slug}/`;
 const ogImage = "/e-radio-og-image.png";
 const ogImageUrl = station.favicon && station.favicon.startsWith("http")
@@ -401,13 +402,13 @@ const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
 
 const encodingFormat = resolveEncodingFormat(station);
 
-const title = `${station.name} – Live Radio Station in Greece | E-Radio`;
+const title = countryText(`${station.name} – Live Radio Station in Greece | E-Radio`);
 const genreLabel = station.genres.length > 0
   ? station.genres.slice(0, 2).join(", ").toLowerCase()
   : "live";
 const description = station.state
-  ? `Listen to ${station.name} live from ${station.state}, Greece. Stream ${genreLabel} radio online with reliable playback, station details, and the latest stream quality info.`
-  : `Listen to ${station.name} live from Greece. Stream ${genreLabel} radio online with reliable playback, station details, and the latest stream quality info.`;
+  ? countryText(`Listen to ${station.name} live from ${station.state}, Greece. Stream ${genreLabel} radio online with reliable playback, station details, and the latest stream quality info.`)
+  : countryText(`Listen to ${station.name} live from Greece. Stream ${genreLabel} radio online with reliable playback, station details, and the latest stream quality info.`);
 
 const playerScriptConfig = {
   hasStream,
@@ -446,7 +447,7 @@ const structuredData = {
           "name": station.state,
           "containedInPlace": {
             "@type": "Country",
-            "name": station.country || "Greece",
+            "name": station.country || countryText("Greece"),
             "identifier": String(station.countrycode || "GR").toUpperCase()
           }
         }
@@ -454,7 +455,7 @@ const structuredData = {
     : {
         "areaServed": {
           "@type": "Country",
-          "name": station.country || "Greece",
+          "name": station.country || countryText("Greece"),
           "identifier": String(station.countrycode || "GR").toUpperCase()
         }
       }),
@@ -484,9 +485,9 @@ const structuredData = {
     ogDescription={description}
     ogImage={ogImageUrl}
     ogType="music.radio_station"
-    keywords={`${station.name}, ${station.state || "Greece"}, radio, live, ${station.genres.join(", ")}`}
+    keywords={`${station.name}, ${station.state || site.countryName}, radio, live, ${station.genres.join(", ")}`}
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
@@ -803,7 +804,7 @@ const structuredData = {
             <div class="small-muted mb-2">Location</div>
             <div class="fw-semibold">{locationLabel}</div>
             <div class="small-muted">
-              Country: {station.country || "Greece"}
+              Country: {station.country || site.countryName}
               {languageLabel && <> · Language: {languageLabel}</>}
             </div>
           </div>
@@ -811,7 +812,7 @@ const structuredData = {
           <div>
             <div class="small-muted mb-2">More</div>
             <div class="d-grid gap-1">
-              <a href="/" class="text-decoration-none">Browse Greece Stations</a>
+              <a href="/" class="text-decoration-none">Browse {site.countryName} Stations</a>
               <a href={radddioURL} target="_blank" rel="nofollow noopener" class="text-decoration-none" aria-label={`Listen to ${station.name} on Radddio App`}>Listen on Radddio</a>
               {station.homepage && (
               <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station Website</a>

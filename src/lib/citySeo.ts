@@ -1,3 +1,4 @@
+import { site, countryText } from "../../countries/site.mjs";
 type CityStation = {
   state?: string | null;
 };
@@ -33,37 +34,37 @@ export const buildCitySeo = (
   const region = hasCity
     ? selectMostCommon(stations.map((station) => station.state), [city])
     : "";
-  const country = "Greece";
+  const country = countryText("Greece");
   const locationParts = [city, region, country].filter(Boolean);
-  const location = locationParts.join(", ") || "Greece";
+  const location = locationParts.join(", ") || countryText("Greece");
   const stationCount = stations.length;
   const stationWord = stationCount === 1 ? "station" : "stations";
 
   const heading = hasCity
     ? `${city} Radio Stations – Listen to ${city} Radio Online`
-    : "Greek Radio Stations – Listen to Radio Online";
+    : countryText("Greek Radio Stations – Listen to Radio Online");
   const longTitle = `${heading} | E-Radio`;
   const firstPageTitle = longTitle.length <= 75
     ? longTitle
-    : `${hasCity ? city : "Greek"} Radio Stations Online | E-Radio`;
+    : countryText(`${hasCity ? city : "Greek"} Radio Stations Online | E-Radio`);
   const pageTitle = page === 1
     ? firstPageTitle
-    : `${hasCity ? city : "Greek"} Radio Stations – Page ${page} | E-Radio`;
+    : countryText(`${hasCity ? city : "Greek"} Radio Stations – Page ${page} | E-Radio`);
 
-  const subject = hasCity ? `${city} radio` : "Greek radio";
+  const subject = hasCity ? `${city} radio` : countryText("Greek radio");
   const pageDescription = page === 1
     ? `Listen to ${stationCount} ${subject} ${stationWord} live online. Discover local radio from ${location} and start listening for free.`
     : `Listen to ${subject} stations online. Page ${page} features stations ${start}–${end} of ${stationCount} from ${location}.`;
 
   const introduction = hasCity
     ? `Discover ${city} radio stations broadcasting music, news, talk, entertainment and more. Browse local radio from across ${city} and listen online for free.`
-    : "Discover Greek radio stations broadcasting music, news, talk, entertainment and more. Browse stations from across Greece and listen online for free.";
+    : countryText("Discover Greek radio stations broadcasting music, news, talk, entertainment and more. Browse stations from across Greece and listen online for free.");
 
   const areaSentence = hasCity && region
     ? `Find local radio serving ${city} and the surrounding region of ${region}.`
     : hasCity
       ? `Find local radio broadcasting from across ${city}.`
-      : "Find local stations broadcasting from cities and regions across Greece.";
+      : countryText("Find local stations broadcasting from cities and regions across Greece.");
 
   return {
     city,
@@ -75,7 +76,7 @@ export const buildCitySeo = (
     rangeLabel: `Showing stations ${start}–${end} of ${stationCount}`,
     pageTitle,
     pageDescription,
-    footerHeading: hasCity ? `Listen to Radio from ${location}` : "Listen to Radio from Greece",
-    footerText: `Explore ${hasCity ? city : "Greek"} radio stations and listen live from anywhere in the world. ${areaSentence} Choose a station and start listening to ${subject} online.`,
+    footerHeading: hasCity ? `Listen to Radio from ${location}` : countryText("Listen to Radio from Greece"),
+    footerText: countryText(`Explore ${hasCity ? city : "Greek"} radio stations and listen live from anywhere in the world. ${areaSentence} Choose a station and start listening to ${subject} online.`),
   };
 };

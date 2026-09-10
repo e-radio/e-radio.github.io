@@ -1,0 +1,1055 @@
+{
+  "checkedAt": "2026-09-09T23:36:10.178Z",
+  "checked": 278,
+  "saved": 132,
+  "dryRun": false,
+  "scope": "Selected station streams; direct server checks, not browser/CORS verification",
+  "verified": [
+    {
+      "slug": "club-music-radio-70s-80s-90s",
+      "name": "..:: CLUB MUSIC RADIO ::....:: 70s 80s 90s ::..",
+      "nowplaying_url": "http://cmr-hosting.com:8030/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8030/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-cro-hits",
+      "name": "..:: CLUB MUSIC RADIO ::....:: CRO HITS ::..",
+      "nowplaying_url": "http://cmr-hosting.com:8060/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8060/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-exyu-pop-rock",
+      "name": "..:: CLUB MUSIC RADIO ::....:: ExYU POP-ROCK ::..",
+      "nowplaying_url": "http://cmr-hosting.com:8080/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8080/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-folk",
+      "name": "..:: CLUB MUSIC RADIO ::....:: Folk ::..",
+      "nowplaying_url": "http://cmr-hosting.com:8010/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8010/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-love-song",
+      "name": "..:: CLUB MUSIC RADIO ::....:: LOVE SONG ::..",
+      "nowplaying_url": "http://cmr-hosting.com:8040/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8040/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-tambura",
+      "name": "..:: CLUB MUSIC RADIO ::....:: TAMBURA ::..",
+      "nowplaying_url": "http://cmr-hosting.com:8070/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8070/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "abdulbasit-abdulsamad",
+      "name": "Abdulbasit Abdulsamad",
+      "nowplaying_url": "https://radio.mp3islam.com/api/nowplaying/abdulbasit",
+      "history_url": "https://radio.mp3islam.com/api/nowplaying/abdulbasit",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "antena-zagreb-live",
+      "name": "Antena Zagreb - Live",
+      "nowplaying_url": "http://live.antenazagreb.hr:8000/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "antena-zagreb-xmas",
+      "name": "Antena Zagreb - Xmas",
+      "nowplaying_url": "http://live.antenazagreb.hr:8015/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8015/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "antena-zagreb-dance-grad-zagreb",
+      "name": "Antena Zagreb Dance",
+      "nowplaying_url": "http://live.antenazagreb.hr:8015/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8015/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "antena-zagreb-hit-grad-zagreb",
+      "name": "Antena Zagreb Hit",
+      "nowplaying_url": "http://live.antenazagreb.hr:8011/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8011/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "antena-zagreb-love-grad-zagreb",
+      "name": "Antena Zagreb Love",
+      "nowplaying_url": "http://live.antenazagreb.hr:8007/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8007/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "antena-zagreb-rock-grad-zagreb",
+      "name": "Antena Zagreb Rock",
+      "nowplaying_url": "http://live.antenazagreb.hr:8019/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8019/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "antena-zagreb-u-ivo-grad-zagreb",
+      "name": "Antena Zagreb Uživo",
+      "nowplaying_url": "http://live.antenazagreb.hr:8002/stats?sid=1&json=1",
+      "history_url": "http://live.antenazagreb.hr:8002/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "banovina-light",
+      "name": "Banovina Light",
+      "nowplaying_url": "https://audio.radio-banovina.hr:7008/stats?sid=1&json=1",
+      "history_url": "https://audio.radio-banovina.hr:7008/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "banovina-turbo",
+      "name": "Banovina Turbo",
+      "nowplaying_url": "https://audio.radio-banovina.hr:7010/stats?sid=1&json=1",
+      "history_url": "https://audio.radio-banovina.hr:7010/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bravo",
+      "name": "Bravo",
+      "nowplaying_url": "http://c5.hostingcentar.com:8059/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8059/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bravo-cb6a1e40",
+      "name": "Bravo",
+      "nowplaying_url": "http://c5.hostingcentar.com:8059/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8059/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bravo-grad-zagreb",
+      "name": "bravo!",
+      "nowplaying_url": "http://c5.hostingcentar.com:8059/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8059/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bravo-balade-grad-zagreb",
+      "name": "bravo! balade",
+      "nowplaying_url": "http://c5.hostingcentar.com:8360/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8360/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bravo-pop-grad-zagreb",
+      "name": "bravo! pop",
+      "nowplaying_url": "http://c5.hostingcentar.com:8354/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8354/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bravo-rock-grad-zagreb",
+      "name": "bravo! rock",
+      "nowplaying_url": "http://c5.hostingcentar.com:8348/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8348/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "city-radio-zagreba-ka-19-velika-gorica",
+      "name": "CITY RADIO",
+      "nowplaying_url": "http://s8.iqstreaming.com:8058/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8058/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "city-radio-88-6-zagreba-ka-upanija",
+      "name": "City-radio 88.6",
+      "nowplaying_url": "http://s8.iqstreaming.com:8058/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8058/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-70s-80s-90s-08d2313f",
+      "name": "Club Music Radio - 70's 80's 90's",
+      "nowplaying_url": "https://cmr-hosting.com:7003/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7003/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-cro-hits-ec4bd980",
+      "name": "Club Music Radio - CRO HITS",
+      "nowplaying_url": "https://cmr-hosting.com:7006/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7006/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-dance",
+      "name": "Club Music Radio - Dance",
+      "nowplaying_url": "https://cmr-hosting.com:7002/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7002/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-folk-2cf7f232",
+      "name": "Club Music Radio - FOLK",
+      "nowplaying_url": "https://cmr-hosting.com:7001/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7001/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-italo-disco",
+      "name": "Club Music Radio - ITALO DISCO",
+      "nowplaying_url": "https://cmr-hosting.com:7005/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7005/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-love-song-03abf0e3",
+      "name": "Club Music Radio - LOVE SONG",
+      "nowplaying_url": "https://cmr-hosting.com:7004/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7004/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-tambura-90d73285",
+      "name": "Club Music Radio - TAMBURA",
+      "nowplaying_url": "https://cmr-hosting.com:7007/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7007/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "club-music-radio-tambura-120f5847",
+      "name": "Club Music Radio Tambura",
+      "nowplaying_url": "http://cmr-hosting.com:8070/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8070/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "cmc-classic",
+      "name": "CMC Classic",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8100/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-dalmatina",
+      "name": "CMC Dalmatina",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8040/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-festival",
+      "name": "CMC Festival",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8070/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-kids",
+      "name": "CMC Kids",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8090/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-lagano",
+      "name": "CMC Lagano",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8030/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-radio",
+      "name": "CMC Radio",
+      "nowplaying_url": "https://radio-stream.cmc.com.hr:9011/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-rock",
+      "name": "CMC Rock",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8060/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-tambure",
+      "name": "CMC Tambure",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8050/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "cmc-zabavni",
+      "name": "CMC Zabavni",
+      "nowplaying_url": "http://radio-stream.cmc.com.hr:8085/status-json.xsl?mount=%2Fautodj",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "domoljubne-pjesme",
+      "name": "Domoljubne pjesme",
+      "nowplaying_url": "http://radiostream.optiklink.com:8200/status-json.xsl?mount=%2Flive.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "dvb-digital",
+      "name": "dvb.digital",
+      "nowplaying_url": "https://radio.dvb.digital/api/nowplaying/dvb.digital",
+      "history_url": "https://radio.dvb.digital/api/nowplaying/dvb.digital",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "enter-zagreb-grad-zagreb",
+      "name": "ENTER Zagreb",
+      "nowplaying_url": "http://live.enterzagreb.hr:8023/stats?sid=1&json=1",
+      "history_url": "http://live.enterzagreb.hr:8023/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "extra-fm-8ca1441f",
+      "name": "EXTRA FM",
+      "nowplaying_url": "http://streams.extrafm.hr:8110/stats?sid=1&json=1",
+      "history_url": "http://streams.extrafm.hr:8110/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "extra-fm-grad-zagreb",
+      "name": "Extra FM",
+      "nowplaying_url": "http://streams.extrafm.hr:8110/stats?sid=1&json=1",
+      "history_url": "http://streams.extrafm.hr:8110/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "folkyton-radio-velika-mlaka",
+      "name": "FolkyTon Radio",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:6035/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "galacticfm-progressive-house-trance",
+      "name": "GalacticFM - Progressive House & Trance",
+      "nowplaying_url": "https://a1.asurahosting.com/api/nowplaying/galacticfm_-_progressive_house__trance",
+      "history_url": "https://a1.asurahosting.com/api/nowplaying/galacticfm_-_progressive_house__trance",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "gold-velika-gorica",
+      "name": "Gold - Velika Gorica",
+      "nowplaying_url": "http://live.goldfm.hr:8068/stats?sid=1&json=1",
+      "history_url": "http://live.goldfm.hr:8068/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "gold-fm-zagreba-ka-upanija",
+      "name": "Gold FM",
+      "nowplaying_url": "http://live.goldfm.hr:8068/stats?sid=1&json=1",
+      "history_url": "http://live.goldfm.hr:8068/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm",
+      "name": "Happy FM",
+      "nowplaying_url": "http://c5.hostingcentar.com:8072/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8072/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-zagreba-ka-upanija",
+      "name": "Happy FM",
+      "nowplaying_url": "http://c5.hostingcentar.com:9543/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:9543/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-fest",
+      "name": "Happy FM - Fest",
+      "nowplaying_url": "http://c5.hostingcentar.com:8372/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8372/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-klape",
+      "name": "Happy FM - Klape",
+      "nowplaying_url": "http://c5.hostingcentar.com:8384/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8384/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-legenda",
+      "name": "Happy FM - Legenda",
+      "nowplaying_url": "http://c5.hostingcentar.com:8396/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8396/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-live",
+      "name": "Happy FM - Live",
+      "nowplaying_url": "http://c5.hostingcentar.com:9543/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:9543/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-party",
+      "name": "Happy FM - Party",
+      "nowplaying_url": "http://c5.hostingcentar.com:8390/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-tambura",
+      "name": "Happy FM - Tambura",
+      "nowplaying_url": "http://c5.hostingcentar.com:8378/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8378/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-croatia",
+      "name": "Happy FM Croatia",
+      "nowplaying_url": "http://c5.hostingcentar.com:9543/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:9543/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-fest-3b40f3ef",
+      "name": "Happy FM Fest",
+      "nowplaying_url": "http://c5.hostingcentar.com:8372/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8372/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-klape-4ed94922",
+      "name": "Happy FM Klape",
+      "nowplaying_url": "http://c5.hostingcentar.com:8384/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8384/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-legenda-792910cd",
+      "name": "Happy FM Legenda",
+      "nowplaying_url": "http://c5.hostingcentar.com:8396/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8396/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-party-19786bf9",
+      "name": "Happy FM Party",
+      "nowplaying_url": "http://c5.hostingcentar.com:8390/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "happy-fm-tambura-73c4e66f",
+      "name": "Happy FM Tambura",
+      "nowplaying_url": "http://c5.hostingcentar.com:8378/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8378/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "hrvatski-radio-valpov-tina-kralja-petra-kre-imira-iv-1-valpovo",
+      "name": "HRVATSKI RADIO VALPOVŠTINA",
+      "nowplaying_url": "http://s8.iqstreaming.com:8068/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8068/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "https-clubmusic-1-com",
+      "name": "https://clubmusic-1.com/",
+      "nowplaying_url": "http://cmr-hosting.com:8050/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8050/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "karlovac-grill-mix-radio",
+      "name": "Karlovac Grill Mix radio",
+      "nowplaying_url": "http://s8.iqstreaming.com:8006/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8006/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "karlovac-now-dance-90s-radio",
+      "name": "Karlovac NOW Dance 90's radio",
+      "nowplaying_url": "http://s8.iqstreaming.com:8010/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8010/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "karlovac-wow-hits-radio",
+      "name": "Karlovac WOW Hits Radio",
+      "nowplaying_url": "http://s8.iqstreaming.com:8030/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8030/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "klfm-org-splitsko-dalmatinska",
+      "name": "KLFM.org",
+      "nowplaying_url": "https://klfmorgborg.radioca.st/stats?sid=1&json=1",
+      "history_url": "https://klfmorgborg.radioca.st/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "narodni-aaaaaaa",
+      "name": "Narodni - AAAAAAA!",
+      "nowplaying_url": "http://c5.hostingcentar.com:8360/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8360/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "narodni-ljubav-je-u-zraku",
+      "name": "Narodni - Ljubav je u zraku",
+      "nowplaying_url": "http://c5.hostingcentar.com:8354/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8354/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "narodni-ne-pitaj-samo-sviraj",
+      "name": "Narodni - Ne pitaj, samo sviraj!",
+      "nowplaying_url": "http://c5.hostingcentar.com:8348/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8348/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "narodni-radio-goga",
+      "name": "Narodni Radio Goga",
+      "nowplaying_url": "https://cmr-hosting.com:7013/stats?sid=1&json=1",
+      "history_url": "https://cmr-hosting.com:7013/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "novi-radio-zadar-zrinsko-frankopanska-13-zadar",
+      "name": "Novi radio Zadar",
+      "nowplaying_url": "http://s8.iqstreaming.com:8022/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8022/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "poslovni-fm",
+      "name": "Poslovni FM",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:2665/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "r-dalmacija",
+      "name": "R. Dalmacija",
+      "nowplaying_url": "http://shoutcast.pondi.hr:8000/stats?sid=1&json=1",
+      "history_url": "http://shoutcast.pondi.hr:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-101",
+      "name": "Radio 101",
+      "nowplaying_url": "http://live.radio101.hr:9531/stats?sid=1&json=1",
+      "history_url": "http://live.radio101.hr:9531/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-101-rock",
+      "name": "Radio 101 Rock",
+      "nowplaying_url": "https://live.radio101.hr:8010/stats?sid=1&json=1",
+      "history_url": "https://live.radio101.hr:8010/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-101-rock-c9c7126d",
+      "name": "Radio 101 ROCK",
+      "nowplaying_url": "https://live.radio101.hr:8010/stats?sid=1&json=1",
+      "history_url": "https://live.radio101.hr:8010/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-101-soft-sound",
+      "name": "Radio 101 Soft Sound",
+      "nowplaying_url": "https://live.radio101.hr:8020/stats?sid=1&json=1",
+      "history_url": "https://live.radio101.hr:8020/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-4-you",
+      "name": "Radio 4 You",
+      "nowplaying_url": "http://84.16.232.202:7154/stats?sid=1&json=1",
+      "history_url": "http://84.16.232.202:7154/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-banovina-sisa-ko-moslava-ka-upanija",
+      "name": "Radio Banovina",
+      "nowplaying_url": "http://stream1.radio-banovina.hr:8008/stats?sid=1&json=1",
+      "history_url": "http://stream1.radio-banovina.hr:8008/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-baranja-trg-slobode-32-3-hr-beli-manastir",
+      "name": "Radio Baranja",
+      "nowplaying_url": "http://s8.iqstreaming.com:8036/stats?sid=1&json=1",
+      "history_url": "http://s8.iqstreaming.com:8036/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dalmacija-fure-ta-splitsko-dalmatinska",
+      "name": "Radio Dalmacija - Furešta",
+      "nowplaying_url": "http://c5.hostingcentar.com:8215/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8215/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dalmacija-hajdu-ke-splitsko-dalmatinska",
+      "name": "Radio Dalmacija - Hajdučke",
+      "nowplaying_url": "http://c5.hostingcentar.com:8221/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8221/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dalmacija-oliver",
+      "name": "Radio Dalmacija - Oliver",
+      "nowplaying_url": "http://c5.hostingcentar.com:8275/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8275/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dalmacija-rokija-splitsko-dalmatinska",
+      "name": "Radio Dalmacija - Rokija",
+      "nowplaying_url": "http://c5.hostingcentar.com:8209/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8209/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-deejay-hr-zagreb",
+      "name": "Radio Deejay HR",
+      "nowplaying_url": "http://live.deejay.hr:7002/stats?sid=1&json=1",
+      "history_url": "http://live.deejay.hr:7002/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dj-grga",
+      "name": "Radio DJ Grga",
+      "nowplaying_url": "http://cmr-hosting.com:8430/stats?sid=1&json=1",
+      "history_url": "http://cmr-hosting.com:8430/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-drni-89-0-mhz-kralja-zvonimira-8-drni",
+      "name": "Radio Drniš 89,0 MHz",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:2415/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-akovo",
+      "name": "Radio Đakovo",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:8305/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-grubi-no-polje",
+      "name": "Radio Grubišno Polje",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:8215/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-italo-disco-net",
+      "name": "Radio Italo Disco Net",
+      "nowplaying_url": "http://65.21.202.84:8356/stats?sid=1&json=1",
+      "history_url": "http://65.21.202.84:8356/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-jaska-jastrebarsko",
+      "name": "Radio Jaska",
+      "nowplaying_url": "http://uk1.streamingpulse.com:7041/stats?sid=1&json=1",
+      "history_url": "http://uk1.streamingpulse.com:7041/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kampus",
+      "name": "Radio Kampus",
+      "nowplaying_url": "https://audio.alter-media.hr:7016/stats?sid=1&json=1",
+      "history_url": "https://audio.alter-media.hr:7016/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-labin",
+      "name": "Radio Labin",
+      "nowplaying_url": "http://radiolabin.streamradio.com.hr:9100/stats?sid=1&json=1",
+      "history_url": "http://radiolabin.streamradio.com.hr:9100/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-maestral",
+      "name": "Radio Maestral",
+      "nowplaying_url": "http://ec2s.crolive.com.hr:1630/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-maria",
+      "name": "RADIO MARIA",
+      "nowplaying_url": "http://dreamsiteradiocp.com:8026/stats?sid=1&json=1",
+      "history_url": "http://dreamsiteradiocp.com:8026/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-maria-croatia",
+      "name": "RADIO MARIA CROATIA",
+      "nowplaying_url": "http://dreamsiteradiocp4.com:8080/stats?sid=1&json=1",
+      "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-marija",
+      "name": "Radio Marija",
+      "nowplaying_url": "http://dreamsiteradiocp4.com:8080/stats?sid=1&json=1",
+      "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-marija-bistrica",
+      "name": "Radio Marija Bistrica",
+      "nowplaying_url": "http://178.218.163.171:8024/stats?sid=1&json=1",
+      "history_url": "http://178.218.163.171:8024/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-marija-hrvatska",
+      "name": "Radio Marija Hrvatska",
+      "nowplaying_url": "https://dreamsiteradiocp2.com/rpc/rmcroatia/streaminfo.get",
+      "history_url": "https://dreamsiteradiocp2.com/external/rpc.php?m=recenttracks.get&username=rmcroatia&limit=10",
+      "metadata_server": "centovacast"
+    },
+    {
+      "slug": "radio-max",
+      "name": "Radio Max",
+      "nowplaying_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
+      "history_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-max-99-3-cerje-nebojse-maru-evec-zagorje",
+      "name": "Radio Max 99.3 (Cerje Nebojse, Maruševec)",
+      "nowplaying_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
+      "history_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-megaton",
+      "name": "Radio Megaton",
+      "nowplaying_url": "https://chopin.bizmusic.net/api/nowplaying/radio_megaton",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-nu",
+      "name": "Radio NU",
+      "nowplaying_url": "https://slusaj.hr:10445/stats?sid=1&json=1",
+      "history_url": "https://slusaj.hr:10445/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-orahovica",
+      "name": "Radio Orahovica",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:2595/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ritam-ibenik",
+      "name": "Radio Ritam",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:8455/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ro-a",
+      "name": "Radio Roža",
+      "nowplaying_url": "http://stream.radio-roza.org/status-json.xsl?mount=%2Flive.ogg",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ibenik-ibenik-knin",
+      "name": "Radio Šibenik",
+      "nowplaying_url": "http://144.76.219.22:8215/stats?sid=1&json=1",
+      "history_url": "http://144.76.219.22:8215/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-sova",
+      "name": "Radio Sova",
+      "nowplaying_url": "http://evcast.mediacp.eu:1960/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-student-100-5",
+      "name": "Radio Student 100.5",
+      "nowplaying_url": "http://161.53.122.184:8000/status-json.xsl?mount=%2FAAC128.aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-sunce-splitsko-dalmatinska",
+      "name": "Radio Sunce",
+      "nowplaying_url": "http://shoutcast.pondi.hr:8002/stats?sid=1&json=1",
+      "history_url": "http://shoutcast.pondi.hr:8002/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-techno-zagreb",
+      "name": "Radio Techno Zagreb",
+      "nowplaying_url": "http://mercury.reliastream.com:8085/stats?sid=1&json=1",
+      "history_url": "http://mercury.reliastream.com:8085/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-zelina",
+      "name": "Radio Zelina",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:1690/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-upanja",
+      "name": "Radio Županja",
+      "nowplaying_url": "https://audio.alter-media.hr:7019/stats?sid=1&json=1",
+      "history_url": "https://audio.alter-media.hr:7019/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio101-zagreb",
+      "name": "Radio101",
+      "nowplaying_url": "http://live.radio101.hr:9531/stats?sid=1&json=1",
+      "history_url": "http://live.radio101.hr:9531/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "slavonski-radio",
+      "name": "Slavonski Radio",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:8035/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "soundset-ragusa-dubrovnik",
+      "name": "Soundset Ragusa",
+      "nowplaying_url": "http://178.218.163.171:8012/stats?sid=1&json=1",
+      "history_url": "http://178.218.163.171:8012/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "studentski-radio-unios",
+      "name": "Studentski radio UNIOS",
+      "nowplaying_url": "http://radio.unios.hr:8000/status-json.xsl?mount=%2Fstream.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "thompson-24-7-radio-nu-dalmatia",
+      "name": "Thompson 24/7 - Radio NU",
+      "nowplaying_url": "https://slusaj.hr:10446/stats?sid=1&json=1",
+      "history_url": "https://slusaj.hr:10446/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "top-gold-grad-zagreb",
+      "name": "TOP GOLD",
+      "nowplaying_url": "http://116.202.235.114:8414/stats?sid=1&json=1",
+      "history_url": "http://116.202.235.114:8414/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "top-pop-grad-zagreb",
+      "name": "TOP POP",
+      "nowplaying_url": "http://116.202.235.114:8420/stats?sid=1&json=1",
+      "history_url": "http://116.202.235.114:8420/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "top-radio-grad-zagreb",
+      "name": "Top Radio",
+      "nowplaying_url": "http://c5.hostingcentar.com:8000/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "top-rock-grad-zagreb",
+      "name": "TOP ROCK",
+      "nowplaying_url": "http://116.202.235.114:8408/stats?sid=1&json=1",
+      "history_url": "http://116.202.235.114:8408/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "top-you-grad-zagreb",
+      "name": "TOP YOU",
+      "nowplaying_url": "http://116.202.235.114:8402/stats?sid=1&json=1",
+      "history_url": "http://116.202.235.114:8402/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "ultra-split-splitsko-dalmatinska",
+      "name": "Ultra Split",
+      "nowplaying_url": "http://c5.hostingcentar.com:8061/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8061/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "ultra-split",
+      "name": "ULTRA Split",
+      "nowplaying_url": "http://c5.hostingcentar.com:8061/stats?sid=1&json=1",
+      "history_url": "http://c5.hostingcentar.com:8061/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "zabavni-radio",
+      "name": "Zabavni Radio",
+      "nowplaying_url": "http://radiocentar.hr:8585/stats?sid=1&json=1",
+      "history_url": "http://radiocentar.hr:8585/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "zfm",
+      "name": "ZFM",
+      "nowplaying_url": "https://ec2s.crolive.com.hr:7015/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "upanijski-radio-ibenik-ul-velimira-korpika-23-ibenik",
+      "name": "Županijski Radio Šibenik",
+      "nowplaying_url": "http://144.76.219.22:8215/stats?sid=1&json=1",
+      "history_url": "http://144.76.219.22:8215/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    }
+  ],
+  "notFound": [
+    "057-radio-zadar-croatia-banana-state",
+    "ampupradio",
+    "bijelo-plavi-radio-istarska-2-osijek",
+    "braniteljski-radio-nepokoreni-grad",
+    "bravo-kids-grad-zagreb",
+    "cmc-jugoton",
+    "crash",
+    "cro-international-dj-radio",
+    "cvrai-com-thats-your-webradio",
+    "drama-radio-dubrovnik-dalmatia",
+    "extra-fm",
+    "folk-radio-kneginec",
+    "galacticfm-progressive-house-trance-6ceb8ce2",
+    "gamerz-inn-jamz",
+    "gradski-radio-trogir-splitsko-dalmatinska",
+    "happy-fest",
+    "hit-radio-glavi-ka-ul-29-sinj",
+    "hit-radio",
+    "hkr",
+    "hrt-drugi-program",
+    "hrt-glas-hrvatske",
+    "hrt-hr-1-prvi-program",
+    "hrt-hr-1-prvi-program-zagreb",
+    "hrt-hr-2-zagreb",
+    "hrt-hr-2-drugi-program",
+    "hrt-hr-3-tre-i-program",
+    "hrt-prvi-program",
+    "hrt-radio-dubrovnik",
+    "hrt-radio-knin",
+    "hrt-radio-osijek",
+    "hrt-radio-pula",
+    "hrt-radio-rijeka",
+    "hrt-radio-sljeme",
+    "hrt-radio-sljeme-mp3",
+    "hrt-radio-split",
+    "hrt-radio-zadar",
+    "hrvatski-katoli-ki-radio",
+    "hrvatski-radio-klasik",
+    "hrvatski-radio-klasik-hrt",
+    "hrvatski-radio-pop-glazba",
+    "hrvatski-radio-rock",
+    "hrvatski-radio-akovec-d-o-o-stream",
+    "hrvatski-radio-karlovac",
+    "hrvatski-radio-oto-ac-trg-dr-franje-tu-mana-10-oto-ac",
+    "jr-radio-splitsko-dalmatinska",
+    "kneginec",
+    "krugoval-bjelovarsko-bilogorska-upanija",
+    "laganini-fm",
+    "laganini-fm-rijeka",
+    "laganini-fm-rijeka-primorska",
+    "laganini-fm-zagreb-slavonska-avenija-2-zagreb",
+    "laganini-fm-zagreb-new",
+    "laganini-folk-narodni-radio",
+    "laganini-narodni-i-folk-radio",
+    "laganini-osijek",
+    "laganini-po-ega",
+    "naxi-house-belgrade",
+    "obiteljski-radio-ivani-park-stjepana-posezija-6-ivani-grad",
+    "otvoreni-live",
+    "otvoreni-chill-grad-zagreb",
+    "otvoreni-fitness-grad-zagreb",
+    "otvoreni-hot-grad-zagreb",
+    "otvoreni-live-grad-zagreb",
+    "otvoreni-live-c889187f",
+    "otvoreni-love-grad-zagreb",
+    "otvoreni-radio",
+    "otvoreni-radio-fitness",
+    "otvoreni-radio-love-grad-zagreb",
+    "otvoreni-radio-u-ivo-grad-zagreb",
+    "otvoreni-radio-chill",
+    "otvoreni-radio-fitness-37305389",
+    "petrinjski-radio-petrinja",
+    "petrinjski-radio-https-www-openstreetmap-org-relation-8076890",
+    "podravski-radio",
+    "pomorski-radio-bakar-nauti-ka-3-51222-bakar",
+    "prigorski-radio-antuna-gustava-mato-a-3-kri-evci",
+    "prolaznik-evergreen-lepoglava-vara-dinska",
+    "prvi-karlovacki",
+    "radio-105-selnica-hr-medjimurje",
+    "radio-2",
+    "radio-808",
+    "radio-92-fm",
+    "radio-baranja",
+    "radio-beli-e",
+    "radio-biograd-na-moru",
+    "radio-bnm-biograd-na-moru-chill-etali-te-kneza-branimira-2-i-biograd-na-moru",
+    "radio-bnm-biograd-na-moru-off-air-etali-te-kneza-branimira-2-i-biograd-na-moru",
+    "radio-bnm-biograd-na-moru-pop-etali-te-kneza-branimira-2-i-biograd-na-moru",
+    "radio-bnm-biograd-na-moru-rock-etali-te-kneza-branimira-2-i-biograd-na-moru",
+    "radio-bnm-biograd-na-moru-94-0-100-5-mhz-etali-te-kneza-branimira-2-i-biograd-na",
+    "radio-boom-hits",
+    "radio-brac-splitsko-dalmatinska",
+    "radio-centar-studio-pore",
+    "radio-centar-studio-pore-253ad8ac",
+    "radio-daruvar",
+    "radio-eurostar-umag-istra",
+    "radio-gorski-kotar",
+    "radio-hrvatsko-zagorje-krapina",
+    "radio-istra",
+    "radio-istra-b233072c",
+    "radio-jaska",
+    "radio-kaj",
+    "radio-kaj-38b81da5",
+    "radio-kastav",
+    "radio-koprivnica-koprivni-ko-kri-eva-ka-upanija",
+    "radio-kor-ula-107-5fm-kor-ula-island-kor-ula",
+    "radio-korzo",
+    "radio-kri-evci",
+    "radio-krka-krke",
+    "radio-ludnica",
+    "radio-max-vara-dinska",
+    "radio-media-servis",
+    "radio-nova-gradi-ka",
+    "radio-otok-krk",
+    "radio-preporod",
+    "radio-prkos",
+    "radio-quirinus-91-7-sisa-ko-moslava-ka-upanija",
+    "radio-rojc",
+    "radio-salona-solin-hrvatskih-zrtava73",
+    "radio-samobor",
+    "radio-slavonija-ulica-nikole-zrinskog-67-slavonski-brod",
+    "radio-slavonija",
+    "radio-slunj-trg-dr-franje-tu-mana-14-slunj",
+    "radio-stubica",
+    "radio-student",
+    "radio-techno-dance-kneginec",
+    "radio-tvornica-grad-zagreb",
+    "radio-velika-gorica-zagreba-ka-upanija",
+    "radio-vinkovci",
+    "radio-vrbovec-94-5-zagreba-ka-upanija",
+    "radio-zlatar-krapinsko-zagorska-upanija",
+    "rbb-internet-radio",
+    "replay-news-hrvatski-radio-informacija-svakih-5-minuta-zagreb",
+    "room-fm",
+    "rovinj-fm",
+    "super-radio",
+    "tambura-ki-radio-vukovar",
+    "top-radio",
+    "top-radio-gold-zagreb",
+    "top-radio-pop-zagreb",
+    "top-radio-rock-zagreb",
+    "top-radio-yugo-zagreb",
+    "tranzistor",
+    "yammat-fm",
+    "zagorski-radio",
+    "zagorski-radio-frana-galovi-a-1a-49000-krapina"
+  ]
+}

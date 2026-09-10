@@ -1,4 +1,4 @@
-import rawStations from "../data/stations-gr.json";
+import rawStations from "./stations";
 
 export const METADATA_PAGE_SIZE = 20;
 export const metadataStations = rawStations.filter((station) => {

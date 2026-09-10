@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../countries/site.mjs";
 import Layout from "../layouts/Layout.astro";
 import SEO from "../components/SEO.astro";
 import CategorySwitch from "../components/CategorySwitch.astro";
-import rawStations from "../data/stations-gr.json";
+import rawStations from "../lib/stations";
 import { slugify } from "../lib/slug";
 import { Image } from "astro:assets";
 
@@ -15,10 +16,10 @@ const topStations = [...rawStations]
   .sort((a, b) => (b.votes || 0) - (a.votes || 0))
   .slice(0, 20);
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/top-rated/`;
-const pageTitle = "Top Rated Greek Radio Stations | E-Radio";
-const pageDescription = "Listen to the 20 highest-rated Greek radio stations ranked by listener votes, featuring today’s most popular streams, trusted favorites, and standout picks.";
+const pageTitle = countryText("Top Rated Greek Radio Stations | E-Radio");
+const pageDescription = countryText("Listen to the 20 highest-rated Greek radio stations ranked by listener votes, featuring today’s most popular streams, trusted favorites, and standout picks.");
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -43,14 +44,14 @@ const structuredData = {
     ogImage={ogImageUrl}
     keywords="top rated radio, greek radio, popular radio greece"
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Popular Greek Radio Stations Online</h1>
-    <h2 class="lead text-muted">Discover the most loved radio stations from Greece.</h2>
+    <h1 class="display-5 fw-bold mb-2">Popular {site.countryAdjective} Radio Stations Online</h1>
+    <h2 class="lead text-muted">Discover the most loved radio stations from {site.countryName}.</h2>
     <p class="text-muted small">Ranked by listener votes and refreshed daily.</p>
-    <p class="text-muted small">Showing the top {topStations.length} Greek radio stations right now.</p>
+    <p class="text-muted small">Showing the top {topStations.length} {site.countryAdjective} radio stations right now.</p>
   </div>
   <CategorySwitch current="top-rated" />
   <div class="station-list border border-light-subtle rounded-3 overflow-hidden">

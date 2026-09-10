@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../../countries/site.mjs";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import CategorySwitch from "../../components/CategorySwitch.astro";
-import rawStations from "../../data/stations-gr.json";
+import rawStations from "../../lib/stations";
 
 const ogImage = "/e-radio-og-image.png";
 
@@ -71,10 +72,10 @@ const genreBadgeEntries = genreEntries
 const totalGenres = genreEntries.length;
 const totalStations = rawStations.length;
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/genres/`;
-const pageTitle = "Greece Radio Stations by Genre | E-Radio";
-const pageDescription = "Explore Greece radio stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.";
+const pageTitle = countryText("Greece Radio Stations by Genre | E-Radio");
+const pageDescription = countryText("Explore Greece radio stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.");
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -99,12 +100,12 @@ const structuredData = {
     ogImage={ogImageUrl}
     keywords="greek radio genres, music genres greece radio"
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Greek Radio Stations by Genre</h1>
-    <h2 class="lead text-muted">Browse Greek radiostations grouped by their primary genres.</h2>
+    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations by Genre</h1>
+    <h2 class="lead text-muted">Browse {site.countryAdjective} radiostations grouped by their primary genres.</h2>
     <p class="text-muted small">Genres arranged alphabetically; stations in each genre sorted by votes.</p>
     <p class="text-muted small">Showing {totalGenres} genres across {totalStations} stations.</p>
 

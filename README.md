@@ -1,4 +1,18 @@
-# e-Radio Greece
+# Country Radio Template
+
+A shared Astro radio directory with Greece as the default and a Croatia configuration included.
+
+```sh
+npm ci
+npm run dev                         # Greece
+COUNTRY=hr npm run dev              # Croatia
+COUNTRY=hr npm run build
+```
+
+See [the country setup guide](countries/README.md) for country creation, station imports, metadata discovery, icons, and GitHub Pages deployment. Set Croatia's real `SITE_URL` before publishing.
+
+## Existing Greece site
+
 Check the website: https://e-radio.github.io/
 
 A modern web application for streaming Greek radio stations, built with [Astro](https://astro.build).

@@ -1,3 +1,4 @@
+import { site, stationsPath, countryCode } from "../countries/site.mjs";
 import { cleanStreamUrl } from "./lib/stream-urls.mjs";
 import { ensureUniqueStationSlugs, assertUniqueStationSlugs } from "./lib/station-slugs.mjs";
 import { readFile, rename, writeFile, mkdir } from "node:fs/promises";
@@ -5,9 +6,9 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-const DATA_PATH = path.join("src", "data", "stations-gr.json");
-const UPDATE_REVIEW_PATH = path.join("src", "data", "station-update-review.json");
-const NEW_STATIONS_REPORT_PATH = path.join("src", "data", "new-stations-import-report.json");
+const DATA_PATH = stationsPath;
+const UPDATE_REVIEW_PATH = path.join("src", "data", `station-update-review-${countryCode}.json`);
+const NEW_STATIONS_REPORT_PATH = path.join("src", "data", `new-stations-import-report-${countryCode}.json`);
 const API_BATCH_SIZE = 1000;
 
 const REMOTE_UPDATE_FIELDS = [
@@ -122,7 +123,11 @@ function makeSlug({ name, state, stationuuid }) {
   return base ? base : `station-${fallback}`;
 }
 
-function mergeStations(localStations, apiStations) {
+function mergeStations(localStations, apiStations, exclusions = []) {
+  const excludedIds = new Set(exclusions.map(entry => entry.stationuuid));
+  const excludedStations = apiStations.filter(station => excludedIds.has(station.stationuuid));
+  apiStations = apiStations.filter(station => !excludedIds.has(station.stationuuid));
+  localStations = localStations.filter(station => !excludedIds.has(station.stationuuid));
   const localByUuid = new Map();
   const localByUrl = new Map();
   const matchedLocalIndexes = new Set();
@@ -228,6 +233,7 @@ function mergeStations(localStations, apiStations) {
 
   return {
     merged,
+    excludedStations,
     automaticUpdates,
     automaticallyAddedStations,
     rejectedDuplicateStreams,
@@ -237,7 +243,7 @@ function mergeStations(localStations, apiStations) {
 }
 
 async function main() {
-  console.log("Starting Greek radio stations fetch...\n");
+  console.log(`Starting ${site.countryName} radio stations fetch...\n`);
 
   // 1) Fetch a list of servers
   console.log("Step 1: Fetching server list...");
@@ -263,8 +269,8 @@ async function main() {
   console.log(`Using server: ${baseUrl}\n`);
 
   // 2) Fetch stations for Greece
-  console.log("Step 2: Fetching Greek stations...");
-  const rawStations = await getStationsByCountryCode(baseUrl, "GR");
+  console.log(`Step 2: Fetching ${site.countryName} stations...`);
+  const rawStations = await getStationsByCountryCode(baseUrl, site.countryCode);
 
   console.log(`Fetched ${rawStations.length} stations.\n`);
 
@@ -295,7 +301,7 @@ async function main() {
       city: null,
       stream_url,
       homepage: s.homepage || null,
-      favicon: s.favicon || null,
+      favicon: /^https?:\/\//i.test(s.favicon || "") ? s.favicon : null,
       genres: tags,
       language: languages[0] || null,
       bitrate: s.bitrate ?? null,
@@ -316,7 +322,7 @@ async function main() {
   // 5) Update remote-managed metadata and separate new stations for review.
   console.log("Step 4: Comparing with local stations...");
   const outDir = path.join(process.cwd(), "src", "data");
-  const outFile = path.join(process.cwd(), DATA_PATH);
+  const outFile = DATA_PATH;
   const updateReviewFile = path.join(process.cwd(), UPDATE_REVIEW_PATH);
   const newStationsReportFile = path.join(process.cwd(), NEW_STATIONS_REPORT_PATH);
 
@@ -325,7 +331,14 @@ async function main() {
   }
 
   const localStations = await readLocalStations(outFile);
-  const result = mergeStations(localStations, cleaned);
+  const exclusionsFile = path.join(process.cwd(), 'countries', `${countryCode}.excluded-stations.json`);
+  let exclusions = [];
+  try { exclusions = JSON.parse(await readFile(exclusionsFile, 'utf8')); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  if (!Array.isArray(exclusions) || exclusions.some(entry => typeof entry?.stationuuid !== 'string' || !entry.stationuuid.trim())) {
+    throw new Error(`Invalid station exclusions in ${exclusionsFile}`);
+  }
+  const result = mergeStations(localStations, cleaned, exclusions);
   const slugChanges = ensureUniqueStationSlugs(result.merged);
   assertUniqueStationSlugs(result.merged);
   console.log(`Assigned ${slugChanges.length} unique station slugs.`);
@@ -340,6 +353,7 @@ async function main() {
   await writeJsonAtomic(newStationsReportFile, {
     generatedAt,
     server: baseUrl,
+    excludedStations: result.excludedStations,
     automaticallyAddedStations: result.automaticallyAddedStations,
     recognizedMergedStations: result.recognizedMergedStations,
     rejectedDuplicateStreams: result.rejectedDuplicateStreams
@@ -352,6 +366,7 @@ async function main() {
   console.log(`  Fetched: ${rawStations.length} stations`);
   console.log(`  Valid API records: ${cleaned.length}`);
   console.log(`  Existing local records: ${localStations.length}`);
+  console.log(`  Excluded station records skipped: ${result.excludedStations.length}`);
   console.log(`  Automatic updates: ${result.automaticUpdates.length}`);
   console.log(`  New stations added automatically: ${result.automaticallyAddedStations.length}`);
   console.log(`  Recognized merged station records: ${result.recognizedMergedStations.length}`);

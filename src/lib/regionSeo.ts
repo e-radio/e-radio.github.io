@@ -1,33 +1,10 @@
+import { site, countryText } from "../../countries/site.mjs";
 type RegionStation = {
   city?: string | null;
 };
 
-const REGION_NAMES = new Set([
-  "attica",
-  "central greece",
-  "central macedonia",
-  "crete",
-  "eastern macedonia and thrace",
-  "epirus",
-  "ionian islands",
-  "north aegean",
-  "peloponnese",
-  "south aegean",
-  "thessaly",
-  "western greece",
-  "western macedonia",
-]);
-
-const CITY_ALIASES = new Map([
-  ["heraclion", "Heraklion"],
-  ["iraklio", "Heraklion"],
-  ["messologi", "Mesolongi"],
-  ["nafplion", "Nafplio"],
-  ["patra", "Patras"],
-  ["rethimno", "Rethymno"],
-  ["nea kallikrateia", "Nea Kallikrateia"],
-  ["νέα καλλικράτεια", "Nea Kallikrateia"],
-]);
+const REGION_NAMES = new Set<string>(site.regions);
+const CITY_ALIASES = new Map<string, string>(Object.entries(site.cityAliases));
 
 const cleanText = (value: unknown) =>
   typeof value === "string" ? value.trim().replace(/\s+/g, " ") : "";
@@ -41,7 +18,7 @@ const isUsefulCity = (city: string, region: string, country: string) => {
   const key = normalizedKey(city);
   if (!city || city.length > 60 || city !== city.replace(/[\u0000-\u001f\u007f]/g, "")) return false;
   if (!/^[\p{L}][\p{L}\p{M} .'-]*$/u.test(city)) return false;
-  if (["other", "unknown", "greece", normalizedKey(region), normalizedKey(country)].includes(key)) return false;
+  if (["other", "unknown", site.countryName.toLowerCase(), normalizedKey(region), normalizedKey(country)].includes(key)) return false;
   return !REGION_NAMES.has(key);
 };
 
@@ -80,8 +57,8 @@ export const buildRegionSeo = (
   end: number,
   page = 1,
 ) => {
-  const region = cleanText(regionValue) || "Greece";
-  const country = "Greece";
+  const region = cleanText(regionValue) || countryText("Greece");
+  const country = countryText("Greece");
   const location = country ? `${region}, ${country}` : region;
   const stationCount = stations.length;
   const stationWord = stationCount === 1 ? "station" : "stations";

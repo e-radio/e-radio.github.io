@@ -1,0 +1,37 @@
+{
+  "countryCode": "GR",
+  "countryName": "Greece",
+  "countryAdjective": "Greek",
+  "language": "en",
+  "siteName": "E-Radio Greece",
+  "siteUrl": "https://e-radio.github.io",
+  "stationsFile": "src/data/stations-gr.json",
+  "regions": [
+    "attica",
+    "central greece",
+    "central macedonia",
+    "crete",
+    "eastern macedonia and thrace",
+    "epirus",
+    "ionian islands",
+    "north aegean",
+    "peloponnese",
+    "south aegean",
+    "thessaly",
+    "western greece",
+    "western macedonia"
+  ],
+  "cityAliases": {
+    "heraclion": "Heraklion",
+    "iraklio": "Heraklion",
+    "messologi": "Mesolongi",
+    "nafplion": "Nafplio",
+    "patra": "Patras",
+    "rethimno": "Rethymno",
+    "nea kallikrateia": "Nea Kallikrateia",
+    "νέα καλλικράτεια": "Nea Kallikrateia"
+  },
+  "redirectsFile": "countries/gr.redirects.json",
+  "googleVerification": "lQfQGR6ZHNk4_xpou2o4dn4dTItSP8G9YVR8rWACGls",
+  "twitterHandle": "@eradiogreece"
+}

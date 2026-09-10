@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../../../../countries/site.mjs";
 import Layout from "../../../../layouts/Layout.astro";
 import SEO from "../../../../components/SEO.astro";
 import CategorySwitch from "../../../../components/CategorySwitch.astro";
-import rawStations from "../../../../data/stations-gr.json";
+import rawStations from "../../../../lib/stations";
 import { Image } from "astro:assets";
 
 const radddioURL = "https://apple.co/4lNPQAH";
@@ -82,10 +83,10 @@ const startIndex = (page - 1) * PAGE_SIZE;
 const endIndex = startIndex + PAGE_SIZE;
 const pagedStations = stations.slice(startIndex, endIndex);
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/genres/${slug}/page/${page}/`;
 const pageTitle = `${genre} Radio Stations – Page ${page} | E-Radio`;
-const pageDescription = `Listen to ${genre} radio stations from Greece. Page ${page} of ${totalPages} with curated picks, popular streams, and related stations.`;
+const pageDescription = countryText(`Listen to ${genre} radio stations from Greece. Page ${page} of ${totalPages} with curated picks, popular streams, and related stations.`);
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -110,7 +111,7 @@ const structuredData = {
     ogImage={ogImageUrl}
     keywords={`${genre} radio, ${genre} live radio, greek radio ${genre}`}
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="mb-4">

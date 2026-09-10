@@ -1,10 +1,11 @@
+import { stationsPath, countryCode } from "../countries/site.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
-const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons");
-const STATIONS_PATH = path.join(process.cwd(), "src", "data", "stations-gr.json");
+const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", ...(countryCode === "gr" ? [] : [countryCode]));
+const STATIONS_PATH = stationsPath;
 const MAX_RETRIES = 2;
 const FETCH_TIMEOUT_MS = 15000;
 
@@ -113,7 +114,7 @@ const cacheFavicons = async () => {
       const buffer = await normalizeImage(downloaded);
 
       const filename = `${baseName}.webp`;
-      const relativePath = `/station-icons/${filename}`;
+      const relativePath = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
       const outputPath = path.join(OUTPUT_DIR, filename);
 
       await writeFile(outputPath, buffer);

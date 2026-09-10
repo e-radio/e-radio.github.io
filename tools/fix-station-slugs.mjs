@@ -1,11 +1,12 @@
+import { stationsPath } from "../countries/site.mjs";
 import { readFile, writeFile, rename, mkdir } from 'node:fs/promises';
 import { ensureUniqueStationSlugs, assertUniqueStationSlugs } from './lib/station-slugs.mjs';
-const dataFile = new URL('../src/data/stations-gr.json', import.meta.url);
+const dataFile = stationsPath;
 const stations = JSON.parse(await readFile(dataFile, 'utf8'));
 const changes = ensureUniqueStationSlugs(stations);
 assertUniqueStationSlugs(stations);
 if (changes.length) {
-  const temporary = new URL('../src/data/stations-gr.json.tmp', import.meta.url);
+  const temporary = stationsPath + ".tmp";
   await writeFile(temporary, `${JSON.stringify(stations, null, 2)}\n`);
   await rename(temporary, dataFile);
   await mkdir(new URL('../reports/', import.meta.url), { recursive: true });

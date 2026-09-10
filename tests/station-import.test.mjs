@@ -53,3 +53,15 @@ test('all actual consolidated stations survive repeated imports of their origina
   assert.deepEqual(result.merged,[local]);
   assert.equal(result.rejectedDuplicateStreams.length,1);
 });
+
+test('Greece exclusion blocks the requested UUID even when its stream changes', () => {
+  const exclusions=JSON.parse(readFileSync(new URL('../countries/gr.excluded-stations.json',import.meta.url)));
+  const uuid='e9af978d-8da9-48e1-a349-9f48ea2b3c7f';
+  const remote={stationuuid:uuid,slug:'excluded',stream_url:'https://changed.example/stream'};
+  const result=mergeStations([], [remote], exclusions);
+  assert.deepEqual(result.merged,[]);
+  assert.deepEqual(result.excludedStations,[remote]);
+  assert.equal(result.automaticallyAddedStations.length,0);
+  assert.deepEqual(mergeStations([remote],[remote],exclusions).merged,[]);
+  assert.equal(mergeStations([],[remote],[]).merged.length,1);
+});

@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../countries/site.mjs";
 import Layout from '../layouts/Layout.astro';
 import SEO from '../components/SEO.astro';
 import CategorySwitch from "../components/CategorySwitch.astro";
-import rawStations from "../data/stations-gr.json";
+import rawStations from "../lib/stations";
 import { slugify } from "../lib/slug";
 import { Image } from "astro:assets";
 
@@ -44,10 +45,10 @@ const generatePageNumbers = () => {
 
 const pageNumbers = generatePageNumbers();
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/`;
-const pageTitle = "Greek Radio Stations – E Radio Greece & Live Greek Radio | E-Radio";
-const pageDescription = `Discover and listen to ${totalStations} popular live Greek radio stations. Stream music, news, and talk radio online, explore top picks by genre and city, and find your next favorite station.`;
+const pageTitle = countryText("Greek Radio Stations – E Radio Greece & Live Greek Radio | E-Radio");
+const pageDescription = countryText(`Discover and listen to ${totalStations} popular live Greek radio stations. Stream music, news, and talk radio online, explore top picks by genre and city, and find your next favorite station.`);
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 // Structured data (JSON-LD)
@@ -55,7 +56,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteRoot}/#website`,
-  "name": "E-Radio Greece",
+  "name": countryText("E-Radio Greece"),
   "url": siteRoot,
   "description": pageDescription,
   "image": ogImageUrl
@@ -71,18 +72,18 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="Greek radio, live radio, Greece stations, online radio, radio streaming"
+    keywords={countryText("Greek radio, live radio, Greece stations, online radio, radio streaming")}
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Greek Radio Stations – Listen to Radio Greece Online</h1>
-    <h2 class="lead text-muted">Discover {totalStations} live radio stations from Greece, ranked by popularity.</h2>
+    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations – Listen to Radio {site.countryName} Online</h1>
+    <h2 class="lead text-muted">Discover {totalStations} live radio stations from {site.countryName}, ranked by popularity.</h2>
      <p class="text-muted">
-    Listen to Greek radio and e-radio stations live online from anywhere in the world.
-    Explore music, news and entertainment from Greece with Radddio — your easy way
-    to discover eradio Greece, e-radio Greece and ελληνικό εραδιο online.
+    Listen to {site.countryAdjective} radio and e-radio stations live online from anywhere in the world.
+    Explore music, news and entertainment from {site.countryName} with Radddio — your easy way
+    to discover eradio {site.countryName}, e-radio {site.countryName} online.
   </p>
     <p class="text-muted small">Updated regularly based on listener popularity.</p>
     <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>

@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../countries/site.mjs";
 import Layout from "../layouts/Layout.astro";
 import SEO from "../components/SEO.astro";
 import CategorySwitch from "../components/CategorySwitch.astro";
-import rawStations from "../data/stations-gr.json";
+import rawStations from "../lib/stations";
 
 const ogImage = "/e-radio-og-image.png";
 
@@ -68,10 +69,10 @@ const cityBadgeEntries = cityEntries
 const totalCities = cityEntries.length;
 const totalStations = rawStations.length;
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/city/`;
-const pageTitle = "Greek Radio Stations by City | E-Radio";
-const pageDescription = "Browse live Greek radio stations grouped by city to discover local favorites, see how many stations each city has, and jump to dedicated pages for deeper listening.";
+const pageTitle = countryText("Greek Radio Stations by City | E-Radio");
+const pageDescription = countryText("Browse live Greek radio stations grouped by city to discover local favorites, see how many stations each city has, and jump to dedicated pages for deeper listening.");
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -96,11 +97,11 @@ const structuredData = {
     ogImage={ogImageUrl}
     keywords="greece radio cities, greek radio by city"
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Greek Radio Stations by City</h1>
+    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations by City</h1>
     <h2 class="lead text-muted">Find stations broadcast from your city or explore new areas.</h2>
     <p class="text-muted small">Cities arranged alphabetically; stations within each city sorted by votes.</p>
     <p class="text-muted small">Showing {totalCities} cities across {totalStations} stations.</p>

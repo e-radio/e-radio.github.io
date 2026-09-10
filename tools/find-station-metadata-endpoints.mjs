@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { stationsPath, countryCode } from "../countries/site.mjs";
 import { radiojarEndpoint, radiojarHasTrack, radiojarHistoryEndpoint, radiojarHistoryTracks } from "../src/lib/radiojar.mjs";
 
 import { centovaHistoryTracks } from "../src/lib/centovacast-history.mjs";
@@ -8,8 +9,8 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = fileURLToPath(new URL("../", import.meta.url));
-const DATA_FILE = resolve(ROOT, "src/data/stations-gr.json");
-const REPORT_FILE = resolve(ROOT, "reports/metadata-endpoints.json");
+const DATA_FILE = stationsPath;
+const REPORT_FILE = resolve(ROOT, `reports/metadata-endpoints-${countryCode}.json`);
 const args = process.argv.slice(2);
 const hasFlag = (flag) => args.includes(flag);
 const option = (name, fallback = null) => {

@@ -1,0 +1,13 @@
+{
+  "countryCode": "HR",
+  "countryName": "Croatia",
+  "countryAdjective": "Croatian",
+  "language": "en",
+  "siteName": "E-Radio Croatia",
+  "siteUrl": "https://croatia-radio.example",
+  "stationsFile": "src/data/stations-hr.json",
+  "regions": [],
+  "cityAliases": {},
+  "redirectsFile": "countries/hr.redirects.json",
+  "googleVerification": ""
+}

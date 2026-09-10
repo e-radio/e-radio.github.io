@@ -1,0 +1,13 @@
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+const root = process.cwd();
+export const countryCode = (process.env.COUNTRY || 'gr').toLowerCase();
+if (!/^[a-z]{2}$/.test(countryCode)) throw new Error('COUNTRY must be a two-letter country code');
+export const site = JSON.parse(readFileSync(resolve(root, `countries/${countryCode}.json`), 'utf8'));
+if (site.countryCode !== countryCode.toUpperCase()) throw new Error('Country configuration code mismatch');
+site.siteUrl = (process.env.SITE_URL || site.siteUrl).replace(/\/$/, '');
+const url = new URL(site.siteUrl);
+if (!['http:', 'https:'].includes(url.protocol) || url.pathname !== '/') throw new Error('SITE_URL must be a site origin (use a GitHub Pages user/organization site or custom domain)');
+export const stationsPath = resolve(root, site.stationsFile);
+export const redirects = JSON.parse(readFileSync(resolve(root, site.redirectsFile), 'utf8'));
+export const countryText = text => text.replaceAll('E-Radio Greece', site.siteName).replaceAll('e-Radio Greece', site.siteName).replaceAll('Greece', site.countryName).replaceAll('Greek', site.countryAdjective);

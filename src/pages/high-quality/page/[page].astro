@@ -1,8 +1,9 @@
 ---
+import { site, countryText } from "../../../../countries/site.mjs";
 import Layout from "../../../layouts/Layout.astro";
 import SEO from "../../../components/SEO.astro";
 import CategorySwitch from "../../../components/CategorySwitch.astro";
-import rawStations from "../../../data/stations-gr.json";
+import rawStations from "../../../lib/stations";
 import { slugify } from "../../../lib/slug";
 import { Image } from "astro:assets";
 
@@ -44,10 +45,10 @@ const startIndex = (page - 1) * PAGE_SIZE;
 const endIndex = startIndex + PAGE_SIZE;
 const pagedStations = highQualityStations.slice(startIndex, endIndex);
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/high-quality/page/${page}/`;
-const pageTitle = `High Quality (320 kbps) Greek Radio Streams – Page ${page} | E-Radio`;
-const pageDescription = `Page ${page} of ${totalPages}. Listen to ${totalStations} Greek radio streams broadcasting in 320 kbps or higher for premium sound and richer music.`;
+const pageTitle = countryText(`High Quality (320 kbps) Greek Radio Streams – Page ${page} | E-Radio`);
+const pageDescription = countryText(`Page ${page} of ${totalPages}. Listen to ${totalStations} Greek radio streams broadcasting in 320 kbps or higher for premium sound and richer music.`);
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 const structuredData = {
@@ -72,12 +73,12 @@ const structuredData = {
     ogImage={ogImageUrl}
     keywords="high quality radio, 320 kbps radio streams, greek radio"
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     structuredData={structuredData}
   />
   <div class="mb-4">
     <p class="small text-muted mb-2"><a class="link-muted" href="/high-quality/">← Back to high quality</a></p>
-    <h1 class="display-5 fw-bold mb-2">Greek High Quality Radio Streams</h1>
+    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} High Quality Radio Streams</h1>
     <h2 class="lead text-muted">Only stations broadcasting at 320 kbps or higher.</h2>
     <p class="text-muted small">Page {page} of {totalPages}. Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
   </div>

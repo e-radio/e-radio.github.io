@@ -1,7 +1,8 @@
 ---
+import { site, countryText } from "../../../countries/site.mjs";
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
-import rawStations from "../../data/stations-gr.json";
+import rawStations from "../../lib/stations";
 import { slugify } from "../../lib/slug";
 import { Image } from "astro:assets";
 
@@ -66,10 +67,10 @@ const generatePageNumbers = () => {
 
 const pageNumbers = generatePageNumbers();
 
-const siteRoot = "https://e-radio.github.io";
+const siteRoot = site.siteUrl;
 const canonical = page === 1 ? `${siteRoot}/` : `${siteRoot}/page/${page}/`;
-const pageTitle = `Radio Stations in Greece – Page ${page} – Live Online | E-Radio`;
-const pageDescription = `Browse the most popular live Greek radio stations sorted by community votes. Page ${page} of ${totalPages}, with curated picks, genres, and cities to explore.`;
+const pageTitle = countryText(`Radio Stations in Greece – Page ${page} – Live Online | E-Radio`);
+const pageDescription = countryText(`Browse the most popular live Greek radio stations sorted by community votes. Page ${page} of ${totalPages}, with curated picks, genres, and cities to explore.`);
 const ogImageUrl = `${siteRoot}${ogImage}`;
 
 // Structured data (JSON-LD)
@@ -83,14 +84,14 @@ const structuredData = {
   "image": ogImageUrl,
   "isPartOf": {
     "@type": "WebSite",
-    "name": "E-Radio Greece",
+    "name": countryText("E-Radio Greece"),
     "url": siteRoot
   },
   "hasPart": topStations.map(station => ({
     "@type": "RadioStation",
     "name": station.name,
     "url": `${siteRoot}/stations/${station.slug}/`,
-    "areaServed": station.state || "Greece"
+    "areaServed": station.state || countryText("Greece")
   }))
 };
 ---
@@ -104,16 +105,16 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="Greek radio, live radio, Greece stations, online radio, radio streaming"
+    keywords={countryText("Greek radio, live radio, Greece stations, online radio, radio streaming")}
     robots="index, follow"
-    author="E-Radio Greece"
+    author={countryText("E-Radio Greece")}
     prevUrl={page > 1 ? page === 2 ? `${siteRoot}/` : `${siteRoot}/page/${page - 1}/` : undefined}
     nextUrl={page < totalPages ? `${siteRoot}/page/${page + 1}/` : undefined}
     structuredData={structuredData}
   />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Greek Radio Stations</h1>
-    <p class="lead text-muted">Discover {totalStations} live radio stations from Greece. Sorted by popularity.</p>
+    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations</h1>
+    <p class="lead text-muted">Discover {totalStations} live radio stations from {site.countryName}. Sorted by popularity.</p>
     <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
   </div>
 

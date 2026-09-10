@@ -1,10 +1,11 @@
+import { stationsPath, countryCode } from "../countries/site.mjs";
 import path from "node:path";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import sharp from "sharp";
 
-const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons");
-const STATIONS_PATH = path.join(process.cwd(), "src", "data", "stations-gr.json");
+const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", ...(countryCode === "gr" ? [] : [countryCode]));
+const STATIONS_PATH = stationsPath;
 const FETCH_TIMEOUT_MS = 15000;
 const USER_AGENT = "e-radio.github.io favicon fetcher";
 
@@ -291,7 +292,7 @@ const processStation = async (station, index, stations) => {
     const filename = `${filenameBase}.webp`;
     const outputPath = path.join(OUTPUT_DIR, filename);
     await writeFile(outputPath, normalized);
-    station.favicon = `/station-icons/${filename}`;
+    station.favicon = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
     await persistStations(stations);
     console.log(`✓ Saved icon for ${station.name} (${candidate})`);
     return { status: "ok" };
@@ -302,7 +303,7 @@ const processStation = async (station, index, stations) => {
   const filename = `${filenameBase}-placeholder.webp`;
   const outputPath = path.join(OUTPUT_DIR, filename);
   await writeFile(outputPath, placeholderBuffer);
-  station.favicon = `/station-icons/${filename}`;
+  station.favicon = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
   await persistStations(stations);
   console.log(`⚠️ Generated placeholder for ${station.name}`);
   return { status: "placeholder" };
