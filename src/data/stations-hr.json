@@ -346,7 +346,7 @@
     "state": "Grad Zagreb",
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8002/;",
-    "homepage": "http://www.antenazagreb.hr/",
+    "homepage": "https://www.antenazagreb.hr/",
     "favicon": "/station-icons/hr/antena-zagreb-u-ivo-grad-zagreb.webp",
     "genres": [],
     "language": "croatian",
@@ -1842,7 +1842,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8390/stream?4606",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://www.zgportal.com/wp-content/uploads/2022/11/happy-fm-radio-sa-srcem-i-tijelom-2022.jpg",
+    "favicon": "/station-icons/hr/happy-fm-party.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -3832,7 +3832,7 @@
     "city": null,
     "stream_url": "http://stream1.radio-banovina.hr:8008/;",
     "homepage": "http://www.radio-banovina.hr/",
-    "favicon": "https://www.radio-banovina.hr/wp-content/uploads/2015/01/logo-120_00000.png",
+    "favicon": "/station-icons/hr/radio-banovina.webp",
     "genres": [
       "folk"
     ],
@@ -5242,7 +5242,7 @@
     "name": "Radio Preporod",
     "state": null,
     "city": null,
-    "stream_url": "http://s1.voscast.com:7986/;",
+    "stream_url": "https://s1.voscast.com:7987/stream",
     "homepage": "https://radiopreporod.com/",
     "favicon": "/station-icons/hr/radio-preporod.webp",
     "genres": [
