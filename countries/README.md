@@ -39,16 +39,82 @@ All pages, SEO text, structured data, sitemap, robots.txt and web manifest read 
 
 The player, metadata provider parsers, adaptive polling, and image updates remain shared. Radddio links and shared artwork remain the existing project's branding; review those and the contact/legal page before publishing a derivative site.
 
-## GitHub Pages
+## GitHub Pages: publish a new country
 
-Use a separate repository for each country site, or build selected countries from this shared repository into separate deployment repositories. In the repository's **Settings → Secrets and variables → Actions → Variables**, set:
+Use a separate repository for each country site. This template requires a root-domain deployment: a GitHub Pages user/organization site or a custom domain. Repository subpaths such as `/croatia/` are rejected because navigation and asset paths are root-relative.
 
-- `COUNTRY`: for example `hr` (defaults to `gr`).
-- `SITE_URL`: the final origin, for example `https://your-account.github.io` or a custom domain.
+### 1. Create the destination repository
 
-The existing Pages workflow reads these variables. This template currently requires a root-domain deployment: a GitHub Pages user/organization site or a custom domain. Repository subpaths such as `/croatia/` are rejected because navigation and asset paths are root-relative.
+Create an empty repository named `<owner>.github.io` under the corresponding GitHub user or organization. For the push workflow below, leave it empty: do not initialize a README, license, or .gitignore. Prepare the country's configuration and dataset using the commands above.
 
-To offer this repository as a GitHub template, enable **Template repository** in GitHub repository settings, then use **Use this template** for each new country. No repository setting or deployment is changed by this refactor.
+### 2. Configure the country before the first push
+
+In the destination repository, open **Settings → Secrets and variables → Actions → Variables** and add these repository variables (not secrets):
+
+| Name | Value |
+| --- | --- |
+| `COUNTRY` | The lowercase country code matching `countries/<code>.json`, such as `hr` |
+| `SITE_URL` | The final origin, such as `https://<owner>.github.io` |
+
+Without `COUNTRY`, the workflow builds Greece. `SITE_URL` overrides the URL in the country configuration for deployment. Also update the configuration's `siteUrl` when you want local builds to use the final domain automatically.
+
+Under **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. The existing `.github/workflows/pages.yml` builds and deploys pushes to `main`.
+
+### 3. Check and push from the shared project
+
+Replace `<code>`, `<owner>`, and `<remote-name>` below. Choose a distinct remote name for each country, such as `croatia` or `slovenia`. Run these commands from the project root:
+
+```sh
+COUNTRY=<code> SITE_URL=https://<owner>.github.io npm run build
+npm test
+
+git remote -v
+git remote add <remote-name> git@github.com:<owner>/<owner>.github.io.git
+
+git status --short
+git add .
+git diff --cached --stat
+git commit -m "Add country radio site"
+git push <remote-name> main
+```
+
+Review the staged changes before committing: `git add .` includes all pending project changes. Adding a named remote preserves `origin` for the existing site. If the remote already exists, verify its URL with `git remote -v` and skip `git remote add`. Do not force-push over an existing destination history; this initial-push recipe assumes an empty destination repository. SSH access to the destination account is required.
+
+For Croatia, the concrete values are:
+
+| Setting | Value |
+| --- | --- |
+| Repository | `radio-hrvatska/radio-hrvatska.github.io` |
+| `COUNTRY` | `hr` |
+| `SITE_URL` | `https://radio-hrvatska.github.io` |
+| Remote name | `croatia` |
+
+```sh
+git remote add croatia git@github.com:radio-hrvatska/radio-hrvatska.github.io.git
+git add .
+git diff --cached --stat
+git commit -m "Add country template and Croatia radio directory"
+git push croatia main
+```
+
+### 4. Verify deployment and publish future updates
+
+Open the destination repository's **Actions** tab and follow **Deploy to GitHub Pages**. After the build and deploy jobs succeed, open `https://<owner>.github.io/`. Verify the country name, station listings, and removed-station exclusions. The workflow's deployment environment also links to the published site.
+
+For later updates, commit the changes and push to the intended country's named remote:
+
+```sh
+git add .
+git diff --cached --stat
+git commit -m "Update radio stations"
+git push <remote-name> main
+```
+
+Each remote receives the shared source code; its repository variables select which country is deployed. A push to one remote does not update the others.
+
+Alternatively, enable **Template repository** in GitHub settings and choose **Use this template** for a new country. That creates a populated repository: clone it and work in that clone instead of applying the empty-repository push recipe. Configure the same country variables and Pages source before deploying.
+
+References: [GitHub repository variables](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables) and [GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Maintenance and checks
 

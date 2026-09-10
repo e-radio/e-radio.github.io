@@ -33,5 +33,6 @@
   },
   "redirectsFile": "countries/gr.redirects.json",
   "googleVerification": "lQfQGR6ZHNk4_xpou2o4dn4dTItSP8G9YVR8rWACGls",
-  "twitterHandle": "@eradiogreece"
+  "twitterHandle": "@eradiogreece",
+  "introText": "Ανακαλύψτε ελληνικούς ραδιοφωνικούς σταθμούς και ακούστε ε ραδιο και εραδιο από όλη την Ελλάδα ζωντανά online."
 }

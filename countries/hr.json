@@ -3,11 +3,12 @@
   "countryName": "Croatia",
   "countryAdjective": "Croatian",
   "language": "en",
-  "siteName": "E-Radio Croatia",
-  "siteUrl": "https://croatia-radio.example",
+  "siteName": "Radio Hrvatska",
+  "siteUrl": "https://radio-hrvatska.github.io/",
   "stationsFile": "src/data/stations-hr.json",
   "regions": [],
   "cityAliases": {},
   "redirectsFile": "countries/hr.redirects.json",
-  "googleVerification": ""
+  "googleVerification": "",
+  "introText": "Otkrijte hrvatske radijske postaje i slušajte radio uživo iz cijele Hrvatske putem interneta."
 }
