@@ -28,7 +28,7 @@ const {
   keywords,
   robots = "index, follow",
   language = "English",
-  author = countryText("E-Radio Greece"),
+  author = site.siteName,
   structuredData,
   prevUrl,
   nextUrl,
@@ -51,13 +51,13 @@ const {
 {ogDescription && <meta property="og:description" content={ogDescription} />}
 {canonical && <meta property="og:url" content={canonical} />}
 {ogImage && <meta property="og:image" content={ogImage} />}
-{ogImage && <meta property="og:image:alt" content={ogTitle || "E-Radio Logo"} />}
-<meta property="og:site_name" content={countryText("E-Radio Greece")} />
-<meta property="og:locale" content="en_US" />
+{ogImage && <meta property="og:image:alt" content={ogTitle || `${site.siteName} logo`} />}
+<meta property="og:site_name" content={site.siteName} />
+<meta property="og:locale" content={site.socialLocale} />
 
 {/* Twitter Card Tags */}
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@eradiogreece" />
+{site.twitterHandle && <meta name="twitter:site" content={site.twitterHandle} />}
 {ogTitle && <meta name="twitter:title" content={ogTitle} />}
 {ogDescription && <meta name="twitter:description" content={ogDescription} />}
 {ogImage && <meta name="twitter:image" content={ogImage} />}

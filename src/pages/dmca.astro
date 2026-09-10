@@ -5,8 +5,8 @@ import SEO from "../components/SEO.astro";
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/dmca/`;
-const pageTitle = countryText("DMCA | e-Radio Greece");
-const pageDescription = countryText("Digital Millennium Copyright Act (DMCA) policy for e-Radio Greece.");
+const pageTitle = countryText(`DMCA | ${site.siteName}`);
+const pageDescription = countryText(`Digital Millennium Copyright Act (DMCA) policy for ${site.siteName}.`);
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -26,9 +26,9 @@ const structuredData = {
     canonical={canonical}
     ogTitle={pageTitle}
     ogDescription={pageDescription}
-    ogImage={`${siteRoot}/e-radio-og-image.png`}
+    ogImage={new URL(site.socialImage, siteRoot).href}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">
@@ -37,21 +37,21 @@ const structuredData = {
   </div>
   <div class="bg-white border rounded-3 p-4">
     <p>
-      e-Radio {site.countryName} is a portal of music streaming directory that is available through the internet.
+      {site.siteName} is a portal of music streaming directory that is available through the internet.
       Here we provide many worldwide internet radio and music stations to listen freely with various genres.
-      e-Radio {site.countryName} does not broadcast any streaming content and copyright information, except station information
+      {site.siteName} does not broadcast any streaming content and copyright information, except station information
       and their official website links. We focus on making it easier for listeners who are looking for appropriate stations.
       We are always ready to help broadcasters and listeners. Our hope is to give internet radio stations a portal to worldwide listeners.
     </p>
     <p>
-      e-Radio {site.countryName} takes matters of Intellectual Property very seriously and is committed to meeting the needs of content owners
-      while helping them manage publication of their content online. It should be noted that e-Radio {site.countryName} is a radio station portal
-      linking to third-party websites. Any content on these third-party websites is the responsibility of those sites and not e-Radio {site.countryName}.
+      {site.siteName} takes matters of Intellectual Property very seriously and is committed to meeting the needs of content owners
+      while helping them manage publication of their content online. It should be noted that {site.siteName} is a radio station portal
+      linking to third-party websites. Any content on these third-party websites is the responsibility of those sites and not {site.siteName}.
       We have no knowledge of whether content on third-party websites is or is not authorized by the content owner as that is a matter between
-      the site that hosts the audio content and the content owner. e-Radio {site.countryName} does not host any audio content on its servers or network.
+      the site that hosts the audio content and the content owner. {site.siteName} does not host any audio content on its servers or network.
     </p>
     <p>
-      e-Radio {site.countryName} is not the owner of the media streaming and the copyright or ownership of any radio station remains with the broadcaster.
+      {site.siteName} is not the owner of the media streaming and the copyright or ownership of any radio station remains with the broadcaster.
       Users must agree with the terms and conditions of the station owners. We respect the broadcaster's privacy policy. If you are the content owner
       of any radio station and want removal from this site, please contact us.
     </p>

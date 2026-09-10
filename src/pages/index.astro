@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 const radddioBadgeUrl = "/radddio-badge.svg";
 // Sort by votes (popularity) descending, treating null as 0
 const allStations = rawStations
@@ -47,16 +47,16 @@ const pageNumbers = generatePageNumbers();
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/`;
-const pageTitle = countryText("Greek Radio Stations – E Radio Greece & Live Greek Radio | E-Radio");
+const pageTitle = `${site.countryAdjective} Radio Stations – ${site.siteName} | ${site.siteShortName}`;
 const pageDescription = countryText(`Discover and listen to ${totalStations} popular live Greek radio stations. Stream music, news, and talk radio online, explore top picks by genre and city, and find your next favorite station.`);
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 // Structured data (JSON-LD)
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteRoot}/#website`,
-  "name": countryText("E-Radio Greece"),
+  "name": site.siteName,
   "url": siteRoot,
   "description": pageDescription,
   "image": ogImageUrl
@@ -72,19 +72,15 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords={countryText("Greek radio, live radio, Greece stations, online radio, radio streaming")}
+    keywords={countryText(`Greek radio, liv${site.siteShortName}, Greece stations, onlin${site.siteShortName}, radio streaming`)}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">
     <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations – Listen to Radio {site.countryName} Online</h1>
     <h2 class="lead text-muted">Discover {totalStations} live radio stations from {site.countryName}, ranked by popularity.</h2>
-     <p class="text-muted">
-    Listen to {site.countryAdjective} radio and e-radio stations live online from anywhere in the world.
-    Explore music, news and entertainment from {site.countryName} with Radddio — your easy way
-    to discover eradio {site.countryName}, e-radio {site.countryName} online.
-  </p>
+    <p class="text-muted">{site.introText}</p>
     <p class="text-muted small">Updated regularly based on listener popularity.</p>
     <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}.</p>
   </div>

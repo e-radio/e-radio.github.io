@@ -15,7 +15,7 @@ const endpointFor = (station: typeof rawStations[number]) => {
 const stations = rawStations.filter(s => ['azuracast', 'centovacast', 'radiojar', 'icecast'].includes(s.metadata_server || '') && s.nowplaying_url && s.stream_url)
   .sort((a,b) => a.name.localeCompare(b.name));
 const stationCount = (server: string) => stations.filter(station => station.metadata_server === server).length;
-const title = countryText('Live Tracks — Now Playing on Greek Radio | E-Radio');
+const title = countryText(`Live Tracks — Now Playing on Greek Radio | ${site.siteShortName}`);
 const description = 'Discover what is playing right now on AzuraCast, CentovaCast, Radiojar, and Icecast radio stations. Browse songs, artists, and stations, and listen live.';
 ---
 <Layout title={title} description={description}>

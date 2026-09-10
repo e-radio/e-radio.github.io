@@ -33,7 +33,7 @@ async function getJson(url) {
   try {
     console.log(`Fetching: ${url}`);
     const res = await fetch(url, {
-      headers: { "User-Agent": "e-radio.github.io (Astro build)" },
+      headers: { "User-Agent": `${site.siteName} (${site.siteUrl})` },
       signal: AbortSignal.timeout(15000)
     });
     if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);

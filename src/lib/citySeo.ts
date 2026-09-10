@@ -43,13 +43,13 @@ export const buildCitySeo = (
   const heading = hasCity
     ? `${city} Radio Stations – Listen to ${city} Radio Online`
     : countryText("Greek Radio Stations – Listen to Radio Online");
-  const longTitle = `${heading} | E-Radio`;
+  const longTitle = `${heading} | ${site.siteShortName}`;
   const firstPageTitle = longTitle.length <= 75
     ? longTitle
-    : countryText(`${hasCity ? city : "Greek"} Radio Stations Online | E-Radio`);
+    : countryText(`${hasCity ? city : "Greek"} Radio Stations Online | ${site.siteShortName}`);
   const pageTitle = page === 1
     ? firstPageTitle
-    : countryText(`${hasCity ? city : "Greek"} Radio Stations – Page ${page} | E-Radio`);
+    : countryText(`${hasCity ? city : "Greek"} Radio Stations – Page ${page} | ${site.siteShortName}`);
 
   const subject = hasCity ? `${city} radio` : countryText("Greek radio");
   const pageDescription = page === 1

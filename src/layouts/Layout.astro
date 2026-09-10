@@ -10,8 +10,8 @@ interface Props {
 }
 
 const {
-  title = countryText("e-Radio Greece"),
-  description = countryText("Listen to live radio stations from Greece"),
+  title = site.siteName,
+  description = countryText(`Listen to live ${site.siteShortName} stations from Greece`),
   bodyClass = "",
 } = Astro.props;
 ---
@@ -32,16 +32,16 @@ const {
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href={site.favicon} />
+    <link rel="icon" type="image/png" sizes="32x32" href={site.favicon32} />
+    <link rel="icon" type="image/png" sizes="192x192" href={site.icon192} />
+    <link rel="apple-touch-icon" sizes="180x180" href={site.appleTouchIcon} />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="application-name" content={countryText("E-Radio Greece")} />
+    <meta name="application-name" content={site.siteName} />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="E-Radio" />
+    <meta name="apple-mobile-web-app-title" content={site.siteShortName} />
     
     <!-- SEO slot -->
     <slot name="seo">
@@ -56,8 +56,8 @@ const {
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-lg">
           <a href="/" class="navbar-brand fw-bold d-flex align-items-center gap-2">
-            <img src="/icons/icon-32x32.png" width="32" height="32" alt={countryText("E-Radio Greece app icon")} />
-            <span>e-Radio {site.countryName}</span>
+            <img src={site.logo} width="32" height="32" alt={`${site.siteName} app icon`} />
+            <span>{site.siteName}</span>
           </a>
         </div>
       </nav>
@@ -116,7 +116,7 @@ const {
           </div>
         </div>
         <div class="border-top border-secondary pt-4 mt-2 text-center">
-          <p class="mb-2 text-white-50">&copy; 2026 e-Radio {site.countryName}. All rights reserved.</p>
+          <p class="mb-2 text-white-50">&copy; 2026 {site.siteName}. All rights reserved.</p>
           <p class="mb-0">Powered by <a href="https://radddio.com" class="text-decoration-none">Radddio.com</a></p>
         </div>
       </div>

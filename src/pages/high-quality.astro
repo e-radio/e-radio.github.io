@@ -10,7 +10,7 @@ import { Image } from "astro:assets";
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 
 const HIGH_BITRATE_THRESHOLD = 320;
 const highQualityStations = rawStations
@@ -27,9 +27,9 @@ const pagedStations = highQualityStations.slice(startIndex, endIndex);
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/high-quality/`;
-const pageTitle = countryText("High Quality (320 kbps) Greek Radio Streams | E-Radio");
+const pageTitle = countryText(`High Quality (320 kbps) Greek Radio Streams | ${site.siteShortName}`);
 const pageDescription = countryText(`Listen to ${totalStations} Greek radio streams broadcasting in 320 kbps or higher for premium sound, clearer vocals, and richer music across popular stations.`);
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -51,9 +51,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="high quality radio, 320 kbps radio streams, greek radio"
+    keywords={`high quality radio, 320 kbps radio streams, ${site.countryAdjective} radio`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">

@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 
 import { metadataStations, METADATA_PAGE_SIZE } from "../lib/metadata-stations";
 
@@ -24,9 +24,9 @@ const pagedStations = metadataStations.slice(startIndex, endIndex);
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}${page === 1 ? "/now-playing/" : `/now-playing/page/${page}/`}`;
-const pageTitle = `Now Playing Radio Stations${page > 1 ? ` – Page ${page}` : ""} | E-Radio`;
+const pageTitle = `Now Playing Radio Stations${page > 1 ? ` – Page ${page}` : ""} | ${site.siteShortName}`;
 const pageDescription = `Discover ${totalStations} radio stations with song information. See what's playing and explore recent tracks where available.`;
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -48,9 +48,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="now playing radio, radio song information, greek radio"
+    keywords={`now playing radio, radio song information, ${site.countryAdjective} radio`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">

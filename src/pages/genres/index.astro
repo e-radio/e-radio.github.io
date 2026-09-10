@@ -5,7 +5,7 @@ import SEO from "../../components/SEO.astro";
 import CategorySwitch from "../../components/CategorySwitch.astro";
 import rawStations from "../../lib/stations";
 
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 
 const genreMap = new Map<string, typeof rawStations>();
 for (const station of rawStations) {
@@ -74,9 +74,9 @@ const totalStations = rawStations.length;
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/genres/`;
-const pageTitle = countryText("Greece Radio Stations by Genre | E-Radio");
-const pageDescription = countryText("Explore Greece radio stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.");
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const pageTitle = countryText(`Greec${site.siteShortName} Stations by Genre | ${site.siteShortName}`);
+const pageDescription = countryText(`Explore Greec${site.siteShortName} stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.`);
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -98,9 +98,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="greek radio genres, music genres greece radio"
+    keywords={`${site.countryAdjective} radio genres, music genres ${site.countryName} radio`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">

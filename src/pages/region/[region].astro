@@ -13,7 +13,7 @@ import { Image } from "astro:assets";
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 
 export function getStaticPaths() {
   const transliterateGreek = (input: string) => {
@@ -80,7 +80,7 @@ const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/region/${slug}/`;
 const seo = buildRegionSeo(region, stations, startIndex + 1, Math.min(endIndex, totalStations), page);
 const { pageTitle, pageDescription } = seo;
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -102,9 +102,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords={`${region} radio, ${region} live radio, greek radio ${region}`}
+    keywords={`${region} radio, ${region} live radio, ${site.countryAdjective} radio ${region}`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <RegionSeoHeader

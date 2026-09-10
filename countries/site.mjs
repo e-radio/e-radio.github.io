@@ -10,4 +10,16 @@ const url = new URL(site.siteUrl);
 if (!['http:', 'https:'].includes(url.protocol) || url.pathname !== '/') throw new Error('SITE_URL must be a site origin (use a GitHub Pages user/organization site or custom domain)');
 export const stationsPath = resolve(root, site.stationsFile);
 export const redirects = JSON.parse(readFileSync(resolve(root, site.redirectsFile), 'utf8'));
-export const countryText = text => text.replaceAll('E-Radio Greece', site.siteName).replaceAll('e-Radio Greece', site.siteName).replaceAll('Greece', site.countryName).replaceAll('Greek', site.countryAdjective);
+site.siteShortName ||= site.siteName;
+site.socialImage ||= '/icons/icon-512x512.png';
+site.logo ||= '/icons/icon-32x32.png';
+site.favicon ||= '/favicon.svg';
+site.favicon32 ||= '/icons/icon-32x32.png';
+site.icon192 ||= '/icons/icon-192x192.png';
+site.icon512 ||= '/icons/icon-512x512.png';
+site.appleTouchIcon ||= '/icons/apple-touch-icon.png';
+site.socialLocale ||= 'en_US';
+site.introText ||= `Discover radio stations from ${site.countryName} and listen live online.`;
+export const countryText = text => text
+  .replaceAll('Greece', site.countryName)
+  .replaceAll('Greek', site.countryAdjective);

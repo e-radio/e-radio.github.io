@@ -131,3 +131,28 @@ Supported country-aware tools are `stations:import`, `stations:metadata`, `stati
 ## Exclude deleted stations from future imports
 
 Add `{ "stationuuid": "UUID", "reason": "Removed intentionally" }` entries to `countries/<code>.excluded-stations.json`. The importer skips those IDs before matching stream URLs, includes skipped records in its report, and removes matching primary IDs from the local dataset. Include all alternate UUIDs when deleting a merged station. Exclusions apply only to the selected country; an absent file means no exclusions. Remove an exclusion to allow that UUID to be imported again.
+
+## Configure each site's brand
+
+Edit `countries/<code>.json`. Site branding does not have to contain “E-Radio” or the country name:
+
+```json
+{
+  "siteName": "Radio Hrvatska",
+  "siteShortName": "Radio Hrvatska",
+  "introText": "Otkrijte hrvatske radijske postaje i slušajte radio uživo iz cijele Hrvatske putem interneta.",
+  "socialImage": "/icons/icon-512x512.png",
+  "logo": "/icons/icon-32x32.png",
+  "favicon": "/favicon.svg",
+  "favicon32": "/icons/icon-32x32.png",
+  "icon192": "/icons/icon-192x192.png",
+  "icon512": "/icons/icon-512x512.png",
+  "appleTouchIcon": "/icons/apple-touch-icon.png",
+  "socialLocale": "en_US",
+  "twitterHandle": ""
+}
+```
+
+`siteName` controls the header, footer, author, structured data, legal copy, and full app name. `siteShortName` controls page-title suffixes and the installed app's short name; it defaults to `siteName` if omitted. `introText` appears on the homepage and in the app manifest description. `socialImage` controls sharing images and may be a public-root path or HTTPS URL. The remaining image paths let each country use its own visual identity; keep the declared favicon/manifest formats and dimensions when replacing assets. Empty `twitterHandle` and `googleVerification` values omit those tags.
+
+When creating a country, optionally pass `--site-name "Your Radio Brand"` to `tools/create-country.mjs`; otherwise the default name is `Radio <country>`. Restart the development server after editing country configuration. Existing station names, the Greece repository remote, and third-party Radddio branding are separate from the site's own brand.

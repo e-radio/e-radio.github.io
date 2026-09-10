@@ -5,8 +5,8 @@ import SEO from '../components/SEO.astro';
 import { slugify } from "../lib/slug";
 import { Image } from "astro:assets";
 
-const title = countryText("Demo – E-Radio Greece");
-const description = countryText("Explore a demo page showcasing station listings, badges, and layout styles for E-Radio Greece, including sample cards, icons, and interactions used across the site.");
+const title = countryText(`Demo – ${site.siteName}`);
+const description = countryText(`Explore a demo page showcasing station listings, badges, and layout styles for ${site.siteName}, including sample cards, icons, and interactions used across the site.`);
 const canonical = (site.siteUrl + "/demo/");
 const demoIcon = "/radddio-app-icon.png";
 const radddioURL = "https://apple.co/4lNPQAH";
@@ -68,7 +68,7 @@ const metadataStations = [
     canonical={canonical}
     ogTitle={title}
     ogDescription={description}
-    ogImage="/e-radio-og-image.png"
+    ogImage={site.socialImage}
   />
 
   <section class="mb-5">

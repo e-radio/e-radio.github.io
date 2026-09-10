@@ -1,4 +1,4 @@
-import { stationsPath, countryCode } from "../countries/site.mjs";
+import { site, stationsPath, countryCode } from "../countries/site.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
@@ -21,7 +21,7 @@ const fetchWithRetry = async (url, retries = MAX_RETRIES) => {
         redirect: "follow",
         headers: {
           Accept: "image/avif,image/webp,image/png,image/svg+xml,image/jpeg,image/gif,*/*;q=0.1",
-          "User-Agent": "e-radio.github.io favicon cache",
+          "User-Agent": `${site.siteName} favicon cache (${site.siteUrl})`,
         },
         signal: controller.signal,
       });

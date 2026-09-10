@@ -5,7 +5,7 @@ import SEO from "../components/SEO.astro";
 import CategorySwitch from "../components/CategorySwitch.astro";
 import rawStations from "../lib/stations";
 
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 
 const grouped = new Map<string, typeof rawStations>();
 for (const station of rawStations) {
@@ -71,9 +71,9 @@ const totalStations = rawStations.length;
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/region/`;
-const pageTitle = countryText("Greek Radio Stations by Region | E-Radio");
+const pageTitle = countryText(`Greek Radio Stations by Region | ${site.siteShortName}`);
 const pageDescription = countryText("Browse live Greek radio stations grouped by region to discover local favorites across Greece's official regions.");
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -95,9 +95,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="greece radio regions, greek radio by region"
+    keywords={`${site.countryName} radio regions, ${site.countryAdjective} radio by region`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">

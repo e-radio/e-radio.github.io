@@ -10,7 +10,7 @@ import { Image } from "astro:assets";
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 
 const topStations = [...rawStations]
   .sort((a, b) => (b.votes || 0) - (a.votes || 0))
@@ -18,9 +18,9 @@ const topStations = [...rawStations]
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/top-rated/`;
-const pageTitle = countryText("Top Rated Greek Radio Stations | E-Radio");
+const pageTitle = countryText(`Top Rated Greek Radio Stations | ${site.siteShortName}`);
 const pageDescription = countryText("Listen to the 20 highest-rated Greek radio stations ranked by listener votes, featuring today’s most popular streams, trusted favorites, and standout picks.");
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -42,9 +42,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords="top rated radio, greek radio, popular radio greece"
+    keywords={`top rated radio, ${site.countryAdjective} radio, popular radio ${site.countryName}`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="mb-4">

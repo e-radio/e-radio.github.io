@@ -11,7 +11,7 @@ from urllib.request import Request, urlopen
 
 DATA_PATH = Path("src/data/stations-gr.json")
 DEFAULT_PROGRESS_PATH = Path("tools/state-region-progress.json")
-USER_AGENT = "Mozilla/5.0 (compatible; E-RadioBot/1.0; +https://e-radio.github.io)"
+USER_AGENT = "Mozilla/5.0 (compatible; RadioDirectoryBot/1.0)"
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/reverse"
 
 REGIONS = (

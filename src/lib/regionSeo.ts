@@ -68,13 +68,13 @@ export const buildRegionSeo = (
   const metaCities = cities.slice(0, 2);
 
   const heading = `${region} Radio Stations – Listen to ${region} Radio Online`;
-  const baseTitle = `${heading} | E-Radio`;
+  const baseTitle = `${heading} | ${site.siteShortName}`;
   const firstPageTitle = baseTitle.length <= 75
     ? baseTitle
-    : `${region} Radio Stations Online | E-Radio`;
+    : `${region} Radio Stations Online | ${site.siteShortName}`;
   const pageTitle = page === 1
     ? firstPageTitle
-    : `${region} Radio Stations – Page ${page} | E-Radio`;
+    : `${region} Radio Stations – Page ${page} | ${site.siteShortName}`;
 
   const genericDescription = `Listen to ${stationCount} ${region} radio ${stationWord} live online. Discover local radio from ${location} and start listening for free.`;
   const cityDescription = metaCities.length >= 2

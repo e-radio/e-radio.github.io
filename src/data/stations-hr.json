@@ -31,7 +31,7 @@
     "city": null,
     "stream_url": "http://cmr-hosting.com:8060/stream?type=http&nocache=823456",
     "homepage": "https://clubmusic-1.com/",
-    "favicon": "https://clubmusic-1.com/favicon.ico",
+    "favicon": "/station-icons/hr/club-music-radio-cro-hits.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -127,7 +127,7 @@
     "city": null,
     "stream_url": "http://cmr-hosting.com:8070/stream?type=http&nocache=646624",
     "homepage": "https://clubmusic-1.com/",
-    "favicon": "https://clubmusic-1.com/favicon.ico",
+    "favicon": "/station-icons/hr/club-music-radio-tambura.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -172,7 +172,7 @@
     "city": null,
     "stream_url": "https://stream.ampupradio.com/tophits.mp3?cachebuster=1775481950232",
     "homepage": "https://ampupradio.com/",
-    "favicon": "https://ampupradio.com/Images/Logo/512.png?cachebuster=1612052708",
+    "favicon": "/station-icons/hr/ampupradio.webp",
     "genres": [],
     "language": null,
     "bitrate": 256,
@@ -193,7 +193,7 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8000/;",
     "homepage": "https://www.antenazagreb.hr/",
-    "favicon": "https://cdn-profiles.tunein.com/s83931/images/bannerx.jpg?t=636748543016900000",
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
       "croatian",
       "pop",
@@ -221,7 +221,7 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8015/;",
     "homepage": "http://www.antenazagreb.hr/",
-    "favicon": "http://www.antenazagreb.hr/favicon.ico",
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
       "christmas music",
       "xmas"
@@ -248,8 +248,8 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8015/",
     "homepage": "http://www.prvi.hr/antenazagreb",
-    "favicon": "/station-icons/hr/antena-zagreb-dance-grad-zagreb-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
+    "genres": ["dance"],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -272,8 +272,8 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8011/",
     "homepage": "http://www.prvi.hr/antenazagreb",
-    "favicon": "/station-icons/hr/antena-zagreb-hit-grad-zagreb-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
+    "genres": ["hits"],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -296,8 +296,8 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8007/",
     "homepage": "http://www.prvi.hr/antenazagreb",
-    "favicon": "/station-icons/hr/antena-zagreb-love-grad-zagreb-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
+    "genres": ["easy listening"],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -320,7 +320,7 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8019/",
     "homepage": "http://www.prvi.hr/images/Antena/Logos/AntenaZagreb-Logo.png",
-    "favicon": "/station-icons/hr/antena-zagreb-rock-grad-zagreb-placeholder.webp",
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
       "classic rock",
       "zagreb"
@@ -347,7 +347,7 @@
     "city": null,
     "stream_url": "http://live.antenazagreb.hr:8002/;",
     "homepage": "https://www.antenazagreb.hr/",
-    "favicon": "/station-icons/hr/antena-zagreb-u-ivo-grad-zagreb.webp",
+    "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 96,
@@ -395,7 +395,7 @@
     "city": null,
     "stream_url": "https://audio.radio-banovina.hr:7010/stream",
     "homepage": "https://www.radio-banovina.hr/bozic",
-    "favicon": "https://www.radio-banovina.hr/turbo/tmp/images/logo.1642614175.png",
+    "favicon": "/station-icons/hr/radio-banovina.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -414,12 +414,12 @@
   {
     "slug": "bijelo-plavi-radio-istarska-2-osijek",
     "stationuuid": "43a06798-bea3-4912-be7f-0f8dcc0f3369",
-    "name": "Bijelo Plavi radio",
+    "name": "Bijelo Plavi Radio",
     "state": "Istarska 2, Osijek",
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8028/stream",
     "homepage": "http://www.bijeloplaviradio.hr/",
-    "favicon": "http://www.bijeloplaviradio.hr/data/source/logo/logo.png",
+    "favicon": "/station-icons/hr/bijelo-plavi-radio.webp",
     "genres": [
       "various"
     ],
@@ -442,7 +442,7 @@
     "city": null,
     "stream_url": "http://s3.radio.co/se83499ee0/listen",
     "homepage": "https://embed.radio.co/player/6fa1744.html",
-    "favicon": "https://embed.radio.co/favicon.ico",
+    "favicon": "/station-icons/hr/braniteljski-radio-nepokoreni-grad.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -514,7 +514,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8059/stream?4960",
     "homepage": "https://br.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/k2ngsQQBViSRECHD9P4jvH48hwjpGut6t7YWzfoVZSGBrqFHeJGwkTaW9_VYHVc2EQ",
+    "favicon": "/station-icons/hr/bravo-grad-zagreb.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 96,
@@ -538,7 +538,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8360/stream?1510",
     "homepage": "https://br.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/k2ngsQQBViSRECHD9P4jvH48hwjpGut6t7YWzfoVZSGBrqFHeJGwkTaW9_VYHVc2EQ",
+    "favicon": "/station-icons/hr/bravo-balade-grad-zagreb.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -562,7 +562,7 @@
     "city": null,
     "stream_url": "https://audio.social3.hr/listen/bravo_kids/stream?3367",
     "homepage": "https://br.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/k2ngsQQBViSRECHD9P4jvH48hwjpGut6t7YWzfoVZSGBrqFHeJGwkTaW9_VYHVc2EQ",
+    "favicon": "/station-icons/hr/bravo-kids.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -583,7 +583,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8354/stream?2340",
     "homepage": "https://br.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/k2ngsQQBViSRECHD9P4jvH48hwjpGut6t7YWzfoVZSGBrqFHeJGwkTaW9_VYHVc2EQ",
+    "favicon": "/station-icons/hr/bravo-pop-grad-zagreb.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -607,7 +607,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8348/stream?1996",
     "homepage": "https://br.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/k2ngsQQBViSRECHD9P4jvH48hwjpGut6t7YWzfoVZSGBrqFHeJGwkTaW9_VYHVc2EQ",
+    "favicon": "/station-icons/hr/bravo-rock-grad-zagreb.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -631,7 +631,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8058/stream",
     "homepage": "https://cityportal.hr/",
-    "favicon": "https://static2.mytuner.mobi/media/tvos_radios/sc9q8tdgn64n.jpg",
+    "favicon": "/station-icons/hr/city-radio-zagreba-ka-19-velika-gorica.webp",
     "genres": [
       "various"
     ],
@@ -657,7 +657,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8058/stream;",
     "homepage": "http://city-radio.hr/",
-    "favicon": "http://city-radio.hr/wp-content/uploads/2017/01/city-logo2.png",
+    "favicon": "/station-icons/hr/city-radio-88-6-zagreba-ka-upanija.webp",
     "genres": [
       "local music"
     ],
@@ -803,7 +803,7 @@
     "city": null,
     "stream_url": "https://cmr-hosting.com:7004/;stream/1",
     "homepage": "https://clubmusic-1.com/",
-    "favicon": "https://clubmusic-1.com/wp-content/uploads/2017/12/Logo-za-header-e1515976776641.png",
+    "favicon": "/station-icons/hr/club-music-radio-love-song-03abf0e3.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -896,7 +896,7 @@
     "name": "CMC Dalmatina",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8040/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9014/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-dalmatina.webp",
     "genres": [],
@@ -910,7 +910,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8040/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9014/status-json.xsl",
     "metadata_server": "icecast"
   },
   {
@@ -919,7 +919,7 @@
     "name": "CMC Festival",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8070/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9017/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-festival.webp",
     "genres": [],
@@ -963,10 +963,12 @@
     "name": "CMC Kids",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8090/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9019/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-kids.webp",
-    "genres": [],
+    "genres": [
+      "kids"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -1011,7 +1013,7 @@
     "city": null,
     "stream_url": "https://radio-stream.cmc.com.hr:9011/live",
     "homepage": "https://radio.cmc.com.hr/",
-    "favicon": "https://radio.cmc.com.hr/favicon.ico",
+    "favicon": "/station-icons/hr/cmc-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -1032,9 +1034,9 @@
     "name": "CMC Rock",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8060/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9016/stream",
     "homepage": "https://radio.cmc.com.hr/",
-    "favicon": "https://radio.cmc.com.hr/favicon.ico",
+    "favicon": "/station-icons/hr/cmc-rock.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -1055,9 +1057,9 @@
     "name": "CMC Tambure",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8050/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9015/stream",
     "homepage": "https://radio.cmc.com.hr/",
-    "favicon": "https://radio.cmc.com.hr/favicon.ico",
+    "favicon": "/station-icons/hr/cmc-tambure.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -1078,7 +1080,7 @@
     "name": "CMC Zabavni",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8085/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9018/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-zabavni.webp",
     "genres": [],
@@ -1154,7 +1156,7 @@
     "city": null,
     "stream_url": "https://stream.cvrai.com:8010/stream",
     "homepage": "https://www.cvrai.com/",
-    "favicon": "https://www.cvrai.com/apple-touch-icon.png",
+    "favicon": "/station-icons/hr/cvrai-com-thats-your-webradio.webp",
     "genres": [],
     "language": null,
     "bitrate": 64,
@@ -1198,7 +1200,7 @@
     "city": null,
     "stream_url": "https://listen.radioking.com/radio/626884/stream/689500",
     "homepage": "https://dramaradio.hr/",
-    "favicon": "https://images.keepone.net/1725392485-2024-09-03.png",
+    "favicon": "/station-icons/hr/drama-radio-dubrovnik-dalmatia.webp",
     "genres": [
       "news talk",
       "pop music"
@@ -1222,7 +1224,7 @@
     "city": null,
     "stream_url": "https://radio.dvb.digital/listen/dvb.digital/hq.mp3",
     "homepage": "https://dvb.digital/",
-    "favicon": "https://dvb.digital/favicon_io/apple-touch-icon.png",
+    "favicon": "/station-icons/hr/dvb-digital.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -1246,7 +1248,7 @@
     "city": null,
     "stream_url": "http://live.enterzagreb.hr:8023/",
     "homepage": "http://www.prvi.hr/enter",
-    "favicon": "/station-icons/hr/enter-zagreb-grad-zagreb-placeholder.webp",
+    "favicon": "/station-icons/hr/enter-zagreb.webp",
     "genres": [
       "zagreb"
     ],
@@ -1272,7 +1274,7 @@
     "city": null,
     "stream_url": "https://relay2.social3.hr/radio/8190/radio.mp3?&_ic2=1?8707",
     "homepage": "https://extrafm.hr/",
-    "favicon": "https://extrafm.hr/sw-content/themes/sw/img/extrafm-2.png",
+    "favicon": "/station-icons/hr/extra-fm.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -1293,7 +1295,7 @@
     "city": null,
     "stream_url": "http://streams.extrafm.hr:8110/stream?2701",
     "homepage": "https://extrafm.hr/",
-    "favicon": "https://extrafm.hr/sw-content/themes/sw/img/extrafm-2.png",
+    "favicon": "/station-icons/hr/extra-fm-8ca1441f.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -1317,7 +1319,7 @@
     "city": null,
     "stream_url": "http://streams.extrafm.hr:8110/;",
     "homepage": "https://extrafm.hr/",
-    "favicon": "https://extrafm.hr/apple-touch-icon.png",
+    "favicon": "/station-icons/hr/extra-fm-grad-zagreb.webp",
     "genres": [
       "folk"
     ],
@@ -1343,7 +1345,7 @@
     "city": null,
     "stream_url": "https://stream.zeno.fm/yetzdv442k8uv",
     "homepage": "https://www.facebook.com/groups/2984818395119540",
-    "favicon": "https://static.mytuner.mobi/media/tvos_radios/KEAX5uaryr.png",
+    "favicon": "/station-icons/hr/folk-radio-kneginec.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 0,
@@ -1364,7 +1366,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:6035/stream",
     "homepage": "https://www.folkyton.com/",
-    "favicon": "https://www.folkyton.com/index_htm_files/292@2x.png",
+    "favicon": "/station-icons/hr/folkyton-radio-velika-mlaka.webp",
     "genres": [
       "folk"
     ],
@@ -1438,7 +1440,7 @@
     "city": null,
     "stream_url": "https://radio.gamerzinn.com:1385/stream",
     "homepage": "https://radio.gamerzinn.com/",
-    "favicon": "https://radio.gamerzinn.com:1320/media/CACHE/images/djs/logo/20e3697337de33cec38284f24bc660ce.png",
+    "favicon": "/station-icons/hr/gamerz-inn-jamz.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -1512,7 +1514,7 @@
     "city": null,
     "stream_url": "http://144.76.39.214:6022/stream",
     "homepage": "https://trogirskiportal.hr/radio_trogir/",
-    "favicon": "https://cdn.onlineradiobox.com/img/l/3/24263.v15.png",
+    "favicon": "/station-icons/hr/gradski-radio-trogir-splitsko-dalmatinska.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 64,
@@ -1576,9 +1578,9 @@
     "name": "Happy FM",
     "state": "Zagrebačka županija",
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:9543/stream?4923",
+    "stream_url": "http://c5.hostingcentar.com:9543/stream",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://www.zgportal.com/wp-content/uploads/2022/11/happy-fm-radio-sa-srcem-i-tijelom-2022.jpg",
+    "favicon": "/station-icons/hr/happy-fm.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 96,
@@ -1624,9 +1626,9 @@
     "name": "Happy FM - Klape",
     "state": null,
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:8384/",
+    "stream_url": "https://audio.social3.hr/listen/happy_klape/stream",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://happyfm.hr/apple-touch-icon.png",
+    "favicon": "/station-icons/hr/happy-fm-klape.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -1648,9 +1650,9 @@
     "name": "Happy FM - Legenda",
     "state": null,
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:8396/",
+    "stream_url": "https://audio.social3.hr/listen/happy_legenda/stream",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://happyfm.hr/apple-touch-icon.png",
+    "favicon": "/station-icons/hr/happy-fm-legenda.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -1672,7 +1674,7 @@
     "name": "Happy FM - Live",
     "state": null,
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:9543/",
+    "stream_url": "https://audio.social3.hr/listen/happy_aac/stream",
     "homepage": "https://happyfm.hr/",
     "favicon": "/station-icons/hr/happy-fm-live.webp",
     "genres": [],
@@ -1720,7 +1722,7 @@
     "name": "Happy FM - Tambura",
     "state": null,
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:8378/",
+    "stream_url": "https://audio.social3.hr/listen/happy_tambure/stream",
     "homepage": "https://happyfm.hr/",
     "favicon": "/station-icons/hr/happy-fm-tambura.webp",
     "genres": [],
@@ -1770,7 +1772,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8372/stream?4956",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://www.zgportal.com/wp-content/uploads/2022/11/happy-fm-radio-sa-srcem-i-tijelom-2022.jpg",
+    "favicon": "/station-icons/hr/happy-fm-fest.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -1792,9 +1794,9 @@
     "name": "Happy FM Klape",
     "state": null,
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:8384/stream?8802",
+    "stream_url": "http://c5.hostingcentar.com:8384/stream",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://www.zgportal.com/wp-content/uploads/2022/11/happy-fm-radio-sa-srcem-i-tijelom-2022.jpg",
+    "favicon": "/station-icons/hr/happy-fm.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -1816,9 +1818,9 @@
     "name": "Happy FM Legenda",
     "state": null,
     "city": null,
-    "stream_url": "http://c5.hostingcentar.com:8396/stream?8550",
+    "stream_url": "http://c5.hostingcentar.com:8396/stream",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://www.zgportal.com/wp-content/uploads/2022/11/happy-fm-radio-sa-srcem-i-tijelom-2022.jpg",
+    "favicon": "/station-icons/hr/happy-fm.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -1866,7 +1868,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8378/stream?3238",
     "homepage": "https://happyfm.hr/",
-    "favicon": "https://www.zgportal.com/wp-content/uploads/2022/11/happy-fm-radio-sa-srcem-i-tijelom-2022.jpg",
+    "favicon": "/station-icons/hr/happy-fm.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -1890,7 +1892,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8012/stream",
     "homepage": "https://www.hitradio.hr/",
-    "favicon": "https://www.hitradio.hr/wp-content/uploads/2013/11/hit-logo-mobile.png",
+    "favicon": "/station-icons/hr/hit-radio-glavi-ka-ul-29-sinj.webp",
     "genres": [
       "various"
     ],
@@ -1913,7 +1915,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8012/;stream.mp3",
     "homepage": "https://onlineradiobox.com/hr/hit/?lang=en",
-    "favicon": "https://cdn.onlineradiobox.com/img/apple-touch-icon-120x120.png",
+    "favicon": "/station-icons/hr/hit-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -2331,7 +2333,7 @@
     "city": null,
     "stream_url": "https://stream.hkr.hr/hkr.mp3",
     "homepage": "https://hkr.hkm.hr/",
-    "favicon": "https://upload.wikimedia.org/wikipedia/hr/c/cd/Hkr.jpg",
+    "favicon": "/station-icons/hr/hrvatski-katoli-ki-radio.webp",
     "genres": [
       "chatolic",
       "christian",
@@ -2359,7 +2361,7 @@
     "city": null,
     "stream_url": "http://27783.live.streamtheworld.com/HR_CLASSICS_SC",
     "homepage": "https://radio.hrt.hr/stream/25",
-    "favicon": "https://radio.hrt.hr/static/klasik.jpg",
+    "favicon": "/station-icons/hr/hrvatski-radio-klasik.webp",
     "genres": [
       "classic",
       "classical",
@@ -2385,7 +2387,7 @@
     "city": null,
     "stream_url": "http://25443.live.streamtheworld.com/HR_CLASSICSAAC_SC",
     "homepage": "https://radio.hrt.hr/stream/25",
-    "favicon": "https://radio.hrt.hr/hrt-180x180.png",
+    "favicon": "/station-icons/hr/hrvatski-radio-klasik-hrt.webp",
     "genres": [
       "baroque",
       "classic",
@@ -2412,7 +2414,7 @@
     "city": null,
     "stream_url": "http://25633.live.streamtheworld.com/HR_POP_SC",
     "homepage": "https://radio.hrt.hr/stream/26",
-    "favicon": "https://radio.hrt.hr/static/pop.jpg",
+    "favicon": "/station-icons/hr/hrvatski-radio-pop-glazba.webp",
     "genres": [
       "easy listening",
       "pop",
@@ -2438,7 +2440,7 @@
     "city": null,
     "stream_url": "http://25703.live.streamtheworld.com/HR_ROCK_SC",
     "homepage": "https://hrti.hrt.hr/home?id=40025-1129192728&channelId=39996",
-    "favicon": "https://aviion-frontcdn.aviion.tv/epg/Rockradio.jpg",
+    "favicon": "/station-icons/hr/hrvatski-radio-rock.webp",
     "genres": [
       "rock"
     ],
@@ -2482,7 +2484,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8002/",
     "homepage": "https://karlovacki.hr/",
-    "favicon": "https://karlovacki.hr/wp-content/uploads/2022/11/cropped-favicon-180x180.png",
+    "favicon": "/station-icons/hr/hrvatski-radio-karlovac.webp",
     "genres": [
       "folk music",
       "local news",
@@ -2507,7 +2509,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8024/stream",
     "homepage": "http://hrvatski-radio-otocac.hr/radio/",
-    "favicon": "https://hrvatski-radio-otocac.hr/radio/wp-content/uploads/2017/11/back_on_air_gradient_dots.jpg",
+    "favicon": "/station-icons/hr/hrvatski-radio-oto-ac-trg-dr-franje-tu-mana-10-oto-ac.webp",
     "genres": [
       "various"
     ],
@@ -2530,7 +2532,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8068/stream",
     "homepage": "https://www.hrv89.hr/",
-    "favicon": "https://www.hrv89.hr/images/logo.png",
+    "favicon": "/station-icons/hr/hrvatski-radio-valpov-tina-kralja.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -2578,7 +2580,7 @@
     "city": null,
     "stream_url": "http://stream.zeno.fm/pdkt234k698uv.mp3",
     "homepage": "https://justrock.webador.com/",
-    "favicon": "https://primary.jwwb.nl/public/y/e/b/temp-vkgnexntjcwymrvyserv/touch-icon-iphone-retina.png?bust=1646524843",
+    "favicon": "/station-icons/hr/jr-radio-splitsko-dalmatinska.webp",
     "genres": [
       "blues rock",
       "heavy metal",
@@ -2753,7 +2755,7 @@
     "city": null,
     "stream_url": "http://194.145.208.251:8000/start/lfmzg",
     "homepage": "https://onlineradiobox.com/hr/soundsetplavi/",
-    "favicon": "https://cdn.onlineradiobox.com/img/apple-touch-icon-120x120.png",
+    "favicon": "/station-icons/hr/laganini-fm.webp",
     "genres": [
       "hrvatska",
       "laganini",
@@ -2778,7 +2780,7 @@
     "city": null,
     "stream_url": "http://194.145.208.251:8004/stream?type=http&nocache=149",
     "homepage": "https://onlineradiobox.com/hr/soundsettrsat/",
-    "favicon": "https://cdn.onlineradiobox.com/img/apple-touch-icon-120x120.png",
+    "favicon": "/station-icons/hr/laganini-fm-rijeka.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -2799,7 +2801,7 @@
     "city": null,
     "stream_url": "http://194.145.208.251:8004/start/lfmri",
     "homepage": "https://laganini.fm/rijeka/",
-    "favicon": "http://laganini.fm/wp-content/uploads/2022/08/cropped-favicon-2-180x180.png",
+    "favicon": "/station-icons/hr/laganini-fm-rijeka-primorska.webp",
     "genres": [
       "laganini",
       "lounge",
@@ -2825,7 +2827,7 @@
     "city": null,
     "stream_url": "http://194.145.208.251:8000/stream",
     "homepage": "http://laganini.fm/",
-    "favicon": "http://laganini.fm/wp-content/uploads/2022/08/laganini-fm-logo.png",
+    "favicon": "/station-icons/hr/laganini-fm-zagreb-slavonska-avenija-2-zagreb.webp",
     "genres": [
       "various"
     ],
@@ -2953,7 +2955,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8360/;",
     "homepage": "https://narodni.hr/",
-    "favicon": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Narodni_Logo_2.png",
+    "favicon": "/station-icons/hr/narodni-aaaaaaa.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -2977,7 +2979,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8354/;",
     "homepage": "https://narodni.hr/",
-    "favicon": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Narodni_Logo_2.png",
+    "favicon": "/station-icons/hr/narodni-ljubav-je-u-zraku.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -3001,7 +3003,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8348/;",
     "homepage": "https://narodni.hr/",
-    "favicon": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Narodni_Logo_2.png",
+    "favicon": "/station-icons/hr/narodni-ne-pitaj-samo-sviraj.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -3070,7 +3072,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8022/stream",
     "homepage": "https://www.noviradio.hr/",
-    "favicon": "https://www.noviradio.hr/wp-content/uploads/2020/05/novi-radio-logo2.png",
+    "favicon": "/station-icons/hr/novi-radio-zadar-zrinsko-frankopanska-13-zadar.webp",
     "genres": [
       "various music"
     ],
@@ -3095,8 +3097,8 @@
     "state": "Park Stjepana Posezija 6, IVANIĆ- GRAD",
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8080/stream",
-    "homepage": "https://www.ori.hr/",
-    "favicon": "https://www.ori.hr/images/logo.png",
+    "homepage": "https://ori.hr/",
+    "favicon": "/station-icons/hr/obiteljski-radio-ivani.webp",
     "genres": [
       "news",
       "various music"
@@ -3120,7 +3122,7 @@
     "city": null,
     "stream_url": "https://stream.otvoreni.hr/otvoreni",
     "homepage": "https://www.otvoreni.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/7GF9uqVfOXStFXPZPuTBbYvD-HGk4TOgXw_xnbqOIDk13Ai_mQhUubMX1swofaNBkh8=w480-h960",
+    "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 48,
@@ -3141,7 +3143,7 @@
     "city": null,
     "stream_url": "https://stream.otvoreni.hr/chill",
     "homepage": "https://www.otvoreni.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/7GF9uqVfOXStFXPZPuTBbYvD-HGk4TOgXw_xnbqOIDk13Ai_mQhUubMX1swofaNBkh8",
+    "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 48,
@@ -3183,7 +3185,7 @@
     "city": null,
     "stream_url": "https://stream.otvoreni.hr/hot",
     "homepage": "https://www.otvoreni.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/7GF9uqVfOXStFXPZPuTBbYvD-HGk4TOgXw_xnbqOIDk13Ai_mQhUubMX1swofaNBkh8",
+    "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 48,
@@ -3204,7 +3206,7 @@
     "city": null,
     "stream_url": "https://stream2.otvoreni.hr/otvoreni",
     "homepage": "https://www.otvoreni.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/7GF9uqVfOXStFXPZPuTBbYvD-HGk4TOgXw_xnbqOIDk13Ai_mQhUubMX1swofaNBkh8",
+    "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 48,
@@ -3252,7 +3254,7 @@
     "city": null,
     "stream_url": "https://stream2.otvoreni.hr/love",
     "homepage": "https://www.otvoreni.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/7GF9uqVfOXStFXPZPuTBbYvD-HGk4TOgXw_xnbqOIDk13Ai_mQhUubMX1swofaNBkh8",
+    "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 48,
@@ -3273,7 +3275,7 @@
     "city": null,
     "stream_url": "http://stream2.otvoreni.hr/otvoreni",
     "homepage": "https://www.otvoreni.hr/",
-    "favicon": "https://play-lh.googleusercontent.com/7GF9uqVfOXStFXPZPuTBbYvD-HGk4TOgXw_xnbqOIDk13Ai_mQhUubMX1swofaNBkh8=w240-h480-rw",
+    "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [],
     "language": null,
     "bitrate": 48,
@@ -3340,7 +3342,7 @@
     "city": null,
     "stream_url": "http://stream.otvoreni.hr/otvoreni",
     "homepage": "http://www.otvoreni.hr/",
-    "favicon": "https://www.phonostar.de/images/auto_created/Otvoreni_Radio2184x184.png",
+    "favicon": "/station-icons/hr/otvoreni-radio-u-ivo-grad-zagreb.webp",
     "genres": [
       "pop"
     ],
@@ -3426,7 +3428,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8062/stream",
     "homepage": "https://petrinjskiradio.hr/",
-    "favicon": "https://petrinjskiradio.hr/wp-content/uploads/2018/04/Petrinjski-Radio-Logo5.png",
+    "favicon": "/station-icons/hr/petrinjski-radio-https-www-openstreetmap-org-relation-8076890.webp",
     "genres": [
       "various"
     ],
@@ -3474,7 +3476,7 @@
     "city": null,
     "stream_url": "http://matrix-server.hr:8010/live.mp3",
     "homepage": "https://www.pomorskiradio.hr/",
-    "favicon": "https://www.pomorskiradio.hr/wp-content/uploads/2021/12/prb_novi_logo_horiz-1-scaled-e1639421254142-1024x243.jpg",
+    "favicon": "/station-icons/hr/pomorski-radio-bakar-nauti-ka-3-51222-bakar.webp",
     "genres": [
       "mix"
     ],
@@ -3497,7 +3499,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:2665/stream",
     "homepage": "https://www.poslovnifm.com/",
-    "favicon": "https://www.poslovnifm.com/favicon.ico",
+    "favicon": "/station-icons/hr/poslovni-fm.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -3516,11 +3518,11 @@
     "slug": "prigorski-radio-antuna-gustava-mato-a-3-kri-evci",
     "stationuuid": "cad2749b-c654-41fc-9aa5-6370e11f7ba9",
     "name": "Prigorski radio",
-    "state": "Antuna Gustava Matoša 3, Križevci",
-    "city": null,
+    "state": "Krapina-Zagorje",
+    "city": "Krapina",
     "stream_url": "http://s8.iqstreaming.com:8048/stream",
     "homepage": "https://prigorskiradio.hr/",
-    "favicon": "https://prigorskiradio.hr/wp-content/uploads/2023/01/prigorskiradio_web_logo.png.webp",
+    "favicon": "/station-icons/hr/prigorski-radio.webp",
     "genres": [
       "various"
     ],
@@ -3543,7 +3545,7 @@
     "city": null,
     "stream_url": "https://s8.ssl-stream.com/prolaznik",
     "homepage": "https://prolaznik.com/",
-    "favicon": "https://prolaznik.com/radio/wp-content/uploads/2026/01/cropped-Ploca-515-32x32.png\"",
+    "favicon": "/station-icons/hr/prolaznik-evergreen-lepoglava-vara-dinska.webp",
     "genres": [
       "classic hits 60s 70a 80s",
       "oldies",
@@ -3589,7 +3591,7 @@
     "city": null,
     "stream_url": "http://shoutcast.pondi.hr:8000/;",
     "homepage": "https://www.radiodalmacija.hr/",
-    "favicon": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/5uLKDLksVe.png",
+    "favicon": "/station-icons/hr/r-dalmacija.webp",
     "genres": [
       "pop",
       "rock"
@@ -3640,7 +3642,7 @@
     "city": null,
     "stream_url": "https://live.radio101.hr:8010/",
     "homepage": "https://radio101.hr/",
-    "favicon": "https://radio101.hr/favicon.ico",
+    "favicon": "/station-icons/hr/radio-101-rock.webp",
     "genres": [
       "rock"
     ],
@@ -3690,7 +3692,7 @@
     "city": null,
     "stream_url": "https://live.radio101.hr:8020/",
     "homepage": "https://radio101.hr/",
-    "favicon": "https://radio101.hr/favicon.ico",
+    "favicon": "/station-icons/hr/radio-101-soft-sound.webp",
     "genres": [
       "rock",
       "soft sound"
@@ -3717,7 +3719,7 @@
     "city": null,
     "stream_url": "https://azuracast.novi-net.net/radio/8050/radio105.aac",
     "homepage": "https://www.radio105.hr/#",
-    "favicon": "https://www.radio105.hr/favicon.ico",
+    "favicon": "/station-icons/hr/radio-105-selnica-hr-medjimurje.webp",
     "genres": [
       "folk",
       "pop"
@@ -3741,7 +3743,7 @@
     "city": null,
     "stream_url": "http://listen.mitchfm.com/",
     "homepage": "http://listen.mitchfm.com/",
-    "favicon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlK-8aTHvPbp6FfftKfbaHNfK2-NOtAZLhFw&s",
+    "favicon": "/station-icons/hr/radio-2.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -3786,7 +3788,7 @@
     "city": null,
     "stream_url": "http://stream.radio808.info:8003/",
     "homepage": "https://radio808.com/",
-    "favicon": "https://radio808.com/wp-content/uploads/2018/02/cropped-logo-808-192x192.png",
+    "favicon": "/station-icons/hr/radio-808.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -3807,7 +3809,7 @@
     "city": null,
     "stream_url": "https://onlineradiobox.com/json/hr/92fm/play?platform=web",
     "homepage": "https://www.facebook.com/radio92eu/",
-    "favicon": "https://cdn.onlineradiobox.com/img/logo/7/47297.v2.png",
+    "favicon": "/station-icons/hr/radio-92-fm.webp",
     "genres": [
       "folk",
       "local news",
@@ -3884,7 +3886,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8036/stream",
     "homepage": "https://www.radio-baranja.hr/",
-    "favicon": "https://www.radio-baranja.hr/wp-content/uploads/2021/01/logo-2.png",
+    "favicon": "/station-icons/hr/radio-baranja-trg-slobode-32-3-hr-beli-manastir.webp",
     "genres": [
       "pop rock"
     ],
@@ -3910,7 +3912,7 @@
     "city": null,
     "stream_url": "https://mcp1.mydataknox.com:8006/stream",
     "homepage": "https://radio-belisce.net/",
-    "favicon": "https://radio-belisce.net/wp-content/uploads/2019/05/GRBlogobijeliobrub.png",
+    "favicon": "/station-icons/hr/radio-beli-e.webp",
     "genres": [
       "family",
       "local music",
@@ -3938,7 +3940,7 @@
     "city": null,
     "stream_url": "https://onlineradiobox.com/json/hr/bnm/play?platform=web",
     "homepage": "https://www.radio-bnm.hr/",
-    "favicon": "https://radio-bnm.hr/wp-content/uploads/2024/04/cropped-logo_radio_bnm_fav-180x180.png",
+    "favicon": "/station-icons/hr/radio-biograd-na-moru.webp",
     "genres": [
       "folk",
       "local news",
@@ -3963,7 +3965,7 @@
     "city": null,
     "stream_url": "https://c2.hostingcentar.com/streams/bnm-chill/",
     "homepage": "https://radio-bnm.hr/",
-    "favicon": "https://radio-bnm.hr/wp-content/uploads/2024/03/bnm-radio-logo-30.png",
+    "favicon": "/station-icons/hr/radio-bnm-biograd-na-moru-chill-etali-te-kneza-branimira-2-i-biograd-na-moru.webp",
     "genres": [
       "chill"
     ],
@@ -3986,7 +3988,7 @@
     "city": null,
     "stream_url": "https://c2.hostingcentar.com/streams/bnm-off-air/",
     "homepage": "https://radio-bnm.hr/",
-    "favicon": "https://radio-bnm.hr/wp-content/uploads/2024/03/bnm-radio-logo-30.png",
+    "favicon": "/station-icons/hr/radio-bnm-biograd-na-moru-off-air-etali-te-kneza-branimira-2-i-biograd-na-moru.webp",
     "genres": [
       "various"
     ],
@@ -4009,7 +4011,7 @@
     "city": null,
     "stream_url": "https://c2.hostingcentar.com/streams/bnm-pop/",
     "homepage": "https://radio-bnm.hr/",
-    "favicon": "https://radio-bnm.hr/wp-content/uploads/2024/03/bnm-radio-logo-30.png",
+    "favicon": "/station-icons/hr/radio-bnm-biograd-na-moru-pop-etali-te-kneza-branimira-2-i-biograd-na-moru.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -4030,7 +4032,7 @@
     "city": null,
     "stream_url": "https://c2.hostingcentar.com/streams/bnm-rock/",
     "homepage": "https://radio-bnm.hr/",
-    "favicon": "https://radio-bnm.hr/wp-content/uploads/2024/03/bnm-radio-logo-30.png",
+    "favicon": "/station-icons/hr/radio-bnm-biograd-na-moru-rock-etali-te-kneza-branimira-2-i-biograd-na-moru.webp",
     "genres": [
       "rock"
     ],
@@ -4053,7 +4055,7 @@
     "city": null,
     "stream_url": "https://c2.hostingcentar.com/streams/bnmradio/",
     "homepage": "https://radio-bnm.hr/",
-    "favicon": "https://radio-bnm.hr/wp-content/uploads/2024/03/bnm-radio-logo-30.png",
+    "favicon": "/station-icons/hr/radio-bnm-biograd-na-moru-94-0-100-5-mhz-etali-te-kneza-branimira-2-i-biograd-na.webp",
     "genres": [
       "live radio"
     ],
@@ -4118,7 +4120,7 @@
     "city": null,
     "stream_url": "http://radiocentar.hr:8282/stream.aac",
     "homepage": "https://radiocentar.hr/",
-    "favicon": "https://demo.superdsgn.com/radio-centar/img/logo2.png",
+    "favicon": "/station-icons/hr/radio-centar-studio-pore.webp",
     "genres": [
       "various music"
     ],
@@ -4168,7 +4170,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8215/stream",
     "homepage": "https://www.radiodalmacija.hr/",
-    "favicon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Radio_Dalmacija_logo.jpg/300px-Radio_Dalmacija_logo.jpg",
+    "favicon": "/station-icons/hr/radio-dalmacija.webp",
     "genres": [
       "pop"
     ],
@@ -4194,7 +4196,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8221/stream",
     "homepage": "https://www.radiodalmacija.hr/",
-    "favicon": "https://www.radiodalmacija.hr/favicon.ico",
+    "favicon": "/station-icons/hr/radio-dalmacija.webp",
     "genres": [
       "pop"
     ],
@@ -4220,7 +4222,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8275/stream",
     "homepage": "http://c5.hostingcentar.com:8275/stream",
-    "favicon": "/station-icons/hr/radio-dalmacija-oliver-placeholder.webp",
+    "favicon": "/station-icons/hr/radio-dalmacija.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -4244,7 +4246,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8209/stream",
     "homepage": "https://www.radiodalmacija.hr/",
-    "favicon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Radio_Dalmacija_logo.jpg/300px-Radio_Dalmacija_logo.jpg",
+    "favicon": "/station-icons/hr/radio-dalmacija.webp",
     "genres": [
       "pop"
     ],
@@ -4343,7 +4345,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:2415/stream",
     "homepage": "http://www.radiodrnis.hr/",
-    "favicon": "https://radiodrnis.hr/wp-content/uploads/2023/03/LOGO11.png",
+    "favicon": "/station-icons/hr/radio-drni-89-0-mhz-kralja-zvonimira-8-drni.webp",
     "genres": [
       "various"
     ],
@@ -4368,7 +4370,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:8305/stream",
     "homepage": "https://www.radio-djakovo.hr/",
-    "favicon": "https://static.mytuner.mobi/media/tvos_radios/XxwX7VSzXB.jpg",
+    "favicon": "/station-icons/hr/radio-akovo.webp",
     "genres": [
       "family",
       "pop",
@@ -4416,7 +4418,7 @@
     "city": null,
     "stream_url": "http://144.76.39.214:9500/stream.mp3",
     "homepage": "https://rgk.hr/",
-    "favicon": "https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/rgk.hr/wp-content/uploads/2024/05/cropped-favicon1-180x180.png",
+    "favicon": "/station-icons/hr/radio-gorski-kotar.webp",
     "genres": [
       "folk",
       "local news",
@@ -4468,7 +4470,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8072/stream",
     "homepage": "https://rhzk.hr/slusajte-nas-online/",
-    "favicon": "https://rhzk.hr/wp-content/uploads/2017/10/header-2-copy1-585x80.jpg",
+    "favicon": "/station-icons/hr/radio-hrvatsko-zagorje-krapina.webp",
     "genres": [
       "various"
     ],
@@ -4535,7 +4537,7 @@
     "city": null,
     "stream_url": "http://65.21.202.84:8356/stream",
     "homepage": "https://www.italo-disco.net/index2.html",
-    "favicon": "https://www.italo-disco.net/Pictures/JPG/Hearticon.jpg",
+    "favicon": "/station-icons/hr/radio-italo-disco-net.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -4559,7 +4561,7 @@
     "city": null,
     "stream_url": "http://uk1.streamingpulse.com:7041/stream",
     "homepage": "http://www.radio-jaska.hr/",
-    "favicon": "https://www.radio-jaska.hr/wp-content/uploads/2021/02/logo-Untitled-16-3-19-2.png",
+    "favicon": "/station-icons/hr/radio-jaska-jastrebarsko.webp",
     "genres": [
       "various"
     ],
@@ -4610,7 +4612,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8050/stream",
     "homepage": "https://kaj.hr/",
-    "favicon": "https://kaj.hr/wp-content/uploads/2024/01/logoradiokaj-2.png",
+    "favicon": null,
     "genres": [],
     "language": null,
     "bitrate": 64,
@@ -4655,7 +4657,7 @@
     "city": null,
     "stream_url": "https://audio.alter-media.hr:7016/stream",
     "homepage": "https://www.unist.hr/radio-kampus",
-    "favicon": "https://www.unist.hr/img/favicon/favicon-16x16.png",
+    "favicon": "/station-icons/hr/radio-kampus.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -4720,8 +4722,8 @@
     "state": "Korčula island, Korčula",
     "city": null,
     "stream_url": "http://shoutcast.pondi.hr:8005/;",
-    "homepage": "http://www.radio-korcula.hr/",
-    "favicon": "http://www.radio-korcula.hr/assets/images/rklogo-01-506x128-14.png",
+    "homepage": "https://www.radio-korcula.hr/",
+    "favicon": "/station-icons/hr/radio-kor-ula-107-5fm-kor-ula-island-kor-ula.webp",
     "genres": [
       "various"
     ],
@@ -4744,7 +4746,7 @@
     "city": null,
     "stream_url": "https://c2.hostingcentar.com/streams/radiokorzo/stream",
     "homepage": "https://radiokorzo.hr/",
-    "favicon": "https://static.mytuner.mobi/media/tvos_radios/awmrmwl3yzgv.png",
+    "favicon": "/station-icons/hr/radio-korzo.webp",
     "genres": [
       "local music",
       "pop",
@@ -4819,7 +4821,7 @@
     "city": null,
     "stream_url": "http://radiolabin.streamradio.com.hr:9100/",
     "homepage": "https://www.radiolabin.hr/",
-    "favicon": "https://radiolabin.hr/images/favicon.ico",
+    "favicon": "/station-icons/hr/radio-labin.webp",
     "genres": [],
     "language": null,
     "bitrate": 256,
@@ -4893,7 +4895,7 @@
     "city": null,
     "stream_url": "http://dreamsiteradiocp.com:8026/stream?type=http&nocache=215",
     "homepage": "https://www.radiomarija.hr/index.php/programi/program-uzivo",
-    "favicon": "https://www.radiomarija.hr/templates/t3_bs3_blank/favicon.ico",
+    "favicon": "/station-icons/hr/radio-maria-croatia.webp",
     "genres": [],
     "language": null,
     "bitrate": 64,
@@ -4950,7 +4952,7 @@
     "city": null,
     "stream_url": "http://dreamsiteradiocp4.com:8080/",
     "homepage": "http://www.radiomarija.hr/",
-    "favicon": "http://www.radiomarija.hr/templates/t3_bs3_blank/favicon.ico",
+    "favicon": "/station-icons/hr/radio-marija.webp",
     "genres": [
       "catholic"
     ],
@@ -4976,7 +4978,7 @@
     "city": null,
     "stream_url": "http://178.218.163.171:8024/stream",
     "homepage": "https://www.rmb.hr/",
-    "favicon": "http://www.rmb.hr/wp-content/themes/metro-pro/images/favicon.ico",
+    "favicon": "/station-icons/hr/radio-marija.webp",
     "genres": [
       "folk music",
       "local news",
@@ -5004,7 +5006,7 @@
     "city": null,
     "stream_url": "https://dreamsiteradiocp2.com/proxy/rmcroatia?mp=/stream",
     "homepage": "https://www.radiomarija.hr/",
-    "favicon": "https://www.radiomarija.hr/templates/t3_bs3_blank/favicon.ico",
+    "favicon": "/station-icons/hr/radio-marija.webp",
     "genres": [
       "catholic",
       "christian"
@@ -5031,7 +5033,7 @@
     "city": null,
     "stream_url": "https://azuracast.novi-net.net/radio/8010/radiomax.aac",
     "homepage": "https://radiomax.hr/",
-    "favicon": "https://radiomax.hr/wp-content/uploads/2025/02/cropped-logo350x100-protizrni-768x256.png",
+    "favicon": "/station-icons/hr/radio-max-vara-dinska.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -5052,7 +5054,7 @@
     "city": null,
     "stream_url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.aac",
     "homepage": "https://radiomax.hr/",
-    "favicon": "https://radiomax.hr/wp-content/uploads/2025/02/cropped-logo350x100-protizrni-768x256.png",
+    "favicon": "/station-icons/hr/radio-max.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -5102,7 +5104,7 @@
     "city": null,
     "stream_url": "http://live.mediaservis.hr:8084/stream?type=http&nocache=557757",
     "homepage": "https://onlineradiobox.com/hr/mediaservis/?lang=uk",
-    "favicon": "https://cdn.onlineradiobox.com/img/ios_favicon.png",
+    "favicon": "/station-icons/hr/radio-media-servis.webp",
     "genres": [],
     "language": null,
     "bitrate": 256,
@@ -5123,7 +5125,7 @@
     "city": null,
     "stream_url": "https://chopin.bizmusic.net/radio/8030/radio.mp3",
     "homepage": "https://radiomegaton.hr/",
-    "favicon": "https://radiomegaton.hr/wp-content/uploads/2021/03/megaton-logo-rm-256.png",
+    "favicon": "/station-icons/hr/radio-megaton.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -5146,7 +5148,7 @@
     "city": null,
     "stream_url": "http://comet.shoutca.st:8050/",
     "homepage": "https://radiong.hr/",
-    "favicon": "https://radiong.hr/wp-content/uploads/2015/10/cropped-logo-180x180.png",
+    "favicon": "/station-icons/hr/radio-nova-gradi-ka.webp",
     "genres": [
       "folk",
       "local news",
@@ -5171,7 +5173,7 @@
     "city": null,
     "stream_url": "https://slusaj.hr:10445/stream?type=http&nocache=634",
     "homepage": "https://nu.net.hr/",
-    "favicon": "https://nu.net.hr/wp-content/uploads/2023/03/Logo-radio-nu.png",
+    "favicon": "/station-icons/hr/radio-nu.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 192,
@@ -5195,7 +5197,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:2595/stream",
     "homepage": "http://www.radioorahovica.com/",
-    "favicon": "https://takenupload.com/faviconjutawan",
+    "favicon": "/station-icons/hr/radio-orahovica.webp",
     "genres": [
       "news"
     ],
@@ -5292,7 +5294,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8064/stream",
     "homepage": "http://quirinusportal.com/slusaj-radio/",
-    "favicon": "http://quirinusportal.com/favicon.ico",
+    "favicon": "/station-icons/hr/radio-quirinus.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -5313,7 +5315,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:8455/stream",
     "homepage": "https://radioritam.hr/",
-    "favicon": "https://radioritam.hr/wp-content/uploads/elementor/thumbs/Radio-Ritam-SQUARE-LOGO-RED-PNG-FINAL-pzj6jx2x1xqqsmjhwrtijmkext8d5d8dtec4vbbzb0.png",
+    "favicon": "/station-icons/hr/radio-ritam-ibenik.webp",
     "genres": [
       "various music"
     ],
@@ -5338,7 +5340,7 @@
     "city": null,
     "stream_url": "https://cf.widecastcdn.live/Z07ww1NUNl/live.m3u8",
     "homepage": "https://radio.rojc.eu/",
-    "favicon": "https://i0.wp.com/radio.rojc.eu/wp-content/uploads/2023/08/radio-rojc-frekvencija-logo-4-1-3.png",
+    "favicon": "/station-icons/hr/radio-rojc.webp",
     "genres": [
       "community radio",
       "cultural"
@@ -5406,7 +5408,7 @@
     "city": null,
     "stream_url": "http://185.150.235.162/",
     "homepage": "http://www.radiosamobor.hr/",
-    "favicon": "https://www.radiosamobor.hr/cms/wp-content/uploads/2014/04/cropped-apple-touch-icon-144x144-1-180x180.png",
+    "favicon": "/station-icons/hr/radio-samobor.webp",
     "genres": [
       "folk",
       "local news",
@@ -5431,7 +5433,7 @@
     "city": null,
     "stream_url": "http://144.76.219.22:8215/stream.mp3?ver=421911",
     "homepage": "https://radiosibenik.hr/",
-    "favicon": "https://radiosibenik.hr/wp-content/uploads/2019/08/radio_sibenik_logo_2a-mali.png",
+    "favicon": "/station-icons/hr/radio-ibenik-ibenik-knin.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -5455,7 +5457,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8026/;",
     "homepage": "https://www.radioslavonija.hr/",
-    "favicon": "http://radioslavonija.hr/data/source/logo/logo.png",
+    "favicon": "/station-icons/hr/radio-slavonija-ulica-nikole-zrinskog-67-slavonski-brod.webp",
     "genres": [
       "news",
       "various music"
@@ -5501,9 +5503,9 @@
     "name": "Radio Slunj",
     "state": "Trg dr. Franje Tuđmana 14, Slunj",
     "city": null,
-    "stream_url": "http://s8.iqstreaming.com:8070/",
+    "stream_url": "http://s8.iqstreaming.com:8070/;",
     "homepage": "https://radio-slunj.hr/",
-    "favicon": "https://radio-slunj.hr/wp-content/uploads/2025/01/logo1.png",
+    "favicon": "/station-icons/hr/radio-slunj.webp",
     "genres": [
       "various"
     ],
@@ -5516,7 +5518,23 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 45.11537785385462,
-    "geo_long": 15.585222244262695
+    "geo_long": 15.585222244262695,
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Default",
+        "url": "http://s8.iqstreaming.com:8070/;",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-128-alternative",
+        "label": "Alternative",
+        "url": "https://s8.iqstreaming.com:2020/stream/radio-slunj1?mp=/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-sova",
@@ -5553,7 +5571,7 @@
     "city": null,
     "stream_url": "http://radiostubica.hc.hr:7006/stream",
     "homepage": "https://radio-stubica.hr/",
-    "favicon": "https://radio-stubica.hr/favicon.ico",
+    "favicon": "/station-icons/hr/radio-stubica.webp",
     "genres": [
       "folklore",
       "pop music"
@@ -5624,7 +5642,7 @@
     "city": null,
     "stream_url": "http://shoutcast.pondi.hr:8002/;*.mp3",
     "homepage": "http://www.uzivoradio.com/sunce-split.html",
-    "favicon": "http://www.uzivoradio.com/thumbnails/fb-thumb.gif",
+    "favicon": "/station-icons/hr/radio-sunce-splitsko-dalmatinska.webp",
     "genres": [
       "helth",
       "world music"
@@ -5700,7 +5718,7 @@
     "city": null,
     "stream_url": "https://c8.hostingcentar.com/streams/radiotvornica?type=http&nocache=50001",
     "homepage": "https://www.radiotvornica.hr/#",
-    "favicon": "https://www.radiotvornica.hr/favicon.png",
+    "favicon": "/station-icons/hr/radio-tvornica-grad-zagreb.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -5718,10 +5736,10 @@
     "stationuuid": "d7a711c5-3bcd-4e21-8713-52d2e1d59b59",
     "name": "Radio Velika Gorica",
     "state": "Zagrebačka županija",
-    "city": null,
+    "city": "Zagreb",
     "stream_url": "https://s8.iqstreaming.com:2020/stream/rvg",
     "homepage": "https://rvg.hr/",
-    "favicon": "http://st.telekomcloud.hr/4gitpx8y",
+    "favicon": "/station-icons/hr/radio-velika-gorica.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -5732,7 +5750,23 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Default",
+        "url": "https://s8.iqstreaming.com:2020/stream/rvg",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-128-alternative",
+        "label": "Alternative",
+        "url": "https://s8.iqstreaming.com:2020/stream/city_radioHR/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-vinkovci",
@@ -5742,7 +5776,7 @@
     "city": null,
     "stream_url": "https://onlineradiobox.com/json/hr/vinkovci/play?platform=web",
     "homepage": "https://www.facebook.com/novosti.vinkovci/",
-    "favicon": "https://www.facebook.com/favicon.ico",
+    "favicon": null,
     "genres": [
       "folk",
       "local news",
@@ -5815,7 +5849,7 @@
     "city": null,
     "stream_url": "http://144.76.172.23:7059/",
     "homepage": "https://www.radio-zlatar.hr/",
-    "favicon": "https://www.radio-zlatar.hr/novosti_slike/kzz.png",
+    "favicon": "/station-icons/hr/radio-zlatar.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 64,
@@ -5860,7 +5894,7 @@
     "city": null,
     "stream_url": "http://live.radio101.hr:9531/",
     "homepage": "http://radio101.hr/",
-    "favicon": "http://radio101.hr/favicon.ico",
+    "favicon": "/station-icons/hr/radio101-zagreb.webp",
     "genres": [
       "local news",
       "news",
@@ -5883,29 +5917,6 @@
     "history_url": "http://live.radio101.hr:9531/played?sid=1&type=json"
   },
   {
-    "slug": "rbb-internet-radio",
-    "stationuuid": "3c0d3177-d2fb-4c04-ac6f-0e03173c42cb",
-    "name": "RBB Internet Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "https://cast1.asurahosting.com/proxy/zoran/stream",
-    "homepage": "https://rbbinternetradio.com/",
-    "favicon": "https://rbbinternetradio.com/wp-content/uploads/2023/03/267272195_1301172043639200_8595569174602970131_n-1-150x150.jpg",
-    "genres": [
-      "world music"
-    ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 11,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 45.12735035617505,
-    "geo_long": 17.97225952148438
-  },
-  {
     "slug": "replay-news-hrvatski-radio-informacija-svakih-5-minuta-zagreb",
     "stationuuid": "684e0b7e-bd37-4176-9d6d-bae63e3fc1ae",
     "name": "REPLAY NEWS - Hrvatski         Radio informacija svakih 5 minuta",
@@ -5913,7 +5924,7 @@
     "city": null,
     "stream_url": "https://replaynewshr.ice.infomaniak.ch/replaynewshr-128.mp3",
     "homepage": "https://www.replaynews.net/",
-    "favicon": "https://www.publicsante.com/BIENVENU/LOGO%20REPLAY%20NEWS-HR.png",
+    "favicon": "/station-icons/hr/replay-news-hrvatski-radio-informacija-svakih-5-minuta-zagreb.webp",
     "genres": [
       "news"
     ],
@@ -5936,7 +5947,7 @@
     "city": null,
     "stream_url": "http://65.108.198.245:8856/;",
     "homepage": "https://roomfm.hr/",
-    "favicon": "https://cdn.onlineradiobox.com/img/l/4/75514.v18.png",
+    "favicon": "/station-icons/hr/room-fm.webp",
     "genres": [],
     "language": "croatia",
     "bitrate": 192,
@@ -6115,7 +6126,7 @@
     "city": null,
     "stream_url": "https://slusaj.hr:10446/stream?type=http&nocache=9",
     "homepage": "https://nu.net.hr/thompson/",
-    "favicon": "https://nu.net.hr/wp-content/uploads/2023/03/Logo-radio-nu.png",
+    "favicon": "/station-icons/hr/thompson-24-7-radio-nu-dalmatia.webp",
     "genres": [
       "hard rock",
       "rock",
@@ -6224,7 +6235,7 @@
     "city": null,
     "stream_url": "https://c5.hostingcentar.com/streams/topradio/",
     "homepage": "https://topradio.hr/",
-    "favicon": "https://topradio.hr/favicon.ico",
+    "favicon": "/station-icons/hr/top-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -6266,7 +6277,7 @@
     "city": null,
     "stream_url": "https://audio.social3.hr/listen/top_radio_pop/stream?5483",
     "homepage": "https://topradio.hr/",
-    "favicon": "https://topradio.hr/favicon.ico",
+    "favicon": "/station-icons/hr/top-radio-pop-zagreb.webp",
     "genres": [],
     "language": null,
     "bitrate": 96,
@@ -6308,7 +6319,7 @@
     "city": null,
     "stream_url": "https://audio.social3.hr/listen/top_exyu/stream?8298",
     "homepage": "https://topradio.hr/",
-    "favicon": "https://topradio.hr/favicon.ico",
+    "favicon": "/station-icons/hr/top-radio-yugo-zagreb.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -6379,7 +6390,7 @@
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr/tranzistor",
     "homepage": "https://tranzistor.hr/",
-    "favicon": "https://static.mytuner.mobi/media/tvos_radios/6dddvp8f7qcb.png",
+    "favicon": "/station-icons/hr/tranzistor.webp",
     "genres": [
       "pop",
       "rock",
@@ -6428,7 +6439,7 @@
     "city": null,
     "stream_url": "http://c5.hostingcentar.com:8061/stream",
     "homepage": "https://ultrasplit.hr/",
-    "favicon": "https://ultrasplit.hr/wp-content/uploads/2017/01/cropped-ultra-st-profilna-1-192x192.jpg",
+    "favicon": "/station-icons/hr/ultra-split.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 96,
@@ -6486,7 +6497,7 @@
     "city": null,
     "stream_url": "http://radiocentar.hr:8585/stream.aac",
     "homepage": "https://www.zabavni.hr/",
-    "favicon": "https://www.zabavni.hr/wp-content/uploads/2019/07/favicon.png",
+    "favicon": null,
     "genres": [
       "hits",
       "local news",
@@ -6541,7 +6552,7 @@
     "city": null,
     "stream_url": "http://s8.iqstreaming.com:8054/stream",
     "homepage": "http://www.zagorski-radio.hr/",
-    "favicon": "http://www.zagorski-radio.hr/wp-content/uploads/2025/04/cropped-2.png",
+    "favicon": null,
     "genres": [
       "pop"
     ],
@@ -6559,12 +6570,12 @@
   {
     "slug": "zfm",
     "stationuuid": "38dba53f-b60a-4dac-bf3a-40c2f5878847",
-    "name": "ZFM",
+    "name": "Radio Zaprešić ZFM",
     "state": null,
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:7015/stream",
     "homepage": "https://zfm.hr/",
-    "favicon": "https://zfm.hr/wp-content/uploads/2020/01/LOGO-2019-MINI.png",
+    "favicon": "/station-icons/hr/radio-zapresic-zfm.webp",
     "genres": [
       "80s",
       "pop"
@@ -6590,7 +6601,7 @@
     "city": null,
     "stream_url": "http://144.76.219.22:8215/stream.mp3",
     "homepage": "https://radiosibenik.hr/",
-    "favicon": "https://radiosibenik.hr/wp-content/uploads/2019/08/radio_sibenik_logo_2a-mali.png",
+    "favicon": "/station-icons/hr/upanijski-radio-ibenik-ul-velimira-korpika-23-ibenik.webp",
     "genres": [
       "various"
     ],

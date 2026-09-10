@@ -8,7 +8,7 @@ import { Image } from "astro:assets";
 
 const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 const radddioBadgeUrl = "/radddio-badge.svg";
 
 export async function getStaticPaths() {
@@ -69,9 +69,9 @@ const pageNumbers = generatePageNumbers();
 
 const siteRoot = site.siteUrl;
 const canonical = page === 1 ? `${siteRoot}/` : `${siteRoot}/page/${page}/`;
-const pageTitle = countryText(`Radio Stations in Greece – Page ${page} – Live Online | E-Radio`);
+const pageTitle = countryText(`Radio Stations in Greece – Page ${page} – Live Online | ${site.siteShortName}`);
 const pageDescription = countryText(`Browse the most popular live Greek radio stations sorted by community votes. Page ${page} of ${totalPages}, with curated picks, genres, and cities to explore.`);
-const ogImageUrl = `${siteRoot}${ogImage}`;
+const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 // Structured data (JSON-LD)
 const structuredData = {
@@ -84,7 +84,7 @@ const structuredData = {
   "image": ogImageUrl,
   "isPartOf": {
     "@type": "WebSite",
-    "name": countryText("E-Radio Greece"),
+    "name": site.siteName,
     "url": siteRoot
   },
   "hasPart": topStations.map(station => ({
@@ -105,9 +105,9 @@ const structuredData = {
     ogTitle={pageTitle}
     ogDescription={pageDescription}
     ogImage={ogImageUrl}
-    keywords={countryText("Greek radio, live radio, Greece stations, online radio, radio streaming")}
+    keywords={countryText(`Greek radio, liv${site.siteShortName}, Greece stations, onlin${site.siteShortName}, radio streaming`)}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     prevUrl={page > 1 ? page === 2 ? `${siteRoot}/` : `${siteRoot}/page/${page - 1}/` : undefined}
     nextUrl={page < totalPages ? `${siteRoot}/page/${page + 1}/` : undefined}
     structuredData={structuredData}

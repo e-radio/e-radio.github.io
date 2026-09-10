@@ -346,12 +346,12 @@ const recommendedStations = getRecommendedStations();
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/stations/${station.slug}/`;
-const ogImage = "/e-radio-og-image.png";
+const ogImage = site.socialImage;
 const ogImageUrl = station.favicon && station.favicon.startsWith("http")
   ? station.favicon
   : station.favicon
     ? `${siteRoot}${station.favicon}`
-    : `${siteRoot}${ogImage}`;
+    : new URL(ogImage, siteRoot).href;
 
 const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
   const streamUrl = String(currentStation.stream_url ?? "").toLowerCase();
@@ -402,7 +402,7 @@ const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
 
 const encodingFormat = resolveEncodingFormat(station);
 
-const title = countryText(`${station.name} – Live Radio Station in Greece | E-Radio`);
+const title = countryText(`${station.name} – Live Radio Station in Greece | ${site.siteShortName}`);
 const genreLabel = station.genres.length > 0
   ? station.genres.slice(0, 2).join(", ").toLowerCase()
   : "live";
@@ -487,7 +487,7 @@ const structuredData = {
     ogType="music.radio_station"
     keywords={`${station.name}, ${station.state || site.countryName}, radio, live, ${station.genres.join(", ")}`}
     robots="index, follow"
-    author={countryText("E-Radio Greece")}
+    author={site.siteName}
     structuredData={structuredData}
   />
   <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">

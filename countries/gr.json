@@ -34,5 +34,14 @@
   "redirectsFile": "countries/gr.redirects.json",
   "googleVerification": "lQfQGR6ZHNk4_xpou2o4dn4dTItSP8G9YVR8rWACGls",
   "twitterHandle": "@eradiogreece",
-  "introText": "Ανακαλύψτε ελληνικούς ραδιοφωνικούς σταθμούς και ακούστε ε ραδιο και εραδιο από όλη την Ελλάδα ζωντανά online."
+  "introText": "Ανακαλύψτε ελληνικούς ραδιοφωνικούς σταθμούς και ακούστε ε ραδιο και εραδιο από όλη την Ελλάδα ζωντανά online.",
+  "siteShortName": "E-Radio",
+  "socialImage": "/e-radio-og-image.png",
+  "logo": "/icons/icon-32x32.png",
+  "favicon": "/favicon.svg",
+  "favicon32": "/icons/icon-32x32.png",
+  "icon192": "/icons/icon-192x192.png",
+  "icon512": "/icons/icon-512x512.png",
+  "appleTouchIcon": "/icons/apple-touch-icon.png",
+  "socialLocale": "en_US"
 }
