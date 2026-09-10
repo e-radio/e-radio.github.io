@@ -126,7 +126,7 @@ npm run build
 COUNTRY=hr npm run build
 ```
 
-Supported country-aware tools are `stations:import`, `stations:metadata`, `stations:icons`, `tools/fetch-missing-station-icons.mjs`, and `tools/fix-station-slugs.mjs`. Historical Python repair scripts and other one-off tools in `tools/` are Greece-specific; do not run them for another country. Import review reports and metadata discovery reports have country suffixes. Failed or absent metadata does not prevent audio playback.
+Supported country-aware tools are `stations:import`, `stations:metadata`, `stations:icons`, `stations:geography`, `tools/fetch-missing-station-icons.mjs`, and `tools/fix-station-slugs.mjs`, and `tools/fill-stream-audio-info.py`. Historical Python repair scripts and other one-off tools in `tools/` are Greece-specific; do not run them for another country. Import review reports and metadata discovery reports have country suffixes. Failed or absent metadata does not prevent audio playback.
 
 ## Exclude deleted stations from future imports
 
@@ -156,3 +156,31 @@ Edit `countries/<code>.json`. Site branding does not have to contain â€œE-Radioâ
 `siteName` controls the header, footer, author, structured data, legal copy, and full app name. `siteShortName` controls page-title suffixes and the installed app's short name; it defaults to `siteName` if omitted. `introText` appears on the homepage and in the app manifest description. `socialImage` controls sharing images and may be a public-root path or HTTPS URL. The remaining image paths let each country use its own visual identity; keep the declared favicon/manifest formats and dimensions when replacing assets. Empty `twitterHandle` and `googleVerification` values omit those tags.
 
 When creating a country, optionally pass `--site-name "Your Radio Brand"` to `tools/create-country.mjs`; otherwise the default name is `Radio <country>`. Restart the development server after editing country configuration. Existing station names, the Greece repository remote, and third-party Radddio branding are separate from the site's own brand.
+
+## Fill city and region from coordinates
+
+The country-aware geography tool checks only stations with both `geo_lat` and `geo_long`. It verifies the returned country, derives locality and county/region separately, and records foreign or ambiguous coordinates for review. Station slugs and stream URLs are preserved. Croatia uses county names in `state`, including `Grad Zagreb` for the City of Zagreb.
+
+```sh
+# Preview changes in reports/geography-hr.json (Croatian place names)
+COUNTRY=hr python3 tools/fill-station-geography.py --lang hr --overwrite
+
+# Apply; cached coordinate responses are reused
+COUNTRY=hr python3 tools/fill-station-geography.py --lang hr --overwrite --write
+```
+
+Without `--overwrite`, only missing city/state values are filled. The report includes before/after values and exceptions. Coordinate responses are cached in `tools/cache/geography-<country>-<language>.json`. Keep the cache for subsequent runs. Set `--endpoint` or `GEOCODER_URL` to use a different compatible geocoder.
+
+The default service is Nominatim: read its [usage policy](https://operations.osmfoundation.org/policies/nominatim/) before using it. This tool is for small, one-time manual cleanups, using one process on one machine, an identifying user agent, cached results, and no more than one request per second. Do not run several copies or schedule repeated bulk jobs against the public service. For recurring work use another provider or your own service. Coordinates are sent to the selected service; results are OpenStreetMap data under ODbL. Configure `geographyAttribution` to `true` on countries using these results so the footer credits [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
+
+Test the geography rules with `python3 -m unittest discover -s tests -p 'test_station_geography.py'`.
+
+## Fill missing stream bitrate and codec
+
+Requires `ffprobe` (provided by FFmpeg). Run from the project root:
+
+```sh
+COUNTRY=hr python3 tools/fill-stream-audio-info.py --write
+```
+
+Use `COUNTRY=gr` for Greece, or pass `--country hr`. Omit `--write` for a report-only scan. The script probes only stations missing bitrate or codec, preserves existing values, and leaves unidentifiable values unchanged. Croatia's results are saved in `reports/stream-audio-info-hr.json`. It aborts the data write if the dataset changes during probing.

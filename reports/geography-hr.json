@@ -1,0 +1,2759 @@
+{
+  "country": "hr",
+  "language": "hr",
+  "applied": true,
+  "source": "OpenStreetMap contributors, ODbL 1.0",
+  "attribution_url": "https://www.openstreetmap.org/copyright",
+  "records": [
+    {
+      "stationuuid": "8a15a9d8-9d83-4671-8d43-1b616f63beef",
+      "slug": "057-radio-zadar-croatia-banana-state",
+      "coordinates": [
+        0.4034730536430754,
+        9.439390443294544
+      ],
+      "before": {
+        "city": null,
+        "state": "Banana state"
+      },
+      "address": {
+        "amenity": "Institution Immaculée Conception",
+        "road": "Boulevard Monseigneur Jean-Rémi Bessieux",
+        "suburb": "Baie des Rois",
+        "borough": "3ème Arrondissement",
+        "city": "Libreville",
+        "county": "Libreville",
+        "state": "Estuaire",
+        "ISO3166-2-lvl4": "GA-1",
+        "country": "Gabon",
+        "country_code": "ga"
+      },
+      "status": "review",
+      "reason": "Coordinates resolve outside the selected country"
+    },
+    {
+      "stationuuid": "43a06798-bea3-4912-be7f-0f8dcc0f3369",
+      "slug": "bijelo-plavi-radio-istarska-2-osijek",
+      "coordinates": [
+        45.556833747076936,
+        18.693677186965942
+      ],
+      "before": {
+        "city": null,
+        "state": "Istarska 2, Osijek"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Istarska ulica",
+        "suburb": "Gradska četvrt Tvrđa",
+        "city": "Osijek",
+        "municipality": "Grad Osijek",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "31000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Osijek",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "fa82f10f-1711-43da-a3d8-71a40ec36a62",
+      "slug": "bravo",
+      "coordinates": [
+        45.76387719527284,
+        15.981709063053133
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2b9512c9-375c-46ab-b28f-ef7c83c69ea3",
+      "slug": "bravo-grad-zagreb",
+      "coordinates": [
+        45.81195501302508,
+        15.9722650273346
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "shop": "Dancing Bear",
+        "house_number": "7",
+        "road": "Gundulićeva ulica",
+        "neighbourhood": "Mjesni odbor Cvjetni trg",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "92248da8-2e1d-438a-8c95-dc59c3f23ebe",
+      "slug": "bravo-balade-grad-zagreb",
+      "coordinates": [
+        45.80582853992835,
+        15.96548895486555
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "house_number": "8/1",
+        "road": "Savska cesta",
+        "neighbourhood": "Mjesni odbor \"Mimara\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10115",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e6a69e26-8320-404d-be82-d819ae50d64c",
+      "slug": "bravo-kids-grad-zagreb",
+      "coordinates": [
+        45.810423487136624,
+        15.96584607639418
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "road": "Prilaz Gjure Deželića",
+        "neighbourhood": "Mjesni odbor \"Andrija Medulić\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10115",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "14305e42-2d34-4435-868e-e7d9ed4137dd",
+      "slug": "bravo-pop-grad-zagreb",
+      "coordinates": [
+        45.8425770373213,
+        15.991332464625756
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "road": "Gorice",
+        "quarter": "Mjesni odbor Remete",
+        "suburb": "Gradska četvrt Maksimir",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10112",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "17428ba2-ccfc-4d91-aa98-41fe13d3f9da",
+      "slug": "bravo-rock-grad-zagreb",
+      "coordinates": [
+        45.83492308132436,
+        15.980284411792091
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "road": "Mirogojska cesta",
+        "neighbourhood": "Ksaver",
+        "suburb": "Gradska četvrt Gornji grad - Medveščak",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "60ba0181-cb84-4337-b1bb-d07fbf046da3",
+      "slug": "city-radio-zagreba-ka-19-velika-gorica",
+      "coordinates": [
+        45.71513193246481,
+        16.072289943695072
+      ],
+      "before": {
+        "city": null,
+        "state": "Zagrebačka 19, Velika Gorica"
+      },
+      "address": {
+        "shop": "Dejana",
+        "road": "Zagrebačka ulica",
+        "quarter": "Cvjetno naselje",
+        "suburb": "Gradska četvrt Vladimir Nazor",
+        "city_district": "Velika Gorica",
+        "town": "Grad Velika Gorica",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10410",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "120f5847-68d7-41d1-8b28-51614984d1f3",
+      "slug": "club-music-radio-tambura-120f5847",
+      "coordinates": [
+        45.80646674808427,
+        15.976867675781252
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "53",
+        "road": "Gajeva ulica",
+        "neighbourhood": "Mjesni odbor \"Kralj Petar Svačić\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9c69cb1d-af21-482b-ae08-b56c23fc2278",
+      "slug": "domoljubne-pjesme",
+      "coordinates": [
+        45.81078869918239,
+        15.916335729624576
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "railway": "Kontejnerski terminal Vrapče",
+        "road": "Ilica",
+        "quarter": "Vrapče",
+        "neighbourhood": "Mjesni odbor Vrapče - centar",
+        "suburb": "Gradska četvrt Podsused - Vrapče",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10090",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "08a81254-0bf7-40c2-844b-304f22717236",
+      "slug": "drama-radio-dubrovnik-dalmatia",
+      "coordinates": [
+        42.65209271026004,
+        18.08935940265656
+      ],
+      "before": {
+        "city": null,
+        "state": "Dalmatia"
+      },
+      "address": {
+        "office": "Konzulat Mađarske",
+        "house_number": "24",
+        "road": "Ulica dr. Ante Starčevića",
+        "quarter": "Batala",
+        "suburb": "Gradski kotar Montovjerna",
+        "city_district": "Dubrovnik",
+        "city": "Grad Dubrovnik",
+        "county": "Dubrovačko-neretvanska županija",
+        "ISO3166-2-lvl4": "HR-19",
+        "postcode": "20000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Dubrovnik",
+        "state": "Dubrovačko-neretvanska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "761a166b-0350-48f0-a503-edb1a227233f",
+      "slug": "folkyton-radio-velika-mlaka",
+      "coordinates": [
+        45.73638029783001,
+        16.029052734375004
+      ],
+      "before": {
+        "city": null,
+        "state": "Velika Mlaka"
+      },
+      "address": {
+        "house_number": "4",
+        "road": "Trg majke Hrvatice",
+        "village": "Velika Mlaka",
+        "town": "Grad Velika Gorica",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10408",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6ceb8ce2-e38c-4cd8-b51c-46bfa95d9f39",
+      "slug": "galacticfm-progressive-house-trance-6ceb8ce2",
+      "coordinates": [
+        45.813678230914114,
+        15.968886712890011
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "48",
+        "road": "Ilica",
+        "neighbourhood": "Mjesni odbor Tuškanac",
+        "suburb": "Gradska četvrt Gornji grad - Medveščak",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "81ea8974-a766-435c-b0bc-40cd6a58c85e",
+      "slug": "gold-velika-gorica",
+      "coordinates": [
+        45.71694326290445,
+        16.06681823730469
+      ],
+      "before": {
+        "city": null,
+        "state": "Velika Gorica"
+      },
+      "address": {
+        "amenity": "PBZ",
+        "road": "Kolodvorska ulica",
+        "neighbourhood": "Bratstvo",
+        "quarter": "Kokotovo naselje",
+        "suburb": "Gradska četvrt Vladimir Nazor",
+        "city_district": "Velika Gorica",
+        "town": "Grad Velika Gorica",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10410",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "451810cd-7eef-4516-94a2-68b865f26fe6",
+      "slug": "gradski-radio-trogir-splitsko-dalmatinska",
+      "coordinates": [
+        43.5205186410408,
+        16.252114447453753
+      ],
+      "before": {
+        "city": null,
+        "state": "Splitsko Dalmatinska"
+      },
+      "address": {
+        "road": "Ulica dr. Franje Tuđmana",
+        "quarter": "Balan",
+        "city_district": "Trogir",
+        "town": "Grad Trogir",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21219",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Trogir",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "023be5bc-f3fd-43c0-b25d-4f94a7567454",
+      "slug": "happy-fm-zagreba-ka-upanija",
+      "coordinates": [
+        45.7176863579072,
+        16.060883122115094
+      ],
+      "before": {
+        "city": null,
+        "state": "Zagrebačka županija"
+      },
+      "address": {
+        "road": "Eugena Kvaternika",
+        "neighbourhood": "Bratstvo",
+        "quarter": "Visoki brijeg",
+        "suburb": "Gradska četvrt Miljenko Granić",
+        "city_district": "Velika Gorica",
+        "town": "Grad Velika Gorica",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10410",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3b2e95f1-0d42-469f-ad78-645c152aa388",
+      "slug": "hit-radio-glavi-ka-ul-29-sinj",
+      "coordinates": [
+        43.70256377766151,
+        16.640510559082035
+      ],
+      "before": {
+        "city": null,
+        "state": "Glavička ul. 29, Sinj"
+      },
+      "address": {
+        "shop": "Trafika",
+        "road": "Glavička ulica",
+        "hamlet": "Ćurlini",
+        "city_district": "Sinj",
+        "town": "Grad Sinj",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21230",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Sinj",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f3872ca2-f642-4e02-8d61-f3f4fcc3093c",
+      "slug": "hrt-radio-sljeme-mp3",
+      "coordinates": [
+        45.79328336964771,
+        15.973983620700896
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "office": "Hrvatska radiotelevizija",
+        "house_number": "3",
+        "road": "Prisavlje",
+        "neighbourhood": "Prisavlje",
+        "quarter": "Mjesni odbor Cvjetno naselje",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b19f2749-9c66-48ac-b3ae-a6bfd05030ae",
+      "slug": "hrvatski-radio-klasik",
+      "coordinates": [
+        45.792899843617434,
+        15.973938703536987
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Studio 8",
+        "house_number": "3",
+        "road": "Prisavlje",
+        "neighbourhood": "Prisavlje",
+        "quarter": "Mjesni odbor Cvjetno naselje",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b5a95956-8349-42cc-8b07-d73b5f8d4122",
+      "slug": "hrvatski-radio-pop-glazba",
+      "coordinates": [
+        45.792899843617434,
+        15.974003076553348
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Studio 8",
+        "house_number": "3",
+        "road": "Prisavlje",
+        "neighbourhood": "Prisavlje",
+        "quarter": "Mjesni odbor Cvjetno naselje",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ae9f57bd-2efd-43ed-95ec-89b4c7aafbe8",
+      "slug": "hrvatski-radio-rock",
+      "coordinates": [
+        45.792899843617434,
+        15.97391724586487
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Studio 8",
+        "house_number": "3",
+        "road": "Prisavlje",
+        "neighbourhood": "Prisavlje",
+        "quarter": "Mjesni odbor Cvjetno naselje",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f411b3d9-8700-4049-bd4a-6579b3b613c2",
+      "slug": "hrvatski-radio-oto-ac-trg-dr-franje-tu-mana-10-oto-ac",
+      "coordinates": [
+        44.8679450634871,
+        15.23507595062256
+      ],
+      "before": {
+        "city": null,
+        "state": "Trg dr. Franje Tuđmana 10, Otočac"
+      },
+      "address": {
+        "road": "Trg dr. Franje Tuđmana",
+        "quarter": "Gornji grad",
+        "hamlet": "Vivoze",
+        "town": "Otočac",
+        "municipality": "Grad Otočac",
+        "county": "Ličko-senjska županija",
+        "ISO3166-2-lvl4": "HR-09",
+        "postcode": "53220",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Otočac",
+        "state": "Ličko-senjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e50ad827-fc7b-4230-84f5-46c9298347c0",
+      "slug": "hrvatski-radio-valpov-tina-kralja-petra-kre-imira-iv-1-valpovo",
+      "coordinates": [
+        45.66056971394096,
+        18.417248725891117
+      ],
+      "before": {
+        "city": null,
+        "state": "Kralja Petra Krešimira IV 1, Valpovo"
+      },
+      "address": {
+        "house_number": "1",
+        "road": "Ulica kralja Petra Krešimira IV",
+        "neighbourhood": "Vijenac Hrvatske Republike",
+        "quarter": "Slatina",
+        "town": "Valpovo",
+        "municipality": "Grad Valpovo",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "31550",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Valpovo",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "46400731-47b8-4e4b-853e-bd8fabb06b87",
+      "slug": "karlovac-grill-mix-radio",
+      "coordinates": [
+        45.487094732298374,
+        15.540161132812502
+      ],
+      "before": {
+        "city": null,
+        "state": "Karlovac"
+      },
+      "address": {
+        "road": "D545",
+        "quarter": "Novi Centar",
+        "suburb": "Dubovac",
+        "city": "Karlovac",
+        "municipality": "Grad Karlovac",
+        "county": "Karlovačka županija",
+        "ISO3166-2-lvl4": "HR-04",
+        "postcode": "47107",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Karlovac",
+        "state": "Karlovačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b7b99e0d-b083-4606-9f5e-62dd0e64a3b7",
+      "slug": "karlovac-now-dance-90s-radio",
+      "coordinates": [
+        45.48805749706375,
+        15.545654296875002
+      ],
+      "before": {
+        "city": null,
+        "state": "Karlovac"
+      },
+      "address": {
+        "house_number": "5",
+        "road": "Trg hrvatskih branitelja",
+        "quarter": "Novi Centar",
+        "suburb": "Banija",
+        "city": "Karlovac",
+        "municipality": "Grad Karlovac",
+        "county": "Karlovačka županija",
+        "ISO3166-2-lvl4": "HR-04",
+        "postcode": "47000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Karlovac",
+        "state": "Karlovačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "55e43744-71b1-4fa3-9d71-174055dd6b25",
+      "slug": "karlovac-wow-hits-radio",
+      "coordinates": [
+        45.49287107405929,
+        15.545654296875002
+      ],
+      "before": {
+        "city": null,
+        "state": "Karlovac"
+      },
+      "address": {
+        "house_number": "20a",
+        "road": "Obala Vladimira Mažuranića",
+        "neighbourhood": "Žorovica",
+        "quarter": "Novi Centar",
+        "suburb": "Banija",
+        "city": "Karlovac",
+        "municipality": "Grad Karlovac",
+        "county": "Karlovačka županija",
+        "ISO3166-2-lvl4": "HR-04",
+        "postcode": "47000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Karlovac",
+        "state": "Karlovačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "50678df9-1924-4eca-9629-bc760deae91a",
+      "slug": "laganini-fm-rijeka-primorska",
+      "coordinates": [
+        45.328689016958705,
+        14.43900437115099
+      ],
+      "before": {
+        "city": null,
+        "state": "Primorska"
+      },
+      "address": {
+        "house_number": "5",
+        "road": "Erazma Barčića",
+        "suburb": "Mjesni odbor Brajda-Dolac",
+        "city_district": "Rijeka",
+        "city": "Grad Rijeka",
+        "county": "Primorsko-goranska županija",
+        "ISO3166-2-lvl4": "HR-08",
+        "postcode": "51101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Rijeka",
+        "state": "Primorsko-goranska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b4ad9a90-4a6a-48f9-a1c1-efddc362ed84",
+      "slug": "laganini-fm-zagreb-slavonska-avenija-2-zagreb",
+      "coordinates": [
+        45.79377858789192,
+        15.959272384643556
+      ],
+      "before": {
+        "city": null,
+        "state": "SLAVONSKA AVENIJA 2, ZAGREB"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Slavonska avenija",
+        "neighbourhood": "Mjesni odbor Savski kuti",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10144",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ae1aa882-22a6-4cda-89ee-ed348548046c",
+      "slug": "laganini-fm-zagreb-new",
+      "coordinates": [
+        45.79625461321962,
+        15.985794067382814
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Trg kardinala Franje Šepera",
+        "neighbourhood": "Mjesni odbor Trnje",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10116",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "99ba175d-00db-48ab-8c0b-3faf34a142b1",
+      "slug": "laganini-folk-narodni-radio",
+      "coordinates": [
+        45.05994156222125,
+        17.841796875000004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "village": "Dubočac",
+        "county": "Brodsko-posavska županija",
+        "ISO3166-2-lvl4": "HR-12",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Dubočac",
+        "state": "Brodsko-posavska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2d780df5-3fad-4531-b48c-973bd2dc1d8c",
+      "slug": "laganini-osijek",
+      "coordinates": [
+        45.554256190226305,
+        18.695069080234347
+      ],
+      "before": {
+        "city": null,
+        "state": "Osijek"
+      },
+      "address": {
+        "road": "Ulica kneza Trpimira",
+        "suburb": "Gradska četvrt Tvrđa",
+        "city": "Osijek",
+        "municipality": "Grad Osijek",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "31112",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Osijek",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "97060c8f-d746-4673-8ff2-0432df0558a4",
+      "slug": "laganini-po-ega",
+      "coordinates": [
+        45.334771196762766,
+        17.675239045823986
+      ],
+      "before": {
+        "city": null,
+        "state": "Požega"
+      },
+      "address": {
+        "house_number": "17",
+        "road": "Ulica Vjekoslava Babukića",
+        "suburb": "Mjesni odbor Garevica",
+        "city_district": "Požega",
+        "town": "Grad Požega",
+        "county": "Požeško-slavonska županija",
+        "ISO3166-2-lvl4": "HR-11",
+        "postcode": "34000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Požega",
+        "state": "Požeško-slavonska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ccd9f688-fffd-44c3-91e1-77f860f82d3e",
+      "slug": "narodni-aaaaaaa",
+      "coordinates": [
+        45.78897723513177,
+        15.96525952415852
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Obala dr. Savke Dabčević Kučar",
+        "neighbourhood": "Prisavlje",
+        "quarter": "Mjesni odbor Cvjetno naselje",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10156",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "90329f2b-353f-4345-af1d-97299500fc46",
+      "slug": "narodni-ljubav-je-u-zraku",
+      "coordinates": [
+        45.86247267579398,
+        15.9847194379921
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Varoška gora",
+        "neighbourhood": "Gračansko Dolje",
+        "quarter": "Mjesni odbor Gračani",
+        "suburb": "Gradska četvrt Podsljeme",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10166",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "503a6fa2-6aba-48c7-af7d-467303752dae",
+      "slug": "narodni-ne-pitaj-samo-sviraj",
+      "coordinates": [
+        45.8065944297382,
+        15.971074705991027
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Trg Marka Marulića",
+        "neighbourhood": "Mjesni odbor \"Mimara\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2e779571-5cc1-4feb-9803-9b82632dcef1",
+      "slug": "novi-radio-zadar-zrinsko-frankopanska-13-zadar",
+      "coordinates": [
+        44.108057062166694,
+        15.237876176834108
+      ],
+      "before": {
+        "city": null,
+        "state": "Zrinsko-frankopanska 13, Zadar"
+      },
+      "address": {
+        "amenity": "Dermatovenerološka ordinacija",
+        "house_number": "20d",
+        "road": "Zrinsko-Frankopanska",
+        "suburb": "Mjesni odbor Jazine I",
+        "city": "Zadar",
+        "municipality": "Grad Zadar",
+        "county": "Zadarska županija",
+        "ISO3166-2-lvl4": "HR-13",
+        "postcode": "23000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zadar",
+        "state": "Zadarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2a8e0877-7f91-4109-9e0a-30d50c2c00a3",
+      "slug": "obiteljski-radio-ivani-park-stjepana-posezija-6-ivani-grad",
+      "coordinates": [
+        45.70581965113726,
+        16.392374038696293
+      ],
+      "before": {
+        "city": null,
+        "state": "Park Stjepana Posezija 6, IVANIĆ- GRAD"
+      },
+      "address": {
+        "road": "Park hrvatskih branitelja",
+        "neighbourhood": "Tvrđava",
+        "quarter": "Zelenjak",
+        "suburb": "Centar",
+        "town": "Ivanić-Grad",
+        "municipality": "Grad Ivanić-Grad",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10310",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Ivanić-Grad",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3a23d0e2-4ceb-4439-a33a-6feb575b1bf6",
+      "slug": "otvoreni-live",
+      "coordinates": [
+        45.82114340079471,
+        15.977947690679043
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "22",
+        "road": "Nova Ves",
+        "neighbourhood": "Mjesni odbor Nova Ves",
+        "suburb": "Gradska četvrt Gornji grad - Medveščak",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10112",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9f21fc9f-6cc0-4aea-b6d3-60ba1b546f71",
+      "slug": "otvoreni-chill-grad-zagreb",
+      "coordinates": [
+        45.80276510911887,
+        15.977974311629133
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "house_number": "13",
+        "road": "Paromlinska cesta",
+        "neighbourhood": "Kolonija",
+        "quarter": "Mjesni odbor Martinovka",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10116",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "287714a6-50e4-41f9-b001-644eafa378fb",
+      "slug": "otvoreni-fitness-grad-zagreb",
+      "coordinates": [
+        45.836454050187726,
+        15.990556496859911
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "road": "Gorice",
+        "quarter": "Mjesni odbor Kozjak",
+        "suburb": "Gradska četvrt Maksimir",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10009",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "4e57d9c6-267a-47c8-a55e-6473b3d2228c",
+      "slug": "otvoreni-hot-grad-zagreb",
+      "coordinates": [
+        45.83033038924939,
+        15.970391492791691
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "road": "Davor",
+        "neighbourhood": "Mjesni odbor Tuškanac",
+        "suburb": "Gradska četvrt Gornji grad - Medveščak",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10112",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "74e490a5-462b-4407-b6be-e0e298800a82",
+      "slug": "otvoreni-live-grad-zagreb",
+      "coordinates": [
+        45.80774312785381,
+        15.96972125506034
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "road": "Trg Ivana, Antuna i Vladimira Mažuranića",
+        "neighbourhood": "Mjesni odbor \"Mimara\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10115",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1a1451d5-ffb0-4cc5-92d4-62023d19f3e5",
+      "slug": "otvoreni-love-grad-zagreb",
+      "coordinates": [
+        45.81559226204048,
+        15.982965920558003
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "house_number": "8B",
+        "road": "Ulica Vjenceslava Novaka",
+        "neighbourhood": "Mjesni odbor Ribnjak",
+        "suburb": "Gradska četvrt Gornji grad - Medveščak",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a4918d66-9b48-468f-909b-aec802d25032",
+      "slug": "otvoreni-radio",
+      "coordinates": [
+        45.79985998810504,
+        15.972747802734377
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "70",
+        "road": "Ulica grada Vukovara",
+        "quarter": "Mjesni odbor Martinovka",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10126",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "909693aa-3a65-4067-be27-7767626df624",
+      "slug": "otvoreni-radio-u-ivo-grad-zagreb",
+      "coordinates": [
+        45.77372546171145,
+        15.984688188475086
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "house_number": "10",
+        "road": "Ulica Milovana Kovačevića",
+        "quarter": "Mjesni odbor Sopot",
+        "suburb": "Gradska četvrt Novi Zagreb - istok",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10010",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9208b22c-9321-4a66-b6fa-2aebb9153660",
+      "slug": "petrinjski-radio-https-www-openstreetmap-org-relation-8076890",
+      "coordinates": [
+        45.44086267178177,
+        16.278991699218754
+      ],
+      "before": {
+        "city": null,
+        "state": "https://www.openstreetmap.org/relation/8076890"
+      },
+      "address": {
+        "house_number": "1",
+        "road": "Trg hrvatskih branitelja",
+        "quarter": "Kaverlin",
+        "city_district": "Petrinja",
+        "town": "Grad Petrinja",
+        "county": "Sisačko-moslavačka županija",
+        "ISO3166-2-lvl4": "HR-03",
+        "postcode": "44250",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Petrinja",
+        "state": "Sisačko-moslavačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "bb43fe72-f056-4148-855e-5c033018095c",
+      "slug": "podravski-radio",
+      "coordinates": [
+        46.031867786536026,
+        17.065207147330497
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Ulica Stjepana Radića",
+        "quarter": "Varaš",
+        "suburb": "Ledine",
+        "town": "Đurđevac",
+        "municipality": "Grad Đurđevac",
+        "county": "Koprivničko-križevačka županija",
+        "ISO3166-2-lvl4": "HR-06",
+        "postcode": "48350",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Đurđevac",
+        "state": "Koprivničko-križevačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "59789869-2545-49c2-bb06-5e6f3246fe39",
+      "slug": "pomorski-radio-bakar-nauti-ka-3-51222-bakar",
+      "coordinates": [
+        45.302603075494225,
+        14.536639451980593
+      ],
+      "before": {
+        "city": null,
+        "state": "Nautička 3, 51222 Bakar"
+      },
+      "address": {
+        "road": "Nautička ulica",
+        "town": "Bakar",
+        "municipality": "Grad Bakar",
+        "county": "Primorsko-goranska županija",
+        "ISO3166-2-lvl4": "HR-08",
+        "postcode": "51222",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Bakar",
+        "state": "Primorsko-goranska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "cad2749b-c654-41fc-9aa5-6370e11f7ba9",
+      "slug": "prigorski-radio-antuna-gustava-mato-a-3-kri-evci",
+      "coordinates": [
+        46.02446857982491,
+        16.544702053070072
+      ],
+      "before": {
+        "city": "Krapina",
+        "state": "Krapina-Zagorje"
+      },
+      "address": {
+        "amenity": "Radio Križevci",
+        "house_number": "3",
+        "road": "Antuna Gustava Matoša",
+        "quarter": "Ratarna",
+        "suburb": "Gradska četvrt Centar",
+        "city_district": "Križevci",
+        "town": "Grad Križevci",
+        "county": "Koprivničko-križevačka županija",
+        "ISO3166-2-lvl4": "HR-06",
+        "postcode": "48260",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Križevci",
+        "state": "Koprivničko-križevačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "c64c83f7-49f8-4c84-8323-288c6fbcf007",
+      "slug": "prolaznik-evergreen-lepoglava-vara-dinska",
+      "coordinates": [
+        46.226117930476605,
+        16.046733856201175
+      ],
+      "before": {
+        "city": null,
+        "state": "Varaždinska"
+      },
+      "address": {
+        "road": "Kamenički Vrhovec",
+        "city_district": "Kamenički Vrhovec",
+        "town": "Grad Lepoglava",
+        "county": "Varaždinska županija",
+        "ISO3166-2-lvl4": "HR-05",
+        "postcode": "42250",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Lepoglava",
+        "state": "Varaždinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6860bf18-9822-4bbb-8326-52b5c204717b",
+      "slug": "prvi-karlovacki",
+      "coordinates": [
+        45.487094732298374,
+        15.552520751953129
+      ],
+      "before": {
+        "city": null,
+        "state": "Karlovac"
+      },
+      "address": {
+        "house_number": "11c",
+        "road": "Ulica Grge Tuškana",
+        "quarter": "Rakovac",
+        "suburb": "Banija",
+        "city": "Karlovac",
+        "municipality": "Grad Karlovac",
+        "county": "Karlovačka županija",
+        "ISO3166-2-lvl4": "HR-04",
+        "postcode": "47000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Karlovac",
+        "state": "Karlovačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2efbb8fa-330c-403b-aa71-90f64fe175ec",
+      "slug": "radio-101-rock",
+      "coordinates": [
+        45.803530924182056,
+        15.993294261075643
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "shop": "MK",
+        "house_number": "4",
+        "road": "Avenija Marina Držića",
+        "quarter": "Mjesni odbor Kanal",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "45e15127-ebdf-4e63-8703-8ab052599736",
+      "slug": "radio-101-soft-sound",
+      "coordinates": [
+        45.80085029166628,
+        15.972209915987596
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "7",
+        "road": "Zelinska ulica",
+        "quarter": "Mjesni odbor Martinovka",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10126",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "0715da71-95d8-4245-ae11-f63d9a38f80d",
+      "slug": "radio-baranja-trg-slobode-32-3-hr-beli-manastir",
+      "coordinates": [
+        45.76954364030904,
+        18.598592877388004
+      ],
+      "before": {
+        "city": null,
+        "state": "Trg Slobode 32/3 HR, Beli Manastir"
+      },
+      "address": {
+        "amenity": "Galerija",
+        "house_number": "33",
+        "road": "Trg slobode",
+        "quarter": "Polača",
+        "town": "Beli Manastir",
+        "municipality": "Grad Beli Manastir",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "31300",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Beli Manastir",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "c0236dd9-79bd-47bd-bdbd-fe374de463fd",
+      "slug": "radio-beli-e",
+      "coordinates": [
+        45.68906061425053,
+        18.415499925613407
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "D517",
+        "neighbourhood": "Vijenac Salamona Henricha Gutmanna",
+        "city_district": "Belišće",
+        "town": "Grad Belišće",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "35551",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Belišće",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a90c6b9a-3119-4fbe-9f14-2a520e56dc41",
+      "slug": "radio-bnm-biograd-na-moru-chill-etali-te-kneza-branimira-2-i-biograd-na-moru",
+      "coordinates": [
+        43.938211089067146,
+        15.444003939628605
+      ],
+      "before": {
+        "city": null,
+        "state": "Šetalište kneza Branimira 2/I, Biograd na Moru"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Šetalište kneza Branimira",
+        "city_district": "Biograd na Moru",
+        "town": "Grad Biograd na Moru",
+        "county": "Zadarska županija",
+        "ISO3166-2-lvl4": "HR-13",
+        "postcode": "23212",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Biograd na Moru",
+        "state": "Zadarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1d91f99c-c193-4371-85dd-3d8e38fd47cb",
+      "slug": "radio-bnm-biograd-na-moru-off-air-etali-te-kneza-branimira-2-i-biograd-na-moru",
+      "coordinates": [
+        43.93819177478494,
+        15.443923473358156
+      ],
+      "before": {
+        "city": null,
+        "state": "Šetalište kneza Branimira 2/I, Biograd na Moru"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Šetalište kneza Branimira",
+        "city_district": "Biograd na Moru",
+        "town": "Grad Biograd na Moru",
+        "county": "Zadarska županija",
+        "ISO3166-2-lvl4": "HR-13",
+        "postcode": "23212",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Biograd na Moru",
+        "state": "Zadarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1c22fe66-d083-4e66-bd49-468db0b7dfab",
+      "slug": "radio-bnm-biograd-na-moru-pop-etali-te-kneza-branimira-2-i-biograd-na-moru",
+      "coordinates": [
+        43.93820336335502,
+        15.443987846374512
+      ],
+      "before": {
+        "city": null,
+        "state": "Šetalište kneza Branimira 2/I, Biograd na Moru"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Šetalište kneza Branimira",
+        "city_district": "Biograd na Moru",
+        "town": "Grad Biograd na Moru",
+        "county": "Zadarska županija",
+        "ISO3166-2-lvl4": "HR-13",
+        "postcode": "23212",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Biograd na Moru",
+        "state": "Zadarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "eeae2c89-9a58-4c9c-aa04-4bb76d45c8d7",
+      "slug": "radio-bnm-biograd-na-moru-rock-etali-te-kneza-branimira-2-i-biograd-na-moru",
+      "coordinates": [
+        43.93819950049859,
+        15.443944931030275
+      ],
+      "before": {
+        "city": null,
+        "state": "Šetalište kneza Branimira 2/I, Biograd na Moru"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Šetalište kneza Branimira",
+        "city_district": "Biograd na Moru",
+        "town": "Grad Biograd na Moru",
+        "county": "Zadarska županija",
+        "ISO3166-2-lvl4": "HR-13",
+        "postcode": "23212",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Biograd na Moru",
+        "state": "Zadarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3b407f3c-e31a-42bc-827d-df56cbbe818a",
+      "slug": "radio-bnm-biograd-na-moru-94-0-100-5-mhz-etali-te-kneza-branimira-2-i-biograd-na",
+      "coordinates": [
+        43.938207226211226,
+        15.443961024284365
+      ],
+      "before": {
+        "city": null,
+        "state": "Šetalište kneza Branimira 2/I, Biograd na Moru"
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Šetalište kneza Branimira",
+        "city_district": "Biograd na Moru",
+        "town": "Grad Biograd na Moru",
+        "county": "Zadarska županija",
+        "ISO3166-2-lvl4": "HR-13",
+        "postcode": "23212",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Biograd na Moru",
+        "state": "Zadarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "09415945-dad1-45e2-94e1-f20049c9804d",
+      "slug": "radio-centar-studio-pore",
+      "coordinates": [
+        45.226546196265026,
+        13.612060546875002
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Ulica Ive Andrića",
+        "quarter": "Novo selo",
+        "city_district": "Poreč",
+        "town": "Grad Poreč",
+        "county": "Istarska županija",
+        "ISO3166-2-lvl4": "HR-18",
+        "postcode": "52441",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Poreč",
+        "state": "Istarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6d9529f1-cee1-4f62-a41a-00ecfb40d6ef",
+      "slug": "radio-drni-89-0-mhz-kralja-zvonimira-8-drni",
+      "coordinates": [
+        43.86330181771137,
+        16.157637834548954
+      ],
+      "before": {
+        "city": null,
+        "state": "Kralja Zvonimira 8, Drniš"
+      },
+      "address": {
+        "road": "Vukovarska ulica",
+        "quarter": "Fenčevina",
+        "town": "Drniš",
+        "municipality": "Grad Drniš",
+        "county": "Šibensko-kninska županija",
+        "ISO3166-2-lvl4": "HR-15",
+        "postcode": "22320",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Drniš",
+        "state": "Šibensko-kninska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "32a9a354-3bfb-4ff0-86e0-78463fba41a1",
+      "slug": "radio-akovo",
+      "coordinates": [
+        45.30991893827438,
+        18.41294646263123
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Školski prolaz",
+        "suburb": "Centar",
+        "city_district": "Mjesni odbor Centar",
+        "town": "Đakovo",
+        "municipality": "Grad Đakovo",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "31405",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Đakovo",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "8380b0a5-ff8d-4c3d-9176-3f66bc3e1882",
+      "slug": "radio-eurostar-umag-istra",
+      "coordinates": [
+        45.43378606325175,
+        13.523161411285402
+      ],
+      "before": {
+        "city": null,
+        "state": "ISTRA"
+      },
+      "address": {
+        "amenity": "Istarska kreditna banka Umag",
+        "house_number": "1",
+        "road": "Ulica Ernesta Miloša",
+        "quarter": "Punta",
+        "town": "Umag",
+        "municipality": "Grad Umag",
+        "county": "Istarska županija",
+        "ISO3166-2-lvl4": "HR-18",
+        "postcode": "52470",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Umag",
+        "state": "Istarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1001ef63-b86b-482a-ace1-c09d8d4fefd4",
+      "slug": "radio-hrvatsko-zagorje-krapina",
+      "coordinates": [
+        46.163782255377015,
+        15.869579315185549
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "shop": "Bipa",
+        "house_number": "8",
+        "road": "Trg Ljudevita Gaja",
+        "town": "Krapina",
+        "municipality": "Grad Krapina",
+        "county": "Krapinsko-zagorska županija",
+        "ISO3166-2-lvl4": "HR-02",
+        "postcode": "49000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Krapina",
+        "state": "Krapinsko-zagorska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b52af78c-04c5-4587-b3ea-5ede77dce0d5",
+      "slug": "radio-istra",
+      "coordinates": [
+        45.31739181570158,
+        13.842773437500002
+      ],
+      "before": {
+        "city": null,
+        "state": "ISTRA"
+      },
+      "address": {
+        "hamlet": "Dagoštini",
+        "village": "Motovun",
+        "municipality": "Općina Motovun",
+        "county": "Istarska županija",
+        "ISO3166-2-lvl4": "HR-18",
+        "postcode": "52424",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Motovun",
+        "state": "Istarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b66ed850-c43c-469b-8857-c21dcbd40bcb",
+      "slug": "radio-jaska-jastrebarsko",
+      "coordinates": [
+        45.67152390041923,
+        15.649681091308596
+      ],
+      "before": {
+        "city": null,
+        "state": "Jastrebarsko"
+      },
+      "address": {
+        "amenity": "Privredna banka Zagreb",
+        "house_number": "2",
+        "road": "Zrinski-Frankopanska ulica",
+        "neighbourhood": "Cvjetno naselje",
+        "quarter": "Donja Jaska",
+        "city_district": "Donja Jaska",
+        "town": "Jastrebarsko",
+        "municipality": "Grad Jastrebarsko",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10450",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Jastrebarsko",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f430b56d-3b8c-4e15-bfc9-89ee06dbcfc0",
+      "slug": "radio-kampus",
+      "coordinates": [
+        43.50999090547435,
+        16.440267562866214
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Art Gallery Cafe Music Bar",
+        "house_number": "15",
+        "road": "Ulica kralja Tomislava",
+        "neighbourhood": "Dobri",
+        "quarter": "Gradski kotar Grad",
+        "city": "Split",
+        "municipality": "Grad Split",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21102",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Split",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "5e2c1b37-c1f2-4931-8c0d-53cc7fdd09d8",
+      "slug": "radio-kastav",
+      "coordinates": [
+        45.37121285582369,
+        14.353935420513157
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "5021",
+        "neighbourhood": "Jurčići",
+        "suburb": "Mjesni odbor Kastav",
+        "city_district": "Kastav",
+        "town": "Grad Kastav",
+        "county": "Primorsko-goranska županija",
+        "ISO3166-2-lvl4": "HR-08",
+        "postcode": "51215",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Kastav",
+        "state": "Primorsko-goranska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7f7b7a79-b12e-4f38-8935-33da6580cf58",
+      "slug": "radio-kor-ula-107-5fm-kor-ula-island-kor-ula",
+      "coordinates": [
+        42.961125761282425,
+        17.13527619838715
+      ],
+      "before": {
+        "city": null,
+        "state": "Korčula island, Korčula"
+      },
+      "address": {
+        "road": "Žitnica",
+        "neighbourhood": "Biline",
+        "quarter": "Gradski kotar Stari grad",
+        "city_district": "Korčula",
+        "town": "Grad Korčula",
+        "county": "Dubrovačko-neretvanska županija",
+        "ISO3166-2-lvl4": "HR-19",
+        "postcode": "20260",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Korčula",
+        "state": "Dubrovačko-neretvanska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "79cbd2c8-b4a0-4506-b992-a5ad5d59c43f",
+      "slug": "radio-korzo",
+      "coordinates": [
+        45.330881288522114,
+        14.44333076477051
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Trinajstićeva",
+        "suburb": "Mjesni odbor Kozala",
+        "city_district": "Rijeka",
+        "city": "Grad Rijeka",
+        "county": "Primorsko-goranska županija",
+        "ISO3166-2-lvl4": "HR-08",
+        "postcode": "51104",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Rijeka",
+        "state": "Primorsko-goranska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "059ac536-2d21-45d1-8342-506c5a6d0326",
+      "slug": "radio-krka-krke",
+      "coordinates": [
+        43.818055554131746,
+        15.92296600341797
+      ],
+      "before": {
+        "city": null,
+        "state": "Krke"
+      },
+      "address": {
+        "house_number": "5",
+        "road": "Fra Luje Maruna",
+        "town": "Skradin",
+        "municipality": "Grad Skradin",
+        "county": "Šibensko-kninska županija",
+        "ISO3166-2-lvl4": "HR-15",
+        "postcode": "22222",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Skradin",
+        "state": "Šibensko-kninska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "c5005905-d4e9-4fcf-818e-42ba0fc505af",
+      "slug": "radio-labin",
+      "coordinates": [
+        45.08909357794935,
+        14.11573509544514
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "city_district": "Labin",
+        "town": "Grad Labin",
+        "county": "Istarska županija",
+        "ISO3166-2-lvl4": "HR-18",
+        "postcode": "52230",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Labin",
+        "state": "Istarska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f6e3e196-dcab-42ae-8baf-cf3524a914a9",
+      "slug": "radio-nu",
+      "coordinates": [
+        43.447176070850546,
+        17.2181510925293
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Ulica kralja Tomislava",
+        "neighbourhood": "Gaj",
+        "hamlet": "Vilenice",
+        "town": "Imotski",
+        "municipality": "Grad Imotski",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21260",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Imotski",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "82c6de29-905b-42bc-8f77-7d269403d15d",
+      "slug": "radio-ritam-ibenik",
+      "coordinates": [
+        43.73439091160204,
+        15.893440246582031
+      ],
+      "before": {
+        "city": null,
+        "state": "Šibenik"
+      },
+      "address": {
+        "road": "Poljana",
+        "quarter": "Gradska četvrt Stari grad",
+        "city_district": "Šibenik",
+        "city": "Grad Šibenik",
+        "county": "Šibensko-kninska županija",
+        "ISO3166-2-lvl4": "HR-15",
+        "postcode": "22101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Šibenik",
+        "state": "Šibensko-kninska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2beeeeea-fe3a-4a3d-b8f6-fb6aeab2e594",
+      "slug": "radio-ro-a",
+      "coordinates": [
+        45.32931003389581,
+        14.438943006098272
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Ulica Ivana Pavla II.",
+        "suburb": "Mjesni odbor Brajda-Dolac",
+        "city_district": "Rijeka",
+        "city": "Grad Rijeka",
+        "county": "Primorsko-goranska županija",
+        "ISO3166-2-lvl4": "HR-08",
+        "postcode": "51101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Rijeka",
+        "state": "Primorsko-goranska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2829a02d-30a6-426a-b1a3-1adeb481e2a5",
+      "slug": "radio-salona-solin-hrvatskih-zrtava73",
+      "coordinates": [
+        43.54586349320616,
+        16.47404609612617
+      ],
+      "before": {
+        "city": null,
+        "state": "Solin Hrvatskih Zrtava73"
+      },
+      "address": {
+        "neighbourhood": "Donja strana",
+        "quarter": "Mjesni odbor Sveti Kajo",
+        "city_district": "Solin",
+        "town": "Grad Solin",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21285",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Solin",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b53ac51a-90da-40e3-9415-ce8b5715a0a6",
+      "slug": "radio-slavonija-ulica-nikole-zrinskog-67-slavonski-brod",
+      "coordinates": [
+        45.156470554561615,
+        18.015346527099613
+      ],
+      "before": {
+        "city": null,
+        "state": "Ulica Nikole Zrinskog 67, Slavonski Brod"
+      },
+      "address": {
+        "road": "Ulica Nikole Zrinskog",
+        "neighbourhood": "Naselje Huge Badalića",
+        "city_district": "Mjesni odbor Antun Mihanović",
+        "city": "Slavonski Brod",
+        "municipality": "Grad Slavonski Brod",
+        "county": "Brodsko-posavska županija",
+        "ISO3166-2-lvl4": "HR-12",
+        "postcode": "35101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Slavonski Brod",
+        "state": "Brodsko-posavska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ad0e86a3-bc0b-4edb-b836-131840f99c5e",
+      "slug": "radio-slunj-trg-dr-franje-tu-mana-14-slunj",
+      "coordinates": [
+        45.11537785385462,
+        15.585222244262695
+      ],
+      "before": {
+        "city": null,
+        "state": "Trg dr. Franje Tuđmana 14, Slunj"
+      },
+      "address": {
+        "amenity": "Radio Slunj",
+        "house_number": "14",
+        "road": "Trg dr. Franje Tuđmana",
+        "neighbourhood": "Stari centar",
+        "quarter": "Svetica",
+        "hamlet": "Lalićev gaj",
+        "town": "Slunj",
+        "municipality": "Grad Slunj",
+        "county": "Karlovačka županija",
+        "ISO3166-2-lvl4": "HR-04",
+        "postcode": "47240",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Slunj",
+        "state": "Karlovačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "07d9f25e-b643-459b-a816-65b788628f96",
+      "slug": "radio-sova",
+      "coordinates": [
+        45.32680630898007,
+        14.443759918212892
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "shop": "Wedding Dress",
+        "house_number": "17",
+        "road": "Užarska ulica",
+        "suburb": "Mjesni odbor Školjić-Stari grad",
+        "city_district": "Rijeka",
+        "city": "Grad Rijeka",
+        "county": "Primorsko-goranska županija",
+        "ISO3166-2-lvl4": "HR-08",
+        "postcode": "51107",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Rijeka",
+        "state": "Primorsko-goranska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "67b546b8-8d15-45ce-ab49-0ac7ee95a89c",
+      "slug": "radio-student-100-5",
+      "coordinates": [
+        45.807861790267474,
+        15.992779073399886
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "6",
+        "road": "Ulica Ivana Lepušića",
+        "neighbourhood": "Mjesni odbor \"Kralj Zvonimir\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e8b71483-aa1f-47f6-9fb6-02bef8153a69",
+      "slug": "radio-techno-zagreb",
+      "coordinates": [
+        45.80332302273604,
+        15.968627929687502
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Studentski centar",
+        "road": "Unska ulica",
+        "quarter": "Mjesni odbor Martinovka",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10115",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "960125a3-5b14-4dfc-970f-0a508dbd618d",
+      "slug": "radio-tvornica-grad-zagreb",
+      "coordinates": [
+        45.801233315934255,
+        15.976318304892631
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "amenity": "Grad Zagreb",
+        "house_number": "1",
+        "road": "Trg Stjepana Radića",
+        "neighbourhood": "Kolonija",
+        "quarter": "Mjesni odbor Martinovka",
+        "suburb": "Gradska četvrt Trnje",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2ef6c612-6306-4daa-b666-55d086ed0ca6",
+      "slug": "radio-zelina",
+      "coordinates": [
+        45.95928586082248,
+        16.24436438083649
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Glazbena škola Zlatka Grgoševića, područni odjel Sveti Ivan Zelina",
+        "house_number": "3",
+        "road": "Vatrogasna ulica",
+        "town": "Sveti Ivan Zelina",
+        "municipality": "Grad Sveti Ivan Zelina",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10380",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Sveti Ivan Zelina",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7ffae44d-4d6c-49f3-a448-d2342b084841",
+      "slug": "thompson-24-7-radio-nu-dalmatia",
+      "coordinates": [
+        43.44782409465655,
+        17.216882407665256
+      ],
+      "before": {
+        "city": null,
+        "state": "Dalmatia"
+      },
+      "address": {
+        "road": "Vinarski prolaz",
+        "neighbourhood": "Bazana",
+        "town": "Imotski",
+        "municipality": "Grad Imotski",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21260",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Imotski",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "0b5c1211-b55d-4b3f-91ec-2abb365d8767",
+      "slug": "top-radio-grad-zagreb",
+      "coordinates": [
+        45.76394543389568,
+        15.9819370508194
+      ],
+      "before": {
+        "city": null,
+        "state": "Grad Zagreb"
+      },
+      "address": {
+        "house_number": "29",
+        "road": "Avenija Većeslava Holjevca",
+        "quarter": "Mjesni odbor Sloboština",
+        "suburb": "Gradska četvrt Novi Zagreb - istok",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10010",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "46323be7-02f1-49e0-899a-2177046fcdb3",
+      "slug": "top-radio-gold-zagreb",
+      "coordinates": [
+        45.812888256834114,
+        15.977210085945314
+      ],
+      "before": {
+        "city": null,
+        "state": "Zagreb"
+      },
+      "address": {
+        "quarter": "Kaptol",
+        "neighbourhood": "Mjesni odbor \"August Cesarec\"",
+        "suburb": "Gradska četvrt Gornji grad - Medveščak",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10106",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "29330e29-0a70-414d-973a-a69a5b2e4258",
+      "slug": "tranzistor",
+      "coordinates": [
+        45.31617764331917,
+        18.411519527435303
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Ulica Marka Marulića",
+        "suburb": "Sjever",
+        "city_district": "Mjesni odbor Sjever-Dračice",
+        "town": "Đakovo",
+        "municipality": "Grad Đakovo",
+        "county": "Osječko-baranjska županija",
+        "ISO3166-2-lvl4": "HR-14",
+        "postcode": "31400",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Đakovo",
+        "state": "Osječko-baranjska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "c3c19c7c-1377-4045-91b5-13c6fc3fc5c7",
+      "slug": "ultra-split-splitsko-dalmatinska",
+      "coordinates": [
+        43.50594769284607,
+        16.44772074143793
+      ],
+      "before": {
+        "city": null,
+        "state": "Splitsko-Dalmatinska"
+      },
+      "address": {
+        "house_number": "47",
+        "road": "Ulica kralja Zvonimira",
+        "neighbourhood": "Lučac",
+        "quarter": "Gradski kotar Lučac-Manuš",
+        "city": "Split",
+        "municipality": "Grad Split",
+        "county": "Splitsko-dalmatinska županija",
+        "ISO3166-2-lvl4": "HR-17",
+        "postcode": "21103",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Split",
+        "state": "Splitsko-dalmatinska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f3d4ad2c-7252-4447-9cf4-fc4543ec54c6",
+      "slug": "yammat-fm",
+      "coordinates": [
+        45.81052938387316,
+        15.985794178783625
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Yammat FM",
+        "house_number": "10",
+        "road": "Ulica Račkoga",
+        "neighbourhood": "Mjesni odbor \"Hrvatski narodni vladari\"",
+        "suburb": "Gradska četvrt Donji grad",
+        "city_district": "Zagreb",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7b2f0603-0d3b-42a2-ae29-5fd89bc1fe80",
+      "slug": "zabavni-radio",
+      "coordinates": [
+        45.82311266113856,
+        16.121548712253574
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Zabavni Radio",
+        "house_number": "62B",
+        "road": "Bjelovarska ulica",
+        "quarter": "Mjesni odbor Centar",
+        "suburb": "Gradska četvrt Sesvete",
+        "city_district": "Sesvete",
+        "city": "Grad Zagreb",
+        "ISO3166-2-lvl4": "HR-21",
+        "postcode": "10360",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ce6fd814-f553-4700-ba3c-683aed4221b1",
+      "slug": "zagorski-radio-frana-galovi-a-1a-49000-krapina",
+      "coordinates": [
+        46.15363458400968,
+        15.8742892742157
+      ],
+      "before": {
+        "city": null,
+        "state": "Frana Galovića 1A 49000 Krapina"
+      },
+      "address": {
+        "building": "Presečki grupa d.o.o.",
+        "house_number": "15",
+        "road": "Ulica Frana Galovića",
+        "town": "Krapina",
+        "municipality": "Grad Krapina",
+        "county": "Krapinsko-zagorska županija",
+        "ISO3166-2-lvl4": "HR-02",
+        "postcode": "49000",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Krapina",
+        "state": "Krapinsko-zagorska županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "38dba53f-b60a-4dac-bf3a-40c2f5878847",
+      "slug": "zfm",
+      "coordinates": [
+        45.86896118984027,
+        15.800786018371584
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "46",
+        "road": "Ulica Janka Draškovića",
+        "suburb": "Gradska četvrt Zaprešić Sjever",
+        "city_district": "Zaprešić",
+        "town": "Grad Zaprešić",
+        "county": "Zagrebačka županija",
+        "ISO3166-2-lvl4": "HR-01",
+        "postcode": "10290",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Zaprešić",
+        "state": "Zagrebačka županija"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "695f181f-f20d-444c-b4c2-7a1edfc6fb63",
+      "slug": "upanijski-radio-ibenik-ul-velimira-korpika-23-ibenik",
+      "coordinates": [
+        43.73290248118248,
+        15.889663696289064
+      ],
+      "before": {
+        "city": null,
+        "state": "Ul. Velimira Škorpika 23, Šibenik"
+      },
+      "address": {
+        "amenity": "Gat Krka",
+        "road": "Obala Hrvatske mornarice",
+        "quarter": "Gradska četvrt Plišac",
+        "city_district": "Šibenik",
+        "city": "Grad Šibenik",
+        "county": "Šibensko-kninska županija",
+        "ISO3166-2-lvl4": "HR-15",
+        "postcode": "22101",
+        "country": "Hrvatska",
+        "country_code": "hr"
+      },
+      "after": {
+        "city": "Šibenik",
+        "state": "Šibensko-kninska županija"
+      },
+      "status": "changed"
+    }
+  ]
+}

@@ -19,7 +19,8 @@
     "stations:import": "node tools/fetch-greece-stations.mjs",
     "stations:metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "stations:icons": "node tools/cache-station-favicons.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "stations:geography": "python3 tools/fill-station-geography.py"
   },
   "dependencies": {
     "astro": "^5.17.3",

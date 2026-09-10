@@ -3,6 +3,7 @@
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -42,8 +43,13 @@ def probe(url):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true')
+    parser.add_argument('--country', default=os.environ.get('COUNTRY', 'gr'), help='Country code (defaults to COUNTRY or gr)')
     args = parser.parse_args()
-    path = ROOT / 'src/data/stations-gr.json'
+    country = args.country.lower()
+    if not re.fullmatch(r'[a-z]{2}', country):
+        parser.error('Country must be a two-letter code')
+    config = json.loads((ROOT / f'countries/{country}.json').read_text())
+    path = ROOT / config['stationsFile']
     original = path.read_text()
     stations = json.loads(original)
     targets = [s for s in stations if not s.get('bitrate') or missing_codec(s.get('codec'))]
@@ -66,9 +72,11 @@ def main():
             fields['codec'] = result['codec']
         if fields:
             changes[station['slug']] = fields
-    report = {'checked_urls': len(urls), 'target_entries': len(targets), 'changes': changes,
+    report = {'country': country, 'checked_urls': len(urls), 'target_entries': len(targets), 'changes': changes,
               'results': [results[url] for url in urls]}
-    (ROOT / 'reports/stream-audio-info.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    report_path = ROOT / ('reports/stream-audio-info.json' if country == 'gr' else f'reports/stream-audio-info-{country}.json')
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     if args.write:
         if path.read_text() != original:
             raise RuntimeError('Data changed during scan; report saved without overwriting data')
@@ -98,6 +106,7 @@ def main():
         json.loads(updated)
         path.write_text(updated)
     print(f'{len(changes)} station entries ' + ('updated' if args.write else 'eligible'))
+    print(f'Report: {report_path}')
     print('Bitrates:', sum('bitrate' in c for c in changes.values()), 'Codecs:', sum('codec' in c for c in changes.values()))
 
 

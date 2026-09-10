@@ -1,0 +1,153 @@
+{
+  "country": "hr",
+  "checked_urls": 11,
+  "target_entries": 10,
+  "changes": {
+    "braniteljski-radio-nepokoreni-grad": {
+      "bitrate": 128
+    },
+    "cmc-radio": {
+      "bitrate": 192
+    },
+    "cro-international-dj-radio": {
+      "bitrate": 128
+    },
+    "folk-radio-kneginec": {
+      "bitrate": 128
+    },
+    "jr-radio-splitsko-dalmatinska": {
+      "bitrate": 64
+    },
+    "kneginec": {
+      "bitrate": 128
+    },
+    "radio-boom-hits": {
+      "bitrate": 128
+    },
+    "radio-ro-a": {
+      "bitrate": 96
+    },
+    "radio-techno-dance-kneginec": {
+      "bitrate": 128
+    },
+    "radio-salona-solin-hrvatskih-zrtava73": {
+      "bitrate": 320,
+      "codec": "MP3"
+    }
+  },
+  "results": [
+    {
+      "url": "http://s3.radio.co/se83499ee0/listen",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://stream.radio-roza.org/live.ogg",
+      "ffprobe_audio": {
+        "codec_name": "vorbis",
+        "codec_type": "audio",
+        "bit_rate": "96480"
+      },
+      "codec": "OGG",
+      "bitrate": 96
+    },
+    {
+      "url": "http://stream.zeno.fm/8d2pyzm5wp8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://stream.zeno.fm/pdkt234k698uv.mp3",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "bit_rate": "64029"
+      },
+      "codec": "AAC",
+      "bitrate": 64
+    },
+    {
+      "url": "http://stream.zeno.fm/t47dykadrchvv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "http://stream.zeno.fm/yetzdv442k8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://radio-stream.cmc.com.hr:9011/live",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://stream.servergm.eu/cp/#:~:text=https%3A//stream.servergm.eu/8002/stream",
+      "error": "https://stream.servergm.eu/cp/#:~:text=https%3A//stream.servergm.eu/8002/stream: Invalid data found when processing input"
+    },
+    {
+      "url": "https://stream.zeno.fm/7n7hwy8s9k0uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.zeno.fm/yetzdv442k8uv",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "128000"
+      },
+      "codec": "MP3",
+      "bitrate": 128
+    },
+    {
+      "url": "https://stream.servergm.eu/8002/stream",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "320000"
+      },
+      "codec": "MP3",
+      "bitrate": 320
+    }
+  ],
+  "stream_url_corrections": [
+    {
+      "stationuuid": "2829a02d-30a6-426a-b1a3-1adeb481e2a5",
+      "before": "https://stream.servergm.eu/cp/#:~:text=https%3A//stream.servergm.eu/8002/stream",
+      "after": "https://stream.servergm.eu/8002/stream",
+      "reason": "Decoded embedded audio URL and verified with ffprobe"
+    }
+  ]
+}
