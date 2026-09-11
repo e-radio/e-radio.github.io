@@ -10,7 +10,7 @@
   "cityAliases": {},
   "redirectsFile": "countries/hr.redirects.json",
   "googleVerification": "lQfQGR6ZHNk4_xpou2o4dn4dTItSP8G9YVR8rWACGls",
-  "introText": "Otkrijte hrvatske radijske postaje i slušajte radio uživo iz cijele Hrvatske putem interneta.",
+  "introText": "Discover Croatian radio stations and listen to live radio from across Croatia online.",
   "siteShortName": "Radio Hrvatska",
   "socialImage": "/icons/icon-512x512.png",
   "logo": "/icons/icon-32x32.png",
@@ -20,5 +20,9 @@
   "icon512": "/icons/icon-512x512.png",
   "appleTouchIcon": "/icons/apple-touch-icon.png",
   "socialLocale": "en_US",
-  "geographyAttribution": true
+  "geographyAttribution": true,
+  "locales": [
+    "en",
+    "hr"
+  ]
 }

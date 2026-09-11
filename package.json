@@ -8,7 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "git push gr": "git add . && git commit -m \"update\" && git push origin main",
-    "git push hr": "git add . && git commit -m \"update\" && git push croatia main",
+    "git push hr": "git add . && git commit -m \"added localization\" && git push croatia main",
     "git push": "git push",
     "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "fill state": "python3 tools/fill-state-from-homepage.py --max 0 --sleep 1",

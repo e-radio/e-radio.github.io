@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../countries/site.mjs";
 import Layout from "../layouts/Layout.astro";
 import SEO from "../components/SEO.astro";
@@ -86,35 +89,23 @@ const structuredData = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
-  <SEO
-    slot="seo"
-    title={pageTitle}
-    description={pageDescription}
-    canonical={canonical}
-    ogTitle={pageTitle}
-    ogDescription={pageDescription}
-    ogImage={ogImageUrl}
-    keywords={`${site.countryName} radio cities, ${site.countryAdjective} radio by city`}
-    robots="index, follow"
-    author={site.siteName}
-    structuredData={structuredData}
-  />
+<Layout title={t(pageTitle)} description={pageDescription}>
+  <SEO slot="seo" title={t(pageTitle)} description={pageDescription} canonical={canonical} ogTitle={pageTitle} ogDescription={pageDescription} ogImage={ogImageUrl} keywords={`${site.countryName} radio cities, ${site.countryAdjective} radio by city`} robots="index, follow" author={site.siteName} structuredData={structuredData} />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations by City</h1>
-    <h2 class="lead text-muted">Find stations broadcast from your city or explore new areas.</h2>
-    <p class="text-muted small">Cities arranged alphabetically; stations within each city sorted by votes.</p>
-    <p class="text-muted small">Showing {totalCities} cities across {totalStations} stations.</p>
+    <h1 class="display-5 fw-bold mb-2">{t("{0} Radio Stations by City", [site.countryAdjective])}</h1>
+    <h2 class="lead text-muted">{t("Find stations broadcast from your city or explore new areas.")}</h2>
+    <p class="text-muted small">{t("Cities arranged alphabetically; stations within each city sorted by votes.")}</p>
+    <p class="text-muted small">{t("Showing {0} cities across {1} stations.", [totalCities, totalStations])}</p>
   </div>
   <CategorySwitch current="city" />
   <div class="mb-4">
-    <h2 class="h6 text-muted text-uppercase">Browse cities</h2>
+    <h2 class="h6 text-muted text-uppercase">{t("Browse cities")}</h2>
     <div class="d-flex flex-wrap gap-2">
       {cityBadgeEntries.map(({ city, stations, slug }) => {
         return (
-        <a class="text-decoration-none d-inline-flex align-items-center" href={`/city/${slug}/`} aria-label={`${city} radio stations (${stations.length})`}>
-            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{city}</span>
-            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{stations.length}</span>
+        <a class="text-decoration-none d-inline-flex align-items-center" href={localizePath(`/city/${slug}/`)} aria-label={t(`${city} radio stations (${stations.length})`)}>
+            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{t(city)}</span>
+            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{t(stations.length)}</span>
         </a>
         );
       })}
@@ -125,14 +116,14 @@ const structuredData = {
       const topStations = stations.slice(0, 3).map((station) => station.name).join(", ");
       return (
         <div class="col-12 col-md-6 col-xl-4">
-          <a href={`/city/${slug}/`} class="text-decoration-none">
+          <a href={localizePath(`/city/${slug}/`)} class="text-decoration-none">
             <div class="border rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
               <div>
-                <h3 class="h6 fw-bold text-dark mb-1">{city}</h3>
-                <p class="small text-muted mb-2">{stations.length} station{stations.length === 1 ? "" : "s"}</p>
-                <p class="small text-muted mb-0">Top: {topStations || "Explore stations"}</p>
+                <h3 class="h6 fw-bold text-dark mb-1">{t(city)}</h3>
+                <p class="small text-muted mb-2">{t("{0} station{1}", [stations.length, stations.length === 1 ? "" : "s"])}</p>
+                <p class="small text-muted mb-0">{t("Top: {0}", [topStations || "Explore stations"])}</p>
               </div>
-              <span class="small text-primary fw-semibold mt-3">View stations →</span>
+              <span class="small text-primary fw-semibold mt-3">{t("View stations →")}</span>
             </div>
           </a>
         </div>

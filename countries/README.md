@@ -207,3 +207,29 @@ The county translations and known spelling aliases are in `hr.location-names.jso
 Ambiguous legacy region labels remain unchanged until their geography is verified.
 Region URL changes have redirects in `hr.redirects.json`; station slugs remain unchanged.
 On GitHub Pages these are static HTML redirects, not server-side HTTP 301 responses.
+
+### Croatian and English pages
+
+With `"locales": ["en", "hr"]` in `countries/hr.json`, the Croatia build generates both languages in one deployment:
+
+- English: `/`, `/stations/extra-fm/`, `/city/zagreb/`
+- Croatian: `/hr/`, `/hr/stations/extra-fm/`, `/hr/city/zagreb/`
+
+Run `COUNTRY=hr npm run dev` for both languages locally, or `COUNTRY=hr npm run build` for GitHub Pages. The existing deployment workflow only needs its `COUNTRY` repository variable set to `hr`.
+
+`src/i18n/hr.json` holds Croatian interface text, complete SEO messages, and geographic display labels. `src/i18n/index.ts` determines the language from the URL and localizes internal page links. `src/i18n/translate.ts` is shared by static templates and browser player messages. Use `t("Message with {0}", [value])` for new text; add the same message key to the dictionary. Full-message patterns also translate descriptions assembled by the shared city/region SEO helpers. Keep placeholders intact, and test city names separately from county labels. Do not translate station names, song titles, stream URLs, or metadata endpoints.
+
+`tools/integrations/localized-routes.mjs` registers Croatian versions of the existing Astro templates, reusing their station data and pagination. Station, city, region and genre slugs stay the same across languages. Display labels must not be used to regenerate localized slugs. Original `locationNames.hr` data is retained for future editing; the translation dictionary controls displayed labels without changing grouping or routes.
+
+Each page has its own canonical URL, `lang`, and reciprocal `en`, `hr`, and `x-default` links. The language switcher links to the equivalent page. The sitemap contains both languages and excludes redirects and the design demo. Existing country redirects also get Croatian equivalents. GitHub Pages uses generated HTML redirects, not server-side HTTP 301 responses. Both languages include the country's configured Google verification tag; the root URL-prefix Search Console property covers `/hr/` too.
+
+Validation after a Croatia build:
+
+```sh
+npm test
+COUNTRY=hr npm run check
+COUNTRY=hr npm run build
+python3 tools/check-localized-site.py dist
+```
+
+The audit checks rendered pages, language links, canonical URLs, internal links, redirects, structured-data syntax, sitemap targets, and manifests. When adding a language, translate complete page content and metadata before exposing its routes and `hreflang` links. Country catalogs are separate sites, not automatically translations of each other. Google guidance: [localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions) and [multilingual sites](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites).

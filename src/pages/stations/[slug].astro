@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../../i18n/index';
+const { t, localizePath, locale } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../../countries/site.mjs";
 import { stationStreams } from "../../lib/station-streams.mjs";
 import Layout from "../../layouts/Layout.astro";
@@ -32,7 +35,7 @@ const { station } = Astro.props as Props;
 
 const streamOptions: Array<{ id: string; label: string; url: string; quality: string; bitrate?: number; codec?: string }> = stationStreams(station);
 const hasStream = Boolean(station.stream_url);
-const formattedVotes = station.votes ? new Intl.NumberFormat("en-US").format(Number(station.votes)) : null;
+const formattedVotes = station.votes ? new Intl.NumberFormat((locale === "hr" ? "hr-HR" : "en-US")).format(Number(station.votes)) : null;
 const locationLabel = station.state
   ? `${station.state}${station.country ? `, ${station.country}` : ""}`
   : station.country || countryText("Greece");
@@ -413,7 +416,7 @@ const playerScriptConfig = {
   streams: streamOptions,
   shareTitle: station.name,
   shareText: `Listen live: ${station.name}`,
-  shareUrl: canonical,
+  shareUrl: localizePath(canonical),
   nowPlayingEndpoint,
   historyEndpoint,
   serverType,
@@ -471,32 +474,17 @@ const structuredData = {
 };
 ---
 
-<Layout title={title} description={description} bodyClass="station-detail-body">
+<Layout title={t(title)} description={description} bodyClass="station-detail-body">
   <!-- SEO Meta Tags -->
-  <SEO 
-    slot="seo"
-    title={title}
-    description={description}
-    canonical={canonical}
-    ogTitle={title}
-    ogDescription={description}
-    ogImage={ogImageUrl}
-    ogType="music.radio_station"
-    keywords={`${station.name}, ${station.state || site.countryName}, radio, live, ${station.genres.join(", ")}`}
-    robots="index, follow"
-    author={site.siteName}
-    structuredData={structuredData}
-  />
+  <SEO slot="seo" title={t(title)} description={description} canonical={canonical} ogTitle={title} ogDescription={description} ogImage={ogImageUrl} ogType="music.radio_station" keywords={`${station.name}, ${station.state || site.countryName}, radio, live, ${station.genres.join(", ")}`} robots="index, follow" author={site.siteName} structuredData={structuredData} />
   <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
-    <nav aria-label="Breadcrumb">
+    <nav aria-label={t("Breadcrumb")}>
       <ol class="breadcrumb mb-0 bg-transparent p-0">
-        <li class="breadcrumb-item"><a href="/">All Stations</a></li>
+        <li class="breadcrumb-item"><a href={localizePath("/")}>{t("All Stations")}</a></li>
         <li class="breadcrumb-item active" aria-current="page">{station.name}</li>
       </ol>
     </nav>
-    <div class="small-muted">
-      Updated {new Date().toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
-    </div>
+    <div class="small-muted"> {t("Updated {0}", [new Date().toLocaleDateString((locale === "hr" ? "hr-HR" : "en-US"), { year: "numeric", month: "short", day: "numeric" })])} </div>
   </div>
 
   <div class="row g-4">
@@ -505,23 +493,9 @@ const structuredData = {
         <div class="d-flex align-items-center justify-content-between gap-3 pb-4">
           <div class="d-flex align-items-center gap-3 w-100">
             {station.favicon ? (
-              <img
-                id="stationCover"
-                class="station-cover shadow-sm flex-shrink-0"
-                src={station.favicon}
-                data-fallback-src={station.favicon}
-                alt={`${station.name} logo`}
-                loading="lazy"
-              />
+              <img id="stationCover" class="station-cover shadow-sm flex-shrink-0" src={station.favicon} data-fallback-src={station.favicon} alt={t(`${station.name} logo`)} loading="lazy" />
             ) : (
-              <img
-                id="stationCover"
-                class="station-cover shadow-sm flex-shrink-0"
-                src={radioAppIconUrl}
-                data-fallback-src={radioAppIconUrl}
-                alt="Radddio app icon"
-                loading="lazy"
-              />
+              <img id="stationCover" class="station-cover shadow-sm flex-shrink-0" src={radioAppIconUrl} data-fallback-src={radioAppIconUrl} alt={t("Radddio app icon")} loading="lazy" />
             )}
             <div class="flex-grow-1" style="min-width: 0; overflow-wrap: anywhere;">
               <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
@@ -529,13 +503,13 @@ const structuredData = {
               </div>
               <div class="d-flex flex-wrap gap-2 gap-md-3 small-muted">
                 {locationLabel && (
-                  <span><i class="bi bi-geo-alt me-1"></i>{locationLabel}</span>
+                  <span><i class="bi bi-geo-alt me-1" />{t(locationLabel)}</span>
                 )}
                 {displayGenres.length > 0 && (
-                  <span><i class="bi bi-music-note-beamed me-1"></i>{displayGenres.join(", ")}</span>
+                  <span><i class="bi bi-music-note-beamed me-1" />{t(displayGenres.join(", "))}</span>
                 )}
                 {formattedVotes && (
-                  <span><i class="bi bi-bar-chart me-1"></i>{formattedVotes} votes</span>
+                  <span><i class="bi bi-bar-chart me-1" />{t("{0} votes", [formattedVotes])}</span>
                 )}
               </div>
             </div>
@@ -548,15 +522,15 @@ const structuredData = {
               <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
                 <div class="d-flex align-items-center gap-2">
                   <button class="btn btn-primary rounded-pill px-4" id="btnPlay" type="button">
-                    <i class="bi bi-play-fill me-1" aria-hidden="true"></i> <span>Play</span>
+                    <i class="bi bi-play-fill me-1" aria-hidden="true" /> <span>{t("Play")}</span>
                   </button>
 
                 </div>
 
                 <div class="d-flex flex-wrap gap-2">
                   <span class="badge rounded-pill text-bg-light border">
-                    <i class="bi bi-wifi me-1"></i>
-                    <span id="statusText">Idle</span>
+                    <i class="bi bi-wifi me-1" />
+                    <span id="statusText">{t("Idle")}</span>
                   </span>
                 </div>
               </div>
@@ -564,57 +538,45 @@ const structuredData = {
 
             {streamOptions.length > 0 && (station as Station & { streams?: unknown[] }).streams && (
               <div class="col-12">
-                <label for="streamQuality" class="form-label">Stream quality</label>
+                <label for="streamQuality" class="form-label">{t("Stream quality")}</label>
                 <select id="streamQuality" class="form-select" disabled={streamOptions.length < 2}>
                   {streamOptions.map(option => (
-                    <option value={option.url} selected={option.url === station.stream_url}>
-                      {option.label} · {option.quality}
-                    </option>
+                    <option value={option.url} selected={option.url === station.stream_url}> {t("{0} · {1}", [option.label, option.quality])} </option>
                   ))}
                 </select>
-                {streamOptions.length < 2 && <div class="small-muted mt-1">This station currently offers one stream quality.</div>}
+                {streamOptions.length < 2 && <div class="small-muted mt-1">{t("This station currently offers one stream quality.")}</div>}
               </div>
             )}
             <div class="col-12">
               <div class="audio-control-strip">
-                <div class="audio-buffer" role="progressbar" aria-label="Buffered audio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title="Buffered audio (live stream)">
-                  <div class="audio-buffer-fill" id="bufferBar" style="width: 0%"></div>
+                <div class="audio-buffer" role="progressbar" aria-label={t("Buffered audio")} aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title={t("Buffered audio (live stream)")}>
+                  <div class="audio-buffer-fill" id="bufferBar" style="width: 0%" />
                 </div>
-                <span id="audioElapsed" class="mono audio-elapsed" aria-label="Listening time">00:00</span>
+                <span id="audioElapsed" class="mono audio-elapsed" aria-label={t("Listening time")}>{t("00:00")}</span>
                 <div class="audio-volume">
-                  <i class="bi bi-volume-up-fill" aria-hidden="true"></i>
-                  <input id="volume" class="audio-volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume" style="--volume-level: 100%" />
+                  <i class="bi bi-volume-up-fill" aria-hidden="true" />
+                  <input id="volume" class="audio-volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label={t("Volume")} style="--volume-level: 100%" />
                 </div>
               </div>
             </div>
 
             <div class="col-12">
               <div id="playbackError" class="alert alert-warning mb-3" role="alert" hidden>
-                <p id="playbackErrorMessage" class="mb-2"></p>
-                <span>Listen to this station in the Radddio app. </span>
-                <a href={radddioURL} target="_blank" rel="nofollow noopener">Download for free</a>.
-              </div>
-              <audio
-                id="audio"
-                preload="none"
-                crossorigin="anonymous"
-                src={streamUrl}
-              >
-                Your browser does not support the audio element.
-              </audio>
+                <p id="playbackErrorMessage" class="mb-2" />
+                <span>{t("Listen to this station in the Radddio app.")} </span>
+                <a href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener">{t("Download for free")}</a>{t(".")} </div>
+              <audio id="audio" preload="none" crossorigin="anonymous" src={streamUrl}> {t("Your browser does not support the audio element.")} </audio>
             </div>
           </div>
         ) : (
           <div class="text-center py-4">
-            <p class="small-muted mb-3">Stream is currently unavailable.</p>
+            <p class="small-muted mb-3">{t("Stream is currently unavailable.")}</p>
             <div class="d-flex justify-content-center flex-wrap gap-2">
-              <a class="btn btn-outline-primary rounded-pill" href={radddioURL} target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}>
-                <i class="bi bi-broadcast-pin me-1"></i> Listen on Radddio
-              </a>
+              <a class="btn btn-outline-primary rounded-pill" href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener" aria-label={t(`Listen to ${station.name} on Radddio App`)}>
+                <i class="bi bi-broadcast-pin me-1" /> {t("Listen on Radddio")} </a>
               {station.homepage && (
-                <a class="btn btn-outline-secondary rounded-pill" href={station.homepage} target="_blank" rel="noopener">
-                  <i class="bi bi-globe2 me-1"></i> Visit website
-                </a>
+                <a class="btn btn-outline-secondary rounded-pill" href={localizePath(station.homepage)} target="_blank" rel="noopener">
+                  <i class="bi bi-globe2 me-1" /> {t("Visit website")} </a>
               )}
             </div>
           </div>
@@ -628,25 +590,25 @@ const structuredData = {
                   <picture>
                     <source srcset="/radddio-app-icon.webp" type="image/webp" />
                     <source srcset={radioAppIconUrl} type="image/png" />
-                    <img src={radioAppIconUrl} alt="Radddio logo" class="ff-app-icon" loading="lazy" decoding="async" width="512" height="512" />
+                    <img src={radioAppIconUrl} alt={t("Radddio logo")} class="ff-app-icon" loading="lazy" decoding="async" width="512" height="512" />
                   </picture>
                 </div>
                 <div class="flex-grow-1 text-center text-sm-start">
                   <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2">
-                    <h3 class="h5 mb-0 fw-bold text-white">Get the Radddio app</h3>
+                    <h3 class="h5 mb-0 fw-bold text-white">{t("Get the Radddio app")}</h3>
                   </div>
-                  <p class="mb-0 small text-white text-opacity-75">Listen to {station.name} anytime, anywhere on the Radddio app.</p>
+                  <p class="mb-0 small text-white text-opacity-75">{t("Listen to {0} anytime, anywhere on the Radddio app.", [station.name])}</p>
                   <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 small ff-meta">
                     <span class="d-inline-flex align-items-center gap-1">
-                      <span class="ff-stars" aria-hidden="true">★★★★★</span>
-                      <span class="ms-1">4.8</span>
+                      <span class="ff-stars" aria-hidden="true">{t("★★★★★")}</span>
+                      <span class="ms-1">{t("4.8")}</span>
                     </span>
-                    <span class="ff-divider">|</span>
-                    <span>100K+ Downloads</span>
+                    <span class="ff-divider">{t("|")}</span>
+                    <span>{t("100K+ Downloads")}</span>
                   </div>
                 </div>
-                <a href={radddioURL} target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}>
-                  <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1618444800" alt="Download Radddio on the App Store" width="142" decoding="async" loading="lazy" />
+                <a href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener" aria-label={t(`Listen to ${station.name} on Radddio App`)}>
+                  <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1618444800" alt={t("Download Radddio on the App Store")} width="142" decoding="async" loading="lazy" />
                 </a>
               </div>
             </div>
@@ -656,72 +618,67 @@ const structuredData = {
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
         <div class="vstack gap-3" id="recently-played">
           <div id="recent-next-card" hidden>
-            <h2 class="h3 fw-normal mb-0 small-muted mb-2">Up next</h2>
+            <h2 class="h3 fw-normal mb-0 small-muted mb-2">{t("Up next")}</h2>
             <div class="history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
-              <img id="recent-next-art" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt="" hidden />
+              <img id="recent-next-art" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt={t("")} hidden />
               <div class="track-details flex-grow-1">
                 <div class="d-flex align-items-baseline justify-content-between gap-3">
-                  <div class="fw-semibold text-truncate" id="recent-next-title"></div>
-                  <time class="small-muted flex-shrink-0" id="recent-next-time"></time>
+                  <div class="fw-semibold text-truncate" id="recent-next-title" />
+                  <time class="small-muted flex-shrink-0" id="recent-next-time" />
                 </div>
-                <div class="small-muted text-truncate" id="recent-next-meta"></div>
+                <div class="small-muted text-truncate" id="recent-next-meta" />
               </div>
             </div>
           </div>
           <div id="now-playing-card">
-            <p id="nowPlayingListeners" class="small-muted mb-2" hidden></p>
+            <p id="nowPlayingListeners" class="small-muted mb-2" hidden />
             <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
-              <h2 class="h3 fw-normal mb-0 small-muted">Now playing</h2><span class="badge rounded-pill badge-soft-green">Live</span>
+              <h2 class="h3 fw-normal mb-0 small-muted">{t("Now playing")}</h2><span class="badge rounded-pill badge-soft-green">{t("Live")}</span>
             </div>
             <div class="history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
-              <img id="nowPlayingArt" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt="" hidden />
+              <img id="nowPlayingArt" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt={t("")} hidden />
               <div class="track-details flex-grow-1">
                 <div class="d-flex align-items-baseline justify-content-between gap-3">
                   <div class="fw-semibold text-truncate" id="nowPlaying">{station.name}</div>
                 </div>
-                <div class="small-muted text-truncate" id="nowPlayingMeta">Live broadcast</div>
+                <div class="small-muted text-truncate" id="nowPlayingMeta">{t("Live broadcast")}</div>
               </div>
-              <time class="small-muted flex-shrink-0" id="nowPlayingTime" hidden></time>
+              <time class="small-muted flex-shrink-0" id="nowPlayingTime" hidden />
             </div>
           </div>
         </div>
         <div class="mt-3 pt-3">
-          <h2 class="h3 fw-normal mb-0 small-muted mb-2">Recent tracks</h2>
-          <ul class="list-unstyled mb-0 small vstack gap-2" id="recent-history" data-default-message="Waiting for station metadata…">
-            <li class="small-muted">Waiting for station metadata…</li>
+          <h2 class="h3 fw-normal mb-0 small-muted mb-2">{t("Recent tracks")}</h2>
+          <ul class="list-unstyled mb-0 small vstack gap-2" id="recent-history" data-default-message={t("Waiting for station metadata…")}>
+            <li class="small-muted">{t("Waiting for station metadata…")}</li>
           </ul>
         </div>
       </section>
       {recommendedStations.length > 0 && (
     <section class="glass rounded-3 p-3 p-md-4 mt-4">
-      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2"></i>More stations</h2>
+      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2" />{t("More stations")}</h2>
       <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
         {recommendedStations.map((recStation, index) => (
           <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
-            <a href={`/stations/${recStation.slug}/`} class="stretched-link" aria-label={`Go to ${recStation.name}`} itemprop="url"></a>
+            <a href={localizePath(`/stations/${recStation.slug}/`)} class="stretched-link" aria-label={t(`Go to ${recStation.name}`)} itemprop="url" />
             <div class="station-item-body p-3">
               <div class="row align-items-center g-3">
                 <div class="col-auto">
                   {recStation.favicon ? (
-                    <Image src={recStation.favicon} alt={`${recStation.name} logo`} class="rounded station-logo" width={60} height={60} itemprop="image" />
+                    <Image src={recStation.favicon} alt={t(`${recStation.name} logo`)} class="rounded station-logo" width={60} height={60} itemprop="image" />
                   ) : (
-                    <Image src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" width={60} height={60} itemprop="image" />
+                    <Image src={radioAppIconUrl} alt={t("Radddio app icon")} class="rounded station-logo" width={60} height={60} itemprop="image" />
                   )}
                 </div>
                 <div class="col flex-grow-1">
                   <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{recStation.name}</h3>
                   <p class="small text-muted mb-1">
-                    {recStation.state ? <span><i class="bi bi-geo-alt me-1"></i>{recStation.state}</span> : null}
-                    {recStation.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{recStation.bitrate} kbps</span> : null}
+                    {recStation.state ? <span><i class="bi bi-geo-alt me-1" />{t(recStation.state)}</span> : null}
+                    {recStation.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" />{t("{0} kbps", [recStation.bitrate])}</span> : null}
                   </p>
                   <div class="d-flex gap-2 flex-wrap">
                     {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
-                      <a
-                        href={`/genres/${slugify(genre)}/`}
-                        class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
-                      >
-                        {genre}
-                      </a>
+                      <a href={localizePath(`/genres/${slugify(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
                     ))}
                   </div>
                 </div>
@@ -736,22 +693,20 @@ const structuredData = {
 
     <div class="col-12 col-lg-4">
       <aside id="details" class="glass rounded-3 p-3 p-md-4">
-        <h2 class="h6 fw-bold mb-3"><i class="bi bi-card-text me-2"></i>Station details</h2>
+        <h2 class="h6 fw-bold mb-3"><i class="bi bi-card-text me-2" />{t("Station details")}</h2>
 
         <div class="vstack gap-3">
           {station.stationuuid && (
             <div>
-              <div class="small-muted mb-1">Station ID</div>
-              <div class="mono">{station.stationuuid}</div>
+              <div class="small-muted mb-1">{t("Station ID")}</div>
+              <div class="mono">{t(station.stationuuid)}</div>
             </div>
           )}
 
           {hasStream && (
             <div>
-              <div class="small-muted mb-1">Stream URL</div>
-              <a class="mono link-muted d-block text-truncate" data-stream-link href={streamUrl} target="_blank" rel="noopener">
-                {streamUrl}
-              </a>
+              <div class="small-muted mb-1">{t("Stream URL")}</div>
+              <a class="mono link-muted d-block text-truncate" data-stream-link href={localizePath(streamUrl)} target="_blank" rel="noopener">{t(streamUrl)}</a>
             </div>
           )}
 
@@ -759,83 +714,79 @@ const structuredData = {
             <div>
               <div class="d-flex align-items-center justify-content-between mb-2">
                 <div>
-                  <div class="small-muted mb-2">Stream quality</div>
+                  <div class="small-muted mb-2">{t("Stream quality")}</div>
                   <span class="badge rounded-pill text-bg-light border">
-                    <i class="bi bi-soundwave me-1"></i>
-                    <span class="mono" id="quality">{streamQualityLabel || "Quality not reported"}</span>
+                    <i class="bi bi-soundwave me-1" />
+                    <span class="mono" id="quality">{t(streamQualityLabel || "Quality not reported")}</span>
                   </span>
                 </div>
-                <i class="bi bi-soundwave fs-4 text-primary"></i>
+                <i class="bi bi-soundwave fs-4 text-primary" />
               </div>
-              {streamDetailMeta && <div class="small-muted" id="streamDetailMeta">{streamDetailMeta}</div>}
+              {streamDetailMeta && <div class="small-muted" id="streamDetailMeta">{t(streamDetailMeta)}</div>}
             </div>
           )}
 
           {genres.length > 0 && (
             <div>
-              <div class="small-muted mb-2">Genres</div>
+              <div class="small-muted mb-2">{t("Genres")}</div>
               <div class="d-flex flex-wrap gap-2">
                 {genres.map((genre) => (
-                  <a class="badge rounded-pill text-bg-light border text-decoration-none mono" href={`/genres/${slugify(genre)}/`}>
-                    {genre}
-                  </a>
+                  <a class="badge rounded-pill text-bg-light border text-decoration-none mono" href={localizePath(`/genres/${slugify(genre)}/`)}>{t(genre)}</a>
                 ))}
               </div>
             </div>
           )}
 
           <div>
-            <div class="small-muted mb-2">Popularity</div>
+            <div class="small-muted mb-2">{t("Popularity")}</div>
             <div class="d-flex align-items-center justify-content-between">
               <div>
-                <div class="fw-semibold" id="votes">{formattedVotes ? `${formattedVotes} votes` : "No votes recorded"}</div>
-                <div class="small-muted">Updated daily</div>
+                <div class="fw-semibold" id="votes">{t(formattedVotes ? `${formattedVotes} votes` : "No votes recorded")}</div>
+                <div class="small-muted">{t("Updated daily")}</div>
               </div>
               <button class="btn btn-outline-primary rounded-pill btn-sm" type="button" id="btnVote">
-                <i class="bi bi-hand-thumbs-up me-1"></i> Vote
-              </button>
+                <i class="bi bi-hand-thumbs-up me-1" /> {t("Vote")} </button>
             </div>
           </div>
 
           <div>
-            <div class="small-muted mb-2">Location</div>
-            <div class="fw-semibold">{locationLabel}</div>
-            <div class="small-muted">
-              Country: {station.country || site.countryName}
-              {languageLabel && <> · Language: {languageLabel}</>}
+            <div class="small-muted mb-2">{t("Location")}</div>
+            <div class="fw-semibold">{t(locationLabel)}</div>
+            <div class="small-muted"> {t("Country: {0}", [station.country || site.countryName])} {languageLabel && <> {t("· Language: {0}", [languageLabel])}</>}
             </div>
           </div>
 
           <div>
-            <div class="small-muted mb-2">More</div>
+            <div class="small-muted mb-2">{t("More")}</div>
             <div class="d-grid gap-1">
-              <a href="/" class="text-decoration-none">Browse {site.countryName} Stations</a>
-              <a href={radddioURL} target="_blank" rel="nofollow noopener" class="text-decoration-none" aria-label={`Listen to ${station.name} on Radddio App`}>Listen on Radddio</a>
+              <a href={localizePath("/")} class="text-decoration-none">{t("Browse {0} Stations", [site.countryName])}</a>
+              <a href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener" class="text-decoration-none" aria-label={t(`Listen to ${station.name} on Radddio App`)}>{t("Listen on Radddio")}</a>
               {station.homepage && (
-              <a href={station.homepage} target="_blank" rel="noopener" class="text-decoration-none">Station Website</a>
+              <a href={localizePath(station.homepage)} target="_blank" rel="noopener" class="text-decoration-none">{t("Station Website")}</a>
                )}
-              <button id="btnCopyLink" type="button" class="btn btn-link p-0 text-decoration-none text-start text-secondary">Copy Link</button>
-            <a class="text-decoration-none text-secondary" data-stream-link href={streamUrl} target="_blank" rel="noopener">Open Stream</a>
-            <button class="btn btn-link p-0 text-danger text-decoration-none text-start" id="btnReport" type="button">Report Stream Issue</button>
+              <button id="btnCopyLink" type="button" class="btn btn-link p-0 text-decoration-none text-start text-secondary">{t("Copy Link")}</button>
+            <a class="text-decoration-none text-secondary" data-stream-link href={localizePath(streamUrl)} target="_blank" rel="noopener">{t("Open Stream")}</a>
+            <button class="btn btn-link p-0 text-danger text-decoration-none text-start" id="btnReport" type="button">{t("Report Stream Issue")}</button>
             </div>
           </div>
         </div>
       </aside>
 
       <section class="glass rounded-3 p-3 p-md-4 mt-4">
-        <h2 class="h6 fw-bold mb-3"><i class="bi bi-question-circle me-2"></i>Useful Tips</h2>
+        <h2 class="h6 fw-bold mb-3"><i class="bi bi-question-circle me-2" />{t("Useful Tips")}</h2>
         <ul class="small-muted mb-0">
-          <li>If playback stops, try switching networks or refresh the page.</li>
-          <li>Some stations limit connections; retry after 10–30 seconds.</li>
-          <li>Prefer streams 128 kbps or higher for best quality.</li>
+          <li>{t("If playback stops, try switching networks or refresh the page.")}</li>
+          <li>{t("Some stations limit connections; retry after 10–30 seconds.")}</li>
+          <li>{t("Prefer streams 128 kbps or higher for best quality.")}</li>
         </ul>
       </section>
     </div>
   </div>
 
-  <div id="player-config" data-config={JSON.stringify(playerScriptConfig)} hidden></div>
+  <div id="player-config" data-config={JSON.stringify({ ...playerScriptConfig, shareTitle: t(playerScriptConfig.shareTitle), shareText: t(playerScriptConfig.shareText) })} hidden />
   <script>
 // @ts-nocheck
+import { clientTranslate as t } from '../../i18n/translate';
     import { metadataPollDelay } from "../../lib/metadata-polling.mjs";
     import { radiojarHistoryTracks } from "../../lib/radiojar.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
@@ -881,9 +832,9 @@ const structuredData = {
     const nextTimeEl = /** @type {HTMLTimeElement | null} */ (document.getElementById('recent-next-time'));
     const nextArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('recent-next-art'));
     const historyListEl = /** @type {HTMLUListElement | null} */ (document.getElementById('recent-history'));
-    const historyDefaultMessage = historyListEl?.dataset?.defaultMessage || 'Waiting for station metadata…';
-    const defaultTrackTitle = 'Waiting for metadata';
-    const defaultTrackMeta = 'Tune in to update';
+    const historyDefaultMessage = historyListEl?.dataset?.defaultMessage || t('Waiting for station metadata…');
+    const defaultTrackTitle = t('Waiting for metadata');
+    const defaultTrackMeta = t('Tune in to update');
     const HISTORY_REFRESH_INTERVAL = 60000;
     let lastHistoryFetch = 0;
     let lastNowPlayingText = null;
@@ -918,7 +869,7 @@ const structuredData = {
         return;
       }
       artEl.src = info.artwork;
-      artEl.alt = info.primary ? `Cover artwork for ${info.primary}` : 'Track artwork';
+      artEl.alt = info.primary ? t(`Cover artwork for ${info.primary}`) : t('Track artwork');
       artEl.hidden = false;
       artEl.onerror = () => {
         artEl.hidden = true;
@@ -1079,7 +1030,7 @@ const structuredData = {
         const startedAt = new Date(timestamp * 1000);
         const valid = Number.isFinite(timestamp) && timestamp > 0 && !Number.isNaN(startedAt.getTime());
         timeEl.hidden = !valid;
-        timeEl.textContent = valid ? startedAt.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true }) : '';
+        timeEl.textContent = valid ? startedAt.toLocaleTimeString(document.documentElement.lang === 'hr' ? 'hr-HR' : 'en-US', { hour: '2-digit', minute: '2-digit' }) : '';
         if (valid) timeEl.setAttribute('datetime', startedAt.toISOString());
         else timeEl.removeAttribute('datetime');
       }
@@ -1118,7 +1069,7 @@ const structuredData = {
         if (info.artwork) {
           const artwork = document.createElement('img');
           artwork.src = info.artwork;
-          artwork.alt = info.primary ? `Cover artwork for ${info.primary}` : 'Track artwork';
+          artwork.alt = info.primary ? t(`Cover artwork for ${info.primary}`) : t('Track artwork');
           artwork.width = 48;
           artwork.height = 48;
           artwork.className = 'rounded object-fit-cover flex-shrink-0';
@@ -1195,7 +1146,7 @@ const structuredData = {
     resetHistoryList();
 
     if (!playerConfig.hasStream) {
-      setStatus('Unavailable');
+      setStatus(t('Unavailable'));
       btnPlay?.setAttribute('disabled', 'true');
     }
 
@@ -1207,24 +1158,24 @@ const structuredData = {
         if (errorMessage) errorMessage.textContent = '';
       };
       const showPlaybackError = (err = null) => {
-        let message = 'This browser could not play the stream. The station may be unavailable, or the connection may have been blocked.';
+        let message = t('This browser could not play the stream. The station may be unavailable, or the connection may have been blocked.');
         if (navigator.onLine === false) {
-          message = 'Your browser appears to be offline. Check your internet connection and try again.';
+          message = t('Your browser appears to be offline. Check your internet connection and try again.');
         } else if (err?.name === 'NotAllowedError') {
-          message = 'Your browser blocked audio playback. Allow sound for this site in your browser settings, then press Play.';
+          message = t('Your browser blocked audio playback. Allow sound for this site in your browser settings, then press Play.');
         } else if (audio.error?.code === 2) {
-          message = 'The audio connection failed. The station may be offline, or a network or browser restriction may be blocking the stream.';
+          message = t('The audio connection failed. The station may be offline, or a network or browser restriction may be blocking the stream.');
         } else if (audio.error?.code === 3) {
-          message = 'Your browser could not decode the audio. The stream may be damaged or use an unsupported audio format.';
+          message = t('Your browser could not decode the audio. The stream may be damaged or use an unsupported audio format.');
         } else if (audio.error?.code === 4 || err?.name === 'NotSupportedError') {
-          message = 'Your browser could not load this audio source. Its format may be unsupported, or the server may be unavailable or blocking access.';
+          message = t('Your browser could not load this audio source. Its format may be unsupported, or the server may be unavailable or blocking access.');
         } else if (audio.error?.code === 1 || err?.name === 'AbortError') {
-          message = 'Audio loading was interrupted. Press Play to try again.';
+          message = t('Audio loading was interrupted. Press Play to try again.');
         }
         if (errorMessage) errorMessage.textContent = message;
         if (errorPanel) errorPanel.hidden = false;
         updatePlaybackButton(false);
-        setStatus('Playback failed');
+        setStatus(t('Playback failed'));
       };
       let playbackRequested = false;
       let playbackRequestId = 0;
@@ -1233,7 +1184,7 @@ const structuredData = {
         const icon = btnPlay.querySelector('i');
         const label = btnPlay.querySelector('span');
         if (icon) icon.className = `bi ${active ? 'bi-stop-fill' : 'bi-play-fill'} me-1`;
-        if (label) label.textContent = active ? 'Stop' : 'Play';
+        if (label) label.textContent = active ? t('Stop') : t('Play');
         btnPlay.classList.toggle('btn-primary', !active);
         btnPlay.classList.toggle('btn-outline-secondary', active);
       };
@@ -1244,7 +1195,7 @@ const structuredData = {
           audio.pause();
           updatePlaybackButton(false);
           try { audio.currentTime = 0; } catch { /* Live streams may not be seekable. */ }
-          setStatus('Stopped');
+          setStatus(t('Stopped'));
           setBuffer(0);
           return;
         }
@@ -1252,7 +1203,7 @@ const structuredData = {
         updatePlaybackButton(true);
         try {
           if (audio.error) audio.load();
-          setStatus('Connecting');
+          setStatus(t('Connecting'));
           await audio.play();
         } catch (err) {
           if (requestId !== playbackRequestId) return;
@@ -1271,15 +1222,15 @@ const structuredData = {
         playerConfig.streamUrl = url;
         setBuffer(0);
         const quality = document.getElementById('quality');
-        if (quality) quality.textContent = option.quality || 'Quality not reported';
+        if (quality) quality.textContent = option.quality || t('Quality not reported');
         const details = document.getElementById('streamDetailMeta');
-        if (details) details.textContent = [option.codec ? `Codec: ${option.codec}` : null, option.bitrate ? `Bitrate: ${option.bitrate} kbps` : null].filter(Boolean).join(' · ');
+        if (details) details.textContent = [option.codec ? t(`Codec: ${option.codec}`) : null, option.bitrate ? t(`Bitrate: ${option.bitrate} kbps`) : null].filter(Boolean).join(' · ');
         document.querySelectorAll('[data-stream-link]').forEach(link => {
           link.href = url;
           if (link.classList.contains('mono')) link.textContent = url;
         });
         updatePlaybackButton(resume);
-        setStatus(resume ? 'Connecting' : 'Ready');
+        setStatus(resume ? t('Connecting') : t('Ready'));
         if (resume) {
           try { await audio.play(); }
           catch (error) { if (requestId === playbackRequestId) showPlaybackError(error); }
@@ -1304,10 +1255,10 @@ const structuredData = {
       syncVolumeControl();
 
       audio.addEventListener('play', () => updatePlaybackButton(true));
-      audio.addEventListener('playing', () => { clearPlaybackError(); updatePlaybackButton(true); setStatus('Playing'); });
-      audio.addEventListener('pause', () => { updatePlaybackButton(false); if (!errorPanel || errorPanel.hidden) setStatus('Stopped'); });
-      audio.addEventListener('waiting', () => setStatus('Buffering'));
-      audio.addEventListener('ended', () => { updatePlaybackButton(false); setStatus('Ended'); });
+      audio.addEventListener('playing', () => { clearPlaybackError(); updatePlaybackButton(true); setStatus(t('Playing')); });
+      audio.addEventListener('pause', () => { updatePlaybackButton(false); if (!errorPanel || errorPanel.hidden) setStatus(t('Stopped')); });
+      audio.addEventListener('waiting', () => setStatus(t('Buffering')));
+      audio.addEventListener('ended', () => { updatePlaybackButton(false); setStatus(t('Ended')); });
       audio.addEventListener('error', () => showPlaybackError());
 
       // Keep timer text nodes in place: textContent replaces children each second,
@@ -1348,15 +1299,15 @@ const structuredData = {
     btnCopyLink?.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(playerConfig.shareUrl);
-        setStatus(playerConfig.hasStream ? 'Link copied' : 'Copied');
-        setTimeout(() => setStatus(playerConfig.hasStream ? 'Idle' : 'Unavailable'), 1200);
+        setStatus(playerConfig.hasStream ? t('Link copied') : t('Copied'));
+        setTimeout(() => setStatus(playerConfig.hasStream ? t('Idle') : t('Unavailable')), 1200);
       } catch (error) {
         console.error(error);
       }
     });
 
     btnReport?.addEventListener('click', () => {
-      alert('Thanks. Please describe the issue on the report page.');
+      alert(t('Thanks. Please describe the issue on the report page.'));
     });
 
     btnShare?.addEventListener('click', async () => {
@@ -1369,8 +1320,8 @@ const structuredData = {
           });
         } else {
           await navigator.clipboard.writeText(playerConfig.shareUrl);
-          setStatus('Link copied');
-          setTimeout(() => setStatus(playerConfig.hasStream ? 'Idle' : 'Unavailable'), 1200);
+          setStatus(t('Link copied'));
+          setTimeout(() => setStatus(playerConfig.hasStream ? t('Idle') : t('Unavailable')), 1200);
         }
       } catch (error) {
         console.error(error);
@@ -1385,12 +1336,12 @@ const structuredData = {
       const isFav = icon.classList.contains('bi-heart-fill');
       icon.classList.toggle('bi-heart', isFav);
       icon.classList.toggle('bi-heart-fill', !isFav);
-      setStatus(!isFav ? 'Saved to favorites' : 'Removed from favorites');
-      setTimeout(() => setStatus(playerConfig.hasStream ? 'Idle' : 'Unavailable'), 1200);
+      setStatus(!isFav ? t('Saved to favorites') : t('Removed from favorites'));
+      setTimeout(() => setStatus(playerConfig.hasStream ? t('Idle') : t('Unavailable')), 1200);
     });
 
     btnVote?.addEventListener('click', () => {
-      alert('Vote submitted. Thank you.');
+      alert(t('Vote submitted. Thank you.'));
     });
 
     const extractNowPlayingText = (payload) => {
@@ -1743,7 +1694,7 @@ const structuredData = {
         const listeners = data?.listeners?.current ?? data?.currentlisteners ?? centovaEntry?.listeners ?? centovaEntry?.listenertotal;
         if (listenersEl) {
           const valid = (typeof listeners === 'number' || typeof listeners === 'string') && String(listeners).trim() !== '' && Number.isFinite(Number(listeners)) && Number(listeners) >= 0;
-          listenersEl.textContent = valid ? `Listeners: ${Number(listeners).toLocaleString()}` : '';
+          listenersEl.textContent = valid ? t(`Listeners: ${Number(listeners).toLocaleString()}`) : '';
           listenersEl.hidden = !valid;
         }
         const text = extractNowPlayingText(data);

@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../countries/site.mjs";
 import Layout from '../layouts/Layout.astro';
 import SEO from '../components/SEO.astro';
@@ -18,33 +21,36 @@ const stationCount = (server: string) => stations.filter(station => station.meta
 const title = countryText(`Live Tracks — Now Playing on Greek Radio | ${site.siteShortName}`);
 const description = 'Discover what is playing right now on AzuraCast, CentovaCast, Radiojar, and Icecast radio stations. Browse songs, artists, and stations, and listen live.';
 ---
-<Layout title={title} description={description}>
-  <SEO slot="seo" title={title} description={description} canonical={site.siteUrl + "/live-tracks/"} />
-  <h1 class="display-5 fw-bold mb-2">Live Tracks</h1>
-  <p class="lead text-muted">What’s playing right now across {stationCount('azuracast')} AzuraCast, {stationCount('centovacast')} CentovaCast, {stationCount('radiojar')} Radiojar, and {stationCount('icecast')} Icecast stations.</p>
+
+<Layout title={t(title)} description={description}>
+  <SEO slot="seo" title={t(title)} description={description} canonical={site.siteUrl + "/live-tracks/"} />
+  <h1 class="display-5 fw-bold mb-2">{t("Live Tracks")}</h1>
+  <p class="lead text-muted">{t("What’s playing right now across {0} AzuraCast, {1} CentovaCast, {2} Radiojar, and {3} Icecast stations.", [stationCount('azuracast'), stationCount('centovacast'), stationCount('radiojar'), stationCount('icecast')])}</p>
   <CategorySwitch current="live-tracks" />
     <div class="d-flex align-items-center flex-nowrap gap-2 mb-2">
-        <h2 class="h6 mb-0">On Air</h2><span class="badge rounded-pill badge-soft-green">Live</span>
+        <h2 class="h6 mb-0">{t("On Air")}</h2><span class="badge rounded-pill badge-soft-green">{t("Live")}</span>
     </div>
   <div class="live-track-list">
     {stations.map(station => (
       <article class="live-track p-2 px-3" data-server={station.metadata_server} data-endpoint={endpointFor(station)} data-stream={station.stream_url} data-name={station.name}>
-        <img class="track-cover rounded" src={station.favicon || '/radddio-app-icon.png'} data-fallback={station.favicon || '/radddio-app-icon.png'} alt={`${station.name} cover artwork`} width="60" height="60" loading="lazy" />
+        <img class="track-cover rounded" src={station.favicon || '/radddio-app-icon.png'} data-fallback={station.favicon || '/radddio-app-icon.png'} alt={t(`${station.name} cover artwork`)} width="60" height="60" loading="lazy" />
         <div class="track-copy">
-          <h3 class="track-title h6 fw-semibold mb-0">Loading song…</h3>
-          <p class="text-muted mb-0"><span class="track-artist"></span><a href={`/stations/${station.slug}/`} class="text-reset">{station.name}</a>{station.city ? ` · ${station.city}` : ''}</p>
-          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{station.metadata_server === 'azuracast' ? 'AzuraCast' : station.metadata_server === 'radiojar' ? 'Radiojar' : station.metadata_server === 'icecast' ? 'Icecast' : 'CentovaCast'}</span>
-          <span class="track-listeners small text-muted"></span>
-          <span class="track-status small text-muted" role="status"></span>
+          <h3 class="track-title h6 fw-semibold mb-0">{t("Loading song…")}</h3>
+          <p class="text-muted mb-0"><span class="track-artist" /><a href={localizePath(`/stations/${station.slug}/`)} class="text-reset">{station.name}</a>{t(station.city ? ` · ${station.city}` : '')}</p>
+          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{t(station.metadata_server === 'azuracast' ? 'AzuraCast' : station.metadata_server === 'radiojar' ? 'Radiojar' : station.metadata_server === 'icecast' ? 'Icecast' : 'CentovaCast')}</span>
+          <span class="track-listeners small text-muted" />
+          <span class="track-status small text-muted" role="status" />
         </div>
-        <button class="track-play btn rounded-circle" type="button" aria-label={`Play ${station.name}`}><i class="bi bi-play-fill" aria-hidden="true"></i></button>
+        <button class="track-play btn rounded-circle" type="button" aria-label={t(`Play ${station.name}`)}><i class="bi bi-play-fill" aria-hidden="true" /></button>
       </article>
     ))}
   </div>
-  <div id="live-metadata-config" data-poll={metadataConfig.pollIntervalMs} data-timeout={metadataConfig.requestTimeoutMs} hidden></div>
-  <audio id="live-tracks-audio" preload="none"></audio>
+  <div id="live-metadata-config" data-poll={metadataConfig.pollIntervalMs} data-timeout={metadataConfig.requestTimeoutMs} hidden />
+  <audio id="live-tracks-audio" preload="none" />
 </Layout>
 <script>
+import { clientTranslate as t } from '../i18n/translate';
+
   import { updateTrackText, trackArtworkController } from '../lib/live-track-view.mjs';
   import { metadataPollDelay } from '../lib/metadata-polling.mjs';
   import { icecastTrack } from '../lib/icecast.mjs';
@@ -57,7 +63,7 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
   let active: HTMLElement | null = null;
   let requestId = 0;
   const resetButton = (card: HTMLElement) => {
-    card.querySelector('button')!.setAttribute('aria-label', `Play ${card.dataset.name}`);
+    card.querySelector('button')!.setAttribute('aria-label', t(`Play ${card.dataset.name}`));
     card.querySelector('button i')!.className = 'bi bi-play-fill';
   };
   const artworkControllers = new Map<HTMLElement, ReturnType<typeof trackArtworkController>>();
@@ -71,23 +77,23 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
       if (previous) { resetButton(previous); previous.querySelector('.track-status')!.textContent = ''; }
       if (previous === card) { active = null; return; }
       active = card;
-      card.querySelector('button')!.setAttribute('aria-label', `Stop ${card.dataset.name}`);
+      card.querySelector('button')!.setAttribute('aria-label', t(`Stop ${card.dataset.name}`));
       card.querySelector('button i')!.className = 'bi bi-stop-fill';
-      card.querySelector('.track-status')!.textContent = 'Connecting…';
+      card.querySelector('.track-status')!.textContent = t('Connecting…');
       audio.src = card.dataset.stream!;
       try {
         await audio.play();
         if (currentRequest === requestId) card.querySelector('.track-status')!.textContent = '';
       } catch {
         if (currentRequest !== requestId) return;
-        card.querySelector('.track-status')!.textContent = 'Unable to play. Open the station for more options.';
+        card.querySelector('.track-status')!.textContent = t('Unable to play. Open the station for more options.');
         resetButton(card); active = null;
       }
     });
   });
   audio.addEventListener('error', () => {
     if (!active) return;
-    active.querySelector('.track-status')!.textContent = 'Stream unavailable.';
+    active.querySelector('.track-status')!.textContent = t('Stream unavailable.');
     resetButton(active); active = null;
   });
   audio.addEventListener('ended', () => { if (active) resetButton(active); active = null; });
@@ -113,7 +119,7 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
           const text = await response.text();
           const raw = text.includes('Markdown Content:') ? text.split('Markdown Content:').slice(1).join('Markdown Content:').trim() : text;
           const data = JSON.parse(raw);
-          if (data?.type === 'error') throw new Error('Metadata unavailable');
+          if (data?.type === 'error') throw new Error(t('Metadata unavailable'));
           const delay = Math.min(...entries.map(card => metadataPollDelay(card.dataset.server, data, pollInterval)));
           nextRefresh.set(endpoint, Date.now() + delay);
           for (const card of entries) {
@@ -126,11 +132,11 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
             const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;
             updateTrackText(listenersEl, hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '');
             listenersEl.hidden = !hasCount;
-            updateTrackText(card.querySelector('.track-title'), song?.title || song?.text || 'Song information unavailable');
+            updateTrackText(card.querySelector('.track-title'), song?.title || song?.text || t('Song information unavailable'));
             updateTrackText(card.querySelector('.track-artist'), song?.artist ? `${song.artist} · ` : '');
             const cover = card.querySelector<HTMLImageElement>('img')!;
             const usesFallback = artworkControllers.get(card)!(song?.art);
-            const alt = usesFallback ? `${card.dataset.name} logo` : `${song?.title || 'Current song'} cover artwork`;
+            const alt = usesFallback ? t(`${card.dataset.name} logo`) : t(`${song?.title || 'Current song'} cover artwork`);
             if (cover.alt !== alt) cover.alt = alt;
             card.dataset.loaded = 'true';
             card.querySelector('.track-title')!.removeAttribute('title');
@@ -138,8 +144,8 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
         } catch {
           nextRefresh.set(endpoint, Date.now() + pollInterval);
           entries.forEach(card => {
-            if (!card.dataset.loaded) updateTrackText(card.querySelector('.track-title'), 'Song information unavailable');
-            card.querySelector('.track-title')!.setAttribute('title', 'Metadata could not be refreshed. Retrying shortly.');
+            if (!card.dataset.loaded) updateTrackText(card.querySelector('.track-title'), t('Song information unavailable'));
+            card.querySelector('.track-title')!.setAttribute('title', t('Metadata could not be refreshed. Retrying shortly.'));
           });
         }
       }

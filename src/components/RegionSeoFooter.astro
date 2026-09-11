@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../i18n/index';
+const { t } = localeHelpers(Astro.url);
+
 interface Props {
   heading: string;
   text: string;
@@ -8,6 +11,6 @@ const { heading, text } = Astro.props;
 ---
 
 <section class="mt-5">
-  <h2>{heading}</h2>
-  <p>{text}</p>
+  <h2>{t(heading)}</h2>
+  <p>{t(text)}</p>
 </section>

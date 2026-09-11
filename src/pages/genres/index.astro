@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../../countries/site.mjs";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
@@ -74,8 +77,8 @@ const totalStations = rawStations.length;
 
 const siteRoot = site.siteUrl;
 const canonical = `${siteRoot}/genres/`;
-const pageTitle = countryText(`Greec${site.siteShortName} Stations by Genre | ${site.siteShortName}`);
-const pageDescription = countryText(`Explore Greec${site.siteShortName} stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.`);
+const pageTitle = countryText(`Greek Stations by Genre | ${site.siteShortName}`);
+const pageDescription = countryText(`Explore Greek stations by music genre to discover new sounds, compare styles, and jump to dedicated genre pages with curated station lists.`);
 const ogImageUrl = new URL(ogImage, siteRoot).href;
 
 const structuredData = {
@@ -89,36 +92,24 @@ const structuredData = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
-  <SEO
-    slot="seo"
-    title={pageTitle}
-    description={pageDescription}
-    canonical={canonical}
-    ogTitle={pageTitle}
-    ogDescription={pageDescription}
-    ogImage={ogImageUrl}
-    keywords={`${site.countryAdjective} radio genres, music genres ${site.countryName} radio`}
-    robots="index, follow"
-    author={site.siteName}
-    structuredData={structuredData}
-  />
+<Layout title={t(pageTitle)} description={pageDescription}>
+  <SEO slot="seo" title={t(pageTitle)} description={pageDescription} canonical={canonical} ogTitle={pageTitle} ogDescription={pageDescription} ogImage={ogImageUrl} keywords={`${site.countryAdjective} radio genres, music genres ${site.countryName} radio`} robots="index, follow" author={site.siteName} structuredData={structuredData} />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations by Genre</h1>
-    <h2 class="lead text-muted">Browse {site.countryAdjective} radiostations grouped by their primary genres.</h2>
-    <p class="text-muted small">Genres arranged alphabetically; stations in each genre sorted by votes.</p>
-    <p class="text-muted small">Showing {totalGenres} genres across {totalStations} stations.</p>
+    <h1 class="display-5 fw-bold mb-2">{t("{0} Radio Stations by Genre", [site.countryAdjective])}</h1>
+    <h2 class="lead text-muted">{t("Browse {0} radiostations grouped by their primary genres.", [site.countryAdjective])}</h2>
+    <p class="text-muted small">{t("Genres arranged alphabetically; stations in each genre sorted by votes.")}</p>
+    <p class="text-muted small">{t("Showing {0} genres across {1} stations.", [totalGenres, totalStations])}</p>
 
   </div>
   <CategorySwitch current="genres" />
   <div class="mb-4">
-    <h2 class="h6 text-muted text-uppercase">Browse genres</h2>
+    <h2 class="h6 text-muted text-uppercase">{t("Browse genres")}</h2>
     <div class="d-flex flex-wrap gap-2">
       {genreBadgeEntries.map(({ genre, stations, slug }) => {
         return (
-        <a class="text-decoration-none d-inline-flex align-items-center" href={`/genres/${slug}/`} aria-label={`${genre} radio stations (${stations.length})`}>
-            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{genre}</span>
-            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{stations.length}</span>
+        <a class="text-decoration-none d-inline-flex align-items-center" href={localizePath(`/genres/${slug}/`)} aria-label={t(`${genre} radio stations (${stations.length})`)}>
+            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{t(genre)}</span>
+            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{t(stations.length)}</span>
         </a>
         );
       })}
@@ -129,14 +120,14 @@ const structuredData = {
       const topStations = stations.slice(0, 3).map((station) => station.name).join(", ");
       return (
         <div class="col-12 col-md-6 col-xl-4">
-          <a href={`/genres/${slug}/`} class="text-decoration-none">
+          <a href={localizePath(`/genres/${slug}/`)} class="text-decoration-none">
             <div class="border rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
               <div>
-                <h3 class="h6 fw-bold text-dark mb-1">{genre}</h3>
-                <p class="small text-muted mb-2">{stations.length} station{stations.length === 1 ? "" : "s"}</p>
-                <p class="small text-muted mb-0">Top: {topStations || "Explore stations"}</p>
+                <h3 class="h6 fw-bold text-dark mb-1">{t(genre)}</h3>
+                <p class="small text-muted mb-2">{t("{0} station{1}", [stations.length, stations.length === 1 ? "" : "s"])}</p>
+                <p class="small text-muted mb-0">{t("Top: {0}", [topStations || "Explore stations"])}</p>
               </div>
-              <span class="small text-primary fw-semibold mt-3">View stations →</span>
+              <span class="small text-primary fw-semibold mt-3">{t("View stations →")}</span>
             </div>
           </a>
         </div>

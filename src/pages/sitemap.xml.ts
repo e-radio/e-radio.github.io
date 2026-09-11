@@ -98,10 +98,6 @@ export async function GET() {
       lastmod,
     },
     {
-      loc: `${ROOT_URL}/demo/`,
-      lastmod,
-    },
-    {
       loc: `${ROOT_URL}/dmca/`,
       lastmod,
     },
@@ -256,7 +252,9 @@ export async function GET() {
     "  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
     "  xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\"",
     ">",
-    urls.map((entry) => formatUrlEntry(entry)).join("\n"),
+    urls.flatMap(entry => site.countryCode === 'HR' && site.locales?.includes('hr')
+      ? [entry, { ...entry, loc: `${ROOT_URL}/hr${entry.loc.slice(ROOT_URL.length)}` }]
+      : [entry]).map((entry) => formatUrlEntry(entry)).join("\n"),
     "</urlset>",
   ].join("\n");
 

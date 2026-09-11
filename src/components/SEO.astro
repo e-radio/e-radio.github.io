@@ -1,4 +1,6 @@
 ---
+import { localeHelpers } from "../i18n/index";
+const { t, localizePath, locale } = localeHelpers(Astro.url);
 import { site, countryText } from "../../countries/site.mjs";
 interface Props {
   title?: string;
@@ -33,36 +35,50 @@ const {
   prevUrl,
   nextUrl,
 } = Astro.props;
+function localizeStructuredData(value: any, key = ''): any {
+  if (Array.isArray(value)) return value.map(item => localizeStructuredData(item, key));
+  if (value && typeof value === 'object') {
+    const result = Object.fromEntries(Object.entries(value).map(([k,v]) => [k, localizeStructuredData(v,k)]));
+    if (['WebSite', 'WebPage', 'CollectionPage'].includes(value['@type'])) result.inLanguage = locale;
+    return result;
+  }
+  if (typeof value !== 'string') return value;
+  if (['url', '@id', 'item'].includes(key)) return localizePath(value);
+  if (['name','description','headline','articleBody','addressRegion','addressLocality','addressCountry'].includes(key)) return t(value);
+  if (key === 'inLanguage') return locale;
+  return value;
+}
+
 ---
 
-{title && <title>{title}</title>}
-{description && <meta name="description" content={description} />}
-{canonical && <link rel="canonical" href={canonical} />}
+{title && <title>{t(title)}</title>}
+{description && <meta name="description" content={t(description)} />}
+{canonical && <link rel="canonical" href={localizePath(canonical)} />}
 {robots && <meta name="robots" content={robots} />}
 {author && <meta name="author" content={author} />}
 
 {/* Pagination links */}
-{prevUrl && <link rel="prev" href={prevUrl} />}
-{nextUrl && <link rel="next" href={nextUrl} />}
+{prevUrl && <link rel="prev" href={localizePath(prevUrl)} />}
+{nextUrl && <link rel="next" href={localizePath(nextUrl)} />}
 
 {/* Open Graph Tags */}
 {ogType && <meta property="og:type" content={ogType} />}
-{ogTitle && <meta property="og:title" content={ogTitle} />}
-{ogDescription && <meta property="og:description" content={ogDescription} />}
-{canonical && <meta property="og:url" content={canonical} />}
+{ogTitle && <meta property="og:title" content={t(ogTitle)} />}
+{ogDescription && <meta property="og:description" content={t(ogDescription)} />}
+{canonical && <meta property="og:url" content={localizePath(canonical)} />}
 {ogImage && <meta property="og:image" content={ogImage} />}
-{ogImage && <meta property="og:image:alt" content={ogTitle || `${site.siteName} logo`} />}
+{ogImage && <meta property="og:image:alt" content={t(ogTitle) || `${site.siteName} logo`} />}
 <meta property="og:site_name" content={site.siteName} />
-<meta property="og:locale" content={site.socialLocale} />
+<meta property="og:locale" content={locale === "hr" ? "hr_HR" : site.socialLocale} />
 
 {/* Twitter Card Tags */}
 <meta name="twitter:card" content="summary_large_image" />
 {site.twitterHandle && <meta name="twitter:site" content={site.twitterHandle} />}
-{ogTitle && <meta name="twitter:title" content={ogTitle} />}
-{ogDescription && <meta name="twitter:description" content={ogDescription} />}
+{ogTitle && <meta name="twitter:title" content={t(ogTitle)} />}
+{ogDescription && <meta name="twitter:description" content={t(ogDescription)} />}
 {ogImage && <meta name="twitter:image" content={ogImage} />}
 
 {/* JSON-LD Structured Data */}
 {structuredData && (
-  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  <script type="application/ld+json" set:html={JSON.stringify(localizeStructuredData(structuredData))} />
 )}

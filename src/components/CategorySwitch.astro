@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 interface Category {
   key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres" | "now-playing" | "live-tracks";
   label: string;
@@ -23,7 +26,8 @@ const categories: Category[] = [
   { key: "now-playing", label: "Now Playing", href: "/now-playing/", icon: "bi-music-note-beamed" },
 ];
 ---
-<nav aria-label="Station categories" class="category-switch mb-4 overflow-auto px-2 px-md-0">
+
+<nav aria-label={t("Station categories")} class="category-switch mb-4 overflow-auto px-2 px-md-0">
   <div class="d-inline-flex bg-light rounded-3 p-1 flex-nowrap gap-1 mx-md-auto" role="group" style="min-width: max-content;">
     {categories.map((category) => {
       const isActive = category.key === current;
@@ -32,14 +36,8 @@ const categories: Category[] = [
       const inactiveClasses = "text-secondary";
       const classes = `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`;
       return (
-        <a
-          href={category.href}
-          class={classes}
-          aria-current={isActive ? "page" : undefined}
-        >
-          <i class={`bi ${category.icon} me-1`} ></i>
-          {category.label}
-        </a>
+        <a href={localizePath(category.href)} class={classes} aria-current={isActive ? "page" : undefined}>
+          <i class={`bi ${category.icon} me-1`} />{t(category.label)}</a>
       );
     })}
   </div>

@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../countries/site.mjs";
 import Layout from "../layouts/Layout.astro";
 import SEO from "../components/SEO.astro";
@@ -33,60 +36,43 @@ const structuredData = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
-  <SEO
-    slot="seo"
-    title={pageTitle}
-    description={pageDescription}
-    canonical={canonical}
-    ogTitle={pageTitle}
-    ogDescription={pageDescription}
-    ogImage={ogImageUrl}
-    keywords={`top rated radio, ${site.countryAdjective} radio, popular radio ${site.countryName}`}
-    robots="index, follow"
-    author={site.siteName}
-    structuredData={structuredData}
-  />
+<Layout title={t(pageTitle)} description={pageDescription}>
+  <SEO slot="seo" title={t(pageTitle)} description={pageDescription} canonical={canonical} ogTitle={pageTitle} ogDescription={pageDescription} ogImage={ogImageUrl} keywords={`top rated radio, ${site.countryAdjective} radio, popular radio ${site.countryName}`} robots="index, follow" author={site.siteName} structuredData={structuredData} />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">Popular {site.countryAdjective} Radio Stations Online</h1>
-    <h2 class="lead text-muted">Discover the most loved radio stations from {site.countryName}.</h2>
-    <p class="text-muted small">Ranked by listener votes and refreshed daily.</p>
-    <p class="text-muted small">Showing the top {topStations.length} {site.countryAdjective} radio stations right now.</p>
+    <h1 class="display-5 fw-bold mb-2">{t("Popular {0} Radio Stations Online", [site.countryAdjective])}</h1>
+    <h2 class="lead text-muted">{t("Discover the most loved radio stations from {0}.", [site.countryName])}</h2>
+    <p class="text-muted small">{t("Ranked by listener votes and refreshed daily.")}</p>
+    <p class="text-muted small">{t("Showing the top {0} {1} radio stations right now.", [topStations.length, site.countryAdjective])}</p>
   </div>
   <CategorySwitch current="top-rated" />
   <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
     {topStations.map((station, index) => (
       <div class={`station-item position-relative ${index !== topStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
-        <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`} itemprop="url"></a>
+        <a href={localizePath(`/stations/${station.slug}/`)} class="stretched-link" aria-label={t(`Go to ${station.name}`)} itemprop="url" />
         <div class="station-item-body p-3">
           <div class="row align-items-center g-3">
             <div class="col-auto">
               {station.favicon ? (
-                <Image src={station.favicon} alt={`${station.name} logo`} class="rounded station-logo" width={60} height={60} itemprop="image" />
+                <Image src={station.favicon} alt={t(`${station.name} logo`)} class="rounded station-logo" width={60} height={60} itemprop="image" />
               ) : (
-                <Image src={radioAppIconUrl} alt="Radddio app icon" class="rounded station-logo" width={60} height={60} itemprop="image" />
+                <Image src={radioAppIconUrl} alt={t("Radddio app icon")} class="rounded station-logo" width={60} height={60} itemprop="image" />
               )}
             </div>
             <div class="col flex-grow-1">
               <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{station.name}</h3>
               <p class="small text-muted mb-1">
-                {station.state ? <span itemprop="addressLocality"><i class="bi bi-geo-alt me-1" aria-hidden="true"></i>{station.state}</span> : null}
-                {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" aria-hidden="true"></i>{station.bitrate} kbps</span> : null}
-                <span class="ms-2"><i class="bi bi-bar-chart me-1" aria-hidden="true"></i>{station.votes || 0} votes</span>
+                {station.state ? <span itemprop="addressLocality"><i class="bi bi-geo-alt me-1" aria-hidden="true" />{t(station.state)}</span> : null}
+                {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" aria-hidden="true" />{t("{0} kbps", [station.bitrate])}</span> : null}
+                <span class="ms-2"><i class="bi bi-bar-chart me-1" aria-hidden="true" />{t("{0} votes", [station.votes || 0])}</span>
               </p>
               <div class="d-flex gap-2 flex-wrap">
                 {station.genres && station.genres.slice(0, 3).map((genre) => (
-                  <a
-                    href={`/genres/${slugify(genre)}/`}
-                    class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
-                  >
-                    {genre}
-                  </a>
+                  <a href={localizePath(`/genres/${slugify(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
                 ))}
               </div>
             </div>
             <div class="col-auto text-end d-md-block">
-              <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}><Image src={radddioBadgeUrl} alt="Radddio app badge" width={144} height={47} /></a>
+              <a href={localizePath(radddioURL)} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={t(`Listen to ${station.name} on Radddio App`)}><Image src={radddioBadgeUrl} alt={t("Radddio app badge")} width={144} height={47} /></a>
             </div>
           </div>
         </div>

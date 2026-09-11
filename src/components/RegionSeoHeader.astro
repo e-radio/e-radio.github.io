@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 interface Props {
   heading: string;
   subtitle: string;
@@ -19,9 +22,9 @@ const {
 ---
 
 <div class="mb-4">
-  <h1 class="display-5 fw-bold mb-2">{heading}</h1>
-  <h2 class="lead text-muted">{subtitle}</h2>
-  <p class="text-muted mt-3">{introduction}</p>
-  <p class="text-muted small mt-2">{rangeLabel}</p>
-  <p class="small text-muted mb-2"><a href={backHref}>← {backLabel}</a></p>
+  <h1 class="display-5 fw-bold mb-2">{t(heading)}</h1>
+  <h2 class="lead text-muted">{t(subtitle)}</h2>
+  <p class="text-muted mt-3">{t(introduction)}</p>
+  <p class="text-muted small mt-2">{t(rangeLabel)}</p>
+  <p class="small text-muted mb-2"><a href={localizePath(backHref)}>{t("← {0}", [backLabel])}</a></p>
 </div>

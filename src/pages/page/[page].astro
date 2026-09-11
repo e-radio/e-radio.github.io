@@ -1,4 +1,7 @@
 ---
+import { localeHelpers } from '../../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../../countries/site.mjs";
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
@@ -20,7 +23,7 @@ export async function getStaticPaths() {
   
   // Generate paths for each page
   const paths = [];
-  for (let i = 1; i <= totalPages; i++) {
+  for (let i = site.countryCode === "HR" ? 2 : 1; i <= totalPages; i++) {
     paths.push({
       params: { page: String(i) },
       props: { allStations, currentPage: i, totalPages }
@@ -96,41 +99,27 @@ const structuredData = {
 };
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
-  <SEO 
-    slot="seo"
-    title={pageTitle}
-    description={pageDescription}
-    canonical={canonical}
-    ogTitle={pageTitle}
-    ogDescription={pageDescription}
-    ogImage={ogImageUrl}
-    keywords={countryText(`Greek radio, liv${site.siteShortName}, Greece stations, onlin${site.siteShortName}, radio streaming`)}
-    robots="index, follow"
-    author={site.siteName}
-    prevUrl={page > 1 ? page === 2 ? `${siteRoot}/` : `${siteRoot}/page/${page - 1}/` : undefined}
-    nextUrl={page < totalPages ? `${siteRoot}/page/${page + 1}/` : undefined}
-    structuredData={structuredData}
-  />
+<Layout title={t(pageTitle)} description={pageDescription}>
+  <SEO slot="seo" title={t(pageTitle)} description={pageDescription} canonical={canonical} ogTitle={pageTitle} ogDescription={pageDescription} ogImage={ogImageUrl} keywords={countryText(`Greek radio, liv${site.siteShortName}, Greece stations, onlin${site.siteShortName}, radio streaming`)} robots="index, follow" author={site.siteName} prevUrl={page > 1 ? page === 2 ? `${siteRoot}/` : `${siteRoot}/page/${page - 1}/` : undefined} nextUrl={page < totalPages ? `${siteRoot}/page/${page + 1}/` : undefined} structuredData={structuredData} />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">{site.countryAdjective} Radio Stations</h1>
-    <p class="lead text-muted">Discover {totalStations} live radio stations from {site.countryName}. Sorted by popularity.</p>
-    <p class="text-muted small">Showing stations {startIndex + 1}–{Math.min(endIndex, totalStations)} of {totalStations}</p>
+    <h1 class="display-5 fw-bold mb-2">{t("{0} Radio Stations", [site.countryAdjective])}</h1>
+    <p class="lead text-muted">{t("Discover {0} live radio stations from {1}. Sorted by popularity.", [totalStations, site.countryName])}</p>
+    <p class="text-muted small">{t("Showing stations {0}–{1} of {2}", [startIndex + 1, Math.min(endIndex, totalStations), totalStations])}</p>
   </div>
 
   <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
     {topStations.map((station, index) => (
       <div class={`station-item position-relative ${index !== topStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
-        <a href={`/stations/${station.slug}/`} class="stretched-link" aria-label={`Go to ${station.name}`} itemprop="url"></a>
+        <a href={localizePath(`/stations/${station.slug}/`)} class="stretched-link" aria-label={t(`Go to ${station.name}`)} itemprop="url" />
         <div class="station-item-body p-3">
           <div class="row align-items-center g-3">
 
             {/* Station Icon */}
               <div class="col-auto">
                 {station.favicon ? (
-                  <Image src={station.favicon} alt={`${station.name} Logo`} class="rounded station-logo" width={60} height={60} itemprop="image" />
+                  <Image src={station.favicon} alt={t(`${station.name} Logo`)} class="rounded station-logo" width={60} height={60} itemprop="image" />
                 ) : (
-                  <Image src={radioAppIconUrl} alt="Radddio App Icon" class="rounded station-logo" width={60} height={60} itemprop="image" />
+                  <Image src={radioAppIconUrl} alt={t("Radddio App Icon")} class="rounded station-logo" width={60} height={60} itemprop="image" />
                 )}
               </div>
 
@@ -138,24 +127,19 @@ const structuredData = {
               <div class="col flex-grow-1">
                   <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{station.name}</h3>
                   <p class="small text-muted mb-1">
-                    {station.state ? <span><i class="bi bi-geo-alt me-1"></i>{station.state}</span> : null}
-                    {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1"></i>{station.bitrate} kbps</span> : null}
+                    {station.state ? <span><i class="bi bi-geo-alt me-1" />{t(station.state)}</span> : null}
+                    {station.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" />{t("{0} kbps", [station.bitrate])}</span> : null}
                   </p>
                   <div class="d-flex gap-2 flex-wrap">
                     {station.genres && station.genres.slice(0, 3).map((genre) => (
-                      <a
-                        href={`/genres/${slugify(genre)}/`}
-                        class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link"
-                      >
-                        {genre}
-                      </a>
+                      <a href={localizePath(`/genres/${slugify(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
                     ))}
                   </div>
               </div>
 
             {/* Action */}
             <div class="col-auto text-end d-md-block">
-              <a href={radddioURL} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={`Listen to ${station.name} on Radddio App`}><Image src={radddioBadgeUrl} alt="Radddio App Badge" width={144} height={47} /></a>
+              <a href={localizePath(radddioURL)} class="text-decoration-none radddio-badge" target="_blank" rel="nofollow noopener" aria-label={t(`Listen to ${station.name} on Radddio App`)}><Image src={radddioBadgeUrl} alt={t("Radddio App Badge")} width={144} height={47} /></a>
             </div>
           </div>
         </div>
@@ -164,24 +148,22 @@ const structuredData = {
   </div>
 
   {/* Pagination */}
-  <nav aria-label="Page navigation" class="mt-5">
+  <nav aria-label={t("Page navigation")} class="mt-5">
     <ul class="pagination justify-content-center">
       {/* Previous Button */}
         <li class={`page-item ${page === 1 ? 'disabled' : ''}`}>
-          <a class="page-link" href={page > 1 ? page === 2 ? '/' : `/page/${page - 1}/` : (page === 1 ? '/' : `/page/${page}/`)}>
-          Previous
-        </a>
+          <a class="page-link" href={localizePath(page > 1 ? page === 2 ? '/' : `/page/${page - 1}/` : (page === 1 ? '/' : `/page/${page}/`))}> {t("Previous")} </a>
       </li>
 
       {/* First page link if not visible */}
       {pageNumbers[0] > 1 && (
         <>
           <li class="page-item">
-            <a class="page-link" href="/">1</a>
+            <a class="page-link" href={localizePath("/")}>{t("1")}</a>
           </li>
           {pageNumbers[0] > 2 && (
             <li class="page-item disabled">
-              <span class="page-link">...</span>
+              <span class="page-link">{t("...")}</span>
             </li>
           )}
         </>
@@ -190,9 +172,7 @@ const structuredData = {
       {/* Page Numbers */}
       {pageNumbers.map((pageNum) => (
         <li class={`page-item ${pageNum === page ? 'active' : ''}`}>
-          <a class="page-link" href={pageNum === 1 ? '/' : `/page/${pageNum}/`}>
-            {pageNum}
-          </a>
+          <a class="page-link" href={localizePath(pageNum === 1 ? '/' : `/page/${pageNum}/`)}>{t(pageNum)}</a>
         </li>
       ))}
 
@@ -201,20 +181,18 @@ const structuredData = {
         <>
           {pageNumbers[pageNumbers.length - 1] < totalPages - 1 && (
             <li class="page-item disabled">
-              <span class="page-link">...</span>
+              <span class="page-link">{t("...")}</span>
             </li>
           )}
           <li class="page-item">
-            <a class="page-link" href={`/page/${totalPages}/`}>{totalPages}</a>
+            <a class="page-link" href={localizePath(`/page/${totalPages}/`)}>{t(totalPages)}</a>
           </li>
         </>
       )}
 
       {/* Next Button */}
         <li class={`page-item ${page === totalPages ? 'disabled' : ''}`}>
-          <a class="page-link" href={page < totalPages ? `/page/${page + 1}/` : (page === 1 ? '/' : `/page/${page}/`)}>
-          Next
-        </a>
+          <a class="page-link" href={localizePath(page < totalPages ? `/page/${page + 1}/` : (page === 1 ? '/' : `/page/${page}/`))}> {t("Next")} </a>
       </li>
     </ul>
   </nav>

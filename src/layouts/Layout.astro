@@ -1,4 +1,7 @@
 ---
+import { localeHelpers, languagePath, multilingual } from '../i18n/index';
+const { t, localizePath, locale } = localeHelpers(Astro.url);
+
 import { site, countryText } from "../../countries/site.mjs";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css';
@@ -17,7 +20,7 @@ const {
 ---
 
 <!DOCTYPE html>
-<html lang={site.language}>
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,24 +31,27 @@ const {
     <meta property="og:type" content="website" />
     
     <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href={localizePath("https://cdn.jsdelivr.net")} />
+    <link rel="dns-prefetch" href={localizePath("https://cdn.jsdelivr.net")} />
+    <link rel="stylesheet" href={localizePath("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")} />
     
-    <link rel="icon" type="image/svg+xml" href={site.favicon} />
-    <link rel="icon" type="image/png" sizes="32x32" href={site.favicon32} />
-    <link rel="icon" type="image/png" sizes="192x192" href={site.icon192} />
-    <link rel="apple-touch-icon" sizes="180x180" href={site.appleTouchIcon} />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href={localizePath(site.favicon)} />
+    <link rel="icon" type="image/png" sizes="32x32" href={localizePath(site.favicon32)} />
+    <link rel="icon" type="image/png" sizes="192x192" href={localizePath(site.icon192)} />
+    <link rel="apple-touch-icon" sizes="180x180" href={localizePath(site.appleTouchIcon)} />
+    <link rel="manifest" href={locale === "hr" ? "/hr/site.webmanifest" : "/site.webmanifest"} />
     <meta name="application-name" content={site.siteName} />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content={site.siteShortName} />
     
+    {multilingual && ['en', 'hr', 'x-default'].map(language => (
+      <link rel="alternate" hreflang={language} href={`${site.siteUrl}${languagePath(Astro.url.pathname, language === 'hr' ? 'hr' : 'en')}`} />
+    ))}
     <!-- SEO slot -->
     <slot name="seo">
-      <title>{title}</title>
+      <title>{t(title)}</title>
       {description && <meta name="description" content={description} />}
     </slot>
     {site.googleVerification && <meta name="google-site-verification" content={site.googleVerification} />}
@@ -55,10 +61,14 @@ const {
     <header class="bg-light border-bottom">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-lg">
-          <a href="/" class="navbar-brand fw-bold d-flex align-items-center gap-2">
-            <img src={site.logo} width="32" height="32" alt={`${site.siteName} app icon`} />
-            <span>{site.siteName}</span>
+          <a href={localizePath("/")} class="navbar-brand fw-bold d-flex align-items-center gap-2">
+            <img src={site.logo} width="32" height="32" alt={t(`${site.siteName} app icon`)} />
+            <span>{t(site.siteName)}</span>
           </a>
+          {multilingual && <nav aria-label={locale === 'hr' ? 'Odabir jezika' : 'Language selection'} class="d-flex gap-3 ms-auto">
+            <a href={languagePath(Astro.url.pathname, 'en')} lang="en" hreflang="en" aria-current={locale === 'en' ? 'page' : undefined}>English</a>
+            <a href={languagePath(Astro.url.pathname, 'hr')} lang="hr" hreflang="hr" aria-current={locale === 'hr' ? 'page' : undefined}>Hrvatski</a>
+          </nav>}
         </div>
       </nav>
     </header>
@@ -73,52 +83,52 @@ const {
       <div class="container-lg py-5">
         <div class="row pt-2">
           <div class="col-md-6 col-lg-3 mb-4">
-            <h5 class="mb-4 text-white">Explore</h5>
+            <h5 class="mb-4 text-white">{t("Explore")}</h5>
             <ul class="nav flex-column text-primary-hover">
-              <li class="nav-item"><a class="nav-link pt-0 ps-0 fw-light" href="/">Stations</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/top-rated/">Top Rated</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/high-quality/">High Quality</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/genres/">Genres</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/live-tracks/">Live Tracks</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/now-playing/">Now Playing</a></li>
+              <li class="nav-item"><a class="nav-link pt-0 ps-0 fw-light" href={localizePath("/")}>{t("Stations")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/top-rated/")}>{t("Top Rated")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/high-quality/")}>{t("High Quality")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/genres/")}>{t("Genres")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/live-tracks/")}>{t("Live Tracks")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/now-playing/")}>{t("Now Playing")}</a></li>
             </ul>
           </div>
 
           <div class="col-md-6 col-lg-3 mb-4">
-            <h5 class="mb-4 text-white">By Location</h5>
+            <h5 class="mb-4 text-white">{t("By Location")}</h5>
             <ul class="nav flex-column text-primary-hover">
-              <li class="nav-item"><a class="nav-link pt-0 ps-0 fw-light" href="/city/">By City</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/region/">By Region</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/demo/">Demo Player</a></li>
+              <li class="nav-item"><a class="nav-link pt-0 ps-0 fw-light" href={localizePath("/city/")}>{t("By City")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/region/")}>{t("By Region")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/demo/")}>{t("Demo Player")}</a></li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-lg-3 mb-4">
-            <h5 class="mb-4 text-white">Stay Connected</h5>
+            <h5 class="mb-4 text-white">{t("Stay Connected")}</h5>
             <ul class="nav flex-column text-primary-hover">
-              <li class="nav-item"><a class="nav-link pt-0 ps-0 fw-light" href="https://radddio.com" rel="nofollow">Listen on Radddio</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="https://radddio.com/stations/">Station Directory</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/sitemap.xml">Sitemap</a></li>
-              <li class="nav-item"><a class="nav-link ps-0 fw-light" href="/dmca/">DMCA</a></li>
+              <li class="nav-item"><a class="nav-link pt-0 ps-0 fw-light" href={localizePath("https://radddio.com")} rel="nofollow">{t("Listen on Radddio")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("https://radddio.com/stations/")}>{t("Station Directory")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/sitemap.xml")}>{t("Sitemap")}</a></li>
+              <li class="nav-item"><a class="nav-link ps-0 fw-light" href={localizePath("/dmca/")}>{t("DMCA")}</a></li>
             </ul>
           </div>
 
           <div class="col-sm-6 col-lg-3 mb-4">
-            <h5 class="mb-4 text-white">Our Mobile App</h5>
-            <p class="text-white-50">Stream {site.countryAdjective} radio anywhere with the Radddio app.</p>
+            <h5 class="mb-4 text-white">{t("Our Mobile App")}</h5>
+            <p class="text-white-50">{t("Stream {0} radio anywhere with the Radddio app.", [site.countryAdjective])}</p>
             <div class="row g-2 align-items-center">
               <div class="col-12">
-                <a href="https://apple.co/4lNPQAH" target="_blank" rel="nofollow" class="d-inline-flex align-items-center gap-2 text-decoration-none">
-                  <img src="/radddio-badge.svg" alt="Radddio app badge" class="img-fluid" style="max-height: 44px;" />
+                <a href={localizePath("https://apple.co/4lNPQAH")} target="_blank" rel="nofollow" class="d-inline-flex align-items-center gap-2 text-decoration-none">
+                  <img src="/radddio-badge.svg" alt={t("Radddio app badge")} class="img-fluid" style="max-height: 44px;" />
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="border-top border-secondary pt-4 mt-2 text-center">
-          <p class="mb-2 text-white-50">&copy; 2026 {site.siteName}. All rights reserved.</p>
-          {site.geographyAttribution && <p class="mb-2 small text-white-50">Location data © <a href="https://www.openstreetmap.org/copyright" class="text-reset">OpenStreetMap contributors</a></p>}
-          <p class="mb-0">Powered by <a href="https://radddio.com" class="text-decoration-none">Radddio.com</a></p>
+          <p class="mb-2 text-white-50">{t("&copy; 2026 {0}. All rights reserved.", [site.siteName])}</p>
+          {site.geographyAttribution && <p class="mb-2 small text-white-50">{t("Location data ©")} <a href={localizePath("https://www.openstreetmap.org/copyright")} class="text-reset">{t("OpenStreetMap contributors")}</a></p>}
+          <p class="mb-0">{t("Powered by")} <a href={localizePath("https://radddio.com")} class="text-decoration-none">{t("Radddio.com")}</a></p>
         </div>
       </div>
     </footer>
