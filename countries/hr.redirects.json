@@ -57,5 +57,8 @@
   "/region/me-imurje-county/": "/region/me-imurje/",
   "/region/istria-county/": "/region/istria/",
   "/region/sibenik-knin-county/": "/region/sibenik-knin/",
-  "/region/krapina-zagorje-county/": "/region/krapina-zagorje/"
+  "/region/krapina-zagorje-county/": "/region/krapina-zagorje/",
+  "/stations/radio-centar-studio-pore-253ad8ac/": "/stations/radio-centar-studio-pore/",
+  "/stations/radio-max-vara-dinska/": "/stations/radio-max/",
+  "/stations/radio-max-99-3-cerje-nebojse-maru-evec-zagorje/": "/stations/radio-max/"
 }

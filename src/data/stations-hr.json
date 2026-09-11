@@ -1769,9 +1769,11 @@
     "city": null,
     "stream_url": "http://live.goldfm.hr:8068/;",
     "homepage": "http://www.goldfm.hr/",
-    "favicon": "/station-icons/hr/gold-fm-zagreba-ka-upanija-placeholder.webp",
+    "favicon": "/station-icons/hr/gold-fm.webp",
     "genres": [
-      "oldies"
+      "oldies",
+      "80s",
+      "70s"
     ],
     "language": "croatian",
     "bitrate": 96,
@@ -2335,8 +2337,8 @@
     "city": null,
     "stream_url": "http://28503.live.streamtheworld.com/PROGRAM1AAC_SC",
     "homepage": "http://radio.hrt.hr/prvi-program/",
-    "favicon": "/station-icons/hr/hrt-hr-1-prvi-program-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/hrt-hr-1-prvi-program.webp",
+    "genres": ["talk"],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -2356,7 +2358,7 @@
     "city": null,
     "stream_url": "http://25703.live.streamtheworld.com:3690/PROGRAM1_SC",
     "homepage": "http://radio.hrt.hr/stream/6/",
-    "favicon": "/station-icons/hr/hrt-hr-1-prvi-program-zagreb-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-hr-1-prvi-program-zagreb.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 64,
@@ -2418,8 +2420,8 @@
     "city": null,
     "stream_url": "http://27863.live.streamtheworld.com/PROGRAM2AAC_SC",
     "homepage": "http://radio.hrt.hr/drugi-program/",
-    "favicon": "/station-icons/hr/hrt-hr-2-drugi-program-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/hrt-hr-2-drugi-program.webp",
+    "genres": ["pop"],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -2439,7 +2441,7 @@
     "city": null,
     "stream_url": "http://25683.live.streamtheworld.com/PROGRAM3AAC_SC",
     "homepage": "http://radio.hrt.hr/treci-program/",
-    "favicon": "/station-icons/hr/hrt-hr-3-tre-i-program-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-hr-3-tre-i-program.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
@@ -2481,7 +2483,7 @@
     "city": "Dubrovnik",
     "stream_url": "http://23613.live.streamtheworld.com:3690/DUBROVNIKAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-dubrovnik/",
-    "favicon": "/station-icons/hr/hrt-radio-dubrovnik-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-dubrovnik.webp",
     "genres": [
       "hrt",
       "public radio"
@@ -2505,7 +2507,7 @@
     "city": "Knin",
     "stream_url": "http://25633.live.streamtheworld.com:3690/KNINAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-knin/",
-    "favicon": "/station-icons/hr/hrt-radio-knin-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-knin.webp",
     "genres": [
       "rock",
       "pop",
@@ -2531,7 +2533,7 @@
     "city": "Osijek",
     "stream_url": "http://28033.live.streamtheworld.com/OSIJEKAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-osijek/",
-    "favicon": "/station-icons/hr/hrt-radio-osijek-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-osijek.webp",
     "genres": [
       "rock",
       "pop",
@@ -2557,7 +2559,7 @@
     "city": "Pula",
     "stream_url": "http://25693.live.streamtheworld.com:3690/PULAAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-pula/",
-    "favicon": "/station-icons/hr/hrt-radio-pula-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-pula.webp",
     "genres": [
       "rock",
       "pop",
@@ -2583,7 +2585,7 @@
     "city": "Rijeka",
     "stream_url": "http://28513.live.streamtheworld.com/RIJEKAAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-rijeka/",
-    "favicon": "/station-icons/hr/hrt-radio-rijeka-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-rijeka.webp",
     "genres": [
       "hrt",
       "public radio"
@@ -2607,7 +2609,7 @@
     "city": "Zagreb",
     "stream_url": "http://23613.live.streamtheworld.com/SLJEMEAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-sljeme/",
-    "favicon": "/station-icons/hr/hrt-radio-sljeme-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-sljeme.webp",
     "genres": [
       "pop",
       "talk",
@@ -2662,7 +2664,7 @@
     "city": "Split",
     "stream_url": "http://25693.live.streamtheworld.com:3690/SPLITAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-split/",
-    "favicon": "/station-icons/hr/hrt-radio-split-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-split.webp",
     "genres": [
       "hrt",
       "public radio"
@@ -2686,7 +2688,7 @@
     "city": "Zadar",
     "stream_url": "http://25453.live.streamtheworld.com:3690/ZADARAAC_SC",
     "homepage": "http://radio.hrt.hr/radio-zadar/",
-    "favicon": "/station-icons/hr/hrt-radio-zadar-placeholder.webp",
+    "favicon": "/station-icons/hr/hrt-radio-zadar.webp",
     "genres": [],
     "language": "croatian",
     "bitrate": 64,
@@ -3391,7 +3393,7 @@
     "city": "Dubočac",
     "stream_url": "https://sonic1-rbx.cloud-center.ro:8026/stream",
     "homepage": "https://laganini.fm/",
-    "favicon": "/station-icons/hr/laganini-folk-narodni-radio-placeholder.webp",
+    "favicon": "/station-icons/hr/laganini-folk-narodni-radio.webp",
     "genres": [
       "folk"
     ],
@@ -3424,7 +3426,7 @@
     "city": null,
     "stream_url": "https://sonic1-rbx.cloud-center.ro/8026/stream",
     "homepage": "https://sonic1-rbx.cloud-center.ro/8026/stream",
-    "favicon": "/station-icons/hr/laganini-narodni-i-folk-radio-placeholder.webp",
+    "favicon": "/station-icons/hr/laganini-narodni-i-folk-radio.webp",
     "genres": [
       "folk"
     ],
@@ -4542,9 +4544,9 @@
   {
     "slug": "radio-105-selnica-hr-medjimurje",
     "stationuuid": "a43fe521-6b1b-4297-9d0d-26e0b903b328",
-    "name": "Radio 105 Selnica (HR)",
+    "name": "Radio 105 Selnica",
     "state": "Međimurje",
-    "city": null,
+    "city": "Selnica",
     "stream_url": "https://azuracast.novi-net.net/radio/8050/radio105.aac",
     "homepage": "https://www.radio105.hr/#",
     "favicon": "/station-icons/hr/radio-105-selnica-hr-medjimurje.webp",
@@ -4564,14 +4566,25 @@
     "geo_long": null,
     "locationNames": {
       "hr": {
-        "city": null,
+        "city": "Selnica",
         "state": "Medjimurje"
       },
       "en": {
-        "city": null,
+        "city": "Selnica",
         "state": "Međimurje"
       }
-    }
+    },
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Alternative",
+        "url": "https://azuracast.novi-net.net/listen/radio105/radio105.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ],
+    "nowplaying_url": "https://azuracast.novi-net.net/api/nowplaying/radio105",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-2",
@@ -5056,7 +5069,12 @@
     "homepage": "https://radiocentar.hr/",
     "favicon": "/station-icons/hr/radio-centar-studio-pore.webp",
     "genres": [
-      "various music"
+      "various music",
+      "folk",
+      "information",
+      "local news",
+      "pop",
+      "rock"
     ],
     "language": "croatian",
     "bitrate": 320,
@@ -5077,34 +5095,26 @@
         "city": "Poreč",
         "state": "Istria"
       }
-    }
-  },
-  {
-    "slug": "radio-centar-studio-pore-253ad8ac",
-    "stationuuid": "253ad8ac-b75a-4e9c-8700-0a9abde11cb8",
-    "name": "Radio Centar Studio Poreč",
-    "state": null,
-    "city": null,
-    "stream_url": "http://radiocentar.hr:8282/mp3",
-    "homepage": "https://www.radiocentar.hr/",
-    "favicon": "/station-icons/hr/radio-centar-studio-pore-253ad8ac-placeholder.webp",
-    "genres": [
-      "folk",
-      "information",
-      "local news",
-      "pop",
-      "rock"
+    },
+    "alternate_stationuuids": [
+      "253ad8ac-b75a-4e9c-8700-0a9abde11cb8"
     ],
-    "language": "croatian",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 97,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "streams": [
+      {
+        "id": "aac-320",
+        "label": "Default AAC",
+        "url": "http://radiocentar.hr:8282/stream.aac",
+        "bitrate": 320,
+        "codec": "AAC"
+      },
+      {
+        "id": "mp3-192",
+        "label": "Alternative MP3",
+        "url": "http://radiocentar.hr:8282/mp3",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-dalmacija-fure-ta-splitsko-dalmatinska",
@@ -6161,16 +6171,20 @@
     "history_url": "https://dreamsiteradiocp2.com/external/rpc.php?m=recenttracks.get&username=rmcroatia&limit=10"
   },
   {
-    "slug": "radio-max-vara-dinska",
+    "slug": "radio-max",
     "stationuuid": "e5a8ffd5-58c7-453a-b286-1197a6b317ad",
     "name": "Radio Max",
     "state": "Varaždin",
     "city": "Maruševec",
     "stream_url": "https://azuracast.novi-net.net/radio/8010/radiomax.aac",
     "homepage": "https://radiomax.hr/",
-    "favicon": "/station-icons/hr/radio-max-vara-dinska.webp",
-    "genres": ["pop", "news", "folk"],
-    "language": null,
+    "favicon": "/station-icons/hr/radio-max.webp",
+    "genres": [
+      "pop",
+      "news",
+      "folk"
+    ],
+    "language": "croatian",
     "bitrate": 128,
     "codec": "AAC",
     "clickcount": 1,
@@ -6189,67 +6203,37 @@
         "city": "Maruševec",
         "state": "Varaždin"
       }
-    }
-  },
-  {
-    "slug": "radio-max",
-    "stationuuid": "f5657e54-282b-4b3f-943f-347127108768",
-    "name": "Radio Max",
-    "state": "Varaždin",
-    "city": "Maruševec",
-    "stream_url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.aac",
-    "homepage": "https://radiomax.hr/",
-    "favicon": "/station-icons/hr/radio-max.webp",
-    "genres": ["pop", "news", "folk"],
-    "language": null,
-    "bitrate": 128,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 8,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
-    "metadata_server": "azuracast",
-    "history_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax"
-  },
-  {
-    "slug": "radio-max-99-3-cerje-nebojse-maru-evec-zagorje",
-    "stationuuid": "d853347f-202a-49bc-9b13-2f2bea321c19",
-    "name": "Radio Max 99.3 (Cerje Nebojse, Maruševec)",
-    "state": "Zagorje",
-    "city": "Maruševec",
-    "stream_url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.aac",
-    "homepage": "https://www.radiomax.hr/",
-    "favicon": "/station-icons/hr/radio-max-99-3-cerje-nebojse-maru-evec-zagorje.webp",
-    "genres": [
-      "folk"
+    },
+    "alternate_stationuuids": [
+      "f5657e54-282b-4b3f-943f-347127108768",
+      "d853347f-202a-49bc-9b13-2f2bea321c19"
     ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "AAC",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 80,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
     "nowplaying_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
     "metadata_server": "azuracast",
     "history_url": "https://azuracast.novi-net.net/api/nowplaying/radiomax",
-    "locationNames": {
-      "hr": {
-        "city": "Maruševec",
-        "state": "Zagorje"
+    "streams": [
+      {
+        "id": "aac-128-1",
+        "label": "Default AAC",
+        "url": "https://azuracast.novi-net.net/radio/8010/radiomax.aac",
+        "bitrate": 128,
+        "codec": "AAC"
       },
-      "en": {
-        "city": "Maruševec",
-        "state": "Zagorje"
+      {
+        "id": "aac-128-2",
+        "label": "Alternative AAC",
+        "url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.aac",
+        "bitrate": 128,
+        "codec": "AAC"
+      },
+      {
+        "id": "mp3-128",
+        "label": "Alternative",
+        "url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
       }
-    }
+    ]
   },
   {
     "slug": "radio-media-servis",
@@ -7276,7 +7260,7 @@
     "state": "City of Zagreb",
     "city": "Zagreb",
     "stream_url": "http://live.radio101.hr:9531/;",
-    "homepage": "http://radio101.hr/",
+    "homepage": "https://radio101.hr/",
     "favicon": "/station-icons/hr/radio-101-zagreb.webp",
     "genres": [
       "local news",
