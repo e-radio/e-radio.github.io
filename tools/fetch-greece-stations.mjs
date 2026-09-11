@@ -1,5 +1,4 @@
 import { site, stationsPath, countryCode } from "../countries/site.mjs";
-import { cleanStreamUrl } from "./lib/stream-urls.mjs";
 import { ensureUniqueStationSlugs, assertUniqueStationSlugs } from "./lib/station-slugs.mjs";
 import { readFile, rename, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -144,7 +143,7 @@ function mergeStations(localStations, apiStations, exclusions = []) {
   };
   const registerUrl = (url, index) => {
     if (!url) return;
-    const key = cleanStreamUrl(url);
+    const key = url;
     const indexes = localByUrl.get(key) ?? [];
     if (!indexes.includes(index)) indexes.push(index);
     localByUrl.set(key, indexes);
@@ -169,7 +168,7 @@ function mergeStations(localStations, apiStations, exclusions = []) {
       : undefined;
     if (localIndex == null) {
       const urlMatches = apiStation.stream_url
-        ? localByUrl.get(cleanStreamUrl(apiStation.stream_url)) ?? []
+        ? localByUrl.get(apiStation.stream_url) ?? []
         : [];
       if (urlMatches.length > 0) {
         urlMatches.forEach((index) => matchedLocalIndexes.add(index));
@@ -291,7 +290,7 @@ async function main() {
       .filter(Boolean);
 
     const stationuuid = s.stationuuid;
-    const stream_url = cleanStreamUrl(s.url_resolved || s.url);
+    const stream_url = s.url_resolved || s.url;
 
     return {
       slug: makeSlug({ name, state: cityOrState, stationuuid }),

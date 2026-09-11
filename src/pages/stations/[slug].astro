@@ -51,10 +51,7 @@ const streamDetailMeta = [
   .filter(Boolean)
   .join(" · ");
 const languageLabel = station.language ? station.language : null;
-const rawStreamUrl = station.stream_url || "";
-// GitHub Pages is HTTPS. Supplying an HTTP media URL still triggers a mixed-
-// content warning even when Chromium can automatically upgrade the request.
-const streamUrl = rawStreamUrl.replace(/^http:\/\//i, "https://");
+const streamUrl = station.stream_url || "";
 
 const wrapWithCorsProxy = (rawUrl: string) => {
   if (!rawUrl) return rawUrl;

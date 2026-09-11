@@ -74,7 +74,7 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
       card.querySelector('button')!.setAttribute('aria-label', `Stop ${card.dataset.name}`);
       card.querySelector('button i')!.className = 'bi bi-stop-fill';
       card.querySelector('.track-status')!.textContent = 'Connecting…';
-      audio.src = card.dataset.stream!.replace(/^http:\/\//, 'https://');
+      audio.src = card.dataset.stream!;
       try {
         await audio.play();
         if (currentRequest === requestId) card.querySelector('.track-status')!.textContent = '';

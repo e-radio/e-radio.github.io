@@ -126,7 +126,7 @@ npm run build
 COUNTRY=hr npm run build
 ```
 
-Supported country-aware tools are `stations:import`, `stations:metadata`, `stations:icons`, `stations:geography`, `tools/fetch-missing-station-icons.mjs`, and `tools/fix-station-slugs.mjs`, and `tools/fill-stream-audio-info.py`. Historical Python repair scripts and other one-off tools in `tools/` are Greece-specific; do not run them for another country. Import review reports and metadata discovery reports have country suffixes. Failed or absent metadata does not prevent audio playback.
+Supported country-aware tools are `stations:import`, `stations:metadata`, `stations:icons`, `stations:geography`, `tools/fetch-missing-station-icons.mjs`, and `tools/fix-station-slugs.mjs`, `tools/fill-stream-audio-info.py`, and `tools/fill-state-from-homepage.py`. Historical Python repair scripts and other one-off tools in `tools/` are Greece-specific; do not run them for another country. Import review reports and metadata discovery reports have country suffixes. Failed or absent metadata does not prevent audio playback.
 
 ## Exclude deleted stations from future imports
 
@@ -184,3 +184,26 @@ COUNTRY=hr python3 tools/fill-stream-audio-info.py --write
 ```
 
 Use `COUNTRY=gr` for Greece, or pass `--country hr`. Omit `--write` for a report-only scan. The script probes only stations missing bitrate or codec, preserves existing values, and leaves unidentifiable values unchanged. Croatia's results are saved in `reports/stream-audio-info-hr.json`. It aborts the data write if the dataset changes during probing.
+
+## Fill missing state from station homepages
+
+```sh
+COUNTRY=hr python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
+# Equivalent explicit selection:
+python3 tools/fill-state-from-homepage.py --country hr --max 10 --sleep 1
+```
+
+The tool reads the selected country's `stationsFile`, fetches homepage JSON-LD, and retains its existing location-extraction behavior. It fills only missing `state` values and saves automatically (no `--write` flag). It does not fill city or use coordinates. Existing state values remain unchanged. `--max` limits successful updates, not requests; use `0` for no limit.
+
+Skipped station IDs are kept separately in `tools/state-fill-progress-hr.json` for Croatia. Greece retains its existing `tools/state-fill-progress.json`. Use `--progress-file` to override the location, or remove a skipped ID from the selected country's progress file to retry it. `--country` overrides `COUNTRY`; when neither is set, Greece is used.
+
+### English Croatian location names
+
+Croatia's `city` and `state` fields contain the display names for the English site.
+`locationNames.hr` preserves the original values and `locationNames.en` stores the English values.
+City proper names retain their diacritics (for example, Šibenik and Đakovo).
+The county translations and known spelling aliases are in `hr.location-names.json`;
+`fill-station-geography.py --country hr --lang en` applies these county translations.
+Ambiguous legacy region labels remain unchanged until their geography is verified.
+Region URL changes have redirects in `hr.redirects.json`; station slugs remain unchanged.
+On GitHub Pages these are static HTML redirects, not server-side HTTP 301 responses.

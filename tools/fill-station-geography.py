@@ -46,6 +46,8 @@ def main():
     if len(country) != 2 or not country.isalpha():
         parser.error('Country must be a two-letter code')
     config = json.loads(Path(f'countries/{country}.json').read_text())
+    names_path = Path(f'countries/{country}.location-names.json')
+    state_names = json.loads(names_path.read_text()).get('stateNames', {}) if names_path.exists() else {}
     data_path = Path(config['stationsFile'])
     stations = json.loads(data_path.read_text())
     cache_path = Path(f'tools/cache/geography-{country}-{args.lang}.json')
@@ -74,6 +76,8 @@ def main():
             payload = cache[key]
             record['address'] = payload.get('address', {})
             city, state = location_from_address(record['address'], country)
+            if args.lang.split('-')[0] == 'en':
+                state = state_names.get(state, state)
             record['after'] = {'city': city if args.overwrite or not station.get('city') else station['city'], 'state': state if args.overwrite or not station.get('state') else station['state']}
             record['status'] = 'changed' if record['before'] != record['after'] else 'unchanged'
         except Exception as error:
@@ -90,6 +94,9 @@ def main():
             if not station or [station.get('geo_lat'), station.get('geo_long')] != record['coordinates'] or {k: station.get(k) for k in ('city', 'state')} != record['before']:
                 record.update(status='review', reason='Station changed during lookup; not overwritten')
                 continue
+            names = station.setdefault('locationNames', {})
+            names.setdefault(config.get('language', 'en'), record['before'])
+            names[args.lang] = record['after'].copy()
             station.update(record['after'])
         write_json(data_path, latest)
     report = {'country': country, 'language': args.lang, 'applied': args.write, 'source': 'OpenStreetMap contributors, ODbL 1.0', 'attribution_url': 'https://www.openstreetmap.org/copyright', 'records': records}

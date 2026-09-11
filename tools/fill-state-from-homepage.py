@@ -1,19 +1,32 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import os
 import re
 import sys
 import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 
-DATA_PATH = Path("src/data/stations-gr.json")
-DEFAULT_PROGRESS_PATH = Path("tools/state-fill-progress.json")
+ROOT = Path(__file__).resolve().parents[1]
 USER_AGENT = "Mozilla/5.0 (compatible; RadioDirectoryBot/1.0)"
 
 
-def fetch_html(url: str) -> str:
-    req = Request(url, headers={"User-Agent": USER_AGENT})
+def country_settings(country):
+    code = country.lower()
+    if not re.fullmatch(r"[a-z]{2}", code):
+        raise ValueError("Country must be a two-letter code")
+    config = json.loads((ROOT / f"countries/{code}.json").read_text(encoding="utf-8"))
+    if config.get("countryCode", "").lower() != code:
+        raise ValueError("Country configuration code mismatch")
+    data_path = ROOT / config["stationsFile"]
+    progress_path = ROOT / ("tools/state-fill-progress.json" if code == "gr" else f"tools/state-fill-progress-{code}.json")
+    user_agent = f'RadioDirectory-HomepageGeography/1.0 ({config["siteUrl"]})'
+    return data_path, progress_path, user_agent
+
+
+def fetch_html(url: str, user_agent: str = USER_AGENT) -> str:
+    req = Request(url, headers={"User-Agent": user_agent})
     with urlopen(req, timeout=20) as resp:
         content_type = resp.headers.get("Content-Type", "")
         if not any(token in content_type for token in ("text/html", "application/xhtml+xml", "application/json", "text/plain")):
@@ -82,21 +95,29 @@ def pick_state_from_jsonld(objects):
 
 def main():
     parser = argparse.ArgumentParser(description="Fill missing station state from homepage JSON-LD.")
+    parser.add_argument("--country", default=os.environ.get("COUNTRY", "gr"), help="Country code (defaults to COUNTRY or gr)")
     parser.add_argument("--max", type=int, default=0, help="Max stations to process in one run (0 = no limit)")
     parser.add_argument("--sleep", type=float, default=0.0, help="Seconds to sleep between stations (default: 0)")
     parser.add_argument(
         "--progress-file",
         type=Path,
-        default=DEFAULT_PROGRESS_PATH,
-        help="Path to progress file for skipped stations",
+        default=None,
+        help="Override the country-specific progress file for skipped stations",
     )
     args = parser.parse_args()
+    try:
+        data_path, default_progress, user_agent = country_settings(args.country)
+    except (ValueError, OSError, KeyError) as exc:
+        parser.error(str(exc))
+    args.progress_file = args.progress_file or default_progress
+    args.progress_file.parent.mkdir(parents=True, exist_ok=True)
+    print(f"Country: {args.country.upper()}; data: {data_path}; progress: {args.progress_file}")
 
-    if not DATA_PATH.exists():
-        print(f"Data file not found: {DATA_PATH}")
+    if not data_path.exists():
+        print(f"Data file not found: {data_path}")
         return 1
 
-    data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+    data = json.loads(data_path.read_text(encoding="utf-8"))
     processed = 0
     max_items = args.max if args.max and args.max > 0 else float("inf")
 
@@ -133,7 +154,7 @@ def main():
             print(f"Homepage: {homepage}")
 
             try:
-                html = fetch_html(homepage)
+                html = fetch_html(homepage, user_agent)
             except Exception as exc:
                 print(f"Failed to fetch homepage: {exc}")
                 skipped.add(target.get("stationuuid"))
@@ -150,7 +171,7 @@ def main():
                 continue
 
             target["state"] = state
-            DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             print(f"✓ Updated state to: {state}")
             processed += 1
 

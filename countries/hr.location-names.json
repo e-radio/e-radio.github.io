@@ -1,0 +1,28 @@
+{
+  "source": "https://podaci.dzs.hr/2024/en/76805",
+  "stateNames": {
+    "Grad Zagreb": "City of Zagreb",
+    "Zagrebačka županija": "Zagreb",
+    "Osječko-baranjska županija": "Osijek-Baranja",
+    "Splitsko-dalmatinska županija": "Split-Dalmatia",
+    "Primorsko-goranska županija": "Primorje-Gorski Kotar",
+    "Zadarska županija": "Zadar",
+    "Splitsko Dalmatinska": "Split-Dalmatia",
+    "Splitsko-Dalmatinska": "Split-Dalmatia",
+    "Karlovačka županija": "Karlovac",
+    "Istarska županija": "Istria",
+    "Šibensko-kninska županija": "Šibenik-Knin",
+    "Šibenik-Knin": "Šibenik-Knin",
+    "Sisačko-moslavačka županija": "Sisak-Moslavina",
+    "Koprivničko-križevačka županija": "Koprivnica-Križevci",
+    "Krapinsko-zagorska županija": "Krapina-Zagorje",
+    "Dubrovačko-neretvanska županija": "Dubrovnik-Neretva",
+    "Brodsko-posavska županija": "Brod-Posavina",
+    "Ličko-senjska županija": "Lika-Senj",
+    "Bjelovarsko-bilogorska županija": "Bjelovar-Bilogora",
+    "Požeško-slavonska županija": "Požega-Slavonia",
+    "Varaždinska županija": "Varaždin",
+    "Varaždinska": "Varaždin",
+    "Medjimurje": "Međimurje"
+  }
+}

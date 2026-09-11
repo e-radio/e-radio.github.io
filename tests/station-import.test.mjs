@@ -65,3 +65,9 @@ test('Greece exclusion blocks the requested UUID even when its stream changes', 
   assert.deepEqual(mergeStations([remote],[remote],exclusions).merged,[]);
   assert.equal(mergeStations([],[remote],[]).merged.length,1);
 });
+
+test('import preserves HTTP stream URLs including Radiojar host and query', () => {
+  const url='http://radiojar.com/example?token=original';
+  const result=mergeStations([],[{stationuuid:'http-station',slug:'http-station',stream_url:url}]);
+  assert.equal(result.merged[0].stream_url,url);
+});

@@ -8,7 +8,7 @@ test('Greece retains its dataset, geography and redirects',()=>{
  const gr=config('gr'); assert.equal(gr.site.countryCode,'GR'); assert.ok(gr.stationsPath.endsWith('stations-gr.json')); assert.equal(gr.site.siteUrl,'https://e-radio.github.io'); assert.ok(Object.keys(gr.redirects).length>0); assert.ok(gr.site.regions.includes('attica')); assert.equal(gr.title,'Greek Radio in Greece');
 });
 test('Croatia uses isolated data, country text and canonical origin',()=>{
- const hr=config('hr','https://radio.example.org'); assert.ok(hr.stationsPath.endsWith('stations-hr.json')); assert.equal(hr.title,'Croatian Radio in Croatia'); assert.equal(hr.site.siteUrl,'https://radio.example.org'); assert.deepEqual(hr.redirects,{}); assert.deepEqual(hr.site.cityAliases,{});
+ const hr=config('hr','https://radio.example.org'); assert.ok(hr.stationsPath.endsWith('stations-hr.json')); assert.equal(hr.title,'Croatian Radio in Croatia'); assert.equal(hr.site.siteUrl,'https://radio.example.org'); assert.equal(hr.redirects['/stations/club-music-radio-tambura-90d73285/'],'/stations/club-music-radio-tambura/'); assert.notDeepEqual(hr.redirects,config('gr').redirects); assert.deepEqual(hr.site.cityAliases,{});
 });
 test('invalid country codes and subpath URLs fail clearly',()=>{
  assert.throws(()=>config('../gr'));

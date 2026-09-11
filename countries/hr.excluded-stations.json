@@ -7,5 +7,8 @@
     "stationuuid": "3c0d3177-d2fb-4c04-ac6f-0e03173c42cb",
     "reason": "Excluded at user request"
   },
-  
+    {
+    "stationuuid": "695f181f-f20d-444c-b4c2-7a1edfc6fb63",
+    "reason": "Excluded at user request"
+  }
 ]
