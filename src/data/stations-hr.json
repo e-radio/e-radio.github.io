@@ -389,7 +389,7 @@
     "name": "Antena Zagreb Dance",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.antenazagreb.hr:8015/",
+    "stream_url": "http://live.antenazagreb.hr:8015/;",
     "homepage": "http://www.prvi.hr/antenazagreb",
     "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
@@ -425,7 +425,7 @@
     "name": "Antena Zagreb Hit",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.antenazagreb.hr:8011/",
+    "stream_url": "http://live.antenazagreb.hr:8011/;",
     "homepage": "http://www.prvi.hr/antenazagreb",
     "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
@@ -461,7 +461,7 @@
     "name": "Antena Zagreb Love",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.antenazagreb.hr:8007/",
+    "stream_url": "http://live.antenazagreb.hr:8007/;",
     "homepage": "http://www.prvi.hr/antenazagreb",
     "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
@@ -497,8 +497,8 @@
     "name": "Antena Zagreb Rock",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.antenazagreb.hr:8019/",
-    "homepage": "http://www.prvi.hr/images/Antena/Logos/AntenaZagreb-Logo.png",
+    "stream_url": "http://live.antenazagreb.hr:8019/;",
+    "homepage": "https://www.antenazagreb.hr/",
     "favicon": "/station-icons/hr/antena-zagreb.webp",
     "genres": [
       "classic rock",
@@ -1502,7 +1502,7 @@
     "name": "ENTER Zagreb",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.enterzagreb.hr:8023/",
+    "stream_url": "http://live.enterzagreb.hr:8023/;",
     "homepage": "http://www.prvi.hr/enter",
     "favicon": "/station-icons/hr/enter-zagreb.webp",
     "genres": [
@@ -2021,30 +2021,6 @@
     "history_url": "http://c5.hostingcentar.com:9543/played?sid=1&type=json"
   },
   {
-    "slug": "happy-fm-party",
-    "stationuuid": "707f6233-7b09-4059-9b2f-453502c3761d",
-    "name": "Happy FM - Party",
-    "state": "City of Zagreb",
-    "city": "Velika Gorica",
-    "stream_url": "http://c5.hostingcentar.com:8390/",
-    "homepage": "https://happyfm.hr/",
-    "favicon": "/station-icons/hr/happy-fm-party.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "AAC+",
-    "clickcount": 6,
-    "lastcheckok": 1,
-    "votes": 186,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://c5.hostingcentar.com:8390/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json"
-  },
-  {
     "slug": "happy-fm-tambura",
     "stationuuid": "a9d9f810-295b-4f59-826b-b64fe08086c2",
     "name": "Happy FM - Tambura",
@@ -2056,7 +2032,7 @@
     "genres": [
       "folk"
     ],
-    "language": null,
+    "language": "croatian",
     "bitrate": 128,
     "codec": "AAC+",
     "clickcount": 1,
@@ -2068,7 +2044,26 @@
     "geo_long": null,
     "nowplaying_url": "http://c5.hostingcentar.com:8378/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://c5.hostingcentar.com:8378/played?sid=1&type=json"
+    "history_url": "http://c5.hostingcentar.com:8378/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "73c4e66f-ab36-478d-b3c5-0e0b7c219b24"
+    ],
+    "streams": [
+      {
+        "id": "aac-128-1",
+        "label": "Default AAC+",
+        "url": "https://audio.social3.hr/listen/happy_tambure/stream",
+        "bitrate": 128,
+        "codec": "AAC+"
+      },
+      {
+        "id": "aac-128-2",
+        "label": "Alternative AAC+",
+        "url": "http://c5.hostingcentar.com:8378/stream",
+        "bitrate": 128,
+        "codec": "AAC+"
+      }
+    ]
   },
   {
     "slug": "happy-fm-croatia",
@@ -2192,33 +2187,26 @@
     "geo_long": null,
     "nowplaying_url": "http://c5.hostingcentar.com:8390/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json"
-  },
-  {
-    "slug": "happy-fm-tambura-73c4e66f",
-    "stationuuid": "73c4e66f-ab36-478d-b3c5-0e0b7c219b24",
-    "name": "Happy FM Tambura",
-    "state": "City of Zagreb",
-    "city": "Velika Gorica",
-    "stream_url": "http://c5.hostingcentar.com:8378/stream?3238",
-    "homepage": "https://happyfm.hr/",
-    "favicon": "/station-icons/hr/happy-fm.webp",
-    "genres": [
-      "folk"
+    "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "707f6233-7b09-4059-9b2f-453502c3761d"
     ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "AAC+",
-    "clickcount": 3,
-    "lastcheckok": 1,
-    "votes": 113,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://c5.hostingcentar.com:8378/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://c5.hostingcentar.com:8378/played?sid=1&type=json"
+    "streams": [
+      {
+        "id": "aac-128-1",
+        "label": "Default AAC+",
+        "url": "http://c5.hostingcentar.com:8390/stream",
+        "bitrate": 128,
+        "codec": "AAC+"
+      },
+      {
+        "id": "aac-128-2",
+        "label": "Alternative AAC+",
+        "url": "http://c5.hostingcentar.com:8390/;",
+        "bitrate": 128,
+        "codec": "AAC+"
+      }
+    ]
   },
   {
     "slug": "hit-radio",
@@ -4611,7 +4599,11 @@
     "stream_url": "https://dc1.serverse.com/proxy/wtuvhnef/stream",
     "homepage": "https://radio4you.cc//",
     "favicon": "/station-icons/hr/radio-4-you-placeholder.webp",
-    "genres": ["pop", "folk", "oldies"],
+    "genres": [
+      "pop",
+      "folk",
+      "oldies"
+    ],
     "language": "croatian",
     "bitrate": 128,
     "codec": "MP3",
@@ -7246,7 +7238,12 @@
     "stream_url": "https://audio.alter-media.hr:7019/stream",
     "homepage": "https://web.radiozupanja.hr/",
     "favicon": "/station-icons/hr/radio-zupanja.jpg",
-    "genres": ["news", "talk", "folk", "sports"],
+    "genres": [
+      "news",
+      "talk",
+      "folk",
+      "sports"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
