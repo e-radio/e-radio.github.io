@@ -486,7 +486,6 @@ const structuredData = {
     </nav>
     <div class="small-muted"> {t("Updated {0}", [new Date().toLocaleDateString((locale === "hr" ? "hr-HR" : "en-US"), { year: "numeric", month: "short", day: "numeric" })])} </div>
   </div>
-
   <div class="row g-4">
     <div class="col-12 col-lg-8">
       <section class="glass rounded-3 px-3 pt-3 p-md-4 pb-md-0">
@@ -514,28 +513,14 @@ const structuredData = {
               </div>
             </div>
           </div>
+            <span class="badge rounded-pill text-bg-light border">
+              <i class="bi bi-wifi me-1" />
+              <span id="statusText">{t("Idle")}</span>
+            </span>
         </div>
 
         {hasStream ? (
           <div class="row g-3 align-items-center">
-            <div class="col-12">
-              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-                <div class="d-flex align-items-center gap-2">
-                  <button class="btn btn-primary rounded-pill px-4" id="btnPlay" type="button">
-                    <i class="bi bi-play-fill me-1" aria-hidden="true" /> <span>{t("Play")}</span>
-                  </button>
-
-                </div>
-
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="badge rounded-pill text-bg-light border">
-                    <i class="bi bi-wifi me-1" />
-                    <span id="statusText">{t("Idle")}</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-
             {streamOptions.length > 0 && (station as Station & { streams?: unknown[] }).streams && (
               <div class="col-12">
                 <label for="streamQuality" class="form-label">{t("Stream quality")}</label>
@@ -549,6 +534,11 @@ const structuredData = {
             )}
             <div class="col-12">
               <div class="audio-control-strip">
+                <div class="d-flex align-items-center gap-2">
+                  <button class="btn btn-primary rounded-pill px-3" id="btnPlay" type="button">
+                    <i class="bi bi-play-fill me-1" aria-hidden="true" /> <span>{t("Play")}</span>
+                  </button>
+                </div>
                 <div class="audio-buffer" role="progressbar" aria-label={t("Buffered audio")} aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" title={t("Buffered audio (live stream)")}>
                   <div class="audio-buffer-fill" id="bufferBar" style="width: 0%" />
                 </div>

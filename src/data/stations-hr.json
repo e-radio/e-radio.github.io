@@ -1352,7 +1352,7 @@
     "name": "Cro International DJ Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://stream.zeno.fm/t47dykadrchvv",
+    "stream_url": "https://stream.zeno.fm/t47dykadrchvv",
     "homepage": "http://crointernational.hr/",
     "favicon": "/station-icons/hr/cro-international-dj-radio-placeholder.webp",
     "genres": [
@@ -1469,7 +1469,10 @@
     "stream_url": "https://radio.dvb.digital/listen/dvb.digital/hq.mp3",
     "homepage": "https://dvb.digital/",
     "favicon": "/station-icons/hr/dvb-digital.webp",
-    "genres": [],
+    "genres": [
+      "house",
+      "electronic"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -1482,7 +1485,16 @@
     "geo_long": null,
     "nowplaying_url": "https://radio.dvb.digital/api/nowplaying/dvb.digital",
     "metadata_server": "azuracast",
-    "history_url": "https://radio.dvb.digital/api/nowplaying/dvb.digital"
+    "history_url": "https://radio.dvb.digital/api/nowplaying/dvb.digital",
+    "streams": [
+      {
+        "id": "aac-320",
+        "label": "Default",
+        "url": "https://radio.dvb.digital/hls/dvb.digital/live.m3u8",
+        "bitrate": 320,
+        "codec": "AAC+"
+      }
+    ]
   },
   {
     "slug": "enter-zagreb-grad-zagreb",
@@ -1607,7 +1619,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "alternate_stationuuids": [
+      "99d94112-6eab-4b5b-a20d-a2c7757637cd"
+    ]
   },
   {
     "slug": "folkyton-radio-velika-mlaka",
@@ -2154,7 +2169,7 @@
     "history_url": "http://c5.hostingcentar.com:8396/played?sid=1&type=json"
   },
   {
-    "slug": "happy-fm-party-19786bf9",
+    "slug": "happy-fm-party",
     "stationuuid": "19786bf9-022e-4c65-8d63-a09249a80925",
     "name": "Happy FM Party",
     "state": "City of Zagreb",
@@ -2338,7 +2353,9 @@
     "stream_url": "http://28503.live.streamtheworld.com/PROGRAM1AAC_SC",
     "homepage": "http://radio.hrt.hr/prvi-program/",
     "favicon": "/station-icons/hr/hrt-hr-1-prvi-program.webp",
-    "genres": ["talk"],
+    "genres": [
+      "talk"
+    ],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -2421,7 +2438,9 @@
     "stream_url": "http://27863.live.streamtheworld.com/PROGRAM2AAC_SC",
     "homepage": "http://radio.hrt.hr/drugi-program/",
     "favicon": "/station-icons/hr/hrt-hr-2-drugi-program.webp",
-    "genres": ["pop"],
+    "genres": [
+      "pop"
+    ],
     "language": "croatian",
     "bitrate": 64,
     "codec": "AAC+",
@@ -2584,7 +2603,7 @@
     "state": "Primorje-Gorski Kotar",
     "city": "Rijeka",
     "stream_url": "http://28513.live.streamtheworld.com/RIJEKAAAC_SC",
-    "homepage": "http://radio.hrt.hr/radio-rijeka/",
+    "homepage": "https://radio.hrt.hr/radio-rijeka",
     "favicon": "/station-icons/hr/hrt-radio-rijeka.webp",
     "genres": [
       "hrt",
@@ -2713,7 +2732,7 @@
     "genres": [
       "chatolic",
       "christian",
-      "croatia",
+      "croatian",
       "hkr",
       "katolički",
       "kršćanski"
@@ -3174,37 +3193,14 @@
     }
   },
   {
-    "slug": "kneginec",
-    "stationuuid": "99d94112-6eab-4b5b-a20d-a2c7757637cd",
-    "name": "Kneginec",
-    "state": null,
-    "city": null,
-    "stream_url": "http://stream.zeno.fm/yetzdv442k8uv",
-    "homepage": "http://stream.zeno.fm/yetzdv442k8uv",
-    "favicon": "/station-icons/hr/kneginec.webp",
-    "genres": [
-      "folk"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "krugoval-bjelovarsko-bilogorska-upanija",
     "stationuuid": "96242d53-0601-11e8-ae97-52543be04c81",
     "name": "Krugoval",
     "state": "Bjelovar-Bilogora",
     "city": "Garešnica",
     "stream_url": "http://144.76.172.23:7043/;",
-    "homepage": "http://garesnica.net/krugoval/",
-    "favicon": "/station-icons/hr/krugoval-bjelovarsko-bilogorska-upanija-placeholder.webp",
+    "homepage": "https://garesnica.net/krugoval/",
+    "favicon": "/station-icons/hr/krugoval-bjelovarsko-bilogorska-upanija.webp",
     "genres": [
       "dance",
       "pop",
@@ -3425,7 +3421,7 @@
     "state": null,
     "city": null,
     "stream_url": "https://sonic1-rbx.cloud-center.ro/8026/stream",
-    "homepage": "https://sonic1-rbx.cloud-center.ro/8026/stream",
+    "homepage": "https://laganini.fm/",
     "favicon": "/station-icons/hr/laganini-narodni-i-folk-radio.webp",
     "genres": [
       "folk"
@@ -3917,7 +3913,6 @@
     "homepage": "https://www.otvoreni.hr/",
     "favicon": "/station-icons/hr/otvoreni-live.webp",
     "genres": [
-      "croatia",
       "croatian",
       "hrvatska",
       "pop",
@@ -4611,13 +4606,13 @@
     "slug": "radio-4-you",
     "stationuuid": "d3efc8ab-b9cb-4b00-9298-7463a2218a07",
     "name": "Radio 4 You",
-    "state": null,
-    "city": null,
-    "stream_url": "http://84.16.232.202:7154/stream",
-    "homepage": "http://www.radio4you.cc/",
+    "state": "City of Zagreb",
+    "city": "Zagreb",
+    "stream_url": "https://dc1.serverse.com/proxy/wtuvhnef/stream",
+    "homepage": "https://radio4you.cc//",
     "favicon": "/station-icons/hr/radio-4-you-placeholder.webp",
-    "genres": [],
-    "language": null,
+    "genres": ["pop", "folk", "oldies"],
+    "language": "croatian",
     "bitrate": 128,
     "codec": "MP3",
     "clickcount": 0,
@@ -4627,9 +4622,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://84.16.232.202:7154/stats?sid=1&json=1",
+    "nowplaying_url": "https://dc1.serverse.com/proxy/wtuvhnef/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://84.16.232.202:7154/played?sid=1&type=json"
+    "history_url": "https://dc1.serverse.com/proxy/wtuvhnef/played?sid=1&type=json"
   },
   {
     "slug": "radio-808",
@@ -5011,12 +5006,16 @@
     "slug": "radio-boom-hits",
     "stationuuid": "110b733c-a6ea-4ac4-bd75-117617b19a3a",
     "name": "Radio Boom Hits",
-    "state": null,
-    "city": null,
+    "state": "Istria",
+    "city": "Rovinj",
     "stream_url": "https://stream.zeno.fm/7n7hwy8s9k0uv",
-    "homepage": "https://www.facebook.com/radioboomhits",
-    "favicon": "/station-icons/hr/radio-boom-hits-placeholder.webp",
-    "genres": [],
+    "homepage": "https://radioboomhits.com/",
+    "favicon": "/station-icons/hr/radio-boom-hits.webp",
+    "genres": [
+      "hits",
+      "dance",
+      "pop"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -5490,8 +5489,8 @@
     "state": null,
     "city": null,
     "stream_url": "https://ec2s.crolive.com.hr:8215/stream",
-    "homepage": "http://www.grubisnopolje.hr/hr/gospodarstvo/gradske-tvrtke/radio-grubisno-polje-d-o-o-/99991143/",
-    "favicon": "/station-icons/hr/radio-grubi-no-polje-placeholder.webp",
+    "homepage": "https://zeno.fm/radio/radio-grubisno-polje/",
+    "favicon": "/station-icons/hr/radio-grubi-no-polje.webp",
     "genres": [
       "folk",
       "local news",
@@ -5769,8 +5768,12 @@
     "city": "Kastav",
     "stream_url": "http://proxima.shoutca.st:8559/stream",
     "homepage": "https://www.radiokastav.com/",
-    "favicon": "/station-icons/hr/radio-kastav-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/radio-kastav.webp",
+    "genres": [
+      "pop",
+      "folk",
+      "croatian"
+    ],
     "language": "croatian",
     "bitrate": 128,
     "codec": "MP3",
@@ -5797,11 +5800,17 @@
     "stationuuid": "9624268f-0601-11e8-ae97-52543be04c81",
     "name": "Radio Koprivnica",
     "state": "Koprivnica-Križevci",
-    "city": null,
-    "stream_url": "http://194.152.206.205:8000/",
-    "homepage": "http://www.radio-koprivnica.hr/",
-    "favicon": "/station-icons/hr/radio-koprivnica-koprivni-ko-kri-eva-ka-upanija-placeholder.webp",
-    "genres": [],
+    "city": "Koprivnica",
+    "stream_url": "https://ec2s.crolive.com.hr/RadioKoprivnica",
+    "homepage": "https://rkc.hr/",
+    "favicon": "/station-icons/hr/radio-koprivnica.webp",
+    "genres": [
+      "pop",
+      "news",
+      "talk",
+      "culture",
+      "community"
+    ],
     "language": "croatian",
     "bitrate": 192,
     "codec": "MP3",
@@ -5814,11 +5823,11 @@
     "geo_long": null,
     "locationNames": {
       "hr": {
-        "city": null,
+        "city": "Koprivnica",
         "state": "Koprivničko-križevačka županija"
       },
       "en": {
-        "city": null,
+        "city": "Koprivnica",
         "state": "Koprivnica-Križevci"
       }
     }
@@ -5862,8 +5871,8 @@
     "name": "Radio Korzo",
     "state": "Primorje-Gorski Kotar",
     "city": "Rijeka",
-    "stream_url": "https://c2.hostingcentar.com/streams/radiokorzo/stream",
-    "homepage": "https://radiokorzo.hr/",
+    "stream_url": "https://c8.hostingcentar.com/streams/radiokorzo/",
+    "homepage": "https://web.radiokorzo.hr/",
     "favicon": "/station-icons/hr/radio-korzo.webp",
     "genres": [
       "local music",
@@ -6419,11 +6428,11 @@
     "slug": "radio-prkos",
     "stationuuid": "727f41c0-b68b-4b8c-9384-b35854eac4ef",
     "name": "Radio Prkos",
-    "state": null,
-    "city": null,
+    "state": "Brod-Posavina",
+    "city": "Nova Gradiška",
     "stream_url": "http://eu7.fastcast4u.com:6124/stream",
-    "homepage": "http://www.radioprkos.hr/",
-    "favicon": "/station-icons/hr/radio-prkos-placeholder.webp",
+    "homepage": "https://www.radioprkos.hr/",
+    "favicon": "/station-icons/hr/radio-prkos.webp",
     "genres": [
       "folk",
       "local news",
@@ -6516,8 +6525,8 @@
     "homepage": "https://radio.rojc.eu/",
     "favicon": "/station-icons/hr/radio-rojc.webp",
     "genres": [
-      "community radio",
-      "cultural"
+      "community",
+      "culture"
     ],
     "language": "croatian",
     "bitrate": 128,
@@ -6589,15 +6598,17 @@
     ]
   },
   {
-    "slug": "radio-salona-solin-hrvatskih-zrtava73",
+    "slug": "radio-salona",
     "stationuuid": "2829a02d-30a6-426a-b1a3-1adeb481e2a5",
     "name": "Radio Salona",
     "state": "Split-Dalmatia",
     "city": "Solin",
     "stream_url": "https://stream.servergm.eu/8002/stream",
     "homepage": "https://stream.servergm.eu/cp/#:~:text=https%3A//stream.servergm.eu/8002/stream",
-    "favicon": "/station-icons/hr/radio-salona-solin-hrvatskih-zrtava73-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/hr/radio-salona.webp",
+    "genres": [
+      "folk"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -6684,15 +6695,17 @@
     }
   },
   {
-    "slug": "radio-slavonija-ulica-nikole-zrinskog-67-slavonski-brod",
-    "stationuuid": "b53ac51a-90da-40e3-9415-ce8b5715a0a6",
+    "slug": "radio-slavonija",
+    "stationuuid": "08edf6a5-e15a-11e8-a9cc-52543be04c81",
     "name": "Radio Slavonija",
     "state": "Brod-Posavina",
     "city": "Slavonski Brod",
-    "stream_url": "http://s8.iqstreaming.com:8026/;",
+    "stream_url": "http://s8.iqstreaming.com:8026/stream",
     "homepage": "https://www.radioslavonija.hr/",
-    "favicon": "/station-icons/hr/radio-slavonija-ulica-nikole-zrinskog-67-slavonski-brod.webp",
+    "favicon": "/station-icons/hr/radio-slavonija.webp",
     "genres": [
+      "local news",
+      "pop rock",
       "news",
       "various music"
     ],
@@ -6701,7 +6714,7 @@
     "codec": "MP3",
     "clickcount": 2,
     "lastcheckok": 1,
-    "votes": 9,
+    "votes": 609,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 45.156470554561615,
@@ -6715,31 +6728,26 @@
         "city": "Slavonski Brod",
         "state": "Brod-Posavina"
       }
-    }
-  },
-  {
-    "slug": "radio-slavonija",
-    "stationuuid": "08edf6a5-e15a-11e8-a9cc-52543be04c81",
-    "name": "Radio Slavonija",
-    "state": null,
-    "city": null,
-    "stream_url": "http://s8.iqstreaming.com:8026/stream",
-    "homepage": "http://www.radioslavonija.hr/trenutno-svira/Livestream2017.php",
-    "favicon": "/station-icons/hr/radio-slavonija-placeholder.webp",
-    "genres": [
-      "local news",
-      "pop rock"
+    },
+    "alternate_stationuuids": [
+      "b53ac51a-90da-40e3-9415-ce8b5715a0a6"
     ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 609,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "streams": [
+      {
+        "id": "mp3-128-1",
+        "label": "Default MP3",
+        "url": "http://s8.iqstreaming.com:8026/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-128-2",
+        "label": "Alternative MP3",
+        "url": "http://s8.iqstreaming.com:8026/;",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-slunj-trg-dr-franje-tu-mana-14-slunj",
@@ -6802,7 +6810,7 @@
     "genres": [
       "hits",
       "news",
-      "sport"
+      "sports"
     ],
     "language": "croatian",
     "bitrate": 256,
@@ -6968,7 +6976,7 @@
     "name": "Radio Techno Dance Kneginec",
     "state": "Varaždin",
     "city": "Gornji Kneginec",
-    "stream_url": "http://stream.zeno.fm/8d2pyzm5wp8uv",
+    "stream_url": "https://stream.zeno.fm/8d2pyzm5wp8uv",
     "homepage": "https://zeno.fm/radio/radio-techno-dance/",
     "favicon": "/station-icons/hr/radio-techno-dance-kneginec.webp",
     "genres": [
@@ -7233,12 +7241,12 @@
     "slug": "radio-upanja",
     "stationuuid": "741629f8-5195-4684-ac01-82b03c7a45f7",
     "name": "Radio Županja",
-    "state": null,
-    "city": null,
+    "state": "Vukovar-Srijem",
+    "city": "Županja",
     "stream_url": "https://audio.alter-media.hr:7019/stream",
-    "homepage": "https://radiozupanja.hr/",
-    "favicon": "/station-icons/hr/radio-upanja.webp",
-    "genres": [],
+    "homepage": "https://web.radiozupanja.hr/",
+    "favicon": "/station-icons/hr/radio-zupanja.jpg",
+    "genres": ["news", "talk", "folk", "sports"],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",

@@ -60,5 +60,7 @@
   "/region/krapina-zagorje-county/": "/region/krapina-zagorje/",
   "/stations/radio-centar-studio-pore-253ad8ac/": "/stations/radio-centar-studio-pore/",
   "/stations/radio-max-vara-dinska/": "/stations/radio-max/",
-  "/stations/radio-max-99-3-cerje-nebojse-maru-evec-zagorje/": "/stations/radio-max/"
+  "/stations/radio-max-99-3-cerje-nebojse-maru-evec-zagorje/": "/stations/radio-max/",
+  "/stations/radio-slavonija-ulica-nikole-zrinskog-67-slavonski-brod/": "/stations/radio-slavonija/",
+  "/stations/kneginec/": "/stations/folk-radio-kneginec/"
 }
