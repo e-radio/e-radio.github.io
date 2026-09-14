@@ -12,20 +12,20 @@ const endpointFor = (station: typeof rawStations[number]) => {
   const mode = (station as typeof station & { metadata_mode?: string }).metadata_mode || metadataConfig.mode;
   const endpoint = station.nowplaying_url!;
   const direct = endpoint.replace(/^https:\/\/r\.jina\.ai\//i, '');
-  return mode === 'jina' || (mode === 'auto' && ['centovacast', 'icecast'].includes(station.metadata_server || '') && !direct.startsWith('https://'))
+  return mode === 'jina' || (mode === 'auto' && ['centovacast', 'icecast', 'shoutcast'].includes(station.metadata_server || '') && !direct.startsWith('https://'))
     ? `https://r.jina.ai/${direct}` : direct;
 };
-const stations = rawStations.filter(s => ['azuracast', 'centovacast', 'radiojar', 'icecast'].includes(s.metadata_server || '') && s.nowplaying_url && s.stream_url)
+const stations = rawStations.filter(s => ['azuracast', 'centovacast', 'radiojar', 'icecast', 'otvoreni', 'shoutcast'].includes(s.metadata_server || '') && s.nowplaying_url && s.stream_url)
   .sort((a,b) => a.name.localeCompare(b.name));
 const stationCount = (server: string) => stations.filter(station => station.metadata_server === server).length;
 const title = countryText(`Live Tracks — Now Playing on Greek Radio | ${site.siteShortName}`);
-const description = 'Discover what is playing right now on AzuraCast, CentovaCast, Radiojar, and Icecast radio stations. Browse songs, artists, and stations, and listen live.';
+const description = 'Discover what is playing right now on AzuraCast, CentovaCast, Radiojar, Icecast, Otvoreni, and Shoutcast radio stations. Browse songs, artists, and stations, and listen live.';
 ---
 
-<Layout title={t(title)} description={description}>
-  <SEO slot="seo" title={t(title)} description={description} canonical={site.siteUrl + "/live-tracks/"} />
+<Layout title={t(title)} description={t(description)}>
+  <SEO slot="seo" title={t(title)} description={t(description)} canonical={site.siteUrl + "/live-tracks/"} />
   <h1 class="display-5 fw-bold mb-2">{t("Live Tracks")}</h1>
-  <p class="lead text-muted">{t("What’s playing right now across {0} AzuraCast, {1} CentovaCast, {2} Radiojar, and {3} Icecast stations.", [stationCount('azuracast'), stationCount('centovacast'), stationCount('radiojar'), stationCount('icecast')])}</p>
+  <p class="lead text-muted">{t("What’s playing right now across {0} AzuraCast, {1} CentovaCast, {2} Radiojar, {3} Icecast, {4} Otvoreni, and {5} Shoutcast stations.", [stationCount('azuracast'), stationCount('centovacast'), stationCount('radiojar'), stationCount('icecast'), stationCount('otvoreni'), stationCount('shoutcast')])}</p>
   <CategorySwitch current="live-tracks" />
     <div class="d-flex align-items-center flex-nowrap gap-2 mb-2">
         <h2 class="h6 mb-0">{t("On Air")}</h2><span class="badge rounded-pill badge-soft-green">{t("Live")}</span>
@@ -49,12 +49,14 @@ const description = 'Discover what is playing right now on AzuraCast, CentovaCas
   <audio id="live-tracks-audio" preload="none" />
 </Layout>
 <script>
+  import { parseMetadata, decodeMetadata } from '../lib/metadata/index.mjs';
 import { clientTranslate as t } from '../i18n/translate';
 
   import { updateTrackText, trackArtworkController } from '../lib/live-track-view.mjs';
+  import { createMetadataFetcher } from '../lib/metadata-fetch.mjs';
   import { metadataPollDelay } from '../lib/metadata-polling.mjs';
-  import { icecastTrack } from '../lib/icecast.mjs';
-  import { radiojarSong } from '../lib/radiojar.mjs';
+
+
   const settings = document.querySelector<HTMLElement>('#live-metadata-config')!;
   const pollInterval = Math.max(5000, Number(settings.dataset.poll) || 15000);
   const requestTimeout = Math.max(1000, Number(settings.dataset.timeout) || 10000);
@@ -102,6 +104,7 @@ import { clientTranslate as t } from '../i18n/translate';
     const endpoint = card.dataset.endpoint!;
     groups.set(endpoint, [...(groups.get(endpoint) || []), card]);
   });
+  const metadataFetcher = createMetadataFetcher({ timeout: requestTimeout });
   const nextRefresh = new Map<string, number>();
   let refreshing = false;
   let timer: ReturnType<typeof setTimeout>;
@@ -109,26 +112,19 @@ import { clientTranslate as t } from '../i18n/translate';
     clearTimeout(timer);
     if (document.hidden || refreshing) return;
     refreshing = true;
-    const queue = [...groups.entries()].filter(([endpoint]) => (nextRefresh.get(endpoint) || 0) <= Date.now());
+    const queue = [...groups.entries()].filter(([endpoint]) => !metadataFetcher.isBlocked(endpoint) && (nextRefresh.get(endpoint) || 0) <= Date.now());
     async function worker() {
       while (queue.length && !document.hidden) {
         const [endpoint, entries] = queue.shift()!;
         try {
-          const response = await fetch(endpoint, { signal: AbortSignal.timeout(requestTimeout) });
-          if (!response.ok) throw new Error(String(response.status));
-          const text = await response.text();
-          const raw = text.includes('Markdown Content:') ? text.split('Markdown Content:').slice(1).join('Markdown Content:').trim() : text;
-          const data = JSON.parse(raw);
-          if (data?.type === 'error') throw new Error(t('Metadata unavailable'));
+          const data = await metadataFetcher.request(endpoint, decodeMetadata);
           const delay = Math.min(...entries.map(card => metadataPollDelay(card.dataset.server, data, pollInterval)));
           nextRefresh.set(endpoint, Date.now() + delay);
           for (const card of entries) {
-            const centova = card.dataset.server === 'centovacast' && Array.isArray(data?.data) ? data.data[0] : null;
-            const source = centova?.track;
-            const icecast = card.dataset.server === 'icecast' ? icecastTrack(data, card.dataset.stream, endpoint) : null;
-            const song = card.dataset.server === 'icecast' ? icecast : card.dataset.server === 'radiojar' ? radiojarSong(data) : centova ? { title: source?.title, artist: source?.artist, text: centova.song, art: source?.imageurl || source?.image } : data?.now_playing?.song;
+            const parsed = parseMetadata(card.dataset.server, data, { streamUrl: card.dataset.stream, endpoint });
+            const song = parsed.song;
             const listenersEl = card.querySelector<HTMLElement>('.track-listeners')!;
-            const count = icecast?.listeners ?? data?.listeners?.current ?? centova?.listeners ?? centova?.listenertotal;
+            const count = parsed.listeners;
             const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;
             updateTrackText(listenersEl, hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '');
             listenersEl.hidden = !hasCount;
@@ -145,7 +141,7 @@ import { clientTranslate as t } from '../i18n/translate';
           nextRefresh.set(endpoint, Date.now() + pollInterval);
           entries.forEach(card => {
             if (!card.dataset.loaded) updateTrackText(card.querySelector('.track-title'), t('Song information unavailable'));
-            card.querySelector('.track-title')!.setAttribute('title', t('Metadata could not be refreshed. Retrying shortly.'));
+            card.querySelector('.track-title')!.setAttribute('title', t('Song information unavailable'));
           });
         }
       }
@@ -154,8 +150,9 @@ import { clientTranslate as t } from '../i18n/translate';
     finally {
       refreshing = false;
       if (!document.hidden && groups.size) {
-        const due = Math.min(...[...groups.keys()].map(endpoint => nextRefresh.get(endpoint) || 0));
-        timer = setTimeout(refresh, Math.max(0, due - Date.now()));
+        const pending = [...groups.keys()].filter(endpoint => !metadataFetcher.isBlocked(endpoint));
+        const due = Math.min(...pending.map(endpoint => nextRefresh.get(endpoint) || 0));
+        if (pending.length) timer = setTimeout(refresh, Math.max(0, due - Date.now()));
       }
     }
   }

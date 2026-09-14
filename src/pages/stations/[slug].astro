@@ -66,6 +66,7 @@ const wrapWithCorsProxy = (rawUrl: string) => {
 };
 
 type ServerKind =
+  | "otvoreni"
   | "azuracast"
   | "centovacast"
   | "shoutcast"
@@ -777,10 +778,11 @@ const structuredData = {
   <script>
 // @ts-nocheck
 import { clientTranslate as t } from '../../i18n/translate';
+    import { createMetadataFetcher } from "../../lib/metadata-fetch.mjs";
     import { metadataPollDelay } from "../../lib/metadata-polling.mjs";
-    import { radiojarHistoryTracks } from "../../lib/radiojar.mjs";
+    import { parseMetadata, parseHistory, decodeMetadata, artworkUrl, gatherSongHistory } from "../../lib/metadata/index.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
-    import { centovaHistoryTracks } from "../../lib/centovacast-history.mjs";
+
     const configEl = document.getElementById('player-config');
     const defaultConfig = {
       hasStream: false,
@@ -900,42 +902,6 @@ import { clientTranslate as t } from '../../i18n/translate';
       if (nextCardEl) nextCardEl.hidden = true;
     };
 
-    const gatherSongHistory = (payload) => {
-      if (!payload || typeof payload !== 'object') {
-        return [];
-      }
-
-      const collected = [];
-      const pushEntry = (source) => {
-        if (!source) return;
-        const clone = { ...source };
-        const playedAt = clone.played_at ?? clone.playedat ?? clone.playedat_ts ?? clone.played ?? clone.timestamp ?? clone.date;
-        if (playedAt && !clone.played_at) {
-          clone.played_at = playedAt;
-        }
-        if (!clone.time && clone.played_at) {
-          clone.time = clone.played_at;
-        }
-        if (clone.song && typeof clone.song === 'string') {
-          clone.song = { text: clone.song };
-        }
-        collected.push(clone);
-      };
-
-      const candidates = [
-        Array.isArray(payload.song_history) ? payload.song_history : null,
-        Array.isArray(payload.songhistory) ? payload.songhistory : null,
-        Array.isArray(payload.history) ? payload.history : null,
-      ];
-
-      candidates.forEach((items) => {
-        if (!items) return;
-        items.forEach((entry) => pushEntry(entry));
-      });
-
-      return collected;
-    };
-
     const toDate = (value) => {
       if (!value) return null;
       if (typeof value === 'number') {
@@ -999,17 +965,8 @@ import { clientTranslate as t } from '../../i18n/translate';
       };
     };
 
-    const formatCurrentTrack = (payload, fallbackText) => {
-      const dataEntry = Array.isArray(payload?.data) ? payload.data[0] : null;
-      const candidate = payload?.now_playing?.song
-        || dataEntry?.track
-        || payload?.current_track
-        || (typeof payload?.title === 'string' && typeof payload?.artist === 'string' ? payload : null)
-        || (typeof payload?.songtitle === 'string' ? { text: payload.songtitle } : null)
-        || (typeof dataEntry?.song === 'string' ? { text: dataEntry.song } : dataEntry)
-        || (fallbackText ? { text: fallbackText } : null);
-      return formatSongEntry(candidate);
-    };
+    const formatCurrentTrack = (payload, fallbackText) =>
+      formatSongEntry(payload?.now_playing?.song || (fallbackText ? { text: fallbackText } : null));
 
     const updateNowPlayingTrack = (payload, fallbackText) => {
       if (!nowPlayingEl) return;
@@ -1103,20 +1060,7 @@ import { clientTranslate as t } from '../../i18n/translate';
       return historyListEl.children.length > 0;
     };
 
-    const extractRecentTracks = (payload) => {
-      if (!payload || typeof payload !== 'object') {
-        return { next: null };
-      }
-
-      const nextCandidates = [];
-      if (payload.playing_next) nextCandidates.push(payload.playing_next);
-      if (payload.next_track) nextCandidates.push(payload.next_track);
-      if (Array.isArray(payload.queue)) nextCandidates.push(...payload.queue);
-
-      const next = nextCandidates.map((entry) => formatSongEntry(entry)).find(Boolean) || null;
-
-      return { next };
-    };
+    const extractRecentTracks = payload => ({ next: formatSongEntry(payload?.playing_next) });
 
     const applyRecentTracks = (payload) => {
       if (!nextTitleEl || !nextMetaEl) {
@@ -1335,330 +1279,27 @@ import { clientTranslate as t } from '../../i18n/translate';
     });
 
     const extractNowPlayingText = (payload) => {
-      if (!payload) return null;
-
-      // Shoutcast's /stats?sid=1&json=1 response exposes the current track in
-      // `songtitle`; prefer it over server/station title fields.
-      if (playerConfig.serverType === 'shoutcast' && typeof payload.songtitle === 'string' && payload.songtitle.trim()) {
-        return payload.songtitle.trim();
-      }
-
-      if (payload.icestats) {
-        const sourceData = (() => {
-          const { source } = payload.icestats;
-          if (Array.isArray(source)) {
-            const stream = new URL(playerConfig.streamUrl);
-            const mount = stream.searchParams.get('mp') || stream.searchParams.get('mount') || stream.pathname;
-            const normalizeMount = (value) => {
-              try { return decodeURIComponent(value).replace(/\/+$/, '') || '/'; }
-              catch { return value.replace(/\/+$/, '') || '/'; }
-            };
-            return source.find((entry) => {
-              const value = entry?.listenurl || entry?.mount;
-              if (typeof value !== 'string') return false;
-              try { return normalizeMount(new URL(value, stream.origin).pathname) === normalizeMount(mount.startsWith('/') ? mount : `/${mount}`); }
-              catch { return false; }
-            });
-          }
-          return source;
-        })();
-
-        if (sourceData) {
-          const { yp_currently_playing, title, songtitle, artist, server_name } = sourceData;
-          const candidates = [yp_currently_playing, title, songtitle]
-            .concat(artist && title ? `${artist} – ${title}` : null)
-            .concat(server_name && title ? `${server_name} – ${title}` : null)
-            .filter((value) => typeof value === 'string' && value.trim());
-          const resolved = candidates.find((value) => Boolean(value?.trim()));
-          if (resolved) {
-            return resolved.trim();
-          }
-        }
-      }
-
-      if (Array.isArray(payload.data) && payload.data.length > 0) {
-        const entry = payload.data[0];
-        if (entry) {
-          if (typeof entry.song === 'string' && entry.song.trim()) {
-            return entry.song.trim();
-          }
-          if (entry.track) {
-            const { artist, title } = entry.track;
-            const candidates = [artist, title].filter((value) => typeof value === 'string' && value.trim());
-            if (candidates.length > 0) {
-              return candidates.join(' – ');
-            }
-          }
-          if (typeof entry.summary === 'string' && entry.summary.trim()) {
-            const summary = entry.summary.replace(/<[^>]+>/g, '').trim();
-            if (summary) return summary;
-          }
-        }
-      }
-
-      if (payload.now_playing?.song) {
-        const { artist, title, text } = payload.now_playing.song;
-        if (text) return text;
-        const parts = [];
-        if (artist) parts.push(artist);
-        if (title) parts.push(title);
-        if (parts.length > 0) return parts.join(' – ');
-      }
-
-      if (payload.current_track) {
-        const { artist, title } = payload.current_track;
-        if (artist || title) {
-          return [artist, title].filter(Boolean).join(' – ');
-        }
-      }
-
-      if (Array.isArray(payload.now_playing) && payload.now_playing.length > 0) {
-        const entry = payload.now_playing[0];
-        const { artist, title, song } = entry;
-        if (song) return song;
-        if (artist || title) return [artist, title].filter(Boolean).join(' – ');
-      }
-
-      if (typeof payload.title === 'string' && payload.title.trim()) {
-        return [payload.artist, payload.title].filter(value => typeof value === 'string' && value.trim()).map(value => value.trim()).join(' – ');
-      }
-
-      if (typeof payload.song === 'string' && payload.song.trim()) {
-        return payload.song.trim();
-      }
-
-      if (payload.artist || payload.track) {
-        return [payload.artist, payload.track].filter(Boolean).join(' – ');
-      }
-
-      if (typeof payload.songtitle === 'string' && payload.songtitle.trim()) {
-        return payload.songtitle.trim();
-      }
-
-      const text = payload.text || payload.message;
-      if (typeof text === 'string' && text.trim()) {
-        return text.trim();
-      }
-
-      return null;
+      const song = payload?.now_playing?.song;
+      return song?.text || [song?.artist, song?.title].filter(Boolean).join(' – ') || null;
     };
+    const extractArtworkUrl = payload => artworkUrl(payload, playerConfig.nowPlayingEndpoint || window.location.href);
 
-    const extractArtworkUrl = (payload) => {
-      if (!payload || typeof payload !== 'object') return null;
-
-      const candidates = [];
-      const addArtworkFields = (source) => {
-        if (!source || typeof source !== 'object') return;
-        for (const key of ['art', 'art_url', 'artwork', 'artwork_url', 'cover', 'cover_url', 'image', 'image_url', 'imageurl', 'thumb']) {
-          const value = source[key];
-          if (typeof value === 'string') {
-            candidates.push(value);
-          } else if (value && typeof value === 'object') {
-            for (const nestedKey of ['url', 'src', 'large', 'medium', 'small']) {
-              if (typeof value[nestedKey] === 'string') candidates.push(value[nestedKey]);
-            }
-          }
-        }
-      };
-
-      addArtworkFields(payload);
-      addArtworkFields(payload.song);
-      addArtworkFields(payload.track);
-      addArtworkFields(payload.now_playing);
-      addArtworkFields(payload.now_playing?.song);
-      addArtworkFields(payload.current_track);
-
-      if (Array.isArray(payload.now_playing)) {
-        payload.now_playing.forEach((entry) => {
-          addArtworkFields(entry);
-          addArtworkFields(entry?.song);
-        });
-      }
-
-      if (Array.isArray(payload.data)) {
-        payload.data.forEach((entry) => {
-          addArtworkFields(entry);
-          addArtworkFields(entry?.track);
-        });
-      }
-
-      if (payload.icestats?.source) {
-        const sources = Array.isArray(payload.icestats.source)
-          ? payload.icestats.source
-          : [payload.icestats.source];
-        sources.forEach(addArtworkFields);
-      }
-
-      for (const candidate of candidates) {
-        const value = candidate.trim();
-        if (!value || value.startsWith('data:') || value.startsWith('javascript:')) continue;
-        try {
-          const resolved = new URL(value, playerConfig.nowPlayingEndpoint || window.location.href);
-          if (resolved.protocol === 'http:' || resolved.protocol === 'https:') return resolved.href;
-        } catch (error) {
-          // Ignore malformed artwork values and keep checking candidates.
-        }
-      }
-
-      return null;
-    };
-
-    const parseNowPlayingResponse = async (response) => {
-      try {
-        const rawText = await response.text();
-        if (!rawText) {
-          return null;
-        }
-
-        const trimmed = rawText.trim();
-        const bracesIndex = trimmed.indexOf('{');
-        const bracketIndex = trimmed.indexOf('[');
-        const candidateIndices = [bracesIndex, bracketIndex].filter((index) => index >= 0);
-        const jsonStart = candidateIndices.length > 0 ? Math.min(...candidateIndices) : -1;
-        const payload = jsonStart > 0 ? trimmed.slice(jsonStart) : trimmed;
-
-        return JSON.parse(payload);
-      } catch (error) {
-        console.error('Failed to parse text response', error);
-        return null;
-      }
-    };
-
-    const parseHistoryEntries = (rawText, type) => {
-      if (!rawText) return [];
-      const cleanedText = rawText.replace(/\r/g, '');
-      const lines = cleanedText.split('\n').map((line) => line.trim()).filter(Boolean);
-
-      if (type === 'icecast') {
-        const currentLine = lines.find((line) => /^current song[:：]/i.test(line));
-        if (currentLine) {
-          const title = currentLine.replace(/^[^:]+:\s*/, '').trim();
-          if (title) {
-            return [{ time: null, title }];
-          }
-        }
-        return [];
-      }
-
-      const timePattern = /^(\d{2}:\d{2}:\d{2})/;
-      const entries = [];
-
-      lines.forEach((line) => {
-        const match = line.match(timePattern);
-        if (!match) return;
-        let title = line.slice(match[0].length).trim();
-        title = title.replace(/\*\*Current Song\*\*/gi, '').replace(/Current Song/gi, '').trim();
-        title = title.replace(/^[-–—\s]+/, '').trim();
-        title = title.replace(/\*{2}/g, '').trim();
-        if (!title) return;
-        entries.push({ time: match[1], title });
-      });
-
-      return entries;
-    };
-
-    // Keep the timeout active until the response body has been consumed.
-    const fetchMetadata = async (endpoint) => {
-      const response = await fetch(endpoint, {
-        cache: 'no-store',
-        signal: AbortSignal.timeout(playerConfig.requestTimeoutMs || 10000),
-      });
-      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-      return response;
-    };
+    const metadataFetcher = createMetadataFetcher({ timeout: playerConfig.requestTimeoutMs || 10000 });
 
     const fetchAndApplyHistory = async (options = {}) => {
-      if (!playerConfig.historyEndpoint || historyDisabled) return false;
-
-      const force = Boolean(options.force);
-      const now = Date.now();
-      if (!force && lastHistoryFetch && now - lastHistoryFetch < HISTORY_REFRESH_INTERVAL) {
-        return false;
-      }
-
+      if (!playerConfig.historyEndpoint || historyDisabled || metadataFetcher.isBlocked(playerConfig.historyEndpoint)) return false;
+      if (!options.force && lastHistoryFetch && Date.now() - lastHistoryFetch < HISTORY_REFRESH_INTERVAL) return false;
       try {
-        const response = await fetchMetadata(playerConfig.historyEndpoint);
-        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-        const contentType = response.headers?.get?.('content-type') || '';
-        const responseText = await response.text();
-        // Jina Reader wraps JSON in a plain-text Markdown Content section.
-        const raw = responseText.includes('Markdown Content:')
-          ? responseText.slice(responseText.indexOf('Markdown Content:') + 'Markdown Content:'.length).trim()
-          : responseText;
-
-        if (contentType.includes('application/json') || /^[\s]*[\[{]/.test(raw)) {
-          try {
-            const parsed = JSON.parse(raw);
-            const jsonPayload = playerConfig.serverType === 'radiojar'
-              ? { song_history: radiojarHistoryTracks(parsed) }
-              : playerConfig.serverType === 'centovacast'
-              ? { song_history: centovaHistoryTracks(parsed) }
-              : Array.isArray(parsed) && playerConfig.serverType === 'shoutcast'
-              ? {
-                  now_playing: { song: { text: parsed[0]?.title || '' }, played_at: parsed[0]?.playedat },
-                  song_history: parsed.slice(1).map((track) => ({
-                    song: { text: track.title },
-                    played_at: track.playedat,
-                  })),
-                }
-              : parsed;
-            const historyApplied = applyRecentTracks(jsonPayload);
-            const fallbackText = extractNowPlayingText(jsonPayload);
-            if (fallbackText && nowPlayingEl) {
-              updateNowPlayingTrack(jsonPayload, fallbackText);
-            }
-            lastHistoryFetch = Date.now();
-            if (historyApplied) {
-              historyDisabled = false;
-            }
-            return historyApplied;
-          } catch (parseError) {
-            console.error('Failed to parse JSON history response', parseError);
-            lastHistoryFetch = Date.now();
-
-            return false;
-          }
-        }
-
-        const entries = parseHistoryEntries(raw, playerConfig.serverType || 'unknown');
-        if (!entries.length) {
-          lastHistoryFetch = Date.now();
-
-          return false;
-        }
-
-        const [current, ...rest] = entries;
-        const historyEntries = rest.map((entry) => ({
-          text: entry.title,
-          played_at: entry.time,
-          time: entry.time,
-        }));
-
-        const fallbackPayload = {};
-        if (current && current.title) {
-          fallbackPayload.now_playing = { song: { text: current.title } };
-        }
-        if (historyEntries.length > 0) {
-          fallbackPayload.song_history = historyEntries;
-        }
-
-        const historyApplied = historyEntries.length > 0 ? applyRecentTracks(fallbackPayload) : false;
-
-        const fallbackText = extractNowPlayingText(fallbackPayload);
-        let updatedNowPlaying = false;
-        if (fallbackText && nowPlayingEl) {
-          updateNowPlayingTrack(fallbackPayload, fallbackText);
-          updatedNowPlaying = true;
-        }
-
-        const result = historyApplied || updatedNowPlaying;
+        const payload = await metadataFetcher.request(playerConfig.historyEndpoint, text => parseHistory(playerConfig.serverType, text));
+        const historyApplied = applyRecentTracks(payload);
+        const text = extractNowPlayingText(payload);
+        if (text && nowPlayingEl) updateNowPlayingTrack(payload, text);
         lastHistoryFetch = Date.now();
-        historyDisabled = false;
-        return result;
+        if (historyApplied || text) historyDisabled = false;
+        return Boolean(historyApplied || text);
       } catch (error) {
         console.error('History request failed', error);
         lastHistoryFetch = Date.now();
-
         return false;
       }
     };
@@ -1666,22 +1307,18 @@ import { clientTranslate as t } from '../../i18n/translate';
     let metadataPollInFlight = false;
     let nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
     const pollNowPlaying = async () => {
-      if (document.hidden || metadataPollInFlight || !playerConfig.nowPlayingEndpoint || !nowPlayingEl) return;
+      if (document.hidden || metadataPollInFlight || !playerConfig.nowPlayingEndpoint || metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint) || !nowPlayingEl) return;
       metadataPollInFlight = true;
       nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
 
       try {
-        const response = await fetchMetadata(playerConfig.nowPlayingEndpoint);
-        if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-        const data = await parseNowPlayingResponse(response);
-        if (!data) {
-          throw new Error('Empty now playing payload');
-        }
+        const rawData = await metadataFetcher.request(playerConfig.nowPlayingEndpoint, decodeMetadata);
+        const parsed = parseMetadata(playerConfig.serverType, rawData, {
+          streamUrl: playerConfig.streamUrl, endpoint: playerConfig.nowPlayingEndpoint,
+        });
+        const data = parsed.payload;
         const listenersEl = document.getElementById('nowPlayingListeners');
-        const centovaEntry = playerConfig.serverType === 'centovacast' && data?.type === 'result' && Array.isArray(data?.data)
-          ? data.data[0]
-          : null;
-        const listeners = data?.listeners?.current ?? data?.currentlisteners ?? centovaEntry?.listeners ?? centovaEntry?.listenertotal;
+        const listeners = parsed.listeners;
         if (listenersEl) {
           const valid = (typeof listeners === 'number' || typeof listeners === 'string') && String(listeners).trim() !== '' && Number.isFinite(Number(listeners)) && Number(listeners) >= 0;
           listenersEl.textContent = valid ? t(`Listeners: ${Number(listeners).toLocaleString()}`) : '';
@@ -1699,7 +1336,7 @@ import { clientTranslate as t } from '../../i18n/translate';
         if (!historyApplied && !historyDisabled) {
           await fetchAndApplyHistory({ force: textChanged });
         }
-        nextMetadataDelay = metadataPollDelay(playerConfig.serverType, data, playerConfig.pollIntervalMs || 15000);
+        nextMetadataDelay = metadataPollDelay(playerConfig.serverType, rawData, playerConfig.pollIntervalMs || 15000);
       } catch (error) {
         console.error('Now playing request failed', error);
         // Preserve the last successful song and history during temporary failures.
@@ -1716,7 +1353,7 @@ import { clientTranslate as t } from '../../i18n/translate';
         if (metadataPollInFlight) return;
         await pollNowPlaying();
         clearTimeout(metadataTimer);
-        if (!document.hidden) {
+        if (!document.hidden && !metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint)) {
           metadataTimer = setTimeout(refreshMetadata, nextMetadataDelay);
         }
       };

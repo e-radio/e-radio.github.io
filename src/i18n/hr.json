@@ -331,5 +331,9 @@
   "Alternative AAC": "Alternativni AAC",
   "Back to {0}": "Natrag na {0}",
   "Croatian Radio Stations – Listen to Radio Online | {0}": "Hrvatske radijske postaje – slušajte radio uživo | {0}",
-  "No votes recorded": "Još nema glasova"
+  "No votes recorded": "Još nema glasova",
+  "What’s playing right now across {0} AzuraCast, {1} CentovaCast, {2} Radiojar, {3} Icecast, and {4} Otvoreni stations.": "Što trenutačno svira na postajama: AzuraCast ({0}), CentovaCast ({1}), Radiojar ({2}), Icecast ({3}) i Otvoreni ({4}).",
+  "Discover what is playing right now on AzuraCast, CentovaCast, Radiojar, Icecast, and Otvoreni radio stations. Browse songs, artists, and stations, and listen live.": "Otkrijte što trenutačno svira na postajama AzuraCast, CentovaCast, Radiojar, Icecast i Otvoreni. Pregledajte pjesme, izvođače i postaje te slušajte uživo.",
+  "What’s playing right now across {0} AzuraCast, {1} CentovaCast, {2} Radiojar, {3} Icecast, {4} Otvoreni, and {5} Shoutcast stations.": "Što trenutačno svira na postajama: AzuraCast ({0}), CentovaCast ({1}), Radiojar ({2}), Icecast ({3}), Otvoreni ({4}) i Shoutcast ({5}).",
+  "Discover what is playing right now on AzuraCast, CentovaCast, Radiojar, Icecast, Otvoreni, and Shoutcast radio stations. Browse songs, artists, and stations, and listen live.": "Otkrijte što trenutačno svira na postajama AzuraCast, CentovaCast, Radiojar, Icecast, Otvoreni i Shoutcast. Pregledajte pjesme, izvođače i postaje te slušajte uživo."
 }

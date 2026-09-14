@@ -233,3 +233,19 @@ python3 tools/check-localized-site.py dist
 ```
 
 The audit checks rendered pages, language links, canonical URLs, internal links, redirects, structured-data syntax, sitemap targets, and manifests. When adding a language, translate complete page content and metadata before exposing its routes and `hreflang` links. Country catalogs are separate sites, not automatically translations of each other. Google guidance: [localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions) and [multilingual sites](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites).
+
+### Metadata provider scrapers
+
+Station pages and Live Tracks share `src/lib/metadata/index.mjs`. The registry selects a scraper using the station's `metadata_server`:
+
+- `providers/azuracast.mjs`
+- `providers/centovacast.mjs`
+- `providers/icecast.mjs`
+- `providers/shoutcast.mjs`
+- `providers/radiojar.mjs`
+- `providers/radio-co.mjs` (`radio.co` in station data)
+- `providers/unknown.mjs` (legacy fallback for unrecognized providers)
+
+Each provider exports `parse(payload, context)` and `history(payload)`. Optional `textHistory(text)` handles provider-specific text responses. The shared interface returns the current song, artwork, listeners, history, and next track in a common format. `context` contains the stream URL and metadata endpoint; Icecast uses the endpoint's mount parameter to select the correct station. Shared helpers decode JSON/Jina responses and normalize artwork and history fields.
+
+Scrapers contain no DOM manipulation or timers. Page controllers handle requests, timeouts, polling, playback, and display; `metadata-polling.mjs` still controls refresh timing using the original provider response. To add a provider, create its module, register it in `index.mjs`, and add representative payload tests in `tests/metadata-scrapers.test.mjs`. Live Tracks eligibility is unchanged by this refactor.
