@@ -1508,7 +1508,10 @@
     "stream_url": "https://a.tunzilla.com/http://radiostream.optiklink.com:8200/live.mp3",
     "homepage": "http://domoljubne-pjesme.tk/",
     "favicon": "/station-icons/hr/domoljubne-pjesme-placeholder.webp",
-    "genres": ["pop", "folk"],
+    "genres": [
+      "pop",
+      "folk"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -4817,7 +4820,7 @@
     "name": "Radio Banovina",
     "state": "Sisak-Moslavina",
     "city": "Kutinska Slatina",
-    "stream_url": "http://stream1.radio-banovina.hr:8008/;",
+    "stream_url": "https://audio.radio-banovina.hr:9998/stream",
     "homepage": "http://www.radio-banovina.hr/",
     "favicon": "/station-icons/hr/radio-banovina.webp",
     "genres": [
@@ -4833,9 +4836,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://stream1.radio-banovina.hr:8008/stats?sid=1&json=1",
+    "nowplaying_url": "https://audio.radio-banovina.hr:9998/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://stream1.radio-banovina.hr:8008/played?sid=1&type=json",
+    "history_url": "https://audio.radio-banovina.hr:9998/played?sid=1&type=json",
     "locationNames": {
       "hr": {
         "city": "Kutinska Slatina",
@@ -6823,7 +6826,7 @@
     "name": "Radio Šibenik",
     "state": "Šibenik-Knin",
     "city": "Šibenik",
-    "stream_url": "http://144.76.219.22:8215/stream.mp3",
+    "stream_url": "https://a.tunzilla.com/http://144.76.219.22:8215/stream.mp3",
     "homepage": "https://radiosibenik.hr/",
     "favicon": "/station-icons/hr/radio-ibenik-ibenik-knin.webp",
     "genres": [
