@@ -69,5 +69,12 @@
   "/stations/bravo-grad-zagreb/": "/stations/bravo/",
   "/stations/otvoreni-radio/": "/stations/otvoreni-live-grad-zagreb/",
   "/stations/otvoreni-radio-u-ivo-grad-zagreb/": "/stations/otvoreni-live-grad-zagreb/",
-  "/stations/radio-101-rock-c9c7126d/": "/stations/radio-101-rock/"
+  "/stations/radio-101-rock-c9c7126d/": "/stations/radio-101-rock/",
+  "/stations/antena-zagreb-xmas/": "/stations/antena-dance-legacy/",
+  "/stations/happy-fm-zagreba-ka-upanija/": "/stations/happy-fm/",
+  "/stations/happy-fm-live/": "/stations/happy-fm/",
+  "/stations/happy-fm-croatia/": "/stations/happy-fm/",
+  "/stations/happy-fm-fest-3b40f3ef/": "/stations/happy-fm-fest/",
+  "/stations/happy-fm-legenda-792910cd/": "/stations/happy-fm-legenda/",
+  "/stations/happy-party/": "/stations/happy-fm-party/"
 }

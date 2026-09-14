@@ -66,6 +66,7 @@ const wrapWithCorsProxy = (rawUrl: string) => {
 };
 
 type ServerKind =
+  | "gamerzinn"
   | "otvoreni"
   | "azuracast"
   | "centovacast"
@@ -640,8 +641,8 @@ const structuredData = {
         </div>
         <div class="mt-3 pt-3">
           <h2 class="h3 fw-normal mb-0 small-muted mb-2">{t("Recent tracks")}</h2>
-          <ul class="list-unstyled mb-0 small vstack gap-2" id="recent-history" data-default-message={t("Waiting for station metadata…")}>
-            <li class="small-muted">{t("Waiting for station metadata…")}</li>
+          <ul class="list-unstyled mb-0 small rounded-3 border border-light-subtle" id="recent-history" data-default-message={t("Waiting for station metadata…")}>
+            <li>{t("Waiting for station metadata…")}</li>
           </ul>
         </div>
       </section>
@@ -887,7 +888,7 @@ import { clientTranslate as t } from '../../i18n/translate';
       if (!historyListEl) return;
       historyListEl.innerHTML = '';
       const placeholder = document.createElement('li');
-      placeholder.className = 'small-muted';
+      placeholder.className = 'small-muted px-3 py-2';
       placeholder.textContent = message;
       historyListEl.appendChild(placeholder);
       lastHistoryRenderedSignature = null;
@@ -1011,7 +1012,7 @@ import { clientTranslate as t } from '../../i18n/translate';
       rendered.forEach((info) => {
         if (!info) return;
         const item = document.createElement('li');
-        item.className = 'history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3';
+        item.className = 'history-track-item px-3 py-2 bg-white rounded-3 d-flex align-items-center gap-3';
 
         if (info.artwork) {
           const artwork = document.createElement('img');

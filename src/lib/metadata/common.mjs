@@ -98,10 +98,11 @@ export const gatherSongHistory = (payload) => {
 
 export const parseTextHistory = (rawText) => {
       if (!rawText) return [];
-      const cleanedText = rawText.replace(/\r/g, '');
+      const cleanedText = rawText.replace(/<\/tr>/gi, '\n').replace(/<[^>]+>/g, ' ')
+        .replace(/&amp;/gi, '&').replace(/&#39;|&apos;/gi, "'").replace(/&quot;/gi, '"').replace(/&nbsp;/gi, ' ').replace(/\r/g, '');
       const lines = cleanedText.split('\n').map((line) => line.trim()).filter(Boolean);
 
-      const timePattern = /^(\d{2}:\d{2}:\d{2})/;
+      const timePattern = /^(?:\|\s*)?(?:\d{4}-\d{2}-\d{2}\s+)?(\d{2}:\d{2}:\d{2})/;
       const entries = [];
 
       lines.forEach((line) => {
@@ -109,7 +110,7 @@ export const parseTextHistory = (rawText) => {
         if (!match) return;
         let title = line.slice(match[0].length).trim();
         title = title.replace(/\*\*Current Song\*\*/gi, '').replace(/Current Song/gi, '').trim();
-        title = title.replace(/^[-–—\s]+/, '').trim();
+        title = title.replace(/^[-–—|\s]+/, '').replace(/\s*\|\s*$/, '').trim();
         title = title.replace(/\*{2}/g, '').trim();
         if (!title) return;
         entries.push({ time: match[1], title });

@@ -70,3 +70,22 @@ test('Otvoreni maps current artist/title and lastTen without inventing timezone 
  assert.equal(parseHistory('otvoreni',JSON.stringify(raw)).song_history.length,1);
  assert.equal(parseMetadata('otvoreni',{},context).text,null);
 });
+
+test('Icecast history supports dated HTML tables and proxy markdown', () => {
+ const html='<TABLE><TR><TD>2026-09-14 13:59:29</TD><TD>ARTIST - SONG</TD><TD><B>CURRENT SONG</B></TD></TR><TR><TD>2026-09-14 13:57:13</TD><TD>TOM &amp; JANE - PREVIOUS</TD></TR></TABLE>';
+ const result=parseHistory('icecast',html);
+ assert.equal(result.now_playing.song.text,'ARTIST - SONG');
+ assert.equal(result.song_history[0].text,'TOM & JANE - PREVIOUS');
+ assert.equal(result.song_history[0].time,'13:57:13');
+ assert.equal(parseHistory('icecast','Markdown Content:\n| 2026-09-14 13:59:29 | ARTIST - SONG |').now_playing.song.text,'ARTIST - SONG');
+});
+
+test('Gamerz Inn history maps artwork, artist and millisecond timestamps', () => {
+ const raw={results:[{author:'Artist',title:'Song',ts:1789390269000,img_url:'https://img.example/art.jpg'},{author:'Earlier',title:'Track',ts:1789390014000}]};
+ const result=parseMetadata('gamerzinn',raw,context);
+ assert.equal(result.song.artist,'Artist');assert.equal(result.song.art,'https://img.example/art.jpg');
+ assert.equal(result.payload.now_playing.played_at,1789390269);
+ assert.equal(result.payload.song_history[0].song.title,'Track');
+ assert.equal(parseHistory('gamerzinn',JSON.stringify(raw)).song_history.length,1);
+ assert.equal(parseMetadata('gamerzinn',{},context).text,null);
+});

@@ -1,4 +1,4 @@
-import { artworkUrl } from '../common.mjs';
+import { artworkUrl, parseTextHistory } from '../common.mjs';
 import { icecastTrack, icecastSource } from '../../icecast.mjs';
 export function parse(payload, context) {
   const song = icecastTrack(payload, context.streamUrl, context.endpoint);
@@ -7,6 +7,8 @@ export function parse(payload, context) {
 export const history = payload => payload;
 
 export function textHistory(rawText) {
+  const entries = parseTextHistory(rawText);
+  if (entries.length) return entries;
   const line = rawText.split('\n').map(value => value.trim()).find(value => /^current song[:：]/i.test(value));
   const title = line?.replace(/^[^:：]+[:：]\s*/, '').trim();
   return title ? [{ time: null, title }] : [];

@@ -5,11 +5,12 @@ import * as shoutcast from './providers/shoutcast.mjs';
 import * as radiojar from './providers/radiojar.mjs';
 import * as radioCo from './providers/radio-co.mjs';
 import * as otvoreni from './providers/otvoreni.mjs';
+import * as gamerzinn from './providers/gamerzinn.mjs';
 import * as unknown from './providers/unknown.mjs';
 import { artworkUrl, gatherSongHistory, parseTextHistory } from './common.mjs';
 export { artworkUrl, gatherSongHistory } from './common.mjs';
 
-const providers = { otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
+const providers = { gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
 export const scraperFor = server => providers[server] || unknown;
 
 export function decodeMetadata(text) {
