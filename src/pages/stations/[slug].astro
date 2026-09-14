@@ -781,7 +781,7 @@ const structuredData = {
 import { clientTranslate as t } from '../../i18n/translate';
     import { createMetadataFetcher } from "../../lib/metadata-fetch.mjs";
     import { metadataPollDelay } from "../../lib/metadata-polling.mjs";
-    import { parseMetadata, parseHistory, decodeMetadata, artworkUrl, gatherSongHistory } from "../../lib/metadata/index.mjs";
+    import { parseMetadata, parseHistory, decodeProviderMetadata, artworkUrl, gatherSongHistory } from "../../lib/metadata/index.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
 
     const configEl = document.getElementById('player-config');
@@ -1313,7 +1313,7 @@ import { clientTranslate as t } from '../../i18n/translate';
       nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
 
       try {
-        const rawData = await metadataFetcher.request(playerConfig.nowPlayingEndpoint, decodeMetadata);
+        const rawData = await metadataFetcher.request(playerConfig.nowPlayingEndpoint, text => decodeProviderMetadata(playerConfig.serverType, text));
         const parsed = parseMetadata(playerConfig.serverType, rawData, {
           streamUrl: playerConfig.streamUrl, endpoint: playerConfig.nowPlayingEndpoint,
         });

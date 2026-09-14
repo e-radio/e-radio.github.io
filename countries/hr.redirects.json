@@ -76,5 +76,10 @@
   "/stations/happy-fm-croatia/": "/stations/happy-fm/",
   "/stations/happy-fm-fest-3b40f3ef/": "/stations/happy-fm-fest/",
   "/stations/happy-fm-legenda-792910cd/": "/stations/happy-fm-legenda/",
-  "/stations/happy-party/": "/stations/happy-fm-party/"
+  "/stations/happy-party/": "/stations/happy-fm-party/",
+  "/stations/hrvatski-katoli-ki-radio/": "/stations/hkr/",
+  "/stations/zagorski-radio-frana-galovi-a-1a-49000-krapina/": "/stations/zagorski-radio/",
+  "/stations/radio-maria/": "/stations/radio-marija/",
+  "/stations/radio-maria-croatia/": "/stations/radio-marija/",
+  "/stations/radio-marija-hrvatska/": "/stations/radio-marija/"
 }

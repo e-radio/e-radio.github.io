@@ -43,3 +43,8 @@ export function parseHistory(server, text) {
     song_history: rest.map(entry => ({ text: entry.title, played_at: entry.time, time: entry.time })),
   };
 }
+
+export function decodeProviderMetadata(server, text) {
+  const decode = scraperFor(server).decode;
+  return decode ? decode(text, decodeMetadata) : decodeMetadata(text);
+}

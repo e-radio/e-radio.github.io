@@ -5,7 +5,7 @@
     "name": "Club Music Radio 70s 80s 90s",
     "state": "Osijek-Baranja",
     "city": "Osijek",
-    "stream_url": "http://cmr-hosting.com:8030/stream",
+    "stream_url": "https://cmr-hosting.com:7003/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-70s-80s-90s.webp",
     "genres": [
@@ -24,26 +24,22 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://cmr-hosting.com:8030/stats?sid=1&json=1",
+    "nowplaying_url": "https://cmr-hosting.com:7003/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8030/played?sid=1&type=json",
+    "history_url": "https://cmr-hosting.com:7003/played?sid=1&type=json",
     "alternate_stationuuids": [
       "08d2313f-5550-4e51-8179-bd2c066d7e2e"
     ],
     "streams": [
       {
         "id": "mp3-320-1",
-        "label": "Default",
+        "label": "Alterntive",
         "url": "http://cmr-hosting.com:8030/stream",
         "bitrate": 320,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-320-2",
-        "label": "Alternative HTTPS",
-        "url": "https://cmr-hosting.com:7003/;stream/1",
-        "bitrate": 320,
-        "codec": "MP3"
+        "codec": "MP3",
+        "nowplaying_url": "http://cmr-hosting.com:8030/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://cmr-hosting.com:8030/played?sid=1&type=json"
       }
     ]
   },
@@ -53,7 +49,7 @@
     "name": "Club Music Radio CRO HITS",
     "state": null,
     "city": null,
-    "stream_url": "http://cmr-hosting.com:8060/stream",
+    "stream_url": "https://cmr-hosting.com:7006/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-cro-hits.webp",
     "genres": [
@@ -69,26 +65,22 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://cmr-hosting.com:8060/stats?sid=1&json=1",
+    "nowplaying_url": "https://cmr-hosting.com:7006/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8060/played?sid=1&type=json",
+    "history_url": "https://cmr-hosting.com:7006/played?sid=1&type=json",
     "alternate_stationuuids": [
       "ec4bd980-b14f-4ed3-a717-396dee87f436"
     ],
     "streams": [
       {
         "id": "mp3-320-1",
-        "label": "Default",
+        "label": "Alternative",
         "url": "http://cmr-hosting.com:8060/stream",
         "bitrate": 320,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-320-2",
-        "label": "Alternative HTTPS",
-        "url": "https://cmr-hosting.com:7006/;stream/1",
-        "bitrate": 320,
-        "codec": "MP3"
+        "codec": "MP3",
+        "nowplaying_url": "http://cmr-hosting.com:8060/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://cmr-hosting.com:8060/played?sid=1&type=json"
       }
     ]
   },
@@ -98,7 +90,7 @@
     "name": "..:: CLUB MUSIC RADIO ::....:: ExYU POP-ROCK ::..",
     "state": null,
     "city": null,
-    "stream_url": "http://cmr-hosting.com:8080/stream",
+    "stream_url": "https://cmr-hosting.com:7008/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-exyu-pop-rock.webp",
     "genres": [
@@ -114,9 +106,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://cmr-hosting.com:8080/stats?sid=1&json=1",
+    "nowplaying_url": "https://cmr-hosting.com:7008/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8080/played?sid=1&type=json"
+    "history_url": "https://cmr-hosting.com:7008/played?sid=1&type=json"
   },
   {
     "slug": "club-music-radio-folk",
@@ -124,7 +116,7 @@
     "name": "Club Music Radio Folk",
     "state": null,
     "city": null,
-    "stream_url": "http://cmr-hosting.com:8010/stream",
+    "stream_url": "https://cmr-hosting.com:7001/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-folk.webp",
     "genres": [
@@ -140,26 +132,22 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://cmr-hosting.com:8010/stats?sid=1&json=1",
+    "nowplaying_url": "https://cmr-hosting.com:7001/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8010/played?sid=1&type=json",
+    "history_url": "https://cmr-hosting.com:7001/played?sid=1&type=json",
     "alternate_stationuuids": [
       "2cf7f232-2209-4f21-837c-8bf83c3eed12"
     ],
     "streams": [
       {
         "id": "mp3-320-1",
-        "label": "Default",
+        "label": "Alternative",
         "url": "http://cmr-hosting.com:8010/stream",
         "bitrate": 320,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-320-2",
-        "label": "Alternative HTTPS",
-        "url": "https://cmr-hosting.com:7001/;stream/1",
-        "bitrate": 320,
-        "codec": "MP3"
+        "codec": "MP3",
+        "nowplaying_url": "http://cmr-hosting.com:8010/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://cmr-hosting.com:8010/played?sid=1&type=json"
       }
     ]
   },
@@ -169,7 +157,7 @@
     "name": "Club Music Radio Love Song",
     "state": null,
     "city": null,
-    "stream_url": "http://cmr-hosting.com:8040/stream",
+    "stream_url": "https://cmr-hosting.com:7004/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-love-song.webp",
     "genres": [
@@ -185,26 +173,22 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://cmr-hosting.com:8040/stats?sid=1&json=1",
+    "nowplaying_url": "https://cmr-hosting.com:7004/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8040/played?sid=1&type=json",
+    "history_url": "https://cmr-hosting.com:7004/played?sid=1&type=json",
     "alternate_stationuuids": [
       "03abf0e3-7903-4f3f-a757-053631819f43"
     ],
     "streams": [
       {
-        "id": "mp3-320-1",
-        "label": "Default",
+        "id": "mp3-320",
+        "label": "Alternative",
         "url": "http://cmr-hosting.com:8040/stream",
         "bitrate": 320,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-320-2",
-        "label": "Alternative HTTPS",
-        "url": "https://cmr-hosting.com:7004/;stream/1",
-        "bitrate": 320,
-        "codec": "MP3"
+        "codec": "MP3",
+        "nowplaying_url": "http://cmr-hosting.com:8040/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://cmr-hosting.com:8040/played?sid=1&type=json"
       }
     ]
   },
@@ -214,7 +198,7 @@
     "name": "Club Music Radio Tambura",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://cmr-hosting.com:8070/stream",
+    "stream_url": "https://cmr-hosting.com:7007/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-tambura.webp",
     "genres": [
@@ -230,9 +214,9 @@
     "ssl_error": 0,
     "geo_lat": 45.80646674808427,
     "geo_long": 15.976867675781252,
-    "nowplaying_url": "http://cmr-hosting.com:8070/stats?sid=1&json=1",
+    "nowplaying_url": "https://cmr-hosting.com:7007/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8070/played?sid=1&type=json",
+    "history_url": "https://cmr-hosting.com:7007/played?sid=1&type=json",
     "alternate_stationuuids": [
       "90d73285-1813-43e2-bbf4-7e1607217f85",
       "120f5847-68d7-41d1-8b28-51614984d1f3"
@@ -250,22 +234,18 @@
     "streams": [
       {
         "id": "mp3-320-1",
-        "label": "Default",
+        "label": "Alternative MP3",
         "url": "http://cmr-hosting.com:8070/stream",
         "bitrate": 320,
-        "codec": "MP3"
+        "codec": "MP3",
+        "nowplaying_url": "http://cmr-hosting.com:8070/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://cmr-hosting.com:8070/played?sid=1&type=json"
       },
       {
         "id": "mp3-320-2",
-        "label": "Alternative HTTPS",
-        "url": "https://cmr-hosting.com:7007/;stream/1",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-320-3",
         "label": "Alternative HTTP",
-        "url": "http://cmr-hosting.com:8070/",
+        "url": "http://cmr-hosting.com:8070/;",
         "bitrate": 320,
         "codec": "MP3"
       }
@@ -793,14 +773,18 @@
   {
     "slug": "braniteljski-radio-nepokoreni-grad",
     "stationuuid": "afdba2d7-0eee-4dcc-adf7-9a1819383eb6",
-    "name": "Braniteljski radio \"Nepokoreni grad\"",
-    "state": null,
-    "city": null,
-    "stream_url": "http://s3.radio.co/se83499ee0/listen",
+    "name": "Braniteljski radio Nepokoreni grad",
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
+    "stream_url": "https://s3.radio.co/se83499ee0/listen",
     "homepage": "https://embed.radio.co/player/6fa1744.html",
     "favicon": "/station-icons/hr/braniteljski-radio-nepokoreni-grad.webp",
-    "genres": [],
-    "language": null,
+    "genres": [
+      "rock",
+      "hard rock",
+      "metal"
+    ],
+    "language": "croatian",
     "bitrate": 128,
     "codec": "MP3",
     "clickcount": 2,
@@ -809,7 +793,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://public.radio.co/api/v2/se83499ee0/track/current",
+    "history_url": "https://public.radio.co/api/v2/se83499ee0/track/history",
+    "metadata_server": "radio.co",
+    "metadata_mode": "direct"
   },
   {
     "slug": "bravo",
@@ -1221,7 +1209,7 @@
     "name": "CMC Classic",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://radio-stream.cmc.com.hr:8100/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9020/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-classic.webp",
     "genres": [
@@ -1237,15 +1225,17 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8100/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9020/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast",
     "streams": [
       {
         "id": "mp3-192",
         "label": "Alternative",
-        "url": "https://radio-stream.cmc.com.hr:9020/stream",
+        "url": "http://radio-stream.cmc.com.hr:8100/autodj",
         "bitrate": 192,
-        "codec": "MP3"
+        "codec": "MP3",
+        "nowplaying_url": "http://radio-stream.cmc.com.hr:8100/status-json.xsl?mount=%2Fautodj",
+        "metadata_server": "icecast"
       }
     ]
   },
@@ -1292,7 +1282,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8070/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9017/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast"
   },
   {
@@ -1301,7 +1291,7 @@
     "name": "CMC Jugoton",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://radio-stream.cmc.com.hr:8020/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9012/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-jugoton.webp",
     "genres": [],
@@ -1319,7 +1309,7 @@
       {
         "id": "mp3-192",
         "label": "Alternative",
-        "url": "https://radio-stream.cmc.com.hr:9012/stream",
+        "url": "http://radio-stream.cmc.com.hr:8020/autodj",
         "bitrate": 192,
         "codec": "MP3"
       }
@@ -1347,7 +1337,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8090/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9019/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast",
     "streams": [
       {
@@ -1365,7 +1355,7 @@
     "name": "CMC Lagano",
     "state": null,
     "city": null,
-    "stream_url": "http://radio-stream.cmc.com.hr:8030/autodj",
+    "stream_url": "https://radio-stream.cmc.com.hr:9013/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-lagano.webp",
     "genres": [],
@@ -1379,13 +1369,13 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8030/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9013/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast",
     "streams": [
       {
         "id": "mp3-192",
         "label": "Alternative",
-        "url": "https://radio-stream.cmc.com.hr:9013/stream",
+        "url": "http://radio-stream.cmc.com.hr:8030/autodj",
         "bitrate": 192,
         "codec": "MP3"
       }
@@ -1441,7 +1431,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8060/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9016/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast"
   },
   {
@@ -1466,7 +1456,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8050/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9015/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast"
   },
   {
@@ -1489,18 +1479,18 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio-stream.cmc.com.hr:8085/status-json.xsl?mount=%2Fautodj",
+    "nowplaying_url": "https://radio-stream.cmc.com.hr:9018/status-json.xsl?mount=%2Fautodj",
     "metadata_server": "icecast"
   },
   {
     "slug": "crash",
     "stationuuid": "2886bb17-aa5f-41c2-8a4c-063a9d76fca8",
-    "name": "CRASH",
-    "state": null,
-    "city": null,
-    "stream_url": "http://live.radiocrash.net/",
+    "name": "Radio CRASH",
+    "state": "City of Zagreb",
+    "city": "Zagreb",
+    "stream_url": "https://live.radiocrash.net/;",
     "homepage": "https://radiocrash.net/",
-    "favicon": "/station-icons/hr/crash.webp",
+    "favicon": "/station-icons/hr/radio-crash.webp",
     "genres": [
       "80s",
       "dance",
@@ -1525,7 +1515,7 @@
     "state": null,
     "city": null,
     "stream_url": "https://stream.zeno.fm/t47dykadrchvv",
-    "homepage": "http://crointernational.hr/",
+    "homepage": "https://crinternational.hr/",
     "favicon": "/station-icons/hr/cro-international-dj-radio-placeholder.webp",
     "genres": [
       "dance",
@@ -2358,7 +2348,7 @@
     "name": "Hit Radio",
     "state": "Split-Dalmatia",
     "city": "Sinj",
-    "stream_url": "http://s8.iqstreaming.com:8012/;stream.mp3",
+    "stream_url": "https://s8.iqstreaming.com:2020/stream/hitradio",
     "homepage": "https://www.hitradio.hr/",
     "favicon": "/station-icons/hr/hit-radio.webp",
     "genres": [
@@ -2392,15 +2382,8 @@
     "streams": [
       {
         "id": "mp3-128-1",
-        "label": "Default",
-        "url": "http://s8.iqstreaming.com:8012/;stream.mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-128-2",
         "label": "Alternative",
-        "url": "http://s8.iqstreaming.com:8012/stream",
+        "url": "http://s8.iqstreaming.com:8012/;",
         "bitrate": 128,
         "codec": "MP3"
       }
@@ -2409,16 +2392,21 @@
   {
     "slug": "hkr",
     "stationuuid": "0aa9f85f-436b-11e9-aa55-52543be04c81",
-    "name": "HKR",
-    "state": null,
-    "city": null,
-    "stream_url": "http://stream.hkr.hr:8000/hkr.mp3",
-    "homepage": "https://hkr.com/",
+    "name": "HKR - Hrvatski Katolicki Radio",
+    "state": "City of Zagreb",
+    "city": "Zagreb",
+    "stream_url": "https://stream.hkr.hr/hkr.mp3",
+    "homepage": "https://hkr.hkm.hr/",
     "favicon": "/station-icons/hr/hkr.webp",
     "genres": [
       "croatian",
       "culture",
-      "religion"
+      "religion",
+      "chatolic",
+      "christian",
+      "hkr",
+      "katolički",
+      "kršćanski"
     ],
     "language": "croatian",
     "bitrate": 128,
@@ -2429,7 +2417,22 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "alternate_stationuuids": [
+      "5d429726-08ac-4785-8e12-292054d1d6cc"
+    ],
+    "aliases": [
+      "hrvatski-katoli-ki-radio"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-2",
+        "label": "Alternative",
+        "url": "http://stream.hkr.hr:8000/hkr.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "hrt-drugi-program",
@@ -2458,8 +2461,8 @@
     "slug": "hrt-glas-hrvatske",
     "stationuuid": "96183c5c-0601-11e8-ae97-52543be04c81",
     "name": "HRT Glas Hrvatske",
-    "state": null,
-    "city": null,
+    "state": "City of Zagreb",
+    "city": "Zagreb",
     "stream_url": "http://28033.live.streamtheworld.com:3690/VOICEOFCROATIAAAC_SC",
     "homepage": "http://glashrvatske.hrt.hr/",
     "favicon": "/station-icons/hr/hrt-glas-hrvatske-placeholder.webp",
@@ -2870,34 +2873,6 @@
     "geo_long": null
   },
   {
-    "slug": "hrvatski-katoli-ki-radio",
-    "stationuuid": "5d429726-08ac-4785-8e12-292054d1d6cc",
-    "name": "Hrvatski Katolički Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "https://stream.hkr.hr/hkr.mp3",
-    "homepage": "https://hkr.hkm.hr/",
-    "favicon": "/station-icons/hr/hrvatski-katoli-ki-radio.webp",
-    "genres": [
-      "chatolic",
-      "christian",
-      "croatian",
-      "hkr",
-      "katolički",
-      "kršćanski"
-    ],
-    "language": "bosnian",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 3,
-    "lastcheckok": 1,
-    "votes": 212,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "hrvatski-radio-klasik",
     "stationuuid": "b19f2749-9c66-48ac-b3ae-a6bfd05030ae",
     "name": "Hrvatski radio - Klasik",
@@ -3161,8 +3136,8 @@
     "stationuuid": "01c95dd5-7c23-43d2-be3e-6ae88a49dc26",
     "name": "JR Radio",
     "state": "Split-Dalmatia",
-    "city": null,
-    "stream_url": "http://stream.zeno.fm/pdkt234k698uv.mp3",
+    "city": "Split",
+    "stream_url": "https://stream.zeno.fm/pdkt234k698uv",
     "homepage": "https://justrock.webador.com/",
     "favicon": "/station-icons/hr/jr-radio-splitsko-dalmatinska.webp",
     "genres": [
@@ -3184,11 +3159,11 @@
     "geo_long": null,
     "locationNames": {
       "hr": {
-        "city": null,
+        "city": "Split",
         "state": "Splitsko Dalmatinska"
       },
       "en": {
-        "city": null,
+        "city": "Split",
         "state": "Split-Dalmatia"
       }
     }
@@ -3501,8 +3476,8 @@
     "name": "Laganini FM Zagreb NEW",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "https://a.tunzilla.com/http://sky.doscast.com:8331/stream",
-    "homepage": "http://laganini.fm/zagreb/",
+    "stream_url": "https://cast5.asurahosting.com/proxy/soundset/stream",
+    "homepage": "https://laganini.fm/zagreb/",
     "favicon": "/station-icons/hr/laganini-fm-zagreb.webp",
     "genres": [
       "news",
@@ -3592,8 +3567,8 @@
     "name": "Laganini Osijek",
     "state": "Osijek-Baranja",
     "city": "Osijek",
-    "stream_url": "http://194.145.208.251:8012/start/lfmos",
-    "homepage": "http://laganini.fm/",
+    "stream_url": "https://cast5.asurahosting.com/proxy/soundsetosijek/stream",
+    "homepage": "https://laganini.fm/",
     "favicon": "/station-icons/hr/laganini-osijek.webp",
     "genres": [
       "pop",
@@ -3629,7 +3604,7 @@
     "state": "Požega-Slavonia",
     "city": "Požega",
     "stream_url": "https://cast5.asurahosting.com/proxy/soundsetpozega/stream",
-    "homepage": "http://laganini.fm/",
+    "homepage": "https://laganini.fm/",
     "favicon": "/station-icons/hr/laganini-pozega.webp",
     "genres": [
       "pop",
@@ -4408,7 +4383,7 @@
     "name": "Prigorski radio",
     "state": "Koprivnica-Križevci",
     "city": "Križevci",
-    "stream_url": "http://s8.iqstreaming.com:8048/stream",
+    "stream_url": "https://s8.iqstreaming.com:8048/stream",
     "homepage": "https://prigorskiradio.hr/",
     "favicon": "/station-icons/hr/prigorski-radio.webp",
     "genres": [
@@ -6075,8 +6050,8 @@
     "slug": "radio-kri-evci",
     "stationuuid": "3eba933a-a037-447b-b3ca-ffeb8ca90b08",
     "name": "Radio Križevci",
-    "state": null,
-    "city": null,
+    "state": "Koprivnica-Križevci",
+    "city": "Križevci",
     "stream_url": "https://s8.iqstreaming.com:8048/stream",
     "homepage": "https://radiokrizevci.hr/",
     "favicon": "/station-icons/hr/radio-kri-evci.webp",
@@ -6221,70 +6196,19 @@
     "geo_long": null
   },
   {
-    "slug": "radio-maria",
-    "stationuuid": "6a516c5c-3cec-407b-9ecf-f7983a7cbf8b",
-    "name": "RADIO MARIA",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "http://dreamsiteradiocp.com:8026/stream",
-    "homepage": "https://www.radiomarija.hr/index.php/programi/program-uzivo",
-    "favicon": "/station-icons/hr/radio-maria-croatia.webp",
-    "genres": [
-      "christian",
-      "gospel"
-    ],
-    "language": null,
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 53,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://dreamsiteradiocp.com:8026/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://dreamsiteradiocp.com:8026/played?sid=1&type=json"
-  },
-  {
-    "slug": "radio-maria-croatia",
-    "stationuuid": "99a57835-5f8b-11e9-a622-52543be04c81",
-    "name": "RADIO MARIA CROATIA",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "http://dreamsiteradiocp4.com:8080/stream",
-    "homepage": "http://www.radiomarija.hr/",
-    "favicon": "/station-icons/hr/radio-maria-croatia.webp",
-    "genres": [
-      "christian",
-      "talk"
-    ],
-    "language": null,
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 336,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://dreamsiteradiocp4.com:8080/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json"
-  },
-  {
     "slug": "radio-marija",
     "stationuuid": "96104374-0601-11e8-ae97-52543be04c81",
     "name": "Radio Marija",
     "state": "City of Zagreb",
     "city": "Zagreb",
     "stream_url": "http://dreamsiteradiocp4.com:8080/;",
-    "homepage": "http://www.radiomarija.hr/",
+    "homepage": "https://radiomarija.hr/",
     "favicon": "/station-icons/hr/radio-marija.webp",
     "genres": [
-      "catholic"
+      "catholic",
+      "christian",
+      "gospel",
+      "talk"
     ],
     "language": "croatian",
     "bitrate": 64,
@@ -6296,9 +6220,47 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "alternate_stationuuids": [
+      "6a516c5c-3cec-407b-9ecf-f7983a7cbf8b",
+      "99a57835-5f8b-11e9-a622-52543be04c81",
+      "0d387023-d6cf-4478-9566-c166f4d3a29d"
+    ],
     "nowplaying_url": "http://dreamsiteradiocp4.com:8080/stats?sid=1&json=1",
+    "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json",
     "metadata_server": "shoutcast",
-    "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json"
+    "streams": [
+      {
+        "url": "http://dreamsiteradiocp4.com:8080/;",
+        "bitrate": 64,
+        "codec": "AAC+",
+        "id": "stream-1",
+        "label": "Default"
+      },
+      {
+        "url": "http://dreamsiteradiocp.com:8026/stream",
+        "bitrate": 64,
+        "codec": "AAC+",
+        "id": "stream-2",
+        "label": "Alternative"
+      },
+      {
+        "url": "http://dreamsiteradiocp4.com:8080/stream",
+        "bitrate": 64,
+        "codec": "AAC+",
+        "nowplaying_url": "http://dreamsiteradiocp4.com:8080/stats?sid=1&json=1",
+        "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json",
+        "metadata_server": "shoutcast",
+        "id": "stream-3",
+        "label": "Alternative"
+      },
+      {
+        "url": "https://dreamsiteradiocp2.com/proxy/rmcroatia?mp=/stream",
+        "bitrate": 96,
+        "codec": "AAC+",
+        "id": "stream-4",
+        "label": "Alternative"
+      }
+    ]
   },
   {
     "slug": "radio-marija-bistrica",
@@ -6306,9 +6268,9 @@
     "name": "Radio Marija Bistrica",
     "state": "Krapina-Zagorje",
     "city": "Bistrica",
-    "stream_url": "http://178.218.163.171:8024/stream",
+    "stream_url": "https://a.tunzilla.com/http://178.218.163.171:8024/stream",
     "homepage": "https://www.rmb.hr/",
-    "favicon": "/station-icons/hr/radio-marija.webp",
+    "favicon": "/station-icons/hr/radio-marija-bistrica.webp",
     "genres": [
       "folk",
       "local news",
@@ -6327,33 +6289,6 @@
     "nowplaying_url": "http://178.218.163.171:8024/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "history_url": "http://178.218.163.171:8024/played?sid=1&type=json"
-  },
-  {
-    "slug": "radio-marija-hrvatska",
-    "stationuuid": "0d387023-d6cf-4478-9566-c166f4d3a29d",
-    "name": "Radio Marija Hrvatska",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "https://dreamsiteradiocp2.com/proxy/rmcroatia?mp=/stream",
-    "homepage": "https://www.radiomarija.hr/",
-    "favicon": "/station-icons/hr/radio-marija.webp",
-    "genres": [
-      "catholic",
-      "christian"
-    ],
-    "language": "croatian",
-    "bitrate": 96,
-    "codec": "AAC+",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 230,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://dreamsiteradiocp2.com/rpc/rmcroatia/streaminfo.get",
-    "metadata_server": "centovacast",
-    "history_url": "https://dreamsiteradiocp2.com/external/rpc.php?m=recenttracks.get&username=rmcroatia&limit=10"
   },
   {
     "slug": "radio-max",
@@ -6395,13 +6330,6 @@
     ],
     "streams": [
       {
-        "id": "aac-128-1",
-        "label": "Default AAC",
-        "url": "https://azuracast.novi-net.net/radio/8010/radiomax.aac",
-        "bitrate": 128,
-        "codec": "AAC"
-      },
-      {
         "id": "aac-128-2",
         "label": "Alternative AAC",
         "url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.aac",
@@ -6423,8 +6351,8 @@
     "name": "Radio Media Servis",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.mediaservis.hr:8084/stream",
-    "homepage": "https://onlineradiobox.com/hr/mediaservis/?lang=uk",
+    "stream_url": "https://a.tunzilla.com/http://live.mediaservis.hr:8084/stream",
+    "homepage": "http://www.mediaservis.hr/",
     "favicon": "/station-icons/hr/radio-media-servis.webp",
     "genres": [
       "talk"
@@ -6935,7 +6863,7 @@
     "name": "Radio Slunj",
     "state": "Karlovac",
     "city": "Slunj",
-    "stream_url": "http://s8.iqstreaming.com:8070/;",
+    "stream_url": "https://s8.iqstreaming.com:2020/stream/radio-slunj1?mp=/stream",
     "homepage": "https://radio-slunj.hr/",
     "favicon": "/station-icons/hr/radio-slunj.webp",
     "genres": [
@@ -6954,15 +6882,8 @@
     "streams": [
       {
         "id": "mp3-128",
-        "label": "Default",
-        "url": "http://s8.iqstreaming.com:8070/;",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
-        "id": "mp3-128-alternative",
         "label": "Alternative",
-        "url": "https://s8.iqstreaming.com:2020/stream/radio-slunj1?mp=/stream",
+        "url": "http://s8.iqstreaming.com:8070/;",
         "bitrate": 128,
         "codec": "MP3"
       }
@@ -6984,7 +6905,7 @@
     "name": "Radio Sova",
     "state": "Primorje-Gorski Kotar",
     "city": "Rijeka",
-    "stream_url": "http://evcast.mediacp.eu:1960/stream",
+    "stream_url": "https://a.tunzilla.com/http://evcast.mediacp.eu:1960/stream",
     "homepage": "https://kisobran.uniri.hr/radio-sova",
     "favicon": "/station-icons/hr/radio-sova.webp",
     "genres": [
@@ -7065,7 +6986,7 @@
     "state": "City of Zagreb",
     "city": "Zagreb",
     "stream_url": "http://161.53.122.184:8000/AAC128.aac",
-    "homepage": "http://www.radiostudent.hr/",
+    "homepage": "https://www.radiostudent.hr/",
     "favicon": "/station-icons/hr/radio-student-100-5.jpg",
     "genres": [
       "alternative",
@@ -7119,8 +7040,8 @@
     "name": "Radio Sunce",
     "state": "Split-Dalmatia",
     "city": "Split",
-    "stream_url": "http://shoutcast.pondi.hr:8002/;*.mp3",
-    "homepage": "http://www.uzivoradio.com/sunce-split.html",
+    "stream_url": "https://a.tunzilla.com/http://shoutcast.pondi.hr:8002/;*.mp3",
+    "homepage": "https://www.uzivoradio.com/sunce-split.html",
     "favicon": "/station-icons/hr/radio-sunce-splitsko-dalmatinska.webp",
     "genres": [
       "helth",
@@ -7179,7 +7100,7 @@
     "name": "Radio Techno Zagreb",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://mercury.reliastream.com:8085/stream.mp3",
+    "stream_url": "https://mercury.reliastream.com/proxy/radiotec?mp=/stream",
     "homepage": "https://www.kapital3.org/",
     "favicon": "/station-icons/hr/radio-techno-zagreb.webp",
     "genres": [
@@ -7393,7 +7314,7 @@
     "name": "Radio Zlatar",
     "state": "Krapina-Zagorje",
     "city": "Zlatar",
-    "stream_url": "http://144.76.172.23:7059/;",
+    "stream_url": "https://a.tunzilla.com/http://144.76.172.23:7059/;",
     "homepage": "https://www.radio-zlatar.hr/",
     "favicon": "/station-icons/hr/radio-zlatar.webp",
     "genres": [
@@ -7458,7 +7379,7 @@
     "name": "Radio101",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.radio101.hr:9531/;",
+    "stream_url": "https://live.radio101.hr:9531/;",
     "homepage": "https://radio101.hr/",
     "favicon": "/station-icons/hr/radio-101-zagreb.webp",
     "genres": [
@@ -7478,9 +7399,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://live.radio101.hr:9531/stats?sid=1&json=1",
+    "nowplaying_url": "https://live.radio101.hr:9531/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://live.radio101.hr:9531/played?sid=1&type=json",
+    "history_url": "https://live.radio101.hr:9531/played?sid=1&type=json",
     "locationNames": {
       "hr": {
         "city": "Zagreb",
@@ -7531,7 +7452,7 @@
     "name": "Room FM",
     "state": "Virovitica-Podravina",
     "city": "Virovitica",
-    "stream_url": "http://65.108.198.245:8856/;",
+    "stream_url": "https://cast6.asurahosting.com/proxy/theroomfm/stream",
     "homepage": "https://roomfm.hr/",
     "favicon": "/station-icons/hr/room-fm.webp",
     "genres": [
@@ -7556,7 +7477,7 @@
     "name": "Rovinj FM",
     "state": "Istria",
     "city": "Rovinj",
-    "stream_url": "http://rovinj.fm:8000/;",
+    "stream_url": "https://a.tunzilla.com/http://rovinj.fm:8000/;",
     "homepage": "https://rovinj.fm/",
     "favicon": "/station-icons/hr/rovinj-fm.webp",
     "genres": [
@@ -7574,7 +7495,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://rovinj.fm:8000/7.html",
+    "history_url": "http://rovinj.fm:8000/played.html",
+    "metadata_server": "shoutcast"
   },
   {
     "slug": "slavonski-radio",
@@ -7609,7 +7533,7 @@
     "name": "Soundset Ragusa",
     "state": "Dubrovnik-Neretva",
     "city": "Dubrovnik",
-    "stream_url": "http://178.218.163.171:8012/stream",
+    "stream_url": "https://stream2.plusvps.com:8112/stream",
     "homepage": "https://www.soundsetragusa.hr/",
     "favicon": "/station-icons/hr/soundset-ragusa-dubrovnik.webp",
     "genres": [
@@ -7645,10 +7569,10 @@
     "slug": "studentski-radio-unios",
     "stationuuid": "0037676d-a9b1-4ed6-9521-17cb9c18ceb8",
     "name": "Studentski radio UNIOS",
-    "state": null,
-    "city": null,
-    "stream_url": "http://radio.unios.hr:8000/stream.mp3",
-    "homepage": "http://radio.unios.hr/",
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
+    "stream_url": "https://radio.unios.hr:8443/stream.mp3",
+    "homepage": "https://radio.unios.hr/",
     "favicon": "/station-icons/hr/studentski-radio-unios.webp",
     "genres": [
       "education",
@@ -7667,8 +7591,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio.unios.hr:8000/status-json.xsl?mount=%2Fstream.mp3",
-    "metadata_server": "icecast"
+    "nowplaying_url": "https://radio.unios.hr:8443/status-json.xsl?mount=%2Fstream.mp3",
+    "metadata_server": "icecast",
+    "metadata_direct": true
   },
   {
     "slug": "super-radio",
@@ -7676,7 +7601,7 @@
     "name": "Super Radio",
     "state": "Bjelovar-Bilogora",
     "city": "Čazma",
-    "stream_url": "http://mcp1.mydataknox.com:8010/stream",
+    "stream_url": "https://mcp1.mydataknox.com:8010/stream",
     "homepage": "https://superradio.hr/",
     "favicon": "/station-icons/hr/super-radio.webp",
     "genres": [
@@ -7690,6 +7615,29 @@
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 101,
+    "hls": 0,
+    "ssl_error": 0,
+    "geo_lat": null,
+    "geo_long": null
+  },
+  {
+    "slug": "super-narodni",
+    "stationuuid": "51fa3850-64cd-4a93-bdab-b0053b582d0e",
+    "name": "Super Narodni",
+    "state": "Bjelovar-Bilogora",
+    "city": "Čazma",
+    "stream_url": "https://mcp1.mydataknox.com:8014/stream",
+    "homepage": "https://superradio.hr/",
+    "favicon": "/station-icons/hr/super-narodni.webp",
+    "genres": [
+      "folk"
+    ],
+    "language": "croatian",
+    "bitrate": 320,
+    "codec": "MP3",
+    "clickcount": 0,
+    "lastcheckok": 1,
+    "votes": 0,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
@@ -8182,7 +8130,7 @@
     "name": "ULTRA Split",
     "state": "Split-Dalmatia",
     "city": "Split",
-    "stream_url": "http://c5.hostingcentar.com:8061/stream",
+    "stream_url": "https://a.tunzilla.com/http://c5.hostingcentar.com:8061/stream",
     "homepage": "https://ultrasplit.hr/",
     "favicon": "/station-icons/hr/ultra-split.webp",
     "genres": [
@@ -8217,13 +8165,6 @@
       }
     },
     "streams": [
-      {
-        "id": "aac-96-1",
-        "label": "Default",
-        "url": "http://c5.hostingcentar.com:8061/stream",
-        "bitrate": 96,
-        "codec": "AAC+"
-      },
       {
         "id": "aac-96-2",
         "label": "Alternative",
@@ -8285,7 +8226,7 @@
     "name": "Zabavni Radio",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://radiocentar.hr:8585/stream.aac",
+    "stream_url": "https://www.radiocentar.hr:8585/;",
     "homepage": "https://www.zabavni.hr/",
     "favicon": "/station-icons/hr/zabavni-radio.webp",
     "genres": [
@@ -8304,9 +8245,6 @@
     "ssl_error": 0,
     "geo_lat": 45.82311266113856,
     "geo_long": 16.121548712253574,
-    "nowplaying_url": "http://radiocentar.hr:8585/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://radiocentar.hr:8585/played?sid=1&type=json",
     "locationNames": {
       "hr": {
         "city": "Zagreb",
@@ -8316,7 +8254,19 @@
         "city": "Zagreb",
         "state": "City of Zagreb"
       }
-    }
+    },
+    "streams": [
+      {
+        "url": "http://radiocentar.hr:8585/stream.aac",
+        "bitrate": 61284,
+        "codec": "MP3",
+        "id": "mp3-128",
+        "label": "Alternative",
+        "nowplaying_url": "http://radiocentar.hr:8585/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://radiocentar.hr:8585/played?sid=1&type=json"
+      }
+    ]
   },
   {
     "slug": "zagorski-radio",
@@ -8341,31 +8291,11 @@
     "votes": 857,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "zagorski-radio-frana-galovi-a-1a-49000-krapina",
-    "stationuuid": "ce6fd814-f553-4700-ba3c-683aed4221b1",
-    "name": "Zagorski radio",
-    "state": "Krapina-Zagorje",
-    "city": "Krapina",
-    "stream_url": "http://s8.iqstreaming.com:8054/stream",
-    "homepage": "https://www.zagorski-radio.hr/",
-    "favicon": "/station-icons/hr/zagorski-radio.webp",
-    "genres": [
-      "pop"
-    ],
-    "language": "croatian",
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 161,
-    "hls": 0,
-    "ssl_error": 0,
     "geo_lat": 46.15363458400968,
     "geo_long": 15.8742892742157,
+    "alternate_stationuuids": [
+      "ce6fd814-f553-4700-ba3c-683aed4221b1"
+    ],
     "locationNames": {
       "hr": {
         "city": "Krapina",
@@ -8375,7 +8305,16 @@
         "city": "Krapina",
         "state": "Krapina-Zagorje"
       }
-    }
+    },
+    "streams": [
+      {
+        "url": "http://s8.iqstreaming.com:8054/stream",
+        "bitrate": 64,
+        "codec": "AAC+",
+        "id": "aac-64-2",
+        "label": "Alternative"
+      }
+    ]
   },
   {
     "slug": "zfm",

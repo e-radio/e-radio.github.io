@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseMetadata, parseHistory, decodeMetadata, scraperFor } from '../src/lib/metadata/index.mjs';
+import { parseMetadata, parseHistory, decodeMetadata, decodeProviderMetadata, scraperFor } from '../src/lib/metadata/index.mjs';
 const context = { streamUrl: 'https://relay.example/radio/8000/stream', endpoint: 'https://relay.example/status-json.xsl?mount=%2Fchosen' };
 test('AzuraCast keeps current track, history, upcoming song and listener count', () => {
  const raw={now_playing:{song:{title:'Track',artist:'Artist',text:'Artist - Track',art:'https://images.example/cover.jpg'},played_at:100},listeners:{current:0},song_history:[{song:{title:'Earlier'}}],playing_next:{song:{title:'Next'}}};
@@ -88,4 +88,24 @@ test('Gamerz Inn history maps artwork, artist and millisecond timestamps', () =>
  assert.equal(result.payload.song_history[0].song.title,'Track');
  assert.equal(parseHistory('gamerzinn',JSON.stringify(raw)).song_history.length,1);
  assert.equal(parseMetadata('gamerzinn',{},context).text,null);
+});
+
+test('Shoutcast v1 decodes HTML or Jina text and preserves commas in titles', () => {
+ for(const text of ['<HTML><body>38,1,173,512,38,256,Artist - Song, Part 2</body></html>','Markdown Content:\n38,1,173,512,38,256,Artist - Song, Part 2']) {
+  const result=parseMetadata('shoutcast',decodeProviderMetadata('shoutcast',text),context);
+  assert.equal(result.text,'Artist - Song, Part 2');assert.equal(result.listeners,38);
+ }
+ assert.throws(()=>decodeProviderMetadata('shoutcast','<html>Invalid resource</html>'));
+ const history=parseHistory('shoutcast','<tr><td>23:27:34</td><td>Artist - Current<td><b>Current Song</b></td></tr><tr><td>23:23:54</td><td>Artist - Previous</tr>');
+ assert.equal(history.now_playing.song.text,'Artist - Current');
+ assert.equal(history.song_history[0].text,'Artist - Previous');
+});
+
+test('Radio.co v2 current and history retain separate fields, art and timestamps', () => {
+ const track={title:'Artist - Song',track_artist:'Artist',track_title:'Song',start_time:'2026-09-14T22:19:41+00:00',artwork_urls:{large:'https://img.example/art.jpg'}};
+ const result=parseMetadata('radio.co',{data:track},context);
+ assert.equal(result.song.artist,'Artist');assert.equal(result.song.title,'Song');assert.equal(result.song.art,track.artwork_urls.large);
+ assert.equal(result.payload.now_playing.played_at,track.start_time);
+ const history=parseHistory('radio.co',JSON.stringify({data:[track]}));
+ assert.equal(history.song_history.length,1);assert.equal(history.now_playing,undefined);
 });
