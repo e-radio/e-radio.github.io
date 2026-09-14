@@ -778,7 +778,7 @@
     "name": "Bijelo Plavi Radio",
     "state": "Osijek-Baranja",
     "city": "Osijek",
-    "stream_url": "http://s8.iqstreaming.com:8028/stream",
+    "stream_url": "https://a.tunzilla.com/http://s8.iqstreaming.com:8028/stream",
     "homepage": "http://www.bijeloplaviradio.hr/",
     "favicon": "/station-icons/hr/bijelo-plavi-radio.webp",
     "genres": [
@@ -5442,7 +5442,7 @@
     "name": "Radio Deejay",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://live.deejay.hr:7002/;",
+    "stream_url": "https://c8.hostingcentar.com/streams/radiodj/",
     "homepage": "https://www.radiodeejay.hr/",
     "favicon": "/station-icons/hr/radio-deejay-hr-zagreb.webp",
     "genres": [
@@ -5472,16 +5472,7 @@
         "city": null,
         "state": "City of Zagreb"
       }
-    },
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Alternative",
-        "url": "https://c8.hostingcentar.com/streams/radiodj/",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
-    ]
+    }
   },
   {
     "slug": "radio-dj-grga",
@@ -5489,7 +5480,7 @@
     "name": "Radio DJ Grga",
     "state": null,
     "city": null,
-    "stream_url": "http://cmr-hosting.com:8430/streams",
+    "stream_url": "https://cmr-hosting.com/8430/stream;",
     "homepage": "https://djgrga-radio.com/",
     "favicon": "/station-icons/hr/radio-dj-grga.webp",
     "genres": [
@@ -5508,16 +5499,7 @@
     "geo_long": null,
     "nowplaying_url": "http://cmr-hosting.com:8430/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cmr-hosting.com:8430/played?sid=1&type=json",
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Alternative MP3",
-        "url": "https://cmr-hosting.com/8430/stream;",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
-    ]
+    "history_url": "http://cmr-hosting.com:8430/played?sid=1&type=json"
   },
   {
     "slug": "radio-drni-89-0-mhz-kralja-zvonimira-8-drni",
@@ -5603,13 +5585,13 @@
   {
     "slug": "radio-eurostar-umag-istra",
     "stationuuid": "8380b0a5-ff8d-4c3d-9176-3f66bc3e1882",
-    "name": "Radio Eurostar Umag",
+    "name": "Radio Eurostar",
     "state": "Istria",
     "city": "Umag",
-    "stream_url": "http://mcp1.mydataknox.com:8012/stream",
+    "stream_url": "https://a.tunzilla.com/http://mcp1.mydataknox.com:8012/stream",
     "homepage": "https://www.eurostarumag.hr/",
     "favicon": "/station-icons/hr/radio-eurostar-umag-istra.webp",
-    "genres": [],
+    "genres": ["pop", "news", "talk", "folk"],
     "language": "croatian",
     "bitrate": 112,
     "codec": "MP3",
