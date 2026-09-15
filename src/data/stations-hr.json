@@ -471,6 +471,8 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "nowplaying_url": "https://audio.social3.hr/api/nowplaying/antena_hit",
+    "metadata_server": "azuracast",
     "locationNames": {
       "hr": {
         "city": "Zagreb",
@@ -506,7 +508,6 @@
     "geo_long": null,
     "nowplaying_url": "https://audio.social3.hr/api/nowplaying/antena_love",
     "metadata_server": "azuracast",
-    "history_url": "https://audio.social3.hr/api/nowplaying/antena_love",
     "locationNames": {
       "hr": {
         "city": null,
@@ -4683,7 +4684,7 @@
     "name": "Radio 808",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://stream.radio808.info:443/;",
+    "stream_url": "https://stream.multimedijalist.hr/;",
     "homepage": "https://radio808.com/",
     "favicon": "/station-icons/hr/radio-808.webp",
     "genres": [
@@ -4702,7 +4703,19 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.multimedijalist.hr/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.multimedijalist.hr/played.html?sid=1",
+    "streams": [
+      {
+        "url": "http://stream.radio808.info/stream",
+        "bitrate": 64,
+        "codec": "AAC+",
+        "id": "aac-64",
+        "label": "Alternative"
+      }
+    ]
   },
   {
     "slug": "radio-92-fm",

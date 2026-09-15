@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseMetadata, parseHistory, decodeMetadata, decodeProviderMetadata, scraperFor } from '../src/lib/metadata/index.mjs';
+import { parseMetadata, parseHistory, decodeMetadata, decodeProviderMetadata, supportsNowPlaying, isLiveTrackStation, scraperFor } from '../src/lib/metadata/index.mjs';
 const context = { streamUrl: 'https://relay.example/radio/8000/stream', endpoint: 'https://relay.example/status-json.xsl?mount=%2Fchosen' };
 test('AzuraCast keeps current track, history, upcoming song and listener count', () => {
  const raw={now_playing:{song:{title:'Track',artist:'Artist',text:'Artist - Track',art:'https://images.example/cover.jpg'},played_at:100},listeners:{current:0},song_history:[{song:{title:'Earlier'}}],playing_next:{song:{title:'Next'}}};
@@ -116,4 +116,25 @@ test('Shoutcast panel response provides artwork, listeners and deduplicated hist
  assert.equal(result.text,raw.nowplaying);assert.equal(result.song.art,raw.coverart);assert.equal(result.listeners,0);
  assert.equal(result.payload.song_history.length,1);
  assert.equal(parseHistory('shoutcast',JSON.stringify(raw)).song_history[0].song.text,'Artist - Previous');
+});
+
+test('Live Tracks eligibility follows registered now-playing capability', () => {
+ for(const metadata_server of ['azuracast','centovacast','shoutcast','icecast','radiojar','radio.co','otvoreni','gamerzinn']) {
+  assert.equal(supportsNowPlaying(metadata_server),true);
+  assert.equal(isLiveTrackStation({metadata_server,stream_url:'https://radio.test/stream',nowplaying_url:'https://radio.test/status'}),true);
+ }
+ for(const metadata_server of ['unknown','unsupported','toString',undefined]) assert.equal(supportsNowPlaying(metadata_server),false);
+ const station={metadata_server:'radio.co',stream_url:'https://radio.test/stream',nowplaying_url:'https://radio.test/status'};
+ for(const field of ['stream_url','nowplaying_url']) for(const value of ['', ' ', null, undefined]) assert.equal(isLiveTrackStation({...station,[field]:value}),false);
+ assert.equal(isLiveTrackStation(null),false);
+});
+
+test('Shoutcast separates artist and title for Live Tracks and station pages', () => {
+ const result=parseMetadata('shoutcast',{songtitle:'Merlin - Kad ti dodjem nesreco'},context);
+ assert.equal(result.song.artist,'Merlin');assert.equal(result.song.title,'Kad ti dodjem nesreco');
+ assert.equal(result.payload.now_playing.song.artist,'Merlin');
+ assert.equal(result.text,'Merlin - Kad ti dodjem nesreco');
+ const hyphen=parseMetadata('shoutcast',{songtitle:'Jay-Z - Song - Live'},context);
+ assert.equal(hyphen.song.artist,'Jay-Z');assert.equal(hyphen.song.title,'Song - Live');
+ assert.equal(parseMetadata('shoutcast',{songtitle:'Instrumental'},context).song.title,'Instrumental');
 });

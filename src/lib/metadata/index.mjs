@@ -48,3 +48,14 @@ export function decodeProviderMetadata(server, text) {
   const decode = scraperFor(server).decode;
   return decode ? decode(text, decodeMetadata) : decodeMetadata(text);
 }
+
+// Unknown/fallback parsing does not establish support for a station's provider.
+export function supportsNowPlaying(server) {
+  return server !== 'unknown' && Object.hasOwn(providers, server)
+    && typeof providers[server].parse === 'function';
+}
+export function isLiveTrackStation(station) {
+  return Boolean(station && supportsNowPlaying(station.metadata_server)
+    && typeof station.stream_url === 'string' && station.stream_url.trim()
+    && typeof station.nowplaying_url === 'string' && station.nowplaying_url.trim());
+}
