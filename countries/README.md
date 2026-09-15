@@ -216,6 +216,48 @@ Both commands save automatically. The first caches available remote favicons; th
 
 Swedish station images are stored in `public/station-icons/se/`, with matching local paths in `src/data/stations-se.json`. Review and commit the images with the dataset.
 
+The missing-icon tool starts with the country, dataset, total stations, existing icons skipped, and number needing work. Progress counts only stations without a favicon:
+
+```text
+[3/20] Example Radio (example-radio)
+  [3/20] Request 1/2 (timeout 15s): https://example.com/
+[3/20] ICON SAVED | 15% complete | Remaining: 17 | Icons: 2 | Placeholders: 1 | Errors: 0 | Elapsed: 0m 24s
+```
+
+It shows request attempts and retries, reports activity every 10 seconds during a slow station, and finishes with totals and a list of failed stations. Existing icons are summarized instead of printing a skip line for every station. A run with station errors exits with a nonzero status; successful saves remain on disk.
+
+Artwork discovery also checks JSON-LD `logo` fields, logo images inside HTML `<header>` elements, `twitter:image`, and icons in linked web app manifests. Relative image URLs use the page or manifest URL. Invalid manifest/JSON-LD data does not prevent trying other sources.
+
+The tool downloads candidates to inspect their actual dimensions, favors adequately sized square images over tiny icons and wide banners, and combines this with the logo source priority. The progress output shows the source and dimensions of each usable image. This can make a station take longer because it compares candidates instead of accepting the first download. Selected logos are fitted inside a 256×256 WebP with transparent padding so rectangular artwork is not cropped. JavaScript-only logos still require manual review.
+
+### 6a. Generate placeholders for stations without a usable logo
+
+Placeholder generation is part of the missing-icon command; there is no separate placeholder command or placeholder-only flag:
+
+```sh
+COUNTRY=se node tools/fetch-missing-station-icons.mjs
+```
+
+For each station whose `favicon` is empty or absent, the script tries to download artwork from its homepage. If no usable image is found, it creates a **256×256 WebP** with a colored gradient and the initials of the first two words of the station name.
+
+For Sweden, a generated placeholder is saved as:
+
+```text
+public/station-icons/se/STATION-SLUG-placeholder.webp
+```
+
+The script automatically updates that station's JSON record:
+
+```json
+"favicon": "/station-icons/se/STATION-SLUG-placeholder.webp"
+```
+
+Replace `se` with your country code. Greece retains its existing unprefixed `public/station-icons/` directory. The command writes images and station data immediately; it has no dry-run flag. Check the terminal's `Placeholders generated` count and review the generated files before committing.
+
+**Existing favicon values are skipped**, including placeholders and broken image paths. To retry artwork discovery for a particular station, set only that station's `favicon` to `""` in the selected dataset, verify its homepage, and rerun the command. It processes every record with an empty favicon. It will create another placeholder if artwork is still unavailable.
+
+If you already have the correct logo, place it in `public/station-icons/se/` and set the station's `favicon` to its `/station-icons/se/...` URL directly. Remove an old placeholder file only after confirming no station still references it. Commit the image and dataset changes together, then rebuild and deploy.
+
 ### 7. Find or recheck now-playing endpoints
 
 Preview a small sample without saving station fields:

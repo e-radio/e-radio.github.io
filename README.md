@@ -108,6 +108,20 @@ COUNTRY=si node tools/fetch-missing-station-icons.mjs
 
 Both commands save changes automatically. New local images go into `public/station-icons/si/`; station `favicon` fields point to `/station-icons/si/...webp`. The missing-icon tool can create initials placeholders when it cannot find artwork. Review the images and commit them together with the updated dataset.
 
+The missing-icon tool checks favicon links, social images, JSON-LD logos, header logo images, and web app manifest icons. It compares actual image dimensions and saves the selected logo as a 256×256 WebP with transparent padding, preserving the full artwork. Existing favicon values are still skipped.
+
+#### Generate placeholder icons when artwork is unavailable
+
+The missing-icon command also generates placeholders automatically:
+
+```sh
+COUNTRY=si node tools/fetch-missing-station-icons.mjs
+```
+
+For an empty `favicon`, it first searches the station website. If no usable logo is found, it saves a 256×256 initials image at `public/station-icons/si/STATION-SLUG-placeholder.webp` and updates the station's `favicon` automatically. There is no separate placeholder-only or dry-run flag.
+
+Existing favicon values are skipped, including old placeholders. To retry one, clear only that station's `favicon` and rerun; to use a known logo, save it locally and update the path directly. See the [placeholder generation and replacement steps](countries/README.md#6a-generate-placeholders-for-stations-without-a-usable-logo).
+
 ### 6. Fill missing locations and audio information
 
 These enrichment steps are optional. For stations with coordinates, preview geography results first:
@@ -305,7 +319,7 @@ Radio station data is fetched from the [Radio Browser API](https://www.radio-bro
 
 ## Icon Maintenance
 
-Run `node tools/fetch-missing-station-icons.mjs` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks the station's existing remote favicon and homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It converts the first usable image to a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
+Run `node tools/fetch-missing-station-icons.mjs` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks the station's existing remote favicon and homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It ranks usable candidates by source and actual dimensions, then fits the selected image with transparent padding into a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
 
 ## Removing Duplicate Stations
 

@@ -3,16 +3,29 @@ import path from "node:path";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import sharp from "sharp";
+import { discoverIconCandidates, manifestIconCandidates, uniqueCandidates, inspectIcon, normalizeIcon } from "./lib/station-icon-candidates.mjs";
 
 const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", ...(countryCode === "gr" ? [] : [countryCode]));
 const STATIONS_PATH = stationsPath;
 const FETCH_TIMEOUT_MS = 15000;
 const USER_AGENT = `${site.siteName} favicon fetcher (${site.siteUrl})`;
 
+const elapsed = (started) => {
+  const seconds = Math.floor((Date.now() - started) / 1000);
+  return `${Math.floor(seconds / 60)}m ${seconds % 60}s`;
+};
+let activeProgress;
+const detail = (message) => console.log(`  ${activeProgress?.prefix || ''} ${message}`.trimEnd());
+const stage = (message) => {
+  if (activeProgress) activeProgress.stage = message;
+  detail(message);
+};
+
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const fetchWithTimeout = async (url, options = {}, attempts = 2) => {
   for (let attempt = 0; attempt <= attempts; attempt++) {
+    stage(`Request ${attempt + 1}/${attempts + 1} (timeout ${FETCH_TIMEOUT_MS / 1000}s): ${url}`);
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
 
@@ -36,7 +49,7 @@ const fetchWithTimeout = async (url, options = {}, attempts = 2) => {
         throw error;
       }
       const wait = 500 * (attempt + 1);
-      console.warn(`Retry ${attempt + 1} for ${url}: ${error.message}. Waiting ${wait}ms.`);
+      detail(`Retry ${attempt + 1}/${attempts} after ${error.message}; waiting ${wait}ms: ${url}`);
       await delay(wait);
     }
   }
@@ -56,88 +69,6 @@ const sanitizeFilename = (base, fallback) => {
     .replace(/[^a-z0-9-_]+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^[-]+|[-]+$/g, "") || fallback || "station";
-};
-
-const absoluteUrl = (href, baseUrl) => {
-  if (!href) return null;
-  try {
-    return new URL(href, baseUrl).toString();
-  } catch {
-    return null;
-  }
-};
-
-const parseHtmlIcons = (html, baseUrl) => {
-  const candidates = [];
-  if (!html) return candidates;
-
-  const linkRegex = /<link\s+[^>]*>/gi;
-  const relRegex = /rel\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/i;
-  const hrefRegex = /href\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/i;
-  const sizesRegex = /sizes\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/i;
-
-  const weightForRel = (relValue) => {
-    const value = relValue.toLowerCase();
-    if (value.includes("apple-touch-icon")) return 5;
-    if (value.includes("mask-icon")) return 2;
-    if (value.includes("icon")) return 4;
-    return 1;
-  };
-
-  const parseSizeScore = (sizesValue) => {
-    if (!sizesValue) return 0;
-    const sizes = sizesValue.split(/\s+/);
-    let max = 0;
-    for (const size of sizes) {
-      const match = size.match(/^(\d+)x(\d+)$/i);
-      if (match) {
-        const area = Number(match[1]) * Number(match[2]);
-        if (area > max) {
-          max = area;
-        }
-      }
-    }
-    return max ? Math.sqrt(max) / 128 : 0;
-  };
-
-  for (const linkTag of html.matchAll(linkRegex)) {
-    const tag = linkTag[0];
-    const relMatch = tag.match(relRegex);
-    const hrefMatch = tag.match(hrefRegex);
-    if (!relMatch || !hrefMatch) continue;
-
-    const rel = (relMatch[2] || relMatch[3] || relMatch[4] || "").toLowerCase();
-    const href = absoluteUrl(hrefMatch[2] || hrefMatch[3] || hrefMatch[4], baseUrl);
-    if (!href) continue;
-
-    if (/icon/i.test(rel)) {
-      const sizesMatch = tag.match(sizesRegex);
-      const sizes = sizesMatch ? sizesMatch[2] || sizesMatch[3] || sizesMatch[4] : null;
-      const score = weightForRel(rel) + parseSizeScore(sizes);
-      candidates.push({ url: href, score });
-    }
-  }
-
-  const metaRegex = /<meta\s+[^>]*>/gi;
-  const propertyRegex = /property\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/i;
-  const contentRegex = /content\s*=\s*("([^"]*)"|'([^']*)'|([^\s>]+))/i;
-
-  for (const metaTag of html.matchAll(metaRegex)) {
-    const tag = metaTag[0];
-    const propertyMatch = tag.match(propertyRegex);
-    if (!propertyMatch) continue;
-    const property = (propertyMatch[2] || propertyMatch[3] || propertyMatch[4] || "").toLowerCase();
-    if (property !== "og:image" && property !== "og:image:url") continue;
-    const contentMatch = tag.match(contentRegex);
-    const href = absoluteUrl(contentMatch?.[2] || contentMatch?.[3] || contentMatch?.[4], baseUrl);
-    if (href) {
-      candidates.push({ url: href, score: 3 });
-    }
-  }
-
-  return candidates
-    .sort((a, b) => b.score - a.score)
-    .map((candidate) => candidate.url);
 };
 
 const massageIconUrl = (rawUrl) => {
@@ -170,23 +101,16 @@ const fetchIconBuffer = async (url) => {
     const arrayBuffer = await response.arrayBuffer();
     return Buffer.from(arrayBuffer);
   } catch (error) {
-    console.warn(`Failed to download ${url}: ${error.message}`);
+    detail(`Failed to download ${url}: ${error.message}`);
     return null;
   }
 };
 
 const normalizeImage = async (buffer) => {
   try {
-    return await sharp(buffer, { limitInputPixels: false })
-      .resize(256, 256, {
-        fit: "cover",
-        position: "centre",
-        background: { r: 255, g: 255, b: 255, alpha: 0 },
-      })
-      .webp({ quality: 90 })
-      .toBuffer();
+    return await normalizeIcon(buffer);
   } catch (error) {
-    console.warn(`Failed to process image buffer: ${error.message}`);
+    detail(`Failed to process image buffer: ${error.message}`);
     return null;
   }
 };
@@ -219,16 +143,16 @@ const generatePlaceholder = async (station) => {
 const chooseIconUrl = async (station) => {
   const homepage = station?.homepage;
   if (!homepage) {
-    console.log(`✕ ${station.name}: no homepage URL, skipping fetch.`);
+    detail(`${station.name}: no homepage URL, skipping fetch.`);
     return [];
   }
   if (!/^https?:\/\//i.test(homepage)) {
-    console.log(`✕ ${station.name}: homepage is not a valid http(s) URL (${homepage}), skipping.`);
+    detail(`${station.name}: homepage is not a valid http(s) URL (${homepage}), skipping.`);
     return [];
   }
   const lowerHomepage = homepage.toLowerCase();
   if (/\.(mp3|aac|aacp|m3u8|pls|asx|ram|ogg|opus)(\?|$)/.test(lowerHomepage) || /\/stream(\b|\.|\/|\?|$)/.test(lowerHomepage)) {
-    console.log(`✕ ${station.name}: homepage looks like a stream endpoint (${homepage}), skipping.`);
+    detail(`${station.name}: homepage looks like a stream endpoint (${homepage}), skipping.`);
     return [];
   }
   try {
@@ -239,23 +163,28 @@ const chooseIconUrl = async (station) => {
     }, 1);
     const contentType = response.headers.get("content-type")?.toLowerCase() || "";
     if (!/text\/html|application\/xhtml\+xml/.test(contentType)) {
-      console.log(`✕ ${station.name}: homepage responded with ${contentType || "unknown type"}, skipping.`);
+      detail(`${station.name}: homepage responded with ${contentType || "unknown type"}, skipping.`);
       return [];
     }
     const html = await response.text();
-    const candidates = parseHtmlIcons(html, homepage);
-    if (candidates.length) {
-      return candidates;
+    const { candidates, manifests } = discoverIconCandidates(html, response.url || homepage);
+    for (const manifestUrl of manifests) {
+      try {
+        stage(`Checking web manifest: ${manifestUrl}`);
+        const manifestResponse = await fetchWithTimeout(manifestUrl, {}, 1);
+        candidates.push(...manifestIconCandidates(await manifestResponse.json(), manifestResponse.url || manifestUrl));
+      } catch (error) { detail(`Manifest unavailable: ${error.message}`); }
     }
+    if (candidates.length) return uniqueCandidates(candidates);
   } catch (error) {
-    console.warn(`✕ ${station.name}: failed to inspect homepage ${homepage} (${error.message})`);
+    detail(`${station.name}: failed to inspect homepage ${homepage} (${error.message})`);
   }
 
   try {
     const origin = new URL(homepage).origin;
-    return [`${origin}/favicon.ico`];
+    return [{ url: `${origin}/favicon.ico`, source: 'favicon fallback', score: 4 }];
   } catch {
-    console.log(`✕ ${station.name}: homepage URL invalid (${homepage}), skipping.`);
+    detail(`${station.name}: homepage URL invalid (${homepage}), skipping.`);
     return [];
   }
 };
@@ -272,32 +201,38 @@ const processStation = async (station, index, stations) => {
 
   const candidates = [];
   if (existing && /^https?:/i.test(existing)) {
-    candidates.push(existing);
+    candidates.push({url:existing, source:'existing favicon', score:6});
   }
   const discovered = await chooseIconUrl(station);
-  for (const candidate of discovered) {
-    if (!candidates.includes(candidate)) {
-      candidates.push(candidate);
-    }
+  candidates.push(...discovered);
+  const ranked = [];
+  const unique = uniqueCandidates(candidates);
+  for (const [candidateIndex, candidate] of unique.entries()) {
+    stage(`Checking image ${candidateIndex + 1}/${unique.length} (${candidate.source})`);
+    const buffer = await fetchIconBuffer(candidate.url);
+    if (!buffer) continue;
+    try {
+      const dimensions = await inspectIcon(buffer);
+      detail(`${dimensions.width}×${dimensions.height} | ${candidate.source} | ${candidate.url}`);
+      ranked.push({...candidate, ...dimensions, score:candidate.score + dimensions.quality, buffer});
+    } catch (error) { detail(`Unusable image: ${error.message}`); }
   }
-
-  for (const candidate of candidates) {
-    const rawBuffer = await fetchIconBuffer(candidate);
-    if (!rawBuffer) continue;
-    const normalized = await normalizeImage(rawBuffer);
-    if (!normalized) {
-      continue;
-    }
+  ranked.sort((a,b) => b.score-a.score);
+  for (const candidate of ranked) {
+    stage(`Selected ${candidate.source} (${candidate.width}×${candidate.height}); fitting full logo with padding`);
+    const normalized = await normalizeImage(candidate.buffer);
+    if (!normalized) continue;
     const filenameBase = sanitizeFilename(station.slug || station.stationuuid || String(index), `station-${index}`);
     const filename = `${filenameBase}.webp`;
     const outputPath = path.join(OUTPUT_DIR, filename);
     await writeFile(outputPath, normalized);
     station.favicon = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
     await persistStations(stations);
-    console.log(`✓ Saved icon for ${station.name} (${candidate})`);
+    detail(`Saved ${station.favicon}`);
     return { status: "ok" };
   }
 
+  stage("No usable artwork; generating initials placeholder");
   const placeholderBuffer = await generatePlaceholder(station);
   const filenameBase = sanitizeFilename(station.slug || station.stationuuid || String(index), `station-${index}`);
   const filename = `${filenameBase}-placeholder.webp`;
@@ -305,17 +240,15 @@ const processStation = async (station, index, stations) => {
   await writeFile(outputPath, placeholderBuffer);
   station.favicon = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
   await persistStations(stations);
-  console.log(`⚠️ Generated placeholder for ${station.name}`);
+  detail(`Saved ${station.favicon}`);
   return { status: "placeholder" };
 };
 
 let persistPromise = Promise.resolve();
 const persistStations = async (stations) => {
   persistPromise = persistPromise
-    .then(() => writeFile(STATIONS_PATH, JSON.stringify(stations, null, 2) + "\n", "utf8"))
-    .catch((error) => {
-      console.error("Failed to persist stations", error);
-    });
+    .catch(() => {}) // Allow later stations to retry after a failed save.
+    .then(() => writeFile(STATIONS_PATH, JSON.stringify(stations, null, 2) + "\n", "utf8"));
   return persistPromise;
 };
 
@@ -323,33 +256,50 @@ const run = async () => {
   await ensureOutputDir();
   const raw = await readFile(STATIONS_PATH, "utf8");
   const stations = JSON.parse(raw);
+  const pending = stations.map((station, index) => ({ station, index })).filter(({ station }) => !station.favicon);
+  const skipped = stations.length - pending.length;
+  const started = Date.now();
   let ok = 0;
   let placeholders = 0;
-  let skipped = 0;
+  let errors = 0;
+  const failures = [];
+  console.log(`\nMissing station icons — ${site.countryName} (${countryCode.toUpperCase()})`);
+  console.log(`Dataset: ${STATIONS_PATH}`);
+  console.log(`Total: ${stations.length} | Existing icons skipped: ${skipped} | To process: ${pending.length}`);
+  console.log(`Output: ${OUTPUT_DIR}\nImages and station data are saved automatically.\n`);
 
-  for (let i = 0; i < stations.length; i++) {
-    const station = stations[i];
+  for (const [position, { station, index }] of pending.entries()) {
+    const stationStarted = Date.now();
+    activeProgress = { prefix: `[${position + 1}/${pending.length}]`, stage: 'Starting' };
+    console.log(`${activeProgress.prefix} ${station.name} (${station.slug || station.stationuuid})`);
+    const heartbeat = setInterval(() => {
+      detail(`Still working: ${activeProgress.stage} | station ${elapsed(stationStarted)} | total ${elapsed(started)}`);
+    }, 10000);
+    let outcome;
     try {
-      if (station.favicon) {
-        console.log(`• Skipped ${station.name}: favicon already set (${station.favicon})`);
-        skipped++;
-        continue;
-      }
-      console.log(`→ ${station.name} has no favicon, attempting fetch.`);
-      const result = await processStation(station, i, stations);
-      if (result.status === "ok") ok++;
-      if (result.status === "placeholder") placeholders++;
-      if (result.status === "skipped") skipped++;
+      const result = await processStation(station, index, stations);
+      if (result.status === 'ok') { ok++; outcome = 'ICON SAVED'; }
+      else if (result.status === 'placeholder') { placeholders++; outcome = 'PLACEHOLDER SAVED'; }
+      else outcome = 'SKIPPED';
     } catch (error) {
-      console.error(`Failed to handle ${station.name}: ${error.message}`);
+      errors++;
+      outcome = 'ERROR';
+      failures.push(`${station.slug || station.stationuuid}: ${error.message}`);
+      detail(error.message);
+    } finally {
+      clearInterval(heartbeat);
     }
+    const completed = position + 1;
+    console.log(`${activeProgress.prefix} ${outcome} | ${Math.round(completed / pending.length * 100)}% complete | Remaining: ${pending.length - completed} | Icons: ${ok} | Placeholders: ${placeholders} | Errors: ${errors} | Elapsed: ${elapsed(started)}\n`);
+    activeProgress = undefined;
   }
 
-  await persistPromise;
-  console.log("\nFinished.");
-  console.log(`Icons saved: ${ok}`);
-  console.log(`Placeholders generated: ${placeholders}`);
-  console.log(`Skipped (existing): ${skipped}`);
+  console.log(`${errors ? 'Finished with errors' : 'Finished'} in ${elapsed(started)}.`);
+  console.log(`Processed: ${pending.length}/${pending.length} | Icons saved: ${ok} | Placeholders generated: ${placeholders} | Existing skipped: ${skipped} | Errors: ${errors}`);
+  if (failures.length) {
+    console.log(`Failed stations:\n${failures.map(failure => `  - ${failure}`).join('\n')}`);
+    process.exitCode = 1;
+  }
 };
 
 run().catch((error) => {

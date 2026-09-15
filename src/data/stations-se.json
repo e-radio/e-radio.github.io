@@ -30,7 +30,7 @@
     "city": null,
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB&i=rockklassiker_instream_se_mp3",
     "homepage": "http://www.rockklassiker.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/106-7-rockklassiker.webp",
     "genres": [
       "classic rock"
     ],
@@ -53,7 +53,7 @@
     "city": null,
     "stream_url": "https://securestream.cuelightsmedia.com.au/listen/247_continuous_music/radio.mp3",
     "homepage": "https://cuelightsmedia.com.au/stations/247-continuous-music",
-    "favicon": null,
+    "favicon": "/station-icons/se/24-7-continuous-music.webp",
     "genres": [
       "2000s",
       "2010s",
@@ -330,7 +330,7 @@
     "city": null,
     "stream_url": "https://lyssna.bananradion.se/listen/bananradion/128aac",
     "homepage": "https://www.bananradion.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bananradion.webp",
     "genres": [
       "caribbean",
       "children",
@@ -361,7 +361,7 @@
     "city": null,
     "stream_url": "http://wr05-ice.stream.khz.se/wr05_mp3",
     "homepage": "https://www.ilikeradio.se/banditalternative/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bandit-alternative.webp",
     "genres": [
       "alternative"
     ],
@@ -408,7 +408,7 @@
     "city": null,
     "stream_url": "https://wr11-ice.stream.khz.se/wr11_mp3",
     "homepage": "https://www.ilikeradio.se/banditclassicrock/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bandit-classic-rock-national-sweden.webp",
     "genres": [
       "classic rock"
     ],
@@ -431,7 +431,7 @@
     "city": null,
     "stream_url": "https://fm02-ice.stream.khz.se/fm02_mp3",
     "homepage": "https://www.ilikeradio.se/banditrock/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bandit-rock.webp",
     "genres": [
       "rock"
     ],
@@ -479,7 +479,7 @@
     "city": null,
     "stream_url": "http://wr03-ice.stream.khz.se/wr03_mp3",
     "homepage": "https://www.ilikeradio.se/banditmetal/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bandit-metal-a9fc150a.webp",
     "genres": [
       "metal"
     ],
@@ -556,7 +556,7 @@
     "city": null,
     "stream_url": "https://radio.ericade.net/sc/stream/2/",
     "homepage": "https://radio.ericade.net/best/",
-    "favicon": null,
+    "favicon": "/station-icons/se/best-of-ericade-radio-stockholm.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -634,7 +634,7 @@
     "city": null,
     "stream_url": "http://lyssna.fnf.nu:8080/radioboras.mp3",
     "homepage": "http://www.borasnarradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bor-s-n-rradio-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -655,7 +655,7 @@
     "city": null,
     "stream_url": "http://streaming.live365.com/a80252",
     "homepage": "https://bozradio.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/bozradio-placeholder.webp",
     "genres": [
       "1960s",
       "1970s",
@@ -736,7 +736,7 @@
     "city": null,
     "stream_url": "http://stream.dbmedia.se/crrMP3",
     "homepage": "http://countryrocksradio.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/country-rocks-radio-placeholder.webp",
     "genres": [
       "country",
       "new country"
@@ -832,7 +832,7 @@
     "city": null,
     "stream_url": "https://stream.dbmedia.se/dbkMP3",
     "homepage": "https://dansbandskanalen.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/dansbandskanalen-se.webp",
     "genres": [
       "country"
     ],
@@ -855,7 +855,7 @@
     "city": null,
     "stream_url": "https://sc.dansbandsradio.se/dbr128.aac",
     "homepage": "https://dansbandsradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/dansbandsradio-se-sk-ne.webp",
     "genres": [],
     "language": "danish",
     "bitrate": 128,
@@ -1099,7 +1099,7 @@
     "city": null,
     "stream_url": "https://radio.ericade.net/sc/stream/1/",
     "homepage": "https://ericade.radio/",
-    "favicon": null,
+    "favicon": "/station-icons/se/ericade-radio-sweden.webp",
     "genres": [],
     "language": "english",
     "bitrate": 192,
@@ -1150,7 +1150,7 @@
     "city": null,
     "stream_url": "http://stream.funradio.se:81/live192",
     "homepage": "https://funradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/fun-radio-95-3-sweden.webp",
     "genres": [
       "pop"
     ],
@@ -1223,7 +1223,7 @@
     "city": null,
     "stream_url": "https://wr14-ice.stream.khz.se/wr14_mp3",
     "homepage": "https://www.ilikeradio.se/gocountry/",
-    "favicon": null,
+    "favicon": "/station-icons/se/go-country.webp",
     "genres": [
       "country"
     ],
@@ -1267,7 +1267,7 @@
     "city": null,
     "stream_url": "http://lyssna.fnf.nu:8080/gnf102.mp3",
     "homepage": "http://gnf.nu/",
-    "favicon": null,
+    "favicon": "/station-icons/se/g-teborgs-n-rradio-102-6-mhz.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 0,
@@ -1288,7 +1288,7 @@
     "city": null,
     "stream_url": "http://lyssna.fnf.nu:8080/gnf103.mp3",
     "homepage": "http://gnf.nu/",
-    "favicon": null,
+    "favicon": "/station-icons/se/g-teborgs-n-rradio-103-1-mhz.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 0,
@@ -1309,7 +1309,7 @@
     "city": null,
     "stream_url": "http://lyssna.fnf.nu:8080/gnf094.mp3",
     "homepage": "http://gnf.nu/",
-    "favicon": null,
+    "favicon": "/station-icons/se/g-teborgs-n-rradio-94-9-mhz.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 0,
@@ -1330,7 +1330,7 @@
     "city": null,
     "stream_url": "http://radio.grillkol.net:8007/grillkol",
     "homepage": "http://radio.grillkol.net:8007/grillkol",
-    "favicon": null,
+    "favicon": "/station-icons/se/grillkol-radio-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -1401,7 +1401,7 @@
     "city": null,
     "stream_url": "https://stream.dbmedia.se/gk90tal96",
     "homepage": "https://playnow.se/guldkanalen-90tal-webbradio/",
-    "favicon": null,
+    "favicon": "/station-icons/se/guldkanalen-90-tal.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -1422,7 +1422,7 @@
     "city": null,
     "stream_url": "https://stream.dbmedia.se/gk60tal96",
     "homepage": "https://stream.dbmedia.se/gk60tal96",
-    "favicon": null,
+    "favicon": "/station-icons/se/guldkanalen-60-tal-sk-ne-placeholder.webp",
     "genres": [
       "rock"
     ],
@@ -1514,7 +1514,7 @@
     "city": null,
     "stream_url": "https://eternalmix.boomdevi.duckdns.org/listen/hari_ramas_eternal_mix/radio.mp3",
     "homepage": "https://eternalmix.boomdevi.duckdns.org/public/hari_ramas_eternal_mix",
-    "favicon": null,
+    "favicon": "/station-icons/se/hari-rama-s-happy-eternal-mix-placeholder.webp",
     "genres": [
       "goa",
       "psytrance"
@@ -1595,7 +1595,7 @@
     "city": null,
     "stream_url": "http://deb.patrikmalmgrenrask.se:8010/",
     "homepage": "https://www.hnfradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/helsinborgs-n-rradio.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 140,
@@ -1616,7 +1616,7 @@
     "city": null,
     "stream_url": "http://vod.tv7.fi:1935/tv7-se/mp4:tv7-se.stream_720p/playlist.m3u8",
     "homepage": "https://www.himlentv7.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/himlen-tv7-uppsala.webp",
     "genres": [
       "children",
       "christian",
@@ -1670,7 +1670,7 @@
     "city": null,
     "stream_url": "https://stream.hitcity.se/live.mp3",
     "homepage": "https://hitcity.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/hitcity-229845c8-placeholder.webp",
     "genres": [
       "00s",
       "2010s",
@@ -1861,7 +1861,7 @@
     "city": null,
     "stream_url": "http://fm10-ice.stream.khz.se/fm10_mp3",
     "homepage": "https://www.ilikeradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/julkanalen.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -1882,7 +1882,7 @@
     "city": null,
     "stream_url": "http://radio.grillkol.net:8007/kakaook",
     "homepage": "http://radio.grillkol.net:8007/kakaook",
-    "favicon": null,
+    "favicon": "/station-icons/se/kakaook-radio-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -1959,7 +1959,7 @@
     "city": null,
     "stream_url": "https://stream.linkopingsnarradio.se:8005/radioprogram",
     "homepage": "https://www.linkopingsnarradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/link-pings-n-rradio-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -2001,7 +2001,7 @@
     "city": null,
     "stream_url": "http://fm03-ice.stream.khz.se/fm03_mp3?",
     "homepage": "https://lugnafavoriter.se./",
-    "favicon": null,
+    "favicon": "/station-icons/se/lugna-favoriter-stockholm.webp",
     "genres": [
       "pop",
       "romantic"
@@ -2224,7 +2224,7 @@
     "city": null,
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB&i=mixmegapol_instream_se_mp3",
     "homepage": "http://www.mixmegapol.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/mix-megapol.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -2291,7 +2291,7 @@
     "city": null,
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=mixmegapolgbg_instream_se_mp3",
     "homepage": "https://radioplay.se/mixmegapolgoteborg/",
-    "favicon": null,
+    "favicon": "/station-icons/se/mix-megapol-gbg-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -2312,7 +2312,7 @@
     "city": null,
     "stream_url": "http://radiostreamone.mine.nu/MRS9050one",
     "homepage": "http://www.mrs.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/mrs-90-5-stockholm-placeholder.webp",
     "genres": [
       "disco",
       "hip-hop",
@@ -2340,7 +2340,7 @@
     "city": null,
     "stream_url": "http://radio.bodensradio.se:8000/stream.ogg",
     "homepage": "https://www.bodensradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/narradion-boden-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 0,
@@ -2406,7 +2406,7 @@
     "city": null,
     "stream_url": "http://live-bauerse-fm.sharp-stream.com/nrj_instreamtest_se_mp3",
     "homepage": "http://www.radioplay.se/nrj",
-    "favicon": null,
+    "favicon": "/station-icons/se/nrj.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -2427,7 +2427,7 @@
     "city": null,
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=nrj_instreamtest_se_mp3",
     "homepage": "http://www.nrj.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/nrj-sweden.webp",
     "genres": [
       "top 40"
     ],
@@ -2450,7 +2450,7 @@
     "city": null,
     "stream_url": "https://stream3.themediasite.co.uk:8030/",
     "homepage": "https://oldiesfm.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/oldies-fm.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -2495,7 +2495,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4jmtl-aac-320",
     "homepage": "https://sr.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-j-mtland-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 272,
@@ -2516,7 +2516,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4kalm-mp3-96",
     "homepage": "https://sverigesradio.se/kalmar",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-kalmar-placeholder.webp",
     "genres": [
       "news talk music"
     ],
@@ -2539,7 +2539,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4norrbotten-mp3-192",
     "homepage": "https://sverigesradio.se/norrbotten",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-norrbotten-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -2605,7 +2605,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4vrml-aac-320",
     "homepage": "https://www.sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-v-rmland-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 312,
@@ -2647,7 +2647,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4vnrl-mp3-96",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-v-sternorrland-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 168,
@@ -2668,7 +2668,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4vnrl-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-v-sternorrland-4b226edb-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 384,
@@ -2689,7 +2689,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4vstm-mp3-96",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/p4-v-stmanland-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 164,
@@ -2710,7 +2710,7 @@
     "city": null,
     "stream_url": "https://stream.pcradio.ru/Pain-hi",
     "homepage": "https://pcradio.ru/",
-    "favicon": null,
+    "favicon": "/station-icons/se/pain.webp",
     "genres": [
       "discography",
       "rock"
@@ -2758,7 +2758,7 @@
   {
     "slug": "pirate-rock-v-stkustens-b-sta-rock",
     "stationuuid": "f4fcca1a-ba7e-11e9-acb2-52543be04c81",
-    "name": "Pirate Rock  Västkustens bästa rock",
+    "name": "Pirate Rock Västkustens bästa rock",
     "state": null,
     "city": null,
     "stream_url": "http://stream.piraterock.se:8101/webradio",
@@ -2816,7 +2816,7 @@
     "city": null,
     "stream_url": "http://62.101.46.15:8000/poporock",
     "homepage": "http://www.poporock.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/pop-rock-umeao.webp",
     "genres": [
       "local radio"
     ],
@@ -2842,7 +2842,7 @@
     "city": null,
     "stream_url": "http://master.shoutcast.com:8000/popradio-stockholm",
     "homepage": "https://popradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/pop-radio-stockholm-placeholder.webp",
     "genres": [
       "rock"
     ],
@@ -2917,7 +2917,7 @@
     "city": null,
     "stream_url": "https://fm04-ice.stream.khz.se/fm04_mp3",
     "homepage": "https://www.ilikeradio.se/powerhitradio/",
-    "favicon": null,
+    "favicon": "/station-icons/se/power-hit-radio.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -2938,7 +2938,7 @@
     "city": null,
     "stream_url": "https://wr07-ice.stream.khz.se/wr07_mp3",
     "homepage": "https://www.viaplayradio.se/powerstreet/",
-    "favicon": null,
+    "favicon": "/station-icons/se/power-street.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -2959,7 +2959,7 @@
     "city": null,
     "stream_url": "http://stream.pulsfm.se:8908/stream",
     "homepage": "http://pulsfm.se/boras/",
-    "favicon": null,
+    "favicon": "/station-icons/se/puls-fm-bor-s.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -3096,7 +3096,7 @@
     "city": null,
     "stream_url": "http://62.209.164.60:8000/mp128.mp3",
     "homepage": "http://www.radio88partille.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-88-partille.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -3117,7 +3117,7 @@
     "city": null,
     "stream_url": "https://streaming.943.se/radio88dans",
     "homepage": "https://radio88.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-88-partille-golden-hits.webp",
     "genres": [],
     "language": null,
     "bitrate": 320,
@@ -3167,7 +3167,7 @@
     "city": null,
     "stream_url": "https://www.aftonbladet.se/podcasts/episode/396373",
     "homepage": "https://www.aftonbladet.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-aftonbladet.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -3209,7 +3209,7 @@
     "city": null,
     "stream_url": "https://live.radio.bubb.la/stream.mp3",
     "homepage": "https://radio.bubb.la/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-bubb-la.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 0,
@@ -3232,7 +3232,7 @@
     "city": null,
     "stream_url": "https://stream.zeno.fm/c6ufpty9w1ctv",
     "homepage": "https://stream.zeno.fm/c6ufpty9w1ctv",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-faceit-fm-stockholm-placeholder.webp",
     "genres": [
       "rock"
     ],
@@ -3255,7 +3255,7 @@
     "city": null,
     "stream_url": "https://stream.radiogbg.se:8050/relay4",
     "homepage": "https://radiogbg.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-gbg-sevdah-placeholder.webp",
     "genres": [
       "bosna",
       "sevdah",
@@ -3283,7 +3283,7 @@
     "city": null,
     "stream_url": "http://radiogold.se/",
     "homepage": "https://www.radiogold.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-gold-sweden.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -3304,7 +3304,7 @@
     "city": null,
     "stream_url": "https://www.radiogold.se/lyssna/radiogold953",
     "homepage": "https://www.radiogold.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-gold-sweden-47907c71.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -3325,7 +3325,7 @@
     "city": null,
     "stream_url": "https://www.radiogold.se/lyssna/",
     "homepage": "https://www.radiogold.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-gold-sweden-d3b269f9.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -3346,7 +3346,7 @@
     "city": null,
     "stream_url": "https://streaming.943.se/radiogold",
     "homepage": "https://www.radiogold.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-gold-sweden-e69f59c2.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -3434,7 +3434,7 @@
     "city": null,
     "stream_url": "http://stream.zeno.fm/tf8vczzxrg0uv",
     "homepage": "http://radiolaholm.nu/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-laholm-placeholder.webp",
     "genres": [
       "60s",
       "70s",
@@ -3464,7 +3464,7 @@
     "city": null,
     "stream_url": "http://radiostreamone.mine.nu/9990MHz",
     "homepage": "https://radionacka.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-nacka-stockholm.webp",
     "genres": [],
     "language": null,
     "bitrate": 64,
@@ -3529,7 +3529,7 @@
     "city": null,
     "stream_url": "https://icecast.radio-orinoco.com/orinoco",
     "homepage": "https://www.radio-orinoco.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-orinoco.webp",
     "genres": [],
     "language": "spanish",
     "bitrate": 128,
@@ -3573,7 +3573,7 @@
     "city": null,
     "stream_url": "https://wr20-ice.stream.khz.se/wr20_mp3?platform=web",
     "homepage": "https://www.ilikeradio.se/radiorainbow/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-rainbow.webp",
     "genres": [
       "dance",
       "dj remix",
@@ -3598,7 +3598,7 @@
     "city": null,
     "stream_url": "https://play.radiorivendell.com/radio/8000/radio.mp3",
     "homepage": "https://www.radiorivendell.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-rivendell.webp",
     "genres": [
       "fantasy"
     ],
@@ -3624,7 +3624,7 @@
     "city": null,
     "stream_url": "https://play.radiorivendell.com/radio/8000/radio.ogg",
     "homepage": "https://www.radiorivendell.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-rivendell-9197541c.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -3648,7 +3648,7 @@
     "city": null,
     "stream_url": "http://rssand.se:4027/;",
     "homepage": "http://www.radiosandviken.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-sandviken-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -3675,7 +3675,7 @@
     "city": null,
     "stream_url": "https://shout.rs8990.com/;",
     "homepage": "https://radiosandviken.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-sandviken-48798f54-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -3699,7 +3699,7 @@
     "city": null,
     "stream_url": "http://video.webbplay.se:1935/liveradio/narradio/playlist.m3u8",
     "homepage": "https://radioskovde.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radio-sk-vde-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -3843,7 +3843,7 @@
     "city": null,
     "stream_url": "http://radiogodis.org:8004/",
     "homepage": "https://www.radiogodis.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/radiogodis-placeholder.webp",
     "genres": [
       "80's"
     ],
@@ -3943,7 +3943,7 @@
     "city": null,
     "stream_url": "https://redback.mywire.org/stream.mp3",
     "homepage": "https://redback.mywire.org/Radio/",
-    "favicon": null,
+    "favicon": "/station-icons/se/redback-radio-select-state-placeholder.webp",
     "genres": [
       "eclectic",
       "experimental",
@@ -4074,7 +4074,7 @@
     "city": null,
     "stream_url": "https://live-bauerse-fm.sharp-stream.com/retrofm_aacp?ua=WEB&aw_0_1st.playerid=SBS_RP_WEB&aw_0_1st.skey=1575715192&companionAds=true&listenerId=@@GUID@@",
     "homepage": "http://www.retrofm.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/retro-fm-sk-ne-placeholder.webp",
     "genres": [
       "oldies"
     ],
@@ -4097,7 +4097,7 @@
     "city": null,
     "stream_url": "https://stream.rcs.revma.com/25knctp5vepwv",
     "homepage": "https://www.retrofm.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/retro-fm-sverige-placeholder.webp",
     "genres": [
       "oldies"
     ],
@@ -4120,7 +4120,7 @@
     "city": null,
     "stream_url": "https://sc.retrohits.se/radio.mp3",
     "homepage": "https://retrohits.se/en/",
-    "favicon": null,
+    "favicon": "/station-icons/se/retrohits-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -4141,7 +4141,7 @@
     "city": null,
     "stream_url": "https://sc.retrohits.se/retrohits64.aac",
     "homepage": "https://retrohits.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/retrohits-sk-ne-placeholder.webp",
     "genres": [
       "00's",
       "80's",
@@ -4168,7 +4168,7 @@
     "city": null,
     "stream_url": "http://fm01-ice.stream.khz.se/fm01_mp3",
     "homepage": "https://www.ilikeradio.se/rixfm/",
-    "favicon": null,
+    "favicon": "/station-icons/se/rix-fm.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -4307,7 +4307,7 @@
     "city": null,
     "stream_url": "https://stream.pcradio.ru/Roxette-hi",
     "homepage": "https://pcradio.ru/",
-    "favicon": null,
+    "favicon": "/station-icons/se/roxette.webp",
     "genres": [
       "discography"
     ],
@@ -4378,7 +4378,7 @@
     "city": null,
     "stream_url": "https://streams.scenesat.com/main/mobile.aac",
     "homepage": "https://scenesat.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/scenesat-radio-aac-mobile.webp",
     "genres": [
       "demoscene"
     ],
@@ -4428,7 +4428,7 @@
     "city": null,
     "stream_url": "http://radio.dawnshadow.se:8000/stream",
     "homepage": "http://radio.dawnshadow.se/sdxradio.html",
-    "favicon": null,
+    "favicon": "/station-icons/se/sdx-synthetic-experience-ebm-synth-and-industrial-placeholder.webp",
     "genres": [
       "ebm",
       "electronic",
@@ -4477,7 +4477,7 @@
     "city": null,
     "stream_url": "https://fm06-ice.stream.khz.se/fm06_mp3",
     "homepage": "https://skargardsradion.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sk-rg-rdsradion-0268fc68.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -4523,7 +4523,7 @@
     "city": null,
     "stream_url": "http://relay1.slayradio.org:8000/",
     "homepage": "https://slay.radio/s",
-    "favicon": null,
+    "favicon": "/station-icons/se/slayradio.webp",
     "genres": [
       "electronic"
     ],
@@ -4546,7 +4546,7 @@
     "city": null,
     "stream_url": "https://wr08-ice.stream.khz.se/wr08_mp3",
     "homepage": "https://www.ilikeradio.se/soulclassics/",
-    "favicon": null,
+    "favicon": "/station-icons/se/soul-classics.webp",
     "genres": [
       "classic soul"
     ],
@@ -4569,7 +4569,7 @@
     "city": null,
     "stream_url": "https://stream.zeno.fm/9q3ez3k3fchvv",
     "homepage": "https://spinning-seal-fm-home-website.hxkprogram.repl.co/",
-    "favicon": null,
+    "favicon": "/station-icons/se/spinning-seal-fm-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 0,
@@ -4590,7 +4590,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/dingata-aac-192",
     "homepage": "https://sverigesradio.se/dingata",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-din-gata-sk-ne-placeholder.webp",
     "genres": [
       "hip-hop",
       "rnb"
@@ -4614,7 +4614,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p1-aac-32",
     "homepage": "https://www.sverigesradio.se/kanaler",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p1-placeholder.webp",
     "genres": [
       "public service"
     ],
@@ -4637,7 +4637,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p2-flac",
     "homepage": "https://sverigesradio.se/p2",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p2-stockholm-placeholder.webp",
     "genres": [
       "classical",
       "jazz"
@@ -4682,7 +4682,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4jonkoping-mp3-192",
     "homepage": "https://sverigesradio.se/jonkoping",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p4-j-nk-ping-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -4703,7 +4703,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4jkpg-aac-320%20(AAC-LC,%20320%20kbps)",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-jonkoping",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p4-j-nk-ping-45bca914-placeholder.webp",
     "genres": [
       "local news"
     ],
@@ -4749,7 +4749,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4kronoberg-mp3-192",
     "homepage": "https://sverigesradio.se/kronoberg",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p4-kronoberg-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -4770,7 +4770,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4malm-mp3-96",
     "homepage": "https://sverigesradio.se/tabla.aspx?programid=207",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p4-malm-hus-sk-ne-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 134,
@@ -4791,7 +4791,7 @@
     "city": null,
     "stream_url": "https://ljud1-cdn.sr.se/lc/p4malm.m3u8",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-malmohus",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr-p4-radio-malm-hus-scania-placeholder.webp",
     "genres": [
       "malmö",
       "malmöhus",
@@ -4817,7 +4817,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4sth-aac-32",
     "homepage": "https://www.sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sr4-sthlm-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -4838,7 +4838,7 @@
     "city": null,
     "stream_url": "http://wr10-ice.stream.khz.se/wr10_mp3",
     "homepage": "https://www.ilikeradio.se/star70s/",
-    "favicon": null,
+    "favicon": "/station-icons/se/star-70s.webp",
     "genres": [
       "70's",
       "70-tal",
@@ -4864,7 +4864,7 @@
     "city": null,
     "stream_url": "http://wr02-ice.stream.khz.se/wr02_mp3",
     "homepage": "https://www.ilikeradio.se/star80s/",
-    "favicon": null,
+    "favicon": "/station-icons/se/star-80s.webp",
     "genres": [
       "80's",
       "80-tal",
@@ -4916,7 +4916,7 @@
     "city": null,
     "stream_url": "http://fm05-ice.stream.khz.se/fm05_mp3",
     "homepage": "https://www.ilikeradio.se/starfm/",
-    "favicon": null,
+    "favicon": "/station-icons/se/star-fm.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -5036,7 +5036,7 @@
     "city": null,
     "stream_url": "http://radiostreamtwo.mine.nu/18020",
     "homepage": "http://www.narradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/stockholm-fm-101-1-sweden-placeholder.webp",
     "genres": [
       "international",
       "variety"
@@ -5060,7 +5060,7 @@
     "city": null,
     "stream_url": "http://live.narradio.se:8030/;stream.mp3",
     "homepage": "https://www.narradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/stockholm-fm-101-1-mhz-sweden-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -5129,7 +5129,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4krist-mp3-96",
     "homepage": "https://sverigesradio.se/kristianstad",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveiges-radio-p4-kristianstad-sk-ne-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 160,
@@ -5150,7 +5150,7 @@
     "city": null,
     "stream_url": "https://sverigesradio.se/topsy/direkt/207-hi.mp3",
     "homepage": "https://sverigesradio.se/malmohus",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveiges-radio-p4-malm-hus-sk-ne-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 152,
@@ -5171,7 +5171,7 @@
     "city": null,
     "stream_url": "http://mediaserv38.live-streams.nl:8107/stream",
     "homepage": "http://www.svenskfolkmusik.nu/",
-    "favicon": null,
+    "favicon": "/station-icons/se/svensk-folkmusik-akka-radio-placeholder.webp",
     "genres": [
       "folk",
       "folk music",
@@ -5224,7 +5224,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/ekotdirekt-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-ekot-s-nder-direkt-placeholder.webp",
     "genres": [
       "news",
       "public radio",
@@ -5249,7 +5249,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p1-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p1-placeholder.webp",
     "genres": [
       "news",
       "public radio",
@@ -5274,7 +5274,7 @@
     "city": null,
     "stream_url": "http://sverigesradio.se/topsy/direkt/srapi/132-hi-aac-http",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p1-07c6d96f-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 312,
@@ -5295,7 +5295,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p2-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p2-placeholder.webp",
     "genres": [
       "sveriges radio"
     ],
@@ -5318,7 +5318,7 @@
     "city": null,
     "stream_url": "https://edge1.sr.se/p2-flac",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p2-697e5012-placeholder.webp",
     "genres": [
       "classical music"
     ],
@@ -5341,7 +5341,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p2sm-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p2-spr-k-och-musik-placeholder.webp",
     "genres": [
       "music",
       "public radio",
@@ -5366,7 +5366,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p3-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p3-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio",
@@ -5391,7 +5391,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p3-mp3-96",
     "homepage": "https://sverigesradio.se/p3",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p3-e4f6d392-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 94,
@@ -5412,7 +5412,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/dingata-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p3-din-gata-malmoe-placeholder.webp",
     "genres": [
       "local radio",
       "public radio",
@@ -5463,7 +5463,7 @@
     "city": null,
     "stream_url": "https://sverigesradio.se/topsy/ljudfil/srse/8266576.mp3",
     "homepage": "https://sverigesradio.se/halland",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-halland-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 0,
@@ -5505,7 +5505,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4plus-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-plus-placeholder.webp",
     "genres": [
       "00s",
       "30s",
@@ -5582,7 +5582,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4vast-mp3-96",
     "homepage": "https://www.sverigesradio.se/vast",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-v-st-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 114,
@@ -5627,7 +5627,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p6-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p6-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5651,7 +5651,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/knattekanalen-mp3-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-radioapans-knattekanal-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 128,
@@ -5672,7 +5672,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra01-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-1-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5696,7 +5696,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra10-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-10-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5720,7 +5720,7 @@
     "city": null,
     "stream_url": "http://http-live.sr.se/srextra02-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-2-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5744,7 +5744,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra03-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-3-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5768,7 +5768,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra04-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-4-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5792,7 +5792,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra05-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-5-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5816,7 +5816,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra06-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-6-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5840,7 +5840,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra07-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-7-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5864,7 +5864,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/srextra08-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-8-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5888,7 +5888,7 @@
     "city": null,
     "stream_url": "http://http-live.sr.se/srextra09-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-extra-9-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5912,7 +5912,7 @@
     "city": null,
     "stream_url": "http://http-live.sr.se/srsapmi-aac-192",
     "homepage": "https://sverigesradio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-sr-s-pmi-placeholder.webp",
     "genres": [
       "public radio",
       "sveriges radio"
@@ -5936,7 +5936,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p1-mp3-96",
     "homepage": "https://sverigesradio.se/p1",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p1-national-sweden-placeholder.webp",
     "genres": [
       "culture",
       "news",
@@ -5961,7 +5961,7 @@
     "city": null,
     "stream_url": "https://edge1.sr.se/p1-aac-320",
     "homepage": "https://www.sverigesradio/p1",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p1-418fc299-placeholder.webp",
     "genres": [
       "culture",
       "news",
@@ -5986,7 +5986,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p1-mp3-192",
     "homepage": "https://www.sr.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p1-192kbps-placeholder.webp",
     "genres": [
       "current affairs",
       "news"
@@ -6010,7 +6010,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p2musik-aac-320",
     "homepage": "https://sverigesradio.se/p2",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p2-national-sweden-placeholder.webp",
     "genres": [
       "classical",
       "jazz"
@@ -6034,7 +6034,7 @@
     "city": null,
     "stream_url": "https://edge1.sr.se/p3-aac-320",
     "homepage": "https://www.sverigesradio.se/p3",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p3-01a0db86-placeholder.webp",
     "genres": [
       "music",
       "youth"
@@ -6058,7 +6058,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4dala-aac-320",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-dalarna",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-dalarna-placeholder.webp",
     "genres": [
       "local"
     ],
@@ -6081,7 +6081,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4gavleborg-mp3-192",
     "homepage": "https://www.sverigesradio.se/gavleborg",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-g-vleborg-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6105,7 +6105,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4gavl-mp3-96",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-gavleborg",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-g-vleborg-e63482bc-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 144,
@@ -6126,7 +6126,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4goteborg-mp3-192",
     "homepage": "https://sverigesradio.se/g%C3%B6teborg",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-g-teborg-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6150,7 +6150,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4gbg-aac-320",
     "homepage": "https://www.sverigesradio/p4goteborg",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-g-teborg-003dea75-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6174,7 +6174,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4gotland-mp3-192",
     "homepage": "https://sverigesradio.se/gotland",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-gotland-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6198,7 +6198,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4hall-aac-128",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-halland",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-halland-79d17f42-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 120,
@@ -6263,7 +6263,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4skaraborg-mp3-192",
     "homepage": "https://sverigesradio.se/skaraborg",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-skaraborg-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6287,7 +6287,7 @@
     "city": null,
     "stream_url": "https://edge1.sr.se/p4sth-aac-320",
     "homepage": "https://www.sverigesradio.se/stockholm",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-stockholm-placeholder.webp",
     "genres": [],
     "language": "swedish",
     "bitrate": 304,
@@ -6308,7 +6308,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4stockholm-mp3-192",
     "homepage": "https://www.sverigesradio/stockholm",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-stockholm-543db188-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6332,7 +6332,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4uppland-mp3-192",
     "homepage": "https://sverigesradio.se/uppland",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-uppland-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6356,7 +6356,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4uppl-aac-320",
     "homepage": "https://www.sr.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-uppland-9e1e37f2-placeholder.webp",
     "genres": [],
     "language": null,
     "bitrate": 296,
@@ -6377,7 +6377,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4uppland-aac-192",
     "homepage": "https://www.sr.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radio-p4-uppland-aac-placeholder.webp",
     "genres": [
       "local radio",
       "music"
@@ -6401,7 +6401,7 @@
     "city": null,
     "stream_url": "https://live1.sr.se/p4ostg-mp3-96",
     "homepage": "https://sverigesradio.se/ostergotland",
-    "favicon": null,
+    "favicon": "/station-icons/se/sveriges-radion-p4-sterg-tland-select-one-placeholder.webp",
     "genres": [
       "local news",
       "local talk",
@@ -6428,7 +6428,7 @@
     "city": null,
     "stream_url": "https://stream.zeno.fm/d6ozvqgvrvktv",
     "homepage": "https://swarmradio.ismyradio.com/",
-    "favicon": null,
+    "favicon": "/station-icons/se/swarm-radio-malmoe.webp",
     "genres": [],
     "language": "english",
     "bitrate": 0,
@@ -6478,7 +6478,7 @@
     "city": null,
     "stream_url": "https://broadcast.sonologic.net/modstation.mp3",
     "homepage": "https://modstation.scandinavianretro.eu/",
-    "favicon": null,
+    "favicon": "/station-icons/se/the-modstation-amiga-protracker-modules-placeholder.webp",
     "genres": [
       "chiptune",
       "chiptunes",
@@ -6580,7 +6580,7 @@
     "city": null,
     "stream_url": "https://streamer.radio.co/s0c62f7351/listen",
     "homepage": "https://viberadio.se/",
-    "favicon": null,
+    "favicon": "/station-icons/se/vibe-radio-stockholm.webp",
     "genres": [
       "chr",
       "dance",
