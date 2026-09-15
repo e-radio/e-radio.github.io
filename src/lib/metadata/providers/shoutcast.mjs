@@ -1,8 +1,17 @@
 import { parseTextHistory } from '../common.mjs';
 export function parse(payload) {
+  if (typeof payload?.nowplaying === 'string' && Array.isArray(payload?.trackhistory)) {
+    return { song: { text: payload.nowplaying, art: payload.coverart }, listeners: payload.connections,
+      history: payload.trackhistory.slice(payload.trackhistory[0] === payload.nowplaying ? 1 : 0)
+        .map(text => ({ song: { text } })) };
+  }
   return { song: { text: payload?.songtitle }, listeners: payload?.currentlisteners };
 }
 export function history(payload) {
+  if (Array.isArray(payload?.trackhistory)) {
+    const result = parse(payload);
+    return { now_playing: { song: result.song }, song_history: result.history };
+  }
   if (!Array.isArray(payload)) return payload;
   return {
     now_playing: { song: { text: payload[0]?.title || '' }, played_at: payload[0]?.playedat },

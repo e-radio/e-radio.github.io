@@ -81,5 +81,8 @@
   "/stations/zagorski-radio-frana-galovi-a-1a-49000-krapina/": "/stations/zagorski-radio/",
   "/stations/radio-maria/": "/stations/radio-marija/",
   "/stations/radio-maria-croatia/": "/stations/radio-marija/",
-  "/stations/radio-marija-hrvatska/": "/stations/radio-marija/"
+  "/stations/radio-marija-hrvatska/": "/stations/radio-marija/",
+  "/stations/city-radio-zagreba-ka-19-velika-gorica/": "/stations/city-radio-88-6-zagreba-ka-upanija/",
+  "/stations/radio-baranja-trg-slobode-32-3-hr-beli-manastir/": "/stations/radio-baranja/",
+  "/stations/petrinjski-radio-https-www-openstreetmap-org-relation-8076890/": "/stations/petrinjski-radio-petrinja/"
 }

@@ -1061,52 +1061,17 @@
     }
   },
   {
-    "slug": "city-radio-zagreba-ka-19-velika-gorica",
-    "stationuuid": "60ba0181-cb84-4337-b1bb-d07fbf046da3",
-    "name": "CITY RADIO",
-    "state": "City of Zagreb",
-    "city": "Velika Gorica",
-    "stream_url": "http://s8.iqstreaming.com:8058/stream",
-    "homepage": "https://cityportal.hr/",
-    "favicon": "/station-icons/hr/city-radio-zagreba-ka-19-velika-gorica.webp",
-    "genres": [
-      "various"
-    ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 5,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 45.71513193246481,
-    "geo_long": 16.072289943695072,
-    "nowplaying_url": "http://s8.iqstreaming.com:8058/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://s8.iqstreaming.com:8058/played?sid=1&type=json",
-    "locationNames": {
-      "hr": {
-        "city": "Velika Gorica",
-        "state": "Zagrebačka županija"
-      },
-      "en": {
-        "city": "Velika Gorica",
-        "state": "City of Zagreb"
-      }
-    }
-  },
-  {
     "slug": "city-radio-88-6-zagreba-ka-upanija",
     "stationuuid": "962280df-0601-11e8-ae97-52543be04c81",
-    "name": "City-radio 88.6",
+    "name": "City Radio",
     "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "http://s8.iqstreaming.com:8058/stream;",
-    "homepage": "http://city-radio.hr/",
+    "city": "Velika Gorica",
+    "stream_url": "https://s8.iqstreaming.com:2020/stream/city_radioHR/stream",
+    "homepage": "https://cityportal.hr/",
     "favicon": "/station-icons/hr/city-radio-88-6-zagreba-ka-upanija.webp",
     "genres": [
-      "local music"
+      "local music",
+      "various"
     ],
     "language": "croatian",
     "bitrate": 128,
@@ -1116,21 +1081,33 @@
     "votes": 101,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://s8.iqstreaming.com:8058/stats?sid=1&json=1",
+    "geo_lat": 45.71513193246481,
+    "geo_long": 16.072289943695072,
+    "nowplaying_url": "https://s8.iqstreaming.com:2020/json/stream/city_radioHR",
     "metadata_server": "shoutcast",
-    "history_url": "http://s8.iqstreaming.com:8058/played?sid=1&type=json",
     "locationNames": {
       "hr": {
-        "city": "Zagreb",
+        "city": "Velika Gorica",
         "state": "Zagrebačka županija"
       },
       "en": {
-        "city": "Zagreb",
+        "city": "Velika Gorica",
         "state": "City of Zagreb"
       }
-    }
+    },
+    "alternate_stationuuids": [
+      "60ba0181-cb84-4337-b1bb-d07fbf046da3"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Alternative",
+        "url": "http://s8.iqstreaming.com:8058/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ],
+    "metadata_direct": true
   },
   {
     "slug": "club-music-radio-dance",
@@ -3819,9 +3796,8 @@
     "ssl_error": 0,
     "geo_lat": 44.108057062166694,
     "geo_long": 15.237876176834108,
-    "nowplaying_url": "http://s8.iqstreaming.com:8022/stats?sid=1&json=1",
+    "nowplaying_url": "https://s8.iqstreaming.com:2020/json/stream/novi_radio",
     "metadata_server": "shoutcast",
-    "history_url": "http://s8.iqstreaming.com:8022/played?sid=1&type=json",
     "locationNames": {
       "hr": {
         "city": "Zadar",
@@ -3831,7 +3807,19 @@
         "city": "Zadar",
         "state": "Zadar"
       }
-    }
+    },
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Alternative",
+        "url": "http://s8.iqstreaming.com:8022/novi_radio",
+        "bitrate": 128,
+        "codec": "MP3",
+        "nowplaying_url": "http://s8.iqstreaming.com:8022/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://s8.iqstreaming.com:8022/played?sid=1&type=json"
+      }
+    ]
   },
   {
     "slug": "obiteljski-radio-ivani-park-stjepana-posezija-6-ivani-grad",
@@ -4213,53 +4201,12 @@
     "name": "Petrinjski radio",
     "state": "Sisak-Moslavina",
     "city": "Petrinja",
-    "stream_url": "http://s8.iqstreaming.com:8062/;",
+    "stream_url": "https://s8.iqstreaming.com:2020/stream/petrinjski_radio",
     "homepage": "https://petrinjskiradio.hr/",
     "favicon": "/station-icons/hr/petrinjski-radio-petrinja.webp",
     "genres": [
       "rock",
-      "pop"
-    ],
-    "language": "croatian",
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 58,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "hr": {
-        "city": "Petrinja",
-        "state": "Sisak-Moslavina"
-      },
-      "en": {
-        "city": "Petrinja",
-        "state": "Sisak-Moslavina"
-      }
-    },
-    "streams": [
-      {
-        "id": "aac-64",
-        "label": "Alternative",
-        "url": "https://s8.iqstreaming.com:2020/stream/petrinjski_radio",
-        "bitrate": 64,
-        "codec": "AAC"
-      }
-    ]
-  },
-  {
-    "slug": "petrinjski-radio-https-www-openstreetmap-org-relation-8076890",
-    "stationuuid": "9208b22c-9321-4a66-b6fa-2aebb9153660",
-    "name": "Petrinjski radio",
-    "state": "Sisak-Moslavina",
-    "city": "Petrinja",
-    "stream_url": "https://s8.iqstreaming.com:2020/stream/petrinjski_radio",
-    "homepage": "https://petrinjskiradio.hr/",
-    "favicon": "/station-icons/hr/petrinjski-radio-https-www-openstreetmap-org-relation-8076890.webp",
-    "genres": [
+      "pop",
       "various"
     ],
     "language": "croatian",
@@ -4267,7 +4214,7 @@
     "codec": "AAC+",
     "clickcount": 0,
     "lastcheckok": 1,
-    "votes": 10,
+    "votes": 58,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 45.44086267178177,
@@ -4281,7 +4228,19 @@
         "city": "Petrinja",
         "state": "Sisak-Moslavina"
       }
-    }
+    },
+    "streams": [
+      {
+        "id": "aac-64",
+        "label": "Alternative",
+        "url": "http://s8.iqstreaming.com:8062/;",
+        "bitrate": 64,
+        "codec": "AAC"
+      }
+    ],
+    "alternate_stationuuids": [
+      "9208b22c-9321-4a66-b6fa-2aebb9153660"
+    ]
   },
   {
     "slug": "podravski-radio",
@@ -4380,7 +4339,7 @@
   {
     "slug": "prigorski-radio-antuna-gustava-mato-a-3-kri-evci",
     "stationuuid": "cad2749b-c654-41fc-9aa5-6370e11f7ba9",
-    "name": "Prigorski radio",
+    "name": "Prigorski Radio",
     "state": "Koprivnica-Križevci",
     "city": "Križevci",
     "stream_url": "https://s8.iqstreaming.com:8048/stream",
@@ -4819,29 +4778,7 @@
       "news",
       "pop",
       "rock",
-      "talk"
-    ],
-    "language": "croatian",
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 16,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "radio-baranja-trg-slobode-32-3-hr-beli-manastir",
-    "stationuuid": "0715da71-95d8-4245-ae11-f63d9a38f80d",
-    "name": "Radio Baranja",
-    "state": "Osijek-Baranja",
-    "city": "Beli Manastir",
-    "stream_url": "http://s8.iqstreaming.com:8036/stream",
-    "homepage": "https://www.radio-baranja.hr/",
-    "favicon": "/station-icons/hr/radio-baranja-trg-slobode-32-3-hr-beli-manastir.webp",
-    "genres": [
+      "talk",
       "pop rock"
     ],
     "language": "croatian",
@@ -4849,14 +4786,16 @@
     "codec": "AAC+",
     "clickcount": 1,
     "lastcheckok": 1,
-    "votes": 10,
+    "votes": 16,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 45.76954364030904,
     "geo_long": 18.598592877388004,
-    "nowplaying_url": "http://s8.iqstreaming.com:8036/stats?sid=1&json=1",
+    "nowplaying_url": "https://s8.iqstreaming.com:2020/json/stream/radio_baranja",
     "metadata_server": "shoutcast",
-    "history_url": "http://s8.iqstreaming.com:8036/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "0715da71-95d8-4245-ae11-f63d9a38f80d"
+    ],
     "locationNames": {
       "hr": {
         "city": "Beli Manastir",
@@ -4866,7 +4805,19 @@
         "city": "Beli Manastir",
         "state": "Osijek-Baranja"
       }
-    }
+    },
+    "streams": [
+      {
+        "url": "http://s8.iqstreaming.com:8036/stream",
+        "bitrate": 64,
+        "codec": "AAC+",
+        "id": "aac-64",
+        "label": "Alternative",
+        "nowplaying_url": "http://s8.iqstreaming.com:8036/stats?sid=1&json=1",
+        "history_url": "http://s8.iqstreaming.com:8036/played?sid=1&type=json",
+        "metadata_server": "shoutcast"
+      }
+    ]
   },
   {
     "slug": "radio-beli-e",
@@ -5829,7 +5780,7 @@
     "name": "Radio Kaj",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://s8.iqstreaming.com:8050/stream",
+    "stream_url": "https://s8.iqstreaming.com:2020/stream/radio-kaj2/stream",
     "homepage": "https://kaj.hr/",
     "favicon": "/station-icons/hr/radio-kaj.webp",
     "genres": [
@@ -5852,13 +5803,6 @@
     "streams": [
       {
         "id": "aac-64",
-        "label": "Default",
-        "url": "https://s8.iqstreaming.com:2020/stream/radio-kaj2/stream",
-        "bitrate": 64,
-        "codec": "AAC+"
-      },
-      {
-        "id": "aac-64-alternative",
         "label": "Alternative",
         "url": "http://s8.iqstreaming.com:8050/stream",
         "bitrate": 64,
@@ -6201,7 +6145,7 @@
     "name": "Radio Marija",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://dreamsiteradiocp4.com:8080/;",
+    "stream_url": "https://dreamsiteradiocp2.com/proxy/rmcroatia?mp=/stream",
     "homepage": "https://radiomarija.hr/",
     "favicon": "/station-icons/hr/radio-marija.webp",
     "genres": [
@@ -6211,7 +6155,7 @@
       "talk"
     ],
     "language": "croatian",
-    "bitrate": 64,
+    "bitrate": 96,
     "codec": "AAC+",
     "clickcount": 1,
     "lastcheckok": 1,
@@ -6234,7 +6178,7 @@
         "bitrate": 64,
         "codec": "AAC+",
         "id": "stream-1",
-        "label": "Default"
+        "label": "Alternative"
       },
       {
         "url": "http://dreamsiteradiocp.com:8026/stream",
@@ -6251,13 +6195,6 @@
         "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json",
         "metadata_server": "shoutcast",
         "id": "stream-3",
-        "label": "Alternative"
-      },
-      {
-        "url": "https://dreamsiteradiocp2.com/proxy/rmcroatia?mp=/stream",
-        "bitrate": 96,
-        "codec": "AAC+",
-        "id": "stream-4",
         "label": "Alternative"
       }
     ]

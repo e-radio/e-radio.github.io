@@ -109,3 +109,11 @@ test('Radio.co v2 current and history retain separate fields, art and timestamps
  const history=parseHistory('radio.co',JSON.stringify({data:[track]}));
  assert.equal(history.song_history.length,1);assert.equal(history.now_playing,undefined);
 });
+
+test('Shoutcast panel response provides artwork, listeners and deduplicated history', () => {
+ const raw={nowplaying:'Artist - Current',coverart:'https://img.example/art.jpg',connections:0,trackhistory:['Artist - Current','Artist - Previous']};
+ const result=parseMetadata('shoutcast',raw,context);
+ assert.equal(result.text,raw.nowplaying);assert.equal(result.song.art,raw.coverart);assert.equal(result.listeners,0);
+ assert.equal(result.payload.song_history.length,1);
+ assert.equal(parseHistory('shoutcast',JSON.stringify(raw)).song_history[0].song.text,'Artist - Previous');
+});
