@@ -8,7 +8,7 @@ import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import rawStations from "../../lib/stations";
 import metadataConfig from "../../data/metadata-config.json";
-import { slugify } from "../../lib/slug";
+import { genreSlug } from "../../lib/genre-links";
 import { Image } from "astro:assets";
 
 
@@ -35,7 +35,7 @@ const { station } = Astro.props as Props;
 
 const streamOptions: Array<{ id: string; label: string; url: string; quality: string; bitrate?: number; codec?: string }> = stationStreams(station);
 const hasStream = Boolean(station.stream_url);
-const formattedVotes = station.votes ? new Intl.NumberFormat((locale === "hr" ? "hr-HR" : "en-US")).format(Number(station.votes)) : null;
+const formattedVotes = station.votes ? new Intl.NumberFormat(locale).format(Number(station.votes)) : null;
 const locationLabel = station.state
   ? `${station.state}${station.country ? `, ${station.country}` : ""}`
   : station.country || countryText("Greece");
@@ -486,7 +486,7 @@ const structuredData = {
         <li class="breadcrumb-item active" aria-current="page">{station.name}</li>
       </ol>
     </nav>
-    <div class="small-muted"> {t("Updated {0}", [new Date().toLocaleDateString((locale === "hr" ? "hr-HR" : "en-US"), { year: "numeric", month: "short", day: "numeric" })])} </div>
+    <div class="small-muted"> {t("Updated {0}", [new Date().toLocaleDateString(locale, { year: "numeric", month: "short", day: "numeric" })])} </div>
   </div>
   <div class="row g-4">
     <div class="col-12 col-lg-8">
@@ -670,7 +670,7 @@ const structuredData = {
                   </p>
                   <div class="d-flex gap-2 flex-wrap">
                     {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
-                      <a href={localizePath(`/genres/${slugify(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
+                      <a href={localizePath(`/genres/${genreSlug(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
                     ))}
                   </div>
                 </div>
@@ -709,7 +709,7 @@ const structuredData = {
               <div class="small-muted mb-2">{t("Genres")}</div>
               <div class="d-flex flex-wrap gap-2">
                 {genres.map((genre) => (
-                  <a class="badge rounded-pill text-bg-light border text-decoration-none mono" href={localizePath(`/genres/${slugify(genre)}/`)}>{t(genre)}</a>
+                  <a class="badge rounded-pill text-bg-light border text-decoration-none mono" href={localizePath(`/genres/${genreSlug(genre)}/`)}>{t(genre)}</a>
                 ))}
               </div>
             </div>
@@ -1001,7 +1001,7 @@ import { clientTranslate as t } from '../../i18n/translate';
         const startedAt = new Date(timestamp * 1000);
         const valid = Number.isFinite(timestamp) && timestamp > 0 && !Number.isNaN(startedAt.getTime());
         timeEl.hidden = !valid;
-        timeEl.textContent = valid ? startedAt.toLocaleTimeString(document.documentElement.lang === 'hr' ? 'hr-HR' : 'en-US', { hour: '2-digit', minute: '2-digit' }) : '';
+        timeEl.textContent = valid ? startedAt.toLocaleTimeString(document.documentElement.lang || 'en', { hour: '2-digit', minute: '2-digit' }) : '';
         if (valid) timeEl.setAttribute('datetime', startedAt.toISOString());
         else timeEl.removeAttribute('datetime');
       }

@@ -249,3 +249,21 @@ Station pages and Live Tracks share `src/lib/metadata/index.mjs`. The registry s
 Each provider exports `parse(payload, context)` and `history(payload)`. Optional `textHistory(text)` handles provider-specific text responses. The shared interface returns the current song, artwork, listeners, history, and next track in a common format. `context` contains the stream URL and metadata endpoint; Icecast uses the endpoint's mount parameter to select the correct station. Shared helpers decode JSON/Jina responses and normalize artwork and history fields.
 
 Scrapers contain no DOM manipulation or timers. Page controllers handle requests, timeouts, polling, playback, and display; `metadata-polling.mjs` still controls refresh timing using the original provider response. To add a provider, create its module, register it in `index.mjs`, and add representative payload tests in `tests/metadata-scrapers.test.mjs`. Live Tracks eligibility is unchanged by this refactor.
+
+### Greek and English pages (e-radio.github.io)
+
+`countries/gr.json` enables `"locales": ["en", "el"]`. English keeps the existing URLs; Greek uses `/el/`, including `/el/stations/.../`, `/el/live-tracks/`, and `/el/tools/endpoint-finder/`. The header language switcher opens the equivalent page. No automatic language redirect is used.
+
+Greek interface messages, SEO descriptions, and location labels live in `src/i18n/el.json`. Both static pages and browser controls use that dictionary. Station names, song titles, stored locations, stream URLs, and slugs remain unchanged. The English intro is configured in `countries/gr.json`; its Greek translation is in the dictionary.
+
+The route integration and sitemap use each country's `locales` configuration. Greek pages have self-referencing canonicals, `lang="el"`, `og:locale="el_GR"`, and reciprocal `en`/`el`/`x-default` links. Redirects and the web manifest also have Greek equivalents. The existing Google verification tag appears in both languages.
+
+```sh
+COUNTRY=gr npm run dev
+npm test
+COUNTRY=gr npm run check
+COUNTRY=gr npm run build
+python3 tools/check-localized-site.py dist
+```
+
+Deploy the generated site using the existing workflow with `COUNTRY=gr` (also the default). No separate repository or backend is needed for Greek pages. When adding another language, add its dictionary to `translate.ts`, its code and display name to `index.ts`, its social locale to `SEO.astro`, then enable it in the country's `locales` list once the translation is complete.

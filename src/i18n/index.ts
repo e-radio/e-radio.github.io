@@ -1,13 +1,16 @@
 import { translate, type Locale } from './translate';
 export { translate } from './translate';
 import { site } from '../../countries/site.mjs';
-export const multilingual = site.countryCode === 'HR' && site.locales?.includes('hr');
+export const locales: Locale[] = (site.locales || ['en']).filter((locale: string) => ['en', 'hr', 'el'].includes(locale));
+export const multilingual = locales.length > 1;
+export const languageNames = { en: 'English', hr: 'Hrvatski', el: 'Ελληνικά' };
 export function localeFor(url: URL): Locale {
-  return multilingual && /^\/hr(?:\/|$)/.test(url.pathname) ? 'hr' : 'en';
+  return locales.find(locale => locale !== 'en' && (url.pathname === `/${locale}` || url.pathname.startsWith(`/${locale}/`))) || 'en';
 }
 export function languagePath(path: string, locale: Locale): string {
-  const base = path.replace(/^\/hr(?=\/|$)/, '') || '/';
-  return locale === 'hr' ? `/hr${base}` : base;
+  const prefix = locales.find(language => language !== 'en' && (path === `/${language}` || path.startsWith(`/${language}/`)));
+  const base = (prefix ? path.slice(prefix.length + 1) : path) || '/';
+  return locale !== 'en' && locales.includes(locale) ? `/${locale}${base}` : base;
 }
 export function localeHelpers(url: URL) {
   const locale = localeFor(url);

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the built English/Croatian site: python3 tools/check-localized-site.py dist."""
+"""Validate the built English and configured translated site: python3 tools/check-localized-site.py dist."""
 import json
 import sys
 from pathlib import Path
@@ -30,21 +30,24 @@ class Page(HTMLParser):
 
 def check(root):
     pages={'/'+str(p.relative_to(root)).replace('index.html',''):Page(p.read_text()) for p in root.rglob('*.html')}
+    languages = sorted({page.lang for page in pages.values() if not page.redirect})
+    assert 'en' in languages
     count=0
     for path,page in pages.items():
         if page.redirect:
             target=urlsplit(page.redirect_target).path
             assert target in pages and not pages[target].redirect,(path,'invalid redirect target',target)
             continue
-        assert page.lang in ('en','hr'),path
-        expected='hr' if path.startswith('/hr/') else 'en'
+        assert page.lang in ('en','hr','el'),path
+        expected=next((lang for lang in languages if lang!='en' and path.startswith('/'+lang+'/')), 'en')
         assert page.lang==expected,(path,page.lang)
         canonical=[a['href'] for tag,a in page.links if tag=='link' and a.get('rel')=='canonical']
         assert len(canonical)==1,(path,'canonical count',canonical)
         origin=urlsplit(canonical[0]).scheme+'://'+urlsplit(canonical[0]).netloc
         assert urlsplit(canonical[0]).path==path,(path,canonical)
-        base=path[3:] if expected=='hr' else path
-        expected_alternates={'en':origin+base,'hr':origin+'/hr'+base,'x-default':origin+base}
+        base=path[len(expected)+1:] if expected!='en' else path
+        expected_alternates={lang:origin+('' if lang=='en' else '/'+lang)+base for lang in languages}
+        expected_alternates['x-default']=origin+base
         alternates={a['hreflang']:a['href'] for tag,a in page.links if tag=='link' and a.get('rel')=='alternate' and a.get('hreflang')}
         assert alternates==expected_alternates,(path,alternates,expected_alternates)
         for href in alternates.values():
@@ -56,7 +59,8 @@ def check(root):
             if target.endswith('/'):
                 assert target in pages,(path,'missing internal page',target)
                 if not a.get('hreflang'):
-                    assert target.startswith('/hr/')==(expected=='hr'),(path,'language leak',target)
+                    target_language=next((lang for lang in languages if lang!='en' and target.startswith('/'+lang+'/')), 'en')
+                    assert target_language==expected,(path,'language leak',target)
         assert page.meta.get('description'),(path,'missing description')
         assert page.meta.get('google-site-verification'),(path,'missing verification tag')
         if page.meta.get('og:url'):assert page.meta['og:url']==canonical[0],path
@@ -68,10 +72,13 @@ def check(root):
     for url in urls:
         path=unquote(urlsplit(url).path)
         assert path in pages and not pages[path].redirect,('sitemap missing/redirect URL',path)
-        pair=path[3:] if path.startswith('/hr/') else '/hr'+path
-        assert urlsplit(url)._replace(path=pair).geturl() in urls,('sitemap missing translation',url)
-    for language in ('en','hr'):
-        manifest=json.loads((root/('hr/site.webmanifest' if language=='hr' else 'site.webmanifest')).read_text())
+        prefix=next((lang for lang in languages if lang!='en' and path.startswith('/'+lang+'/')), None)
+        base=path[len(prefix)+1:] if prefix else path
+        for lang in languages:
+            pair=('' if lang=='en' else '/'+lang)+base
+            assert urlsplit(url)._replace(path=pair).geturl() in urls,('sitemap missing translation',url)
+    for language in languages:
+        manifest=json.loads((root/('site.webmanifest' if language=='en' else language+'/site.webmanifest')).read_text())
         assert manifest['lang']==language
     print(f'Validated {count} pages and {len(urls)} sitemap entries: language, canonicals, reciprocal alternates, internal links, JSON-LD, manifests.')
 

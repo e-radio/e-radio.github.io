@@ -1,5 +1,5 @@
 ---
-import { localeHelpers, languagePath, multilingual } from '../i18n/index';
+import { localeHelpers, languagePath, multilingual, locales, languageNames } from '../i18n/index';
 const { t, localizePath, locale } = localeHelpers(Astro.url);
 
 import { site, countryText } from "../../countries/site.mjs";
@@ -39,20 +39,20 @@ const {
     <link rel="icon" type="image/png" sizes="32x32" href={localizePath(site.favicon32)} />
     <link rel="icon" type="image/png" sizes="192x192" href={localizePath(site.icon192)} />
     <link rel="apple-touch-icon" sizes="180x180" href={localizePath(site.appleTouchIcon)} />
-    <link rel="manifest" href={locale === "hr" ? "/hr/site.webmanifest" : "/site.webmanifest"} />
+    <link rel="manifest" href={languagePath("/site.webmanifest", locale)} />
     <meta name="application-name" content={site.siteName} />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content={site.siteShortName} />
     
-    {multilingual && ['en', 'hr', 'x-default'].map(language => (
-      <link rel="alternate" hreflang={language} href={`${site.siteUrl}${languagePath(Astro.url.pathname, language === 'hr' ? 'hr' : 'en')}`} />
+    {multilingual && [...locales, 'x-default' as const].map(language => (
+      <link rel="alternate" hreflang={language} href={`${site.siteUrl}${languagePath(Astro.url.pathname, language === 'x-default' ? 'en' : language)}`} />
     ))}
     <!-- SEO slot -->
     <slot name="seo">
       <title>{t(title)}</title>
-      {description && <meta name="description" content={description} />}
+      {description && <meta name="description" content={t(description)} />}
     </slot>
     {site.googleVerification && <meta name="google-site-verification" content={site.googleVerification} />}
   </head>
@@ -65,9 +65,8 @@ const {
             <img src={site.logo} width="32" height="32" alt={t(`${site.siteName} app icon`)} />
             <span>{t(site.siteName)}</span>
           </a>
-          {multilingual && <nav aria-label={locale === 'hr' ? 'Odabir jezika' : 'Language selection'} class="d-flex gap-3 ms-auto">
-            <a href={languagePath(Astro.url.pathname, 'en')} lang="en" hreflang="en" aria-current={locale === 'en' ? 'page' : undefined}>English</a>
-            <a href={languagePath(Astro.url.pathname, 'hr')} lang="hr" hreflang="hr" aria-current={locale === 'hr' ? 'page' : undefined}>Hrvatski</a>
+          {multilingual && <nav aria-label={t('Language selection')} class="d-flex gap-3 ms-auto">
+            {locales.map(language => <a href={languagePath(Astro.url.pathname, language)} lang={language} hreflang={language} aria-current={locale === language ? 'page' : undefined}>{languageNames[language]}</a>)}
           </nav>}
         </div>
       </nav>

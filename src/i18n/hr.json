@@ -358,5 +358,6 @@
   "Checked {0} of {1} candidates.": "Provjereno {0} od {1} kandidata.",
   "Invalid metadata": "Nevaljani metapodaci",
   "Audio response": "Zvučni odgovor",
-  "Blocked, unavailable or timed out": "Blokirano, nedostupno ili je isteklo vrijeme"
+  "Blocked, unavailable or timed out": "Blokirano, nedostupno ili je isteklo vrijeme",
+  "Language selection": "Odabir jezika"
 }

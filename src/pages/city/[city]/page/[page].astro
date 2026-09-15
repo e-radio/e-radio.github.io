@@ -9,7 +9,7 @@ import CategorySwitch from "../../../../components/CategorySwitch.astro";
 import RegionSeoHeader from "../../../../components/RegionSeoHeader.astro";
 import RegionSeoFooter from "../../../../components/RegionSeoFooter.astro";
 import rawStations from "../../../../lib/stations";
-import { slugify } from "../../../../lib/slug";
+import { genreSlug } from "../../../../lib/genre-links";
 import { buildCitySeo } from "../../../../lib/citySeo";
 import { Image } from "astro:assets";
 
@@ -129,7 +129,7 @@ const structuredData = {
                 </p>
                 <div class="d-flex gap-2 flex-wrap">
                   {station.genres && station.genres.slice(0, 3).map((genre) => (
-                    <a href={localizePath(`/genres/${slugify(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
+                    <a href={localizePath(`/genres/${genreSlug(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
                   ))}
                 </div>
               </div>

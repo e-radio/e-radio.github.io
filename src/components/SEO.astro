@@ -69,7 +69,7 @@ function localizeStructuredData(value: any, key = ''): any {
 {ogImage && <meta property="og:image" content={ogImage} />}
 {ogImage && <meta property="og:image:alt" content={t(ogTitle) || `${site.siteName} logo`} />}
 <meta property="og:site_name" content={site.siteName} />
-<meta property="og:locale" content={locale === "hr" ? "hr_HR" : site.socialLocale} />
+<meta property="og:locale" content={locale === "hr" ? "hr_HR" : locale === "el" ? "el_GR" : site.socialLocale} />
 
 {/* Twitter Card Tags */}
 <meta name="twitter:card" content="summary_large_image" />

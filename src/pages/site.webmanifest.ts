@@ -1,5 +1,5 @@
 import type { APIContext } from 'astro';
-import { localeHelpers } from '../i18n/index';
+import { localeHelpers, languagePath } from '../i18n/index';
 import { site } from '../../countries/site.mjs';
 import base from '../../countries/manifest-base.json';
 export function GET({ url }: APIContext) {
@@ -10,8 +10,8 @@ export function GET({ url }: APIContext) {
     short_name: site.siteShortName,
     description: t(site.introText),
     lang: locale,
-    start_url: locale === "hr" ? "/hr/" : "/",
-    scope: locale === "hr" ? "/hr/" : "/",
+    start_url: languagePath("/", locale),
+    scope: languagePath("/", locale),
     icons: [
       { src: site.icon192, sizes: '192x192', type: 'image/png' },
       { src: site.icon512, sizes: '512x512', type: 'image/png' },
