@@ -1,6 +1,6 @@
 # Country Radio Template
 
-A shared Astro radio directory with Greece as the default and a Croatia configuration included. Greece supports English/Greek pages; Croatia supports English/Croatian pages.
+A shared Astro radio directory with Greece as the default and a Croatia configuration included. Greece supports English/Greek pages; Croatia supports English/Croatian pages; Sweden supports English/Swedish pages.
 
 ```sh
 npm ci

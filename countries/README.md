@@ -479,3 +479,21 @@ COUNTRY=se python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
 ```
 
 At completion, the script prints **States filled and saved**, stations checked, homepage requests, existing-state skips, previously skipped records, missing homepages, fetch errors, lookups without a state, remaining missing states, and elapsed time. The summary also appears when no eligible stations remain or you interrupt with Ctrl+C. `--max 10` limits successfully saved states, so the number of stations checked can be higher than 10. Previously skipped records require progress-file review before retrying.
+
+### Swedish and English pages (sveriges-radio.github.io)
+
+`countries/se.json` enables `"locales": ["en", "sv"]`. English remains at `/`; Swedish uses `/sv/`, including `/sv/stations/.../`, `/sv/live-tracks/`, and `/sv/tools/endpoint-finder/`. The header links to the equivalent page in the other language.
+
+Swedish interface text, player messages, complete SEO descriptions, and county display names are in `src/i18n/sv.json`. English county labels such as `Stockholm county` display as `Stockholms län` on Swedish pages; stored station data and page slugs are unchanged. The country code is `se`, while the language code is `sv`.
+
+The shared integration generates Swedish routes, redirects, and a manifest. Each Swedish page has `lang="sv"`, `og:locale="sv_SE"`, its own canonical URL, and reciprocal `en`/`sv`/`x-default` links. Both languages appear in the sitemap and use the configured Google verification tag. No automatic language redirect is applied.
+
+```sh
+COUNTRY=se npm run dev
+npm test
+COUNTRY=se npm run check
+COUNTRY=se npm run build
+python3 tools/check-localized-site.py dist
+```
+
+Deploy with the existing GitHub Pages workflow and repository variable `COUNTRY=se`. A single build contains both languages. Update both the English message and its Swedish dictionary entry when changing interface copy.

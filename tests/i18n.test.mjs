@@ -6,7 +6,7 @@ import ts from 'typescript';
 const source = readFileSync(new URL('../src/i18n/translate.ts', import.meta.url), 'utf8')
   .replace("import hr from './hr.json';", `const hr = ${readFileSync(new URL('../src/i18n/hr.json', import.meta.url), 'utf8')};`);
 const localizedSource = source.replace("import el from './el.json';", `const el = ${readFileSync(new URL('../src/i18n/el.json', import.meta.url), 'utf8')};`);
-const js = ts.transpileModule(localizedSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const js = ts.transpileModule(localizedSource.replace("import sv from './sv.json';", `const sv = ${readFileSync(new URL('../src/i18n/sv.json', import.meta.url), 'utf8')};`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
 const { translate: t } = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
 test('English text and stream URLs remain unchanged', () => {
   assert.equal(t('Play', 'en'), 'Play');
@@ -39,9 +39,9 @@ test('Greek controls, SEO, locations, and placeholders translate', () => {
   assert.equal(t('https://radio.example/stream', 'el'), 'https://radio.example/stream');
 });
 test('Locale routing preserves pages, queries, external URLs and asset URLs', async () => {
-  for (const language of ['el', 'hr']) {
+  for (const language of ['el', 'hr', 'sv']) {
     const routingSource = readFileSync(new URL('../src/i18n/index.ts', import.meta.url), 'utf8')
-      .replace("import { translate, type Locale } from './translate';", "type Locale = 'en' | 'hr' | 'el'; const translate = (value: any) => value;")
+      .replace("import { translate, type Locale } from './translate';", "type Locale = 'en' | 'hr' | 'el' | 'sv'; const translate = (value: any) => value;")
       .replace("export { translate } from './translate';", '')
       .replace("import { site } from '../../countries/site.mjs';", `const site = {locales: ['en', '${language}'], siteUrl: 'https://radio.example'};`);
     const routingJs = ts.transpileModule(routingSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
@@ -64,4 +64,12 @@ test('Greek genre links match existing routes and resolve slug collisions', asyn
   assert.equal(genreSlug('ελληνικά'), 'ellinika');
   assert.equal(genreSlug('r&b'), 'r-b');
   assert.equal(genreSlug('r b'), 'r-b-2');
+});
+test('Swedish controls, SEO, counties and interpolation translate', () => {
+  assert.equal(t('Play', 'sv'), 'Spela');
+  assert.equal(t('Play Bandit Rock', 'sv'), 'Spela Bandit Rock');
+  assert.equal(t('Showing stations {0}–{1} of {2}', 'sv', [1, 20, 50]), 'Visar station 1–20 av 50');
+  assert.equal(t('Stockholm county', 'sv'), 'Stockholms län');
+  assert.equal(t('Swedish Radio Stations by City | Sveriges Radio', 'sv'), 'Svenska radiostationer efter stad | Sveriges Radio');
+  assert.equal(t('https://stream.example/radio.mp3', 'sv'), 'https://stream.example/radio.mp3');
 });

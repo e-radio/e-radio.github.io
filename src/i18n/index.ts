@@ -1,9 +1,9 @@
 import { translate, type Locale } from './translate';
 export { translate } from './translate';
 import { site } from '../../countries/site.mjs';
-export const locales: Locale[] = (site.locales || ['en']).filter((locale: string) => ['en', 'hr', 'el'].includes(locale));
+export const locales: Locale[] = (site.locales || ['en']).filter((locale: string) => ['en', 'hr', 'el', 'sv'].includes(locale));
 export const multilingual = locales.length > 1;
-export const languageNames = { en: 'English', hr: 'Hrvatski', el: 'Ελληνικά' };
+export const languageNames = { en: 'English', hr: 'Hrvatski', el: 'Ελληνικά', sv: 'Svenska' };
 export function localeFor(url: URL): Locale {
   return locales.find(locale => locale !== 'en' && (url.pathname === `/${locale}` || url.pathname.startsWith(`/${locale}/`))) || 'en';
 }

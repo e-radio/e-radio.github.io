@@ -1,7 +1,8 @@
 import hr from './hr.json';
 import el from './el.json';
-export type Locale = 'en' | 'hr' | 'el';
-const dictionaries: Record<string, Record<string, string>> = { hr, el };
+import sv from './sv.json';
+export type Locale = 'en' | 'hr' | 'el' | 'sv';
+const dictionaries: Record<string, Record<string, string>> = { hr, el, sv };
 // Full-message patterns support SEO sentences assembled by shared data helpers.
 const makePatterns = (messages: Record<string, string>) => Object.entries(messages).filter(([key]) => /\{\d+\}/.test(key) && !['{0} station{1}', '{0} · {1}', '← {0}'].includes(key)).map(([key, value]) => {
   const slots: number[] = [];
