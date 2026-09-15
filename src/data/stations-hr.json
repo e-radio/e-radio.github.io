@@ -47,8 +47,8 @@
     "slug": "club-music-radio-cro-hits",
     "stationuuid": "2cd4de45-a896-47a4-9443-7553405c353b",
     "name": "Club Music Radio CRO HITS",
-    "state": null,
-    "city": null,
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7006/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-cro-hits.webp",
@@ -88,8 +88,8 @@
     "slug": "club-music-radio-exyu-pop-rock",
     "stationuuid": "c2b49b9a-fb86-4848-9099-da0ba934b3de",
     "name": "..:: CLUB MUSIC RADIO ::....:: ExYU POP-ROCK ::..",
-    "state": null,
-    "city": null,
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7008/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-exyu-pop-rock.webp",
@@ -114,8 +114,8 @@
     "slug": "club-music-radio-folk",
     "stationuuid": "cce535eb-a691-43a2-8e0f-094b6dad73b8",
     "name": "Club Music Radio Folk",
-    "state": null,
-    "city": null,
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7001/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-folk.webp",
@@ -155,8 +155,8 @@
     "slug": "club-music-radio-love-song",
     "stationuuid": "bdb99c18-e77f-4d6a-8a64-e2e121d2527c",
     "name": "Club Music Radio Love Song",
-    "state": null,
-    "city": null,
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7004/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-love-song.webp",
@@ -196,8 +196,8 @@
     "slug": "club-music-radio-tambura",
     "stationuuid": "398e354d-303a-421a-953e-4e0a415b17ae",
     "name": "Club Music Radio Tambura",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7007/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-tambura.webp",
@@ -1113,8 +1113,8 @@
     "slug": "club-music-radio-dance",
     "stationuuid": "9f09baec-8c93-4327-ac7a-6d5b7bba9bcc",
     "name": "Club Music Radio - Dance",
-    "state": null,
-    "city": null,
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7002/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-dance.webp",
@@ -1139,8 +1139,8 @@
     "slug": "club-music-radio-italo-disco",
     "stationuuid": "bd003058-619d-443e-ade2-4e95d191dab3",
     "name": "Club Music Radio - ITALO DISCO",
-    "state": null,
-    "city": null,
+    "state": "Osijek-Baranja",
+    "city": "Osijek",
     "stream_url": "https://cmr-hosting.com:7005/;stream/1",
     "homepage": "https://clubmusic-1.com/",
     "favicon": "/station-icons/hr/club-music-radio-italo-disco.webp",
@@ -5691,7 +5691,7 @@
     "name": "Radio Italo Disco Net",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://65.21.202.84:8356/stream",
+    "stream_url": "https://a.tunzilla.com/http://65.21.202.84:8356/stream",
     "homepage": "https://www.italo-disco.net/index2.html",
     "favicon": "/station-icons/hr/radio-italo-disco-net.webp",
     "genres": [
@@ -5719,8 +5719,8 @@
     "name": "Radio Jaska",
     "state": "City of Zagreb",
     "city": "Jastrebarsko",
-    "stream_url": "http://uk1.streamingpulse.com:7041/stream",
-    "homepage": "http://www.radio-jaska.hr/",
+    "stream_url": "https://uk1.streamingpulse.com/ssl/RadioJaska",
+    "homepage": "https://www.radio-jaska.hr/",
     "favicon": "/station-icons/hr/radio-jaska-jastrebarsko.webp",
     "genres": [
       "various"
@@ -7797,13 +7797,6 @@
     "geo_long": null,
     "streams": [
       {
-        "id": "aac-96",
-        "label": "Default AAC+",
-        "url": "https://c5.hostingcentar.com/streams/topradio/",
-        "bitrate": 96,
-        "codec": "AAC+"
-      },
-      {
         "id": "aac-64",
         "label": "Alternative AAC",
         "url": "https://audio.social3.hr/listen/top_radio_256_mp3/stream",
@@ -7995,7 +7988,7 @@
     "stationuuid": "f733c9ed-6e40-4566-a1f3-2ca200ff4f1e",
     "name": "TOP YOU",
     "state": "City of Zagreb",
-    "city": null,
+    "city": "Zagreb",
     "stream_url": "http://116.202.235.114:8402/;",
     "homepage": "http://streaming.topradio.hr/top-you/",
     "favicon": "/station-icons/hr/top-you-grad-zagreb.png",
@@ -8017,11 +8010,11 @@
     "history_url": "http://116.202.235.114:8402/played?sid=1&type=json",
     "locationNames": {
       "hr": {
-        "city": null,
+        "city": "Zagreb",
         "state": "Grad Zagreb"
       },
       "en": {
-        "city": null,
+        "city": "Zagreb",
         "state": "City of Zagreb"
       }
     }
