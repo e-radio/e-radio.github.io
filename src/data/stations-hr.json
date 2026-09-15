@@ -4385,7 +4385,7 @@
   {
     "slug": "r-dalmacija",
     "stationuuid": "2dfd48d8-734e-4ba4-9eb4-a0909b753573",
-    "name": "R. Dalmacija",
+    "name": "Radio Dalmacija",
     "state": "Split-Dalmatia",
     "city": "Split",
     "stream_url": "https://shoutcast.pondi.hr:9000/;stream/1",
@@ -7980,7 +7980,7 @@
     "name": "ULTRA Split",
     "state": "Split-Dalmatia",
     "city": "Split",
-    "stream_url": "https://a.tunzilla.com/http://c5.hostingcentar.com:8061/stream",
+    "stream_url": "https://radio.valkira.uk/media/ultra-split",
     "homepage": "https://ultrasplit.hr/",
     "favicon": "/station-icons/hr/ultra-split.webp",
     "genres": [
@@ -8015,6 +8015,13 @@
       }
     },
     "streams": [
+      {
+        "id": "aac-96-2",
+        "label": "Alternative",
+        "url": "https://a.tunzilla.com/http://c5.hostingcentar.com:8061/stream",
+        "bitrate": 96,
+        "codec": "AAC"
+      },
       {
         "id": "aac-96-2",
         "label": "Alternative",
@@ -8210,7 +8217,7 @@
     "city": "Zagreb",
     "stream_url": "https://audio.social3.hr/listen/enter_club/stream",
     "homepage": "https://enterzagreb.hr/",
-    "favicon": "/station-icons/hr/enter-zagreb.webp",
+    "favicon": "/station-icons/hr/enter-zagreb-club.webp",
     "genres": [
       "club"
     ],
