@@ -1,0 +1,13 @@
+{
+  "countryCode": "SE",
+  "countryName": "Sweden",
+  "countryAdjective": "Swedish",
+  "language": "en",
+  "siteName": "Sveriges Radio",
+  "siteUrl": "https://sveriges-radio.github.io",
+  "stationsFile": "src/data/stations-se.json",
+  "regions": [],
+  "cityAliases": {},
+  "redirectsFile": "countries/se.redirects.json",
+  "googleVerification": ""
+}

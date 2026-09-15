@@ -1,0 +1,711 @@
+{
+  "checkedAt": "2026-09-15T16:11:55.881Z",
+  "checked": 277,
+  "saved": 73,
+  "dryRun": false,
+  "scope": "Selected station streams; direct server checks, not browser/CORS verification",
+  "verified": [
+    {
+      "slug": "24-7-continuous-music",
+      "name": "24/7 Continuous Music",
+      "nowplaying_url": "https://securestream.cuelightsmedia.com.au/api/nowplaying/247_continuous_music",
+      "history_url": "https://securestream.cuelightsmedia.com.au/api/nowplaying/247_continuous_music",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "90s-rewind",
+      "name": "90s Rewind",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/90s_rewind",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/90s_rewind",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "aftab",
+      "name": "Aftab",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/aftab",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/aftab",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "alt-edge-radio",
+      "name": "Alt Edge Radio",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/alt_edge_radio",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/alt_edge_radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "american-truckers",
+      "name": "American Truckers",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/american_truckers",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/american_truckers",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "back-to-the-80s",
+      "name": "Back to the 80s",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/back_to_the_80s",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/back_to_the_80s",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "bananradion",
+      "name": "BANANRADION",
+      "nowplaying_url": "https://lyssna.bananradion.se/api/nowplaying/bananradion",
+      "history_url": "https://lyssna.bananradion.se/api/nowplaying/bananradion",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "best-of-ericade-radio-stockholm",
+      "name": "Best of ericade.radio",
+      "nowplaying_url": "https://radio.ericade.net/status-json.xsl?mount=%2Fsc%2Fstream%2F2",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "blues",
+      "name": "Blues",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/blues",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/blues",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "bollywood-bangers",
+      "name": "Bollywood Bangers",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/bollywood_bangers",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/bollywood_bangers",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "classical",
+      "name": "Classical",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/classical",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/classical",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "country",
+      "name": "Country",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/country",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/country",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "dagnys-jukebox",
+      "name": "Dagnys Jukebox",
+      "nowplaying_url": "https://stream.dagnysjukebox.se/status-json.xsl?mount=%2Fdagny",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "name": "DansBandsRadio.se",
+      "nowplaying_url": "https://sc.dansbandsradio.se/status-json.xsl?mount=%2Fdbr64.aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "decades",
+      "name": "Decades",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/decades",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/decades",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "dunken-fm",
+      "name": "Dunken FM",
+      "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_AAC_Hi",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "dunken-fm-7ca8f95e",
+      "name": "Dunken FM",
+      "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_MP3_Hi",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "edm",
+      "name": "EDM",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/edm_",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/edm_",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "epic-soundtracks-only",
+      "name": "Epic Soundtracks Only",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/epic_soundtracks_only",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/epic_soundtracks_only",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "ericade-radio-sweden",
+      "name": "ericade.radio",
+      "nowplaying_url": "https://radio.ericade.net/status-json.xsl?mount=%2Fsc%2Fstream%2F1",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "faith-beats-radio",
+      "name": "Faith Beats Radio",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/faith_beats_radio",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/faith_beats_radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "gen-x",
+      "name": "Gen X",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/gen_x",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/gen_x",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "groove-revival-radio",
+      "name": "Groove Revival Radio",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/groove_revival_radio",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/groove_revival_radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "hackerspace-radio",
+      "name": "Hackerspace radio",
+      "nowplaying_url": "https://broadcast.sonologic.net/status-json.xsl?mount=%2Fsignal.ogg",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "harmony-frequencies",
+      "name": "Harmony Frequencies",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/harmony_frequencies_radio",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/harmony_frequencies_radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "hello-africa",
+      "name": "Hello Africa",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/hello_africa",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/hello_africa",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "hitcity",
+      "name": "HITCITY",
+      "nowplaying_url": "https://stream.hitcity.se/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "h-gan-s-n-rradio",
+      "name": "Höganäs Närradio",
+      "nowplaying_url": "https://deb.patrikmalmgrenrask.se:10443/stats?sid=1&json=1",
+      "history_url": "https://deb.patrikmalmgrenrask.se:10443/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "house",
+      "name": "House",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/house",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/house",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "ivory-echoes",
+      "name": "Ivory Echoes",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/ivory_echoes",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/ivory_echoes",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "jazz",
+      "name": "Jazz",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/jazz",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/jazz",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "kpop",
+      "name": "Kpop",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/kpop",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/kpop",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "latin",
+      "name": "Latin",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/latin",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/latin",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "mad-mix-beats",
+      "name": "Mad Mix Beats",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_beats",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_beats",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "mad-mix-curated",
+      "name": "Mad Mix Curated",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/mad_mix_curated",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/mad_mix_curated",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "mad-mix-main",
+      "name": "Mad Mix Main",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_main",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_main",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "melancholy",
+      "name": "Melancholy",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/melancholy",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/melancholy",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "metal-mayhem",
+      "name": "Metal Mayhem",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/metal_mayhem",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/metal_mayhem",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "midnight-silk-eros",
+      "name": "Midnight Silk Eros",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/midnight_silk_eros",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/midnight_silk_eros",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "northern-metal-radio",
+      "name": "Northern Metal Radio",
+      "nowplaying_url": "https://dc5.serverse.com/rpc/lvzgnvcj/streaminfo.get",
+      "history_url": "https://dc5.serverse.com/external/rpc.php?m=recenttracks.get&username=lvzgnvcj&limit=10",
+      "metadata_server": "centovacast"
+    },
+    {
+      "slug": "oldies-fm",
+      "name": "Oldies FM",
+      "nowplaying_url": "https://stream3.themediasite.co.uk:8030/stats?sid=1&json=1",
+      "history_url": "https://stream3.themediasite.co.uk:8030/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "party-247",
+      "name": "Party 247",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/party_247",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/party_247",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "polushon",
+      "name": "Polushon",
+      "nowplaying_url": "http://whsh4u-clients.com:9389/stats?sid=1&json=1",
+      "history_url": "http://whsh4u-clients.com:9389/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "pop-rock-umeao",
+      "name": "Pop & Rock",
+      "nowplaying_url": "http://62.101.46.15:8000/stats?sid=1&json=1",
+      "history_url": "http://62.101.46.15:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "popburst",
+      "name": "PopBurst",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/popburst",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/popburst",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "puls-fm-bor-s",
+      "name": "Puls FM Borås",
+      "nowplaying_url": "http://stream.pulsfm.se:8908/stats?sid=1&json=1",
+      "history_url": "http://stream.pulsfm.se:8908/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "punk-classics",
+      "name": "Punk Classics",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/punk_classics",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/punk_classics",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-163",
+      "name": "Radio 163",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/radio_163",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/radio_163",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-567",
+      "name": "Radio 567",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/radio_567",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/radio_567",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-789",
+      "name": "Radio 789",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/radio_789",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/radio_789",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-94-3-n-rke",
+      "name": "Radio 94,3",
+      "nowplaying_url": "https://stream.radio943.se/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-bubb-la",
+      "name": "Radio bubb.la",
+      "nowplaying_url": "https://live.radio.bubb.la/status-json.xsl?mount=%2Fstream.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-gbg-sevdah",
+      "name": "Radio Gbg Sevdah",
+      "nowplaying_url": "https://stream.radiogbg.se:8050/stats?sid=1&json=1",
+      "history_url": "https://stream.radiogbg.se:8050/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-rivendell",
+      "name": "Radio Rivendell",
+      "nowplaying_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
+      "history_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-rivendell-9197541c",
+      "name": "Radio Rivendell",
+      "nowplaying_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
+      "history_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-sandviken",
+      "name": "Radio Sandviken",
+      "nowplaying_url": "http://rssand.se:4027/stats?sid=1&json=1",
+      "history_url": "http://rssand.se:4027/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-sandviken-48798f54",
+      "name": "Radio Sandviken",
+      "nowplaying_url": "https://shout.rs8990.com/stats?sid=1&json=1",
+      "history_url": "https://shout.rs8990.com/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-soten-s",
+      "name": "Radio Sotenäs",
+      "nowplaying_url": "http://sc3.radiosotenas.se:8500/stats?sid=1&json=1",
+      "history_url": "http://sc3.radiosotenas.se:8500/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-svea",
+      "name": "Radio Svea",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/radio_svea",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/radio_svea",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "redback-radio-select-state",
+      "name": "Redback Radio",
+      "nowplaying_url": "https://redback.mywire.org/status-json.xsl?mount=%2Fstream.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "reggae",
+      "name": "Reggae",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/reggae",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/reggae",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "relax-meditation",
+      "name": "Relax & Meditation",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/relax_meditation",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/relax_meditation",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "rock",
+      "name": "Rock",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/rock",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/rock",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "scenesat-radio-aac-mobile",
+      "name": "SceneSat Radio (AAC+ mobile)",
+      "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fmobile.aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "scenesat-radio-mp3",
+      "name": "SceneSat Radio (MP3)",
+      "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fhq.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "name": "SDX synthetic experience - EBM, Synth and Industrial",
+      "nowplaying_url": "http://radio.dawnshadow.se:8000/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "stars-on-45",
+      "name": "Stars on 45",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/stars_on_45",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/stars_on_45",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "svensk-folkmusik-akka-radio",
+      "name": "Svensk Folkmusik - AkkA radio",
+      "nowplaying_url": "http://mediaserv38.live-streams.nl:8107/stats?sid=1&json=1",
+      "history_url": "http://mediaserv38.live-streams.nl:8107/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "swedish-truckers",
+      "name": "Swedish Truckers",
+      "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/swedish_truckers",
+      "history_url": "https://mml1.prostream.se/api/nowplaying/swedish_truckers",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "the-modstation-amiga-protracker-modules",
+      "name": "The ModStation - Amiga ProTracker Modules",
+      "nowplaying_url": "https://broadcast.sonologic.net/status-json.xsl?mount=%2Fmodstation.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "urban-flow",
+      "name": "Urban Flow",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/urban_flow",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/urban_flow",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "wolf-fm-dalarna",
+      "name": "Wolf FM",
+      "nowplaying_url": "https://sstream.ueteknik.se/api/nowplaying/wolffm",
+      "history_url": "https://sstream.ueteknik.se/api/nowplaying/wolffm",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "workout",
+      "name": "Workout",
+      "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/workout",
+      "history_url": "https://mml2.prostream.se/api/nowplaying/workout",
+      "metadata_server": "azuracast"
+    }
+  ],
+  "notFound": [
+    "al-quran-radio",
+    "106-7-rockklassiker",
+    "ai-playlist-radio",
+    "all-watching-eye-focus",
+    "all-watching-eye-chill",
+    "auralis-radio",
+    "bandit-alternative",
+    "bandit-ballads",
+    "bandit-classic-rock-national-sweden",
+    "bandit-rock",
+    "bandit-metal",
+    "bandit-metal-a9fc150a",
+    "bandit-rock-168e0796",
+    "banjalu-ki-sevdah-radio-eher-ani",
+    "bor-s-n-rradio",
+    "bozradio",
+    "country-rocks-radio",
+    "country-rocks-radio-sk-ne",
+    "dansbandskanalen",
+    "dansbandskanalen-se",
+    "dansbandsradio-se-sk-ne",
+    "dansbandsradio-se-sk-ne-93b730ce",
+    "disco-54",
+    "fun-radio-95-3-sweden",
+    "gamla-favoritter",
+    "go-country",
+    "gold-fm-v-xj-sweden",
+    "g-teborgs-n-rradio-102-6-mhz",
+    "g-teborgs-n-rradio-103-1-mhz",
+    "g-teborgs-n-rradio-94-9-mhz",
+    "grillkol-radio",
+    "guldkanalen-80-tal",
+    "guldkanalen-90-tal",
+    "guldkanalen-60-tal-sk-ne",
+    "guldkanalen-helsingborg",
+    "guldkanalen-malm-lund-malmoe",
+    "hari-rama-s-happy-eternal-mix",
+    "helsinborgs-n-rradio",
+    "himlen-tv7-uppsala",
+    "hitcity-229845c8",
+    "hitmix90s",
+    "hitzfm-97-8-sommenbygd",
+    "julkanalen",
+    "kakaook-radio",
+    "link-pings-n-rradio",
+    "lite-fm-101-1",
+    "lugna-favoriter-stockholm",
+    "magic-radio-malmoe",
+    "mix-megapol",
+    "mix-megapol-104-3-stockholm",
+    "mix-megapol-104-3-stockholm-5df76756",
+    "mix-megapol-gbg",
+    "mrs-90-5-stockholm",
+    "narradion-boden",
+    "northern-metal-radio-extreme",
+    "nrj",
+    "nrj-sweden",
+    "p4-dalarna",
+    "p4-j-mtland",
+    "p4-kalmar",
+    "p4-norrbotten",
+    "p4-rebro",
+    "p4-sterg-tland",
+    "p4-v-rmland",
+    "p4-v-sterbotten",
+    "p4-v-sternorrland",
+    "p4-v-sternorrland-4b226edb",
+    "p4-v-stmanland",
+    "pain",
+    "pirate-rock-v-stkustens-b-sta-rock",
+    "pop-radio-stockholm",
+    "power-club",
+    "power-hit-radio",
+    "power-street",
+    "radio-88-partille",
+    "radio-88-partille-golden-hits",
+    "radio-aftonbladet",
+    "radio-b-stad",
+    "radio-faceit-fm-stockholm",
+    "radio-gold-sweden",
+    "radio-gold-sweden-47907c71",
+    "radio-gold-sweden-d3b269f9",
+    "radio-gold-sweden-e69f59c2",
+    "radio-haninge",
+    "radio-hope",
+    "radio-hope-f705d3e2",
+    "radio-laholm",
+    "radio-nacka-stockholm",
+    "radio-nostalgi",
+    "radio-nostalgi-se",
+    "radio-orinoco",
+    "radio-payam-gothenburg",
+    "radio-rainbow",
+    "radio-sk-vde",
+    "radio-sydvast",
+    "radio-treby",
+    "radio45-dalsland-sweden",
+    "radiogodis",
+    "radiolista-desert-house",
+    "radiolista-escape",
+    "radiolista-noir",
+    "replay-news-svenska",
+    "retreat-radio-malmoe",
+    "retro-fm-sk-ne",
+    "retro-fm-sverige",
+    "retrohits",
+    "retrohits-sk-ne",
+    "rix-fm",
+    "rix-fm-stockholm",
+    "rix-fm-106-7-stockholm",
+    "rix-fm-fresh",
+    "rocket-fm-rock-home-of-stockholm",
+    "roxette",
+    "sauna-radio-stockholm",
+    "scenesat",
+    "sk-rg-rdsradion",
+    "sk-rg-rdsradion-0268fc68",
+    "slay-radio-aac",
+    "slayradio",
+    "soul-classics",
+    "spinning-seal-fm",
+    "sr-din-gata-sk-ne",
+    "sr-p1",
+    "sr-p2-stockholm",
+    "sr-p2",
+    "sr-p4-j-nk-ping",
+    "sr-p4-j-nk-ping-45bca914",
+    "sr-p4-j-nk-ping-d49cfff7",
+    "sr-p4-kronoberg",
+    "sr-p4-malm-hus-sk-ne",
+    "sr-p4-radio-malm-hus-scania",
+    "sr4-sthlm",
+    "star-70s",
+    "star-80s",
+    "star-90s",
+    "star-fm",
+    "star-fm-107-1-stockholm",
+    "star-fm-107-1-stockholm-b30f805d",
+    "stocholm-n-rradio-fm-95-3-stockholm",
+    "stockholm-fm-101-1-sweden",
+    "stockholm-fm-101-1-mhz-sweden",
+    "stockholm-fm-88-0-sweden",
+    "stockholm-fm-88-0-mhz-sweden",
+    "sveiges-radio-p4-kristianstad-sk-ne",
+    "sveiges-radio-p4-malm-hus-sk-ne",
+    "svensk-pop-stockholm",
+    "sveriges-radio-ekot-s-nder-direkt",
+    "sveriges-radio-p1",
+    "sveriges-radio-p1-07c6d96f",
+    "sveriges-radio-p2",
+    "sveriges-radio-p2-697e5012",
+    "sveriges-radio-p2-spr-k-och-musik",
+    "sveriges-radio-p3",
+    "sveriges-radio-p3-e4f6d392",
+    "sveriges-radio-p3-din-gata-malmoe",
+    "sveriges-radio-p4-blekinge",
+    "sveriges-radio-p4-halland",
+    "sveriges-radio-p4-j-mtland",
+    "sveriges-radio-p4-plus",
+    "sveriges-radio-p4-sjuh-rad",
+    "sveriges-radio-p4-v-rmland",
+    "sveriges-radio-p4-v-st",
+    "sveriges-radio-p4-v-stmanland",
+    "sveriges-radio-p6",
+    "sveriges-radio-radioapans-knattekanal",
+    "sveriges-radio-sr-extra-1",
+    "sveriges-radio-sr-extra-10",
+    "sveriges-radio-sr-extra-2",
+    "sveriges-radio-sr-extra-3",
+    "sveriges-radio-sr-extra-4",
+    "sveriges-radio-sr-extra-5",
+    "sveriges-radio-sr-extra-6",
+    "sveriges-radio-sr-extra-7",
+    "sveriges-radio-sr-extra-8",
+    "sveriges-radio-sr-extra-9",
+    "sveriges-radio-sr-s-pmi",
+    "sveriges-radio-p1-national-sweden",
+    "sveriges-radio-p1-418fc299",
+    "sveriges-radio-p1-192kbps",
+    "sveriges-radio-p2-national-sweden",
+    "sveriges-radio-p3-01a0db86",
+    "sveriges-radio-p4-dalarna",
+    "sveriges-radio-p4-g-vleborg",
+    "sveriges-radio-p4-g-vleborg-e63482bc",
+    "sveriges-radio-p4-g-teborg",
+    "sveriges-radio-p4-g-teborg-003dea75",
+    "sveriges-radio-p4-gotland",
+    "sveriges-radio-p4-halland-79d17f42",
+    "sveriges-radio-p4-malm-hus",
+    "sveriges-radio-p4-sjuharad",
+    "sveriges-radio-p4-skaraborg",
+    "sveriges-radio-p4-stockholm",
+    "sveriges-radio-p4-stockholm-543db188",
+    "sveriges-radio-p4-uppland",
+    "sveriges-radio-p4-uppland-9e1e37f2",
+    "sveriges-radio-p4-uppland-aac",
+    "sveriges-radion-p4-sterg-tland-select-one",
+    "swarm-radio-malmoe",
+    "tjenamors-radio",
+    "tyres-radion",
+    "vibe-radio-stockholm",
+    "vinyl-fm",
+    "vinylgodis",
+    "zergan-radyo-47an-sweden"
+  ]
+}

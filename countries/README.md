@@ -14,19 +14,21 @@ COUNTRY=hr SITE_URL=https://your-radio-site.example npm run build
 npm run preview
 ```
 
-Restart the development server after changing country or editing a country configuration. `COUNTRY` selects `countries/<code>.json`; `SITE_URL` optionally overrides its canonical origin. The interface is currently English for both countries. `language` declares the actual interface language; it does not translate text automatically.
+Restart the development server after changing country or editing a country configuration. `COUNTRY` selects `countries/<code>.json`; `SITE_URL` optionally overrides its canonical origin. English is the default interface. Greece also provides Greek pages at `/el/`, and Croatia provides Croatian pages at `/hr/`. `locales` enables supported translations; `language` alone does not translate text.
 
 ## Create another country
 
+Follow the [step-by-step new-country guide in the main README](../README.md#add-a-new-country-step-by-step) for configuration, imports, images, geography, metadata, translations, validation, and deployment. The commands below are a short reference.
+
 ```sh
-node tools/create-country.mjs --code si --name Slovenia --adjective Slovenian --url https://your-site.example
+node tools/create-country.mjs --code si --name Slovenia --adjective Slovenian --site-name "Radio Slovenija" --url https://your-site.example
 COUNTRY=si npm run stations:import
 COUNTRY=si npm run stations:metadata
 COUNTRY=si npm run stations:icons
 COUNTRY=si npm run build
 ```
 
-The scaffold refuses to overwrite an existing country. It creates a configuration, an empty station dataset, and an empty redirects file. Import reads the configured Radio Browser country code. Metadata discovery and icon caching use the same selected dataset. Croatia's placeholder `.example` domain must be replaced before publishing.
+The scaffold refuses to overwrite an existing country. It creates a configuration, an empty station dataset, and an empty redirects file. Import reads the configured Radio Browser country code. Metadata discovery and icon caching use the same selected dataset. Use your final site origin when scaffolding; replace any example domain before publishing.
 
 ## Country-specific files
 
@@ -115,6 +117,148 @@ Each remote receives the shared source code; its repository variables select whi
 Alternatively, enable **Template repository** in GitHub settings and choose **Use this template** for a new country. That creates a populated repository: clone it and work in that clone instead of applying the empty-repository push recipe. Configure the same country variables and Pages source before deploying.
 
 References: [GitHub repository variables](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables) and [GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+## Station cleanup checklist (after importing a country)
+
+Run these commands from the repository root. The examples use **Sweden (`se`)**; replace `se` with your country code, such as `hr` or `gr`. Swedish's language code is `sv`, but the country selector remains `se`.
+
+Run one maintenance command at a time and review the dataset changes between steps. The commands below use the selected country's configuration; older one-off repair scripts may be Greece-specific.
+
+### 1. Review the imported stations and exclusions
+
+```sh
+git status --short
+COUNTRY=se npm run stations:import
+```
+
+The importer saves automatically. Review `src/data/stations-se.json`, `src/data/new-stations-import-report-se.json`, and `src/data/station-update-review-se.json` for duplicates, wrong-country stations, outdated names, and changed stream URLs.
+
+For intentional deletions, add the station UUIDs to `countries/se.excluded-stations.json`, then rerun the import. Include alternate UUIDs for merged stations. See [exclusions](#exclude-deleted-stations-from-future-imports). When merging, preserve distinct streams, put removed UUIDs in `alternate_stationuuids`, and map old page paths to the retained page in `countries/se.redirects.json`.
+
+### 2. Fill missing city AND state from coordinates
+
+Use **`fill-station-geography.py`** for this task. It reads `geo_lat` and `geo_long`, checks that the coordinates belong to the selected country, and fills `city` and `state` separately.
+
+First preview the proposed changes without editing the station dataset:
+
+```sh
+COUNTRY=se python3 tools/fill-station-geography.py --lang en
+```
+
+Review `reports/geography-se.json`, especially records marked `review`. Then apply:
+
+```sh
+COUNTRY=se python3 tools/fill-station-geography.py --lang en --write
+```
+
+The equivalent explicit country option is:
+
+```sh
+python3 tools/fill-station-geography.py --country se --lang en --write
+```
+
+Without `--overwrite`, existing populated city/state values are kept. Stations without both coordinates are skipped; invalid, foreign, or ambiguous coordinates are reported for review. This tool does not find missing coordinates.
+
+`--lang en` requests English place names; names without an English version can remain in the local language. It does not translate the website. Use `--lang sv` only when you intend to store Swedish display values instead. Keep the stored grouping values consistent with the site's default language and use translation dictionaries for localized labels.
+
+Set `"geographyAttribution": true` in `countries/se.json` when using these OpenStreetMap results. The preview also writes a response cache at `tools/cache/geography-se-en.json`; keep it so the apply command reuses responses. Read the [geocoder usage instructions](#fill-city-and-region-from-coordinates) before running a lookup.
+
+### 3. Correct already populated locations, only if needed
+
+To recheck existing city/state values as well as missing ones:
+
+```sh
+COUNTRY=se python3 tools/fill-station-geography.py --lang en --overwrite
+```
+
+Review the new `reports/geography-se.json`. If the replacements are appropriate, apply the same options with `--write`:
+
+```sh
+COUNTRY=se python3 tools/fill-station-geography.py --lang en --overwrite --write
+```
+
+`--overwrite` permits replacing both existing location fields. Incorrect coordinates can still produce an incorrect location within the country, so check the results against the station's website. Station slugs and stream URLs are preserved. If changing location values changes a city or region page URL, add a redirect for the old published page.
+
+### 4. Try station homepages for remaining missing states
+
+```sh
+COUNTRY=se python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
+```
+
+This command **saves automatically**; there is no `--write` flag. It reads homepage structured data and fills only missing `state`, not city. Review the inferred values manually. `--max 10` limits successful updates, not the number of requests. Use `--max 0` for no limit.
+
+Skipped IDs are stored in `tools/state-fill-progress-se.json`. See [homepage lookup details](#fill-missing-state-from-station-homepages) for retrying skipped entries. Do not substitute a historical Greece-only geography script for the country-aware tool above.
+
+### 5. Fill missing bitrate and codec
+
+Requires FFmpeg's `ffprobe` on your PATH. Preview first:
+
+```sh
+COUNTRY=se python3 tools/fill-stream-audio-info.py
+```
+
+Review `reports/stream-audio-info-se.json`, then apply:
+
+```sh
+COUNTRY=se python3 tools/fill-stream-audio-info.py --write
+```
+
+This fills missing bitrate/codec values and preserves populated fields. Failed probes leave the values unchanged. Check playback manually; a successful audio probe does not guarantee browser playback.
+
+### 6. Cache station icons and find missing artwork
+
+```sh
+COUNTRY=se npm run stations:icons
+COUNTRY=se node tools/fetch-missing-station-icons.mjs
+```
+
+Both commands save automatically. The first caches available remote favicons; the second searches station websites for records with an empty favicon and can create initials placeholders. It skips records whose favicon is already set, so an incorrect existing icon needs separate review.
+
+Swedish station images are stored in `public/station-icons/se/`, with matching local paths in `src/data/stations-se.json`. Review and commit the images with the dataset.
+
+### 7. Find or recheck now-playing endpoints
+
+Preview a small sample without saving station fields:
+
+```sh
+COUNTRY=se node tools/find-station-metadata-endpoints.mjs --max 10
+```
+
+Review `reports/metadata-endpoints-se.json`. To find and save missing metadata across the catalog:
+
+```sh
+COUNTRY=se npm run stations:metadata
+```
+
+To recheck one station's existing metadata, replace `STATION-SLUG`:
+
+```sh
+COUNTRY=se node tools/find-station-metadata-endpoints.mjs --refresh --slug STATION-SLUG
+COUNTRY=se node tools/find-station-metadata-endpoints.mjs --refresh --slug STATION-SLUG --write
+```
+
+The npm alias saves automatically; the direct command saves only with `--write`. Check the browser's station page and Live Tracks after saving. For individual streams, the website's `/tools/endpoint-finder/` also provides a manual check.
+
+### 8. Review and validate the finished cleanup
+
+```sh
+git diff -- src/data/stations-se.json countries/se.json countries/se.redirects.json countries/se.excluded-stations.json
+git status --short
+npm test
+COUNTRY=se npm run check
+COUNTRY=se npm run build
+COUNTRY=se npm run preview
+```
+
+`git diff` does not show the contents of new untracked files; inspect those separately. Verify the station names, locations, icons, playback, metadata, and old-page redirects in the preview. Do not run a Greece-specific bulk duplicate-removal script on the new country's data.
+
+For a country with translations enabled, also run:
+
+```sh
+python3 tools/check-localized-site.py dist
+```
+
+That audit currently expects multilingual alternate links. Use the manual checks above for an English-only build. Cleanup changes reach the live site only after committing, pushing to the intended country repository, and completing its deployment.
 
 ## Maintenance and checks
 

@@ -1,6 +1,6 @@
 # Country Radio Template
 
-A shared Astro radio directory with Greece as the default and a Croatia configuration included.
+A shared Astro radio directory with Greece as the default and a Croatia configuration included. Greece supports English/Greek pages; Croatia supports English/Croatian pages.
 
 ```sh
 npm ci
@@ -9,7 +9,223 @@ COUNTRY=hr npm run dev              # Croatia
 COUNTRY=hr npm run build
 ```
 
-See [the country setup guide](countries/README.md) for country creation, station imports, metadata discovery, icons, and GitHub Pages deployment. Set Croatia's real `SITE_URL` before publishing.
+See [the country setup guide](countries/README.md) for country creation, station imports, metadata discovery, icons, and GitHub Pages deployment.
+
+## Add a new country, step by step
+
+This example adds **Slovenia** with country code `si` and a site named **Radio Slovenija**. Replace `si`, `Slovenia`, `Slovenian`, and `radio-slovenija` with your country's code, English name, English adjective, and GitHub account/organization. The example GitHub account must be one you own or can publish to.
+
+Each country has its own station data and configuration. The pages, player, and metadata scrapers are shared. Run commands from this repository's root. These examples use macOS/Linux shell syntax.
+
+### 1. Install the project dependencies
+
+Use Node.js 20 or later and npm. Python 3 is needed for geography/audio tools; FFmpeg's `ffprobe` must be on your PATH for bitrate and codec detection.
+
+```sh
+npm ci
+git status --short
+```
+
+Review any existing local changes before starting so you can distinguish them from the new country files.
+
+### 2. Generate the country files
+
+Choose the two-letter Radio Browser country code. Use a GitHub Pages user/organization URL (`https://OWNER.github.io`) or a custom domain. Repository subpaths such as `https://OWNER.github.io/radio/` are not supported.
+
+```sh
+node tools/create-country.mjs \
+  --code si \
+  --name Slovenia \
+  --adjective Slovenian \
+  --site-name "Radio Slovenija" \
+  --url https://radio-slovenija.github.io
+```
+
+The script creates:
+
+- `countries/si.json` — country and site configuration.
+- `countries/si.redirects.json` — initially empty redirects.
+- `src/data/stations-si.json` — initially empty station catalog.
+
+It refuses to overwrite existing files. For a country that already exists, edit those files instead of running the scaffold again. Do not copy another country's station data or redirects.
+
+### 3. Configure the brand and geography
+
+Edit `countries/si.json`. Keep the generated dataset and redirects paths. Add or update these settings:
+
+| Setting | What to enter |
+| --- | --- |
+| `siteName`, `siteShortName` | Full site name and shorter title/app name. |
+| `siteUrl` | Final site origin, without a repository subpath. |
+| `language`, `locales` | Start with `"en"` and `["en"]`; see step 8 for translation. |
+| `introText` | An English introduction, for example: `Discover Slovenian radio stations and listen live online.` |
+| `regions` | Region names used by your catalog; leave `[]` until reviewed. |
+| `cityAliases` | Spelling aliases mapped to your preferred city names; initially `{}`. |
+| `googleVerification` | Only the `content` value of your site's Google verification tag, or an empty string. |
+| `twitterHandle` | Your site's handle, or an empty string. |
+| `socialLocale` | `en_US` for the English pages. |
+| `geographyAttribution` | Set to `true` when using OpenStreetMap geography results. |
+
+Put country branding under a separate public directory, for example `public/branding/si/`. Configure `logo`, `favicon`, `favicon32`, `icon192`, `icon512`, `appleTouchIcon`, and `socialImage` with public URLs such as `/branding/si/icon-192x192.png`. Match the declared image formats and dimensions. This avoids replacing another country's assets. Review the shared Radddio promotion links and DMCA content before publishing.
+
+See [all branding settings](countries/README.md#configure-each-sites-brand) for an example.
+
+### 4. Import stations and review the catalog
+
+```sh
+COUNTRY=si npm run stations:import
+```
+
+Despite its historical filename, `tools/fetch-greece-stations.mjs` imports the selected country. This command writes the station dataset automatically. Review:
+
+- `src/data/stations-si.json`
+- `src/data/new-stations-import-report-si.json`
+- `src/data/station-update-review-si.json`
+
+Check station names, websites, country membership, duplicate broadcasts, and stream URLs. Keep published station slugs stable. Preserve original HTTP/HTTPS stream URLs unless you have verified a replacement.
+
+To prevent intentionally removed stations from returning, create `countries/si.excluded-stations.json`:
+
+```json
+[
+  {
+    "stationuuid": "REPLACE-WITH-THE-STATION-UUID",
+    "reason": "Removed intentionally"
+  }
+]
+```
+
+Run the import again to apply exclusions. Include all alternate UUIDs when deleting a merged station. For merges, retain removed UUIDs in `alternate_stationuuids` on the surviving record and add old page paths to `countries/si.redirects.json`. Never redirect a page to itself or to a deleted station.
+
+### 5. Save station images locally
+
+First cache available remote favicons, then find missing icons from station websites:
+
+```sh
+COUNTRY=si npm run stations:icons
+COUNTRY=si node tools/fetch-missing-station-icons.mjs
+```
+
+Both commands save changes automatically. New local images go into `public/station-icons/si/`; station `favicon` fields point to `/station-icons/si/...webp`. The missing-icon tool can create initials placeholders when it cannot find artwork. Review the images and commit them together with the updated dataset.
+
+### 6. Fill missing locations and audio information
+
+These enrichment steps are optional. For stations with coordinates, preview geography results first:
+
+```sh
+COUNTRY=si python3 tools/fill-station-geography.py --lang en
+```
+
+Review `reports/geography-si.json`, then apply:
+
+```sh
+COUNTRY=si python3 tools/fill-station-geography.py --lang en --write
+```
+
+Existing populated fields are preserved unless you explicitly pass `--overwrite`. Set `geographyAttribution` to `true` after using OpenStreetMap results. Read the [geography service usage instructions](countries/README.md#fill-city-and-region-from-coordinates) before running the tool; run one process and retain its cache.
+
+For missing bitrate and codec, preview and then apply:
+
+```sh
+COUNTRY=si python3 tools/fill-stream-audio-info.py
+COUNTRY=si python3 tools/fill-stream-audio-info.py --write
+```
+
+Review `reports/stream-audio-info-si.json`. Unidentifiable values remain unchanged.
+
+For stations still missing a state, the homepage tool is another option:
+
+```sh
+COUNTRY=si python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
+```
+
+This last command **writes automatically** and fills only `state`, not city. Review its changes. Do not run older Greece-specific repair scripts on the new country.
+
+### 7. Discover now-playing metadata
+
+Start with a report-only sample:
+
+```sh
+COUNTRY=si node tools/find-station-metadata-endpoints.mjs --max 10
+```
+
+Then discover and save endpoints for the catalog:
+
+```sh
+COUNTRY=si npm run stations:metadata
+```
+
+The npm command includes `--write`. Review the reported results and the saved `metadata_server`, `nowplaying_url`, and optional `history_url` fields. You can also test a stream manually using `/tools/endpoint-finder/` on the website and copy the verified configuration into its station record.
+
+Check playback and metadata in the browser: a successful command-line request does not prove browser access. Stations without usable metadata can still play audio; Live Tracks uses the shared provider capability check.
+
+### 8. Add a local-language translation, if wanted
+
+Country codes and language codes can differ: Slovenia is `si`, but Slovenian is `sl`; Greece uses `gr` and `el`.
+
+For an English-only launch, keep `"language": "en"` and `"locales": ["en"]`. Setting `language` alone does not translate the site.
+
+To add Slovenian:
+
+1. Create `src/i18n/sl.json`. Use the existing dictionaries as a checklist, but keep the English keys appropriate to the new country: for example, `Slovenian Radio Stations by City | {0}`. Translate interface text, playback messages, complete SEO sentences, legal copy, the configured intro, and geography labels. Preserve `{0}`, `{1}`, and other required placeholders.
+2. In `src/i18n/translate.ts`, import the dictionary, add `sl` to `Locale`, and register it in `dictionaries`. Browser controls use the same translator.
+3. In `src/i18n/index.ts`, add `sl` to the supported locale filter and add `sl: 'Slovenščina'` to `languageNames`.
+4. In `src/components/SEO.astro`, add the social locale `sl_SI` for Slovenian pages.
+5. Add `sl` to the accepted language codes in `tools/check-localized-site.py`. Extend `tests/i18n.test.mjs` to load the new dictionary and test its translations and language paths.
+6. Once the translation is ready, set `"locales": ["en", "sl"]` in `countries/si.json`, keeping `"language": "en"` for the default interface.
+
+The integration then generates `/sl/` versions of the existing pages, localized redirects and manifest, a language switcher, reciprocal `hreflang` links, self-referencing canonicals, and sitemap entries. English stays at `/`. Do not translate station slugs, stream URLs, station brand names, or song titles. Do not enable a locale before its content is translated.
+
+### 9. Preview and validate
+
+```sh
+COUNTRY=si npm run dev
+```
+
+Open `http://localhost:4321/` (or the address printed by Astro). If enabled, check `/sl/` too. Stop the server with Ctrl+C before proceeding. Restart after changing the country configuration.
+
+```sh
+npm test
+COUNTRY=si npm run check
+COUNTRY=si npm run build
+COUNTRY=si npm run preview
+```
+
+Check the homepage, station playback, stream choices, favorites, Live Tracks, icons, footer, city/region links, and mobile layout. For a multilingual build, also run:
+
+```sh
+python3 tools/check-localized-site.py dist
+```
+
+The audit checks language links, canonical URLs, sitemap targets, redirects, JSON-LD syntax, and manifests. The current audit expects multilingual alternate links; do not use it to validate an English-only build. Verify that English and translated pages link to each other and that `/sitemap.xml` and `/robots.txt` use the final site domain.
+
+### 10. Deploy to a separate GitHub Pages repository
+
+Create an **empty** repository named `radio-slovenija.github.io` under the `radio-slovenija` account/organization. Do not initialize it with a README if using the push commands below.
+
+Before the first push, configure the destination repository:
+
+- **Settings → Secrets and variables → Actions → Variables:** add `COUNTRY` = `si` and `SITE_URL` = `https://radio-slovenija.github.io` as repository variables.
+- **Settings → Pages → Build and deployment:** choose **GitHub Actions**.
+
+The existing `.github/workflows/pages.yml` deploys pushes to `main`. Without the `COUNTRY` variable it builds Greece.
+
+```sh
+git remote -v
+git remote add slovenia git@github.com:radio-slovenija/radio-slovenija.github.io.git
+git status --short
+git add README.md countries src public tools tests astro.config.mjs
+git diff --cached --stat
+git diff --cached
+git commit -m "Add Slovenia radio site"
+git push slovenia HEAD:main
+```
+
+Review the staged diff before committing; these paths can include unrelated local changes. Keep `origin` for the existing site. If `slovenia` already exists, check its URL and skip `git remote add`. This recipe assumes an empty destination repository and SSH access; do not force-push over an existing history.
+
+Follow **Deploy to GitHub Pages** in the destination's **Actions** tab. Once it succeeds, check the published site, translated pages, icons, playback, sitemap, and verification tag. The workflow builds and deploys; it does not run the local test suite for you.
+
+For future updates, review and commit your changes, then run `git push slovenia HEAD:main`. Each remote receives the shared source; its repository variables select the country. Pushing one remote does not publish updates to the others. See [deployment alternatives and Croatia's concrete settings](countries/README.md#github-pages-publish-a-new-country).
 
 ## Existing Greece site
 
@@ -30,7 +246,7 @@ A modern web application for streaming Greek radio stations, built with [Astro](
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 20+
 - npm or yarn
 
 ### Installation
@@ -51,7 +267,7 @@ A modern web application for streaming Greek radio stations, built with [Astro](
    npm run dev
    ```
 
-5. Open http://localhost:3000 in your browser
+5. Open http://localhost:4321 in your browser
 
 ## Project Structure
 
@@ -80,7 +296,7 @@ A modern web application for streaming Greek radio stations, built with [Astro](
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
-- `npm run fix favicons` - Fetch and cache missing station icons as 256×256 WebP files
+- `node tools/fetch-missing-station-icons.mjs` - Fetch and cache missing station icons as 256×256 WebP files
 - `npm run find metadata` - Discover and save verified station now-playing metadata endpoints
 
 ## Data Source
@@ -89,7 +305,7 @@ Radio station data is fetched from the [Radio Browser API](https://www.radio-bro
 
 ## Icon Maintenance
 
-Run `npm run fix favicons` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks the station's existing remote favicon and homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It converts the first usable image to a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
+Run `node tools/fetch-missing-station-icons.mjs` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks the station's existing remote favicon and homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It converts the first usable image to a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
 
 ## Removing Duplicate Stations
 
