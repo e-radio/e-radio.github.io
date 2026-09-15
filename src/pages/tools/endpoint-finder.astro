@@ -47,11 +47,11 @@ const description=t('Find and test radio metadata endpoints from a stream URL.')
     const preview=document.createElement('p');preview.textContent=result.current?.text || t('Song information unavailable');card.append(preview);
     if(result.config){const output=document.createElement('textarea');output.className='form-control font-monospace small';output.rows=6;output.readOnly=true;output.setAttribute('aria-label',t('Metadata configuration'));output.value=JSON.stringify(result.config,null,2);card.append(output);
      const copy=document.createElement('button');copy.className='btn btn-outline-primary btn-sm mt-2';copy.textContent=t('Copy JSON');copy.onclick=async()=>{try{await navigator.clipboard.writeText(output.value);copy.textContent=t('Copied');}catch{output.focus();output.select();status.textContent=t('Select and copy the configuration.');}};card.append(copy);}
-    const details=document.createElement('details');details.className='mt-3';const summary=document.createElement('summary');summary.textContent=t('Request results');details.append(summary);
+    const details=document.createElement('div');details.className='mt-3';const summary=document.createElement('h3');summary.className='h6';summary.textContent=t('Request results');details.append(summary);
     for(const attempt of result.attempts){const row=document.createElement('p');row.className='small text-break mt-2 mb-1';row.textContent=attempt.method+' · '+t(attempt.status)+' · '+attempt.url;details.append(row);}card.append(details);results.append(card);
     completed++;status.textContent=t('Checked {0} of {1} candidates.',[completed,plan.candidates.length]);
    }};
-   status.textContent=t('Checking endpoints…');await Promise.all([worker(),worker()]);
+   status.textContent=t('Checking endpoints…');await Promise.allSettled([worker(),worker()]);if(controller.signal.aborted)status.textContent=t('Checks stopped.');
   } catch {status.textContent=t('Checks stopped.');} finally {start.disabled=false;stop.disabled=true;}
  });
 </script>

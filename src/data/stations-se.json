@@ -1543,7 +1543,9 @@
     "stream_url": "https://stream.dbmedia.se/gk80tal96",
     "homepage": "https://playnow.se/guldkanalen-webbradio/",
     "favicon": "/station-icons/se/guldkanalen-80-tal.webp",
-    "genres": ["80s"],
+    "genres": [
+      "80s"
+    ],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC+",
@@ -1564,7 +1566,9 @@
     "stream_url": "https://stream.dbmedia.se/gk90tal96",
     "homepage": "https://playnow.se/guldkanalen-90tal-webbradio/",
     "favicon": "/station-icons/se/guldkanalen-90-tal.webp",
-    "genres": ["90s"],
+    "genres": [
+      "90s"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -2548,41 +2552,40 @@
     "ssl_error": 0,
     "geo_lat": 59.32715197400692,
     "geo_long": 18.015351891517643,
+    "nowplaying_url": "https://listenapi.planetradio.co.uk/api9.2/nowplaying/mme",
+    "history_url": "https://listenapi.planetradio.co.uk/api9.2/events/mme/now/10",
+    "metadata_server": "bauer",
     "locationNames": {
       "en": {
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
-  },
-  {
-    "slug": "mix-megapol-104-3-stockholm-5df76756",
-    "stationuuid": "5df76756-534f-4af9-879c-268dce9b9b80",
-    "name": "Mix Megapol 104,3",
-    "state": "Stockholm county",
-    "city": "Stockholm",
-    "stream_url": "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_aacp",
-    "homepage": "https://radioplay.se/mixmegapol",
-    "favicon": "/station-icons/se/mix-megapol-104-3-stockholm-5df76756.webp",
-    "genres": [
-      "pop"
+    },
+    "alternate_stationuuids": [
+      "5df76756-534f-4af9-879c-268dce9b9b80"
     ],
-    "language": "swedish",
-    "bitrate": 56,
-    "codec": "AAC+",
-    "clickcount": 8,
-    "lastcheckok": 1,
-    "votes": 81,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 59.32711694580528,
-    "geo_long": 18.015349209308628,
-    "locationNames": {
-      "en": {
-        "city": "Stockholm",
-        "state": "Stockholm county"
+    "aliases": [
+      "mix-megapol-104-3-stockholm-5df76756"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default MP3",
+        "url": "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_mp3",
+        "bitrate": 128,
+        "codec": "MP3",
+        "nowplaying_url": "https://listenapi.planetradio.co.uk/api9.2/nowplaying/mme",
+        "history_url": "https://listenapi.planetradio.co.uk/api9.2/events/mme/now/10",
+        "metadata_server": "bauer"
+      },
+      {
+        "id": "alternative-aac",
+        "label": "AAC+",
+        "url": "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_aacp",
+        "bitrate": 56,
+        "codec": "AAC+"
       }
-    }
+    ]
   },
   {
     "slug": "mix-megapol-gbg",
@@ -2592,7 +2595,7 @@
     "city": "Göteborg",
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=mixmegapolgbg_instream_se_mp3",
     "homepage": "https://radioplay.se/mixmegapolgoteborg/",
-    "favicon": "/station-icons/se/mix-megapol-gbg-placeholder.webp",
+    "favicon": "/station-icons/se/mix-megapol-gbg.webp",
     "genres": [],
     "language": null,
     "bitrate": 128,
@@ -4613,33 +4616,12 @@
   {
     "slug": "rix-fm",
     "stationuuid": "50d2c7dd-dec7-4169-84a1-a2f1614278ad",
-    "name": "Rix FM",
-    "state": null,
-    "city": null,
-    "stream_url": "http://fm01-ice.stream.khz.se/fm01_mp3",
-    "homepage": "https://www.ilikeradio.se/rixfm/",
-    "favicon": "/station-icons/se/rix-fm.webp",
-    "genres": [],
-    "language": "swedish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 7,
-    "lastcheckok": 1,
-    "votes": 901,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "rix-fm-stockholm",
-    "stationuuid": "d1620588-c6f3-4e40-a828-a0fd3f945c07",
     "name": "RIX FM",
     "state": "Stockholm county",
     "city": "Stockholm",
     "stream_url": "https://fm01-ice.stream.khz.se/fm01_mp3",
-    "homepage": "https://www.ilikeradio.se/rixfm",
-    "favicon": "/station-icons/se/rix-fm-stockholm.webp",
+    "homepage": "https://www.ilikeradio.se/rixfm/",
+    "favicon": "/station-icons/se/rix-fm.webp",
     "genres": [
       "pop"
     ],
@@ -4648,7 +4630,7 @@
     "codec": "MP3",
     "clickcount": 19,
     "lastcheckok": 1,
-    "votes": 143,
+    "votes": 901,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.30991043531771,
@@ -4658,7 +4640,29 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "alternate_stationuuids": [
+      "d1620588-c6f3-4e40-a828-a0fd3f945c07"
+    ],
+    "aliases": [
+      "rix-fm-stockholm"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default HTTPS",
+        "url": "https://fm01-ice.stream.khz.se/fm01_mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-http",
+        "label": "HTTP",
+        "url": "http://fm01-ice.stream.khz.se/fm01_mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "rix-fm-106-7-stockholm",

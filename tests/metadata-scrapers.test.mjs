@@ -138,3 +138,21 @@ test('Shoutcast separates artist and title for Live Tracks and station pages', (
  assert.equal(hyphen.song.artist,'Jay-Z');assert.equal(hyphen.song.title,'Song - Live');
  assert.equal(parseMetadata('shoutcast',{songtitle:'Instrumental'},context).song.title,'Instrumental');
 });
+
+test('Bauer separates current fields and keeps delayed history from replacing the song', () => {
+ const raw={TrackTitle:'They Don’t Care About Us',ArtistName:'Michael Jackson',ImageUrl:'https://images.example/mj.jpg',EventStart:'2026-09-16 00:48:38'};
+ const current=parseMetadata('bauer',decodeProviderMetadata('bauer',`Markdown Content:\n${JSON.stringify(raw)}`),context);
+ assert.equal(current.song.artist,raw.ArtistName);
+ assert.equal(current.song.title,raw.TrackTitle);
+ assert.equal(current.song.art,raw.ImageUrl);
+ assert.equal(current.payload.now_playing.played_at,undefined);
+ const result=parseHistory('bauer',JSON.stringify([{nowPlayingTrack:'På Måndag',nowPlayingArtist:'Miss Li',nowPlayingSmallImage:'https://images.example/previous.jpg',nowPlayingTime:'2026-09-15 23:53:09'},null,{}]));
+ assert.equal(result.now_playing,undefined);
+ assert.equal(result.song_history.length,1);
+ assert.equal(result.song_history[0].song.artist,'Miss Li');
+ assert.equal(result.song_history[0].song.title,'På Måndag');
+ assert.equal(result.song_history[0].song.art,'https://images.example/previous.jpg');
+ assert.equal(parseMetadata('bauer',null,context).text,null);
+ assert.deepEqual(parseHistory('bauer','{}').song_history,[]);
+ assert.equal(isLiveTrackStation({metadata_server:'bauer',stream_url:'https://radio.test/stream',nowplaying_url:'https://listenapi.planetradio.co.uk/api9.2/nowplaying/mme'}),true);
+});
