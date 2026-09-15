@@ -1,0 +1,6071 @@
+{
+  "https://cmr-hosting.com:7003/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - 70's 80's 90's"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8030/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - 70's 80's 90's"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7006/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - CRO HITS"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8060/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - CRO HITS"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7008/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - ExYU POP-ROCK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7001/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - FOLK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8010/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - FOLK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7004/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - LOVE SONG"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8040/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - LOVE SONG"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7007/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - TAMBURA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8070/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - TAMBURA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8070/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - TAMBURA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.alter-media.hr/9052/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.ampupradio.com/tophits.mp3": {
+    "data": {},
+    "error": "https://stream.ampupradio.com/tophits.mp3: Server returned 5XX Server Error reply\n",
+    "ok": false
+  },
+  "http://live.antenazagreb.hr:8000/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "95728"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Antena Zagreb"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/antena_dance/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Antena 80s MIX"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.antenazagreb.hr:8015/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64295"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "80's MIX"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.antenazagreb.hr:8011/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63653"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "ANTENA TOP 40"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/antena_hit/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Antena TOP 40"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/antena_love/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Antena WE LOVE 90's"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.antenazagreb.hr:8007/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63810"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "WE LOVE 90s"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/antena_rock/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Antena Rock"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.antenazagreb.hr:8019/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63988"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "ANTENA ROCK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/antena_aac/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96086"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Antena AAC"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.antenazagreb.hr:8002/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Antena Zagreb"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.radio-banovina.hr:7008/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Light"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.radio-banovina.hr:7010/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Turbo"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8028/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8028/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8028/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "No Name"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://s3.radio.co/se83499ee0/listen": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Braniteljski radio Nepokoreni grad"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://relay1.social3.hr/radio/8310/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "bravo AAC"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://relay1.social3.hr/radio/8340/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "bravo Lounge"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://relay1.social3.hr/radio/8320/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "bravo Gym"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8360/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128629"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "bravo Gym"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/bravo_kids/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "bravo! KIDS"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://relay1.social3.hr/radio/8330/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "bravo Icons"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/city_radioHR/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8058/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7002/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - POP & DANCE"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7005/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - ITALO DISCO"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://cmr-hosting.com:8050/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Club Music Radio - ITALO DISCO"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9020/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Classic",
+          "icy-name": "CMC Classic"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://radio-stream.cmc.com.hr:8100/autodj": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Classic",
+          "icy-name": "CMC Classic"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9014/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "dalmatina"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9017/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "CMC Festival"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9012/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Jugoton",
+          "icy-name": "CMC Jugoton"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://radio-stream.cmc.com.hr:8020/autodj": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Jugoton",
+          "icy-name": "CMC Jugoton"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9019/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Kids",
+          "icy-name": "CMC Kids"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9018/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "CMC Zabavni"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9013/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "CMC Lagano"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://radio-stream.cmc.com.hr:8030/autodj": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "CMC Lagano"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9011/live": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "- CMC Radio -",
+          "icy-name": "- CMC Radio -"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9016/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "CMC Rock"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio-stream.cmc.com.hr:9015/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "CMC Tambure"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://live.radiocrash.net/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "256007"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.zeno.fm/t47dykadrchvv": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "DJ International Croatia"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.cvrai.com:8010/stream": {
+    "data": {},
+    "error": "[tcp @ 0x7f6c10380] Connection to tcp://stream.cvrai.com:8010 failed: Operation timed out\nhttps://stream.cvrai.com:8010/stream: Operation timed out\n",
+    "ok": false
+  },
+  "https://a.tunzilla.com/http://radiostream.optiklink.com:8200/live.mp3": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://radiostream.optiklink.com:8200/live.mp3: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://radiostream.optiklink.com:8200/live.mp3",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "127822"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Domoljubne pjesme"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://listen.radioking.com/radio/626884/stream/689500": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63314"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "DRAMA RADIO"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio.dvb.digital/listen/dvb.digital/hq.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "Icy-Description": "Eclectic cuts from Croatian & European underground with timeless classics sprinkled in.",
+          "Icy-Name": "dvb.digital"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio.dvb.digital/hls/dvb.digital/live.m3u8": {
+    "data": {
+      "programs": [
+        {
+          "streams": [
+            {
+              "codec_name": "aac",
+              "profile": "LC"
+            },
+            {
+              "codec_name": "timed_id3"
+            }
+          ]
+        },
+        {
+          "streams": [
+            {
+              "codec_name": "aac",
+              "profile": "LC"
+            },
+            {
+              "codec_name": "timed_id3"
+            }
+          ]
+        },
+        {
+          "streams": [
+            {
+              "codec_name": "aac",
+              "profile": "LC"
+            },
+            {
+              "codec_name": "timed_id3"
+            }
+          ]
+        }
+      ],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC"
+        },
+        {
+          "codec_name": "timed_id3"
+        },
+        {
+          "codec_name": "aac",
+          "profile": "LC"
+        },
+        {
+          "codec_name": "timed_id3"
+        },
+        {
+          "codec_name": "aac",
+          "profile": "LC"
+        },
+        {
+          "codec_name": "timed_id3"
+        }
+      ],
+      "format": {
+        "format_name": "hls"
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/enter_mp3_256/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Enter MP3 256"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.enterzagreb.hr:8023/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "95016"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "ENTER ZG"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://relay2.social3.hr/radio/8190/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Extra MP3"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://streams.extrafm.hr:8110/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96827"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "EXTRA FM"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://streams.extrafm.hr:8110/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96827"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "EXTRA FM"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.zeno.fm/yetzdv442k8uv": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Folk Radio Kneginec"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:6035/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "FolkyTon"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a1.asurahosting.com/listen/galacticfm_-_progressive_house__trance/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "24/7 Pure Progressive Vibes!",
+          "icy-name": "GalacticFM - Progressive House & Trance"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s20.reliastream.com/stream/8116": {
+    "data": {},
+    "error": "https://s20.reliastream.com/stream/8116: Server returned 5XX Server Error reply\n",
+    "ok": false
+  },
+  "https://radio.gamerzinn.com:1385/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Gamerz Inn - Jamz"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.goldfm.hr:8068/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96263"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "HAPPY AAC"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.goldfm.hr:8068/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96263"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "HAPPY AAC"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://144.76.39.214:6022/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://144.76.39.214:6022/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://144.76.39.214:6022/stream",
+      "ok": false,
+      "data": {},
+      "error": "[tcp @ 0xa3ec4c000] Connection to tcp://144.76.39.214:6022 failed: Connection refused\nhttp://144.76.39.214:6022/stream: Connection refused\n"
+    }
+  },
+  "https://audio.social3.hr/listen/happy_fest/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Domovina"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/happy_aac/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64056"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Happy AAC"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8072/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "256000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HAPPY MP3"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:9543/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "97361"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "HappyFM"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8372/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128314"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "HAPPY FEST"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/happy_klape/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Happy Klape"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8384/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128024"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "KLAPE"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/happy_legenda/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Happy Legenda"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8396/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "127951"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "LEGENDA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/happy_tambure/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Happy Tambure"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8378/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "129362"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "TAMBURA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/happy_party/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Happy Party"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8390/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "129197"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PARTY"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8390/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128143"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PARTY"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/hitradio": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HIT RADIO"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8012/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HIT RADIO"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.hkr.hr/hkr.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Liquidsoap Radio!",
+          "icy-name": "Hrvatski katolicki radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://stream.hkr.hr:8000/hkr.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Liquidsoap Radio!",
+          "icy-name": "Hrvatski katolicki radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://25453.live.streamtheworld.com/PROGRAM2AAC.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64780"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PROGRAM2",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://28033.live.streamtheworld.com:3690/VOICEOFCROATIAAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "65641"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "VOICEOFCROATIA",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://28503.live.streamtheworld.com/PROGRAM1AAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64335"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PROGRAM1",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25703.live.streamtheworld.com:3690/PROGRAM1_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "64000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "PROGRAM1",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://playerservices.streamtheworld.com/api/livestream-redirect/PROGRAM2.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "64000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "PROGRAM2",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://27863.live.streamtheworld.com/PROGRAM2AAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64780"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PROGRAM2",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25683.live.streamtheworld.com/PROGRAM3AAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128849"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PROGRAM3",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://27743.live.streamtheworld.com/PROGRAM1AAC.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64335"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PROGRAM1",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://23613.live.streamtheworld.com:3690/DUBROVNIKAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64498"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "DUBROVNIK",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25633.live.streamtheworld.com:3690/KNINAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "65137"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "KNIN",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://28033.live.streamtheworld.com/OSIJEKAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "65745"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "OSIJEK",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25693.live.streamtheworld.com:3690/PULAAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64669"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "PULA",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://28513.live.streamtheworld.com/RIJEKAAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "65299"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "RIJEKA",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://23613.live.streamtheworld.com/SLJEMEAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "66598"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "SLJEME",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://playerservices.streamtheworld.com/api/livestream-redirect/SLJEME.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "64000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "SLJEME",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25693.live.streamtheworld.com:3690/SPLITAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64981"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "SPLIT",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25453.live.streamtheworld.com:3690/ZADARAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "65301"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "ZADAR",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://27783.live.streamtheworld.com/HR_CLASSICS_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HR_CLASSICS",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25443.live.streamtheworld.com/HR_CLASSICSAAC_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "129146"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "HR_CLASSICS",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25633.live.streamtheworld.com/HR_POP_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HR_POP",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://25703.live.streamtheworld.com/HR_ROCK_SC": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HR_ROCK",
+          "icy-description": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://live.radio-cakovec.hr:7020/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Hrcak"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8002/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8002/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8002/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "PRVI KARLOVACKI"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "http://s8.iqstreaming.com:8024/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Hrvatski radio Otocac"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8068/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "HRV"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.zeno.fm/pdkt234k698uv": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63946"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "JR RADIO"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8006/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8006/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8006/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Grill Mix"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8010/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8010/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8010/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "NOW Dance 90's"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8030/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8030/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8030/stream",
+      "ok": false,
+      "data": {},
+      "error": "http://s8.iqstreaming.com:8030/stream: Server returned 401 Unauthorized (authorization failed)\n"
+    }
+  },
+  "https://klfmorgborg.radioca.st/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "KLFM.org"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://144.76.172.23:7043/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://144.76.172.23:7043/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://144.76.172.23:7043/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "64629"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Krugoval 93,1 MHz"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://cast5.asurahosting.com/proxy/soundset/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "MB RECASTER"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cast5.asurahosting.com/proxy/soundsetrijeka/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://sonic1-rbx.cloud-center.ro:8026/stream": {
+    "data": {},
+    "error": "[tcp @ 0xaacc48140] Connection to tcp://sonic1-rbx.cloud-center.ro:8026 failed: Operation timed out\nhttps://sonic1-rbx.cloud-center.ro:8026/stream: Operation timed out\n",
+    "ok": false
+  },
+  "https://sonic1-rbx.cloud-center.ro/8026/stream": {
+    "data": {},
+    "error": "[tcp @ 0xb9ac035c0] Connection to tcp://sonic1-rbx.cloud-center.ro:443 failed: Operation timed out\nhttps://sonic1-rbx.cloud-center.ro/8026/stream: Operation timed out\n",
+    "ok": false
+  },
+  "https://cast5.asurahosting.com/proxy/soundsetosijek/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cast5.asurahosting.com/proxy/soundsetpozega/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8360/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8360/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8360/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "128284"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "bravo Gym"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8354/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8354/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8354/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "126711"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "bravo Icons"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8348/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8348/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8348/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "128870"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "bravo Lounge"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://cmr-hosting.com:7013/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Narodni Radio Goga"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://naxidigital-house128ssl.streaming.rs:8002/;stream.nsv": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "NAXI HOUSE RADIO (NAXI,Belgrade,Serbia, NAXI,Beograd,Srbija) - 128k"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/novi_radio/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Novi radio Zadar"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8022/novi_radio": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Novi radio Zadar"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/1radio_ivanic": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.otvoreni.hr/otvoreni": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "48503"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Otvoreni radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.otvoreni.hr/chill": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47843"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio!",
+          "icy-name": "Otvoreni Chill"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.otvoreni.hr/fitness": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "48223"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio!",
+          "icy-name": "Otvoreni Fitness"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://stream.otvoreni.hr/fitness": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "48223"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio!",
+          "icy-name": "Otvoreni Fitness"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.otvoreni.hr/hot": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47734"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio !",
+          "icy-name": "Otvoreni Hot"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream2.otvoreni.hr/otvoreni": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47510"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Otvoreni radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.otvoreni.hr/stream48": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47774"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Otvoreni radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://stream2.otvoreni.hr/otvoreni": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47510"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Otvoreni radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://stream.otvoreni.hr/otvoreni": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47558"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Otvoreni radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream2.otvoreni.hr/love": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47647"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio!",
+          "icy-name": "Otvoreni Love"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.otvoreni.hr/love": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47647"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio!",
+          "icy-name": "Otvoreni Love"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream2.otvoreni.hr/chill": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "47989"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Tvoj Feel Good radio!",
+          "icy-name": "Otvoreni Chill"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/petrinjski_radio": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63939"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8062/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63884"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://streaming.podravskiradio.hr/live": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "130011"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {}
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://matrix-server.hr:8012/live.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "256000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "(null)",
+          "icy-name": "Pomorski Radio Bakar"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:2665/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Poslovni FM"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:8048/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "no name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.ssl-stream.com/prolaznik": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "65249"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Pjesmom vraćamo uspomene",
+          "icy-name": "Radio Prolaznik"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/karlovacki_v1/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "PRVI KARLOVACKI"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://shoutcast.pondi.hr:9000/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "71155"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Dalmacija"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://live.radio101.hr:9531/stream.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio 101"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://live.radio101.hr:8010/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "101 Soft Sound"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://live.radio101.hr:8020/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio 101 ROCK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://azuracast.novi-net.net/radio/8050/radio105.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "127791"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Radio105",
+          "icy-name": "Radio105"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://azuracast.novi-net.net/listen/radio105/radio105.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Radio105",
+          "icy-name": "Radio105"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://listen.mitchfm.com/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Mitch FM Radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://dc1.serverse.com/proxy/wtuvhnef/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.multimedijalist.hr/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3"
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://stream.radio808.info/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Awesome Nula Awesome - Radio808"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://onlineradiobox.com/json/hr/92fm/play?platform=web": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "ogg",
+        "tags": {
+          "icy-name": "no name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.radio-banovina.hr:9998/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Banovina"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/radio_baranja/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63739"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Baranja"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8036/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "62970"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Baranja"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://mcp1.mydataknox.com:8006/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "GRB"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://onlineradiobox.com/json/hr/bnm/play?platform=web": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/bnm_chill/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/bnm_offair/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/bnm_pop/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/bnm_rock/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/bnm_eter/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.zeno.fm/7n7hwy8s9k0uv": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio BOOM Hits"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8066/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8066/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8066/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "RADIO BRAC"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "http://radiocentar.hr:8282/stream.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "319992"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {}
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://radiocentar.hr:8282/mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "204652"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "mp3 192 kbitps",
+          "icy-name": "Radio Centar-Porec"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8215/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8215/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8215/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "95170"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Furesta"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8221/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8221/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8221/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "96068"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Hajducke"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8203/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8203/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8203/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "96266"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Fjaka"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8275/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8275/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8275/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "96445"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Oliver"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8209/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8209/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8209/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "96838"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Rokija"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://mcp1.mydataknox.com:8020/live.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "255279"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Uvijek zajedno!",
+          "icy-name": "Radio Daruvar"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/radiodj/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Deejay"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com/8430/stream;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:2415/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "256000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Drniš"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:2410/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "256000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Drniš"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:8305/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Dakovo"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://mcp1.mydataknox.com:8012/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://mcp1.mydataknox.com:8012/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://mcp1.mydataknox.com:8012/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "112000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio EUROSTAR"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "http://rgk.hc.hr:9500/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Gorski kotar"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:8215/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Grubišno Polje"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8072/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://de4.streamingpulse.com:7117/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128640"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Istra"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://uk1.streamingpulse.com:7117/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128814"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Istra"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://65.21.202.84:8356/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://65.21.202.84:8356/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://65.21.202.84:8356/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "320000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio Italo Disco Net by alenmilky"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://uk1.streamingpulse.com/ssl/RadioJaska": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {}
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/radio-kaj2/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63581"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Kaj"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8050/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63581"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Radio Kaj"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.alter-media.hr:7016/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://proxima.shoutca.st:8559/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://proxima.shoutca.st:8559/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://proxima.shoutca.st:8559/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio Kastav"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://ec2s.crolive.com.hr/RadioKoprivnica": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Koprivnica"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://shoutcast.pondi.hr:8005/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Korcula"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/radiokorzo/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "256000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Korzo"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cmr-hosting.com:7020/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "FENX FM - Glazba koja ostaje"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/radiolabin/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "256000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "RADIO LABIN MP3 256"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://patmos.cdnstream.com:8222/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://patmos.cdnstream.com:8222/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://patmos.cdnstream.com:8222/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "..:: RADiO LuDNiCA :: Original Croatian Internet Radio :: mjuza.net ::.."
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://ec2s.crolive.com.hr:1630/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Maestral Pula"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://dreamsiteradiocp2.com/proxy/rmcroatia?mp=/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63527"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "RADIO MARIA CROATIA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://dreamsiteradiocp4.com:8080/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63892"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "RADIO MARIA CROATIA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://dreamsiteradiocp.com:8026/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63610"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "RADIO MARIA CROATIA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://dreamsiteradiocp4.com:8080/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63892"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "RADIO MARIA CROATIA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://178.218.163.171:8024/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://178.218.163.171:8024/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://178.218.163.171:8024/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio Marija Bistrica"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://azuracast.novi-net.net/radio/8010/radiomax.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128881"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "(NULL)",
+          "icy-name": "RadioMax"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://azuracast.novi-net.net/listen/radiomax/radiomax.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128600"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "(NULL)",
+          "icy-name": "RadioMax"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://azuracast.novi-net.net/listen/radiomax/radiomax.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "129234"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "(NULL)",
+          "icy-name": "RadioMax"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://live.mediaservis.hr:8084/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://live.mediaservis.hr:8084/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://live.mediaservis.hr:8084/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "256000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "MEDIASERVIS"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://chopin.bizmusic.net/radio/8030/radio.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Megaton LIVE"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://comet.shoutca.st:8050/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://comet.shoutca.st:8050/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://comet.shoutca.st:8050/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "320000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Domaci NG"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://slusaj.hr:10445/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "NU - IMOTSKI"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:2595/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Orahovica"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:8014/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "RADIO OK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s1.voscast.com:7987/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "VosCast Auto DJ",
+          "icy-name": "Radio Preporod Odzak 95,2"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://eu7.fastcast4u.com/proxy/radioprk?mp=/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://s8.iqstreaming.com:8064/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://s8.iqstreaming.com:8064/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://s8.iqstreaming.com:8064/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "No Name"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://ec2s.crolive.com.hr:8455/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Ritam Sibenik"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cf.widecastcdn.live/Z07ww1NUNl/live.m3u8": {
+    "data": {
+      "programs": [
+        {
+          "streams": [
+            {
+              "codec_name": "aac",
+              "profile": "LC"
+            }
+          ]
+        }
+      ],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC"
+        }
+      ],
+      "format": {
+        "format_name": "hls"
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.radio-roza.org/live.ogg": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vorbis",
+          "bit_rate": "96480"
+        }
+      ],
+      "format": {
+        "format_name": "ogg",
+        "tags": {
+          "icy-description": "RADIO ZAJEDNICE, RIJEKA",
+          "icy-name": "RADIO ROZA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.radio-roza.org/live.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "RADIO ZAJEDNICE, RIJEKA",
+          "icy-name": "RADIO ROZA"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.radio-roza.org/live.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Community Radio Rijeka",
+          "icy-name": "Radio Ro�"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.servergm.eu/8002/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Salona"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://185.150.235.162:80/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://185.150.235.162:80/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://185.150.235.162:80/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "256000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio Samobor"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://a.tunzilla.com/http://144.76.219.22:8215/stream.mp3": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://144.76.219.22:8215/stream.mp3: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://144.76.219.22:8215/stream.mp3",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "128000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio Sibenik"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://s8.iqstreaming.com:2020/stream/1radio_slavonija": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "none"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8026/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "none"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8026/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "none"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/radio-slunj1?mp=/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8070/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://evcast.mediacp.eu:1960/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://evcast.mediacp.eu:1960/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://evcast.mediacp.eu:1960/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "256000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "Radio SOVA"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://c8.hostingcentar.com/streams/radiostubica/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Stubica"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://radiostubica.hc.hr:7006/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "127744"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Urbana Music Radio - Zabavni Radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://161.53.122.184:8000/AAC128.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128006"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Radio Student stream",
+          "icy-name": "Radio Student stream"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://stream.radiostudent.hr/audio": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128041"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-description": "Radio Student stream",
+          "icy-name": "Radio Student stream"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://shoutcast.pondi.hr:8002/;*.mp3": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://shoutcast.pondi.hr:8002/;*.mp3: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://shoutcast.pondi.hr:8002/;*.mp3",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "87428"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "RADIO SUNCE"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://stream.zeno.fm/8d2pyzm5wp8uv": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Techno Dance Kneginec"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://mercury.reliastream.com/proxy/radiotec?mp=/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Techno Zagreb One"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/streams/radiotvornica": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Tvornica"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/rvg": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://onlineradiobox.com/json/hr/vinkovci/play?platform=web": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c8.hostingcentar.com/proxy/vrbovec1/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Vrbovec"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:1690/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Zelina"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://144.76.172.23:7059/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://144.76.172.23:7059/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://144.76.172.23:7059/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "63979"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "RADIO ZLATAR"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://audio.alter-media.hr:7019/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://live.radio101.hr:9531/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio 101"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://replaynewshr.ice.infomaniak.ch/replaynewshr-128.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Replay News (Croatian) (MB STUDIO)",
+          "icy-name": "Replay News (Croatian) (MB STUDIO)"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://cast6.asurahosting.com/proxy/theroomfm/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://rovinj.fm:8000/;": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://rovinj.fm:8000/;: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://rovinj.fm:8000/;",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "bit_rate": "256000"
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "tags": {
+            "icy-name": "RovinjFM"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "https://ec2s.crolive.com.hr:8035/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Volimo Slavoniju, volimo hitove!",
+          "icy-name": "Slavonski Radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream2.plusvps.com:8112/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Soundset Ragusa"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://radio.unios.hr:8443/stream.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Radio UNIOS",
+          "icy-name": "stream.mp3"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://mcp1.mydataknox.com:8010/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "No Name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://mcp1.mydataknox.com:8014/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "320000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "no name"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://listen.radioking.com/radio/552965/stream/612287": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Puni srca, prazni čaše!",
+          "icy-name": "Tamburaški Radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://play.radioking.io/tamburaskiradio": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-description": "Puni srca, prazni čaše!",
+          "icy-name": "Tamburaški Radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://slusaj.hr:10446/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "NU - IMOTSKI"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://116.202.235.114:8414/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "126469"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "TOP GOLD"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://116.202.235.114:8420/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "127143"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "TOP POP"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://c5.hostingcentar.com:8000/streams/topradio/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "95217"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Antena Zagreb"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://c5.hostingcentar.com/streams/topradio/": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96177"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "TOP RADIO AAC"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/top_radio_256_mp3/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64208"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Top radio 256 MP3"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/top_radio_gold/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Top radio GOLD"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/top_radio_pop/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "96000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Top radio POP"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/top_radio_rock/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "192000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Top radio ROCK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/top_exyu/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Top YOU"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://116.202.235.114:8408/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "128137"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "TOP ROCK"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://116.202.235.114:8402/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "127435"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "TOP YOU"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr/tranzistor": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Tranzistor HR"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://a.tunzilla.com/http://c5.hostingcentar.com:8061/stream": {
+    "data": {},
+    "error": "https://a.tunzilla.com/http://c5.hostingcentar.com:8061/stream: Server returned 5XX Server Error reply\n",
+    "ok": false,
+    "direct_probe": {
+      "url": "http://c5.hostingcentar.com:8061/stream",
+      "ok": true,
+      "data": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "bit_rate": "97935"
+          }
+        ],
+        "format": {
+          "format_name": "aac",
+          "tags": {
+            "icy-name": "Unnamed Server"
+          }
+        }
+      },
+      "error": ""
+    }
+  },
+  "http://c5.hostingcentar.com:8061/;stream/1": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "96428"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Unnamed Server"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://stream.yammat.fm/radio/8000/yammat.mp3": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "324081"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "Icy-Name": "Yammat FM"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://www.radiocentar.hr:8585/;": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://radiocentar.hr:8585/stream.aac": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": ""
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://s8.iqstreaming.com:2020/stream/zagorski/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "63845"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Zagorski radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "http://s8.iqstreaming.com:8054/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "profile": "LC",
+          "bit_rate": "64003"
+        }
+      ],
+      "format": {
+        "format_name": "aac",
+        "tags": {
+          "icy-name": "Zagorski radio"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://ec2s.crolive.com.hr:7015/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Radio Zaprešić ZFM"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  },
+  "https://audio.social3.hr/listen/enter_club/stream": {
+    "data": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "bit_rate": "128000"
+        }
+      ],
+      "format": {
+        "format_name": "mp3",
+        "tags": {
+          "icy-name": "Enter Club"
+        }
+      }
+    },
+    "error": "",
+    "ok": true
+  }
+}

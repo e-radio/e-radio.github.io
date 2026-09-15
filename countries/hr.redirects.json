@@ -84,5 +84,11 @@
   "/stations/radio-marija-hrvatska/": "/stations/radio-marija/",
   "/stations/city-radio-zagreba-ka-19-velika-gorica/": "/stations/city-radio-88-6-zagreba-ka-upanija/",
   "/stations/radio-baranja-trg-slobode-32-3-hr-beli-manastir/": "/stations/radio-baranja/",
-  "/stations/petrinjski-radio-https-www-openstreetmap-org-relation-8076890/": "/stations/petrinjski-radio-petrinja/"
+  "/stations/petrinjski-radio-https-www-openstreetmap-org-relation-8076890/": "/stations/petrinjski-radio-petrinja/",
+  "/stations/bravo-rock-grad-zagreb/": "/stations/bravo-lounge/",
+  "/stations/happy-fest/": "/stations/happy-fm-fest/",
+  "/stations/laganini-fm-zagreb-slavonska-avenija-2-zagreb/": "/stations/laganini-fm/",
+  "/stations/laganini-fm-zagreb-new/": "/stations/laganini-fm/",
+  "/stations/laganini-fm-rijeka-primorska/": "/stations/laganini-fm-rijeka/",
+  "/stations/radio-jaska-jastrebarsko/": "/stations/radio-jaska/"
 }

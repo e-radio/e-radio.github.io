@@ -324,7 +324,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 19,
     "lastcheckok": 1,
     "votes": 470,
@@ -388,7 +388,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 303,
@@ -427,7 +427,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 792,
@@ -533,7 +533,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 173,
@@ -607,7 +607,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 7,
     "lastcheckok": 1,
     "votes": 3285,
@@ -818,7 +818,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "MP3",
     "clickcount": 7,
     "lastcheckok": 1,
     "votes": 3907,
@@ -858,13 +858,13 @@
     "language": "croatian",
     "bitrate": 128,
     "codec": "MP3",
-    "clickcount": 0,
+    "clickcount": 2,
     "lastcheckok": 1,
-    "votes": 0,
+    "votes": 167,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
+    "geo_lat": 45.83492308132436,
+    "geo_long": 15.980284411792091,
     "nowplaying_url": "https://relay1.social3.hr/radio/8340/status-json.xsl?mount=%2Fradio.mp3",
     "metadata_server": "icecast",
     "locationNames": {
@@ -878,7 +878,10 @@
       }
     },
     "metadata_direct": true,
-    "history_url": "https://r.jina.ai/https://streaming.bravo.hr/player/info/bravo_lounge_h.txt"
+    "history_url": "https://r.jina.ai/https://streaming.bravo.hr/player/info/bravo_lounge_h.txt",
+    "alternate_stationuuids": [
+      "17428ba2-ccfc-4d91-aa98-41fe13d3f9da"
+    ]
   },
   {
     "slug": "bravo-gym",
@@ -933,7 +936,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 226,
@@ -1005,7 +1008,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "MP3",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 82,
@@ -1027,45 +1030,10 @@
     }
   },
   {
-    "slug": "bravo-rock-grad-zagreb",
-    "stationuuid": "17428ba2-ccfc-4d91-aa98-41fe13d3f9da",
-    "name": "bravo! Rock",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "https://relay1.social3.hr/radio/8340/radio.mp3",
-    "homepage": "https://bravo.hr/",
-    "favicon": "/station-icons/hr/bravo-rock-grad-zagreb.webp",
-    "genres": [
-      "rock"
-    ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "AAC+",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 167,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 45.83492308132436,
-    "geo_long": 15.980284411792091,
-    "nowplaying_url": "https://relay1.social3.hr/radio/8340/status-json.xsl?mount=%2Fradio.mp3",
-    "metadata_server": "icecast",
-    "locationNames": {
-      "hr": {
-        "city": "Zagreb",
-        "state": "Grad Zagreb"
-      },
-      "en": {
-        "city": "Zagreb",
-        "state": "City of Zagreb"
-      }
-    }
-  },
-  {
     "slug": "city-radio-88-6-zagreba-ka-upanija",
     "stationuuid": "962280df-0601-11e8-ae97-52543be04c81",
     "name": "City Radio",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://s8.iqstreaming.com:2020/stream/city_radioHR/stream",
     "homepage": "https://cityportal.hr/",
@@ -1093,7 +1061,7 @@
       },
       "en": {
         "city": "Velika Gorica",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     },
     "alternate_stationuuids": [
@@ -1221,12 +1189,15 @@
     "slug": "cmc-dalmatina",
     "stationuuid": "8c029f66-570d-45aa-ad39-447f7fb9b623",
     "name": "CMC Dalmatina",
-    "state": null,
-    "city": null,
+    "state": "City of Zagreb",
+    "city": "Zagreb",
     "stream_url": "https://radio-stream.cmc.com.hr:9014/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-dalmatina.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "folk"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -1272,7 +1243,13 @@
     "stream_url": "https://radio-stream.cmc.com.hr:9012/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-jugoton.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "rock",
+      "folk",
+      "retro",
+      "oldies"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -1331,12 +1308,14 @@
     "slug": "cmc-lagano",
     "stationuuid": "d1d1bb28-585a-4217-8f69-810aaa51294a",
     "name": "CMC Lagano",
-    "state": null,
-    "city": null,
+    "state": "City of Zagreb",
+    "city": "Zagreb",
     "stream_url": "https://radio-stream.cmc.com.hr:9013/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-lagano.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -1446,7 +1425,11 @@
     "stream_url": "https://radio-stream.cmc.com.hr:9018/stream",
     "homepage": "https://radio.cmc.com.hr/",
     "favicon": "/station-icons/hr/cmc-zabavni.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "dance",
+      "folk"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -1477,7 +1460,7 @@
     ],
     "language": "croatian",
     "bitrate": 256,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 58,
@@ -1547,7 +1530,7 @@
     ],
     "language": null,
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 1,
@@ -1584,7 +1567,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 42,
@@ -1632,10 +1615,10 @@
     "streams": [
       {
         "id": "aac-320",
-        "label": "Default",
+        "label": "Alternative",
         "url": "https://radio.dvb.digital/hls/dvb.digital/live.m3u8",
         "bitrate": 320,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -1678,10 +1661,10 @@
     "streams": [
       {
         "id": "aac-96",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://live.enterzagreb.hr:8023/;",
         "bitrate": 96,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -1727,17 +1710,17 @@
     "streams": [
       {
         "id": "stream-1",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://streams.extrafm.hr:8110/;",
         "bitrate": 96,
-        "codec": "AAC+"
+        "codec": "AAC"
       },
       {
         "id": "stream-2",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://streams.extrafm.hr:8110/stream",
         "bitrate": 96,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -1771,7 +1754,7 @@
     "slug": "folkyton-radio-velika-mlaka",
     "stationuuid": "761a166b-0350-48f0-a503-edb1a227233f",
     "name": "FolkyTon Radio",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://ec2s.crolive.com.hr:6035/stream",
     "homepage": "https://www.folkyton.com/",
@@ -1798,7 +1781,7 @@
       },
       "en": {
         "city": "Velika Gorica",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     }
   },
@@ -1895,7 +1878,7 @@
     "slug": "gold-velika-gorica",
     "stationuuid": "81ea8974-a766-435c-b0bc-40cd6a58c85e",
     "name": "Gold - Velika Gorica",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "http://live.goldfm.hr:8068/stream",
     "homepage": "https://goldfm.hr/",
@@ -1906,7 +1889,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 121,
@@ -1924,7 +1907,7 @@
       },
       "en": {
         "city": "Velika Gorica",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     }
   },
@@ -1933,7 +1916,7 @@
     "stationuuid": "a9254884-ff90-11e8-a1be-52543be04c81",
     "name": "Gold FM",
     "state": "City of Zagreb",
-    "city": null,
+    "city": "Zagreb",
     "stream_url": "http://live.goldfm.hr:8068/;",
     "homepage": "http://www.goldfm.hr/",
     "favicon": "/station-icons/hr/gold-fm.webp",
@@ -1944,7 +1927,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 576,
@@ -1957,11 +1940,11 @@
     "history_url": "http://live.goldfm.hr:8068/played?sid=1&type=json",
     "locationNames": {
       "hr": {
-        "city": null,
+        "city": "Zagreb",
         "state": "Zagrebačka županija"
       },
       "en": {
-        "city": null,
+        "city": "Zagreb",
         "state": "City of Zagreb"
       }
     }
@@ -2003,36 +1986,10 @@
     }
   },
   {
-    "slug": "happy-fest",
-    "stationuuid": "03695c36-2798-45dd-8ac3-ae112d242ed5",
-    "name": "Happy Fest",
-    "state": "City of Zagreb",
-    "city": "Velika Gorica",
-    "stream_url": "https://audio.social3.hr/listen/happy_fest/stream",
-    "homepage": "https://happyfm.hr/",
-    "favicon": "/station-icons/hr/happy-fest.webp",
-    "genres": [
-      "oldies",
-      "folk"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 3,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://audio.social3.hr/api/nowplaying/happy_fest",
-    "metadata_server": "azuracast"
-  },
-  {
     "slug": "happy-fm",
     "stationuuid": "6a79b8c7-92be-4b26-95f2-939f2af00d95",
     "name": "Happy FM",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://audio.social3.hr/listen/happy_aac/stream",
     "homepage": "https://happyfm.hr/",
@@ -2044,8 +2001,8 @@
       "folk"
     ],
     "language": "croatian",
-    "bitrate": 96,
-    "codec": "AAC+",
+    "bitrate": 64,
+    "codec": "AAC",
     "clickcount": 7,
     "lastcheckok": 1,
     "votes": 1324,
@@ -2068,7 +2025,7 @@
       },
       "en": {
         "city": "Velika Gorica",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     },
     "streams": [
@@ -2085,20 +2042,20 @@
       {
         "url": "http://c5.hostingcentar.com:9543/stream",
         "bitrate": 96,
-        "codec": "AAC+",
+        "codec": "AAC",
         "nowplaying_url": "http://c5.hostingcentar.com:9543/stats?sid=1&json=1",
         "history_url": "http://c5.hostingcentar.com:9543/played?sid=1&type=json",
         "metadata_server": "shoutcast",
         "id": "stream-2",
-        "label": "Alternative AAC+"
+        "label": "Alternative"
       }
     ]
   },
   {
     "slug": "happy-fm-fest",
     "stationuuid": "8fdb8b17-026d-44c9-9252-315e7797e5c5",
-    "name": "Happy FM Fest",
-    "state": "City of Zagreb",
+    "name": "Domovina",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://audio.social3.hr/listen/happy_fest/stream",
     "homepage": "https://happyfm.hr/",
@@ -2110,7 +2067,7 @@
     "language": "croatian",
     "bitrate": 128,
     "codec": "MP3",
-    "clickcount": 0,
+    "clickcount": 1,
     "lastcheckok": 1,
     "votes": 196,
     "hls": 0,
@@ -2120,26 +2077,37 @@
     "nowplaying_url": "https://audio.social3.hr/api/nowplaying/happy_fest",
     "metadata_server": "azuracast",
     "alternate_stationuuids": [
-      "3b40f3ef-4b79-481f-832e-7ce2cb274317"
+      "3b40f3ef-4b79-481f-832e-7ce2cb274317",
+      "03695c36-2798-45dd-8ac3-ae112d242ed5"
     ],
     "streams": [
       {
         "id": "aac-128",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://c5.hostingcentar.com:8372/",
         "bitrate": 128,
-        "codec": "AAC+",
+        "codec": "AAC",
         "nowplaying_url": "http://c5.hostingcentar.com:8372/stats?sid=1&json=1",
         "history_url": "http://c5.hostingcentar.com:8372/played?sid=1&type=json",
         "metadata_server": "shoutcast"
       }
-    ]
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Velika Gorica",
+        "state": "Zagreb"
+      }
+    }
   },
   {
     "slug": "happy-fm-klape",
     "stationuuid": "e001600c-c851-434c-bbb3-e07c34165a23",
     "name": "Happy FM Klape",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://audio.social3.hr/listen/happy_klape/stream",
     "homepage": "https://happyfm.hr/",
@@ -2149,7 +2117,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "MP3",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 502,
@@ -2165,18 +2133,28 @@
     "streams": [
       {
         "id": "aac-128",
-        "label": "Alternative AAC",
+        "label": "Alternative",
         "url": "http://c5.hostingcentar.com:8384/stream",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
-    ]
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Velika Gorica",
+        "state": "Zagreb"
+      }
+    }
   },
   {
     "slug": "happy-fm-legenda",
     "stationuuid": "b2d03353-d3c5-41fc-9b88-b64c971e46f2",
     "name": "Happy FM Legenda",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://audio.social3.hr/listen/happy_legenda/stream",
     "homepage": "https://happyfm.hr/",
@@ -2187,7 +2165,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 140,
@@ -2204,7 +2182,7 @@
       {
         "url": "https://audio.social3.hr/listen/happy_legenda/stream",
         "bitrate": 128,
-        "codec": "AAC+",
+        "codec": "MP3",
         "nowplaying_url": "https://audio.social3.hr/api/nowplaying/happy_legenda",
         "metadata_server": "azuracast",
         "id": "stream-1",
@@ -2213,20 +2191,30 @@
       {
         "url": "http://c5.hostingcentar.com:8396/stream",
         "bitrate": 128,
-        "codec": "AAC+",
+        "codec": "AAC",
         "nowplaying_url": "http://c5.hostingcentar.com:8396/stats?sid=1&json=1",
         "history_url": "http://c5.hostingcentar.com:8396/played?sid=1&type=json",
         "metadata_server": "shoutcast",
         "id": "stream-2",
         "label": "Alternative"
       }
-    ]
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Velika Gorica",
+        "state": "Zagreb"
+      }
+    }
   },
   {
     "slug": "happy-fm-tambura",
     "stationuuid": "a9d9f810-295b-4f59-826b-b64fe08086c2",
     "name": "Happy FM Tambura",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://audio.social3.hr/listen/happy_tambure/stream",
     "homepage": "https://happyfm.hr/",
@@ -2236,7 +2224,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "MP3",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 137,
@@ -2252,18 +2240,28 @@
     "streams": [
       {
         "id": "aac-128-2",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://c5.hostingcentar.com:8378/stream",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
-    ]
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Velika Gorica",
+        "state": "Zagreb"
+      }
+    }
   },
   {
     "slug": "happy-fm-party",
     "stationuuid": "19786bf9-022e-4c65-8d63-a09249a80925",
     "name": "Happy FM Party",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://audio.social3.hr/listen/happy_party/stream",
     "homepage": "https://happyfm.hr/",
@@ -2300,25 +2298,35 @@
       },
       {
         "id": "aac-128-1",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://c5.hostingcentar.com:8390/stream",
         "bitrate": 128,
-        "codec": "AAC+",
+        "codec": "AAC",
         "nowplaying_url": "http://c5.hostingcentar.com:8390/stats?sid=1&json=1",
         "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json",
         "metadata_server": "shoutcast"
       },
       {
         "id": "aac-128-2",
-        "label": "Alternative AAC+",
+        "label": "Alternative",
         "url": "http://c5.hostingcentar.com:8390/;",
         "bitrate": 128,
-        "codec": "AAC+",
+        "codec": "AAC",
         "nowplaying_url": "http://c5.hostingcentar.com:8390/stats?sid=1&json=1",
         "history_url": "http://c5.hostingcentar.com:8390/played?sid=1&type=json",
         "metadata_server": "shoutcast"
       }
-    ]
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Velika Gorica",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Velika Gorica",
+        "state": "Zagreb"
+      }
+    }
   },
   {
     "slug": "hit-radio",
@@ -2426,7 +2434,7 @@
     ],
     "language": "english",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 1,
@@ -2450,7 +2458,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 181,
@@ -2473,7 +2481,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 13,
     "lastcheckok": 1,
     "votes": 4591,
@@ -2565,7 +2573,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 13,
     "lastcheckok": 1,
     "votes": 4265,
@@ -2588,7 +2596,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 1022,
@@ -2612,7 +2620,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 0,
@@ -2636,7 +2644,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 300,
@@ -2662,7 +2670,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 85,
@@ -2688,7 +2696,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 186,
@@ -2714,7 +2722,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 619,
@@ -2738,7 +2746,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 5,
     "lastcheckok": 1,
     "votes": 1048,
@@ -2764,7 +2772,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 2190,
@@ -2788,10 +2796,10 @@
     "streams": [
       {
         "id": "aac-64",
-        "label": "Default AAC+",
+        "label": "Default",
         "url": "http://23613.live.streamtheworld.com/SLJEMEAAC_SC",
         "bitrate": 64,
-        "codec": "AAC+"
+        "codec": "AAC"
       },
       {
         "id": "mp3-64",
@@ -2817,7 +2825,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 820,
@@ -2841,7 +2849,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 212,
@@ -2890,8 +2898,8 @@
     "slug": "hrvatski-radio-klasik-hrt",
     "stationuuid": "c65436db-e6b8-425f-b925-0396b056ea89",
     "name": "Hrvatski radio - Klasik (HRT)",
-    "state": null,
-    "city": null,
+    "state": "City of Zagreb",
+    "city": "Zagreb",
     "stream_url": "http://25443.live.streamtheworld.com/HR_CLASSICSAAC_SC",
     "homepage": "https://radio.hrt.hr/stream/25",
     "favicon": "/station-icons/hr/hrvatski-radio-klasik-hrt.webp",
@@ -2904,7 +2912,7 @@
     ],
     "language": null,
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 3,
@@ -2986,8 +2994,8 @@
     "slug": "hrvatski-radio-akovec-d-o-o-stream",
     "stationuuid": "311b357a-fd6a-483e-969d-cc8985e05413",
     "name": "Hrvatski Radio Čakovec d.o.o. Stream",
-    "state": null,
-    "city": null,
+    "state": "Medjimurje",
+    "city": "Čakovec",
     "stream_url": "http://live.radio-cakovec.hr:7020/stream",
     "homepage": "http://www.radio-cakovec.hr/",
     "favicon": "/station-icons/hr/hrvatski-radio-akovec-d-o-o-stream-placeholder.webp",
@@ -3341,18 +3349,36 @@
     "favicon": "/station-icons/hr/laganini-fm.webp",
     "genres": [
       "hrvatska",
-      "public radio"
+      "public radio",
+      "various",
+      "news",
+      "top40",
+      "pop"
     ],
     "language": "croatian",
-    "bitrate": 128,
+    "bitrate": 192,
     "codec": "MP3",
-    "clickcount": 0,
+    "clickcount": 1,
     "lastcheckok": 0,
     "votes": 2332,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_lat": 45.79377858789192,
+    "geo_long": 15.959272384643556,
+    "alternate_stationuuids": [
+      "b4ad9a90-4a6a-48f9-a1c1-efddc362ed84",
+      "ae1aa882-22a6-4cda-89ee-ed348548046c"
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Zagreb",
+        "state": "Grad Zagreb"
+      },
+      "en": {
+        "city": "Zagreb",
+        "state": "City of Zagreb"
+      }
+    }
   },
   {
     "slug": "laganini-fm-rijeka",
@@ -3361,35 +3387,13 @@
     "state": "Primorje-Gorski Kotar",
     "city": "Rijeka",
     "stream_url": "https://cast5.asurahosting.com/proxy/soundsetrijeka/stream",
-    "homepage": "https://laganini.fm/pozega/",
+    "homepage": "https://laganini.fm/rijeka/",
     "favicon": "/station-icons/hr/laganini-fm-rijeka.webp",
     "genres": [
       "pop",
       "news",
       "top40",
-      "talk"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 0,
-    "votes": 431,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "laganini-fm-rijeka-primorska",
-    "stationuuid": "50678df9-1924-4eca-9629-bc760deae91a",
-    "name": "Laganini FM Rijeka",
-    "state": "Primorje-Gorski Kotar",
-    "city": "Rijeka",
-    "stream_url": "https://cast5.asurahosting.com/proxy/soundsetrijeka/stream",
-    "homepage": "https://laganini.fm/rijeka/",
-    "favicon": "/station-icons/hr/laganini-fm-rijeka.webp",
-    "genres": [
+      "talk",
       "lounge",
       "relaxing",
       "smooth"
@@ -3404,6 +3408,9 @@
     "ssl_error": 0,
     "geo_lat": 45.328689016958705,
     "geo_long": 14.43900437115099,
+    "alternate_stationuuids": [
+      "50678df9-1924-4eca-9629-bc760deae91a"
+    ],
     "locationNames": {
       "hr": {
         "city": "Rijeka",
@@ -3412,74 +3419,6 @@
       "en": {
         "city": "Rijeka",
         "state": "Primorje-Gorski Kotar"
-      }
-    }
-  },
-  {
-    "slug": "laganini-fm-zagreb-slavonska-avenija-2-zagreb",
-    "stationuuid": "b4ad9a90-4a6a-48f9-a1c1-efddc362ed84",
-    "name": "Laganini FM Zagreb",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "https://cast5.asurahosting.com/proxy/soundset/stream",
-    "homepage": "https://laganini.fm/",
-    "favicon": "/station-icons/hr/laganini-fm-zagreb.webp",
-    "genres": [
-      "various"
-    ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 0,
-    "votes": 200,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 45.79377858789192,
-    "geo_long": 15.959272384643556,
-    "locationNames": {
-      "hr": {
-        "city": "Zagreb",
-        "state": "Grad Zagreb"
-      },
-      "en": {
-        "city": "Zagreb",
-        "state": "City of Zagreb"
-      }
-    }
-  },
-  {
-    "slug": "laganini-fm-zagreb-new",
-    "stationuuid": "ae1aa882-22a6-4cda-89ee-ed348548046c",
-    "name": "Laganini FM Zagreb NEW",
-    "state": "City of Zagreb",
-    "city": "Zagreb",
-    "stream_url": "https://cast5.asurahosting.com/proxy/soundset/stream",
-    "homepage": "https://laganini.fm/zagreb/",
-    "favicon": "/station-icons/hr/laganini-fm-zagreb.webp",
-    "genres": [
-      "news",
-      "top40",
-      "pop"
-    ],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 5,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 45.79625461321962,
-    "geo_long": 15.985794067382814,
-    "locationNames": {
-      "hr": {
-        "city": "Zagreb",
-        "state": "Grad Zagreb"
-      },
-      "en": {
-        "city": "Zagreb",
-        "state": "City of Zagreb"
       }
     }
   },
@@ -3520,8 +3459,8 @@
     "slug": "laganini-narodni-i-folk-radio",
     "stationuuid": "483ab295-ea7a-4d2b-83db-f315d5c8a843",
     "name": "Laganini Narodni i Folk Radio",
-    "state": null,
-    "city": null,
+    "state": "Brod-Posavina",
+    "city": "Dubočac",
     "stream_url": "https://sonic1-rbx.cloud-center.ro/8026/stream",
     "homepage": "https://laganini.fm/",
     "favicon": "/station-icons/hr/laganini-narodni-i-folk-radio.webp",
@@ -3555,7 +3494,7 @@
       "talk"
     ],
     "language": "croatian",
-    "bitrate": 128,
+    "bitrate": 320,
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 0,
@@ -3625,7 +3564,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 58,
@@ -3659,7 +3598,7 @@
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 50,
@@ -3693,7 +3632,7 @@
     "genres": [],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 534,
@@ -3826,7 +3765,7 @@
     "slug": "obiteljski-radio-ivani-park-stjepana-posezija-6-ivani-grad",
     "stationuuid": "2a8e0877-7f91-4109-9e0a-30d50c2c00a3",
     "name": "OBITELJSKI RADIO IVANIĆ",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Ivanić-Grad",
     "stream_url": "https://s8.iqstreaming.com:2020/stream/1radio_ivanic",
     "homepage": "https://ori.hr/",
@@ -3852,7 +3791,7 @@
       },
       "en": {
         "city": "Ivanić-Grad",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     }
   },
@@ -4212,7 +4151,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 58,
@@ -4458,7 +4397,7 @@
     ],
     "language": "croatian",
     "bitrate": 72,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 128,
@@ -4710,8 +4649,8 @@
     "streams": [
       {
         "url": "http://stream.radio808.info/stream",
-        "bitrate": 64,
-        "codec": "AAC+",
+        "bitrate": 320,
+        "codec": "MP3",
         "id": "aac-64",
         "label": "Alternative"
       }
@@ -4796,7 +4735,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 16,
@@ -4823,7 +4762,7 @@
       {
         "url": "http://s8.iqstreaming.com:8036/stream",
         "bitrate": 64,
-        "codec": "AAC+",
+        "codec": "AAC",
         "id": "aac-64",
         "label": "Alternative",
         "nowplaying_url": "http://s8.iqstreaming.com:8036/stats?sid=1&json=1",
@@ -4874,8 +4813,8 @@
     "slug": "radio-biograd-na-moru",
     "stationuuid": "b1cb20c0-18c0-4799-987a-c8e264f627f6",
     "name": "Radio Biograd na Moru",
-    "state": null,
-    "city": null,
+    "state": "Zadar",
+    "city": "Biograd na Moru",
     "stream_url": "https://onlineradiobox.com/json/hr/bnm/play?platform=web",
     "homepage": "https://www.radio-bnm.hr/",
     "favicon": "/station-icons/hr/radio-biograd-na-moru.webp",
@@ -5189,9 +5128,9 @@
       },
       {
         "id": "mp3-192",
-        "label": "Alternative MP3",
+        "label": "Alternative",
         "url": "http://radiocentar.hr:8282/mp3",
-        "bitrate": 192,
+        "bitrate": 205,
         "codec": "MP3"
       }
     ]
@@ -5211,7 +5150,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 213,
@@ -5247,7 +5186,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 76,
@@ -5283,7 +5222,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 0,
@@ -5309,7 +5248,7 @@
     ],
     "language": null,
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 164,
@@ -5335,7 +5274,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 212,
@@ -5660,7 +5599,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 3,
     "lastcheckok": 1,
     "votes": 20,
@@ -5687,14 +5626,14 @@
         "label": "Default",
         "url": "http://de4.streamingpulse.com:7117/stream",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       },
       {
         "id": "aac-128-2",
         "label": "Alternative",
         "url": "http://uk1.streamingpulse.com:7117/stream",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -5727,54 +5666,19 @@
     "history_url": "http://65.21.202.84:8356/played?sid=1&type=json"
   },
   {
-    "slug": "radio-jaska-jastrebarsko",
-    "stationuuid": "b66ed850-c43c-469b-8857-c21dcbd40bcb",
-    "name": "Radio Jaska",
-    "state": "City of Zagreb",
-    "city": "Jastrebarsko",
-    "stream_url": "https://uk1.streamingpulse.com/ssl/RadioJaska",
-    "homepage": "https://www.radio-jaska.hr/",
-    "favicon": "/station-icons/hr/radio-jaska-jastrebarsko.webp",
-    "genres": [
-      "various"
-    ],
-    "language": "croatian",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 9,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 45.67152390041923,
-    "geo_long": 15.649681091308596,
-    "nowplaying_url": "http://uk1.streamingpulse.com:7041/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://uk1.streamingpulse.com:7041/played?sid=1&type=json",
-    "locationNames": {
-      "hr": {
-        "city": "Jastrebarsko",
-        "state": "Zagrebačka županija"
-      },
-      "en": {
-        "city": "Jastrebarsko",
-        "state": "City of Zagreb"
-      }
-    }
-  },
-  {
     "slug": "radio-jaska",
     "stationuuid": "cbc8aa70-4c47-43aa-8386-932d928f2fbc",
     "name": "Radio Jaska",
-    "state": null,
-    "city": null,
+    "state": "Zagreb",
+    "city": "Jastrebarsko",
     "stream_url": "https://uk1.streamingpulse.com/ssl/RadioJaska",
     "homepage": "https://www.radio-jaska.hr/",
     "favicon": "/station-icons/hr/radio-jaska.webp",
     "genres": [
       "folk",
       "local news",
-      "pop"
+      "pop",
+      "various"
     ],
     "language": "croatian",
     "bitrate": 128,
@@ -5784,8 +5688,24 @@
     "votes": 97,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_lat": 45.67152390041923,
+    "geo_long": 15.649681091308596,
+    "alternate_stationuuids": [
+      "b66ed850-c43c-469b-8857-c21dcbd40bcb"
+    ],
+    "locationNames": {
+      "hr": {
+        "city": "Jastrebarsko",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Jastrebarsko",
+        "state": "Zagreb"
+      }
+    },
+    "nowplaying_url": "http://uk1.streamingpulse.com:7041/stats?sid=1&json=1",
+    "history_url": "http://uk1.streamingpulse.com:7041/played?sid=1&type=json",
+    "metadata_server": "shoutcast"
   },
   {
     "slug": "radio-kaj",
@@ -5802,7 +5722,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
     "votes": 3671,
@@ -5819,7 +5739,7 @@
         "label": "Alternative",
         "url": "http://s8.iqstreaming.com:8050/stream",
         "bitrate": 64,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -5913,7 +5833,7 @@
       "community"
     ],
     "language": "croatian",
-    "bitrate": 192,
+    "bitrate": 128,
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 0,
@@ -6031,11 +5951,11 @@
   {
     "slug": "radio-krka-krke",
     "stationuuid": "059ac536-2d21-45d1-8342-506c5a6d0326",
-    "name": "Radio Krka",
+    "name": "FENX FM",
     "state": "Šibenik-Knin",
     "city": "Skradin",
     "stream_url": "https://cmr-hosting.com:7020/;",
-    "homepage": "https://www.radiokrka.cmr-1.com/",
+    "homepage": "https://fenxfm.hr/",
     "favicon": "/station-icons/hr/radio-krka-krke.webp",
     "genres": [
       "various"
@@ -6168,8 +6088,8 @@
       "talk"
     ],
     "language": "croatian",
-    "bitrate": 96,
-    "codec": "AAC+",
+    "bitrate": 64,
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 504,
@@ -6189,21 +6109,21 @@
       {
         "url": "http://dreamsiteradiocp4.com:8080/;",
         "bitrate": 64,
-        "codec": "AAC+",
+        "codec": "AAC",
         "id": "stream-1",
         "label": "Alternative"
       },
       {
         "url": "http://dreamsiteradiocp.com:8026/stream",
         "bitrate": 64,
-        "codec": "AAC+",
+        "codec": "AAC",
         "id": "stream-2",
         "label": "Alternative"
       },
       {
         "url": "http://dreamsiteradiocp4.com:8080/stream",
         "bitrate": 64,
-        "codec": "AAC+",
+        "codec": "AAC",
         "nowplaying_url": "http://dreamsiteradiocp4.com:8080/stats?sid=1&json=1",
         "history_url": "http://dreamsiteradiocp4.com:8080/played?sid=1&type=json",
         "metadata_server": "shoutcast",
@@ -6291,7 +6211,7 @@
         "label": "Alternative",
         "url": "https://azuracast.novi-net.net/listen/radiomax/radiomax.mp3",
         "bitrate": 128,
-        "codec": "MP3"
+        "codec": "AAC"
       }
     ]
   },
@@ -6450,29 +6370,6 @@
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 89,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "radio-preporod",
-    "stationuuid": "7714e1fa-de27-42e9-83f6-d649d5aa4def",
-    "name": "Radio Preporod",
-    "state": null,
-    "city": null,
-    "stream_url": "https://s1.voscast.com:7987/stream",
-    "homepage": "https://radiopreporod.com/",
-    "favicon": "/station-icons/hr/radio-preporod.webp",
-    "genres": [
-      "hits"
-    ],
-    "language": "croatian",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 16,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
@@ -6692,7 +6589,7 @@
     "slug": "radio-samobor",
     "stationuuid": "dcd4c537-2081-4a2a-b69d-2ea5b6688dfc",
     "name": "Radio Samobor",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Samobor",
     "stream_url": "https://a.tunzilla.com/http://185.150.235.162:80/;",
     "homepage": "http://www.radiosamobor.hr/",
@@ -6711,7 +6608,17 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "locationNames": {
+      "hr": {
+        "city": "Samobor",
+        "state": "Zagrebačka županija"
+      },
+      "en": {
+        "city": "Samobor",
+        "state": "Zagreb"
+      }
+    }
   },
   {
     "slug": "radio-ibenik-ibenik-knin",
@@ -6890,7 +6797,7 @@
     "slug": "radio-stubica",
     "stationuuid": "d0ee079a-b106-4e37-98db-b9fb03f141f9",
     "name": "Radio Stubica",
-    "state": "City of Zagreb",
+    "state": "Krapina-Zagorje",
     "city": "Donja Stubica",
     "stream_url": "https://c8.hostingcentar.com/streams/radiostubica/",
     "homepage": "https://radio-stubica.hr/",
@@ -6915,17 +6822,17 @@
         "label": "Alternative",
         "url": "http://radiostubica.hc.hr:7006/stream",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ],
     "locationNames": {
       "hr": {
         "city": "Donja Stubica",
-        "state": "Zagrebačka županija"
+        "state": "Krapinsko-zagorska županija"
       },
       "en": {
         "city": "Donja Stubica",
-        "state": "City of Zagreb"
+        "state": "Krapina-Zagorje"
       }
     }
   },
@@ -6944,7 +6851,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 12,
     "lastcheckok": 1,
     "votes": 70,
@@ -6973,14 +6880,14 @@
         "label": "Default",
         "url": "http://161.53.122.184:8000/AAC128.aac",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       },
       {
         "id": "aac-128-2",
         "label": "Alternative",
         "url": "http://stream.radiostudent.hr/audio",
         "bitrate": 128,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -6998,8 +6905,8 @@
       "world music"
     ],
     "language": "croatian",
-    "bitrate": 96,
-    "codec": "AAC+",
+    "bitrate": 87,
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 2418,
@@ -7118,7 +7025,7 @@
     "slug": "radio-velika-gorica-zagreba-ka-upanija",
     "stationuuid": "d7a711c5-3bcd-4e21-8713-52d2e1d59b59",
     "name": "Radio Velika Gorica",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Velika Gorica",
     "stream_url": "https://s8.iqstreaming.com:2020/stream/rvg",
     "homepage": "https://rvg.hr/",
@@ -7155,7 +7062,7 @@
       },
       "en": {
         "city": "Velika Gorica",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     }
   },
@@ -7188,7 +7095,7 @@
     "slug": "radio-vrbovec-94-5-zagreba-ka-upanija",
     "stationuuid": "96236145-0601-11e8-ae97-52543be04c81",
     "name": "Radio Vrbovec 94.5",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Vrbovec",
     "stream_url": "https://c8.hostingcentar.com/proxy/vrbovec1/stream",
     "homepage": "https://radiovrbovec.hr/",
@@ -7216,7 +7123,7 @@
       },
       "en": {
         "city": "Vrbovec",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     },
     "nowplaying_url": "https://c8.hostingcentar.com/rpc/vrbovec1/streaminfo.get",
@@ -7227,7 +7134,7 @@
     "slug": "radio-zelina",
     "stationuuid": "2ef6c612-6306-4daa-b666-55d086ed0ca6",
     "name": "Radio Zelina",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Sveti Ivan Zelina",
     "stream_url": "https://ec2s.crolive.com.hr:1690/stream",
     "homepage": "https://radiozelina.hr/",
@@ -7254,7 +7161,7 @@
       },
       "en": {
         "city": "Sveti Ivan Zelina",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     }
   },
@@ -7275,7 +7182,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 387,
@@ -7560,7 +7467,7 @@
       "pop"
     ],
     "language": "croatian",
-    "bitrate": 128,
+    "bitrate": 320,
     "codec": "MP3",
     "clickcount": 1,
     "lastcheckok": 1,
@@ -7687,7 +7594,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 87,
@@ -7723,7 +7630,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 69,
@@ -7763,7 +7670,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 390,
@@ -7800,7 +7707,7 @@
     ],
     "language": null,
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 14,
     "lastcheckok": 1,
     "votes": 4360,
@@ -7974,7 +7881,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 218,
@@ -8010,7 +7917,7 @@
     ],
     "language": "croatian",
     "bitrate": 128,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 90,
@@ -8083,7 +7990,7 @@
     ],
     "language": "croatian",
     "bitrate": 96,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 44,
@@ -8113,7 +8020,7 @@
         "label": "Alternative",
         "url": "http://c5.hostingcentar.com:8061/;stream/1",
         "bitrate": 96,
-        "codec": "AAC+"
+        "codec": "AAC"
       }
     ]
   },
@@ -8201,7 +8108,7 @@
     "streams": [
       {
         "url": "http://radiocentar.hr:8585/stream.aac",
-        "bitrate": 61284,
+        "bitrate": 128,
         "codec": "MP3",
         "id": "mp3-128",
         "label": "Alternative",
@@ -8228,7 +8135,7 @@
     ],
     "language": "croatian",
     "bitrate": 64,
-    "codec": "AAC+",
+    "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
     "votes": 857,
@@ -8253,7 +8160,7 @@
       {
         "url": "http://s8.iqstreaming.com:8054/stream",
         "bitrate": 64,
-        "codec": "AAC+",
+        "codec": "AAC",
         "id": "aac-64-2",
         "label": "Alternative"
       }
@@ -8263,7 +8170,7 @@
     "slug": "zfm",
     "stationuuid": "38dba53f-b60a-4dac-bf3a-40c2f5878847",
     "name": "Radio Zaprešić ZFM",
-    "state": "City of Zagreb",
+    "state": "Zagreb",
     "city": "Zaprešić",
     "stream_url": "https://ec2s.crolive.com.hr:7015/stream",
     "homepage": "https://zfm.hr/",
@@ -8291,7 +8198,7 @@
       },
       "en": {
         "city": "Zaprešić",
-        "state": "City of Zagreb"
+        "state": "Zagreb"
       }
     }
   },
