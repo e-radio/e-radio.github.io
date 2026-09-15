@@ -1,0 +1,3695 @@
+{
+  "country": "se",
+  "language": "en",
+  "applied": true,
+  "source": "OpenStreetMap contributors, ODbL 1.0",
+  "attribution_url": "https://www.openstreetmap.org/copyright",
+  "records": [
+    {
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "slug": "90s-rewind",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "slug": "aftab",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "03130c0f-bf62-4fda-bb6a-c99781b28475",
+      "slug": "alt-edge-radio",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "681d2589-e135-46bd-a11a-272d8d13e8f8",
+      "slug": "american-truckers",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "slug": "back-to-the-80s",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "coordinates": [
+        59.3729609,
+        13.7234144
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "isolated_dwelling": "Bredviken",
+        "hamlet": "Kärne",
+        "town": "Skattkärr",
+        "municipality": "Karlstads kommun",
+        "county": "Värmland County",
+        "ISO3166-2-lvl4": "SE-S",
+        "postcode": "656 72",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Skattkärr",
+        "state": "Värmland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "12824d18-3891-402f-b7a9-b8d75bfe3b99",
+      "slug": "bandit-ballads",
+      "coordinates": [
+        59.35111568253323,
+        17.929687500000004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "57",
+        "road": "Gliavägen",
+        "suburb": "Bromma kyrka",
+        "city_district": "Bromma stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "168 58",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "40dfa430-7988-4b02-ae1b-ce5fe8b5aad3",
+      "slug": "bandit-classic-rock-national-sweden",
+      "coordinates": [
+        59.319738182261645,
+        18.127441406250004
+      ],
+      "before": {
+        "city": null,
+        "state": "National, Sweden"
+      },
+      "address": {
+        "leisure": "Biskopsuddens Marina",
+        "road": "Biskopsvägen",
+        "suburb": "Djurgården",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "115 21",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "National, Sweden"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "coordinates": [
+        59.33253275786533,
+        18.061523437500004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Bankomat",
+        "road": "Mäster Samuelsgatan",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "111 21",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "78563d75-79f2-4c67-a80d-291891e2fb88",
+      "slug": "bandit-metal",
+      "coordinates": [
+        57.715108641509296,
+        11.992435455322266
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Emerentias Backe",
+        "suburb": "Gårda",
+        "city_district": "Centrum",
+        "city": "Gothenburg",
+        "municipality": "Göteborgs Stad",
+        "county": "Västra Götaland County",
+        "ISO3166-2-lvl4": "SE-O",
+        "postcode": "416 64",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Gothenburg",
+        "state": "Västra Götaland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "69b90092-2a26-4ed3-acf3-2ca6b142be26",
+      "slug": "best-of-ericade-radio-stockholm",
+      "coordinates": [
+        59.327369257787545,
+        18.011226654052738
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "house_number": "9",
+        "road": "Scheffersgatan",
+        "suburb": "Marieberg",
+        "city_district": "Kungsholmens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "112 58",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a03d0d90-73ec-451d-bb7e-b698f9b3698e",
+      "slug": "blues",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
+      "slug": "bollywood-bangers",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
+      "slug": "classical",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "53ef6c63-7b27-4245-bf7c-420b16f5538a",
+      "slug": "country",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "817d37ef-474f-4072-bc48-8619eedafd97",
+      "slug": "dansbandskanalen",
+      "coordinates": [
+        55.85064987433714,
+        13.710937500000002
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "M 1083",
+        "hamlet": "Västervång",
+        "town": "Hörby",
+        "municipality": "Hörby kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "242 35",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Hörby",
+        "state": "Skåne county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "coordinates": [
+        55.8708,
+        12.8302
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "road": "Gamla Kyrkogatan",
+        "neighbourhood": "Citadellstaden",
+        "town": "Landskrona",
+        "municipality": "Landskrona kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "261 31",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Landskrona",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "coordinates": [
+        55.8708,
+        12.8302
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "road": "Gamla Kyrkogatan",
+        "neighbourhood": "Citadellstaden",
+        "town": "Landskrona",
+        "municipality": "Landskrona kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "261 31",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Landskrona",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e0e2a64e-3ec4-4da4-8aec-a4aa7b502163",
+      "slug": "disco-54",
+      "coordinates": [
+        59.32646464098633,
+        18.07633640584146
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Skeppsbrokajen",
+        "suburb": "Gamla stan",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "111 30",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "71f377fc-3c53-4881-a53d-2a3e25ff030f",
+      "slug": "dunken-fm",
+      "coordinates": [
+        55.37739390228786,
+        13.150634765625002
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Flygelgränd",
+        "neighbourhood": "Kattebäck",
+        "town": "Trelleborg",
+        "municipality": "Trelleborgs kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "231 43",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Trelleborg",
+        "state": "Skåne county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f81a5aa3-d7b5-4c12-85fa-436d081efc73",
+      "slug": "edm",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "slug": "epic-soundtracks-only",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
+      "slug": "faith-beats-radio",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e79af81b-db6d-4f60-9ce1-39ff9b5874ab",
+      "slug": "gamla-favoritter",
+      "coordinates": [
+        59.2771080105117,
+        18.039550781250004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Örbyleden",
+        "suburb": "Örby",
+        "city_district": "Enskede-Årsta-Vantörs stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "124 32",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "slug": "gen-x",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
+      "slug": "groove-revival-radio",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6778fd92-c72b-4be8-a9c6-2b753d207deb",
+      "slug": "guldkanalen-90-tal",
+      "coordinates": [
+        59.08044665021323,
+        15.908203125000002
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "D 582",
+        "hamlet": "Berga",
+        "town": "Vingåker",
+        "municipality": "Vingåkers kommun",
+        "county": "Södermanland County",
+        "ISO3166-2-lvl4": "SE-D",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Vingåker",
+        "state": "Södermanland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a6a09847-6e2e-4076-9b30-773023caf2e7",
+      "slug": "guldkanalen-60-tal-sk-ne",
+      "coordinates": [
+        58.53959476664049,
+        16.699218750000004
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "locality": "Uggelholmen",
+        "hamlet": "Ugglö",
+        "municipality": "Norrköpings kommun",
+        "county": "Östergötland County",
+        "ISO3166-2-lvl4": "SE-E",
+        "postcode": "603 85",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Norrköpings kommun",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e0fd9b05-f7f9-47ca-9d77-6f79dfcf006a",
+      "slug": "hari-rama-s-happy-eternal-mix",
+      "coordinates": [
+        15.597465861327027,
+        73.74109268188478
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Hilltop Market Road",
+        "neighbourhood": "Dehul Vaddo",
+        "suburb": "Anjuna",
+        "village": "Vagator",
+        "county": "Bardez",
+        "state_district": "North Goa",
+        "state": "Goa",
+        "ISO3166-2-lvl4": "IN-GA",
+        "postcode": "403509",
+        "country": "India",
+        "country_code": "in"
+      },
+      "status": "review",
+      "reason": "Coordinates resolve outside the selected country"
+    },
+    {
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "slug": "harmony-frequencies",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "0e575083-8721-446d-a95e-7cbee4acad84",
+      "slug": "hello-africa",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1067bc4c-fed3-459a-b0dd-045d68cc225e",
+      "slug": "hitcity",
+      "coordinates": [
+        55.87429544555874,
+        12.831567694372197
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "72",
+        "road": "Eriksgatan",
+        "neighbourhood": "Citadellstaden",
+        "suburb": "Karlslund",
+        "town": "Landskrona",
+        "municipality": "Landskrona kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "261 33",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "coordinates": [
+        55.874282203799176,
+        12.831585657847306
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "72",
+        "road": "Eriksgatan",
+        "neighbourhood": "Citadellstaden",
+        "suburb": "Karlslund",
+        "town": "Landskrona",
+        "municipality": "Landskrona kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "261 33",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "c48371b8-52d2-4eff-8a72-a7ab3fa7066b",
+      "slug": "hitmix90s",
+      "coordinates": [
+        59.32478310834112,
+        18.067016601562504
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Munkbron",
+        "suburb": "Gamla stan",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "111 28",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "coordinates": [
+        56.20453060605407,
+        12.5583815574646
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Bruksgatan",
+        "hamlet": "Måarp",
+        "town": "Höganäs",
+        "municipality": "Höganäs kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "263 31",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Höganäs",
+        "state": "Skåne county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
+      "slug": "house",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
+      "slug": "ivory-echoes",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "d906e09f-49da-469e-9937-5f5273fc9006",
+      "slug": "jazz",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
+      "slug": "kpop",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1ce736f3-5944-46b9-8143-81b54625b367",
+      "slug": "latin",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2f869fa1-9f35-4ab3-a417-e8cef6880f48",
+      "slug": "lugna-favoriter-stockholm",
+      "coordinates": [
+        59.29506419340261,
+        18.017578125000004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Drivhjulsvägen",
+        "industrial": "Västberga industriområde",
+        "suburb": "Västberga",
+        "city_district": "Hägersten-Älvsjö stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "126 30",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "slug": "mad-mix-beats",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
+      "slug": "mad-mix-curated",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
+      "slug": "magic-radio-malmoe",
+      "coordinates": [
+        55.58930827021694,
+        13.002319335937502
+      ],
+      "before": {
+        "city": null,
+        "state": "Malmoe"
+      },
+      "address": {
+        "tourism": "Hjärta",
+        "road": "Ruth Lundskogs gata",
+        "suburb": "Allmänna Sjukhuset",
+        "city_district": "Innerstaden",
+        "city": "Malmö",
+        "municipality": "Malmö kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "205 01",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Malmö",
+        "state": "Malmoe"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
+      "slug": "melancholy",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "53dac0bd-de56-447a-a42c-9f841af15e2e",
+      "slug": "metal-mayhem",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
+      "slug": "midnight-silk-eros",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "0772676d-9fe4-4945-b63f-3e88e5aeb374",
+      "slug": "mix-megapol-104-3-stockholm",
+      "coordinates": [
+        59.32715197400692,
+        18.015351891517643
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "house_number": "30",
+        "road": "Gjörwellsgatan",
+        "suburb": "Marieberg",
+        "city_district": "Kungsholmens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "112 58",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "5df76756-534f-4af9-879c-268dce9b9b80",
+      "slug": "mix-megapol-104-3-stockholm-5df76756",
+      "coordinates": [
+        59.32711694580528,
+        18.015349209308628
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "house_number": "30",
+        "road": "Gjörwellsgatan",
+        "suburb": "Marieberg",
+        "city_district": "Kungsholmens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "112 58",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3e5a08bf-57fc-420a-a543-2f7c6f7b6a06",
+      "slug": "mix-megapol-gbg",
+      "coordinates": [
+        57.712263293154386,
+        11.999816894531252
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Norra Gubberogatan",
+        "suburb": "Olskroken",
+        "city_district": "Centrum",
+        "city": "Gothenburg",
+        "municipality": "Göteborgs Stad",
+        "county": "Västra Götaland County",
+        "ISO3166-2-lvl4": "SE-O",
+        "postcode": "416 47",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Gothenburg",
+        "state": "Västra Götaland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f0f48ba7-b88c-471d-9153-f7a648f70653",
+      "slug": "p4-dalarna",
+      "coordinates": [
+        60.60251754383246,
+        15.636291503906252
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Strandvägen",
+        "neighbourhood": "Elsborg",
+        "city": "Falun",
+        "municipality": "Falu kommun",
+        "county": "Dalarna County",
+        "ISO3166-2-lvl4": "SE-W",
+        "postcode": "791 30",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Falun",
+        "state": "Dalarna county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "121367cf-f23c-4aef-a99e-f6608763a3c7",
+      "slug": "p4-rebro",
+      "coordinates": [
+        59.27233683384846,
+        15.216785720768414
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "16",
+        "road": "Engelbrektsgatan",
+        "suburb": "Eklunda",
+        "city": "Örebro",
+        "municipality": "Örebro kommun",
+        "county": "Örebro County",
+        "ISO3166-2-lvl4": "SE-T",
+        "postcode": "702 12",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Örebro",
+        "state": "Örebro county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a6fb6ae2-b821-4902-8dce-5a77fbe27488",
+      "slug": "p4-sterg-tland",
+      "coordinates": [
+        58.5925929169881,
+        16.16775512695313
+      ],
+      "before": {
+        "city": null,
+        "state": "Östergötland"
+      },
+      "address": {
+        "road": "Krematorievägen",
+        "suburb": "Marielund",
+        "city": "Norrköping",
+        "municipality": "Norrköpings kommun",
+        "county": "Östergötland County",
+        "ISO3166-2-lvl4": "SE-E",
+        "postcode": "602 18",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Norrköping",
+        "state": "Östergötland"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e3c2d110-90f6-41e7-a6b8-8f92d646a007",
+      "slug": "p4-v-rmland",
+      "coordinates": [
+        59.70323001263191,
+        17.226562500000004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "isolated_dwelling": "Kraftstugan",
+        "hamlet": "Viggeby",
+        "municipality": "Enköpings kommun",
+        "county": "Uppsala County",
+        "ISO3166-2-lvl4": "SE-C",
+        "postcode": "749 60",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Enköpings kommun",
+        "state": "Uppsala county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "39a437bb-aa17-420b-a748-41b35312d1de",
+      "slug": "p4-v-sterbotten",
+      "coordinates": [
+        63.83565418579919,
+        20.26045021054548
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Paradvägen",
+        "city_district": "Regementet",
+        "city": "Umeå",
+        "municipality": "Umeå kommun",
+        "county": "Västerbotten County",
+        "ISO3166-2-lvl4": "SE-AC",
+        "postcode": "903 47",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Umeå",
+        "state": "Västerbotten county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "73b5026f-40f2-49e8-846d-4d6f77e20d18",
+      "slug": "p4-v-stmanland",
+      "coordinates": [
+        59.62304746766944,
+        16.545309801469436
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "19",
+        "road": "Lärlingsgatan",
+        "suburb": "Kristiansborg",
+        "city": "Västerås",
+        "municipality": "Västerås kommun",
+        "county": "Västmanland County",
+        "ISO3166-2-lvl4": "SE-U",
+        "postcode": "722 19",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Västerås",
+        "state": "Västmanland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "slug": "party-247",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ccfd647b-93da-4275-aa8f-0c39f56feac5",
+      "slug": "pop-radio-stockholm",
+      "coordinates": [
+        59.256755654679466,
+        18.08006286621094
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Fagersjövägen",
+        "neighbourhood": "Tobaksområdet",
+        "suburb": "Hökarängen",
+        "city_district": "Farsta stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "123 57",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "5cc4f5dc-9693-46c2-91cc-e2f8eb0f215d",
+      "slug": "popburst",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "4b089827-c6e2-44d7-8689-00c47c9d8650",
+      "slug": "power-club",
+      "coordinates": [
+        59.32282130062685,
+        18.063884227633544
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Södra Riddarholmshamnen",
+        "suburb": "Riddarholmen",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "118 20",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
+      "slug": "punk-classics",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
+      "slug": "radio-163",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7a275e1c-6730-4048-a064-a7cb3c9dabb8",
+      "slug": "radio-567",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "slug": "radio-789",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "coordinates": [
+        59.12801363061055,
+        15.135005414485931
+      ],
+      "before": {
+        "city": null,
+        "state": "Närke"
+      },
+      "address": {
+        "road": "Kvarngatan",
+        "neighbourhood": "Fylsta",
+        "town": "Kumla",
+        "municipality": "Kumla kommun",
+        "county": "Örebro County",
+        "ISO3166-2-lvl4": "SE-T",
+        "postcode": "692 34",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Kumla",
+        "state": "Närke"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6cdc74be-e0f2-4e85-b5ee-f01a42d56b20",
+      "slug": "radio-aftonbladet",
+      "coordinates": [
+        59.27017904775786,
+        18.110961914062504
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Blomsterbönsvägen",
+        "allotments": "Skarpnäcks koloniområde",
+        "suburb": "Skarpnäcks gård",
+        "city_district": "Skarpnäcks stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "128 39",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7525f5fd-393c-46f4-a0ba-e02856a1873c",
+      "slug": "radio-faceit-fm-stockholm",
+      "coordinates": [
+        59.26324867513425,
+        18.138427734375004
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "road": "Flygfältsgatan",
+        "suburb": "Orhem",
+        "city_district": "Skarpnäcks stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "128 32",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "cda260eb-ede7-4417-97f6-55dea02abd80",
+      "slug": "radio-haninge",
+      "coordinates": [
+        59.16740057079515,
+        18.151130676269535
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Dalarövägen",
+        "suburb": "Brandbergen",
+        "town": "Handen",
+        "municipality": "Haninge kommun",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "136 46",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Handen",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "06a92160-00e0-4546-ac0d-44c28f80da6c",
+      "slug": "radio-nostalgi",
+      "coordinates": [
+        62.62838236760478,
+        14.721973980095054
+      ],
+      "before": {
+        "city": null,
+        "state": "-"
+      },
+      "address": {
+        "municipality": "Bergs kommun",
+        "county": "Jämtland County",
+        "ISO3166-2-lvl4": "SE-Z",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Bergs kommun",
+        "state": "-"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
+      "slug": "radio-svea",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "67d48eb9-c3b0-459d-b494-ca1ebb5cb766",
+      "slug": "radio-treby",
+      "coordinates": [
+        58.254278806666335,
+        12.962493896484377
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Turbingatan",
+        "hamlet": "Håkan-Månsgården",
+        "city_district": "Önums distrikt",
+        "town": "Vara",
+        "municipality": "Vara kommun",
+        "county": "Västra Götaland County",
+        "ISO3166-2-lvl4": "SE-O",
+        "postcode": "534 31",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Vara",
+        "state": "Västra Götaland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
+      "slug": "redback-radio-select-state",
+      "coordinates": [
+        59.91563372660059,
+        16.623001098632816
+      ],
+      "before": {
+        "city": null,
+        "state": "Select state"
+      },
+      "address": {
+        "road": "Uppsalavägen",
+        "neighbourhood": "Fridhem",
+        "hamlet": "Norrby",
+        "town": "Sala",
+        "municipality": "Sala kommun",
+        "county": "Västmanland County",
+        "ISO3166-2-lvl4": "SE-U",
+        "postcode": "733 21",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Sala",
+        "state": "Select state"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "slug": "reggae",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "slug": "relax-meditation",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "coordinates": [
+        55.859538294628,
+        12.874603271484377
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "road": "Axeltoftavägen",
+        "hamlet": "Axeltofta",
+        "town": "Landskrona",
+        "municipality": "Landskrona kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "261 51",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Landskrona",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "d1620588-c6f3-4e40-a828-a0fd3f945c07",
+      "slug": "rix-fm-stockholm",
+      "coordinates": [
+        59.30991043531771,
+        18.059155046939853
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "amenity": "Heat",
+        "road": "Ringvägen",
+        "suburb": "Södermalm",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "118 67",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a72d9bd0-86b9-4450-8958-c53688e1e956",
+      "slug": "rix-fm-106-7-stockholm",
+      "coordinates": [
+        59.30991317328533,
+        18.059171140193943
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "amenity": "Heat",
+        "road": "Ringvägen",
+        "suburb": "Södermalm",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "118 67",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3f589db8-fb66-4d2a-b4d9-03a8bece9b7e",
+      "slug": "rix-fm-fresh",
+      "coordinates": [
+        59.319738182261645,
+        18.003718245658586
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "leisure": "Gröndals brygga",
+        "road": "Sjöbjörnsvägen",
+        "suburb": "Gröndal",
+        "city_district": "Hägersten-Älvsjö stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "117 67",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "202d6d31-699e-476d-b392-99e238704df8",
+      "slug": "rock",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9ae67291-b1f6-4541-869b-6445b6d07269",
+      "slug": "rocket-fm-rock-home-of-stockholm",
+      "coordinates": [
+        59.212019934942774,
+        18.061523437500004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Axnäsvägen",
+        "village": "Vidja",
+        "municipality": "Huddinge kommun",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "123 52",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Vidja",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "949f9dd3-36d0-48c3-9f4f-670b43b4c46b",
+      "slug": "scenesat",
+      "coordinates": [
+        59.28029807597087,
+        17.73115123376001
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "5",
+        "road": "Ekerö Prästgård",
+        "neighbourhood": "Nibbla",
+        "hamlet": "Liljedal",
+        "village": "Ekerö sommarstad",
+        "town": "Ekerö kommun",
+        "municipality": "Järfälla kommun",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "178 53",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Ekerö kommun",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "coordinates": [
+        59.33874354052215,
+        18.03345874160518
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "4",
+        "road": "Robert Almströmsgatan",
+        "neighbourhood": "Rörstrand",
+        "suburb": "Vasastaden",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "113 40",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "5003028b-5943-4cea-820b-5b8a4a8fa9b6",
+      "slug": "sr-din-gata-sk-ne",
+      "coordinates": [
+        55.576151587486464,
+        13.041538032990903
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "house_number": "8B",
+        "road": "Vitoxelgatan",
+        "suburb": "Hindby",
+        "city_district": "Söder",
+        "city": "Malmö",
+        "municipality": "Malmö kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "213 63",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Malmö",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "bfb5ad64-4a32-45cb-ae1d-a4b4d9415470",
+      "slug": "sr-p1",
+      "coordinates": [
+        59.270179047757885,
+        18.078002929687504
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "97",
+        "road": "Hammerstavägen",
+        "suburb": "Gubbängen",
+        "city_district": "Farsta stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "122 60",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "0826eaef-59e4-4761-b3e8-31670421a753",
+      "slug": "sr-p2-stockholm",
+      "coordinates": [
+        59.334310730035355,
+        18.102425543302125
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "amenity": "Artillerikyrkogården",
+        "road": "Dag Hammarskjölds Väg",
+        "suburb": "Östermalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "115 27",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "38ecf77e-b929-458c-ad32-564dcab453c9",
+      "slug": "sr-p2",
+      "coordinates": [
+        59.32758544549431,
+        18.050537109375004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Samuel Owens Gata",
+        "suburb": "Kungsholmen",
+        "city_district": "Kungsholmens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "104 22",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "25a9a10c-7de5-4f5e-8989-e128c3f4b94e",
+      "slug": "sr-p4-j-nk-ping",
+      "coordinates": [
+        57.77886823046075,
+        14.16292190551758
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gjuterigatan",
+        "suburb": "Väster",
+        "city": "Jönköping",
+        "municipality": "Jönköpings kommun",
+        "county": "Jönköping County",
+        "ISO3166-2-lvl4": "SE-F",
+        "postcode": "553 18",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Jönköping",
+        "state": "Jönköping county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7800c880-6618-49ac-a6f8-5cac3498fe04",
+      "slug": "sr-p4-kronoberg",
+      "coordinates": [
+        56.878398829844606,
+        14.798583984375002
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Sandgärdsgatan",
+        "suburb": "Centrum",
+        "city": "Växjö",
+        "municipality": "Växjö kommun",
+        "county": "Kronoberg County",
+        "ISO3166-2-lvl4": "SE-G",
+        "postcode": "352 29",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Växjö",
+        "state": "Kronoberg county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "613dbc09-c205-4285-bb0f-7e71a67015dd",
+      "slug": "sr-p4-malm-hus-sk-ne",
+      "coordinates": [
+        55.602699351267646,
+        13.009529113769531
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "road": "Brandmästaregatan",
+        "suburb": "Rörsjöstaden",
+        "city_district": "Norr",
+        "city": "Malmö",
+        "municipality": "Malmö kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "202 15",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Malmö",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "slug": "sr-p4-radio-malm-hus-scania",
+      "coordinates": [
+        55.59604013865638,
+        13.00506591796875
+      ],
+      "before": {
+        "city": null,
+        "state": "Scania"
+      },
+      "address": {
+        "house_number": "11A",
+        "road": "Spångatan",
+        "suburb": "Rådmansvången",
+        "city_district": "Norr",
+        "city": "Malmö",
+        "municipality": "Malmö kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "211 60",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Malmö",
+        "state": "Scania"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9ccab272-2072-4baa-baad-52170ecd0c11",
+      "slug": "sr4-sthlm",
+      "coordinates": [
+        59.31392186908167,
+        18.028564453125004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "3",
+        "road": "Liljeholmsstranden",
+        "suburb": "Liljeholmen",
+        "city_district": "Hägersten-Älvsjö stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "117 39",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ce877b75-fbb5-4b67-a39c-707e59ab38cc",
+      "slug": "star-fm-107-1-stockholm",
+      "coordinates": [
+        59.30990769734984,
+        18.059149682521824
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "amenity": "Heat",
+        "road": "Ringvägen",
+        "suburb": "Södermalm",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "118 67",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "b30f805d-8402-4555-b182-dcf5fa0820da",
+      "slug": "star-fm-107-1-stockholm-b30f805d",
+      "coordinates": [
+        59.30989674547619,
+        18.059165775775913
+      ],
+      "before": {
+        "city": null,
+        "state": "Stockholm"
+      },
+      "address": {
+        "amenity": "Heat",
+        "road": "Ringvägen",
+        "suburb": "Södermalm",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "118 67",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f075cd6b-dc5a-4268-bc81-dc873da77bee",
+      "slug": "sveiges-radio-p4-kristianstad-sk-ne",
+      "coordinates": [
+        56.029411896296864,
+        14.157729148864748
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "amenity": "Oralcare",
+        "house_number": "9",
+        "road": "Döbelnsgatan",
+        "retail": "Kristianstad City",
+        "town": "Kristianstad",
+        "municipality": "Kristianstads kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "291 31",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Kristianstad",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "33aa931b-0e2f-49b9-b8df-8d98c04a286b",
+      "slug": "sveiges-radio-p4-malm-hus-sk-ne",
+      "coordinates": [
+        55.59213356854291,
+        13.013992309570314
+      ],
+      "before": {
+        "city": null,
+        "state": "Skåne"
+      },
+      "address": {
+        "road": "Kristianstadsgatan",
+        "suburb": "Möllevången",
+        "city_district": "Innerstaden",
+        "city": "Malmö",
+        "municipality": "Malmö kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "214 38",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Malmö",
+        "state": "Skåne"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "coordinates": [
+        59.33482591295532,
+        18.101949691772464
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Oxenstiernsgatan",
+        "suburb": "Östermalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "115 27",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2",
+      "coordinates": [
+        59.33422803164917,
+        18.102459311485298
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Artillerikyrkogården",
+        "road": "Dag Hammarskjölds Väg",
+        "suburb": "Östermalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "115 27",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "960c4e01-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3",
+      "coordinates": [
+        59.32404745440907,
+        18.07113647460938
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "24",
+        "road": "Tyska Brinken",
+        "suburb": "Gamla stan",
+        "city_district": "Södermalms stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "111 29",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "a20f86e9-ec1b-425a-9ebe-831720249f74",
+      "slug": "sveriges-radio-p4-blekinge",
+      "coordinates": [
+        56.267551369294225,
+        15.272455215454103
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "aeroway": "Ronneby Airport",
+        "road": "Bygdevägen",
+        "hamlet": "Hasselstad",
+        "municipality": "Ronneby kommun",
+        "county": "Blekinge County",
+        "ISO3166-2-lvl4": "SE-K",
+        "postcode": "372 52",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Ronneby kommun",
+        "state": "Blekinge county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1576f6f2-8949-4106-a870-d6a2c11c99f4",
+      "slug": "sveriges-radio-p4-halland",
+      "coordinates": [
+        56.67282942172565,
+        12.85606384277344
+      ],
+      "before": {
+        "city": null,
+        "state": "Halland"
+      },
+      "address": {
+        "road": "Rådhusgatan",
+        "suburb": "Östra Förstaden",
+        "city": "Halmstad",
+        "municipality": "Halmstads kommun",
+        "county": "Halland County",
+        "ISO3166-2-lvl4": "SE-N",
+        "postcode": "302 42",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Halmstad",
+        "state": "Halland"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "850aedd1-5099-4553-81cc-7f24704cb3e7",
+      "slug": "sveriges-radio-p4-j-mtland",
+      "coordinates": [
+        63.153393928970736,
+        14.692668914794924
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "building": "Sveriges Radio",
+        "house_number": "7 B",
+        "road": "Lingonvägen",
+        "suburb": "Odensala",
+        "city": "Östersund",
+        "municipality": "Östersunds kommun",
+        "county": "Jämtland County",
+        "ISO3166-2-lvl4": "SE-Z",
+        "postcode": "831 62",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Östersund",
+        "state": "Jämtland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "c51dbaad-5f7a-4027-8600-7b7c620023d8",
+      "slug": "sveriges-radio-p4-v-rmland",
+      "coordinates": [
+        59.3757495214906,
+        13.52393209877003
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Hammaröleden",
+        "quarter": "Hagaborg",
+        "suburb": "Tormestad",
+        "city": "Karlstad",
+        "municipality": "Karlstads kommun",
+        "county": "Värmland County",
+        "ISO3166-2-lvl4": "SE-S",
+        "postcode": "652 22",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Karlstad",
+        "state": "Värmland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "10398e96-9329-4763-aada-543d35b56832",
+      "slug": "sveriges-radio-p4-v-stmanland",
+      "coordinates": [
+        59.61126278503581,
+        16.554383789094683
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "2F",
+        "road": "Stora gatan",
+        "suburb": "Östermalm",
+        "city": "Västerås",
+        "municipality": "Västerås kommun",
+        "county": "Västmanland County",
+        "ISO3166-2-lvl4": "SE-U",
+        "postcode": "722 09",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Västerås",
+        "state": "Västmanland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2151bfe6-6792-4cbe-8c7c-2d9fe54fdbc0",
+      "slug": "sveriges-radio-p4-dalarna",
+      "coordinates": [
+        60.82135752076436,
+        14.963378906250002
+      ],
+      "before": {
+        "city": null,
+        "state": "Dalarna"
+      },
+      "address": {
+        "village": "Tällberg",
+        "municipality": "Leksands kommun",
+        "county": "Dalarna County",
+        "ISO3166-2-lvl4": "SE-W",
+        "postcode": "793 94",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Tällberg",
+        "state": "Dalarna"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "6f295dab-138c-45a5-b06f-d81e4643d05e",
+      "slug": "sveriges-radio-p4-g-vleborg",
+      "coordinates": [
+        60.436626408196354,
+        16.87088012695313
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Ysjövägen",
+        "municipality": "Sandvikens kommun",
+        "county": "Gävleborg County",
+        "ISO3166-2-lvl4": "SE-X",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Sandvikens kommun",
+        "state": "Gävleborg county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "e63482bc-f704-41ec-8890-67ece72578d2",
+      "slug": "sveriges-radio-p4-g-vleborg-e63482bc",
+      "coordinates": [
+        60.66842500859742,
+        17.0838930237189
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "E 16;56;68",
+        "hamlet": "Backa",
+        "municipality": "Gävle kommun",
+        "county": "Gävleborg County",
+        "ISO3166-2-lvl4": "SE-X",
+        "postcode": "806 28",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Gävle kommun",
+        "state": "Gävleborg county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "003dea75-02eb-40c2-8a92-5150a709b74d",
+      "slug": "sveriges-radio-p4-g-teborg-003dea75",
+      "coordinates": [
+        57.71398474622874,
+        11.985883140228808
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Kruthusgatan",
+        "suburb": "Gullbergsvass",
+        "city_district": "Centrum",
+        "city": "Gothenburg",
+        "municipality": "Göteborgs Stad",
+        "county": "Västra Götaland County",
+        "ISO3166-2-lvl4": "SE-O",
+        "postcode": "405 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Gothenburg",
+        "state": "Västra Götaland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2d109f2c-222b-4c48-82be-787e5d695662",
+      "slug": "sveriges-radio-p4-gotland",
+      "coordinates": [
+        57.63352941160315,
+        18.30036287388413
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "building": "Sveriges Radio Gotland",
+        "house_number": "28",
+        "road": "Östra Hansegatan",
+        "suburb": "Furulund",
+        "city": "Visby",
+        "municipality": "Gotland Municipality",
+        "county": "Gotland County",
+        "ISO3166-2-lvl4": "SE-I",
+        "postcode": "621 45",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Visby",
+        "state": "Gotland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "79d17f42-620e-437d-b7e6-ed1c1d26c670",
+      "slug": "sveriges-radio-p4-halland-79d17f42",
+      "coordinates": [
+        56.86928989111271,
+        12.694702148437502
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "hamlet": "Asige",
+        "village": "Slöinge",
+        "municipality": "Falkenbergs kommun",
+        "county": "Halland County",
+        "ISO3166-2-lvl4": "SE-N",
+        "postcode": "311 68",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Slöinge",
+        "state": "Halland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3a901003-189a-4a40-a754-401b56a131ee",
+      "slug": "sveriges-radio-p4-malm-hus",
+      "coordinates": [
+        55.58574301126419,
+        13.017425537109377
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Sofielundsskolan",
+        "road": "Lantmannagatan",
+        "suburb": "Norra Sofielund",
+        "city_district": "Innerstaden",
+        "city": "Malmö",
+        "municipality": "Malmö kommun",
+        "county": "Skåne County",
+        "ISO3166-2-lvl4": "SE-M",
+        "postcode": "214 43",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "eb7aca36-7206-4367-823f-71c1dd7e104f",
+      "slug": "sveriges-radio-p4-skaraborg",
+      "coordinates": [
+        58.39194242011395,
+        13.838685750961304
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "2",
+        "road": "Egnells väg",
+        "neighbourhood": "Västermalm",
+        "town": "Skövde",
+        "municipality": "Skövde kommun",
+        "county": "Västra Götaland County",
+        "ISO3166-2-lvl4": "SE-O",
+        "postcode": "541 42",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Skövde",
+        "state": "Västra Götaland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "ac551e97-29fe-4eb2-979f-7438ad647d15",
+      "slug": "sveriges-radio-p4-stockholm",
+      "coordinates": [
+        59.345771564641424,
+        18.095956390161508
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "amenity": "Erna's",
+        "road": "Kavalleristigen",
+        "neighbourhood": "Gärdeshöjden",
+        "suburb": "Ladugårdsgärdet",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "115 35",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9e158282-94f5-4577-a551-58bcca2d9602",
+      "slug": "sveriges-radio-p4-uppland",
+      "coordinates": [
+        59.85833343535416,
+        17.63442993164063
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "4",
+        "road": "Domkyrkoplan",
+        "quarter": "Främre Luthagen",
+        "suburb": "Fjärdingen",
+        "city": "Uppsala",
+        "municipality": "Uppsala kommun",
+        "county": "Uppsala County",
+        "ISO3166-2-lvl4": "SE-C",
+        "postcode": "753 10",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Uppsala",
+        "state": "Uppsala county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "9e1e37f2-ae49-4497-ba91-3dccaf2bd85f",
+      "slug": "sveriges-radio-p4-uppland-9e1e37f2",
+      "coordinates": [
+        59.75953050005019,
+        17.731933593750004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "244",
+        "locality": "Ekeby Solbacken",
+        "town": "Knivsta",
+        "municipality": "Knivsta kommun",
+        "county": "Uppsala County",
+        "ISO3166-2-lvl4": "SE-C",
+        "postcode": "741 92",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Knivsta",
+        "state": "Uppsala county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "296c9a72-28ad-48f5-85ac-af6eb47acc46",
+      "slug": "sveriges-radio-p4-uppland-aac",
+      "coordinates": [
+        59.85244560769117,
+        17.649536132812504
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "house_number": "9",
+        "road": "Muningatan",
+        "neighbourhood": "Industristaden",
+        "suburb": "Kungsängen",
+        "city": "Uppsala",
+        "municipality": "Uppsala kommun",
+        "county": "Uppsala County",
+        "ISO3166-2-lvl4": "SE-C",
+        "postcode": "753 08",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Uppsala",
+        "state": "Uppsala county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "coordinates": [
+        58.5894751343749,
+        16.1815819144249
+      ],
+      "before": {
+        "city": null,
+        "state": "Select One"
+      },
+      "address": {
+        "house_number": "13",
+        "road": "Västgötegatan",
+        "residential": "Mjölnaren",
+        "suburb": "Nordantill",
+        "city": "Norrköping",
+        "municipality": "Norrköpings kommun",
+        "county": "Östergötland County",
+        "ISO3166-2-lvl4": "SE-E",
+        "postcode": "602 21",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Norrköping",
+        "state": "Select One"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "slug": "swedish-truckers",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "slug": "tjenamors-radio",
+      "coordinates": [
+        59.62386341680634,
+        16.603984556992316
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Knotavägen",
+        "suburb": "Brandthovda",
+        "city": "Västerås",
+        "municipality": "Västerås kommun",
+        "county": "Västmanland County",
+        "ISO3166-2-lvl4": "SE-U",
+        "postcode": "723 52",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Västerås",
+        "state": "Västmanland county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "3560701c-22a9-4955-a667-fc979b066863",
+      "slug": "urban-flow",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "f522cf8a-9513-4975-974e-4335aac37cf3",
+      "slug": "vinyl-fm",
+      "coordinates": [
+        59.153403092050375,
+        18.061523437500004
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Öranvägen",
+        "municipality": "Huddinge kommun",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "137 36",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Huddinge kommun",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "376cb244-4116-4ba4-a525-c6cc8283fc9b",
+      "slug": "wolf-fm-dalarna",
+      "coordinates": [
+        60.607261183598645,
+        15.627564126509764
+      ],
+      "before": {
+        "city": null,
+        "state": "Dalarna"
+      },
+      "address": {
+        "road": "Östra Hamngatan",
+        "neighbourhood": "Gamla Herrgården",
+        "city": "Falun",
+        "municipality": "Falu kommun",
+        "county": "Dalarna County",
+        "ISO3166-2-lvl4": "SE-W",
+        "postcode": "791 60",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Falun",
+        "state": "Dalarna"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "slug": "workout",
+      "coordinates": [
+        59.3293,
+        18.0686
+      ],
+      "before": {
+        "city": null,
+        "state": null
+      },
+      "address": {
+        "road": "Gustav Adolfs Torg",
+        "neighbourhood": "Klara",
+        "suburb": "Norrmalm",
+        "city_district": "Norra innerstadens stadsdelsområde",
+        "city": "Stockholm",
+        "municipality": "Stockholm Municipality",
+        "county": "Stockholm County",
+        "ISO3166-2-lvl4": "SE-AB",
+        "postcode": "101 23",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      },
+      "status": "changed"
+    },
+    {
+      "stationuuid": "052b8916-ad5d-4ae4-8cb5-1c137e10e4ca",
+      "slug": "zergan-radyo-47an-sweden",
+      "coordinates": [
+        59.27384173387862,
+        15.207234621047975
+      ],
+      "before": {
+        "city": null,
+        "state": "Sweden"
+      },
+      "address": {
+        "road": "Östra Bangatan",
+        "suburb": "Holmen",
+        "city": "Örebro",
+        "municipality": "Örebro kommun",
+        "county": "Örebro County",
+        "ISO3166-2-lvl4": "SE-T",
+        "postcode": "703 54",
+        "country": "Sweden",
+        "country_code": "se"
+      },
+      "after": {
+        "city": "Örebro",
+        "state": "Sweden"
+      },
+      "status": "changed"
+    }
+  ]
+}

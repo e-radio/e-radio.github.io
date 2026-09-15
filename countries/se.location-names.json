@@ -1,0 +1,199 @@
+{
+  "source": "https://www.scb.se/en/finding-statistics/regional-statistics/regional-divisions/counties-and-municipalities/counties-and-municipalities-in-numerical-order/",
+  "englishNamesSource": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__AA__AA0003__AA0003E/IntGr3LanKONS/",
+  "verifiedOn": "2026-09-15",
+  "notes": "County codes and Swedish names follow Statistics Sweden's 2026 list; English names follow its English database region labels. Bare names and capitalized County variants are application aliases, not additional official names. Applies to state fields only; cities, historical provinces, and ambiguous placeholders must be resolved separately.",
+  "counties": [
+    {
+      "code": "01",
+      "sv": "Stockholms län",
+      "en": "Stockholm county"
+    },
+    {
+      "code": "03",
+      "sv": "Uppsala län",
+      "en": "Uppsala county"
+    },
+    {
+      "code": "04",
+      "sv": "Södermanlands län",
+      "en": "Södermanland county"
+    },
+    {
+      "code": "05",
+      "sv": "Östergötlands län",
+      "en": "Östergötland county"
+    },
+    {
+      "code": "06",
+      "sv": "Jönköpings län",
+      "en": "Jönköping county"
+    },
+    {
+      "code": "07",
+      "sv": "Kronobergs län",
+      "en": "Kronoberg county"
+    },
+    {
+      "code": "08",
+      "sv": "Kalmar län",
+      "en": "Kalmar county"
+    },
+    {
+      "code": "09",
+      "sv": "Gotlands län",
+      "en": "Gotland county"
+    },
+    {
+      "code": "10",
+      "sv": "Blekinge län",
+      "en": "Blekinge county"
+    },
+    {
+      "code": "12",
+      "sv": "Skåne län",
+      "en": "Skåne county"
+    },
+    {
+      "code": "13",
+      "sv": "Hallands län",
+      "en": "Halland county"
+    },
+    {
+      "code": "14",
+      "sv": "Västra Götalands län",
+      "en": "Västra Götaland county"
+    },
+    {
+      "code": "17",
+      "sv": "Värmlands län",
+      "en": "Värmland county"
+    },
+    {
+      "code": "18",
+      "sv": "Örebro län",
+      "en": "Örebro county"
+    },
+    {
+      "code": "19",
+      "sv": "Västmanlands län",
+      "en": "Västmanland county"
+    },
+    {
+      "code": "20",
+      "sv": "Dalarnas län",
+      "en": "Dalarna county"
+    },
+    {
+      "code": "21",
+      "sv": "Gävleborgs län",
+      "en": "Gävleborg county"
+    },
+    {
+      "code": "22",
+      "sv": "Västernorrlands län",
+      "en": "Västernorrland county"
+    },
+    {
+      "code": "23",
+      "sv": "Jämtlands län",
+      "en": "Jämtland county"
+    },
+    {
+      "code": "24",
+      "sv": "Västerbottens län",
+      "en": "Västerbotten county"
+    },
+    {
+      "code": "25",
+      "sv": "Norrbottens län",
+      "en": "Norrbotten county"
+    }
+  ],
+  "stateNames": {
+    "Stockholms län": "Stockholm county",
+    "Stockholm": "Stockholm county",
+    "Stockholm county": "Stockholm county",
+    "Stockholm County": "Stockholm county",
+    "Uppsala län": "Uppsala county",
+    "Uppsala": "Uppsala county",
+    "Uppsala county": "Uppsala county",
+    "Uppsala County": "Uppsala county",
+    "Södermanlands län": "Södermanland county",
+    "Södermanland": "Södermanland county",
+    "Södermanland county": "Södermanland county",
+    "Södermanland County": "Södermanland county",
+    "Östergötlands län": "Östergötland county",
+    "Östergötland": "Östergötland county",
+    "Östergötland county": "Östergötland county",
+    "Östergötland County": "Östergötland county",
+    "Jönköpings län": "Jönköping county",
+    "Jönköping": "Jönköping county",
+    "Jönköping county": "Jönköping county",
+    "Jönköping County": "Jönköping county",
+    "Kronobergs län": "Kronoberg county",
+    "Kronoberg": "Kronoberg county",
+    "Kronoberg county": "Kronoberg county",
+    "Kronoberg County": "Kronoberg county",
+    "Kalmar län": "Kalmar county",
+    "Kalmar": "Kalmar county",
+    "Kalmar county": "Kalmar county",
+    "Kalmar County": "Kalmar county",
+    "Gotlands län": "Gotland county",
+    "Gotland": "Gotland county",
+    "Gotland county": "Gotland county",
+    "Gotland County": "Gotland county",
+    "Blekinge län": "Blekinge county",
+    "Blekinge": "Blekinge county",
+    "Blekinge county": "Blekinge county",
+    "Blekinge County": "Blekinge county",
+    "Skåne län": "Skåne county",
+    "Skåne": "Skåne county",
+    "Skåne county": "Skåne county",
+    "Skåne County": "Skåne county",
+    "Hallands län": "Halland county",
+    "Halland": "Halland county",
+    "Halland county": "Halland county",
+    "Halland County": "Halland county",
+    "Västra Götalands län": "Västra Götaland county",
+    "Västra Götaland": "Västra Götaland county",
+    "Västra Götaland county": "Västra Götaland county",
+    "Västra Götaland County": "Västra Götaland county",
+    "Värmlands län": "Värmland county",
+    "Värmland": "Värmland county",
+    "Värmland county": "Värmland county",
+    "Värmland County": "Värmland county",
+    "Örebro län": "Örebro county",
+    "Örebro": "Örebro county",
+    "Örebro county": "Örebro county",
+    "Örebro County": "Örebro county",
+    "Västmanlands län": "Västmanland county",
+    "Västmanland": "Västmanland county",
+    "Västmanland county": "Västmanland county",
+    "Västmanland County": "Västmanland county",
+    "Dalarnas län": "Dalarna county",
+    "Dalarna": "Dalarna county",
+    "Dalarna county": "Dalarna county",
+    "Dalarna County": "Dalarna county",
+    "Gävleborgs län": "Gävleborg county",
+    "Gävleborg": "Gävleborg county",
+    "Gävleborg county": "Gävleborg county",
+    "Gävleborg County": "Gävleborg county",
+    "Västernorrlands län": "Västernorrland county",
+    "Västernorrland": "Västernorrland county",
+    "Västernorrland county": "Västernorrland county",
+    "Västernorrland County": "Västernorrland county",
+    "Jämtlands län": "Jämtland county",
+    "Jämtland": "Jämtland county",
+    "Jämtland county": "Jämtland county",
+    "Jämtland County": "Jämtland county",
+    "Västerbottens län": "Västerbotten county",
+    "Västerbotten": "Västerbotten county",
+    "Västerbotten county": "Västerbotten county",
+    "Västerbotten County": "Västerbotten county",
+    "Norrbottens län": "Norrbotten county",
+    "Norrbotten": "Norrbotten county",
+    "Norrbotten county": "Norrbotten county",
+    "Norrbotten County": "Norrbotten county"
+  }
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "/stations/sveriges-radio-p1-07c6d96f/": "/stations/sveriges-radio-p1/",
+  "/stations/sveriges-radio-p1-national-sweden/": "/stations/sveriges-radio-p1/",
+  "/stations/sveriges-radio-p1-418fc299/": "/stations/sveriges-radio-p1/",
+  "/stations/sveriges-radio-p1-192kbps/": "/stations/sveriges-radio-p1/",
+  "/stations/sveriges-radio-p2-697e5012/": "/stations/sveriges-radio-p2/",
+  "/stations/sveriges-radio-p2-national-sweden/": "/stations/sveriges-radio-p2/",
+  "/stations/radio-rivendell-9197541c/": "/stations/radio-rivendell/",
+  "/stations/bandit-metal-a9fc150a/": "/stations/bandit-metal/",
+  "/stations/bandit-rock-168e0796/": "/stations/bandit-rock/",
+  "/stations/country-rocks-radio-sk-ne/": "/stations/country-rocks-radio/",
+  "/stations/sveriges-radio-p3-e4f6d392/": "/stations/sveriges-radio-p3/",
+  "/stations/dunken-fm-7ca8f95e/": "/stations/dunken-fm/",
+  "/stations/radio-sandviken-48798f54/": "/stations/radio-sandviken/",
+  "/stations/scenesat-radio-aac-mobile/": "/stations/scenesat-radio-mp3/"
+}

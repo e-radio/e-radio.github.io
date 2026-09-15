@@ -96,7 +96,7 @@ def pick_state_from_jsonld(objects):
 def main():
     parser = argparse.ArgumentParser(description="Fill missing station state from homepage JSON-LD.")
     parser.add_argument("--country", default=os.environ.get("COUNTRY", "gr"), help="Country code (defaults to COUNTRY or gr)")
-    parser.add_argument("--max", type=int, default=0, help="Max stations to process in one run (0 = no limit)")
+    parser.add_argument("--max", type=int, default=0, help="Maximum states successfully filled (0 = no limit)")
     parser.add_argument("--sleep", type=float, default=0.0, help="Seconds to sleep between stations (default: 0)")
     parser.add_argument(
         "--progress-file",
@@ -128,6 +128,15 @@ def main():
         except Exception:
             skipped = set()
 
+    started = time.monotonic()
+    missing_before = sum(station.get("state") in (None, "") for station in data)
+    previously_skipped = sum(station.get("state") in (None, "") and station.get("stationuuid") in skipped for station in data)
+    checked = 0
+    homepage_requests = 0
+    missing_homepage = 0
+    fetch_errors = 0
+    no_state = 0
+
     try:
         while processed < max_items:
             target = None
@@ -143,8 +152,10 @@ def main():
                     print("No stations with state: null found.")
                 return 0
 
+            checked += 1
             homepage = (target.get("homepage") or "").strip()
             if not homepage:
+                missing_homepage += 1
                 print(f"Missing homepage for station: {target.get('name')} ({target.get('stationuuid')})")
                 skipped.add(target.get("stationuuid"))
                 args.progress_file.write_text(json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -154,8 +165,10 @@ def main():
             print(f"Homepage: {homepage}")
 
             try:
+                homepage_requests += 1
                 html = fetch_html(homepage, user_agent)
             except Exception as exc:
+                fetch_errors += 1
                 print(f"Failed to fetch homepage: {exc}")
                 skipped.add(target.get("stationuuid"))
                 args.progress_file.write_text(json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -165,6 +178,7 @@ def main():
             state = pick_state_from_jsonld(iter_jsonld_objects(jsonld))
 
             if not state:
+                no_state += 1
                 print("No state found in application/ld+json. No changes made.")
                 skipped.add(target.get("stationuuid"))
                 args.progress_file.write_text(json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -181,6 +195,18 @@ def main():
         print("Interrupted. Progress saved.")
         args.progress_file.write_text(json.dumps(sorted(skipped), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         return 130
+    finally:
+        remaining = sum(station.get("state") in (None, "") for station in data)
+        eligible = sum(station.get("state") in (None, "") and station.get("stationuuid") not in skipped for station in data)
+        print(f"\nRun summary — {args.country.upper()}")
+        print(f"States filled and saved: {processed}")
+        print(f"Stations checked this run: {checked} (homepage requests: {homepage_requests})")
+        print(f"Skipped — already had state: {len(data) - missing_before}; previously recorded: {previously_skipped}")
+        print(f"Missing homepage: {missing_homepage}")
+        print(f"Homepage fetch errors: {fetch_errors}")
+        print(f"No state found: {no_state}")
+        print(f"Still missing state: {remaining} (eligible next run: {eligible})")
+        print(f"Elapsed: {time.monotonic() - started:.1f}s")
 
     return 0
 

@@ -49,7 +49,7 @@
     "slug": "24-7-continuous-music",
     "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
     "name": "24/7 Continuous Music",
-    "state": null,
+    "state": "Worldwide",
     "city": null,
     "stream_url": "https://securestream.cuelightsmedia.com.au/listen/247_continuous_music/radio.mp3",
     "homepage": "https://cuelightsmedia.com.au/stations/247-continuous-music",
@@ -81,8 +81,8 @@
     "slug": "90s-rewind",
     "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
     "name": "90s Rewind",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/90s_rewind/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/90s-rewind.webp",
@@ -104,14 +104,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/90s_rewind",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/90s_rewind"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/90s_rewind",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "aftab",
     "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
     "name": "Aftab",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/aftab/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/aftab.webp",
@@ -133,7 +139,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/aftab",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/aftab"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/aftab",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "ai-playlist-radio",
@@ -211,8 +223,8 @@
     "slug": "alt-edge-radio",
     "stationuuid": "03130c0f-bf62-4fda-bb6a-c99781b28475",
     "name": "Alt Edge Radio",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/alt_edge_radio/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/alt-edge-radio.webp",
@@ -233,14 +245,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/alt_edge_radio",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/alt_edge_radio"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/alt_edge_radio",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "american-truckers",
     "stationuuid": "681d2589-e135-46bd-a11a-272d8d13e8f8",
     "name": "American Truckers",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/american_truckers/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/american-truckers.webp",
@@ -261,7 +279,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/american_truckers",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/american_truckers"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/american_truckers",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "auralis-radio",
@@ -297,8 +321,8 @@
     "slug": "back-to-the-80s",
     "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
     "name": "Back to the 80s",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/back_to_the_80s/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/back-to-the-80s.webp",
@@ -320,14 +344,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/back_to_the_80s",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/back_to_the_80s"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/back_to_the_80s",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "bananradion",
     "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
     "name": "BANANRADION",
-    "state": null,
-    "city": null,
+    "state": "Värmland county",
+    "city": "Skattkärr",
     "stream_url": "https://lyssna.bananradion.se/listen/bananradion/128aac",
     "homepage": "https://www.bananradion.se/",
     "favicon": "/station-icons/se/bananradion.webp",
@@ -351,7 +381,13 @@
     "geo_long": 13.7234144,
     "nowplaying_url": "https://lyssna.bananradion.se/api/nowplaying/bananradion",
     "metadata_server": "azuracast",
-    "history_url": "https://lyssna.bananradion.se/api/nowplaying/bananradion"
+    "history_url": "https://lyssna.bananradion.se/api/nowplaying/bananradion",
+    "locationNames": {
+      "en": {
+        "city": "Skattkärr",
+        "state": "Värmland county"
+      }
+    }
   },
   {
     "slug": "bandit-alternative",
@@ -380,8 +416,8 @@
     "slug": "bandit-ballads",
     "stationuuid": "12824d18-3891-402f-b7a9-b8d75bfe3b99",
     "name": "Bandit Ballads",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr21-ice.stream.khz.se/wr21_aac",
     "homepage": "https://www.ilikeradio.se/banditballads/",
     "favicon": "/station-icons/se/bandit-ballads.webp",
@@ -398,14 +434,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.35111568253323,
-    "geo_long": 17.929687500000004
+    "geo_long": 17.929687500000004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "bandit-classic-rock-national-sweden",
     "stationuuid": "40dfa430-7988-4b02-ae1b-ce5fe8b5aad3",
     "name": "Bandit Classic Rock",
-    "state": "National, Sweden",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr11-ice.stream.khz.se/wr11_mp3",
     "homepage": "https://www.ilikeradio.se/banditclassicrock/",
     "favicon": "/station-icons/se/bandit-classic-rock-national-sweden.webp",
@@ -421,95 +463,30 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.319738182261645,
-    "geo_long": 18.127441406250004
+    "geo_long": 18.127441406250004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "bandit-rock",
     "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
-    "name": "Bandit ÍRock",
-    "state": null,
-    "city": null,
+    "name": "Bandit Rock",
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://fm02-ice.stream.khz.se/fm02_mp3",
     "homepage": "https://www.ilikeradio.se/banditrock/",
     "favicon": "/station-icons/se/bandit-rock.webp",
     "genres": [
-      "rock"
-    ],
-    "language": "swedish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 139,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 59.33253275786533,
-    "geo_long": 18.061523437500004
-  },
-  {
-    "slug": "bandit-metal",
-    "stationuuid": "78563d75-79f2-4c67-a80d-291891e2fb88",
-    "name": "Bandit Metal",
-    "state": null,
-    "city": null,
-    "stream_url": "https://wr03-ice.stream.khz.se/wr03_mp3",
-    "homepage": "https://www.viaplayradio.se/banditmetal/",
-    "favicon": "/station-icons/se/bandit-metal.webp",
-    "genres": [
-      "death metal",
-      "hard rock",
-      "metal"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 23,
-    "lastcheckok": 1,
-    "votes": 252,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 57.715108641509296,
-    "geo_long": 11.992435455322266
-  },
-  {
-    "slug": "bandit-metal-a9fc150a",
-    "stationuuid": "a9fc150a-579c-44b9-b8c1-6f0e972be3d2",
-    "name": "Bandit Metal",
-    "state": null,
-    "city": null,
-    "stream_url": "http://wr03-ice.stream.khz.se/wr03_mp3",
-    "homepage": "https://www.ilikeradio.se/banditmetal/",
-    "favicon": "/station-icons/se/bandit-metal-a9fc150a.webp",
-    "genres": [
-      "metal"
-    ],
-    "language": "swedish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 5,
-    "lastcheckok": 1,
-    "votes": 883,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "bandit-rock-168e0796",
-    "stationuuid": "168e0796-3b97-479c-949d-b1871ef07379",
-    "name": "Bandit Rock",
-    "state": null,
-    "city": null,
-    "stream_url": "http://fm02-ice.stream.khz.se/fm02_mp3",
-    "homepage": "https://www.ilikeradio.se/banditrock/",
-    "favicon": "/station-icons/se/bandit-rock-168e0796.webp",
-    "genres": [
+      "rock",
       "alternative rock",
       "classic rock",
       "hard rock",
       "heavy metal",
-      "metal",
-      "rock"
+      "metal"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -519,8 +496,89 @@
     "votes": 1730,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_lat": 59.33253275786533,
+    "geo_long": 18.061523437500004,
+    "alternate_stationuuids": [
+      "168e0796-3b97-479c-949d-b1871ef07379"
+    ],
+    "aliases": [
+      "bandit-rock-168e0796"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default HTTPS",
+        "url": "https://fm02-ice.stream.khz.se/fm02_mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-http",
+        "label": "Alternative HTTP",
+        "url": "http://fm02-ice.stream.khz.se/fm02_mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ],
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
+  },
+  {
+    "slug": "bandit-metal",
+    "stationuuid": "78563d75-79f2-4c67-a80d-291891e2fb88",
+    "name": "Bandit Metal",
+    "state": "Västra Götaland county",
+    "city": "Göteborg",
+    "stream_url": "https://wr03-ice.stream.khz.se/wr03_mp3",
+    "homepage": "https://www.viaplayradio.se/banditmetal/",
+    "favicon": "/station-icons/se/bandit-metal.webp",
+    "genres": [
+      "death metal",
+      "hard rock",
+      "metal"
+    ],
+    "language": "swedish",
+    "bitrate": 128,
+    "codec": "MP3",
+    "clickcount": 23,
+    "lastcheckok": 1,
+    "votes": 883,
+    "hls": 0,
+    "ssl_error": 0,
+    "geo_lat": 57.715108641509296,
+    "geo_long": 11.992435455322266,
+    "alternate_stationuuids": [
+      "a9fc150a-579c-44b9-b8c1-6f0e972be3d2"
+    ],
+    "aliases": [
+      "bandit-metal-a9fc150a"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default HTTPS",
+        "url": "https://wr03-ice.stream.khz.se/wr03_mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-http",
+        "label": "Alternative HTTP",
+        "url": "http://wr03-ice.stream.khz.se/wr03_mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ],
+    "locationNames": {
+      "en": {
+        "city": "Göteborg",
+        "state": "Västra Götaland county"
+      }
+    }
   },
   {
     "slug": "banjalu-ki-sevdah-radio-eher-ani",
@@ -552,8 +610,8 @@
     "slug": "best-of-ericade-radio-stockholm",
     "stationuuid": "69b90092-2a26-4ed3-acf3-2ca6b142be26",
     "name": "Best of ericade.radio",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://radio.ericade.net/sc/stream/2/",
     "homepage": "https://radio.ericade.net/best/",
     "favicon": "/station-icons/se/best-of-ericade-radio-stockholm.webp",
@@ -569,14 +627,20 @@
     "geo_lat": 59.327369257787545,
     "geo_long": 18.011226654052738,
     "nowplaying_url": "https://radio.ericade.net/status-json.xsl?mount=%2Fsc%2Fstream%2F2",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "blues",
     "stationuuid": "a03d0d90-73ec-451d-bb7e-b698f9b3698e",
     "name": "Blues",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/blues/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/blues.webp",
@@ -596,14 +660,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/blues",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/blues"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/blues",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "bollywood-bangers",
     "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
     "name": "Bollywood Bangers",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/bollywood_bangers/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/bollywood-bangers.webp",
@@ -624,7 +694,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/bollywood_bangers",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/bollywood_bangers"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/bollywood_bangers",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "bor-s-n-rradio",
@@ -677,8 +753,8 @@
     "slug": "classical",
     "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
     "name": "Classical",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/classical/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/classical.webp",
@@ -699,14 +775,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/classical",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/classical"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/classical",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "country",
     "stationuuid": "53ef6c63-7b27-4245-bf7c-420b16f5538a",
     "name": "Country",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/country/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/country.webp",
@@ -726,54 +808,59 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/country",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/country"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/country",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "country-rocks-radio",
     "stationuuid": "fe4b3646-7164-11e8-83fa-52543be04c81",
     "name": "Country Rocks Radio",
-    "state": null,
+    "state": "Skåne county",
     "city": null,
     "stream_url": "http://stream.dbmedia.se/crrMP3",
     "homepage": "http://countryrocksradio.com/",
-    "favicon": "/station-icons/se/country-rocks-radio-placeholder.webp",
+    "favicon": "/station-icons/se/country-rocks-radio-sk-ne.webp",
     "genres": [
       "country",
       "new country"
     ],
-    "language": null,
+    "language": "swedish",
     "bitrate": 192,
     "codec": "MP3",
     "clickcount": 8,
-    "lastcheckok": 1,
-    "votes": 1341,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "country-rocks-radio-sk-ne",
-    "stationuuid": "daef257f-eb1a-11e8-a471-52543be04c81",
-    "name": "Country Rocks Radio",
-    "state": "Skåne",
-    "city": null,
-    "stream_url": "http://stream.dbmedia.se/crr96",
-    "homepage": "http://www.countryrocksradio.com/",
-    "favicon": "/station-icons/se/country-rocks-radio-sk-ne.webp",
-    "genres": [
-      "country"
-    ],
-    "language": "swedish",
-    "bitrate": 128,
-    "codec": "AAC+",
-    "clickcount": 6,
     "lastcheckok": 1,
     "votes": 2088,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "alternate_stationuuids": [
+      "daef257f-eb1a-11e8-a471-52543be04c81"
+    ],
+    "aliases": [
+      "country-rocks-radio-sk-ne"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default MP3",
+        "url": "http://stream.dbmedia.se/crrMP3",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-aac",
+        "label": "Alternative AAC+",
+        "url": "http://stream.dbmedia.se/crr96",
+        "bitrate": 128,
+        "codec": "AAC+"
+      }
+    ]
   },
   {
     "slug": "dagnys-jukebox",
@@ -805,8 +892,8 @@
     "slug": "dansbandskanalen",
     "stationuuid": "817d37ef-474f-4072-bc48-8619eedafd97",
     "name": "Dansbandskanalen",
-    "state": null,
-    "city": null,
+    "state": "Skåne county",
+    "city": "Hörby",
     "stream_url": "https://fm09-ice.stream.khz.se/fm09_mp3",
     "homepage": "http://dansbandskanalen.se/",
     "favicon": "/station-icons/se/dansbandskanalen.webp",
@@ -822,7 +909,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.85064987433714,
-    "geo_long": 13.710937500000002
+    "geo_long": 13.710937500000002,
+    "locationNames": {
+      "en": {
+        "city": "Hörby",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "dansbandskanalen-se",
@@ -851,7 +944,7 @@
     "slug": "dansbandsradio-se-sk-ne",
     "stationuuid": "4f0772f4-926d-4d51-8571-ebea69c1839f",
     "name": "DansBandsRadio.se",
-    "state": "Skåne",
+    "state": "Skåne county",
     "city": null,
     "stream_url": "https://sc.dansbandsradio.se/dbr128.aac",
     "homepage": "https://dansbandsradio.se/",
@@ -872,8 +965,8 @@
     "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
     "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
     "name": "DansBandsRadio.se",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Landskrona",
     "stream_url": "https://sc.dansbandsradio.se/dbr64.aac",
     "homepage": "https://dansbandsradio.se/",
     "favicon": "/station-icons/se/dansbandsradio-se-sk-ne-7cd8a7f7.webp",
@@ -900,14 +993,20 @@
     "geo_lat": 55.8708,
     "geo_long": 12.8302,
     "nowplaying_url": "https://sc.dansbandsradio.se/status-json.xsl?mount=%2Fdbr64.aac",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "dansbandsradio-se-sk-ne-93b730ce",
     "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
     "name": "DansBandsRadio.se",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Landskrona",
     "stream_url": "https://sc.dansbandsradio.se/dbr128.mp3",
     "homepage": "https://dansbandsradio.se/",
     "favicon": "/station-icons/se/dansbandsradio-se-sk-ne-93b730ce.webp",
@@ -932,14 +1031,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.8708,
-    "geo_long": 12.8302
+    "geo_long": 12.8302,
+    "locationNames": {
+      "en": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "decades",
     "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
     "name": "Decades",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/decades/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/decades.webp",
@@ -962,14 +1067,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/decades",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/decades"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/decades",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "disco-54",
     "stationuuid": "e0e2a64e-3ec4-4da4-8aec-a4aa7b502163",
     "name": "Disco 54",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr15-ice.stream.khz.se/wr15_mp3",
     "homepage": "https://www.ilikeradio.se/disco54/",
     "favicon": "/station-icons/se/disco-54.webp",
@@ -986,14 +1097,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.32646464098633,
-    "geo_long": 18.07633640584146
+    "geo_long": 18.07633640584146,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "dunken-fm",
     "stationuuid": "71f377fc-3c53-4881-a53d-2a3e25ff030f",
     "name": "Dunken FM",
-    "state": null,
-    "city": null,
+    "state": "Skåne county",
+    "city": "Trelleborg",
     "stream_url": "http://stream.nsp.se:8000/DFM_AAC_Hi",
     "homepage": "http://www.dunkenfm.se/",
     "favicon": "/station-icons/se/dunken-fm.webp",
@@ -1003,43 +1120,52 @@
     "codec": "AAC+",
     "clickcount": 3,
     "lastcheckok": 1,
-    "votes": 29,
+    "votes": 74,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.37739390228786,
     "geo_long": 13.150634765625002,
     "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_AAC_Hi",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "dunken-fm-7ca8f95e",
-    "stationuuid": "7ca8f95e-a67b-4d07-9712-e829e70ff7f3",
-    "name": "Dunken FM",
-    "state": null,
-    "city": null,
-    "stream_url": "http://stream.nsp.se:8000/DFM_MP3_Hi",
-    "homepage": "http://www.dunkenfm.se/",
-    "favicon": "/station-icons/se/dunken-fm-7ca8f95e.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 74,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_MP3_Hi",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "7ca8f95e-a67b-4d07-9712-e829e70ff7f3"
+    ],
+    "aliases": [
+      "dunken-fm-7ca8f95e"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default AAC+",
+        "url": "http://stream.nsp.se:8000/DFM_AAC_Hi",
+        "bitrate": 128,
+        "codec": "AAC+",
+        "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_AAC_Hi",
+        "metadata_server": "icecast"
+      },
+      {
+        "id": "alternative-mp3",
+        "label": "Alternative MP3",
+        "url": "http://stream.nsp.se:8000/DFM_MP3_Hi",
+        "bitrate": 320,
+        "codec": "MP3",
+        "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_MP3_Hi",
+        "metadata_server": "icecast"
+      }
+    ],
+    "locationNames": {
+      "en": {
+        "city": "Trelleborg",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "edm",
     "stationuuid": "f81a5aa3-d7b5-4c12-85fa-436d081efc73",
     "name": "EDM",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/edm_/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/edm.webp",
@@ -1060,14 +1186,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/edm_",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/edm_"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/edm_",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "epic-soundtracks-only",
     "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
     "name": "Epic Soundtracks Only",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/epic_soundtracks_only/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/epic-soundtracks-only.webp",
@@ -1089,13 +1221,19 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/epic_soundtracks_only",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/epic_soundtracks_only"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/epic_soundtracks_only",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "ericade-radio-sweden",
     "stationuuid": "ffe421ec-4f51-4313-8bd0-e90a575fba8e",
     "name": "ericade.radio",
-    "state": "Sweden",
+    "state": null,
     "city": null,
     "stream_url": "https://radio.ericade.net/sc/stream/1/",
     "homepage": "https://ericade.radio/",
@@ -1118,8 +1256,8 @@
     "slug": "faith-beats-radio",
     "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
     "name": "Faith Beats Radio",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/faith_beats_radio/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/faith-beats-radio.webp",
@@ -1140,7 +1278,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/faith_beats_radio",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/faith_beats_radio"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/faith_beats_radio",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "fun-radio-95-3-sweden",
@@ -1169,8 +1313,8 @@
     "slug": "gamla-favoritter",
     "stationuuid": "e79af81b-db6d-4f60-9ce1-39ff9b5874ab",
     "name": "Gamla Favoritter",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr09-ice.stream.khz.se/wr09_mp3",
     "homepage": "https://www.ilikeradio.se/gamlafavoriter/",
     "favicon": "/station-icons/se/gamla-favoritter.webp",
@@ -1184,14 +1328,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.2771080105117,
-    "geo_long": 18.039550781250004
+    "geo_long": 18.039550781250004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "gen-x",
     "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
     "name": "Gen X",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/gen_x/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/gen-x.webp",
@@ -1213,7 +1363,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/gen_x",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/gen_x"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/gen_x",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "go-country",
@@ -1347,8 +1503,8 @@
     "slug": "groove-revival-radio",
     "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
     "name": "Groove Revival Radio",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/groove_revival_radio/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/groove-revival-radio.webp",
@@ -1370,7 +1526,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/groove_revival_radio",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/groove_revival_radio"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/groove_revival_radio",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "guldkanalen-80-tal",
@@ -1381,7 +1543,7 @@
     "stream_url": "https://stream.dbmedia.se/gk80tal96",
     "homepage": "https://playnow.se/guldkanalen-webbradio/",
     "favicon": "/station-icons/se/guldkanalen-80-tal.webp",
-    "genres": [],
+    "genres": ["80s"],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC+",
@@ -1397,12 +1559,12 @@
     "slug": "guldkanalen-90-tal",
     "stationuuid": "6778fd92-c72b-4be8-a9c6-2b753d207deb",
     "name": "Guldkanalen (90-tal)",
-    "state": null,
-    "city": null,
+    "state": "Södermanland county",
+    "city": "Vingåker",
     "stream_url": "https://stream.dbmedia.se/gk90tal96",
     "homepage": "https://playnow.se/guldkanalen-90tal-webbradio/",
     "favicon": "/station-icons/se/guldkanalen-90-tal.webp",
-    "genres": [],
+    "genres": ["90s"],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -1412,19 +1574,26 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.08044665021323,
-    "geo_long": 15.908203125000002
+    "geo_long": 15.908203125000002,
+    "locationNames": {
+      "en": {
+        "city": "Vingåker",
+        "state": "Södermanland county"
+      }
+    }
   },
   {
     "slug": "guldkanalen-60-tal-sk-ne",
     "stationuuid": "a6a09847-6e2e-4076-9b30-773023caf2e7",
     "name": "Guldkanalen 60-tal",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Norrköpings kommun",
     "stream_url": "https://stream.dbmedia.se/gk60tal96",
     "homepage": "https://stream.dbmedia.se/gk60tal96",
     "favicon": "/station-icons/se/guldkanalen-60-tal-sk-ne-placeholder.webp",
     "genres": [
-      "rock"
+      "rock",
+      "60s"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -1435,14 +1604,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 58.53959476664049,
-    "geo_long": 16.699218750000004
+    "geo_long": 16.699218750000004,
+    "locationNames": {
+      "en": {
+        "city": "Norrköpings kommun",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "guldkanalen-helsingborg",
     "stationuuid": "961d9ecf-0601-11e8-ae97-52543be04c81",
     "name": "Guldkanalen Helsingborg",
-    "state": "Helsingborg",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Helsingborg",
     "stream_url": "http://stream.dbmedia.se/gkhbg96",
     "homepage": "http://www.guldkanalen.se/",
     "favicon": "/station-icons/se/guldkanalen-helsingborg.webp",
@@ -1464,8 +1639,8 @@
     "slug": "guldkanalen-malm-lund-malmoe",
     "stationuuid": "9642aad0-0601-11e8-ae97-52543be04c81",
     "name": "Guldkanalen Malmö/Lund",
-    "state": "Malmoe",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "http://stream.dbmedia.se/gk96",
     "homepage": "http://guldkanalen.se/",
     "favicon": "/station-icons/se/guldkanalen-malm-lund-malmoe.webp",
@@ -1534,8 +1709,8 @@
     "slug": "harmony-frequencies",
     "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
     "name": "Harmony Frequencies",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/harmony_frequencies_radio/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/harmony-frequencies.webp",
@@ -1557,14 +1732,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/harmony_frequencies_radio",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/harmony_frequencies_radio"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/harmony_frequencies_radio",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "hello-africa",
     "stationuuid": "0e575083-8721-446d-a95e-7cbee4acad84",
     "name": "Hello Africa",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/hello_africa/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/hello-africa.webp",
@@ -1585,7 +1766,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/hello_africa",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/hello_africa"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/hello_africa",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "helsinborgs-n-rradio",
@@ -1612,8 +1799,8 @@
     "slug": "himlen-tv7-uppsala",
     "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
     "name": "Himlen TV7",
-    "state": "Uppsala",
-    "city": null,
+    "state": "Uppsala county",
+    "city": "Uppsala",
     "stream_url": "http://vod.tv7.fi:1935/tv7-se/mp4:tv7-se.stream_720p/playlist.m3u8",
     "homepage": "https://www.himlentv7.se/",
     "favicon": "/station-icons/se/himlen-tv7-uppsala.webp",
@@ -1639,8 +1826,8 @@
     "slug": "hitcity",
     "stationuuid": "1067bc4c-fed3-459a-b0dd-045d68cc225e",
     "name": "HITCITY",
-    "state": null,
-    "city": null,
+    "state": "Skåne county",
+    "city": "Landskrona",
     "stream_url": "https://stream.hitcity.se/live",
     "homepage": "https://hitcity.se/live",
     "favicon": "/station-icons/se/hitcity.webp",
@@ -1660,14 +1847,20 @@
     "geo_lat": 55.87429544555874,
     "geo_long": 12.831567694372197,
     "nowplaying_url": "https://stream.hitcity.se/status-json.xsl?mount=%2Flive",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "hitcity-229845c8",
     "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
     "name": "HITCITY",
-    "state": null,
-    "city": null,
+    "state": "Skåne county",
+    "city": "Landskrona",
     "stream_url": "https://stream.hitcity.se/live.mp3",
     "homepage": "https://hitcity.se/",
     "favicon": "/station-icons/se/hitcity-229845c8-placeholder.webp",
@@ -1690,14 +1883,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.874282203799176,
-    "geo_long": 12.831585657847306
+    "geo_long": 12.831585657847306,
+    "locationNames": {
+      "en": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "hitmix90s",
     "stationuuid": "c48371b8-52d2-4eff-8a72-a7ab3fa7066b",
     "name": "HitMix90's",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr19-ice.stream.khz.se/wr19_mp3",
     "homepage": "https://www.ilikeradio.se/hitmix90s/",
     "favicon": "/station-icons/se/hitmix90s.webp",
@@ -1711,7 +1910,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.32478310834112,
-    "geo_long": 18.067016601562504
+    "geo_long": 18.067016601562504,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "hitzfm-97-8-sommenbygd",
@@ -1738,8 +1943,8 @@
     "slug": "h-gan-s-n-rradio",
     "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
     "name": "Höganäs Närradio",
-    "state": null,
-    "city": null,
+    "state": "Skåne county",
+    "city": "Höganäs",
     "stream_url": "https://deb.patrikmalmgrenrask.se:10443/",
     "homepage": "https://radio-kullabygden.se/",
     "favicon": "/station-icons/se/h-gan-s-n-rradio.webp",
@@ -1765,14 +1970,20 @@
     "geo_long": 12.5583815574646,
     "nowplaying_url": "https://deb.patrikmalmgrenrask.se:10443/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://deb.patrikmalmgrenrask.se:10443/played?sid=1&type=json"
+    "history_url": "https://deb.patrikmalmgrenrask.se:10443/played?sid=1&type=json",
+    "locationNames": {
+      "en": {
+        "city": "Höganäs",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "house",
     "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
     "name": "House",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/house/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/house.webp",
@@ -1794,14 +2005,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/house",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/house"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/house",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "ivory-echoes",
     "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
     "name": "Ivory Echoes",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/ivory_echoes/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/ivory-echoes.webp",
@@ -1823,14 +2040,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/ivory_echoes",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/ivory_echoes"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/ivory_echoes",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "jazz",
     "stationuuid": "d906e09f-49da-469e-9937-5f5273fc9006",
     "name": "Jazz",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/jazz/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/jazz.webp",
@@ -1851,7 +2074,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/jazz",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/jazz"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/jazz",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "julkanalen",
@@ -1899,8 +2128,8 @@
     "slug": "kpop",
     "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
     "name": "Kpop",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/kpop/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/kpop.webp",
@@ -1921,14 +2150,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/kpop",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/kpop"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/kpop",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "latin",
     "stationuuid": "1ce736f3-5944-46b9-8143-81b54625b367",
     "name": "Latin",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/latin/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/latin.webp",
@@ -1949,7 +2184,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/latin",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/latin"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/latin",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "link-pings-n-rradio",
@@ -1997,8 +2238,8 @@
     "slug": "lugna-favoriter-stockholm",
     "stationuuid": "2f869fa1-9f35-4ab3-a417-e8cef6880f48",
     "name": "Lugna Favoriter Stockholm",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "http://fm03-ice.stream.khz.se/fm03_mp3?",
     "homepage": "https://lugnafavoriter.se./",
     "favicon": "/station-icons/se/lugna-favoriter-stockholm.webp",
@@ -2015,14 +2256,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.29506419340261,
-    "geo_long": 18.017578125000004
+    "geo_long": 18.017578125000004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "mad-mix-beats",
     "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
     "name": "Mad Mix Beats",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/mad_mix_beats/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/mad-mix-beats.webp",
@@ -2044,14 +2291,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_beats",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_beats"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_beats",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "mad-mix-curated",
     "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
     "name": "Mad Mix Curated",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/mad_mix_curated/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/mad-mix-curated.webp",
@@ -2073,14 +2326,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/mad_mix_curated",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/mad_mix_curated"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/mad_mix_curated",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "mad-mix-main",
     "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
     "name": "Mad Mix Main",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/mad_mix_main/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/mad-mix-main.webp",
@@ -2103,14 +2362,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_main",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_main"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/mad_mix_main",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "magic-radio-malmoe",
     "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
     "name": "Magic Radio",
-    "state": "Malmoe",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "http://stream.magicradio.se/magic",
     "homepage": "https://www.magicradio.se/",
     "favicon": "/station-icons/se/magic-radio-malmoe.webp",
@@ -2128,14 +2393,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.58930827021694,
-    "geo_long": 13.002319335937502
+    "geo_long": 13.002319335937502,
+    "locationNames": {
+      "en": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "melancholy",
     "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
     "name": "Melancholy",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/melancholy/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/melancholy.webp",
@@ -2157,14 +2428,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/melancholy",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/melancholy"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/melancholy",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "metal-mayhem",
     "stationuuid": "53dac0bd-de56-447a-a42c-9f841af15e2e",
     "name": "Metal Mayhem",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/metal_mayhem/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/metal-mayhem.webp",
@@ -2185,14 +2462,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/metal_mayhem",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/metal_mayhem"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/metal_mayhem",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "midnight-silk-eros",
     "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
     "name": "Midnight Silk Eros",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/midnight_silk_eros/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/midnight-silk-eros.webp",
@@ -2214,16 +2497,22 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/midnight_silk_eros",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/midnight_silk_eros"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/midnight_silk_eros",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "mix-megapol",
     "stationuuid": "96342772-0601-11e8-ae97-52543be04c81",
     "name": "Mix Megapol",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?ua=WEB&i=mixmegapol_instream_se_mp3",
-    "homepage": "http://www.mixmegapol.se/",
+    "homepage": "https://radioplay.se/mixmegapol",
     "favicon": "/station-icons/se/mix-megapol.webp",
     "genres": [],
     "language": "swedish",
@@ -2241,8 +2530,8 @@
     "slug": "mix-megapol-104-3-stockholm",
     "stationuuid": "0772676d-9fe4-4945-b63f-3e88e5aeb374",
     "name": "Mix Megapol 104,3",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_mp3",
     "homepage": "https://radioplay.se/mixmegapol",
     "favicon": "/station-icons/se/mix-megapol-104-3-stockholm.webp",
@@ -2258,14 +2547,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.32715197400692,
-    "geo_long": 18.015351891517643
+    "geo_long": 18.015351891517643,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "mix-megapol-104-3-stockholm-5df76756",
     "stationuuid": "5df76756-534f-4af9-879c-268dce9b9b80",
     "name": "Mix Megapol 104,3",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_aacp",
     "homepage": "https://radioplay.se/mixmegapol",
     "favicon": "/station-icons/se/mix-megapol-104-3-stockholm-5df76756.webp",
@@ -2281,14 +2576,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.32711694580528,
-    "geo_long": 18.015349209308628
+    "geo_long": 18.015349209308628,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "mix-megapol-gbg",
     "stationuuid": "3e5a08bf-57fc-420a-a543-2f7c6f7b6a06",
     "name": "Mix Megapol GBG",
-    "state": null,
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Göteborg",
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=mixmegapolgbg_instream_se_mp3",
     "homepage": "https://radioplay.se/mixmegapolgoteborg/",
     "favicon": "/station-icons/se/mix-megapol-gbg-placeholder.webp",
@@ -2302,7 +2603,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 57.712263293154386,
-    "geo_long": 11.999816894531252
+    "geo_long": 11.999816894531252,
+    "locationNames": {
+      "en": {
+        "city": "Göteborg",
+        "state": "Västra Götaland county"
+      }
+    }
   },
   {
     "slug": "mrs-90-5-stockholm",
@@ -2470,8 +2777,8 @@
     "slug": "p4-dalarna",
     "stationuuid": "f0f48ba7-b88c-471d-9153-f7a648f70653",
     "name": "P4 Dalarna",
-    "state": null,
-    "city": null,
+    "state": "Dalarna county",
+    "city": "Falun",
     "stream_url": "http://http-live.sr.se/p4dalarna-aac-192",
     "homepage": "https://sverigesradio.se/dalarna",
     "favicon": "/station-icons/se/p4-dalarna.webp",
@@ -2485,7 +2792,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 60.60251754383246,
-    "geo_long": 15.636291503906252
+    "geo_long": 15.636291503906252,
+    "locationNames": {
+      "en": {
+        "city": "Falun",
+        "state": "Dalarna county"
+      }
+    }
   },
   {
     "slug": "p4-j-mtland",
@@ -2556,8 +2869,8 @@
     "slug": "p4-rebro",
     "stationuuid": "121367cf-f23c-4aef-a99e-f6608763a3c7",
     "name": "P4 Örebro",
-    "state": null,
-    "city": null,
+    "state": "Örebro county",
+    "city": "Örebro",
     "stream_url": "http://http-live.sr.se/p4orebro-aac-192",
     "homepage": "https://sverigesradio.se/orebro",
     "favicon": "/station-icons/se/p4-rebro.webp",
@@ -2574,14 +2887,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.27233683384846,
-    "geo_long": 15.216785720768414
+    "geo_long": 15.216785720768414,
+    "locationNames": {
+      "en": {
+        "city": "Örebro",
+        "state": "Örebro county"
+      }
+    }
   },
   {
     "slug": "p4-sterg-tland",
     "stationuuid": "a6fb6ae2-b821-4902-8dce-5a77fbe27488",
     "name": "P4 Östergötland",
-    "state": "Östergötland",
-    "city": null,
+    "state": "Östergötland county",
+    "city": "Norrköping",
     "stream_url": "http://http-live.sr.se/p4ostergotland-aac-192?DIST=TuneIn&TGT=TuneIn&maxServers=2&gdpr=1&us_privacy=1YNY&gdpr_consent=CPSxGf7PSxGf7AcABBENB9CsAP_AAAAAACiQIfhBACZEDAFBAGBpAIsAAAAAAAAAACAwAAAAACAACDgAAAQAgAAAAAgAACAAAAgAIAAAAAAAAAAABAAAAAAAAADEAAAAAAEAAABAAAAAAAAAAAAAAICAAAAAAAAQAAAAkAwAPv____f_7-3_3__5_3---_e_V_99zLv9____39nP___9v-_9___4AAAEgkB4ACoAGQAOAAgABkADSAIgAigBMACeAKUAaoA7wEiAMNAYeAyIBkgDJwGXAM5AZ8A0gBp0DWANZAbrA5EDlQHLgOsAeOA-UIAZAC2AOcBiADFgGQgMjAZMA0IBowDSgGpgNoAbcA3QBwQDpAHYAOzAd0A8CB5IHlAPaAe6A-QB9gYAOAFsBkYDQgG6AOJAdmA90NAMARUAkQBh4DGAGTgM5AZ4Az4ByQDlAHWAPwEABgAtgNCAboA4kB2YD3REAkBIgDDwGTgM5AZ8A5IBygDrAH4CoBgATAFNgLzAYeAyIBnIDPAGfANyAckA5QB-AoAIA0IBrwDiQH2DIBYATAF5gMPAZEAzkBngDPgHJAOUAfEA_AYADAaEA4kB9g6BeABUADIAHAAQAAyABpAEQARQAmABPAC-AGIAUoA7wCLAF1ARUAkQBhoDDwGJAMYAY8AyQBk4DKgGWAMuAZyAz4BokDSANJAaWA04BqoDWAGxgN1AcXA5IDlQHLgOsAeOA9IB6oD5QH1gPwHAHwAtgDnAHcAQgBiADFgGQgMmAZeA0KBooGjANKAaaA1MBrwDaAG2ANuAcTA48DkAHSAOwAdmA8CB5IHlAPaAe6A-IB9gD8QH7EICwAGQAmABfADEAO8BIgDDwGJAMiAZOAzkBngDPgGiANJAaWA1UBwADkgHWAPHAfgQAIADnAaEA0UBpQDUwG2ANuAcSA6MB2EDyQPKAeiA90B8QD7AH7EoDAAGQAOABEACYAF8AMQApQBqgDvALqAioBIgDDwGRAMnAZYAzkBngDPgGkANYAcAA6wB-BIAUAO4BiwDSgG5AOJAdIA7AB5QD2gH2FIEoAFQAMgAcABAADIAGkARABFACYAE8AKQAXwAxAClAGqAO8AiwCRAGGgMPAYwAyIBkgDJwGXAM5AZ4Az6BpAGkwNYA1kBsYDdYHJgcoA5cB1gDxwHygPwKAFABzgDuALqAxYBkwDRAGlANNgakBqYDXgHBAOJAdgA7MB5QD2gHugPiAfYA_YA.f_gAAAAAAAAA&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTY0MjA5OTA4OSwiaXNzIjoidGlzcnYifQ.lHS2wM3X_1OBMWllZXm4SFuLlvIaF92RC0UI7VYlDfc",
     "homepage": "https://sverigesradio.se/ostergotland",
     "favicon": "/station-icons/se/p4-sterg-tland.webp",
@@ -2595,14 +2914,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 58.5925929169881,
-    "geo_long": 16.16775512695313
+    "geo_long": 16.16775512695313,
+    "locationNames": {
+      "en": {
+        "city": "Norrköping",
+        "state": "Östergötland county"
+      }
+    }
   },
   {
     "slug": "p4-v-rmland",
     "stationuuid": "e3c2d110-90f6-41e7-a6b8-8f92d646a007",
     "name": "P4 Värmland",
-    "state": null,
-    "city": null,
+    "state": "Uppsala county",
+    "city": "Enköpings kommun",
     "stream_url": "https://live1.sr.se/p4vrml-aac-320",
     "homepage": "https://www.sverigesradio.se/",
     "favicon": "/station-icons/se/p4-v-rmland-placeholder.webp",
@@ -2616,14 +2941,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.70323001263191,
-    "geo_long": 17.226562500000004
+    "geo_long": 17.226562500000004,
+    "locationNames": {
+      "en": {
+        "city": "Enköpings kommun",
+        "state": "Uppsala county"
+      }
+    }
   },
   {
     "slug": "p4-v-sterbotten",
     "stationuuid": "39a437bb-aa17-420b-a748-41b35312d1de",
     "name": "P4 Västerbotten",
-    "state": null,
-    "city": null,
+    "state": "Västerbotten county",
+    "city": "Umeå",
     "stream_url": "https://live1.sr.se/p4vbtn-mp3-96",
     "homepage": "https://sverigesradio.se/vasterbotten",
     "favicon": "/station-icons/se/p4-v-sterbotten.webp",
@@ -2637,7 +2968,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 63.83565418579919,
-    "geo_long": 20.26045021054548
+    "geo_long": 20.26045021054548,
+    "locationNames": {
+      "en": {
+        "city": "Umeå",
+        "state": "Västerbotten county"
+      }
+    }
   },
   {
     "slug": "p4-v-sternorrland",
@@ -2685,8 +3022,8 @@
     "slug": "p4-v-stmanland",
     "stationuuid": "73b5026f-40f2-49e8-846d-4d6f77e20d18",
     "name": "P4 Västmanland",
-    "state": null,
-    "city": null,
+    "state": "Västmanland county",
+    "city": "Västerås",
     "stream_url": "https://live1.sr.se/p4vstm-mp3-96",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/p4-v-stmanland-placeholder.webp",
@@ -2700,7 +3037,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.62304746766944,
-    "geo_long": 16.545309801469436
+    "geo_long": 16.545309801469436,
+    "locationNames": {
+      "en": {
+        "city": "Västerås",
+        "state": "Västmanland county"
+      }
+    }
   },
   {
     "slug": "pain",
@@ -2730,8 +3073,8 @@
     "slug": "party-247",
     "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
     "name": "Party 247",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/party_247/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/party-247.webp",
@@ -2753,7 +3096,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/party_247",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/party_247"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/party_247",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "pirate-rock-v-stkustens-b-sta-rock",
@@ -2812,8 +3161,8 @@
     "slug": "pop-rock-umeao",
     "stationuuid": "9642b0c2-0601-11e8-ae97-52543be04c81",
     "name": "Pop & Rock",
-    "state": "Umeao",
-    "city": null,
+    "state": "Västerbotten county",
+    "city": "Umeå",
     "stream_url": "http://62.101.46.15:8000/poporock",
     "homepage": "http://www.poporock.se/",
     "favicon": "/station-icons/se/pop-rock-umeao.webp",
@@ -2838,8 +3187,8 @@
     "slug": "pop-radio-stockholm",
     "stationuuid": "ccfd647b-93da-4275-aa8f-0c39f56feac5",
     "name": "Pop Radio Stockholm",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "http://master.shoutcast.com:8000/popradio-stockholm",
     "homepage": "https://popradio.se/",
     "favicon": "/station-icons/se/pop-radio-stockholm-placeholder.webp",
@@ -2855,14 +3204,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.256755654679466,
-    "geo_long": 18.08006286621094
+    "geo_long": 18.08006286621094,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "popburst",
     "stationuuid": "5cc4f5dc-9693-46c2-91cc-e2f8eb0f215d",
     "name": "PopBurst",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/popburst/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/popburst.webp",
@@ -2883,14 +3238,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/popburst",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/popburst"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/popburst",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "power-club",
     "stationuuid": "4b089827-c6e2-44d7-8689-00c47c9d8650",
     "name": "Power Club",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr06-ice.stream.khz.se/wr06_mp3",
     "homepage": "https://www.ilikeradio.se/powerclub/",
     "favicon": "/station-icons/se/power-club.webp",
@@ -2907,7 +3268,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.32282130062685,
-    "geo_long": 18.063884227633544
+    "geo_long": 18.063884227633544,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "power-hit-radio",
@@ -2979,8 +3346,8 @@
     "slug": "punk-classics",
     "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
     "name": "Punk Classics",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/punk_classics/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/punk-classics.webp",
@@ -3001,14 +3368,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/punk_classics",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/punk_classics"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/punk_classics",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-163",
     "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
     "name": "Radio 163",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/radio_163/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/radio-163.webp",
@@ -3029,14 +3402,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/radio_163",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/radio_163"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/radio_163",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-567",
     "stationuuid": "7a275e1c-6730-4048-a064-a7cb3c9dabb8",
     "name": "Radio 567",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/radio_567/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/radio-567.webp",
@@ -3057,14 +3436,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/radio_567",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/radio_567"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/radio_567",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-789",
     "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
     "name": "Radio 789",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/radio_789/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/radio-789.webp",
@@ -3086,7 +3471,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/radio_789",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/radio_789"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/radio_789",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-88-partille",
@@ -3135,7 +3526,7 @@
     "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
     "name": "Radio 94,3",
     "state": "Närke",
-    "city": null,
+    "city": "Kumla",
     "stream_url": "https://stream.radio943.se/stream",
     "homepage": "https://radio943.se/",
     "favicon": "/station-icons/se/radio-94-3-n-rke.webp",
@@ -3157,14 +3548,20 @@
     "geo_lat": 59.12801363061055,
     "geo_long": 15.135005414485931,
     "nowplaying_url": "https://stream.radio943.se/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Kumla",
+        "state": "Närke"
+      }
+    }
   },
   {
     "slug": "radio-aftonbladet",
     "stationuuid": "6cdc74be-e0f2-4e85-b5ee-f01a42d56b20",
     "name": "Radio Aftonbladet",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://www.aftonbladet.se/podcasts/episode/396373",
     "homepage": "https://www.aftonbladet.se/",
     "favicon": "/station-icons/se/radio-aftonbladet.webp",
@@ -3178,7 +3575,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.27017904775786,
-    "geo_long": 18.110961914062504
+    "geo_long": 18.110961914062504,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-b-stad",
@@ -3228,8 +3631,8 @@
     "slug": "radio-faceit-fm-stockholm",
     "stationuuid": "7525f5fd-393c-46f4-a0ba-e02856a1873c",
     "name": "Radio Faceit FM",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://stream.zeno.fm/c6ufpty9w1ctv",
     "homepage": "https://stream.zeno.fm/c6ufpty9w1ctv",
     "favicon": "/station-icons/se/radio-faceit-fm-stockholm-placeholder.webp",
@@ -3245,7 +3648,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.26324867513425,
-    "geo_long": 18.138427734375004
+    "geo_long": 18.138427734375004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-gbg-sevdah",
@@ -3363,8 +3772,8 @@
     "slug": "radio-haninge",
     "stationuuid": "cda260eb-ede7-4417-97f6-55dea02abd80",
     "name": "Radio Haninge",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Handen",
     "stream_url": "http://213.115.49.175:1157/;",
     "homepage": "https://www.radiohaninge.se/",
     "favicon": "/station-icons/se/radio-haninge.webp",
@@ -3378,7 +3787,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.16740057079515,
-    "geo_long": 18.151130676269535
+    "geo_long": 18.151130676269535,
+    "locationNames": {
+      "en": {
+        "city": "Handen",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-hope",
@@ -3460,7 +3875,7 @@
     "slug": "radio-nacka-stockholm",
     "stationuuid": "c5353b6e-0cdd-427a-b666-f265bc6d4c73",
     "name": "Radio Nacka",
-    "state": "Stockholm",
+    "state": "Stockholm county",
     "city": null,
     "stream_url": "http://radiostreamone.mine.nu/9990MHz",
     "homepage": "https://radionacka.se/",
@@ -3481,13 +3896,13 @@
     "slug": "radio-nostalgi",
     "stationuuid": "06a92160-00e0-4546-ac0d-44c28f80da6c",
     "name": "Radio Nostalgi",
-    "state": "-",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live-bauerse-fm.sharp-stream.com/nostalgi_aacp",
     "homepage": "https://radioplay.se/radio-nostalgi/",
     "favicon": "/station-icons/se/radio-nostalgi.webp",
     "genres": [
-      "80's"
+      "80s"
     ],
     "language": null,
     "bitrate": 56,
@@ -3498,7 +3913,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 62.62838236760478,
-    "geo_long": 14.721973980095054
+    "geo_long": 14.721973980095054,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-nostalgi-se",
@@ -3546,8 +3967,8 @@
     "slug": "radio-payam-gothenburg",
     "stationuuid": "2bf56592-ba2c-4f13-a2a2-f7b672f9302a",
     "name": "Radio Payam",
-    "state": "Gothenburg",
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Göteborg",
     "stream_url": "https://stream.radiopayam.se/;",
     "homepage": "https://radiopayam.se/",
     "favicon": "/station-icons/se/radio-payam-gothenburg.webp",
@@ -3614,31 +4035,29 @@
     "geo_long": null,
     "nowplaying_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
     "metadata_server": "azuracast",
-    "history_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell"
-  },
-  {
-    "slug": "radio-rivendell-9197541c",
-    "stationuuid": "9197541c-ca21-4500-b962-21863b0926cb",
-    "name": "Radio Rivendell",
-    "state": null,
-    "city": null,
-    "stream_url": "https://play.radiorivendell.com/radio/8000/radio.ogg",
-    "homepage": "https://www.radiorivendell.com/",
-    "favicon": "/station-icons/se/radio-rivendell-9197541c.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "OGG",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 23,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
-    "metadata_server": "azuracast",
-    "history_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell"
+    "history_url": "https://play.radiorivendell.com/api/nowplaying/radio_rivendell",
+    "alternate_stationuuids": [
+      "9197541c-ca21-4500-b962-21863b0926cb"
+    ],
+    "aliases": [
+      "radio-rivendell-9197541c"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default MP3",
+        "url": "https://play.radiorivendell.com/radio/8000/radio.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-ogg",
+        "label": "Alternative OGG",
+        "url": "https://play.radiorivendell.com/radio/8000/radio.ogg",
+        "bitrate": 128,
+        "codec": "OGG"
+      }
+    ]
   },
   {
     "slug": "radio-sandviken",
@@ -3646,8 +4065,8 @@
     "name": "Radio Sandviken",
     "state": null,
     "city": null,
-    "stream_url": "http://rssand.se:4027/;",
-    "homepage": "http://www.radiosandviken.se/",
+    "stream_url": "https://shout.rs8990.com/;",
+    "homepage": "https://radiosandviken.se/",
     "favicon": "/station-icons/se/radio-sandviken-placeholder.webp",
     "genres": [
       "local radio",
@@ -3656,40 +4075,34 @@
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
-    "clickcount": 0,
+    "clickcount": 1,
     "lastcheckok": 1,
     "votes": 43,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://rssand.se:4027/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://rssand.se:4027/played?sid=1&type=json"
-  },
-  {
-    "slug": "radio-sandviken-48798f54",
-    "stationuuid": "48798f54-d904-426b-b9e3-cd75aa5816b2",
-    "name": "Radio Sandviken",
-    "state": null,
-    "city": null,
-    "stream_url": "https://shout.rs8990.com/;",
-    "homepage": "https://radiosandviken.se/",
-    "favicon": "/station-icons/se/radio-sandviken-48798f54-placeholder.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 6,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
     "nowplaying_url": "https://shout.rs8990.com/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://shout.rs8990.com/played?sid=1&type=json"
+    "history_url": "https://shout.rs8990.com/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "48798f54-d904-426b-b9e3-cd75aa5816b2"
+    ],
+    "aliases": [
+      "radio-sandviken-48798f54"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Alternative",
+        "url": "http://rssand.se:4027/;",
+        "bitrate": 128,
+        "codec": "MP3",
+        "nowplaying_url": "http://rssand.se:4027/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://rssand.se:4027/played?sid=1&type=json"
+      }
+    ]
   },
   {
     "slug": "radio-sk-vde",
@@ -3748,8 +4161,8 @@
     "slug": "radio-svea",
     "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
     "name": "Radio Svea",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/radio_svea/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/radio-svea.webp",
@@ -3770,7 +4183,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/radio_svea",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/radio_svea"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/radio_svea",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "radio-sydvast",
@@ -3797,8 +4216,8 @@
     "slug": "radio-treby",
     "stationuuid": "67d48eb9-c3b0-459d-b494-ca1ebb5cb766",
     "name": "Radio Treby",
-    "state": null,
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Vara",
     "stream_url": "http://streaming.943.se/treby878",
     "homepage": "https://www.radiotreby.se/",
     "favicon": "/station-icons/se/radio-treby.webp",
@@ -3812,14 +4231,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 58.254278806666335,
-    "geo_long": 12.962493896484377
+    "geo_long": 12.962493896484377,
+    "locationNames": {
+      "en": {
+        "city": "Vara",
+        "state": "Västra Götaland county"
+      }
+    }
   },
   {
     "slug": "radio45-dalsland-sweden",
     "stationuuid": "6fbe6280-8425-4673-a740-7e1fa12a2da5",
     "name": "Radio45 (Dalsland Sweden)",
-    "state": "Dalsland",
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Dalsland",
     "stream_url": "https://streaming.943.se/radio45",
     "homepage": "https://radio45.se/",
     "favicon": "/station-icons/se/radio45-dalsland-sweden.webp",
@@ -3845,7 +4270,7 @@
     "homepage": "https://www.radiogodis.se/",
     "favicon": "/station-icons/se/radiogodis-placeholder.webp",
     "genres": [
-      "80's"
+      "80s"
     ],
     "language": null,
     "bitrate": 192,
@@ -3939,8 +4364,8 @@
     "slug": "redback-radio-select-state",
     "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
     "name": "Redback Radio",
-    "state": "Select state",
-    "city": null,
+    "state": "Västmanland län",
+    "city": "Sala",
     "stream_url": "https://redback.mywire.org/stream.mp3",
     "homepage": "https://redback.mywire.org/Radio/",
     "favicon": "/station-icons/se/redback-radio-select-state-placeholder.webp",
@@ -3960,14 +4385,20 @@
     "geo_lat": 59.91563372660059,
     "geo_long": 16.623001098632816,
     "nowplaying_url": "https://redback.mywire.org/status-json.xsl?mount=%2Fstream.mp3",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Sala",
+        "state": "SVästmanlands län"
+      }
+    }
   },
   {
     "slug": "reggae",
     "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
     "name": "Reggae",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/reggae/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/reggae.webp",
@@ -3989,14 +4420,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/reggae",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/reggae"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/reggae",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "relax-meditation",
     "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
     "name": "Relax & Meditation",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/relax_meditation/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/relax-meditation.webp",
@@ -4018,7 +4455,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/relax_meditation",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/relax_meditation"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/relax_meditation",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "replay-news-svenska",
@@ -4047,8 +4490,8 @@
     "slug": "retreat-radio-malmoe",
     "stationuuid": "ac5cf76c-20ba-11e9-a80b-52543be04c81",
     "name": "Retreat Radio",
-    "state": "Malmoe",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "http://retreatradio.out.airtime.pro:8000/retreatradio_b",
     "homepage": "https://www.retreatradio.net/",
     "favicon": "/station-icons/se/retreat-radio-malmoe.webp",
@@ -4070,11 +4513,11 @@
     "slug": "retro-fm-sk-ne",
     "stationuuid": "8b00bcfc-4d94-11ea-b877-52543be04c81",
     "name": "Retro FM Skåne",
-    "state": null,
+    "state": "Skåne county",
     "city": null,
-    "stream_url": "https://live-bauerse-fm.sharp-stream.com/retrofm_aacp?ua=WEB&aw_0_1st.playerid=SBS_RP_WEB&aw_0_1st.skey=1575715192&companionAds=true&listenerId=@@GUID@@",
-    "homepage": "http://www.retrofm.se/",
-    "favicon": "/station-icons/se/retro-fm-sk-ne-placeholder.webp",
+    "stream_url": "https://live-bauerse-fm.sharp-stream.com/retrofm_aacp",
+    "homepage": "https://www.retrofm.se/",
+    "favicon": "/station-icons/se/retro-fm-sk-ne.webp",
     "genres": [
       "oldies"
     ],
@@ -4137,16 +4580,17 @@
     "slug": "retrohits-sk-ne",
     "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
     "name": "RetroHits",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Landskrona",
     "stream_url": "https://sc.retrohits.se/retrohits64.aac",
     "homepage": "https://retrohits.se/",
     "favicon": "/station-icons/se/retrohits-sk-ne-placeholder.webp",
     "genres": [
-      "00's",
-      "80's",
-      "90's",
-      "hits 70's",
+      "00s",
+      "80s",
+      "90s",
+      "70s",
+      "hits",
       "retro"
     ],
     "language": "english",
@@ -4158,7 +4602,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.859538294628,
-    "geo_long": 12.874603271484377
+    "geo_long": 12.874603271484377,
+    "locationNames": {
+      "en": {
+        "city": "Landskrona",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "rix-fm",
@@ -4185,8 +4635,8 @@
     "slug": "rix-fm-stockholm",
     "stationuuid": "d1620588-c6f3-4e40-a828-a0fd3f945c07",
     "name": "RIX FM",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://fm01-ice.stream.khz.se/fm01_mp3",
     "homepage": "https://www.ilikeradio.se/rixfm",
     "favicon": "/station-icons/se/rix-fm-stockholm.webp",
@@ -4202,14 +4652,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.30991043531771,
-    "geo_long": 18.059155046939853
+    "geo_long": 18.059155046939853,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "rix-fm-106-7-stockholm",
     "stationuuid": "a72d9bd0-86b9-4450-8958-c53688e1e956",
     "name": "RIX FM 106,7",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://fm01-ice.stream.khz.se/fm01_aac",
     "homepage": "https://www.ilikeradio.se/rixfm",
     "favicon": "/station-icons/se/rix-fm-106-7-stockholm.webp",
@@ -4225,14 +4681,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.30991317328533,
-    "geo_long": 18.059171140193943
+    "geo_long": 18.059171140193943,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "rix-fm-fresh",
     "stationuuid": "3f589db8-fb66-4d2a-b4d9-03a8bece9b7e",
     "name": "RIX FM Fresh",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://wr04-ice.stream.khz.se/wr04_mp3",
     "homepage": "https://www.ilikeradio.se/rixfmfresh/",
     "favicon": "/station-icons/se/rix-fm-fresh.webp",
@@ -4248,14 +4710,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.319738182261645,
-    "geo_long": 18.003718245658586
+    "geo_long": 18.003718245658586,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "rock",
     "stationuuid": "202d6d31-699e-476d-b392-99e238704df8",
     "name": "Rock",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/rock/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/rock.webp",
@@ -4276,14 +4744,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/rock",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/rock"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/rock",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "rocket-fm-rock-home-of-stockholm",
     "stationuuid": "9ae67291-b1f6-4541-869b-6445b6d07269",
     "name": "Rocket FM Rock Home of Stockholm",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Vidja",
     "stream_url": "http://stream.thsradio.se:8000/rocket_hi.mp3",
     "homepage": "http://www.rocket.fm/",
     "favicon": "/station-icons/se/rocket-fm-rock-home-of-stockholm.webp",
@@ -4297,7 +4771,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.212019934942774,
-    "geo_long": 18.061523437500004
+    "geo_long": 18.061523437500004,
+    "locationNames": {
+      "en": {
+        "city": "Vidja",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "roxette",
@@ -4326,8 +4806,8 @@
     "slug": "sauna-radio-stockholm",
     "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
     "name": "Sauna Radio",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://stream.saunaradio.com/live",
     "homepage": "https://www.saunaradio.com/",
     "favicon": "/station-icons/se/sauna-radio-stockholm.webp",
@@ -4353,8 +4833,8 @@
     "slug": "scenesat",
     "stationuuid": "949f9dd3-36d0-48c3-9f4f-670b43b4c46b",
     "name": "SceneSat",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Ekerö kommun",
     "stream_url": "http://oscar.scenesat.com:8000/scenesatmax",
     "homepage": "http://scenesat.com/",
     "favicon": "/station-icons/se/scenesat.webp",
@@ -4368,41 +4848,22 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.28029807597087,
-    "geo_long": 17.73115123376001
-  },
-  {
-    "slug": "scenesat-radio-aac-mobile",
-    "stationuuid": "d1c40bbb-618a-11e8-b15b-52543be04c81",
-    "name": "SceneSat Radio (AAC+ mobile)",
-    "state": null,
-    "city": null,
-    "stream_url": "https://streams.scenesat.com/main/mobile.aac",
-    "homepage": "https://scenesat.com/",
-    "favicon": "/station-icons/se/scenesat-radio-aac-mobile.webp",
-    "genres": [
-      "demoscene"
-    ],
-    "language": null,
-    "bitrate": 0,
-    "codec": "AAC",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 217,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fmobile.aac",
-    "metadata_server": "icecast"
+    "geo_long": 17.73115123376001,
+    "locationNames": {
+      "en": {
+        "city": "Ekerö kommun",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "scenesat-radio-mp3",
     "stationuuid": "9614fe6c-0601-11e8-ae97-52543be04c81",
-    "name": "SceneSat Radio (MP3)",
+    "name": "SceneSat Radio",
     "state": null,
     "city": null,
     "stream_url": "https://streams.scenesat.com/main/hq.mp3",
-    "homepage": "http://scenesat.com/",
+    "homepage": "https://scenesat.com/",
     "favicon": "/station-icons/se/scenesat-radio-mp3.webp",
     "genres": [
       "demoscene"
@@ -4410,7 +4871,7 @@
     "language": "english",
     "bitrate": 0,
     "codec": "MP3",
-    "clickcount": 0,
+    "clickcount": 1,
     "lastcheckok": 1,
     "votes": 433,
     "hls": 0,
@@ -4418,14 +4879,40 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fhq.mp3",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "d1c40bbb-618a-11e8-b15b-52543be04c81"
+    ],
+    "aliases": [
+      "scenesat-radio-aac-mobile"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default MP3",
+        "url": "https://streams.scenesat.com/main/hq.mp3",
+        "bitrate": 0,
+        "codec": "MP3",
+        "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fhq.mp3",
+        "metadata_server": "icecast"
+      },
+      {
+        "id": "alternative-mobile",
+        "label": "Mobile AAC",
+        "url": "https://streams.scenesat.com/main/mobile.aac",
+        "bitrate": 0,
+        "codec": "AAC",
+        "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fmobile.aac",
+        "metadata_server": "icecast"
+      }
+    ]
   },
   {
     "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
     "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
     "name": "SDX synthetic experience - EBM, Synth and Industrial",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "http://radio.dawnshadow.se:8000/stream",
     "homepage": "http://radio.dawnshadow.se/sdxradio.html",
     "favicon": "/station-icons/se/sdx-synthetic-experience-ebm-synth-and-industrial-placeholder.webp",
@@ -4446,7 +4933,13 @@
     "geo_lat": 59.33874354052215,
     "geo_long": 18.03345874160518,
     "nowplaying_url": "http://radio.dawnshadow.se:8000/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sk-rg-rdsradion",
@@ -4494,8 +4987,8 @@
     "slug": "slay-radio-aac",
     "stationuuid": "f65bbc32-439d-447a-aba4-d83c144cdad3",
     "name": "SLAY Radio [aac]",
-    "state": null,
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Göteborg",
     "stream_url": "http://relay1.slayradio.org:8300/",
     "homepage": "https://www.slayradio.org/",
     "favicon": "/station-icons/se/slay-radio-aac.webp",
@@ -4586,8 +5079,8 @@
     "slug": "sr-din-gata-sk-ne",
     "stationuuid": "5003028b-5943-4cea-820b-5b8a4a8fa9b6",
     "name": "SR Din Gata",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://http-live.sr.se/dingata-aac-192",
     "homepage": "https://sverigesradio.se/dingata",
     "favicon": "/station-icons/se/sr-din-gata-sk-ne-placeholder.webp",
@@ -4604,14 +5097,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.576151587486464,
-    "geo_long": 13.041538032990903
+    "geo_long": 13.041538032990903,
+    "locationNames": {
+      "en": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "sr-p1",
     "stationuuid": "bfb5ad64-4a32-45cb-ae1d-a4b4d9415470",
     "name": "SR P1",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live1.sr.se/p1-aac-32",
     "homepage": "https://www.sverigesradio.se/kanaler",
     "favicon": "/station-icons/se/sr-p1-placeholder.webp",
@@ -4627,14 +5126,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.270179047757885,
-    "geo_long": 18.078002929687504
+    "geo_long": 18.078002929687504,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sr-p2-stockholm",
     "stationuuid": "0826eaef-59e4-4761-b3e8-31670421a753",
     "name": "SR P2",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live1.sr.se/p2-flac",
     "homepage": "https://sverigesradio.se/p2",
     "favicon": "/station-icons/se/sr-p2-stockholm-placeholder.webp",
@@ -4651,14 +5156,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.334310730035355,
-    "geo_long": 18.102425543302125
+    "geo_long": 18.102425543302125,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sr-p2",
     "stationuuid": "38ecf77e-b929-458c-ad32-564dcab453c9",
     "name": "SR P2",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://http-live.sr.se/p2-mp3-192",
     "homepage": "https://sverigesradio.se/p2",
     "favicon": "/station-icons/se/sr-p2.webp",
@@ -4672,14 +5183,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.32758544549431,
-    "geo_long": 18.050537109375004
+    "geo_long": 18.050537109375004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sr-p4-j-nk-ping",
     "stationuuid": "25a9a10c-7de5-4f5e-8989-e128c3f4b94e",
     "name": "SR P4 Jönköping",
-    "state": null,
-    "city": null,
+    "state": "Jönköping county",
+    "city": "Jönköping",
     "stream_url": "https://http-live.sr.se/p4jonkoping-mp3-192",
     "homepage": "https://sverigesradio.se/jonkoping",
     "favicon": "/station-icons/se/sr-p4-j-nk-ping-placeholder.webp",
@@ -4693,7 +5210,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 57.77886823046075,
-    "geo_long": 14.16292190551758
+    "geo_long": 14.16292190551758,
+    "locationNames": {
+      "en": {
+        "city": "Jönköping",
+        "state": "Jönköping county"
+      }
+    }
   },
   {
     "slug": "sr-p4-j-nk-ping-45bca914",
@@ -4745,8 +5268,8 @@
     "slug": "sr-p4-kronoberg",
     "stationuuid": "7800c880-6618-49ac-a6f8-5cac3498fe04",
     "name": "SR P4 Kronoberg",
-    "state": null,
-    "city": null,
+    "state": "Kronoberg county",
+    "city": "Växjö",
     "stream_url": "https://http-live.sr.se/p4kronoberg-mp3-192",
     "homepage": "https://sverigesradio.se/kronoberg",
     "favicon": "/station-icons/se/sr-p4-kronoberg-placeholder.webp",
@@ -4760,14 +5283,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 56.878398829844606,
-    "geo_long": 14.798583984375002
+    "geo_long": 14.798583984375002,
+    "locationNames": {
+      "en": {
+        "city": "Växjö",
+        "state": "Kronoberg county"
+      }
+    }
   },
   {
     "slug": "sr-p4-malm-hus-sk-ne",
     "stationuuid": "613dbc09-c205-4285-bb0f-7e71a67015dd",
     "name": "SR P4 Malmöhus",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://live1.sr.se/p4malm-mp3-96",
     "homepage": "https://sverigesradio.se/tabla.aspx?programid=207",
     "favicon": "/station-icons/se/sr-p4-malm-hus-sk-ne-placeholder.webp",
@@ -4781,14 +5310,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.602699351267646,
-    "geo_long": 13.009529113769531
+    "geo_long": 13.009529113769531,
+    "locationNames": {
+      "en": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "sr-p4-radio-malm-hus-scania",
     "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
     "name": "SR P4 Radio Malmöhus",
-    "state": "Scania",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://ljud1-cdn.sr.se/lc/p4malm.m3u8",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-malmohus",
     "favicon": "/station-icons/se/sr-p4-radio-malm-hus-scania-placeholder.webp",
@@ -4807,14 +5342,20 @@
     "hls": 1,
     "ssl_error": 0,
     "geo_lat": 55.59604013865638,
-    "geo_long": 13.00506591796875
+    "geo_long": 13.00506591796875,
+    "locationNames": {
+      "en": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "sr4-sthlm",
     "stationuuid": "9ccab272-2072-4baa-baad-52170ecd0c11",
     "name": "SR4- Sthlm",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live1.sr.se/p4sth-aac-32",
     "homepage": "https://www.sverigesradio.se/",
     "favicon": "/station-icons/se/sr4-sthlm-placeholder.webp",
@@ -4828,7 +5369,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.31392186908167,
-    "geo_long": 18.028564453125004
+    "geo_long": 18.028564453125004,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "star-70s",
@@ -4840,8 +5387,7 @@
     "homepage": "https://www.ilikeradio.se/star70s/",
     "favicon": "/station-icons/se/star-70s.webp",
     "genres": [
-      "70's",
-      "70-tal",
+      "70s",
       "pop",
       "rock"
     ],
@@ -4866,8 +5412,7 @@
     "homepage": "https://www.ilikeradio.se/star80s/",
     "favicon": "/station-icons/se/star-80s.webp",
     "genres": [
-      "80's",
-      "80-tal",
+      "80s",
       "pop",
       "rock"
     ],
@@ -4892,8 +5437,7 @@
     "homepage": "https://www.ilikeradio.se/star90s/",
     "favicon": "/station-icons/se/star-90s.webp",
     "genres": [
-      "90's",
-      "90-tal",
+      "90s",
       "pop",
       "rock"
     ],
@@ -4933,8 +5477,8 @@
     "slug": "star-fm-107-1-stockholm",
     "stationuuid": "ce877b75-fbb5-4b67-a39c-707e59ab38cc",
     "name": "STAR FM 107,1",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://fm05-ice.stream.khz.se/fm05_aac",
     "homepage": "https://www.ilikeradio.se/starfm",
     "favicon": "/station-icons/se/star-fm-107-1-stockholm.webp",
@@ -4950,14 +5494,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.30990769734984,
-    "geo_long": 18.059149682521824
+    "geo_long": 18.059149682521824,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "star-fm-107-1-stockholm-b30f805d",
     "stationuuid": "b30f805d-8402-4555-b182-dcf5fa0820da",
     "name": "STAR FM 107,1",
-    "state": "Stockholm",
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://fm05-ice.stream.khz.se/fm05_mp3",
     "homepage": "https://www.ilikeradio.se/starfm",
     "favicon": "/station-icons/se/star-fm-107-1-stockholm-b30f805d.webp",
@@ -4973,14 +5523,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.30989674547619,
-    "geo_long": 18.059165775775913
+    "geo_long": 18.059165775775913,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "stars-on-45",
     "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
     "name": "Stars on 45",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/stars_on_45/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/stars-on-45.webp",
@@ -5003,13 +5559,19 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/stars_on_45",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/stars_on_45"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/stars_on_45",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "stocholm-n-rradio-fm-95-3-stockholm",
     "stationuuid": "54e3f7cd-47a0-414a-ac11-1b7850ed5973",
     "name": "Stocholm Närradio FM 95.3",
-    "state": "Stockholm",
+    "state": "Stockholm county",
     "city": null,
     "stream_url": "http://live.narradio.se:8020/;stream.mp3",
     "homepage": "http://www.narradio.se/",
@@ -5032,7 +5594,7 @@
     "slug": "stockholm-fm-101-1-sweden",
     "stationuuid": "957584f4-cef4-11e8-a54a-52543be04c81",
     "name": "Stockholm FM 101,1 Sweden",
-    "state": "Stockholm",
+    "state": "Stockholm county",
     "city": null,
     "stream_url": "http://radiostreamtwo.mine.nu/18020",
     "homepage": "http://www.narradio.se/",
@@ -5125,8 +5687,8 @@
     "slug": "sveiges-radio-p4-kristianstad-sk-ne",
     "stationuuid": "f075cd6b-dc5a-4268-bc81-dc873da77bee",
     "name": "Sveiges Radio - P4 Kristianstad",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Kristianstad",
     "stream_url": "https://live1.sr.se/p4krist-mp3-96",
     "homepage": "https://sverigesradio.se/kristianstad",
     "favicon": "/station-icons/se/sveiges-radio-p4-kristianstad-sk-ne-placeholder.webp",
@@ -5140,14 +5702,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 56.029411896296864,
-    "geo_long": 14.157729148864748
+    "geo_long": 14.157729148864748,
+    "locationNames": {
+      "en": {
+        "city": "Kristianstad",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "sveiges-radio-p4-malm-hus-sk-ne",
     "stationuuid": "33aa931b-0e2f-49b9-b8df-8d98c04a286b",
     "name": "Sveiges Radio - P4 Malmöhus",
-    "state": "Skåne",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://sverigesradio.se/topsy/direkt/207-hi.mp3",
     "homepage": "https://sverigesradio.se/malmohus",
     "favicon": "/station-icons/se/sveiges-radio-p4-malm-hus-sk-ne-placeholder.webp",
@@ -5161,7 +5729,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.59213356854291,
-    "geo_long": 13.013992309570314
+    "geo_long": 13.013992309570314,
+    "locationNames": {
+      "en": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "svensk-folkmusik-akka-radio",
@@ -5199,7 +5773,7 @@
     "slug": "svensk-pop-stockholm",
     "stationuuid": "9624489a-9323-11e8-a767-52543be04c81",
     "name": "Svensk Pop",
-    "state": "Stockholm",
+    "state": "Stockholm county",
     "city": null,
     "stream_url": "http://tx.sharp-stream.com/http_live.php?i=svenskpop_se_mp3",
     "homepage": "https://www.radioplay.se/svensk-pop",
@@ -5245,15 +5819,18 @@
     "slug": "sveriges-radio-p1",
     "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
     "name": "Sveriges Radio - P1",
-    "state": null,
-    "city": null,
-    "stream_url": "https://live1.sr.se/p1-aac-320",
-    "homepage": "https://sverigesradio.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p1-placeholder.webp",
+    "state": "Stockholm county",
+    "city": "Stockholm",
+    "stream_url": "https://edge1.sr.se/p1-aac-320",
+    "homepage": "https://sverigesradio.se/p1",
+    "favicon": "/station-icons/se/sveriges-radio-p1.webp",
     "genres": [
       "news",
       "public radio",
-      "sveriges radio"
+      "sveriges radio",
+      "culture",
+      "talk",
+      "current affairs"
     ],
     "language": "swedish",
     "bitrate": 312,
@@ -5263,75 +5840,119 @@
     "votes": 3381,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "sveriges-radio-p1-07c6d96f",
-    "stationuuid": "07c6d96f-1d15-4d36-9833-dee758087659",
-    "name": "Sveriges Radio - P1",
-    "state": null,
-    "city": null,
-    "stream_url": "http://sverigesradio.se/topsy/direkt/srapi/132-hi-aac-http",
-    "homepage": "https://sverigesradio.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p1-07c6d96f-placeholder.webp",
-    "genres": [],
-    "language": "swedish",
-    "bitrate": 312,
-    "codec": "AAC",
-    "clickcount": 10,
-    "lastcheckok": 1,
-    "votes": 266,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_lat": 59.33482591295532,
+    "geo_long": 18.101949691772464,
+    "alternate_stationuuids": [
+      "07c6d96f-1d15-4d36-9833-dee758087659",
+      "95019533-f24b-4eb2-ba07-2ccdf1ea683e",
+      "418fc299-18ff-478e-a2c8-4da07e1f3d28",
+      "2f02c316-7d2b-4247-9e51-c75e248c012c"
+    ],
+    "aliases": [
+      "sveriges-radio-p1-07c6d96f",
+      "sveriges-radio-p1-national-sweden",
+      "sveriges-radio-p1-418fc299",
+      "sveriges-radio-p1-192kbps"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default",
+        "url": "https://edge1.sr.se/p1-aac-320",
+        "bitrate": 312,
+        "codec": "AAC"
+      },
+      {
+        "id": "alternative-1",
+        "label": "Alternative 1",
+        "url": "http://sverigesradio.se/topsy/direkt/srapi/132-hi-aac-http",
+        "bitrate": 312,
+        "codec": "AAC"
+      },
+      {
+        "id": "alternative-2",
+        "label": "Alternative 2",
+        "url": "https://live1.sr.se/p1-mp3-96",
+        "bitrate": 116,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-3",
+        "label": "Alternative 3",
+        "url": "https://live1.sr.se/p1-aac-320",
+        "bitrate": 312,
+        "codec": "AAC"
+      },
+      {
+        "id": "alternative-4",
+        "label": "Alternative 4",
+        "url": "https://http-live.sr.se/p1-mp3-192",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
+    ],
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p2",
     "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
     "name": "Sveriges Radio - P2",
-    "state": null,
-    "city": null,
-    "stream_url": "https://live1.sr.se/p2-aac-320",
-    "homepage": "https://sverigesradio.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p2-placeholder.webp",
+    "state": "Stockholm county",
+    "city": "Stockholm",
+    "stream_url": "https://edge1.sr.se/p2-flac",
+    "homepage": "https://sverigesradio.se/p2",
+    "favicon": "/station-icons/se/sveriges-radio-p2.webp",
     "genres": [
-      "sveriges radio"
+      "sveriges radio",
+      "classical music",
+      "classical",
+      "jazz"
     ],
     "language": "swedish",
-    "bitrate": 312,
-    "codec": "AAC",
+    "bitrate": 128,
+    "codec": "OGG",
     "clickcount": 5,
     "lastcheckok": 1,
     "votes": 538,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "sveriges-radio-p2-697e5012",
-    "stationuuid": "697e5012-5cdc-46b5-abe6-18cebd3b3dd1",
-    "name": "Sveriges Radio - P2",
-    "state": null,
-    "city": null,
-    "stream_url": "https://edge1.sr.se/p2-flac",
-    "homepage": "https://sverigesradio.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p2-697e5012-placeholder.webp",
-    "genres": [
-      "classical music"
-    ],
-    "language": "swedish",
-    "bitrate": 128,
-    "codec": "OGG",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 17,
-    "hls": 0,
-    "ssl_error": 0,
     "geo_lat": 59.33422803164917,
-    "geo_long": 18.102459311485298
+    "geo_long": 18.102459311485298,
+    "alternate_stationuuids": [
+      "697e5012-5cdc-46b5-abe6-18cebd3b3dd1",
+      "3b7a51fa-88af-4d6f-9489-6f57ae737b1a"
+    ],
+    "aliases": [
+      "sveriges-radio-p2-697e5012",
+      "sveriges-radio-p2-national-sweden"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative-1",
+        "url": "https://live1.sr.se/p2-aac-320",
+        "bitrate": 312,
+        "codec": "AAC"
+      },
+      {
+        "id": "alternative-2",
+        "label": "Alternative 2",
+        "url": "https://http-live.sr.se/p2musik-aac-320",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ],
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p2-spr-k-och-musik",
@@ -5362,11 +5983,11 @@
     "slug": "sveriges-radio-p3",
     "stationuuid": "960c4e01-0601-11e8-ae97-52543be04c81",
     "name": "Sveriges Radio - P3",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://live1.sr.se/p3-aac-320",
-    "homepage": "https://sverigesradio.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p3-placeholder.webp",
+    "homepage": "https://sverigesradio.se/p3",
+    "favicon": "/station-icons/se/sveriges-radio-p3.webp",
     "genres": [
       "public radio",
       "sveriges radio",
@@ -5375,44 +5996,51 @@
     "language": "swedish",
     "bitrate": 312,
     "codec": "AAC",
-    "clickcount": 8,
+    "clickcount": 47,
     "lastcheckok": 1,
     "votes": 1677,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "sveriges-radio-p3-e4f6d392",
-    "stationuuid": "e4f6d392-f704-4cf0-8d26-9c931cebeaf6",
-    "name": "Sveriges Radio - P3",
-    "state": null,
-    "city": null,
-    "stream_url": "https://live1.sr.se/p3-mp3-96",
-    "homepage": "https://sverigesradio.se/p3",
-    "favicon": "/station-icons/se/sveriges-radio-p3-e4f6d392-placeholder.webp",
-    "genres": [],
-    "language": "swedish",
-    "bitrate": 94,
-    "codec": "MP3",
-    "clickcount": 47,
-    "lastcheckok": 1,
-    "votes": 540,
-    "hls": 0,
-    "ssl_error": 0,
     "geo_lat": 59.32404745440907,
-    "geo_long": 18.07113647460938
+    "geo_long": 18.07113647460938,
+    "alternate_stationuuids": [
+      "e4f6d392-f704-4cf0-8d26-9c931cebeaf6"
+    ],
+    "aliases": [
+      "sveriges-radio-p3-e4f6d392"
+    ],
+    "streams": [
+      {
+        "id": "default",
+        "label": "Default AAC",
+        "url": "https://live1.sr.se/p3-aac-320",
+        "bitrate": 312,
+        "codec": "AAC"
+      },
+      {
+        "id": "alternative-mp3",
+        "label": "Alternative MP3",
+        "url": "https://live1.sr.se/p3-mp3-96",
+        "bitrate": 94,
+        "codec": "MP3"
+      }
+    ],
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p3-din-gata-malmoe",
     "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
     "name": "Sveriges Radio - P3 Din gata",
-    "state": "Malmoe",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://live1.sr.se/dingata-aac-320",
     "homepage": "https://sverigesradio.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p3-din-gata-malmoe-placeholder.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p3.webp",
     "genres": [
       "local radio",
       "public radio",
@@ -5434,11 +6062,11 @@
     "slug": "sveriges-radio-p4-blekinge",
     "stationuuid": "a20f86e9-ec1b-425a-9ebe-831720249f74",
     "name": "Sveriges Radio - P4 Blekinge",
-    "state": null,
-    "city": null,
+    "state": "Blekinge county",
+    "city": "Ronneby kommun",
     "stream_url": "https://live1.sr.se/p4blek-mp3-96",
     "homepage": "https://sverigesradio.se/blekinge",
-    "favicon": "/station-icons/se/sveriges-radio-p4-blekinge.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p4.webp",
     "genres": [
       "local",
       "music",
@@ -5453,14 +6081,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 56.267551369294225,
-    "geo_long": 15.272455215454103
+    "geo_long": 15.272455215454103,
+    "locationNames": {
+      "en": {
+        "city": "Ronneby kommun",
+        "state": "Blekinge county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-halland",
     "stationuuid": "1576f6f2-8949-4106-a870-d6a2c11c99f4",
     "name": "Sveriges Radio - P4 Halland",
-    "state": "Halland",
-    "city": null,
+    "state": "Halland county",
+    "city": "Halmstad",
     "stream_url": "https://sverigesradio.se/topsy/ljudfil/srse/8266576.mp3",
     "homepage": "https://sverigesradio.se/halland",
     "favicon": "/station-icons/se/sveriges-radio-p4-halland-placeholder.webp",
@@ -5474,14 +6108,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 56.67282942172565,
-    "geo_long": 12.85606384277344
+    "geo_long": 12.85606384277344,
+    "locationNames": {
+      "en": {
+        "city": "Halmstad",
+        "state": "Halland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-j-mtland",
     "stationuuid": "850aedd1-5099-4553-81cc-7f24704cb3e7",
     "name": "Sveriges Radio - P4 Jämtland",
-    "state": null,
-    "city": null,
+    "state": "Jämtland county",
+    "city": "Östersund",
     "stream_url": "https://http-live.sr.se/p4jamtland-mp3-192",
     "homepage": "https://sverigesradio.se/jamtland",
     "favicon": "/station-icons/se/sveriges-radio-p4-j-mtland.webp",
@@ -5495,7 +6135,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 63.153393928970736,
-    "geo_long": 14.692668914794924
+    "geo_long": 14.692668914794924,
+    "locationNames": {
+      "en": {
+        "city": "Östersund",
+        "state": "Jämtland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-plus",
@@ -5554,8 +6200,8 @@
     "slug": "sveriges-radio-p4-v-rmland",
     "stationuuid": "c51dbaad-5f7a-4027-8600-7b7c620023d8",
     "name": "Sveriges Radio - P4 Värmland",
-    "state": null,
-    "city": null,
+    "state": "Värmland county",
+    "city": "Karlstad",
     "stream_url": "https://http-live.sr.se/p4varmland-mp3-128",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-v-rmland.webp",
@@ -5572,7 +6218,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.3757495214906,
-    "geo_long": 13.52393209877003
+    "geo_long": 13.52393209877003,
+    "locationNames": {
+      "en": {
+        "city": "Karlstad",
+        "state": "Värmland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-v-st",
@@ -5599,8 +6251,8 @@
     "slug": "sveriges-radio-p4-v-stmanland",
     "stationuuid": "10398e96-9329-4763-aada-543d35b56832",
     "name": "Sveriges Radio - P4 Västmanland",
-    "state": null,
-    "city": null,
+    "state": "Västmanland county",
+    "city": "Västerås",
     "stream_url": "https://http-live.sr.se/p4vastmanland-mp3-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-v-stmanland.webp",
@@ -5617,7 +6269,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.61126278503581,
-    "geo_long": 16.554383789094683
+    "geo_long": 16.554383789094683,
+    "locationNames": {
+      "en": {
+        "city": "Västerås",
+        "state": "Västmanland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p6",
@@ -5929,104 +6587,6 @@
     "geo_long": null
   },
   {
-    "slug": "sveriges-radio-p1-national-sweden",
-    "stationuuid": "95019533-f24b-4eb2-ba07-2ccdf1ea683e",
-    "name": "Sveriges Radio P1",
-    "state": "National, Sweden",
-    "city": null,
-    "stream_url": "https://live1.sr.se/p1-mp3-96",
-    "homepage": "https://sverigesradio.se/p1",
-    "favicon": "/station-icons/se/sveriges-radio-p1-national-sweden-placeholder.webp",
-    "genres": [
-      "culture",
-      "news",
-      "talk"
-    ],
-    "language": "swedish",
-    "bitrate": 116,
-    "codec": "MP3",
-    "clickcount": 24,
-    "lastcheckok": 1,
-    "votes": 106,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 59.33482591295532,
-    "geo_long": 18.101949691772464
-  },
-  {
-    "slug": "sveriges-radio-p1-418fc299",
-    "stationuuid": "418fc299-18ff-478e-a2c8-4da07e1f3d28",
-    "name": "Sveriges Radio P1",
-    "state": null,
-    "city": null,
-    "stream_url": "https://edge1.sr.se/p1-aac-320",
-    "homepage": "https://www.sverigesradio/p1",
-    "favicon": "/station-icons/se/sveriges-radio-p1-418fc299-placeholder.webp",
-    "genres": [
-      "culture",
-      "news",
-      "talk"
-    ],
-    "language": "swedish",
-    "bitrate": 312,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 60,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "sveriges-radio-p1-192kbps",
-    "stationuuid": "2f02c316-7d2b-4247-9e51-c75e248c012c",
-    "name": "Sveriges Radio P1 192kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "https://http-live.sr.se/p1-mp3-192",
-    "homepage": "https://www.sr.se/",
-    "favicon": "/station-icons/se/sveriges-radio-p1-192kbps-placeholder.webp",
-    "genres": [
-      "current affairs",
-      "news"
-    ],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 6,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "sveriges-radio-p2-national-sweden",
-    "stationuuid": "3b7a51fa-88af-4d6f-9489-6f57ae737b1a",
-    "name": "Sveriges Radio P2",
-    "state": "National, Sweden",
-    "city": null,
-    "stream_url": "https://http-live.sr.se/p2musik-aac-320",
-    "homepage": "https://sverigesradio.se/p2",
-    "favicon": "/station-icons/se/sveriges-radio-p2-national-sweden-placeholder.webp",
-    "genres": [
-      "classical",
-      "jazz"
-    ],
-    "language": "swedish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 411,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 59.33320618515925,
-    "geo_long": 18.100490570068363
-  },
-  {
     "slug": "sveriges-radio-p3-01a0db86",
     "stationuuid": "01a0db86-1f60-4473-9601-1de61587b255",
     "name": "Sveriges Radio P3",
@@ -6034,7 +6594,7 @@
     "city": null,
     "stream_url": "https://edge1.sr.se/p3-aac-320",
     "homepage": "https://www.sverigesradio.se/p3",
-    "favicon": "/station-icons/se/sveriges-radio-p3-01a0db86-placeholder.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p3.webp",
     "genres": [
       "music",
       "youth"
@@ -6054,11 +6614,11 @@
     "slug": "sveriges-radio-p4-dalarna",
     "stationuuid": "2151bfe6-6792-4cbe-8c7c-2d9fe54fdbc0",
     "name": "Sveriges Radio P4 Dalarna",
-    "state": "Dalarna",
-    "city": null,
+    "state": "Dalarna county",
+    "city": "Tällberg",
     "stream_url": "https://live1.sr.se/p4dala-aac-320",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-dalarna",
-    "favicon": "/station-icons/se/sveriges-radio-p4-dalarna-placeholder.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p4.webp",
     "genres": [
       "local"
     ],
@@ -6071,14 +6631,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 60.82135752076436,
-    "geo_long": 14.963378906250002
+    "geo_long": 14.963378906250002,
+    "locationNames": {
+      "en": {
+        "city": "Tällberg",
+        "state": "Dalarna county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-g-vleborg",
     "stationuuid": "6f295dab-138c-45a5-b06f-d81e4643d05e",
     "name": "Sveriges Radio P4 Gävleborg",
-    "state": null,
-    "city": null,
+    "state": "Gävleborg county",
+    "city": "Sandvikens kommun",
     "stream_url": "https://http-live.sr.se/p4gavleborg-mp3-192",
     "homepage": "https://www.sverigesradio.se/gavleborg",
     "favicon": "/station-icons/se/sveriges-radio-p4-g-vleborg-placeholder.webp",
@@ -6095,17 +6661,23 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 60.436626408196354,
-    "geo_long": 16.87088012695313
+    "geo_long": 16.87088012695313,
+    "locationNames": {
+      "en": {
+        "city": "Sandvikens kommun",
+        "state": "Gävleborg county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-g-vleborg-e63482bc",
     "stationuuid": "e63482bc-f704-41ec-8890-67ece72578d2",
     "name": "Sveriges Radio P4 Gävleborg",
-    "state": null,
-    "city": null,
+    "state": "Gävleborg county",
+    "city": "Gävle kommun",
     "stream_url": "https://live1.sr.se/p4gavl-mp3-96",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-gavleborg",
-    "favicon": "/station-icons/se/sveriges-radio-p4-g-vleborg-e63482bc-placeholder.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p4.webp",
     "genres": [],
     "language": null,
     "bitrate": 144,
@@ -6116,7 +6688,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 60.66842500859742,
-    "geo_long": 17.0838930237189
+    "geo_long": 17.0838930237189,
+    "locationNames": {
+      "en": {
+        "city": "Gävle kommun",
+        "state": "Gävleborg county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-g-teborg",
@@ -6126,7 +6704,7 @@
     "city": null,
     "stream_url": "https://http-live.sr.se/p4goteborg-mp3-192",
     "homepage": "https://sverigesradio.se/g%C3%B6teborg",
-    "favicon": "/station-icons/se/sveriges-radio-p4-g-teborg-placeholder.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p4.webp",
     "genres": [
       "local radio",
       "music"
@@ -6146,11 +6724,11 @@
     "slug": "sveriges-radio-p4-g-teborg-003dea75",
     "stationuuid": "003dea75-02eb-40c2-8a92-5150a709b74d",
     "name": "Sveriges Radio P4 Göteborg",
-    "state": null,
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Göteborg",
     "stream_url": "https://live1.sr.se/p4gbg-aac-320",
     "homepage": "https://www.sverigesradio/p4goteborg",
-    "favicon": "/station-icons/se/sveriges-radio-p4-g-teborg-003dea75-placeholder.webp",
+    "favicon": "/station-icons/se/sveriges-radio-p4.webp",
     "genres": [
       "local radio",
       "music"
@@ -6164,14 +6742,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 57.71398474622874,
-    "geo_long": 11.985883140228808
+    "geo_long": 11.985883140228808,
+    "locationNames": {
+      "en": {
+        "city": "Göteborg",
+        "state": "Västra Götaland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-gotland",
     "stationuuid": "2d109f2c-222b-4c48-82be-787e5d695662",
     "name": "Sveriges Radio P4 Gotland",
-    "state": null,
-    "city": null,
+    "state": "Gotland county",
+    "city": "Visby",
     "stream_url": "https://http-live.sr.se/p4gotland-mp3-192",
     "homepage": "https://sverigesradio.se/gotland",
     "favicon": "/station-icons/se/sveriges-radio-p4-gotland-placeholder.webp",
@@ -6188,14 +6772,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 57.63352941160315,
-    "geo_long": 18.30036287388413
+    "geo_long": 18.30036287388413,
+    "locationNames": {
+      "en": {
+        "city": "Visby",
+        "state": "Gotland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-halland-79d17f42",
     "stationuuid": "79d17f42-620e-437d-b7e6-ed1c1d26c670",
     "name": "Sveriges Radio P4 Halland",
-    "state": null,
-    "city": null,
+    "state": "Halland county",
+    "city": "Slöinge",
     "stream_url": "https://live1.sr.se/p4hall-aac-128",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-halland",
     "favicon": "/station-icons/se/sveriges-radio-p4-halland-79d17f42-placeholder.webp",
@@ -6209,14 +6799,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 56.86928989111271,
-    "geo_long": 12.694702148437502
+    "geo_long": 12.694702148437502,
+    "locationNames": {
+      "en": {
+        "city": "Slöinge",
+        "state": "Halland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-malm-hus",
     "stationuuid": "3a901003-189a-4a40-a754-401b56a131ee",
     "name": "Sveriges Radio P4 Malmöhus",
-    "state": null,
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://live1.sr.se/p4malm-aac-32",
     "homepage": "https://www.sverigesradio.se/kanaler",
     "favicon": "/station-icons/se/sveriges-radio-p4-malm-hus.webp",
@@ -6232,7 +6828,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 55.58574301126419,
-    "geo_long": 13.017425537109377
+    "geo_long": 13.017425537109377,
+    "locationNames": {
+      "en": {
+        "city": "Malmö",
+        "state": "Skåne county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-sjuharad",
@@ -6259,8 +6861,8 @@
     "slug": "sveriges-radio-p4-skaraborg",
     "stationuuid": "eb7aca36-7206-4367-823f-71c1dd7e104f",
     "name": "Sveriges Radio P4 Skaraborg",
-    "state": null,
-    "city": null,
+    "state": "Västra Götaland county",
+    "city": "Skövde",
     "stream_url": "https://http-live.sr.se/p4skaraborg-mp3-192",
     "homepage": "https://sverigesradio.se/skaraborg",
     "favicon": "/station-icons/se/sveriges-radio-p4-skaraborg-placeholder.webp",
@@ -6277,14 +6879,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 58.39194242011395,
-    "geo_long": 13.838685750961304
+    "geo_long": 13.838685750961304,
+    "locationNames": {
+      "en": {
+        "city": "Skövde",
+        "state": "Västra Götaland county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-stockholm",
     "stationuuid": "ac551e97-29fe-4eb2-979f-7438ad647d15",
     "name": "Sveriges Radio P4 Stockholm",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://edge1.sr.se/p4sth-aac-320",
     "homepage": "https://www.sverigesradio.se/stockholm",
     "favicon": "/station-icons/se/sveriges-radio-p4-stockholm-placeholder.webp",
@@ -6298,7 +6906,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.345771564641424,
-    "geo_long": 18.095956390161508
+    "geo_long": 18.095956390161508,
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-stockholm-543db188",
@@ -6328,8 +6942,8 @@
     "slug": "sveriges-radio-p4-uppland",
     "stationuuid": "9e158282-94f5-4577-a551-58bcca2d9602",
     "name": "Sveriges Radio P4 Uppland",
-    "state": null,
-    "city": null,
+    "state": "Uppsala county",
+    "city": "Uppsala",
     "stream_url": "https://http-live.sr.se/p4uppland-mp3-192",
     "homepage": "https://sverigesradio.se/uppland",
     "favicon": "/station-icons/se/sveriges-radio-p4-uppland-placeholder.webp",
@@ -6346,14 +6960,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.85833343535416,
-    "geo_long": 17.63442993164063
+    "geo_long": 17.63442993164063,
+    "locationNames": {
+      "en": {
+        "city": "Uppsala",
+        "state": "Uppsala county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-uppland-9e1e37f2",
     "stationuuid": "9e1e37f2-ae49-4497-ba91-3dccaf2bd85f",
     "name": "Sveriges Radio P4 Uppland",
-    "state": null,
-    "city": null,
+    "state": "Uppsala county",
+    "city": "Knivsta",
     "stream_url": "https://live1.sr.se/p4uppl-aac-320",
     "homepage": "https://www.sr.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-uppland-9e1e37f2-placeholder.webp",
@@ -6367,14 +6987,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.75953050005019,
-    "geo_long": 17.731933593750004
+    "geo_long": 17.731933593750004,
+    "locationNames": {
+      "en": {
+        "city": "Knivsta",
+        "state": "Uppsala county"
+      }
+    }
   },
   {
     "slug": "sveriges-radio-p4-uppland-aac",
     "stationuuid": "296c9a72-28ad-48f5-85ac-af6eb47acc46",
     "name": "Sveriges Radio P4 Uppland AAC",
-    "state": null,
-    "city": null,
+    "state": "Uppsala county",
+    "city": "Uppsala",
     "stream_url": "https://http-live.sr.se/p4uppland-aac-192",
     "homepage": "https://www.sr.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-uppland-aac-placeholder.webp",
@@ -6391,14 +7017,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.85244560769117,
-    "geo_long": 17.649536132812504
+    "geo_long": 17.649536132812504,
+    "locationNames": {
+      "en": {
+        "city": "Uppsala",
+        "state": "Uppsala county"
+      }
+    }
   },
   {
     "slug": "sveriges-radion-p4-sterg-tland-select-one",
     "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
     "name": "Sveriges Radion P4 Östergötland",
-    "state": "Select One",
-    "city": null,
+    "state": "Östergötland county",
+    "city": "Norrköping",
     "stream_url": "https://live1.sr.se/p4ostg-mp3-96",
     "homepage": "https://sverigesradio.se/ostergotland",
     "favicon": "/station-icons/se/sveriges-radion-p4-sterg-tland-select-one-placeholder.webp",
@@ -6418,14 +7050,20 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 58.5894751343749,
-    "geo_long": 16.1815819144249
+    "geo_long": 16.1815819144249,
+    "locationNames": {
+      "en": {
+        "city": "Norrköping",
+        "state": "Östergötland county"
+      }
+    }
   },
   {
     "slug": "swarm-radio-malmoe",
     "stationuuid": "c0163cdc-0ae8-4512-8db0-528cfb5dbc25",
     "name": "Swarm Radio",
-    "state": "Malmoe",
-    "city": null,
+    "state": "Skåne county",
+    "city": "Malmö",
     "stream_url": "https://stream.zeno.fm/d6ozvqgvrvktv",
     "homepage": "https://swarmradio.ismyradio.com/",
     "favicon": "/station-icons/se/swarm-radio-malmoe.webp",
@@ -6445,8 +7083,8 @@
     "slug": "swedish-truckers",
     "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
     "name": "Swedish Truckers",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml1.prostream.se/listen/swedish_truckers/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/swedish-truckers.webp",
@@ -6468,7 +7106,13 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml1.prostream.se/api/nowplaying/swedish_truckers",
     "metadata_server": "azuracast",
-    "history_url": "https://mml1.prostream.se/api/nowplaying/swedish_truckers"
+    "history_url": "https://mml1.prostream.se/api/nowplaying/swedish_truckers",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "the-modstation-amiga-protracker-modules",
@@ -6501,8 +7145,8 @@
     "slug": "tjenamors-radio",
     "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
     "name": "Tjenamors Radio!",
-    "state": null,
-    "city": null,
+    "state": "Västmanland county",
+    "city": "Västerås",
     "stream_url": "https://radio.tjenamors.se/listen/tjenamors_radio/radio.mp3",
     "homepage": "https://tjenamors.se/",
     "favicon": "/station-icons/se/tjenamors-radio.webp",
@@ -6521,7 +7165,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.62386341680634,
-    "geo_long": 16.603984556992316
+    "geo_long": 16.603984556992316,
+    "locationNames": {
+      "en": {
+        "city": "Västerås",
+        "state": "Västmanland county"
+      }
+    }
   },
   {
     "slug": "tyres-radion",
@@ -6548,8 +7198,8 @@
     "slug": "urban-flow",
     "stationuuid": "3560701c-22a9-4955-a667-fc979b066863",
     "name": "Urban Flow",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/urban_flow/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/urban-flow.webp",
@@ -6570,13 +7220,19 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/urban_flow",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/urban_flow"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/urban_flow",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "vibe-radio-stockholm",
     "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
     "name": "VIBE Radio",
-    "state": "Stockholm",
+    "state": "Stockholm county",
     "city": null,
     "stream_url": "https://streamer.radio.co/s0c62f7351/listen",
     "homepage": "https://viberadio.se/",
@@ -6608,8 +7264,8 @@
     "slug": "vinyl-fm",
     "stationuuid": "f522cf8a-9513-4975-974e-4335aac37cf3",
     "name": "Vinyl FM",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Huddinge kommun",
     "stream_url": "https://edge-bauerse-06-thn.sharp-stream.com/vinylfm_instream_se_mp3?",
     "homepage": "https://radioplay.se/vinylfm/",
     "favicon": "/station-icons/se/vinyl-fm.webp",
@@ -6623,7 +7279,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.153403092050375,
-    "geo_long": 18.061523437500004
+    "geo_long": 18.061523437500004,
+    "locationNames": {
+      "en": {
+        "city": "Huddinge kommun",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "vinylgodis",
@@ -6652,8 +7314,8 @@
     "slug": "wolf-fm-dalarna",
     "stationuuid": "376cb244-4116-4ba4-a525-c6cc8283fc9b",
     "name": "Wolf FM",
-    "state": "Dalarna",
-    "city": null,
+    "state": "Dalarna county",
+    "city": "Falun",
     "stream_url": "https://sstream.ueteknik.se/listen/wolffm/radio.mp3",
     "homepage": "https://wolffmradio.se/",
     "favicon": "/station-icons/se/wolf-fm-dalarna.webp",
@@ -6673,14 +7335,20 @@
     "geo_long": 15.627564126509764,
     "nowplaying_url": "https://sstream.ueteknik.se/api/nowplaying/wolffm",
     "metadata_server": "azuracast",
-    "history_url": "https://sstream.ueteknik.se/api/nowplaying/wolffm"
+    "history_url": "https://sstream.ueteknik.se/api/nowplaying/wolffm",
+    "locationNames": {
+      "en": {
+        "city": "Falun",
+        "state": "Dalarna county"
+      }
+    }
   },
   {
     "slug": "workout",
     "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
     "name": "Workout",
-    "state": null,
-    "city": null,
+    "state": "Stockholm county",
+    "city": "Stockholm",
     "stream_url": "https://mml2.prostream.se/listen/workout/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/workout.webp",
@@ -6702,14 +7370,20 @@
     "geo_long": 18.0686,
     "nowplaying_url": "https://mml2.prostream.se/api/nowplaying/workout",
     "metadata_server": "azuracast",
-    "history_url": "https://mml2.prostream.se/api/nowplaying/workout"
+    "history_url": "https://mml2.prostream.se/api/nowplaying/workout",
+    "locationNames": {
+      "en": {
+        "city": "Stockholm",
+        "state": "Stockholm county"
+      }
+    }
   },
   {
     "slug": "zergan-radyo-47an-sweden",
     "stationuuid": "052b8916-ad5d-4ae4-8cb5-1c137e10e4ca",
     "name": "ZERGAN RADYO  (47an)",
-    "state": "Sweden",
-    "city": null,
+    "state": "Örebro county",
+    "city": "Örebro",
     "stream_url": "https://sslyayin.netyayin.net/radyozergan/;",
     "homepage": "http://www.radyozergan.com/",
     "favicon": "/station-icons/se/zergan-radyo-47an-sweden.webp",
@@ -6726,6 +7400,12 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 59.27384173387862,
-    "geo_long": 15.207234621047975
+    "geo_long": 15.207234621047975,
+    "locationNames": {
+      "en": {
+        "city": "Örebro",
+        "state": "Örebro county"
+      }
+    }
   }
 ]

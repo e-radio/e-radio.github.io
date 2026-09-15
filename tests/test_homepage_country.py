@@ -1,3 +1,5 @@
+import io
+import contextlib
 import importlib.util
 import json
 import os
@@ -40,6 +42,42 @@ class HomepageCountryTest(unittest.TestCase):
                 self.assertEqual(module.main(),0)
             self.assertEqual((root/'src/data/stations-gr.json').read_bytes(),original)
             self.assertEqual(json.loads((root/'src/data/stations-hr.json').read_text())[0]['state'],'Zadarska županija')
+
+class HomepageSummaryTest(unittest.TestCase):
+    def test_summary_on_exhaustion_limit_and_interrupt(self):
+        for mode in ('exhaustion', 'limit', 'interrupt'):
+            with self.subTest(mode=mode), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                data = root/'stations.json'
+                progress = root/'progress.json'
+                records = [
+                    {'stationuuid':'existing','state':'Stockholm'},
+                    {'stationuuid':'previous','state':None},
+                    {'stationuuid':'missing','state':None},
+                    {'stationuuid':'error','state':None,'homepage':'https://error.test'},
+                    {'stationuuid':'empty','state':None,'homepage':'https://empty.test'},
+                    {'stationuuid':'filled','state':None,'homepage':'https://filled.test'},
+                    {'stationuuid':'last','state':None,'homepage':'https://last.test'},
+                ]
+                data.write_text(json.dumps(records))
+                progress.write_text(json.dumps(['previous']))
+                def fetch(url, agent):
+                    if 'error.test' in url: raise OSError('Unavailable')
+                    if 'empty.test' in url: return '<html></html>'
+                    if 'last.test' in url and mode == 'interrupt': raise KeyboardInterrupt()
+                    return '<script type="application/ld+json">{"address":{"addressRegion":"Stockholm county"}}</script>'
+                output = io.StringIO()
+                argv = ['script','--country','se','--max','1' if mode == 'limit' else '0']
+                with patch.object(module,'country_settings',return_value=(data,progress,'test')), patch('sys.argv',argv), patch.object(module,'fetch_html',side_effect=fetch), contextlib.redirect_stdout(output):
+                    self.assertEqual(module.main(),130 if mode == 'interrupt' else 0)
+                text = output.getvalue()
+                self.assertIn('States filled and saved: '+('2' if mode == 'exhaustion' else '1'), text)
+                self.assertIn('Missing homepage: 1', text)
+                self.assertIn('Homepage fetch errors: 1', text)
+                self.assertIn('No state found: 1', text)
+                self.assertIn('already had state: 1; previously recorded: 1', text)
+                self.assertIn('eligible next run: '+('0' if mode == 'exhaustion' else '1'), text)
+                self.assertEqual(json.loads(data.read_text())[5]['state'],'Stockholm county')
 
 if __name__ == '__main__':
     unittest.main()

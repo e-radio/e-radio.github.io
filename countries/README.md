@@ -453,3 +453,29 @@ python3 tools/check-localized-site.py dist
 ```
 
 Deploy the generated site using the existing workflow with `COUNTRY=gr` (also the default). No separate repository or backend is needed for Greek pages. When adding another language, add its dictionary to `translate.ts`, its code and display name to `index.ts`, its social locale to `SEO.astro`, then enable it in the country's `locales` list once the translation is complete.
+
+### Swedish county name normalization
+
+`se.location-names.json` contains all 21 counties from [Statistics Sweden's 2026 county list](https://www.scb.se/en/finding-statistics/regional-statistics/regional-divisions/counties-and-municipalities/counties-and-municipalities-in-numerical-order/), with English names from [SCB's English database](https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__AA__AA0003__AA0003E/IntGr3LanKONS/). Sources are also recorded in the JSON file.
+
+The `stateNames` mapping converts `Stockholms län` to `Stockholm county`, `Skåne län` to `Skåne county`, and equivalent county labels to the same English form. Swedish diacritics are preserved. The `counties` list records SCB codes and Swedish/English names for reference; the geography script reads `stateNames`.
+
+The geography tool automatically loads this file when using `--country se --lang en`. Preview missing locations with:
+
+```sh
+python3 tools/fill-station-geography.py --country se --lang en
+```
+
+Review `reports/geography-se.json`, then add `--write` to apply. To correct populated fields, preview with `--overwrite` and apply with `--overwrite --write`. Creating the mapping alone does not modify station data or `countries/se.json`'s `regions` list. County mapping is applied to geocoder results, not as a standalone replacement pass over existing station values.
+
+City labels such as `Helsingborg`, historical provinces such as `Närke`, and placeholders such as `Select state` are deliberately not mapped to counties without location evidence. Review affected city/region page URLs and add redirects when applying changes to published locations.
+
+### Homepage state-fill completion statistics
+
+Use a number with `--sleep`, for example:
+
+```sh
+COUNTRY=se python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
+```
+
+At completion, the script prints **States filled and saved**, stations checked, homepage requests, existing-state skips, previously skipped records, missing homepages, fetch errors, lookups without a state, remaining missing states, and elapsed time. The summary also appears when no eligible stations remain or you interrupt with Ctrl+C. `--max 10` limits successfully saved states, so the number of stations checked can be higher than 10. Previously skipped records require progress-file review before retrying.
