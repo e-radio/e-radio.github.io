@@ -1,0 +1,57 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { localeHelpers } from '../../i18n/index';
+import { site } from '../../../countries/site.mjs';
+const {t}=localeHelpers(Astro.url);
+const title=t('Metadata endpoint finder');
+const description=t('Find and test radio metadata endpoints from a stream URL.');
+---
+<Layout title={title} description={description}>
+ <SEO slot="seo" title={title} description={description} canonical={site.siteUrl + Astro.url.pathname} />
+ <section class="py-4 mx-auto" style="max-width: 850px">
+  <h1>{title}</h1>
+  <p class="lead">{description}</p>
+  <p class="text-muted">{t('Checks run in your browser. Direct requests are tried first, followed by Jina and Tunzilla. Browser restrictions can prevent verification of working endpoints.')}</p>
+  <form id="finder-form" class="glass rounded-3 p-4">
+   <label for="finder-url" class="form-label">{t('Stream URL')}</label>
+   <input id="finder-url" class="form-control" type="url" required placeholder="https://example.com/listen/station/stream" />
+   <div class="d-flex gap-2 mt-3"><button id="finder-start" class="btn btn-primary" type="submit">{t('Find endpoints')}</button><button id="finder-stop" class="btn btn-outline-secondary" type="button" disabled>{t('Stop')}</button></div>
+  </form>
+  <p id="finder-status" class="mt-3" role="status" aria-live="polite"></p>
+  <div id="finder-results" class="vstack gap-3"></div>
+ </section>
+</Layout>
+<script>
+ import {endpointCandidates,checkEndpoint} from '../../lib/endpoint-finder.mjs';
+ import {clientTranslate as t} from '../../i18n/translate';
+ const form=document.querySelector<HTMLFormElement>('#finder-form')!;
+ const start=document.querySelector<HTMLButtonElement>('#finder-start')!;
+ const stop=document.querySelector<HTMLButtonElement>('#finder-stop')!;
+ const status=document.querySelector('#finder-status')!;
+ const results=document.querySelector('#finder-results')!;
+ let controller:AbortController;
+ stop.addEventListener('click',()=>controller?.abort());
+ form.addEventListener('submit',async event=>{
+  event.preventDefault();let plan;
+  try {plan=endpointCandidates(document.querySelector<HTMLInputElement>('#finder-url')!.value);} catch {status.textContent=t('Enter a valid HTTP or HTTPS stream URL.');return;}
+  controller=new AbortController();start.disabled=true;stop.disabled=false;results.replaceChildren();
+  let completed=0;
+  try {
+   const queue=[...plan.candidates];
+   const worker=async()=>{while(queue.length&&!controller.signal.aborted){
+    const candidate=queue.shift()!;
+    const result=await checkEndpoint(candidate,plan.streamUrl,controller.signal);
+    const card=document.createElement('section');card.className='border rounded-3 p-3';
+    const heading=document.createElement('h2');heading.className='h5';heading.textContent=candidate.server+' · '+t(result.config?'Verified':'Not verified');card.append(heading);
+    const preview=document.createElement('p');preview.textContent=result.current?.text || t('Song information unavailable');card.append(preview);
+    if(result.config){const output=document.createElement('textarea');output.className='form-control font-monospace small';output.rows=6;output.readOnly=true;output.setAttribute('aria-label',t('Metadata configuration'));output.value=JSON.stringify(result.config,null,2);card.append(output);
+     const copy=document.createElement('button');copy.className='btn btn-outline-primary btn-sm mt-2';copy.textContent=t('Copy JSON');copy.onclick=async()=>{try{await navigator.clipboard.writeText(output.value);copy.textContent=t('Copied');}catch{output.focus();output.select();status.textContent=t('Select and copy the configuration.');}};card.append(copy);}
+    const details=document.createElement('details');details.className='mt-3';const summary=document.createElement('summary');summary.textContent=t('Request results');details.append(summary);
+    for(const attempt of result.attempts){const row=document.createElement('p');row.className='small text-break mt-2 mb-1';row.textContent=attempt.method+' · '+t(attempt.status)+' · '+attempt.url;details.append(row);}card.append(details);results.append(card);
+    completed++;status.textContent=t('Checked {0} of {1} candidates.',[completed,plan.candidates.length]);
+   }};
+   status.textContent=t('Checking endpoints…');await Promise.all([worker(),worker()]);
+  } catch {status.textContent=t('Checks stopped.');} finally {start.disabled=false;stop.disabled=true;}
+ });
+</script>

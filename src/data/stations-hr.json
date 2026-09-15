@@ -2496,7 +2496,7 @@
     "name": "HRT HR 1 - Prvi program",
     "state": "City of Zagreb",
     "city": "Zagreb",
-    "stream_url": "http://25703.live.streamtheworld.com:3690/PROGRAM1_SC",
+    "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/PROGRAM1.mp3",
     "homepage": "http://radio.hrt.hr/stream/6/",
     "favicon": "/station-icons/hr/hrt-hr-1-prvi-program-zagreb.webp",
     "genres": [
@@ -2994,7 +2994,7 @@
     "slug": "hrvatski-radio-akovec-d-o-o-stream",
     "stationuuid": "311b357a-fd6a-483e-969d-cc8985e05413",
     "name": "Hrvatski Radio Čakovec d.o.o. Stream",
-    "state": "Medjimurje",
+    "state": "Međimurje",
     "city": "Čakovec",
     "stream_url": "http://live.radio-cakovec.hr:7020/stream",
     "homepage": "http://www.radio-cakovec.hr/",

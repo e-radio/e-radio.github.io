@@ -341,5 +341,22 @@
   "Technical details": "Tehnički podaci",
   "Metadata provider": "Pružatelj metapodataka",
   "Now-playing endpoint": "Adresa trenutačnih metapodataka",
-  "History endpoint": "Adresa povijesti pjesama"
+  "History endpoint": "Adresa povijesti pjesama",
+  "Metadata endpoint finder": "Tražilica metapodatkovnih adresa",
+  "Find and test radio metadata endpoints from a stream URL.": "Pronađite i provjerite adrese metapodataka pomoću adrese radijskog toka.",
+  "Checks run in your browser. Direct requests are tried first, followed by Jina and Tunzilla. Browser restrictions can prevent verification of working endpoints.": "Provjere se izvode u pregledniku. Najprije se pokušava izravan pristup, zatim Jina i Tunzilla. Ograničenja preglednika mogu spriječiti provjeru ispravnih adresa.",
+  "Find endpoints": "Pronađi adrese",
+  "Enter a valid HTTP or HTTPS stream URL.": "Unesite valjanu HTTP ili HTTPS adresu toka.",
+  "Verified": "Provjereno",
+  "Not verified": "Nije provjereno",
+  "Metadata configuration": "Postavke metapodataka",
+  "Copy JSON": "Kopiraj JSON",
+  "Select and copy the configuration.": "Označite i kopirajte postavke.",
+  "Request results": "Rezultati zahtjeva",
+  "Checking endpoints…": "Provjera adresa…",
+  "Checks stopped.": "Provjere su zaustavljene.",
+  "Checked {0} of {1} candidates.": "Provjereno {0} od {1} kandidata.",
+  "Invalid metadata": "Nevaljani metapodaci",
+  "Audio response": "Zvučni odgovor",
+  "Blocked, unavailable or timed out": "Blokirano, nedostupno ili je isteklo vrijeme"
 }

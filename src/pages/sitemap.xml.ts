@@ -73,6 +73,7 @@ export async function GET() {
 
   const staticPages = [
     { loc: `${ROOT_URL}/live-tracks/`, lastmod },
+    { loc: `${ROOT_URL}/tools/endpoint-finder/`, lastmod },
     {
       loc: `${ROOT_URL}/`,
       lastmod,

@@ -117,7 +117,7 @@ import { clientTranslate as t } from '../i18n/translate';
       while (queue.length && !document.hidden) {
         const [endpoint, entries] = queue.shift()!;
         try {
-          const data = await metadataFetcher.request(endpoint, text => decodeProviderMetadata(entries[0].dataset.server, text));
+          const data = await metadataFetcher.request(endpoint, (text: string) => decodeProviderMetadata(entries[0].dataset.server, text));
           const delay = Math.min(...entries.map(card => metadataPollDelay(card.dataset.server, data, pollInterval)));
           nextRefresh.set(endpoint, Date.now() + delay);
           for (const card of entries) {
