@@ -1,7 +1,7 @@
 import importlib.util
 import unittest
 from pathlib import Path
-spec = importlib.util.spec_from_file_location('geography', Path(__file__).parents[1] / 'tools/fill-station-geography.py')
+spec = importlib.util.spec_from_file_location('geography', Path(__file__).parents[1] / 'tools/fill-station-locations.py')
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
@@ -17,8 +17,7 @@ class GeographyTest(unittest.TestCase):
             module.location_from_address({'country_code':'ga','city':'Libreville','state':'Estuaire'},'hr')
 
     def test_county_not_used_as_city(self):
-        with self.assertRaisesRegex(ValueError, 'unambiguous'):
-            module.location_from_address({'country_code':'hr','county':'Istarska županija','road':'Street'},'hr')
+        self.assertEqual(module.location_from_address({'country_code':'hr','county':'Istarska županija','road':'Street'},'hr'), (None, 'Istarska županija'))
 
 if __name__ == '__main__':
     unittest.main()

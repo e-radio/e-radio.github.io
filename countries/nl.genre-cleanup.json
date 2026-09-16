@@ -1,0 +1,181 @@
+{
+  "aliases": {
+    "nieuws": [
+      "news"
+    ],
+    "christelijk": [
+      "christian"
+    ],
+    "nederlandse muziek": [
+      "dutch music"
+    ],
+    "hollandse muziek": [
+      "dutch music"
+    ],
+    "piraten muziek": [
+      "dutch pirate music"
+    ],
+    "geheime zender": [
+      "pirate radio"
+    ],
+    "various pop hits oldies easylistening nederlands": [
+      "pop",
+      "hits",
+      "oldies",
+      "easy listening",
+      "dutch music"
+    ],
+    "various pop hits oldies easylistening nederlands top40 nederlandstalig hollands dutch hospitalradio ziekenomroep": [
+      "pop",
+      "hits",
+      "oldies",
+      "easy listening",
+      "dutch music",
+      "top 40",
+      "hospital radio"
+    ],
+    "instrumentaal en de beste oldie's": [
+      "instrumental",
+      "oldies"
+    ],
+    "duits": [
+      "german"
+    ],
+    "engels": [
+      "english"
+    ],
+    "nederlands": [
+      "dutch"
+    ],
+    "hollands": [
+      "dutch music"
+    ],
+    "nederlandstalig": [
+      "dutch-language music"
+    ],
+    "nederpop": [
+      "dutch pop"
+    ],
+    "piratenmuziek": [
+      "dutch pirate music"
+    ],
+    "piratenhits": [
+      "dutch pirate music"
+    ],
+    "piraten": [
+      "pirate radio"
+    ],
+    "piraat": [
+      "pirate radio"
+    ],
+    "etherpiraten": [
+      "pirate radio"
+    ],
+    "echtepiraten": [
+      "pirate radio"
+    ],
+    "geheimezender": [
+      "pirate radio"
+    ],
+    "kerk- en koormuziek": [
+      "church music",
+      "choral music"
+    ],
+    "live programma": [
+      "live shows"
+    ],
+    "lokaal": [
+      "local radio"
+    ],
+    "regio": [
+      "regional radio"
+    ],
+    "regionaal": [
+      "regional radio"
+    ],
+    "publieke omroep": [
+      "public radio"
+    ],
+    "streektaal": [
+      "regional-language music"
+    ],
+    "platdüütsch": [
+      "low german"
+    ],
+    "carnaval": [
+      "carnival music"
+    ],
+    "radio carnaval": [
+      "carnival music"
+    ],
+    "marsch": [
+      "marching music"
+    ],
+    "volksmuziek": [
+      "folk"
+    ],
+    "volksmusik": [
+      "german folk music"
+    ],
+    "volkstümlich": [
+      "german folk pop"
+    ],
+    "volkstümlicher schlager": [
+      "folk-influenced schlager"
+    ],
+    "unsterbliche klassiker": [
+      "timeless classics"
+    ],
+    "nieuwe nederlandse": [
+      "dutch music",
+      "new releases"
+    ],
+    "latino": [
+      "latin"
+    ],
+    "apresski": [
+      "apres-ski music"
+    ],
+    "tipparade": [
+      "bubbling under hits"
+    ]
+  },
+  "remove": [
+    "netherlands",
+    "holland",
+    "rotterdam",
+    "enschede",
+    "twente",
+    "limburg",
+    "philipsburg",
+    "hoogvliet",
+    "rijnmond",
+    "cromvoirt",
+    "helvoirt",
+    "vught",
+    "hilversum",
+    "groningen",
+    "saba",
+    "amsterdam-zuidoost",
+    "venlo",
+    "nederweert",
+    "weert",
+    "053 radio",
+    "radio 053",
+    "platinum radio",
+    "pinguinradio",
+    "pinguin radio",
+    "delta fm",
+    "girlpowerradio",
+    "kink",
+    "npo",
+    "omroep brabant",
+    "vahon broadcasting",
+    "vahon hindustani radio",
+    "vahonfm",
+    "muziek zonder flauwekul",
+    "twentse gezelligheid",
+    "stad en ommeland",
+    "powervrouw"
+  ]
+}

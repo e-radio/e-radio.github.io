@@ -3,55 +3,18 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { downloadFavicon } from "./lib/favicon-download.mjs";
 
 const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", ...(countryCode === "gr" ? [] : [countryCode]));
 const STATIONS_PATH = stationsPath;
-const MAX_RETRIES = 2;
-const FETCH_TIMEOUT_MS = 15000;
-
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-const fetchWithRetry = async (url, retries = MAX_RETRIES) => {
-  for (let attempt = 0; attempt <= retries; attempt++) {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-
-    try {
-      const response = await fetch(url, {
-        redirect: "follow",
-        headers: {
-          Accept: "image/avif,image/webp,image/png,image/svg+xml,image/jpeg,image/gif,*/*;q=0.1",
-          "User-Agent": `${site.siteName} favicon cache (${site.siteUrl})`,
-        },
-        signal: controller.signal,
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-      const contentType = (response.headers.get("content-type") || "").toLowerCase();
-      if (contentType.includes("text/html") || contentType.includes("application/xhtml")) {
-        throw new Error(`Expected an image but received ${contentType}`);
-      }
-
-      const arrayBuffer = await response.arrayBuffer();
-      clearTimeout(timeout);
-      return Buffer.from(arrayBuffer);
-    } catch (error) {
-      clearTimeout(timeout);
-      if (attempt === retries) {
-        throw error;
-      }
-      const backoff = 500 * (attempt + 1);
-      console.warn(`Retrying ${url} after ${backoff}ms due to: ${error.message}`);
-      await delay(backoff);
-    }
-  }
-  throw new Error("Unreachable");
-};
+const fetchWithRetry = url => downloadFavicon(url, {
+  userAgent: `${site.siteName} favicon cache (${site.siteUrl})`,
+});
 
 const normalizeImage = async (buffer) => {
   // Decoding with sharp verifies the file contents instead of trusting the URL
   // extension or Content-Type header. HTML and other non-images fail here.
-  return sharp(buffer, { animated: false, limitInputPixels: false })
+  return sharp(buffer, { animated: false, limitInputPixels: 40_000_000 })
     .rotate()
     .resize(256, 256, {
       fit: "contain",

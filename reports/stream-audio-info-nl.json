@@ -1,0 +1,219 @@
+{
+  "country": "nl",
+  "checked_urls": 37,
+  "target_entries": 37,
+  "changes": {
+    "masters-of-hardcore-netherlands": {
+      "bitrate": 256
+    },
+    "piraten-fm-4": {
+      "bitrate": 192
+    },
+    "piraten-fm-5": {
+      "bitrate": 192
+    },
+    "platinum-radio-netherlands": {
+      "bitrate": 192
+    },
+    "platinum-radio-90s-netherlands": {
+      "bitrate": 192
+    }
+  },
+  "results": [
+    {
+      "url": "http://djuplink.com/livesets-radio.mp3",
+      "error": "http://djuplink.com/livesets-radio.mp3: Server returned 404 Not Found"
+    },
+    {
+      "url": "http://e.radio-nederland.nl/embed/los-den-helder-413484",
+      "error": "http://e.radio-nederland.nl/embed/los-den-helder-413484: End of file"
+    },
+    {
+      "url": "http://internetradio.kim:8080/flac",
+      "error": "[tcp @ 0x74f058000] Failed to resolve hostname internetradio.kim: nodename nor servname provided, or not known\nhttp://internetradio.kim:8080/flac: Input/output error"
+    },
+    {
+      "url": "http://ms7.mx-cd.net/tv/117-475839/Studio040.smil/playlist.m3u8",
+      "error": "http://ms7.mx-cd.net/tv/117-475839/Studio040.smil/playlist.m3u8: Operation timed out"
+    },
+    {
+      "url": "http://mscp2.live-streams.nl:8100/flac.flac",
+      "error": "http://mscp2.live-streams.nl:8100/flac.flac: Server returned 404 Not Found"
+    },
+    {
+      "url": "http://piraten.fm/top/4",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "http://piraten.fm/top/5",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "http://radio10.nl/luister/radio-10-soul-jazz",
+      "error": "http://radio10.nl/luister/radio-10-soul-jazz: Invalid data found when processing input"
+    },
+    {
+      "url": "http://radiosputnik.nl:8002/flac",
+      "ffprobe_audio": {
+        "codec_name": "flac",
+        "codec_type": "audio"
+      },
+      "codec": "FLAC"
+    },
+    {
+      "url": "http://shoutcast3.hardcoreradio.nl/",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "256000"
+      },
+      "codec": "MP3",
+      "bitrate": 256
+    },
+    {
+      "url": "https://58c04fb1d143f.streamlock.net/rararadio/rararadio/chunklist_w697961126.m3u8",
+      "ffprobe_audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio"
+      },
+      "codec": "AAC"
+    },
+    {
+      "url": "https://cdn.voscast.com/resources/?key=07310b2448cdea5d13faff91268e178d&c=winamp",
+      "error": "No audio stream identified"
+    },
+    {
+      "url": "https://intergalactic.tv/live/smil:tv.smil/playlist.m3u8",
+      "error": "No audio stream identified"
+    },
+    {
+      "url": "https://ms10.mx-cd.net/dtv-21/157-660305/Omroep_Horst_aan_de_Maas.smil/playlist.m3u8",
+      "error": "https://ms10.mx-cd.net/dtv-21/157-660305/Omroep_Horst_aan_de_Maas.smil/playlist.m3u8: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://ms2.mx-cd.net/dtv-21/105-567919/Slingeland_FM.smil/playlist.m3u8",
+      "error": "https://ms2.mx-cd.net/dtv-21/105-567919/Slingeland_FM.smil/playlist.m3u8: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://pepperboxradio.nl/",
+      "error": "https://pepperboxradio.nl/: Invalid data found when processing input"
+    },
+    {
+      "url": "https://progressieverock.nl/flac",
+      "ffprobe_audio": {
+        "codec_name": "flac",
+        "codec_type": "audio"
+      },
+      "codec": "FLAC"
+    },
+    {
+      "url": "https://qmusic.nl/luister/qnl_foute_uur",
+      "error": "https://qmusic.nl/luister/qnl_foute_uur: Server returned 403 Forbidden (access denied)"
+    },
+    {
+      "url": "https://radio.platinumradio.nl/listen/platinum_90s/radio.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://radio.platinumradio.nl/listen/platinum_hardstyle/radio.mp3",
+      "error": "https://radio.platinumradio.nl/listen/platinum_hardstyle/radio.mp3: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://radio.platinumradio.nl/listen/platinum_radio/radio.mp3",
+      "ffprobe_audio": {
+        "codec_name": "mp3",
+        "codec_type": "audio",
+        "bit_rate": "192000"
+      },
+      "codec": "MP3",
+      "bitrate": 192
+    },
+    {
+      "url": "https://share.xdevel.com/api/?platform=streamsolution&get=player&key=e9dcb1b1fc3f078a444c2a99069c7123&ver=5&responsive=1&description=TWl4ZWQgJiBDb21waWxlZCBieSBESiBWZXJ5RmVycnkgLSBXYXRlcmZyb250IFJhZGlvIFBvb2wgJiBCZWFjaCAocmUpTWl4eGVkICMwMyBMSVZFIG9uIFdhdG",
+      "error": "https://share.xdevel.com/api/?platform=streamsolution&get=player&key=e9dcb1b1fc3f078a444c2a99069c7123&ver=5&responsive=1&description=TWl4ZWQgJiBDb21waWxlZCBieSBESiBWZXJ5RmVycnkgLSBXYXRlcmZyb250IFJhZGlvIFBvb2wgJiBCZWFjaCAocmUpTWl4eGVkICMwMyBMSVZFIG9uIFdhdG: Invalid data found when processing input"
+    },
+    {
+      "url": "https://solid48.streamupsolutions.com/proxy/ofufrjbi/radio750",
+      "error": "https://solid48.streamupsolutions.com/proxy/ofufrjbi/radio750: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream-24.zeno.fm/qqbwd2x8d2zuv?zs=VzE6e4CwROOSeWMCik-I-Q",
+      "error": "https://stream-24.zeno.fm/qqbwd2x8d2zuv?zs=VzE6e4CwROOSeWMCik-I-Q: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.jazzradiobymaestro.com/relaxinhttps://www.jazzradiobymaestro.com/",
+      "error": "https://stream.jazzradiobymaestro.com/relaxinhttps://www.jazzradiobymaestro.com/: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream.tbmp.nl:8000/haarlemshuffle.flac",
+      "ffprobe_audio": {
+        "codec_name": "flac",
+        "codec_type": "audio"
+      },
+      "codec": "FLAC"
+    },
+    {
+      "url": "https://stream01.pcradio.ru/Armin_van_buuren-med",
+      "error": "https://stream01.pcradio.ru/Armin_van_buuren-med: Server returned 404 Not Found"
+    },
+    {
+      "url": "https://stream02.pcradio.ru/andys_80s-med",
+      "error": "[tcp @ 0x95f09c080] Connection to tcp://stream02.pcradio.ru:443 failed: Connection refused\nhttps://stream02.pcradio.ru/andys_80s-med: Connection refused"
+    },
+    {
+      "url": "https://tunein.com/radio/Ideaal-Plus-106-s77476/",
+      "error": "https://tunein.com/radio/Ideaal-Plus-106-s77476/: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.classic.nl/plus/profiel",
+      "error": "https://www.classic.nl/plus/profiel: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.inthahouse.nl/stream",
+      "error": "https://www.inthahouse.nl/stream: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.jungleradio.nl/",
+      "error": "https://www.jungleradio.nl/: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.radio-10-soul-jazz/stream.mp3",
+      "error": "[tcp @ 0xb38c68140] Failed to resolve hostname www.radio-10-soul-jazz: nodename nor servname provided, or not known\nhttps://www.radio-10-soul-jazz/stream.mp3: Input/output error"
+    },
+    {
+      "url": "https://www.radioviainternet.nl/baarn-fm",
+      "error": "https://www.radioviainternet.nl/baarn-fm: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.radioviainternet.nl/radio-den-helder-los",
+      "error": "https://www.radioviainternet.nl/radio-den-helder-los: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.rtvideaal.nl/ideaal-plus",
+      "error": "https://www.rtvideaal.nl/ideaal-plus: Invalid data found when processing input"
+    },
+    {
+      "url": "https://www.rvmradio.nl/",
+      "error": "https://www.rvmradio.nl/: Invalid data found when processing input"
+    }
+  ]
+}

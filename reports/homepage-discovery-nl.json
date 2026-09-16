@@ -1,0 +1,350 @@
+{
+  "checked": 26,
+  "filled": 19,
+  "results": [
+    {
+      "stationuuid": "790ef988-70ac-4823-9732-c80f57a129f0",
+      "name": "ICE RADIO",
+      "stream": "https://stream.iceradio.nl/iceradiohq?ver=30283",
+      "candidates": [
+        {
+          "url": "https://www.iceradio.nl",
+          "source": "icy-url",
+          "endpoint": "https://stream.iceradio.nl/iceradiohq?ver=30283"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "202b568c-7641-4ed9-8ce9-6109d3de14e4",
+      "name": "Reformatorische omroep",
+      "stream": "http://ro1.reformatorischeomroep.nl:8003/live",
+      "candidates": [],
+      "errors": [
+        "curl: (63) Exceeded the maximum allowed file size (8192) with 8192 bytes"
+      ],
+      "status": "no-homepage-found"
+    },
+    {
+      "stationuuid": "2d4d3a80-77d0-4275-a5b0-ceac8b8040da",
+      "name": "1.fm movie Sound",
+      "stream": "http://185.33.21.112/moviesoundtracks_128",
+      "candidates": [],
+      "errors": [
+        "curl: (28) Connection timed out after 12001 milliseconds"
+      ],
+      "status": "no-homepage-found"
+    },
+    {
+      "stationuuid": "599ff9c0-a3ef-48e7-a5da-494c44642c68",
+      "name": "Christelijke Omroep",
+      "stream": "https://stream.christelijkeomroep.nl/192?_gl=1*tymsna*_ga*MTEwODM5OTM1MC4xNjgxMDcyNjUx*_ga_1717X15JX8*MTY4MTEwMjQ5OC4yLjAuMTY4MTEwMjQ5OC4wLjAuMA..",
+      "candidates": [
+        {
+          "url": "https://christelijkeomroep.nl",
+          "source": "icy-url",
+          "endpoint": "https://stream.christelijkeomroep.nl/192?_gl=1*tymsna*_ga*MTEwODM5OTM1MC4xNjgxMDcyNjUx*_ga_1717X15JX8*MTY4MTEwMjQ5OC4yLjAuMTY4MTEwMjQ5OC4wLjAuMA.."
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "17e752d0-0e5f-4264-8569-7752289e9db8",
+      "name": "Concertzender - De Gehoorde Stilte",
+      "stream": "http://streams.greenhost.nl:8080/gehoordestilte",
+      "candidates": [
+        {
+          "url": "http://www.concertzender.nl/",
+          "source": "icy-url",
+          "endpoint": "http://streams.greenhost.nl:8080/gehoordestilte"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "4ea392c2-99d1-4754-9850-91b0bd14a886",
+      "name": "Delta Radio Nijmegen",
+      "stream": "http://streamdelta.lokaalradio.nl:9005/",
+      "candidates": [
+        {
+          "url": "https://www.deltaradio90.nl",
+          "source": "icy-url",
+          "endpoint": "http://streamdelta.lokaalradio.nl:9005/"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "94471e9b-4dd6-4651-aa16-0f370023cf4f",
+      "name": "DesiZone",
+      "stream": "http://www.desizone.nl:8000/",
+      "candidates": [
+        {
+          "url": "http://www.desizoneradio.com",
+          "source": "icy-url",
+          "endpoint": "http://www.desizone.nl:8000/"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "d7648a44-88b8-4ad0-9040-7c8524015b7e",
+      "name": "Golden Oldies Radio",
+      "stream": "https://sonic.magicdragon.nl/8034/stream",
+      "candidates": [
+        {
+          "url": "https://goldenoldies.radio",
+          "source": "icy-url",
+          "endpoint": "https://sonic.magicdragon.nl/8034/stream"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "f366f3a3-d2ab-4aa1-a789-17dc7fb9955f",
+      "name": "Goud van Oud",
+      "stream": "http://server-23.stream-server.nl:8118/stream",
+      "candidates": [
+        {
+          "url": "https://www.radiogoudvanoud.nl",
+          "source": "icy-url",
+          "endpoint": "http://server-23.stream-server.nl:8118/stream"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "aece9305-b6da-46af-a565-bd992a196726",
+      "name": "Hi On Line",
+      "stream": "http://mscp2.live-streams.nl:8100/flac.flac",
+      "candidates": [],
+      "errors": [
+        "No website advertised"
+      ],
+      "status": "no-homepage-found"
+    },
+    {
+      "stationuuid": "e9c16aec-8396-46bf-ba67-d7f3948b8676",
+      "name": "Hofstad radio",
+      "stream": "https://solid41.streamupsolutions.com/proxy/toyfkozk?mp=/stream",
+      "candidates": [
+        {
+          "url": "https://www.hofstadradio.com",
+          "source": "icy-url",
+          "endpoint": "https://solid41.streamupsolutions.com/proxy/toyfkozk?mp=/stream"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "d569576f-c908-4dde-a794-7fdd2189dd7a",
+      "name": "keizerstad classic",
+      "stream": "https://stream.keizerstad.nl/classics.mp3",
+      "candidates": [
+        {
+          "url": "http://www.keizerstad.nl",
+          "source": "icy-url",
+          "endpoint": "https://stream.keizerstad.nl/classics.mp3"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "7b64de03-74bf-4e3e-aa70-8ef89539b4fd",
+      "name": "KINK Distortion",
+      "stream": "https://28973.live.streamtheworld.com/KINK_DISTORTION_SC",
+      "candidates": [
+        {
+          "url": "https://www.kink.nl/distortion",
+          "source": "icy-url",
+          "endpoint": "https://28973.live.streamtheworld.com/KINK_DISTORTION_SC"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "11aee9bc-e4d6-4d88-a422-6049c03e4803",
+      "name": "Niederlande - Donderschoer Radio",
+      "stream": "http://audiostreamen.nl:8400/stream",
+      "candidates": [
+        {
+          "url": "https://www.teamfm.nl/",
+          "source": "icy-url",
+          "endpoint": "http://audiostreamen.nl:8400/stream"
+        }
+      ],
+      "errors": [],
+      "status": "review-station-stream-mismatch"
+    },
+    {
+      "stationuuid": "c3fc1409-4021-11e9-aa55-52543be04c81",
+      "name": "NPO 2",
+      "stream": "http://icecast.omroep.nl/radio2-bb-aac",
+      "candidates": [
+        {
+          "url": "http://www.radio2.nl",
+          "source": "icy-url",
+          "endpoint": "http://icecast.omroep.nl/radio2-bb-aac"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "660f43b7-7d73-4e44-9ef5-9454fc36c213",
+      "name": "NPO Radio 1",
+      "stream": "https://icecast.omroep.nl/radio2-bb-aac",
+      "candidates": [
+        {
+          "url": "http://www.radio2.nl",
+          "source": "icy-url",
+          "endpoint": "https://icecast.omroep.nl/radio2-bb-aac"
+        }
+      ],
+      "errors": [],
+      "status": "review-station-stream-mismatch"
+    },
+    {
+      "stationuuid": "154e6e53-d929-43e5-8f22-4385df9f4656",
+      "name": "NPO Radio 4 Concerten",
+      "stream": "http://icecast.omroep.nl/radio4-eigentijds-aac",
+      "candidates": [
+        {
+          "url": "http://www.radio4.nl",
+          "source": "icy-url",
+          "endpoint": "http://icecast.omroep.nl/radio4-eigentijds-aac"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "71b86a24-74b7-4e34-abce-19401605bd7a",
+      "name": "NPO Radio 6",
+      "stream": "https://icecast.omroep.nl/radio6-bb-aac",
+      "candidates": [],
+      "errors": [
+        "No website advertised"
+      ],
+      "status": "no-homepage-found"
+    },
+    {
+      "stationuuid": "510f3b9f-1434-4c18-9de4-de65a0329d74",
+      "name": "PI2NOS",
+      "stream": "https://stream.hobbyscoop.nl/pi2nos",
+      "candidates": [
+        {
+          "url": "http://www.hobbyscoop.nl",
+          "source": "icy-url",
+          "endpoint": "https://stream.hobbyscoop.nl/pi2nos"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "62b55cc5-ed72-4e94-88e2-65393c6d4433",
+      "name": "PI3UTR",
+      "stream": "https://stream.hobbyscoop.nl/pi3utr",
+      "candidates": [
+        {
+          "url": "http://www.hobbyscoop.nl",
+          "source": "icy-url",
+          "endpoint": "https://stream.hobbyscoop.nl/pi3utr"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "328a5baa-b12b-46a5-b8cd-31eb1a70f9b5",
+      "name": "Q Musik Top40 NL",
+      "stream": "https://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_top40_high.aac",
+      "candidates": [],
+      "errors": [
+        "curl: (63) Exceeded the maximum allowed file size (8192) with 8192 bytes"
+      ],
+      "status": "no-homepage-found"
+    },
+    {
+      "stationuuid": "2e96250c-0918-47f6-b778-8d2fef3be807",
+      "name": "Radio 1",
+      "stream": "https://icecast.omroep.nl/radio1-bb-mp3",
+      "candidates": [
+        {
+          "url": "http://www.radio1.nl",
+          "source": "icy-url",
+          "endpoint": "https://icecast.omroep.nl/radio1-bb-mp3"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "54660f01-599c-4781-8fe2-008729962b4b",
+      "name": "RADIO 10 TOP 4000",
+      "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR24.mp3",
+      "candidates": [
+        {
+          "url": "https://www.radio10.nl/top-4000",
+          "source": "icy-url",
+          "endpoint": "http://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR24.mp3"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "69b4c670-8466-4620-a5af-72949a2df5e2",
+      "name": "radio noordvaader",
+      "stream": "http://www1.radionoordvaarder.nl:8000/;",
+      "candidates": [
+        {
+          "url": "http://www.radionoordvaarder.nl",
+          "source": "icy-url",
+          "endpoint": "http://www1.radionoordvaarder.nl:8000/;"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "eda5f188-318e-4246-8c83-031ace70827a",
+      "name": "Riverside Radio",
+      "stream": "https://stream.and-stuff.nl:8443/riverside",
+      "candidates": [
+        {
+          "url": "https://www.riversideradio.nl",
+          "source": "icy-url",
+          "endpoint": "https://stream.and-stuff.nl:8443/riverside"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    },
+    {
+      "stationuuid": "66b9ebaf-09c8-4f15-9afe-11009c8f21eb",
+      "name": "Slow Radio",
+      "stream": "https://stream1.slowradio.com/",
+      "candidates": [
+        {
+          "url": "https://www.slowradio.com",
+          "source": "icy-url",
+          "endpoint": "https://stream1.slowradio.com/"
+        }
+      ],
+      "errors": [],
+      "status": "filled"
+    }
+  ]
+}

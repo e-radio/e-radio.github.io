@@ -1,0 +1,44 @@
+{
+  "changes": [
+    {
+      "stationuuid": "56340d3f-e15f-4588-a4d3-c465567cc1e9",
+      "slug": "firma-lomp-en-onbenullig-drenthe",
+      "before": "2e Exloërmond",
+      "after": "Tweede Exloërmond"
+    },
+    {
+      "stationuuid": "c9bcae1a-6c2b-4546-8086-c34b0c899fb2",
+      "slug": "hi-on-line-radio-lounge-amsterdam",
+      "before": "null",
+      "after": null
+    },
+    {
+      "stationuuid": "8c100c07-8c1d-4d0c-8040-5b98dea15d21",
+      "slug": "jans-den-haag-zuid-holland-den-haag",
+      "before": "Den Haag",
+      "after": "The Hague"
+    },
+    {
+      "stationuuid": "486357a2-a312-4e25-b948-a0e03dda94a7",
+      "slug": "radio-sangam-zuid-holland-den-haag",
+      "before": "Den Haag",
+      "after": "The Hague"
+    },
+    {
+      "stationuuid": "964d4db0-83f3-4d27-9eb1-b3bd3e5c2399",
+      "slug": "radio-srinagar-zuid-holland-den-haag",
+      "before": "Den Haag",
+      "after": "The Hague"
+    },
+    {
+      "stationuuid": "c270e397-12a9-4fbe-bb2e-305cff8659b9",
+      "slug": "vahonfm-vahon-hindustani-radio-zuid-holland-den-haag",
+      "before": "Den Haag",
+      "after": "The Hague"
+    }
+  ],
+  "sources": [
+    "https://www.denhaag.nl/en/contact-with-the-municipality/",
+    "https://www.borger-odoorn.nl/sportaccommodatie-huren"
+  ]
+}

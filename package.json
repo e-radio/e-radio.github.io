@@ -4,17 +4,19 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "dev hr": "COUNTRY=hr npm run dev",
-    "dev se": "COUNTRY=se npm run dev",
+    "dev:hr": "COUNTRY=hr npm run dev",
+    "dev:se": "COUNTRY=se npm run dev",
+    "dev:nl": "COUNTRY=nl npm run dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "git push gr": "git add . && git commit -m \"update\" && git push origin main",
     "git push hr": "git add . && git commit -m \"update\" && git push croatia main",
     "git push se": "git add . && git commit -m \"update\" && git push sweden main",
+    "git push nl": "git add . && git commit -m \"update\" && git push netherland main",
     "git push": "git push",
     "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
-    "fill state": "python3 tools/fill-state-from-homepage.py --max 0 --sleep 1",
+    "fill locations": "python3 tools/fill-station-locations.py",
     "fff brobe": "python3 tools/ffprobe-metadata.py --url https://radio.streamings.gr/proxy/yellownewstream?mp=/stream",
     "get stations from radio browser api": "node tools/fetch-greece-stations.mjs",
     "helper": "node tools/find-station-metadata-endpoints.mjs --write",
@@ -23,7 +25,7 @@
     "stations:metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "stations:icons": "node tools/cache-station-favicons.mjs",
     "test": "node --test tests/*.test.mjs",
-    "stations:geography": "python3 tools/fill-station-geography.py"
+    "stations:geography": "python3 tools/fill-station-locations.py"
   },
   "dependencies": {
     "astro": "^5.17.3",

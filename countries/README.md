@@ -21,7 +21,7 @@ Restart the development server after changing country or editing a country confi
 Follow the [step-by-step new-country guide in the main README](../README.md#add-a-new-country-step-by-step) for configuration, imports, images, geography, metadata, translations, validation, and deployment. The commands below are a short reference.
 
 ```sh
-node tools/create-country.mjs --code si --name Slovenia --adjective Slovenian --site-name "Radio Slovenija" --url https://your-site.example
+node tools/create-country.mjs --code si --name Slovenia --adjective Slovenian --site-name "Radio Slovenija" --url https://your-site.github.io
 COUNTRY=si npm run stations:import
 COUNTRY=si npm run stations:metadata
 COUNTRY=si npm run stations:icons
@@ -135,31 +135,31 @@ The importer saves automatically. Review `src/data/stations-se.json`, `src/data/
 
 For intentional deletions, add the station UUIDs to `countries/se.excluded-stations.json`, then rerun the import. Include alternate UUIDs for merged stations. See [exclusions](#exclude-deleted-stations-from-future-imports). When merging, preserve distinct streams, put removed UUIDs in `alternate_stationuuids`, and map old page paths to the retained page in `countries/se.redirects.json`.
 
-### 2. Fill missing city AND state from coordinates
+### 2. Fill missing city AND state from coordinates and websites
 
-Use **`fill-station-geography.py`** for this task. It reads `geo_lat` and `geo_long`, checks that the coordinates belong to the selected country, and fills `city` and `state` separately.
+`fill-station-locations.py` first uses `geo_lat` and `geo_long` from the station JSON to look up city and state within the selected country, then checks the station homepage and linked contact/about pages to fill any remaining missing fields.
 
 First preview the proposed changes without editing the station dataset:
 
 ```sh
-COUNTRY=se python3 tools/fill-station-geography.py --lang en
+COUNTRY=se python3 tools/fill-station-locations.py --lang en
 ```
 
 Review `reports/geography-se.json`, especially records marked `review`. Then apply:
 
 ```sh
-COUNTRY=se python3 tools/fill-station-geography.py --lang en --write
+COUNTRY=se python3 tools/fill-station-locations.py --lang en --write
 ```
 
 The equivalent explicit country option is:
 
 ```sh
-python3 tools/fill-station-geography.py --country se --lang en --write
+python3 tools/fill-station-locations.py --country se --lang en --write
 ```
 
-Without `--overwrite`, existing populated city/state values are kept. Stations without both coordinates are skipped; invalid, foreign, or ambiguous coordinates are reported for review. This tool does not find missing coordinates.
+Without `--overwrite`, existing populated city/state values are kept. Stations without usable coordinates can still use their homepage and linked contact/about pages. Invalid or foreign coordinate results are recorded in the report. The website fallback fills only fields still missing after coordinate lookup; it does not find missing coordinates. See [website address discovery and options](#fill-locations-from-coordinates-and-station-websites).
 
-`--lang en` requests English place names; names without an English version can remain in the local language. It does not translate the website. Use `--lang sv` only when you intend to store Swedish display values instead. Keep the stored grouping values consistent with the site's default language and use translation dictionaries for localized labels.
+`--lang en` requests English place names from the geocoder; website address text is retained as published, with configured state-name mappings applied. Geocoder names without an English version can remain in the local language. It does not translate the website. Use `--lang sv` only when you intend to store Swedish display values instead. Keep the stored grouping values consistent with the site's default language and use translation dictionaries for localized labels.
 
 Set `"geographyAttribution": true` in `countries/se.json` when using these OpenStreetMap results. The preview also writes a response cache at `tools/cache/geography-se-en.json`; keep it so the apply command reuses responses. Read the [geocoder usage instructions](#fill-city-and-region-from-coordinates) before running a lookup.
 
@@ -168,26 +168,26 @@ Set `"geographyAttribution": true` in `countries/se.json` when using these OpenS
 To recheck existing city/state values as well as missing ones:
 
 ```sh
-COUNTRY=se python3 tools/fill-station-geography.py --lang en --overwrite
+COUNTRY=se python3 tools/fill-station-locations.py --lang en --overwrite
 ```
 
 Review the new `reports/geography-se.json`. If the replacements are appropriate, apply the same options with `--write`:
 
 ```sh
-COUNTRY=se python3 tools/fill-station-geography.py --lang en --overwrite --write
+COUNTRY=se python3 tools/fill-station-locations.py --lang en --overwrite --write
 ```
 
 `--overwrite` permits replacing both existing location fields. Incorrect coordinates can still produce an incorrect location within the country, so check the results against the station's website. Station slugs and stream URLs are preserved. If changing location values changes a city or region page URL, add a redirect for the old published page.
 
-### 4. Try station homepages for remaining missing states
+### 4. Optional website-only lookup
+
+The unified tool already uses websites for fields missing after coordinate lookup. To check only websites:
 
 ```sh
-COUNTRY=se python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
+COUNTRY=se python3 tools/fill-station-locations.py --no-coordinates --max 10 --sleep 1
 ```
 
-This command **saves automatically**; there is no `--write` flag. It reads homepage structured data and fills only missing `state`, not city. Review the inferred values manually. `--max 10` limits successful updates, not the number of requests. Use `--max 0` for no limit.
-
-Skipped IDs are stored in `tools/state-fill-progress-se.json`. See [homepage lookup details](#fill-missing-state-from-station-homepages) for retrying skipped entries. Do not substitute a historical Greece-only geography script for the country-aware tool above.
+Review `reports/geography-se.json`, then repeat with `--write`. The limit counts stations checked, not successful updates. Failed pages can be retried on later runs.
 
 ### 5. Fill missing bitrate and codec
 
@@ -212,7 +212,7 @@ COUNTRY=se npm run stations:icons
 COUNTRY=se node tools/fetch-missing-station-icons.mjs
 ```
 
-Both commands save automatically. The first caches available remote favicons; the second searches station websites for records with an empty favicon and can create initials placeholders. It skips records whose favicon is already set, so an incorrect existing icon needs separate review.
+Run `cache-station-favicons.mjs` first (`npm run stations:icons`): it validates existing remote favicon URLs, downloads and converts usable images to local 256×256 WebP files, and sets failed or invalid remote favicons to `null`. Then run `fetch-missing-station-icons.mjs`, which searches station websites for replacement logos and creates initials placeholders when none are found. This order matters because the missing-icon tool skips any station whose `favicon` is already set—even if that remote URL is broken. Both commands save automatically; existing local favicon paths are preserved by the cache tool.
 
 Swedish station images are stored in `public/station-icons/se/`, with matching local paths in `src/data/stations-se.json`. Review and commit the images with the dataset.
 
@@ -281,6 +281,21 @@ COUNTRY=se node tools/find-station-metadata-endpoints.mjs --refresh --slug STATI
 
 The npm alias saves automatically; the direct command saves only with `--write`. Check the browser's station page and Live Tracks after saving. For individual streams, the website's `/tools/endpoint-finder/` also provides a manual check.
 
+### 7a. Clean station genres
+
+Normalize spelling, whitespace, aliases, and decades (including standalone `70` → `70s`, `80` → `80s`, and `90` → `90s`); remove known technical or non-genre tags and duplicates. Unknown tags are retained for review, so country-specific genres are not discarded merely because they are unfamiliar.
+
+```sh
+# Preview first (replace nl with your country code)
+COUNTRY=nl python3 tools/clean-station-genres.py
+# Review reports/genre-cleanup-nl-preview.json, then save
+COUNTRY=nl python3 tools/clean-station-genres.py --write
+```
+
+Shared rules live in `tools/config/genre-cleanup.json`. Add optional country-specific `aliases` and `remove` lists in `countries/<code>.genre-cleanup.json`; an alias can map to one genre or an array of genres. Use the Netherlands file as an example. Preview again after changing rules.
+
+The write command updates only genre lists and adds redirects for removed genre pages (including their pagination), preserving existing redirects. One-to-one aliases redirect to the canonical genre; removed or split tags redirect to `/genres/`. Reports include changes, remaining tag counts, and tags needing review. Applied reports use `reports/genre-cleanup-<code>.json`; previews have a separate `-preview` suffix. Re-run this step after station imports, then build the country site.
+
 ### 8. Review and validate the finished cleanup
 
 ```sh
@@ -312,7 +327,7 @@ npm run build
 COUNTRY=hr npm run build
 ```
 
-Supported country-aware tools are `stations:import`, `stations:metadata`, `stations:icons`, `stations:geography`, `tools/fetch-missing-station-icons.mjs`, and `tools/fix-station-slugs.mjs`, `tools/fill-stream-audio-info.py`, and `tools/fill-state-from-homepage.py`. Historical Python repair scripts and other one-off tools in `tools/` are Greece-specific; do not run them for another country. Import review reports and metadata discovery reports have country suffixes. Failed or absent metadata does not prevent audio playback.
+Supported country-aware tools are `stations:import`, `stations:metadata`, `stations:icons`, `stations:geography`, `tools/fetch-missing-station-icons.mjs`, and `tools/fix-station-slugs.mjs`, `tools/fill-stream-audio-info.py`, and `tools/fill-station-locations.py`. Historical Python repair scripts and other one-off tools in `tools/` are Greece-specific; do not run them for another country. Import review reports and metadata discovery reports have country suffixes. Failed or absent metadata does not prevent audio playback.
 
 ## Exclude deleted stations from future imports
 
@@ -345,14 +360,14 @@ When creating a country, optionally pass `--site-name "Your Radio Brand"` to `to
 
 ## Fill city and region from coordinates
 
-The country-aware geography tool checks only stations with both `geo_lat` and `geo_long`. It verifies the returned country, derives locality and county/region separately, and records foreign or ambiguous coordinates for review. Station slugs and stream URLs are preserved. Croatia uses county names in `state`, including `Grad Zagreb` for the City of Zagreb.
+The country-aware geography tool uses `geo_lat` and `geo_long` when available, then falls back to website addresses for missing city/state fields. It verifies the geocoder’s returned country and derives locality and county/region separately. Use `--no-websites` for coordinate-only processing. See [website address discovery](#fill-locations-from-coordinates-and-station-websites) for supported formats, contact-page checks, limits, and examples. Station slugs and stream URLs are preserved. Croatia uses county names in `state`, including `Grad Zagreb` for the City of Zagreb.
 
 ```sh
 # Preview changes in reports/geography-hr.json (Croatian place names)
-COUNTRY=hr python3 tools/fill-station-geography.py --lang hr --overwrite
+COUNTRY=hr python3 tools/fill-station-locations.py --lang hr --overwrite
 
 # Apply; cached coordinate responses are reused
-COUNTRY=hr python3 tools/fill-station-geography.py --lang hr --overwrite --write
+COUNTRY=hr python3 tools/fill-station-locations.py --lang hr --overwrite --write
 ```
 
 Without `--overwrite`, only missing city/state values are filled. The report includes before/after values and exceptions. Coordinate responses are cached in `tools/cache/geography-<country>-<language>.json`. Keep the cache for subsequent runs. Set `--endpoint` or `GEOCODER_URL` to use a different compatible geocoder.
@@ -373,15 +388,7 @@ Use `COUNTRY=gr` for Greece, or pass `--country hr`. Omit `--write` for a report
 
 ## Fill missing state from station homepages
 
-```sh
-COUNTRY=hr python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
-# Equivalent explicit selection:
-python3 tools/fill-state-from-homepage.py --country hr --max 10 --sleep 1
-```
-
-The tool reads the selected country's `stationsFile`, fetches homepage JSON-LD, and retains its existing location-extraction behavior. It fills only missing `state` values and saves automatically (no `--write` flag). It does not fill city or use coordinates. Existing state values remain unchanged. `--max` limits successful updates, not requests; use `0` for no limit.
-
-Skipped station IDs are kept separately in `tools/state-fill-progress-hr.json` for Croatia. Greece retains its existing `tools/state-fill-progress.json`. Use `--progress-file` to override the location, or remove a skipped ID from the selected country's progress file to retry it. `--country` overrides `COUNTRY`; when neither is set, Greece is used.
+Use `tools/fill-station-locations.py --no-coordinates` for website-only city/state discovery. Preview is the default; add `--write` to save. The old state-only tool and its permanent skipped-ID list are no longer used. See [all location options](#fill-locations-from-coordinates-and-station-websites).
 
 ### English Croatian location names
 
@@ -389,7 +396,7 @@ Croatia's `city` and `state` fields contain the display names for the English si
 `locationNames.hr` preserves the original values and `locationNames.en` stores the English values.
 City proper names retain their diacritics (for example, Šibenik and Đakovo).
 The county translations and known spelling aliases are in `hr.location-names.json`;
-`fill-station-geography.py --country hr --lang en` applies these county translations.
+`fill-station-locations.py --country hr --lang en` applies these county translations.
 Ambiguous legacy region labels remain unchanged until their geography is verified.
 Region URL changes have redirects in `hr.redirects.json`; station slugs remain unchanged.
 On GitHub Pages these are static HTML redirects, not server-side HTTP 301 responses.
@@ -463,22 +470,16 @@ The `stateNames` mapping converts `Stockholms län` to `Stockholm county`, `Skå
 The geography tool automatically loads this file when using `--country se --lang en`. Preview missing locations with:
 
 ```sh
-python3 tools/fill-station-geography.py --country se --lang en
+python3 tools/fill-station-locations.py --country se --lang en
 ```
 
 Review `reports/geography-se.json`, then add `--write` to apply. To correct populated fields, preview with `--overwrite` and apply with `--overwrite --write`. Creating the mapping alone does not modify station data or `countries/se.json`'s `regions` list. County mapping is applied to geocoder results, not as a standalone replacement pass over existing station values.
 
 City labels such as `Helsingborg`, historical provinces such as `Närke`, and placeholders such as `Select state` are deliberately not mapped to counties without location evidence. Review affected city/region page URLs and add redirects when applying changes to published locations.
 
-### Homepage state-fill completion statistics
+### Location-fill completion statistics
 
-Use a number with `--sleep`, for example:
-
-```sh
-COUNTRY=se python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
-```
-
-At completion, the script prints **States filled and saved**, stations checked, homepage requests, existing-state skips, previously skipped records, missing homepages, fetch errors, lookups without a state, remaining missing states, and elapsed time. The summary also appears when no eligible stations remain or you interrupt with Ctrl+C. `--max 10` limits successfully saved states, so the number of stations checked can be higher than 10. Previously skipped records require progress-file review before retrying.
+The unified tool reports stations checked, cities filled, states filled, changed/unchanged/review counts, and saved versus preview mode. `--max 10` checks at most ten eligible stations; `--sleep 1` pauses between stations. Coordinate lookups retain their service rate limit and cache.
 
 ### Swedish and English pages (sveriges-radio.github.io)
 
@@ -497,3 +498,35 @@ python3 tools/check-localized-site.py dist
 ```
 
 Deploy with the existing GitHub Pages workflow and repository variable `COUNTRY=se`. A single build contains both languages. Update both the English message and its Swedish dictionary entry when changing interface copy.
+
+### Fill locations from coordinates and station websites
+
+`fill-station-locations.py` fills missing **city and state independently**. It first
+uses coordinates, then checks the homepage and up to three linked contact/about
+pages for missing fields. Website sources include JSON-LD postal addresses,
+`addressLocality`/`addressRegion` microdata, and Dutch postcode/town lines inside
+explicit HTML address blocks. It does not infer a province from a city name.
+Conflicting website addresses are flagged for review.
+
+Preview a small batch (no station changes):
+
+```bash
+COUNTRY=nl python3 tools/fill-station-locations.py --max 10
+```
+
+Review `reports/geography-nl.json`, including `website_sources` and lookup errors,
+then run with `--write` to save discovered locations:
+
+```bash
+COUNTRY=nl python3 tools/fill-station-locations.py --write
+```
+
+Existing locations are preserved by default. `--no-websites` retains coordinate-only
+lookup; `--overwrite` allows coordinate results to replace existing locations.
+Website discovery only fills fields still missing after the coordinate lookup.
+The summary shows cities/states filled and whether the run saved or only previewed
+changes. `--max` limits stations checked, not successful updates. Replace `nl` with
+the desired country code. Address discovery does not execute JavaScript, so some
+websites will require manual review.
+
+The single entry point is `tools/fill-station-locations.py` (`npm run stations:geography` or `npm run "fill locations"`). Use `--no-coordinates` for websites only. Neither source mode writes without `--write`.

@@ -127,13 +127,13 @@ Existing favicon values are skipped, including old placeholders. To retry one, c
 These enrichment steps are optional. For stations with coordinates, preview geography results first:
 
 ```sh
-COUNTRY=si python3 tools/fill-station-geography.py --lang en
+COUNTRY=si python3 tools/fill-station-locations.py --lang en
 ```
 
 Review `reports/geography-si.json`, then apply:
 
 ```sh
-COUNTRY=si python3 tools/fill-station-geography.py --lang en --write
+COUNTRY=si python3 tools/fill-station-locations.py --lang en --write
 ```
 
 Existing populated fields are preserved unless you explicitly pass `--overwrite`. Set `geographyAttribution` to `true` after using OpenStreetMap results. Read the [geography service usage instructions](countries/README.md#fill-city-and-region-from-coordinates) before running the tool; run one process and retain its cache.
@@ -147,13 +147,23 @@ COUNTRY=si python3 tools/fill-stream-audio-info.py --write
 
 Review `reports/stream-audio-info-si.json`. Unidentifiable values remain unchanged.
 
-For stations still missing a state, the homepage tool is another option:
+For website-only city/state lookup, use the same tool:
 
 ```sh
-COUNTRY=si python3 tools/fill-state-from-homepage.py --max 10 --sleep 1
+COUNTRY=si python3 tools/fill-station-locations.py --no-coordinates --max 10 --sleep 1
 ```
 
-This last command **writes automatically** and fills only `state`, not city. Review its changes. Do not run older Greece-specific repair scripts on the new country.
+This command previews city/state changes. Review the report, then add `--write` to save. Do not run older Greece-specific repair scripts on the new country.
+
+Clean imported genre tags before building:
+
+```sh
+COUNTRY=si python3 tools/clean-station-genres.py
+# Review reports/genre-cleanup-si-preview.json, then apply:
+COUNTRY=si python3 tools/clean-station-genres.py --write
+```
+
+See [genre cleanup rules and country overrides](countries/README.md#7a-clean-station-genres).
 
 ### 7. Discover now-playing metadata
 
@@ -319,7 +329,9 @@ Radio station data is fetched from the [Radio Browser API](https://www.radio-bro
 
 ## Icon Maintenance
 
-Run `node tools/fetch-missing-station-icons.mjs` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks the station's existing remote favicon and homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It ranks usable candidates by source and actual dimensions, then fits the selected image with transparent padding into a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
+Run `cache-station-favicons.mjs` first (`npm run stations:icons`): it validates existing remote favicon URLs, downloads and converts usable images to local 256×256 WebP files, and sets failed or invalid remote favicons to `null`. Then run `fetch-missing-station-icons.mjs`, which searches station websites for replacement logos and creates initials placeholders when none are found. This order matters because the missing-icon tool skips any station whose `favicon` is already set—even if that remote URL is broken. Both commands save automatically; existing local favicon paths are preserved by the cache tool.
+
+Run `node tools/fetch-missing-station-icons.mjs` from the project root after adding stations without a `favicon`. For each missing icon, `fetch-missing-station-icons.mjs` checks homepage metadata (`<link>` icons and `og:image`), then falls back to `/favicon.ico`. It ranks usable candidates by source and actual dimensions, then fits the selected image with transparent padding into a 256×256 WebP file in `public/station-icons`; if none can be downloaded, it creates a colored WebP placeholder using the station's initials. The script updates `src/data/stations-gr.json` with each new local icon path and skips stations whose `favicon` is already set.
 
 ## Removing Duplicate Stations
 
@@ -331,7 +343,7 @@ Run `python3 tools/fix-state-city-only.py` from the project root. The script fin
 
 ## Filling Missing States from Homepages
 
-Run `python3 tools/fill-state-from-homepage.py` from the project root. For stations whose `state` is empty, the script downloads the station homepage and looks for location information in its JSON-LD structured data. When it finds a locality, region, served area, or named location, it saves that value to `state` in `src/data/stations-gr.json`. Stations with missing homepages, fetch errors, or no usable location are recorded in `tools/state-fill-progress.json` so they can be skipped on later runs. Use `--max N` to limit successful updates and `--sleep N` to pause between them.
+Use `COUNTRY=nl python3 tools/fill-station-locations.py` to preview city/state discovery from coordinates and homepage/contact addresses. Review `reports/geography-nl.json`, then repeat with `--write`. Existing values are preserved by default. Use `--no-coordinates` for websites only, `--no-websites` for coordinates only, `--max 10` to check ten stations, and `--sleep 1` to pause between stations. See [the country guide](countries/README.md#fill-locations-from-coordinates-and-station-websites).
 
 ## Finding Station Metadata Endpoints
 

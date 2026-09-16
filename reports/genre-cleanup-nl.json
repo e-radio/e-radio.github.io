@@ -1,0 +1,1663 @@
+{
+  "country": "nl",
+  "applied": true,
+  "stations_changed": 84,
+  "unique_before": 390,
+  "unique_after": 368,
+  "changes": [
+    {
+      "stationuuid": "334620e4-3555-43e9-ad42-f5e2dbf73efb",
+      "slug": "053-radio-twente",
+      "before": [
+        "nieuwe nederlandse",
+        "non-stop hits",
+        "twentse gezelligheid"
+      ],
+      "after": [
+        "dutch music",
+        "new releases",
+        "non-stop hits"
+      ]
+    },
+    {
+      "stationuuid": "b9034ccc-f045-430d-b0d9-2a41afdbd0d5",
+      "slug": "accentfm",
+      "before": [
+        "piratenmuziek"
+      ],
+      "after": [
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "e846e8cf-eca1-4369-8d89-6b45bc73f3a2",
+      "slug": "contikenzo",
+      "before": [
+        "etherpiraten",
+        "pirate radio"
+      ],
+      "after": [
+        "pirate radio"
+      ]
+    },
+    {
+      "stationuuid": "af34b7b2-2d58-11ea-aa0c-52543be04c81",
+      "slug": "delta-piraat",
+      "before": [
+        "piraat"
+      ],
+      "after": [
+        "pirate radio"
+      ]
+    },
+    {
+      "stationuuid": "f8509e00-b96d-4571-898a-cacb064bccdd",
+      "slug": "delta-radio-nijmegen-works-in-home-assistant-gelderland",
+      "before": [
+        "60s",
+        "70s",
+        "80s",
+        "muziek zonder flauwekul"
+      ],
+      "after": [
+        "60s",
+        "70s",
+        "80s"
+      ]
+    },
+    {
+      "stationuuid": "195f5ef3-80ed-4ed0-9229-5e7e6b82f3e2",
+      "slug": "depiratenkoning-groningen-groningen",
+      "before": [
+        "duits",
+        "folk",
+        "germany rocks!",
+        "oldies",
+        "nederlandstalig"
+      ],
+      "after": [
+        "german",
+        "folk",
+        "germany rocks!",
+        "oldies",
+        "dutch-language music"
+      ]
+    },
+    {
+      "stationuuid": "73f343c5-2b04-11e9-a35e-52543be04c81",
+      "slug": "echtepiraten-nl-drenthe",
+      "before": [
+        "echtepiraten",
+        "etherpiraten",
+        "nederlandstalig",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch-language music",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "56340d3f-e15f-4588-a4d3-c465567cc1e9",
+      "slug": "firma-lomp-en-onbenullig-drenthe",
+      "before": [
+        "echtepiraten",
+        "etherpiraten",
+        "piratenhits",
+        "piratenmuziek"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "846d8d2e-9a5a-4cba-8ea7-fd62bcfeb708",
+      "slug": "fomix-zeeland",
+      "before": [
+        "90s",
+        "classic hits",
+        "dance",
+        "top 40",
+        "nederlands"
+      ],
+      "after": [
+        "90s",
+        "classic hits",
+        "dance",
+        "top 40",
+        "dutch"
+      ]
+    },
+    {
+      "stationuuid": "757b9b75-7b35-423d-8d99-b4a3252bd969",
+      "slug": "foutfm",
+      "before": [
+        "00s",
+        "80s",
+        "90s",
+        "apresski",
+        "dance",
+        "pop"
+      ],
+      "after": [
+        "00s",
+        "80s",
+        "90s",
+        "apres-ski music",
+        "dance",
+        "pop"
+      ]
+    },
+    {
+      "stationuuid": "180f0c74-9a24-4719-a118-dc9c64b2b611",
+      "slug": "fryslan-strijders-piratenhits-op-volle-toeren-kingdom-of-the-netherlands",
+      "before": [
+        "folk",
+        "piratenmuziek",
+        "piratenhits"
+      ],
+      "after": [
+        "folk",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "cbfe4c77-d6cf-4244-b8ad-556cb880d974",
+      "slug": "gigant-fm-drenthe",
+      "before": [
+        "dutch music",
+        "nederlandstalig"
+      ],
+      "after": [
+        "dutch music",
+        "dutch-language music"
+      ]
+    },
+    {
+      "stationuuid": "4375e9ee-33be-4534-a791-6bfe9b51a96b",
+      "slug": "girlpower-radio-zuid-holland",
+      "before": [
+        "live programma",
+        "moody",
+        "pop",
+        "powervrouw",
+        "upbeat",
+        "woman"
+      ],
+      "after": [
+        "live shows",
+        "moody",
+        "pop",
+        "upbeat",
+        "woman"
+      ]
+    },
+    {
+      "stationuuid": "52d1b82f-1c32-423f-85e2-38d523cdb2a1",
+      "slug": "groot-nieuws-radio-blijde-klanken",
+      "before": [
+        "christian",
+        "kerk- en koormuziek"
+      ],
+      "after": [
+        "christian",
+        "church music",
+        "choral music"
+      ]
+    },
+    {
+      "stationuuid": "542965fe-b775-4f19-831d-0abc35382100",
+      "slug": "grunn-fm-groningen",
+      "before": [
+        "pop",
+        "streektaal"
+      ],
+      "after": [
+        "pop",
+        "regional-language music"
+      ]
+    },
+    {
+      "stationuuid": "08d00b59-ad08-4a53-b286-d5ef5b751b73",
+      "slug": "havenstad-radio-zh",
+      "before": [
+        "information",
+        "lokaal"
+      ],
+      "after": [
+        "information",
+        "local radio"
+      ]
+    },
+    {
+      "stationuuid": "96244866-0601-11e8-ae97-52543be04c81",
+      "slug": "hi-on-line-latin-radio",
+      "before": [
+        "latin",
+        "latino"
+      ],
+      "after": [
+        "latin"
+      ]
+    },
+    {
+      "stationuuid": "961be65b-0601-11e8-ae97-52543be04c81",
+      "slug": "hi-on-line-world-radio",
+      "before": [
+        "african",
+        "ethnic",
+        "latin",
+        "latino",
+        "reggae",
+        "world music"
+      ],
+      "after": [
+        "african",
+        "ethnic",
+        "latin",
+        "reggae",
+        "world music"
+      ]
+    },
+    {
+      "stationuuid": "0ecb04f2-2b1b-4108-9a70-3341c8bb20ad",
+      "slug": "hitgolfradio-nl-nederlands",
+      "before": [
+        "piraten",
+        "piratenhits",
+        "piratenmuziek"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "7f99253d-d6fe-4e90-bd84-26f194d97201",
+      "slug": "hitradio1-nl-gelderland",
+      "before": [
+        "engels",
+        "hollands",
+        "instrumental",
+        "oldies"
+      ],
+      "after": [
+        "english",
+        "dutch music",
+        "instrumental",
+        "oldies"
+      ]
+    },
+    {
+      "stationuuid": "1aef1f5d-1463-424f-b370-3b3a5b2f54fe",
+      "slug": "l1-plat-eweg-limburg",
+      "before": [
+        "local music",
+        "platdüütsch"
+      ],
+      "after": [
+        "local music",
+        "low german"
+      ]
+    },
+    {
+      "stationuuid": "c344992c-b881-11e9-acb2-52543be04c81",
+      "slug": "l1-radio",
+      "before": [
+        "lokaal",
+        "news",
+        "regionaal"
+      ],
+      "after": [
+        "local radio",
+        "news",
+        "regional radio"
+      ]
+    },
+    {
+      "stationuuid": "e994da77-0940-4912-83f4-d799d59deb62",
+      "slug": "michel-grevink-twente-e994da77",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenmuziek"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "0a4866b7-fc14-44cd-991e-2b18190d3c2c",
+      "slug": "mixstream-radio-nederlandstalig-noord-brabant",
+      "before": [
+        "dutch",
+        "free music",
+        "hits",
+        "dutch music",
+        "mixstream",
+        "nederlandstalig"
+      ],
+      "after": [
+        "dutch",
+        "free music",
+        "hits",
+        "dutch music",
+        "mixstream",
+        "dutch-language music"
+      ]
+    },
+    {
+      "stationuuid": "a6537495-696e-4878-9fdb-96f11af71e44",
+      "slug": "nicky-fm-overijssel",
+      "before": [
+        "80s",
+        "90s",
+        "folk",
+        "piratenhits"
+      ],
+      "after": [
+        "80s",
+        "90s",
+        "folk",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "939cc431-4941-40f1-8822-841fedcf80e7",
+      "slug": "npo-klassiek",
+      "before": [
+        "classical",
+        "publieke omroep"
+      ],
+      "after": [
+        "classical",
+        "public radio"
+      ]
+    },
+    {
+      "stationuuid": "0fc7c55c-4a8e-11e9-a4d7-52543be04c81",
+      "slug": "olympia-radio",
+      "before": [
+        "piratenhits"
+      ],
+      "after": [
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "e44074fa-f007-11e8-a471-52543be04c81",
+      "slug": "omrop-frysl-n-radio-friesland",
+      "before": [
+        "regionaal"
+      ],
+      "after": [
+        "regional radio"
+      ]
+    },
+    {
+      "stationuuid": "0e750ae8-dadc-443e-bb79-866dad81cd31",
+      "slug": "onlinepiraat-nl",
+      "before": [
+        "classic hits",
+        "country",
+        "dutch",
+        "german",
+        "piratenhits"
+      ],
+      "after": [
+        "classic hits",
+        "country",
+        "dutch",
+        "german",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "2c938122-4a94-11e9-a4d7-52543be04c81",
+      "slug": "oude-piraten-hits-2c938122",
+      "before": [
+        "piratenhits"
+      ],
+      "after": [
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "9634a5b2-be38-41ed-a5a4-5a49947a44fa",
+      "slug": "pepperbox-radio-enschede",
+      "before": [
+        "piratenmuziek"
+      ],
+      "after": [
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "4b463b2d-5636-43db-b2a8-6470eb60c6f3",
+      "slug": "piraten-fm-1",
+      "before": [
+        "etherpiraten",
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "73c6e268-331f-413e-9f45-e1cf140b2608",
+      "slug": "piraten-fm-10",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "5d6a585d-d186-40b4-9746-12309947edf8",
+      "slug": "piraten-fm-11",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "4fea3559-c4e2-40b9-ac56-15521328e9b3",
+      "slug": "piraten-fm-12",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "3006e5d6-a692-4de6-a4e6-be989d1326cd",
+      "slug": "piraten-fm-13",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "fd05bcdc-815a-4644-a2f6-0f8ade083cb9",
+      "slug": "piraten-fm-14",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "72b6bb5d-44bf-43cf-b0ee-bf7c23d02563",
+      "slug": "piraten-fm-15",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "5e52654a-2cc8-49b5-b3af-e4fe252ea62d",
+      "slug": "piraten-fm-16",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "ac6b1aed-e829-4aee-a77c-d5fe526743e2",
+      "slug": "piraten-fm-17",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "95e6ed67-0dc1-4ef5-8005-3cf52edb46dd",
+      "slug": "piraten-fm-18",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "a657d345-0876-4edc-bcf4-11385f366468",
+      "slug": "piraten-fm-19",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "f4606754-983d-4b7d-949f-f308f4c28efd",
+      "slug": "piraten-fm-2",
+      "before": [
+        "etherpiraten",
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "53fba919-c596-4fc6-80dd-5b60b3aad440",
+      "slug": "piraten-fm-20",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "76ccdb21-c0be-4771-b098-af297b6bb6a4",
+      "slug": "piraten-fm-21",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "663a9fa1-03d2-453a-a540-dacbce0234ac",
+      "slug": "piraten-fm-22",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "83785457-1af1-47cd-b872-e4d0ade41f6e",
+      "slug": "piraten-fm-23",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "ff335366-9637-40e5-90be-8247021c217d",
+      "slug": "piraten-fm-24",
+      "before": [
+        "geheimezender",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "cc41dbf2-a481-4ff5-8216-b10dc0f08a8c",
+      "slug": "piraten-fm-25",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "154ec7c6-075d-47b9-ae5c-a2b00b41467a",
+      "slug": "piraten-fm-3",
+      "before": [
+        "etherpiraten",
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "2868078f-9145-4eec-96b6-07b3430f0791",
+      "slug": "piraten-fm-4",
+      "before": [
+        "etherpiraten",
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "740e95a2-3668-4cf8-8360-5b18acc3c36d",
+      "slug": "piraten-fm-5",
+      "before": [
+        "etherpiraten",
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "8a075e35-d566-4757-ac6f-9e17fa919192",
+      "slug": "piraten-fm-6",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "bf172ddf-1551-4f78-8525-41aa73990c28",
+      "slug": "piraten-fm-7",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "adf201ce-b980-4d72-a437-6bdabbc135ef",
+      "slug": "piraten-fm-8",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "db0ae246-5c55-451d-9aeb-a1618bfcda62",
+      "slug": "piraten-fm-9",
+      "before": [
+        "geheimezender",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "817b228c-a6f8-4df1-83b5-8553b8ad9949",
+      "slug": "piratenkanjers-drenthe",
+      "before": [
+        "folk",
+        "geheimezender",
+        "piratenmuziek"
+      ],
+      "after": [
+        "folk",
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "2b37efa6-91d0-480b-93d8-497151137544",
+      "slug": "piratenpower-zwartemeer",
+      "before": [
+        "country",
+        "duits",
+        "dutch"
+      ],
+      "after": [
+        "country",
+        "german",
+        "dutch"
+      ]
+    },
+    {
+      "stationuuid": "333ce077-20c6-487d-9e10-c15a1d7b819d",
+      "slug": "piratenteam-drenthe",
+      "before": [
+        "folk",
+        "oldies",
+        "nederlands",
+        "nederlandstalig",
+        "polka"
+      ],
+      "after": [
+        "folk",
+        "oldies",
+        "dutch",
+        "dutch-language music",
+        "polka"
+      ]
+    },
+    {
+      "stationuuid": "2c384e90-aeac-43df-92d1-cd88b1d321fe",
+      "slug": "radio-1224-gelderland",
+      "before": [
+        "dutch music",
+        "geheimezender",
+        "piratenhits",
+        "schlager"
+      ],
+      "after": [
+        "dutch music",
+        "pirate radio",
+        "dutch pirate music",
+        "schlager"
+      ]
+    },
+    {
+      "stationuuid": "0e1b5bb0-a68f-46e3-8263-378e3eb488b2",
+      "slug": "radio-calipso",
+      "before": [
+        "nederlandstalig",
+        "pop"
+      ],
+      "after": [
+        "dutch-language music",
+        "pop"
+      ]
+    },
+    {
+      "stationuuid": "922c3369-e615-42d6-9c18-61a14aed8a50",
+      "slug": "radio-calypso-groningen",
+      "before": [
+        "oldies",
+        "piratenhits",
+        "polka",
+        "schlager"
+      ],
+      "after": [
+        "oldies",
+        "dutch pirate music",
+        "polka",
+        "schlager"
+      ]
+    },
+    {
+      "stationuuid": "8f180188-b0f5-4951-b693-4b0163ab287c",
+      "slug": "radio-de-twentseboys-overijssel-hengelo",
+      "before": [
+        "nederlands",
+        "nederlandstalig",
+        "piraten",
+        "piratenhits"
+      ],
+      "after": [
+        "dutch",
+        "dutch-language music",
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "3880b004-8ccc-48bd-ad05-fe0063920b5c",
+      "slug": "radio-de-wasrol-zuid-holland-rotterdam",
+      "before": [
+        "1920s",
+        "1930s",
+        "1940s",
+        "blues",
+        "boogie woogie",
+        "country",
+        "dancehall",
+        "jazz",
+        "marsch",
+        "swing",
+        "vaudeville"
+      ],
+      "after": [
+        "1920s",
+        "1930s",
+        "1940s",
+        "blues",
+        "boogie woogie",
+        "country",
+        "dancehall",
+        "jazz",
+        "marching music",
+        "swing",
+        "vaudeville"
+      ]
+    },
+    {
+      "stationuuid": "bb7561e5-e742-11e8-a9cc-52543be04c81",
+      "slug": "radio-drenthe",
+      "before": [
+        "regionaal"
+      ],
+      "after": [
+        "regional radio"
+      ]
+    },
+    {
+      "stationuuid": "20d9fc8a-0cae-4384-87a0-8a5045e5c356",
+      "slug": "radio-n31-friesland",
+      "before": [
+        "piraat",
+        "80s",
+        "pop",
+        "hits",
+        "oldies",
+        "easy listening",
+        "dutch music"
+      ],
+      "after": [
+        "pirate radio",
+        "80s",
+        "pop",
+        "hits",
+        "oldies",
+        "easy listening",
+        "dutch music"
+      ]
+    },
+    {
+      "stationuuid": "832d1cdd-ee5d-11e8-a471-52543be04c81",
+      "slug": "radio-noord-groningen",
+      "before": [
+        "news",
+        "regio"
+      ],
+      "after": [
+        "news",
+        "regional radio"
+      ]
+    },
+    {
+      "stationuuid": "8fde1523-ce7d-41d0-86bd-3b70de784973",
+      "slug": "radio-regenboog",
+      "before": [
+        "alternative",
+        "dutch",
+        "folk",
+        "hollands",
+        "nederlandstalig",
+        "pirate radio",
+        "piratenhits"
+      ],
+      "after": [
+        "alternative",
+        "dutch",
+        "folk",
+        "dutch music",
+        "dutch-language music",
+        "pirate radio",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "22fb3850-a6c2-4999-9038-b2c3692bd747",
+      "slug": "radio-santana-breda-noord-brabant",
+      "before": [
+        "disco funk",
+        "nederpop",
+        "new wave",
+        "offshore radio",
+        "classic hits",
+        "progressive rock",
+        "soul"
+      ],
+      "after": [
+        "disco funk",
+        "dutch pop",
+        "new wave",
+        "offshore radio",
+        "classic hits",
+        "progressive rock",
+        "soul"
+      ]
+    },
+    {
+      "stationuuid": "343af8c7-2f1a-4b11-8193-d7c0cf10f05b",
+      "slug": "radio-schuimkoppen-noord-brabant",
+      "before": [
+        "carnaval"
+      ],
+      "after": [
+        "carnival music"
+      ]
+    },
+    {
+      "stationuuid": "80dbad34-276e-4a30-b6c4-5bcd88a61eb6",
+      "slug": "radio-speedy-noord-brabant",
+      "before": [
+        "instrumental",
+        "oldies",
+        "nederlandstalig"
+      ],
+      "after": [
+        "instrumental",
+        "oldies",
+        "dutch-language music"
+      ]
+    },
+    {
+      "stationuuid": "c87df85c-7a00-49a9-84f1-ed93a6a34bbb",
+      "slug": "radio-unique-fm-hi-res-noord-holland",
+      "before": [
+        "adult contemporary",
+        "nederlandstalig",
+        "new country",
+        "pop",
+        "tipparade",
+        "top 40"
+      ],
+      "after": [
+        "adult contemporary",
+        "dutch-language music",
+        "new country",
+        "pop",
+        "bubbling under hits",
+        "top 40"
+      ]
+    },
+    {
+      "stationuuid": "e7074582-4a53-4a32-8a79-f261415d8179",
+      "slug": "radio-unique-fm-mobile-noord-holland",
+      "before": [
+        "adult contemporary",
+        "new country",
+        "oldies",
+        "pop",
+        "tipparade",
+        "top 40"
+      ],
+      "after": [
+        "adult contemporary",
+        "new country",
+        "oldies",
+        "pop",
+        "bubbling under hits",
+        "top 40"
+      ]
+    },
+    {
+      "stationuuid": "e3c23eec-6383-48b1-8ab5-8bfdd2abd759",
+      "slug": "radio-vastelaovend-limburg",
+      "before": [
+        "carnaval",
+        "folk",
+        "radio carnaval"
+      ],
+      "after": [
+        "carnival music",
+        "folk"
+      ]
+    },
+    {
+      "stationuuid": "cd43795e-4fc0-416b-8ce5-8d9bca59e4f3",
+      "slug": "radioachterhoek-nl-gelderland",
+      "before": [
+        "english",
+        "folk",
+        "schlager",
+        "volksmusik"
+      ],
+      "after": [
+        "english",
+        "folk",
+        "schlager",
+        "german folk music"
+      ]
+    },
+    {
+      "stationuuid": "71d6c1c8-ac79-45ca-babd-7ce8897e6c50",
+      "slug": "rondiamusic-gelderland",
+      "before": [
+        "country",
+        "duits",
+        "english",
+        "hollands",
+        "jazz",
+        "musical",
+        "nederlandstalig",
+        "piratenhits",
+        "pop",
+        "remixes",
+        "rock",
+        "hits",
+        "oldies",
+        "easy listening",
+        "dutch music"
+      ],
+      "after": [
+        "country",
+        "german",
+        "english",
+        "dutch music",
+        "jazz",
+        "musical",
+        "dutch-language music",
+        "dutch pirate music",
+        "pop",
+        "remixes",
+        "rock",
+        "hits",
+        "oldies",
+        "easy listening"
+      ]
+    },
+    {
+      "stationuuid": "e9ac3175-bb94-11e9-acb2-52543be04c81",
+      "slug": "rtv-noord",
+      "before": [
+        "local radio",
+        "stad en ommeland"
+      ],
+      "after": [
+        "local radio"
+      ]
+    },
+    {
+      "stationuuid": "ac20914d-0ab9-4c8f-9438-0a8735a5327d",
+      "slug": "speedy-noord-brabant",
+      "before": [
+        "instrumental",
+        "oldies",
+        "nederlandstalig"
+      ],
+      "after": [
+        "instrumental",
+        "oldies",
+        "dutch-language music"
+      ]
+    },
+    {
+      "stationuuid": "5d4e15fb-ae6f-4326-83d0-37d239d9a725",
+      "slug": "station-mooi-dat-kan-overijsel",
+      "before": [
+        "piraat",
+        "piraten",
+        "piratenhits",
+        "volksmuziek"
+      ],
+      "after": [
+        "pirate radio",
+        "dutch pirate music",
+        "folk"
+      ]
+    },
+    {
+      "stationuuid": "1f6cc2e1-fe65-4356-a5e2-cdd6cc083ee7",
+      "slug": "tukker-fm",
+      "before": [
+        "folk",
+        "oldies",
+        "piratenhits"
+      ],
+      "after": [
+        "folk",
+        "oldies",
+        "dutch pirate music"
+      ]
+    },
+    {
+      "stationuuid": "257154c8-7dd5-4d7e-868a-1bcedfa2cc18",
+      "slug": "vaporadio-nl",
+      "before": [
+        "partymix",
+        "piratenhits",
+        "pop"
+      ],
+      "after": [
+        "partymix",
+        "dutch pirate music",
+        "pop"
+      ]
+    },
+    {
+      "stationuuid": "db1262ee-c175-4ba4-bf06-71fb2d0f188c",
+      "slug": "vera-radio-limburg",
+      "before": [
+        "middle of the road",
+        "nederlands",
+        "nederlandstalig",
+        "schlager",
+        "volksmusik",
+        "volkstümlich",
+        "volkstümlicher schlager"
+      ],
+      "after": [
+        "middle of the road",
+        "dutch",
+        "dutch-language music",
+        "schlager",
+        "german folk music",
+        "german folk pop",
+        "folk-influenced schlager"
+      ]
+    },
+    {
+      "stationuuid": "b878d22d-91d9-4aeb-8831-49dcdc62ab87",
+      "slug": "xerosradio",
+      "before": [
+        "60s",
+        "70s",
+        "80s",
+        "folk",
+        "hollands",
+        "piratenmuziek",
+        "polka"
+      ],
+      "after": [
+        "60s",
+        "70s",
+        "80s",
+        "folk",
+        "dutch music",
+        "dutch pirate music",
+        "polka"
+      ]
+    },
+    {
+      "stationuuid": "10a1df07-af76-4046-809a-70600bdaf16d",
+      "slug": "zwaluwradio",
+      "before": [
+        "easy listening",
+        "oldies",
+        "unsterbliche klassiker"
+      ],
+      "after": [
+        "easy listening",
+        "oldies",
+        "timeless classics"
+      ]
+    }
+  ],
+  "redirects": {
+    "/genres/nieuwe-nederlandse/": "/genres/",
+    "/genres/twentse-gezelligheid/": "/genres/",
+    "/genres/piratenmuziek/": "/genres/dutch-pirate-music/",
+    "/genres/etherpiraten/": "/genres/pirate-radio/",
+    "/genres/piraat/": "/genres/pirate-radio/",
+    "/genres/muziek-zonder-flauwekul/": "/genres/",
+    "/genres/duits/": "/genres/german/",
+    "/genres/nederlandstalig/": "/genres/dutch-language-music/",
+    "/genres/echtepiraten/": "/genres/pirate-radio/",
+    "/genres/piraten/": "/genres/pirate-radio/",
+    "/genres/piraten/page/2/": "/genres/pirate-radio/",
+    "/genres/piratenhits/": "/genres/dutch-pirate-music/",
+    "/genres/piratenhits/page/2/": "/genres/dutch-pirate-music/",
+    "/genres/piratenhits/page/3/": "/genres/dutch-pirate-music/",
+    "/genres/nederlands/": "/genres/dutch/",
+    "/genres/apresski/": "/genres/apres-ski-music/",
+    "/genres/live-programma/": "/genres/live-shows/",
+    "/genres/powervrouw/": "/genres/",
+    "/genres/kerk-en-koormuziek/": "/genres/",
+    "/genres/streektaal/": "/genres/regional-language-music/",
+    "/genres/lokaal/": "/genres/local-radio/",
+    "/genres/latino/": "/genres/latin/",
+    "/genres/engels/": "/genres/english/",
+    "/genres/hollands/": "/genres/dutch-music/",
+    "/genres/platduutsch/": "/genres/low-german/",
+    "/genres/regionaal/": "/genres/regional-radio/",
+    "/genres/geheimezender/": "/genres/pirate-radio/",
+    "/genres/geheimezender/page/2/": "/genres/pirate-radio/",
+    "/genres/publieke-omroep/": "/genres/public-radio/",
+    "/genres/marsch/": "/genres/marching-music/",
+    "/genres/regio/": "/genres/regional-radio/",
+    "/genres/nederpop/": "/genres/dutch-pop/",
+    "/genres/carnaval/": "/genres/carnival-music/",
+    "/genres/tipparade/": "/genres/bubbling-under-hits/",
+    "/genres/radio-carnaval/": "/genres/carnival-music/",
+    "/genres/volksmusik/": "/genres/german-folk-music/",
+    "/genres/stad-en-ommeland/": "/genres/",
+    "/genres/volksmuziek/": "/genres/folk/",
+    "/genres/volkstumlich/": "/genres/german-folk-pop/",
+    "/genres/volkstumlicher-schlager/": "/genres/folk-influenced-schlager/",
+    "/genres/unsterbliche-klassiker/": "/genres/timeless-classics/"
+  },
+  "remaining_genres": {
+    "00s": 23,
+    "10s": 6,
+    "1920s": 2,
+    "1930s": 2,
+    "1940s": 2,
+    "20s": 5,
+    "50s": 2,
+    "60s": 30,
+    "70s": 46,
+    "80s": 76,
+    "90s": 56,
+    "90s dance": 2,
+    "90s eurodance": 1,
+    "aboriginal music": 1,
+    "acoustic": 1,
+    "adult contemporary": 5,
+    "african": 1,
+    "afro": 1,
+    "afro house": 1,
+    "ai generated": 1,
+    "ai presenter": 1,
+    "album": 1,
+    "album rock": 2,
+    "alternative": 16,
+    "alternative classics": 2,
+    "alternative rock": 5,
+    "ambient": 5,
+    "ambient and relaxation music": 1,
+    "americana": 3,
+    "amharic": 1,
+    "apres-ski music": 1,
+    "arabic": 1,
+    "avant-garde": 1,
+    "bachata": 1,
+    "ballads": 1,
+    "baroque": 1,
+    "bass house": 1,
+    "beats": 3,
+    "berlin school": 1,
+    "blues": 6,
+    "blues rock": 1,
+    "bollywood": 8,
+    "boogie": 5,
+    "boogie woogie": 2,
+    "bossa nova": 1,
+    "brandnew": 1,
+    "bubbling under hits": 2,
+    "business": 2,
+    "campus": 1,
+    "carnival music": 2,
+    "catholic": 1,
+    "catholic talk": 1,
+    "cdr": 1,
+    "celtic": 1,
+    "children": 7,
+    "chillout": 8,
+    "chiptune": 4,
+    "choral music": 1,
+    "christian": 12,
+    "christian chr": 1,
+    "christian contemporary": 1,
+    "christian music": 2,
+    "christmas": 2,
+    "church music": 1,
+    "church services": 1,
+    "cinema": 1,
+    "classic": 3,
+    "classic hits": 27,
+    "classic jazz": 1,
+    "classic rock": 11,
+    "classical": 28,
+    "classics": 11,
+    "club": 2,
+    "club dance": 2,
+    "club house": 1,
+    "clubhouse": 1,
+    "comedy": 1,
+    "commercial": 1,
+    "community": 1,
+    "community radio": 9,
+    "community radio - seniors": 1,
+    "contemporary": 2,
+    "contemporary christian music": 1,
+    "country": 15,
+    "created content requests": 1,
+    "crooner": 1,
+    "dance": 57,
+    "dance classics": 4,
+    "dance pop": 1,
+    "dance smashes": 1,
+    "dancehall": 2,
+    "darksynth": 1,
+    "darkwave": 1,
+    "decades": 1,
+    "deep": 1,
+    "deep house": 5,
+    "disco": 16,
+    "disco funk": 4,
+    "diversity": 1,
+    "diy": 1,
+    "dj": 1,
+    "dj mix": 1,
+    "dj mixes": 1,
+    "dj remix": 1,
+    "dj sets": 2,
+    "downtempo": 2,
+    "drum and bass": 1,
+    "dutch": 27,
+    "dutch folk": 1,
+    "dutch music": 21,
+    "dutch pirate music": 46,
+    "dutch pop": 3,
+    "dutch-language music": 13,
+    "early music": 1,
+    "easy listening": 11,
+    "ebm": 1,
+    "eclectic": 1,
+    "edm": 12,
+    "edm radioshows": 1,
+    "efteling": 1,
+    "electro": 5,
+    "electroacoustic": 1,
+    "electronic": 20,
+    "electronica": 1,
+    "electronics": 1,
+    "english": 5,
+    "entertainer": 1,
+    "eritrea": 1,
+    "ethnic": 1,
+    "euro disco": 2,
+    "eurobeat": 1,
+    "eurodance": 5,
+    "evergreens": 6,
+    "experimental": 4,
+    "experimental electronic music": 1,
+    "festival": 3,
+    "field recordings": 1,
+    "folk": 23,
+    "folk-influenced schlager": 1,
+    "france": 1,
+    "free music": 2,
+    "freeform": 1,
+    "frenchcore": 2,
+    "funk": 13,
+    "gabber": 3,
+    "generation": 1,
+    "german": 4,
+    "german folk music": 2,
+    "german folk pop": 1,
+    "germany rocks!": 1,
+    "goldwave": 1,
+    "gospel": 2,
+    "great american songbook": 1,
+    "greatest hits": 2,
+    "groove": 2,
+    "grooves": 1,
+    "guitar": 1,
+    "happy": 1,
+    "hard bop": 1,
+    "hard dance": 2,
+    "hard rock": 3,
+    "hard techno": 1,
+    "hardcore": 5,
+    "hardcore techno": 1,
+    "hardstyle": 10,
+    "healing": 1,
+    "heavy metal": 1,
+    "hi-nrg": 1,
+    "high energy": 1,
+    "hindi": 7,
+    "hip-hop": 3,
+    "hits": 42,
+    "holiday music": 3,
+    "honky tonk": 1,
+    "hospital radio": 3,
+    "hot country hits": 1,
+    "hothits": 1,
+    "house": 20,
+    "ibiza": 2,
+    "in-store": 1,
+    "independent": 2,
+    "independent music": 1,
+    "independent radio": 1,
+    "indie": 5,
+    "indie pop": 3,
+    "indie rock": 2,
+    "industrial": 1,
+    "information": 1,
+    "instore radio": 1,
+    "instrumental": 7,
+    "international": 1,
+    "international news": 1,
+    "interviews": 4,
+    "italo": 2,
+    "italo disco": 5,
+    "italodance": 1,
+    "italohouse": 1,
+    "jazz": 27,
+    "jazz fusion": 1,
+    "jive": 1,
+    "kurdish songs": 1,
+    "latin": 7,
+    "live": 1,
+    "live show": 1,
+    "live shows": 1,
+    "lo-fi": 1,
+    "local": 2,
+    "local information": 1,
+    "local music": 6,
+    "local news": 56,
+    "local radio": 58,
+    "lounge": 6,
+    "love songs": 3,
+    "low german": 1,
+    "luxury jazz": 1,
+    "marching music": 1,
+    "melodic": 1,
+    "melodic house": 3,
+    "merengue": 1,
+    "metal": 1,
+    "metal rock": 1,
+    "middle of the road": 1,
+    "minimal": 1,
+    "minimalsynth": 1,
+    "mix": 1,
+    "mixed": 1,
+    "mixes": 1,
+    "mixstream": 11,
+    "moody": 1,
+    "motown": 1,
+    "movie": 1,
+    "music dj": 1,
+    "musical": 1,
+    "national news": 1,
+    "neo soul": 1,
+    "neo-progressive rock": 2,
+    "neoclassical": 1,
+    "new": 1,
+    "new age": 3,
+    "new classics 80 ́s": 1,
+    "new country": 2,
+    "new hits": 1,
+    "new music": 1,
+    "new releases": 2,
+    "new wave": 5,
+    "news": 59,
+    "news talk": 1,
+    "no alternative": 1,
+    "non-stop hits": 1,
+    "nostalgia": 1,
+    "nu-jazz": 2,
+    "offshore": 1,
+    "offshore radio": 3,
+    "oldies": 46,
+    "oldschool": 1,
+    "oldskool": 1,
+    "opera": 3,
+    "opera mind": 1,
+    "organic house": 2,
+    "party": 4,
+    "partymix": 1,
+    "piano blues": 1,
+    "pirate": 2,
+    "pirate radio": 38,
+    "polish": 1,
+    "polka": 4,
+    "pop": 117,
+    "pop music of all eras": 1,
+    "pop rock": 2,
+    "popular": 1,
+    "power metal": 1,
+    "preaching": 1,
+    "pride": 1,
+    "prog": 1,
+    "progressive": 4,
+    "progressive house": 1,
+    "progressive rock": 7,
+    "progressive trance": 1,
+    "psb": 2,
+    "public": 2,
+    "public radio": 7,
+    "r&b": 16,
+    "radio shows": 1,
+    "rap": 1,
+    "rave": 1,
+    "re-edits": 2,
+    "reggae": 4,
+    "reggaeton": 1,
+    "regional": 4,
+    "regional news": 5,
+    "regional programs": 1,
+    "regional radio": 10,
+    "regional reporting": 1,
+    "regional-language music": 1,
+    "relax": 1,
+    "relaxation music": 1,
+    "religion": 2,
+    "remix": 1,
+    "remixes": 1,
+    "retro": 1,
+    "rock": 39,
+    "rock and roll": 1,
+    "rockabilly": 1,
+    "salsa": 2,
+    "schlager": 9,
+    "season": 1,
+    "seasonal": 1,
+    "shopping": 1,
+    "shortwave": 1,
+    "singer-songwriter": 1,
+    "slow": 1,
+    "slow jams": 1,
+    "slow jamz": 1,
+    "smooth": 2,
+    "smooth jazz": 8,
+    "smooth rnb": 1,
+    "smooth soul": 1,
+    "soft": 1,
+    "soft pop": 4,
+    "soft rock": 1,
+    "song requests": 6,
+    "soul": 23,
+    "soulful": 1,
+    "soulful house": 1,
+    "sound art": 2,
+    "sounds of nature": 1,
+    "soundscape": 1,
+    "soundtracks": 5,
+    "spacesynth": 1,
+    "sports": 3,
+    "sports news": 2,
+    "student-run radio": 1,
+    "sublime": 1,
+    "surinam": 7,
+    "swing": 3,
+    "symphonic metal": 1,
+    "synth": 2,
+    "synthpop": 2,
+    "synthwave": 1,
+    "talent": 1,
+    "talk": 6,
+    "tech house": 3,
+    "techno": 9,
+    "terrorcore": 1,
+    "throwbacks": 3,
+    "tigray": 1,
+    "tigrigna": 1,
+    "timeless classics": 1,
+    "top 40": 43,
+    "top hits": 2,
+    "traffic news": 2,
+    "trance": 9,
+    "tropical": 1,
+    "underground": 1,
+    "university radio": 1,
+    "upbeat": 1,
+    "urban": 6,
+    "urdu": 7,
+    "variety": 55,
+    "vaudeville": 1,
+    "vibes": 1,
+    "viking": 1,
+    "vocal jazz": 1,
+    "weather": 1,
+    "woman": 1,
+    "world music": 8,
+    "worship": 1,
+    "xmas rock": 1
+  },
+  "review_tags": []
+}
