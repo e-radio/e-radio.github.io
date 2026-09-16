@@ -470,3 +470,6 @@ Radiojar streams use `https://www.radiojar.com/api/stations/STREAM_ID/now_playin
 Radiojar history uses `https://www.radiojar.com/api/stations/STREAM_ID/tracks/`. Station pages display up to 15 completed tracks, newest first, with artist, title, available artwork, and playback time. History remains separate from the current song.
 
 Run `node tools/find-radiojar-history.mjs` to check configured Radiojar stations and save missing `history_url` fields only when usable history is returned. Results are written to `reports/radiojar-history.json`; existing history URLs are preserved. Main metadata discovery also checks history, and the endpoint verification tool understands Radiojar history responses. An empty response does not qualify as verified history.
+
+The Netherlands site supports English at `/` and Dutch at `/nl/`. See
+[Dutch setup and SEO validation](countries/README.md#dutch-and-english-pages-nederland-fmgithubio).

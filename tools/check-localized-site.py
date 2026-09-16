@@ -38,7 +38,7 @@ def check(root):
             target=urlsplit(page.redirect_target).path
             assert target in pages and not pages[target].redirect,(path,'invalid redirect target',target)
             continue
-        assert page.lang in ('en','hr','el','sv'),path
+        assert page.lang in ('en','hr','el','sv','nl'),path
         expected=next((lang for lang in languages if lang!='en' and path.startswith('/'+lang+'/')), 'en')
         assert page.lang==expected,(path,page.lang)
         canonical=[a['href'] for tag,a in page.links if tag=='link' and a.get('rel')=='canonical']

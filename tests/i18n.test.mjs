@@ -6,7 +6,7 @@ import ts from 'typescript';
 const source = readFileSync(new URL('../src/i18n/translate.ts', import.meta.url), 'utf8')
   .replace("import hr from './hr.json';", `const hr = ${readFileSync(new URL('../src/i18n/hr.json', import.meta.url), 'utf8')};`);
 const localizedSource = source.replace("import el from './el.json';", `const el = ${readFileSync(new URL('../src/i18n/el.json', import.meta.url), 'utf8')};`);
-const js = ts.transpileModule(localizedSource.replace("import sv from './sv.json';", `const sv = ${readFileSync(new URL('../src/i18n/sv.json', import.meta.url), 'utf8')};`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const js = ts.transpileModule(localizedSource.replace("import nl from './nl.json';", `const nl = ${readFileSync(new URL('../src/i18n/nl.json', import.meta.url), 'utf8')};`).replace("import sv from './sv.json';", `const sv = ${readFileSync(new URL('../src/i18n/sv.json', import.meta.url), 'utf8')};`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
 const { translate: t } = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
 test('English text and stream URLs remain unchanged', () => {
   assert.equal(t('Play', 'en'), 'Play');
@@ -72,4 +72,14 @@ test('Swedish controls, SEO, counties and interpolation translate', () => {
   assert.equal(t('Stockholm county', 'sv'), 'Stockholms län');
   assert.equal(t('Swedish Radio Stations by City | Sveriges Radio', 'sv'), 'Svenska radiostationer efter stad | Sveriges Radio');
   assert.equal(t('https://stream.example/radio.mp3', 'sv'), 'https://stream.example/radio.mp3');
+});
+
+test('Dutch controls, SEO and locations translate without changing station names', () => {
+ assert.equal(t('Play', 'nl'), 'Afspelen');
+ assert.equal(t('Play Classics Radio', 'nl'), 'Classics Radio afspelen');
+ assert.equal(t('North Brabant', 'nl'), 'Noord-Brabant');
+ assert.equal(t('Dutch Radio Stations by City | Netherlands FM', 'nl'), 'Nederlandse radiozenders per stad | Netherlands FM');
+ assert.equal(t('Showing stations {0}–{1} of {2}', 'nl', [1,20,50]), 'Zenders 1–20 van 50');
+ const dictionary=JSON.parse(readFileSync(new URL('../src/i18n/nl.json', import.meta.url), 'utf8'));
+ for(const [key,value] of Object.entries(dictionary)) assert.deepEqual((key.match(/\{\d+\}/g)||[]).sort(),(value.match(/\{\d+\}/g)||[]).sort(),key);
 });

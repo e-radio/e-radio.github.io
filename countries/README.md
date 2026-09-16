@@ -530,3 +530,27 @@ the desired country code. Address discovery does not execute JavaScript, so some
 websites will require manual review.
 
 The single entry point is `tools/fill-station-locations.py` (`npm run stations:geography` or `npm run "fill locations"`). Use `--no-coordinates` for websites only. Neither source mode writes without `--write`.
+
+### Dutch and English pages (nederland-fm.github.io)
+
+`countries/nl.json` enables `"locales": ["en", "nl"]`. English stays at `/` and Dutch
+pages use `/nl/`. The language switcher links to the equivalent page. Dutch UI,
+player messages, SEO descriptions, and location labels live in `src/i18n/nl.json`.
+Stored station names, genre values, stream URLs, and station slugs stay unchanged.
+
+The shared routing creates Dutch pages, localized redirects, and a Dutch manifest.
+Each language has its own canonical URL, reciprocal `hreflang` links and an
+`x-default` link; both versions appear in the sitemap. Dutch pages use `lang="nl"`
+and `og:locale="nl_NL"`.
+
+```sh
+COUNTRY=nl npm run dev
+npm test
+COUNTRY=nl npm run check
+COUNTRY=nl npm run build
+python3 tools/check-localized-site.py dist
+```
+
+Deploy with the repository variable `COUNTRY=nl`. Update `src/i18n/nl.json` when
+adding interface text; translations apply to display labels rather than changing
+stored station data or URLs.

@@ -20,5 +20,9 @@
   "icon512": "/icons/icon-512x512.png",
   "appleTouchIcon": "/icons/apple-touch-icon.png",
   "socialLocale": "en_US",
-    "geographyAttribution": true
+  "geographyAttribution": true,
+  "locales": [
+    "en",
+    "nl"
+  ]
 }

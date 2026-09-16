@@ -47,7 +47,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.iceradio.nl/status-json.xsl?mount=%2Ficeradiohq",
+    "metadata_server": "icecast"
   },
   {
     "slug": "bollenstreek-omroep",
@@ -68,7 +70,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.bollenstreekomroep.nl/status-json.xsl?mount=%2Flive-mp3-192-stereo",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep",
@@ -91,7 +95,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://ro1.reformatorischeomroep.nl:8003/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "00s-alive",
@@ -278,7 +284,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-27.stream-server.nl:8192/status-json.xsl?mount=%2F192radio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "192-radio-veronica",
@@ -302,7 +310,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-14.stream-server.nl:8030/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-14.stream-server.nl:8030/played?sid=1&type=json"
   },
   {
     "slug": "1achterhoek-gelderland",
@@ -383,7 +394,9 @@
         "city": "Zwolle",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://radio.1zwolle.nl/status-json.xsl?mount=%2F1zwolle",
+    "metadata_server": "icecast"
   },
   {
     "slug": "247spice-radio-amsterdam-noord-holland-amsterdam",
@@ -523,7 +536,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://40rockstream.live-streams.nl/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "40up-320k-stream-noord-holland-amsterdam",
@@ -552,7 +567,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.40upradio.nl/status-json.xsl?mount=%2Fbp-transmit",
+    "metadata_server": "icecast"
   },
   {
     "slug": "40up-kbc-128k-noord-holland-amsterdam",
@@ -581,7 +598,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.40upradio.nl/status-json.xsl?mount=%2Fkbc-high",
+    "metadata_server": "icecast"
   },
   {
     "slug": "40up-radio-noord-holland-amsterdam",
@@ -614,7 +633,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.40upradio.nl/status-json.xsl?mount=%2F40up",
+    "metadata_server": "icecast"
   },
   {
     "slug": "4ever49",
@@ -635,7 +656,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8014/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "4ever49radio",
@@ -1124,7 +1147,9 @@
         "city": "Almere",
         "state": null
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv68.live-streams.nl:18007/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "a-d-m-hardstyle-radio",
@@ -1147,7 +1172,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://kathy.torontocast.com:2450/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "a1-radio",
@@ -1226,7 +1253,9 @@
         "city": "Wijk en Aalburg",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8808/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "abbaradio-com-north-holland",
@@ -1280,7 +1309,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-06.stream-server.nl:8600/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-06.stream-server.nl:8600/played?sid=1&type=json"
   },
   {
     "slug": "accentfm",
@@ -1326,7 +1358,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp3.live-streams.nl:8042/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "afm-alblasserdam-low-zuid-holland",
@@ -1349,7 +1383,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp3.live-streams.nl:8042/status-json.xsl?mount=%2Flow",
+    "metadata_server": "icecast"
   },
   {
     "slug": "after-hours-melodic-house-dnb",
@@ -1384,7 +1420,10 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://r.bgp.rodeo/api/nowplaying/after_hours",
+    "metadata_server": "azuracast",
+    "history_url": "https://r.bgp.rodeo/api/nowplaying/after_hours"
   },
   {
     "slug": "ah-fm-electronic-dance-music-trance",
@@ -1437,7 +1476,10 @@
         "city": "Naarden",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://radio.aicountrymusic.nl/api/nowplaying/aicountry",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.aicountrymusic.nl/api/nowplaying/aicountry"
   },
   {
     "slug": "ai-melodic-death-metal-radio-station",
@@ -1608,7 +1650,10 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv73.live-streams.nl:8027/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mediaserv73.live-streams.nl:8027/played?sid=1&type=json"
   },
   {
     "slug": "all-oldies-channel-noord-brabant",
@@ -1655,7 +1700,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.alloldieschannel.com/api/nowplaying/all_oldies_channel",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.alloldieschannel.com/api/nowplaying/all_oldies_channel"
   },
   {
     "slug": "all-sports-radio",
@@ -1745,7 +1793,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server7.radio-streams.net/rpc/jwoiiktx/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://server7.radio-streams.net/external/rpc.php?m=recenttracks.get&username=jwoiiktx&limit=10"
   },
   {
     "slug": "alternative-rock-radio",
@@ -2216,7 +2267,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://caster05.streampakket.com:9056/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://caster05.streampakket.com:9056/played?sid=1&type=json"
   },
   {
     "slug": "atlantis-radio",
@@ -2331,7 +2385,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.iceradio.nl/status-json.xsl?mount=%2Fbaarsclassicrock",
+    "metadata_server": "icecast"
   },
   {
     "slug": "baars-classic-rock-961ff0f3",
@@ -2355,7 +2411,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-66.stream-server.nl:8840/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-66.stream-server.nl:8840/played?sid=1&type=json"
   },
   {
     "slug": "back-to-the-old-school",
@@ -2376,7 +2435,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://bttos.soulandfunkmusic.com:8443/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://bttos.soulandfunkmusic.com:8443/played?sid=1&type=json"
   },
   {
     "slug": "basefm-almere",
@@ -2460,7 +2522,10 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://r.bgp.rodeo/api/nowplaying/mixes",
+    "metadata_server": "azuracast",
+    "history_url": "https://r.bgp.rodeo/api/nowplaying/mixes"
   },
   {
     "slug": "beats-from-amsterdam-noord-holland",
@@ -2508,7 +2573,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv38.live-streams.nl:8002/status-json.xsl?mount=%2Fhouse",
+    "metadata_server": "icecast"
   },
   {
     "slug": "beats2dance-techno",
@@ -2529,7 +2596,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv38.live-streams.nl:8002/status-json.xsl?mount=%2Ftechno",
+    "metadata_server": "icecast"
   },
   {
     "slug": "beats2dance-trance",
@@ -2550,7 +2619,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv38.live-streams.nl:8002/status-json.xsl?mount=%2Ftrance",
+    "metadata_server": "icecast"
   },
   {
     "slug": "beatstad-radio",
@@ -2571,7 +2642,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp2.live-streams.nl:8042/status-json.xsl?mount=%2Flive.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "beeclassics",
@@ -2592,7 +2665,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://listen.bee.radio/status-json.xsl?mount=%2Fclassics",
+    "metadata_server": "icecast"
   },
   {
     "slug": "beeradio",
@@ -2676,7 +2751,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.b21fm.nl:9010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.b21fm.nl:9010/played?sid=1&type=json"
   },
   {
     "slug": "bingo-fm",
@@ -2750,7 +2828,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-24.stream-server.nl:8326/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-24.stream-server.nl:8326/played?sid=1&type=json"
   },
   {
     "slug": "bnr-business-beats",
@@ -2974,7 +3055,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream-10.pmteurope.com:8032/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "bredanu",
@@ -3034,7 +3117,9 @@
         "city": "Breda",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.bredanu.nl/status-json.xsl?mount=%2Fbredanu.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "bredanu-576kbit-aac-noord-brabant-breda",
@@ -3061,7 +3146,9 @@
         "city": "Breda",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.bredanu.nl/status-json.xsl?mount=%2Fbredanu.stl",
+    "metadata_server": "icecast"
   },
   {
     "slug": "bredanu-96k-aac-noord-brabant-breda",
@@ -3092,7 +3179,9 @@
         "city": "Breda",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.bredanu.nl/status-json.xsl?mount=%2Fbredanu.aac",
+    "metadata_server": "icecast"
   },
   {
     "slug": "brightfamilyradio",
@@ -3115,7 +3204,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://str1.hollanddata.eu:8006/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://str1.hollanddata.eu:8006/played?sid=1&type=json"
   },
   {
     "slug": "brightfm-kids",
@@ -3139,7 +3231,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://str1.hollanddata.eu:8020/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://str1.hollanddata.eu:8020/played?sid=1&type=json"
   },
   {
     "slug": "c-dance",
@@ -3163,7 +3258,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s45.myradiostream.com:18304/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s45.myradiostream.com:18304/played?sid=1&type=json"
   },
   {
     "slug": "c-dance-retro",
@@ -3307,7 +3405,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.capitalradio.nl/api/nowplaying/capitalradio",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.capitalradio.nl/api/nowplaying/capitalradio"
   },
   {
     "slug": "caribbean-fm",
@@ -3401,7 +3502,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-26.stream-server.nl:18738/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://server-26.stream-server.nl:18738/played?sid=1&type=json"
   },
   {
     "slug": "centrum-radio-noord-brabant-valkenswaard",
@@ -3486,7 +3590,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://a5.asurahosting.com:7410/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "chill-hits4u",
@@ -3556,7 +3662,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://primastream1.primareclame.nl:11231/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://primastream1.primareclame.nl:11231/played?sid=1&type=json"
   },
   {
     "slug": "christmas-hits-radio-nl-noord-holland",
@@ -3582,7 +3691,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream06.dotpoint.nl:8006/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "classic-hits-106-noord-holland-amsterdam",
@@ -3605,7 +3716,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-23.stream-server.nl:18102/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "classic-mind-radio-utrecht",
@@ -3932,7 +4045,9 @@
         "bitrate": 128,
         "codec": "MP3"
       }
-    ]
+    ],
+    "nowplaying_url": "https://a4.asurahosting.com:7080/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "classics-radio-80s-hits",
@@ -3982,7 +4097,9 @@
         "city": "Bavel",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8864/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "clubstitute-radio",
@@ -4809,7 +4926,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.creatorplaza.nl/api/nowplaying/creatorplaza_radio",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.creatorplaza.nl/api/nowplaying/creatorplaza_radio"
   },
   {
     "slug": "cubic-space-radio-noord-holland-amsterdam",
@@ -4832,7 +4952,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://music.cubicspace.fm:42424/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://music.cubicspace.fm:42424/played?sid=1&type=json"
   },
   {
     "slug": "d2bs",
@@ -4864,7 +4987,9 @@
         "city": "The Hague",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://solid1.streamupsolutions.com:8041/status-json.xsl?mount=%2Fd2bs",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dance-classics-radio",
@@ -5037,7 +5162,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://s14.myradiostream.com:19580/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://s14.myradiostream.com:19580/played?sid=1&type=json"
   },
   {
     "slug": "danceclassic-eu",
@@ -5058,7 +5186,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv21.live-streams.nl:8011/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv21.live-streams.nl:8011/played?sid=1&type=json"
   },
   {
     "slug": "danceclassic-eu-6c5bf92e",
@@ -5079,7 +5210,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mediaserv21.live-streams.nl:8011/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mediaserv21.live-streams.nl:8011/played?sid=1&type=json"
   },
   {
     "slug": "dancegroove-radio",
@@ -5198,7 +5332,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everestcast.live-streams.nl:8025/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "das-total-erlebnis-gelderland",
@@ -5246,7 +5382,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.db962.nl:8030/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.db962.nl:8030/played?sid=1&type=json"
   },
   {
     "slug": "dbc",
@@ -5294,7 +5433,10 @@
         "city": "Meijel",
         "state": "Limburg"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.debestepiraten.nl/api/nowplaying/stream.debestepiraten.nl",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.debestepiraten.nl/api/nowplaying/stream.debestepiraten.nl"
   },
   {
     "slug": "de-hollandse-piraten-gigant-overijssel",
@@ -5321,7 +5463,10 @@
         "city": "Enschede",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://dhpgstreaming.nl/rpc/dhpg/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://dhpgstreaming.nl/external/rpc.php?m=recenttracks.get&username=dhpg&limit=10"
   },
   {
     "slug": "de-muziek-gigant",
@@ -5352,7 +5497,9 @@
         "city": "Loenen",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://streaming1.djpaneel.com:5378/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "de-vrolijke-snuiters-groningen-uithuizen",
@@ -5381,7 +5528,9 @@
         "city": "Uithuizen",
         "state": "Groningen"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8794/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "decibel-eurodance",
@@ -5504,7 +5653,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://cast1.torontocast.com:2205/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "deep-radio-noord-holland",
@@ -5558,7 +5709,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.deltafm.nl:8125/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.deltafm.nl:8125/played?sid=1&type=json"
   },
   {
     "slug": "delta-radio-nijmegen",
@@ -5579,7 +5733,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streamdelta.lokaalradio.nl:9005/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://streamdelta.lokaalradio.nl:9005/played?sid=1&type=json"
   },
   {
     "slug": "delta-radio-nijmegen-works-in-home-assistant-gelderland",
@@ -5610,7 +5767,10 @@
         "city": "Nijmegen",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "http://streamdelta.lokaalradio.nl:9005/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://streamdelta.lokaalradio.nl:9005/played?sid=1&type=json"
   },
   {
     "slug": "den-haag-fm",
@@ -5670,7 +5830,10 @@
         "city": "Groningen",
         "state": "Groningen"
       }
-    }
+    },
+    "nowplaying_url": "https://securestream2.digipal.nl:1895/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://securestream2.digipal.nl:1895/played?sid=1&type=json"
   },
   {
     "slug": "desizone",
@@ -5693,7 +5856,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www.desizone.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www.desizone.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "deurne-media-groep-noord-brabant",
@@ -5751,7 +5917,9 @@
         "city": "Deventer",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.deventerrtv.nl:8443/status-json.xsl?mount=%2Fmp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "deventer-radio-overijssel-c760634f",
@@ -5787,7 +5955,9 @@
         "city": "Deventer",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.deventerrtv.nl:8443/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dilemaradio",
@@ -5808,7 +5978,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://dilemaradiolive.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://dilemaradiolive.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "disco-classic-radio",
@@ -5892,7 +6065,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8079/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "domstad-radio-utrecht-utrecht",
@@ -5950,7 +6125,9 @@
         "city": "Utrecht",
         "state": "Utrecht"
       }
-    }
+    },
+    "nowplaying_url": "https://dmsstreaming.nl:8000/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "donderschoer-radio-gelderland-eerbeek",
@@ -6012,7 +6189,9 @@
         "city": "Eerbeek",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8806/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "double-z",
@@ -6060,7 +6239,9 @@
         "city": "Papendrecht",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.rtvpapendrecht.nl/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "drentsepiraten",
@@ -6081,7 +6262,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server1.streamgigant.nl:9214/status-json.xsl?mount=%2Fdrentsepiraten192",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dutch-delite-dnb-radio",
@@ -6102,7 +6285,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.dutchdelite.nl:8000/status-json.xsl?mount=%2Fdnb",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dutch-delite-radio",
@@ -6123,7 +6308,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.dutchdelite.nl:8000/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dutchradar",
@@ -6144,7 +6331,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mscp2.live-streams.nl:8220/status-json.xsl?mount=%2Fscannerptn",
+    "metadata_server": "icecast"
   },
   {
     "slug": "dzb-dance-radio-drenthe",
@@ -6171,7 +6360,10 @@
         "city": "Meppel",
         "state": "Drenthe"
       }
-    }
+    },
+    "nowplaying_url": "https://caster08.streampakket.com/rpc/xsrsnkdx/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://caster08.streampakket.com/external/rpc.php?m=recenttracks.get&username=xsrsnkdx&limit=10"
   },
   {
     "slug": "echobox",
@@ -6213,7 +6405,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://quincy.torontocast.com:2390/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://quincy.torontocast.com:2390/played?sid=1&type=json"
   },
   {
     "slug": "echtepiraten-nl-drenthe",
@@ -6348,7 +6543,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8049/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv30.live-streams.nl:8049/played?sid=1&type=json"
   },
   {
     "slug": "epic-prog-radio",
@@ -6369,7 +6567,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://fra-pioneer08.dedicateware.com:3255/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "eternal-project",
@@ -6411,7 +6611,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://149.202.22.75:8246/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://149.202.22.75:8246/played?sid=1&type=json"
   },
   {
     "slug": "event-radio",
@@ -6479,7 +6682,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://extragold.stream-server.nl/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://extragold.stream-server.nl/played?sid=1&type=json"
   },
   {
     "slug": "f-test-gelderland-hedel",
@@ -6561,7 +6767,9 @@
         "city": "Naaldwijk",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://mscp2.live-streams.nl:8152/status-json.xsl?mount=%2Fitalodance",
+    "metadata_server": "icecast"
   },
   {
     "slug": "fantasy-italo-radio",
@@ -6582,7 +6790,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://italo.live-streams.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://italo.live-streams.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "fantasy-radio-italo-disco-burgenland",
@@ -6618,7 +6829,9 @@
         "city": "Naaldwijk",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://italo.live-streams.nl/status-json.xsl?mount=%2Ffantasy",
+    "metadata_server": "icecast"
   },
   {
     "slug": "feel-good-radio-107-6-fm",
@@ -6641,7 +6854,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://live.feelgoodradio.eu:8344/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://live.feelgoodradio.eu:8344/played?sid=1&type=json"
   },
   {
     "slug": "firma-k-m-r",
@@ -6727,7 +6943,9 @@
         "city": "Almere",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream1.fzo.nu/status-json.xsl?mount=%2Fstudio.aac",
+    "metadata_server": "icecast"
   },
   {
     "slug": "flevoziekenomroep-fzo-mp3-stream-flevoland",
@@ -6762,7 +6980,9 @@
         "city": "Almere",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "http://stream1.fzo.nu/status-json.xsl?mount=%2Fstudio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "flevoziekenomroep-hls-audio-flevoland-almere",
@@ -6847,7 +7067,10 @@
         "city": "Sommelsdijk",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.radiofomix.nl/api/nowplaying/fomix",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.radiofomix.nl/api/nowplaying/fomix"
   },
   {
     "slug": "food-and-lounge-lelystad",
@@ -6901,7 +7124,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.foundtreasures.online/api/nowplaying/found_treasures",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.foundtreasures.online/api/nowplaying/found_treasures"
   },
   {
     "slug": "foute-radio",
@@ -7050,7 +7276,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.freemusicradio.nl:8100/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "free-music-radio-f8443d31",
@@ -7071,7 +7299,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://centova.mediastreamhost.nl/rpc/freemusicradio/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://centova.mediastreamhost.nl/external/rpc.php?m=recenttracks.get&username=freemusicradio&limit=10"
   },
   {
     "slug": "free-radio-rotterdam-zh",
@@ -7100,7 +7331,10 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://streams.freeradiorotterdam.nl:9443/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://streams.freeradiorotterdam.nl:9443/played?sid=1&type=json"
   },
   {
     "slug": "freez-fm",
@@ -7153,7 +7387,9 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://a8.asurahosting.com:7890/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "friendtastic-radio",
@@ -7210,7 +7446,10 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://streambeheer.fryslanstrijders.nl/rpc/fryslanstrijders/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://streambeheer.fryslanstrijders.nl/external/rpc.php?m=recenttracks.get&username=fryslanstrijders&limit=10"
   },
   {
     "slug": "funky-jazzradio-flevoland-almere",
@@ -7237,7 +7476,9 @@
         "city": "Almere",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "http://funky-jazzmusic.kaspermusic.nl:8000/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "funky-uncle-fm",
@@ -7258,7 +7499,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://funkyunclefm.net/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "funx-noord-holland-amsterdam",
@@ -7388,7 +7631,10 @@
         "city": "Roermond",
         "state": "Limburg"
       }
-    }
+    },
+    "nowplaying_url": "https://azura.svr6.drechthosting.nl/api/nowplaying/gay_radio_netherlands",
+    "metadata_server": "azuracast",
+    "history_url": "https://azura.svr6.drechthosting.nl/api/nowplaying/gay_radio_netherlands"
   },
   {
     "slug": "gay-radio-netherlands-limburg-roermond-kasteel-osenstraat-12",
@@ -7442,7 +7688,10 @@
         "city": "Sommelsdijk",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://computerdokter.eu:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://computerdokter.eu:8000/played?sid=1&type=json"
   },
   {
     "slug": "gen-x-radio-zuid-holland-aafc43bf",
@@ -7475,7 +7724,10 @@
         "city": "Middelharnis",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://computerdokter.eu:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://computerdokter.eu:8000/played?sid=1&type=json"
   },
   {
     "slug": "gigant-fm-drenthe",
@@ -7567,7 +7819,9 @@
         "city": "Malden",
         "state": "Limburg"
       }
-    }
+    },
+    "nowplaying_url": "http://stream.stream.delivery/status-json.xsl?mount=%2Fgl8media",
+    "metadata_server": "icecast"
   },
   {
     "slug": "glassrock-zuid-holland",
@@ -7588,7 +7842,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp3.live-streams.nl:8092/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "glassrock",
@@ -7609,7 +7865,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mscp3.live-streams.nl:8090/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "glind-radio",
@@ -7974,7 +8232,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-23.stream-server.nl:8118/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "gouwestad-radio",
@@ -8377,7 +8637,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://radio.grooveline.org:8000/status-json.xsl?mount=%2Fauto",
+    "metadata_server": "icecast"
   },
   {
     "slug": "grunn-fm",
@@ -8618,7 +8880,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-10.rcgoldserver.nl/api/nowplaying/happy_oldies",
+    "metadata_server": "azuracast",
+    "history_url": "https://server-10.rcgoldserver.nl/api/nowplaying/happy_oldies"
   },
   {
     "slug": "happy-rock-radio-caroline-259",
@@ -8639,7 +8904,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.rcgoldserver.nl/api/nowplaying/classic_rock",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.rcgoldserver.nl/api/nowplaying/classic_rock"
   },
   {
     "slug": "happy-sound-music-limburg-roermond-kasteel-osenstraat-12",
@@ -8828,7 +9096,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-23.stream-server.nl:8326/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-23.stream-server.nl:8326/played?sid=1&type=json"
   },
   {
     "slug": "hardstyle-fm",
@@ -8881,7 +9152,10 @@
         "city": "Hoogvliet",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv33.live-streams.nl:8056/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mediaserv33.live-streams.nl:8056/played?sid=1&type=json"
   },
   {
     "slug": "henks-streaming-audio",
@@ -8963,7 +9237,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-28.stream-server.nl:8840/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hi-on-line-breda-flac-44-1",
@@ -9075,7 +9351,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv33.live-streams.nl:8036/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hi-on-line-radio-classical",
@@ -9098,7 +9376,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8088/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hi-on-line-radio-france",
@@ -9167,7 +9447,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv33.live-streams.nl:8034/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hi-on-line-radio-lounge-amsterdam",
@@ -9209,7 +9491,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8086/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hi-on-line-world-radio",
@@ -9257,7 +9541,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://185.2.175.194:8000/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hit-radio-loz-zuid-holland-leiden",
@@ -9423,7 +9709,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everestcast.live-streams.nl:8556/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hitstream-fm",
@@ -9532,7 +9820,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://solid41.streamupsolutions.com/rpc/toyfkozk/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "hollandhitnl",
@@ -9576,7 +9866,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mediaserv33.live-streams.nl:8009/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hollands-palet",
@@ -9597,7 +9889,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv21.live-streams.nl:8061/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv21.live-streams.nl:8061/played?sid=1&type=json"
   },
   {
     "slug": "hoornradio-noord-holland-hoorn",
@@ -9627,7 +9922,10 @@
         "city": "Hoorn",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-23.stream-server.nl:18382/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://server-23.stream-server.nl:18382/played?sid=1&type=json"
   },
   {
     "slug": "hoppa-music-holland",
@@ -9651,7 +9949,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-28.stream-server.nl:8822/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "hoppa-radio",
@@ -9812,7 +10112,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-67.stream-server.nl:8400/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-67.stream-server.nl:8400/played?sid=1&type=json"
   },
   {
     "slug": "hotfm-tilburg",
@@ -9865,7 +10168,10 @@
         "city": "Borne",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "http://server-67.stream-server.nl:8400/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-67.stream-server.nl:8400/played?sid=1&type=json"
   },
   {
     "slug": "house-classics",
@@ -9913,7 +10219,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-28.stream-server.nl:8834/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "i-turn-radio",
@@ -10025,7 +10333,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.iceradio.nl/status-json.xsl?mount=%2Ficeradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ideaal-fm",
@@ -10050,7 +10360,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-10.stream-server.nl:8564/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-10.stream-server.nl:8564/played?sid=1&type=json"
   },
   {
     "slug": "ideaal-plus-gelderland",
@@ -10129,7 +10442,9 @@
         "city": "Naaldwijk",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv38.live-streams.nl:8029/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ijsselstreek-radio",
@@ -10150,7 +10465,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv38.live-streams.nl:8029/status-json.xsl?mount=%2Flow",
+    "metadata_server": "icecast"
   },
   {
     "slug": "impact-am-zuid-holland",
@@ -10174,7 +10491,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://kippingmultimediaal.nl:8000/status-json.xsl?mount=%2Fimpactweb",
+    "metadata_server": "icecast"
   },
   {
     "slug": "impact-radio",
@@ -10201,7 +10520,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www.kippingmultimediaal.nl:8000/status-json.xsl?mount=%2Fimpactweb",
+    "metadata_server": "icecast"
   },
   {
     "slug": "in-tha-house-zuid-holland",
@@ -10243,7 +10564,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-23.stream-server.nl:8438/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-23.stream-server.nl:8438/played?sid=1&type=json"
   },
   {
     "slug": "indiexl",
@@ -10264,7 +10588,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-11.stream-server.nl:18438/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://server-11.stream-server.nl:18438/played?sid=1&type=json"
   },
   {
     "slug": "intense-radio-we-love-dance-256k-burgenland",
@@ -10299,7 +10626,9 @@
         "city": "'s-Gravenzande",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://secure.live-streams.nl/status-json.xsl?mount=%2Fmain",
+    "metadata_server": "icecast"
   },
   {
     "slug": "intercity-radio-gelderland-arnhem",
@@ -10329,7 +10658,9 @@
         "city": "Arnhem",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8804/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "intergalactic-fm-cybernetic-broadcasting-system",
@@ -10350,7 +10681,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.intergalactic.fm/status-json.xsl?mount=%2F1",
+    "metadata_server": "icecast"
   },
   {
     "slug": "intergalactic-fm-disco-fetish",
@@ -10371,7 +10704,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.intergalactic.fm/status-json.xsl?mount=%2F2",
+    "metadata_server": "icecast"
   },
   {
     "slug": "intergalactic-fm-murdercapital-fm",
@@ -10416,7 +10751,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radio.intergalactic.fm/status-json.xsl?mount=%2F3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "internet-radio-kim",
@@ -10464,7 +10801,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-extreme-metal-rotterdam",
@@ -10493,7 +10833,10 @@
         "city": "Baarschot",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-hardrock-channel-speler-rotterdam",
@@ -10522,7 +10865,10 @@
         "city": "Liempde",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-old-mens-rock",
@@ -10578,7 +10924,10 @@
         "city": "Otterlo",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-only-live-rotterdam",
@@ -10637,7 +10986,10 @@
         "city": "Houten",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-rock-radio-rotterdam",
@@ -10667,7 +11019,10 @@
         "city": "Emmeloord",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-rock-radio-rpo-recent-prog-only",
@@ -10691,7 +11046,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "iskc-rock-radio-rpo-recent-prog-only-830b7ee1",
@@ -10736,7 +11094,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv68.live-streams.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv68.live-streams.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "island-92",
@@ -10804,7 +11165,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.radioitalopower.com:10018/status-json.xsl?mount=%2Fitalopower",
+    "metadata_server": "icecast"
   },
   {
     "slug": "italoradio-fm",
@@ -10828,7 +11191,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://cc6.beheerstream.com:8102/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://cc6.beheerstream.com:8102/played?sid=1&type=json"
   },
   {
     "slug": "jamm-fm",
@@ -10858,7 +11224,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.jammfm.nl:8221/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.jammfm.nl:8221/played?sid=1&type=json"
   },
   {
     "slug": "jamm-fm-amsterdam",
@@ -10912,7 +11281,9 @@
         "city": "Kesteren",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://streaming1.djpaneel.com:6974/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "jans-den-haag-zuid-holland-den-haag",
@@ -10971,7 +11342,10 @@
         "city": "Enkhuizen",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://a1.my-control-panel.com/api/nowplaying/javier__amis_radio",
+    "metadata_server": "azuracast",
+    "history_url": "https://a1.my-control-panel.com/api/nowplaying/javier__amis_radio"
   },
   {
     "slug": "jazz-world-radio",
@@ -11065,7 +11439,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://onair22.xdevel.com/rpc/xautocloud_td3e_421/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "jazz-de-ville-dance",
@@ -11088,7 +11464,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://onair22.xdevel.com/rpc/xautocloud_6cqz_422/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "jazz-de-ville-easy",
@@ -11140,7 +11518,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://onair22.xdevel.com/rpc/xautocloud_1kha_423/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "jazz-de-ville-groovy",
@@ -11191,7 +11571,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://onair22.xdevel.com/rpc/xautocloud_kkyb_420/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "jazz-radio-by-maestro-groovin-nh",
@@ -11319,7 +11701,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.jeyradio.nl/status-json.xsl?mount=%2FJEY",
+    "metadata_server": "icecast"
   },
   {
     "slug": "jinglegek",
@@ -11340,7 +11724,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-26.stream-server.nl:8632/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "joe",
@@ -11654,7 +12040,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://tv.radiohosting.online:8982/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kbc-radio",
@@ -11681,7 +12069,9 @@
         "city": "Zeewolde",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream01.itego.nl/status-json.xsl?mount=%2Fkbc-low",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kbc-radio-4c58af94",
@@ -11702,7 +12092,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream02.itego.nl/status-json.xsl?mount=%2Fkbc-high",
+    "metadata_server": "icecast"
   },
   {
     "slug": "keizerstad-classic",
@@ -11749,7 +12141,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-06.stream-server.nl:8800/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-06.stream-server.nl:8800/played?sid=1&type=json"
   },
   {
     "slug": "keizertstad-classics",
@@ -11847,7 +12242,9 @@
         "city": "Amersfoort",
         "state": "Utrecht"
       }
-    }
+    },
+    "nowplaying_url": "https://mediacp.audiostreamen.nl:8168/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kick-radio-80s-90s-hits",
@@ -11898,7 +12295,9 @@
         "city": "Zuiddorpe",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8013/status-json.xsl?mount=%2Fmedium",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kilrock-zeeland-c9cf1423",
@@ -11925,7 +12324,9 @@
         "city": "Zuiddorpe",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8013/status-json.xsl?mount=%2Flow",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kilrock-zeeland-f44d016e",
@@ -11946,7 +12347,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8013/status-json.xsl?mount=%2Fhigh",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kingfm",
@@ -11970,7 +12373,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-28.stream-server.nl:8870/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kink",
@@ -12378,7 +12783,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-67.stream-server.nl:8788/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "koekstad-radio-overijssel-deventer",
@@ -12409,7 +12816,9 @@
         "city": "Deventer",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8788/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kommus-geldrop-noord-brabant",
@@ -12463,7 +12872,9 @@
         "city": "Westerhaar-Vriezenveensewijk",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://azura.kribberadio.nl/api/nowplaying/kribberadio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "kromhout-radio",
@@ -12487,7 +12898,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-67.stream-server.nl:8784/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "kx-classics",
@@ -12572,7 +12985,10 @@
         "city": "Reek",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.l-fm.nl:8443/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.l-fm.nl:8443/played?sid=1&type=json"
   },
   {
     "slug": "l-o-s-den-helder-noord-holland",
@@ -12775,7 +13191,10 @@
         "city": "Waalwijk",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv74.live-streams.nl/rpc/langstraatfm/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://mediaserv74.live-streams.nl/external/rpc.php?m=recenttracks.get&username=langstraatfm&limit=10"
   },
   {
     "slug": "langstraat-fm",
@@ -12827,7 +13246,10 @@
         "city": "Waalwijk",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv74.live-streams.nl/rpc/langstraatnl/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://mediaserv74.live-streams.nl/external/rpc.php?m=recenttracks.get&username=langstraatnl&limit=10"
   },
   {
     "slug": "layzer",
@@ -12875,7 +13297,10 @@
         "city": "Zoetermeer",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://ssl.lega-c.nl/rpc/legacy/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://ssl.lega-c.nl/external/rpc.php?m=recenttracks.get&username=legacy&limit=10"
   },
   {
     "slug": "legato-radio-maastricht",
@@ -12954,7 +13379,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://securestream.digipal.nl:1687/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://securestream.digipal.nl:1687/played?sid=1&type=json"
   },
   {
     "slug": "livesets-radio",
@@ -13057,7 +13485,10 @@
         "city": "Nes",
         "state": "Friesland"
       }
-    }
+    },
+    "nowplaying_url": "https://loa.beheerstream.nl:8040/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://loa.beheerstream.nl:8040/played?sid=1&type=json"
   },
   {
     "slug": "lokale-omroep-dronten-107-4-fm-flevoland-dronten-agripark-oost-2a",
@@ -13089,7 +13520,9 @@
         "city": "Dronten",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.lokaleomroepzeewolde.nl:8443/status-json.xsl?mount=%2Fdrontenhigh",
+    "metadata_server": "icecast"
   },
   {
     "slug": "lokale-omroep-goirle-radio-noord-brabant-goirle",
@@ -13141,7 +13574,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server6.radio-streams.net:8332/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server6.radio-streams.net:8332/played?sid=1&type=json"
   },
   {
     "slug": "lokale-omroep-zeewolde-loz-106-4fm-flevoland-zeewolde-schepenveld-21-5",
@@ -13173,7 +13609,9 @@
         "city": "Zeewolde",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.lokaleomroepzeewolde.nl:8443/status-json.xsl?mount=%2Fhigh",
+    "metadata_server": "icecast"
   },
   {
     "slug": "lomp-sonica",
@@ -13194,7 +13632,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streams.lomp.nl:9007/status-json.xsl?mount=%2Fsonica",
+    "metadata_server": "icecast"
   },
   {
     "slug": "loostad-radio",
@@ -13215,7 +13655,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-23.stream-server.nl:18476/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://server-23.stream-server.nl:18476/played?sid=1&type=json"
   },
   {
     "slug": "los-den-helder-noord-holland",
@@ -13265,7 +13708,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mcp-1.streampanel.nl:8020/status-json.xsl?mount=%2Flxclassics_mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "maasland-radio-limburg",
@@ -13286,7 +13731,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://54.36.89.71:8006/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://54.36.89.71:8006/played?sid=1&type=json"
   },
   {
     "slug": "magic-fm",
@@ -13349,7 +13797,9 @@
         "city": "Tegelen",
         "state": "Limburg"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8904/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "maibus-radio",
@@ -13370,7 +13820,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-67.stream-server.nl:8818/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mart-radio",
@@ -13504,7 +13956,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://eu4.fastcast4u.com/rpc/maxhitradio24/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "maxx-fm-noord-holland-hoorn",
@@ -13525,7 +13979,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://i2.streams.ovh:7070/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://i2.streams.ovh:7070/played?sid=1&type=json"
   },
   {
     "slug": "mbhitradio",
@@ -13546,7 +14003,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp2.live-streams.nl:8022/status-json.xsl?mount=%2Fmbhitradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mcb-radio",
@@ -13567,7 +14026,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp2.live-streams.nl:8002/status-json.xsl?mount=%2Flive.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mediamarkt-fm",
@@ -13754,7 +14215,10 @@
         "city": "Oudewater",
         "state": "Utrecht"
       }
-    }
+    },
+    "nowplaying_url": "http://qxjr001.digiplay.nl:9188/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://qxjr001.digiplay.nl:9188/played?sid=1&type=json"
   },
   {
     "slug": "midvliet-fm-zuid-holland-leidschendam",
@@ -13806,7 +14270,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://audiostream.easy-point.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://audiostream.easy-point.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "mixperfect",
@@ -13827,7 +14294,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mixperfectradio.nl:9443/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-boogie-woogie-noord-brabant",
@@ -13860,7 +14329,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fboogie.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-classics-noord-brabant",
@@ -13890,7 +14361,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fclassics.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-country-noord-brabant",
@@ -13918,7 +14391,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fcountry.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-dance-noord-brabant",
@@ -13945,7 +14420,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fdance.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-disco-noord-brabant",
@@ -13975,7 +14452,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fdisco.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-hardstyle-noord-brabant",
@@ -14004,7 +14483,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fhardstyle.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-hip-hop-noord-brabant",
@@ -14032,7 +14513,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fhiphop.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-nederlandstalig-noord-brabant",
@@ -14060,7 +14543,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fnl.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-pop-hits-noord-brabant",
@@ -14089,7 +14574,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fpop.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-r-b-noord-brabant",
@@ -14117,7 +14604,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Frnb.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-rock-noord-brabant",
@@ -14146,7 +14635,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Frock.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mixstream-radio-soul-noord-brabant",
@@ -14175,7 +14666,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.mixstream.nl/status-json.xsl?mount=%2Fsoul.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ml5-radio-midden-limburg",
@@ -14233,7 +14726,9 @@
         "city": "Utrecht",
         "state": "Utrecht"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8780/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "mushroom-radio-the-hague",
@@ -14287,7 +14782,9 @@
         "city": "Smilde",
         "state": "Drenthe"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8922/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "musicvaria",
@@ -14329,7 +14826,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mcp-1.streampanel.nl:8036/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "muziekteam-0117c362",
@@ -14350,7 +14849,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mcp-1.streampanel.nl:18036/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "nashville-fm",
@@ -14373,7 +14874,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-10.stream-server.nl:8300/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-10.stream-server.nl:8300/played?sid=1&type=json"
   },
   {
     "slug": "new-dance-radio",
@@ -14394,7 +14898,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://modspeedy.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://modspeedy.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "news-internetradio",
@@ -14495,7 +15002,10 @@
         "city": "Westerhaar-Vriezenveensewijk",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://caster08.streampakket.com/rpc/nickyfm/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://caster08.streampakket.com/external/rpc.php?m=recenttracks.get&username=nickyfm&limit=10"
   },
   {
     "slug": "niederlande-donderschoer-radio",
@@ -14556,7 +15066,10 @@
         "city": "Almere",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "https://mediacp.shoutcastradio.nl:8002/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mediacp.shoutcastradio.nl:8002/played?sid=1&type=json"
   },
   {
     "slug": "noise-radio",
@@ -14577,7 +15090,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://a2.asurahosting.com:7890/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "noise-radio-bb7572df",
@@ -14606,7 +15121,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://a2.asurahosting.com:7890/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "non-stop-cobra-team",
@@ -14627,7 +15144,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-67.stream-server.nl:8496/status-json.xsl?mount=%2Frelay",
+    "metadata_server": "icecast"
   },
   {
     "slug": "nora-fm-noord-holland-amsterdam",
@@ -14718,7 +15237,9 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-26.stream-server.nl:8604/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "nostalgie-nl",
@@ -15890,7 +16411,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp2.live-streams.nl:8172/status-json.xsl?mount=%2Fnuradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "nu-radio-limburg-4daf7d56",
@@ -15967,7 +16490,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-10.stream-server.nl:8140/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-10.stream-server.nl:8140/played?sid=1&type=json"
   },
   {
     "slug": "oldskooldisco",
@@ -15988,7 +16514,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://caster08.streampakket.com/rpc/arjanhoo/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://caster08.streampakket.com/external/rpc.php?m=recenttracks.get&username=arjanhoo&limit=10"
   },
   {
     "slug": "olympia-classics",
@@ -16014,7 +16543,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streams.olympia-classics.nl/status-json.xsl?mount=%2Fclassics",
+    "metadata_server": "icecast"
   },
   {
     "slug": "olympia-classics-greatest-hits-of-the-60s-70s-80s-90s",
@@ -16058,7 +16589,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streams.olympia-radio.nl/status-json.xsl?mount=%2Folympia",
+    "metadata_server": "icecast"
   },
   {
     "slug": "omroep-archipel",
@@ -16085,7 +16618,9 @@
         "city": "Dirksland",
         "state": null
       }
-    }
+    },
+    "nowplaying_url": "http://server-28.stream-server.nl:8872/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "omroep-assen",
@@ -16298,7 +16833,10 @@
         "city": "Mill",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "http://loa.beheerstream.nl:8048/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://loa.beheerstream.nl:8048/played?sid=1&type=json"
   },
   {
     "slug": "omroep-lekstroom-bergveste-2-de-houten",
@@ -16321,7 +16859,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mpc2.mediacp.eu:8268/status-json.xsl?mount=%2Fomroephouten",
+    "metadata_server": "icecast"
   },
   {
     "slug": "omroep-p-m-limburg",
@@ -16402,7 +16942,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://icecast.omroepvenray.nl/status-json.xsl?mount=%2Flov.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "omroep-venray-radio-limburg",
@@ -16514,7 +17056,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://omroepzilt1.streampartner.nl/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "omrop-frysl-n-radio-friesland",
@@ -16623,7 +17167,9 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8850/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "only-golden-oldies-groningen",
@@ -16644,7 +17190,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.webstreamcast.nl/api/nowplaying/onlygoldenoldies.nl",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.webstreamcast.nl/api/nowplaying/onlygoldenoldies.nl"
   },
   {
     "slug": "onverantwoord-com-noord-holland-wervershoof",
@@ -16752,7 +17301,9 @@
         "city": "Vorden",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "http://stream-10.pmteurope.com:8002/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "orinoco-radio",
@@ -16864,7 +17415,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.pepperboxradio.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.pepperboxradio.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "pepperbox-radio-enschede",
@@ -18062,7 +18616,10 @@
         "city": "Weiteveen",
         "state": "Drenthe"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.piratenpower.nl:8010/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.piratenpower.nl:8010/played?sid=1&type=json"
   },
   {
     "slug": "piratenradio-nl-24-7-de-beste-piratenhits-vanuit-twente-overijssel",
@@ -18091,7 +18648,9 @@
         "city": "Westerhaar-Vriezenveensewijk",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.piratenradio.nl/api/nowplaying/piratenradio",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "piratenteam-drenthe",
@@ -18118,7 +18677,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.hostinggold.nl:8012/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.hostinggold.nl:8012/played?sid=1&type=json"
   },
   {
     "slug": "pitane-blue-nieuwsradio-noord-brabant",
@@ -18283,7 +18845,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_radio",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_radio"
   },
   {
     "slug": "platinum-radio",
@@ -18310,7 +18875,10 @@
         "city": "Hillegom",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_radio",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_radio"
   },
   {
     "slug": "platinum-radio-90s-netherlands",
@@ -18336,7 +18904,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_90s",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_90s"
   },
   {
     "slug": "platinum-radio-90s-netherlands-c72be165",
@@ -18362,7 +18933,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_90s",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.platinumradio.nl/api/nowplaying/platinum_90s"
   },
   {
     "slug": "platinum-radio-hardstyle-netherlands",
@@ -18438,7 +19012,9 @@
         "city": "Veen",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8734/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "polder-radio-stream-2-noord-brabant-veen",
@@ -18465,7 +19041,9 @@
         "city": "Veen",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8738/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "power-fm-breda-noord-brabant",
@@ -18486,7 +19064,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mpc1.mediacp.eu:8036/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mpc1.mediacp.eu:8036/played?sid=1&type=json"
   },
   {
     "slug": "powersound-radio-zuid-holland",
@@ -18585,7 +19166,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://a11.asurahosting.com:7110/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://a11.asurahosting.com:7110/played?sid=1&type=json"
   },
   {
     "slug": "pride-radio",
@@ -18606,7 +19190,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.tbmp.nl/api/nowplaying/pride_dot_radio",
+    "metadata_server": "azuracast",
+    "history_url": "http://stream.tbmp.nl/api/nowplaying/pride_dot_radio"
   },
   {
     "slug": "progressieve-rock",
@@ -18719,7 +19306,9 @@
         "city": "Hulst",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "http://mscp4.live-streams.nl:8140/status-json.xsl?mount=%2Flive.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "pure-lounge-radio",
@@ -18740,7 +19329,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp4.live-streams.nl:8142/status-json.xsl?mount=%2Flounge.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "pure-lounge-radio-flac",
@@ -18789,7 +19380,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streamserver.pure-isp.eu/api/nowplaying/pure_radio_holland_-_hardcore_channel",
+    "metadata_server": "azuracast",
+    "history_url": "https://streamserver.pure-isp.eu/api/nowplaying/pure_radio_holland_-_hardcore_channel"
   },
   {
     "slug": "pure-radio-holland-the-underground-channel",
@@ -18810,7 +19404,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streamserver.pure-isp.eu/api/nowplaying/pure_radio_holland_the_underground_channel",
+    "metadata_server": "azuracast",
+    "history_url": "https://streamserver.pure-isp.eu/api/nowplaying/pure_radio_holland_the_underground_channel"
   },
   {
     "slug": "pure-radio-holland-trance-electro-channel",
@@ -18831,7 +19428,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streamserver.pure-isp.eu/api/nowplaying/pure_radio_holland_-_trance-electro_channel",
+    "metadata_server": "azuracast",
+    "history_url": "https://streamserver.pure-isp.eu/api/nowplaying/pure_radio_holland_-_trance-electro_channel"
   },
   {
     "slug": "pureclassix",
@@ -18861,7 +19461,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://server5.radio-streams.net:8001/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "pureclassix-flac",
@@ -19529,7 +20131,9 @@
         "city": "Bemmel",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://ams-pioneer02.dedicateware.com:1735/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-lfm-noord-brabant",
@@ -19550,7 +20154,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.l-fm.nl:8443/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.l-fm.nl:8443/played?sid=1&type=json"
   },
   {
     "slug": "radio-0511",
@@ -19628,7 +20235,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://54.36.89.71:8151/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://54.36.89.71:8151/played?sid=1&type=json"
   },
   {
     "slug": "radio-1",
@@ -20012,7 +20622,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.radio1224.nl/status-json.xsl?mount=%2F1224",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-182-zuid-holland-waddinxveen",
@@ -20041,7 +20653,10 @@
         "city": "Waddinxveen",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://player.streamforce.nl/api/nowplaying/radio182",
+    "metadata_server": "azuracast",
+    "history_url": "https://player.streamforce.nl/api/nowplaying/radio182"
   },
   {
     "slug": "radio-182",
@@ -20167,7 +20782,9 @@
         "city": "Eindhoven",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8774/status-json.xsl?mount=%2Frbij.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-4-brainport-eindhoven-64-k-aac-noord-brabant-eindhoven",
@@ -20196,7 +20813,9 @@
         "city": "Eindhoven",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8770/status-json.xsl?mount=%2Flisten",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-509-hilversum",
@@ -20464,7 +21083,9 @@
         "city": "Egmond aan Zee",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://81.169.251.143:7900/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-9-oostzaan",
@@ -20566,7 +21187,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://securestream3.digipal.nl:2259/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://securestream3.digipal.nl:2259/played?sid=1&type=json"
   },
   {
     "slug": "radio-alblasserdam",
@@ -20593,7 +21217,9 @@
         "city": "Alblasserdam",
         "state": null
       }
-    }
+    },
+    "nowplaying_url": "https://radio.thijnvansummeren.nl/api/nowplaying/alblasserdam",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-alex-fm-christmas-nl-de",
@@ -20637,7 +21263,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream13.shoutcastsolutions.com/rpc/radioamerika/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://stream13.shoutcastsolutions.com/external/rpc.php?m=recenttracks.get&username=radioamerika&limit=10"
   },
   {
     "slug": "radio-amerika-rotterdam-zh",
@@ -20689,7 +21318,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://cast5.asurahosting.com/rpc/radioams/streaminfo.get",
+    "metadata_server": "centovacast"
   },
   {
     "slug": "radio-apeldoorn-gelderland-apeldoorn",
@@ -20720,7 +21351,9 @@
         "city": "Apeldoorn",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://streamingradio.rtv-apeldoorn.nl/api/nowplaying/radio_apeldoorn",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-apeldoorn-high-bandwidth-gelderland-apeldoorn",
@@ -20752,7 +21385,9 @@
         "city": "Apeldoorn",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://streamingradio.rtv-apeldoorn.nl/api/nowplaying/radio_apeldoorn",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-atlantis-rotterdam-zuid-holland-rotterdam",
@@ -20782,7 +21417,10 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://mpc1.mediacp.eu:8740/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mpc1.mediacp.eu:8740/played?sid=1&type=json"
   },
   {
     "slug": "radio-atletico-den-haag-nederland",
@@ -20809,7 +21447,10 @@
         "city": "The Hague",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv38.live-streams.nl:8074/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mediaserv38.live-streams.nl:8074/played?sid=1&type=json"
   },
   {
     "slug": "radio-bergeijk",
@@ -21002,7 +21643,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://server-67.stream-server.nl:8774/status-json.xsl?mount=%2Frbij.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-calipso",
@@ -21085,7 +21728,9 @@
         "city": "Oostwold",
         "state": "Groningen"
       }
-    }
+    },
+    "nowplaying_url": "https://mcp-1.streampanel.nl:8024/status-json.xsl?mount=%2Fmobiel",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-capelle-zuid-holland-capelle-aan-den-ijssel",
@@ -21135,7 +21780,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock"
   },
   {
     "slug": "radio-caroline-259-gold",
@@ -21163,7 +21811,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock"
   },
   {
     "slug": "radio-caroline-259-gold-64kbps",
@@ -21192,7 +21843,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock"
   },
   {
     "slug": "radio-caroline-259-mp3-320",
@@ -21215,7 +21869,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiocaroline.nl/api/nowplaying/classic_rock"
   },
   {
     "slug": "radio-caroline-319-gold-nederland",
@@ -21238,7 +21895,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www.rmgoldserver.eu:8313/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www.rmgoldserver.eu:8313/played?sid=1&type=json"
   },
   {
     "slug": "radio-caroline-319-gold",
@@ -21262,7 +21922,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies"
   },
   {
     "slug": "radio-castricum-96-aac-stream-noord-holland-castricum",
@@ -21285,7 +21948,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://omroepcastricum.ddns.net:8000/status-json.xsl?mount=%2F96AAC",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-centraal-den-haag-the-netherlands",
@@ -21306,7 +21971,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8015/status-json.xsl?mount=%2Ftunein%2Fcentraal",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-chilling-station",
@@ -21327,7 +21994,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8090/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://mediaserv30.live-streams.nl:8090/played?sid=1&type=json"
   },
   {
     "slug": "radio-continu",
@@ -21450,7 +22120,9 @@
         "city": "Heemstede",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8814/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-de-musketiers-limburg-kerkrade",
@@ -21555,7 +22227,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://www.stream4you.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://www.stream4you.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "radio-de-wasrol-zuid-holland-rotterdam",
@@ -21594,7 +22269,9 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://streams.radioerfgoed.nl/status-json.xsl?mount=%2Fradiodewasrol",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-decibel",
@@ -21669,7 +22346,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://radioeileen.ddns.net:8000/status-json.xsl?mount=%2Flive.ogg",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-eldora-noord-brabant",
@@ -21690,7 +22369,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream01.eliveld-ict.nl/api/nowplaying/eldora_fm",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream01.eliveld-ict.nl/api/nowplaying/eldora_fm"
   },
   {
     "slug": "radio-emmeloord",
@@ -21711,7 +22393,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://86.93.49.78:8080/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-enkhuizen",
@@ -21732,7 +22416,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv38.live-streams.nl:8003/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-erasmus-zh",
@@ -21761,7 +22447,10 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://caster04.streampakket.com:8636/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://caster04.streampakket.com:8636/played?sid=1&type=json"
   },
   {
     "slug": "radio-esperando-groningen",
@@ -21788,7 +22477,9 @@
         "city": "Groningen",
         "state": "Groningen"
       }
-    }
+    },
+    "nowplaying_url": "http://server-28.stream-server.nl:8888/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-exclusief-gelderland",
@@ -21847,7 +22538,10 @@
         "city": "Pijnacker",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://radioexclusiefpijnacker.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://radioexclusiefpijnacker.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "radio-experience",
@@ -21944,7 +22638,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://213.202.241.199:8024/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://213.202.241.199:8024/played?sid=1&type=json"
   },
   {
     "slug": "radio-free-amsterdam",
@@ -22070,7 +22767,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://digistreamer.nl:8030/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-halloo-altijd-bij-jou",
@@ -22097,7 +22796,9 @@
         "city": "Hilvarenbeek",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "http://mediacp.audiostreamen.nl:8174/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-hanzestad-club038",
@@ -22118,7 +22819,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radiohanzestad.ddns.net:4430/status-json.xsl?mount=%2Fclub038",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-hanzestad-etherpiraten",
@@ -22213,7 +22916,9 @@
         "city": "Westerhaar-Vriezenveensewijk",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.radiohermax.nl/api/nowplaying/hermax",
+    "metadata_server": "azuracast"
   },
   {
     "slug": "radio-hoeksche-waard-zuid-holland",
@@ -22333,7 +23038,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everestcast.live-streams.nl:18015/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-hulchul",
@@ -22354,7 +23061,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everestcast.live-streams.nl:18010/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-jnd",
@@ -22396,7 +23105,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-67.stream-server.nl:8776/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-lelystad-flevoland-lelystad",
@@ -22566,7 +23277,10 @@
         "city": "Velsen-Zuid",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://radiomonique918.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://radiomonique918.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "radio-monique-963-aac-96",
@@ -22592,7 +23306,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies"
   },
   {
     "slug": "radio-monique-963-gold",
@@ -22618,7 +23335,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies",
+    "metadata_server": "azuracast",
+    "history_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies"
   },
   {
     "slug": "radio-monique-963-gold-963da6cd",
@@ -22643,7 +23363,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www.rmgoldserver.eu:8963/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www.rmgoldserver.eu:8963/played?sid=1&type=json"
   },
   {
     "slug": "radio-n31-friesland",
@@ -22678,7 +23401,10 @@
         "city": "Leeuwarden",
         "state": "Friesland"
       }
-    }
+    },
+    "nowplaying_url": "https://radion31.beheerstream.nl:8092/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://radion31.beheerstream.nl:8092/played?sid=1&type=json"
   },
   {
     "slug": "radio-n31-friesland-sexbierum",
@@ -22728,7 +23454,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://everestcastprohostingbudget.nl:1415/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-noord-groningen",
@@ -22781,7 +23509,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www1.radionoordvaarder.nl:8000/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www1.radionoordvaarder.nl:8000/played?sid=1&type=json"
   },
   {
     "slug": "radio-noordvaarder-healing",
@@ -22805,7 +23536,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www1.radionoordvaarder.nl:8500/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www1.radionoordvaarder.nl:8500/played?sid=1&type=json"
   },
   {
     "slug": "radio-noordvaarder-healing-wellness",
@@ -22829,7 +23563,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://www1.radionoordvaarder.nl:8300/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://www1.radionoordvaarder.nl:8300/played?sid=1&type=json"
   },
   {
     "slug": "radio-noordvaarder-reiki",
@@ -22859,7 +23596,10 @@
         "city": "Fleringen",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "http://stream.radionoordvaarder.nl:8050/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.radionoordvaarder.nl:8050/played?sid=1&type=json"
   },
   {
     "slug": "radio-noordzee",
@@ -22932,7 +23672,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://cast1.torontocast.com:1630/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-obelix",
@@ -22953,7 +23695,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mediaserv30.live-streams.nl:8043/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-olympia-100-piratenhits-en-nederlandstalige-muziek",
@@ -22974,7 +23718,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streams.olympia-streams.nl/status-json.xsl?mount=%2Folympia",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-omroep-venlo-limburg-venlo",
@@ -23054,7 +23800,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://securestream.digipal.nl:1816/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://securestream.digipal.nl:1816/played?sid=1&type=json"
   },
   {
     "slug": "radio-pechaan",
@@ -23081,7 +23830,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mscp3.live-streams.nl:8050/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-polska-nl",
@@ -23112,7 +23863,10 @@
         "city": "Wolphaartsdijk",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream.radiopolskanl.nl/api/nowplaying/radiopolskanl",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.radiopolskanl.nl/api/nowplaying/radiopolskanl"
   },
   {
     "slug": "radio-purmerend-dab-noord-holland-purmerend",
@@ -23164,7 +23918,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-26.stream-server.nl:8522/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-regenboog",
@@ -23445,7 +24201,10 @@
         "city": "Breda",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server7.radio-streams.net/rpc/santana/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://server7.radio-streams.net/external/rpc.php?m=recenttracks.get&username=santana&limit=10"
   },
   {
     "slug": "radio-sbs-utrecht-utrecht",
@@ -23575,7 +24334,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.radioseagull.net:8000/status-json.xsl?mount=%2Fseagull",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-son-en-breugel-noord-brabant-son-en-breugel",
@@ -23627,7 +24388,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.radiospannenburg.nl/status-json.xsl?mount=%2Fradiospannenburg",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-speedy-noord-brabant",
@@ -23747,7 +24510,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.hostbee.nl:7029/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.hostbee.nl:7029/played?sid=1&type=json"
   },
   {
     "slug": "radio-stad-centraal-19db4dee",
@@ -23768,7 +24534,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://83.87.109.251:8012/status-json.xsl?mount=%2Flisten",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-stad-den-haag",
@@ -23812,7 +24580,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.radiostaddenhaag.com/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://stream.radiostaddenhaag.com/played?sid=1&type=json"
   },
   {
     "slug": "radio-stad-montfoort-utrecht-montfoort-antoniushof-2",
@@ -23845,7 +24616,10 @@
         "city": "Montfoort",
         "state": "Utrecht"
       }
-    }
+    },
+    "nowplaying_url": "http://stream001.digiplay.nl:9038/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream001.digiplay.nl:9038/played?sid=1&type=json"
   },
   {
     "slug": "radio-stad-woerden-utrecht-woerden",
@@ -23933,7 +24707,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8914/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-texel-noord-holland-texel",
@@ -23965,7 +24741,10 @@
         "city": "Den Burg",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://cast6.asurahosting.com/rpc/radiotex/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://cast6.asurahosting.com/external/rpc.php?m=recenttracks.get&username=radiotex&limit=10"
   },
   {
     "slug": "radio-time-out-trance",
@@ -24062,7 +24841,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-67.stream-server.nl:8762/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-twente-gold-overijssel",
@@ -24137,7 +24918,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.shamarohosting.nl:8000/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-ultiem-amsterdam",
@@ -24183,7 +24966,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.hosting078.nl:8044/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-unique-fm-hi-res-noord-holland",
@@ -24268,7 +25053,9 @@
         "city": "Schiedam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://www.ural.fm:8000/status-json.xsl?mount=%2Fural",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-vastelaovend-limburg",
@@ -24408,7 +25195,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://193.242.108.93:8060/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://193.242.108.93:8060/played?sid=1&type=json"
   },
   {
     "slug": "radio-weleer-64kbps",
@@ -24429,7 +25219,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://whsh4u-server.com:11100/status-json.xsl?mount=%2Ftranscoder2",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-weststellingwerf-centraal",
@@ -24580,7 +25372,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mscp3.live-streams.nl:8070/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-goldenwave-084371cd",
@@ -24603,7 +25397,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp3.live-streams.nl:8072/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio-dance-90s-dance-music-amsterdam",
@@ -24652,7 +25448,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-67.stream-server.nl:8746/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio10aac",
@@ -24694,7 +25492,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server6.radio-streams.net/rpc/radio416/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://server6.radio-streams.net/external/rpc.php?m=recenttracks.get&username=radio416&limit=10"
   },
   {
     "slug": "radio538",
@@ -24738,7 +25539,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://panel.hostingbudget4you.eu:6421/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radio750-zuid-holland",
@@ -24827,7 +25630,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://everestcastprohostingbudget.nl:1040/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radiofrl",
@@ -24848,7 +25653,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://player.radiofrl.com/api/nowplaying/radio_frl",
+    "metadata_server": "azuracast",
+    "history_url": "https://player.radiofrl.com/api/nowplaying/radio_frl"
   },
   {
     "slug": "radiofrl-2",
@@ -24869,7 +25677,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://player.radiofrl.com/api/nowplaying/radiofrl_2",
+    "metadata_server": "azuracast",
+    "history_url": "https://player.radiofrl.com/api/nowplaying/radiofrl_2"
   },
   {
     "slug": "radion-veronica-top-1000-allertijden",
@@ -24921,7 +25732,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://fra-pioneer08.dedicateware.com:1685/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "radionl-friesland-sneek-smidsstraat-5",
@@ -25164,7 +25977,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://everestcast.live-streams.nl:8691/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "red-light-jazz-radio",
@@ -25222,7 +26037,9 @@
         "city": "Nijkerk",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://stream01.sthhost.nl:8003/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep-radio-2",
@@ -25264,7 +26081,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://ro2.reformatorischeomroep.nl:8003/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep-radio-3",
@@ -25287,7 +26106,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://ro3.reformatorischeomroep.nl:8072/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep-radio-4-gelderland",
@@ -25314,7 +26135,9 @@
         "city": "Nijkerk",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "http://ro4.reformatorischeomroep.nl:8166/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep-radio-5-gelderland",
@@ -25341,7 +26164,9 @@
         "city": "Nijkerk",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "http://ro5.reformatorischeomroep.nl:8150/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep-radio-6-gelderland",
@@ -25368,7 +26193,9 @@
         "city": "Nijkerk",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "http://ro6.reformatorischeomroep.nl:8006/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "regio-fm-groningen-siddeburen-hoofdweg-99a",
@@ -25400,7 +26227,9 @@
         "city": "Siddeburen",
         "state": "Groningen"
       }
-    }
+    },
+    "nowplaying_url": "http://audiostreamen.nl:8030/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "regio8",
@@ -25539,7 +26368,9 @@
         "city": "Odijk",
         "state": "Utrecht"
       }
-    }
+    },
+    "nowplaying_url": "http://77.165.92.45:8000/status-json.xsl?mount=%2Faudio.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "rhythm-21-zwolle-overijssel",
@@ -25564,7 +26395,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp3.live-streams.nl:8022/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ridder-radio-nh",
@@ -25627,7 +26460,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.and-stuff.nl:8443/status-json.xsl?mount=%2FriversideMp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "riverside-radio-eda5f188",
@@ -25648,7 +26483,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.and-stuff.nl:8443/status-json.xsl?mount=%2Friverside",
+    "metadata_server": "icecast"
   },
   {
     "slug": "rivierenland-radio-gelderland-hedel-veldweg-31",
@@ -25669,7 +26506,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://rivierenlandradio.stream-server.nl/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "rivierenland-radio-noord-brabant",
@@ -25731,7 +26570,9 @@
         "city": "Hedel",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8802/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "rn7nl",
@@ -25779,7 +26620,9 @@
         "city": "Almere",
         "state": "Flevoland"
       }
-    }
+    },
+    "nowplaying_url": "http://streams.robstenders.nl:8063/status-json.xsl?mount=%2Fbonanza_mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "robintimo-radio",
@@ -25842,7 +26685,10 @@
         "city": "Eibergen",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://mars.streamerr.co:7094/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://mars.streamerr.co:7094/played?sid=1&type=json"
   },
   {
     "slug": "roulette-fm-utrecht",
@@ -25894,7 +26740,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://stream.roundandsound.nl/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://stream.roundandsound.nl/played?sid=1&type=json"
   },
   {
     "slug": "roundandsound-radio-gelderland",
@@ -26029,7 +26878,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream.rtvconnect.nl/api/nowplaying/rtv_connect",
+    "metadata_server": "azuracast",
+    "history_url": "https://stream.rtvconnect.nl/api/nowplaying/rtv_connect"
   },
   {
     "slug": "rtv-connect-radio",
@@ -26146,7 +26998,9 @@
         "city": "Volendam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://webstream.rtvlove.nl/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "rtv-maastricht",
@@ -26404,7 +27258,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mediaserv68.live-streams.nl:18019/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "rtv794-gelderland-heerde",
@@ -26620,7 +27476,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.yourlatinradio.com/api/nowplaying/sra",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.yourlatinradio.com/api/nowplaying/sra"
   },
   {
     "slug": "samen-1-gelderland-apeldoorn",
@@ -26651,7 +27510,9 @@
         "city": "Apeldoorn",
         "state": "Gelderland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8754/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "samen1-gelderland",
@@ -26881,7 +27742,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://stream06.dotpoint.nl:8004/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "sjeffm-weert",
@@ -27977,7 +28840,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://quincy.torontocast.com:2410/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "speedy-noord-brabant",
@@ -28158,7 +29023,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://ex52.voordeligstreamen.nl:8232/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "station-one-internet-radio-noord-brabant-breda",
@@ -28187,7 +29054,9 @@
         "city": "Breda",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8758/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "sterren-nl",
@@ -28242,7 +29111,9 @@
         "city": "Goes",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "http://stream.sobfm.nl:8686/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "streekstad-centraal-noord-holland",
@@ -28586,7 +29457,10 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://r.bgp.rodeo/api/nowplaying/subline",
+    "metadata_server": "azuracast",
+    "history_url": "https://r.bgp.rodeo/api/nowplaying/subline"
   },
   {
     "slug": "sunlite",
@@ -28667,7 +29541,9 @@
         "city": "Sluiskil",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8854/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "superfm-ijmuiden",
@@ -28734,7 +29610,9 @@
         "city": "'s-Gravenzande",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://stream.syntheticfm.com:8040/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "synthetic-fm-the-new-italo-generation-sound-burgenland",
@@ -28769,7 +29647,9 @@
         "city": "Hook of Holland",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "http://stream.syntheticfm.com:8030/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "synthwave-city-fm-new",
@@ -28790,7 +29670,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://synthwave-rex.radioca.st/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "https://synthwave-rex.radioca.st/played?sid=1&type=json"
   },
   {
     "slug": "talkradio-noord-holland",
@@ -28835,7 +29718,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://talkradio.streaming.deliver.media/status-json.xsl?mount=%2Ftalkradio_mp3_192",
+    "metadata_server": "icecast"
   },
   {
     "slug": "team-fm-gelderland",
@@ -28975,7 +29860,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://live.thefinest.amsterdam/status-json.xsl?mount=%2Fhq",
+    "metadata_server": "icecast"
   },
   {
     "slug": "the-finest-amsterdam-noord-holland-445888e6",
@@ -29023,7 +29910,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://tgas.dyndns.org:8001/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://tgas.dyndns.org:8001/played?sid=1&type=json"
   },
   {
     "slug": "the-mod-station",
@@ -29046,7 +29936,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://23.81.35.187:8030/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://23.81.35.187:8030/played?sid=1&type=json"
   },
   {
     "slug": "the-sid-station",
@@ -29115,7 +30008,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://23.81.35.187:8144/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://23.81.35.187:8144/played?sid=1&type=json"
   },
   {
     "slug": "ti-sto-in-concert",
@@ -29247,7 +30143,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://server-28.stream-server.nl:8846/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "toxic",
@@ -29289,7 +30187,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mscp3.live-streams.nl:8020/status-json.xsl?mount=%2Flive.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "traxxradio",
@@ -29363,7 +30263,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://trendfm.live-streams.nl:8030/status-json.xsl?mount=%2Fmain",
+    "metadata_server": "icecast"
   },
   {
     "slug": "tukker-fm",
@@ -29439,7 +30341,9 @@
         "city": "Denekamp",
         "state": "Overijssel"
       }
-    }
+    },
+    "nowplaying_url": "http://stream.twentefm.nl:8004/status-json.xsl?mount=%2Fhigh",
+    "metadata_server": "icecast"
   },
   {
     "slug": "twr-nl-richt-je-hart-op-god",
@@ -29483,7 +30387,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://streaming.coollective.nl:8443/status-json.xsl?mount=%2FRadioXYZ",
+    "metadata_server": "icecast"
   },
   {
     "slug": "ujala-radio",
@@ -29527,7 +30433,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://mscp2.live-streams.nl:8180/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "unique-gold",
@@ -29548,7 +30456,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp3.live-streams.nl:8212/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "unity-nl-leiderdorp",
@@ -29577,7 +30487,9 @@
         "city": "Leiderdorp",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://icecast.rudeboymedia.nl/status-json.xsl?mount=%2Funitynl.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "urk-fm",
@@ -29657,7 +30569,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server-25.stream-server.nl:8366/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server-25.stream-server.nl:8366/played?sid=1&type=json"
   },
   {
     "slug": "vaporadio-nl",
@@ -29688,7 +30603,10 @@
         "city": "Alblasserdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://mediaserv74.live-streams.nl/rpc/vaporadio/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://mediaserv74.live-streams.nl/external/rpc.php?m=recenttracks.get&username=vaporadio&limit=10"
   },
   {
     "slug": "variafm",
@@ -29709,7 +30627,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://server1.streamgigant.nl:9031/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://server1.streamgigant.nl:9031/played?sid=1&type=json"
   },
   {
     "slug": "vc-1-veluwe-centraal",
@@ -29754,7 +30675,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streams.rtvvechtdal.nl:8000/status-json.xsl?mount=%2FVechtdalNL.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "veluwe-fm-harderwijk",
@@ -29845,7 +30768,9 @@
         "city": "Venlo",
         "state": "Limburg"
       }
-    }
+    },
+    "nowplaying_url": "https://stream-10.pmteurope.com:8040/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "vera-radio-limburg",
@@ -30051,7 +30976,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://caster.hosting078.nl:1035/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "volt",
@@ -30072,7 +30999,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radiopaneel.voltfm.nl/api/nowplaying/voltfm",
+    "metadata_server": "azuracast",
+    "history_url": "https://radiopaneel.voltfm.nl/api/nowplaying/voltfm"
   },
   {
     "slug": "voorstveluwezoom",
@@ -30093,7 +31023,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp2.live-streams.nl:8122/status-json.xsl?mount=%2Fradio",
+    "metadata_server": "icecast"
   },
   {
     "slug": "vughtse-omroep-radio-noord-brabant",
@@ -30145,7 +31077,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 50.92381327191293,
-    "geo_long": 2.7795410156250004
+    "geo_long": 2.7795410156250004,
+    "nowplaying_url": "https://server-28.stream-server.nl:8826/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "waterland-radio",
@@ -30296,7 +31230,9 @@
         "city": "Rotterdam",
         "state": "South Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8756/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "weertfm-limburg",
@@ -30342,7 +31278,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-aac-64",
+    "metadata_server": "icecast"
   },
   {
     "slug": "westradio-aac-96kbps",
@@ -30365,7 +31303,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-aac-96",
+    "metadata_server": "icecast"
   },
   {
     "slug": "westradio-mp3-128kbps",
@@ -30388,7 +31328,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-128",
+    "metadata_server": "icecast"
   },
   {
     "slug": "westradio-mp3-192kbps",
@@ -30411,7 +31353,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-192",
+    "metadata_server": "icecast"
   },
   {
     "slug": "westradio-mp3-320kbps",
@@ -30434,7 +31378,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-320",
+    "metadata_server": "icecast"
   },
   {
     "slug": "westradio-mp3-64kbps",
@@ -30457,7 +31403,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-64",
+    "metadata_server": "icecast"
   },
   {
     "slug": "westradio-mp3-96kbps",
@@ -30480,7 +31428,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-96",
+    "metadata_server": "icecast"
   },
   {
     "slug": "wgrv-fm",
@@ -30512,7 +31462,10 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://caster08.streampakket.com/rpc/wgrv/streaminfo.get",
+    "metadata_server": "centovacast",
+    "history_url": "https://caster08.streampakket.com/external/rpc.php?m=recenttracks.get&username=wgrv&limit=10"
   },
   {
     "slug": "wgrv-fm-noord-holland-amsterdam",
@@ -30533,7 +31486,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://caster08.streampakket.com:8332/stats?sid=1&json=1",
+    "metadata_server": "shoutcast",
+    "history_url": "http://caster08.streampakket.com:8332/played?sid=1&type=json"
   },
   {
     "slug": "wild-fm",
@@ -30592,7 +31548,9 @@
         "city": "Oss",
         "state": "North Brabant"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8748/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "world-music-radio-classic",
@@ -30624,7 +31582,9 @@
         "city": "Amsterdam",
         "state": "North Holland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-67.stream-server.nl:8792/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "wos-radio-westland",
@@ -30707,7 +31667,10 @@
         "city": "Sneek",
         "state": "Friesland"
       }
-    }
+    },
+    "nowplaying_url": "https://az.streamxerosradio.duckdns.org/api/nowplaying/xerosradio",
+    "metadata_server": "azuracast",
+    "history_url": "https://az.streamxerosradio.duckdns.org/api/nowplaying/xerosradio"
   },
   {
     "slug": "xerosradio-classics",
@@ -30739,7 +31702,10 @@
         "city": "Sneek",
         "state": "Friesland"
       }
-    }
+    },
+    "nowplaying_url": "https://az.streamxerosradio.duckdns.org/api/nowplaying/xerosradioclassics",
+    "metadata_server": "azuracast",
+    "history_url": "https://az.streamxerosradio.duckdns.org/api/nowplaying/xerosradioclassics"
   },
   {
     "slug": "xerosradio-top-40",
@@ -30768,7 +31734,10 @@
         "city": "Sneek",
         "state": "Friesland"
       }
-    }
+    },
+    "nowplaying_url": "https://az.streamxerosradio.duckdns.org/api/nowplaying/xerosradiotop40",
+    "metadata_server": "azuracast",
+    "history_url": "https://az.streamxerosradio.duckdns.org/api/nowplaying/xerosradiotop40"
   },
   {
     "slug": "xmas-radio",
@@ -30818,7 +31787,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mcp-1.streampanel.nl:8020/status-json.xsl?mount=%2Fbonanza_mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "yo-lucky-fast-tracks",
@@ -30839,7 +31810,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://mscp2.live-streams.nl:8012/status-json.xsl?mount=%2Flive.mp3",
+    "metadata_server": "icecast"
   },
   {
     "slug": "your-latin-radio",
@@ -30867,7 +31840,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://radio.yourlatinradio.com/api/nowplaying/ylr",
+    "metadata_server": "azuracast",
+    "history_url": "https://radio.yourlatinradio.com/api/nowplaying/ylr"
   },
   {
     "slug": "your-radio-station-dr",
@@ -30965,7 +31941,9 @@
         "city": "Sas van Gent",
         "state": "Zeeland"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8838/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "zeilsteen-radio",
@@ -31015,7 +31993,9 @@
         "city": "Venlo",
         "state": "Limburg"
       }
-    }
+    },
+    "nowplaying_url": "https://server-28.stream-server.nl:8912/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast"
   },
   {
     "slug": "zendpiraat-groningen",
@@ -31112,7 +32092,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://icecast.zuidwestfm.nl/status-json.xsl?mount=%2Fzuidwest.aac",
+    "metadata_server": "icecast"
   },
   {
     "slug": "zwaluwradio",
