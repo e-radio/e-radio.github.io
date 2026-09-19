@@ -13,7 +13,7 @@
     "git push gr": "git add . && git commit -m \"update\" && git push origin main",
     "git push hr": "git add . && git commit -m \"update\" && git push croatia main",
     "git push se": "git add . && git commit -m \"update\" && git push sweden main",
-    "git push nl": "git add . && git commit -m \"added transaltion and enpoints\" && git push dutch main",
+    "git push nl": "git add . && git commit -m \"update\" && git push dutch main",
     "git push": "git push",
     "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "fill locations": "python3 tools/fill-station-locations.py",

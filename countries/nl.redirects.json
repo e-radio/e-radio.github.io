@@ -213,5 +213,12 @@
   "/stations/westradio-mp3-192kbps/": "/stations/westradio-aac-64kbps/",
   "/stations/westradio-mp3-320kbps/": "/stations/westradio-aac-64kbps/",
   "/stations/westradio-mp3-96kbps/": "/stations/westradio-aac-64kbps/",
-  "/stations/westradio-mp3-64kbps/": "/stations/westradio-aac-64kbps/"
+  "/stations/westradio-mp3-64kbps/": "/stations/westradio-aac-64kbps/",
+  "/stations/wgrv-fm-noord-holland-amsterdam/": "/stations/wgrv-fm/",
+  "/stations/radio-stad-centraal-19db4dee/": "/stations/radio-stad-centraal/",
+  "/stations/radio-monique-963-gold-963da6cd/": "/stations/radio-monique-963-gold/",
+  "/stations/rivierenland-radio-2nd-server-320k-gelderland-hedel-veldweg-31/": "/stations/rivierenland-radio-gelderland-hedel-veldweg-31/",
+  "/stations/kilrock-zeeland-c9cf1423/": "/stations/kilrock-zeeland-f44d016e/",
+  "/stations/kilrock-zeeland/": "/stations/kilrock-zeeland-f44d016e/",
+  "/stations/koekstad-radio-overijssel-deventer/": "/stations/koekstad-fm/"
 }

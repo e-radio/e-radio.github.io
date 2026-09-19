@@ -12147,69 +12147,11 @@
     "geo_long": null
   },
   {
-    "slug": "kilrock-zeeland",
-    "stationuuid": "7e411d0e-041f-4128-bc85-f785b5ecf7b5",
-    "name": "KilRock",
-    "state": "Zeeland",
-    "city": "Zuiddorpe",
-    "stream_url": "http://mediaserv30.live-streams.nl:8013/medium",
-    "homepage": "https://www.kilrock.nl/",
-    "favicon": "/station-icons/nl/kilrock-zeeland.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 96,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 2,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 51.23263069371812,
-    "geo_long": 3.901380300521851,
-    "locationNames": {
-      "en": {
-        "city": "Zuiddorpe",
-        "state": "Zeeland"
-      }
-    },
-    "nowplaying_url": "http://mediaserv30.live-streams.nl:8013/status-json.xsl?mount=%2Fmedium",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "kilrock-zeeland-c9cf1423",
-    "stationuuid": "c9cf1423-d15e-4a28-8601-623f4a01a01b",
-    "name": "KilRock",
-    "state": "Zeeland",
-    "city": "Zuiddorpe",
-    "stream_url": "http://mediaserv30.live-streams.nl:8013/low",
-    "homepage": "https://www.kilrock.nl/",
-    "favicon": "/station-icons/nl/kilrock-zeeland-c9cf1423.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 48,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 3,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 51.233982559659985,
-    "geo_long": 3.902233242988587,
-    "locationNames": {
-      "en": {
-        "city": "Zuiddorpe",
-        "state": "Zeeland"
-      }
-    },
-    "nowplaying_url": "http://mediaserv30.live-streams.nl:8013/status-json.xsl?mount=%2Flow",
-    "metadata_server": "icecast"
-  },
-  {
     "slug": "kilrock-zeeland-f44d016e",
     "stationuuid": "f44d016e-9ac8-45c9-8f34-2c6ce5cfa1e6",
     "name": "KilRock",
     "state": "Zeeland",
-    "city": null,
+    "city": "Zuiddorpe",
     "stream_url": "http://mediaserv30.live-streams.nl:8013/high",
     "homepage": "https://www.kilrock.nl/",
     "favicon": "/station-icons/nl/kilrock-zeeland-f44d016e.webp",
@@ -12222,10 +12164,47 @@
     "votes": 2,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
+    "geo_lat": 51.233982559659985,
+    "geo_long": 3.902233242988587,
     "nowplaying_url": "http://mediaserv30.live-streams.nl:8013/status-json.xsl?mount=%2Fhigh",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Zuiddorpe",
+        "state": "Zeeland"
+      }
+    },
+    "alternate_stationuuids": [
+      "c9cf1423-d15e-4a28-8601-623f4a01a01b",
+      "7e411d0e-041f-4128-bc85-f785b5ecf7b5"
+    ],
+    "aliases": [
+      "kilrock-zeeland-c9cf1423",
+      "kilrock-zeeland"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "http://mediaserv30.live-streams.nl:8013/high",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "aac-48",
+        "label": "48 kbps AAC",
+        "url": "http://mediaserv30.live-streams.nl:8013/low",
+        "bitrate": 48,
+        "codec": "AAC"
+      },
+      {
+        "id": "aac-96",
+        "label": "96 kbps AAC",
+        "url": "http://mediaserv30.live-streams.nl:8013/medium",
+        "bitrate": 96,
+        "codec": "AAC"
+      }
+    ]
   },
   {
     "slug": "kingfm",
@@ -12644,34 +12623,11 @@
     "slug": "koekstad-fm",
     "stationuuid": "021463e5-88aa-4172-967c-1e8b2706f643",
     "name": "Koekstad FM",
-    "state": null,
-    "city": null,
-    "stream_url": "http://server-67.stream-server.nl:8788/stream",
-    "homepage": "https://www.koekstadradio.nl/",
-    "favicon": "/station-icons/nl/koekstad-fm.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 0,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://server-67.stream-server.nl:8788/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "koekstad-radio-overijssel-deventer",
-    "stationuuid": "3db37ea4-9b19-480a-87c8-ccf591725903",
-    "name": "Koekstad Radio",
     "state": "Overijssel",
     "city": "Deventer",
     "stream_url": "https://server-67.stream-server.nl:8788/stream",
     "homepage": "https://www.koekstadradio.nl/",
-    "favicon": "/station-icons/nl/koekstad-radio-overijssel-deventer.webp",
+    "favicon": "/station-icons/nl/koekstad-fm.webp",
     "genres": [
       "local news",
       "local radio",
@@ -12682,19 +12638,37 @@
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 1,
-    "votes": 5,
+    "votes": 0,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 52.243250000735785,
     "geo_long": 6.167546510696412,
+    "nowplaying_url": "https://server-67.stream-server.nl:8788/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast",
     "locationNames": {
       "en": {
         "city": "Deventer",
         "state": "Overijssel"
       }
     },
-    "nowplaying_url": "https://server-67.stream-server.nl:8788/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "alternate_stationuuids": [
+      "3db37ea4-9b19-480a-87c8-ccf591725903"
+    ],
+    "aliases": [
+      "koekstad-radio-overijssel-deventer"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "https://server-67.stream-server.nl:8788/stream",
+        "bitrate": 192,
+        "codec": "MP3",
+        "alternate_urls": [
+          "http://server-67.stream-server.nl:8788/stream"
+        ]
+      }
+    ]
   },
   {
     "slug": "kommus-geldrop-noord-brabant",
@@ -23187,7 +23161,7 @@
       "80s",
       "oldies"
     ],
-    "language": null,
+    "language": "english",
     "bitrate": 192,
     "codec": "MP3",
     "clickcount": 0,
@@ -23199,35 +23173,29 @@
     "geo_long": null,
     "nowplaying_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies",
     "metadata_server": "azuracast",
-    "history_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies"
-  },
-  {
-    "slug": "radio-monique-963-gold-963da6cd",
-    "stationuuid": "963da6cd-0601-11e8-ae97-52543be04c81",
-    "name": "Radio Monique 963 Gold",
-    "state": null,
-    "city": null,
-    "stream_url": "http://www.rmgoldserver.eu:8963/",
-    "homepage": "http://www.radiomonique.nl/",
-    "favicon": "/station-icons/nl/radio-monique-963-gold-963da6cd-placeholder.webp",
-    "genres": [
-      "60s",
-      "70s",
-      "80s"
+    "history_url": "https://happy.radiomonique.nl/api/nowplaying/happy_oldies",
+    "alternate_stationuuids": [
+      "963da6cd-0601-11e8-ae97-52543be04c81"
     ],
-    "language": "english",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 451,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://www.rmgoldserver.eu:8963/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://www.rmgoldserver.eu:8963/played?sid=1&type=json"
+    "aliases": [
+      "radio-monique-963-gold-963da6cd"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "https://happy.radiomonique.nl/listen/happy_oldies/radio192.mp3",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "http://www.rmgoldserver.eu:8963/;",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-n31-friesland",
@@ -24374,30 +24342,29 @@
     "geo_long": null,
     "nowplaying_url": "https://stream.hostbee.nl:7029/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://stream.hostbee.nl:7029/played?sid=1&type=json"
-  },
-  {
-    "slug": "radio-stad-centraal-19db4dee",
-    "stationuuid": "19db4dee-0b76-4b7f-ae94-eb38971a6aad",
-    "name": "Radio Stad Centraal",
-    "state": null,
-    "city": null,
-    "stream_url": "http://83.87.109.251:8012/listen",
-    "homepage": "http://audio.laser558.nl/rsc/index.html#",
-    "favicon": "/station-icons/nl/radio-stad-centraal-19db4dee-placeholder.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 96,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://83.87.109.251:8012/status-json.xsl?mount=%2Flisten",
-    "metadata_server": "icecast"
+    "history_url": "https://stream.hostbee.nl:7029/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "19db4dee-0b76-4b7f-ae94-eb38971a6aad"
+    ],
+    "aliases": [
+      "radio-stad-centraal-19db4dee"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "128 kbps MP3",
+        "url": "https://stream.hostbee.nl:7029/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-96",
+        "label": "96 kbps MP3",
+        "url": "http://83.87.109.251:8012/listen",
+        "bitrate": 96,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-stad-den-haag",
@@ -25905,7 +25872,7 @@
     "name": "Reformatorische Omroep Radio 2",
     "state": "Gelderland",
     "city": "Nijkerk",
-    "stream_url": "https://ro3.reformatorischeomroep.nl:8072/live",
+    "stream_url": "http://ro3.reformatorischeomroep.nl:8072/live",
     "homepage": "https://reformatorischeomroep.nl/",
     "favicon": "/station-icons/nl/reformatorische-omroep-radio-2.webp",
     "genres": [],
@@ -25918,7 +25885,9 @@
     "hls": 0,
     "ssl_error": 1,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "http://ro3.reformatorischeomroep.nl:8072/status-json.xsl?mount=%2Flive",
+    "metadata_server": "icecast"
   },
   {
     "slug": "reformatorische-omroep-radio-2-a488aff7",
@@ -26353,8 +26322,13 @@
     "stream_url": "https://rivierenlandradio.stream-server.nl/stream",
     "homepage": "https://www.rivierenland-radio.nl/",
     "favicon": "/station-icons/nl/rivierenland-radio-gelderland-hedel-veldweg-31.webp",
-    "genres": [],
-    "language": null,
+    "genres": [
+      "local news",
+      "local radio",
+      "news",
+      "variety"
+    ],
+    "language": "dutch",
     "bitrate": 320,
     "codec": "MP3",
     "clickcount": 0,
@@ -26362,10 +26336,38 @@
     "votes": 3,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
+    "geo_lat": 51.75109519821508,
+    "geo_long": 5.262531638145447,
     "nowplaying_url": "https://rivierenlandradio.stream-server.nl/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "locationNames": {
+      "en": {
+        "city": "Hedel",
+        "state": "Gelderland"
+      }
+    },
+    "alternate_stationuuids": [
+      "eaaa3294-3113-4e27-8ab8-2682814bbb05"
+    ],
+    "aliases": [
+      "rivierenland-radio-2nd-server-320k-gelderland-hedel-veldweg-31"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "https://rivierenlandradio.stream-server.nl/stream",
+        "bitrate": 320,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320-secondary",
+        "label": "320 kbps MP3 (second server)",
+        "url": "https://server-28.stream-server.nl:8802/stream",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "rivierenland-radio-noord-brabant",
@@ -26396,40 +26398,6 @@
         "state": "North Brabant"
       }
     }
-  },
-  {
-    "slug": "rivierenland-radio-2nd-server-320k-gelderland-hedel-veldweg-31",
-    "stationuuid": "eaaa3294-3113-4e27-8ab8-2682814bbb05",
-    "name": "Rivierenland Radio (2nd server,320k)",
-    "state": "Gelderland",
-    "city": "Hedel",
-    "stream_url": "https://server-28.stream-server.nl:8802/stream",
-    "homepage": "https://www.rivierenland-radio.nl/uploads/rivierenland-radio.nl/1640410917-Simple%20logo2.2%20on%20white%20350x124.png",
-    "favicon": "/station-icons/nl/rivierenland-radio-2nd-server-320k-gelderland-hedel-veldweg-31-placeholder.webp",
-    "genres": [
-      "local news",
-      "local radio",
-      "news",
-      "variety"
-    ],
-    "language": "dutch",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 7,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 51.75109519821508,
-    "geo_long": 5.262531638145447,
-    "locationNames": {
-      "en": {
-        "city": "Hedel",
-        "state": "Gelderland"
-      }
-    },
-    "nowplaying_url": "https://server-28.stream-server.nl:8802/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
   },
   {
     "slug": "rn7nl",
@@ -31243,31 +31211,25 @@
     },
     "nowplaying_url": "https://caster08.streampakket.com/rpc/wgrv/streaminfo.get",
     "metadata_server": "centovacast",
-    "history_url": "https://caster08.streampakket.com/external/rpc.php?m=recenttracks.get&username=wgrv&limit=10"
-  },
-  {
-    "slug": "wgrv-fm-noord-holland-amsterdam",
-    "stationuuid": "74552cdf-507a-466f-a5da-eb1c08edb97a",
-    "name": "WGRV.FM",
-    "state": "North Holland",
-    "city": "Amsterdam",
-    "stream_url": "http://caster08.streampakket.com:8332/stream",
-    "homepage": "https://wgrv.fm/",
-    "favicon": "/station-icons/nl/wgrv-fm-noord-holland-amsterdam.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 0,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://caster08.streampakket.com:8332/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://caster08.streampakket.com:8332/played?sid=1&type=json"
+    "history_url": "https://caster08.streampakket.com/external/rpc.php?m=recenttracks.get&username=wgrv&limit=10",
+    "alternate_stationuuids": [
+      "74552cdf-507a-466f-a5da-eb1c08edb97a"
+    ],
+    "aliases": [
+      "wgrv-fm-noord-holland-amsterdam"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "https://caster08.streampakket.com/proxy/wgrv/stream",
+        "bitrate": 192,
+        "codec": "MP3",
+        "alternate_urls": [
+          "http://caster08.streampakket.com:8332/stream"
+        ]
+      }
+    ]
   },
   {
     "slug": "wild-fm",
