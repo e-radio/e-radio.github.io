@@ -27,31 +27,6 @@
     }
   },
   {
-    "slug": "ice-radio",
-    "stationuuid": "790ef988-70ac-4823-9732-c80f57a129f0",
-    "name": "ICE RADIO",
-    "state": null,
-    "city": null,
-    "stream_url": "https://stream.iceradio.nl/iceradiohq?ver=30283",
-    "homepage": "https://www.iceradio.nl",
-    "favicon": "/station-icons/nl/ice-radio.webp",
-    "genres": [
-      "rock"
-    ],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 3,
-    "lastcheckok": 1,
-    "votes": 150,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://stream.iceradio.nl/status-json.xsl?mount=%2Ficeradiohq",
-    "metadata_server": "icecast"
-  },
-  {
     "slug": "bollenstreek-omroep",
     "stationuuid": "4fada307-69a7-4a7f-9b8d-027836672e84",
     "name": "Bollenstreek Omroep",
@@ -160,12 +135,14 @@
     "slug": "100-nl",
     "stationuuid": "960f36b5-0601-11e8-ae97-52543be04c81",
     "name": "100% NL",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.100p.nl/100pctnl.mp3",
     "homepage": "http://www.100p.nl/",
     "favicon": "/station-icons/nl/100-nl.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "dutch",
     "bitrate": 128,
     "codec": "MP3",
@@ -202,8 +179,8 @@
     "slug": "100-nl-liefde",
     "stationuuid": "7b3d83dd-9292-47e6-915d-f77cc55ce64c",
     "name": "100% NL Liefde",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "https://www.mp3streams.nl/zender/100-nl-liefde/stream/105-aac-96",
     "homepage": "https://www.mp3streams.nl/zender/100-nl-liefde",
     "favicon": "/station-icons/nl/100-nl-liefde.webp",
@@ -223,8 +200,8 @@
     "slug": "100-nl-non-stop",
     "stationuuid": "73215772-d300-4327-8c90-dd22692afe84",
     "name": "100% NL Non-Stop",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "https://stream.100p.nl/web02_mp3",
     "homepage": "https://www.100p.nl/digitalestations",
     "favicon": "/station-icons/nl/100-nl-non-stop-placeholder.webp",
@@ -241,79 +218,56 @@
     "geo_long": null
   },
   {
-    "slug": "192-radio-hq",
-    "stationuuid": "00cd0cf3-39cd-11ea-8dd7-52543be04c81",
-    "name": "192 Radio (HQ)",
-    "state": null,
-    "city": null,
-    "stream_url": "http://server-27.stream-server.nl:8192/stream",
-    "homepage": "https://www.192radio.nl/",
-    "favicon": "/station-icons/nl/192-radio-hq-placeholder.webp",
-    "genres": [
-      "60s",
-      "70s",
-      "oldies"
-    ],
-    "language": "dutch",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 1419,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "192-radio-nederland",
     "stationuuid": "7e2aef0b-3479-4b8c-9561-dadbed43827f",
     "name": "192 Radio Nederland",
     "state": null,
     "city": null,
     "stream_url": "http://server-27.stream-server.nl:8192/192radio",
-    "homepage": "http://www.192radio.nl/",
+    "homepage": "https://www.192radio.nl/192radio/",
     "favicon": "/station-icons/nl/192-radio-nederland.webp",
-    "genres": [],
-    "language": null,
+    "genres": [
+      "oldies",
+      "pirate radio",
+      "60s",
+      "70s"
+    ],
+    "language": "dutch",
     "bitrate": 320,
     "codec": "MP3",
     "clickcount": 3,
     "lastcheckok": 1,
-    "votes": 10,
+    "votes": 1501,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://server-27.stream-server.nl:8192/status-json.xsl?mount=%2F192radio",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "192-radio-veronica",
-    "stationuuid": "f3e1b20f-c985-4671-9987-7d16eeb45d23",
-    "name": "192 Radio Veronica",
-    "state": null,
-    "city": null,
-    "stream_url": "http://server-14.stream-server.nl:8030/",
-    "homepage": "https://www.192radio.nl/192radio/",
-    "favicon": "/station-icons/nl/192-radio-veronica.webp",
-    "genres": [
-      "oldies",
-      "pirate radio"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "f3e1b20f-c985-4671-9987-7d16eeb45d23",
+      "00cd0cf3-39cd-11ea-8dd7-52543be04c81"
     ],
-    "language": "dutch",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 10,
-    "lastcheckok": 1,
-    "votes": 302,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://server-14.stream-server.nl:8030/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://server-14.stream-server.nl:8030/played?sid=1&type=json"
+    "aliases": [
+      "192-radio-veronica",
+      "192-radio-hq"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "Alternative MP3",
+        "url": "http://server-14.stream-server.nl:8030/",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320",
+        "label": "Alternative MP3",
+        "url": "http://server-27.stream-server.nl:8192/stream",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "1achterhoek-gelderland",
@@ -541,40 +495,9 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "40up-320k-stream-noord-holland-amsterdam",
-    "stationuuid": "95c0ad3d-0fe0-450f-a548-ca487c260f6b",
-    "name": "40UP (320k stream)",
-    "state": "North Holland",
-    "city": "Amsterdam",
-    "stream_url": "https://stream.40upradio.nl/bp-transmit",
-    "homepage": "https://dev.40upradio.nl/",
-    "favicon": "/station-icons/nl/40up-320k-stream-noord-holland-amsterdam.webp",
-    "genres": [
-      "variety"
-    ],
-    "language": "dutch",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 12,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 52.3688917060255,
-    "geo_long": 4.872436523437501,
-    "locationNames": {
-      "en": {
-        "city": "Amsterdam",
-        "state": "North Holland"
-      }
-    },
-    "nowplaying_url": "https://stream.40upradio.nl/status-json.xsl?mount=%2Fbp-transmit",
-    "metadata_server": "icecast"
-  },
-  {
     "slug": "40up-kbc-128k-noord-holland-amsterdam",
     "stationuuid": "a5331684-3d5f-4b61-8f3b-2614c7860828",
-    "name": "40UP KBC (128k)",
+    "name": "40UP",
     "state": "North Holland",
     "city": "Amsterdam",
     "stream_url": "https://stream.40upradio.nl/kbc-high",
@@ -600,7 +523,29 @@
       }
     },
     "nowplaying_url": "https://stream.40upradio.nl/status-json.xsl?mount=%2Fkbc-high",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "95c0ad3d-0fe0-450f-a548-ca487c260f6b"
+    ],
+    "aliases": [
+      "40up-320k-stream-noord-holland-amsterdam"
+    ],
+    "streams": [
+      {
+        "id": "aac-128",
+        "label": "128 kbps AAC",
+        "url": "https://stream.40upradio.nl/kbc-high",
+        "bitrate": 128,
+        "codec": "AAC"
+      },
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "https://stream.40upradio.nl/bp-transmit",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "40up-radio-noord-holland-amsterdam",
@@ -3091,7 +3036,7 @@
   {
     "slug": "bredanu-192k-mp3-noord-brabant-breda",
     "stationuuid": "5f26fd92-ef2c-4116-9266-ac2a475f3a26",
-    "name": "BredaNu (192k MP3)",
+    "name": "BredaNu",
     "state": "North Brabant",
     "city": "Breda",
     "stream_url": "https://icecast.bredanu.nl/bredanu.mp3",
@@ -3119,69 +3064,38 @@
       }
     },
     "nowplaying_url": "https://icecast.bredanu.nl/status-json.xsl?mount=%2Fbredanu.mp3",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "bredanu-576kbit-aac-noord-brabant-breda",
-    "stationuuid": "af736d4a-f384-4e0a-b59f-2c3b23a45cf2",
-    "name": "BredaNu (576kbit AAC)",
-    "state": "North Brabant",
-    "city": "Breda",
-    "stream_url": "https://icecast.bredanu.nl/bredanu.stl",
-    "homepage": "https://bredanu.nl/",
-    "favicon": "/station-icons/nl/bredanu-576kbit-aac-noord-brabant-breda.webp",
-    "genres": [],
-    "language": "dutch",
-    "bitrate": 576,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 8,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 51.59093594034939,
-    "geo_long": 4.761618375778199,
-    "locationNames": {
-      "en": {
-        "city": "Breda",
-        "state": "North Brabant"
-      }
-    },
-    "nowplaying_url": "https://icecast.bredanu.nl/status-json.xsl?mount=%2Fbredanu.stl",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "bredanu-96k-aac-noord-brabant-breda",
-    "stationuuid": "3d2e8a22-e3fc-4973-9389-6b5e8dac64a8",
-    "name": "BredaNu (96k AAC)",
-    "state": "North Brabant",
-    "city": "Breda",
-    "stream_url": "https://icecast.bredanu.nl/bredanu.aac",
-    "homepage": "https://bredanu.nl/",
-    "favicon": "/station-icons/nl/bredanu-96k-aac-noord-brabant-breda.webp",
-    "genres": [
-      "news",
-      "regional news",
-      "regional radio"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "af736d4a-f384-4e0a-b59f-2c3b23a45cf2",
+      "3d2e8a22-e3fc-4973-9389-6b5e8dac64a8"
     ],
-    "language": "dutch",
-    "bitrate": 96,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 4,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 51.59094593863245,
-    "geo_long": 4.761613011360169,
-    "locationNames": {
-      "en": {
-        "city": "Breda",
-        "state": "North Brabant"
+    "aliases": [
+      "bredanu-576kbit-aac-noord-brabant-breda",
+      "bredanu-96k-aac-noord-brabant-breda"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "https://icecast.bredanu.nl/bredanu.mp3",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "aac-576",
+        "label": "576 kbps AAC",
+        "url": "https://icecast.bredanu.nl/bredanu.stl",
+        "bitrate": 576,
+        "codec": "AAC"
+      },
+      {
+        "id": "aac-96",
+        "label": "96 kbps AAC",
+        "url": "https://icecast.bredanu.nl/bredanu.aac",
+        "bitrate": 96,
+        "codec": "AAC"
       }
-    },
-    "nowplaying_url": "https://icecast.bredanu.nl/status-json.xsl?mount=%2Fbredanu.aac",
-    "metadata_server": "icecast"
+    ]
   },
   {
     "slug": "brightfamilyradio",
@@ -5173,7 +5087,7 @@
     "name": "Danceclassic.eu",
     "state": null,
     "city": null,
-    "stream_url": "http://mediaserv21.live-streams.nl:8011/stream",
+    "stream_url": "https://mediaserv21.live-streams.nl:8011/stream/;type=v2",
     "homepage": "https://danceclassic.eu/",
     "favicon": "/station-icons/nl/danceclassic-eu.webp",
     "genres": [],
@@ -5187,33 +5101,27 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://mediaserv21.live-streams.nl:8011/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://mediaserv21.live-streams.nl:8011/played?sid=1&type=json"
-  },
-  {
-    "slug": "danceclassic-eu-6c5bf92e",
-    "stationuuid": "6c5bf92e-2558-4fa7-b304-2b72ec3d9ce7",
-    "name": "Danceclassic.eu",
-    "state": null,
-    "city": null,
-    "stream_url": "https://mediaserv21.live-streams.nl:8011/stream/;type=v2",
-    "homepage": "https://danceclassic.eu/",
-    "favicon": "/station-icons/nl/danceclassic-eu-6c5bf92e.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 17,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
     "nowplaying_url": "https://mediaserv21.live-streams.nl:8011/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://mediaserv21.live-streams.nl:8011/played?sid=1&type=json"
+    "history_url": "https://mediaserv21.live-streams.nl:8011/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "6c5bf92e-2558-4fa7-b304-2b72ec3d9ce7"
+    ],
+    "aliases": [
+      "danceclassic-eu-6c5bf92e"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "https://mediaserv21.live-streams.nl:8011/stream/;type=v2",
+        "bitrate": 192,
+        "codec": "MP3",
+        "alternate_urls": [
+          "http://mediaserv21.live-streams.nl:8011/stream"
+        ]
+      }
+    ]
   },
   {
     "slug": "dancegroove-radio",
@@ -5919,45 +5827,29 @@
       }
     },
     "nowplaying_url": "https://stream.deventerrtv.nl:8443/status-json.xsl?mount=%2Fmp3",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "deventer-radio-overijssel-c760634f",
-    "stationuuid": "c760634f-0fb0-4b8a-b2bf-b30c17f6c7e0",
-    "name": "Deventer Radio",
-    "state": "Overijssel",
-    "city": "Deventer",
-    "stream_url": "https://stream.deventerrtv.nl:8443/stream",
-    "homepage": "https://www.deventerrtv.nl/",
-    "favicon": "/station-icons/nl/deventer-radio-overijssel-c760634f.webp",
-    "genres": [
-      "00s",
-      "10s",
-      "20s",
-      "60s",
-      "70s",
-      "80s",
-      "90s",
-      "pop"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "c760634f-0fb0-4b8a-b2bf-b30c17f6c7e0"
     ],
-    "language": "dutch",
-    "bitrate": 88,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 12,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 52.251247497871184,
-    "geo_long": 6.162300109863282,
-    "locationNames": {
-      "en": {
-        "city": "Deventer",
-        "state": "Overijssel"
+    "aliases": [
+      "deventer-radio-overijssel-c760634f"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "128 kbps MP3",
+        "url": "https://stream.deventerrtv.nl:8443/mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "aac-88",
+        "label": "88 kbps AAC+",
+        "url": "https://stream.deventerrtv.nl:8443/stream",
+        "bitrate": 88,
+        "codec": "AAC+"
       }
-    },
-    "nowplaying_url": "https://stream.deventerrtv.nl:8443/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    ]
   },
   {
     "slug": "dilemaradio",
@@ -6913,7 +6805,7 @@
   {
     "slug": "flevoziekenomroep-fzo-aacplus-stream-flevoland",
     "stationuuid": "6bbf773a-099c-4d94-895e-bbdf328e42d6",
-    "name": "FlevoZiekenOmroep (FZO) AACPLUS stream",
+    "name": "FlevoZiekenOmroep (FZO)",
     "state": "Flevoland",
     "city": "Almere",
     "stream_url": "https://stream1.fzo.nu/studio.aac",
@@ -6945,44 +6837,29 @@
       }
     },
     "nowplaying_url": "https://stream1.fzo.nu/status-json.xsl?mount=%2Fstudio.aac",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "flevoziekenomroep-fzo-mp3-stream-flevoland",
-    "stationuuid": "5b064cd3-3671-474f-912f-23a1ac9123d1",
-    "name": "FlevoZiekenOmroep (FZO) MP3 stream",
-    "state": "Flevoland",
-    "city": "Almere",
-    "stream_url": "http://stream1.fzo.nu/studio.mp3",
-    "homepage": "https://www.flevoziekenomroep.nl/",
-    "favicon": "/station-icons/nl/flevoziekenomroep-fzo-mp3-stream-flevoland.webp",
-    "genres": [
-      "pop",
-      "hits",
-      "oldies",
-      "easy listening",
-      "dutch music",
-      "top 40",
-      "hospital radio"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "5b064cd3-3671-474f-912f-23a1ac9123d1"
     ],
-    "language": "dutch",
-    "bitrate": 160,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 41,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 52.371,
-    "geo_long": 5.222,
-    "locationNames": {
-      "en": {
-        "city": "Almere",
-        "state": "Flevoland"
+    "aliases": [
+      "flevoziekenomroep-fzo-mp3-stream-flevoland"
+    ],
+    "streams": [
+      {
+        "id": "aac-160",
+        "label": "160 kbps AAC",
+        "url": "https://stream1.fzo.nu/studio.aac",
+        "bitrate": 160,
+        "codec": "AAC"
+      },
+      {
+        "id": "mp3-160",
+        "label": "160 kbps MP3",
+        "url": "http://stream1.fzo.nu/studio.mp3",
+        "bitrate": 160,
+        "codec": "MP3"
       }
-    },
-    "nowplaying_url": "http://stream1.fzo.nu/status-json.xsl?mount=%2Fstudio.mp3",
-    "metadata_server": "icecast"
+    ]
   },
   {
     "slug": "flevoziekenomroep-hls-audio-flevoland-almere",
@@ -7691,43 +7568,25 @@
     },
     "nowplaying_url": "http://computerdokter.eu:8000/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://computerdokter.eu:8000/played?sid=1&type=json"
-  },
-  {
-    "slug": "gen-x-radio-zuid-holland-aafc43bf",
-    "stationuuid": "aafc43bf-94ee-41a0-ba2f-3e1b864fab1d",
-    "name": "GEN-X Radio",
-    "state": "South Holland",
-    "city": "Middelharnis",
-    "stream_url": "http://computerdokter.eu:8000/;",
-    "homepage": "http://computerdokter.eu/",
-    "favicon": "/station-icons/nl/gen-x-radio-zuid-holland-aafc43bf-placeholder.webp",
-    "genres": [
-      "70s",
-      "80s",
-      "90s",
-      "country",
-      "easy listening"
+    "history_url": "http://computerdokter.eu:8000/played?sid=1&type=json",
+    "alternate_stationuuids": [
+      "aafc43bf-94ee-41a0-ba2f-3e1b864fab1d"
     ],
-    "language": "english",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 51.771805727921134,
-    "geo_long": 4.175720214843738,
-    "locationNames": {
-      "en": {
-        "city": "Middelharnis",
-        "state": "South Holland"
+    "aliases": [
+      "gen-x-radio-zuid-holland-aafc43bf"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "http://computerdokter.eu:8000/",
+        "bitrate": 320,
+        "codec": "MP3",
+        "alternate_urls": [
+          "http://computerdokter.eu:8000/;"
+        ]
       }
-    },
-    "nowplaying_url": "http://computerdokter.eu:8000/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://computerdokter.eu:8000/played?sid=1&type=json"
+    ]
   },
   {
     "slug": "gigant-fm-drenthe",
@@ -7824,36 +7683,13 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "glassrock-zuid-holland",
-    "stationuuid": "88de618b-a389-4a25-bf9f-3375f3378f29",
+    "slug": "glassrock",
+    "stationuuid": "96e78780-72a6-4bbe-9b9d-e216c3191ceb",
     "name": "GlassRock",
     "state": "South Holland",
     "city": null,
     "stream_url": "https://mscp3.live-streams.nl:8092/stream",
     "homepage": "https://glassrock.nl/",
-    "favicon": "/station-icons/nl/glassrock-zuid-holland.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 4,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://mscp3.live-streams.nl:8092/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "glassrock",
-    "stationuuid": "96e78780-72a6-4bbe-9b9d-e216c3191ceb",
-    "name": "GlassRock",
-    "state": null,
-    "city": null,
-    "stream_url": "http://mscp3.live-streams.nl:8090/stream",
-    "homepage": "http://www.glassrock.nl/",
     "favicon": "/station-icons/nl/glassrock.webp",
     "genres": [],
     "language": null,
@@ -7866,8 +7702,30 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://mscp3.live-streams.nl:8090/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "nowplaying_url": "https://mscp3.live-streams.nl:8092/status-json.xsl?mount=%2Fstream",
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "88de618b-a389-4a25-bf9f-3375f3378f29"
+    ],
+    "aliases": [
+      "glassrock-zuid-holland"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "https://mscp3.live-streams.nl:8092/stream",
+        "bitrate": 320,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320-alternative",
+        "label": "320 kbps MP3 (alternative)",
+        "url": "http://mscp3.live-streams.nl:8090/stream",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "glind-radio",
@@ -10323,7 +10181,9 @@
     "stream_url": "https://stream.iceradio.nl/iceradio",
     "homepage": "https://iceradio.nl/#",
     "favicon": "/station-icons/nl/ice-radio-netherlands.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -10335,7 +10195,29 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://stream.iceradio.nl/status-json.xsl?mount=%2Ficeradio",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "790ef988-70ac-4823-9732-c80f57a129f0"
+    ],
+    "aliases": [
+      "ice-radio"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "128 kbps MP3",
+        "url": "https://stream.iceradio.nl/iceradio",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "https://stream.iceradio.nl/iceradiohq?ver=30283",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "ideaal-fm",
@@ -10470,36 +10352,10 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "impact-am-zuid-holland",
-    "stationuuid": "99c6eb69-74ed-11ea-b1cf-52543be04c81",
-    "name": "Impact AM",
-    "state": "South Holland",
-    "city": null,
-    "stream_url": "http://kippingmultimediaal.nl:8000/impactweb",
-    "homepage": "http://impactam.nl/",
-    "favicon": "/station-icons/nl/impact-am-zuid-holland.webp",
-    "genres": [
-      "shortwave",
-      "world music"
-    ],
-    "language": "dutch",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 25,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://kippingmultimediaal.nl:8000/status-json.xsl?mount=%2Fimpactweb",
-    "metadata_server": "icecast"
-  },
-  {
     "slug": "impact-radio",
     "stationuuid": "fa4918fa-db73-4829-a308-fc19fe3bad70",
     "name": "Impact Radio",
-    "state": null,
+    "state": "South Holland",
     "city": null,
     "stream_url": "http://www.kippingmultimediaal.nl:8000/impactweb",
     "homepage": "http://impactam.nl/",
@@ -10509,7 +10365,9 @@
       "eclectic",
       "independent radio",
       "pop",
-      "urban"
+      "urban",
+      "shortwave",
+      "world music"
     ],
     "language": "dutch",
     "bitrate": 320,
@@ -10522,7 +10380,25 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://www.kippingmultimediaal.nl:8000/status-json.xsl?mount=%2Fimpactweb",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "99c6eb69-74ed-11ea-b1cf-52543be04c81"
+    ],
+    "aliases": [
+      "impact-am-zuid-holland"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "http://www.kippingmultimediaal.nl:8000/impactweb",
+        "bitrate": 320,
+        "codec": "MP3",
+        "alternate_urls": [
+          "http://kippingmultimediaal.nl:8000/impactweb"
+        ]
+      }
+    ]
   },
   {
     "slug": "in-tha-house-zuid-holland",
@@ -20384,32 +20260,11 @@
     "slug": "radio-10-60s-70s-hits",
     "stationuuid": "39874081-8a87-45ca-a67f-52bae3372ae8",
     "name": "Radio 10 60's & 70's Hits",
-    "state": null,
-    "city": null,
-    "stream_url": "http://22533.live.streamtheworld.com:3690/TLPSTR18_SC",
-    "homepage": "https://www.radio10.nl/60s-en-70s-hits",
-    "favicon": "/station-icons/nl/radio-10-60s-70s-hits.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 16,
-    "lastcheckok": 1,
-    "votes": 2363,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "radio-10-60s-70s-hits-e173b0bb",
-    "stationuuid": "e173b0bb-cefd-45ab-9b3b-7b4a14c78d85",
-    "name": "Radio 10 60's & 70's Hits",
     "state": "North Holland",
     "city": "Hilversum",
     "stream_url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR18.mp3",
-    "homepage": "https://www.radio10.nl/",
-    "favicon": "/station-icons/nl/radio-10-60s-70s-hits-e173b0bb.webp",
+    "homepage": "https://www.radio10.nl/60s-en-70s-hits",
+    "favicon": "/station-icons/nl/radio-10-60s-70s-hits.webp",
     "genres": [
       "60s",
       "70s"
@@ -20417,9 +20272,9 @@
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
-    "clickcount": 3,
+    "clickcount": 16,
     "lastcheckok": 1,
-    "votes": 35,
+    "votes": 2363,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 52.206817707408966,
@@ -20429,7 +20284,13 @@
         "city": "Hilversum",
         "state": "North Holland"
       }
-    }
+    },
+    "alternate_stationuuids": [
+      "e173b0bb-cefd-45ab-9b3b-7b4a14c78d85"
+    ],
+    "aliases": [
+      "radio-10-60s-70s-hits-e173b0bb"
+    ]
   },
   {
     "slug": "radio-10-90s-hits-2e625924",
@@ -25352,31 +25213,6 @@
     "geo_long": null
   },
   {
-    "slug": "radio-goldenwave",
-    "stationuuid": "aa7e3fcb-2980-4b20-93af-10eb95426c20",
-    "name": "Radio-Goldenwave",
-    "state": null,
-    "city": null,
-    "stream_url": "http://mscp3.live-streams.nl:8070/radio",
-    "homepage": "https://radiogoldenwave.nl/",
-    "favicon": "/station-icons/nl/radio-goldenwave.webp",
-    "genres": [
-      "classical"
-    ],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 3,
-    "lastcheckok": 1,
-    "votes": 27,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://mscp3.live-streams.nl:8070/status-json.xsl?mount=%2Fradio",
-    "metadata_server": "icecast"
-  },
-  {
     "slug": "radio-goldenwave-084371cd",
     "stationuuid": "084371cd-30ef-43b8-b013-fa8c1b27e979",
     "name": "Radio-Goldenwave",
@@ -25399,7 +25235,29 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://mscp3.live-streams.nl:8072/status-json.xsl?mount=%2Fradio",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "aa7e3fcb-2980-4b20-93af-10eb95426c20"
+    ],
+    "aliases": [
+      "radio-goldenwave"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "https://mscp3.live-streams.nl:8072/radio",
+        "bitrate": 320,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320-alternative",
+        "label": "320 kbps MP3 (alternative)",
+        "url": "http://mscp3.live-streams.nl:8070/radio",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-dance-90s-dance-music-amsterdam",
@@ -26462,30 +26320,29 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://stream.and-stuff.nl:8443/status-json.xsl?mount=%2FriversideMp3",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "riverside-radio-eda5f188",
-    "stationuuid": "eda5f188-318e-4246-8c83-031ace70827a",
-    "name": "Riverside Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "https://stream.and-stuff.nl:8443/riverside",
-    "homepage": "https://www.riversideradio.nl",
-    "favicon": "/station-icons/nl/riverside-radio-eda5f188-placeholder.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 2000,
-    "codec": "OGG",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 108,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://stream.and-stuff.nl:8443/status-json.xsl?mount=%2Friverside",
-    "metadata_server": "icecast"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "eda5f188-318e-4246-8c83-031ace70827a"
+    ],
+    "aliases": [
+      "riverside-radio-eda5f188"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "https://stream.and-stuff.nl:8443/riversideMp3",
+        "bitrate": 320,
+        "codec": "MP3"
+      },
+      {
+        "id": "ogg-2000",
+        "label": "2000 kbps OGG",
+        "url": "https://stream.and-stuff.nl:8443/riverside",
+        "bitrate": 2000,
+        "codec": "OGG"
+      }
+    ]
   },
   {
     "slug": "rivierenland-radio-gelderland-hedel-veldweg-31",
@@ -28210,9 +28067,9 @@
     "slug": "slam",
     "stationuuid": "2b552aa7-f396-4d0b-90ec-163e527270fe",
     "name": "SLAM",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.slam.nl/slam_aac",
+    "state": "North Holland",
+    "city": "Amsterdam",
+    "stream_url": "https://streaming.slam.nl/slam_aac",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam.webp",
     "genres": [],
@@ -28279,8 +28136,8 @@
     "slug": "slam-962e7e22",
     "stationuuid": "962e7e22-0601-11e8-ae97-52543be04c81",
     "name": "SLAM!",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.slam.nl/slam",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-962e7e22.webp",
@@ -28305,12 +28162,14 @@
     "slug": "slam-00s",
     "stationuuid": "0337e22a-a4f7-4938-926e-17637172706b",
     "name": "Slam! 00's",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "https://22353.live.streamtheworld.com/WEB15_MP3_SC",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-00s.webp",
-    "genres": [],
+    "genres": [
+      "00s"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -28326,12 +28185,14 @@
     "slug": "slam-40",
     "stationuuid": "7a5fe964-82ba-4354-b3e5-4c2dbc6fb635",
     "name": "Slam! 40",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "https://22673.live.streamtheworld.com/WEB14_MP3_SC",
     "homepage": "https://www.slam.nl/",
-    "favicon": "/station-icons/nl/slam-40-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/nl/slam-40.webp",
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -28347,8 +28208,8 @@
     "slug": "slam-dance-classics",
     "stationuuid": "4d045685-909d-40fd-a2c9-2bb8185d174c",
     "name": "SLAM! DANCE CLASSICS",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.slam.nl/WEB15_MP3",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-dance-classics.webp",
@@ -28371,8 +28232,8 @@
     "slug": "slam-housuh-in-de-pauzuh",
     "stationuuid": "08e31de8-ffe3-4a42-92f5-99c0150bc0ce",
     "name": "SLAM! Housuh In De Pauzuh",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.slam.nl/WEB16_MP3",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-housuh-in-de-pauzuh.webp",
@@ -28423,8 +28284,8 @@
     "slug": "slam-juize-26532026",
     "stationuuid": "26532026-a56a-4aa0-9dca-d78acd1bab71",
     "name": "SLAM! Juize",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.slam.nl/WEB09_MP3",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-juize-26532026.webp",
@@ -28444,8 +28305,8 @@
     "slug": "slam-mixmarathon",
     "stationuuid": "9644d773-0601-11e8-ae97-52543be04c81",
     "name": "Slam! Mixmarathon",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.radiocorp.nl/web13_mp3",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-mixmarathon-placeholder.webp",
@@ -28486,11 +28347,11 @@
     "slug": "slam-non-stop",
     "stationuuid": "f8c31d00-0afd-11ea-a87e-52543be04c81",
     "name": "SLAM! Non Stop",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.radiocorp.nl/web10_mp3",
     "homepage": "https://www.slam.nl/",
-    "favicon": "/station-icons/nl/slam-non-stop-placeholder.webp",
+    "favicon": "/station-icons/nl/slam-non-stop.webp",
     "genres": [
       "dance",
       "electro",
@@ -28512,8 +28373,8 @@
     "slug": "slam-the-boom-room",
     "stationuuid": "6252f890-348d-11ea-ac52-52543be04c81",
     "name": "Slam! The Boom Room",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://stream.radiocorp.nl/web12_aac",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-the-boom-room-placeholder.webp",
@@ -28537,8 +28398,8 @@
     "slug": "slam-wkndmx",
     "stationuuid": "e1f69c88-8eba-48c2-b6c0-30dbd2ba1433",
     "name": "SLAM! WKNDMX",
-    "state": null,
-    "city": null,
+    "state": "North Holland",
+    "city": "Amsterdam",
     "stream_url": "http://streaming.slam.nl/web11_aac",
     "homepage": "https://www.slam.nl/",
     "favicon": "/station-icons/nl/slam-wkndmx.webp",
@@ -31260,7 +31121,7 @@
   {
     "slug": "westradio-aac-64kbps",
     "stationuuid": "2c4f90b8-0878-463d-a589-6cde0eb4c36b",
-    "name": "WestRadio | AAC 64kbps",
+    "name": "WestRadio",
     "state": null,
     "city": null,
     "stream_url": "http://streaming.westradio.nl/WestRadio-aac-64",
@@ -31280,157 +31141,74 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-aac-64",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "westradio-aac-96kbps",
-    "stationuuid": "3924ae04-f490-4354-842e-d1306fdace14",
-    "name": "WestRadio | AAC 96kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.westradio.nl/WestRadio-aac-96",
-    "homepage": "https://www.westradio.nl/",
-    "favicon": "/station-icons/nl/westradio-aac-96kbps.webp",
-    "genres": [
-      "top 40"
+    "metadata_server": "icecast",
+    "alternate_stationuuids": [
+      "3924ae04-f490-4354-842e-d1306fdace14",
+      "28a07c37-999a-4cb4-981b-02deeb6b6e5c",
+      "7ace568c-2316-453f-8ff4-d2208efba3b2",
+      "01855155-979f-49a5-94b9-a0496b7cdc67",
+      "4e913f34-036e-4b64-9a02-3bf0d7d5db02",
+      "8c352e91-ee93-4551-a9f3-a8fd7f040745"
     ],
-    "language": "dutch",
-    "bitrate": 96,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 9,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-aac-96",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "westradio-mp3-128kbps",
-    "stationuuid": "28a07c37-999a-4cb4-981b-02deeb6b6e5c",
-    "name": "WestRadio | MP3 128kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.westradio.nl/WestRadio-mp3-128",
-    "homepage": "https://www.westradio.nl/",
-    "favicon": "/station-icons/nl/westradio-mp3-128kbps.webp",
-    "genres": [
-      "top 40"
+    "aliases": [
+      "westradio-aac-96kbps",
+      "westradio-mp3-128kbps",
+      "westradio-mp3-192kbps",
+      "westradio-mp3-320kbps",
+      "westradio-mp3-96kbps",
+      "westradio-mp3-64kbps"
     ],
-    "language": "dutch",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 0,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-128",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "westradio-mp3-192kbps",
-    "stationuuid": "7ace568c-2316-453f-8ff4-d2208efba3b2",
-    "name": "WestRadio | MP3 192kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.westradio.nl/WestRadio-mp3-192",
-    "homepage": "https://www.westradio.nl/",
-    "favicon": "/station-icons/nl/westradio-mp3-192kbps.webp",
-    "genres": [
-      "top 40"
-    ],
-    "language": "dutch",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-192",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "westradio-mp3-320kbps",
-    "stationuuid": "01855155-979f-49a5-94b9-a0496b7cdc67",
-    "name": "WestRadio | MP3 320kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.westradio.nl/WestRadio-mp3-320",
-    "homepage": "https://www.westradio.nl/",
-    "favicon": "/station-icons/nl/westradio-mp3-320kbps.webp",
-    "genres": [
-      "top 40"
-    ],
-    "language": "dutch",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 2,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-320",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "westradio-mp3-64kbps",
-    "stationuuid": "8c352e91-ee93-4551-a9f3-a8fd7f040745",
-    "name": "WestRadio | MP3 64kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.westradio.nl/WestRadio-mp3-64",
-    "homepage": "https://www.westradio.nl/",
-    "favicon": "/station-icons/nl/westradio-mp3-64kbps.webp",
-    "genres": [
-      "top 40"
-    ],
-    "language": "dutch",
-    "bitrate": 64,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 0,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-64",
-    "metadata_server": "icecast"
-  },
-  {
-    "slug": "westradio-mp3-96kbps",
-    "stationuuid": "4e913f34-036e-4b64-9a02-3bf0d7d5db02",
-    "name": "WestRadio | MP3 96kbps",
-    "state": null,
-    "city": null,
-    "stream_url": "http://streaming.westradio.nl/WestRadio-mp3-96",
-    "homepage": "https://www.westradio.nl/",
-    "favicon": "/station-icons/nl/westradio-mp3-96kbps.webp",
-    "genres": [
-      "top 40"
-    ],
-    "language": "dutch",
-    "bitrate": 96,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 0,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://streaming.westradio.nl/status-json.xsl?mount=%2FWestRadio-mp3-96",
-    "metadata_server": "icecast"
+    "streams": [
+      {
+        "id": "aac-64",
+        "label": "64 kbps AAC",
+        "url": "http://streaming.westradio.nl/WestRadio-aac-64",
+        "bitrate": 64,
+        "codec": "AAC"
+      },
+      {
+        "id": "aac-96",
+        "label": "96 kbps AAC",
+        "url": "http://streaming.westradio.nl/WestRadio-aac-96",
+        "bitrate": 96,
+        "codec": "AAC"
+      },
+      {
+        "id": "mp3-128",
+        "label": "128 kbps MP3",
+        "url": "http://streaming.westradio.nl/WestRadio-mp3-128",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-192",
+        "label": "192 kbps MP3",
+        "url": "http://streaming.westradio.nl/WestRadio-mp3-192",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-320",
+        "label": "320 kbps MP3",
+        "url": "http://streaming.westradio.nl/WestRadio-mp3-320",
+        "bitrate": 320,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-96",
+        "label": "96 kbps MP3",
+        "url": "http://streaming.westradio.nl/WestRadio-mp3-96",
+        "bitrate": 96,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-64",
+        "label": "64 kbps MP3",
+        "url": "http://streaming.westradio.nl/WestRadio-mp3-64",
+        "bitrate": 64,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "wgrv-fm",

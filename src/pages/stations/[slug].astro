@@ -557,7 +557,8 @@ const structuredData = {
                 <p id="playbackErrorMessage" class="mb-2" />
                 <span>{t("Listen to this station in the Radddio app.")} </span>
                 <a href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener">{t("Download for free")}</a>{t(".")} </div>
-              <audio id="audio" preload="none" crossorigin="anonymous" src={streamUrl}> {t("Your browser does not support the audio element.")} </audio>
+              <!-- Ordinary audio playback must also work with stations that omit CORS headers. -->
+              <audio id="audio" preload="none" src={streamUrl}> {t("Your browser does not support the audio element.")} </audio>
             </div>
           </div>
         ) : (
