@@ -1,0 +1,28 @@
+---
+import { croatianGuide, croatianGuidePath } from '../../lib/croatian-station-guide';
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { guideCopy, guidePath } from '../../lib/listening-guide';
+const { locale, localizePath } = localeHelpers(Astro.url);
+const copy = guideCopy[locale];
+const croatianCopy = croatianGuide[locale === 'hr' ? 'hr' : 'en'];
+const title = `${copy.label} | ${site.siteName}`;
+const canonical = `${site.siteUrl}/guides/`;
+---
+<Layout title={title} description={copy.intro}>
+  <SEO slot="seo" title={title} description={copy.intro} canonical={canonical} robots="index, follow" />
+  <section class="mx-auto py-4" style="max-width: 48rem">
+    <h1>{copy.label}</h1>
+    <p class="lead text-muted">{copy.intro}</p>
+    <article class="bg-white border rounded-3 p-4 mt-4">
+      <h2 class="h4"><a href={localizePath(guidePath)}>{copy.title}</a></h2>
+      <p class="mb-0">{copy.description}</p>
+    </article>
+    {site.countryCode === 'HR' && <article class="bg-white border rounded-3 p-4 mt-4">
+      <h2 class="h4"><a href={localizePath(croatianGuidePath)}>{croatianCopy.title}</a></h2>
+      <p class="mb-0">{croatianCopy.description}</p>
+    </article>}
+  </section>
+</Layout>

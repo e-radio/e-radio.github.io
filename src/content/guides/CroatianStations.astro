@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { croatianGuide, croatianGuidePath, croatianGuideDate, featuredCroatianStations } from '../../lib/croatian-station-guide';
+import { guidePath } from '../../lib/listening-guide';
+import stations from '../../lib/stations';
+const { locale, localizePath } = localeHelpers(Astro.url);
+const copy = croatianGuide[locale === 'hr' ? 'hr' : 'en'];
+for (const station of featuredCroatianStations) {
+  if (!stations.some(item => item.slug === station.slug)) throw new Error(`Guide station not found: ${station.slug}`);
+}
+const title = `${copy.title} | ${site.siteName}`;
+const canonical = `${site.siteUrl}${croatianGuidePath}`;
+const structuredData = {
+  '@context': 'https://schema.org', '@type': 'Article', headline: copy.title,
+  description: copy.description, mainEntityOfPage: localizePath(canonical), url: localizePath(canonical),
+  inLanguage: locale, datePublished: croatianGuideDate,
+  author: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
+  publisher: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
+  citation: featuredCroatianStations.map(station => station.source)
+};
+---
+<Layout title={title} description={copy.description}>
+  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={structuredData} />
+  <article class="mx-auto py-4" style="max-width: 48rem">
+    <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.guides}</a></nav>
+    <h1>{copy.title}</h1>
+    <p class="lead">{copy.intro}</p>
+    <p class="small text-muted">{copy.author} {site.siteName} · {copy.published}: <time datetime={croatianGuideDate}>{new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(croatianGuideDate))}</time></p>
+    <p>{copy.method}</p>
+    {copy.headings.map((heading, group) => (
+      <section class="my-5">
+        <h2 class="h3">{heading}</h2>
+        {featuredCroatianStations.map((station, index) => station.group === group && (
+          <section class="my-4">
+            <h3 class="h5">{station.name}</h3>
+            <p>{copy.descriptions[index]} <a href={station.source}>{copy.source}</a>.</p>
+            <a class="btn btn-outline-primary" href={localizePath(`/stations/${station.slug}/`)}>{copy.listen} — {station.name}</a>
+          </section>
+        ))}
+      </section>
+    ))}
+    <section class="my-4">
+      <h2 class="h3">{copy.localTitle}</h2><p>{copy.localText}</p>
+      <ul><li><a href={localizePath('/city/')}>{copy.city}</a></li><li><a href={localizePath('/region/')}>{copy.region}</a></li><li><a href={localizePath('/genres/')}>{copy.genres}</a></li></ul>
+    </section>
+    <section class="my-4">
+      <h2 class="h3">{copy.practicalTitle}</h2><p>{copy.practicalText}</p>
+      <p><a href={localizePath('/search/')}>{copy.search}</a></p>
+      <p><a href={localizePath(guidePath)}>{copy.related}</a></p>
+    </section>
+  </article>
+</Layout>

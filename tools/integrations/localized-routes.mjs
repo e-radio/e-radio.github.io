@@ -7,6 +7,11 @@ export function localizedRoutes(site) {
     name: 'country-localized-routes',
     hooks: {
       'astro:config:setup': ({ injectRoute }) => {
+        if (site.countryCode === 'HR') {
+          for (const locale of (site.locales || ['en'])) {
+            injectRoute({ pattern: `${locale === 'en' ? '' : `/${locale}`}/guides/koji-hrvatski-radio-slusati`, entrypoint: resolve('src/content/guides/CroatianStations.astro'), prerender: true });
+          }
+        }
         for (const locale of (site.locales || []).filter(locale => locale !== 'en')) {
           const root = resolve('src/pages');
           injectRoute({ pattern: `/${locale}/site.webmanifest`, entrypoint: resolve(root, 'site.webmanifest.ts'), prerender: true });

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { guideCopy, guidePath, publishedDate } from '../../lib/listening-guide';
+const { locale, localizePath } = localeHelpers(Astro.url);
+const copy = guideCopy[locale];
+const canonical = `${site.siteUrl}${guidePath}`;
+const title = `${copy.title} | ${site.siteName}`;
+const structuredData = {
+  '@context': 'https://schema.org', '@type': 'Article',
+  headline: copy.title, description: copy.description,
+  mainEntityOfPage: localizePath(canonical), url: localizePath(canonical),
+  inLanguage: locale, datePublished: publishedDate,
+  author: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
+  publisher: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
+};
+---
+<Layout title={title} description={copy.description}>
+  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={structuredData} />
+  <article class="mx-auto py-4" style="max-width: 48rem">
+    <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.label}</a></nav>
+    <h1>{copy.title}</h1>
+    <p class="lead">{copy.description}</p>
+    <p class="text-muted small">{copy.author.replace('{0}', site.siteName)} · {copy.published}: <time datetime={publishedDate}>{new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(publishedDate))}</time></p>
+    {copy.sections.map(([heading, text, label, path]) => (
+      <section class="my-4">
+        <h2 class="h4">{heading}</h2>
+        <p>{text}</p>
+        <a href={localizePath(path)}>{label}</a>
+      </section>
+    ))}
+  </article>
+</Layout>

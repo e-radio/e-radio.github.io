@@ -72,6 +72,9 @@ export async function GET() {
       .slice(0, 80) || "other";
 
   const staticPages = [
+    ...(site.countryCode === 'HR' ? [{ loc: `${ROOT_URL}/guides/koji-hrvatski-radio-slusati/`, lastmod: '2026-09-21' }] : []),
+    { loc: `${ROOT_URL}/guides/`, lastmod: '2026-09-21' },
+    { loc: `${ROOT_URL}/guides/find-your-radio-station/`, lastmod: '2026-09-21' },
     { loc: `${ROOT_URL}/live-tracks/`, lastmod },
     { loc: `${ROOT_URL}/tools/endpoint-finder/`, lastmod },
     {

@@ -736,5 +736,6 @@
   "Search": "Αναζήτηση",
   "Find a radio station by name.": "Βρείτε έναν ραδιοφωνικό σταθμό με βάση το όνομά του.",
   "{0} stations found": "Βρέθηκαν {0} σταθμοί",
-  "Enable JavaScript to search, or browse stations using the links below.": "Ενεργοποιήστε τη JavaScript για αναζήτηση ή περιηγηθείτε στους σταθμούς μέσω των παρακάτω συνδέσμων."
+  "Enable JavaScript to search, or browse stations using the links below.": "Ενεργοποιήστε τη JavaScript για αναζήτηση ή περιηγηθείτε στους σταθμούς μέσω των παρακάτω συνδέσμων.",
+  "Guides": "Οδηγοί"
 }
