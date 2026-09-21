@@ -415,7 +415,12 @@ const description = station.state
 const playerScriptConfig = {
   hasStream,
   streamUrl,
-  streams: streamOptions,
+  streams: streamOptions.map(option => {
+    const specific = option as typeof option & { nowplaying_url?: string; history_url?: string; metadata_server?: ServerKind };
+    if (!specific.nowplaying_url) return { ...option, nowPlayingEndpoint, historyEndpoint, serverType };
+    const resolved = resolveMetadataEndpoints(option.url, { ...station, ...specific, history_url: specific.history_url || null } as typeof station);
+    return { ...option, nowPlayingEndpoint: routeMetadataEndpoint(resolved.nowPlaying), historyEndpoint: routeMetadataEndpoint(resolved.history), serverType: resolved.serverType };
+  }),
   shareTitle: station.name,
   shareText: `Listen live: ${station.name}`,
   shareUrl: localizePath(canonical),
@@ -1179,6 +1184,7 @@ import { clientTranslate as t } from '../../i18n/translate';
         const url = option.url;
         const resume = replaceStream(audio, url, playbackRequested);
         playerConfig.streamUrl = url;
+        switchMetadata(option);
         setBuffer(0);
         const quality = document.getElementById('quality');
         if (quality) quality.textContent = option.quality || t('Quality not reported');
@@ -1311,11 +1317,15 @@ import { clientTranslate as t } from '../../i18n/translate';
 
     const metadataFetcher = createMetadataFetcher({ timeout: playerConfig.requestTimeoutMs || 10000 });
 
+    let metadataGeneration = 0;
     const fetchAndApplyHistory = async (options = {}) => {
+      const generation = metadataGeneration;
+      const server = playerConfig.serverType;
       if (!playerConfig.historyEndpoint || historyDisabled || metadataFetcher.isBlocked(playerConfig.historyEndpoint)) return false;
       if (!options.force && lastHistoryFetch && Date.now() - lastHistoryFetch < HISTORY_REFRESH_INTERVAL) return false;
       try {
-        const payload = await metadataFetcher.request(playerConfig.historyEndpoint, text => parseHistory(playerConfig.serverType, text));
+        const payload = await metadataFetcher.request(playerConfig.historyEndpoint, text => parseHistory(server, text));
+        if (generation !== metadataGeneration) return false;
         const historyApplied = applyRecentTracks(payload);
         const text = extractNowPlayingText(payload);
         if (text && nowPlayingEl) updateNowPlayingTrack(payload, text);
@@ -1323,6 +1333,7 @@ import { clientTranslate as t } from '../../i18n/translate';
         if (historyApplied || text) historyDisabled = false;
         return Boolean(historyApplied || text);
       } catch (error) {
+        if (generation !== metadataGeneration) return false;
         console.error('History request failed', error);
         lastHistoryFetch = Date.now();
         return false;
@@ -1333,11 +1344,14 @@ import { clientTranslate as t } from '../../i18n/translate';
     let nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
     const pollNowPlaying = async () => {
       if (document.hidden || metadataPollInFlight || !playerConfig.nowPlayingEndpoint || metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint) || !nowPlayingEl) return;
+      const generation = metadataGeneration;
+      const server = playerConfig.serverType;
       metadataPollInFlight = true;
       nextMetadataDelay = playerConfig.pollIntervalMs || 15000;
 
       try {
-        const rawData = await metadataFetcher.request(playerConfig.nowPlayingEndpoint, text => decodeProviderMetadata(playerConfig.serverType, text));
+        const rawData = await metadataFetcher.request(playerConfig.nowPlayingEndpoint, text => decodeProviderMetadata(server, text));
+        if (generation !== metadataGeneration) return;
         const parsed = parseMetadata(playerConfig.serverType, rawData, {
           streamUrl: playerConfig.streamUrl, endpoint: playerConfig.nowPlayingEndpoint,
         });
@@ -1361,33 +1375,54 @@ import { clientTranslate as t } from '../../i18n/translate';
         if (!historyApplied && !historyDisabled) {
           await fetchAndApplyHistory({ force: textChanged });
         }
+        if (generation !== metadataGeneration) return;
         nextMetadataDelay = metadataPollDelay(playerConfig.serverType, rawData, playerConfig.pollIntervalMs || 15000);
       } catch (error) {
+        if (generation !== metadataGeneration) return;
         console.error('Now playing request failed', error);
         // Preserve the last successful song and history during temporary failures.
         await fetchAndApplyHistory();
       } finally {
-        metadataPollInFlight = false;
+        if (generation === metadataGeneration) metadataPollInFlight = false;
       }
     };
 
-    if (playerConfig.nowPlayingEndpoint) {
-      let metadataTimer;
-      const refreshMetadata = async () => {
-        clearTimeout(metadataTimer);
-        if (metadataPollInFlight) return;
-        await pollNowPlaying();
-        clearTimeout(metadataTimer);
-        if (!document.hidden && !metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint)) {
-          metadataTimer = setTimeout(refreshMetadata, nextMetadataDelay);
-        }
-      };
-      document.addEventListener('visibilitychange', () => {
-        clearTimeout(metadataTimer);
-        if (!document.hidden) refreshMetadata();
-      });
+    let metadataTimer;
+    const refreshMetadata = async () => {
+      clearTimeout(metadataTimer);
+      if (metadataPollInFlight) return;
+      const generation = metadataGeneration;
+      await pollNowPlaying();
+      if (generation !== metadataGeneration) return;
+      if (!document.hidden && playerConfig.nowPlayingEndpoint && !metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint)) {
+        metadataTimer = setTimeout(refreshMetadata, nextMetadataDelay);
+      }
+    };
+    const switchMetadata = option => {
+      metadataGeneration++;
+      clearTimeout(metadataTimer);
+      metadataPollInFlight = false;
+      playerConfig.nowPlayingEndpoint = option.nowPlayingEndpoint;
+      playerConfig.historyEndpoint = option.historyEndpoint;
+      playerConfig.serverType = option.serverType;
+      historyDisabled = !playerConfig.historyEndpoint;
+      lastHistoryFetch = 0;
+      lastNowPlayingText = null;
+      lastHistoryRenderedSignature = null;
+      if (nowPlayingEl) nowPlayingEl.textContent = nowPlayingDefault;
+      if (nowPlayingMetaEl) nowPlayingMetaEl.textContent = nowPlayingMetaDefault;
+      if (nowPlayingArtEl) { nowPlayingArtEl.hidden = true; nowPlayingArtEl.removeAttribute('src'); }
+      const listeners = document.getElementById('nowPlayingListeners');
+      if (listeners) { listeners.textContent = ''; listeners.hidden = true; }
+      resetHistoryList();
+      resetTrackCards();
       refreshMetadata();
-    }
+    };
+    document.addEventListener('visibilitychange', () => {
+      clearTimeout(metadataTimer);
+      if (!document.hidden) refreshMetadata();
+    });
+    refreshMetadata();
   </script>
   <style>
     .audio-control-strip {

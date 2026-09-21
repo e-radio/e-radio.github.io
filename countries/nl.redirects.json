@@ -220,5 +220,17 @@
   "/stations/rivierenland-radio-2nd-server-320k-gelderland-hedel-veldweg-31/": "/stations/rivierenland-radio-gelderland-hedel-veldweg-31/",
   "/stations/kilrock-zeeland-c9cf1423/": "/stations/kilrock-zeeland-f44d016e/",
   "/stations/kilrock-zeeland/": "/stations/kilrock-zeeland-f44d016e/",
-  "/stations/koekstad-radio-overijssel-deventer/": "/stations/koekstad-fm/"
+  "/stations/koekstad-radio-overijssel-deventer/": "/stations/koekstad-fm/",
+  "/stations/pureclassix-flac/": "/stations/pureclassix/",
+  "/stations/pure-lounge-radio-flac/": "/stations/pure-lounge-radio/",
+  "/stations/pure-classix-radio-zeeland/": "/stations/pureclassix/",
+  "/stations/kink-f2c1d30b/": "/stations/kink/",
+  "/stations/kink-http/": "/stations/kink/",
+  "/stations/kink-128k-aac/": "/stations/kink/",
+  "/stations/kink-192k-mp3-nh/": "/stations/kink/",
+  "/stations/kink-64kbps/": "/stations/kink/",
+  "/stations/kink-ce1e9521/": "/stations/kink/",
+  "/stations/kink-distortion/": "/stations/kink-distortion-c3318b97/",
+  "/stations/radio-10-d227990c/": "/stations/radio-10/",
+  "/stations/radio-10-f4aea998/": "/stations/radio-10/"
 }
