@@ -21,6 +21,7 @@ const canonical = `${site.siteUrl}/guides/`;
       <p class="mb-0">{copy.description}</p>
     </article>
     {site.countryCode === 'HR' && <article class="bg-white border rounded-3 p-4 mt-4">
+      <img src={`/images/guides/croatian-radio-${locale === 'hr' ? 'hr' : 'en'}.jpg`} alt={croatianCopy.title} width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
       <h2 class="h4"><a href={localizePath(croatianGuidePath)}>{croatianCopy.title}</a></h2>
       <p class="mb-0">{croatianCopy.description}</p>
     </article>}

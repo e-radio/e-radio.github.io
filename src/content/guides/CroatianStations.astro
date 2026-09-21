@@ -8,14 +8,19 @@ import { guidePath } from '../../lib/listening-guide';
 import stations from '../../lib/stations';
 const { locale, localizePath } = localeHelpers(Astro.url);
 const copy = croatianGuide[locale === 'hr' ? 'hr' : 'en'];
-for (const station of featuredCroatianStations) {
-  if (!stations.some(item => item.slug === station.slug)) throw new Error(`Guide station not found: ${station.slug}`);
-}
+const featuredStations = featuredCroatianStations.map(station => {
+  const record = stations.find(item => item.slug === station.slug);
+  if (!record) throw new Error(`Guide station not found: ${station.slug}`);
+  return { ...station, favicon: record.favicon || site.logo };
+});
+const cover = `/images/guides/croatian-radio-${locale === 'hr' ? 'hr' : 'en'}.jpg`;
+const coverUrl = new URL(cover, site.siteUrl).href;
 const title = `${copy.title} | ${site.siteName}`;
 const canonical = `${site.siteUrl}${croatianGuidePath}`;
 const structuredData = {
   '@context': 'https://schema.org', '@type': 'Article', headline: copy.title,
   description: copy.description, mainEntityOfPage: localizePath(canonical), url: localizePath(canonical),
+  image: { '@type': 'ImageObject', url: coverUrl, width: 1200, height: 630 },
   inLanguage: locale, datePublished: croatianGuideDate,
   author: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
   publisher: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
@@ -23,9 +28,10 @@ const structuredData = {
 };
 ---
 <Layout title={title} description={copy.description}>
-  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={structuredData} />
+  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogImage={coverUrl} ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={structuredData} />
   <article class="mx-auto py-4" style="max-width: 48rem">
     <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.guides}</a></nav>
+    <img src={cover} alt={copy.title} width="1200" height="630" class="img-fluid rounded-3 mb-4" fetchpriority="high" decoding="async" />
     <h1>{copy.title}</h1>
     <p class="lead">{copy.intro}</p>
     <p class="small text-muted">{copy.author} {site.siteName} · {copy.published}: <time datetime={croatianGuideDate}>{new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(croatianGuideDate))}</time></p>
@@ -33,9 +39,12 @@ const structuredData = {
     {copy.headings.map((heading, group) => (
       <section class="my-5">
         <h2 class="h3">{heading}</h2>
-        {featuredCroatianStations.map((station, index) => station.group === group && (
+        {featuredStations.map((station, index) => station.group === group && (
           <section class="my-4">
-            <h3 class="h5">{station.name}</h3>
+            <h3 class="h5 d-flex align-items-center gap-3">
+              <img src={station.favicon} alt="" width="60" height="60" loading="lazy" decoding="async" class="rounded border bg-white flex-shrink-0" style="object-fit: contain" />
+              <span>{station.name}</span>
+            </h3>
             <p>{copy.descriptions[index]} <a href={station.source}>{copy.source}</a>.</p>
             <a class="btn btn-outline-primary" href={localizePath(`/stations/${station.slug}/`)}>{copy.listen} — {station.name}</a>
           </section>
