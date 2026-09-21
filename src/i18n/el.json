@@ -725,5 +725,16 @@
   "decades": "δεκαετίες",
   "golden oldies": "χρυσές παλιές επιτυχίες",
   "voice of greece": "η φωνή της Ελλάδας",
-  "i foni tis elladas": "η φωνή της Ελλάδας"
+  "i foni tis elladas": "η φωνή της Ελλάδας",
+  "Page not found": "Η σελίδα δεν βρέθηκε",
+  "This page may have moved or no longer exists. Find a station below or keep exploring.": "Αυτή η σελίδα μπορεί να έχει μετακινηθεί ή να μην υπάρχει πλέον. Βρείτε έναν σταθμό παρακάτω ή συνεχίστε την περιήγηση.",
+  "No stations found. Try another name.": "Δεν βρέθηκαν σταθμοί. Δοκιμάστε άλλο όνομα.",
+  "Search stations": "Αναζήτηση σταθμών",
+  "Enter a station name": "Εισαγάγετε το όνομα ενός σταθμού",
+  "Browse stations using the links below.": "Περιηγηθείτε στους σταθμούς μέσω των παρακάτω συνδέσμων.",
+  "Home": "Αρχική",
+  "Search": "Αναζήτηση",
+  "Find a radio station by name.": "Βρείτε έναν ραδιοφωνικό σταθμό με βάση το όνομά του.",
+  "{0} stations found": "Βρέθηκαν {0} σταθμοί",
+  "Enable JavaScript to search, or browse stations using the links below.": "Ενεργοποιήστε τη JavaScript για αναζήτηση ή περιηγηθείτε στους σταθμούς μέσω των παρακάτω συνδέσμων."
 }

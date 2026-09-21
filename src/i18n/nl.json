@@ -369,5 +369,16 @@
   "South Holland": "Zuid-Holland",
   "North Brabant": "Noord-Brabant",
   "The Hague": "Den Haag",
-  "Hook of Holland": "Hoek van Holland"
+  "Hook of Holland": "Hoek van Holland",
+  "Page not found": "Pagina niet gevonden",
+  "This page may have moved or no longer exists. Find a station below or keep exploring.": "Deze pagina is mogelijk verplaatst of bestaat niet meer. Zoek hieronder een zender of ontdek de rest van de site.",
+  "No stations found. Try another name.": "Geen zenders gevonden. Probeer een andere naam.",
+  "Search stations": "Zenders zoeken",
+  "Enter a station name": "Voer een zendernaam in",
+  "Browse stations using the links below.": "Blader door de zenders via de onderstaande links.",
+  "Home": "Home",
+  "Search": "Zoeken",
+  "Find a radio station by name.": "Zoek een radiozender op naam.",
+  "{0} stations found": "{0} zenders gevonden",
+  "Enable JavaScript to search, or browse stations using the links below.": "Schakel JavaScript in om te zoeken of blader door de zenders via de onderstaande links."
 }

@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SEO from '../components/SEO.astro';
+import stations from '../lib/stations';
+import { site } from '../../countries/site.mjs';
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+const title = `${t('Search stations')} | ${site.siteName}`;
+const searchIndex = stations.map(station => ({ name: station.name, url: localizePath(`/stations/${station.slug}/`) }));
+---
+<Layout title={title}>
+  <SEO slot="seo" title={title} description={t('Find a radio station by name.')} robots="noindex, follow" />
+  <section class="mx-auto py-4" style="max-width: 44rem" aria-labelledby="search-title">
+    <h1 id="search-title" class="fw-bold">{t('Search stations')}</h1>
+    <p class="lead text-muted">{t('Find a radio station by name.')}</p>
+    <div id="station-search" data-stations={JSON.stringify(searchIndex)} data-empty={t('No stations found. Try another name.')} data-count={t('{0} stations found')}>
+      <form role="search" action={localizePath('/search/')} method="get">
+        <label for="station-query" class="form-label">{t('Search stations')}</label>
+        <div class="d-flex gap-2">
+          <input id="station-query" name="q" type="search" class="form-control" placeholder={t('Enter a station name')} autocomplete="off" aria-controls="search-results" />
+          <button class="btn btn-primary" type="submit">{t('Search')}</button>
+        </div>
+      </form>
+      <p id="search-status" class="text-muted mt-3" role="status" aria-live="polite"></p>
+      <ul id="search-results" class="list-unstyled"></ul>
+      <noscript><p>{t('Enable JavaScript to search, or browse stations using the links below.')}</p></noscript>
+    </div>
+    <nav aria-label={t('Explore')} class="d-flex flex-wrap gap-3 mt-4">
+      <a href={localizePath('/')}>{t('Home')}</a>
+      <a href={localizePath('/genres/')}>{t('Genres')}</a>
+      <a href={localizePath('/live-tracks/')}>{t('Live Tracks')}</a>
+    </nav>
+  </section>
+</Layout>
+<script>
+  const root = document.querySelector<HTMLElement>('#station-search')!;
+  const input = document.querySelector<HTMLInputElement>('#station-query')!;
+  const results = document.querySelector<HTMLUListElement>('#search-results')!;
+  const status = document.querySelector<HTMLElement>('#search-status')!;
+  const stations: { name: string; url: string }[] = JSON.parse(root.dataset.stations || '[]');
+  const normalize = (text: string) => text.normalize('NFD').replace(/\p{M}/gu, '').toLocaleLowerCase();
+  function render() {
+    const query = normalize(input.value.trim());
+    results.replaceChildren();
+    status.textContent = '';
+    if (!query) return;
+    const matches = stations.filter(station => normalize(station.name).includes(query));
+    status.textContent = matches.length ? root.dataset.count!.replace('{0}', String(matches.length)) : root.dataset.empty!;
+    const fragment = document.createDocumentFragment();
+    for (const station of matches) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = station.url;
+      link.textContent = station.name;
+      link.className = 'd-block py-3 border-bottom';
+      item.append(link);
+      fragment.append(item);
+    }
+    results.append(fragment);
+  }
+  input.value = new URLSearchParams(location.search).get('q') || '';
+  render();
+  input.addEventListener('input', render);
+  root.querySelector('form')!.addEventListener('submit', event => {
+    event.preventDefault();
+    const url = new URL(location.href);
+    if (input.value.trim()) url.searchParams.set('q', input.value.trim());
+    else url.searchParams.delete('q');
+    history.replaceState(null, '', url);
+    render();
+  });
+</script>

@@ -61,9 +61,12 @@ const {
     <header class="bg-light border-bottom">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-lg">
-          <a href={localizePath("/")} class="navbar-brand fw-bold d-flex align-items-center gap-2">
+          <a href={localizePath("/")} class="navbar-brand fw-bold d-flex align-items-center gap-2 me-0">
             <img src={site.logo} width="32" height="32" alt={t(`${site.siteName} app icon`)} />
             <span>{t(site.siteName)}</span>
+          </a>
+          <a href={localizePath('/search/')} class="btn btn-outline-primary ms-auto d-inline-flex align-items-center gap-2">
+            <i class="bi bi-search" aria-hidden="true"></i><span>{t('Search')}</span>
           </a>
           {multilingual && <nav aria-label={t('Language selection')} class="d-flex gap-3 ms-auto">
             {locales.map(language => <a href={languagePath(Astro.url.pathname, language)} lang={language} hreflang={language} aria-current={locale === language ? 'page' : undefined}>{languageNames[language]}</a>)}

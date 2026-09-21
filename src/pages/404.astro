@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SEO from '../components/SEO.astro';
+import stations from '../lib/stations';
+import { site } from '../../countries/site.mjs';
+import { localeHelpers } from '../i18n/index';
+const { t, localizePath } = localeHelpers(Astro.url);
+const title = `${t('Page not found')} | ${site.siteName}`;
+const searchIndex = stations.map(station => ({ name: station.name, url: localizePath(`/stations/${station.slug}/`) }));
+---
+<Layout title={title}>
+  <SEO slot="seo" title={title} robots="noindex, follow" />
+  <section class="mx-auto py-5" style="max-width: 44rem" aria-labelledby="missing-title">
+    <p class="display-1 fw-bold text-primary mb-2">404</p>
+    <h1 id="missing-title" class="fw-bold">{t('Page not found')}</h1>
+    <p class="lead text-muted">{t('This page may have moved or no longer exists. Find a station below or keep exploring.')}</p>
+    <div class="bg-white border rounded-3 p-4 my-4" id="station-search" data-locales={JSON.stringify(site.locales || ['en'])} data-stations={JSON.stringify(searchIndex)} data-empty={t('No stations found. Try another name.')}>
+      <label for="missing-search" class="form-label fw-semibold">{t('Search stations')}</label>
+      <input id="missing-search" type="search" class="form-control" placeholder={t('Enter a station name')} autocomplete="off" aria-controls="missing-results" />
+      <p id="missing-status" class="text-muted mt-3 mb-0" role="status"></p>
+      <ul id="missing-results" class="list-unstyled mb-0"></ul>
+      <noscript><p class="mt-3 mb-0">{t('Browse stations using the links below.')}</p></noscript>
+    </div>
+    <nav aria-label={t('Explore')} class="d-flex flex-wrap gap-2">
+      <a class="btn btn-primary" href={localizePath('/')}>{t('Home')}</a>
+      <a class="btn btn-outline-primary" href={localizePath('/genres/')}>{t('Genres')}</a>
+      <a class="btn btn-outline-primary" href={localizePath('/live-tracks/')}>{t('Live Tracks')}</a>
+    </nav>
+  </section>
+</Layout>
+<script>
+  import { translate, type Locale } from '../i18n/translate';
+  // GitHub Pages serves the root 404.html even for missing localized URLs.
+  const locales: Locale[] = JSON.parse(document.querySelector<HTMLElement>('#station-search')!.dataset.locales || '["en"]');
+  const locale = locales.find(value => value !== 'en' && (location.pathname === `/${value}` || location.pathname.startsWith(`/${value}/`))) || 'en';
+  const t = (value: string) => translate(value, locale);
+  const localizePath = (path: string) => {
+    if (!path.startsWith('/') || path.startsWith('//')) return path;
+    const prefix = locales.find(value => value !== 'en' && (path === `/${value}` || path.startsWith(`/${value}/`)));
+    const base = prefix ? path.slice(prefix.length + 1) || '/' : path;
+    return locale === 'en' ? base : `/${locale}${base}`;
+  };
+  if (document.documentElement.lang !== locale) {
+    document.documentElement.lang = locale;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      const node = walker.currentNode;
+      if (node.parentElement?.closest('script, style, noscript')) continue;
+      const value = node.textContent || '';
+      const text = value.trim();
+      if (text) node.textContent = value.replace(text, t(text));
+    }
+    document.title = document.title.replace('Page not found', t('Page not found'));
+    document.querySelectorAll<HTMLElement>('[aria-label], [placeholder]').forEach(element => {
+      for (const attribute of ['aria-label', 'placeholder']) {
+        const value = element.getAttribute(attribute);
+        if (value) element.setAttribute(attribute, t(value));
+      }
+    });
+    document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach(link => {
+      link.setAttribute('href', localizePath(link.getAttribute('href')!)!);
+    });
+  }
+
+  const search = document.querySelector<HTMLElement>('#station-search')!;
+  const input = document.querySelector<HTMLInputElement>('#missing-search')!;
+  const results = document.querySelector<HTMLUListElement>('#missing-results')!;
+  const status = document.querySelector<HTMLElement>('#missing-status')!;
+  const stations: { name: string; url: string }[] = JSON.parse(search.dataset.stations || '[]');
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLocaleLowerCase();
+    results.replaceChildren();
+    status.textContent = '';
+    if (!query) return;
+    const matches = stations.filter(station => station.name.toLocaleLowerCase().includes(query)).slice(0, 10);
+    if (!matches.length) status.textContent = t(search.dataset.empty || '');
+    for (const station of matches) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = localizePath(station.url)!;
+      link.textContent = station.name;
+      link.className = 'd-block py-2';
+      item.append(link);
+      results.append(item);
+    }
+  });
+</script>

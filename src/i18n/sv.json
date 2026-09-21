@@ -409,5 +409,16 @@
   "Västerbotten county": "Västerbottens län",
   "Västerbotten County": "Västerbottens län",
   "Norrbotten county": "Norrbottens län",
-  "Norrbotten County": "Norrbottens län"
+  "Norrbotten County": "Norrbottens län",
+  "Page not found": "Sidan hittades inte",
+  "This page may have moved or no longer exists. Find a station below or keep exploring.": "Sidan kan ha flyttats eller finns inte längre. Hitta en station nedan eller fortsätt utforska.",
+  "No stations found. Try another name.": "Inga stationer hittades. Prova ett annat namn.",
+  "Search stations": "Sök stationer",
+  "Enter a station name": "Ange ett stationsnamn",
+  "Browse stations using the links below.": "Bläddra bland stationerna via länkarna nedan.",
+  "Home": "Hem",
+  "Search": "Sök",
+  "Find a radio station by name.": "Hitta en radiostation efter namn.",
+  "{0} stations found": "{0} stationer hittades",
+  "Enable JavaScript to search, or browse stations using the links below.": "Aktivera JavaScript för att söka eller bläddra bland stationerna via länkarna nedan."
 }
