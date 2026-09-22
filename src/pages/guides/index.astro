@@ -1,5 +1,6 @@
 ---
 import { croatianGuide, croatianGuidePath } from '../../lib/croatian-station-guide';
+import { greekGuideCopy, greekGuidePath } from '../../lib/greek-radio-guide';
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
 import { site } from '../../../countries/site.mjs';
@@ -7,16 +8,35 @@ import { localeHelpers } from '../../i18n/index';
 import { guideCopy, guidePath } from '../../lib/listening-guide';
 const { locale, localizePath } = localeHelpers(Astro.url);
 const copy = guideCopy[locale];
+const greekCopy = greekGuideCopy[locale === 'el' ? 'el' : 'en'];
 const croatianCopy = croatianGuide[locale === 'hr' ? 'hr' : 'en'];
 const title = `${copy.label} | ${site.siteName}`;
 const canonical = `${site.siteUrl}/guides/`;
+const entries = [
+  { name: copy.title, path: guidePath },
+  ...(site.countryCode === 'HR' ? [{ name: croatianCopy.title, path: croatianGuidePath }] : []),
+  ...(site.countryCode === 'GR' ? [{ name: greekCopy.title, path: greekGuidePath }] : []),
+];
+const structuredData = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage',
+  '@id': localizePath(canonical), url: localizePath(canonical),
+  name: copy.label, description: copy.intro, inLanguage: locale,
+  mainEntity: {
+    '@type': 'ItemList', numberOfItems: entries.length,
+    itemListElement: entries.map((entry, index) => ({
+      '@type': 'ListItem', position: index + 1, name: entry.name,
+      url: localizePath(`${site.siteUrl}${entry.path}`),
+    })),
+  },
+};
 ---
 <Layout title={title} description={copy.intro}>
-  <SEO slot="seo" title={title} description={copy.intro} canonical={canonical} robots="index, follow" />
+  <SEO slot="seo" title={title} description={copy.intro} canonical={canonical} robots="index, follow" structuredData={structuredData} />
   <section class="mx-auto py-4" style="max-width: 48rem">
     <h1>{copy.label}</h1>
     <p class="lead text-muted">{copy.intro}</p>
     <article class="bg-white border rounded-3 p-4 mt-4">
+      <img src="/images/guides/find-your-radio-station.jpg" alt={copy.title} width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
       <h2 class="h4"><a href={localizePath(guidePath)}>{copy.title}</a></h2>
       <p class="mb-0">{copy.description}</p>
     </article>
@@ -24,6 +44,11 @@ const canonical = `${site.siteUrl}/guides/`;
       <img src={`/images/guides/croatian-radio-${locale === 'hr' ? 'hr' : 'en'}.jpg`} alt={croatianCopy.title} width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
       <h2 class="h4"><a href={localizePath(croatianGuidePath)}>{croatianCopy.title}</a></h2>
       <p class="mb-0">{croatianCopy.description}</p>
+    </article>}
+    {site.countryCode === 'GR' && <article class="bg-white border rounded-3 p-4 mt-4">
+      <img src="/images/guides/greek-radio-online.jpg" alt="" width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
+      <h2 class="h4"><a href={localizePath(greekGuidePath)}>{greekCopy.title}</a></h2>
+      <p class="mb-0">{greekCopy.description}</p>
     </article>}
   </section>
 </Layout>

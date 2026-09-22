@@ -1,4 +1,5 @@
 ---
+import { guideSchema } from '../../lib/guide-schema';
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
 import { site } from '../../../countries/site.mjs';
@@ -7,20 +8,24 @@ import { guideCopy, guidePath, publishedDate } from '../../lib/listening-guide';
 const { locale, localizePath } = localeHelpers(Astro.url);
 const copy = guideCopy[locale];
 const canonical = `${site.siteUrl}${guidePath}`;
+const cover = '/images/guides/find-your-radio-station.jpg';
+const coverUrl = new URL(cover, site.siteUrl).href;
 const title = `${copy.title} | ${site.siteName}`;
 const structuredData = {
   '@context': 'https://schema.org', '@type': 'Article',
   headline: copy.title, description: copy.description,
   mainEntityOfPage: localizePath(canonical), url: localizePath(canonical),
+  image: { '@type': 'ImageObject', url: coverUrl, width: 1200, height: 630 },
   inLanguage: locale, datePublished: publishedDate,
   author: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
   publisher: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
 };
 ---
 <Layout title={title} description={copy.description}>
-  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={structuredData} />
+  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogImage={coverUrl} ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={guideSchema(structuredData, localizePath(`${site.siteUrl}/guides/`), copy.label)} />
   <article class="mx-auto py-4" style="max-width: 48rem">
     <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.label}</a></nav>
+    <img src={cover} alt={copy.title} width="1200" height="630" class="img-fluid rounded-3 mb-4" fetchpriority="high" decoding="async" />
     <h1>{copy.title}</h1>
     <p class="lead">{copy.description}</p>
     <p class="text-muted small">{copy.author.replace('{0}', site.siteName)} · {copy.published}: <time datetime={publishedDate}>{new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(publishedDate))}</time></p>

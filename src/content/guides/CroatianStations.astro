@@ -1,4 +1,5 @@
 ---
+import { guideSchema } from '../../lib/guide-schema';
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
 import { site } from '../../../countries/site.mjs';
@@ -28,7 +29,7 @@ const structuredData = {
 };
 ---
 <Layout title={title} description={copy.description}>
-  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogImage={coverUrl} ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={structuredData} />
+  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogImage={coverUrl} ogType="article" ogTitle={copy.title} ogDescription={copy.description} structuredData={guideSchema(structuredData, localizePath(`${site.siteUrl}/guides/`), copy.guides)} />
   <article class="mx-auto py-4" style="max-width: 48rem">
     <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.guides}</a></nav>
     <img src={cover} alt={copy.title} width="1200" height="630" class="img-fluid rounded-3 mb-4" fetchpriority="high" decoding="async" />

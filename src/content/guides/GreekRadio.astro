@@ -1,0 +1,50 @@
+---
+import { guideSchema } from '../../lib/guide-schema';
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { greekGuideCopy, greekGuidePath, greekGuideDate, greekGuideStations } from '../../lib/greek-radio-guide';
+import { guidePath } from '../../lib/listening-guide';
+import stations from '../../lib/stations';
+const { locale, localizePath } = localeHelpers(Astro.url);
+const copy = greekGuideCopy[locale === 'el' ? 'el' : 'en'];
+const featured = greekGuideStations.map(station => {
+ const record=stations.find(item=>item.slug===station.slug);
+ if (!record) throw new Error(`Guide station not found: ${station.slug}`);
+ return {...station, favicon:record.favicon || site.logo};
+});
+const canonical = `${site.siteUrl}${greekGuidePath}`;
+const cover='/images/guides/greek-radio-online.jpg';
+const coverUrl=new URL(cover,site.siteUrl).href;
+const structuredData={
+ '@context':'https://schema.org','@type':'Article',headline:copy.title,description:copy.description,
+ mainEntityOfPage:localizePath(canonical),url:localizePath(canonical),inLanguage:locale,datePublished:greekGuideDate,
+ image:{'@type':'ImageObject',url:coverUrl,width:1200,height:630},
+ author:{'@type':'Organization',name:site.siteName,url:site.siteUrl},publisher:{'@type':'Organization',name:site.siteName,url:site.siteUrl},
+ citation:greekGuideStations.map(station=>station.source)
+};
+---
+<Layout title={copy.title} description={copy.description}>
+ <SEO slot="seo" title={copy.title} description={copy.description} canonical={canonical} robots="index, follow" ogType="article" ogTitle={copy.title} ogDescription={copy.description} ogImage={coverUrl} structuredData={guideSchema(structuredData, localizePath(`${site.siteUrl}/guides/`), copy.guides)} />
+ <article class="mx-auto py-4" style="max-width: 48rem">
+  <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.guides}</a></nav>
+  <img src={cover} alt="" width="1200" height="630" class="img-fluid rounded-3 mb-4" fetchpriority="high" decoding="async" />
+  <h1>{copy.title}</h1><p class="lead">{copy.intro}</p>
+  <p class="small text-muted">{copy.by} {site.siteName} · {copy.date}: <time datetime={greekGuideDate}>{new Intl.DateTimeFormat(locale,{dateStyle:'long',timeZone:'UTC'}).format(new Date(greekGuideDate))}</time></p>
+  <section class="my-4"><h2 class="h3">{copy.identityTitle}</h2><p>{copy.identity}</p></section>
+  <section class="my-4"><h2 class="h3">{copy.stepsTitle}</h2><ol>{copy.steps.map(step=><li class="mb-2">{step}</li>)}</ol><a href={localizePath('/search/')}>{copy.search}</a></section>
+  <section class="my-5"><h2 class="h3">{copy.stationsTitle}</h2>
+   {featured.map((station,index)=><section class="my-4">
+    <h3 class="h5 d-flex align-items-center gap-3"><img src={station.favicon} alt="" width="60" height="60" loading="lazy" decoding="async" class="rounded border bg-white flex-shrink-0" style="object-fit: contain" /><span>{station.name}</span></h3>
+    <p>{copy.descriptions[index]}</p>
+    <p><a class="btn btn-outline-primary" href={localizePath(`/stations/${station.slug}/`)}>{copy.listen} — {station.name}</a></p>
+    <a href={station.source}>{copy.official}</a>
+    {index===1 && <> · <a href="https://www.ertecho.gr/music-mixes/zeppelin-summer-mixes/">Zeppelin Summer Mixes</a></>}
+   </section>)}
+  </section>
+  <section class="my-4"><h2 class="h3">{copy.discoverTitle}</h2><p>{copy.discover}</p><ul><li><a href={localizePath('/genres/')}>{copy.genres}</a></li><li><a href={localizePath('/city/')}>{copy.city}</a></li><li><a href={localizePath('/live-tracks/')}>{copy.tracks}</a></li></ul></section>
+  <section class="my-4"><h2 class="h3">{copy.faqTitle}</h2>{copy.questions.map(([question,answer])=><section class="my-3"><h3 class="h5">{question}</h3><p>{answer}</p></section>)}</section>
+  <a href={localizePath(guidePath)}>{copy.related}</a>
+ </article>
+</Layout>
