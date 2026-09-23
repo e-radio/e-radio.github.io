@@ -99,7 +99,98 @@
     "1990s pop music": [
       "90s",
       "pop"
-    ]
+    ],
+    "public radio greek hellas greece laika": [
+      "public radio",
+      "greek",
+      "laika"
+    ],
+    "greek dance pop folk talk": [
+      "greek",
+      "dance",
+      "pop",
+      "folk",
+      "talk"
+    ],
+    "80s rock oldies pop disco classic rock easy listening": [
+      "80s",
+      "rock",
+      "oldies",
+      "pop",
+      "disco",
+      "classic rock",
+      "easy listening"
+    ],
+    "chill house lounge chillout ambient downtempo electronic soul progressive disco dance easy listening": [
+      "chillout",
+      "house",
+      "lounge",
+      "ambient",
+      "downtempo",
+      "electronic",
+      "soul",
+      "progressive",
+      "disco",
+      "dance",
+      "easy listening"
+    ],
+    "greek rockabilly bluegrass meditation disco swing": [
+      "greek",
+      "rockabilly",
+      "bluegrass",
+      "meditation",
+      "disco",
+      "swing"
+    ],
+    "indie techno new age chillout lounge downtempo": [
+      "indie",
+      "techno",
+      "new age",
+      "chillout",
+      "lounge",
+      "downtempo"
+    ],
+    "70s 80s": [
+      "70s",
+      "80s"
+    ],
+    "news - sports": [
+      "news",
+      "sports"
+    ],
+    "pop - rock - various": [
+      "pop",
+      "rock",
+      "variety"
+    ],
+    "various - rock - pop - electronica": [
+      "variety",
+      "rock",
+      "pop",
+      "electronica"
+    ],
+    "various - greek music - laika": [
+      "variety",
+      "greek music",
+      "laika"
+    ],
+    "hard rock / heavy metal": [
+      "hard rock",
+      "heavy metal"
+    ],
+    "rock - pop - 80's": [
+      "rock",
+      "pop",
+      "80s"
+    ],
+    "psytrance progressive trance goa fullon": [
+      "psytrance",
+      "progressive trance",
+      "goa trance",
+      "full-on"
+    ],
+    "bluesrock": "blues rock",
+    "top-40": "top 40"
   },
   "remove": [
     "",

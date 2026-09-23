@@ -189,7 +189,7 @@ COUNTRY=se python3 tools/fill-station-locations.py --no-coordinates --max 10 --s
 
 Review `reports/geography-se.json`, then repeat with `--write`. The limit counts stations checked, not successful updates. Failed pages can be retried on later runs.
 
-### 5. Fill missing bitrate and codec
+### 5. Fill missing bitrate, codec and genres
 
 Requires FFmpeg's `ffprobe` on your PATH. Preview first:
 
@@ -203,7 +203,7 @@ Review `reports/stream-audio-info-se.json`, then apply:
 COUNTRY=se python3 tools/fill-stream-audio-info.py --write
 ```
 
-This fills missing bitrate/codec values and preserves populated fields. Failed probes leave the values unchanged. Check playback manually; a successful audio probe does not guarantee browser playback.
+This fills missing bitrate/codec values and empty `"genres": []` lists using explicit stream genre tags. Existing populated fields are preserved. Failed probes or missing usable tags leave the values unchanged. Check playback manually; a successful audio probe does not guarantee browser playback.
 
 ### 6. Cache station icons and find missing artwork
 
@@ -376,7 +376,7 @@ The default service is Nominatim: read its [usage policy](https://operations.osm
 
 Test the geography rules with `python3 -m unittest discover -s tests -p 'test_station_geography.py'`.
 
-## Fill missing stream bitrate and codec
+## Fill missing stream bitrate, codec and genres
 
 Requires `ffprobe` (provided by FFmpeg). Run from the project root:
 
@@ -384,7 +384,30 @@ Requires `ffprobe` (provided by FFmpeg). Run from the project root:
 COUNTRY=hr python3 tools/fill-stream-audio-info.py --write
 ```
 
-Use `COUNTRY=gr` for Greece, or pass `--country hr`. Omit `--write` for a report-only scan. The script probes only stations missing bitrate or codec, preserves existing values, and leaves unidentifiable values unchanged. Croatia's results are saved in `reports/stream-audio-info-hr.json`. It aborts the data write if the dataset changes during probing.
+Use `COUNTRY=gr` for Greece, or pass `--country hr`. The explicit option takes precedence over `COUNTRY`; without either, Greece is selected. Omit `--write` for a report-only scan.
+
+The script checks stations with a missing/zero bitrate, missing or `UNKNOWN` codec, or an empty `"genres": []` list. It probes each distinct primary `stream_url` once per run and fills only missing fields; populated genres, bitrates and codecs are preserved.
+
+Genres come only from explicit `genre` or `icy-genre` tags in ffprobe's format/audio-stream metadata. Values are lowercased, whitespace is normalized, comma/semicolon/pipe-separated entries are split, and duplicates are removed. Placeholder values such as `unknown`, `unspecified`, `default genre`, `my genre` and `icecast` are ignored. Genre normalization also uses the shared aliases in `tools/config/genre-cleanup.json` and optional `countries/<code>.genre-cleanup.json` overrides, matching `clean-station-genres.py`. Known compound tags are split into specific genres: `Public Radio greek hellas greece laika` becomes `["public radio", "greek", "laika"]`; redundant country words are removed by that explicit rule. Multiword genres such as `classic rock`, `easy listening` and `public radio` stay intact. Unknown phrases remain unchanged for editorial review; add an alias rule rather than splitting every space. HTML entities are decoded before splitting delimiters.
+
+Station names and current song titles are not used to guess genres. Unreachable streams and streams without usable genre tags leave the genre list empty. Published tags may still need editorial cleanup.
+
+For Greece, preview and apply with:
+
+```sh
+python3 tools/fill-stream-audio-info.py --country gr
+python3 tools/fill-stream-audio-info.py --country gr --write
+```
+
+Reports are saved even in preview mode: `reports/stream-audio-info.json` for Greece and `reports/stream-audio-info-<code>.json` for other countries. They include probe results and proposed/applied field changes. The summary counts bitrate, codec and genre updates separately. The script aborts the data write if the dataset changes during probing.
+
+The Greece run on 2026-09-23 filled 304 empty genre lists, 9 missing bitrates and 1 codec; 187 genre lists remained empty. These are results of that run, not expected counts for future scans.
+
+Run the genre extraction tests with:
+
+```sh
+python3 -m unittest discover -s tests -p test_stream_audio_info.py
+```
 
 ## Fill missing state from station homepages
 

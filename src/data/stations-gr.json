@@ -34,7 +34,9 @@
     "stream_url": "https://stream.myip.gr/proxy/deejay?mp=/stream",
     "homepage": "https://www.deejayradio.gr/",
     "favicon": "/station-icons/alexandroupolis-dee-jay-94-8-alexandroupolis-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -55,7 +57,9 @@
     "stream_url": "https://rdst.win:48000/stream?type=.mp3",
     "homepage": "https://www.enaradio.gr/",
     "favicon": "/station-icons/90-5-kavala-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -348,7 +352,9 @@
     "stream_url": "https://s4.myradiostream.com/:14374/;",
     "homepage": "https://www.12godscafe.gr/",
     "favicon": "/station-icons/12-gods-cafe-pylos.webp",
-    "genres": [],
+    "genres": [
+      "alternative"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -464,7 +470,9 @@
     "stream_url": "https://i2.streams.ovh:2200/ssl/trelostwnfm?mp=/stream&1671747517218",
     "homepage": "https://trelostonfm.blogspot.com/",
     "favicon": "/station-icons/1-88-8-gargaliani-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 320,
     "codec": "MP3",
@@ -612,7 +620,9 @@
     "stream_url": "http://110.175.9.78:8001/8001",
     "homepage": "https://www.2mm.com.au/",
     "favicon": "/station-icons/2mm.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 102,
     "codec": "MP3",
@@ -633,7 +643,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-talaika",
     "homepage": "https://webradio.ert.gr/deftero-laika/",
     "favicon": "/station-icons/2o-laika.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -748,7 +760,9 @@
     "stream_url": "http://i3.streams.ovh:12022/stream",
     "homepage": "https://www.7meres.gr/",
     "favicon": "/station-icons/7-101-5-arta.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 256,
     "codec": "AAC+",
@@ -875,7 +889,9 @@
     "stream_url": "http://www.111.gr:8000/stream",
     "homepage": "https://www.radio1.gr/",
     "favicon": "/station-icons/88-fm-radio-1-rhodes.webp",
-    "genres": [],
+    "genres": [
+      "top40"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -1015,7 +1031,9 @@
     "stream_url": "http://sp3.streams.ovh:8089/stream",
     "homepage": "https://www.ioanninadeejay.gr/",
     "favicon": "/station-icons/89-6-ioannina-deejay-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -1039,7 +1057,9 @@
     "stream_url": "https://icecast.902.gr:8001/904",
     "homepage": "https://www.902.gr/",
     "favicon": "/station-icons/902-gr.webp",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -1135,7 +1155,9 @@
     "stream_url": "http://sc2.streamwithq.com:8092/;listen.pls",
     "homepage": "https://www.lamiafm1.gr/",
     "favicon": "/station-icons/96-2-fm1-lamia-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -1179,7 +1201,9 @@
     "stream_url": "http://proradio.gr:8004/radio981m",
     "homepage": "https://www.radio981.gr/",
     "favicon": "/station-icons/98-1-radio-1-chalkida-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": "greek",
     "bitrate": 64,
     "codec": "MP3",
@@ -1200,7 +1224,9 @@
     "stream_url": "http://cast4.my-control-panel.com:9003/stream",
     "homepage": "https://www.radio984.gr/",
     "favicon": "/station-icons/984-kriti-heraclion.webp",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "ancient greek",
     "bitrate": 160,
     "codec": "MP3",
@@ -1554,7 +1580,9 @@
     "stream_url": "https://streaming.radionomy.com/JamendoLounge",
     "homepage": "https://agrinioliveradio.blogspot.com/",
     "favicon": "/station-icons/agrinio-agrinio-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "lounge"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -1672,7 +1700,7 @@
     "stream_url": "https://ice2.onestreaming.com/akous80s",
     "homepage": "https://www.akous.gr/",
     "favicon": "/station-icons/akous-80s-athens.webp",
-    "genres": [],
+    "genres": ["80s"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -1756,7 +1784,7 @@
     "stream_url": "https://ice2.onestreaming.com/akousjazzin",
     "homepage": "https://www.akous.gr/",
     "favicon": "/station-icons/akous-jazz-in-athens.webp",
-    "genres": [],
+    "genres": ["jazz"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -1777,7 +1805,7 @@
     "stream_url": "https://ice2.onestreaming.com/akousmyclassic",
     "homepage": "https://www.akous.gr/",
     "favicon": "/station-icons/akous-my-classic-athens.webp",
-    "genres": [],
+    "genres": ["classical"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -1919,7 +1947,7 @@
     "stream_url": "https://stream.radiojar.com/h693vkmhe5uvv",
     "homepage": "https://www.alepou-radio.com/",
     "favicon": "/station-icons/alepou-radio.webp",
-    "genres": [],
+    "genres": ["pop"],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -2127,7 +2155,9 @@
     "stream_url": "https://antares.dribbcast.com/proxy/alpha1062?mp=/stream",
     "homepage": "https://www.alpha1062.gr/",
     "favicon": "/station-icons/alpha-news-106-2-heraclion.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -2148,7 +2178,9 @@
     "stream_url": "https://antares.dribbcast.com/proxy/alpha1062?mp=/stream",
     "homepage": "https://www.alpha1062.gr/",
     "favicon": "/station-icons/alpha-news-106-2.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -2195,7 +2227,9 @@
     "stream_url": "http://stream2.proradio.gr:8004/alpharadio",
     "homepage": "https://www.alpharadio.gr/",
     "favicon": "/station-icons/alpha-radio-88-6-kavala-kavala-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -2223,7 +2257,7 @@
       "talk"
     ],
     "language": "greek",
-    "bitrate": 0,
+    "bitrate": 320,
     "codec": "MP3",
     "clickcount": 2,
     "lastcheckok": 1,
@@ -2419,7 +2453,9 @@
     "stream_url": "https://sp3.streams.ovh/8026/stream",
     "homepage": "https://www.anoixifm.gr/",
     "favicon": "/station-icons/anoixi-100-7.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -2440,7 +2476,9 @@
     "stream_url": "https://netradio.live24.gr/ant1patra1053",
     "homepage": "https://antennapatras.gr/",
     "favicon": "/station-icons/ant1-patra.webp",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -2813,7 +2851,9 @@
     "stream_url": "https://ice.onestreaming.com/arion",
     "homepage": "https://www.arionradio.com/",
     "favicon": "/station-icons/arion-radio-athens.webp",
-    "genres": [],
+    "genres": [
+      "greek top 40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3282,7 +3322,9 @@
     "stream_url": "https://i5.streams.ovh:2200/ssl/web300?mp=/stream&1691786114861",
     "homepage": "https://www.athletic.gr/",
     "favicon": "/station-icons/athletic-104-2-heraclion.webp",
-    "genres": [],
+    "genres": [
+      "sport"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -3327,7 +3369,9 @@
     "stream_url": "https://radio.streamings.gr/proxy/atlantisfm?mp=/stream",
     "homepage": "https://atlantisradio.gr/index.html",
     "favicon": "/station-icons/atlantis-radio-greece-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": "english",
     "bitrate": 256,
     "codec": "MP3",
@@ -3418,7 +3462,9 @@
     "stream_url": "https://netradio.live24.gr/radiohotlips",
     "homepage": "https://avantifm.gr/",
     "favicon": "/station-icons/avanti-classic-larisa.webp",
-    "genres": [],
+    "genres": [
+      "80s"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3462,7 +3508,9 @@
     "stream_url": "http://solid24.streamupsolutions.com:8010/stream",
     "homepage": "https://www.barlegendradio.net/",
     "favicon": "/station-icons/bar-legend-radio-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "blues rock"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -3538,7 +3586,13 @@
     "stream_url": "http://88.99.171.20:8020/stream",
     "homepage": "https://www.barsradio.com/",
     "favicon": "/station-icons/bars-radio-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "dance",
+      "house",
+      "trance",
+      "rock",
+      "disco"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3768,7 +3822,9 @@
     "stream_url": "https://best.live24.gr/best1222",
     "homepage": "https://www.atticaradios.gr/best926/listenlive/",
     "favicon": "/station-icons/best-radio-92-6.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3812,7 +3868,9 @@
     "stream_url": "https://i2.streams.ovh:9470/stream",
     "homepage": "https://www.e-radio.gr/Best-947-Heraklion-i808/live",
     "favicon": "/station-icons/best-radio-94-7-fm.webp",
-    "genres": [],
+    "genres": [
+      "bluesrock"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -3861,7 +3919,9 @@
     "stream_url": "https://uk1.streamingpulse.com/ssl/b7artradio",
     "homepage": "https://www.beton7artradio.gr/",
     "favicon": "/station-icons/beton7-art-radio-athens.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3953,7 +4013,9 @@
     "stream_url": "http://radio.lancom.gr:8006/stream2",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-92-5.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3974,7 +4036,9 @@
     "stream_url": "http://radio.lancom.gr:8006/stream1",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-93-1.webp",
-    "genres": [],
+    "genres": [
+      "mainstream"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -3997,7 +4061,9 @@
     "stream_url": "https://radio.lancom.gr:9006/stream1?1706989300560",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-93-1-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "mainstream"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -4018,7 +4084,9 @@
     "stream_url": "http://radio.lancom.gr:8004/stream3?1547809557220",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-93-3-kozani.webp",
-    "genres": [],
+    "genres": [
+      "pop music"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -4041,7 +4109,9 @@
     "stream_url": "http://radio.lancom.gr:8006/stream3",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-93-3-kozani-48d768e9.webp",
-    "genres": [],
+    "genres": [
+      "pop music"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -4064,7 +4134,9 @@
     "stream_url": "https://radio.lancom.gr:9004/stream3?1706990199741",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-93-3-kozani-824fe4a0.webp",
-    "genres": [],
+    "genres": [
+      "pop music"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -4173,7 +4245,9 @@
     "stream_url": "http://go.radioin.audio:8488/;",
     "homepage": "https://blublu.gr/",
     "favicon": "/station-icons/blublu-radio.webp",
-    "genres": [],
+    "genres": [
+      "easy listening"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -4248,7 +4322,9 @@
     "stream_url": "https://sp1.19cloudsnetwork.gr/8008/stream",
     "homepage": "https://bluespaceradio.com/",
     "favicon": "/station-icons/blue-space-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "80s"
+    ],
     "language": "greek",
     "bitrate": 320,
     "codec": "MP3",
@@ -4271,7 +4347,7 @@
     "favicon": "/station-icons/blue-space-107-2-fm-athens-athens-greece.png",
     "genres": [
       "80s",
-      "italo-disco"
+      "italo disco"
     ],
     "language": "english",
     "bitrate": 320,
@@ -4502,7 +4578,10 @@
     "stream_url": "http://live.boreioshxos.gr:9126/",
     "homepage": "https://www.boreioshxos.gr/",
     "favicon": "/station-icons/boreios-hxos.webp",
-    "genres": [],
+    "genres": [
+      "boreioshxos",
+      "greek"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -4651,7 +4730,9 @@
     "stream_url": "https://s6.onweb.gr:8046/;",
     "homepage": "https://samostoday.gr/",
     "favicon": "/station-icons/cafe-102-4-samos.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 96,
     "codec": "MP3",
@@ -4750,7 +4831,9 @@
     "stream_url": "https://neos.win:59350/stream",
     "homepage": "https://capital107.gr/",
     "favicon": "/station-icons/capital-107-kavala.png",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -4773,7 +4856,9 @@
     "stream_url": "https://hotsoft.net.gr:9100/?1741851418662",
     "homepage": "https://www.capitalradio.gr/",
     "favicon": "/station-icons/capital-90-7.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -4794,7 +4879,9 @@
     "stream_url": "https://hotsoft.net.gr:9100/?1732451962720",
     "homepage": "https://www.capitalradio.gr/",
     "favicon": "/station-icons/capital-radio-90-7.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -5109,7 +5196,9 @@
     "stream_url": "https://hroma1058thess.live24.gr/hroma1058thess",
     "homepage": "https://hroma.gr/",
     "favicon": "/station-icons/chroma-105-8-thessaloniki.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -5154,7 +5243,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/cityfm/stream",
     "homepage": "https://www.facebook.com/cityfm100/",
     "favicon": "/station-icons/city-100-heraclion.png",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -5229,7 +5320,10 @@
     "stream_url": "https://radio.lancom.gr:9012/stream5?1700927157379",
     "homepage": "https://www.city1061.gr/",
     "favicon": "/station-icons/city-106-1.webp",
-    "genres": [],
+    "genres": [
+      "news",
+      "sports"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -5250,7 +5344,10 @@
     "stream_url": "https://radio.lancom.gr:9012/stream5",
     "homepage": "https://city1061.gr/",
     "favicon": "/station-icons/city-106-1-572e9934.webp",
-    "genres": [],
+    "genres": [
+      "news",
+      "sports"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -5355,7 +5452,7 @@
       "love songs"
     ],
     "language": "english",
-    "bitrate": 0,
+    "bitrate": 192,
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 0,
@@ -5805,7 +5902,9 @@
     "stream_url": "https://cast5.magicstreams.gr:8132/;;",
     "homepage": "https://www.cosmosradio.gr/",
     "favicon": "/station-icons/cosmos-radio.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -5851,7 +5950,9 @@
     "stream_url": "https://sc2.streamwithq.com:2000/stream/offifans",
     "homepage": "https://cretafans.com/",
     "favicon": "/station-icons/creta-fans-crete.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 256,
     "codec": "MP3",
@@ -5872,7 +5973,9 @@
     "stream_url": "https://sc2.streamwithq.com:2000/stream/offifans",
     "homepage": "https://cretafans.com/",
     "favicon": "/station-icons/creta-fans-radio.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -6006,7 +6109,9 @@
     "stream_url": "https://sh.onweb.gr:8876/stream",
     "homepage": "https://cultradio.gr/",
     "favicon": "/station-icons/cult-radio.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -6056,7 +6161,9 @@
     "stream_url": "https://s15.myradiostream.com/:13980/listen.mp3",
     "homepage": "https://962.gr/",
     "favicon": "/station-icons/d-code-96-2.png",
-    "genres": [],
+    "genres": [
+      "eclectic"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -6106,7 +6213,9 @@
     "stream_url": "https://s15.myradiostream.com/13980/listen.mp3",
     "homepage": "https://962.gr/",
     "favicon": "/station-icons/d-code-96-2-ef71f577.png",
-    "genres": [],
+    "genres": [
+      "eclectic"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -6331,7 +6440,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-talaika",
     "homepage": "https://www.ertecho.gr/radio/deytero-laika/",
     "favicon": "/station-icons/d-ftero-la-k-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -6352,7 +6463,9 @@
     "stream_url": "https://s10.streamingcloud.online:13686/stream",
     "homepage": "https://www.streamserver24.com/index.html",
     "favicon": "/station-icons/demostream-von-streamserver24-com.png",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -6611,7 +6724,9 @@
     "stream_url": "https://ec4.yesstreaming.net:2090/stream",
     "homepage": "https://deseoradio.com/",
     "favicon": "/station-icons/deseo-radio.webp",
-    "genres": [],
+    "genres": [
+      "house"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC",
@@ -6721,7 +6836,9 @@
     "stream_url": "https://aphrodite.freespirits.gr:8010/radio.mp3",
     "homepage": "https://dimradio.gr/",
     "favicon": "/station-icons/dim-radio-gr.png",
-    "genres": [],
+    "genres": [
+      "pop music"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -7035,7 +7152,10 @@
     "stream_url": "https://solid41.streamupsolutions.com/proxy/jhhzdwjo?mp=/stream",
     "homepage": "https://www.dreamwebradio.eu/",
     "favicon": "/station-icons/dream-88-1-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "70s",
+      "80s"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -7085,7 +7205,9 @@
     "stream_url": "https://neos.win:48420/stream",
     "homepage": "https://dreamfm.gr/",
     "favicon": "/station-icons/dream-fm-90-7.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -7182,7 +7304,9 @@
     "stream_url": "https://drs953.live24.gr/drs953",
     "homepage": "https://www.drs953.gr/",
     "favicon": "/station-icons/drs-95-3.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -7228,7 +7352,9 @@
     "stream_url": "https://drs953.live24.gr/drs953",
     "homepage": "https://www.drs953.gr/",
     "favicon": "/station-icons/drs-fm-95-3.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -7540,7 +7666,9 @@
     "stream_url": "https://sc.cast-control.eu:8054/stream",
     "homepage": "https://editradio.gr/",
     "favicon": "/station-icons/edit-gr.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -7635,7 +7763,12 @@
     "stream_url": "https://live.piratefm.net/electronica_vibes",
     "homepage": "https://piratefm.net/electronica-vibes-pirate-radio-gr/",
     "favicon": "/station-icons/electronica-vibes-pirate-radio-gr.jpg",
-    "genres": [],
+    "genres": [
+      "progressive house",
+      "melodic techno",
+      "deep progressive house",
+      "focus trance"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -7747,12 +7880,12 @@
     "slug": "ellada-sports",
     "stationuuid": "177697c8-ed39-4eea-b7cd-eca610e436fa",
     "name": "ELLADA SPORTS",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://tls-chrome.live24.gr/3297?http://stream.ellada943.gr:10198/radio.mp3",
     "homepage": "https://m.facebook.com/ellada943fm/",
     "favicon": "/station-icons/ellada-sports.png",
-    "genres": [],
+    "genres": ["sport","rock"],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -7843,7 +7976,10 @@
     "stream_url": "https://live.sugarweb.gr/903.aac",
     "homepage": "https://www.ellinikos.gr/",
     "favicon": "/station-icons/ellinikos-90-3.ico",
-    "genres": [],
+    "genres": [
+      "dance",
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 96,
     "codec": "AAC+",
@@ -7981,7 +8117,9 @@
     "stream_url": "http://s1.onweb.gr:8412/stream",
     "homepage": "https://www.energy883.gr/",
     "favicon": "/station-icons/energy-88-3.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -8055,7 +8193,14 @@
     "stream_url": "https://azuracast.streams.ovh/listen/energy/radio.mp3",
     "homepage": "https://energyradio.eu/",
     "favicon": "/station-icons/energy-radio-greece.png",
-    "genres": [],
+    "genres": [
+      "pop",
+      "rock",
+      "classic hits",
+      "70s",
+      "80s",
+      "90s"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -8078,7 +8223,9 @@
     "stream_url": "https://entasistream.tuc.gr:8000/main.mp3",
     "homepage": "https://entasiradio.tuc.gr/",
     "favicon": "/station-icons/entasi-radio-93-5.webp",
-    "genres": [],
+    "genres": [
+      "variety"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -8151,7 +8298,6 @@
     "homepage": "https://www.basket.gr/webradio/",
     "favicon": "/station-icons/eok-web-radio-athens.webp",
     "genres": [
-      "greek basketball league",
       "sports"
     ],
     "language": "greek",
@@ -8174,7 +8320,9 @@
     "stream_url": "https://ec4.yesstreaming.net:2135/stream",
     "homepage": "https://cosmopolitanradio.com/",
     "favicon": "/station-icons/epic-radio.png",
-    "genres": [],
+    "genres": [
+      "cosmopolitan music"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC",
@@ -8507,7 +8655,9 @@
     "stream_url": "https://tls-chrome.live24.gr/1510?http://stream2.proradio.gr:8004/erotokritos",
     "homepage": "https://www.erotokritos.gr/",
     "favicon": "/station-icons/erotokritos.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -8528,7 +8678,9 @@
     "stream_url": "http://stream2.proradio.gr:8004/erotokritos",
     "homepage": "https://www.easyradio.gr/erotokritos/",
     "favicon": "/station-icons/erotokritos-87-9-fm-crete-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -8667,7 +8819,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-kosmos",
     "homepage": "https://www.ertecho.gr/radio/kosmos/",
     "favicon": "/station-icons/ert-echo-kosmos-attica-athens.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -9048,7 +9202,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-tripoli",
     "homepage": "https://www.ertecho.gr/radio/tripoli/",
     "favicon": "/station-icons/ert-tripoli.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -9337,7 +9493,9 @@
     "stream_url": "https://icecast.europeanschoolradio.eu/live/esradio.mp3",
     "homepage": "https://europeanschoolradio.eu/",
     "favicon": "/station-icons/european-school-radio.png",
-    "genres": [],
+    "genres": [
+      "varied"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -9386,7 +9544,9 @@
     "stream_url": "http://hyades.shoutca.st:8570/;",
     "homepage": "https://www.90fm.gr/index.php",
     "favicon": "/station-icons/evripos-90fm.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -9437,7 +9597,7 @@
     "stream_url": "https://stream.zeno.fm/edgfmrfvvk8uv",
     "homepage": "https://zeno.fm/radio/fradiogr-deeplounge/",
     "favicon": "/station-icons/f-radio-gr-deep-lounge-piraeus.ico",
-    "genres": [],
+    "genres": ["lounge"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -9537,7 +9697,7 @@
     "stream_url": "https://stream.zeno.fm/ygh3m8m7n48uv",
     "homepage": "https://zeno.fm/radio/fancy-trance/",
     "favicon": "/station-icons/fancy-trance-piraeus.ico",
-    "genres": [],
+    "genres": ["trance"],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -9558,7 +9718,9 @@
     "stream_url": "https://sh.onweb.gr:7007/;",
     "homepage": "https://www.radiofanos.gr/",
     "favicon": "/station-icons/fanos-gr.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 96,
     "codec": "MP3",
@@ -9627,7 +9789,9 @@
     "stream_url": "https://fasmafm.radioca.st/stream",
     "homepage": "https://www.fasmaradio.gr/",
     "favicon": "/station-icons/fasma-fm-99-7-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -9789,7 +9953,9 @@
     "stream_url": "https://imagine2.radioca.st/;",
     "homepage": "https://fly104.gr/el/",
     "favicon": "/station-icons/fly-104-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -10060,7 +10226,9 @@
     "stream_url": "https://ice.greekstream.net/focusfm",
     "homepage": "https://focusfm.gr/",
     "favicon": "/station-icons/focus-fm.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -10081,7 +10249,9 @@
     "stream_url": "https://ice.greekstream.net/focusfm",
     "homepage": "https://focusfm.gr/",
     "favicon": "/station-icons/focus-fm-103-6.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -10303,7 +10473,9 @@
     "stream_url": "https://aphrodite.freespirits.gr:8000/radio.mp3",
     "homepage": "https://www.freespirits.gr/azuracast-radio-streaming",
     "favicon": "/station-icons/freespirits-services.webp",
-    "genres": [],
+    "genres": [
+      "pop music"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -10425,7 +10597,10 @@
     "stream_url": "https://c2.radioboss.fm:18157/stream",
     "homepage": "https://freshradio.eu/",
     "favicon": "/station-icons/freshradio-thessaloniki-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "hits",
+      "top 40"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "AAC",
@@ -10518,7 +10693,9 @@
     "stream_url": "https://sonic.serverps.gr/8018/stream",
     "homepage": "https://www.galaxiasfm.gr/",
     "favicon": "/station-icons/galaxias-fm-92-1-mhz.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -10539,7 +10716,9 @@
     "stream_url": "https://sh.onweb.gr/8818/stream",
     "homepage": "https://galaxy1061.gr/",
     "favicon": "/station-icons/galaxy-106-1-patra-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "hot ac"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -10586,7 +10765,9 @@
     "stream_url": "https://galaxy.live24.gr/galaxy9292",
     "homepage": "https://www.galaxy92.gr/",
     "favicon": "/station-icons/galaxy-92.ico",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -10982,7 +11163,9 @@
     "stream_url": "https://sc2.streamwithq.com:2000/stream/GavdosFm/",
     "homepage": "https://gavdos888.gr/",
     "favicon": "/station-icons/gavdos-88-8fm.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -11048,7 +11231,10 @@
     "stream_url": "https://play.radioking.io/ghost12radio",
     "homepage": "https://www.ghost12.gr/",
     "favicon": "/station-icons/ghost12-radio-thessaloniki.png",
-    "genres": [],
+    "genres": [
+      "hip-hop",
+      "rap"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -11114,7 +11300,9 @@
     "stream_url": "http://s2.e-resellers.gr:8076/stream",
     "homepage": "https://www.glenti892.gr/",
     "favicon": "/station-icons/glenti-892-agrinio.png",
-    "genres": ["folk"],
+    "genres": [
+      "folk"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -11181,7 +11369,9 @@
     "stream_url": "https://ice.greekstream.net/gnomi",
     "homepage": "https://www.gnominet.gr/",
     "favicon": "/station-icons/gnomi-93-7-fm-makedonia-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -11274,7 +11464,11 @@
     "stream_url": "https://cast2.radiohost.ovh/grecafm?mp=/stream",
     "homepage": "https://grecafm.gr/",
     "favicon": "/station-icons/greca-99-4-pyrgos.png",
-    "genres": ["pop", "folk", "top 40"],
+    "genres": [
+      "pop",
+      "folk",
+      "top 40"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -11295,7 +11489,11 @@
     "stream_url": "https://cast2.radiohost.ovh:2199/tunein/greca994.pls",
     "homepage": "https://grecafm.gr/",
     "favicon": "/station-icons/greca-99-4-placeholder.webp",
-    "genres": ["pop", "folk", "top 40"],
+    "genres": [
+      "pop",
+      "folk",
+      "top 40"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -11340,7 +11538,9 @@
     "stream_url": "https://radio.newageradio.gr:8040/autodj.flac",
     "homepage": "https://newageradio.gr/",
     "favicon": "/station-icons/greek-oldies.webp",
-    "genres": ["oldies"],
+    "genres": [
+      "oldies"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "OGG",
@@ -11388,7 +11588,9 @@
     "stream_url": "https://usa2.fastcast4u.com/proxy/greekota?mp=/1?ver=501737",
     "homepage": "https://goradio.gr/",
     "favicon": "/station-icons/greek-otaku-radio-2f217384.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -11487,7 +11689,9 @@
     "stream_url": "https://az1.azurafree.eu/listen/grooveradio/radio.mp3",
     "homepage": "https://www.grooveradio.rf.gd/",
     "favicon": "/station-icons/groove-club-placeholder.webp",
-    "genres": ["club"],
+    "genres": [
+      "club"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -11533,7 +11737,9 @@
     "stream_url": "https://cast.magicstreams.gr/ic/grooveradio/grooveradiolounge",
     "homepage": "https://www.grooveradio.rf.gd/",
     "favicon": "/station-icons/groove-radio-lounge-placeholder.webp",
-    "genres": ["lounge"],
+    "genres": [
+      "lounge"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -11601,7 +11807,9 @@
     "stream_url": "https://stream.zeno.fm/tz0kctmyuk8uv",
     "homepage": "https://www.happyradio.gr/",
     "favicon": "/station-icons/happy-radio-gr-placeholder.webp",
-    "genres": ["pop"],
+    "genres": [
+      "pop"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -11747,7 +11955,9 @@
     "stream_url": "https://netradio.live24.gr/bootleg",
     "homepage": "https://hitradio.website/",
     "favicon": "/station-icons/hit-eclectic-placeholder.webp",
-    "genres": ["eclectic"],
+    "genres": [
+      "eclectic"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -11823,7 +12033,8 @@
     "homepage": "https://hitradio.website/",
     "favicon": "/station-icons/hit-radio-greece.png",
     "genres": [
-      "top 40 hits"
+      "top 40",
+      "hits"
     ],
     "language": null,
     "bitrate": 128,
@@ -11876,7 +12087,9 @@
     "stream_url": "https://streaming.home891.gr/stream",
     "homepage": "https://www.home891.gr/",
     "favicon": "/station-icons/home-89-1.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -11993,7 +12206,9 @@
     "stream_url": "https://metrovolos882.live24.gr/metrovolos882",
     "homepage": "https://hroma.gr/",
     "favicon": "/station-icons/hroma-volos-88-2-thesalia.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -12014,7 +12229,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/hxofm/stream",
     "homepage": "https://www.hxonews.gr/",
     "favicon": "/station-icons/hxo-fm.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 64,
     "codec": "MP3",
@@ -12035,7 +12252,11 @@
     "stream_url": "https://play.ifeelradio.gr/stream/ifeelradio",
     "homepage": "https://ifeelradio.gr/",
     "favicon": "/station-icons/i-feel-radio.webp",
-    "genres": [],
+    "genres": [
+      "rock",
+      "pop",
+      "80s"
+    ],
     "language": "greek",
     "bitrate": 320,
     "codec": "AAC",
@@ -12230,7 +12451,9 @@
     "stream_url": "https://imagine897.radioca.st/stream",
     "homepage": "https://www.imagine897.gr/el/",
     "favicon": "/station-icons/imagine-89-7.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -12305,7 +12528,11 @@
     "stream_url": "http://molonotiradio.gr:8000/molonoti-radio-stream",
     "homepage": "https://molonotiradio.gr/",
     "favicon": "/station-icons/imera-fm-90-4.webp",
-    "genres": [],
+    "genres": [
+      "jazz",
+      "blues",
+      "easy listening"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -12422,7 +12649,9 @@
     "stream_url": "https://stream3.proradio.gr/listen/ionion/ionionfm?refresh=1708805871017",
     "homepage": "https://www.ionionfm.gr/",
     "favicon": "/station-icons/ionion-95-5-pirgos.jpg",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "AAC",
@@ -12471,8 +12700,8 @@
     "favicon": "/station-icons/island-fm-zakynthos.webp",
     "genres": [],
     "language": "english",
-    "bitrate": 0,
-    "codec": null,
+    "bitrate": 186,
+    "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 10,
@@ -12668,7 +12897,9 @@
     "stream_url": "https://stream.zeno.fm/hx6t4t15e8zuv",
     "homepage": "https://zeno.fm/radio/jazzcaferadio/",
     "favicon": "/station-icons/jazz-cafe-athens.webp",
-    "genres": ["jazz"],
+    "genres": [
+      "jazz"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -12689,7 +12920,9 @@
     "stream_url": "https://c30.radioboss.fm:8119/stream",
     "homepage": "https://dimosla.wixsite.com/jazzoneradio",
     "favicon": "/station-icons/jazz-tune-radio.jpg",
-    "genres": ["jazz"],
+    "genres": [
+      "jazz"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC",
@@ -12765,7 +12998,9 @@
     "stream_url": "https://ice.greekstream.net/focusfm_128",
     "homepage": "https://www.kalamariafm.gr/",
     "favicon": "/station-icons/kalamaria-fm-101-7-thessaloniki-greece-placeholder.webp",
-    "genres": ["hits"],
+    "genres": [
+      "hits"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -12786,7 +13021,11 @@
     "stream_url": "https://solid55.streamupsolutions.com/proxy/pelsssbw?mp=/;type=mp3",
     "homepage": "https://www.radiokalloni.gr/",
     "favicon": "/station-icons/kalloni-87-5-lesvos.png",
-    "genres": ["pop", "news", "talk"],
+    "genres": [
+      "pop",
+      "news",
+      "talk"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -12923,7 +13162,9 @@
     "stream_url": "https://azuracast.streams.gr/listen/kasetaradio/radio.mp3",
     "homepage": "https://www.kasetaradio.eu/",
     "favicon": "/station-icons/kaseta-radio.jpg",
-    "genres": ["folk"],
+    "genres": [
+      "folk"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -13020,7 +13261,9 @@
     "stream_url": "http://radio.katerinigas.gr:8000/;",
     "homepage": "https://www.katerinigas.gr/",
     "favicon": "/station-icons/katerini-gas-katerini.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 256,
     "codec": "MP3",
@@ -13094,7 +13337,8 @@
     "stream_url": "http://cast.streams.ovh:12097/;",
     "homepage": "https://kifissiaradio.blogspot.com/",
     "favicon": "/station-icons/kifissia-kifissia.jpg",
-    "genres": ["rock",
+    "genres": [
+      "rock",
       "disco",
       "jazz",
       "soul",
@@ -13147,7 +13391,11 @@
     "stream_url": "https://streams.enjoyfm.gr:48502/kiis.mp3",
     "homepage": "https://www.kiss922.gr/",
     "favicon": "/station-icons/kiis-extra-92-2-patra.png",
-    "genres": ["dance","pop","hits"],
+    "genres": [
+      "dance",
+      "pop",
+      "hits"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -13337,7 +13585,12 @@
     "stream_url": "https://kissfm.live24.gr/kissfmathens",
     "homepage": "https://www.kiss929.gr/",
     "favicon": "/station-icons/kiss-92-9-athens-aff145d7.jpg",
-    "genres": ["rock", "pop", "top 40", "adult contemporary"],
+    "genres": [
+      "rock",
+      "pop",
+      "top 40",
+      "adult contemporary"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -13358,7 +13611,9 @@
     "stream_url": "https://antares.dribbcast.com/proxy/kiss961?mp=/stream",
     "homepage": "https://www.kissradio.gr/",
     "favicon": "/station-icons/kiss-96-1-heraclion.jpg",
-    "genres": [],
+    "genres": [
+      "top40"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -13507,7 +13762,11 @@
     "stream_url": "http://168.119.74.185:9110/stream",
     "homepage": "https://thekiss.gr/",
     "favicon": "/station-icons/kiss-fm-91-1-ioannina-ioannina.webp",
-    "genres": [],
+    "genres": [
+      "80s",
+      "90s",
+      "adult contemporary"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -13556,7 +13815,9 @@
     "stream_url": "https://netradio.live24.gr/kiss-web-xmas",
     "homepage": "https://www.kiss929.gr/",
     "favicon": "/station-icons/kissmas-athens.ico",
-    "genres": ["christmas"],
+    "genres": [
+      "christmas"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC",
@@ -13801,7 +14062,11 @@
     "stream_url": "https://sh.onweb.gr/8856/;",
     "homepage": "https://kosmos100.gr/",
     "favicon": "/station-icons/kosmos-100-chalkida-ba96209c.gif",
-    "genres": ["pop","news","talk"],
+    "genres": [
+      "pop",
+      "news",
+      "talk"
+    ],
     "language": "greek",
     "bitrate": 64,
     "codec": "MP3",
@@ -13870,7 +14135,11 @@
     "stream_url": "https://stream.zeno.fm/hvjwojlkwotuv",
     "homepage": "https://koukou-radio.blogspot.com/",
     "favicon": "/station-icons/koukou-radio-placeholder.webp",
-    "genres": ["dance","greek","hits"],
+    "genres": [
+      "dance",
+      "greek",
+      "hits"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -13941,7 +14210,10 @@
     "stream_url": "https://dione.shoutca.st/tunein/kritikos.pls",
     "homepage": "https://www.kritikosfm.gr/",
     "favicon": "/station-icons/kritikos-88-7.jpg",
-    "genres": ["pop","folk"],
+    "genres": [
+      "pop",
+      "folk"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -13988,7 +14260,11 @@
     "stream_url": "https://live.radio936.gr/",
     "homepage": "https://radio936.gr/",
     "favicon": "/station-icons/kyparissia-93-6-kyparissia.png",
-    "genres": ["pop","news","greek"],
+    "genres": [
+      "pop",
+      "news",
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -14552,7 +14828,9 @@
     "stream_url": "https://streams.enjoyfm.gr:48502/life.mp3",
     "homepage": "https://entermessinia.gr/lifefm88/",
     "favicon": "/station-icons/life-fm-88-kalamata-peloponnes-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -15056,7 +15334,9 @@
     "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
     "homepage": "https://xmas.loveradio.gr/",
     "favicon": "/station-icons/love-xmas-athens.webp",
-    "genres": ["christmas"],
+    "genres": [
+      "christmas"
+    ],
     "language": null,
     "bitrate": 0,
     "codec": "MP3",
@@ -15405,7 +15685,9 @@
     "stream_url": "https://i6.streams.ovh:16012/stream",
     "homepage": "https://www.manstaradio.gr/",
     "favicon": "/station-icons/mansta-radio-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -15668,9 +15950,12 @@
     "state": "Crete",
     "city": "Heraklion",
     "stream_url": "https://eco.onestreaming.com/proxy/radiome/stream",
-    "homepage": "https://www.facebook.com/radiome88.4",
+    "homepage": "https://radiome.gr/",
     "favicon": "/station-icons/me-88-4-heraclion.jpg",
-    "genres": [],
+    "genres": [
+      "news",
+      "talk"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -16016,7 +16301,9 @@
     "stream_url": "https://stream.cloudrad.io/10203/9024",
     "homepage": "https://www.mercury-radio.net/",
     "favicon": "/station-icons/mercury-radio-69fd8450-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -16040,7 +16327,10 @@
     "stream_url": "https://i6.streams.ovh/sc/metalcity/stream",
     "homepage": "https://www.metalcity.gr/",
     "favicon": "/station-icons/metal-city-radio.ico",
-    "genres": [],
+    "genres": [
+      "hard rock",
+      "heavy metal"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -16116,10 +16406,10 @@
     "name": "Metalradio.gr",
     "state": null,
     "city": null,
-    "stream_url": "https://radioplayer.link/iframe/playlist.php?stream=https://cast2.asurahosting.com/proxy/devoqtec/stream&title=Metalradio.gr%20-%20by%20Hellena%20Mihailidou&name=Listen.pls",
+    "stream_url": "https://cast2.asurahosting.com/proxy/devoqtec/stream",
     "homepage": "https://metalradio.gr/",
     "favicon": "/station-icons/metalradio-gr.png",
-    "genres": [],
+    "genres": ["metal","tock"],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -16238,7 +16528,9 @@
     "stream_url": "https://srv.radiocaster.gr:9300/;",
     "homepage": "https://www.metromallradio.gr/",
     "favicon": "/station-icons/metro-mall-radio-athens.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -16287,7 +16579,9 @@
     "stream_url": "https://metromedia.live24.gr/metropolis955thess",
     "homepage": "https://www.metrosport.gr/",
     "favicon": "/station-icons/metropolis-macedonia.png",
-    "genres": [],
+    "genres": [
+      "sports"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -16308,7 +16602,9 @@
     "stream_url": "https://metromedia.live24.gr/metropolis955thess",
     "homepage": "https://www.metrosport.gr/",
     "favicon": "/station-icons/metropolis-95-5.svg",
-    "genres": [],
+    "genres": [
+      "sports"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -16427,7 +16723,9 @@
     "stream_url": "https://i4.streams.ovh/sc/kpaliotz/;stream.mp3?_=2",
     "homepage": "https://mikelradio.com/",
     "favicon": "/station-icons/mikel-radio-athens-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -16593,7 +16891,9 @@
     "stream_url": "https://mzkradio.ddns.net:8443/miuzeknonstop",
     "homepage": "https://miuzek.ddns.net/",
     "favicon": "/station-icons/miuzeknonstop-radio.webp",
-    "genres": [],
+    "genres": [
+      "eclectic"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -16660,7 +16960,9 @@
     "stream_url": "http://stream.myip.gr:9214/;listen.pls",
     "homepage": "https://mousikilampsi.gr/",
     "favicon": "/station-icons/moisiki-lampsi.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -16734,7 +17036,9 @@
     "stream_url": "http://198.7.59.28:10034/stream",
     "homepage": "https://moodradio.eu/",
     "favicon": "/station-icons/mood-radio.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -16831,7 +17135,9 @@
     "stream_url": "https://stream1.mousikokanali.gr/mc",
     "homepage": "https://mousikokanali.gr/",
     "favicon": "/station-icons/mousiko-kanali-105-1-heraclion.jpg",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -16927,7 +17233,9 @@
     "stream_url": "https://everestcast.streams.ovh:1940/stream",
     "homepage": "https://everestcast.streams.ovh:1940/stream",
     "favicon": "/station-icons/mousikotherapia-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek music"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -17154,7 +17462,7 @@
     "stream_url": "https://netradio.live24.gr/music892",
     "homepage": "https://www.music892.gr/",
     "favicon": "/station-icons/music-892-athens.webp",
-    "genres": [],
+    "genres": ["dance","r&b","pop","hip-hop"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -17170,12 +17478,12 @@
     "slug": "music-892",
     "stationuuid": "d498dff0-51a5-4d09-884c-3263bef6f763",
     "name": "MUSIC 892",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://netradio.live24.gr/music892",
     "homepage": "https://www.music892.gr/",
     "favicon": "/station-icons/music-892.webp",
-    "genres": [],
+    "genres": ["dance","r&b","pop","hip-hop"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -17240,7 +17548,9 @@
     "stream_url": "https://antares.dribbcast.com/proxy/music1058?mp=/stream",
     "homepage": "https://www.musicclub.gr/",
     "favicon": "/station-icons/music-club-105-8-heraclion-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "greek",
     "bitrate": 160,
     "codec": "MP3",
@@ -17261,7 +17571,9 @@
     "stream_url": "https://antares.dribbcast.com/proxy/music1058?mp=/stream",
     "homepage": "https://www.musicclub.gr/",
     "favicon": "/station-icons/music-club-105-8.jpg",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -17282,7 +17594,9 @@
     "stream_url": "https://antares.dribbcast.com/proxy/music1058?mp=/stream",
     "homepage": "https://www.musicclub.gr/",
     "favicon": "/station-icons/music-club-105-8-86bb93be-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -17329,7 +17643,10 @@
     "stream_url": "http://neos.win:9501/stream",
     "homepage": "https://www.musicliferadio.gr/",
     "favicon": "/station-icons/music-life-95-1-agrinio-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "top 40"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -17688,7 +18005,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/myradioice/stream",
     "homepage": "https://myradionet.gr/",
     "favicon": "/station-icons/my-radio-89-6-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -18041,7 +18360,9 @@
     "stream_url": "https://neos.win:37878/stream?type=.mp3?ver=325606",
     "homepage": "https://www.nostosradio.gr/",
     "favicon": "/station-icons/nostos-100-6-athens.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -18113,7 +18434,9 @@
     "stream_url": "https://i.streams.ovh:9331/stream",
     "homepage": "https://www.notosnews.gr/",
     "favicon": "/station-icons/notos-news-97-8-rhodes.jpg",
-    "genres": [],
+    "genres": [
+      "news radio"
+    ],
     "language": "greek",
     "bitrate": 96,
     "codec": "MP3",
@@ -18711,7 +19034,9 @@
     "stream_url": "https://streamer.stordia.net/listen/olympos/radio.mp3",
     "homepage": "https://olymposfm.gr/",
     "favicon": "/station-icons/olympos-101-5-katerini.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -18961,7 +19286,10 @@
     "stream_url": "https://paidaki975.radioca.st/;",
     "homepage": "https://www.paidaki975.gr/",
     "favicon": "/station-icons/paidaki-97-5-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "various",
+      "kids"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -18985,7 +19313,7 @@
     "stream_url": "https://jett.shoutca.st/tunein/paidaki975.pls",
     "homepage": "https://www.paidaki975.gr/",
     "favicon": "/station-icons/paidaki-97-5-thessaloniki-aa160835.webp",
-    "genres": [],
+    "genres": ["kids"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -19006,7 +19334,9 @@
     "stream_url": "https://paidaki975.radioca.st/stream",
     "homepage": "https://paidaki975.radioca.st/",
     "favicon": "/station-icons/paidaki-fm-thessaloniki-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -19083,7 +19413,9 @@
     "stream_url": "https://netradio.live24.gr/palmos1032",
     "homepage": "https://live24.gr/radio/generic.jsp?sid=976",
     "favicon": "/station-icons/palmos-103-2.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -19104,7 +19436,9 @@
     "stream_url": "https://tls-chrome.live24.gr/3858?http://37.157.242.101:24467/",
     "homepage": "https://palmos949kos.gr/",
     "favicon": "/station-icons/palmos-94-9-fm-kos.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -19149,7 +19483,9 @@
     "stream_url": "https://cast1.asurahosting.com/proxy/palmos965/stream",
     "homepage": "https://palmos965fm.gr/",
     "favicon": "/station-icons/palmos-96-5.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "AAC",
@@ -19170,7 +19506,9 @@
     "stream_url": "https://cast1.asurahosting.com/proxy/palmos965/stream",
     "homepage": "https://palmos965fm.gr/",
     "favicon": "/station-icons/palmos-96-5-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "AAC",
@@ -19216,7 +19554,9 @@
     "stream_url": "https://netradio.live24.gr/palmos983",
     "homepage": "https://el-gr.facebook.com/Palmosfm983/",
     "favicon": "/station-icons/palm-s-kefalloni-s-98-3-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "main"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -19310,7 +19650,11 @@
     "stream_url": "https://s6.onweb.gr:8010/;stream",
     "homepage": "https://www.palmosradio.gr/",
     "favicon": "/station-icons/palmos-radio-102-7-fm.webp",
-    "genres": [],
+    "genres": [
+      "greek",
+      "various",
+      "top40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -19457,7 +19801,9 @@
     "stream_url": "https://paranoisewebcast.radioca.st/stream",
     "homepage": "https://www.paranoiseradio.com/",
     "favicon": "/station-icons/paranoise-radio.webp",
-    "genres": [],
+    "genres": [
+      "paranoiseradio"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -19606,7 +19952,11 @@
     "stream_url": "http://94.130.242.5:8040/stream",
     "homepage": "https://www.partyvibe.com/",
     "favicon": "/station-icons/party-vibe-radio-dubstep.webp",
-    "genres": [],
+    "genres": [
+      "dubstep",
+      "electronic",
+      "rap"
+    ],
     "language": "english",
     "bitrate": 320,
     "codec": "MP3",
@@ -19871,7 +20221,11 @@
     "stream_url": "https://live.piratefm.net/top",
     "homepage": "https://piratefm.net/top-vibes/",
     "favicon": "/station-icons/pirate-radio-gr.webp",
-    "genres": [],
+    "genres": [
+      "top 40",
+      "pop",
+      "dance"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -20088,7 +20442,11 @@
     "stream_url": "https://streaming.playtrance.com/playtrance-main-low",
     "homepage": "https://www.playtrance.com/player/radio/",
     "favicon": "/station-icons/playtrance-radio-tv-main-channel-normal-quality.png",
-    "genres": [],
+    "genres": [
+      "electronic",
+      "trance",
+      "techno"
+    ],
     "language": null,
     "bitrate": 64,
     "codec": "AAC",
@@ -20453,7 +20811,9 @@
     "stream_url": "http://s3.onweb.gr:8436/;",
     "homepage": "https://www.praktoreiofm.gr/",
     "favicon": "/station-icons/praktorio-f-m-thessaloniki.ico",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 64,
     "codec": "MP3",
@@ -20741,7 +21101,6 @@
     "homepage": "https://www.psyndora.com/",
     "favicon": "/station-icons/psyndora-chillout-hellas.png",
     "genres": [
-      "chill",
       "chillout",
       "non-stop music",
       "psybient",
@@ -20801,7 +21160,11 @@
     "stream_url": "https://cast.magicstreams.gr/sc/psyndora/stream",
     "homepage": "https://www.psyndora.com/",
     "favicon": "/station-icons/psyndora-psytrance.png",
-    "genres": [],
+    "genres": [
+      "psytrance",
+      "progressive trance",
+      "goa"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -20873,7 +21236,7 @@
       "pop"
     ],
     "language": "greek",
-    "bitrate": 0,
+    "bitrate": 128,
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 1,
@@ -20918,7 +21281,9 @@
     "stream_url": "https://s4.myradiostream.com:14374/;",
     "homepage": "https://pyloslive.gr/",
     "favicon": "/station-icons/pylos-live-pylos.webp",
-    "genres": [],
+    "genres": [
+      "alternative"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -21084,7 +21449,9 @@
     "stream_url": "https://icecast.902.gr:8001/904",
     "homepage": "https://www.902.gr/",
     "favicon": "/station-icons/radio-90-4-thessaloniki.png",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -21155,7 +21522,9 @@
     "stream_url": "https://cast4.my-control-panel.com/proxy/anastas2/stream",
     "homepage": "https://www.radio984.gr/",
     "favicon": "/station-icons/radio-98-4.png",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "greek",
     "bitrate": 160,
     "codec": "MP3",
@@ -21176,7 +21545,9 @@
     "stream_url": "https://cast4.my-control-panel.com/proxy/anastas2/stream",
     "homepage": "https://www.radio984.gr/",
     "favicon": "/station-icons/radio-984.png",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -21218,7 +21589,9 @@
     "stream_url": "https://sh.onweb.gr:7072/;",
     "homepage": "https://www.radioamore.gr/",
     "favicon": "/station-icons/radio-amore-87-5-fm.gif",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -23916,7 +24289,10 @@
     "stream_url": "https://air.radioart.com/fNew_age.mp3",
     "homepage": "https://www.radioart.com/",
     "favicon": "/station-icons/radio-art-new-age-greece.png",
-    "genres": [],
+    "genres": [
+      "new age & relaxation",
+      "easy listening"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -25803,7 +26179,10 @@
     "stream_url": "https://air.radioart.com/fVocal_new_age.mp3",
     "homepage": "https://www.radioart.com/",
     "favicon": "/station-icons/radio-art-vocal-new-age-6e862b11.webp",
-    "genres": [],
+    "genres": [
+      "new age & relaxation",
+      "easy listening"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -25824,7 +26203,10 @@
     "stream_url": "https://air.radioart.com/fOpera.mp3",
     "homepage": "https://www.radioart.com/",
     "favicon": "/station-icons/radio-art-opera.ico",
-    "genres": [],
+    "genres": [
+      "new age & relaxation",
+      "easy listening"
+    ],
     "language": "english",
     "bitrate": 96,
     "codec": "MP3",
@@ -26010,7 +26392,9 @@
     "stream_url": "http://pstnet6.shoutcastnet.com:60160/stream",
     "homepage": "https://rd991.radiostream123.com/",
     "favicon": "/station-icons/radio-drama-99-1-dramas-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -26058,7 +26442,9 @@
     "stream_url": "https://shoutcast.k-planet.eu/9900/stream;",
     "homepage": "https://radioevia.gr/",
     "favicon": "/station-icons/radio-evia-104-1-fm.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26347,7 +26733,9 @@
     "stream_url": "https://azuracast.streams.ovh/listen/radiokyklos/radio.mp3",
     "homepage": "https://radiokyklos.gr/",
     "favicon": "/station-icons/radio-kyklos.png",
-    "genres": [],
+    "genres": [
+      "greek hip hop"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26370,7 +26758,9 @@
     "stream_url": "https://webinternetradios.eu:48830/",
     "homepage": "https://www.radiolady.gr/",
     "favicon": "/station-icons/radio-lady.jpg",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -26391,7 +26781,9 @@
     "stream_url": "https://i6.streams.ovh/sc/radiolampsi/stream",
     "homepage": "https://www.radiolampsi.gr/",
     "favicon": "/station-icons/radio-lampsi-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek dance pop folk talk"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26543,7 +26935,9 @@
     "stream_url": "https://cast4.magicstreams.gr:2200/ssl/rnamozwi?mp=/stream&1728716435412",
     "homepage": "https://www.messatida98fm.gr/",
     "favicon": "/station-icons/radio-messatida-98-fm.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26591,7 +26985,9 @@
     "stream_url": "https://s6.onweb.gr/8034/stream",
     "homepage": "https://www.radiomires.gr/",
     "favicon": "/station-icons/radio-mires-97-1-1ad467e4.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26612,7 +27008,9 @@
     "stream_url": "https://s6.onweb.gr/8034/stream",
     "homepage": "https://www.radiomires.gr/en",
     "favicon": "/station-icons/radio-mires-97-1-73bcaa80.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26685,7 +27083,9 @@
     "stream_url": "http://cast5.magicstreams.gr:8041/stream",
     "homepage": "https://radiomitilini.gr/",
     "favicon": "/station-icons/radio-mytilini.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -26764,7 +27164,9 @@
     "stream_url": "https://i.streams.ovh:2200/sc/radionow/stream",
     "homepage": "https://radionw.gr/",
     "favicon": "/station-icons/radio-nowhere.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26786,7 +27188,6 @@
     "homepage": "https://radioi.gr/",
     "favicon": "/station-icons/radio-oi-athens.png",
     "genres": [
-      "oi",
       "punk",
       "ska"
     ],
@@ -26882,7 +27283,9 @@
     "stream_url": "https://www.radioking.com/play/radio-pirate-live",
     "homepage": "https://radiopirate.com/",
     "favicon": "/station-icons/radio-pirate-live.webp",
-    "genres": [],
+    "genres": [
+      "culture","politic","sport","rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26902,8 +27305,10 @@
     "city": "Xanthi",
     "stream_url": "http://s6.onweb.gr:8058/",
     "homepage": "https://www.facebook.com/people/Radio-Play-Fm-915-Stereo-Xanthi/100047536370124/",
-    "favicon": "/station-icons/radio-play-91-5-fm-stereo-gr-xanthi-xanthi.png",
-    "genres": [],
+    "favicon": "/station-icons/radio-play-91-5-fm-stereo-gr-xanthi-xanthi.webp",
+    "genres": [
+      "public radio","greek","laika"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -26926,8 +27331,11 @@
     "city": "Xanthi",
     "stream_url": "https://s6.onweb.gr:7026/live",
     "homepage": "https://radioplay.gr/",
-    "favicon": "/station-icons/radio-play-91-5-fm-stereo-gr-xanthi.png",
-    "genres": [],
+    "favicon": "/station-icons/radio-play-91-5-fm-stereo-gr-xanthi.webp",
+    "genres": [
+      "public radio",
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26951,7 +27359,9 @@
     "stream_url": "https://sh.onweb.gr:7060/stream",
     "homepage": "https://www.radiopolis.gr/",
     "favicon": "/station-icons/r-dio-p-lis-99-4.png",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26975,7 +27385,9 @@
     "stream_url": "https://ams-pioneer02.dedicateware.com:1215/stream",
     "homepage": "https://radio.sfakiacrete.gr/",
     "favicon": "/station-icons/radio-sfakia-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -26998,7 +27410,9 @@
     "stream_url": "https://i8.streams.ovh/sc/radiostournareika/stream",
     "homepage": "https://www.radiostournareika.gr/",
     "favicon": "/station-icons/radio-stournareika-92-5-fm-stereo-trikala.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -27218,7 +27632,9 @@
     "stream_url": "https://streamyourdream.org:8050/radioactive",
     "homepage": "https://radioactivefm.gr/",
     "favicon": "/station-icons/radioactive-91-3-sifnos.webp",
-    "genres": [],
+    "genres": [
+      "eclectic"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -27318,7 +27734,9 @@
     "stream_url": "https://rdst.win:48383/stream",
     "homepage": "https://www.radioin.gr/",
     "favicon": "/station-icons/radioin-hellas.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -27418,7 +27836,9 @@
     "stream_url": "https://i4.streams.ovh/sc/srizakhs/streammp3",
     "homepage": "https://radiopoint.gr/",
     "favicon": "/station-icons/radiopoint.webp",
-    "genres": [],
+    "genres": [
+      "sophisticated"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -27562,7 +27982,7 @@
     "stream_url": "https://stream.radiojar.com/ztqh29c8ktuvv",
     "homepage": "https://89rainbow.gr/",
     "favicon": "/station-icons/rainbow-89-pop-thessaloniki.png",
-    "genres": [],
+    "genres": ["pop","adult contemporary"],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -27636,7 +28056,9 @@
     "stream_url": "https://netradio.live24.gr/realfm",
     "homepage": "https://www.real.gr/",
     "favicon": "/station-icons/real-fm-97-8-athens-greece.png",
-    "genres": [],
+    "genres": [
+      "talk radio"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -27657,7 +28079,9 @@
     "stream_url": "https://realfm.live24.gr/realfm",
     "homepage": "https://www.realfm.gr/",
     "favicon": "/station-icons/real-fm-97-8.webp",
-    "genres": [],
+    "genres": [
+      "talk radio"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -27815,7 +28239,11 @@
     "stream_url": "https://rebetiko.sealabs.net/radio",
     "homepage": "https://rebetiko.sealabs.net/",
     "favicon": "/station-icons/rebetiko-sealabs.jpg",
-    "genres": [],
+    "genres": [
+      "greek",
+      "folk",
+      "laika"
+    ],
     "language": "greek",
     "bitrate": 40,
     "codec": "MP3",
@@ -27836,7 +28264,11 @@
     "stream_url": "https://rebetiko.sealabs.net/radio",
     "homepage": "https://rebetiko.sealabs.net/",
     "favicon": "/station-icons/rebetiko-sealabs-e87fda89-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek",
+      "folk",
+      "laika"
+    ],
     "language": "greek",
     "bitrate": 40,
     "codec": "MP3",
@@ -28168,7 +28600,7 @@
     "stream_url": "https://stream.zeno.fm/uft90xvk4nhvv",
     "homepage": "https://zeno.fm/radio/rock-club-classic-rock/",
     "favicon": "/station-icons/rock-club-classic-rock.webp",
-    "genres": [],
+    "genres": ["rock","classic rock"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -28220,7 +28652,7 @@
     "stream_url": "https://noc.ezhellas.com:44450/live",
     "homepage": "https://rockhard.space/",
     "favicon": "/station-icons/rock-hard-greece.png",
-    "genres": [],
+    "genres": ["rock"],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -28463,7 +28895,9 @@
     "stream_url": "https://i.streams.ovh:9327/stream",
     "homepage": "https://rodosfm.gr/",
     "favicon": "/station-icons/rodos-fm-rhodes.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -28618,7 +29052,9 @@
     "stream_url": "https://stream.rtpress.gr:8000/live",
     "homepage": "https://rtpress.gr/",
     "favicon": "/station-icons/rtpress-gr-athens.png",
-    "genres": [],
+    "genres": [
+      "easy listening"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -28739,7 +29175,9 @@
     "stream_url": "https://ams-pioneer02.dedicateware.com:1060/;listen.pls",
     "homepage": "https://s-fresh.gr/",
     "favicon": "/station-icons/s-fresh-91-2.png",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -28763,7 +29201,9 @@
     "stream_url": "https://ams-pioneer02.dedicateware.com:1060/;",
     "homepage": "https://s-fresh.gr/",
     "favicon": "/station-icons/s-fresh-91-2-d5a65430.png",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -28787,7 +29227,9 @@
     "stream_url": "https://ams-pioneer02.dedicateware.com:1060/;",
     "homepage": "https://yesradio.gr/",
     "favicon": "/station-icons/s-fresh-91-2-67076765.png",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -28888,7 +29330,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/santorini1/stream",
     "homepage": "https://www.santorinifm.gr/",
     "favicon": "/station-icons/santorini-fm-106-4-santorini-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -28955,7 +29399,12 @@
     "stream_url": "https://cast.streams.ovh:2200/ssl/scorpio1?mp=/stream",
     "homepage": "https://scorpiostheathensradio.blogspot.com/",
     "favicon": "/station-icons/scorpios-athens-radio-athens.jpg",
-    "genres": [],
+    "genres": [
+      "greek",
+      "disco",
+      "swing",
+      "rock"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -29026,7 +29475,9 @@
     "stream_url": "https://i5.streams.ovh:14030/live",
     "homepage": "https://evdomimera.gr/",
     "favicon": "/station-icons/seven-news-94-4-kavala.ico",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -29490,7 +29941,9 @@
     "stream_url": "https://s9.viastreaming.net:9550/;",
     "homepage": "https://sinwebradio.com/",
     "favicon": "/station-icons/sin-radio.png",
-    "genres": [],
+    "genres": [
+      "house"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -30014,7 +30467,9 @@
     "stream_url": "https://cast.magicstreams.gr/sc/111radio/stream",
     "homepage": "https://www.111radio.gr/",
     "favicon": "/station-icons/smooth-jazz-111-athens.webp",
-    "genres": [],
+    "genres": [
+      "smooth jazz"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -30110,7 +30565,7 @@
     "favicon": "/station-icons/sok-fm-104-8.png",
     "genres": [],
     "language": null,
-    "bitrate": 0,
+    "bitrate": 65,
     "codec": "AAC",
     "clickcount": 1,
     "lastcheckok": 1,
@@ -30133,7 +30588,7 @@
       "greek pop"
     ],
     "language": "greek",
-    "bitrate": 0,
+    "bitrate": 65,
     "codec": "AAC",
     "clickcount": 2,
     "lastcheckok": 1,
@@ -30152,7 +30607,9 @@
     "stream_url": "https://radio.streamings.gr/proxy/sokolatafm?mp=/stream",
     "homepage": "https://www.sokolatafm.gr/",
     "favicon": "/station-icons/sokolata-102-4.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -30173,7 +30630,9 @@
     "stream_url": "https://cast4.magicstreams.gr:10053/stream",
     "homepage": "https://soulradio.gr/",
     "favicon": "/station-icons/soul-radio-gr-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -30271,7 +30730,9 @@
     "stream_url": "https://rdst.win:48198/live",
     "homepage": "https://www.splash.love/",
     "favicon": "/station-icons/splash-online-thessaloniki.png",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -30297,7 +30758,7 @@
       "sports news"
     ],
     "language": "greek",
-    "bitrate": 0,
+    "bitrate": 192,
     "codec": "MP3",
     "clickcount": 1,
     "lastcheckok": 1,
@@ -30514,7 +30975,9 @@
     "stream_url": "https://centova.gr-net.gr/proxy/radiostar955/stream",
     "homepage": "https://www.facebook.com/star955/",
     "favicon": "/station-icons/star-95-5-chalkidiki.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -30771,7 +31234,8 @@
       "indie",
       "ambient",
       "relaxation music",
-      "experimental electronic music"
+      "experimental",
+      "electronic"
     ],
     "language": null,
     "bitrate": 192,
@@ -30914,7 +31378,9 @@
     "stream_url": "http://eu4.fastcast4u.com:5248/;&type=mp3",
     "homepage": "http://www.stoneradio.gr/",
     "favicon": "/station-icons/stone-radio.png",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -31404,7 +31870,9 @@
     "stream_url": "https://aphrodite.freespirits.gr:8110/radio.mp3",
     "homepage": "https://stylidafm.gr/",
     "favicon": "/station-icons/stylida-94-1-stylida.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -31425,7 +31893,9 @@
     "stream_url": "https://s9.webradio-hosting.com/proxy/suburbiaparties/stream",
     "homepage": "https://radio.suburbiaparties.com/",
     "favicon": "/station-icons/suburbia-parties-athens-hardcore-radio.png",
-    "genres": [],
+    "genres": [
+      "breakbeat oldskool live mixes"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -31621,7 +32091,9 @@
     "stream_url": "https://s10.streamingcloud.online/stream/13578/Superhitradio",
     "homepage": "https://superhitradio.info/",
     "favicon": "/station-icons/superhitradio.ico",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -31760,7 +32232,7 @@
     "stream_url": "https://stream.zeno.fm/izyb6gtfozpuv",
     "homepage": "https://zeno.fm/radio/technobase-radio/",
     "favicon": "/station-icons/techno-base-103-1.webp",
-    "genres": [],
+    "genres": ["tech house"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -31899,7 +32371,9 @@
     "stream_url": "https://noc.ezhellas.com:30580/live",
     "homepage": "https://thessradio.net/chat",
     "favicon": "/station-icons/thessradio-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -31971,7 +32445,9 @@
     "stream_url": "http://eco.onestreaming.com:8010/",
     "homepage": "https://www.thrakifm.gr/",
     "favicon": "/station-icons/thrakifm-99-8.png",
-    "genres": [],
+    "genres": [
+      "classic hits"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -32093,7 +32569,9 @@
     "stream_url": "http://comet.shoutca.st:8430/live?1513679743968",
     "homepage": "https://www.topikap.gr/",
     "favicon": "/station-icons/to-pikap-thessaloniki.jpg",
-    "genres": [],
+    "genres": [
+      "freeform"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -32114,7 +32592,9 @@
     "stream_url": "http://comet.shoutca.st:8430/live?1513679743968",
     "homepage": "https://www.topikap.gr/",
     "favicon": "/station-icons/to-pikap-thessaloniki-b0eeda1f.jpg",
-    "genres": [],
+    "genres": [
+      "freeform"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -32135,7 +32615,9 @@
     "stream_url": "https://radiopikap.radioca.st/stream",
     "homepage": "https://www.topikap.gr/",
     "favicon": "/station-icons/to-pikap-radio.png",
-    "genres": [],
+    "genres": [
+      "freeform"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -32254,7 +32736,9 @@
     "stream_url": "https://netradio.live24.gr/topfm93patra",
     "homepage": "https://www.facebook.com/TopFmPatrasAt9300/",
     "favicon": "/station-icons/top-93-patra.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -32791,7 +33275,9 @@
     "stream_url": "https://cast6.my-control-panel.com/proxy/venus1051/stream",
     "homepage": "https://venusfm.gr/",
     "favicon": "/station-icons/venus-amaliada-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": "greek",
     "bitrate": 160,
     "codec": "MP3",
@@ -32864,7 +33350,9 @@
     "stream_url": "https://cast6.my-control-panel.com/proxy/venus1051/stream",
     "homepage": "https://venusfm.gr/",
     "favicon": "/station-icons/venus-fm-105-1-greece.webp",
-    "genres": [],
+    "genres": [
+      "top 40"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -32909,7 +33397,9 @@
     "stream_url": "http://s1.onweb.gr:8410/;",
     "homepage": "https://venusradio.gr/",
     "favicon": "/station-icons/venus-radio.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -33293,7 +33783,9 @@
     "stream_url": "http://sip.wildradio.gr:8037/stream",
     "homepage": "https://www.wildradio.gr/",
     "favicon": "/station-icons/wild-radio.jpg",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -33444,7 +33936,9 @@
     "stream_url": "https://solid1.streamupsolutions.com/proxy/zizthduh?mp=/=stream",
     "homepage": "https://www.xfm.gr/",
     "favicon": "/station-icons/xfm-gr.png",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -33492,7 +33986,7 @@
     "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
     "homepage": "https://xmas.loveradio.gr/",
     "favicon": "/station-icons/xmas-love-97-5-athens-greece.png",
-    "genres": [],
+    "genres": ["love songs","christmas music"],
     "language": "english",
     "bitrate": 0,
     "codec": "MP3",
@@ -33515,7 +34009,9 @@
     "stream_url": "https://hroma1058thess.live24.gr/hroma1058thess",
     "homepage": "https://hroma.gr/",
     "favicon": "/station-icons/xroma-105-8-thessaloniki-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -33786,7 +34282,9 @@
     "stream_url": "https://metromedia.live24.gr/zoohitsthess",
     "homepage": "https://zooradio.gr/",
     "favicon": "/station-icons/zoo-new-hits-thessaloniki.png",
-    "genres": [],
+    "genres": [
+      "hits"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -33807,7 +34305,9 @@
     "stream_url": "https://metromedia.live24.gr/zoornbthess",
     "homepage": "https://zooradio.gr/",
     "favicon": "/station-icons/zoo-rnb-thessaloniki.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -34246,7 +34746,9 @@
     "stream_url": "http://eco.onestreaming.com:8027/stream",
     "homepage": "https://www.facebook.com/105.8alexpolis/",
     "favicon": "/station-icons/105-8.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -34267,7 +34769,9 @@
     "stream_url": "http://eco.onestreaming.com:8027/stream",
     "homepage": "https://www.facebook.com/105.8alexpolis/",
     "favicon": "/station-icons/105-8-fm.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -34869,7 +35373,9 @@
     "stream_url": "http://streams.enjoyfm.gr:48500/aroma.mp3",
     "homepage": "https://live24.gr/radio/generic.jsp?sid=743",
     "favicon": "/station-icons/fm-88-2-aroma.webp",
-    "genres": [],
+    "genres": [
+      "entexno"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -35220,7 +35726,9 @@
     "stream_url": "https://onairmediagroup.live24.gr/glenti1011xanthi",
     "homepage": "https://glentifm.gr/",
     "favicon": "/station-icons/fm-101-1-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -35549,7 +36057,9 @@
     "stream_url": "https://server.el1.info:37060/stream",
     "homepage": "https://messiniaradio.gr/diavlosfm-992/",
     "favicon": "/station-icons/fm-99-2.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -35572,7 +36082,9 @@
     "stream_url": "https://netradio.live24.gr/diavlos-cna",
     "homepage": "https://www.diavlosradio.gr/",
     "favicon": "/station-icons/agios-nikolaos.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -36402,7 +36914,9 @@
     "stream_url": "https://entasistream.tuc.gr:8000/main.mp3",
     "homepage": "https://www.entasiradio.tuc.gr/",
     "favicon": "/station-icons/93-5-chania.png",
-    "genres": [],
+    "genres": [
+      "variety"
+    ],
     "language": "greek",
     "bitrate": 320,
     "codec": "MP3",
@@ -36547,7 +37061,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-talaika",
     "homepage": "https://radiostreaming.ert.gr/ert-talaika",
     "favicon": "/station-icons/athens-9f45dd09-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -36812,7 +37328,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-patra",
     "homepage": "https://webradio.ert.gr/patra/",
     "favicon": "/station-icons/92-5.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -37206,7 +37724,6 @@
     "favicon": "/station-icons/station-b0f134a9.webp",
     "genres": [
       "ert",
-      "i foni tis elladas",
       "public radio",
       "voice of greece"
     ],
@@ -37230,7 +37747,9 @@
     "stream_url": "http://stream.sy3dud.com:8000/stream/3/;",
     "homepage": "https://www.hlektra.gr/",
     "favicon": "/station-icons/98-8-korinthos.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -37328,7 +37847,9 @@
     "stream_url": "https://solid33.streamupsolutions.com/proxy/kiytkkjz/stream",
     "homepage": "https://hxwfmargolidas.blogspot.com/",
     "favicon": "/station-icons/98-1-argolida.ico",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -37402,7 +37923,9 @@
     "stream_url": "https://cloudwebradio.com/8158/stream",
     "homepage": "https://www.e-sarakatsanos.gr/",
     "favicon": "/station-icons/station-a8456b46.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -37499,7 +38022,9 @@
     "stream_url": "http://dione.shoutca.st:8548/;?1672008455757",
     "homepage": "https://www.themakritis.gr/",
     "favicon": "/station-icons/103-1-heraklion-crete.webp",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -38613,7 +39138,9 @@
     "stream_url": "https://derti.live24.gr/laikos876",
     "homepage": null,
     "favicon": "/station-icons/87-6-thessaloniki-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -38835,7 +39362,9 @@
     "stream_url": "http://168.119.74.185:9652/stream",
     "homepage": "https://www.lelevose.com/",
     "favicon": "/station-icons/101-3.webp",
-    "genres": [],
+    "genres": [
+      "folk"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -39047,7 +39576,9 @@
     "stream_url": "https://eu3.fastcast4u.com/proxy/nmarog00?mp=/1",
     "homepage": "https://www.minore961.gr/",
     "favicon": "/station-icons/inore-96-1-thessaloniki.jpg",
-    "genres": [],
+    "genres": [
+      "music"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -39456,7 +39987,9 @@
     "stream_url": "https://cast4.magicstreams.gr:2200/ssl/rnamozwi?mp=/stream&1668884587044",
     "homepage": "https://www.messatida98fm.gr/",
     "favicon": "/station-icons/98-patra.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -39680,7 +40213,9 @@
     "stream_url": "https://everestcast.streams.ovh:1940/stream",
     "homepage": "https://moysikotherapeia.blogspot.com/",
     "favicon": "/station-icons/athens-09fdaca2.png",
-    "genres": [],
+    "genres": [
+      "greek music"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -39773,7 +40308,9 @@
     "stream_url": "https://cast.radios24.eu:2200/radio/styrafm?mp=/stream",
     "homepage": "https://www.styrafm954.gr/",
     "favicon": "/station-icons/95-4-nea-styra.jpg",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -39989,7 +40526,9 @@
     "stream_url": "http://okshop.live24.gr/okshop",
     "homepage": "https://www.okmarkets.gr/",
     "favicon": "/station-icons/anytime-markets.jpg",
-    "genres": [],
+    "genres": [
+      "varied"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -40275,7 +40814,9 @@
     "stream_url": "http://stream.sy3dud.com:8000/stream",
     "homepage": "https://www.facebook.com/people/Palmos-982-fm/100063732985444/",
     "favicon": "/station-icons/98-2-korinthos.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -40423,7 +40964,9 @@
     "stream_url": "https://netradio.live24.gr/athinaradio",
     "homepage": "https://www.parapolitikaradio.gr/",
     "favicon": "/station-icons/fm-90-1-athens-greece.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -40672,7 +41215,9 @@
     "stream_url": "https://impradio.bytemasters.gr/8002/stream",
     "homepage": "https://www.peradio.com/",
     "favicon": "/station-icons/station-900dfa3e.webp",
-    "genres": [],
+    "genres": [
+      "religious"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -40741,7 +41286,9 @@
     "stream_url": "https://tls-chrome.live24.gr/831?http://stream.sy3dud.com:8000/stream/2/",
     "homepage": "https://facebook.com/%CE%A0%CE%AD%CE%BD%CE%B1-Fm-1031-795447000566014/",
     "favicon": "/station-icons/103-1-korinthos.png",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -40934,7 +41481,9 @@
     "stream_url": "https://sh.onweb.gr:7060/stream",
     "homepage": "https://www.radiopolis.gr/",
     "favicon": "/station-icons/99-4-larisa-6ee57039.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -41162,7 +41711,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-proto",
     "homepage": "https://radiostreaming.ert.gr/ert-proto",
     "favicon": "/station-icons/105-8-athens-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 256,
     "codec": "MP3",
@@ -41480,7 +42031,9 @@
     "stream_url": "https://play.streams.gr/sc/radiodiplopenies/stream",
     "homepage": "https://www.radiodiplopenies.gr/",
     "favicon": "/station-icons/mt.png",
-    "genres": [],
+    "genres": [
+      "greek dance pop folk talk"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -41501,7 +42054,9 @@
     "stream_url": "http://pstnet6.shoutcastnet.com:60160/stream",
     "homepage": "https://www.facebook.com/www.radiodrama.gr/",
     "favicon": "/station-icons/99-1-drama.png",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -41599,7 +42154,9 @@
     "stream_url": "https://eu7.fastcast4u.com/proxy/nmarog02?mp=/1",
     "homepage": "https://www.rthess.gr/",
     "favicon": "/station-icons/94-5-fm-thessaloniki.webp",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -41695,7 +42252,9 @@
     "stream_url": "https://eu1.fastcast4u.com/proxy/radiomartino?mp=/1",
     "homepage": "https://radiomartino.blogspot.com/",
     "favicon": "/station-icons/station-753aef0e-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "greek music"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -41775,7 +42334,7 @@
       "student radio"
     ],
     "language": "greek",
-    "bitrate": 0,
+    "bitrate": 128,
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 1,
@@ -41801,7 +42360,7 @@
       "student radio"
     ],
     "language": "greek",
-    "bitrate": 0,
+    "bitrate": 128,
     "codec": "MP3",
     "clickcount": 0,
     "lastcheckok": 1,
@@ -43007,7 +43566,9 @@
     "stream_url": "http://s3.onweb.gr:8016/stream",
     "homepage": "https://el-gr.facebook.com/stoxosfm/",
     "favicon": "/station-icons/99-thasos.png",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -43099,7 +43660,9 @@
     "stream_url": "http://cast3.radiohost.ovh:8243/stream",
     "homepage": "https://www.sfaira.gr/",
     "favicon": "/station-icons/90-7-volos.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -43827,7 +44390,9 @@
     "stream_url": "https://athina984.live24.gr/athina984",
     "homepage": "https://athina984.gr/",
     "favicon": "/station-icons/04-984-athens-greece.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -43872,7 +44437,9 @@
     "stream_url": "https://radio.libero.fm:10770/live?178383342258",
     "homepage": "https://libero.fm/",
     "favicon": "/station-icons/08-libero-107-4-fm-thessaloniki-notia-macedonia.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "greek",
     "bitrate": 64,
     "codec": "MP3",
@@ -44074,7 +44641,9 @@
     "stream_url": "https://radiostreaming.ert.gr/ert-958fm",
     "homepage": "https://www.ertecho.gr/radio/958fm/",
     "favicon": "/station-icons/22-95-8-culture-channel-thessaloniki-notia-macedonia.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": "ancient greek",
     "bitrate": 192,
     "codec": "MP3",
@@ -44160,7 +44729,9 @@
     "stream_url": "https://radio.aptaliko.gr/radio/8000/radio.mp3",
     "homepage": "https://live.aptaliko.gr/radio",
     "favicon": "/station-icons/29.webp",
-    "genres": [],
+    "genres": [
+      "traditional music"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44205,7 +44776,9 @@
     "stream_url": "https://sh.onweb.gr:8905/stream",
     "homepage": "https://905rock.gr/",
     "favicon": "/station-icons/905-rock-90-5-larisa.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -44228,7 +44801,9 @@
     "stream_url": "https://sh.onweb.gr:8905/stream",
     "homepage": "https://905rock.gr/",
     "favicon": "/station-icons/905rock-larisa.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -44276,7 +44851,11 @@
     "stream_url": "https://a9.asurahosting.com/listen/aegean_vibes/radio.mp3",
     "homepage": "https://aegeanvibes.online/",
     "favicon": "/station-icons/aegean-vibes-athens-greece.webp",
-    "genres": [],
+    "genres": [
+      "mediterranean lounge",
+      "chillout",
+      "ambient"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC",
@@ -44415,7 +44994,9 @@
     "stream_url": "https://ice2.onestreaming.com/arionlaikos",
     "homepage": "https://www.arionradio.com/arionlaikos/player",
     "favicon": "/station-icons/arion-laikos.webp",
-    "genres": [],
+    "genres": [
+      "varied"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44436,7 +45017,9 @@
     "stream_url": "https://ice.onestreaming.com/arion",
     "homepage": "https://www.arionradio.com/",
     "favicon": "/station-icons/arion-radio.webp",
-    "genres": [],
+    "genres": [
+      "greek top 40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44457,7 +45040,9 @@
     "stream_url": "https://link.onestreaming.com/arion",
     "homepage": "https://www.arionradio.com/",
     "favicon": "/station-icons/arion-radio.webp",
-    "genres": [],
+    "genres": [
+      "greek top 40"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44529,7 +45114,9 @@
     "stream_url": "https://avantifm.live24.gr/avantifm",
     "homepage": "https://avantifm.gr/",
     "favicon": "/station-icons/avanti-107-6-larisa.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44551,7 +45138,16 @@
     "stream_url": "https://radiospromo.com/listen/tracksaudio.com_-_old_school/radio.mp3",
     "homepage": "https://www.backtorave.com/",
     "favicon": "/station-icons/backtorave-com-old-school-techno-rave.webp",
-    "genres": [],
+    "genres": [
+      "rave 90s",
+      "drum and bass",
+      "hardcore",
+      "house",
+      "techno trance",
+      "deep house",
+      "electronic",
+      "dance"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44594,7 +45190,9 @@
     "stream_url": "https://ice.greekstream.net/diavlos93",
     "homepage": "https://www.ble.fm/",
     "favicon": "/station-icons/ble-93-drama.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 160,
     "codec": "MP3",
@@ -44664,7 +45262,9 @@
     "stream_url": "https://i4.streams.ovh:2200/ssl/captainr?mp=/stream",
     "homepage": "http://captain-radio.com/#",
     "favicon": "/station-icons/captain-radio-com.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44751,7 +45351,9 @@
     "stream_url": "https://netradio.live24.gr/radio1023crete?1600.mp3",
     "homepage": "https://cretaone.gr/",
     "favicon": "/station-icons/cretaone-fm-102-3-crete.webp",
-    "genres": [],
+    "genres": [
+      "news"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -44799,7 +45401,9 @@
     "stream_url": "https://s1.viastreaming.net:8525/stream.mp3",
     "homepage": "https://www.deepinradio.com/#",
     "favicon": "/station-icons/deepinradio-com-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "deep house"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44822,7 +45426,9 @@
     "stream_url": "https://sh.onweb.gr:9050/;",
     "homepage": "https://derti905.gr/",
     "favicon": "/station-icons/derti-web-radio-larisa.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -44842,12 +45448,12 @@
     "slug": "diesi-101-3",
     "stationuuid": "ad459f75-6490-4b24-8333-f965f4731fbc",
     "name": "Diesi 101.3",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://stream.rcs.revma.com/gkfwrhqxbfhvv",
     "homepage": "https://diesi.gr/",
     "favicon": "/station-icons/diesi-101-3.webp",
-    "genres": [],
+    "genres": ["pop","folk"],
     "language": null,
     "bitrate": 160,
     "codec": "AAC",
@@ -45122,7 +45728,12 @@
     "stream_url": "https://everestcast.streams.ovh/ejectradio",
     "homepage": "https://www.ejectradio.com/",
     "favicon": "/station-icons/ejectradio.webp",
-    "genres": [],
+    "genres": [
+      "various",
+      "rock",
+      "pop",
+      "electronica"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -45164,7 +45775,9 @@
     "stream_url": "https://radio.streamings.gr/proxy/radioellinadiko?mp=/stream",
     "homepage": "https://ellinadiko.eu/",
     "favicon": "/station-icons/ellinadiko.webp",
-    "genres": [],
+    "genres": [
+      "varied"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -45324,7 +45937,9 @@
     "stream_url": "https://play.streams.gr/ic/flashkritis/stream",
     "homepage": "https://www.flash958.gr/",
     "favicon": "/station-icons/flash-95-8-heraklion-crete.webp",
-    "genres": [],
+    "genres": [
+      "main stream"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -45538,7 +46153,9 @@
     "stream_url": "http://s4.onweb.gr:8444/;stream",
     "homepage": "https://mytuner-radio.com/radio/phustiki-radio-486860/",
     "favicon": "/station-icons/fystiki-95-8.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -45798,7 +46415,9 @@
     "stream_url": "https://s4.voscast.com:8899/stream",
     "homepage": "https://greekgoldclassicradio.com/",
     "favicon": "/station-icons/greek-gold-classic-radio.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46050,7 +46669,9 @@
     "stream_url": "https://mcr.streams.gr:10340/stream",
     "homepage": "https://kouklakia-radio.wixsite.com/kouklakia-radio",
     "favicon": "/station-icons/kouklakia-radio-attica-athens.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 256,
     "codec": "MP3",
@@ -46074,7 +46695,9 @@
     "stream_url": "https://cast5.magicstreams.gr/sc/laikofono/stream",
     "homepage": "https://laikofono.gr/",
     "favicon": "/station-icons/laikofono-gr.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -46095,7 +46718,9 @@
     "stream_url": "http://sp2.streams.ovh:8106/;stream",
     "homepage": "https://www.laikosradio.gr/",
     "favicon": "/station-icons/laikos-105-7.webp",
-    "genres": [],
+    "genres": [
+      "laika"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46115,7 +46740,9 @@
     "stream_url": "https://a6.asurahosting.com:7030/radio.mp3",
     "homepage": "https://www.deejay.gr/",
     "favicon": "/station-icons/larissa-deejay-95-7-larisa.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46165,7 +46792,9 @@
     "stream_url": "https://neos.win:59652/stream",
     "homepage": "http://www.lelevose.gr/radio.html",
     "favicon": "/station-icons/lelevose.webp",
-    "genres": [],
+    "genres": [
+      "folk"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -46186,7 +46815,9 @@
     "stream_url": "https://s2.e-resellers.gr/proxy/live978/stream",
     "homepage": "https://www.live978.gr/",
     "favicon": "/station-icons/livefm-97-8.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46254,7 +46885,9 @@
     "stream_url": "https://i6.streams.ovh:16012/stream",
     "homepage": "https://www.manstaradio.gr/",
     "favicon": "/station-icons/mansta-radio.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46384,7 +47017,9 @@
     "stream_url": "http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
     "homepage": "https://www.impt.gr/radiolive.html",
     "favicon": "/station-icons/monahiki-diakonia.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 24,
     "codec": "MP3",
@@ -46453,7 +47088,9 @@
     "stream_url": "http://37.139.5.45:8000/more",
     "homepage": "https://www.morefmgr.com/",
     "favicon": "/station-icons/more-fm-103-9-alexandroupoli-alexandroupolis.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC+",
@@ -46572,7 +47209,13 @@
     "stream_url": "http://radio.streamings.gr:8064/stream",
     "homepage": "https://nauagos.net/",
     "favicon": "/station-icons/nauagos-net.webp",
-    "genres": [],
+    "genres": [
+      "indie",
+      "techno",
+      "new age",
+      "chillout",
+      "lounge"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -46652,7 +47295,9 @@
     "stream_url": "https://sh.onweb.gr:7024/stream",
     "homepage": "https://party971.gr/",
     "favicon": "/station-icons/party-97-1-larisa.webp",
-    "genres": [],
+    "genres": [
+      "gr mainstream"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46677,7 +47322,9 @@
     "stream_url": "https://impradio2.bytemasters.gr/8002/stream",
     "homepage": "https://www.peradio.com/",
     "favicon": "/station-icons/peiraiki-ekklesia-91-2.webp",
-    "genres": [],
+    "genres": [
+      "religious"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -46875,7 +47522,9 @@
     "stream_url": "https://rdst.win:37845/stream",
     "homepage": "https://liveonlineradio.net/radio-78kai45",
     "favicon": "/station-icons/radio-78kai45.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -46941,7 +47590,9 @@
     "stream_url": "https://neos.win:59454/stream",
     "homepage": "https://www.radioepirus.gr/",
     "favicon": "/station-icons/radio-epirus-94-5.webp",
-    "genres": [],
+    "genres": [
+      "folk"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -46990,7 +47641,9 @@
     "stream_url": "https://eu10.fastcast4u.com:15360/;",
     "homepage": "https://radiogrey.online/",
     "favicon": "/station-icons/radio-grey-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47166,7 +47819,9 @@
     "stream_url": "https://stream13.shoutcastsolutions.com/proxy/bntailia?mp=/stream",
     "homepage": "https://www.radionyxtopoyli.com/",
     "favicon": "/station-icons/radio-nyxtopoyli.webp",
-    "genres": [],
+    "genres": [
+      "greek music"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -47190,7 +47845,9 @@
     "stream_url": "https://rpieria.radioca.st/;stream.mp3",
     "homepage": "https://radiopieria.com/live-radio/",
     "favicon": "/station-icons/radio-pieria-104-2-fm.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -47214,7 +47871,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/politia/stream",
     "homepage": "https://politiaradio.gr/",
     "favicon": "/station-icons/radio-politia.webp",
-    "genres": [],
+    "genres": [
+      "various"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47333,7 +47992,9 @@
     "stream_url": "https://netradio.live24.gr/rkykladwn",
     "homepage": "https://netradio.live24.gr/rkykladwn",
     "favicon": "/station-icons/radiofonia-cycladon-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47354,7 +48015,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/moreradio/stream",
     "homepage": "https://radiomore.gr/",
     "favicon": "/station-icons/radiomore-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "hot ac"
+    ],
     "language": "english",
     "bitrate": 128,
     "codec": "MP3",
@@ -47375,7 +48038,11 @@
     "stream_url": "https://rdst.win:48110/stream",
     "homepage": "https://www.radiopoll20watt.am/?m=1",
     "favicon": "/station-icons/radiopoll-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "various",
+      "greek music",
+      "laika"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -47396,7 +48063,12 @@
     "stream_url": "https://live.radiq.gr/listen/radiq/radio.mp3",
     "homepage": "https://www.radiq.gr/#",
     "favicon": "/station-icons/radiq-happy.webp",
-    "genres": [],
+    "genres": [
+      "rock",
+      "alternative",
+      "pop",
+      "happy"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -47419,7 +48091,9 @@
     "stream_url": "https://solid67.streamupsolutions.com/proxy/olrbkxdl?mp=//Stream",
     "homepage": "https://www.razordinoradio.gr/",
     "favicon": "/station-icons/razordino-radio.webp",
-    "genres": [],
+    "genres": [
+      "electronica"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47562,7 +48236,11 @@
     "stream_url": "https://fra-pioneer08.dedicateware.com:1370/",
     "homepage": "https://satradio.net/",
     "favicon": "/station-icons/satradio.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "rock",
+      "various"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -47586,7 +48264,11 @@
     "stream_url": "https://fra-pioneer08.dedicateware.com:1370/;",
     "homepage": "https://satradio.net/",
     "favicon": "/station-icons/satradio.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "rock",
+      "various"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -47655,7 +48337,7 @@
     "favicon": "/station-icons/simple-radio-attica-athens.webp",
     "genres": [
       "80s",
-      "90's",
+      "90s",
       "pop music"
     ],
     "language": "english uk",
@@ -47793,7 +48475,9 @@
     "stream_url": "https://admin.stream.rinse.fm/proxy/swu/stream",
     "homepage": "https://www.rinse.fm/channels/swu",
     "favicon": "/station-icons/swu-fm.webp",
-    "genres": [],
+    "genres": [
+      "electronic"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -47817,7 +48501,7 @@
     "stream_url": "https://technolocos.net/listen/technolocos/radio.mp3",
     "homepage": "https://technolocos.net/public/technolocos",
     "favicon": "/station-icons/technolocos-deep-web-radio-placeholder.webp",
-    "genres": [],
+    "genres": ["techno","deep"],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -47916,7 +48600,15 @@
     "stream_url": "https://radiospromo.com/listen/tracksaudio.com_-_80s_music/radio.mp3",
     "homepage": "https://www.tracksaudio.com/",
     "favicon": "/station-icons/tracksaudio-com-80s-music.webp",
-    "genres": [],
+    "genres": [
+      "80s",
+      "rock",
+      "oldies",
+      "pop",
+      "disco",
+      "classic rock",
+      "easy listening"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47939,7 +48631,16 @@
     "stream_url": "https://radiospromo.com/listen/tracksaudio.com_-_chill_house_music/radio.mp3",
     "homepage": "https://www.tracksaudio.com/",
     "favicon": "/station-icons/tracksaudio-com-chill-house-music.webp",
-    "genres": [],
+    "genres": [
+      "house",
+      "lounge",
+      "chillout",
+      "ambient",
+      "electronic",
+      "soul",
+      "easy listening",
+      "disco"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47961,7 +48662,9 @@
     "stream_url": "https://athensupradio.evostream.gr/listen/up_radio_-_athens/radio.mp3",
     "homepage": "https://www.upmusic.gr/",
     "favicon": "/station-icons/up-radio.webp",
-    "genres": [],
+    "genres": [
+      "electronic"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "AAC",
@@ -48183,7 +48886,9 @@
     "stream_url": "https://stream.rcs.revma.com/5n5k2wm6xxcwv",
     "homepage": "https://lalala.gr/",
     "favicon": "/station-icons/z-rock-chalkida.webp",
-    "genres": [],
+    "genres": [
+      "classic rock"
+    ],
     "language": null,
     "bitrate": 127,
     "codec": "AAC",
@@ -48321,7 +49026,9 @@
     "stream_url": "https://eu1.fastcast4u.com/proxy/diktyofm?mp=/1&1669757862949&1769842426192",
     "homepage": "https://diktyofm.gr/",
     "favicon": "/station-icons/fm-91-5-chania-greece.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -48443,7 +49150,9 @@
     "stream_url": "https://rasp35.ddnsfree.com:3535/stream",
     "homepage": "https://rasp35.ddnsfree.com:3535/",
     "favicon": "/station-icons/station-819f2cad-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "έντεχνα"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -48509,7 +49218,9 @@
     "stream_url": "https://freakout.stream.laut.fm/freakout",
     "homepage": "https://www.facebook.com/klikfmrodos?locale=el_GR",
     "favicon": "/station-icons/106-2-rhodes.webp",
-    "genres": [],
+    "genres": [
+      "jazz"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -49088,7 +49799,9 @@
     "stream_url": "https://i4.streams.ovh/sc/difono/stream",
     "homepage": "https://radio-difono.gr/#!/page_SPLASH",
     "favicon": "/station-icons/station-0fcc408a.webp",
-    "genres": [],
+    "genres": [
+      "greek"
+    ],
     "language": "greek",
     "bitrate": 320,
     "codec": "MP3",
@@ -49275,7 +49988,9 @@
     "stream_url": "https://eco.onestreaming.com/proxy/mesologgi/stream",
     "homepage": "https://mesradio92.gr/",
     "favicon": "/station-icons/station-0230a16a.webp",
-    "genres": [],
+    "genres": [
+      "misc"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
