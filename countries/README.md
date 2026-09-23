@@ -294,7 +294,9 @@ COUNTRY=nl python3 tools/clean-station-genres.py --write
 
 Shared rules live in `tools/config/genre-cleanup.json`. Add optional country-specific `aliases` and `remove` lists in `countries/<code>.genre-cleanup.json`; an alias can map to one genre or an array of genres. Use the Netherlands file as an example. Preview again after changing rules.
 
-The write command updates only genre lists and adds redirects for removed genre pages (including their pagination), preserving existing redirects. One-to-one aliases redirect to the canonical genre; removed or split tags redirect to `/genres/`. Reports include changes, remaining tag counts, and tags needing review. Applied reports use `reports/genre-cleanup-<code>.json`; previews have a separate `-preview` suffix. Re-run this step after station imports, then build the country site.
+The write command enforces the approved vocabulary in `tools/config/station-taxonomy.json`. Music styles stay in `genres`; programme formats, languages, eras and listening moods move to `formats`. Unrecognized tags move to `genre_review`, which is not displayed publicly. Known noise is removed, with the original tags and decisions preserved in the report. Existing station fields outside these category lists are unchanged.
+
+Retired genre pages receive redirects, including their pagination. One-to-one music aliases redirect to the canonical genre, single formats to `/formats/<format>/`, and removed or split tags to `/genres/`. Formats remain browsable at `/formats/` and on station pages. Applied reports use `reports/genre-cleanup-<code>.json`; previews have a separate `-preview` suffix. Each report includes a per-tag audit with affected station UUIDs, genres, formats, removed tags and review tags.
 
 ### 8. Review and validate the finished cleanup
 
@@ -388,7 +390,7 @@ Use `COUNTRY=gr` for Greece, or pass `--country hr`. The explicit option takes p
 
 The script checks stations with a missing/zero bitrate, missing or `UNKNOWN` codec, or an empty `"genres": []` list. It probes each distinct primary `stream_url` once per run and fills only missing fields; populated genres, bitrates and codecs are preserved.
 
-Genres come only from explicit `genre` or `icy-genre` tags in ffprobe's format/audio-stream metadata. Values are lowercased, whitespace is normalized, comma/semicolon/pipe-separated entries are split, and duplicates are removed. Placeholder values such as `unknown`, `unspecified`, `default genre`, `my genre` and `icecast` are ignored. Genre normalization also uses the shared aliases in `tools/config/genre-cleanup.json` and optional `countries/<code>.genre-cleanup.json` overrides, matching `clean-station-genres.py`. Known compound tags are split into specific genres: `Public Radio greek hellas greece laika` becomes `["public radio", "greek", "laika"]`; redundant country words are removed by that explicit rule. Multiword genres such as `classic rock`, `easy listening` and `public radio` stay intact. Unknown phrases remain unchanged for editorial review; add an alias rule rather than splitting every space. HTML entities are decoded before splitting delimiters.
+Genres come only from explicit `genre` or `icy-genre` tags in ffprobe's format/audio-stream metadata. Values are lowercased, whitespace is normalized, comma/semicolon/pipe-separated entries are split, and duplicates are removed. Placeholder values such as `unknown`, `unspecified`, `default genre`, `my genre` and `icecast` are ignored. Genre normalization also uses the shared aliases in `tools/config/genre-cleanup.json` and optional `countries/<code>.genre-cleanup.json` overrides, matching `clean-station-genres.py`. Known compound tags are split into specific genres: `Public Radio greek hellas greece laika` becomes `genres: ["laika"]` and `formats: ["public radio", "greek-language music"]`; redundant country words are removed by that explicit rule. Multiword genres such as `classic rock`, `easy listening` and `public radio` stay intact. Unknown phrases are kept in `genre_review` and excluded from public genres; add an approved alias rather than splitting every space. HTML entities are decoded before splitting delimiters.
 
 Station names and current song titles are not used to guess genres. Unreachable streams and streams without usable genre tags leave the genre list empty. Published tags may still need editorial cleanup.
 
@@ -577,3 +579,37 @@ python3 tools/check-localized-site.py dist
 Deploy with the repository variable `COUNTRY=nl`. Update `src/i18n/nl.json` when
 adding interface text; translations apply to display labels rather than changing
 stored station data or URLs.
+
+
+### Polish genre cleanup
+
+`countries/pl.genre-cleanup.json` adds reviewed Polish aliases to the shared genre rules. Compound tags such as `euro & italo disco italo disco new generation spacesynth pop 80's disco fox` become separate entries: `euro disco`, `italo disco`, `italo disco new generation`, `spacesynth`, `pop`, `80s`, and `disco fox`.
+
+The cleaner splits comma, semicolon and pipe lists, resolves aliases and decade spellings, and removes duplicates. Spaces, hyphens, ampersands and slashes are not split blindly because they can belong to a genre. Add an explicit alias for an ambiguous compound; unknown phrases move to `genre_review`. The stream audio-info tool uses these same country-specific rules.
+
+```sh
+python3 tools/clean-station-genres.py --country pl
+python3 tools/clean-station-genres.py --country pl --write
+```
+
+Review `reports/genre-cleanup-pl-preview.json` before applying. The write run updates station genres and adds redirects for retired genre pages, saving its report to `reports/genre-cleanup-pl.json`.
+
+
+### Controlled vocabulary across all countries
+
+Preview every configured station dataset, inspect the reports, then apply:
+
+```sh
+python3 tools/clean-station-genres.py --all
+python3 tools/clean-station-genres.py --all --write
+```
+
+The initial all-country migration audit is preserved in `reports/station-taxonomy-migration.json`. Country reports record each original tag, its classification and affected station. `genre_review` preserves uncertain tags on station records so a later rule can classify them; an empty `genres` list is valid and does not imply a playback problem.
+
+Maintain approved music styles in `genres` and non-genre listening categories in `formats` inside `tools/config/station-taxonomy.json`. Shared spelling and compound aliases come from `tools/config/genre-cleanup.json`; taxonomy aliases override those, and `countries/<code>.genre-cleanup.json` provides country overrides. Add explicit `remove` entries only for known noise. Unknown values never become approved automatically. Avoid assigning a genre merely because a station name or presenter contains a music word.
+
+Radio Browser imports classify new stations before saving them and include decisions in the import report's `genreAudit`. Existing curated station categories remain intact. Stream probing classifies discovered genre tags before filling missing genres and merges approved formats and review evidence. Neither tool can put an unapproved tag into `genres`. Python and JavaScript use the same policy; a parity test compares their results across all dataset and policy tags.
+
+```sh
+python3 -m unittest discover -s tests -p test_station_taxonomy.py
+```

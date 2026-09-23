@@ -26,6 +26,9 @@ def genre_rules(country=None):
 
 
 DEFAULT_GENRE_RULES = genre_rules()
+_taxonomy_spec = importlib.util.spec_from_file_location('station_taxonomy', ROOT/'tools/lib/station-taxonomy.py')
+_taxonomy = importlib.util.module_from_spec(_taxonomy_spec)
+_taxonomy_spec.loader.exec_module(_taxonomy)
 
 
 def missing_codec(value):
@@ -48,7 +51,7 @@ def stream_genres(payload, audio, rules=None):
     return _cleanup.clean_genres(genres, aliases, remove)
 
 
-def probe(url, rules=None):
+def probe(url, rules=None, country='gr'):
     result = {'url': url}
     try:
         process = subprocess.run(['ffprobe', '-v', 'error', '-rw_timeout', '8000000',
@@ -61,9 +64,13 @@ def probe(url, rules=None):
             result['error'] = process.stderr.strip() or 'No audio stream identified'
             return result
         result['ffprobe_audio'] = audio
+        result['ffprobe_format_tags'] = payload.get('format', {}).get('tags', {})
         genres = stream_genres(payload, audio, rules)
         if genres:
-            result['genres'] = genres
+            result['normalized_tags'] = genres
+            categories = _taxonomy.classify(genres, country)
+            for key in ('genres', 'formats', 'review', 'removed'):
+                if categories[key]: result[key] = categories[key]
         codec = audio.get('codec_name')
         if codec:
             result['codec'] = {'mp3': 'MP3', 'aac': 'AAC+' if 'HE-AAC' in audio.get('profile', '') else 'AAC',
@@ -93,7 +100,7 @@ def main():
     urls = sorted({s['stream_url'] for s in targets if s.get('stream_url')})
     results = {}
     with ThreadPoolExecutor(max_workers=16) as pool:
-        futures = [pool.submit(probe, url, rules) for url in urls]
+        futures = [pool.submit(probe, url, rules, country) for url in urls]
         for future in as_completed(futures):
             result = future.result()
             results[result['url']] = result
@@ -109,6 +116,10 @@ def main():
             fields['codec'] = result['codec']
         if station.get('genres') == [] and result.get('genres'):
             fields['genres'] = result['genres']
+        for key, source in [('formats', 'formats'), ('genre_review', 'review')]:
+            if result.get(source):
+                combined = list(dict.fromkeys(station.get(key, []) + result[source]))
+                if combined != station.get(key, []): fields[key] = combined
         if fields:
             changes[station['slug']] = fields
     report = {'country': country, 'checked_urls': len(urls), 'target_entries': len(targets), 'changes': changes,
@@ -131,12 +142,8 @@ def main():
             station, end = decoder.raw_decode(original, offset)
             fields = changes.get(station['slug'], {})
             if fields:
-                block = original[offset:end]
-                for key, value in fields.items():
-                    block, count = re.subn(r'("' + key + r'"\s*:\s*)(\[\s*\]|null|"[^"\\]*"|\d+)',
-                                          lambda m: m.group(1) + json.dumps(value), block, count=1)
-                    if count != 1:
-                        raise RuntimeError(f'Missing field {key} in {station["slug"]}')
+                station.update(fields)
+                block = json.dumps(station, ensure_ascii=False, indent=2).replace('\n', '\n  ')
                 edits.append((offset, end, block))
             offset = end
         updated = original

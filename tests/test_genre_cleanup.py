@@ -43,3 +43,20 @@ class GenreTest(unittest.TestCase):
     def test_slug_matches_site_conventions(self):
         self.assertEqual(m.slug("80's"),'80s')
         self.assertEqual(m.slug('R&B'),'r-b')
+
+    def test_polish_compounds_preserve_genre_boundaries(self):
+        import json
+        root = Path(__file__).parents[1]
+        shared = json.loads((root/'tools/config/genre-cleanup.json').read_text())
+        polish = json.loads((root/'countries/pl.genre-cleanup.json').read_text())
+        aliases = {**shared['aliases'], **polish['aliases']}
+        remove = set(shared['remove'] + polish['remove'])
+        result = m.clean_genres(["euro & italo disco italo disco new generation spacesynth pop 80's disco fox", 'italodisco'], aliases, remove)
+        self.assertEqual(result, ['euro disco','italo disco','italo disco new generation','spacesynth','pop','80s','disco fox'])
+        self.assertEqual(m.clean_genres(result, aliases, remove), result)
+        self.assertEqual(m.clean_genres(['classic rock; alternative rock indie','pop/top40'], aliases, remove), ['classic rock','alternative rock','indie','pop','top 40'])
+
+    def test_delimiters_recursive_aliases_and_unknown_multiword_genres(self):
+        aliases = {'mix': ['pop music', "80's", 'noise'], 'pop music': 'pop'}
+        self.assertEqual(m.clean_genres(['mix; jazz | pop, niche folk style', 'r&b', 'post-rock', 'jazz/funk'], aliases, {'noise'}), ['pop','80s','jazz','niche folk style','r&b','post-rock','jazz/funk'])
+        self.assertEqual(m.clean_genres(['loop'], {'loop': ['loop']}, set()), ['loop'])

@@ -1,3 +1,4 @@
+import { classifyTags } from './lib/station-taxonomy.mjs';
 import { site, stationsPath, countryCode } from "../countries/site.mjs";
 import { ensureUniqueStationSlugs, assertUniqueStationSlugs } from "./lib/station-slugs.mjs";
 import { readFile, rename, writeFile, mkdir } from "node:fs/promises";
@@ -131,6 +132,7 @@ function mergeStations(localStations, apiStations, exclusions = []) {
   const localByUrl = new Map();
   const matchedLocalIndexes = new Set();
   const automaticUpdates = [];
+  const genreAudit = [];
   const automaticallyAddedStations = [];
   const rejectedDuplicateStreams = [];
   const recognizedMergedStations = [];
@@ -186,8 +188,13 @@ function mergeStations(localStations, apiStations, exclusions = []) {
       }
 
       const newIndex = merged.length;
-      merged.push({ ...apiStation });
-      automaticallyAddedStations.push(apiStation);
+      const categories = classifyTags([...(apiStation.genres || []), ...(apiStation.formats || [])], countryCode);
+      genreAudit.push({stationuuid: apiStation.stationuuid, raw: apiStation.genres || [], ...categories});
+      const classifiedStation = { ...apiStation, genres: categories.genres,
+        ...((categories.formats.length || apiStation.formats) ? {formats: categories.formats} : {}),
+        ...(categories.review.length ? {genre_review: categories.review} : {}) };
+      merged.push(classifiedStation);
+      automaticallyAddedStations.push(classifiedStation);
       registerUuid(apiStation.stationuuid, newIndex);
       registerUrl(apiStation.stream_url, newIndex);
       continue;
@@ -241,6 +248,7 @@ function mergeStations(localStations, apiStations, exclusions = []) {
     automaticallyAddedStations,
     rejectedDuplicateStreams,
     recognizedMergedStations,
+    genreAudit,
     missingFromApi
   };
 }
@@ -285,8 +293,7 @@ async function main() {
     const tags = (s.tags || "")
       .split(",")
       .map((t) => t.trim())
-      .filter(Boolean)
-      .slice(0, 12);
+      .filter(Boolean);
 
     const languages = (s.language || "")
       .split(",")
@@ -358,6 +365,7 @@ async function main() {
     server: baseUrl,
     excludedStations: result.excludedStations,
     automaticallyAddedStations: result.automaticallyAddedStations,
+    genreAudit: result.genreAudit,
     recognizedMergedStations: result.recognizedMergedStations,
     rejectedDuplicateStreams: result.rejectedDuplicateStreams
   });

@@ -1,4 +1,5 @@
 import { site, countryText } from "../../countries/site.mjs";
+import { formatEntries } from '../lib/station-formats';
 import rawStations from "../lib/stations";
 
 import { metadataStations, METADATA_PAGE_SIZE } from "../lib/metadata-stations";
@@ -235,6 +236,8 @@ export async function GET() {
 
   const urls = [
     ...staticPages,
+    { loc: `${ROOT_URL}/formats/`, lastmod },
+    ...formatEntries.map(entry => ({loc: `${ROOT_URL}/formats/${entry.slug}/`, lastmod})),
     ...Array.from({ length: Math.max(1, Math.ceil(metadataStations.length / METADATA_PAGE_SIZE)) }, (_, index) => ({
       loc: `${ROOT_URL}/now-playing/${index ? `page/${index + 1}/` : ""}`,
       lastmod,

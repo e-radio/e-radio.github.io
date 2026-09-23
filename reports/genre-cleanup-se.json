@@ -1,0 +1,8579 @@
+{
+  "country": "se",
+  "applied": true,
+  "stations_changed": 139,
+  "unique_before": 208,
+  "unique_after": 71,
+  "changes": [
+    {
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "before": [
+        "2000s",
+        "2010s",
+        "2020s",
+        "90s",
+        "pop",
+        "soft rock",
+        "world"
+      ],
+      "after": [
+        "pop",
+        "soft rock",
+        "world music"
+      ],
+      "formats_before": [],
+      "formats": [
+        "00s",
+        "10s",
+        "20s",
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "slug": "90s-rewind",
+      "before": [
+        "90s",
+        "hits",
+        "pop",
+        "retro"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "90s",
+        "hits"
+      ],
+      "review": [
+        "retro"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "slug": "aftab",
+      "before": [
+        "ambient",
+        "instrumental",
+        "meditation",
+        "world music"
+      ],
+      "after": [
+        "ambient",
+        "instrumental",
+        "world music"
+      ],
+      "formats_before": [],
+      "formats": [
+        "meditation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "fa4701b9-034f-45c3-8be2-789bf2dd95cb",
+      "slug": "ai-playlist-radio",
+      "before": [
+        "curated",
+        "music",
+        "online radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "curated"
+      ],
+      "removed": [
+        "music",
+        "online radio"
+      ]
+    },
+    {
+      "stationuuid": "62c45b12-ca7b-440f-a985-ca0c209ff94c",
+      "slug": "all-watching-eye-focus",
+      "before": [
+        "ambient",
+        "electronic",
+        "focus",
+        "study"
+      ],
+      "after": [
+        "ambient",
+        "electronic"
+      ],
+      "formats_before": [],
+      "formats": [
+        "study"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "before": [
+        "ambient",
+        "chillout",
+        "downtempo",
+        "electronic",
+        "idm",
+        "lounge",
+        "relax",
+        "smooth jazz"
+      ],
+      "after": [
+        "ambient",
+        "chillout",
+        "downtempo",
+        "electronic",
+        "idm",
+        "smooth jazz"
+      ],
+      "formats_before": [],
+      "formats": [
+        "lounge",
+        "relaxation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "slug": "back-to-the-80s",
+      "before": [
+        "80s",
+        "hits",
+        "pop",
+        "retro"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "80s",
+        "hits"
+      ],
+      "review": [
+        "retro"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "before": [
+        "caribbean",
+        "children",
+        "kids",
+        "misc",
+        "tropical",
+        "various"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "children",
+        "variety"
+      ],
+      "review": [
+        "caribbean",
+        "tropical"
+      ],
+      "removed": [
+        "misc"
+      ]
+    },
+    {
+      "stationuuid": "12824d18-3891-402f-b7a9-b8d75bfe3b99",
+      "slug": "bandit-ballads",
+      "before": [
+        "ballads",
+        "rock"
+      ],
+      "after": [
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "ballads"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "7ace76fa-d18b-4f18-82f8-73694a86b2aa",
+      "slug": "banjalu-ki-sevdah-radio-eher-ani",
+      "before": [
+        "bosna",
+        "bosnia",
+        "sevdah",
+        "sevdah 24 sata"
+      ],
+      "after": [
+        "sevdah"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "bosna",
+        "bosnia"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
+      "slug": "bollywood-bangers",
+      "before": [
+        "bhangra",
+        "bollywood",
+        "indian"
+      ],
+      "after": [
+        "bhangra",
+        "bollywood"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "indian"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "38e8cb32-9efa-11e9-a787-52543be04c81",
+      "slug": "bozradio",
+      "before": [
+        "1960s",
+        "1970s",
+        "1980s",
+        "best music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "60s",
+        "70s",
+        "80s"
+      ],
+      "review": [],
+      "removed": [
+        "best music"
+      ]
+    },
+    {
+      "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
+      "slug": "classical",
+      "before": [
+        "classical",
+        "orchestral",
+        "symphony"
+      ],
+      "after": [
+        "classical"
+      ],
+      "formats_before": [],
+      "formats": [
+        "orchestral"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "fe4b3646-7164-11e8-83fa-52543be04c81",
+      "slug": "country-rocks-radio",
+      "before": [
+        "country",
+        "new country"
+      ],
+      "after": [
+        "country",
+        "modern country"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "before": [
+        "dans",
+        "dansband",
+        "dansbandsdax",
+        "dansbandskanalen",
+        "dansbandsradio",
+        "danseband",
+        "dansk",
+        "norsk",
+        "svensk",
+        "swedish"
+      ],
+      "after": [
+        "dansband"
+      ],
+      "formats_before": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [
+        "dans",
+        "dansk",
+        "norsk"
+      ],
+      "removed": [
+        "dansbandsdax",
+        "dansbandskanalen",
+        "dansbandsradio"
+      ]
+    },
+    {
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "before": [
+        "dans",
+        "dansband",
+        "dansbandsdax",
+        "dansbandskanalen",
+        "dansbandsradio",
+        "danseband",
+        "dansk",
+        "norsk",
+        "svensk",
+        "swedish"
+      ],
+      "after": [
+        "dansband"
+      ],
+      "formats_before": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [
+        "dans",
+        "dansk",
+        "norsk"
+      ],
+      "removed": [
+        "dansbandsdax",
+        "dansbandskanalen",
+        "dansbandsradio"
+      ]
+    },
+    {
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "before": [
+        "60s",
+        "70s",
+        "classics",
+        "oldies",
+        "variety"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "60s",
+        "70s",
+        "classic hits",
+        "oldies",
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "e0e2a64e-3ec4-4da4-8aec-a4aa7b502163",
+      "slug": "disco-54",
+      "before": [
+        "disco",
+        "i like radio"
+      ],
+      "after": [
+        "disco"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "i like radio"
+      ]
+    },
+    {
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "slug": "epic-soundtracks-only",
+      "before": [
+        "cinematic",
+        "film music",
+        "orchestral",
+        "soundtracks"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "soundtracks",
+        "orchestral"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
+      "slug": "faith-beats-radio",
+      "before": [
+        "christian",
+        "gospel",
+        "worship"
+      ],
+      "after": [
+        "gospel"
+      ],
+      "formats_before": [],
+      "formats": [
+        "christian",
+        "praise and worship"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "slug": "gen-x",
+      "before": [
+        "90s",
+        "alternative",
+        "hip-hop",
+        "rock"
+      ],
+      "after": [
+        "alternative",
+        "hip-hop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
+      "slug": "groove-revival-radio",
+      "before": [
+        "disco",
+        "funk",
+        "groove",
+        "soul"
+      ],
+      "after": [
+        "disco",
+        "funk",
+        "soul"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "groove"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "678cb641-f43d-456b-8980-cba70cb7c414",
+      "slug": "guldkanalen-80-tal",
+      "before": [
+        "80s"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "6778fd92-c72b-4be8-a9c6-2b753d207deb",
+      "slug": "guldkanalen-90-tal",
+      "before": [
+        "90s"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "a6a09847-6e2e-4076-9b30-773023caf2e7",
+      "slug": "guldkanalen-60-tal-sk-ne",
+      "before": [
+        "rock",
+        "60s"
+      ],
+      "after": [
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "961d9ecf-0601-11e8-ae97-52543be04c81",
+      "slug": "guldkanalen-helsingborg",
+      "before": [
+        "oldies"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "9642aad0-0601-11e8-ae97-52543be04c81",
+      "slug": "guldkanalen-malm-lund-malmoe",
+      "before": [
+        "oldies"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "e0fd9b05-f7f9-47ca-9d77-6f79dfcf006a",
+      "slug": "hari-rama-s-happy-eternal-mix",
+      "before": [
+        "goa",
+        "psytrance"
+      ],
+      "after": [
+        "goa trance",
+        "psytrance"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "slug": "harmony-frequencies",
+      "before": [
+        "ambient",
+        "healing",
+        "meditation",
+        "new age"
+      ],
+      "after": [
+        "ambient",
+        "new age"
+      ],
+      "formats_before": [],
+      "formats": [
+        "relaxation",
+        "meditation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "0e575083-8721-446d-a95e-7cbee4acad84",
+      "slug": "hello-africa",
+      "before": [
+        "african",
+        "afrobeat",
+        "world music"
+      ],
+      "after": [
+        "afrobeat",
+        "world music"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "african"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "slug": "himlen-tv7-uppsala",
+      "before": [
+        "children",
+        "christian",
+        "family",
+        "news talk",
+        "youth"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "children",
+        "christian",
+        "family",
+        "news talk",
+        "youth"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "1067bc4c-fed3-459a-b0dd-045d68cc225e",
+      "slug": "hitcity",
+      "before": [
+        "pop music",
+        "techno",
+        "trance"
+      ],
+      "after": [
+        "pop",
+        "techno",
+        "trance"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "before": [
+        "00s",
+        "2010s",
+        "2020s",
+        "80s",
+        "90s",
+        "hot ac",
+        "pop music",
+        "techno"
+      ],
+      "after": [
+        "pop",
+        "techno"
+      ],
+      "formats_before": [],
+      "formats": [
+        "00s",
+        "10s",
+        "20s",
+        "80s",
+        "90s",
+        "hot adult contemporary"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "before": [
+        "1950s",
+        "1960s",
+        "blues",
+        "classic rock",
+        "country",
+        "jazz",
+        "pop",
+        "religious"
+      ],
+      "after": [
+        "blues",
+        "classic rock",
+        "country",
+        "jazz",
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "50s",
+        "60s",
+        "religious"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
+      "slug": "ivory-echoes",
+      "before": [
+        "ambient",
+        "classical",
+        "instrumental",
+        "piano"
+      ],
+      "after": [
+        "ambient",
+        "classical",
+        "instrumental"
+      ],
+      "formats_before": [],
+      "formats": [
+        "piano"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
+      "slug": "kpop",
+      "before": [
+        "k-pop",
+        "korean pop",
+        "kpop"
+      ],
+      "after": [
+        "k-pop"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "2f869fa1-9f35-4ab3-a417-e8cef6880f48",
+      "slug": "lugna-favoriter-stockholm",
+      "before": [
+        "pop",
+        "romantic"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "romantic"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "slug": "mad-mix-beats",
+      "before": [
+        "classics",
+        "hits",
+        "mixed",
+        "pop"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "classic hits",
+        "hits",
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
+      "slug": "mad-mix-curated",
+      "before": [
+        "curated",
+        "hits",
+        "mixed",
+        "variety"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "hits",
+        "variety"
+      ],
+      "review": [
+        "curated"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "before": [
+        "hits",
+        "mixed",
+        "pop",
+        "rock",
+        "variety"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "hits",
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
+      "slug": "magic-radio-malmoe",
+      "before": [
+        "70s",
+        "80s",
+        "pop music"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "70s",
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
+      "slug": "melancholy",
+      "before": [
+        "alternative",
+        "emotional",
+        "indie",
+        "sad"
+      ],
+      "after": [
+        "alternative",
+        "indie"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "emotional",
+        "sad"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
+      "slug": "midnight-silk-eros",
+      "before": [
+        "r&b",
+        "romantic",
+        "slow jams",
+        "soul"
+      ],
+      "after": [
+        "r&b",
+        "slow jams",
+        "soul"
+      ],
+      "formats_before": [],
+      "formats": [
+        "romantic"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "before": [
+        "disco",
+        "hip-hop",
+        "house",
+        "reggae",
+        "rnb",
+        "soul"
+      ],
+      "after": [
+        "disco",
+        "hip-hop",
+        "house",
+        "reggae",
+        "r&b",
+        "soul"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "96414222-0601-11e8-ae97-52543be04c81",
+      "slug": "nrj-sweden",
+      "before": [
+        "top 40"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "5352f351-b5ac-4141-b886-9c44ac446511",
+      "slug": "p4-kalmar",
+      "before": [
+        "news talk music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "news talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "121367cf-f23c-4aef-a99e-f6608763a3c7",
+      "slug": "p4-rebro",
+      "before": [
+        "local radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "6a4f38ed-3c22-45b1-a2f3-5da0c8f47c2d",
+      "slug": "pain",
+      "before": [
+        "discography",
+        "rock"
+      ],
+      "after": [
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "discography"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "slug": "party-247",
+      "before": [
+        "dance",
+        "edm",
+        "electronic",
+        "party"
+      ],
+      "after": [
+        "dance",
+        "edm",
+        "electronic"
+      ],
+      "formats_before": [],
+      "formats": [
+        "party"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "f4fcca1a-ba7e-11e9-acb2-52543be04c81",
+      "slug": "pirate-rock-v-stkustens-b-sta-rock",
+      "before": [
+        "classic rock",
+        "hardrock",
+        "rock"
+      ],
+      "after": [
+        "classic rock",
+        "hard rock",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "9642b0c2-0601-11e8-ae97-52543be04c81",
+      "slug": "pop-rock-umeao",
+      "before": [
+        "local radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "5cc4f5dc-9693-46c2-91cc-e2f8eb0f215d",
+      "slug": "popburst",
+      "before": [
+        "hits",
+        "pop",
+        "top 40"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "hits",
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "4b089827-c6e2-44d7-8689-00c47c9d8650",
+      "slug": "power-club",
+      "before": [
+        "club",
+        "i like radio"
+      ],
+      "after": [
+        "club"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "i like radio"
+      ]
+    },
+    {
+      "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
+      "slug": "punk-classics",
+      "before": [
+        "classic punk",
+        "hardcore",
+        "punk"
+      ],
+      "after": [
+        "punk",
+        "hardcore"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
+      "slug": "radio-163",
+      "before": [
+        "hits",
+        "pop",
+        "top 40"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [
+        "hits",
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "slug": "radio-789",
+      "before": [
+        "classics",
+        "hits",
+        "oldies",
+        "rock"
+      ],
+      "after": [
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "classic hits",
+        "hits",
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "before": [
+        "country",
+        "dansband",
+        "easy listening",
+        "pop",
+        "rock"
+      ],
+      "after": [
+        "country",
+        "dansband",
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "easy listening"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "5edaeb8f-63d3-4a73-a684-a153b1cca9a5",
+      "slug": "radio-gbg-sevdah",
+      "before": [
+        "bosna",
+        "sevdah",
+        "sevdah 24 sata"
+      ],
+      "after": [
+        "sevdah"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "bosna"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "c8904795-b56f-4abc-afac-476169325741",
+      "slug": "radio-hope",
+      "before": [
+        "christian"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "christian"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "f705d3e2-d76e-47eb-8f24-fb739fee8a8f",
+      "slug": "radio-hope-f705d3e2",
+      "before": [
+        "christian"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "christian"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "before": [
+        "60s",
+        "70s",
+        "80s",
+        "contemporary adult",
+        "local radio",
+        "news",
+        "pop",
+        "rock"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "60s",
+        "70s",
+        "80s",
+        "adult contemporary",
+        "local radio",
+        "news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "06a92160-00e0-4546-ac0d-44c28f80da6c",
+      "slug": "radio-nostalgi",
+      "before": [
+        "80s"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "2bf56592-ba2c-4f13-a2a2-f7b672f9302a",
+      "slug": "radio-payam-gothenburg",
+      "before": [
+        "talk show"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "5baebcb0-15c1-4562-b4f8-4219b32cea5d",
+      "slug": "radio-rainbow",
+      "before": [
+        "dance",
+        "dj remix",
+        "house"
+      ],
+      "after": [
+        "dance",
+        "house"
+      ],
+      "formats_before": [],
+      "formats": [
+        "remixes"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "80d51b29-02d0-48e6-a1b5-a613daa79a3c",
+      "slug": "radio-rivendell",
+      "before": [
+        "fantasy"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "fantasy"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "3fc2ea83-9ed6-44a5-b6ed-cc0e648c7ee0",
+      "slug": "radio-sandviken",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "before": [
+        "00s",
+        "70s",
+        "80s",
+        "90s",
+        "pop",
+        "rock",
+        "top 40"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "00s",
+        "70s",
+        "80s",
+        "90s",
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
+      "slug": "radio-svea",
+      "before": [
+        "pop",
+        "rock",
+        "swedish"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "754681f3-08c0-4242-9cd0-d873d2ec9da0",
+      "slug": "radiogodis",
+      "before": [
+        "80s"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "12c4987d-17e2-4ccb-b082-731f0b8268ac",
+      "slug": "radiolista-desert-house",
+      "before": [
+        "chillout",
+        "deep house",
+        "oriental",
+        "world music"
+      ],
+      "after": [
+        "chillout",
+        "deep house",
+        "world music"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "oriental"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "53fec9c0-f9f3-4ab6-ab0b-4908868d4f47",
+      "slug": "radiolista-escape",
+      "before": [
+        "ambient",
+        "chillout",
+        "lounge"
+      ],
+      "after": [
+        "ambient",
+        "chillout"
+      ],
+      "formats_before": [],
+      "formats": [
+        "lounge"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "2195ef8a-8bdd-442d-b56e-f2aee9c5321e",
+      "slug": "radiolista-noir",
+      "before": [
+        "cinematic",
+        "jazz",
+        "lounge",
+        "noir"
+      ],
+      "after": [
+        "jazz"
+      ],
+      "formats_before": [],
+      "formats": [
+        "soundtracks",
+        "lounge"
+      ],
+      "review": [
+        "noir"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
+      "slug": "redback-radio-select-state",
+      "before": [
+        "eclectic",
+        "experimental",
+        "psychedelic"
+      ],
+      "after": [
+        "experimental",
+        "psychedelic"
+      ],
+      "formats_before": [],
+      "formats": [
+        "eclectic"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "slug": "reggae",
+      "before": [
+        "dancehall",
+        "island",
+        "reggae",
+        "ska"
+      ],
+      "after": [
+        "dancehall",
+        "reggae",
+        "ska"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "island"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "slug": "relax-meditation",
+      "before": [
+        "ambient",
+        "meditation",
+        "new age",
+        "relaxation"
+      ],
+      "after": [
+        "ambient",
+        "new age"
+      ],
+      "formats_before": [],
+      "formats": [
+        "meditation",
+        "relaxation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "271de73b-4fa6-4c19-8132-33397f31bf7c",
+      "slug": "replay-news-svenska",
+      "before": [
+        "news"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "8b00bcfc-4d94-11ea-b877-52543be04c81",
+      "slug": "retro-fm-sk-ne",
+      "before": [
+        "oldies"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "3a7f738e-a823-4680-ba93-c5de8217e3df",
+      "slug": "retro-fm-sverige",
+      "before": [
+        "oldies"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "before": [
+        "00s",
+        "80s",
+        "90s",
+        "70s",
+        "hits",
+        "retro"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "00s",
+        "80s",
+        "90s",
+        "70s",
+        "hits"
+      ],
+      "review": [
+        "retro"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "3f589db8-fb66-4d2a-b4d9-03a8bece9b7e",
+      "slug": "rix-fm-fresh",
+      "before": [
+        "pop music"
+      ],
+      "after": [
+        "pop"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "eb6986d8-2f1f-4034-9afe-dad3cade2e35",
+      "slug": "roxette",
+      "before": [
+        "discography"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "discography"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "slug": "sauna-radio-stockholm",
+      "before": [
+        "community radio",
+        "dj sets",
+        "electronic",
+        "live",
+        "stockholm"
+      ],
+      "after": [
+        "electronic"
+      ],
+      "formats_before": [],
+      "formats": [
+        "community radio",
+        "dj mixes"
+      ],
+      "review": [],
+      "removed": [
+        "live",
+        "stockholm"
+      ]
+    },
+    {
+      "stationuuid": "9614fe6c-0601-11e8-ae97-52543be04c81",
+      "slug": "scenesat-radio-mp3",
+      "before": [
+        "demoscene"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "demoscene"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "before": [
+        "ebm",
+        "electronic",
+        "industrial",
+        "synth"
+      ],
+      "after": [
+        "ebm",
+        "electronic",
+        "industrial"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [
+        "synth"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "f65bbc32-439d-447a-aba4-d83c144cdad3",
+      "slug": "slay-radio-aac",
+      "before": [
+        "c64",
+        "electronic",
+        "remixes"
+      ],
+      "after": [
+        "electronic"
+      ],
+      "formats_before": [],
+      "formats": [
+        "remixes"
+      ],
+      "review": [
+        "c64"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "5003028b-5943-4cea-820b-5b8a4a8fa9b6",
+      "slug": "sr-din-gata-sk-ne",
+      "before": [
+        "hip-hop",
+        "rnb"
+      ],
+      "after": [
+        "hip-hop",
+        "r&b"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "bfb5ad64-4a32-45cb-ae1d-a4b4d9415470",
+      "slug": "sr-p1",
+      "before": [
+        "public service"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "45bca914-2d19-4ec1-a272-606bf4363c32",
+      "slug": "sr-p4-j-nk-ping-45bca914",
+      "before": [
+        "local news"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "d49cfff7-ce57-475d-8ce1-c37d0e150574",
+      "slug": "sr-p4-j-nk-ping-d49cfff7",
+      "before": [
+        "local news"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "slug": "sr-p4-radio-malm-hus-scania",
+      "before": [
+        "malmö",
+        "malmöhus",
+        "skåne",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "malmö",
+        "malmöhus",
+        "skåne",
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "d5644326-77e9-4c6a-9444-b1dc636ce8e8",
+      "slug": "star-70s",
+      "before": [
+        "70s",
+        "pop",
+        "rock"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "2d106b56-62e5-4ced-8a5f-9f57721f760a",
+      "slug": "star-80s",
+      "before": [
+        "80s",
+        "pop",
+        "rock"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "6a26ca98-58b4-4127-8c3d-869564bc672c",
+      "slug": "star-90s",
+      "before": [
+        "90s",
+        "pop",
+        "rock"
+      ],
+      "after": [
+        "pop",
+        "rock"
+      ],
+      "formats_before": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "before": [
+        "60s",
+        "70s",
+        "classics",
+        "disco",
+        "oldies"
+      ],
+      "after": [
+        "disco"
+      ],
+      "formats_before": [],
+      "formats": [
+        "60s",
+        "70s",
+        "classic hits",
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "54e3f7cd-47a0-414a-ac11-1b7850ed5973",
+      "slug": "stocholm-n-rradio-fm-95-3-stockholm",
+      "before": [
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "957584f4-cef4-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-101-1-sweden",
+      "before": [
+        "international",
+        "variety"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [
+        "international"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-88-0-sweden",
+      "before": [
+        "church",
+        "culture",
+        "politics",
+        "talk",
+        "various"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "religious",
+        "culture",
+        "politics",
+        "talk",
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "before": [
+        "folk",
+        "folk music",
+        "folkmusik",
+        "svensk",
+        "svensk folkmusik",
+        "swedish",
+        "traditional"
+      ],
+      "after": [
+        "folk",
+        "swedish folk"
+      ],
+      "formats_before": [],
+      "formats": [
+        "swedish-language music",
+        "traditional music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "96412afe-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-ekot-s-nder-direkt",
+      "before": [
+        "news",
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "news",
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "before": [
+        "news",
+        "public radio",
+        "sveriges radio",
+        "culture",
+        "talk",
+        "current affairs"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "news",
+        "public radio",
+        "culture",
+        "talk",
+        "current affairs"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2",
+      "before": [
+        "sveriges radio",
+        "classical music",
+        "classical",
+        "jazz"
+      ],
+      "after": [
+        "classical",
+        "jazz"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c6720-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2-spr-k-och-musik",
+      "before": [
+        "music",
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "music",
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c4e01-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3",
+      "before": [
+        "public radio",
+        "sveriges radio",
+        "youth"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio",
+        "youth"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3-din-gata-malmoe",
+      "before": [
+        "local radio",
+        "public radio",
+        "rap",
+        "sveriges radio"
+      ],
+      "after": [
+        "rap"
+      ],
+      "formats_before": [],
+      "formats": [
+        "local radio",
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "a20f86e9-ec1b-425a-9ebe-831720249f74",
+      "slug": "sveriges-radio-p4-blekinge",
+      "before": [
+        "local",
+        "music",
+        "talkshow"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio",
+        "talk"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "before": [
+        "00s",
+        "30s",
+        "40s",
+        "50s",
+        "60s",
+        "70s",
+        "80s",
+        "90s",
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "00s",
+        "30s",
+        "40s",
+        "50s",
+        "60s",
+        "70s",
+        "80s",
+        "90s",
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "c51dbaad-5f7a-4027-8600-7b7c620023d8",
+      "slug": "sveriges-radio-p4-v-rmland",
+      "before": [
+        "local radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "10398e96-9329-4763-aada-543d35b56832",
+      "slug": "sveriges-radio-p4-v-stmanland",
+      "before": [
+        "local radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "9642a6a5-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p6",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c58b3-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-1",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c59d6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-10",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960cf063-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-2",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c69e6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-3",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c84bf-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-4",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c91b0-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-5",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960cf120-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-6",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960cf1df-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-7",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c6bc6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-8",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960cf2a0-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-9",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "960c90aa-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-s-pmi",
+      "before": [
+        "public radio",
+        "sveriges radio"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "stationuuid": "01a0db86-1f60-4473-9601-1de61587b255",
+      "slug": "sveriges-radio-p3-01a0db86",
+      "before": [
+        "music",
+        "youth"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "youth"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "2151bfe6-6792-4cbe-8c7c-2d9fe54fdbc0",
+      "slug": "sveriges-radio-p4-dalarna",
+      "before": [
+        "local"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "6f295dab-138c-45a5-b06f-d81e4643d05e",
+      "slug": "sveriges-radio-p4-g-vleborg",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "33663b50-cb33-4a5d-83cc-7ffaa776def5",
+      "slug": "sveriges-radio-p4-g-teborg",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "003dea75-02eb-40c2-8a92-5150a709b74d",
+      "slug": "sveriges-radio-p4-g-teborg-003dea75",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "2d109f2c-222b-4c48-82be-787e5d695662",
+      "slug": "sveriges-radio-p4-gotland",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "3a901003-189a-4a40-a754-401b56a131ee",
+      "slug": "sveriges-radio-p4-malm-hus",
+      "before": [
+        "public service"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "eb7aca36-7206-4367-823f-71c1dd7e104f",
+      "slug": "sveriges-radio-p4-skaraborg",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "543db188-7d24-417e-aa1f-2fe942ccf88e",
+      "slug": "sveriges-radio-p4-stockholm-543db188",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "9e158282-94f5-4577-a551-58bcca2d9602",
+      "slug": "sveriges-radio-p4-uppland",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "296c9a72-28ad-48f5-85ac-af6eb47acc46",
+      "slug": "sveriges-radio-p4-uppland-aac",
+      "before": [
+        "local radio",
+        "music"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "before": [
+        "local news",
+        "local talk",
+        "music",
+        "sport",
+        "östergötland"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "local news",
+        "local radio",
+        "talk",
+        "sports"
+      ],
+      "review": [],
+      "removed": [
+        "music",
+        "östergötland"
+      ]
+    },
+    {
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "slug": "swedish-truckers",
+      "before": [
+        "country",
+        "folk",
+        "nordic",
+        "swedish"
+      ],
+      "after": [
+        "country",
+        "folk"
+      ],
+      "formats_before": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [
+        "nordic"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "7693f643-ffdd-4865-a16a-0638586a3bbb",
+      "slug": "the-modstation-amiga-protracker-modules",
+      "before": [
+        "chiptune",
+        "chiptunes",
+        "electronic"
+      ],
+      "after": [
+        "chiptune",
+        "electronic"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "slug": "tjenamors-radio",
+      "before": [
+        "punk",
+        "reagge",
+        "rock",
+        "ska"
+      ],
+      "after": [
+        "punk",
+        "reggae",
+        "rock",
+        "ska"
+      ],
+      "formats_before": [],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "before": [
+        "chr",
+        "dance",
+        "dance classics",
+        "electronic",
+        "hits",
+        "old school",
+        "r&b/urban",
+        "rhythmic adult contemporary",
+        "rhythmic contemporary hits",
+        "throwbacks"
+      ],
+      "after": [
+        "dance",
+        "electronic",
+        "r&b",
+        "urban"
+      ],
+      "formats_before": [],
+      "formats": [
+        "top 40",
+        "dance classics",
+        "hits",
+        "oldies",
+        "rhythmic adult contemporary"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "b66bf5c5-1630-4d4c-9e7b-5017ca9594cc",
+      "slug": "vinylgodis",
+      "before": [
+        "1970s"
+      ],
+      "after": [],
+      "formats_before": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "slug": "workout",
+      "before": [
+        "edm",
+        "fitness",
+        "motivation",
+        "workout"
+      ],
+      "after": [
+        "edm"
+      ],
+      "formats_before": [],
+      "formats": [
+        "workout"
+      ],
+      "review": [
+        "motivation"
+      ],
+      "removed": []
+    },
+    {
+      "stationuuid": "052b8916-ad5d-4ae4-8cb5-1c137e10e4ca",
+      "slug": "zergan-radyo-47an-sweden",
+      "before": [
+        "kurdish",
+        "turkish music"
+      ],
+      "after": [
+        "turkish music"
+      ],
+      "formats_before": [],
+      "formats": [
+        "kurdish-language music"
+      ],
+      "review": [],
+      "removed": []
+    }
+  ],
+  "redirects": {
+    "/genres/2000s/": "/formats/00s/",
+    "/genres/2010s/": "/formats/10s/",
+    "/genres/2020s/": "/formats/20s/",
+    "/genres/90s/": "/formats/90s/",
+    "/genres/world/": "/genres/world-music/",
+    "/genres/hits/": "/formats/hits/",
+    "/genres/retro/": "/genres/",
+    "/genres/meditation/": "/formats/meditation/",
+    "/genres/curated/": "/genres/",
+    "/genres/music/": "/genres/",
+    "/genres/online-radio/": "/genres/",
+    "/genres/focus/": "/formats/study/",
+    "/genres/study/": "/formats/study/",
+    "/genres/lounge/": "/formats/lounge/",
+    "/genres/relax/": "/formats/relaxation/",
+    "/genres/80s/": "/formats/80s/",
+    "/genres/caribbean/": "/genres/",
+    "/genres/children/": "/formats/children/",
+    "/genres/kids/": "/formats/children/",
+    "/genres/misc/": "/genres/",
+    "/genres/tropical/": "/genres/",
+    "/genres/various/": "/formats/variety/",
+    "/genres/ballads/": "/formats/ballads/",
+    "/genres/bosna/": "/genres/",
+    "/genres/bosnia/": "/genres/",
+    "/genres/sevdah-24-sata/": "/genres/sevdah/",
+    "/genres/indian/": "/genres/",
+    "/genres/1960s/": "/formats/60s/",
+    "/genres/1970s/": "/formats/70s/",
+    "/genres/1980s/": "/formats/80s/",
+    "/genres/best-music/": "/genres/",
+    "/genres/orchestral/": "/formats/orchestral/",
+    "/genres/symphony/": "/formats/orchestral/",
+    "/genres/new-country/": "/genres/modern-country/",
+    "/genres/dans/": "/genres/",
+    "/genres/dansbandsdax/": "/genres/",
+    "/genres/dansbandskanalen/": "/genres/",
+    "/genres/dansbandsradio/": "/genres/",
+    "/genres/danseband/": "/genres/dansband/",
+    "/genres/dansk/": "/genres/",
+    "/genres/norsk/": "/genres/",
+    "/genres/svensk/": "/formats/swedish-language-music/",
+    "/genres/swedish/": "/formats/swedish-language-music/",
+    "/genres/60s/": "/formats/60s/",
+    "/genres/70s/": "/formats/70s/",
+    "/genres/classics/": "/formats/classic-hits/",
+    "/genres/oldies/": "/formats/oldies/",
+    "/genres/variety/": "/formats/variety/",
+    "/genres/i-like-radio/": "/genres/",
+    "/genres/cinematic/": "/formats/soundtracks/",
+    "/genres/film-music/": "/formats/soundtracks/",
+    "/genres/soundtracks/": "/formats/soundtracks/",
+    "/genres/christian/": "/formats/christian/",
+    "/genres/worship/": "/formats/praise-and-worship/",
+    "/genres/groove/": "/genres/",
+    "/genres/goa/": "/genres/goa-trance/",
+    "/genres/healing/": "/formats/relaxation/",
+    "/genres/african/": "/genres/",
+    "/genres/family/": "/formats/family/",
+    "/genres/news-talk/": "/formats/news-talk/",
+    "/genres/youth/": "/formats/youth/",
+    "/genres/pop-music/": "/genres/pop/",
+    "/genres/00s/": "/formats/00s/",
+    "/genres/hot-ac/": "/formats/hot-adult-contemporary/",
+    "/genres/1950s/": "/formats/50s/",
+    "/genres/religious/": "/formats/religious/",
+    "/genres/piano/": "/formats/piano/",
+    "/genres/korean-pop/": "/genres/k-pop/",
+    "/genres/kpop/": "/genres/k-pop/",
+    "/genres/romantic/": "/formats/romantic/",
+    "/genres/mixed/": "/formats/variety/",
+    "/genres/emotional/": "/genres/",
+    "/genres/sad/": "/genres/",
+    "/genres/rnb/": "/genres/r-b/",
+    "/genres/top-40/": "/formats/top-40/",
+    "/genres/news-talk-music/": "/formats/news-talk/",
+    "/genres/local-radio/": "/formats/local-radio/",
+    "/genres/sveriges-radio/": "/genres/",
+    "/genres/sveriges-radio/page/2/": "/genres/",
+    "/genres/discography/": "/genres/",
+    "/genres/party/": "/formats/party/",
+    "/genres/hardrock/": "/genres/hard-rock/",
+    "/genres/classic-punk/": "/genres/punk/",
+    "/genres/easy-listening/": "/formats/easy-listening/",
+    "/genres/contemporary-adult/": "/formats/adult-contemporary/",
+    "/genres/news/": "/formats/news/",
+    "/genres/talk-show/": "/formats/talk/",
+    "/genres/dj-remix/": "/formats/remixes/",
+    "/genres/fantasy/": "/genres/",
+    "/genres/oriental/": "/genres/",
+    "/genres/noir/": "/genres/",
+    "/genres/eclectic/": "/formats/eclectic/",
+    "/genres/island/": "/genres/",
+    "/genres/relaxation/": "/formats/relaxation/",
+    "/genres/community-radio/": "/formats/community-radio/",
+    "/genres/dj-sets/": "/formats/dj-mixes/",
+    "/genres/live/": "/genres/",
+    "/genres/stockholm/": "/genres/",
+    "/genres/demoscene/": "/genres/",
+    "/genres/synth/": "/genres/",
+    "/genres/c64/": "/genres/",
+    "/genres/remixes/": "/formats/remixes/",
+    "/genres/public-service/": "/formats/public-radio/",
+    "/genres/local-news/": "/formats/local-news/",
+    "/genres/malmo/": "/genres/",
+    "/genres/malmohus/": "/genres/",
+    "/genres/skane/": "/genres/",
+    "/genres/international/": "/genres/",
+    "/genres/church/": "/formats/religious/",
+    "/genres/culture/": "/formats/culture/",
+    "/genres/politics/": "/formats/politics/",
+    "/genres/talk/": "/formats/talk/",
+    "/genres/folk-music/": "/genres/folk/",
+    "/genres/folkmusik/": "/genres/folk/",
+    "/genres/svensk-folkmusik/": "/genres/swedish-folk/",
+    "/genres/traditional/": "/formats/traditional-music/",
+    "/genres/public-radio/": "/formats/public-radio/",
+    "/genres/current-affairs/": "/formats/current-affairs/",
+    "/genres/classical-music/": "/genres/classical/",
+    "/genres/local/": "/formats/local-radio/",
+    "/genres/talkshow/": "/formats/talk/",
+    "/genres/30s/": "/formats/30s/",
+    "/genres/40s/": "/formats/40s/",
+    "/genres/50s/": "/formats/50s/",
+    "/genres/local-talk/": "/genres/",
+    "/genres/sport/": "/formats/sports/",
+    "/genres/ostergotland/": "/genres/",
+    "/genres/nordic/": "/genres/",
+    "/genres/chiptunes/": "/genres/chiptune/",
+    "/genres/reagge/": "/genres/reggae/",
+    "/genres/chr/": "/formats/top-40/",
+    "/genres/dance-classics/": "/formats/dance-classics/",
+    "/genres/old-school/": "/formats/oldies/",
+    "/genres/r-b-urban/": "/genres/",
+    "/genres/rhythmic-adult-contemporary/": "/formats/rhythmic-adult-contemporary/",
+    "/genres/rhythmic-contemporary-hits/": "/formats/top-40/",
+    "/genres/throwbacks/": "/formats/oldies/",
+    "/genres/fitness/": "/formats/workout/",
+    "/genres/motivation/": "/genres/",
+    "/genres/workout/": "/formats/workout/",
+    "/genres/kurdish/": "/formats/kurdish-language-music/"
+  },
+  "remaining_genres": {
+    "afrobeat": 1,
+    "alternative": 4,
+    "alternative rock": 1,
+    "ambient": 7,
+    "americana": 2,
+    "bebop": 1,
+    "bhangra": 1,
+    "blues": 2,
+    "bollywood": 1,
+    "chillout": 3,
+    "chiptune": 1,
+    "classic rock": 7,
+    "classic soul": 1,
+    "classical": 5,
+    "club": 1,
+    "country": 9,
+    "dance": 6,
+    "dancehall": 1,
+    "dansband": 3,
+    "death metal": 1,
+    "deep house": 1,
+    "disco": 4,
+    "downtempo": 1,
+    "ebm": 1,
+    "edm": 4,
+    "electronic": 12,
+    "experimental": 2,
+    "folk": 2,
+    "funk": 1,
+    "goa trance": 1,
+    "gospel": 1,
+    "grunge": 1,
+    "hard rock": 5,
+    "hardcore": 1,
+    "heavy metal": 2,
+    "hip-hop": 4,
+    "house": 3,
+    "idm": 1,
+    "indie": 2,
+    "industrial": 1,
+    "instrumental": 2,
+    "jazz": 6,
+    "k-pop": 1,
+    "latin": 1,
+    "metal": 3,
+    "modern country": 1,
+    "new age": 2,
+    "pop": 26,
+    "psychedelic": 1,
+    "psytrance": 1,
+    "punk": 2,
+    "r&b": 4,
+    "rap": 2,
+    "reggae": 3,
+    "reggaeton": 1,
+    "rock": 22,
+    "rockabilly": 2,
+    "salsa": 1,
+    "sevdah": 2,
+    "ska": 2,
+    "slow jams": 1,
+    "smooth jazz": 1,
+    "soft rock": 1,
+    "soul": 5,
+    "swedish folk": 1,
+    "swing": 1,
+    "techno": 2,
+    "trance": 1,
+    "turkish music": 1,
+    "urban": 2,
+    "world music": 5
+  },
+  "review_tags": [
+    "african",
+    "bosna",
+    "bosnia",
+    "c64",
+    "caribbean",
+    "curated",
+    "dans",
+    "dansk",
+    "demoscene",
+    "discography",
+    "emotional",
+    "fantasy",
+    "groove",
+    "indian",
+    "international",
+    "island",
+    "motivation",
+    "noir",
+    "nordic",
+    "norsk",
+    "oriental",
+    "retro",
+    "sad",
+    "synth",
+    "tropical"
+  ],
+  "tag_audit": [
+    {
+      "tag": "classical",
+      "stationuuid": "3f27b07d-90b5-4d22-98ef-fef803f871ec",
+      "slug": "al-quran-radio",
+      "genres": [
+        "classical"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "9642ad8b-0601-11e8-ae97-52543be04c81",
+      "slug": "106-7-rockklassiker",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "2000s",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [],
+      "formats": [
+        "00s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "2010s",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [],
+      "formats": [
+        "10s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "2020s",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [],
+      "formats": [
+        "20s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "soft rock",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [
+        "soft rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "world",
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "slug": "24-7-continuous-music",
+      "genres": [
+        "world music"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "slug": "90s-rewind",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "slug": "90s-rewind",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "slug": "90s-rewind",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "retro",
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "slug": "90s-rewind",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "retro"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "slug": "aftab",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "instrumental",
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "slug": "aftab",
+      "genres": [
+        "instrumental"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "meditation",
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "slug": "aftab",
+      "genres": [],
+      "formats": [
+        "meditation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "world music",
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "slug": "aftab",
+      "genres": [
+        "world music"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "curated",
+      "stationuuid": "fa4701b9-034f-45c3-8be2-789bf2dd95cb",
+      "slug": "ai-playlist-radio",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "curated"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "fa4701b9-034f-45c3-8be2-789bf2dd95cb",
+      "slug": "ai-playlist-radio",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "online radio",
+      "stationuuid": "fa4701b9-034f-45c3-8be2-789bf2dd95cb",
+      "slug": "ai-playlist-radio",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "online radio"
+      ]
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "62c45b12-ca7b-440f-a985-ca0c209ff94c",
+      "slug": "all-watching-eye-focus",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "62c45b12-ca7b-440f-a985-ca0c209ff94c",
+      "slug": "all-watching-eye-focus",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "focus",
+      "stationuuid": "62c45b12-ca7b-440f-a985-ca0c209ff94c",
+      "slug": "all-watching-eye-focus",
+      "genres": [],
+      "formats": [
+        "study"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "study",
+      "stationuuid": "62c45b12-ca7b-440f-a985-ca0c209ff94c",
+      "slug": "all-watching-eye-focus",
+      "genres": [],
+      "formats": [
+        "study"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "alternative",
+      "stationuuid": "03130c0f-bf62-4fda-bb6a-c99781b28475",
+      "slug": "alt-edge-radio",
+      "genres": [
+        "alternative"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "grunge",
+      "stationuuid": "03130c0f-bf62-4fda-bb6a-c99781b28475",
+      "slug": "alt-edge-radio",
+      "genres": [
+        "grunge"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "indie",
+      "stationuuid": "03130c0f-bf62-4fda-bb6a-c99781b28475",
+      "slug": "alt-edge-radio",
+      "genres": [
+        "indie"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "americana",
+      "stationuuid": "681d2589-e135-46bd-a11a-272d8d13e8f8",
+      "slug": "american-truckers",
+      "genres": [
+        "americana"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "681d2589-e135-46bd-a11a-272d8d13e8f8",
+      "slug": "american-truckers",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "681d2589-e135-46bd-a11a-272d8d13e8f8",
+      "slug": "american-truckers",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "chillout",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [
+        "chillout"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "downtempo",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [
+        "downtempo"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "idm",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [
+        "idm"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "lounge",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [],
+      "formats": [
+        "lounge"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "relax",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [],
+      "formats": [
+        "relaxation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "smooth jazz",
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "slug": "auralis-radio",
+      "genres": [
+        "smooth jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "slug": "back-to-the-80s",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "slug": "back-to-the-80s",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "slug": "back-to-the-80s",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "retro",
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "slug": "back-to-the-80s",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "retro"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "caribbean",
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "caribbean"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "children",
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "genres": [],
+      "formats": [
+        "children"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "kids",
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "genres": [],
+      "formats": [
+        "children"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "misc",
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "misc"
+      ]
+    },
+    {
+      "tag": "tropical",
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "tropical"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "various",
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "slug": "bananradion",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "alternative",
+      "stationuuid": "6d52fc82-42d2-4b29-aece-d84e1f1c641d",
+      "slug": "bandit-alternative",
+      "genres": [
+        "alternative"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ballads",
+      "stationuuid": "12824d18-3891-402f-b7a9-b8d75bfe3b99",
+      "slug": "bandit-ballads",
+      "genres": [],
+      "formats": [
+        "ballads"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "12824d18-3891-402f-b7a9-b8d75bfe3b99",
+      "slug": "bandit-ballads",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "40dfa430-7988-4b02-ae1b-ce5fe8b5aad3",
+      "slug": "bandit-classic-rock-national-sweden",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "alternative rock",
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "genres": [
+        "alternative rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hard rock",
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "genres": [
+        "hard rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "heavy metal",
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "genres": [
+        "heavy metal"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "metal",
+      "stationuuid": "22567e75-4c10-4dde-9c51-5940b128f6cb",
+      "slug": "bandit-rock",
+      "genres": [
+        "metal"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "death metal",
+      "stationuuid": "78563d75-79f2-4c67-a80d-291891e2fb88",
+      "slug": "bandit-metal",
+      "genres": [
+        "death metal"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hard rock",
+      "stationuuid": "78563d75-79f2-4c67-a80d-291891e2fb88",
+      "slug": "bandit-metal",
+      "genres": [
+        "hard rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "metal",
+      "stationuuid": "78563d75-79f2-4c67-a80d-291891e2fb88",
+      "slug": "bandit-metal",
+      "genres": [
+        "metal"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "bosna",
+      "stationuuid": "7ace76fa-d18b-4f18-82f8-73694a86b2aa",
+      "slug": "banjalu-ki-sevdah-radio-eher-ani",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "bosna"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "bosnia",
+      "stationuuid": "7ace76fa-d18b-4f18-82f8-73694a86b2aa",
+      "slug": "banjalu-ki-sevdah-radio-eher-ani",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "bosnia"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "sevdah",
+      "stationuuid": "7ace76fa-d18b-4f18-82f8-73694a86b2aa",
+      "slug": "banjalu-ki-sevdah-radio-eher-ani",
+      "genres": [
+        "sevdah"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sevdah 24 sata",
+      "stationuuid": "7ace76fa-d18b-4f18-82f8-73694a86b2aa",
+      "slug": "banjalu-ki-sevdah-radio-eher-ani",
+      "genres": [
+        "sevdah"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "blues",
+      "stationuuid": "a03d0d90-73ec-451d-bb7e-b698f9b3698e",
+      "slug": "blues",
+      "genres": [
+        "blues"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "soul",
+      "stationuuid": "a03d0d90-73ec-451d-bb7e-b698f9b3698e",
+      "slug": "blues",
+      "genres": [
+        "soul"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "bhangra",
+      "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
+      "slug": "bollywood-bangers",
+      "genres": [
+        "bhangra"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "bollywood",
+      "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
+      "slug": "bollywood-bangers",
+      "genres": [
+        "bollywood"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "indian",
+      "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
+      "slug": "bollywood-bangers",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "indian"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "1960s",
+      "stationuuid": "38e8cb32-9efa-11e9-a787-52543be04c81",
+      "slug": "bozradio",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "1970s",
+      "stationuuid": "38e8cb32-9efa-11e9-a787-52543be04c81",
+      "slug": "bozradio",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "1980s",
+      "stationuuid": "38e8cb32-9efa-11e9-a787-52543be04c81",
+      "slug": "bozradio",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "best music",
+      "stationuuid": "38e8cb32-9efa-11e9-a787-52543be04c81",
+      "slug": "bozradio",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "best music"
+      ]
+    },
+    {
+      "tag": "classical",
+      "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
+      "slug": "classical",
+      "genres": [
+        "classical"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "orchestral",
+      "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
+      "slug": "classical",
+      "genres": [],
+      "formats": [
+        "orchestral"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "symphony",
+      "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
+      "slug": "classical",
+      "genres": [],
+      "formats": [
+        "orchestral"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "americana",
+      "stationuuid": "53ef6c63-7b27-4245-bf7c-420b16f5538a",
+      "slug": "country",
+      "genres": [
+        "americana"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "53ef6c63-7b27-4245-bf7c-420b16f5538a",
+      "slug": "country",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "fe4b3646-7164-11e8-83fa-52543be04c81",
+      "slug": "country-rocks-radio",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "new country",
+      "stationuuid": "fe4b3646-7164-11e8-83fa-52543be04c81",
+      "slug": "country-rocks-radio",
+      "genres": [
+        "modern country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "b8f2ef5c-eaac-499c-b006-6a2fd276efb1",
+      "slug": "dagnys-jukebox",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rockabilly",
+      "stationuuid": "b8f2ef5c-eaac-499c-b006-6a2fd276efb1",
+      "slug": "dagnys-jukebox",
+      "genres": [
+        "rockabilly"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dance",
+      "stationuuid": "817d37ef-474f-4072-bc48-8619eedafd97",
+      "slug": "dansbandskanalen",
+      "genres": [
+        "dance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "8b37a02b-5a90-4e7f-b576-7934e0af34d7",
+      "slug": "dansbandskanalen-se",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dans",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "dans"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "dansband",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [
+        "dansband"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dansbandsdax",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "dansbandsdax"
+      ]
+    },
+    {
+      "tag": "dansbandskanalen",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "dansbandskanalen"
+      ]
+    },
+    {
+      "tag": "dansbandsradio",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "dansbandsradio"
+      ]
+    },
+    {
+      "tag": "danseband",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [
+        "dansband"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dansk",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "dansk"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "norsk",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "norsk"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "svensk",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "swedish",
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "slug": "dansbandsradio-se-sk-ne-7cd8a7f7",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dans",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "dans"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "dansband",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [
+        "dansband"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dansbandsdax",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "dansbandsdax"
+      ]
+    },
+    {
+      "tag": "dansbandskanalen",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "dansbandskanalen"
+      ]
+    },
+    {
+      "tag": "dansbandsradio",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "dansbandsradio"
+      ]
+    },
+    {
+      "tag": "danseband",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [
+        "dansband"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dansk",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "dansk"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "norsk",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "norsk"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "svensk",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "swedish",
+      "stationuuid": "93b730ce-4e0c-4601-84de-b1af38edac24",
+      "slug": "dansbandsradio-se-sk-ne-93b730ce",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "60s",
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classics",
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "genres": [],
+      "formats": [
+        "classic hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "variety",
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "slug": "decades",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "disco",
+      "stationuuid": "e0e2a64e-3ec4-4da4-8aec-a4aa7b502163",
+      "slug": "disco-54",
+      "genres": [
+        "disco"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "i like radio",
+      "stationuuid": "e0e2a64e-3ec4-4da4-8aec-a4aa7b502163",
+      "slug": "disco-54",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "i like radio"
+      ]
+    },
+    {
+      "tag": "dance",
+      "stationuuid": "f81a5aa3-d7b5-4c12-85fa-436d081efc73",
+      "slug": "edm",
+      "genres": [
+        "dance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "edm",
+      "stationuuid": "f81a5aa3-d7b5-4c12-85fa-436d081efc73",
+      "slug": "edm",
+      "genres": [
+        "edm"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "f81a5aa3-d7b5-4c12-85fa-436d081efc73",
+      "slug": "edm",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "cinematic",
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "slug": "epic-soundtracks-only",
+      "genres": [],
+      "formats": [
+        "soundtracks"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "film music",
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "slug": "epic-soundtracks-only",
+      "genres": [],
+      "formats": [
+        "soundtracks"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "orchestral",
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "slug": "epic-soundtracks-only",
+      "genres": [],
+      "formats": [
+        "orchestral"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "soundtracks",
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "slug": "epic-soundtracks-only",
+      "genres": [],
+      "formats": [
+        "soundtracks"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "christian",
+      "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
+      "slug": "faith-beats-radio",
+      "genres": [],
+      "formats": [
+        "christian"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "gospel",
+      "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
+      "slug": "faith-beats-radio",
+      "genres": [
+        "gospel"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "worship",
+      "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
+      "slug": "faith-beats-radio",
+      "genres": [],
+      "formats": [
+        "praise and worship"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "386b8b9b-3a34-4405-a274-29fe476ca198",
+      "slug": "fun-radio-95-3-sweden",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "slug": "gen-x",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "alternative",
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "slug": "gen-x",
+      "genres": [
+        "alternative"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hip-hop",
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "slug": "gen-x",
+      "genres": [
+        "hip-hop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "slug": "gen-x",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "101f70e8-15f9-4a1c-b48f-7cbd4a7838f7",
+      "slug": "go-country",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "disco",
+      "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
+      "slug": "groove-revival-radio",
+      "genres": [
+        "disco"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "funk",
+      "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
+      "slug": "groove-revival-radio",
+      "genres": [
+        "funk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "groove",
+      "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
+      "slug": "groove-revival-radio",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "groove"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "soul",
+      "stationuuid": "9c97c1ea-73e3-4013-8b47-13a5936c764b",
+      "slug": "groove-revival-radio",
+      "genres": [
+        "soul"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "678cb641-f43d-456b-8980-cba70cb7c414",
+      "slug": "guldkanalen-80-tal",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "6778fd92-c72b-4be8-a9c6-2b753d207deb",
+      "slug": "guldkanalen-90-tal",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "a6a09847-6e2e-4076-9b30-773023caf2e7",
+      "slug": "guldkanalen-60-tal-sk-ne",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "60s",
+      "stationuuid": "a6a09847-6e2e-4076-9b30-773023caf2e7",
+      "slug": "guldkanalen-60-tal-sk-ne",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "961d9ecf-0601-11e8-ae97-52543be04c81",
+      "slug": "guldkanalen-helsingborg",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "9642aad0-0601-11e8-ae97-52543be04c81",
+      "slug": "guldkanalen-malm-lund-malmoe",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "goa",
+      "stationuuid": "e0fd9b05-f7f9-47ca-9d77-6f79dfcf006a",
+      "slug": "hari-rama-s-happy-eternal-mix",
+      "genres": [
+        "goa trance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "psytrance",
+      "stationuuid": "e0fd9b05-f7f9-47ca-9d77-6f79dfcf006a",
+      "slug": "hari-rama-s-happy-eternal-mix",
+      "genres": [
+        "psytrance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "slug": "harmony-frequencies",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "healing",
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "slug": "harmony-frequencies",
+      "genres": [],
+      "formats": [
+        "relaxation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "meditation",
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "slug": "harmony-frequencies",
+      "genres": [],
+      "formats": [
+        "meditation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "new age",
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "slug": "harmony-frequencies",
+      "genres": [
+        "new age"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "african",
+      "stationuuid": "0e575083-8721-446d-a95e-7cbee4acad84",
+      "slug": "hello-africa",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "african"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "afrobeat",
+      "stationuuid": "0e575083-8721-446d-a95e-7cbee4acad84",
+      "slug": "hello-africa",
+      "genres": [
+        "afrobeat"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "world music",
+      "stationuuid": "0e575083-8721-446d-a95e-7cbee4acad84",
+      "slug": "hello-africa",
+      "genres": [
+        "world music"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "children",
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "slug": "himlen-tv7-uppsala",
+      "genres": [],
+      "formats": [
+        "children"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "christian",
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "slug": "himlen-tv7-uppsala",
+      "genres": [],
+      "formats": [
+        "christian"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "family",
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "slug": "himlen-tv7-uppsala",
+      "genres": [],
+      "formats": [
+        "family"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "news talk",
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "slug": "himlen-tv7-uppsala",
+      "genres": [],
+      "formats": [
+        "news talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "youth",
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "slug": "himlen-tv7-uppsala",
+      "genres": [],
+      "formats": [
+        "youth"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop music",
+      "stationuuid": "1067bc4c-fed3-459a-b0dd-045d68cc225e",
+      "slug": "hitcity",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "techno",
+      "stationuuid": "1067bc4c-fed3-459a-b0dd-045d68cc225e",
+      "slug": "hitcity",
+      "genres": [
+        "techno"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "trance",
+      "stationuuid": "1067bc4c-fed3-459a-b0dd-045d68cc225e",
+      "slug": "hitcity",
+      "genres": [
+        "trance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "00s",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [],
+      "formats": [
+        "00s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "2010s",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [],
+      "formats": [
+        "10s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "2020s",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [],
+      "formats": [
+        "20s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hot ac",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [],
+      "formats": [
+        "hot adult contemporary"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop music",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "techno",
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "slug": "hitcity-229845c8",
+      "genres": [
+        "techno"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "1950s",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [],
+      "formats": [
+        "50s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "1960s",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "blues",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [
+        "blues"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "jazz",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [
+        "jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "religious",
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "slug": "h-gan-s-n-rradio",
+      "genres": [],
+      "formats": [
+        "religious"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dance",
+      "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
+      "slug": "house",
+      "genres": [
+        "dance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "edm",
+      "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
+      "slug": "house",
+      "genres": [
+        "edm"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
+      "slug": "house",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "house",
+      "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
+      "slug": "house",
+      "genres": [
+        "house"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
+      "slug": "ivory-echoes",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classical",
+      "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
+      "slug": "ivory-echoes",
+      "genres": [
+        "classical"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "instrumental",
+      "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
+      "slug": "ivory-echoes",
+      "genres": [
+        "instrumental"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "piano",
+      "stationuuid": "cd9cad10-788f-44ee-9e35-00a05efe2271",
+      "slug": "ivory-echoes",
+      "genres": [],
+      "formats": [
+        "piano"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "bebop",
+      "stationuuid": "d906e09f-49da-469e-9937-5f5273fc9006",
+      "slug": "jazz",
+      "genres": [
+        "bebop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "jazz",
+      "stationuuid": "d906e09f-49da-469e-9937-5f5273fc9006",
+      "slug": "jazz",
+      "genres": [
+        "jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "swing",
+      "stationuuid": "d906e09f-49da-469e-9937-5f5273fc9006",
+      "slug": "jazz",
+      "genres": [
+        "swing"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "k-pop",
+      "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
+      "slug": "kpop",
+      "genres": [
+        "k-pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "korean pop",
+      "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
+      "slug": "kpop",
+      "genres": [
+        "k-pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "kpop",
+      "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
+      "slug": "kpop",
+      "genres": [
+        "k-pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "latin",
+      "stationuuid": "1ce736f3-5944-46b9-8143-81b54625b367",
+      "slug": "latin",
+      "genres": [
+        "latin"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "reggaeton",
+      "stationuuid": "1ce736f3-5944-46b9-8143-81b54625b367",
+      "slug": "latin",
+      "genres": [
+        "reggaeton"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "salsa",
+      "stationuuid": "1ce736f3-5944-46b9-8143-81b54625b367",
+      "slug": "latin",
+      "genres": [
+        "salsa"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "2f869fa1-9f35-4ab3-a417-e8cef6880f48",
+      "slug": "lugna-favoriter-stockholm",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "romantic",
+      "stationuuid": "2f869fa1-9f35-4ab3-a417-e8cef6880f48",
+      "slug": "lugna-favoriter-stockholm",
+      "genres": [],
+      "formats": [
+        "romantic"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classics",
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "slug": "mad-mix-beats",
+      "genres": [],
+      "formats": [
+        "classic hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "slug": "mad-mix-beats",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "mixed",
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "slug": "mad-mix-beats",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "slug": "mad-mix-beats",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "curated",
+      "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
+      "slug": "mad-mix-curated",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "curated"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
+      "slug": "mad-mix-curated",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "mixed",
+      "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
+      "slug": "mad-mix-curated",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "variety",
+      "stationuuid": "6b3dc713-d0a0-4f02-bfb2-756f293ec0cb",
+      "slug": "mad-mix-curated",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "mixed",
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "variety",
+      "stationuuid": "34dddabf-0a1e-437d-8801-075e05201844",
+      "slug": "mad-mix-main",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
+      "slug": "magic-radio-malmoe",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
+      "slug": "magic-radio-malmoe",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop music",
+      "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
+      "slug": "magic-radio-malmoe",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "alternative",
+      "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
+      "slug": "melancholy",
+      "genres": [
+        "alternative"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "emotional",
+      "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
+      "slug": "melancholy",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "emotional"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "indie",
+      "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
+      "slug": "melancholy",
+      "genres": [
+        "indie"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sad",
+      "stationuuid": "36ec31f7-2b42-4a8f-b73b-dda7b666d8c0",
+      "slug": "melancholy",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "sad"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "hard rock",
+      "stationuuid": "53dac0bd-de56-447a-a42c-9f841af15e2e",
+      "slug": "metal-mayhem",
+      "genres": [
+        "hard rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "heavy metal",
+      "stationuuid": "53dac0bd-de56-447a-a42c-9f841af15e2e",
+      "slug": "metal-mayhem",
+      "genres": [
+        "heavy metal"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "metal",
+      "stationuuid": "53dac0bd-de56-447a-a42c-9f841af15e2e",
+      "slug": "metal-mayhem",
+      "genres": [
+        "metal"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "r&b",
+      "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
+      "slug": "midnight-silk-eros",
+      "genres": [
+        "r&b"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "romantic",
+      "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
+      "slug": "midnight-silk-eros",
+      "genres": [],
+      "formats": [
+        "romantic"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "slow jams",
+      "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
+      "slug": "midnight-silk-eros",
+      "genres": [
+        "slow jams"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "soul",
+      "stationuuid": "e99600f6-2f3b-4aee-af44-00c723cd0a91",
+      "slug": "midnight-silk-eros",
+      "genres": [
+        "soul"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "0772676d-9fe4-4945-b63f-3e88e5aeb374",
+      "slug": "mix-megapol-104-3-stockholm",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "disco",
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "genres": [
+        "disco"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hip-hop",
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "genres": [
+        "hip-hop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "house",
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "genres": [
+        "house"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "reggae",
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "genres": [
+        "reggae"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rnb",
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "genres": [
+        "r&b"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "soul",
+      "stationuuid": "d2b34ded-eb3e-47e0-8d6e-de27122537e2",
+      "slug": "mrs-90-5-stockholm",
+      "genres": [
+        "soul"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "top 40",
+      "stationuuid": "96414222-0601-11e8-ae97-52543be04c81",
+      "slug": "nrj-sweden",
+      "genres": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "news talk music",
+      "stationuuid": "5352f351-b5ac-4141-b886-9c44ac446511",
+      "slug": "p4-kalmar",
+      "genres": [],
+      "formats": [
+        "news talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "121367cf-f23c-4aef-a99e-f6608763a3c7",
+      "slug": "p4-rebro",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "121367cf-f23c-4aef-a99e-f6608763a3c7",
+      "slug": "p4-rebro",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "discography",
+      "stationuuid": "6a4f38ed-3c22-45b1-a2f3-5da0c8f47c2d",
+      "slug": "pain",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "discography"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "6a4f38ed-3c22-45b1-a2f3-5da0c8f47c2d",
+      "slug": "pain",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dance",
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "slug": "party-247",
+      "genres": [
+        "dance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "edm",
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "slug": "party-247",
+      "genres": [
+        "edm"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "slug": "party-247",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "party",
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "slug": "party-247",
+      "genres": [],
+      "formats": [
+        "party"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "f4fcca1a-ba7e-11e9-acb2-52543be04c81",
+      "slug": "pirate-rock-v-stkustens-b-sta-rock",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hardrock",
+      "stationuuid": "f4fcca1a-ba7e-11e9-acb2-52543be04c81",
+      "slug": "pirate-rock-v-stkustens-b-sta-rock",
+      "genres": [
+        "hard rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "f4fcca1a-ba7e-11e9-acb2-52543be04c81",
+      "slug": "pirate-rock-v-stkustens-b-sta-rock",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "experimental",
+      "stationuuid": "96148cf5-0601-11e8-ae97-52543be04c81",
+      "slug": "polushon",
+      "genres": [
+        "experimental"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "jazz",
+      "stationuuid": "96148cf5-0601-11e8-ae97-52543be04c81",
+      "slug": "polushon",
+      "genres": [
+        "jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "world music",
+      "stationuuid": "96148cf5-0601-11e8-ae97-52543be04c81",
+      "slug": "polushon",
+      "genres": [
+        "world music"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "9642b0c2-0601-11e8-ae97-52543be04c81",
+      "slug": "pop-rock-umeao",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "ccfd647b-93da-4275-aa8f-0c39f56feac5",
+      "slug": "pop-radio-stockholm",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "5cc4f5dc-9693-46c2-91cc-e2f8eb0f215d",
+      "slug": "popburst",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "5cc4f5dc-9693-46c2-91cc-e2f8eb0f215d",
+      "slug": "popburst",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "top 40",
+      "stationuuid": "5cc4f5dc-9693-46c2-91cc-e2f8eb0f215d",
+      "slug": "popburst",
+      "genres": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "club",
+      "stationuuid": "4b089827-c6e2-44d7-8689-00c47c9d8650",
+      "slug": "power-club",
+      "genres": [
+        "club"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "i like radio",
+      "stationuuid": "4b089827-c6e2-44d7-8689-00c47c9d8650",
+      "slug": "power-club",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "i like radio"
+      ]
+    },
+    {
+      "tag": "classic punk",
+      "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
+      "slug": "punk-classics",
+      "genres": [
+        "punk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hardcore",
+      "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
+      "slug": "punk-classics",
+      "genres": [
+        "hardcore"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "punk",
+      "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
+      "slug": "punk-classics",
+      "genres": [
+        "punk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
+      "slug": "radio-163",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
+      "slug": "radio-163",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "top 40",
+      "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
+      "slug": "radio-163",
+      "genres": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "7a275e1c-6730-4048-a064-a7cb3c9dabb8",
+      "slug": "radio-567",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "7a275e1c-6730-4048-a064-a7cb3c9dabb8",
+      "slug": "radio-567",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "soul",
+      "stationuuid": "7a275e1c-6730-4048-a064-a7cb3c9dabb8",
+      "slug": "radio-567",
+      "genres": [
+        "soul"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classics",
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "slug": "radio-789",
+      "genres": [],
+      "formats": [
+        "classic hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "slug": "radio-789",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "slug": "radio-789",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "slug": "radio-789",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dansband",
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "genres": [
+        "dansband"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "easy listening",
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "genres": [],
+      "formats": [
+        "easy listening"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "6067a78f-6b1a-49f0-b0cc-7dec506552b6",
+      "slug": "radio-94-3-n-rke",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "7525f5fd-393c-46f4-a0ba-e02856a1873c",
+      "slug": "radio-faceit-fm-stockholm",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "bosna",
+      "stationuuid": "5edaeb8f-63d3-4a73-a684-a153b1cca9a5",
+      "slug": "radio-gbg-sevdah",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "bosna"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "sevdah",
+      "stationuuid": "5edaeb8f-63d3-4a73-a684-a153b1cca9a5",
+      "slug": "radio-gbg-sevdah",
+      "genres": [
+        "sevdah"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sevdah 24 sata",
+      "stationuuid": "5edaeb8f-63d3-4a73-a684-a153b1cca9a5",
+      "slug": "radio-gbg-sevdah",
+      "genres": [
+        "sevdah"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "christian",
+      "stationuuid": "c8904795-b56f-4abc-afac-476169325741",
+      "slug": "radio-hope",
+      "genres": [],
+      "formats": [
+        "christian"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "christian",
+      "stationuuid": "f705d3e2-d76e-47eb-8f24-fb739fee8a8f",
+      "slug": "radio-hope-f705d3e2",
+      "genres": [],
+      "formats": [
+        "christian"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "60s",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "contemporary adult",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [],
+      "formats": [
+        "adult contemporary"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "news",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [],
+      "formats": [
+        "news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "slug": "radio-laholm",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "06a92160-00e0-4546-ac0d-44c28f80da6c",
+      "slug": "radio-nostalgi",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "talk show",
+      "stationuuid": "2bf56592-ba2c-4f13-a2a2-f7b672f9302a",
+      "slug": "radio-payam-gothenburg",
+      "genres": [],
+      "formats": [
+        "talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dance",
+      "stationuuid": "5baebcb0-15c1-4562-b4f8-4219b32cea5d",
+      "slug": "radio-rainbow",
+      "genres": [
+        "dance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dj remix",
+      "stationuuid": "5baebcb0-15c1-4562-b4f8-4219b32cea5d",
+      "slug": "radio-rainbow",
+      "genres": [],
+      "formats": [
+        "remixes"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "house",
+      "stationuuid": "5baebcb0-15c1-4562-b4f8-4219b32cea5d",
+      "slug": "radio-rainbow",
+      "genres": [
+        "house"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "fantasy",
+      "stationuuid": "80d51b29-02d0-48e6-a1b5-a613daa79a3c",
+      "slug": "radio-rivendell",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "fantasy"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "3fc2ea83-9ed6-44a5-b6ed-cc0e648c7ee0",
+      "slug": "radio-sandviken",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "3fc2ea83-9ed6-44a5-b6ed-cc0e648c7ee0",
+      "slug": "radio-sandviken",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "00s",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [],
+      "formats": [
+        "00s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "top 40",
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "slug": "radio-soten-s",
+      "genres": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
+      "slug": "radio-svea",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
+      "slug": "radio-svea",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "swedish",
+      "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
+      "slug": "radio-svea",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "754681f3-08c0-4242-9cd0-d873d2ec9da0",
+      "slug": "radiogodis",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "chillout",
+      "stationuuid": "12c4987d-17e2-4ccb-b082-731f0b8268ac",
+      "slug": "radiolista-desert-house",
+      "genres": [
+        "chillout"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "deep house",
+      "stationuuid": "12c4987d-17e2-4ccb-b082-731f0b8268ac",
+      "slug": "radiolista-desert-house",
+      "genres": [
+        "deep house"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oriental",
+      "stationuuid": "12c4987d-17e2-4ccb-b082-731f0b8268ac",
+      "slug": "radiolista-desert-house",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "oriental"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "world music",
+      "stationuuid": "12c4987d-17e2-4ccb-b082-731f0b8268ac",
+      "slug": "radiolista-desert-house",
+      "genres": [
+        "world music"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "53fec9c0-f9f3-4ab6-ab0b-4908868d4f47",
+      "slug": "radiolista-escape",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "chillout",
+      "stationuuid": "53fec9c0-f9f3-4ab6-ab0b-4908868d4f47",
+      "slug": "radiolista-escape",
+      "genres": [
+        "chillout"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "lounge",
+      "stationuuid": "53fec9c0-f9f3-4ab6-ab0b-4908868d4f47",
+      "slug": "radiolista-escape",
+      "genres": [],
+      "formats": [
+        "lounge"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "cinematic",
+      "stationuuid": "2195ef8a-8bdd-442d-b56e-f2aee9c5321e",
+      "slug": "radiolista-noir",
+      "genres": [],
+      "formats": [
+        "soundtracks"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "jazz",
+      "stationuuid": "2195ef8a-8bdd-442d-b56e-f2aee9c5321e",
+      "slug": "radiolista-noir",
+      "genres": [
+        "jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "lounge",
+      "stationuuid": "2195ef8a-8bdd-442d-b56e-f2aee9c5321e",
+      "slug": "radiolista-noir",
+      "genres": [],
+      "formats": [
+        "lounge"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "noir",
+      "stationuuid": "2195ef8a-8bdd-442d-b56e-f2aee9c5321e",
+      "slug": "radiolista-noir",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "noir"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "eclectic",
+      "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
+      "slug": "redback-radio-select-state",
+      "genres": [],
+      "formats": [
+        "eclectic"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "experimental",
+      "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
+      "slug": "redback-radio-select-state",
+      "genres": [
+        "experimental"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "psychedelic",
+      "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
+      "slug": "redback-radio-select-state",
+      "genres": [
+        "psychedelic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dancehall",
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "slug": "reggae",
+      "genres": [
+        "dancehall"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "island",
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "slug": "reggae",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "island"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "reggae",
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "slug": "reggae",
+      "genres": [
+        "reggae"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ska",
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "slug": "reggae",
+      "genres": [
+        "ska"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ambient",
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "slug": "relax-meditation",
+      "genres": [
+        "ambient"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "meditation",
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "slug": "relax-meditation",
+      "genres": [],
+      "formats": [
+        "meditation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "new age",
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "slug": "relax-meditation",
+      "genres": [
+        "new age"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "relaxation",
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "slug": "relax-meditation",
+      "genres": [],
+      "formats": [
+        "relaxation"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "news",
+      "stationuuid": "271de73b-4fa6-4c19-8132-33397f31bf7c",
+      "slug": "replay-news-svenska",
+      "genres": [],
+      "formats": [
+        "news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "ac5cf76c-20ba-11e9-a80b-52543be04c81",
+      "slug": "retreat-radio-malmoe",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "8b00bcfc-4d94-11ea-b877-52543be04c81",
+      "slug": "retro-fm-sk-ne",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "3a7f738e-a823-4680-ba93-c5de8217e3df",
+      "slug": "retro-fm-sverige",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "00s",
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "genres": [],
+      "formats": [
+        "00s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "retro",
+      "stationuuid": "b934e685-1878-4d33-bd0b-ba42134322a8",
+      "slug": "retrohits-sk-ne",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "retro"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "50d2c7dd-dec7-4169-84a1-a2f1614278ad",
+      "slug": "rix-fm",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "a72d9bd0-86b9-4450-8958-c53688e1e956",
+      "slug": "rix-fm-106-7-stockholm",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop music",
+      "stationuuid": "3f589db8-fb66-4d2a-b4d9-03a8bece9b7e",
+      "slug": "rix-fm-fresh",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic rock",
+      "stationuuid": "202d6d31-699e-476d-b392-99e238704df8",
+      "slug": "rock",
+      "genres": [
+        "classic rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hard rock",
+      "stationuuid": "202d6d31-699e-476d-b392-99e238704df8",
+      "slug": "rock",
+      "genres": [
+        "hard rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "202d6d31-699e-476d-b392-99e238704df8",
+      "slug": "rock",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "discography",
+      "stationuuid": "eb6986d8-2f1f-4034-9afe-dad3cade2e35",
+      "slug": "roxette",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "discography"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "community radio",
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "slug": "sauna-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "community radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dj sets",
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "slug": "sauna-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "dj mixes"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "slug": "sauna-radio-stockholm",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "live",
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "slug": "sauna-radio-stockholm",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "live"
+      ]
+    },
+    {
+      "tag": "stockholm",
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "slug": "sauna-radio-stockholm",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "stockholm"
+      ]
+    },
+    {
+      "tag": "demoscene",
+      "stationuuid": "9614fe6c-0601-11e8-ae97-52543be04c81",
+      "slug": "scenesat-radio-mp3",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "demoscene"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "ebm",
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "genres": [
+        "ebm"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "industrial",
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "genres": [
+        "industrial"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "synth",
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "slug": "sdx-synthetic-experience-ebm-synth-and-industrial",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "synth"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "c64",
+      "stationuuid": "f65bbc32-439d-447a-aba4-d83c144cdad3",
+      "slug": "slay-radio-aac",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "c64"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "f65bbc32-439d-447a-aba4-d83c144cdad3",
+      "slug": "slay-radio-aac",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "remixes",
+      "stationuuid": "f65bbc32-439d-447a-aba4-d83c144cdad3",
+      "slug": "slay-radio-aac",
+      "genres": [],
+      "formats": [
+        "remixes"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "641fb7fd-6e73-4e62-b64f-2353fe96a5be",
+      "slug": "slayradio",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classic soul",
+      "stationuuid": "fa0f560a-e7f4-4918-b02d-d61a740b075e",
+      "slug": "soul-classics",
+      "genres": [
+        "classic soul"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hip-hop",
+      "stationuuid": "5003028b-5943-4cea-820b-5b8a4a8fa9b6",
+      "slug": "sr-din-gata-sk-ne",
+      "genres": [
+        "hip-hop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rnb",
+      "stationuuid": "5003028b-5943-4cea-820b-5b8a4a8fa9b6",
+      "slug": "sr-din-gata-sk-ne",
+      "genres": [
+        "r&b"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "public service",
+      "stationuuid": "bfb5ad64-4a32-45cb-ae1d-a4b4d9415470",
+      "slug": "sr-p1",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classical",
+      "stationuuid": "0826eaef-59e4-4761-b3e8-31670421a753",
+      "slug": "sr-p2-stockholm",
+      "genres": [
+        "classical"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "jazz",
+      "stationuuid": "0826eaef-59e4-4761-b3e8-31670421a753",
+      "slug": "sr-p2-stockholm",
+      "genres": [
+        "jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local news",
+      "stationuuid": "45bca914-2d19-4ec1-a272-606bf4363c32",
+      "slug": "sr-p4-j-nk-ping-45bca914",
+      "genres": [],
+      "formats": [
+        "local news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local news",
+      "stationuuid": "d49cfff7-ce57-475d-8ce1-c37d0e150574",
+      "slug": "sr-p4-j-nk-ping-d49cfff7",
+      "genres": [],
+      "formats": [
+        "local news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "malmö",
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "slug": "sr-p4-radio-malm-hus-scania",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "malmö"
+      ]
+    },
+    {
+      "tag": "malmöhus",
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "slug": "sr-p4-radio-malm-hus-scania",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "malmöhus"
+      ]
+    },
+    {
+      "tag": "skåne",
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "slug": "sr-p4-radio-malm-hus-scania",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "skåne"
+      ]
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "slug": "sr-p4-radio-malm-hus-scania",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "d5644326-77e9-4c6a-9444-b1dc636ce8e8",
+      "slug": "star-70s",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "d5644326-77e9-4c6a-9444-b1dc636ce8e8",
+      "slug": "star-70s",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "d5644326-77e9-4c6a-9444-b1dc636ce8e8",
+      "slug": "star-70s",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "2d106b56-62e5-4ced-8a5f-9f57721f760a",
+      "slug": "star-80s",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "2d106b56-62e5-4ced-8a5f-9f57721f760a",
+      "slug": "star-80s",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "2d106b56-62e5-4ced-8a5f-9f57721f760a",
+      "slug": "star-80s",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "6a26ca98-58b4-4127-8c3d-869564bc672c",
+      "slug": "star-90s",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "6a26ca98-58b4-4127-8c3d-869564bc672c",
+      "slug": "star-90s",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "6a26ca98-58b4-4127-8c3d-869564bc672c",
+      "slug": "star-90s",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "ce877b75-fbb5-4b67-a39c-707e59ab38cc",
+      "slug": "star-fm-107-1-stockholm",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "pop",
+      "stationuuid": "b30f805d-8402-4555-b182-dcf5fa0820da",
+      "slug": "star-fm-107-1-stockholm-b30f805d",
+      "genres": [
+        "pop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "60s",
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classics",
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "genres": [],
+      "formats": [
+        "classic hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "disco",
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "genres": [
+        "disco"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "oldies",
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "slug": "stars-on-45",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "54e3f7cd-47a0-414a-ac11-1b7850ed5973",
+      "slug": "stocholm-n-rradio-fm-95-3-stockholm",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "international",
+      "stationuuid": "957584f4-cef4-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-101-1-sweden",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "international"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "variety",
+      "stationuuid": "957584f4-cef4-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-101-1-sweden",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "church",
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-88-0-sweden",
+      "genres": [],
+      "formats": [
+        "religious"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "culture",
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-88-0-sweden",
+      "genres": [],
+      "formats": [
+        "culture"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "politics",
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-88-0-sweden",
+      "genres": [],
+      "formats": [
+        "politics"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "talk",
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-88-0-sweden",
+      "genres": [],
+      "formats": [
+        "talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "various",
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "slug": "stockholm-fm-88-0-sweden",
+      "genres": [],
+      "formats": [
+        "variety"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "folk",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [
+        "folk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "folk music",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [
+        "folk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "folkmusik",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [
+        "folk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "svensk",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "svensk folkmusik",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [
+        "swedish folk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "swedish",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "traditional",
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "slug": "svensk-folkmusik-akka-radio",
+      "genres": [],
+      "formats": [
+        "traditional music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "news",
+      "stationuuid": "96412afe-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-ekot-s-nder-direkt",
+      "genres": [],
+      "formats": [
+        "news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "96412afe-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-ekot-s-nder-direkt",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "96412afe-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-ekot-s-nder-direkt",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "news",
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "genres": [],
+      "formats": [
+        "news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "culture",
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "genres": [],
+      "formats": [
+        "culture"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "talk",
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "genres": [],
+      "formats": [
+        "talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "current affairs",
+      "stationuuid": "960c660b-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p1",
+      "genres": [],
+      "formats": [
+        "current affairs"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "classical music",
+      "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2",
+      "genres": [
+        "classical"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "classical",
+      "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2",
+      "genres": [
+        "classical"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "jazz",
+      "stationuuid": "960c62c1-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2",
+      "genres": [
+        "jazz"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "960c6720-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2-spr-k-och-musik",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c6720-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2-spr-k-och-musik",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c6720-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p2-spr-k-och-musik",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c4e01-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c4e01-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "youth",
+      "stationuuid": "960c4e01-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3",
+      "genres": [],
+      "formats": [
+        "youth"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3-din-gata-malmoe",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3-din-gata-malmoe",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rap",
+      "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3-din-gata-malmoe",
+      "genres": [
+        "rap"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p3-din-gata-malmoe",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "local",
+      "stationuuid": "a20f86e9-ec1b-425a-9ebe-831720249f74",
+      "slug": "sveriges-radio-p4-blekinge",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "a20f86e9-ec1b-425a-9ebe-831720249f74",
+      "slug": "sveriges-radio-p4-blekinge",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "talkshow",
+      "stationuuid": "a20f86e9-ec1b-425a-9ebe-831720249f74",
+      "slug": "sveriges-radio-p4-blekinge",
+      "genres": [],
+      "formats": [
+        "talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "00s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "00s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "30s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "30s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "40s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "40s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "50s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "50s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "60s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "60s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "70s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "80s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "80s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "90s",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "90s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p4-plus",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "c51dbaad-5f7a-4027-8600-7b7c620023d8",
+      "slug": "sveriges-radio-p4-v-rmland",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "c51dbaad-5f7a-4027-8600-7b7c620023d8",
+      "slug": "sveriges-radio-p4-v-rmland",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "10398e96-9329-4763-aada-543d35b56832",
+      "slug": "sveriges-radio-p4-v-stmanland",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "10398e96-9329-4763-aada-543d35b56832",
+      "slug": "sveriges-radio-p4-v-stmanland",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "9642a6a5-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p6",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "9642a6a5-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-p6",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c58b3-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-1",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c58b3-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-1",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c59d6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-10",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c59d6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-10",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960cf063-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-2",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960cf063-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-2",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c69e6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-3",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c69e6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-3",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c84bf-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-4",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c84bf-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-4",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c91b0-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-5",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c91b0-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-5",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960cf120-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-6",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960cf120-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-6",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960cf1df-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-7",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960cf1df-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-7",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c6bc6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-8",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c6bc6-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-8",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960cf2a0-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-9",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960cf2a0-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-extra-9",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "public radio",
+      "stationuuid": "960c90aa-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-s-pmi",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "sveriges radio",
+      "stationuuid": "960c90aa-0601-11e8-ae97-52543be04c81",
+      "slug": "sveriges-radio-sr-s-pmi",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "sveriges radio"
+      ]
+    },
+    {
+      "tag": "music",
+      "stationuuid": "01a0db86-1f60-4473-9601-1de61587b255",
+      "slug": "sveriges-radio-p3-01a0db86",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "youth",
+      "stationuuid": "01a0db86-1f60-4473-9601-1de61587b255",
+      "slug": "sveriges-radio-p3-01a0db86",
+      "genres": [],
+      "formats": [
+        "youth"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local",
+      "stationuuid": "2151bfe6-6792-4cbe-8c7c-2d9fe54fdbc0",
+      "slug": "sveriges-radio-p4-dalarna",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "6f295dab-138c-45a5-b06f-d81e4643d05e",
+      "slug": "sveriges-radio-p4-g-vleborg",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "6f295dab-138c-45a5-b06f-d81e4643d05e",
+      "slug": "sveriges-radio-p4-g-vleborg",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "33663b50-cb33-4a5d-83cc-7ffaa776def5",
+      "slug": "sveriges-radio-p4-g-teborg",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "33663b50-cb33-4a5d-83cc-7ffaa776def5",
+      "slug": "sveriges-radio-p4-g-teborg",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "003dea75-02eb-40c2-8a92-5150a709b74d",
+      "slug": "sveriges-radio-p4-g-teborg-003dea75",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "003dea75-02eb-40c2-8a92-5150a709b74d",
+      "slug": "sveriges-radio-p4-g-teborg-003dea75",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "2d109f2c-222b-4c48-82be-787e5d695662",
+      "slug": "sveriges-radio-p4-gotland",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "2d109f2c-222b-4c48-82be-787e5d695662",
+      "slug": "sveriges-radio-p4-gotland",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "public service",
+      "stationuuid": "3a901003-189a-4a40-a754-401b56a131ee",
+      "slug": "sveriges-radio-p4-malm-hus",
+      "genres": [],
+      "formats": [
+        "public radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "eb7aca36-7206-4367-823f-71c1dd7e104f",
+      "slug": "sveriges-radio-p4-skaraborg",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "eb7aca36-7206-4367-823f-71c1dd7e104f",
+      "slug": "sveriges-radio-p4-skaraborg",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "543db188-7d24-417e-aa1f-2fe942ccf88e",
+      "slug": "sveriges-radio-p4-stockholm-543db188",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "543db188-7d24-417e-aa1f-2fe942ccf88e",
+      "slug": "sveriges-radio-p4-stockholm-543db188",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "9e158282-94f5-4577-a551-58bcca2d9602",
+      "slug": "sveriges-radio-p4-uppland",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "9e158282-94f5-4577-a551-58bcca2d9602",
+      "slug": "sveriges-radio-p4-uppland",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local radio",
+      "stationuuid": "296c9a72-28ad-48f5-85ac-af6eb47acc46",
+      "slug": "sveriges-radio-p4-uppland-aac",
+      "genres": [],
+      "formats": [
+        "local radio"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "296c9a72-28ad-48f5-85ac-af6eb47acc46",
+      "slug": "sveriges-radio-p4-uppland-aac",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "local news",
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "genres": [],
+      "formats": [
+        "local news"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "local talk",
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "genres": [],
+      "formats": [
+        "local radio",
+        "talk"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "music",
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "music"
+      ]
+    },
+    {
+      "tag": "sport",
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "genres": [],
+      "formats": [
+        "sports"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "östergötland",
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "slug": "sveriges-radion-p4-sterg-tland-select-one",
+      "genres": [],
+      "formats": [],
+      "review": [],
+      "removed": [
+        "östergötland"
+      ]
+    },
+    {
+      "tag": "country",
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "slug": "swedish-truckers",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "folk",
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "slug": "swedish-truckers",
+      "genres": [
+        "folk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "nordic",
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "slug": "swedish-truckers",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "nordic"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "swedish",
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "slug": "swedish-truckers",
+      "genres": [],
+      "formats": [
+        "swedish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "chiptune",
+      "stationuuid": "7693f643-ffdd-4865-a16a-0638586a3bbb",
+      "slug": "the-modstation-amiga-protracker-modules",
+      "genres": [
+        "chiptune"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "chiptunes",
+      "stationuuid": "7693f643-ffdd-4865-a16a-0638586a3bbb",
+      "slug": "the-modstation-amiga-protracker-modules",
+      "genres": [
+        "chiptune"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "7693f643-ffdd-4865-a16a-0638586a3bbb",
+      "slug": "the-modstation-amiga-protracker-modules",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "punk",
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "slug": "tjenamors-radio",
+      "genres": [
+        "punk"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "reagge",
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "slug": "tjenamors-radio",
+      "genres": [
+        "reggae"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rock",
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "slug": "tjenamors-radio",
+      "genres": [
+        "rock"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "ska",
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "slug": "tjenamors-radio",
+      "genres": [
+        "ska"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hip-hop",
+      "stationuuid": "3560701c-22a9-4955-a667-fc979b066863",
+      "slug": "urban-flow",
+      "genres": [
+        "hip-hop"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rap",
+      "stationuuid": "3560701c-22a9-4955-a667-fc979b066863",
+      "slug": "urban-flow",
+      "genres": [
+        "rap"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "urban",
+      "stationuuid": "3560701c-22a9-4955-a667-fc979b066863",
+      "slug": "urban-flow",
+      "genres": [
+        "urban"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "chr",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dance",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [
+        "dance"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "dance classics",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "dance classics"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "electronic",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [
+        "electronic"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "hits",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "hits"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "old school",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "r&b/urban",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [
+        "r&b",
+        "urban"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rhythmic adult contemporary",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "rhythmic adult contemporary"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rhythmic contemporary hits",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "top 40"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "throwbacks",
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "slug": "vibe-radio-stockholm",
+      "genres": [],
+      "formats": [
+        "oldies"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "1970s",
+      "stationuuid": "b66bf5c5-1630-4d4c-9e7b-5017ca9594cc",
+      "slug": "vinylgodis",
+      "genres": [],
+      "formats": [
+        "70s"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "country",
+      "stationuuid": "376cb244-4116-4ba4-a525-c6cc8283fc9b",
+      "slug": "wolf-fm-dalarna",
+      "genres": [
+        "country"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "rockabilly",
+      "stationuuid": "376cb244-4116-4ba4-a525-c6cc8283fc9b",
+      "slug": "wolf-fm-dalarna",
+      "genres": [
+        "rockabilly"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "edm",
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "slug": "workout",
+      "genres": [
+        "edm"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "fitness",
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "slug": "workout",
+      "genres": [],
+      "formats": [
+        "workout"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "motivation",
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "slug": "workout",
+      "genres": [],
+      "formats": [],
+      "review": [
+        "motivation"
+      ],
+      "removed": []
+    },
+    {
+      "tag": "workout",
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "slug": "workout",
+      "genres": [],
+      "formats": [
+        "workout"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "kurdish",
+      "stationuuid": "052b8916-ad5d-4ae4-8cb5-1c137e10e4ca",
+      "slug": "zergan-radyo-47an-sweden",
+      "genres": [],
+      "formats": [
+        "kurdish-language music"
+      ],
+      "review": [],
+      "removed": []
+    },
+    {
+      "tag": "turkish music",
+      "stationuuid": "052b8916-ad5d-4ae4-8cb5-1c137e10e4ca",
+      "slug": "zergan-radyo-47an-sweden",
+      "genres": [
+        "turkish music"
+      ],
+      "formats": [],
+      "review": [],
+      "removed": []
+    }
+  ]
+}

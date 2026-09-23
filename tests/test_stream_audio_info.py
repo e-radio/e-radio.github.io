@@ -8,6 +8,20 @@ spec.loader.exec_module(module)
 
 
 class StreamGenresTest(unittest.TestCase):
+    def test_probe_filters_public_genres_and_preserves_format_and_review_evidence(self):
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        import json
+        payload = {'streams': [{'codec_type': 'audio', 'codec_name': 'mp3', 'bit_rate': '128000'}],
+                   'format': {'tags': {'icy-genre': 'Public Radio greek hellas greece laika; My Brand'}}}
+        with patch.object(module.subprocess, 'run', return_value=SimpleNamespace(stdout=json.dumps(payload), stderr='')):
+            result = module.probe('https://example.com/stream')
+        self.assertEqual(result['genres'], ['laika'])
+        self.assertEqual(result['formats'], ['public radio', 'greek-language music'])
+        self.assertEqual(result['review'], ['my brand'])
+        self.assertEqual(result['ffprobe_format_tags'], payload['format']['tags'])
+        self.assertEqual(result['bitrate'], 128)
+
     def test_compound_public_radio_tag(self):
         payload = {'format': {'tags': {'icy-genre': 'Public Radio greek hellas greece laika'}}}
         self.assertEqual(module.stream_genres(payload, {}), ['public radio', 'greek', 'laika'])

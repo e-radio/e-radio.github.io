@@ -82,3 +82,11 @@ test('import preserves HTTP stream URLs including Radiojar host and query', () =
   const result=mergeStations([],[{stationuuid:'http-station',slug:'http-station',stream_url:url}]);
   assert.equal(result.merged[0].stream_url,url);
 });
+
+ test('new remote tags obey the approved vocabulary and retain review evidence', () => {
+  const result=mergeStations([], [{stationuuid:'taxonomy-new',slug:'taxonomy-new',stream_url:'https://example.com/stream',genres:['pop','news','Unreviewed Brand','128 kbps']}]);
+  assert.deepEqual(result.merged[0].genres,['pop']);
+  assert.deepEqual(result.merged[0].formats,['news']);
+  assert.deepEqual(result.merged[0].genre_review,['unreviewed brand']);
+  assert.deepEqual(result.genreAudit[0].removed,['128 kbps']);
+ });

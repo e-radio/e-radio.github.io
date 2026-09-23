@@ -1,0 +1,2469 @@
+{
+  "checkedAt": "2026-09-23T10:29:45.373Z",
+  "checked": 995,
+  "saved": 260,
+  "dryRun": false,
+  "scope": "Selected station streams; direct server checks, not browser/CORS verification",
+  "verified": [
+    {
+      "slug": "polskie-radio-bialystok",
+      "name": "Polskie Radio Bialystok",
+      "nowplaying_url": "http://stream4.nadaje.com:15476/status-json.xsl?mount=%2Fradiobialystok",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "abdulbasit-abdulsamad",
+      "name": ". Abdulbasit Abdulsamad",
+      "nowplaying_url": "https://radio.mp3islam.com/api/nowplaying/abdulbasit",
+      "history_url": "https://radio.mp3islam.com/api/nowplaying/abdulbasit",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "24dubstep-pl-calmflow",
+      "name": "24Dubstep.pl || CalmFlow",
+      "nowplaying_url": "https://stream.24dubstep.pl/api/nowplaying/chillstep",
+      "history_url": "https://stream.24dubstep.pl/api/nowplaying/chillstep",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "24dubstep-pl-dropzone-radio",
+      "name": "24Dubstep.pl || DropZone Radio",
+      "nowplaying_url": "https://stream.24dubstep.pl/api/nowplaying/dubstep",
+      "history_url": "https://stream.24dubstep.pl/api/nowplaying/dubstep",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "akademickie-radio-centrum-umcs-lublin",
+      "name": "Akademickie Radio Centrum UMCS",
+      "nowplaying_url": "http://5.201.13.191/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "alt-neu-schlesien",
+      "name": "ALT!NEU",
+      "nowplaying_url": "https://s1.slotex.pl:7430/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7430/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "awirofm-wi-tokrzyskie",
+      "name": "AwiroFM",
+      "nowplaying_url": "https://s4.awiro.xyz/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "best-radio-128kbps",
+      "name": "BEST Radio (128Kbps)",
+      "nowplaying_url": "http://stream.radiobest.eu:8000/status-json.xsl?mount=%2F128",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "best-radio-192kbps",
+      "name": "BEST Radio (192Kbps)",
+      "nowplaying_url": "http://stream.radiobest.eu:8000/status-json.xsl?mount=%2F192",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "best-radio-28kbps",
+      "name": "BEST Radio (28Kbps)",
+      "nowplaying_url": "http://stream.radiobest.eu:8000/status-json.xsl?mount=%2F28",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "best-radio-64kbps",
+      "name": "BEST Radio (64Kbps)",
+      "nowplaying_url": "http://stream.radiobest.eu:8000/status-json.xsl?mount=%2F64",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "bezpieczna-podr",
+      "name": "BEZPIECZNA PODRÓŻ",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:9162/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:9162/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bia-oruskie-radio-racja-podlasie",
+      "name": "Białoruskie Radio Racja",
+      "nowplaying_url": "http://air.racyja.com:8000/status-json.xsl?mount=%2Fracja320",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "biblia-radio-chrzescijanin",
+      "name": "Biblia - Radio Chrzescijanin",
+      "nowplaying_url": "http://s1.slotex.pl:7116/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7116/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bigbbs-mazowsze",
+      "name": "Bigbbs",
+      "nowplaying_url": "http://148.113.170.232:8000/stats?sid=1&json=1",
+      "history_url": "http://148.113.170.232:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bohema-radio",
+      "name": "Bohema Radio",
+      "nowplaying_url": "http://s3.slotex.pl:7262/stats?sid=1&json=1",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "bounce",
+      "name": "bounce",
+      "nowplaying_url": "https://streaming.bounce.radio/status-json.xsl?mount=%2Fstreamhd",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "costas-ambient-radio",
+      "name": "CoSTa's Ambient Radio",
+      "nowplaying_url": "https://pc.costa-server.info.pl:11020/api/nowplaying/costas_ambient_radio",
+      "history_url": "https://pc.costa-server.info.pl:11020/api/nowplaying/costas_ambient_radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "damismania-dj-radio",
+      "name": "Damismania Dj Radio",
+      "nowplaying_url": "http://s1.slotex.pl:7512/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7512/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "dewuradio",
+      "name": "Dewuradio",
+      "nowplaying_url": "https://stream4.nadaje.com:10185/status-json.xsl?mount=%2Fradio",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "disco-party-lata-90",
+      "name": "Disco Party - Lata 90.",
+      "nowplaying_url": "https://s3.slotex.pl:7170/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7170/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "dubstep24h",
+      "name": "Dubstep24h",
+      "nowplaying_url": "https://stream.24dubstep.pl/api/nowplaying/dubstep24h",
+      "history_url": "https://stream.24dubstep.pl/api/nowplaying/dubstep24h",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "dzikieradio-ywiecki",
+      "name": "DzikieRadio",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:11250/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:11250/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "el-radio",
+      "name": "El Radio",
+      "nowplaying_url": "http://kazpar.pl:8888/status-json.xsl?mount=%2Felradio_raw",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "el-stacja-960fcd70",
+      "name": "EL-Stacja",
+      "nowplaying_url": "http://radio.el-stacja.pl:8000/status-json.xsl?mount=%2Felstacjaap320.ogg",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "el-stacja-hq",
+      "name": "EL-Stacja HQ",
+      "nowplaying_url": "http://radio.el-stacja.pl:8000/status-json.xsl?mount=%2Felstacja320mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "exitorrent-mazowsze",
+      "name": "ExiTorrent",
+      "nowplaying_url": "https://exitorrent.org:8005/stats?sid=1&json=1",
+      "history_url": "https://exitorrent.org:8005/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "fiorda-fm-wroclaw",
+      "name": "Fiorda.fm",
+      "nowplaying_url": "http://cast1.torontocast.com:2280/stats?sid=1&json=1",
+      "history_url": "http://cast1.torontocast.com:2280/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "folk-radio-wi-tokrzyskie",
+      "name": "Folk Radio",
+      "nowplaying_url": "https://streaming.g-news.pl:8030/status-json.xsl?mount=%2Ffr1",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "fsspx-radio-warszawa",
+      "name": "FSSPX Radio",
+      "nowplaying_url": "http://radio.fsspx.pl:8000/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "gdynia-radio",
+      "name": "Gdynia Radio",
+      "nowplaying_url": "http://51.255.8.139:8064/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:8064/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "g-os-nadziei-mazowieckie",
+      "name": "Głos Nadziei",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:9548/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:9548/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "hit-radio",
+      "name": "Hit radio",
+      "nowplaying_url": "http://51.255.8.139:9090/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:9090/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "hit-radio-975c8d38",
+      "name": "Hit Radio",
+      "nowplaying_url": "http://51.255.8.139:9090/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:9090/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "internetowe-radio-skoczow",
+      "name": "Internetowe Radio Skoczow",
+      "nowplaying_url": "https://azuracast.radio.skoczow.pl/api/nowplaying/radior1",
+      "history_url": "https://azuracast.radio.skoczow.pl/api/nowplaying/radior1",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "italo4you",
+      "name": "Italo4you",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:8018/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:8018/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "ivan-honcharov",
+      "name": "Ivan Honcharov",
+      "nowplaying_url": "https://azuracast.reverbriff.com/api/nowplaying/reverb_riff_radio",
+      "history_url": "https://azuracast.reverbriff.com/api/nowplaying/reverb_riff_radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "katolickie-radio-diecezji-plockiej",
+      "name": "Katolickie Radio Diecezji Plockiej",
+      "nowplaying_url": "http://s1.slotex.pl:7760/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7760/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "katolickie-radio-podlasie-siedlce",
+      "name": "Katolickie Radio Podlasie",
+      "nowplaying_url": "http://s1.slotex.pl:7038/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7038/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "katolickie-radio-rzeszow-via",
+      "name": "Katolickie Radio Rzeszow - VIA",
+      "nowplaying_url": "http://62.133.128.18:8040/stats?sid=1&json=1",
+      "history_url": "http://62.133.128.18:8040/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "kiss-fm-poland",
+      "name": "Kiss FM Poland",
+      "nowplaying_url": "https://streaming.g-news.pl:8090/status-json.xsl?mount=%2Fkissfm",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "kiss-online-radio",
+      "name": "Kiss Online Radio",
+      "nowplaying_url": "http://streaming.g-news.pl:8090/status-json.xsl?mount=%2Fkissfm",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "konin-fm-wielkopolskie",
+      "name": "Konin FM",
+      "nowplaying_url": "http://stream2.technologicznie.net/status-json.xsl?mount=%2Fkonin.fm",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "lem-fm",
+      "name": "Lem.fm",
+      "nowplaying_url": "https://www.radiojar.com/api/stations/2fa0gbhr9bhvv/now_playing/",
+      "metadata_server": "radiojar",
+      "history_url": "https://www.radiojar.com/api/stations/2fa0gbhr9bhvv/tracks/"
+    },
+    {
+      "slug": "life-4-club",
+      "name": "Life 4 Club",
+      "nowplaying_url": "https://life4club.online/api/nowplaying/live",
+      "history_url": "https://life4club.online/api/nowplaying/live",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "listekfm",
+      "name": "ListekFM",
+      "nowplaying_url": "http://stream10.hosterion.pl:8004/stats?sid=1&json=1",
+      "history_url": "http://stream10.hosterion.pl:8004/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "margaretka-fm",
+      "name": "Margaretka FM",
+      "nowplaying_url": "http://s3.slotex.pl:7260/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7260/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "mastermxmusic-pomorskie-d27fbad5",
+      "name": "MasteRMXMusic",
+      "nowplaying_url": "https://s3.slotex.pl:7008/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7008/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "metal-live-radio-zachodniopomorskie",
+      "name": "Metal Live Radio",
+      "nowplaying_url": "http://51.255.8.139:8738/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:8738/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "minimal-mix-radio",
+      "name": "Minimal Mix Radio",
+      "nowplaying_url": "http://orion.shoutca.st:8750/stats?sid=1&json=1",
+      "history_url": "http://orion.shoutca.st:8750/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "mirage-space",
+      "name": "Mirage Space",
+      "nowplaying_url": "http://s0.radiohost.pl:9563/stats?sid=1&json=1",
+      "history_url": "http://s0.radiohost.pl:9563/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "mittendrin-pl",
+      "name": "mittendrin.pl",
+      "nowplaying_url": "https://s1.slotex.pl:7592/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7592/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "modfm",
+      "name": "ModFM",
+      "nowplaying_url": "http://radio.modules.pl:8500/stats?sid=1&json=1",
+      "history_url": "http://radio.modules.pl:8500/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "modules-pl",
+      "name": "modules.pl",
+      "nowplaying_url": "http://radio.modules.pl:8500/stats?sid=1&json=1",
+      "history_url": "http://radio.modules.pl:8500/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "ms-radio-90s-polska",
+      "name": "MS RADIO 90's POLSKA",
+      "nowplaying_url": "https://audio.msradio.pl/api/nowplaying/msradio",
+      "history_url": "https://audio.msradio.pl/api/nowplaying/msradio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "ms-radio-90s-selected-polska",
+      "name": "Ms Radio 90's Selected Polska",
+      "nowplaying_url": "http://audio.msradio.pl/api/nowplaying/msradio",
+      "history_url": "http://audio.msradio.pl/api/nowplaying/msradio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "music-family",
+      "name": "Music Family",
+      "nowplaying_url": "https://s3.slotex.pl:7216/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7216/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "muzyczna-oaza",
+      "name": "Muzyczna Oaza",
+      "nowplaying_url": "https://s3.slotex.pl:7100/stats?sid=1&json=1",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "muzyczny-beat-fm",
+      "name": "Muzyczny Beat FM",
+      "nowplaying_url": "http://s3.slotex.pl:7034/stats?sid=1&json=1",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "muzyka-dwoch-serc",
+      "name": "Muzyka Dwoch Serc",
+      "nowplaying_url": "http://s3.slotex.pl:7272/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7272/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "nasze-nowe-radio",
+      "name": "Nasze Nowe Radio",
+      "nowplaying_url": "https://s3.slotex.pl:7388/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7388/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "nasze-radio-1bdc2de6",
+      "name": "Nasze RAdio",
+      "nowplaying_url": "https://s1.slotex.pl:7146/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7146/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "neural-radio",
+      "name": "neural radio",
+      "nowplaying_url": "http://cast.magicstreams.gr:9111/stats?sid=1&json=1",
+      "history_url": "http://cast.magicstreams.gr:9111/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "pallotti-fm-ma-opolska",
+      "name": "Pallotti.fm",
+      "nowplaying_url": "http://s1.slotex.pl:7074/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7074/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "palloty-skie-radio-ewangelizacyjne-pallotti-fm",
+      "name": "Pallotyńskie Radio Ewangelizacyjne Pallotti.FM",
+      "nowplaying_url": "http://s1.slotex.pl:7074/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7074/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "paranormalium",
+      "name": "Paranormalium",
+      "nowplaying_url": "http://shoutcast.paranormalium.pl:8000/status-json.xsl?mount=%2F5",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "paranormalium-opus-8kbps",
+      "name": "Paranormalium [OPUS_8kbps]",
+      "nowplaying_url": "https://azuracast.paranormalium.pl/api/nowplaying/radio_paranormalium",
+      "history_url": "https://azuracast.paranormalium.pl/api/nowplaying/radio_paranormalium",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "park-fm",
+      "name": "Park FM",
+      "nowplaying_url": "https://sluchaj2.radiopark.biz.pl:8443/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "polski-fm",
+      "name": "Polski FM",
+      "nowplaying_url": "https://usa8.fastcast4u.com/rpc/live/streaminfo.get",
+      "metadata_server": "centovacast"
+    },
+    {
+      "slug": "polskie-radio-katowice",
+      "name": "Polskie Radio Katowice",
+      "nowplaying_url": "http://stream4.nadaje.com:9212/status-json.xsl?mount=%2Fradiokatowice",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "polskie-radio-olsztyn",
+      "name": "Polskie Radio OLSZTYN",
+      "nowplaying_url": "https://rostr1.radioolsztyn.pl:8443/status-json.xsl?mount=%2FRO",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "polskie-radio-pozna-poznan",
+      "name": "Polskie Radio Poznań",
+      "nowplaying_url": "http://stream4.nadaje.com:8578/status-json.xsl?mount=%2Fpoznan",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "polskie-radio-szczecin-92fm",
+      "name": "Polskie Radio Szczecin 92FM",
+      "nowplaying_url": "http://stream4.nadaje.com:11986/status-json.xsl?mount=%2Fprs",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "pr-przeboje-prl-6b988509",
+      "name": "PR PRZEBOJE PRL",
+      "nowplaying_url": "https://mpantusa-danidi01.radioca.st/stats?sid=1&json=1",
+      "history_url": "https://mpantusa-danidi01.radioca.st/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "punkowe-radio-underground",
+      "name": "Punkowe Radio Underground",
+      "nowplaying_url": "http://s1.slotex.pl:7604/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7604/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-afera-poznan",
+      "name": "Radio Afera",
+      "nowplaying_url": "http://radio.afera.com.pl/status-json.xsl?mount=%2Fafera128.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-afera",
+      "name": "Radio Afera",
+      "nowplaying_url": "https://radio.afera.com.pl/status-json.xsl?mount=%2Fafera128.ogg",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-afera-98-6-mhz",
+      "name": "Radio Afera 98,6 MHz",
+      "nowplaying_url": "https://radio.afera.com.pl/status-json.xsl?mount=%2Fafera128.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-akord",
+      "name": "Radio Akord",
+      "nowplaying_url": "http://s1.slotex.pl:7122/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7122/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-aktywne",
+      "name": "Radio Aktywne",
+      "nowplaying_url": "https://listen.radioaktywne.pl/status-json.xsl?mount=%2Framp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-alex-zakopane",
+      "name": "Radio Alex",
+      "nowplaying_url": "http://proxima.shoutca.st:9045/stats?sid=1&json=1",
+      "history_url": "http://proxima.shoutca.st:9045/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-alex",
+      "name": "Radio Alex",
+      "nowplaying_url": "https://frradioq.radioca.st/stats?sid=1&json=1",
+      "history_url": "https://frradioq.radioca.st/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-anime24",
+      "name": "Radio Anime24",
+      "nowplaying_url": "http://91.232.4.33:7028/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:7028/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-armageddon-poland",
+      "name": "Radio Armageddon",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:11608/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:11608/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-asymetria-mazowieckie",
+      "name": "Radio Asymetria",
+      "nowplaying_url": "https://evcast.mediacp.eu:1290/stats?sid=1&json=1",
+      "history_url": "https://evcast.mediacp.eu:1290/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-baobab-warszawa",
+      "name": "Radio Baobab",
+      "nowplaying_url": "http://stream.radiobaobab.pl:8000/status-json.xsl?mount=%2Fradiobaobab.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-baobab",
+      "name": "Radio Baobab",
+      "nowplaying_url": "http://stream.radiobaobab.pl:8000/status-json.xsl?mount=%2Fradiobaobab.ogg",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-bezpieczna-podr",
+      "name": "RADIO BEZPIECZNA PODRÓŻ",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:9344/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:9344/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-biedrzychowice-dolny-l-sk",
+      "name": "Radio Biedrzychowice",
+      "nowplaying_url": "http://195.164.158.230:9070/stats?sid=1&json=1",
+      "history_url": "http://195.164.158.230:9070/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-borowiaczek",
+      "name": "Radio Borowiaczek",
+      "nowplaying_url": "http://s3.slotex.pl:7228/stats?sid=1&json=1",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-brylant",
+      "name": "Radio Brylant",
+      "nowplaying_url": "https://s1.slotex.pl:7212/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7212/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-bunt",
+      "name": "Radio Bunt",
+      "nowplaying_url": "https://cast6.asurahosting.com/rpc/radiobun/streaminfo.get",
+      "history_url": "https://cast6.asurahosting.com/external/rpc.php?m=recenttracks.get&username=radiobun&limit=10",
+      "metadata_server": "centovacast"
+    },
+    {
+      "slug": "radio-chrystusa-kr-la-d",
+      "name": "Radio Chrystusa Króla",
+      "nowplaying_url": "http://radiochrystusakrola.pl:8080/stats?sid=1&json=1",
+      "history_url": "http://radiochrystusakrola.pl:8080/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-chrze-cijanin",
+      "name": "Radio Chrześcijanin",
+      "nowplaying_url": "https://stream20.hosterion.pl:8588/stats?sid=1&json=1",
+      "history_url": "https://stream20.hosterion.pl:8588/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-chrzescijanin-biblia-siedlce",
+      "name": "Radio Chrzescijanin Biblia",
+      "nowplaying_url": "http://s1.slotex.pl:7116/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7116/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-chrzescijanin-dzieci-siedlce",
+      "name": "Radio Chrzescijanin Dzieci",
+      "nowplaying_url": "http://s1.slotex.pl:7410/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7410/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-chrzescijanin-muzyka-instrumentalna-siedlce",
+      "name": "Radio Chrzescijanin Muzyka instrumentalna",
+      "nowplaying_url": "http://s1.slotex.pl:7172/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7172/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-club-dj-poland",
+      "name": "RADIO CLUB DJ",
+      "nowplaying_url": "http://4stream.pl:18272/stats?sid=1&json=1",
+      "history_url": "http://4stream.pl:18272/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-danielka",
+      "name": "Radio Danielka",
+      "nowplaying_url": "http://s3.slotex.pl:7088/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7088/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dht-kana-drugi",
+      "name": "Radio DHT (kanał drugi)",
+      "nowplaying_url": "http://maggie.torontocast.com:8100/stats?sid=1&json=1",
+      "history_url": "http://maggie.torontocast.com:8100/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-d-wi-k-slaskie",
+      "name": "Radio Dźwięk",
+      "nowplaying_url": "https://streamhls.radiodzwiek.slask.pl/status-json.xsl?mount=%2Fdzwiek",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-dzwiek-slaskie",
+      "name": "Radio Dzwiek",
+      "nowplaying_url": "https://streamhls.radiodzwiek.slask.pl/status-json.xsl?mount=%2Fdzwiek-mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-dzwiek",
+      "name": "Radio Dzwiek",
+      "nowplaying_url": "http://s3.slotex.pl:7408/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7408/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-dzwiek-slaskie-b8b79a84",
+      "name": "Radio Dzwiek",
+      "nowplaying_url": "https://streamhls.radiodzwiek.slask.pl/status-json.xsl?mount=%2Fdzwiek64",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-elbl-g-e70ca294",
+      "name": "Radio Elbląg",
+      "nowplaying_url": "https://rostr1.radioolsztyn.pl:8543/status-json.xsl?mount=%2FELBLAG",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-fama-kielce",
+      "name": "Radio FAMA",
+      "nowplaying_url": "http://stream2.nadaje.com:8076/stats?sid=1&json=1",
+      "history_url": "http://stream2.nadaje.com:8076/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-fama-slupsk-pomorskie",
+      "name": "Radio Fama Slupsk",
+      "nowplaying_url": "http://stream3.nadaje.com:9024/stats?sid=1&json=1",
+      "history_url": "http://stream3.nadaje.com:9024/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-fama-tomasz-w",
+      "name": "Radio FAMA Tomaszów",
+      "nowplaying_url": "http://stream2.nadaje.com:8078/stats?sid=1&json=1",
+      "history_url": "http://stream2.nadaje.com:8078/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-famka-lesser-poland",
+      "name": "Radio Famka",
+      "nowplaying_url": "http://stream4.nadaje.com:10118/status-json.xsl?mount=%2Ffamka",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-fest-100-2-fm-dolno-l-skie",
+      "name": "Radio Fest 100.2 FM",
+      "nowplaying_url": "https://play.radiofest.pl:8443/status-json.xsl?mount=%2Ffest",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-forever",
+      "name": "Radio Forever",
+      "nowplaying_url": "http://s1.slotex.pl:7134/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7134/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-forte",
+      "name": "Radio Forte",
+      "nowplaying_url": "http://s1.slotex.pl:7856/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7856/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-freee-lublin",
+      "name": "Radio Freee",
+      "nowplaying_url": "http://212.244.54.195:8000/status-json.xsl?mount=%2Fradiofreee",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-freee",
+      "name": "Radio Freee",
+      "nowplaying_url": "https://streaming.radio.lublin.pl:8843/status-json.xsl?mount=%2Fradiofreee",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-freee-0beca8cd",
+      "name": "Radio Freee",
+      "nowplaying_url": "https://streaming.radio.lublin.pl:8843/status-json.xsl?mount=%2Fradiofreee",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-freee-89-9",
+      "name": "Radio Freee 89.9",
+      "nowplaying_url": "https://streaming.radio.lublin.pl:8843/status-json.xsl?mount=%2Fradiofreeeacp",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ftb-club",
+      "name": "Radio FTB - Club",
+      "nowplaying_url": "http://play.radioftb.net:8000/stats?sid=1&json=1",
+      "history_url": "http://play.radioftb.net:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-ftm-lesser-poland",
+      "name": "Radio FTM",
+      "nowplaying_url": "https://s1.slotex.pl:7792/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7792/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-glos-pelplin",
+      "name": "Radio Glos",
+      "nowplaying_url": "http://87.204.92.180:8000/stats?sid=1&json=1",
+      "history_url": "http://87.204.92.180:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-gniezno",
+      "name": "Radio Gniezno",
+      "nowplaying_url": "http://stream3.nadaje.com:8012/stats?sid=1&json=1",
+      "history_url": "http://stream3.nadaje.com:8012/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-gorz-w-gorz-w-wielkopolski",
+      "name": "Radio Gorzów",
+      "nowplaying_url": "http://stream02.radiogorzow.pl:10115/stats?sid=1&json=1",
+      "history_url": "http://stream02.radiogorzow.pl:10115/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-gryfice-ai-zac",
+      "name": "Radio Gryfice AI",
+      "nowplaying_url": "https://panel.radio.gryfice.net/api/nowplaying/radio-gryfice",
+      "history_url": "https://panel.radio.gryfice.net/api/nowplaying/radio-gryfice",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-horyzont",
+      "name": "Radio Horyzont",
+      "nowplaying_url": "http://s1.slotex.pl:7328/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7328/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-italo4you-256kbps",
+      "name": "Radio Italo4you 256kbps",
+      "nowplaying_url": "http://s0.radiohost.pl:8018/stats?sid=1&json=1",
+      "history_url": "http://s0.radiohost.pl:8018/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-italo4you-64kbps",
+      "name": "Radio Italo4you 64kbps",
+      "nowplaying_url": "http://s0.radiohost.pl:8018/stats?sid=1&json=1",
+      "history_url": "http://s0.radiohost.pl:8018/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-jutrzenka-warszawa",
+      "name": "Radio Jutrzenka",
+      "nowplaying_url": "http://sluchaj.radiojutrzenka.waw.pl:12854/status-json.xsl?mount=%2Ftest",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-k-cik-rodzinny",
+      "name": "Radio Kącik Rodzinny",
+      "nowplaying_url": "https://s3.slotex.pl:7374/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7374/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kampus-warszawa",
+      "name": "Radio Kampus",
+      "nowplaying_url": "http://193.0.98.66:8005/stats?sid=1&json=1",
+      "history_url": "http://193.0.98.66:8005/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kampus-97-1-fm",
+      "name": "Radio Kampus 97,1 FM",
+      "nowplaying_url": "http://193.0.98.66:8002/stats?sid=1&json=1",
+      "history_url": "http://193.0.98.66:8002/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-karolinka",
+      "name": "Radio Karolinka",
+      "nowplaying_url": "http://91.232.4.33:8358/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8358/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kasz-b-pomorskie",
+      "name": "Radio Kaszëbë",
+      "nowplaying_url": "http://x.radiokaszebe.pl:9000/stats?sid=1&json=1",
+      "history_url": "http://x.radiokaszebe.pl:9000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kielce",
+      "name": "Radio Kielce",
+      "nowplaying_url": "https://streaming.g-news.pl:8030/status-json.xsl?mount=%2Frk2",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-kolobrzeg",
+      "name": "Radio Kolobrzeg",
+      "nowplaying_url": "http://graj.radiokolobrzeg.pl:8000/stats?sid=1&json=1",
+      "history_url": "http://graj.radiokolobrzeg.pl:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kolobrzeg-fd2e1631",
+      "name": "Radio Kolobrzeg",
+      "nowplaying_url": "http://graj.radiokolobrzeg.pl:8000/stats?sid=1&json=1",
+      "history_url": "http://graj.radiokolobrzeg.pl:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-krupski-m-yn",
+      "name": "Radio Krupski Młyn",
+      "nowplaying_url": "http://s3.slotex.pl:7346/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7346/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-kuropatwa-kujawsko-pomorskie",
+      "name": "Radio Kuropatwa",
+      "nowplaying_url": "https://www.radiojar.com/api/stations/ypspphhxfm8uv/now_playing/",
+      "metadata_server": "radiojar",
+      "history_url": "https://www.radiojar.com/api/stations/ypspphhxfm8uv/tracks/"
+    },
+    {
+      "slug": "radio-lagoonfm",
+      "name": "Radio LagoonFm",
+      "nowplaying_url": "http://s1.slotex.pl:7828/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7828/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-leliwa",
+      "name": "Radio Leliwa",
+      "nowplaying_url": "https://streaming.g-news.pl:8050/status-json.xsl?mount=%2Fleliwa",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-leliwa-podkarpacie",
+      "name": "Radio Leliwa",
+      "nowplaying_url": "http://streaming.g-news.pl:8050/status-json.xsl?mount=%2Fleliwa",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-lemko-pl",
+      "name": "Radio Lemko.pl",
+      "nowplaying_url": "http://stream3.nadaje.com:8060/status-json.xsl?mount=%2Fradio",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-light-motiv",
+      "name": "Radio Light Motiv",
+      "nowplaying_url": "http://s3.slotex.pl:7226/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7226/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-lublin",
+      "name": "Radio Lublin",
+      "nowplaying_url": "https://streaming.radio.lublin.pl:8843/status-json.xsl?mount=%2F128k",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-macabrismix",
+      "name": "Radio Macabrismix",
+      "nowplaying_url": "https://panel.macabrismix.com.pl/api/nowplaying/macabris_mix_radio_station_1-2c6_ghz",
+      "history_url": "https://panel.macabrismix.com.pl/api/nowplaying/macabris_mix_radio_station_1-2c6_ghz",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-magic-dance",
+      "name": "Radio Magic Dance",
+      "nowplaying_url": "http://s1.slotex.pl:7686/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7686/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-magma",
+      "name": "Radio MagMa",
+      "nowplaying_url": "https://s3.slotex.pl:7180/stats?sid=1&json=1",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-manhattan-warszawa",
+      "name": "Radio Manhattan",
+      "nowplaying_url": "http://s1.slotex.pl:7780/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7780/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-manhattan",
+      "name": "Radio Manhattan",
+      "nowplaying_url": "http://s1.slotex.pl:7780/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7780/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-max-hit-polska",
+      "name": "Radio Max Hit Polska",
+      "nowplaying_url": "http://s3.slotex.pl:7370/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7370/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mbox-warsaw",
+      "name": "Radio Mbox",
+      "nowplaying_url": "http://panel.radiombox.pl/api/nowplaying/radio_mbox",
+      "history_url": "http://panel.radiombox.pl/api/nowplaying/radio_mbox",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-mirage-euro-dance",
+      "name": "Radio Mirage - Euro Dance",
+      "nowplaying_url": "http://s0.radiohost.pl:9569/stats?sid=1&json=1",
+      "history_url": "http://s0.radiohost.pl:9569/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mirage-italo-dance",
+      "name": "Radio Mirage - Italo Dance",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:9569/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:9569/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mirage-italodance-channel",
+      "name": "Radio Mirage - ItaloDance Channel",
+      "nowplaying_url": "http://91.232.4.33:9569/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:9569/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mirage-prywatka",
+      "name": "Radio Mirage - Prywatka",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:7214/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:7214/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mirage-prywatka-channel",
+      "name": "Radio Mirage - Prywatka Channel",
+      "nowplaying_url": "http://91.232.4.33:7214/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:7214/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mirage-space",
+      "name": "Radio Mirage - Space",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:9563/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:9563/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mirage-prywatka-5c4be640",
+      "name": "Radio Mirage Prywatka",
+      "nowplaying_url": "http://91.232.4.33:7214/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:7214/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-mr-gowo-warmi-sko-mazurskie",
+      "name": "Radio Mrągowo",
+      "nowplaying_url": "https://stream.radiomragowo.pl/api/nowplaying/radio_mragowo",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-muzyczny-zak-tek",
+      "name": "Radio Muzyczny Zakątek",
+      "nowplaying_url": "http://s3.slotex.pl:7336/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7336/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-muzyka-dwoch-serc",
+      "name": "Radio Muzyka Dwoch Serc",
+      "nowplaying_url": "http://s3.slotex.pl:7272/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7272/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-na-stoku-bia-ystok",
+      "name": "Radio Na Stoku",
+      "nowplaying_url": "https://sluchaj.link:5443/status-json.xsl?mount=%2Fnastoku",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-nowy-wiat",
+      "name": "Radio Nowy Świat",
+      "nowplaying_url": "https://go-audio.toya.net.pl/status-json.xsl?mount=%2F63214",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ocean-dusz",
+      "name": "Radio Ocean Dusz",
+      "nowplaying_url": "http://s1.slotex.pl:7022/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7022/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-opat-w-wi-tokrzyskie",
+      "name": "Radio Opatów",
+      "nowplaying_url": "http://stream2.nadaje.com:11144/stats?sid=1&json=1",
+      "history_url": "http://stream2.nadaje.com:11144/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-ostrowiec-95-2-fm",
+      "name": "Radio Ostrowiec 95.2 FM",
+      "nowplaying_url": "http://s1.slotex.pl:7050/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7050/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-palotti-fm-masovia",
+      "name": "Radio Palotti FM",
+      "nowplaying_url": "https://s1.slotex.pl:7074/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7074/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-paranormalium",
+      "name": "Radio Paranormalium",
+      "nowplaying_url": "https://azuracast.paranormalium.pl/api/nowplaying/radio_paranormalium",
+      "history_url": "https://azuracast.paranormalium.pl/api/nowplaying/radio_paranormalium",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-party-kana-g-wny",
+      "name": "Radio Party - Kanał Główny",
+      "nowplaying_url": "https://s2.radioparty.pl:8015/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-pasja",
+      "name": "Radio Pasja",
+      "nowplaying_url": "http://91.232.4.33:8049/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8049/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-chillout",
+      "name": "Radio Pasja - Chillout",
+      "nowplaying_url": "http://91.232.4.33:8108/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8108/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-chillout-128kb-s",
+      "name": "Radio Pasja - Chillout 128kb/s",
+      "nowplaying_url": "http://91.232.4.33:8108/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8108/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-dance",
+      "name": "Radio Pasja - Dance",
+      "nowplaying_url": "http://91.232.4.33:9466/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:9466/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-dance-128kb-s",
+      "name": "Radio Pasja - Dance 128kb/s",
+      "nowplaying_url": "http://91.232.4.33:9466/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:9466/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-klubowa",
+      "name": "Radio Pasja - Klubowa",
+      "nowplaying_url": "http://91.232.4.33:9460/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:9460/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-klubowa-128kb-s",
+      "name": "Radio Pasja - Klubowa 128kb/s",
+      "nowplaying_url": "http://91.232.4.33:9460/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:9460/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-pop",
+      "name": "Radio Pasja - Pop",
+      "nowplaying_url": "http://91.232.4.33:8084/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8084/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-pop-128kb-s",
+      "name": "Radio Pasja - Pop 128kb/s",
+      "nowplaying_url": "http://91.232.4.33:8084/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8084/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-relaks",
+      "name": "Radio Pasja - Relaks",
+      "nowplaying_url": "http://91.232.4.33:8102/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8102/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-relaks-128kb-s",
+      "name": "Radio Pasja - Relaks 128kb/s",
+      "nowplaying_url": "http://91.232.4.33:8102/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8102/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-pasja-128kb-s",
+      "name": "Radio Pasja 128kb/s",
+      "nowplaying_url": "http://91.232.4.33:8049/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:8049/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-polfan",
+      "name": "Radio Polfan",
+      "nowplaying_url": "https://s3.slotex.pl:7194/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7194/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-puzzle",
+      "name": "Radio Puzzle",
+      "nowplaying_url": "http://s1.slotex.pl:7572/stats?sid=1&json=1",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-q-100-7fm-lokalne-radio-z-kutna",
+      "name": "Radio Q 100,7FM - Lokalne radio z Kutna",
+      "nowplaying_url": "http://79.188.161.82:8020/stats?sid=1&json=1",
+      "history_url": "http://79.188.161.82:8020/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-racja",
+      "name": "Radio Racja",
+      "nowplaying_url": "http://air.racyja.com:8000/status-json.xsl?mount=%2Faacp128",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ram-dolno-l-skie",
+      "name": "Radio RAM",
+      "nowplaying_url": "https://stream2.prw.pl:8001/status-json.xsl?mount=%2Fradioram",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ram-dolny-l-sk",
+      "name": "Radio RAM",
+      "nowplaying_url": "http://stream4.nadaje.com:9220/status-json.xsl?mount=%2Fram",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-ram-aac-wroclaw",
+      "name": "Radio RAM (AAC)",
+      "nowplaying_url": "http://stream2.nadaje.com:9228/status-json.xsl?mount=%2Fram.aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-rdn-ma-opolska-tarn-w",
+      "name": "Radio RDN Małopolska",
+      "nowplaying_url": "https://stream1.dabcom.pl/status-json.xsl?mount=%2Frdn_mpl",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-rekord-kielce",
+      "name": "Radio Rekord Kielce",
+      "nowplaying_url": "http://stream4.nadaje.com:9854/status-json.xsl?mount=%2Ftest",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-republika",
+      "name": "Radio Republika",
+      "nowplaying_url": "https://ssl-1.radiotvrepublika.pl:12698/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiotvrepublika.pl:12698/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-rm80",
+      "name": "Radio RM80",
+      "nowplaying_url": "http://91.232.4.33:9011/stats?sid=1&json=1",
+      "history_url": "http://91.232.4.33:9011/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-rodzina",
+      "name": "Radio Rodzina",
+      "nowplaying_url": "http://sluchaj.radiorodzina.pl/status-json.xsl?mount=%2FRadioRodzinaWroclawLIVE.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-r-aniec",
+      "name": "Radio Różaniec",
+      "nowplaying_url": "http://radio2.rozaniec.info:5696/stats?sid=1&json=1",
+      "history_url": "http://radio2.rozaniec.info:5696/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-rto-trance",
+      "name": "RADIO RTO TRANCE",
+      "nowplaying_url": "http://s3.slotex.pl:7056/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7056/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-rzesz-w",
+      "name": "Radio Rzeszów",
+      "nowplaying_url": "https://streaming.g-news.pl:8040/status-json.xsl?mount=%2Frzeszow",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-safira-mazowieckie-e4c609e0",
+      "name": "Radio Safira",
+      "nowplaying_url": "https://ec1.yesstreaming.net:2340/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-sierpc-mazowieckie",
+      "name": "Radio Sierpc",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:10700/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:10700/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-silesia-zabrze",
+      "name": "Radio Silesia",
+      "nowplaying_url": "http://s1.slotex.pl:7926/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7926/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-slask-upper-silesia",
+      "name": "Radio Slask",
+      "nowplaying_url": "https://s1.slotex.pl:7022/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7022/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-sok-sulecin",
+      "name": "Radio SOK Sulecin",
+      "nowplaying_url": "https://s3.slotex.pl:7230/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7230/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-spin-pomorskie",
+      "name": "Radio Spin",
+      "nowplaying_url": "http://s01.radiospin.pl:8080/stats?sid=1&json=1",
+      "history_url": "http://s01.radiospin.pl:8080/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-stacja-impreza",
+      "name": "Radio Stacja Impreza",
+      "nowplaying_url": "https://stacjaimpreza.katowice.pl:8002/stats?sid=1&json=1",
+      "history_url": "https://stacjaimpreza.katowice.pl:8002/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-strefa-fm-piotrk-w-tryb",
+      "name": "Radio Strefa FM",
+      "nowplaying_url": "http://play.strefa.fm:8000/status-json.xsl?mount=%2Fstrefa.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-strefa-muzy-ma-opolskie",
+      "name": "Radio Strefa Muzy",
+      "nowplaying_url": "https://radiosm.pl:8000/status-json.xsl?mount=%2Fradio.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-styl-fm",
+      "name": "Radio Styl FM",
+      "nowplaying_url": "https://s3.slotex.pl:7196/stats?sid=1&json=1",
+      "history_url": "https://s3.slotex.pl:7196/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-super-fm-97-5-fm-szczecin-zachodniopomorskie",
+      "name": "Radio Super FM 97,5 FM - Szczecin",
+      "nowplaying_url": "https://stream.super.fm:8443/status-json.xsl?mount=%2Fsuperfm.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-szczecin-64k-aac",
+      "name": "Radio Szczecin (64K AAC)",
+      "nowplaying_url": "http://stream4.nadaje.com:11986/status-json.xsl?mount=%2Fprs.aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-szczecin-extra",
+      "name": "Radio Szczecin Extra",
+      "nowplaying_url": "http://stream3.nadaje.com:8200/status-json.xsl?mount=%2Fszczecinfm",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-tango-uno-mazowieckie",
+      "name": "Radio Tango Uno",
+      "nowplaying_url": "https://radiotangouno-online.pl/api/nowplaying/radio_tango_uno",
+      "history_url": "https://radiotangouno-online.pl/api/nowplaying/radio_tango_uno",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "radio-thomcarst",
+      "name": "Radio ThomCarst",
+      "nowplaying_url": "http://s3.slotex.pl:7248/stats?sid=1&json=1",
+      "history_url": "http://s3.slotex.pl:7248/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-ton-pl",
+      "name": "RADIO TON PL",
+      "nowplaying_url": "http://s1.slotex.pl:7310/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7310/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-uwm-fm-olsztyn",
+      "name": "Radio UWM FM",
+      "nowplaying_url": "http://213.184.18.156:8000/stats?sid=1&json=1",
+      "history_url": "http://213.184.18.156:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-vanessa",
+      "name": "Radio Vanessa",
+      "nowplaying_url": "http://s1.slotex.pl:7358/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7358/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-warmii-i-mazur",
+      "name": "Radio Warmii i Mazur",
+      "nowplaying_url": "https://rostr1.radioolsztyn.pl:8843/status-json.xsl?mount=%2FRWiM",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-warta",
+      "name": "RADIO WARTA",
+      "nowplaying_url": "http://s1.slotex.pl:7446/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7446/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-weso-e-slonzoki",
+      "name": "Radio Wesołe Slonzoki",
+      "nowplaying_url": "http://51.255.8.139:8380/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:8380/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-wom-world-of-music",
+      "name": "Radio WoM (World Of Music)",
+      "nowplaying_url": "http://51.255.8.139:9120/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:9120/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-wroclaw",
+      "name": "Radio Wroclaw",
+      "nowplaying_url": "http://stream4.nadaje.com:9240/status-json.xsl?mount=%2Fprw",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-wroclaw-kultura",
+      "name": "Radio Wroclaw Kultura",
+      "nowplaying_url": "http://stream4.nadaje.com:9230/status-json.xsl?mount=%2Frwkultura",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radio-zach-d-aac-zielona-gora",
+      "name": "Radio Zachód (AAC)",
+      "nowplaying_url": "http://stream02.zachod.pl:10113/stats?sid=1&json=1",
+      "history_url": "http://stream02.zachod.pl:10113/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-zawiercie",
+      "name": "RADIO ZAWIERCIE",
+      "nowplaying_url": "https://ssl-1.radiohost.pl:9078/stats?sid=1&json=1",
+      "history_url": "https://ssl-1.radiohost.pl:9078/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-zodiak-mazowieckie",
+      "name": "Radio Zodiak",
+      "nowplaying_url": "https://fire.doscast.com:8084/stats?sid=1&json=1",
+      "history_url": "https://fire.doscast.com:8084/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radio-u-awy",
+      "name": "Radio Żuławy",
+      "nowplaying_url": "https://www.radiojar.com/api/stations/q87xmtvrrg8uv/now_playing/",
+      "metadata_server": "radiojar",
+      "history_url": "https://www.radiojar.com/api/stations/q87xmtvrrg8uv/tracks/"
+    },
+    {
+      "slug": "radio40plus",
+      "name": "Radio40plus",
+      "nowplaying_url": "http://s1.slotex.pl:7178/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7178/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radioff-lubuskie",
+      "name": "radiOFF",
+      "nowplaying_url": "https://stream.radioff.com/status-json.xsl?mount=%2Fstream.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radiokultura-pl",
+      "name": "radiokultura.pl",
+      "nowplaying_url": "http://51.255.8.139:9772/stats?sid=1&json=1",
+      "history_url": "http://51.255.8.139:9772/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "radioparty-pl-wieliczka",
+      "name": "Radioparty.pl",
+      "nowplaying_url": "http://s7.radioparty.pl:8000/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-acc",
+      "name": "Radioparty.pl ACC+",
+      "nowplaying_url": "http://s2.radioparty.pl:7000/status-json.xsl?mount=%2Fstream64aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-dj-mixes-party-wieliczka",
+      "name": "Radioparty.pl Dj Mixes Party",
+      "nowplaying_url": "http://djmixes.radioparty.pl:8035/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-energy-2000-aac",
+      "name": "Radioparty.pl Energy 2000 AAC+",
+      "nowplaying_url": "http://s2.radioparty.pl:8040/status-json.xsl?mount=%2Fenergy2000",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-energy2000-wieliczka",
+      "name": "Radioparty.pl Energy2000",
+      "nowplaying_url": "http://energy2000.radioparty.pl:8005/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-house-party-wieliczka",
+      "name": "Radioparty.pl House Party",
+      "nowplaying_url": "http://house.radioparty.pl:8010/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-trance-party-wieliczka",
+      "name": "Radioparty.pl Trance Party",
+      "nowplaying_url": "http://trance.radioparty.pl:8015/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radioparty-pl-vocal-trance",
+      "name": "Radioparty.pl Vocal Trance",
+      "nowplaying_url": "http://s2.radioparty.pl:8025/status-json.xsl?mount=%2Fvocaltrance",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "radiospin",
+      "name": "Radiospin",
+      "nowplaying_url": "http://s01.toksyna.fm:8100/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8100/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "region-schlesien",
+      "name": "REGION",
+      "nowplaying_url": "https://s1.slotex.pl:7592/stats?sid=1&json=1",
+      "history_url": "https://s1.slotex.pl:7592/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "rmc-radio-muzyka-czlowiek",
+      "name": "RMC - RADIO MUZYKA CZLOWIEK",
+      "nowplaying_url": "http://s1.slotex.pl:7030/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7030/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "rmi-euro-disco",
+      "name": "RMI Euro Disco",
+      "nowplaying_url": "https://ams-pioneer02.dedicateware.com:2655/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "rockserwis-ma-opolska",
+      "name": "RockSerwis",
+      "nowplaying_url": "http://stream9.nadaje.com:8002/status-json.xsl?mount=%2Flive",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "rockserwis-fm-acc",
+      "name": "rockserwis.fm (ACC+)",
+      "nowplaying_url": "http://stream9.nadaje.com:8002/status-json.xsl?mount=%2Flive.aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "rp",
+      "name": "rp",
+      "nowplaying_url": "http://s1.radioparty.pl:8000/status-json.xsl?mount=%2Fstream",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "l-skie-radio-upper-silesia",
+      "name": "Śląskie Radio",
+      "nowplaying_url": "https://stream10.hosterion.pl:7032/stats?sid=1&json=1",
+      "history_url": "https://stream10.hosterion.pl:7032/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "smoothjazz-com-pl-pomorskie",
+      "name": "SmoothJazz.com.pl",
+      "nowplaying_url": "https://bcast.vigormultimedia.com:48888/status-json.xsl?mount=%2Fsjcompl320mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "smoothjazz-com-pl-192k-aac-pomorskie",
+      "name": "SmoothJazz.com.pl 192k aac+",
+      "nowplaying_url": "https://bcast.vigormultimedia.com:48888/status-json.xsl?mount=%2Fsjcompl192aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "smoothjazz-com-pl-64k-aac-pomorskie",
+      "name": "SmoothJazz.com.pl 64k aac+",
+      "nowplaying_url": "https://bcast.vigormultimedia.com:48888/status-json.xsl?mount=%2Fsjcompl64aac",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "spinacz-mazowsze",
+      "name": "Spinacz",
+      "nowplaying_url": "http://cinemamovies.pl:8563/stats?sid=1&json=1",
+      "history_url": "http://cinemamovies.pl:8563/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "super-fm",
+      "name": "Super FM",
+      "nowplaying_url": "http://stream.super.fm:8000/status-json.xsl?mount=%2Fsuperfm.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "super-fm-97-5",
+      "name": "Super FM 97.5",
+      "nowplaying_url": "https://stream.super.fm:8443/status-json.xsl?mount=%2Fsuperfm.mp3",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "toksyna-fm-straszyno",
+      "name": "Toksyna FM",
+      "nowplaying_url": "http://s01.toksyna.fm:8000/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8000/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "toksyna-fm-chillout-more",
+      "name": "Toksyna FM Chillout & More",
+      "nowplaying_url": "http://s01.toksyna.fm:8050/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8050/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "toksyna-fm-dj-channel",
+      "name": "Toksyna FM DJ Channel",
+      "nowplaying_url": "http://s01.toksyna.fm:8040/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8040/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "toksyna-fm-elektronica",
+      "name": "Toksyna FM Elektronica",
+      "nowplaying_url": "http://s01.toksyna.fm:8010/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8010/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "toksyna-fm-new-romantic",
+      "name": "Toksyna FM New Romantic",
+      "nowplaying_url": "http://s01.toksyna.fm:8020/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8020/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "toksyna-fm-psytrance",
+      "name": "Toksyna FM PsyTrance",
+      "nowplaying_url": "http://s01.toksyna.fm:8030/stats?sid=1&json=1",
+      "history_url": "http://s01.toksyna.fm:8030/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "trendy-radio-krosno",
+      "name": "Trendy Radio",
+      "nowplaying_url": "http://stream.trendyradio.pl:8000/status-json.xsl?mount=%2Fh",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "trendy-radio-mobile",
+      "name": "Trendy Radio Mobile",
+      "nowplaying_url": "https://stream.trendyradio.pl/status-json.xsl?mount=%2Fm",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "trip-radio",
+      "name": "trip radio",
+      "nowplaying_url": "https://a13.asurahosting.com/api/nowplaying/trip-radio",
+      "history_url": "https://a13.asurahosting.com/api/nowplaying/trip-radio",
+      "metadata_server": "azuracast"
+    },
+    {
+      "slug": "twoja-polska-stacja",
+      "name": "Twoja Polska Stacja",
+      "nowplaying_url": "https://sluchaj2.radiopark.biz.pl:8443/status-json.xsl?mount=%2Ftpsapp",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "wasze-radio-fm",
+      "name": "Wasze Radio FM",
+      "nowplaying_url": "https://sluchaj.link:5443/status-json.xsl?mount=%2Fwasze",
+      "metadata_server": "icecast"
+    },
+    {
+      "slug": "weso-a-43",
+      "name": "Wesoła 43",
+      "nowplaying_url": "http://s1.slotex.pl:7650/stats?sid=1&json=1",
+      "history_url": "http://s1.slotex.pl:7650/played?sid=1&type=json",
+      "metadata_server": "shoutcast"
+    },
+    {
+      "slug": "zamek-nadaje-dolny-l-sk",
+      "name": "Zamek Nadaje",
+      "nowplaying_url": "http://uksoutha.streaming.broadcast.radio:15190/status-json.xsl?mount=%2Fzameknadaje",
+      "metadata_server": "icecast"
+    }
+  ],
+  "notFound": [
+    "pr-przeboje-prl",
+    "radio-wielkopolska",
+    "radio-zet-chilli-poland",
+    "super-nova-trzebnica",
+    "13-eska-2",
+    "24dubstep-pl-dropzone-radio-pomorskie",
+    "357",
+    "4-fun-tv-masovia",
+    "4fun-tv-warszawa",
+    "4music",
+    "ah-fm-1-for-electronic-dance-music-warsaw",
+    "akademickie-radio-luz",
+    "akademickie-radio-luz-wroc-aw",
+    "aniol-beskid-w",
+    "anty-radio",
+    "antyradio",
+    "antyradio-mazowieckie",
+    "antyradio-7d58ea51",
+    "antyradio-katowice-upper-silesia",
+    "antyradio-classic-rock-poland",
+    "antyradio-covers",
+    "antyradio-greatest",
+    "antyradio-hard",
+    "antyradio-hard-5caf134a",
+    "antyradio-katowice",
+    "antyradio-made-in-poland",
+    "antyradio-makak",
+    "antyradio-unplugged",
+    "antyradio-warszawa",
+    "awangarda-fm-kazimierz-dolny",
+    "bayer-fm",
+    "bonton-che-m",
+    "chilli-zet",
+    "chilli-zet-biega",
+    "chilli-zet-christmas",
+    "chilli-zet-covers",
+    "chilli-zet-deep",
+    "chilli-zet-ladies",
+    "chilli-zet-salon-polski",
+    "chilli-zet-soul",
+    "chillizet-ladies-om",
+    "chillout-radio",
+    "chrze-cijanin-smooth-jazz",
+    "cmp3",
+    "cyberstacja",
+    "danismania-dj-radio",
+    "disco-radio",
+    "discoparty-pl-club",
+    "discoparty-pl-disco-impreza",
+    "discoparty-pl-disco-polo",
+    "discoparty-pl-kana-club",
+    "discoparty-pl-kana-disco",
+    "discoparty-pl-lata-90s",
+    "doxa-fm-opole",
+    "dw-jka",
+    "el-stacja",
+    "el-stacja-mq",
+    "eska-bia-ystok-bialystok",
+    "eska-do-pracy-warsaw",
+    "eska-gor-ca-20-warsaw",
+    "eska-impreska-warsaw",
+    "eska-rzesz-w",
+    "eska-summer-city-warsaw",
+    "eska-rzesz-w-90a073b8",
+    "eska-2-classic",
+    "eska-2-kielce-wi-tokrzyskie",
+    "eska-2-konin",
+    "eska-2-krakow",
+    "eska-2-party",
+    "eska-2-rzesz-w",
+    "eska-2-stalowa-wola",
+    "eska-2-wroclaw",
+    "eska-bia-ystok",
+    "eska-bydgoszcz",
+    "eska-bydgoszcz-b4cb99ec",
+    "eska-do-pracy",
+    "eska-gda-sk",
+    "eska-go",
+    "eska-gor-ca-100",
+    "eska-gor-ca-20",
+    "eska-i-awa",
+    "eska-impreska",
+    "eska-kielce",
+    "eska-koszalin",
+    "eska-leszno",
+    "eska-lublin-128",
+    "eska-d",
+    "eska-news-wroc-aw",
+    "eska-ostrzesz-w",
+    "eska-pi-a",
+    "eska-p-ock",
+    "eska-pozna",
+    "eska-rock",
+    "eska-rock-warszawa",
+    "eska-l-skie",
+    "eska-suwalki-podlaskie",
+    "eska-szczecin",
+    "eska-wroc-aw",
+    "eska-zamo-128",
+    "eskarock",
+    "fitness-music",
+    "futrzak-fm",
+    "futrzak-fm-320kbps",
+    "gra-wroc-aw",
+    "happy-station",
+    "hit-radio-krak-w",
+    "hitradio-106-7-kujawsko-pomorskie",
+    "house-of-funk",
+    "http-zt01-cdn-eurozet-pl-zet-old-mp3-redirected-01",
+    "i-love-music",
+    "id-pod-pr-d-fm",
+    "informatics-productions-radio-lubelskie",
+    "jazzkultura",
+    "jedynka",
+    "jedynka-775c131e",
+    "jedynka-05094fb8",
+    "jedynka-pl",
+    "jump-radio",
+    "kapita",
+    "katolickie-radio-via-warsaw",
+    "katolickie-radio-zamo-101-2-fm",
+    "kcht",
+    "kujawy-tv-kujawsko-pomorskie",
+    "lady-g4a-gaming-radio",
+    "lagoon-fm",
+    "latino-polska",
+    "leliwa",
+    "lem-fm-podkarpacie",
+    "lem-fm-podkarpacie-f1784c57",
+    "mastermxmusic-pomorskie",
+    "maxplay-fm",
+    "mazurske-radijo-warmi-sko-mazurskie",
+    "mc-radio",
+    "mega-radio",
+    "melo-radio-l-sk-katowice-slaskie",
+    "meloradio-fast-songs",
+    "meloradio-fm-warsaw",
+    "meloradio-hot-dance",
+    "meloradio-kielce-wi-tokrzyskie",
+    "meloradio-opole-opolskie",
+    "meloradio-pozna",
+    "meloradio-tarnobrzeg",
+    "meloradio-wroc-aw-lower-silesia",
+    "meloradio-wroc-aw-dolno-l-skie",
+    "microphone-in-the-green-forest-greater-poland",
+    "mojepolskieradio-bohaterowie-naszych-lektur",
+    "mojepolskieradio-czworka",
+    "mojepolskieradio-historia-najnowsza-polska",
+    "mojepolskieradio-historia-zwiazku-radzieckiego",
+    "mojepolskieradio-jedynka",
+    "mojepolskieradio-las",
+    "mojepolskieradio-nostalgia",
+    "mojepolskieradio-polskieradio24",
+    "mojepolskieradio-potrojne-pasmo-przenoszenia",
+    "mojepolskieradio-program-alternatywny",
+    "mojepolskieradio-przezyjmy-to-jeszcze-raz",
+    "mojepolskieradio-radio-dzieciom",
+    "mojepolskieradio-spotkanie-z-mistrzem",
+    "mojepolskieradio-studio-reportazu",
+    "mojepolskieradio-szanty",
+    "mojepolskieradio-wieczor-odkrywcow",
+    "mojepolskieradio-za-kulisami-bezpieki-i-partii",
+    "mojepolskieradio",
+    "monty-sounds-radio",
+    "ms-radio-90",
+    "muzyczne-radio-192",
+    "nadzieja-fm-mazowieckie",
+    "najpi-kniejsze-polskie-piosenki",
+    "nasz-hajmat",
+    "nasze-radio",
+    "nasze-radio-92-1-fm-nostalgicznie",
+    "niepokalana-fm",
+    "nocne-radio",
+    "norda-fm-pomorskie",
+    "off-radio-krakow",
+    "open-fm-impreza",
+    "openfm-vixa",
+    "park",
+    "paruzja",
+    "pawarota",
+    "planeta-fm",
+    "plus",
+    "plus-radio-legnica-fm-dolny-l-sk",
+    "polish-radio-second-classical",
+    "polka-jammer-station-gdynia",
+    "polmax-2",
+    "polmax-3",
+    "polmax-fm",
+    "polmax-kol-dy",
+    "polnexus-radio",
+    "polskie-radio-chopin-radio-chopin-aac",
+    "polskie-radio-czw-rka",
+    "polskie-radio-czw-rka-program-4-aac",
+    "polskie-radio-24",
+    "polskie-radio-24-new-stream",
+    "polskie-radio-czw-rka-3f965c9b",
+    "polskie-radio-dla-ukrainy",
+    "polskie-radio-dla-zagranicy-warszawa",
+    "polskie-radio-dzieciom",
+    "polskie-radio-gda-sk-gdansk",
+    "polskie-radio-jedynka-aac",
+    "polskie-radio-kierowc-w",
+    "polskie-radio-kierowc-w-0a13c62c",
+    "polskie-radio-las",
+    "polskie-radio-nostalgia",
+    "polskie-radio-pink-floyd",
+    "polskie-radio-program-2-warszawa",
+    "polskie-radio-program-3",
+    "polskie-radio-rdc-radio-dla-ciebie-warszawa",
+    "polskie-radio-tr-jka",
+    "pr-nostalgia",
+    "pr-szanty",
+    "pr-kierowc-w",
+    "pr-las-acc",
+    "pr-tr-jka",
+    "pr-tr-jka-dfceead0",
+    "pro-radio",
+    "program-pierwszy-polskiego-radia",
+    "przysta-mazowsze",
+    "punk-radio-underground",
+    "quantum-wave-radio",
+    "r357",
+    "radia-zet-poland",
+    "radio",
+    "radio-100-wielkopolskie",
+    "radio-1-7",
+    "radio-100-wielkopolskie-22ffc3f2",
+    "radio-30-lat-rmf-fm",
+    "radio-357",
+    "radio-357-4ef724fd",
+    "radio-40plus-forty-plus",
+    "radio-5",
+    "radio-7",
+    "radio-7-m-awa",
+    "radio-7-304989d0",
+    "radio-7-mlawa",
+    "radio-akadera",
+    "radio-alex-rmf-on",
+    "radio-andrychow",
+    "radio-anio-ek",
+    "radio-arkadia",
+    "radio-bahary",
+    "radio-bielsko",
+    "radio-ccm",
+    "radio-centrum",
+    "radio-centrum-lublin",
+    "radio-centrum-rzeszow",
+    "radio-chopin",
+    "radio-chrzescijanin-2",
+    "radio-chrze-cijanin-jako-d-wi-ku-mp3",
+    "radio-cyganeczka",
+    "radio-dht-kana-g-wny-ma-opolskie",
+    "radio-dht-pepis",
+    "radio-dimash",
+    "radio-disco-party-disco-impreza",
+    "radio-disco-dance-gdansk",
+    "radio-dj-andreas",
+    "radio-duch",
+    "radio-dw-jka-aac",
+    "radio-dzwiek-slaskie-1fefdf16",
+    "radio-dzwiek-slaskie-f8b995b3",
+    "radio-elbl-g",
+    "radio-elka-glogow",
+    "radio-elka-leszno",
+    "radio-elka-miedziowe",
+    "radio-em-katowice",
+    "radio-em-kielce",
+    "radio-emaus-poznan",
+    "radio-eska-warszawa-mazowieckie",
+    "radio-eska-wroc-aw",
+    "radio-eska-2-kultowe-polskie-wroc-aw",
+    "radio-eska-2-d",
+    "radio-eska-2-piosenkie-na-czasie-wroc-aw",
+    "radio-eska-2-warsaw",
+    "radio-eska-braniewo-warmia",
+    "radio-eska-dla-dzieci-wroc-aw",
+    "radio-eska-do-pracy-krakow",
+    "radio-eska-g-20-poznan",
+    "radio-eska-g-20-krakow",
+    "radio-eska-g100-krakow",
+    "radio-eska-impreska-krakow",
+    "radio-eska-krak-w",
+    "radio-eska-kra-nik",
+    "radio-eska-lublin",
+    "radio-eska-d",
+    "radio-eska-opole",
+    "radio-eska-opole-64657548",
+    "radio-eska-ostrow-kalisz",
+    "radio-eska-pi-a",
+    "radio-eska-pozna-poznan",
+    "radio-eska-przemy-l",
+    "radio-eska-rzesz-w",
+    "radio-eska-starachowice-wi-tokrzyskie",
+    "radio-eska-tarn-w",
+    "radio-eska-warszawa",
+    "radio-eska-warszawa-masovia",
+    "radio-eska-warszawa-mazowieckie-17cbec6e",
+    "radio-eska-warszawa-3d5ae3c4",
+    "radio-eska-wroc-aw-8e75662b",
+    "radio-eska-zamo",
+    "radio-express",
+    "radio-fama-zyrardow-warsaw",
+    "radio-fara",
+    "radio-fara-przemysl",
+    "radio-fiorda",
+    "radio-fraszka",
+    "radio-gda-sk",
+    "radio-gda-sk-regiony-dab2-pomorskie",
+    "radio-gold-live",
+    "radio-gra-torun",
+    "radio-gra-torun-5879469d",
+    "radio-gra-wroclaw",
+    "radio-guardian",
+    "radio-hit",
+    "radio-i-bia-ystok",
+    "radio-imperium",
+    "radio-imperium-gliwice-slaskie",
+    "radio-index",
+    "radio-ingrid",
+    "radio-jard",
+    "radio-jasna-gora",
+    "radio-jedynka",
+    "radio-kampus",
+    "radio-kech-nowogard",
+    "radio-kolor",
+    "radio-koszalin",
+    "radio-koszalin-s-a",
+    "radio-koszalin-s-a-6ccb0738",
+    "radio-koszalin-slupsk-pomorskie",
+    "radio-koszalin-s-upsk-pomorskie",
+    "radio-krakow",
+    "radio-krak-w-sport-krakow",
+    "radio-kujawy-kujawsko-pomorskie",
+    "radio-lipsko",
+    "radio-d",
+    "radio-d-c3451d31",
+    "radio-d-bcb5c4af",
+    "radio-d-extra",
+    "radio-d-nad-wart",
+    "radio-d-sport",
+    "radio-malbork",
+    "radio-marconi-pl",
+    "radio-maryja",
+    "radio-maryja-52768156",
+    "radio-mbox",
+    "radio-mbox-club",
+    "radio-mbox-disco-polo",
+    "radio-mbox-gold-hits",
+    "radio-mbox-polska-muzyka",
+    "radio-mc",
+    "radio-melody-express",
+    "radio-mi-osierdzie",
+    "radio-misiek",
+    "radio-mix",
+    "radio-moni-raj",
+    "radio-mr-gowo",
+    "radio-na-tak-zachodniopomorskie",
+    "radio-nak-o-nak-o-nad-noteci",
+    "radio-nestolatki",
+    "radio-niepokalan-w-mazowieckie",
+    "radio-niepokalan-w-102-7fm-mazowieckie",
+    "radio-nowej-generacji",
+    "radio-nowinki",
+    "radio-nowy-wiat-64k-mazowieckie",
+    "radio-odzew",
+    "radio-oiom",
+    "radio-opole",
+    "radio-opole-1-96-kbps",
+    "radio-opole-2",
+    "radio-opole-2-d1f966b9",
+    "radio-orbit",
+    "radio-orthodoxia-bia-ystok",
+    "radio-osjak-w-polska",
+    "radio-parada-96-00-fm-kielce",
+    "radio-park-fm-kedzierzyn-kozle",
+    "radio-pawe",
+    "radio-pejpal",
+    "radio-piekary-88-7fm-slaskie",
+    "radio-pielgrzym-pie-ni-po-polsku",
+    "radio-pielgrzym-english",
+    "radio-pielgrzym-kazania",
+    "radio-pik",
+    "radio-plus",
+    "radio-plus-masovia",
+    "radio-plus-99dde3a3",
+    "radio-plus-d6a5c066",
+    "radio-plus-106-1-krak-w-ma-opolska",
+    "radio-plus-bydgoszcz-kujawsko-pomorskie",
+    "radio-plus-gdansk-pomorskie",
+    "radio-plus-koszalin",
+    "radio-plus-krakow",
+    "radio-plus-lublin",
+    "radio-plus-warszawa",
+    "radio-p-o-sk-mazowieckie",
+    "radio-podlasie-2",
+    "radio-pogoda",
+    "radio-pogoda-gda-sk-poland",
+    "radio-pogoda-pozna",
+    "radio-pogoda-poznan-warsaw",
+    "radio-poland",
+    "radio-praga-warszawa",
+    "radio-prestige-opolskie",
+    "radio-radom-mazowieckie",
+    "radio-rekord-fm-radom",
+    "radio-relax",
+    "radio-rmf",
+    "radio-rmf-ab793bf1",
+    "radio-rmf-2000",
+    "radio-rmf-80s-disco",
+    "radio-rmf-classic-krakow",
+    "radio-rmf-fm",
+    "radio-rmf-hard-and-heavy",
+    "radio-rmf-maxx",
+    "radio-rmf-maxx-warszawa-masovia",
+    "radio-rmf-maxxx",
+    "radio-rmf-maxxx-olesnica",
+    "radio-rmf24-pl",
+    "radio-rmf24-pl-2a526572",
+    "radio-rsc-dzkie",
+    "radio-safira-mazowieckie",
+    "radio-safira",
+    "radio-safira-kanoe-mazowieckie",
+    "radio-sar-studencka-agencja-radiowa-pomorskie",
+    "radio-savana",
+    "radio-sekret",
+    "radio-sfera-kujawsko-pomorskie",
+    "radio-silesia-96-2-fm",
+    "radio-silesia-fm-warsaw",
+    "radio-slupsk",
+    "radio-pioch",
+    "radio-stargard-90-3-fm-twoje-pierwsze-radio-west-pomerania",
+    "radio-starogard",
+    "radio-start",
+    "radio-sto",
+    "radio-strefa-fm-piotrk-w-tryb-cae741bc",
+    "radio-sud-kepno",
+    "radio-super-express",
+    "radio-swinoujscie",
+    "radio-winouj-cie",
+    "radio-synteza",
+    "radio-tatry-podhale",
+    "radio-tczew-pomorskie",
+    "radio-top80",
+    "radio-tpi",
+    "radio-uap",
+    "radio-uniwersytet",
+    "radio-victoria-lowicz",
+    "radio-warszawa-106-2",
+    "radio-warszawa-106-2-fm-mazowieckie",
+    "radio-wiatraczek",
+    "radio-wnet",
+    "radio-wnet-a0c54e9b",
+    "radio-yanosik",
+    "radio-yanosik-91a6e176",
+    "radio-zet",
+    "radio-zet-1c142460",
+    "radio-zet-4a9151f9",
+    "radio-zet-2000",
+    "radio-zet-128-warszawa",
+    "radio-zet-128-kbps-warszawa",
+    "radio-zet-kids-mazowieckie",
+    "radio-zet-love-om",
+    "radio-zet-na-rower-om",
+    "radio-ziemi-wielu-skiej-lodz",
+    "radio-zlote-przeboje-wroclaw",
+    "radio-z-ote-przeboje",
+    "radio-z-ote-przeboje-aea643fa",
+    "radio-z-ote-przeboje-bieszczady",
+    "radio-z-ote-przeboje-bia-ystok",
+    "radio-z-ote-przeboje-wroc-aw",
+    "radio-zmys-owe",
+    "radio-znin-fm",
+    "radio-zodiak-siedlce",
+    "radio-stacja",
+    "radiobest-pl-gorny-slask",
+    "radiocmp3-eu-electronic-dance-music",
+    "radiocmp3-eu-kana-edm-electronic-dance-music-warsaw",
+    "radiocmp3-eu-kana-g-wny-warsaw",
+    "radiocmp3-eu-muzyka-klubowa",
+    "radioradio-fm",
+    "radiosdm",
+    "ravefm-ma-opolska",
+    "red7",
+    "red7-kana-edm",
+    "red7-pl",
+    "rekord-radio-wi-tokrzyskie",
+    "replay-news-polski",
+    "rmf",
+    "rmf-2-pop-krakow",
+    "rmf-2-pop-fakty-krakow",
+    "rmf-20-lat-krakow",
+    "rmf-20-lat-fakty-krakow",
+    "rmf-2000-krakow",
+    "rmf-2000-fakty-krakow",
+    "rmf-4-dance-rnb-krakow",
+    "rmf-4-dance-rnb",
+    "rmf-5-lagodne-przeboje-krakow",
+    "rmf-5-lagodne-przeboje-krakow-b7f8b198",
+    "rmf-5-lagodne-przeboje-fakty-krakow",
+    "rmf-50s",
+    "rmf-60s",
+    "rmf-70s",
+    "rmf-70s-disco",
+    "rmf-80s-krakow",
+    "rmf-80s-fakty-krakow",
+    "rmf-80s-disco-krakow",
+    "rmf-80s-disco-krakow-964d425e",
+    "rmf-80s-disco-fakty-krakow",
+    "rmf-90s-krakow",
+    "rmf-90s-fakty-krakow",
+    "rmf-90s-dance",
+    "rmf-90s-dance-krakow",
+    "rmf-90s-dance-fakty-krakow",
+    "rmf-alternatywa-krakow",
+    "rmf-alternatywa-fakty-krakow",
+    "rmf-ballady-krakow",
+    "rmf-ballady",
+    "rmf-ballady-fakty-krakow",
+    "rmf-beatlemania-krakow",
+    "rmf-beatlemania-fakty-krakow",
+    "rmf-blues-krakow",
+    "rmf-blues-fakty-krakow",
+    "rmf-bravo-krakow",
+    "rmf-bravo-fakty-krakow",
+    "rmf-celtic-krakow",
+    "rmf-celtic-fakty-krakow",
+    "rmf-chillout-krakow",
+    "rmf-chillout-krakow-09e3a9d6",
+    "rmf-chillout-fakty-krakow",
+    "rmf-chopin-fakty-krakow",
+    "rmf-classic",
+    "rmf-classic-6c800ca2",
+    "rmf-classic-krakow",
+    "rmf-classic-rock-ma-opolskie",
+    "rmf-club",
+    "rmf-club-krakow",
+    "rmf-club-fakty-krakow",
+    "rmf-cuba-krakow",
+    "rmf-cuba-fakty-krakow",
+    "rmf-dance-krakow",
+    "rmf-dance-krakow-960f7041",
+    "rmf-dance",
+    "rmf-dance-fakty-krakow",
+    "rmf-dance-fakty",
+    "rmf-depeche-mode-krakow",
+    "rmf-depeche-mode-fakty-krakow",
+    "rmf-disco-polo",
+    "rmf-dla-dzieci-krakow",
+    "rmf-dla-dzieci-fakty-krakow",
+    "rmf-fitness-krakow",
+    "rmf-fitness-fakty-krakow",
+    "rmf-fitness-fakty",
+    "rmf-fm-krakow",
+    "rmf-fm-ma-opolska",
+    "rmf-fm-128-kbps-krak-w",
+    "rmf-fm-48-kbps-krak-w",
+    "rmf-fm-48-kbps-krak-w-f2978f0e",
+    "rmf-fm-polska-warszawa",
+    "rmf-francais-krakow",
+    "rmf-francais-krakow-960db9c6",
+    "rmf-francais-fakty-krakow",
+    "rmf-funk",
+    "rmf-game-music",
+    "rmf-gold-krakow",
+    "rmf-gold-krakow-960f74a5",
+    "rmf-gold-fakty-krakow",
+    "rmf-grunge-krakow",
+    "rmf-grunge-fakty-krakow",
+    "rmf-hip-hop-krakow",
+    "rmf-hip-hop-fakty-krakow",
+    "rmf-hot-new-warsaw",
+    "rmf-hot-new-krakow",
+    "rmf-hot-new-fakty-krakow",
+    "rmf-k-pop",
+    "rmf-koledy-krakow",
+    "rmf-koledy-fakty-krakow",
+    "rmf-lady-pank-krakow",
+    "rmf-lady-pank-fakty-krakow",
+    "rmf-latino-krakow",
+    "rmf-maxx-bydgoszcz",
+    "rmf-maxx-hop-b-c-warszawa",
+    "rmf-maxx-kielce",
+    "rmf-maxx-podlasie-bialystok",
+    "rmf-maxx-pozna",
+    "rmf-maxx-l-sk",
+    "rmf-maxx-sunrise",
+    "rmf-maxx-w-oc-awek",
+    "rmf-maxxx-99-7-pomorze",
+    "rmf-maxxx-hop-bec-krakow",
+    "rmf-maxxx-hop-bec-fakty-krakow",
+    "rmf-maxxx-kielce",
+    "rmf-maxxx-krak-w-krakow",
+    "rmf-maxxx-krosno",
+    "rmf-maxxx-mazowsze-mazowieckie",
+    "rmf-maxxx-szczecin",
+    "rmf-michael-jackson-krakow",
+    "rmf-michael-jackson-fakty-krakow",
+    "rmf-muzyka-klasyczna-krakow",
+    "rmf-muzyka-filmowa",
+    "rmf-najwieksze-polskie-przeboje",
+    "rmf-niezapomniane-melodie-krakow",
+    "rmf-niezapomniane-melodie-fakty-krakow",
+    "rmf-party-krakow",
+    "rmf-party-krakow-00e201f0",
+    "rmf-party-fakty-krakow",
+    "rmf-piosenka-filmowa",
+    "rmf-piosenka-filmowa-warszawa",
+    "rmf-piosenka-literacka",
+    "rmf-piosenka-literacka-krakow",
+    "rmf-piosenka-literacka-fakty-krakow",
+    "rmf-pobudka-krakow",
+    "rmf-polska-alternatywa-krakow",
+    "rmf-polska-prywatka",
+    "rmf-polski-hip-hop-warszawa",
+    "rmf-polski-rock",
+    "rmf-polskie-przeboje-krakow",
+    "rmf-polskie-przeboje-fakty-krakow",
+    "rmf-poplista",
+    "rmf-prl-krakow",
+    "rmf-prl-fakty-krakow",
+    "rmf-przeboj-roku-krakow",
+    "rmf-przeboj-roku-fakty-krakow",
+    "rmf-queen-krakow",
+    "rmf-queen-fakty-krakow",
+    "rmf-reggae-krakow",
+    "rmf-reggae-fakty-krakow",
+    "rmf-relaks-krakow",
+    "rmf-relaks-krakow-962307e0",
+    "rmf-relaks-fakty-krakow",
+    "rmf-rock-krakow",
+    "rmf-rock-fakty-krakow",
+    "rmf-rock-progresywny-krakow",
+    "rmf-rock-progresywny-fakty-krakow",
+    "rmf-sloneczne-przeboje-krakow",
+    "rmf-sloneczne-przeboje-krakow-960f89bf",
+    "rmf-sloneczne-przeboje-fakty-krakow",
+    "rmf-smooth-jazz",
+    "rmf-smooth-jazz-krakow",
+    "rmf-smooth-jazz-fakty-krakow",
+    "rmf-styl-krakow",
+    "rmf-styl-krakow-bfd55c4c",
+    "rmf-styl-fakty-krakow",
+    "rmf-swieta-krakow",
+    "rmf-swieta-fakty-krakow",
+    "rmf-szanty",
+    "rmf-szanty-krakow",
+    "rmf-top-30-dance-krakow",
+    "rmf-top-30-dance-warszawa",
+    "rmf-top-30-pl-warszawa",
+    "rmf-top-30-pop-warszawa",
+    "rmf-top2",
+    "rmf-top3",
+    "rmf-top4",
+    "rmf-top5",
+    "rmf-trend-sounds-krakow",
+    "rmf-trend-sounds-fakty-krakow",
+    "rmf-w-pracy-krakow",
+    "rmf-w-pracy-fakty-krakow",
+    "rmf-ziom",
+    "rmf24",
+    "rmf24-wroc-aw",
+    "rmf3-pop-rock",
+    "rmfa-classic",
+    "rmfmaxx-poland",
+    "rmi-italo-disco-classic",
+    "rock-fm-bydgoszcz",
+    "rock-radio",
+    "rock-radio-6e38d67e",
+    "rock-radio-krak-w-ma-opolska",
+    "rock-radio-klasyka-rocka",
+    "rock-radio-pl",
+    "ship-fm",
+    "sizeer",
+    "slonskie-radio-hitmix",
+    "slonskie-radio-hitmix-960fc4ae",
+    "soundfm",
+    "studenckie-radio-zak-lodz",
+    "studio-kolobrzeg",
+    "supernova",
+    "supernova-gda-sk",
+    "supernova-jelenia-g-ra",
+    "supernova-kielce",
+    "supernova-party-warszawa",
+    "supernova-rock",
+    "supernova-super-13-warszawa",
+    "supernova-szczecin",
+    "supernova-wroc-aw",
+    "superorbita",
+    "tail-fm",
+    "tobifm",
+    "tok-muzyka-warsaw",
+    "tok-fm",
+    "tok-fm-0e1aba33",
+    "tok-fm-00dc9649",
+    "tok-fm-poland",
+    "tokfm-poland",
+    "trap",
+    "trap-pl",
+    "tr-jka",
+    "trojka",
+    "twoje-radio-szczecin",
+    "tyflo-radio",
+    "tyfloradio-malopolskie",
+    "u-radio-trance",
+    "ujot-fm",
+    "ultra-max",
+    "vibefm",
+    "vox-dj-mix",
+    "vox-fm",
+    "vox-fm-e9931568",
+    "vox-fm-128",
+    "vox-fm-128kbps",
+    "vox-fm-best-lista",
+    "vox-fm-best-lista-dedffd6c",
+    "vox-fm-disco-90",
+    "vox-fm-disco-party",
+    "vox-fm-hit-22",
+    "vox-pozna",
+    "weekend-fm",
+    "wieczor-odkrywcow",
+    "xvibe",
+    "youngmafijja-fm-wielkopolskie",
+    "zaebista-imprezka",
+    "zet-90s",
+    "zet-dance",
+    "zet-impreza-warszawa",
+    "zet-latino-warszawa",
+    "zet-na-swieta-warszawa",
+    "zet-po-polsku-warszawa",
+    "zet-pop-rock-warszawa",
+    "zet-radio",
+    "zet-same-hity-warszawa",
+    "z-ote-przeboje-bydgoszcz",
+    "z-ote-przeboje-pozna",
+    "yrardio-mazowieckie"
+  ]
+}

@@ -55,13 +55,9 @@
     "homepage": "https://cuelightsmedia.com.au/stations/247-continuous-music",
     "favicon": "/station-icons/se/24-7-continuous-music.webp",
     "genres": [
-      "2000s",
-      "2010s",
-      "2020s",
-      "90s",
       "pop",
       "soft rock",
-      "world"
+      "world music"
     ],
     "language": null,
     "bitrate": 128,
@@ -75,7 +71,13 @@
     "geo_long": null,
     "nowplaying_url": "https://securestream.cuelightsmedia.com.au/api/nowplaying/247_continuous_music",
     "metadata_server": "azuracast",
-    "history_url": "https://securestream.cuelightsmedia.com.au/api/nowplaying/247_continuous_music"
+    "history_url": "https://securestream.cuelightsmedia.com.au/api/nowplaying/247_continuous_music",
+    "formats": [
+      "00s",
+      "10s",
+      "20s",
+      "90s"
+    ]
   },
   {
     "slug": "90s-rewind",
@@ -87,10 +89,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/90s-rewind.webp",
     "genres": [
-      "90s",
-      "hits",
-      "pop",
-      "retro"
+      "pop"
     ],
     "language": "english",
     "bitrate": 0,
@@ -110,7 +109,14 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "90s",
+      "hits"
+    ],
+    "genre_review": [
+      "retro"
+    ]
   },
   {
     "slug": "aftab",
@@ -124,7 +130,6 @@
     "genres": [
       "ambient",
       "instrumental",
-      "meditation",
       "world music"
     ],
     "language": "english",
@@ -145,7 +150,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "meditation"
+    ]
   },
   {
     "slug": "ai-playlist-radio",
@@ -156,11 +164,7 @@
     "stream_url": "https://radio.aiplaylist.io/radio.mp3",
     "homepage": "https://radio.aiplaylist.io/",
     "favicon": "/station-icons/se/ai-playlist-radio.webp",
-    "genres": [
-      "curated",
-      "music",
-      "online radio"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 0,
     "codec": "MP3",
@@ -170,7 +174,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "genre_review": [
+      "curated"
+    ]
   },
   {
     "slug": "all-watching-eye-focus",
@@ -183,9 +190,7 @@
     "favicon": "/station-icons/se/all-watching-eye-focus.webp",
     "genres": [
       "ambient",
-      "electronic",
-      "focus",
-      "study"
+      "electronic"
     ],
     "language": "english",
     "bitrate": 128,
@@ -196,7 +201,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "study"
+    ]
   },
   {
     "slug": "all-watching-eye-chill",
@@ -302,8 +310,6 @@
       "downtempo",
       "electronic",
       "idm",
-      "lounge",
-      "relax",
       "smooth jazz"
     ],
     "language": "english",
@@ -315,7 +321,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "lounge",
+      "relaxation"
+    ]
   },
   {
     "slug": "back-to-the-80s",
@@ -327,10 +337,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/back-to-the-80s.webp",
     "genres": [
-      "80s",
-      "hits",
-      "pop",
-      "retro"
+      "pop"
     ],
     "language": "english",
     "bitrate": 0,
@@ -350,7 +357,14 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "80s",
+      "hits"
+    ],
+    "genre_review": [
+      "retro"
+    ]
   },
   {
     "slug": "bananradion",
@@ -361,14 +375,7 @@
     "stream_url": "https://lyssna.bananradion.se/listen/bananradion/128aac",
     "homepage": "https://www.bananradion.se/",
     "favicon": "/station-icons/se/bananradion.webp",
-    "genres": [
-      "caribbean",
-      "children",
-      "kids",
-      "misc",
-      "tropical",
-      "various"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 128,
     "codec": "AAC",
@@ -387,7 +394,15 @@
         "city": "Skattkärr",
         "state": "Värmland county"
       }
-    }
+    },
+    "formats": [
+      "children",
+      "variety"
+    ],
+    "genre_review": [
+      "caribbean",
+      "tropical"
+    ]
   },
   {
     "slug": "bandit-alternative",
@@ -422,7 +437,6 @@
     "homepage": "https://www.ilikeradio.se/banditballads/",
     "favicon": "/station-icons/se/bandit-ballads.webp",
     "genres": [
-      "ballads",
       "rock"
     ],
     "language": null,
@@ -440,7 +454,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "ballads"
+    ]
   },
   {
     "slug": "bandit-classic-rock-national-sweden",
@@ -590,10 +607,7 @@
     "homepage": "https://sevdah-radio-sehercani.webnode.se/",
     "favicon": "/station-icons/se/banjalu-ki-sevdah-radio-eher-ani.webp",
     "genres": [
-      "bosna",
-      "bosnia",
-      "sevdah",
-      "sevdah 24 sata"
+      "sevdah"
     ],
     "language": "bosnian",
     "bitrate": 128,
@@ -604,7 +618,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "genre_review": [
+      "bosna",
+      "bosnia"
+    ]
   },
   {
     "slug": "best-of-ericade-radio-stockholm",
@@ -679,8 +697,7 @@
     "favicon": "/station-icons/se/bollywood-bangers.webp",
     "genres": [
       "bhangra",
-      "bollywood",
-      "indian"
+      "bollywood"
     ],
     "language": "english",
     "bitrate": 0,
@@ -700,7 +717,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "genre_review": [
+      "indian"
+    ]
   },
   {
     "slug": "bor-s-n-rradio",
@@ -732,12 +752,7 @@
     "stream_url": "http://streaming.live365.com/a80252",
     "homepage": "https://bozradio.com/",
     "favicon": "/station-icons/se/bozradio-placeholder.webp",
-    "genres": [
-      "1960s",
-      "1970s",
-      "1980s",
-      "best music"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 192,
     "codec": "MP3",
@@ -747,7 +762,12 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "60s",
+      "70s",
+      "80s"
+    ]
   },
   {
     "slug": "classical",
@@ -759,9 +779,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/classical.webp",
     "genres": [
-      "classical",
-      "orchestral",
-      "symphony"
+      "classical"
     ],
     "language": "english",
     "bitrate": 0,
@@ -781,7 +799,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "orchestral"
+    ]
   },
   {
     "slug": "country",
@@ -827,7 +848,7 @@
     "favicon": "/station-icons/se/country-rocks-radio-sk-ne.webp",
     "genres": [
       "country",
-      "new country"
+      "modern country"
     ],
     "language": "swedish",
     "bitrate": 192,
@@ -971,16 +992,7 @@
     "homepage": "https://dansbandsradio.se/",
     "favicon": "/station-icons/se/dansbandsradio-se-sk-ne-7cd8a7f7.webp",
     "genres": [
-      "dans",
-      "dansband",
-      "dansbandsdax",
-      "dansbandskanalen",
-      "dansbandsradio",
-      "danseband",
-      "dansk",
-      "norsk",
-      "svensk",
-      "swedish"
+      "dansband"
     ],
     "language": "danish",
     "bitrate": 64,
@@ -999,7 +1011,15 @@
         "city": "Landskrona",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "swedish-language music"
+    ],
+    "genre_review": [
+      "dans",
+      "dansk",
+      "norsk"
+    ]
   },
   {
     "slug": "dansbandsradio-se-sk-ne-93b730ce",
@@ -1011,16 +1031,7 @@
     "homepage": "https://dansbandsradio.se/",
     "favicon": "/station-icons/se/dansbandsradio-se-sk-ne-93b730ce.webp",
     "genres": [
-      "dans",
-      "dansband",
-      "dansbandsdax",
-      "dansbandskanalen",
-      "dansbandsradio",
-      "danseband",
-      "dansk",
-      "norsk",
-      "svensk",
-      "swedish"
+      "dansband"
     ],
     "language": "danish",
     "bitrate": 96,
@@ -1037,7 +1048,15 @@
         "city": "Landskrona",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "swedish-language music"
+    ],
+    "genre_review": [
+      "dans",
+      "dansk",
+      "norsk"
+    ]
   },
   {
     "slug": "decades",
@@ -1048,13 +1067,7 @@
     "stream_url": "https://mml1.prostream.se/listen/decades/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/decades.webp",
-    "genres": [
-      "60s",
-      "70s",
-      "classics",
-      "oldies",
-      "variety"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 0,
     "codec": "MP3",
@@ -1073,7 +1086,14 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "60s",
+      "70s",
+      "classic hits",
+      "oldies",
+      "variety"
+    ]
   },
   {
     "slug": "disco-54",
@@ -1085,8 +1105,7 @@
     "homepage": "https://www.ilikeradio.se/disco54/",
     "favicon": "/station-icons/se/disco-54.webp",
     "genres": [
-      "disco",
-      "i like radio"
+      "disco"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -1203,12 +1222,7 @@
     "stream_url": "https://mml2.prostream.se/listen/epic_soundtracks_only/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/epic-soundtracks-only.webp",
-    "genres": [
-      "cinematic",
-      "film music",
-      "orchestral",
-      "soundtracks"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 0,
     "codec": "MP3",
@@ -1227,7 +1241,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "soundtracks",
+      "orchestral"
+    ]
   },
   {
     "slug": "ericade-radio-sweden",
@@ -1262,9 +1280,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/faith-beats-radio.webp",
     "genres": [
-      "christian",
-      "gospel",
-      "worship"
+      "gospel"
     ],
     "language": "english",
     "bitrate": 0,
@@ -1284,7 +1300,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "christian",
+      "praise and worship"
+    ]
   },
   {
     "slug": "fun-radio-95-3-sweden",
@@ -1346,7 +1366,6 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/gen-x.webp",
     "genres": [
-      "90s",
       "alternative",
       "hip-hop",
       "rock"
@@ -1369,7 +1388,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "90s"
+    ]
   },
   {
     "slug": "go-country",
@@ -1511,7 +1533,6 @@
     "genres": [
       "disco",
       "funk",
-      "groove",
       "soul"
     ],
     "language": "english",
@@ -1532,7 +1553,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "genre_review": [
+      "groove"
+    ]
   },
   {
     "slug": "guldkanalen-80-tal",
@@ -1543,9 +1567,7 @@
     "stream_url": "https://stream.dbmedia.se/gk80tal96",
     "homepage": "https://playnow.se/guldkanalen-webbradio/",
     "favicon": "/station-icons/se/guldkanalen-80-tal.webp",
-    "genres": [
-      "80s"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC+",
@@ -1555,7 +1577,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "80s"
+    ]
   },
   {
     "slug": "guldkanalen-90-tal",
@@ -1566,9 +1591,7 @@
     "stream_url": "https://stream.dbmedia.se/gk90tal96",
     "homepage": "https://playnow.se/guldkanalen-90tal-webbradio/",
     "favicon": "/station-icons/se/guldkanalen-90-tal.webp",
-    "genres": [
-      "90s"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 128,
     "codec": "AAC+",
@@ -1584,7 +1607,10 @@
         "city": "Vingåker",
         "state": "Södermanland county"
       }
-    }
+    },
+    "formats": [
+      "90s"
+    ]
   },
   {
     "slug": "guldkanalen-60-tal-sk-ne",
@@ -1596,8 +1622,7 @@
     "homepage": "https://stream.dbmedia.se/gk60tal96",
     "favicon": "/station-icons/se/guldkanalen-60-tal-sk-ne-placeholder.webp",
     "genres": [
-      "rock",
-      "60s"
+      "rock"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -1614,7 +1639,10 @@
         "city": "Norrköpings kommun",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "60s"
+    ]
   },
   {
     "slug": "guldkanalen-helsingborg",
@@ -1625,9 +1653,7 @@
     "stream_url": "http://stream.dbmedia.se/gkhbg96",
     "homepage": "http://www.guldkanalen.se/",
     "favicon": "/station-icons/se/guldkanalen-helsingborg.webp",
-    "genres": [
-      "oldies"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC+",
@@ -1637,7 +1663,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "oldies"
+    ]
   },
   {
     "slug": "guldkanalen-malm-lund-malmoe",
@@ -1648,9 +1677,7 @@
     "stream_url": "http://stream.dbmedia.se/gk96",
     "homepage": "http://guldkanalen.se/",
     "favicon": "/station-icons/se/guldkanalen-malm-lund-malmoe.webp",
-    "genres": [
-      "oldies"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC+",
@@ -1660,7 +1687,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "oldies"
+    ]
   },
   {
     "slug": "hackerspace-radio",
@@ -1695,7 +1725,7 @@
     "homepage": "https://eternalmix.boomdevi.duckdns.org/public/hari_ramas_eternal_mix",
     "favicon": "/station-icons/se/hari-rama-s-happy-eternal-mix-placeholder.webp",
     "genres": [
-      "goa",
+      "goa trance",
       "psytrance"
     ],
     "language": null,
@@ -1720,8 +1750,6 @@
     "favicon": "/station-icons/se/harmony-frequencies.webp",
     "genres": [
       "ambient",
-      "healing",
-      "meditation",
       "new age"
     ],
     "language": "english",
@@ -1742,7 +1770,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "relaxation",
+      "meditation"
+    ]
   },
   {
     "slug": "hello-africa",
@@ -1754,7 +1786,6 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/hello-africa.webp",
     "genres": [
-      "african",
       "afrobeat",
       "world music"
     ],
@@ -1776,7 +1807,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "genre_review": [
+      "african"
+    ]
   },
   {
     "slug": "helsinborgs-n-rradio",
@@ -1808,13 +1842,7 @@
     "stream_url": "http://vod.tv7.fi:1935/tv7-se/mp4:tv7-se.stream_720p/playlist.m3u8",
     "homepage": "https://www.himlentv7.se/",
     "favicon": "/station-icons/se/himlen-tv7-uppsala.webp",
-    "genres": [
-      "children",
-      "christian",
-      "family",
-      "news talk",
-      "youth"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 3084,
     "codec": "AAC",
@@ -1824,7 +1852,14 @@
     "hls": 1,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "children",
+      "christian",
+      "family",
+      "news talk",
+      "youth"
+    ]
   },
   {
     "slug": "hitcity",
@@ -1836,7 +1871,7 @@
     "homepage": "https://hitcity.se/live",
     "favicon": "/station-icons/se/hitcity.webp",
     "genres": [
-      "pop music",
+      "pop",
       "techno",
       "trance"
     ],
@@ -1869,13 +1904,7 @@
     "homepage": "https://hitcity.se/",
     "favicon": "/station-icons/se/hitcity-229845c8-placeholder.webp",
     "genres": [
-      "00s",
-      "2010s",
-      "2020s",
-      "80s",
-      "90s",
-      "hot ac",
-      "pop music",
+      "pop",
       "techno"
     ],
     "language": "english",
@@ -1893,7 +1922,15 @@
         "city": "Landskrona",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "00s",
+      "10s",
+      "20s",
+      "80s",
+      "90s",
+      "hot adult contemporary"
+    ]
   },
   {
     "slug": "hitmix90s",
@@ -1953,14 +1990,11 @@
     "homepage": "https://radio-kullabygden.se/",
     "favicon": "/station-icons/se/h-gan-s-n-rradio.webp",
     "genres": [
-      "1950s",
-      "1960s",
       "blues",
       "classic rock",
       "country",
       "jazz",
-      "pop",
-      "religious"
+      "pop"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -1980,7 +2014,12 @@
         "city": "Höganäs",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "50s",
+      "60s",
+      "religious"
+    ]
   },
   {
     "slug": "house",
@@ -2029,8 +2068,7 @@
     "genres": [
       "ambient",
       "classical",
-      "instrumental",
-      "piano"
+      "instrumental"
     ],
     "language": "english",
     "bitrate": 0,
@@ -2050,7 +2088,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "piano"
+    ]
   },
   {
     "slug": "jazz",
@@ -2138,9 +2179,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/kpop.webp",
     "genres": [
-      "k-pop",
-      "korean pop",
-      "kpop"
+      "k-pop"
     ],
     "language": "english",
     "bitrate": 0,
@@ -2248,8 +2287,7 @@
     "homepage": "https://lugnafavoriter.se./",
     "favicon": "/station-icons/se/lugna-favoriter-stockholm.webp",
     "genres": [
-      "pop",
-      "romantic"
+      "pop"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -2266,7 +2304,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "romantic"
+    ]
   },
   {
     "slug": "mad-mix-beats",
@@ -2278,9 +2319,6 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/mad-mix-beats.webp",
     "genres": [
-      "classics",
-      "hits",
-      "mixed",
       "pop"
     ],
     "language": "english",
@@ -2301,7 +2339,12 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "classic hits",
+      "hits",
+      "variety"
+    ]
   },
   {
     "slug": "mad-mix-curated",
@@ -2312,12 +2355,7 @@
     "stream_url": "https://mml2.prostream.se/listen/mad_mix_curated/radio.mp3",
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/mad-mix-curated.webp",
-    "genres": [
-      "curated",
-      "hits",
-      "mixed",
-      "variety"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 0,
     "codec": "MP3",
@@ -2336,7 +2374,14 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "hits",
+      "variety"
+    ],
+    "genre_review": [
+      "curated"
+    ]
   },
   {
     "slug": "mad-mix-main",
@@ -2348,11 +2393,8 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/mad-mix-main.webp",
     "genres": [
-      "hits",
-      "mixed",
       "pop",
-      "rock",
-      "variety"
+      "rock"
     ],
     "language": "english",
     "bitrate": 0,
@@ -2372,7 +2414,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "hits",
+      "variety"
+    ]
   },
   {
     "slug": "magic-radio-malmoe",
@@ -2384,9 +2430,7 @@
     "homepage": "https://www.magicradio.se/",
     "favicon": "/station-icons/se/magic-radio-malmoe.webp",
     "genres": [
-      "70s",
-      "80s",
-      "pop music"
+      "pop"
     ],
     "language": null,
     "bitrate": 192,
@@ -2403,7 +2447,11 @@
         "city": "Malmö",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "70s",
+      "80s"
+    ]
   },
   {
     "slug": "melancholy",
@@ -2416,9 +2464,7 @@
     "favicon": "/station-icons/se/melancholy.webp",
     "genres": [
       "alternative",
-      "emotional",
-      "indie",
-      "sad"
+      "indie"
     ],
     "language": "english",
     "bitrate": 0,
@@ -2438,7 +2484,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "genre_review": [
+      "emotional",
+      "sad"
+    ]
   },
   {
     "slug": "metal-mayhem",
@@ -2485,7 +2535,6 @@
     "favicon": "/station-icons/se/midnight-silk-eros.webp",
     "genres": [
       "r&b",
-      "romantic",
       "slow jams",
       "soul"
     ],
@@ -2507,7 +2556,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "romantic"
+    ]
   },
   {
     "slug": "mix-megapol",
@@ -2628,7 +2680,7 @@
       "hip-hop",
       "house",
       "reggae",
-      "rnb",
+      "r&b",
       "soul"
     ],
     "language": "english",
@@ -2738,9 +2790,7 @@
     "stream_url": "http://tx-bauerse.sharp-stream.com/http_live.php?i=nrj_instreamtest_se_mp3",
     "homepage": "http://www.nrj.se/",
     "favicon": "/station-icons/se/nrj-sweden.webp",
-    "genres": [
-      "top 40"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -2750,7 +2800,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "top 40"
+    ]
   },
   {
     "slug": "oldies-fm",
@@ -2833,9 +2886,7 @@
     "stream_url": "https://live1.sr.se/p4kalm-mp3-96",
     "homepage": "https://sverigesradio.se/kalmar",
     "favicon": "/station-icons/se/p4-kalmar-placeholder.webp",
-    "genres": [
-      "news talk music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 176,
     "codec": "MP3",
@@ -2845,7 +2896,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "news talk"
+    ]
   },
   {
     "slug": "p4-norrbotten",
@@ -2877,10 +2931,7 @@
     "stream_url": "http://http-live.sr.se/p4orebro-aac-192",
     "homepage": "https://sverigesradio.se/orebro",
     "favicon": "/station-icons/se/p4-rebro.webp",
-    "genres": [
-      "local radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -2896,7 +2947,10 @@
         "city": "Örebro",
         "state": "Örebro county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "p4-sterg-tland",
@@ -3058,7 +3112,6 @@
     "homepage": "https://pcradio.ru/",
     "favicon": "/station-icons/se/pain.webp",
     "genres": [
-      "discography",
       "rock"
     ],
     "language": "engilsh",
@@ -3070,7 +3123,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "genre_review": [
+      "discography"
+    ]
   },
   {
     "slug": "party-247",
@@ -3084,8 +3140,7 @@
     "genres": [
       "dance",
       "edm",
-      "electronic",
-      "party"
+      "electronic"
     ],
     "language": "english",
     "bitrate": 0,
@@ -3105,7 +3160,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "party"
+    ]
   },
   {
     "slug": "pirate-rock-v-stkustens-b-sta-rock",
@@ -3118,7 +3176,7 @@
     "favicon": "/station-icons/se/pirate-rock-v-stkustens-b-sta-rock.webp",
     "genres": [
       "classic rock",
-      "hardrock",
+      "hard rock",
       "rock"
     ],
     "language": "swedish",
@@ -3169,9 +3227,7 @@
     "stream_url": "http://62.101.46.15:8000/poporock",
     "homepage": "http://www.poporock.se/",
     "favicon": "/station-icons/se/pop-rock-umeao.webp",
-    "genres": [
-      "local radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -3184,7 +3240,10 @@
     "geo_long": null,
     "nowplaying_url": "http://62.101.46.15:8000/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://62.101.46.15:8000/played?sid=1&type=json"
+    "history_url": "http://62.101.46.15:8000/played?sid=1&type=json",
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "pop-radio-stockholm",
@@ -3225,9 +3284,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/popburst.webp",
     "genres": [
-      "hits",
-      "pop",
-      "top 40"
+      "pop"
     ],
     "language": "english",
     "bitrate": 0,
@@ -3247,7 +3304,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "hits",
+      "top 40"
+    ]
   },
   {
     "slug": "power-club",
@@ -3259,8 +3320,7 @@
     "homepage": "https://www.ilikeradio.se/powerclub/",
     "favicon": "/station-icons/se/power-club.webp",
     "genres": [
-      "club",
-      "i like radio"
+      "club"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -3355,9 +3415,8 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/punk-classics.webp",
     "genres": [
-      "classic punk",
-      "hardcore",
-      "punk"
+      "punk",
+      "hardcore"
     ],
     "language": "english",
     "bitrate": 0,
@@ -3389,9 +3448,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/radio-163.webp",
     "genres": [
-      "hits",
-      "pop",
-      "top 40"
+      "pop"
     ],
     "language": "english",
     "bitrate": 0,
@@ -3411,7 +3468,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "hits",
+      "top 40"
+    ]
   },
   {
     "slug": "radio-567",
@@ -3457,9 +3518,6 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/radio-789.webp",
     "genres": [
-      "classics",
-      "hits",
-      "oldies",
       "rock"
     ],
     "language": "english",
@@ -3480,7 +3538,12 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "classic hits",
+      "hits",
+      "oldies"
+    ]
   },
   {
     "slug": "radio-88-partille",
@@ -3536,7 +3599,6 @@
     "genres": [
       "country",
       "dansband",
-      "easy listening",
       "pop",
       "rock"
     ],
@@ -3557,7 +3619,10 @@
         "city": "Kumla",
         "state": "Närke"
       }
-    }
+    },
+    "formats": [
+      "easy listening"
+    ]
   },
   {
     "slug": "radio-aftonbladet",
@@ -3669,9 +3734,7 @@
     "homepage": "https://radiogbg.se/",
     "favicon": "/station-icons/se/radio-gbg-sevdah-placeholder.webp",
     "genres": [
-      "bosna",
-      "sevdah",
-      "sevdah 24 sata"
+      "sevdah"
     ],
     "language": "bosnian",
     "bitrate": 128,
@@ -3685,7 +3748,10 @@
     "geo_long": null,
     "nowplaying_url": "https://stream.radiogbg.se:8050/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://stream.radiogbg.se:8050/played?sid=1&type=json"
+    "history_url": "https://stream.radiogbg.se:8050/played?sid=1&type=json",
+    "genre_review": [
+      "bosna"
+    ]
   },
   {
     "slug": "radio-gold-sweden",
@@ -3807,9 +3873,7 @@
     "stream_url": "https://s2.radio.co/sfbf5f5b85/listen",
     "homepage": "http://www.radiohope.se/",
     "favicon": "/station-icons/se/radio-hope.webp",
-    "genres": [
-      "christian"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 192,
     "codec": "MP3",
@@ -3819,7 +3883,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "christian"
+    ]
   },
   {
     "slug": "radio-hope-f705d3e2",
@@ -3830,9 +3897,7 @@
     "stream_url": "http://s2.radio.co/sfbf5f5b85/listen",
     "homepage": "http://www.radiohope.se/",
     "favicon": "/station-icons/se/radio-hope-f705d3e2.webp",
-    "genres": [
-      "christian"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 192,
     "codec": "MP3",
@@ -3842,7 +3907,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "christian"
+    ]
   },
   {
     "slug": "radio-laholm",
@@ -3854,12 +3922,6 @@
     "homepage": "http://radiolaholm.nu/",
     "favicon": "/station-icons/se/radio-laholm-placeholder.webp",
     "genres": [
-      "60s",
-      "70s",
-      "80s",
-      "contemporary adult",
-      "local radio",
-      "news",
       "pop",
       "rock"
     ],
@@ -3872,7 +3934,15 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "60s",
+      "70s",
+      "80s",
+      "adult contemporary",
+      "local radio",
+      "news"
+    ]
   },
   {
     "slug": "radio-nacka-stockholm",
@@ -3904,9 +3974,7 @@
     "stream_url": "https://live-bauerse-fm.sharp-stream.com/nostalgi_aacp",
     "homepage": "https://radioplay.se/radio-nostalgi/",
     "favicon": "/station-icons/se/radio-nostalgi.webp",
-    "genres": [
-      "80s"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 56,
     "codec": "AAC+",
@@ -3922,7 +3990,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "80s"
+    ]
   },
   {
     "slug": "radio-nostalgi-se",
@@ -3975,9 +4046,7 @@
     "stream_url": "https://stream.radiopayam.se/;",
     "homepage": "https://radiopayam.se/",
     "favicon": "/station-icons/se/radio-payam-gothenburg.webp",
-    "genres": [
-      "talk show"
-    ],
+    "genres": [],
     "language": "persian",
     "bitrate": 128,
     "codec": "MP3",
@@ -3987,7 +4056,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "talk"
+    ]
   },
   {
     "slug": "radio-rainbow",
@@ -4000,7 +4072,6 @@
     "favicon": "/station-icons/se/radio-rainbow.webp",
     "genres": [
       "dance",
-      "dj remix",
       "house"
     ],
     "language": "swedish",
@@ -4012,7 +4083,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "remixes"
+    ]
   },
   {
     "slug": "radio-rivendell",
@@ -4023,9 +4097,7 @@
     "stream_url": "https://play.radiorivendell.com/radio/8000/radio.mp3",
     "homepage": "https://www.radiorivendell.com/",
     "favicon": "/station-icons/se/radio-rivendell.webp",
-    "genres": [
-      "fantasy"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -4060,6 +4132,9 @@
         "bitrate": 128,
         "codec": "OGG"
       }
+    ],
+    "genre_review": [
+      "fantasy"
     ]
   },
   {
@@ -4071,10 +4146,7 @@
     "stream_url": "https://shout.rs8990.com/;",
     "homepage": "https://radiosandviken.se/",
     "favicon": "/station-icons/se/radio-sandviken-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -4105,6 +4177,9 @@
         "metadata_server": "shoutcast",
         "history_url": "http://rssand.se:4027/played?sid=1&type=json"
       }
+    ],
+    "formats": [
+      "local radio"
     ]
   },
   {
@@ -4138,13 +4213,8 @@
     "homepage": "http://www.radiosotenas.se/",
     "favicon": "/station-icons/se/radio-soten-s.webp",
     "genres": [
-      "00s",
-      "70s",
-      "80s",
-      "90s",
       "pop",
-      "rock",
-      "top 40"
+      "rock"
     ],
     "language": "swedish",
     "bitrate": 192,
@@ -4158,7 +4228,14 @@
     "geo_long": null,
     "nowplaying_url": "http://sc3.radiosotenas.se:8500/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://sc3.radiosotenas.se:8500/played?sid=1&type=json"
+    "history_url": "http://sc3.radiosotenas.se:8500/played?sid=1&type=json",
+    "formats": [
+      "00s",
+      "70s",
+      "80s",
+      "90s",
+      "top 40"
+    ]
   },
   {
     "slug": "radio-svea",
@@ -4171,8 +4248,7 @@
     "favicon": "/station-icons/se/radio-svea.webp",
     "genres": [
       "pop",
-      "rock",
-      "swedish"
+      "rock"
     ],
     "language": "english",
     "bitrate": 0,
@@ -4192,7 +4268,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "swedish-language music"
+    ]
   },
   {
     "slug": "radio-sydvast",
@@ -4272,9 +4351,7 @@
     "stream_url": "http://radiogodis.org:8004/",
     "homepage": "https://www.radiogodis.se/",
     "favicon": "/station-icons/se/radiogodis-placeholder.webp",
-    "genres": [
-      "80s"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -4284,7 +4361,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "80s"
+    ]
   },
   {
     "slug": "radiolista-desert-house",
@@ -4298,7 +4378,6 @@
     "genres": [
       "chillout",
       "deep house",
-      "oriental",
       "world music"
     ],
     "language": "english",
@@ -4310,7 +4389,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "genre_review": [
+      "oriental"
+    ]
   },
   {
     "slug": "radiolista-escape",
@@ -4323,8 +4405,7 @@
     "favicon": "/station-icons/se/radiolista-escape.webp",
     "genres": [
       "ambient",
-      "chillout",
-      "lounge"
+      "chillout"
     ],
     "language": "english",
     "bitrate": 128,
@@ -4335,7 +4416,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "lounge"
+    ]
   },
   {
     "slug": "radiolista-noir",
@@ -4347,10 +4431,7 @@
     "homepage": "https://aweradio.app/@radiolista",
     "favicon": "/station-icons/se/radiolista-noir.webp",
     "genres": [
-      "cinematic",
-      "jazz",
-      "lounge",
-      "noir"
+      "jazz"
     ],
     "language": "english",
     "bitrate": 0,
@@ -4361,7 +4442,14 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "soundtracks",
+      "lounge"
+    ],
+    "genre_review": [
+      "noir"
+    ]
   },
   {
     "slug": "redback-radio-select-state",
@@ -4373,7 +4461,6 @@
     "homepage": "https://redback.mywire.org/Radio/",
     "favicon": "/station-icons/se/redback-radio-select-state-placeholder.webp",
     "genres": [
-      "eclectic",
       "experimental",
       "psychedelic"
     ],
@@ -4394,7 +4481,10 @@
         "city": "Sala",
         "state": "SVästmanlands län"
       }
-    }
+    },
+    "formats": [
+      "eclectic"
+    ]
   },
   {
     "slug": "reggae",
@@ -4407,7 +4497,6 @@
     "favicon": "/station-icons/se/reggae.webp",
     "genres": [
       "dancehall",
-      "island",
       "reggae",
       "ska"
     ],
@@ -4429,7 +4518,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "genre_review": [
+      "island"
+    ]
   },
   {
     "slug": "relax-meditation",
@@ -4442,9 +4534,7 @@
     "favicon": "/station-icons/se/relax-meditation.webp",
     "genres": [
       "ambient",
-      "meditation",
-      "new age",
-      "relaxation"
+      "new age"
     ],
     "language": "english",
     "bitrate": 0,
@@ -4464,7 +4554,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "meditation",
+      "relaxation"
+    ]
   },
   {
     "slug": "replay-news-svenska",
@@ -4475,9 +4569,7 @@
     "stream_url": "https://replaynewsse.ice.infomaniak.ch/replaynewsse-128.mp3",
     "homepage": "https://www.replaynews.net/",
     "favicon": "/station-icons/se/replay-news-svenska.webp",
-    "genres": [
-      "news"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -4487,7 +4579,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "news"
+    ]
   },
   {
     "slug": "retreat-radio-malmoe",
@@ -4521,9 +4616,7 @@
     "stream_url": "https://live-bauerse-fm.sharp-stream.com/retrofm_aacp",
     "homepage": "https://www.retrofm.se/",
     "favicon": "/station-icons/se/retro-fm-sk-ne.webp",
-    "genres": [
-      "oldies"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 96,
     "codec": "AAC",
@@ -4533,7 +4626,10 @@
     "hls": 0,
     "ssl_error": 1,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "oldies"
+    ]
   },
   {
     "slug": "retro-fm-sverige",
@@ -4544,9 +4640,7 @@
     "stream_url": "https://stream.rcs.revma.com/25knctp5vepwv",
     "homepage": "https://www.retrofm.se/",
     "favicon": "/station-icons/se/retro-fm-sverige-placeholder.webp",
-    "genres": [
-      "oldies"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 0,
     "codec": "AAC",
@@ -4556,7 +4650,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "oldies"
+    ]
   },
   {
     "slug": "retrohits",
@@ -4588,14 +4685,7 @@
     "stream_url": "https://sc.retrohits.se/retrohits64.aac",
     "homepage": "https://retrohits.se/",
     "favicon": "/station-icons/se/retrohits-sk-ne-placeholder.webp",
-    "genres": [
-      "00s",
-      "80s",
-      "90s",
-      "70s",
-      "hits",
-      "retro"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 64,
     "codec": "AAC",
@@ -4611,7 +4701,17 @@
         "city": "Landskrona",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "00s",
+      "80s",
+      "90s",
+      "70s",
+      "hits"
+    ],
+    "genre_review": [
+      "retro"
+    ]
   },
   {
     "slug": "rix-fm",
@@ -4703,7 +4803,7 @@
     "homepage": "https://www.ilikeradio.se/rixfmfresh/",
     "favicon": "/station-icons/se/rix-fm-fresh.webp",
     "genres": [
-      "pop music"
+      "pop"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -4792,9 +4892,7 @@
     "stream_url": "https://stream.pcradio.ru/Roxette-hi",
     "homepage": "https://pcradio.ru/",
     "favicon": "/station-icons/se/roxette.webp",
-    "genres": [
-      "discography"
-    ],
+    "genres": [],
     "language": "engilsh",
     "bitrate": 0,
     "codec": "AAC",
@@ -4804,7 +4902,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "genre_review": [
+      "discography"
+    ]
   },
   {
     "slug": "sauna-radio-stockholm",
@@ -4816,11 +4917,7 @@
     "homepage": "https://www.saunaradio.com/",
     "favicon": "/station-icons/se/sauna-radio-stockholm.webp",
     "genres": [
-      "community radio",
-      "dj sets",
-      "electronic",
-      "live",
-      "stockholm"
+      "electronic"
     ],
     "language": "english",
     "bitrate": 128,
@@ -4831,7 +4928,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "community radio",
+      "dj mixes"
+    ]
   },
   {
     "slug": "scenesat",
@@ -4869,9 +4970,7 @@
     "stream_url": "https://streams.scenesat.com/main/hq.mp3",
     "homepage": "https://scenesat.com/",
     "favicon": "/station-icons/se/scenesat-radio-mp3.webp",
-    "genres": [
-      "demoscene"
-    ],
+    "genres": [],
     "language": "english",
     "bitrate": 0,
     "codec": "MP3",
@@ -4909,6 +5008,9 @@
         "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fmobile.aac",
         "metadata_server": "icecast"
       }
+    ],
+    "genre_review": [
+      "demoscene"
     ]
   },
   {
@@ -4923,8 +5025,7 @@
     "genres": [
       "ebm",
       "electronic",
-      "industrial",
-      "synth"
+      "industrial"
     ],
     "language": null,
     "bitrate": 192,
@@ -4943,7 +5044,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "genre_review": [
+      "synth"
+    ]
   },
   {
     "slug": "sk-rg-rdsradion",
@@ -4997,9 +5101,7 @@
     "homepage": "https://www.slayradio.org/",
     "favicon": "/station-icons/se/slay-radio-aac.webp",
     "genres": [
-      "c64",
-      "electronic",
-      "remixes"
+      "electronic"
     ],
     "language": "english",
     "bitrate": 128,
@@ -5010,7 +5112,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "remixes"
+    ],
+    "genre_review": [
+      "c64"
+    ]
   },
   {
     "slug": "slayradio",
@@ -5090,7 +5198,7 @@
     "favicon": "/station-icons/se/sr-din-gata-sk-ne-placeholder.webp",
     "genres": [
       "hip-hop",
-      "rnb"
+      "r&b"
     ],
     "language": "swedish",
     "bitrate": 128,
@@ -5118,9 +5226,7 @@
     "stream_url": "https://live1.sr.se/p1-aac-32",
     "homepage": "https://www.sverigesradio.se/kanaler",
     "favicon": "/station-icons/se/sr-p1-placeholder.webp",
-    "genres": [
-      "public service"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC",
@@ -5136,7 +5242,10 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sr-p2-stockholm",
@@ -5231,9 +5340,7 @@
     "stream_url": "https://live1.sr.se/p4jkpg-aac-320%20(AAC-LC,%20320%20kbps)",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-jonkoping",
     "favicon": "/station-icons/se/sr-p4-j-nk-ping-45bca914-placeholder.webp",
-    "genres": [
-      "local news"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 0,
     "codec": null,
@@ -5243,7 +5350,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "local news"
+    ]
   },
   {
     "slug": "sr-p4-j-nk-ping-d49cfff7",
@@ -5254,9 +5364,7 @@
     "stream_url": "https://live1.sr.se/p4jkpg-aac-320",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-jonkoping",
     "favicon": "/station-icons/se/sr-p4-j-nk-ping-d49cfff7.webp",
-    "genres": [
-      "local news"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 312,
     "codec": "AAC",
@@ -5266,7 +5374,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "local news"
+    ]
   },
   {
     "slug": "sr-p4-kronoberg",
@@ -5331,12 +5442,7 @@
     "stream_url": "https://ljud1-cdn.sr.se/lc/p4malm.m3u8",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-malmohus",
     "favicon": "/station-icons/se/sr-p4-radio-malm-hus-scania-placeholder.webp",
-    "genres": [
-      "malmö",
-      "malmöhus",
-      "skåne",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 37,
     "codec": "AAC",
@@ -5391,7 +5497,6 @@
     "homepage": "https://www.ilikeradio.se/star70s/",
     "favicon": "/station-icons/se/star-70s.webp",
     "genres": [
-      "70s",
       "pop",
       "rock"
     ],
@@ -5404,7 +5509,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "70s"
+    ]
   },
   {
     "slug": "star-80s",
@@ -5416,7 +5524,6 @@
     "homepage": "https://www.ilikeradio.se/star80s/",
     "favicon": "/station-icons/se/star-80s.webp",
     "genres": [
-      "80s",
       "pop",
       "rock"
     ],
@@ -5429,7 +5536,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "80s"
+    ]
   },
   {
     "slug": "star-90s",
@@ -5441,7 +5551,6 @@
     "homepage": "https://www.ilikeradio.se/star90s/",
     "favicon": "/station-icons/se/star-90s.webp",
     "genres": [
-      "90s",
       "pop",
       "rock"
     ],
@@ -5454,7 +5563,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "90s"
+    ]
   },
   {
     "slug": "star-fm",
@@ -5545,11 +5657,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/stars-on-45.webp",
     "genres": [
-      "60s",
-      "70s",
-      "classics",
-      "disco",
-      "oldies"
+      "disco"
     ],
     "language": "english",
     "bitrate": 0,
@@ -5569,7 +5677,13 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "60s",
+      "70s",
+      "classic hits",
+      "oldies"
+    ]
   },
   {
     "slug": "stocholm-n-rradio-fm-95-3-stockholm",
@@ -5580,9 +5694,7 @@
     "stream_url": "http://live.narradio.se:8020/;stream.mp3",
     "homepage": "http://www.narradio.se/",
     "favicon": "/station-icons/se/stocholm-n-rradio-fm-95-3-stockholm.webp",
-    "genres": [
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -5603,10 +5715,7 @@
     "stream_url": "http://radiostreamtwo.mine.nu/18020",
     "homepage": "http://www.narradio.se/",
     "favicon": "/station-icons/se/stockholm-fm-101-1-sweden-placeholder.webp",
-    "genres": [
-      "international",
-      "variety"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -5616,7 +5725,13 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "variety"
+    ],
+    "genre_review": [
+      "international"
+    ]
   },
   {
     "slug": "stockholm-fm-101-1-mhz-sweden",
@@ -5648,13 +5763,7 @@
     "stream_url": "http://radiostreamone.mine.nu:18000/",
     "homepage": "http://www.narradio.se/",
     "favicon": "/station-icons/se/stockholm-fm-88-0-sweden.webp",
-    "genres": [
-      "church",
-      "culture",
-      "politics",
-      "talk",
-      "various"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -5664,7 +5773,14 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "religious",
+      "culture",
+      "politics",
+      "talk",
+      "variety"
+    ]
   },
   {
     "slug": "stockholm-fm-88-0-mhz-sweden",
@@ -5752,12 +5868,7 @@
     "favicon": "/station-icons/se/svensk-folkmusik-akka-radio-placeholder.webp",
     "genres": [
       "folk",
-      "folk music",
-      "folkmusik",
-      "svensk",
-      "svensk folkmusik",
-      "swedish",
-      "traditional"
+      "swedish folk"
     ],
     "language": "swedish",
     "bitrate": 192,
@@ -5771,7 +5882,11 @@
     "geo_long": null,
     "nowplaying_url": "http://mediaserv38.live-streams.nl:8107/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://mediaserv38.live-streams.nl:8107/played?sid=1&type=json"
+    "history_url": "http://mediaserv38.live-streams.nl:8107/played?sid=1&type=json",
+    "formats": [
+      "swedish-language music",
+      "traditional music"
+    ]
   },
   {
     "slug": "svensk-pop-stockholm",
@@ -5803,11 +5918,7 @@
     "stream_url": "https://live1.sr.se/ekotdirekt-aac-320",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-ekot-s-nder-direkt-placeholder.webp",
-    "genres": [
-      "news",
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 312,
     "codec": "AAC",
@@ -5817,7 +5928,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "news",
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p1",
@@ -5828,14 +5943,7 @@
     "stream_url": "https://edge1.sr.se/p1-aac-320",
     "homepage": "https://sverigesradio.se/p1",
     "favicon": "/station-icons/se/sveriges-radio-p1.webp",
-    "genres": [
-      "news",
-      "public radio",
-      "sveriges radio",
-      "culture",
-      "talk",
-      "current affairs"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 312,
     "codec": "AAC",
@@ -5900,7 +6008,14 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "news",
+      "public radio",
+      "culture",
+      "talk",
+      "current affairs"
+    ]
   },
   {
     "slug": "sveriges-radio-p2",
@@ -5912,8 +6027,6 @@
     "homepage": "https://sverigesradio.se/p2",
     "favicon": "/station-icons/se/sveriges-radio-p2.webp",
     "genres": [
-      "sveriges radio",
-      "classical music",
       "classical",
       "jazz"
     ],
@@ -5967,11 +6080,7 @@
     "stream_url": "https://live1.sr.se/p2sm-aac-320",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p2-spr-k-och-musik-placeholder.webp",
-    "genres": [
-      "music",
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 296,
     "codec": "AAC",
@@ -5981,7 +6090,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p3",
@@ -5992,11 +6104,7 @@
     "stream_url": "https://live1.sr.se/p3-aac-320",
     "homepage": "https://sverigesradio.se/p3",
     "favicon": "/station-icons/se/sveriges-radio-p3.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio",
-      "youth"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 312,
     "codec": "AAC",
@@ -6034,7 +6142,11 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "public radio",
+      "youth"
+    ]
   },
   {
     "slug": "sveriges-radio-p3-din-gata-malmoe",
@@ -6046,10 +6158,7 @@
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p3.webp",
     "genres": [
-      "local radio",
-      "public radio",
-      "rap",
-      "sveriges radio"
+      "rap"
     ],
     "language": "swedish",
     "bitrate": 304,
@@ -6060,7 +6169,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "local radio",
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-blekinge",
@@ -6071,11 +6184,7 @@
     "stream_url": "https://live1.sr.se/p4blek-mp3-96",
     "homepage": "https://sverigesradio.se/blekinge",
     "favicon": "/station-icons/se/sveriges-radio-p4.webp",
-    "genres": [
-      "local",
-      "music",
-      "talkshow"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 152,
     "codec": "MP3",
@@ -6091,7 +6200,11 @@
         "city": "Ronneby kommun",
         "state": "Blekinge county"
       }
-    }
+    },
+    "formats": [
+      "local radio",
+      "talk"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-halland",
@@ -6156,18 +6269,7 @@
     "stream_url": "https://live1.sr.se/p4plus-aac-320",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-plus-placeholder.webp",
-    "genres": [
-      "00s",
-      "30s",
-      "40s",
-      "50s",
-      "60s",
-      "70s",
-      "80s",
-      "90s",
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 304,
     "codec": "AAC",
@@ -6177,7 +6279,18 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "00s",
+      "30s",
+      "40s",
+      "50s",
+      "60s",
+      "70s",
+      "80s",
+      "90s",
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-sjuh-rad",
@@ -6209,10 +6322,7 @@
     "stream_url": "https://http-live.sr.se/p4varmland-mp3-128",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-v-rmland.webp",
-    "genres": [
-      "local radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -6228,7 +6338,10 @@
         "city": "Karlstad",
         "state": "Värmland county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-v-st",
@@ -6260,10 +6373,7 @@
     "stream_url": "https://http-live.sr.se/p4vastmanland-mp3-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-v-stmanland.webp",
-    "genres": [
-      "local radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6279,7 +6389,10 @@
         "city": "Västerås",
         "state": "Västmanland county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p6",
@@ -6290,10 +6403,7 @@
     "stream_url": "https://live1.sr.se/p6-aac-320",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-p6-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 296,
     "codec": "AAC",
@@ -6303,7 +6413,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-radioapans-knattekanal",
@@ -6335,10 +6448,7 @@
     "stream_url": "https://http-live.sr.se/srextra01-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-1-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6348,7 +6458,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-10",
@@ -6359,10 +6472,7 @@
     "stream_url": "https://http-live.sr.se/srextra10-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-10-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6372,7 +6482,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-2",
@@ -6383,10 +6496,7 @@
     "stream_url": "http://http-live.sr.se/srextra02-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-2-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6396,7 +6506,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-3",
@@ -6407,10 +6520,7 @@
     "stream_url": "https://http-live.sr.se/srextra03-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-3-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6420,7 +6530,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-4",
@@ -6431,10 +6544,7 @@
     "stream_url": "https://http-live.sr.se/srextra04-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-4-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6444,7 +6554,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-5",
@@ -6455,10 +6568,7 @@
     "stream_url": "https://http-live.sr.se/srextra05-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-5-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6468,7 +6578,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-6",
@@ -6479,10 +6592,7 @@
     "stream_url": "https://http-live.sr.se/srextra06-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-6-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6492,7 +6602,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-7",
@@ -6503,10 +6616,7 @@
     "stream_url": "https://http-live.sr.se/srextra07-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-7-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6516,7 +6626,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-8",
@@ -6527,10 +6640,7 @@
     "stream_url": "https://http-live.sr.se/srextra08-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-8-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6540,7 +6650,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-extra-9",
@@ -6551,10 +6664,7 @@
     "stream_url": "http://http-live.sr.se/srextra09-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-extra-9-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6564,7 +6674,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-sr-s-pmi",
@@ -6575,10 +6688,7 @@
     "stream_url": "http://http-live.sr.se/srsapmi-aac-192",
     "homepage": "https://sverigesradio.se/",
     "favicon": "/station-icons/se/sveriges-radio-sr-s-pmi-placeholder.webp",
-    "genres": [
-      "public radio",
-      "sveriges radio"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6588,7 +6698,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p3-01a0db86",
@@ -6599,10 +6712,7 @@
     "stream_url": "https://edge1.sr.se/p3-aac-320",
     "homepage": "https://www.sverigesradio.se/p3",
     "favicon": "/station-icons/se/sveriges-radio-p3.webp",
-    "genres": [
-      "music",
-      "youth"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 328,
     "codec": "AAC",
@@ -6612,7 +6722,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "youth"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-dalarna",
@@ -6623,9 +6736,7 @@
     "stream_url": "https://live1.sr.se/p4dala-aac-320",
     "homepage": "https://www.sverigesradio.se/nyheter/p4-dalarna",
     "favicon": "/station-icons/se/sveriges-radio-p4.webp",
-    "genres": [
-      "local"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 312,
     "codec": "AAC",
@@ -6641,7 +6752,10 @@
         "city": "Tällberg",
         "state": "Dalarna county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-g-vleborg",
@@ -6652,10 +6766,7 @@
     "stream_url": "https://http-live.sr.se/p4gavleborg-mp3-192",
     "homepage": "https://www.sverigesradio.se/gavleborg",
     "favicon": "/station-icons/se/sveriges-radio-p4-g-vleborg-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6671,7 +6782,10 @@
         "city": "Sandvikens kommun",
         "state": "Gävleborg county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-g-vleborg-e63482bc",
@@ -6709,10 +6823,7 @@
     "stream_url": "https://http-live.sr.se/p4goteborg-mp3-192",
     "homepage": "https://sverigesradio.se/g%C3%B6teborg",
     "favicon": "/station-icons/se/sveriges-radio-p4.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 192,
     "codec": "MP3",
@@ -6722,7 +6833,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-g-teborg-003dea75",
@@ -6733,10 +6847,7 @@
     "stream_url": "https://live1.sr.se/p4gbg-aac-320",
     "homepage": "https://www.sverigesradio/p4goteborg",
     "favicon": "/station-icons/se/sveriges-radio-p4.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 288,
     "codec": "AAC",
@@ -6752,7 +6863,10 @@
         "city": "Göteborg",
         "state": "Västra Götaland county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-gotland",
@@ -6763,10 +6877,7 @@
     "stream_url": "https://http-live.sr.se/p4gotland-mp3-192",
     "homepage": "https://sverigesradio.se/gotland",
     "favicon": "/station-icons/se/sveriges-radio-p4-gotland-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6782,7 +6893,10 @@
         "city": "Visby",
         "state": "Gotland county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-halland-79d17f42",
@@ -6820,9 +6934,7 @@
     "stream_url": "https://live1.sr.se/p4malm-aac-32",
     "homepage": "https://www.sverigesradio.se/kanaler",
     "favicon": "/station-icons/se/sveriges-radio-p4-malm-hus.webp",
-    "genres": [
-      "public service"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "AAC",
@@ -6838,7 +6950,10 @@
         "city": "Malmö",
         "state": "Skåne county"
       }
-    }
+    },
+    "formats": [
+      "public radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-sjuharad",
@@ -6870,10 +6985,7 @@
     "stream_url": "https://http-live.sr.se/p4skaraborg-mp3-192",
     "homepage": "https://sverigesradio.se/skaraborg",
     "favicon": "/station-icons/se/sveriges-radio-p4-skaraborg-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -6889,7 +7001,10 @@
         "city": "Skövde",
         "state": "Västra Götaland county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-stockholm",
@@ -6927,10 +7042,7 @@
     "stream_url": "https://http-live.sr.se/p4stockholm-mp3-192",
     "homepage": "https://www.sverigesradio/stockholm",
     "favicon": "/station-icons/se/sveriges-radio-p4-stockholm-543db188-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 192,
     "codec": "MP3",
@@ -6940,7 +7052,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-uppland",
@@ -6951,10 +7066,7 @@
     "stream_url": "https://http-live.sr.se/p4uppland-mp3-192",
     "homepage": "https://sverigesradio.se/uppland",
     "favicon": "/station-icons/se/sveriges-radio-p4-uppland-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -6970,7 +7082,10 @@
         "city": "Uppsala",
         "state": "Uppsala county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radio-p4-uppland-9e1e37f2",
@@ -7008,10 +7123,7 @@
     "stream_url": "https://http-live.sr.se/p4uppland-aac-192",
     "homepage": "https://www.sr.se/",
     "favicon": "/station-icons/se/sveriges-radio-p4-uppland-aac-placeholder.webp",
-    "genres": [
-      "local radio",
-      "music"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -7027,7 +7139,10 @@
         "city": "Uppsala",
         "state": "Uppsala county"
       }
-    }
+    },
+    "formats": [
+      "local radio"
+    ]
   },
   {
     "slug": "sveriges-radion-p4-sterg-tland-select-one",
@@ -7038,13 +7153,7 @@
     "stream_url": "https://live1.sr.se/p4ostg-mp3-96",
     "homepage": "https://sverigesradio.se/ostergotland",
     "favicon": "/station-icons/se/sveriges-radion-p4-sterg-tland-select-one-placeholder.webp",
-    "genres": [
-      "local news",
-      "local talk",
-      "music",
-      "sport",
-      "östergötland"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 136,
     "codec": "MP3",
@@ -7060,7 +7169,13 @@
         "city": "Norrköping",
         "state": "Östergötland county"
       }
-    }
+    },
+    "formats": [
+      "local news",
+      "local radio",
+      "talk",
+      "sports"
+    ]
   },
   {
     "slug": "swarm-radio-malmoe",
@@ -7094,9 +7209,7 @@
     "favicon": "/station-icons/se/swedish-truckers.webp",
     "genres": [
       "country",
-      "folk",
-      "nordic",
-      "swedish"
+      "folk"
     ],
     "language": "english",
     "bitrate": 0,
@@ -7116,7 +7229,13 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "swedish-language music"
+    ],
+    "genre_review": [
+      "nordic"
+    ]
   },
   {
     "slug": "the-modstation-amiga-protracker-modules",
@@ -7129,7 +7248,6 @@
     "favicon": "/station-icons/se/the-modstation-amiga-protracker-modules-placeholder.webp",
     "genres": [
       "chiptune",
-      "chiptunes",
       "electronic"
     ],
     "language": null,
@@ -7156,7 +7274,7 @@
     "favicon": "/station-icons/se/tjenamors-radio.webp",
     "genres": [
       "punk",
-      "reagge",
+      "reggae",
       "rock",
       "ska"
     ],
@@ -7242,16 +7360,10 @@
     "homepage": "https://viberadio.se/",
     "favicon": "/station-icons/se/vibe-radio-stockholm.webp",
     "genres": [
-      "chr",
       "dance",
-      "dance classics",
       "electronic",
-      "hits",
-      "old school",
-      "r&b/urban",
-      "rhythmic adult contemporary",
-      "rhythmic contemporary hits",
-      "throwbacks"
+      "r&b",
+      "urban"
     ],
     "language": "english",
     "bitrate": 192,
@@ -7262,7 +7374,14 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "top 40",
+      "dance classics",
+      "hits",
+      "oldies",
+      "rhythmic adult contemporary"
+    ]
   },
   {
     "slug": "vinyl-fm",
@@ -7300,9 +7419,7 @@
     "stream_url": "https://fwd.autopo.st/runedervall",
     "homepage": "https://vinylgodis.se/?#",
     "favicon": "/station-icons/se/vinylgodis.webp",
-    "genres": [
-      "1970s"
-    ],
+    "genres": [],
     "language": "swedish",
     "bitrate": 128,
     "codec": "MP3",
@@ -7312,7 +7429,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "70s"
+    ]
   },
   {
     "slug": "wolf-fm-dalarna",
@@ -7357,10 +7477,7 @@
     "homepage": "https://madmix.se/",
     "favicon": "/station-icons/se/workout.webp",
     "genres": [
-      "edm",
-      "fitness",
-      "motivation",
-      "workout"
+      "edm"
     ],
     "language": "english",
     "bitrate": 0,
@@ -7380,7 +7497,13 @@
         "city": "Stockholm",
         "state": "Stockholm county"
       }
-    }
+    },
+    "formats": [
+      "workout"
+    ],
+    "genre_review": [
+      "motivation"
+    ]
   },
   {
     "slug": "zergan-radyo-47an-sweden",
@@ -7392,7 +7515,6 @@
     "homepage": "http://www.radyozergan.com/",
     "favicon": "/station-icons/se/zergan-radyo-47an-sweden.webp",
     "genres": [
-      "kurdish",
       "turkish music"
     ],
     "language": "kurdi",
@@ -7410,6 +7532,9 @@
         "city": "Örebro",
         "state": "Örebro county"
       }
-    }
+    },
+    "formats": [
+      "kurdish-language music"
+    ]
   }
 ]

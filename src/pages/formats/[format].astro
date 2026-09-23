@@ -1,0 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { formatEntries } from '../../lib/station-formats';
+export function getStaticPaths() { return formatEntries.map(entry=>({params:{format:entry.slug},props:{entry}})); }
+const {entry}=Astro.props;
+const {t,localizePath}=localeHelpers(Astro.url);
+const title=`${t(entry.name)} | ${t('Radio formats')} | ${site.siteName}`;
+const description=t('Browse stations by programme format, language, era and listening mood.');
+const canonical=`${site.siteUrl}/formats/${entry.slug}/`;
+const structuredData={'@context':'https://schema.org','@type':'CollectionPage',name:title,description,url:canonical,mainEntity:{'@type':'ItemList',itemListElement:entry.stations.map((station,index)=>({'@type':'ListItem',position:index+1,name:station.name,url:`${site.siteUrl}/stations/${station.slug}/`}))}};
+---
+<Layout title={title} description={description}>
+ <SEO slot="seo" title={title} description={description} canonical={canonical} robots="index, follow" structuredData={structuredData} />
+ <p><a href={localizePath('/formats/')}>{t('Radio formats')}</a></p><h1>{t(entry.name)}</h1>
+ <ul class="list-unstyled row">{entry.stations.map(station=><li class="col-sm-6 col-lg-4 mb-3"><a href={localizePath(`/stations/${station.slug}/`)}>{station.name}</a></li>)}</ul>
+</Layout>

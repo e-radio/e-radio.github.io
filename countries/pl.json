@@ -1,0 +1,13 @@
+{
+  "countryCode": "PL",
+  "countryName": "Poland",
+  "countryAdjective": "Polish",
+  "language": "en",
+  "siteName": "Radio Internetowe",
+  "siteUrl": "https://radio-internetowe.github.io",
+  "stationsFile": "src/data/stations-pl.json",
+  "regions": [],
+  "cityAliases": {},
+  "redirectsFile": "countries/pl.redirects.json",
+  "googleVerification": ""
+}

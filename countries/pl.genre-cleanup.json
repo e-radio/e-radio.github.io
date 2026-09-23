@@ -1,0 +1,145 @@
+{
+  "aliases": {
+    "euro & italo disco italo disco new generation spacesynth pop 80's disco fox": [
+      "euro disco",
+      "italo disco",
+      "italo disco new generation",
+      "spacesynth",
+      "pop",
+      "80s",
+      "disco fox"
+    ],
+    "classic rock; alternative rock indie": [
+      "classic rock",
+      "alternative rock",
+      "indie"
+    ],
+    "deep tech house minimal dub techno": [
+      "deep tech house",
+      "minimal",
+      "dub techno"
+    ],
+    "latin jazz bossa blues rocknroll world music britpop oldies lounge 80s": [
+      "latin jazz",
+      "bossa nova",
+      "blues",
+      "rock and roll",
+      "world music",
+      "britpop",
+      "oldies",
+      "lounge",
+      "80s"
+    ],
+    "lounge chillout relax smoothjazz ambient": [
+      "lounge",
+      "chillout",
+      "relaxation",
+      "smooth jazz",
+      "ambient"
+    ],
+    "dance-pop-italo": [
+      "dance",
+      "pop",
+      "italo disco"
+    ],
+    "news / pop /rock": [
+      "news",
+      "pop",
+      "rock"
+    ],
+    "rock/classic rock/pop": [
+      "rock",
+      "classic rock",
+      "pop"
+    ],
+    "oldies/culture/religious": [
+      "oldies",
+      "culture",
+      "religious"
+    ],
+    "regional / culture": [
+      "regional",
+      "culture"
+    ],
+    "80s/90s": [
+      "80s",
+      "90s"
+    ],
+    "pop/top40": [
+      "pop",
+      "top 40"
+    ],
+    "adult contemporary / mix hits": [
+      "adult contemporary",
+      "hits"
+    ],
+    "r'n'b funk": [
+      "r&b",
+      "funk"
+    ],
+    "alternative indie rock": [
+      "alternative",
+      "indie rock"
+    ],
+    "christian praise&worship": [
+      "christian",
+      "praise and worship"
+    ],
+    "discopolo": "disco polo",
+    "italodisco": "italo disco",
+    "italodance": "italo dance",
+    "space synth": "spacesynth",
+    "handsup": "hands up",
+    "smothjazz": "smooth jazz",
+    "smoothjazz": "smooth jazz",
+    "punkrock": "punk rock",
+    "comunity": "community",
+    "hip hop": "hip-hop",
+    "rock'n'roll": "rock and roll",
+    "alternatywa": "alternative",
+    "ballady": "ballads",
+    "instrumentalna": "instrumental",
+    "kabaret": "cabaret",
+    "poezja": "poetry",
+    "szanty": "shanties",
+    "polski rock": "polish rock",
+    "polish pop music": [
+      "polish",
+      "pop"
+    ],
+    "info muzyka": [
+      "news",
+      "music"
+    ],
+    "info music": [
+      "news",
+      "music"
+    ],
+    "muzyka klubowa": "club",
+    "religia": "religious",
+    "religion": "religious",
+    "kościół": "church",
+    "katolik": "catholic",
+    "catholic radio": "catholic",
+    "gospel music": "gospel",
+    "christian music": "christian",
+    "lovesongs": "love songs",
+    "tangos": "tango",
+    "contemporary hit radio": "top 40",
+    "contemporary hits radio": "top 40",
+    "sounds of nature": "nature"
+  },
+  "remove": [
+    "(null)",
+    "genre",
+    "autopilot",
+    "autopilot 24/24",
+    "fm",
+    "ogg",
+    "radio",
+    "radio online",
+    "live stream",
+    "only the best :-)",
+    "robo dj play for you"
+  ]
+}
