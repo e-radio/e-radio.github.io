@@ -10,5 +10,41 @@
   {
     "stationuuid": "2d4d3a80-77d0-4275-a5b0-ceac8b8040da",
     "reason": "belong to Switzerland"
+  },
+  {
+    "stationuuid": "d896f410-698d-4ba7-b69f-c96e6b2001d4",
+    "reason": "self promoting radio-nederland.nl"
+  },
+  {
+    "stationuuid": "3697a672-027f-4583-a76f-f5a4cbb7fdb4",
+    "reason": "self promoting radio-nederland.nl"
+  },
+  {
+    "stationuuid": "516a7996-5000-4ee3-adf8-bfb160799452",
+    "reason": "incrorrect metadata"
+  },
+  {
+    "stationuuid": "516a7996-5000-4ee3-adf8-bfb160799452",
+    "reason": "duplicate"
+  },
+  {
+    "stationuuid": "a2fdb5c6-8592-4300-a406-f97fd23681f1",
+    "reason": "incrorrect metadata"
+  },
+  {
+    "stationuuid": "9ab2eb59-2d06-4229-8aef-da1b833061fa",
+    "reason": "incrorrect metadata"
+  },
+  {
+    "stationuuid": "9760a77e-5493-406e-ad7d-4c706c2ee277",
+    "reason": "incrorrect metadata"
+  },
+  {
+    "stationuuid": "f920799e-9108-492c-b6c0-c8b81242aae4",
+    "reason": "incrorrect metadata"
+  },
+  {
+    "stationuuid": "e6fc7c7f-9ffb-4b3b-9963-8f038e066028",
+    "reason": "wrong country"
   }
 ]

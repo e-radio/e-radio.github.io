@@ -1,6 +1,2300 @@
 {
-  "generatedAt": "2026-09-15T16:07:56.819Z",
+  "generatedAt": "2026-09-23T07:25:32.613Z",
   "server": "https://de1.api.radio-browser.info",
-  "automaticUpdates": [],
-  "missingFromApi": []
+  "automaticUpdates": [
+    {
+      "stationuuid": "9642ad8b-0601-11e8-ae97-52543be04c81",
+      "name": "106,7 Rockklassiker",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 20,
+          "api": 19
+        },
+        "votes": {
+          "local": 1318,
+          "api": 1321
+        }
+      }
+    },
+    {
+      "stationuuid": "eee524af-4690-4e43-984a-fc62b20b08f4",
+      "name": "24/7 Continuous Music",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "7bc5f4f0-7103-4a14-bd86-eaed014a24db",
+      "name": "90s Rewind",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 5,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "ec0d3919-415f-4c63-9958-0da384b69ab4",
+      "name": "Aftab",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        },
+        "votes": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "fa4701b9-034f-45c3-8be2-789bf2dd95cb",
+      "name": "AI Playlist Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "03130c0f-bf62-4fda-bb6a-c99781b28475",
+      "name": "Alt Edge Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "681d2589-e135-46bd-a11a-272d8d13e8f8",
+      "name": "American Truckers",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        },
+        "votes": {
+          "local": 11,
+          "api": 12
+        }
+      }
+    },
+    {
+      "stationuuid": "6af22763-e633-41eb-96e4-7bf712c088aa",
+      "name": "Auralis Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "95048711-523b-45d6-bed8-a8d4b0ab7666",
+      "name": "Back to the 80s",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        },
+        "votes": {
+          "local": 29,
+          "api": 30
+        }
+      }
+    },
+    {
+      "stationuuid": "236f5c02-ac75-4f0f-b4f7-86dcad159765",
+      "name": "BANANRADION",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "6d52fc82-42d2-4b29-aece-d84e1f1c641d",
+      "name": "Bandit Alternative",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "12824d18-3891-402f-b7a9-b8d75bfe3b99",
+      "name": "Bandit Ballads",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "40dfa430-7988-4b02-ae1b-ce5fe8b5aad3",
+      "name": "Bandit Classic Rock",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 6,
+          "api": 7
+        }
+      }
+    },
+    {
+      "stationuuid": "7ace76fa-d18b-4f18-82f8-73694a86b2aa",
+      "name": "Banjalučki Sevdah Radio Šeherčani",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 0,
+          "api": 128
+        }
+      }
+    },
+    {
+      "stationuuid": "69b90092-2a26-4ed3-acf3-2ca6b142be26",
+      "name": "Best of ericade.radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "cc00eccd-eda8-4901-8e1f-4c2f3e1fcb53",
+      "name": "Bollywood Bangers",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 6,
+          "api": 1
+        },
+        "votes": {
+          "local": 13,
+          "api": 15
+        }
+      }
+    },
+    {
+      "stationuuid": "38e8cb32-9efa-11e9-a787-52543be04c81",
+      "name": "BozRadio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "f897dd08-9a1a-4dd9-9430-a6665ecf835a",
+      "name": "Classical",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 5,
+          "api": 9
+        }
+      }
+    },
+    {
+      "stationuuid": "53ef6c63-7b27-4245-bf7c-420b16f5538a",
+      "name": "Country",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "b8f2ef5c-eaac-499c-b006-6a2fd276efb1",
+      "name": "Dagnys Jukebox",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 3
+        },
+        "votes": {
+          "local": 21,
+          "api": 22
+        }
+      }
+    },
+    {
+      "stationuuid": "817d37ef-474f-4072-bc48-8619eedafd97",
+      "name": "Dansbandskanalen",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 1
+        },
+        "votes": {
+          "local": 36,
+          "api": 43
+        }
+      }
+    },
+    {
+      "stationuuid": "8b37a02b-5a90-4e7f-b576-7934e0af34d7",
+      "name": "Dansbandskanalen.se*",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "7cd8a7f7-138e-453b-a3fc-4ced0968f86b",
+      "name": "DansBandsRadio.se",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 0,
+          "api": 64
+        },
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "a615437b-ff32-4da2-904e-8390f7ed1052",
+      "name": "Decades",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "e0e2a64e-3ec4-4da4-8aec-a4aa7b502163",
+      "name": "Disco 54",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        },
+        "votes": {
+          "local": 267,
+          "api": 271
+        }
+      }
+    },
+    {
+      "stationuuid": "19ea3079-8757-467a-befb-0db17b50d1be",
+      "name": "Epic Soundtracks Only",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 19,
+          "api": 21
+        }
+      }
+    },
+    {
+      "stationuuid": "ffe421ec-4f51-4313-8bd0-e90a575fba8e",
+      "name": "ericade.radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        },
+        "votes": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "a536d6ff-fe7e-41c4-ac95-378effaee0f6",
+      "name": "Faith Beats Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "386b8b9b-3a34-4405-a274-29fe476ca198",
+      "name": "FUN RADIO 95,3 Sweden",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "e79af81b-db6d-4f60-9ce1-39ff9b5874ab",
+      "name": "Gamla Favoritter",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        },
+        "votes": {
+          "local": 109,
+          "api": 116
+        }
+      }
+    },
+    {
+      "stationuuid": "7317cab6-cef3-44f2-a8ae-9fdee72559cc",
+      "name": "Gen X",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "26a82946-f454-40ca-90ea-314578fea22e",
+      "name": "Gold FM Växjö, Sweden",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "96434238-0601-11e8-ae97-52543be04c81",
+      "name": "Göteborgs Närradio 102.6 MHz",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "9611e396-0601-11e8-ae97-52543be04c81",
+      "name": "Göteborgs Närradio 103.1 MHz",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 30,
+          "api": 31
+        }
+      }
+    },
+    {
+      "stationuuid": "964340cd-0601-11e8-ae97-52543be04c81",
+      "name": "Göteborgs Närradio 94.9 Mhz",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "678cb641-f43d-456b-8980-cba70cb7c414",
+      "name": "Guldkanalen (80-tal)",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        },
+        "votes": {
+          "local": 78,
+          "api": 80
+        }
+      }
+    },
+    {
+      "stationuuid": "6778fd92-c72b-4be8-a9c6-2b753d207deb",
+      "name": "Guldkanalen (90-tal)",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "961d9ecf-0601-11e8-ae97-52543be04c81",
+      "name": "Guldkanalen Helsingborg",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 888,
+          "api": 893
+        }
+      }
+    },
+    {
+      "stationuuid": "9642aad0-0601-11e8-ae97-52543be04c81",
+      "name": "Guldkanalen Malmö/Lund",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 422,
+          "api": 425
+        }
+      }
+    },
+    {
+      "stationuuid": "8a590500-d643-43de-a1d0-a4be35843b72",
+      "name": "Hackerspace radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "e0fd9b05-f7f9-47ca-9d77-6f79dfcf006a",
+      "name": "Hari Rama’s Happy Eternal Mix",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "ffc8d7d5-7244-4738-bfee-22fcf0340edf",
+      "name": "Harmony Frequencies",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "4a5ce51f-7966-11ea-8a3b-52543be04c81",
+      "name": "Himlen TV7",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 2968,
+          "api": 3084
+        },
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "229845c8-bcae-4067-8767-c34114d5b4b3",
+      "name": "HITCITY",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "c48371b8-52d2-4eff-8a72-a7ab3fa7066b",
+      "name": "HitMix90's",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "1808e244-4ca2-4a4d-be3a-17babddef88a",
+      "name": "Höganäs Närradio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        },
+        "votes": {
+          "local": 16,
+          "api": 17
+        }
+      }
+    },
+    {
+      "stationuuid": "b6886275-1d73-4e71-86ce-483175bd2a80",
+      "name": "House",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 6,
+          "api": 7
+        }
+      }
+    },
+    {
+      "stationuuid": "d906e09f-49da-469e-9937-5f5273fc9006",
+      "name": "Jazz",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 6,
+          "api": 7
+        }
+      }
+    },
+    {
+      "stationuuid": "2d71c5a8-6fde-4624-8d1b-1d77b7a04150",
+      "name": "Julkanalen",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "f51b9105-19af-44fb-a794-bc22c3a4af85",
+      "name": "kakaook Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "97c34f30-8378-4c76-824c-9e950f008db1",
+      "name": "Kpop",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 5,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "1ce736f3-5944-46b9-8143-81b54625b367",
+      "name": "Latin",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "9fcf5f38-9bfe-4d2a-a453-a655a1729fde",
+      "name": "Linköpings närradio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        },
+        "votes": {
+          "local": 8,
+          "api": 9
+        }
+      }
+    },
+    {
+      "stationuuid": "96434319-0601-11e8-ae97-52543be04c81",
+      "name": "Lite FM 101.1",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 0
+        },
+        "votes": {
+          "local": 370,
+          "api": 371
+        }
+      }
+    },
+    {
+      "stationuuid": "2f869fa1-9f35-4ab3-a417-e8cef6880f48",
+      "name": "Lugna Favoriter Stockholm",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 23,
+          "api": 28
+        },
+        "votes": {
+          "local": 731,
+          "api": 732
+        }
+      }
+    },
+    {
+      "stationuuid": "734e8191-c34d-4b78-98fc-0a69dafd323e",
+      "name": "Mad Mix Beats",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "bf408897-716b-4e9f-88aa-7cb481a0a0b7",
+      "name": "Magic Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "53dac0bd-de56-447a-a42c-9f841af15e2e",
+      "name": "Metal Mayhem",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "96342772-0601-11e8-ae97-52543be04c81",
+      "name": "Mix Megapol",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 9,
+          "api": 10
+        },
+        "votes": {
+          "local": 2404,
+          "api": 2416
+        }
+      }
+    },
+    {
+      "stationuuid": "3e5a08bf-57fc-420a-a543-2f7c6f7b6a06",
+      "name": "Mix Megapol GBG",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 463,
+          "api": 464
+        }
+      }
+    },
+    {
+      "stationuuid": "139eec8c-d0b7-4ace-9443-2a6ec74c789f",
+      "name": "Northern Metal Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "5c85225c-75b9-4452-b3e0-998a2bf80532",
+      "name": "Northern Metal Radio Extreme",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 161,
+          "api": 163
+        }
+      }
+    },
+    {
+      "stationuuid": "5dfe2bf3-0d7b-4df3-a3e3-ce7c465cf115",
+      "name": "NRJ",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "96414222-0601-11e8-ae97-52543be04c81",
+      "name": "NRJ Sweden",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 14,
+          "api": 20
+        },
+        "votes": {
+          "local": 2195,
+          "api": 2197
+        }
+      }
+    },
+    {
+      "stationuuid": "d20a7b4a-4fe6-4f5f-ace5-16c7c9091c80",
+      "name": "Oldies FM",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "b5bd600f-9d41-4a52-8dbb-91eaccfe4ebf",
+      "name": "P4 Jämtland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 272,
+          "api": 312
+        },
+        "clickcount": {
+          "local": 5,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "5352f351-b5ac-4141-b886-9c44ac446511",
+      "name": "P4 Kalmar",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 148,
+          "api": 176
+        },
+        "clickcount": {
+          "local": 5,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "7edf2ac6-c6a3-4283-aad8-1b8cfa39fe81",
+      "name": "P4 Norrbotten",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "a6fb6ae2-b821-4902-8dce-5a77fbe27488",
+      "name": "P4 Östergötland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "e3c2d110-90f6-41e7-a6b8-8f92d646a007",
+      "name": "P4 Värmland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "39a437bb-aa17-420b-a748-41b35312d1de",
+      "name": "P4 Västerbotten",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 128,
+          "api": 144
+        },
+        "clickcount": {
+          "local": 3,
+          "api": 6
+        }
+      }
+    },
+    {
+      "stationuuid": "51b2e520-417d-4c91-8bf3-f2a664289c9b",
+      "name": "P4 Västernorrland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 168,
+          "api": 130
+        },
+        "clickcount": {
+          "local": 3,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "4b226edb-15be-4563-b74b-372b103091f7",
+      "name": "P4 Västernorrland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 384,
+          "api": 312
+        },
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "73b5026f-40f2-49e8-846d-4d6f77e20d18",
+      "name": "P4 Västmanland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "6a4f38ed-3c22-45b1-a2f3-5da0c8f47c2d",
+      "name": "Pain",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        },
+        "votes": {
+          "local": 4,
+          "api": 5
+        }
+      }
+    },
+    {
+      "stationuuid": "f75454ef-f163-49c7-b80b-cc707b382f09",
+      "name": "Party 247",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "f4fcca1a-ba7e-11e9-acb2-52543be04c81",
+      "name": "Pirate Rock Västkustens bästa rock",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 7,
+          "api": 8
+        },
+        "votes": {
+          "local": 1786,
+          "api": 1787
+        }
+      }
+    },
+    {
+      "stationuuid": "96148cf5-0601-11e8-ae97-52543be04c81",
+      "name": "Polushon",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 5,
+          "api": 0
+        },
+        "votes": {
+          "local": 447,
+          "api": 448
+        }
+      }
+    },
+    {
+      "stationuuid": "9642b0c2-0601-11e8-ae97-52543be04c81",
+      "name": "Pop & Rock",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 1
+        },
+        "votes": {
+          "local": 504,
+          "api": 507
+        }
+      }
+    },
+    {
+      "stationuuid": "4b089827-c6e2-44d7-8689-00c47c9d8650",
+      "name": "Power Club",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "4b804728-3074-4697-bd39-ffa6111542e6",
+      "name": "Power Street",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        },
+        "votes": {
+          "local": 4,
+          "api": 5
+        }
+      }
+    },
+    {
+      "stationuuid": "9d1b673a-7a6b-4e0a-82b6-e0edfabfcb28",
+      "name": "Punk Classics",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 4
+        },
+        "votes": {
+          "local": 13,
+          "api": 15
+        }
+      }
+    },
+    {
+      "stationuuid": "d4f59b07-4926-478e-8270-6257aa6dc93e",
+      "name": "Radio 163",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 15,
+          "api": 16
+        }
+      }
+    },
+    {
+      "stationuuid": "7a275e1c-6730-4048-a064-a7cb3c9dabb8",
+      "name": "Radio 567",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        },
+        "votes": {
+          "local": 4,
+          "api": 5
+        }
+      }
+    },
+    {
+      "stationuuid": "70a1dbfb-486b-4f90-b385-eb5837005fec",
+      "name": "Radio 789",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        },
+        "votes": {
+          "local": 5,
+          "api": 6
+        }
+      }
+    },
+    {
+      "stationuuid": "964a6fa3-0601-11e8-ae97-52543be04c81",
+      "name": "Radio 88 Partille",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "67e88c46-a6fe-4355-a6bb-821abd707d66",
+      "name": "Radio 88 Partille - Golden Hits",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "893636b3-4cd9-4df0-8487-9004f398e0b5",
+      "name": "Radio Båstad",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "91c407ca-7561-11e9-af37-52543be04c81",
+      "name": "Radio bubb.la",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "7525f5fd-393c-46f4-a0ba-e02856a1873c",
+      "name": "Radio Faceit FM",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 0,
+          "api": 128
+        }
+      }
+    },
+    {
+      "stationuuid": "5edaeb8f-63d3-4a73-a684-a153b1cca9a5",
+      "name": "Radio Gbg Sevdah",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "e69f59c2-3a3b-4063-8342-da609245769e",
+      "name": "Radio Gold Sweden",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "cda260eb-ede7-4417-97f6-55dea02abd80",
+      "name": "Radio Haninge",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "c8904795-b56f-4abc-afac-476169325741",
+      "name": "Radio Hope",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "f705d3e2-d76e-47eb-8f24-fb739fee8a8f",
+      "name": "Radio Hope",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "3c9f18c4-2d3a-4cc0-ae29-bbb1de69984c",
+      "name": "Radio Laholm",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 0,
+          "api": 128
+        }
+      }
+    },
+    {
+      "stationuuid": "06a92160-00e0-4546-ac0d-44c28f80da6c",
+      "name": "Radio Nostalgi",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "be9cd5b3-570c-410c-ab98-7f99af678b20",
+      "name": "Radio Nostalgi SE",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        },
+        "votes": {
+          "local": 18,
+          "api": 20
+        }
+      }
+    },
+    {
+      "stationuuid": "5baebcb0-15c1-4562-b4f8-4219b32cea5d",
+      "name": "Radio Rainbow",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 17,
+          "api": 18
+        }
+      }
+    },
+    {
+      "stationuuid": "bb4855dc-2835-4974-958b-1a3ca10ddadc",
+      "name": "Radio Skövde",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "962afe61-0601-11e8-ae97-52543be04c81",
+      "name": "Radio Sotenäs",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "39ff7fae-311d-4430-8a9a-51f9f2d59dcd",
+      "name": "Radio Svea",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "dcffc252-0460-4e02-9063-73e7e0e5af7f",
+      "name": "Radio Sydvast",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "67d48eb9-c3b0-459d-b494-ca1ebb5cb766",
+      "name": "Radio Treby",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 5,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "754681f3-08c0-4242-9cd0-d873d2ec9da0",
+      "name": "RadioGodis",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "12c4987d-17e2-4ccb-b082-731f0b8268ac",
+      "name": "Radiolista - Desert House",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "3d5cedea-c00f-468e-88a8-6d15394a6709",
+      "name": "Redback Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 13,
+          "api": 14
+        }
+      }
+    },
+    {
+      "stationuuid": "2ba48445-fb13-4167-9db8-3f2b4254461b",
+      "name": "Reggae",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "2808c734-6166-4cda-9bbd-d4e05c0c4c32",
+      "name": "Relax & Meditation",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 6
+        },
+        "votes": {
+          "local": 17,
+          "api": 20
+        }
+      }
+    },
+    {
+      "stationuuid": "271de73b-4fa6-4c19-8132-33397f31bf7c",
+      "name": "REPLAY NEWS - Svenska",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "ac5cf76c-20ba-11e9-a80b-52543be04c81",
+      "name": "Retreat Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "8b00bcfc-4d94-11ea-b877-52543be04c81",
+      "name": "Retro FM Skåne",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 1
+        },
+        "votes": {
+          "local": 1524,
+          "api": 1530
+        },
+        "ssl_error": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "3a7f738e-a823-4680-ba93-c5de8217e3df",
+      "name": "Retro FM Sverige",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "a72d9bd0-86b9-4450-8958-c53688e1e956",
+      "name": "RIX FM 106,7",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "3f589db8-fb66-4d2a-b4d9-03a8bece9b7e",
+      "name": "RIX FM Fresh",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "202d6d31-699e-476d-b392-99e238704df8",
+      "name": "Rock",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "9ae67291-b1f6-4541-869b-6445b6d07269",
+      "name": "Rocket FM Rock Home of Stockholm",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 52,
+          "api": 53
+        }
+      }
+    },
+    {
+      "stationuuid": "eb6986d8-2f1f-4034-9afe-dad3cade2e35",
+      "name": "Roxette",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 2
+        },
+        "votes": {
+          "local": 23,
+          "api": 24
+        }
+      }
+    },
+    {
+      "stationuuid": "0d11fc90-1129-4b76-b42d-98fe127c9317",
+      "name": "Sauna Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        },
+        "votes": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "949f9dd3-36d0-48c3-9f4f-670b43b4c46b",
+      "name": "SceneSat",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "f60c842e-6d57-4586-ac29-1e0a5b621f5d",
+      "name": "SDX synthetic experience - EBM, Synth and Industrial",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 9
+        },
+        "votes": {
+          "local": 484,
+          "api": 491
+        }
+      }
+    },
+    {
+      "stationuuid": "ee1ef339-1383-4873-bc5f-bb99ce7cf4bd",
+      "name": "Skärgårdsradion",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "0268fc68-0dd1-4e98-8087-f5459b014716",
+      "name": "Skärgårdsradion",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "f65bbc32-439d-447a-aba4-d83c144cdad3",
+      "name": "SLAY Radio [aac]",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "641fb7fd-6e73-4e62-b64f-2353fe96a5be",
+      "name": "SlayRadio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 648,
+          "api": 651
+        }
+      }
+    },
+    {
+      "stationuuid": "fa0f560a-e7f4-4918-b02d-d61a740b075e",
+      "name": "Soul Classics",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        },
+        "votes": {
+          "local": 235,
+          "api": 236
+        }
+      }
+    },
+    {
+      "stationuuid": "79930fba-66b9-42cc-8b40-cf766176a38d",
+      "name": "Spinning Seal FM",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 0,
+          "api": 128
+        },
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        },
+        "votes": {
+          "local": 79,
+          "api": 80
+        }
+      }
+    },
+    {
+      "stationuuid": "5003028b-5943-4cea-820b-5b8a4a8fa9b6",
+      "name": "SR Din Gata",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "bfb5ad64-4a32-45cb-ae1d-a4b4d9415470",
+      "name": "SR P1",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 5,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "0826eaef-59e4-4761-b3e8-31670421a753",
+      "name": "SR P2",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "d49cfff7-ce57-475d-8ce1-c37d0e150574",
+      "name": "SR P4 Jönköping",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 320,
+          "api": 312
+        },
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "d2cdc958-4871-4423-9884-f2a49c3c2445",
+      "name": "SR P4 Radio Malmöhus",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 3
+        },
+        "votes": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "9ccab272-2072-4baa-baad-52170ecd0c11",
+      "name": "SR4- Sthlm",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "d5644326-77e9-4c6a-9444-b1dc636ce8e8",
+      "name": "Star 70's",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 146,
+          "api": 147
+        }
+      }
+    },
+    {
+      "stationuuid": "2d106b56-62e5-4ced-8a5f-9f57721f760a",
+      "name": "Star 80's",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "6a26ca98-58b4-4127-8c3d-869564bc672c",
+      "name": "Star 90's",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "49b761c3-0564-4501-857f-f1ee6831b387",
+      "name": "Star FM",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 8
+        },
+        "votes": {
+          "local": 394,
+          "api": 396
+        }
+      }
+    },
+    {
+      "stationuuid": "ce877b75-fbb5-4b67-a39c-707e59ab38cc",
+      "name": "STAR FM 107,1",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 5
+        }
+      }
+    },
+    {
+      "stationuuid": "b30f805d-8402-4555-b182-dcf5fa0820da",
+      "name": "STAR FM 107,1",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "8eb64d77-0fc9-43b0-9bd6-ad3209152a4c",
+      "name": "Stars on 45",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 4,
+          "api": 5
+        }
+      }
+    },
+    {
+      "stationuuid": "957584f4-cef4-11e8-a54a-52543be04c81",
+      "name": "Stockholm FM 101,1 Sweden",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 263,
+          "api": 264
+        }
+      }
+    },
+    {
+      "stationuuid": "20aee753-cef5-11e8-a54a-52543be04c81",
+      "name": "Stockholm FM 88,0 Sweden",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 307,
+          "api": 308
+        }
+      }
+    },
+    {
+      "stationuuid": "f075cd6b-dc5a-4268-bc81-dc873da77bee",
+      "name": "Sveiges Radio - P4 Kristianstad",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 160,
+          "api": 158
+        },
+        "clickcount": {
+          "local": 3,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "33aa931b-0e2f-49b9-b8df-8d98c04a286b",
+      "name": "Sveiges Radio - P4 Malmöhus",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 152,
+          "api": 130
+        },
+        "clickcount": {
+          "local": 2,
+          "api": 4
+        },
+        "votes": {
+          "local": 91,
+          "api": 101
+        }
+      }
+    },
+    {
+      "stationuuid": "d077ae1e-60ef-422b-b9ac-159e56b319d4",
+      "name": "Svensk Folkmusik - AkkA radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 4
+        },
+        "votes": {
+          "local": 577,
+          "api": 578
+        }
+      }
+    },
+    {
+      "stationuuid": "9624489a-9323-11e8-a767-52543be04c81",
+      "name": "Svensk Pop",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "96412afe-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - Ekot sänder direkt",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 141,
+          "api": 142
+        }
+      }
+    },
+    {
+      "stationuuid": "960c6720-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - P2 Språk och musik",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 128,
+          "api": 296
+        },
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "960c63d8-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - P3 Din gata",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 248,
+          "api": 304
+        }
+      }
+    },
+    {
+      "stationuuid": "1576f6f2-8949-4106-a870-d6a2c11c99f4",
+      "name": "Sveriges Radio - P4 Halland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "850aedd1-5099-4553-81cc-7f24704cb3e7",
+      "name": "Sveriges Radio - P4 Jämtland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "962c1da9-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - P4 Plus",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 737,
+          "api": 738
+        }
+      }
+    },
+    {
+      "stationuuid": "e12c31f2-3d73-4af4-b8db-11ad20989c5a",
+      "name": "Sveriges Radio - P4 Sjuhärad",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 112,
+          "api": 164
+        }
+      }
+    },
+    {
+      "stationuuid": "db511060-495a-4756-95d2-5070bc529f57",
+      "name": "Sveriges Radio - P4 Väst",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 114,
+          "api": 110
+        },
+        "clickcount": {
+          "local": 3,
+          "api": 4
+        },
+        "votes": {
+          "local": 48,
+          "api": 49
+        }
+      }
+    },
+    {
+      "stationuuid": "9642a6a5-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - P6",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 312,
+          "api": 296
+        },
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        },
+        "votes": {
+          "local": 102,
+          "api": 104
+        }
+      }
+    },
+    {
+      "stationuuid": "960cf1df-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - SR Extra 7",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "960c90aa-0601-11e8-ae97-52543be04c81",
+      "name": "Sveriges Radio - SR Sápmi",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "01a0db86-1f60-4473-9601-1de61587b255",
+      "name": "Sveriges Radio P3",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 312,
+          "api": 328
+        },
+        "votes": {
+          "local": 83,
+          "api": 84
+        }
+      }
+    },
+    {
+      "stationuuid": "2151bfe6-6792-4cbe-8c7c-2d9fe54fdbc0",
+      "name": "Sveriges Radio P4 Dalarna",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 296,
+          "api": 312
+        },
+        "clickcount": {
+          "local": 3,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "e63482bc-f704-41ec-8890-67ece72578d2",
+      "name": "Sveriges Radio P4 Gävleborg",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 144,
+          "api": 188
+        },
+        "clickcount": {
+          "local": 1,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "003dea75-02eb-40c2-8a92-5150a709b74d",
+      "name": "Sveriges Radio P4 Göteborg",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 22,
+          "api": 11
+        },
+        "votes": {
+          "local": 213,
+          "api": 224
+        }
+      }
+    },
+    {
+      "stationuuid": "79d17f42-620e-437d-b7e6-ed1c1d26c670",
+      "name": "Sveriges Radio P4 Halland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 120,
+          "api": 112
+        },
+        "clickcount": {
+          "local": 3,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "3a901003-189a-4a40-a754-401b56a131ee",
+      "name": "Sveriges Radio P4 Malmöhus",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "ac551e97-29fe-4eb2-979f-7438ad647d15",
+      "name": "Sveriges Radio P4 Stockholm",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 304,
+          "api": 312
+        },
+        "clickcount": {
+          "local": 19,
+          "api": 23
+        },
+        "votes": {
+          "local": 81,
+          "api": 84
+        }
+      }
+    },
+    {
+      "stationuuid": "9e1e37f2-ae49-4497-ba91-3dccaf2bd85f",
+      "name": "Sveriges Radio P4 Uppland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 0
+        }
+      }
+    },
+    {
+      "stationuuid": "1497077e-2db2-4579-a911-5f8cddff3529",
+      "name": "Sveriges Radion P4 Östergötland",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 48,
+          "api": 49
+        }
+      }
+    },
+    {
+      "stationuuid": "c0163cdc-0ae8-4512-8db0-528cfb5dbc25",
+      "name": "Swarm Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "bitrate": {
+          "local": 0,
+          "api": 128
+        },
+        "clickcount": {
+          "local": 2,
+          "api": 0
+        },
+        "votes": {
+          "local": 0,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "3ac50a5a-2445-4a9c-8e35-75c3529f5242",
+      "name": "Swedish Truckers",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "7693f643-ffdd-4865-a16a-0638586a3bbb",
+      "name": "The ModStation - Amiga ProTracker Modules",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 0
+        },
+        "votes": {
+          "local": 3,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "7a30b1de-88ab-48ef-a797-1f9b3c80dd5d",
+      "name": "Tjenamors Radio!",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        },
+        "votes": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "fcc6c03e-5363-4028-9a58-5d63ec913c76",
+      "name": "Tyresöradion",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 0,
+          "api": 1
+        },
+        "votes": {
+          "local": 4,
+          "api": 5
+        }
+      }
+    },
+    {
+      "stationuuid": "3560701c-22a9-4955-a667-fc979b066863",
+      "name": "Urban Flow",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 0
+        },
+        "votes": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "7f69a3e0-bc8f-4552-a1a6-3d6c339f65fa",
+      "name": "VIBE Radio",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 2,
+          "api": 1
+        }
+      }
+    },
+    {
+      "stationuuid": "f522cf8a-9513-4975-974e-4335aac37cf3",
+      "name": "Vinyl FM",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 6,
+          "api": 4
+        },
+        "votes": {
+          "local": 443,
+          "api": 445
+        }
+      }
+    },
+    {
+      "stationuuid": "b66bf5c5-1630-4d4c-9e7b-5017ca9594cc",
+      "name": "Vinylgodis",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 3,
+          "api": 2
+        },
+        "votes": {
+          "local": 2,
+          "api": 4
+        }
+      }
+    },
+    {
+      "stationuuid": "376cb244-4116-4ba4-a525-c6cc8283fc9b",
+      "name": "Wolf FM",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "votes": {
+          "local": 2,
+          "api": 3
+        }
+      }
+    },
+    {
+      "stationuuid": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
+      "name": "Workout",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 1,
+          "api": 2
+        }
+      }
+    },
+    {
+      "stationuuid": "052b8916-ad5d-4ae4-8cb5-1c137e10e4ca",
+      "name": "ZERGAN RADYO  (47an)",
+      "matchedBy": "stationuuid",
+      "fields": {
+        "clickcount": {
+          "local": 4,
+          "api": 0
+        },
+        "votes": {
+          "local": 10,
+          "api": 12
+        }
+      }
+    }
+  ],
+  "missingFromApi": [
+    {
+      "stationuuid": "6cdc74be-e0f2-4e85-b5ee-f01a42d56b20",
+      "name": "Radio Aftonbladet",
+      "stream_url": "https://www.aftonbladet.se/podcasts/episode/396373"
+    },
+    {
+      "stationuuid": "49928b5f-ebcf-4145-b4f5-3c31c43403e0",
+      "name": "Radio Gold Sweden",
+      "stream_url": "http://radiogold.se/"
+    },
+    {
+      "stationuuid": "47907c71-9b90-42e2-b158-6874bacd2a9e",
+      "name": "Radio Gold Sweden",
+      "stream_url": "https://www.radiogold.se/lyssna/radiogold953"
+    },
+    {
+      "stationuuid": "d3b269f9-ded3-48a1-8bcd-7bc04a229110",
+      "name": "Radio Gold Sweden",
+      "stream_url": "https://www.radiogold.se/lyssna/"
+    },
+    {
+      "stationuuid": "2195ef8a-8bdd-442d-b56e-f2aee9c5321e",
+      "name": "Radiolista - Noir",
+      "stream_url": "http://icy.aweradio.app/radiolista/noir"
+    },
+    {
+      "stationuuid": "45bca914-2d19-4ec1-a272-606bf4363c32",
+      "name": "SR P4 Jönköping",
+      "stream_url": "https://live1.sr.se/p4jkpg-aac-320%20(AAC-LC,%20320%20kbps)"
+    }
+  ]
 }

@@ -156,3 +156,14 @@ test('Bauer separates current fields and keeps delayed history from replacing th
  assert.deepEqual(parseHistory('bauer','{}').song_history,[]);
  assert.equal(isLiveTrackStation({metadata_server:'bauer',stream_url:'https://radio.test/stream',nowplaying_url:'https://listenapi.planetradio.co.uk/api9.2/nowplaying/mme'}),true);
 });
+
+test('Jolene Country Radio selects its own track and artwork from the shared feed', () => {
+ const payload={playing:'Wrong channel',stations:{jolene:'Wrong channel','jolene-country-radio':'Country Artist - Country Song'},extended:{'jolene-country-radio':{artist:'Country Artist',title:'Country Song',album_art:{480:'https://example.com/cover.jpg'}},jolene:{artist:'Wrong',title:'Channel'}}};
+ const result=parseMetadata('jolene',payload);
+ assert.equal(result.text,'Country Artist – Country Song');
+ assert.equal(result.song.art,'https://example.com/cover.jpg');
+ assert.equal(supportsNowPlaying('jolene'),true);
+ assert.deepEqual(result.payload.song_history,[]);
+ assert.equal(parseMetadata('jolene',{stations:payload.stations}).text,'Country Artist - Country Song');
+ assert.equal(parseMetadata('jolene',{playing:'Wrong channel',extended:{jolene:{title:'Wrong'}}}).text,null);
+});
