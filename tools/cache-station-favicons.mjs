@@ -5,7 +5,7 @@ import path from "node:path";
 import sharp from "sharp";
 import { downloadFavicon } from "./lib/favicon-download.mjs";
 
-const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", ...(countryCode === "gr" ? [] : [countryCode]));
+const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", countryCode);
 const STATIONS_PATH = stationsPath;
 const fetchWithRetry = url => downloadFavicon(url, {
   userAgent: `${site.siteName} favicon cache (${site.siteUrl})`,
@@ -77,7 +77,7 @@ const cacheFavicons = async () => {
       const buffer = await normalizeImage(downloaded);
 
       const filename = `${baseName}.webp`;
-      const relativePath = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
+      const relativePath = `/station-icons/${countryCode}/${filename}`;
       const outputPath = path.join(OUTPUT_DIR, filename);
 
       await writeFile(outputPath, buffer);

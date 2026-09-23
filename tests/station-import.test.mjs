@@ -31,6 +31,17 @@ test('ordinary updates and genuinely new stations still import', () => {
   assert.equal(result.merged[0].bitrate,128);
   assert.equal(result.automaticallyAddedStations.length,1);
 });
+test('existing field order survives import and missing city is appended', () => {
+  const local = {slug:'ordered', stationuuid:'ordered', state:'Zagreb', city:'Zagreb', stream_url:'https://radio/ordered', bitrate:64};
+  const remote = {...local, bitrate:128};
+  const updated = mergeStations([local], [remote]).merged[0];
+  assert.deepEqual(Object.keys(updated).slice(0, Object.keys(local).length), Object.keys(local));
+  assert.equal(updated.city, 'Zagreb');
+  const {city, ...withoutCity} = local;
+  const added = mergeStations([withoutCity], []).merged[0];
+  assert.deepEqual(Object.keys(added), [...Object.keys(withoutCity), 'city']);
+  assert.equal(added.city, null);
+});
 test('ambiguous merged UUID ownership fails before writing', () => {
   assert.throws(() => mergeStations([station,{stationuuid:'former',stream_url:'https://other'}],[]), /more than one/);
 });

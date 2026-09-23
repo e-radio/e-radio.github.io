@@ -5,7 +5,7 @@ import { existsSync } from "node:fs";
 import sharp from "sharp";
 import { discoverIconCandidates, manifestIconCandidates, uniqueCandidates, inspectIcon, normalizeIcon } from "./lib/station-icon-candidates.mjs";
 
-const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", ...(countryCode === "gr" ? [] : [countryCode]));
+const OUTPUT_DIR = path.join(process.cwd(), "public", "station-icons", countryCode);
 const STATIONS_PATH = stationsPath;
 const FETCH_TIMEOUT_MS = 15000;
 const USER_AGENT = `${site.siteName} favicon fetcher (${site.siteUrl})`;
@@ -226,7 +226,7 @@ const processStation = async (station, index, stations) => {
     const filename = `${filenameBase}.webp`;
     const outputPath = path.join(OUTPUT_DIR, filename);
     await writeFile(outputPath, normalized);
-    station.favicon = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
+    station.favicon = `/station-icons/${countryCode}/${filename}`;
     await persistStations(stations);
     detail(`Saved ${station.favicon}`);
     return { status: "ok" };
@@ -238,7 +238,7 @@ const processStation = async (station, index, stations) => {
   const filename = `${filenameBase}-placeholder.webp`;
   const outputPath = path.join(OUTPUT_DIR, filename);
   await writeFile(outputPath, placeholderBuffer);
-  station.favicon = `/station-icons/${countryCode === "gr" ? "" : countryCode + "/"}${filename}`;
+  station.favicon = `/station-icons/${countryCode}/${filename}`;
   await persistStations(stations);
   detail(`Saved ${station.favicon}`);
   return { status: "placeholder" };

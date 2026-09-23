@@ -1,8 +1,9 @@
+import { countryCode } from "../countries/site.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
-const ICONS_DIR = "public/station-icons";
+const ICONS_DIR = path.join("public", "station-icons", countryCode);
 const MAX_SIZE = 120;
 const SUPPORTED = new Set([".png", ".jpg", ".jpeg", ".webp"]);
 

@@ -160,7 +160,11 @@ function mergeStations(localStations, apiStations, exclusions = []) {
     }
   });
 
-  const merged = localStations.map((station) => ({ city: null, ...station }));
+  const merged = localStations.map((station) => {
+    const copy = { ...station };
+    if (!Object.hasOwn(copy, 'city')) copy.city = null;
+    return copy;
+  });
 
   for (const apiStation of apiStations) {
     let localIndex = apiStation.stationuuid

@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 DATA_PATH = Path("src/data/stations-gr.json")
-ICONS_DIR = Path("public/station-icons")
+ICONS_DIR = Path("public/station-icons/gr")
 
 slug_suffix_re = re.compile(r"-[a-z0-9]{6,8}$", re.IGNORECASE)
 

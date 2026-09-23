@@ -35,7 +35,7 @@ The scaffold refuses to overwrite an existing country. It creates a configuratio
 - `<code>.json`: country name/adjective, site name, canonical origin, interface language, dataset path, geography aliases, verification tags, and redirects path.
 - `<code>.redirects.json`: old station URLs mapped to retained pages. Never copy Greece's redirects into another country.
 - `src/data/stations-<code>.json`: independent station records, merged UUIDs, metadata endpoints, and stream alternatives.
-- `public/station-icons/<code>/`: icons downloaded for additional countries. Existing Greek icon paths remain unchanged.
+- `public/station-icons/<code>/`: icons grouped by country, including Greek icons in `public/station-icons/gr/`.
 
 All pages, SEO text, structured data, sitemap, robots.txt and web manifest read the selected configuration. `countryText()` supplies the country vocabulary for the current English interface. Translate interface copy separately when introducing another display language. Greece-specific city aliases and region names are isolated in `gr.json`; populate these for another country as needed.
 
@@ -252,7 +252,7 @@ The script automatically updates that station's JSON record:
 "favicon": "/station-icons/se/STATION-SLUG-placeholder.webp"
 ```
 
-Replace `se` with your country code. Greece retains its existing unprefixed `public/station-icons/` directory. The command writes images and station data immediately; it has no dry-run flag. Check the terminal's `Placeholders generated` count and review the generated files before committing.
+Replace `se` with your country code. Greece uses `public/station-icons/gr/` and `/station-icons/gr/...` URLs. The command writes images and station data immediately; it has no dry-run flag. Check the terminal's `Placeholders generated` count and review the generated files before committing.
 
 **Existing favicon values are skipped**, including placeholders and broken image paths. To retry artwork discovery for a particular station, set only that station's `favicon` to `""` in the selected dataset, verify its homepage, and rerun the command. It processes every record with an empty favicon. It will create another placeholder if artwork is still unavailable.
 

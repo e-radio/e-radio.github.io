@@ -1,5 +1,6 @@
 ---
 import { guideSchema } from '../../lib/guide-schema';
+import { finderCopy, finderPath } from '../../lib/greek-station-finder';
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
 import { site } from '../../../countries/site.mjs';
@@ -46,5 +47,6 @@ const structuredData={
   <section class="my-4"><h2 class="h3">{copy.discoverTitle}</h2><p>{copy.discover}</p><ul><li><a href={localizePath('/genres/')}>{copy.genres}</a></li><li><a href={localizePath('/city/')}>{copy.city}</a></li><li><a href={localizePath('/live-tracks/')}>{copy.tracks}</a></li></ul></section>
   <section class="my-4"><h2 class="h3">{copy.faqTitle}</h2>{copy.questions.map(([question,answer])=><section class="my-3"><h3 class="h5">{question}</h3><p>{answer}</p></section>)}</section>
   <a href={localizePath(guidePath)}>{copy.related}</a>
+ <p class="mt-3"><a href={localizePath(finderPath)}>{finderCopy[locale === 'el' ? 'el' : 'en'].title}</a></p>
  </article>
 </Layout>

@@ -10,6 +10,7 @@ export function localizedRoutes(site) {
         if (site.countryCode === 'GR') {
           for (const locale of (site.locales || ['en'])) {
             injectRoute({ pattern: `${locale === 'en' ? '' : `/${locale}`}/guides/greek-radio-online`, entrypoint: resolve('src/content/guides/GreekRadio.astro'), prerender: true });
+            injectRoute({ pattern: `${locale === 'en' ? '' : `/${locale}`}/guides/find-greek-radio-stations`, entrypoint: resolve('src/content/guides/GreekStationFinder.astro'), prerender: true });
           }
         }
         if (site.countryCode === 'HR') {

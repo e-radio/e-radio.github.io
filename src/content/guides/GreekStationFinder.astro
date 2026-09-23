@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { guideSchema } from '../../lib/guide-schema';
+import { finderCopy, finderStations, finderPath, finderDate } from '../../lib/greek-station-finder';
+import { greekGuidePath } from '../../lib/greek-radio-guide';
+import stations from '../../lib/stations';
+const { locale, localizePath } = localeHelpers(Astro.url);
+const copy = finderCopy[locale === 'el' ? 'el' : 'en'];
+const featured = finderStations.map(item => {
+  const station = stations.find(station => station.slug === item.slug);
+  if (!station) throw new Error(`Missing guide station: ${item.slug}`);
+  return { ...station, source: item.source };
+});
+const canonical = `${site.siteUrl}${finderPath}`;
+const cover = '/images/guides/greek-radio-online.jpg';
+const coverUrl = new URL(cover, site.siteUrl).href;
+const title = `${copy.title} | ${site.siteName}`;
+const structuredData = guideSchema({
+  '@type': 'Article', headline: copy.title, description: copy.description,
+  url: localizePath(canonical), inLanguage: locale, datePublished: finderDate,
+  image: { '@type': 'ImageObject', url: coverUrl, width: 1200, height: 630 },
+  author: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
+  publisher: { '@type': 'Organization', name: site.siteName, url: site.siteUrl },
+  citation: finderStations.map(station => station.source),
+}, localizePath(`${site.siteUrl}/guides/`), copy.guides);
+---
+<Layout title={title} description={copy.description}>
+  <SEO slot="seo" title={title} description={copy.description} canonical={canonical} robots="index, follow" ogType="article" ogTitle={copy.title} ogDescription={copy.description} ogImage={coverUrl} structuredData={structuredData} />
+  <article class="mx-auto py-4" style="max-width:48rem">
+    <nav class="mb-3"><a href={localizePath('/guides/')}>{copy.guides}</a></nav>
+    <img src={cover} alt="" width="1200" height="630" fetchpriority="high" decoding="async" class="img-fluid rounded-3 mb-4" />
+    <h1>{copy.title}</h1>
+    <p class="lead">{copy.intro}</p>
+    <p class="small text-muted">{copy.by} {site.siteName} · {copy.published}: <time datetime={finderDate}>{new Intl.DateTimeFormat(locale, {dateStyle:'long', timeZone:'UTC'}).format(new Date(finderDate))}</time></p>
+    <nav aria-label={copy.contents}><h2 class="h5">{copy.contents}</h2><ul>
+      {featured.map(station => <li><a href={`#${station.slug}`}>{station.name}</a></li>)}
+      <li><a href="#ambiguous">{copy.ambiguousTitle}</a></li>
+    </ul></nav>
+    {featured.map((station,index) => <section id={station.slug} class="my-5">
+      <h2 class="h3">{copy.sections[index][0]}</h2>
+      <p>{copy.sections[index][1]}</p>
+      <p class="d-flex align-items-center gap-3">
+        <img src={station.favicon || site.logo} alt="" width="60" height="60" loading="lazy" decoding="async" class="rounded border bg-white" style="object-fit:contain" />
+        <a href={localizePath(`/stations/${station.slug}/`)}>{copy.listen} {station.name}</a>
+      </p>
+      <a href={station.source}>{copy.official} — {station.name}</a>
+    </section>)}
+    <section id="ambiguous" class="my-5"><h2 class="h3">{copy.ambiguousTitle}</h2><p>{copy.ambiguous}</p>
+      <ul><li><a href={localizePath('/search/?q=99')}>{copy.search99}</a></li><li><a href={localizePath('/search/?q=Music')}>{copy.searchMusic}</a></li></ul>
+    </section>
+    <section class="my-5"><h2 class="h3">{copy.helpTitle}</h2><ol>{copy.help.map(text => <li class="mb-2">{text}</li>)}</ol></section>
+    <p><a href={localizePath(greekGuidePath)}>{copy.related}</a></p>
+    <p class="small text-muted">{copy.identity}</p>
+  </article>
+</Layout>
