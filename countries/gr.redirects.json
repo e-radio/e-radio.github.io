@@ -499,5 +499,7 @@
   "/genres/theatre-play/": "/formats/theatre/",
   "/genres/entechna/": "/genres/entechno/",
   "/genres/omilies/": "/formats/talk/",
-  "/genres/ymnoi/": "/genres/church-music/"
+  "/genres/ymnoi/": "/genres/church-music/",
+  "/stations/real-fm-97-8-athens-greece/": "/stations/real-fm-97-8/",
+  "/stations/real-fm-97-8-athens/": "/stations/real-fm-97-8/"
 }

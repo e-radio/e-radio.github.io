@@ -29045,62 +29045,14 @@
     ]
   },
   {
-    "slug": "real-fm-97-8-athens-greece",
-    "stationuuid": "209df387-2e94-471f-bb79-f3421be6ffdf",
-    "name": "Real FM 97.8",
-    "state": "Attica",
-    "city": "Athens",
-    "stream_url": "https://netradio.live24.gr/realfm",
-    "homepage": "https://www.real.gr/",
-    "favicon": "/station-icons/gr/real-fm-97-8-athens-greece.png",
-    "genres": [],
-    "language": "greek",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 6,
-    "lastcheckok": 1,
-    "votes": 158,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "talk"
-    ]
-  },
-  {
     "slug": "real-fm-97-8",
     "stationuuid": "041e668c-567c-4d5c-931e-2e63b752ee95",
     "name": "Real FM 97.8",
-    "state": null,
-    "city": null,
+    "state": "Attica",
+    "city": "Athens",
     "stream_url": "https://realfm.live24.gr/realfm",
     "homepage": "https://www.realfm.gr/",
     "favicon": "/station-icons/gr/real-fm-97-8.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 120,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "talk"
-    ]
-  },
-  {
-    "slug": "real-fm-97-8-athens",
-    "stationuuid": "961f9a79-0601-11e8-ae97-52543be04c81",
-    "name": "Real FM 97.8",
-    "state": "Attica",
-    "city": "Athens",
-    "stream_url": "https://netradio.live24.gr/realfm",
-    "homepage": "https://www.real.gr/",
-    "favicon": "/station-icons/gr/real-fm-97-8-athens.png",
     "genres": [],
     "language": "greek",
     "bitrate": 192,
@@ -29116,6 +29068,30 @@
       "greek-language music",
       "news",
       "talk"
+    ],
+    "aliases": [
+      "real-fm-97-8-athens-greece",
+      "real-fm-97-8-athens"
+    ],
+    "alternate_stationuuids": [
+      "209df387-2e94-471f-bb79-f3421be6ffdf",
+      "961f9a79-0601-11e8-ae97-52543be04c81"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192",
+        "label": "Default",
+        "url": "https://realfm.live24.gr/realfm",
+        "bitrate": 192,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-192-alternative",
+        "label": "Alternative",
+        "url": "https://netradio.live24.gr/realfm",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
     ]
   },
   {

@@ -9,6 +9,7 @@ export function localizedRoutes(site) {
       'astro:config:setup': ({ injectRoute }) => {
         if (site.countryCode === 'GR') {
           for (const locale of (site.locales || ['en'])) {
+            injectRoute({ pattern: `${locale === 'en' ? '' : `/${locale}`}/guides/radiofonikoi-stathmoi-athina`, entrypoint: resolve('src/content/guides/AthensRadio.astro'), prerender: true });
             injectRoute({ pattern: `${locale === 'en' ? '' : `/${locale}`}/guides/greek-radio-online`, entrypoint: resolve('src/content/guides/GreekRadio.astro'), prerender: true });
             injectRoute({ pattern: `${locale === 'en' ? '' : `/${locale}`}/guides/find-greek-radio-stations`, entrypoint: resolve('src/content/guides/GreekStationFinder.astro'), prerender: true });
           }

@@ -1,4 +1,5 @@
 ---
+import { athensGuidePath, athensGuideTitle } from '../../lib/athens-radio-guide';
 import { guideSchema } from '../../lib/guide-schema';
 import { finderCopy, finderPath } from '../../lib/greek-station-finder';
 import Layout from '../../layouts/Layout.astro';
@@ -48,5 +49,6 @@ const structuredData={
   <section class="my-4"><h2 class="h3">{copy.faqTitle}</h2>{copy.questions.map(([question,answer])=><section class="my-3"><h3 class="h5">{question}</h3><p>{answer}</p></section>)}</section>
   <a href={localizePath(guidePath)}>{copy.related}</a>
  <p class="mt-3"><a href={localizePath(finderPath)}>{finderCopy[locale === 'el' ? 'el' : 'en'].title}</a></p>
+ <p class="mt-3"><a href={localizePath(athensGuidePath)}>{athensGuideTitle[locale === 'el' ? 'el' : 'en']}</a></p>
  </article>
 </Layout>

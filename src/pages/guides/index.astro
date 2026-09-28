@@ -1,24 +1,32 @@
 ---
-import { croatianGuide, croatianGuidePath } from '../../lib/croatian-station-guide';
-import { greekGuideCopy, greekGuidePath } from '../../lib/greek-radio-guide';
-import { finderCopy, finderPath } from '../../lib/greek-station-finder';
+import { athensGuideDate, athensGuidePath, athensGuideTitle, athensGuideDescription } from '../../lib/athens-radio-guide';
+import { croatianGuideDate, croatianGuide, croatianGuidePath } from '../../lib/croatian-station-guide';
+import { greekGuideDate, greekGuideCopy, greekGuidePath } from '../../lib/greek-radio-guide';
+import { finderDate, finderCopy, finderPath } from '../../lib/greek-station-finder';
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
 import { site } from '../../../countries/site.mjs';
 import { localeHelpers } from '../../i18n/index';
-import { guideCopy, guidePath } from '../../lib/listening-guide';
+import { publishedDate, guideCopy, guidePath } from '../../lib/listening-guide';
 const { locale, localizePath } = localeHelpers(Astro.url);
 const copy = guideCopy[locale];
+const athensLocale = locale === 'el' ? 'el' : 'en';
 const finder = finderCopy[locale === 'el' ? 'el' : 'en'];
 const greekCopy = greekGuideCopy[locale === 'el' ? 'el' : 'en'];
 const croatianCopy = croatianGuide[locale === 'hr' ? 'hr' : 'en'];
 const title = `${copy.label} | ${site.siteName}`;
 const canonical = `${site.siteUrl}/guides/`;
 const entries = [
-  { name: copy.title, path: guidePath },
-  ...(site.countryCode === 'HR' ? [{ name: croatianCopy.title, path: croatianGuidePath }] : []),
-  ...(site.countryCode === 'GR' ? [{ name: greekCopy.title, path: greekGuidePath }, { name: finder.title, path: finderPath }] : []),
-];
+  { name: copy.title, path: guidePath, description: copy.description, date: publishedDate, image: '/images/guides/find-your-radio-station.jpg' },
+  ...(site.countryCode === 'HR' ? [
+    { name: croatianCopy.title, path: croatianGuidePath, description: croatianCopy.description, date: croatianGuideDate, image: `/images/guides/croatian-radio-${locale === 'hr' ? 'hr' : 'en'}.jpg` },
+  ] : []),
+  ...(site.countryCode === 'GR' ? [
+    { name: athensGuideTitle[athensLocale], path: athensGuidePath, description: athensGuideDescription[athensLocale], date: athensGuideDate, image: '/images/guides/athens-radio-stations.jpg' },
+    { name: greekCopy.title, path: greekGuidePath, description: greekCopy.description, date: greekGuideDate, image: '/images/guides/greek-radio-online.jpg' },
+    { name: finder.title, path: finderPath, description: finder.description, date: finderDate, image: '/images/guides/greek-radio-online.jpg' },
+  ] : []),
+].sort((a, b) => b.date.localeCompare(a.date));
 const structuredData = {
   '@context': 'https://schema.org', '@type': 'CollectionPage',
   '@id': localizePath(canonical), url: localizePath(canonical),
@@ -37,25 +45,10 @@ const structuredData = {
   <section class="mx-auto py-4" style="max-width: 48rem">
     <h1>{copy.label}</h1>
     <p class="lead text-muted">{copy.intro}</p>
-    <article class="bg-white border rounded-3 p-4 mt-4">
-      <img src="/images/guides/find-your-radio-station.jpg" alt={copy.title} width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
-      <h2 class="h4"><a href={localizePath(guidePath)}>{copy.title}</a></h2>
-      <p class="mb-0">{copy.description}</p>
-    </article>
-    {site.countryCode === 'HR' && <article class="bg-white border rounded-3 p-4 mt-4">
-      <img src={`/images/guides/croatian-radio-${locale === 'hr' ? 'hr' : 'en'}.jpg`} alt={croatianCopy.title} width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
-      <h2 class="h4"><a href={localizePath(croatianGuidePath)}>{croatianCopy.title}</a></h2>
-      <p class="mb-0">{croatianCopy.description}</p>
-    </article>}
-    {site.countryCode === 'GR' && <article class="bg-white border rounded-3 p-4 mt-4">
-      <img src="/images/guides/greek-radio-online.jpg" alt="" width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
-      <h2 class="h4"><a href={localizePath(greekGuidePath)}>{greekCopy.title}</a></h2>
-      <p class="mb-0">{greekCopy.description}</p>
-    </article>}
-    {site.countryCode === 'GR' && <article class="bg-white border rounded-3 p-4 mt-4">
-      <img src="/images/guides/greek-radio-online.jpg" alt="" width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
-      <h2 class="h4"><a href={localizePath(finderPath)}>{finder.title}</a></h2>
-      <p class="mb-0">{finder.description}</p>
-    </article>}
+    {entries.map(entry => <article class="bg-white border rounded-3 p-4 mt-4">
+      <img src={entry.image} alt="" width="1200" height="630" loading="lazy" decoding="async" class="img-fluid rounded mb-3" />
+      <h2 class="h4"><a href={localizePath(entry.path)}>{entry.name}</a></h2>
+      <p class="mb-0">{entry.description}</p>
+    </article>)}
   </section>
 </Layout>

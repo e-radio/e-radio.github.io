@@ -1,0 +1,79 @@
+---
+import stations from '../../lib/stations';
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+import { site } from '../../../countries/site.mjs';
+import { localeHelpers } from '../../i18n/index';
+import { guideSchema } from '../../lib/guide-schema';
+import { athensGuidePath, athensGuideDate, athensGuideTitle, athensGuideDescription, athensGroups } from '../../lib/athens-radio-guide';
+const groups = athensGroups.map(group => ({
+ ...group,
+ stations: group.stations.map(station => {
+  const record = stations.find(item => item.slug === station.slug);
+  if (!record?.favicon) throw new Error(`Athens guide station image missing: ${station.slug}`);
+  return { ...station, image: record.favicon };
+ }),
+}));
+const { locale, localizePath } = localeHelpers(Astro.url);
+const lang = locale === 'el' ? 'el' : 'en';
+const el = lang === 'el';
+const title = athensGuideTitle[lang];
+const description = athensGuideDescription[lang];
+const canonical = `${site.siteUrl}${athensGuidePath}`;
+const cover = '/images/guides/athens-radio-stations.jpg';
+const coverUrl = new URL(cover, site.siteUrl).href;
+const guides = el ? 'Οδηγοί' : 'Guides';
+const sources = [
+ {name:'Radiomap — Αθήνα / Athens FM',url:'https://radiomap.eu/gr/athina'},
+ {name:'Greek Radio — Αθήνα / Athens',url:'https://greek-radio.gr/region-of-attica/athens'},
+ {name:'ΕΡΤ — Συχνότητες ραδιοφώνων / FM frequencies',url:'https://www.ert.gr/syxnotites-radiofonon/'},
+ {name:'Αθήνα 9.84 — Συναυλία στο ραδιόφωνο / 98.3 FM',url:'https://athina984.gr/synaylia-sto-radiofono/'}
+];
+const faqs = el ? [
+ ['Ποιον σταθμό να επιλέξω για ελληνική μουσική;', 'Για ελληνική mainstream και ποπ, ξεκινήστε από Δρόμο, Ρυθμό, Λάμψη ή Sfera. Για έντεχνο και ελληνικό τραγούδι, δοκιμάστε Μελωδία, Μέντα και Δίεση. Οι κατηγορίες περιγράφουν το γενικό ύφος· κάθε εκπομπή μπορεί να διαφέρει.'],
+ ['Ο Αθήνα 9.84 εκπέμπει στους 98.4 FM;', 'Όχι: το Αθήνα 9.84 είναι η ονομασία του σταθμού. Για ακρόαση στα FM στην Αθήνα συντονιστείτε στους 98.3 MHz.'],
+ ['Πού ακούγεται η ΕΡΑ Σπορ στην Αθήνα;', 'Η ΕΡΤ καταγράφει την ΕΡΑ Σπορ στους 101.8 FM από τον Υμηττό και στους 100.9 FM από την Πάρνηθα. Δοκιμάστε τη συχνότητα με την καλύτερη λήψη στο σημείο σας.'],
+ ['Μπορώ να ακούσω αθηναϊκούς σταθμούς εκτός Αττικής;', 'Μέσω της online ροής μπορείτε να δοκιμάσετε ακρόαση από άλλη περιοχή με σύνδεση στο διαδίκτυο. Η διαθεσιμότητα εξαρτάται από τον σταθμό και ενδέχεται να υπάρχουν γεωγραφικοί περιορισμοί ή διακοπές.']
+] : [
+ ['Which stations play Greek music?', 'Try Dromos, Rythmos, Lampsi or Sfera for mainstream Greek music and pop. Melodia, Menta and Diesi are starting points for Greek art song. Categories describe a broad style; individual shows may differ.'],
+ ['Does Athina 9.84 broadcast on 98.4 FM?', 'Athina 9.84 is the station name. Its Athens FM frequency is 98.3 MHz.'],
+ ['What are ERA Sport’s Athens frequencies?', 'ERT lists 101.8 FM from Hymettus and 100.9 FM from Parnitha. Try the frequency with better reception where you are.'],
+ ['Can I listen outside Athens?', 'Try the station’s online stream over an internet connection. Availability depends on the broadcaster, and streams may have geographic restrictions or interruptions.']
+];
+const article = {'@type':'Article',headline:title,description,url:localizePath(canonical),inLanguage:locale,datePublished:athensGuideDate,dateModified:athensGuideDate,image:{'@type':'ImageObject',url:coverUrl,width:1200,height:630},author:{'@type':'Organization',name:site.siteName,url:site.siteUrl},publisher:{'@type':'Organization',name:site.siteName,url:site.siteUrl},citation:sources.map(s=>s.url)};
+---
+<Layout title={title} description={description}>
+ <SEO slot="seo" title={title} description={description} canonical={canonical} ogType="article" ogTitle={title} ogDescription={description} ogImage={coverUrl} structuredData={guideSchema(article, localizePath(`${site.siteUrl}/guides/`)!, guides)} />
+ <article class="mx-auto py-4" style="max-width: 52rem">
+  <nav class="mb-3" aria-label={el ? 'Διαδρομή σελίδας' : 'Breadcrumb'}><a href={localizePath('/guides/')}>{guides}</a></nav>
+  <h1>{title}</h1>
+  <p class="lead">{description}</p>
+  <p class="small text-muted">{site.siteName} · <time datetime={athensGuideDate}>{new Intl.DateTimeFormat(locale, {dateStyle:'long',timeZone:'UTC'}).format(new Date(athensGuideDate))}</time></p>
+  <img src={cover} alt={el ? 'Φορητό ραδιόφωνο σε ταράτσα με θέα την Ακρόπολη στο ηλιοβασίλεμα' : 'Portable radio on an Athens terrace overlooking the Acropolis at sunset'} width="1200" height="630" class="img-fluid rounded-3 mb-4" fetchpriority="high" decoding="async" />
+  <p><strong>{el ? 'Οι δημοφιλέστεροι ραδιοφωνικοί σταθμοί της Αθήνας χωρίζονται ανάλογα με το είδος του προγράμματός τους' : 'Popular Athens radio stations can be grouped by the type of programme they broadcast'}.</strong></p>
+  <p>{el ? 'Ο οδηγός συγκεντρώνει 24 γνωστές επιλογές για ενημέρωση, ελληνική και ξένη μουσική και αθλητικά. Η αναφορά στη δημοφιλία είναι περιγραφική: η λίστα δεν αποτελεί κατάταξη ακροαματικότητας ούτε πλήρη κατάλογο των FM της Αττικής.' : 'This guide brings together 24 familiar choices for news, Greek and international music, and sports. Popularity is descriptive here: this is a selection, not an audience ranking or a complete list of Attica FM stations.'}</p>
+  <nav class="bg-light border rounded-3 p-3 my-4" aria-label={el ? 'Περιεχόμενα' : 'Contents'}><h2 class="h5">{el ? 'Βρείτε την κατηγορία σας' : 'Choose your category'}</h2><ul class="mb-0">{athensGroups.map(group=><li><a href={`#${group.id}`}>{group[lang]}</a></li>)}<li><a href="#listen">{el ? 'Πώς να ακούσετε online' : 'How to listen online'}</a></li></ul></nav>
+  {groups.map(group=><section id={group.id} class="my-5">
+   <h2 class="h3">{group[lang]}</h2>
+   <ul class="station-list" role="list">{group.stations.map(station=><li class="d-flex align-items-start gap-3 mb-4">
+    <img src={station.image} alt={el ? `Λογότυπο ${station.name}` : `${station.name} logo`} width="72" height="72" loading="lazy" decoding="async" class="station-logo rounded border bg-white flex-shrink-0" />
+    <div class="station-details"><strong>{station.name}</strong><br />{station.fm} FM · {station[lang]}<br /><a href={localizePath(`/search/?q=${encodeURIComponent(station.query)}`)}>{el ? 'Βρείτε ροή ακρόασης' : 'Find a listening stream'} <span class="visually-hidden">{station.name}</span></a></div>
+   </li>)}</ul>
+   {group.id === 'news' && <p class="small">{el ? 'Σημείωση: ο Αθήνα 9.84 εκπέμπει στους 98.3 FM.' : 'Note: Athina 9.84 broadcasts on 98.3 FM.'} <a href={sources[3].url}>{el ? 'Πηγή: Αθήνα 9.84' : 'Source: Athina 9.84'}</a>.</p>}
+   {group.id === 'sports' && <p class="small">{el ? 'ΕΡΑ Σπορ: 101.8 FM (Υμηττός) και 100.9 FM (Πάρνηθα).' : 'ERA Sport: 101.8 FM (Hymettus) and 100.9 FM (Parnitha).'} <a href={sources[2].url}>{el ? 'Συχνότητες ΕΡΤ' : 'ERT frequencies'}</a>.</p>}
+   <p class="small text-muted">{el ? 'Διασταύρωση σταθμών και συχνοτήτων:' : 'Station and frequency references:'} <a href={sources[0].url}>Radiomap</a> · <a href={sources[1].url}>Greek Radio</a></p>
+  </section>)}
+  <section id="listen" class="my-5"><h2 class="h3">{el ? 'Πώς να ακούσετε ραδιόφωνο Αθήνας online' : 'How to listen to Athens radio online'}</h2>
+   <ol>
+    <li>{el ? 'Επιλέξτε «Βρείτε ροή ακρόασης» κάτω από έναν σταθμό για να ανοίξετε την αναζήτηση με το όνομά του.' : 'Select “Find a listening stream” under a station to search for its name.'}</li>
+    <li>{el ? 'Ελέγξτε όνομα, πόλη και συχνότητα και ανοίξτε την αντίστοιχη σελίδα σταθμού.' : 'Check the name, city and frequency, then open the matching station page.'}</li>
+    <li>{el ? 'Πατήστε αναπαραγωγή. Αν μια ροή δεν ανταποκρίνεται, δοκιμάστε άλλη διαθέσιμη ροή ή την επίσημη ιστοσελίδα.' : 'Press Play. If a stream fails, try another available stream or the official station website.'}</li>
+   </ol>
+   <p>{el ? 'Η online ακρόαση χρησιμοποιεί δεδομένα ή Wi-Fi. Για ακρόαση σε δέκτη FM, χρησιμοποιήστε τις παραπάνω συχνότητες· η ποιότητα λήψης εξαρτάται από την περιοχή, την κεραία και τα εμπόδια.' : 'Online listening uses mobile data or Wi-Fi. On an FM receiver, use the frequencies above; reception depends on location, antenna and obstructions.'}</p>
+   <p><a href={localizePath('/genres/')}>{el ? 'Εξερευνήστε μουσικά είδη' : 'Explore genres'}</a> · <a href={localizePath('/guides/greek-radio-online/')}>{el ? 'Οδηγός ελληνικού ραδιοφώνου online' : 'Greek radio online guide'}</a></p>
+  </section>
+  <section class="my-5"><h2 class="h3">{el ? 'Συχνές ερωτήσεις' : 'Frequently asked questions'}</h2>{faqs.map(([q,a])=><section class="my-4"><h3 class="h5">{q}</h3><p>{a}</p></section>)}</section>
+  <section class="my-5"><h2 class="h3">{el ? 'Πηγές και ενημέρωση' : 'Sources and updates'}</h2><p>{el ? 'Έλεγχος συχνοτήτων στις 28 Σεπτεμβρίου 2026. Τα προγράμματα και οι διευθύνσεις μετάδοσης μπορεί να αλλάξουν. Για το αναλυτικό πρόγραμμα κάθε ημέρας, συμβουλευτείτε τον ίδιο τον σταθμό.' : 'Frequencies checked on 28 September 2026. Programmes and stream addresses can change. Check the broadcaster for daily schedules.'}</p><ul>{sources.map(s=><li><a href={s.url}>{s.name}</a></li>)}</ul></section>
+ </article>
+</Layout>
+<style>.station-list { padding: 0; list-style: none; } .station-logo { width: 72px; height: 72px; object-fit: contain; } .station-details { min-width: 0; overflow-wrap: anywhere; } section[id] { scroll-margin-top: 5rem; }</style>
