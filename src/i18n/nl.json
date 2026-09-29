@@ -449,5 +449,10 @@
   "urdu-language music": "Urdutalige muziek",
   "variety": "Gevarieerde programmering",
   "vaudeville": "Variété",
-  "weather": "Weer"
+  "weather": "Weer",
+  "Formats arranged alphabetically; stations in each format sorted by votes.": "Formats staan op alfabet; zenders in elk format zijn gesorteerd op stemmen.",
+  "Showing {0} formats across {1} stations.": "{0} formats met in totaal {1} zenders.",
+  "Browse formats": "Bekijk formats",
+  "← Back to formats": "← Terug naar formats",
+  "Format pagination": "Paginering formats"
 }

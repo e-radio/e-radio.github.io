@@ -9,7 +9,7 @@ assertUniqueStationSlugs(JSON.parse(readFileSync(stationsPath, 'utf8')));
 const countryRedirects = { ...redirects, '/page/1/': '/' };
 /** @type {string[]} */
 const additionalLocales = site.locales || [];
-const localizedRedirects = Object.fromEntries(additionalLocales.filter(locale => locale !== 'en').flatMap(locale =>
+const localizedRedirects = Object.fromEntries(additionalLocales.filter(locale => locale !== (site.defaultLocale || 'en')).flatMap(locale =>
   Object.entries(countryRedirects)
     .filter(([, target]) => typeof target === 'string' && target.startsWith('/'))
     .map(([source, target]) => [`/${locale}${source}`, `/${locale}${target}`])));

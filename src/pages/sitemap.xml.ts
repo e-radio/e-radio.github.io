@@ -1,5 +1,5 @@
-import { site, countryText } from "../../countries/site.mjs";
-import { formatEntries } from '../lib/station-formats';
+import { site, countryText, redirects } from "../../countries/site.mjs";
+import { formatEntries, FORMAT_PAGE_SIZE } from '../lib/station-formats';
 import rawStations from "../lib/stations";
 
 import { metadataStations, METADATA_PAGE_SIZE } from "../lib/metadata-stations";
@@ -238,6 +238,9 @@ export async function GET() {
     ...staticPages,
     { loc: `${ROOT_URL}/formats/`, lastmod },
     ...formatEntries.map(entry => ({loc: `${ROOT_URL}/formats/${entry.slug}/`, lastmod})),
+    ...formatEntries.flatMap(entry => Array.from({length:Math.max(0, Math.ceil(entry.stations.length / FORMAT_PAGE_SIZE)-1)}, (_,index) => ({
+      loc: `${ROOT_URL}/formats/${entry.slug}/page/${index+2}/`, lastmod,
+    }))),
     ...Array.from({ length: Math.max(1, Math.ceil(metadataStations.length / METADATA_PAGE_SIZE)) }, (_, index) => ({
       loc: `${ROOT_URL}/now-playing/${index ? `page/${index + 1}/` : ""}`,
       lastmod,
@@ -260,7 +263,7 @@ export async function GET() {
     "  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
     "  xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\"",
     ">",
-    urls.flatMap(entry => (site.locales || ['en']).map((locale: string) => ({ ...entry, loc: `${ROOT_URL}${locale === 'en' ? '' : `/${locale}`}${entry.loc.slice(ROOT_URL.length)}` }))).map((entry) => formatUrlEntry(entry)).join("\n"),
+    urls.filter(entry => !Object.hasOwn(redirects, entry.loc.slice(ROOT_URL.length))).flatMap(entry => (site.locales || ['en']).map((locale: string) => ({ ...entry, loc: `${ROOT_URL}${locale === (site.defaultLocale || 'en') ? '' : `/${locale}`}${entry.loc.slice(ROOT_URL.length)}` }))).map((entry) => formatUrlEntry(entry)).join("\n"),
     "</urlset>",
   ].join("\n");
 

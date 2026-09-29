@@ -3,7 +3,7 @@ import { localeHelpers } from '../i18n/index';
 const { t, localizePath } = localeHelpers(Astro.url);
 
 interface Category {
-  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres" | "now-playing" | "live-tracks";
+  key: "stations" | "top-rated" | "city" | "region" | "high-quality" | "genres" | "formats" | "now-playing" | "live-tracks";
   label: string;
   href: string;
   icon: string;
@@ -22,6 +22,7 @@ const categories: Category[] = [
   { key: "city", label: "By City", href: "/city/", icon: "bi-geo-alt" },
   { key: "region", label: "By Region", href: "/region/", icon: "bi-map" },
   { key: "genres", label: "Genres", href: "/genres/", icon: "bi-music-note-list" },
+  { key: "formats", label: "Radio formats", href: "/formats/", icon: "bi-grid" },
   { key: "live-tracks", label: "Live Tracks", href: "/live-tracks/", icon: "bi-disc" },
   { key: "now-playing", label: "Now Playing", href: "/now-playing/", icon: "bi-music-note-beamed" },
 ];

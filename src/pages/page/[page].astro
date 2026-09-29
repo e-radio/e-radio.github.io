@@ -102,7 +102,7 @@ const structuredData = {
 <Layout title={t(pageTitle)} description={pageDescription}>
   <SEO slot="seo" title={t(pageTitle)} description={pageDescription} canonical={canonical} ogTitle={pageTitle} ogDescription={pageDescription} ogImage={ogImageUrl} keywords={countryText(`Greek radio, liv${site.siteShortName}, Greece stations, onlin${site.siteShortName}, radio streaming`)} robots="index, follow" author={site.siteName} prevUrl={page > 1 ? page === 2 ? `${siteRoot}/` : `${siteRoot}/page/${page - 1}/` : undefined} nextUrl={page < totalPages ? `${siteRoot}/page/${page + 1}/` : undefined} structuredData={structuredData} />
   <div class="mb-4">
-    <h1 class="display-5 fw-bold mb-2">{t("{0} Radio Stations", [site.countryAdjective])}</h1>
+    <h1 class="display-5 fw-bold mb-2">{t(countryText("Greek Radio Stations"))}</h1>
     <p class="lead text-muted">{t("Discover {0} live radio stations from {1}. Sorted by popularity.", [totalStations, site.countryName])}</p>
     <p class="text-muted small">{t("Showing stations {0}–{1} of {2}", [startIndex + 1, Math.min(endIndex, totalStations), totalStations])}</p>
   </div>

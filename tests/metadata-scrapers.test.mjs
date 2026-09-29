@@ -167,3 +167,26 @@ test('Jolene Country Radio selects its own track and artwork from the shared fee
  assert.equal(parseMetadata('jolene',{stations:payload.stations}).text,'Country Artist - Country Song');
  assert.equal(parseMetadata('jolene',{playing:'Wrong channel',extended:{jolene:{title:'Wrong'}}}).text,null);
 });
+
+test('Strefa parses songs, programme fallback and protocol-relative artwork', () => {
+ const result = parseMetadata('strefa', {ok:true,data:{artist:'Artist',title:'Track',cover:'//strefa.fm/cover.jpg'}});
+ assert.equal(result.text,'Artist – Track');assert.equal(result.song.art,'https://strefa.fm/cover.jpg');
+ assert.equal(parseMetadata('strefa',{ok:true,data:{artist:'',title:'',value:'17:30 - 17:38 O Tym Się Mówi'}}).text,'17:30 - 17:38 O Tym Się Mówi');
+ assert.equal(parseMetadata('strefa',{ok:false,data:{title:'Stale'}}).text,null);
+});
+test('Strefa history preserves all previous tracks without inventing a current song', () => {
+ const result=parseHistory('strefa',JSON.stringify({ok:true,items:[{artist:'Artist',title:'Earlier',time:'17:26',cover:'//strefa.fm/art.jpg'}]}));
+ assert.equal(result.now_playing,undefined);assert.equal(result.song_history.length,1);
+ assert.equal(result.song_history[0].song.title,'Earlier');assert.equal(result.song_history[0].song.art,'https://strefa.fm/art.jpg');assert.equal(result.song_history[0].time,'17:26');
+ assert.deepEqual(parseHistory('strefa','{"ok":false}').song_history,[]);
+});
+
+test('ZPR keeps current, past and all future songs separate and ordered', () => {
+ const result=parseMetadata('zpr',{current:{artists:['A','B'],name:'Now',image:'https://example.com/art.jpg'},pasts:[{name:'Past'}],futures:[{name:'Next'},{name:'Later'},{name:'Last'}]});
+ assert.equal(result.text,'A & B – Now');assert.equal(result.song.art,'https://example.com/art.jpg');
+ assert.equal(result.payload.playing_next.song.title,'Next');
+ assert.deepEqual(result.payload.upcoming.map(x=>x.song.title),['Next','Later','Last']);
+ assert.deepEqual(result.payload.song_history.map(x=>x.song.title),['Past']);
+ assert.deepEqual(parseMetadata('zpr',{}).payload.upcoming,[]);
+ assert.deepEqual(parseHistory('zpr','{"futures":[{"name":"Future"}]}').song_history,[]);
+});

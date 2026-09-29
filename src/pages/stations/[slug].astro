@@ -456,7 +456,7 @@ const structuredData = {
           "containedInPlace": {
             "@type": "Country",
             "name": station.country || countryText("Greece"),
-            "identifier": String(station.countrycode || "GR").toUpperCase()
+            "identifier": String(station.countrycode || site.countryCode).toUpperCase()
           }
         }
       }
@@ -464,7 +464,7 @@ const structuredData = {
         "areaServed": {
           "@type": "Country",
           "name": station.country || countryText("Greece"),
-          "identifier": String(station.countrycode || "GR").toUpperCase()
+          "identifier": String(station.countrycode || site.countryCode).toUpperCase()
         }
       }),
   ...(streamUrl
@@ -1105,6 +1105,22 @@ import { clientTranslate as t } from '../../i18n/translate';
       const { next } = extractRecentTracks(payload);
       setTrackCard(nextTitleEl, nextMetaEl, nextTimeEl, nextArtEl, next);
       if (nextCardEl) nextCardEl.hidden = !next?.primary;
+      if (nextCardEl) {
+        nextCardEl.querySelector('[data-upcoming-queue]')?.remove();
+        const remaining = Array.isArray(payload?.upcoming) ? payload.upcoming.slice(1).map(formatSongEntry).filter(track => track?.primary) : [];
+        if (remaining.length) {
+          const list = document.createElement('ol');
+          list.dataset.upcomingQueue = '';
+          list.start = 2;
+          list.className = 'mt-3 space-y-1 text-sm list-decimal list-inside';
+          for (const track of remaining) {
+            const item = document.createElement('li');
+            item.textContent = [track.primary, track.meta].filter(Boolean).join(' – ');
+            list.appendChild(item);
+          }
+          nextCardEl.appendChild(list);
+        }
+      }
 
       const historyUpdated = updateHistoryList(payload);
       const cardsUpdated = Boolean(next?.primary);

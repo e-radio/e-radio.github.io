@@ -456,5 +456,10 @@
   "top 40": "Top 40",
   "traditional music": "Traditionell musik",
   "variety": "Varierat program",
-  "workout": "Träningsmusik"
+  "workout": "Träningsmusik",
+  "Formats arranged alphabetically; stations in each format sorted by votes.": "Format visas i alfabetisk ordning; stationerna inom varje format sorteras efter röster.",
+  "Showing {0} formats across {1} stations.": "Visar {0} format med totalt {1} stationer.",
+  "Browse formats": "Bläddra bland format",
+  "← Back to formats": "← Tillbaka till format",
+  "Format pagination": "Sidnavigering för format"
 }

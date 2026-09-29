@@ -766,5 +766,10 @@
   "study": "Μουσική για διάβασμα",
   "top 40": "Top 40",
   "traditional music": "Παραδοσιακή μουσική",
-  "vocal lounge": "Lounge με φωνητικά"
+  "vocal lounge": "Lounge με φωνητικά",
+  "Formats arranged alphabetically; stations in each format sorted by votes.": "Οι μορφές προγράμματος εμφανίζονται αλφαβητικά και οι σταθμοί κάθε μορφής ταξινομούνται βάσει ψήφων.",
+  "Showing {0} formats across {1} stations.": "Εμφανίζονται {0} μορφές προγράμματος σε {1} σταθμούς.",
+  "Browse formats": "Περιήγηση στις μορφές προγράμματος",
+  "← Back to formats": "← Επιστροφή στις μορφές προγράμματος",
+  "Format pagination": "Σελιδοποίηση μορφής προγράμματος"
 }

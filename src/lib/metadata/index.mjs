@@ -1,3 +1,5 @@
+import * as zpr from './providers/zpr.mjs';
+import * as strefa from './providers/strefa.mjs';
 import * as azuracast from './providers/azuracast.mjs';
 import * as centovacast from './providers/centovacast.mjs';
 import * as icecast from './providers/icecast.mjs';
@@ -12,7 +14,7 @@ import * as unknown from './providers/unknown.mjs';
 import { artworkUrl, gatherSongHistory, parseTextHistory } from './common.mjs';
 export { artworkUrl, gatherSongHistory } from './common.mjs';
 
-const providers = { jolene, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
+const providers = { zpr, strefa, jolene, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
 export const scraperFor = server => providers[server] || unknown;
 
 export function decodeMetadata(text) {
@@ -33,7 +35,7 @@ export function parseMetadata(server, payload, context = {}) {
   const normalizedSong = { ...song, art };
   return { song: normalizedSong, text, listeners: result.listeners,
     payload: { now_playing: { song: normalizedSong, played_at: result.playedAt },
-      song_history: result.history || [], playing_next: result.next || null } };
+      song_history: result.history || [], playing_next: result.next || null, upcoming: result.upcoming || [] } };
 }
 
 export function parseHistory(server, text) {

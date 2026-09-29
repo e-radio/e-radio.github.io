@@ -7,4 +7,5 @@ for (const station of stations) {
     groups.get(format)!.push(station);
   }
 }
-export const formatEntries = [...groups].map(([name, stations]) => ({name, slug: formatSlug(name), stations})).sort((a,b)=>a.name.localeCompare(b.name));
+export const FORMAT_PAGE_SIZE = 20;
+export const formatEntries = [...groups].map(([name, stations]) => ({name, slug: formatSlug(name), stations: stations.slice().sort((a,b)=>(b.votes || 0)-(a.votes || 0))})).sort((a,b)=>a.name.localeCompare(b.name));

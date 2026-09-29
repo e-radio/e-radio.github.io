@@ -1,18 +1,68 @@
 ---
+import { localeHelpers } from '../../i18n/index';
+import { site } from '../../../countries/site.mjs';
 import Layout from '../../layouts/Layout.astro';
 import SEO from '../../components/SEO.astro';
-import { site } from '../../../countries/site.mjs';
-import { localeHelpers } from '../../i18n/index';
+import CategorySwitch from '../../components/CategorySwitch.astro';
 import { formatEntries } from '../../lib/station-formats';
-const {t,localizePath}=localeHelpers(Astro.url);
-const title=`${t('Radio formats')} | ${site.siteName}`;
-const description=t('Browse stations by programme format, language, era and listening mood.');
-const canonical=`${site.siteUrl}/formats/`;
-const structuredData={'@context':'https://schema.org','@type':'CollectionPage',name:title,description,url:canonical,mainEntity:{'@type':'ItemList',itemListElement:formatEntries.map((entry,index)=>({'@type':'ListItem',position:index+1,name:t(entry.name),url:`${site.siteUrl}/formats/${entry.slug}/`}))}};
+const { t, localizePath } = localeHelpers(Astro.url);
+const entries = formatEntries;
+const formatBadgeEntries = entries.slice().sort((a,b) => b.stations.length - a.stations.length || a.name.localeCompare(b.name));
+const totalStations = new Set(entries.flatMap(entry => entry.stations.map(station => station.slug))).size;
+const canonical = `${site.siteUrl}/formats/`;
+const pageTitle = `${t('Radio formats')} | ${site.siteShortName}`;
+const description = t('Browse stations by programme format, language, era and listening mood.');
+const pageDescription = description;
+const ogImageUrl = new URL(site.socialImage, site.siteUrl).href;
+const structuredData = {
+ '@context':'https://schema.org', '@type':'CollectionPage', '@id':`${canonical}#collection`,
+ name:pageTitle, description, url:canonical, image:ogImageUrl,
+ mainEntity:{'@type':'ItemList', numberOfItems:entries.length, itemListElement:entries.map((entry,index)=>({
+  '@type':'ListItem', position:index+1, name:t(entry.name), url:`${site.siteUrl}/formats/${entry.slug}/`
+ }))}
+};
 ---
-<Layout title={title} description={description}>
- <SEO slot="seo" title={title} description={description} canonical={canonical} robots="index, follow" structuredData={structuredData} />
- <h1>{t('Radio formats')}</h1><p>{description}</p>
- <p><a href={localizePath('/genres/')}>{t('Genres')}</a></p>
- <ul class="row list-unstyled">{formatEntries.map(entry=><li class="col-sm-6 col-lg-4 mb-3"><a href={localizePath(`/formats/${entry.slug}/`)}>{t(entry.name)}</a> <span class="text-muted">({entry.stations.length})</span></li>)}</ul>
+
+<Layout title={t(pageTitle)} description={pageDescription}>
+  <SEO slot="seo" title={t(pageTitle)} description={pageDescription} canonical={canonical} ogTitle={pageTitle} ogDescription={pageDescription} ogImage={ogImageUrl} robots="index, follow" author={site.siteName} structuredData={structuredData} />
+  <div class="mb-4">
+    <h1 class="display-5 fw-bold mb-2">{t('Radio formats')}</h1>
+    <h2 class="lead text-muted">{description}</h2>
+    <p class="text-muted small">{t("Formats arranged alphabetically; stations in each format sorted by votes.")}</p>
+    <p class="text-muted small">{t("Showing {0} formats across {1} stations.", [entries.length, totalStations])}</p>
+  </div>
+  <CategorySwitch current="formats" />
+  <p><a href={localizePath('/genres/')}>{t('Genres')}</a></p>
+  <div class="mb-4">
+    <h2 class="h6 text-muted text-uppercase">{t("Browse formats")}</h2>
+    <div class="d-flex flex-wrap gap-2">
+      {formatBadgeEntries.map(({ name, stations, slug }) => {
+        return (
+        <a class="text-decoration-none d-inline-flex align-items-center" href={localizePath(`/formats/${slug}/`)} aria-label={t(`${name} radio stations (${stations.length})`)}>
+            <span class="badge border rounded-0 rounded-start bg-light text-light-emphasis fw-semibold">{t(name)}</span>
+            <span class="badge border rounded-0 rounded-end bg-secondary-subtle text-secondary-emphasis">{t(stations.length)}</span>
+        </a>
+        );
+      })}
+    </div>
+  </div>
+  <div class="row g-3">
+    {entries.map(({ name, stations, slug }) => {
+      const topStations = stations.slice(0, 3).map((station) => station.name).join(", ");
+      return (
+        <div class="col-12 col-md-6 col-xl-4">
+          <a href={localizePath(`/formats/${slug}/`)} class="text-decoration-none">
+            <div class="border rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h6 fw-bold text-dark mb-1">{t(name)}</h3>
+                <p class="small text-muted mb-2">{t("{0} station{1}", [stations.length, stations.length === 1 ? "" : "s"])}</p>
+                <p class="small text-muted mb-0">{t("Top: {0}", [topStations || "Explore stations"])}</p>
+              </div>
+              <span class="small text-primary fw-semibold mt-3">{t("View stations →")}</span>
+            </div>
+          </a>
+        </div>
+      );
+    })}
+  </div>
 </Layout>

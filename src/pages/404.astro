@@ -14,7 +14,7 @@ const searchIndex = stations.map(station => ({ name: station.name, url: localize
     <p class="display-1 fw-bold text-primary mb-2">404</p>
     <h1 id="missing-title" class="fw-bold">{t('Page not found')}</h1>
     <p class="lead text-muted">{t('This page may have moved or no longer exists. Find a station below or keep exploring.')}</p>
-    <div class="bg-white border rounded-3 p-4 my-4" id="station-search" data-locales={JSON.stringify(site.locales || ['en'])} data-stations={JSON.stringify(searchIndex)} data-empty={t('No stations found. Try another name.')}>
+    <div class="bg-white border rounded-3 p-4 my-4" id="station-search" data-default-locale={site.defaultLocale || 'en'} data-locales={JSON.stringify(site.locales || ['en'])} data-stations={JSON.stringify(searchIndex)} data-empty={t('No stations found. Try another name.')}>
       <label for="missing-search" class="form-label fw-semibold">{t('Search stations')}</label>
       <input id="missing-search" type="search" class="form-control" placeholder={t('Enter a station name')} autocomplete="off" aria-controls="missing-results" />
       <p id="missing-status" class="text-muted mt-3 mb-0" role="status"></p>
@@ -29,16 +29,19 @@ const searchIndex = stations.map(station => ({ name: station.name, url: localize
   </section>
 </Layout>
 <script>
+  import pl from '../i18n/pl.json';
   import { translate, type Locale } from '../i18n/translate';
   // GitHub Pages serves the root 404.html even for missing localized URLs.
   const locales: Locale[] = JSON.parse(document.querySelector<HTMLElement>('#station-search')!.dataset.locales || '["en"]');
-  const locale = locales.find(value => value !== 'en' && (location.pathname === `/${value}` || location.pathname.startsWith(`/${value}/`))) || 'en';
-  const t = (value: string) => translate(value, locale);
+  const defaultLocale = (document.querySelector<HTMLElement>('#station-search')!.dataset.defaultLocale || 'en') as Locale;
+  const locale = locales.find(value => value !== defaultLocale && (location.pathname === `/${value}` || location.pathname.startsWith(`/${value}/`))) || defaultLocale;
+  const sourceMessages = document.documentElement.lang === 'pl' ? new Map(Object.entries(pl).map(([key, value]) => [value, key])) : new Map<string, string>();
+  const t = (value: string) => translate(sourceMessages.get(value) || value, locale);
   const localizePath = (path: string) => {
     if (!path.startsWith('/') || path.startsWith('//')) return path;
-    const prefix = locales.find(value => value !== 'en' && (path === `/${value}` || path.startsWith(`/${value}/`)));
+    const prefix = locales.find(value => value !== defaultLocale && (path === `/${value}` || path.startsWith(`/${value}/`)));
     const base = prefix ? path.slice(prefix.length + 1) || '/' : path;
-    return locale === 'en' ? base : `/${locale}${base}`;
+    return locale === defaultLocale ? base : `/${locale}${base}`;
   };
   if (document.documentElement.lang !== locale) {
     document.documentElement.lang = locale;
@@ -50,7 +53,7 @@ const searchIndex = stations.map(station => ({ name: station.name, url: localize
       const text = value.trim();
       if (text) node.textContent = value.replace(text, t(text));
     }
-    document.title = document.title.replace('Page not found', t('Page not found'));
+    document.title = `${t('Page not found')} | ${document.title.split(' | ').at(-1)}`;
     document.querySelectorAll<HTMLElement>('[aria-label], [placeholder]').forEach(element => {
       for (const attribute of ['aria-label', 'placeholder']) {
         const value = element.getAttribute(attribute);

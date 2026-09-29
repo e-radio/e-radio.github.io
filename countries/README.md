@@ -613,3 +613,49 @@ Radio Browser imports classify new stations before saving them and include decis
 ```sh
 python3 -m unittest discover -s tests -p test_station_taxonomy.py
 ```
+
+## Polish as the default language
+
+The Poland site uses Polish at its existing root URLs and English under `/en/`:
+
+```sh
+COUNTRY=pl npm run dev
+COUNTRY=pl npm run build
+```
+
+`countries/pl.json` sets `defaultLocale: "pl"` and `locales: ["pl", "en"]`.
+Other country sites continue to use English at the root unless a different
+`defaultLocale` is explicitly configured. The default locale has no URL prefix;
+other supported languages use their language code. Station and category slugs
+stay stable, and station names and stream addresses are not translated.
+
+Polish interface and SEO messages are in `src/i18n/pl.json`. The listening guide
+also has Polish copy in `src/lib/listening-guide.ts`. Polish pages use `lang="pl"`
+and `og:locale="pl_PL"`; English pages use `lang="en"` and `en_US`. Each indexed
+page has its own canonical URL and reciprocal `pl`, `en`, and `x-default` links,
+with `x-default` pointing to Polish. Both versions are included in the sitemap;
+redirects, search results, the 404 page and the demo are excluded. The existing
+Google ownership verification token is retained on both language versions.
+
+Localized redirects and web manifests follow the same language layout. There is
+no automatic redirect based on browser language. Publish the Poland build to
+`radio-internetowe.github.io` to make these changes live.
+
+### Polish region and city cleanup
+
+`python3 tools/clean-polish-locations.py` previews the reviewed Polish location
+normalization; add `--write` to apply it. Rules live in
+`countries/pl.location-names.json`. The cleanup uses 16 canonical English
+voivodeship names (translated by the Polish interface), Polish city spellings,
+and matching `locationNames.en` / `locationNames.pl` values. Known cities in
+`state` move into an empty `city` field and map to their voivodeship. Existing
+explicit region/city conflicts are reported for editorial review. Unknown
+region labels are removed from public grouping, with their original values
+preserved in the applied audit report; missing locations are not guessed.
+
+Station URLs, streams and unrelated fields are preserved. Retired region/city
+URLs, including pagination, redirect to their consolidated location page (or
+the location index if the old group splits). GitHub Pages serves these as static
+HTML redirects. Applied audit: `reports/location-cleanup-pl.json`; preview:
+`reports/location-cleanup-pl-preview.json`. Keep the applied audit from the
+initial migration. Running the preview again should report zero changes.

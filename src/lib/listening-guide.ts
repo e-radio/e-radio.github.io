@@ -1,4 +1,50 @@
 export const guideCopy = {
+ pl: {
+  "label": "Poradniki",
+  "intro": "Praktyczne wskazówki, jak znaleźć radio internetowe i słuchać go na żywo.",
+  "title": "Jak znaleźć swoją ulubioną stację radiową online",
+  "description": "Wybierz stację według muzyki, programu lokalnego i jakości strumienia, a następnie zacznij słuchać.",
+  "author": "Autor: {0}",
+  "published": "Opublikowano",
+  "sections": [
+    [
+      "Zacznij od tego, czego chcesz słuchać",
+      "Najlepsza stacja zależy od chwili: muzyka do pracy, lokalne wiadomości lub ulubiony prowadzący. Wybierz gatunek i posłuchaj kilku stacji. Kategoria w katalogu jest punktem wyjścia, a nie gwarancją, że każda audycja ma taki sam charakter.",
+      "Przeglądaj gatunki",
+      "/genres/"
+    ],
+    [
+      "Znajdź radio ze swojej okolicy",
+      "Katalogi miast i województw pomagają znaleźć stacje związane z danym miejscem. Przydają się także w podróży, gdy chcesz posłuchać radia z domu. Podana lokalizacja nie oznacza, że stacja nadaje lokalne wiadomości przez cały dzień. Posłuchaj programu i sprawdź stronę nadawcy.",
+      "Przeglądaj miasta",
+      "/city/"
+    ],
+    [
+      "Potraktuj popularność jako podpowiedź",
+      "Najlepiej oceniane stacje mogą pomóc odkryć nowe programy. Głosy odzwierciedlają aktywność w danych katalogu, a nie niezależne badanie słuchalności czy ocenę jakości programu. Wypróbuj kilka stacji i wybierz muzykę oraz sposób prowadzenia, które Ci odpowiadają.",
+      "Zobacz najlepiej oceniane stacje",
+      "/top-rated/"
+    ],
+    [
+      "Dopasuj strumień do połączenia",
+      "Niektóre stacje udostępniają kilka strumieni. Wyższa przepływność zwykle zużywa więcej danych mobilnych, ale o jakości dźwięku decydują również kodek i źródło. Jeśli odtwarzanie się zacina, wypróbuj inny dostępny strumień. Stacja z jednym źródłem nie oferuje rzeczywistego wyboru jakości.",
+      "Odkryj strumienie w wysokiej jakości",
+      "/high-quality/"
+    ],
+    [
+      "Sprawdź, co teraz gra",
+      "Strona z utworami na żywo pokazuje dostępne informacje o piosenkach i pozwala włączyć stacje. Niektórzy nadawcy nie publikują tytułów, a aktualizacje mogą się opóźniać. Brak tytułu nie musi oznaczać braku dźwięku. Otwórz stronę stacji, aby skorzystać z odtwarzacza i alternatywnych strumieni.",
+      "Zobacz utwory na żywo",
+      "/live-tracks/"
+    ],
+    [
+      "Wróć do ulubionej stacji",
+      "Wyszukaj nazwę stacji, otwórz jej stronę i dodaj ją do zakładek. Jeśli strumień nie działa, wybierz alternatywny lub odwiedź stronę nadawcy. Dostępność może się zmieniać, dlatego działający dziś strumień nie gwarantuje nieprzerwanej transmisji.",
+      "Wyszukaj stacje",
+      "/search/"
+    ]
+  ]
+},
  en: {
  label: 'Guides', intro: 'Practical help for finding and listening to radio online.',
  title: 'How to find your next favourite radio station',

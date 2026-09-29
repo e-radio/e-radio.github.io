@@ -23,9 +23,9 @@ const {
   title,
   description,
   canonical,
-  ogTitle,
-  ogDescription,
-  ogImage,
+  ogTitle = title,
+  ogDescription = description,
+  ogImage = new URL(site.socialImage, site.siteUrl).href,
   ogType = "website",
   keywords,
   robots = "index, follow",
@@ -39,13 +39,12 @@ function localizeStructuredData(value: any, key = ''): any {
   if (Array.isArray(value)) return value.map(item => localizeStructuredData(item, key));
   if (value && typeof value === 'object') {
     const result = Object.fromEntries(Object.entries(value).map(([k,v]) => [k, localizeStructuredData(v,k)]));
-    if (['WebSite', 'WebPage', 'CollectionPage'].includes(value['@type'])) result.inLanguage = locale;
+    if (['WebSite', 'WebPage', 'CollectionPage', 'Article', 'NewsArticle', 'BlogPosting'].includes(value['@type'])) result.inLanguage = locale;
     return result;
   }
   if (typeof value !== 'string') return value;
   if (['url', '@id', 'item'].includes(key)) return localizePath(value);
   if (['name','description','headline','articleBody','addressRegion','addressLocality','addressCountry'].includes(key)) return t(value);
-  if (key === 'inLanguage') return locale;
   return value;
 }
 
@@ -69,7 +68,7 @@ function localizeStructuredData(value: any, key = ''): any {
 {ogImage && <meta property="og:image" content={ogImage} />}
 {ogImage && <meta property="og:image:alt" content={t(ogTitle) || `${site.siteName} logo`} />}
 <meta property="og:site_name" content={site.siteName} />
-<meta property="og:locale" content={locale === "hr" ? "hr_HR" : locale === "el" ? "el_GR" : locale === "nl" ? "nl_NL" : locale === "sv" ? "sv_SE" : site.socialLocale} />
+<meta property="og:locale" content={locale === "pl" ? "pl_PL" : locale === "en" ? "en_US" : locale === "hr" ? "hr_HR" : locale === "el" ? "el_GR" : locale === "nl" ? "nl_NL" : locale === "sv" ? "sv_SE" : site.socialLocale} />
 
 {/* Twitter Card Tags */}
 <meta name="twitter:card" content="summary_large_image" />

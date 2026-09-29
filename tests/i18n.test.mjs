@@ -5,7 +5,7 @@ import ts from 'typescript';
 // Exercise the same pure translator used by Astro and the player on Node 20+.
 const source = readFileSync(new URL('../src/i18n/translate.ts', import.meta.url), 'utf8')
   .replace("import hr from './hr.json';", `const hr = ${readFileSync(new URL('../src/i18n/hr.json', import.meta.url), 'utf8')};`);
-const localizedSource = source.replace("import el from './el.json';", `const el = ${readFileSync(new URL('../src/i18n/el.json', import.meta.url), 'utf8')};`);
+const localizedSource = source.replace("import pl from './pl.json';", `const pl = ${readFileSync(new URL('../src/i18n/pl.json', import.meta.url), 'utf8')};`).replace("import el from './el.json';", `const el = ${readFileSync(new URL('../src/i18n/el.json', import.meta.url), 'utf8')};`);
 const js = ts.transpileModule(localizedSource.replace("import nl from './nl.json';", `const nl = ${readFileSync(new URL('../src/i18n/nl.json', import.meta.url), 'utf8')};`).replace("import sv from './sv.json';", `const sv = ${readFileSync(new URL('../src/i18n/sv.json', import.meta.url), 'utf8')};`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
 const { translate: t } = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
 test('English text and stream URLs remain unchanged', () => {
@@ -82,4 +82,36 @@ test('Dutch controls, SEO and locations translate without changing station names
  assert.equal(t('Showing stations {0}–{1} of {2}', 'nl', [1,20,50]), 'Zenders 1–20 van 50');
  const dictionary=JSON.parse(readFileSync(new URL('../src/i18n/nl.json', import.meta.url), 'utf8'));
  for(const [key,value] of Object.entries(dictionary)) assert.deepEqual((key.match(/\{\d+\}/g)||[]).sort(),(value.match(/\{\d+\}/g)||[]).sort(),key);
+});
+
+test('Polish controls, station SEO and geography translate while names and URLs remain intact', () => {
+  assert.equal(t('Play', 'pl'), 'Odtwórz');
+  assert.equal(t('Play REVERB RIFF RADIO', 'pl'), 'Odtwórz REVERB RIFF RADIO');
+  assert.equal(t('Warsaw', 'pl'), 'Warszawa');
+  assert.equal(t('Masovian Voivodeship', 'pl'), 'województwo mazowieckie');
+  assert.equal(t('Polish Radio Stations – Radio Internetowe | Radio Internetowe', 'pl'), 'Radio Internetowe – polskie stacje radiowe na żywo');
+  const description = t('Listen to REVERB RIFF RADIO live from Masovian Voivodeship, Poland. Stream rock radio online with reliable playback, station details, and the latest stream quality info.', 'pl');
+  assert.match(description, /REVERB RIFF RADIO/);
+  assert.match(description, /województwo mazowieckie, Polska/);
+  assert.doesNotMatch(description, /Listen|Voivodeship|Poland/);
+  assert.equal(t('http://radio.example/stream', 'pl'), 'http://radio.example/stream');
+  assert.equal(t('{0} stations found', 'pl', [22]), 'Liczba znalezionych stacji: 22');
+});
+
+test('Polish default locale retains root URLs and puts English under /en/', async () => {
+  const source = readFileSync(new URL('../src/i18n/index.ts', import.meta.url), 'utf8')
+    .replace("import { translate, type Locale } from './translate';", "const translate = (value) => value;")
+    .replace("export { translate } from './translate';", '')
+    .replace("import { site } from '../../countries/site.mjs';", "const site = {locales:['pl','en'], defaultLocale:'pl', siteUrl:'https://radio-internetowe.github.io'};");
+  const js = ts.transpileModule(source, {compilerOptions:{module:ts.ModuleKind.ESNext, target:ts.ScriptTarget.ES2022}}).outputText;
+  const {localeFor, languagePath, localeHelpers} = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
+  assert.equal(localeFor(new URL('https://radio-internetowe.github.io/')), 'pl');
+  assert.equal(localeFor(new URL('https://radio-internetowe.github.io/en/stations/test/')), 'en');
+  assert.equal(languagePath('/en/stations/test/?q=radio#play', 'pl'), '/stations/test/?q=radio#play');
+  assert.equal(languagePath('/stations/test/', 'en'), '/en/stations/test/');
+  const en = localeHelpers(new URL('https://radio-internetowe.github.io/en/'));
+  assert.equal(en.localizePath('https://radio-internetowe.github.io/'), 'https://radio-internetowe.github.io/en/');
+  assert.equal(en.localizePath('/en/city/warsaw/'), '/en/city/warsaw/');
+  assert.equal(en.localizePath('/station-icons/pl/example.webp'), '/station-icons/pl/example.webp');
+  assert.equal(en.localizePath('https://radio.example/live.mp3'), 'https://radio.example/live.mp3');
 });

@@ -1,5 +1,5 @@
 ---
-import { localeHelpers, languagePath, multilingual, locales, languageNames } from '../i18n/index';
+import { localeHelpers, defaultLocale, languagePath, multilingual, locales, languageNames } from '../i18n/index';
 const { t, localizePath, locale } = localeHelpers(Astro.url);
 
 import { site, countryText } from "../../countries/site.mjs";
@@ -28,7 +28,6 @@ const {
     
     <!-- Global SEO Tags -->
     {site.twitterHandle && <meta name="twitter:site" content={site.twitterHandle} />}
-    <meta property="og:type" content="website" />
     
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href={localizePath("https://cdn.jsdelivr.net")} />
@@ -47,7 +46,7 @@ const {
     <meta name="apple-mobile-web-app-title" content={site.siteShortName} />
     
     {multilingual && [...locales, 'x-default' as const].map(language => (
-      <link rel="alternate" hreflang={language} href={`${site.siteUrl}${languagePath(Astro.url.pathname, language === 'x-default' ? 'en' : language)}`} />
+      <link rel="alternate" hreflang={language} href={`${site.siteUrl}${languagePath(Astro.url.pathname, language === 'x-default' ? defaultLocale : language)}`} />
     ))}
     <!-- SEO slot -->
     <slot name="seo">
@@ -60,12 +59,13 @@ const {
   <body class={`d-flex flex-column min-vh-100 ${bodyClass}`.trim()}>
     <header class="bg-light border-bottom">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-lg">
+        <div class="container-lg gap-3">
           <a href={localizePath("/")} class="navbar-brand fw-bold d-flex align-items-center gap-2 me-0">
             <img src={site.logo} width="32" height="32" alt={t(`${site.siteName} app icon`)} />
             <span>{t(site.siteName)}</span>
           </a>
-          <a href={localizePath('/search/')} class="btn btn-outline-primary ms-auto d-inline-flex align-items-center gap-2">
+          <a href={localizePath('/formats/')} class="nav-link ms-auto" aria-current={Astro.url.pathname.replace(/\/$/, '') === localizePath('/formats/')!.replace(/\/$/, '') ? 'page' : undefined}>{t('Radio formats')}</a>
+          <a href={localizePath('/search/')} class="btn btn-outline-primary d-inline-flex align-items-center gap-2">
             <i class="bi bi-search" aria-hidden="true"></i><span>{t('Search')}</span>
           </a>
           {multilingual && <nav aria-label={t('Language selection')} class="d-flex gap-3 ms-auto">

@@ -394,5 +394,10 @@
   "sports": "Sport",
   "top 40": "Top 40",
   "variety": "Raznovrstan program",
-  "workout": "Glazba za vježbanje"
+  "workout": "Glazba za vježbanje",
+  "Formats arranged alphabetically; stations in each format sorted by votes.": "Formati su poredani abecedno, a postaje u svakom formatu prema broju glasova.",
+  "Showing {0} formats across {1} stations.": "Prikazano je {0} formata s ukupno {1} postaja.",
+  "Browse formats": "Pregledaj formate",
+  "← Back to formats": "← Povratak na formate",
+  "Format pagination": "Stranice formata"
 }

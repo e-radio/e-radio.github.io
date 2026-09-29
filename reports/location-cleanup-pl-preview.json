@@ -1,0 +1,43 @@
+{
+  "changed": 0,
+  "regions": [
+    "Greater Poland Voivodeship",
+    "Holy Cross Voivodeship",
+    "Kuyavian-Pomeranian Voivodeship",
+    "Lesser Poland Voivodeship",
+    "Lower Silesian Voivodeship",
+    "Lublin Voivodeship",
+    "Lubusz Voivodeship",
+    "Masovian Voivodeship",
+    "Opole Voivodeship",
+    "Podlachia Voivodeship",
+    "Pomeranian Voivodeship",
+    "Silesian Voivodeship",
+    "Subcarpathian Voivodeship",
+    "Warmian-Masurian Voivodeship",
+    "West Pomeranian Voivodeship",
+    "Łódź Voivodeship"
+  ],
+  "review": [
+    {
+      "stationuuid": "60921fad-ac07-4efa-911e-726aae55cd33",
+      "reason": "City and region conflict; retained explicit region",
+      "state": "Lower Silesian Voivodeship",
+      "city": "Gliwice"
+    },
+    {
+      "stationuuid": "05ee93a8-e030-40a8-89a8-713890672ee5",
+      "reason": "City and region conflict; retained explicit region",
+      "state": "Lubusz Voivodeship",
+      "city": "Łódź"
+    },
+    {
+      "stationuuid": "490a2fb3-e9ef-4ec4-a44a-4348a6a3cd8c",
+      "reason": "City and region conflict; retained explicit region",
+      "state": "Lesser Poland Voivodeship",
+      "city": "Warszawa"
+    }
+  ],
+  "changes": [],
+  "redirects": {}
+}
