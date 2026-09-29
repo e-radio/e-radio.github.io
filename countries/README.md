@@ -659,3 +659,14 @@ the location index if the old group splits). GitHub Pages serves these as static
 HTML redirects. Applied audit: `reports/location-cleanup-pl.json`; preview:
 `reports/location-cleanup-pl-preview.json`. Keep the applied audit from the
 initial migration. Running the preview again should report zero changes.
+
+### Remove unused images
+
+Run `python3 tools/clean-unused-images.py` to preview unused images across all
+country datasets and shared site content. Review
+`reports/unused-images-preview.json`, then add `--write` to delete them. The
+applied list is saved to `reports/unused-images.json`. Historical import reports
+are excluded from live references; dynamically selected guide covers are kept.
+After future station merges, remove icons made unused by the merge only after
+checking references across all countries. Update the cleanup tool's dynamic
+asset list if new image paths are assembled at runtime.

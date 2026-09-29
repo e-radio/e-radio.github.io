@@ -86,9 +86,11 @@
     "state": "Silesian Voivodeship",
     "city": "Gliwice",
     "stream_url": "https://ch.cdn.eurozet.pl/chi-net.mp3",
-    "homepage": "https://ch02.cdn.eurozet.pl/chi-net.mp3?redirected=02",
+    "homepage": "https://www.chillizet.pl/",
     "favicon": "/station-icons/pl/radio-zet-chilli-poland-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "chillout"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -587,117 +589,20 @@
     "name": "Anty Radio",
     "state": "Masovian Voivodeship",
     "city": "Warszawa",
-    "stream_url": "https://an.cdn.eurozet.pl/ant-web.mp3?t=1713710188361",
+    "stream_url": "https://an.cdn.eurozet.pl/ant-web.mp3",
     "homepage": "https://www.antyradio.pl/",
     "favicon": "/station-icons/pl/anty-radio.webp",
     "genres": [
-      "rock"
+      "rock",
+      "classic rock",
+      "metal"
     ],
-    "language": null,
+    "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
     "clickcount": 70,
     "lastcheckok": 1,
     "votes": 1798,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    }
-  },
-  {
-    "slug": "antyradio",
-    "stationuuid": "f4dfff67-876a-4f2d-b49a-7bb643f4665d",
-    "name": "Antyradio",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://n-4-2.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx?audio=5",
-    "homepage": "https://www.antyradio.pl/",
-    "favicon": "/station-icons/pl/antyradio.webp",
-    "genres": [
-      "classic rock",
-      "metal",
-      "rock"
-    ],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 10,
-    "lastcheckok": 1,
-    "votes": 158,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    }
-  },
-  {
-    "slug": "antyradio-mazowieckie",
-    "stationuuid": "0e5fd15c-6bfd-407c-b6e9-b54262dba6fb",
-    "name": "Antyradio",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://n-4-4.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx",
-    "homepage": "https://antyradio.pl/",
-    "favicon": "/station-icons/pl/antyradio-mazowieckie.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "AAC",
-    "clickcount": 17,
-    "lastcheckok": 1,
-    "votes": 6287,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    }
-  },
-  {
-    "slug": "antyradio-7d58ea51",
-    "stationuuid": "7d58ea51-4e6c-496e-bd77-3404e1503bb7",
-    "name": "Antyradio",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://an02.cdn.eurozet.pl/ant-web.mp3",
-    "homepage": "https://www.antyradio.pl/",
-    "favicon": "/station-icons/pl/antyradio-7d58ea51.webp",
-    "genres": [
-      "rock"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 0,
-    "votes": 26,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 52.130301654384176,
@@ -711,7 +616,43 @@
         "city": "Warszawa",
         "state": "województwo mazowieckie"
       }
-    }
+    },
+    "aliases": [
+      "antyradio",
+      "antyradio-mazowieckie",
+      "antyradio-7d58ea51"
+    ],
+    "alternate_stationuuids": [
+      "f4dfff67-876a-4f2d-b49a-7bb643f4665d",
+      "0e5fd15c-6bfd-407c-b6e9-b54262dba6fb",
+      "7d58ea51-4e6c-496e-bd77-3404e1503bb7"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-redcdn",
+        "label": "Alternative",
+        "url": "https://n-4-2.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx?audio=5",
+        "bitrate": 128,
+        "codec": "MP3",
+        "lastcheckok": 1
+      },
+      {
+        "id": "aac-128-redcdn",
+        "label": "Alternative",
+        "url": "https://n-4-4.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx",
+        "bitrate": 128,
+        "codec": "AAC",
+        "lastcheckok": 1
+      },
+      {
+        "id": "mp3-128-an02",
+        "label": "Alternative",
+        "url": "https://an02.cdn.eurozet.pl/ant-web.mp3",
+        "bitrate": 128,
+        "codec": "MP3",
+        "lastcheckok": 0
+      }
+    ]
   },
   {
     "slug": "antyradio-katowice-upper-silesia",
@@ -723,7 +664,10 @@
     "homepage": "https://www.antyradio.pl/",
     "favicon": "/station-icons/pl/antyradio-katowice-upper-silesia.webp",
     "genres": [
-      "rock"
+      "rock",
+      "classic rock",
+      "hard rock",
+      "metal"
     ],
     "language": "polish",
     "bitrate": 128,
@@ -750,10 +694,10 @@
     "slug": "antyradio-classic-rock-poland",
     "stationuuid": "4d7db4fe-e764-4b66-93f1-5a78ff74f7dc",
     "name": "Antyradio Classic Rock",
-    "state": null,
-    "city": null,
-    "stream_url": "https://an01.cdn.eurozet.pl/ANTCLA.mp3?redirected=01",
-    "homepage": "https://an01.cdn.eurozet.pl/ANTCLA.mp3?redirected=01",
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
+    "stream_url": "https://an01.cdn.eurozet.pl/ANTCLA.mp3",
+    "homepage": "https://player.antyradio.pl/",
     "favicon": "/station-icons/pl/antyradio-classic-rock-poland-placeholder.webp",
     "genres": [
       "classic rock",
@@ -774,10 +718,10 @@
     "slug": "antyradio-covers",
     "stationuuid": "1979432f-3c8c-41b2-a093-403228715160",
     "name": "Antyradio Covers",
-    "state": null,
-    "city": null,
-    "stream_url": "http://an06.cdn.eurozet.pl/ANTCOV.mp3?redirected=06",
-    "homepage": "https://player.antyradio.pl/Kanaly-muzyczne/Antyradio-Covers",
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
+    "stream_url": "http://an06.cdn.eurozet.pl/ANTCOV.mp3",
+    "homepage": "https://player.antyradio.pl/",
     "favicon": "/station-icons/pl/antyradio-covers-placeholder.webp",
     "genres": [
       "rock"
@@ -806,7 +750,8 @@
     "homepage": "https://player.antyradio.pl/Kanaly-muzyczne/Antyradio-Greatest",
     "favicon": "/station-icons/pl/antyradio-greatest.webp",
     "genres": [
-      "rock"
+      "rock",
+      "classic rock"
     ],
     "language": "polish",
     "bitrate": 128,
@@ -1006,7 +951,10 @@
     "stream_url": "https://an05.cdn.eurozet.pl/ANTUNP.mp3",
     "homepage": "https://player.antyradio.pl/Kanaly-muzyczne/Antyradio-Unplugged",
     "favicon": "/station-icons/pl/antyradio-unplugged.webp",
-    "genres": [],
+    "genres": [
+      "rock",
+      "pop"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -8665,7 +8613,9 @@
     "homepage": "https://onlineradiobox.com/pl/radio100/",
     "favicon": "/station-icons/pl/radio-100-wielkopolskie-22ffc3f2.webp",
     "genres": [
-      "electronic"
+      "electronic",
+      "dance",
+      "pop"
     ],
     "language": "english",
     "bitrate": 192,
@@ -8723,8 +8673,8 @@
     "slug": "radio-357",
     "stationuuid": "d377fdb9-9136-47de-a1f4-6b02a1bc7f72",
     "name": "Radio 357",
-    "state": null,
-    "city": null,
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
     "stream_url": "https://n-11-21.dcs.redcdn.pl/sc/o2/radio357/live/radio357_pr.livx?preroll=0",
     "homepage": "https://radio357.pl/",
     "favicon": "/station-icons/pl/radio-357.webp",
@@ -8741,28 +8691,22 @@
     "geo_long": null,
     "formats": [
       "adult contemporary"
+    ],
+    "aliases": [
+      "radio-357-4ef724fd"
+    ],
+    "alternate_stationuuids": [
+      "4ef724fd-3151-49d5-93ef-9be908f059bd"
+    ],
+    "streams": [
+      {
+        "id": "mp3-195",
+        "label": "Alternative",
+        "url": "https://stream.radio357.pl/",
+        "bitrate": 195,
+        "codec": "MP3"
+      }
     ]
-  },
-  {
-    "slug": "radio-357-4ef724fd",
-    "stationuuid": "4ef724fd-3151-49d5-93ef-9be908f059bd",
-    "name": "Radio 357",
-    "state": null,
-    "city": null,
-    "stream_url": "https://stream.radio357.pl/",
-    "homepage": "https://radio357.pl/",
-    "favicon": "/station-icons/pl/radio-357-4ef724fd.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 195,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 37,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
   },
   {
     "slug": "radio-40plus-forty-plus",
@@ -14260,28 +14204,22 @@
     },
     "formats": [
       "catholic"
+    ],
+    "aliases": [
+      "radio-maryja-52768156"
+    ],
+    "alternate_stationuuids": [
+      "52768156-3f43-11e8-b74d-52543be04c81"
+    ],
+    "streams": [
+      {
+        "id": "aac-64-alternative",
+        "label": "Alternative",
+        "url": "http://198.50.238.178:5946/stream",
+        "bitrate": 64,
+        "codec": "AAC+"
+      }
     ]
-  },
-  {
-    "slug": "radio-maryja-52768156",
-    "stationuuid": "52768156-3f43-11e8-b74d-52543be04c81",
-    "name": "Radio Maryja",
-    "state": null,
-    "city": null,
-    "stream_url": "http://198.50.238.178:5946/stream",
-    "homepage": "http://www.radiomaryja.pl/",
-    "favicon": "/station-icons/pl/radio-maryja-52768156.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 16,
-    "lastcheckok": 1,
-    "votes": 5503,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
   },
   {
     "slug": "radio-max-hit-polska",
@@ -14784,11 +14722,13 @@
     "name": "Radio Mrągowo",
     "state": "Warmian-Masurian Voivodeship",
     "city": "Mrągowo",
-    "stream_url": "https://stream.radiomragowo.pl/listen/radio_mragowo/radio.mp3?t=1773333890924",
+    "stream_url": "https://stream.radiomragowo.pl/listen/radio_mragowo/radio.mp3",
     "homepage": "https://radiomragowo.pl/",
     "favicon": "/station-icons/pl/radio-mr-gowo-warmi-sko-mazurskie.webp",
     "genres": [
-      "country"
+      "country",
+      "disco",
+      "jazz"
     ],
     "language": "polish",
     "bitrate": 192,
@@ -14813,45 +14753,24 @@
       }
     },
     "formats": [
-      "local radio"
-    ]
-  },
-  {
-    "slug": "radio-mr-gowo",
-    "stationuuid": "92d1aaeb-707e-4d08-afc9-3c9732bf151e",
-    "name": "Radio Mrągowo",
-    "state": "Warmian-Masurian Voivodeship",
-    "city": "Mrągowo",
-    "stream_url": "https://a1.asurahosting.com/listen/radio_mr%C4%85gowo/radio.mp3",
-    "homepage": "https://radiomragowo.pl/",
-    "favicon": "/station-icons/pl/radio-mr-gowo.webp",
-    "genres": [
-      "country",
-      "disco",
-      "jazz"
-    ],
-    "language": "polish",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 3,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 53.87039973196291,
-    "geo_long": 21.304131924322707,
-    "locationNames": {
-      "en": {
-        "city": "Mrągowo",
-        "state": "Warmian-Masurian Voivodeship"
-      },
-      "pl": {
-        "city": "Mrągowo",
-        "state": "województwo warmińsko-mazurskie"
-      }
-    },
-    "formats": [
+      "local radio",
       "hits"
+    ],
+    "aliases": [
+      "radio-mr-gowo"
+    ],
+    "alternate_stationuuids": [
+      "92d1aaeb-707e-4d08-afc9-3c9732bf151e"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192-asurahosting",
+        "label": "Alternative",
+        "url": "https://a1.asurahosting.com/listen/radio_mr%C4%85gowo/radio.mp3",
+        "bitrate": 192,
+        "codec": "MP3",
+        "lastcheckok": 0
+      }
     ]
   },
   {
@@ -15045,7 +14964,7 @@
     "name": "Radio Niepokalanów",
     "state": "Masovian Voivodeship",
     "city": "Teresin",
-    "stream_url": "http://88-199-169-10.tktelekom.pl:7600/rn.mp3",
+    "stream_url": "https://stream.rcs.revma.com/p1ty3x8nh72vv",
     "homepage": "https://radioniepokalanow.pl/",
     "favicon": "/station-icons/pl/radio-niepokalan-w-mazowieckie.webp",
     "genres": [
@@ -15074,44 +14993,24 @@
     "formats": [
       "christian",
       "local news",
-      "religious"
-    ]
-  },
-  {
-    "slug": "radio-niepokalan-w-102-7fm-mazowieckie",
-    "stationuuid": "87dff316-ad44-460a-81c1-d85bdd6ca241",
-    "name": "Radio Niepokalanów 102.7FM",
-    "state": "Masovian Voivodeship",
-    "city": "Paprotnia",
-    "stream_url": "http://88-199-169-10.tktelekom.pl:8000/",
-    "homepage": "https://radioniepokalanow.pl/",
-    "favicon": "/station-icons/pl/radio-niepokalan-w-102-7fm-mazowieckie.webp",
-    "genres": [
-      "gospel"
+      "religious",
+      "catholic"
     ],
-    "language": "polish",
-    "bitrate": 64,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 14,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 52.20533986613316,
-    "geo_long": 20.415707859742636,
-    "locationNames": {
-      "en": {
-        "city": "Paprotnia",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Paprotnia",
-        "state": "województwo mazowieckie"
+    "aliases": [
+      "radio-niepokalan-w-102-7fm-mazowieckie"
+    ],
+    "alternate_stationuuids": [
+      "87dff316-ad44-460a-81c1-d85bdd6ca241"
+    ],
+    "streams": [
+      {
+        "id": "mp3-64-http",
+        "label": "Alternative",
+        "url": "http://88-199-169-10.tktelekom.pl:8000/",
+        "bitrate": 64,
+        "codec": "MP3",
+        "lastcheckok": 0
       }
-    },
-    "formats": [
-      "catholic",
-      "local news"
     ]
   },
   {
@@ -15382,40 +15281,7 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "variety"
-    ],
-    "locationNames": {
-      "en": {
-        "city": "Opole",
-        "state": "Opole Voivodeship"
-      },
-      "pl": {
-        "city": "Opole",
-        "state": "województwo opolskie"
-      }
-    }
-  },
-  {
-    "slug": "radio-opole-1-96-kbps",
-    "stationuuid": "55b0217d-e799-4e6b-a313-9db5f522c228",
-    "name": "Radio Opole 1 96 kbps",
-    "state": "Opole Voivodeship",
-    "city": "Opole",
-    "stream_url": "https://audio.radio.opole.pl/ro1aac",
-    "homepage": "https://radio.opole.pl/",
-    "favicon": "/station-icons/pl/radio-opole-1-96-kbps.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 96,
-    "codec": "AAC",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 20,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
+      "variety",
       "news"
     ],
     "locationNames": {
@@ -15427,7 +15293,22 @@
         "city": "Opole",
         "state": "województwo opolskie"
       }
-    }
+    },
+    "aliases": [
+      "radio-opole-1-96-kbps"
+    ],
+    "alternate_stationuuids": [
+      "55b0217d-e799-4e6b-a313-9db5f522c228"
+    ],
+    "streams": [
+      {
+        "id": "aac-96-https",
+        "label": "Alternative",
+        "url": "https://audio.radio.opole.pl/ro1aac",
+        "bitrate": 96,
+        "codec": "AAC"
+      }
+    ]
   },
   {
     "slug": "radio-opole-2",
@@ -15461,41 +15342,22 @@
         "city": "Opole",
         "state": "województwo opolskie"
       }
-    }
-  },
-  {
-    "slug": "radio-opole-2-d1f966b9",
-    "stationuuid": "d1f966b9-9ace-11e9-a787-52543be04c81",
-    "name": "Radio Opole 2",
-    "state": "Opole Voivodeship",
-    "city": "Opole",
-    "stream_url": "http://193.47.151.4:8060/1",
-    "homepage": "http://radio.opole.pl/19,0,radio-opole-2-dab",
-    "favicon": "/station-icons/pl/radio-opole-2-d1f966b9.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 96,
-    "codec": "AAC",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 52,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "genre_review": [
-      "opole dab"
+    },
+    "aliases": [
+      "radio-opole-2-d1f966b9"
     ],
-    "locationNames": {
-      "en": {
-        "city": "Opole",
-        "state": "Opole Voivodeship"
-      },
-      "pl": {
-        "city": "Opole",
-        "state": "województwo opolskie"
+    "alternate_stationuuids": [
+      "d1f966b9-9ace-11e9-a787-52543be04c81"
+    ],
+    "streams": [
+      {
+        "id": "aac-96",
+        "label": "Alternative",
+        "url": "http://193.47.151.4:8060/1",
+        "bitrate": 96,
+        "codec": "AAC"
       }
-    }
+    ]
   },
   {
     "slug": "radio-orbit",
@@ -15753,7 +15615,7 @@
     "name": "Radio Pasja",
     "state": null,
     "city": null,
-    "stream_url": "http://91.232.4.33:8049/",
+    "stream_url": "http://91.232.4.33:8049/;",
     "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja.webp",
     "genres": [
@@ -15779,7 +15641,7 @@
     "name": "Radio Pasja - Chillout",
     "state": null,
     "city": null,
-    "stream_url": "http://91.232.4.33:8108/",
+    "stream_url": "http://91.232.4.33:8108/;",
     "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja-chillout.webp",
     "genres": [
@@ -15823,7 +15685,7 @@
     "name": "Radio Pasja - Dance",
     "state": null,
     "city": null,
-    "stream_url": "http://91.232.4.33:9466/",
+    "stream_url": "http://91.232.4.33:9466/;",
     "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja-dance.webp",
     "genres": [
@@ -15867,7 +15729,7 @@
     "name": "Radio Pasja - Klubowa",
     "state": null,
     "city": null,
-    "stream_url": "http://91.232.4.33:9460/",
+    "stream_url": "http://91.232.4.33:9460/;",
     "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja-klubowa-placeholder.webp",
     "genres": [
@@ -15911,7 +15773,7 @@
     "name": "Radio Pasja - Pop",
     "state": null,
     "city": null,
-    "stream_url": "http://91.232.4.33:8084/",
+    "stream_url": "http://91.232.4.33:8084/;",
     "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja-pop.webp",
     "genres": [
@@ -15955,7 +15817,7 @@
     "name": "Radio Pasja - Relaks",
     "state": null,
     "city": null,
-    "stream_url": "http://91.232.4.33:8102/",
+    "stream_url": "http://91.232.4.33:8102/;",
     "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja-relaks.webp",
     "genres": [],
@@ -16004,7 +15866,7 @@
     "state": null,
     "city": null,
     "stream_url": "http://91.232.4.33:8049/stream2",
-    "homepage": null,
+    "homepage": "http://www.radiopasja.pl/",
     "favicon": "/station-icons/pl/radio-pasja-128kb-s-placeholder.webp",
     "genres": [
       "pop"
@@ -17372,7 +17234,7 @@
     "city": "Kraków",
     "stream_url": "https://rs201-krk.rmfstream.pl/rmf_classic",
     "homepage": "https://www.rmfclassic.pl/",
-    "favicon": "/station-icons/pl/radio-rmf-classic-krakow.webp",
+    "favicon": "/station-icons/pl/rmf-classic-krakow.webp",
     "genres": [
       "classical"
     ],
@@ -17384,8 +17246,8 @@
     "votes": 160,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
+    "geo_lat": 50.06602632012359,
+    "geo_long": 19.927984178066257,
     "locationNames": {
       "en": {
         "city": "Krakow",
@@ -17395,7 +17257,49 @@
         "city": "Kraków",
         "state": "województwo małopolskie"
       }
-    }
+    },
+    "aliases": [
+      "rmf-classic",
+      "rmf-classic-6c800ca2",
+      "rmf-classic-krakow",
+      "rmfa-classic"
+    ],
+    "alternate_stationuuids": [
+      "fbdd382c-f068-4337-8039-100448da9240",
+      "6c800ca2-7e1e-4020-a026-57f55de88e74",
+      "960dc513-0601-11e8-ae97-52543be04c81",
+      "84ab82ac-5022-4644-9040-c29bba74595a"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-https",
+        "label": "Alternative",
+        "url": "https://rs9-krk2.rmfstream.pl/rmf_classic",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-128-http",
+        "label": "Alternative",
+        "url": "http://rmfstream1.interia.pl:8000/rmf_classic",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "aac-48",
+        "label": "Alternative",
+        "url": "http://31.192.216.8/RMFCLASSIC48",
+        "bitrate": 48,
+        "codec": "AAC+"
+      },
+      {
+        "id": "mp3-128-ip",
+        "label": "Alternative",
+        "url": "http://195.150.20.242:8000/rmf_classic",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-rmf-fm",
@@ -17600,45 +17504,6 @@
     "formats": [
       "news",
       "talk"
-    ]
-  },
-  {
-    "slug": "radio-rmf24-pl-2a526572",
-    "stationuuid": "2a526572-4230-4b22-9e47-79383973ee0e",
-    "name": "Radio RMF24.pl",
-    "state": "Lesser Poland Voivodeship",
-    "city": "Kraków",
-    "stream_url": "https://rs202-krk-cyfronet.rmfstream.pl/RMF24?aw_0_req.gdpr=false&aw_0_req.userConsentV2=&aw_0_1st.playerid=RMF_Player_JS_P&aw_0_1st.rmf_disable_preroll=true",
-    "homepage": "https://radio.rmf24.pl/",
-    "favicon": "/station-icons/pl/radio-rmf24-pl-2a526572.webp",
-    "genres": [
-      "classic rock",
-      "pop",
-      "pop rock",
-      "rock"
-    ],
-    "language": "polish",
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 12,
-    "lastcheckok": 1,
-    "votes": 4943,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Krakow",
-        "state": "Lesser Poland Voivodeship"
-      },
-      "pl": {
-        "city": "Kraków",
-        "state": "województwo małopolskie"
-      }
-    },
-    "formats": [
-      "news"
     ]
   },
   {
@@ -18080,73 +17945,17 @@
     }
   },
   {
-    "slug": "radio-silesia-zabrze",
-    "stationuuid": "9610d497-0601-11e8-ae97-52543be04c81",
-    "name": "Radio Silesia",
-    "state": "Silesian Voivodeship",
-    "city": "Zabrze",
-    "stream_url": "http://s1.slotex.pl:7926/",
-    "homepage": "http://www.silesia.fm/",
-    "favicon": "/station-icons/pl/radio-silesia-zabrze.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 10,
-    "lastcheckok": 1,
-    "votes": 5072,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://s1.slotex.pl:7926/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://s1.slotex.pl:7926/played?sid=1&type=json",
-    "formats": [
-      "catholic"
-    ],
-    "locationNames": {
-      "en": {
-        "city": "Zabrze",
-        "state": "Silesian Voivodeship"
-      },
-      "pl": {
-        "city": "Zabrze",
-        "state": "województwo śląskie"
-      }
-    }
-  },
-  {
-    "slug": "radio-silesia-96-2-fm",
-    "stationuuid": "46e1bdd1-f09e-4348-8471-cd461ebb213c",
-    "name": "Radio Silesia 96.2 FM",
-    "state": null,
-    "city": null,
-    "stream_url": "https://s1.slotex.pl/shoutcast/7926/stream?sid=1",
-    "homepage": "https://silesia.fm/",
-    "favicon": "/station-icons/pl/radio-silesia-96-2-fm.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 104,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "radio-silesia-fm-warsaw",
     "stationuuid": "caa47735-bdac-404d-968c-cafe21846415",
     "name": "Radio Silesia FM",
     "state": "Masovian Voivodeship",
     "city": "Warszawa",
-    "stream_url": "http://streaming.tvs.pl:8010/",
-    "homepage": "http://silesia.fm/",
+    "stream_url": "https://s1.slotex.pl:7926/stream/1/?sid=1",
+    "homepage": "https://silesia.fm/",
     "favicon": "/station-icons/pl/radio-silesia-fm-warsaw.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -18166,7 +17975,38 @@
         "city": "Warszawa",
         "state": "województwo mazowieckie"
       }
-    }
+    },
+    "aliases": [
+      "radio-silesia-zabrze",
+      "radio-silesia-96-2-fm"
+    ],
+    "alternate_stationuuids": [
+      "9610d497-0601-11e8-ae97-52543be04c81",
+      "46e1bdd1-f09e-4348-8471-cd461ebb213c"
+    ],
+    "formats": [
+      "culture",
+      "news"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320-http",
+        "label": "Alternative",
+        "url": "http://s1.slotex.pl:7926/;",
+        "bitrate": 320,
+        "codec": "MP3",
+        "nowplaying_url": "http://s1.slotex.pl:7926/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://s1.slotex.pl:7926/played?sid=1&type=json"
+      },
+      {
+        "id": "mp3-320-https",
+        "label": "Alternative",
+        "url": "https://s1.slotex.pl/shoutcast/7926/stream?sid=1",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-slask-upper-silesia",
@@ -18595,8 +18435,8 @@
     "state": "Greater Poland Voivodeship",
     "city": "Kępno",
     "stream_url": "http://stream2.nadaje.com:8012/",
-    "homepage": "http://www.radiosud.pl/",
-    "favicon": "/station-icons/pl/radio-sud-kepno.webp",
+    "homepage": "https://www.radiosud.pl/",
+    "favicon": "/station-icons/pl/radio-sud.webp",
     "genres": [
       "pop"
     ],
@@ -18619,7 +18459,16 @@
         "city": "Kępno",
         "state": "województwo wielkopolskie"
       }
-    }
+    },
+    "streams": [
+      {
+        "id": "mp3-128-https",
+        "label": "Alternative",
+        "url": "https://stream2.nadaje.com:8013/;",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-super-express",
@@ -19221,37 +19070,6 @@
     ]
   },
   {
-    "slug": "radio-warszawa-106-2",
-    "stationuuid": "960b82ce-0601-11e8-ae97-52543be04c81",
-    "name": "Radio Warszawa 106.2",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "http://streaming01.technologicznie.net:8765/radio_warszawa.mp3",
-    "homepage": "http://www.radiowarszawa.com.pl/",
-    "favicon": "/station-icons/pl/radio-warszawa-106-2.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 256,
-    "codec": "MP3",
-    "clickcount": 5,
-    "lastcheckok": 1,
-    "votes": 851,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    }
-  },
-  {
     "slug": "radio-warszawa-106-2-fm-mazowieckie",
     "stationuuid": "d36486e5-9377-41a3-bc2a-96d787ce0e2c",
     "name": "Radio Warszawa 106.2 FM",
@@ -19282,7 +19100,24 @@
       }
     },
     "formats": [
-      "catholic"
+      "catholic",
+      "talk",
+      "christian"
+    ],
+    "aliases": [
+      "radio-warszawa-106-2"
+    ],
+    "alternate_stationuuids": [
+      "960b82ce-0601-11e8-ae97-52543be04c81"
+    ],
+    "streams": [
+      {
+        "id": "mp3-256-http",
+        "label": "Alternative",
+        "url": "http://streaming01.technologicznie.net:8765/radio_warszawa.mp3",
+        "bitrate": 256,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -19363,43 +19198,46 @@
     "slug": "radio-wnet",
     "stationuuid": "9610ee68-0601-11e8-ae97-52543be04c81",
     "name": "Radio Wnet",
-    "state": null,
-    "city": null,
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
     "stream_url": "http://audio.radiownet.pl:8000/stream",
-    "homepage": "http://www.radiownet.pl/",
+    "homepage": "https://wnet.fm/",
     "favicon": "/station-icons/pl/radio-wnet.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
     "clickcount": 30,
     "lastcheckok": 1,
-    "votes": 7236,
+    "votes": 8536,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "radio-wnet-a0c54e9b",
-    "stationuuid": "a0c54e9b-0131-4ee6-9f2a-eff2ba552713",
-    "name": "Radio WNET",
-    "state": null,
-    "city": null,
-    "stream_url": "https://media.wnet.fm/wnet.fm",
-    "homepage": "https://wnet.fm/",
-    "favicon": "/station-icons/pl/radio-wnet-a0c54e9b.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 160,
-    "codec": "MP3",
-    "clickcount": 8,
-    "lastcheckok": 1,
-    "votes": 1334,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "aliases": [
+      "radio-wnet-a0c54e9b"
+    ],
+    "alternate_stationuuids": [
+      "a0c54e9b-0131-4ee6-9f2a-eff2ba552713"
+    ],
+    "streams": [
+      {
+        "id": "mp3-160-https",
+        "label": "Alternative",
+        "url": "https://media.wnet.fm/wnet.fm",
+        "bitrate": 160,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-192-https",
+        "label": "Alternative",
+        "url": "https://player.wnet.fm/listen/radio_wnet/wnet.mp3",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-wom-world-of-music",
@@ -19615,39 +19453,21 @@
     "slug": "radio-zet",
     "stationuuid": "621f9bd0-b91e-414d-b72b-7b8f2374183f",
     "name": "Radio ZET",
-    "state": null,
-    "city": null,
-    "stream_url": "https://r.dcs.redcdn.pl/sc/o2/Eurozet/live/audio.livx?audio=5",
-    "homepage": null,
-    "favicon": "/station-icons/pl/radio-zet-placeholder.webp",
-    "genres": [],
-    "language": null,
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
+    "stream_url": "https://r.dcs.redcdn.pl/sc/o2/Eurozet/live/audio.livx",
+    "homepage": "https://www.radiozet.pl/",
+    "favicon": "/station-icons/pl/radio-zet.webp",
+    "genres": [
+      "pop",
+      "soft rock"
+    ],
+    "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
     "clickcount": 10,
     "lastcheckok": 1,
-    "votes": 10202,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "radio-zet-1c142460",
-    "stationuuid": "1c142460-76ad-4100-a9cb-a76eff76d821",
-    "name": "Radio ZET",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://hub.radiostream.pl/stream.pls?radio=8400&type=none&dist=zet&app=none&coding=aac&redirect=true",
-    "homepage": "https://www.radiozet.pl/",
-    "favicon": "/station-icons/pl/radio-zet-1c142460.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 18,
-    "lastcheckok": 1,
-    "votes": 455,
+    "votes": 11202,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
@@ -19662,53 +19482,67 @@
         "state": "województwo mazowieckie"
       }
     },
-    "formats": [
-      "adult contemporary"
-    ]
-  },
-  {
-    "slug": "radio-zet-4a9151f9",
-    "stationuuid": "4a9151f9-835c-4c58-bda3-9084ed6addbc",
-    "name": "Radio ZET",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://zt01.cdn.eurozet.pl/zet-net.mp3?redirected=01",
-    "homepage": "https://www.radiozet.pl/",
-    "favicon": "/station-icons/pl/radio-zet-4a9151f9.webp",
-    "genres": [
-      "soft rock"
+    "aliases": [
+      "radio-zet-1c142460",
+      "radio-zet-4a9151f9",
+      "radio-zet-128-kbps-warszawa",
+      "radio-zet-128-warszawa"
     ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 10,
-    "lastcheckok": 1,
-    "votes": 230,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
+    "alternate_stationuuids": [
+      "1c142460-76ad-4100-a9cb-a76eff76d821",
+      "4a9151f9-835c-4c58-bda3-9084ed6addbc",
+      "c4bd188b-88b9-4209-b8f1-e57afbbb4a57",
+      "4d06407d-0e1c-4407-a6e8-b0c81c3d2659"
+    ],
+    "formats": [
+      "adult contemporary",
+      "90s",
+      "80s",
+      "hits"
+    ],
+    "streams": [
+      {
+        "id": "aac-64",
+        "label": "Alternative",
+        "url": "https://hub.radiostream.pl/stream.pls?radio=8400&type=none&dist=zet&app=none&coding=aac&redirect=true",
+        "bitrate": 64,
+        "codec": "AAC+"
       },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
+      {
+        "id": "mp3-128-alternative",
+        "label": "Alternative",
+        "url": "https://zt01.cdn.eurozet.pl/zet-net.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-128-zt02",
+        "label": "Alternative",
+        "url": "https://zt02.cdn.eurozet.pl/zet-old.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "mp3-128-redcdn",
+        "label": "Alternative",
+        "url": "https://n-11-21.dcs.redcdn.pl/sc/o2/Eurozet/live/audio.livx",
+        "bitrate": 128,
+        "codec": "MP3"
       }
-    }
+    ]
   },
   {
     "slug": "radio-zet-2000",
     "stationuuid": "464d7aaf-cd4d-412e-bc43-691190405d54",
     "name": "Radio ZET - 2000",
-    "state": null,
-    "city": null,
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
     "stream_url": "https://zt04.cdn.eurozet.pl/ZET200.mp3",
-    "homepage": null,
+    "homepage": "https://www.radiozet.pl/",
     "favicon": "/station-icons/pl/radio-zet-2000-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -19720,75 +19554,8 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "decades"
-    ]
-  },
-  {
-    "slug": "radio-zet-128-warszawa",
-    "stationuuid": "4d06407d-0e1c-4407-a6e8-b0c81c3d2659",
-    "name": "Radio ZET 128",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://n-11-21.dcs.redcdn.pl/sc/o2/Eurozet/live/audio.livx?audio=5",
-    "homepage": "https://www.radiozet.pl/",
-    "favicon": "/station-icons/pl/radio-zet-128-warszawa.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 4,
-    "lastcheckok": 1,
-    "votes": 78,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    },
-    "formats": [
-      "hits"
-    ]
-  },
-  {
-    "slug": "radio-zet-128-kbps-warszawa",
-    "stationuuid": "c4bd188b-88b9-4209-b8f1-e57afbbb4a57",
-    "name": "Radio ZET 128 Kbps",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://zt02.cdn.eurozet.pl/zet-old.mp3",
-    "homepage": "https://www.radiozet.pl/",
-    "favicon": "/station-icons/pl/radio-zet-128-kbps-warszawa.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 75,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    },
-    "formats": [
-      "hits"
+      "decades",
+      "00s"
     ]
   },
   {
@@ -19835,7 +19602,10 @@
     "stream_url": "https://zt06.cdn.eurozet.pl/ZETLOV.mp3?t=1709719922445?redirected=06",
     "homepage": "https://player.radiozet.pl/Kanaly-muzyczne/Radio-ZET-Love",
     "favicon": "/station-icons/pl/radio-zet-love-om.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "lounge"
+    ],
     "language": "english",
     "bitrate": 128,
     "codec": "MP3",
@@ -19866,7 +19636,7 @@
     "name": "Radio Zet na Rower -om",
     "state": "Masovian Voivodeship",
     "city": "Warszawa",
-    "stream_url": "https://zt06.cdn.eurozet.pl/ZETNAR.mp3?t=1709720397160?redirected=06",
+    "stream_url": "https://zt06.cdn.eurozet.pl/ZETNAR.mp3?t=1709720397160",
     "homepage": "https://player.radiozet.pl/Kanaly-muzyczne/Radio-ZET-na-Rower",
     "favicon": "/station-icons/pl/radio-zet-na-rower-om.webp",
     "genres": [
@@ -19994,30 +19764,22 @@
     },
     "formats": [
       "classic hits"
-    ]
-  },
-  {
-    "slug": "radio-z-ote-przeboje-aea643fa",
-    "stationuuid": "aea643fa-255a-461d-8a77-d00ddac9036d",
-    "name": "radio złote przeboje",
-    "state": null,
-    "city": null,
-    "stream_url": "http://radiostream.pl/tuba8928-1.mp3",
-    "homepage": "http://radiostream.pl/tuba8928-1.mp3",
-    "favicon": "/station-icons/pl/radio-z-ote-przeboje-aea643fa-placeholder.webp",
-    "genres": [
-      "pop"
     ],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 6,
-    "lastcheckok": 1,
-    "votes": 2094,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "aliases": [
+      "radio-z-ote-przeboje-aea643fa"
+    ],
+    "alternate_stationuuids": [
+      "aea643fa-255a-461d-8a77-d00ddac9036d"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-tuba8928",
+        "label": "Alternative",
+        "url": "http://radiostream.pl/tuba8928-1.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-z-ote-przeboje-bieszczady",
@@ -20183,7 +19945,7 @@
     "stationuuid": "b3f9669f-3323-46d2-bf8b-17def411d50c",
     "name": "Radio Zodiak",
     "state": "Masovian Voivodeship",
-    "city": null,
+    "city": "Siedlce",
     "stream_url": "https://fire.doscast.com:8084/stream",
     "homepage": "https://radiozodiak.pl/",
     "favicon": "/station-icons/pl/radio-zodiak-mazowieckie.webp",
@@ -20207,37 +19969,6 @@
     ],
     "locationNames": {
       "en": {
-        "city": null,
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": null,
-        "state": "województwo mazowieckie"
-      }
-    }
-  },
-  {
-    "slug": "radio-zodiak-siedlce",
-    "stationuuid": "fe0469b6-73a0-4892-bf47-f1bcfc416797",
-    "name": "Radio Zodiak",
-    "state": "Masovian Voivodeship",
-    "city": "Siedlce",
-    "stream_url": "https://fire.doscast.com/8084/stream",
-    "homepage": "https://radiozodiak.pl/",
-    "favicon": "/station-icons/pl/radio-zodiak-siedlce.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 9,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
         "city": "Siedlce",
         "state": "Masovian Voivodeship"
       },
@@ -20245,7 +19976,22 @@
         "city": "Siedlce",
         "state": "województwo mazowieckie"
       }
-    }
+    },
+    "aliases": [
+      "radio-zodiak-siedlce"
+    ],
+    "alternate_stationuuids": [
+      "fe0469b6-73a0-4892-bf47-f1bcfc416797"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-https-proxy",
+        "label": "Alternative",
+        "url": "https://fire.doscast.com/8084/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "radio-u-awy",
@@ -20489,7 +20235,8 @@
     "genres": [
       "chillout",
       "smooth jazz",
-      "ambient"
+      "ambient",
+      "lounge"
     ],
     "language": "german",
     "bitrate": 128,
@@ -20519,7 +20266,6 @@
       "german-language music",
       "history",
       "local radio",
-      "lounge",
       "relaxation",
       "polish-language music",
       "regional radio",
@@ -20620,7 +20366,9 @@
     "stream_url": "http://djmixes.radioparty.pl:8035/",
     "homepage": "http://www.radioparty.pl/kanaldjmixes.html",
     "favicon": "/station-icons/pl/radioparty-pl-dj-mixes-party-wieliczka.webp",
-    "genres": [],
+    "genres": [
+      "club"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -20998,7 +20746,7 @@
     "name": "REGION",
     "state": "Silesian Voivodeship",
     "city": "Gliwice",
-    "stream_url": "https://s1.slotex.pl:7592/",
+    "stream_url": "https://s1.slotex.pl:7592/;",
     "homepage": "https://mittendrin.pl/radio-region.php",
     "favicon": "/station-icons/pl/region-schlesien.webp",
     "genres": [],
@@ -21094,11 +20842,11 @@
   {
     "slug": "rmc-radio-muzyka-czlowiek",
     "stationuuid": "1f947e3f-9718-4006-b9cf-21ab08ee0996",
-    "name": "RMC - RADIO MUZYKA CZLOWIEK",
+    "name": "RMC - 4 FOR YOU RADIO",
     "state": null,
     "city": null,
     "stream_url": "http://s1.slotex.pl:7030/stream/",
-    "homepage": "https://www.facebook.com/people/RMC-RADIO/100030309953036/",
+    "homepage": "https://rmc.panelradiowy.pl/radio",
     "favicon": "/station-icons/pl/rmc-radio-muzyka-czlowiek.webp",
     "genres": [
       "dance",
@@ -21118,7 +20866,19 @@
     "geo_long": null,
     "nowplaying_url": "http://s1.slotex.pl:7030/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://s1.slotex.pl:7030/played?sid=1&type=json"
+    "history_url": "http://s1.slotex.pl:7030/played?sid=1&type=json",
+    "streams": [
+      {
+        "id": "mp3-320-https",
+        "label": "Alternative",
+        "url": "https://s1.slotex.pl:7030/stream/1/",
+        "bitrate": 320,
+        "codec": "MP3",
+        "nowplaying_url": "http://s1.slotex.pl:7030/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://s1.slotex.pl:7030/played?sid=1&type=json"
+      }
+    ]
   },
   {
     "slug": "rmf",
@@ -21808,7 +21568,9 @@
     "stream_url": "http://31.192.216.7/90S",
     "homepage": "http://www.rmfon.pl/play,46",
     "favicon": "/station-icons/pl/rmf-90s-krakow.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "polish",
     "bitrate": 64,
     "codec": "AAC+",
@@ -21821,9 +21583,6 @@
     "geo_long": null,
     "formats": [
       "90s"
-    ],
-    "genre_review": [
-      "rmf 90s"
     ],
     "locationNames": {
       "en": {
@@ -22532,95 +22291,6 @@
     }
   },
   {
-    "slug": "rmf-classic",
-    "stationuuid": "fbdd382c-f068-4337-8039-100448da9240",
-    "name": "RMF Classic",
-    "state": "Lesser Poland Voivodeship",
-    "city": "Kraków",
-    "stream_url": "https://rs9-krk2.rmfstream.pl/rmf_classic",
-    "homepage": "https://www.rmfclassic.pl/",
-    "favicon": "/station-icons/pl/rmf-classic-placeholder.webp",
-    "genres": [
-      "classical"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 15,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 50.06602632012359,
-    "geo_long": 19.927984178066257,
-    "locationNames": {
-      "en": {
-        "city": "Krakow",
-        "state": "Lesser Poland Voivodeship"
-      },
-      "pl": {
-        "city": "Kraków",
-        "state": "województwo małopolskie"
-      }
-    }
-  },
-  {
-    "slug": "rmf-classic-6c800ca2",
-    "stationuuid": "6c800ca2-7e1e-4020-a026-57f55de88e74",
-    "name": "RMF Classic",
-    "state": null,
-    "city": null,
-    "stream_url": "http://rmfstream1.interia.pl:8000/rmf_classic",
-    "homepage": null,
-    "favicon": "/station-icons/pl/rmf-classic-6c800ca2-placeholder.webp",
-    "genres": [
-      "classical"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 15,
-    "lastcheckok": 1,
-    "votes": 1770,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "rmf-classic-krakow",
-    "stationuuid": "960dc513-0601-11e8-ae97-52543be04c81",
-    "name": "RMF Classic",
-    "state": "Lesser Poland Voivodeship",
-    "city": "Kraków",
-    "stream_url": "http://31.192.216.8/RMFCLASSIC48",
-    "homepage": "http://www.rmfclassic.pl/",
-    "favicon": "/station-icons/pl/rmf-classic-krakow-placeholder.webp",
-    "genres": [
-      "classical"
-    ],
-    "language": "polish",
-    "bitrate": 48,
-    "codec": "AAC+",
-    "clickcount": 14,
-    "lastcheckok": 1,
-    "votes": 14264,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Krakow",
-        "state": "Lesser Poland Voivodeship"
-      },
-      "pl": {
-        "city": "Kraków",
-        "state": "województwo małopolskie"
-      }
-    }
-  },
-  {
     "slug": "rmf-classic-rock-ma-opolskie",
     "stationuuid": "33e0d018-39ac-4776-a288-20ec4fdc0a15",
     "name": "RMF Classic Rock",
@@ -23252,40 +22922,52 @@
         "city": "Kraków",
         "state": "województwo małopolskie"
       }
-    }
-  },
-  {
-    "slug": "rmf-fm-ma-opolska",
-    "stationuuid": "47c5dd82-470a-11e9-aa55-52543be04c81",
-    "name": "RMF FM",
-    "state": "Lesser Poland Voivodeship",
-    "city": null,
-    "stream_url": "http://31.192.216.8/rmf_fm",
-    "homepage": "https://www.rmf.fm/",
-    "favicon": "/station-icons/pl/rmf-fm-ma-opolska.webp",
-    "genres": [
-      "pop"
+    },
+    "aliases": [
+      "rmf-fm-ma-opolska",
+      "rmf-fm-polska-warszawa",
+      "rmf-fm-48-kbps-krak-w-f2978f0e",
+      "rmf-fm-48-kbps-krak-w"
     ],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 18,
-    "lastcheckok": 1,
-    "votes": 6385,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": null,
-        "state": "Lesser Poland Voivodeship"
+    "alternate_stationuuids": [
+      "47c5dd82-470a-11e9-aa55-52543be04c81",
+      "86329383-66ef-4156-ba8d-6ac8d3778cc5",
+      "f2978f0e-e62e-4919-a9da-f8a040a8c334",
+      "a7b21695-f1b4-456c-b5df-60649f5265ac"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128",
+        "label": "Alternative",
+        "url": "http://31.192.216.8/rmf_fm",
+        "bitrate": 128,
+        "codec": "MP3"
       },
-      "pl": {
-        "city": null,
-        "state": "województwo małopolskie"
+      {
+        "id": "aac-48-rs101-cyfronet",
+        "label": "Alternative",
+        "url": "https://rs101-krk-cyfronet.rmfstream.pl/RMFFM48",
+        "bitrate": 48,
+        "codec": "AAC+"
+      },
+      {
+        "id": "aac-48-rs102-cyfronet",
+        "label": "Alternative",
+        "url": "https://rs102-krk-cyfronet.rmfstream.pl/RMFFM48",
+        "bitrate": 48,
+        "codec": "AAC+"
+      },
+      {
+        "id": "aac-48-rs101",
+        "label": "Alternative",
+        "url": "https://rs101-krk.rmfstream.pl/RMFFM48",
+        "bitrate": 48,
+        "codec": "AAC+"
       }
-    }
+    ],
+    "formats": [
+      "hits"
+    ]
   },
   {
     "slug": "rmf-fm-128-kbps-krak-w",
@@ -23320,111 +23002,6 @@
       "pl": {
         "city": "Kraków",
         "state": "województwo małopolskie"
-      }
-    }
-  },
-  {
-    "slug": "rmf-fm-48-kbps-krak-w",
-    "stationuuid": "a7b21695-f1b4-456c-b5df-60649f5265ac",
-    "name": "RMF FM 48 Kbps",
-    "state": "Lesser Poland Voivodeship",
-    "city": "Kraków",
-    "stream_url": "https://rs101-krk.rmfstream.pl/RMFFM48",
-    "homepage": "https://www.rmf.fm/",
-    "favicon": "/station-icons/pl/rmf-fm-48-kbps-krak-w.webp",
-    "genres": [
-      "pop"
-    ],
-    "language": "polish",
-    "bitrate": 48,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 53,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "hits"
-    ],
-    "locationNames": {
-      "en": {
-        "city": "Krakow",
-        "state": "Lesser Poland Voivodeship"
-      },
-      "pl": {
-        "city": "Kraków",
-        "state": "województwo małopolskie"
-      }
-    }
-  },
-  {
-    "slug": "rmf-fm-48-kbps-krak-w-f2978f0e",
-    "stationuuid": "f2978f0e-e62e-4919-a9da-f8a040a8c334",
-    "name": "RMF FM 48 Kbps",
-    "state": "Lesser Poland Voivodeship",
-    "city": "Kraków",
-    "stream_url": "https://rs102-krk-cyfronet.rmfstream.pl/RMFFM48",
-    "homepage": "https://www.rmf.fm/",
-    "favicon": "/station-icons/pl/rmf-fm-48-kbps-krak-w-f2978f0e.webp",
-    "genres": [
-      "pop"
-    ],
-    "language": "polish",
-    "bitrate": 48,
-    "codec": "AAC+",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 37,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "hits"
-    ],
-    "locationNames": {
-      "en": {
-        "city": "Krakow",
-        "state": "Lesser Poland Voivodeship"
-      },
-      "pl": {
-        "city": "Kraków",
-        "state": "województwo małopolskie"
-      }
-    }
-  },
-  {
-    "slug": "rmf-fm-polska-warszawa",
-    "stationuuid": "86329383-66ef-4156-ba8d-6ac8d3778cc5",
-    "name": "Rmf Fm Polska",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://rs101-krk-cyfronet.rmfstream.pl/RMFFM48",
-    "homepage": "https://www.rmfon.pl/play,5#p",
-    "favicon": "/station-icons/pl/rmf-fm-polska-warszawa.webp",
-    "genres": [
-      "pop"
-    ],
-    "language": "polish",
-    "bitrate": 48,
-    "codec": "AAC+",
-    "clickcount": 16,
-    "lastcheckok": 1,
-    "votes": 486,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": 52.12716540087128,
-    "geo_long": 21.11572265625,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
       }
     }
   },
@@ -26698,7 +26275,12 @@
     "stream_url": "http://rmfstream1.interia.pl/rmf_24",
     "homepage": "https://www.rmf24.pl/radio",
     "favicon": "/station-icons/pl/rmf24.webp",
-    "genres": [],
+    "genres": [
+      "classic rock",
+      "pop",
+      "pop rock",
+      "rock"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -26721,6 +26303,21 @@
     },
     "formats": [
       "news"
+    ],
+    "aliases": [
+      "radio-rmf24-pl-2a526572"
+    ],
+    "alternate_stationuuids": [
+      "2a526572-4230-4b22-9e47-79383973ee0e"
+    ],
+    "streams": [
+      {
+        "id": "aac-64-https",
+        "label": "Alternative",
+        "url": "https://rs202-krk-cyfronet.rmfstream.pl/RMF24?aw_0_req.gdpr=false&aw_0_req.userConsentV2=&aw_0_1st.playerid=RMF_Player_JS_P&aw_0_1st.rmf_disable_preroll=true",
+        "bitrate": 64,
+        "codec": "AAC+"
+      }
     ]
   },
   {
@@ -26775,29 +26372,6 @@
     "clickcount": 0,
     "lastcheckok": 1,
     "votes": 325,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "rmfa-classic",
-    "stationuuid": "84ab82ac-5022-4644-9040-c29bba74595a",
-    "name": "rmfa classic",
-    "state": null,
-    "city": null,
-    "stream_url": "http://195.150.20.242:8000/rmf_classic",
-    "homepage": null,
-    "favicon": "/station-icons/pl/rmfa-classic-placeholder.webp",
-    "genres": [
-      "classical"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 19,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
@@ -26915,17 +26489,16 @@
     "geo_long": null
   },
   {
-    "slug": "rock-radio",
+    "slug": "kiss-fm",
     "stationuuid": "2262381e-c794-4953-bb74-b8acac9f2d4a",
-    "name": "Rock Radio",
+    "name": "KISS FM",
     "state": "Masovian Voivodeship",
     "city": "Warszawa",
-    "stream_url": "https://radiostream.pl/tuba8-1.mp3?cache=1650763965",
-    "homepage": "https://rockradio.tuba.pl/RockRadio/0,0.html",
-    "favicon": "/station-icons/pl/rock-radio.webp",
+    "stream_url": "https://radiostream.pl/tuba8-1.mp3",
+    "homepage": "https://radiokiss.fm/",
+    "favicon": "/station-icons/pl/kiss-fm.png",
     "genres": [
-      "polish rock",
-      "rock"
+      "pop"
     ],
     "language": "polish",
     "bitrate": 128,
@@ -26933,42 +26506,6 @@
     "clickcount": 5,
     "lastcheckok": 1,
     "votes": 4149,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    },
-    "formats": [
-      "polish-language music"
-    ]
-  },
-  {
-    "slug": "rock-radio-6e38d67e",
-    "stationuuid": "6e38d67e-b33a-4079-9346-2392cdab375d",
-    "name": "Rock Radio",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://radiostream.pl/tuba8-1.aac",
-    "homepage": "https://rockradio.pl/",
-    "favicon": "/station-icons/pl/rock-radio-6e38d67e.webp",
-    "genres": [
-      "pop"
-    ],
-    "language": null,
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 2,
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 52.225141306039006,
@@ -26982,7 +26519,26 @@
         "city": "Warszawa",
         "state": "województwo mazowieckie"
       }
-    }
+    },
+    "formats": [
+      "top 40"
+    ],
+    "aliases": [
+      "rock-radio-6e38d67e",
+      "rock-radio"
+    ],
+    "alternate_stationuuids": [
+      "6e38d67e-b33a-4079-9346-2392cdab375d"
+    ],
+    "streams": [
+      {
+        "id": "aac-64-https",
+        "label": "Alternative",
+        "url": "https://radiostream.pl/tuba8-1.aac",
+        "bitrate": 64,
+        "codec": "AAC+"
+      }
+    ]
   },
   {
     "slug": "rock-radio-krak-w-ma-opolska",
@@ -27244,12 +26800,14 @@
     "state": null,
     "city": null,
     "stream_url": "https://s1.slotex.pl:7294/stream/1/",
-    "homepage": "http://www.slonskieradiohitmix.eu/#",
-    "favicon": "/station-icons/pl/slonskie-radio-hitmix-placeholder.webp",
+    "homepage": "http://www.slonskieradiohitmix.eu/",
+    "favicon": "/station-icons/pl/slonskie-radio-hitmix.webp",
     "genres": [
-      "folk"
+      "folk",
+      "blues",
+      "pop"
     ],
-    "language": null,
+    "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
     "clickcount": 1,
@@ -27258,30 +26816,26 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "slonskie-radio-hitmix-960fc4ae",
-    "stationuuid": "960fc4ae-0601-11e8-ae97-52543be04c81",
-    "name": "Slonskie Radio Hitmix",
-    "state": null,
-    "city": null,
-    "stream_url": "http://s1.slotex.pl:7294/",
-    "homepage": "http://www.slonskieradiohitmix.eu/",
-    "favicon": "/station-icons/pl/slonskie-radio-hitmix-960fc4ae-placeholder.webp",
-    "genres": [
-      "folk"
+    "geo_long": null,
+    "formats": [
+      "news",
+      "talk"
     ],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 4,
-    "lastcheckok": 1,
-    "votes": 440,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "aliases": [
+      "slonskie-radio-hitmix-960fc4ae"
+    ],
+    "alternate_stationuuids": [
+      "960fc4ae-0601-11e8-ae97-52543be04c81"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-http",
+        "label": "Alternative",
+        "url": "http://s1.slotex.pl:7294/;",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "smoothjazz-com-pl-pomorskie",
@@ -27791,7 +27345,7 @@
   {
     "slug": "tok-muzyka-warsaw",
     "stationuuid": "d735befd-33b7-45ef-9aa2-907ecf64b058",
-    "name": "TOK   Muzyka",
+    "name": "TOK Muzyka",
     "state": "Masovian Voivodeship",
     "city": "Warszawa",
     "stream_url": "http://stream10.radioagora.pl/ytBTynyvd3e.mp3",
@@ -27837,74 +27391,6 @@
     "votes": 10053,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    },
-    "formats": [
-      "news"
-    ]
-  },
-  {
-    "slug": "tok-fm-0e1aba33",
-    "stationuuid": "0e1aba33-4773-4908-9f4a-48fa7fd41730",
-    "name": "TOK FM",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://radiostream.pl/tuba10-1.mp3",
-    "homepage": "https://www.tokfm.pl/Tokfm/0,0.html",
-    "favicon": "/station-icons/pl/tok-fm-0e1aba33.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 247,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
-      },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    },
-    "formats": [
-      "news"
-    ]
-  },
-  {
-    "slug": "tok-fm-00dc9649",
-    "stationuuid": "00dc9649-868b-43a8-9119-28a9b4d962e2",
-    "name": "Tok FM",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "https://radiostream.pl/tuba10-2.mp3",
-    "homepage": "https://www.tokfm.pl/",
-    "favicon": "/station-icons/pl/tok-fm-00dc9649.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 64,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 16,
-    "hls": 0,
-    "ssl_error": 0,
     "geo_lat": 52.13275548787693,
     "geo_long": 21.051494479179382,
     "locationNames": {
@@ -27918,75 +27404,46 @@
       }
     },
     "formats": [
-      "news"
-    ]
-  },
-  {
-    "slug": "tok-fm-poland",
-    "stationuuid": "280df919-57cf-47de-951a-d0754631d454",
-    "name": "TOK FM",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "http://radiostream.pl/tuba10-1.aac",
-    "homepage": "https://www.tokfm.pl/",
-    "favicon": "/station-icons/pl/tok-fm-poland.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 64,
-    "codec": "AAC+",
-    "clickcount": 6,
-    "lastcheckok": 1,
-    "votes": 138,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
+      "news",
+      "talk"
+    ],
+    "aliases": [
+      "tok-fm-0e1aba33",
+      "tok-fm-00dc9649",
+      "tok-fm-poland",
+      "tokfm-poland"
+    ],
+    "alternate_stationuuids": [
+      "0e1aba33-4773-4908-9f4a-48fa7fd41730",
+      "00dc9649-868b-43a8-9119-28a9b4d962e2",
+      "280df919-57cf-47de-951a-d0754631d454",
+      "fd04e1de-3b9c-4b22-ac13-f1ef48a65d94"
+    ],
+    "alternate_urls": [
+      "https://radiostream.pl/tuba10-1.mp3"
+    ],
+    "streams": [
+      {
+        "id": "mp3-64",
+        "label": "Alternative",
+        "url": "https://radiostream.pl/tuba10-2.mp3",
+        "bitrate": 64,
+        "codec": "MP3"
       },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
-      }
-    },
-    "formats": [
-      "news"
-    ]
-  },
-  {
-    "slug": "tokfm-poland",
-    "stationuuid": "fd04e1de-3b9c-4b22-ac13-f1ef48a65d94",
-    "name": "TokFM",
-    "state": "Masovian Voivodeship",
-    "city": "Warszawa",
-    "stream_url": "http://stream30.radiostream.pl/tuba10-1.mp3",
-    "homepage": "https://tokfm.pl/",
-    "favicon": "/station-icons/pl/tokfm-poland.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 2,
-    "lastcheckok": 1,
-    "votes": 450,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "locationNames": {
-      "en": {
-        "city": "Warsaw",
-        "state": "Masovian Voivodeship"
+      {
+        "id": "aac-64",
+        "label": "Alternative",
+        "url": "http://radiostream.pl/tuba10-1.aac",
+        "bitrate": 64,
+        "codec": "AAC+"
       },
-      "pl": {
-        "city": "Warszawa",
-        "state": "województwo mazowieckie"
+      {
+        "id": "mp3-128-stream30",
+        "label": "Alternative",
+        "url": "http://stream30.radiostream.pl/tuba10-1.mp3",
+        "bitrate": 128,
+        "codec": "MP3"
       }
-    },
-    "formats": [
-      "news"
     ]
   },
   {
@@ -28144,39 +27601,17 @@
     "history_url": "http://s01.toksyna.fm:8030/played?sid=1&type=json"
   },
   {
-    "slug": "trap",
-    "stationuuid": "15023d47-34cb-41a4-82e1-05aa36c21d4e",
-    "name": "trap",
-    "state": null,
-    "city": null,
-    "stream_url": "https://getradio.reconv.pl/openfm?s=trap-pl",
-    "homepage": null,
-    "favicon": "/station-icons/pl/trap-placeholder.webp",
-    "genres": [
-      "rap"
-    ],
-    "language": null,
-    "bitrate": 192,
-    "codec": "AAC",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 107,
-    "hls": 1,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "trap-pl",
     "stationuuid": "b9daa3c9-b2f9-4d9b-9841-5f9fa1df9eae",
     "name": "trap pl",
     "state": null,
     "city": null,
-    "stream_url": "https://getradio.reconv.pl/openfm?s=trap",
-    "homepage": "http://stream.open.fm/139",
-    "favicon": "/station-icons/pl/trap-pl-placeholder.webp",
+    "stream_url": "https://getradio.reconv.pl/openfm?s=trap-pl",
+    "homepage": "https://open.fm/stacje-muzyczne/trap-pl",
+    "favicon": "/station-icons/pl/trap-pl.webp",
     "genres": [
-      "rap"
+      "rap",
+      "trap"
     ],
     "language": null,
     "bitrate": 0,
@@ -28187,7 +27622,23 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "aliases": [
+      "trap"
+    ],
+    "alternate_stationuuids": [
+      "15023d47-34cb-41a4-82e1-05aa36c21d4e"
+    ],
+    "streams": [
+      {
+        "id": "aac-192-hls",
+        "label": "Alternative",
+        "url": "https://getradio.reconv.pl/openfm?s=trap-pl",
+        "bitrate": 192,
+        "codec": "AAC",
+        "hls": 1
+      }
+    ]
   },
   {
     "slug": "trendy-radio-mobile",
@@ -28298,12 +27749,14 @@
     "slug": "trojka",
     "stationuuid": "964aa3f1-0601-11e8-ae97-52543be04c81",
     "name": "Trojka",
-    "state": null,
-    "city": null,
+    "state": "Masovian Voivodeship",
+    "city": "Warszawa",
     "stream_url": "http://stream3.polskieradio.pl:8904/",
     "homepage": "http://moje.polskieradio.pl/OtherChannels/Trojka.aspx",
-    "favicon": "/station-icons/pl/trojka-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/pl/trojka.webp",
+    "genres": [
+      "pop"
+    ],
     "language": "polish",
     "bitrate": 192,
     "codec": "MP3",
@@ -28313,7 +27766,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "news talk"
+    ]
   },
   {
     "slug": "twoja-polska-stacja",
@@ -28365,33 +27821,6 @@
     ]
   },
   {
-    "slug": "tyflo-radio",
-    "stationuuid": "7a0fdb34-bb82-431b-8f3f-039f2f23a7cf",
-    "name": "Tyflo radio",
-    "state": null,
-    "city": null,
-    "stream_url": "http://radio.tyflopodcast.net/",
-    "homepage": "https://.tyflopodcast.net/",
-    "favicon": "/station-icons/pl/tyflo-radio-placeholder.webp",
-    "genres": [],
-    "language": "polish",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 3,
-    "lastcheckok": 1,
-    "votes": 28,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "genre_review": [
-      "blindness"
-    ],
-    "formats": [
-      "talk"
-    ]
-  },
-  {
     "slug": "tyfloradio-malopolskie",
     "stationuuid": "3c71fc65-1794-4c50-8359-946ada49703b",
     "name": "TyfloRadio",
@@ -28423,7 +27852,25 @@
         "city": null,
         "state": "województwo małopolskie"
       }
-    }
+    },
+    "aliases": [
+      "tyflo-radio"
+    ],
+    "alternate_stationuuids": [
+      "7a0fdb34-bb82-431b-8f3f-039f2f23a7cf"
+    ],
+    "genre_review": [
+      "blindness"
+    ],
+    "streams": [
+      {
+        "id": "mp3-192-http",
+        "label": "Alternative",
+        "url": "http://radio.tyflopodcast.net/",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "u-radio-trance",
@@ -28540,7 +27987,8 @@
     "homepage": "https://www.voxfm.pl/",
     "favicon": "/station-icons/pl/vox-dj-mix.webp",
     "genres": [
-      "pop"
+      "pop",
+      "club"
     ],
     "language": null,
     "bitrate": 128,
@@ -28574,7 +28022,7 @@
     "city": "Warszawa",
     "stream_url": "https://pldm.one.pl/radio?url=https://www.eskago.pl/radio/vox-fm",
     "homepage": "https://www.voxfm.pl/",
-    "favicon": "/station-icons/pl/vox-fm-128kbps.webp",
+    "favicon": "/station-icons/pl/vox-fm.webp",
     "genres": [
       "pop"
     ],
@@ -29041,13 +28489,15 @@
   {
     "slug": "zet-90s",
     "stationuuid": "405285f7-d4b3-4cfb-a2f7-120a6876d7ae",
-    "name": "Zet 90s",
+    "name": "Radio Zet 90s",
     "state": "Masovian Voivodeship",
     "city": "Warszawa",
     "stream_url": "https://zt02.cdn.eurozet.pl/ZET090.mp3",
     "homepage": "https://player.radiozet.pl/Kanaly-muzyczne/Radio-ZET-90",
     "favicon": "/station-icons/pl/zet-90s.webp",
-    "genres": [],
+    "genres": [
+      "pop"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -29067,7 +28517,10 @@
         "city": "Warszawa",
         "state": "województwo mazowieckie"
       }
-    }
+    },
+    "formats": [
+      "90s"
+    ]
   },
   {
     "slug": "zet-dance",
@@ -29145,7 +28598,9 @@
     "stream_url": "https://ch.cdn.eurozet.pl/ZETLTN.mp3",
     "homepage": "https://www.radiozet.pl/",
     "favicon": "/station-icons/pl/zet-latino-warszawa.webp",
-    "genres": [],
+    "genres": [
+      "latin"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -29165,10 +28620,7 @@
         "city": "Warszawa",
         "state": "województwo mazowieckie"
       }
-    },
-    "genre_review": [
-      "zet latino"
-    ]
+    }
   },
   {
     "slug": "zet-na-swieta-warszawa",
@@ -29179,7 +28631,9 @@
     "stream_url": "https://zt.cdn.eurozet.pl/ZETSWI.mp3",
     "homepage": "https://www.radiozet.pl/",
     "favicon": "/station-icons/pl/zet-na-swieta-warszawa.webp",
-    "genres": [],
+    "genres": [
+      "soft pop"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
@@ -29200,8 +28654,8 @@
         "state": "województwo mazowieckie"
       }
     },
-    "genre_review": [
-      "zet na swieta"
+    "formats": [
+      "christmas"
     ]
   },
   {
@@ -29247,7 +28701,9 @@
     "stream_url": "https://zt.cdn.eurozet.pl/ZETPRK.mp3",
     "homepage": "https://www.radiozet.pl/",
     "favicon": "/station-icons/pl/zet-pop-rock-warszawa.webp",
-    "genres": [],
+    "genres": [
+      "pop rock"
+    ],
     "language": "polish",
     "bitrate": 128,
     "codec": "MP3",
