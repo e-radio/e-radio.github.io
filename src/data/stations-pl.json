@@ -3967,9 +3967,9 @@
     ]
   },
   {
-    "slug": "ivan-honcharov",
+    "slug": "reverb-riff-radio",
     "stationuuid": "13bf1959-ebfb-4823-8a8b-044c14aae897",
-    "name": "Ivan Honcharov",
+    "name": "REVERB RIFF RADIO",
     "state": "Masovian Voivodeship",
     "city": "Warsaw",
     "stream_url": "https://azuracast.reverbriff.com/listen/reverb_riff_radio/radio.mp3",
@@ -3998,7 +3998,10 @@
         "city": "Warsaw",
         "state": "Masovian Voivodeship"
       }
-    }
+    },
+    "aliases": [
+      "ivan-honcharov"
+    ]
   },
   {
     "slug": "jazzkultura",
