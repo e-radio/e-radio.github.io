@@ -523,13 +523,6 @@
     ],
     "streams": [
       {
-        "id": "default",
-        "label": "Default HTTPS",
-        "url": "https://fm02-ice.stream.khz.se/fm02_mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "alternative-http",
         "label": "Alternative HTTP",
         "url": "http://fm02-ice.stream.khz.se/fm02_mp3",
@@ -575,13 +568,6 @@
       "bandit-metal-a9fc150a"
     ],
     "streams": [
-      {
-        "id": "default",
-        "label": "Default HTTPS",
-        "url": "https://wr03-ice.stream.khz.se/wr03_mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
       {
         "id": "alternative-http",
         "label": "Alternative HTTP",
@@ -868,13 +854,6 @@
     ],
     "streams": [
       {
-        "id": "default",
-        "label": "Default MP3",
-        "url": "http://stream.dbmedia.se/crrMP3",
-        "bitrate": 192,
-        "codec": "MP3"
-      },
-      {
         "id": "alternative-aac",
         "label": "Alternative AAC+",
         "url": "http://stream.dbmedia.se/crr96",
@@ -1153,15 +1132,6 @@
       "dunken-fm-7ca8f95e"
     ],
     "streams": [
-      {
-        "id": "default",
-        "label": "Default AAC+",
-        "url": "http://stream.nsp.se:8000/DFM_AAC_Hi",
-        "bitrate": 128,
-        "codec": "AAC+",
-        "nowplaying_url": "http://stream.nsp.se:8000/status-json.xsl?mount=%2FDFM_AAC_Hi",
-        "metadata_server": "icecast"
-      },
       {
         "id": "alternative-mp3",
         "label": "Alternative MP3",
@@ -2620,16 +2590,6 @@
       "mix-megapol-104-3-stockholm-5df76756"
     ],
     "streams": [
-      {
-        "id": "default",
-        "label": "Default MP3",
-        "url": "https://live-bauerse-fm.sharp-stream.com/mixmegapol_instream_se_mp3",
-        "bitrate": 128,
-        "codec": "MP3",
-        "nowplaying_url": "https://listenapi.planetradio.co.uk/api9.2/nowplaying/mme",
-        "history_url": "https://listenapi.planetradio.co.uk/api9.2/events/mme/now/10",
-        "metadata_server": "bauer"
-      },
       {
         "id": "alternative-aac",
         "label": "AAC+",
@@ -4119,13 +4079,6 @@
     ],
     "streams": [
       {
-        "id": "default",
-        "label": "Default MP3",
-        "url": "https://play.radiorivendell.com/radio/8000/radio.mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "alternative-ogg",
         "label": "Alternative OGG",
         "url": "https://play.radiorivendell.com/radio/8000/radio.ogg",
@@ -4749,13 +4702,6 @@
     ],
     "streams": [
       {
-        "id": "default",
-        "label": "Default HTTPS",
-        "url": "https://fm01-ice.stream.khz.se/fm01_mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "alternative-http",
         "label": "HTTP",
         "url": "http://fm01-ice.stream.khz.se/fm01_mp3",
@@ -4990,15 +4936,6 @@
       "scenesat-radio-aac-mobile"
     ],
     "streams": [
-      {
-        "id": "default",
-        "label": "Default MP3",
-        "url": "https://streams.scenesat.com/main/hq.mp3",
-        "bitrate": 0,
-        "codec": "MP3",
-        "nowplaying_url": "https://streams.scenesat.com/status-json.xsl?mount=%2Fmain%2Fhq.mp3",
-        "metadata_server": "icecast"
-      },
       {
         "id": "alternative-mobile",
         "label": "Mobile AAC",
@@ -5968,13 +5905,6 @@
     ],
     "streams": [
       {
-        "id": "default",
-        "label": "Default",
-        "url": "https://edge1.sr.se/p1-aac-320",
-        "bitrate": 312,
-        "codec": "AAC"
-      },
-      {
         "id": "alternative-1",
         "label": "Alternative 1",
         "url": "http://sverigesradio.se/topsy/direkt/srapi/132-hi-aac-http",
@@ -6122,13 +6052,6 @@
       "sveriges-radio-p3-e4f6d392"
     ],
     "streams": [
-      {
-        "id": "default",
-        "label": "Default AAC",
-        "url": "https://live1.sr.se/p3-aac-320",
-        "bitrate": 312,
-        "codec": "AAC"
-      },
       {
         "id": "alternative-mp3",
         "label": "Alternative MP3",

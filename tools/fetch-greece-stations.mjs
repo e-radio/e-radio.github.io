@@ -155,6 +155,7 @@ function mergeStations(localStations, apiStations, exclusions = []) {
     registerUuid(station.stationuuid, index);
     for (const uuid of station.alternate_stationuuids || []) registerUuid(uuid, index);
     registerUrl(station.stream_url, index);
+    for (const url of station.alternate_urls || []) registerUrl(url, index);
     for (const stream of station.unavailable_streams || []) registerUrl(stream.url, index);
     for (const stream of station.streams || []) {
       registerUrl(stream.url, index);

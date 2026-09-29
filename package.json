@@ -19,7 +19,7 @@
     "git push": "git push",
     "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "fill locations": "python3 tools/fill-station-locations.py",
-    "fff brobe": "python3 tools/ffprobe-metadata.py --url https://radio.streamings.gr/proxy/yellownewstream?mp=/stream",
+    "fff brobe": "python3 tools/ffprobe-metadata.py --url https://22713.live.streamtheworld.com/SERVICE07.mp3",
     "get stations from radio browser api": "node tools/fetch-greece-stations.mjs",
     "helper": "node tools/find-station-metadata-endpoints.mjs --write",
     "check": "astro check",

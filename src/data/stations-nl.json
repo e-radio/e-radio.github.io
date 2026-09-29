@@ -551,13 +551,6 @@
     ],
     "streams": [
       {
-        "id": "aac-128",
-        "label": "128 kbps AAC",
-        "url": "https://stream.40upradio.nl/kbc-high",
-        "bitrate": 128,
-        "codec": "AAC"
-      },
-      {
         "id": "mp3-320",
         "label": "320 kbps MP3",
         "url": "https://stream.40upradio.nl/bp-transmit",
@@ -3132,13 +3125,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-192",
-        "label": "192 kbps MP3",
-        "url": "https://icecast.bredanu.nl/bredanu.mp3",
-        "bitrate": 192,
-        "codec": "MP3"
-      },
-      {
         "id": "aac-576",
         "label": "576 kbps AAC",
         "url": "https://icecast.bredanu.nl/bredanu.stl",
@@ -4036,13 +4022,6 @@
       "classics-radio-0c51487b"
     ],
     "streams": [
-      {
-        "id": "default",
-        "label": "Default MP3",
-        "url": "https://a4.asurahosting.com:7080/radio.mp3",
-        "bitrate": 192,
-        "codec": "MP3"
-      },
       {
         "id": "alternative-cloudradio",
         "label": "Alternative MP3",
@@ -5225,17 +5204,8 @@
     "aliases": [
       "danceclassic-eu-6c5bf92e"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "192 kbps MP3",
-        "url": "https://mediaserv21.live-streams.nl:8011/stream/;type=v2",
-        "bitrate": 192,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://mediaserv21.live-streams.nl:8011/stream"
-        ]
-      }
+    "alternate_urls": [
+      "http://mediaserv21.live-streams.nl:8011/stream"
     ]
   },
   {
@@ -5955,13 +5925,6 @@
       "deventer-radio-overijssel-c760634f"
     ],
     "streams": [
-      {
-        "id": "mp3-128",
-        "label": "128 kbps MP3",
-        "url": "https://stream.deventerrtv.nl:8443/mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
       {
         "id": "aac-88",
         "label": "88 kbps AAC+",
@@ -6986,13 +6949,6 @@
     ],
     "streams": [
       {
-        "id": "aac-160",
-        "label": "160 kbps AAC",
-        "url": "https://stream1.fzo.nu/studio.aac",
-        "bitrate": 160,
-        "codec": "AAC"
-      },
-      {
         "id": "mp3-160",
         "label": "160 kbps MP3",
         "url": "http://stream1.fzo.nu/studio.mp3",
@@ -7737,23 +7693,14 @@
     "aliases": [
       "gen-x-radio-zuid-holland-aafc43bf"
     ],
-    "streams": [
-      {
-        "id": "mp3-320",
-        "label": "320 kbps MP3",
-        "url": "http://computerdokter.eu:8000/",
-        "bitrate": 320,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://computerdokter.eu:8000/;"
-        ]
-      }
-    ],
     "formats": [
       "70s",
       "80s",
       "90s",
       "easy listening"
+    ],
+    "alternate_urls": [
+      "http://computerdokter.eu:8000/;"
     ]
   },
   {
@@ -7883,13 +7830,6 @@
       "glassrock-zuid-holland"
     ],
     "streams": [
-      {
-        "id": "mp3-320",
-        "label": "320 kbps MP3",
-        "url": "https://mscp3.live-streams.nl:8092/stream",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
       {
         "id": "mp3-320-alternative",
         "label": "320 kbps MP3 (alternative)",
@@ -10437,13 +10377,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-128",
-        "label": "128 kbps MP3",
-        "url": "https://stream.iceradio.nl/iceradio",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-320",
         "label": "320 kbps MP3",
         "url": "https://stream.iceradio.nl/iceradiohq?ver=30283",
@@ -10628,24 +10561,15 @@
     "aliases": [
       "impact-am-zuid-holland"
     ],
-    "streams": [
-      {
-        "id": "mp3-320",
-        "label": "320 kbps MP3",
-        "url": "http://www.kippingmultimediaal.nl:8000/impactweb",
-        "bitrate": 320,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://kippingmultimediaal.nl:8000/impactweb"
-        ]
-      }
-    ],
     "formats": [
       "eclectic",
       "independent radio"
     ],
     "genre_review": [
       "shortwave"
+    ],
+    "alternate_urls": [
+      "http://kippingmultimediaal.nl:8000/impactweb"
     ]
   },
   {
@@ -12416,13 +12340,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-192",
-        "label": "192 kbps MP3",
-        "url": "http://mediaserv30.live-streams.nl:8013/high",
-        "bitrate": 192,
-        "codec": "MP3"
-      },
-      {
         "id": "aac-48",
         "label": "48 kbps AAC",
         "url": "http://mediaserv30.live-streams.nl:8013/low",
@@ -12815,22 +12732,13 @@
     "aliases": [
       "koekstad-radio-overijssel-deventer"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "192 kbps MP3",
-        "url": "https://server-67.stream-server.nl:8788/stream",
-        "bitrate": 192,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://server-67.stream-server.nl:8788/stream"
-        ]
-      }
-    ],
     "formats": [
       "local news",
       "local radio",
       "news"
+    ],
+    "alternate_urls": [
+      "http://server-67.stream-server.nl:8788/stream"
     ]
   },
   {
@@ -23639,13 +23547,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-192",
-        "label": "192 kbps MP3",
-        "url": "https://happy.radiomonique.nl/listen/happy_oldies/radio192.mp3",
-        "bitrate": 192,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-320",
         "label": "320 kbps MP3",
         "url": "http://www.rmgoldserver.eu:8963/;",
@@ -24816,13 +24717,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-128",
-        "label": "128 kbps MP3",
-        "url": "https://stream.hostbee.nl:7029/stream",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-96",
         "label": "96 kbps MP3",
         "url": "http://83.87.109.251:8012/listen",
@@ -25702,13 +25596,6 @@
       "radio-goldenwave"
     ],
     "streams": [
-      {
-        "id": "mp3-320",
-        "label": "320 kbps MP3",
-        "url": "https://mscp3.live-streams.nl:8072/radio",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
       {
         "id": "mp3-320-alternative",
         "label": "320 kbps MP3 (alternative)",
@@ -26809,13 +26696,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-320",
-        "label": "320 kbps MP3",
-        "url": "https://stream.and-stuff.nl:8443/riversideMp3",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
-      {
         "id": "ogg-2000",
         "label": "2000 kbps OGG",
         "url": "https://stream.and-stuff.nl:8443/riverside",
@@ -26859,13 +26739,6 @@
       "rivierenland-radio-2nd-server-320k-gelderland-hedel-veldweg-31"
     ],
     "streams": [
-      {
-        "id": "mp3-320",
-        "label": "320 kbps MP3",
-        "url": "https://rivierenlandradio.stream-server.nl/stream",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
       {
         "id": "mp3-320-secondary",
         "label": "320 kbps MP3 (second server)",
@@ -31812,13 +31685,6 @@
     ],
     "streams": [
       {
-        "id": "aac-64",
-        "label": "64 kbps AAC",
-        "url": "http://streaming.westradio.nl/WestRadio-aac-64",
-        "bitrate": 64,
-        "codec": "AAC"
-      },
-      {
         "id": "aac-96",
         "label": "96 kbps AAC",
         "url": "http://streaming.westradio.nl/WestRadio-aac-96",
@@ -31905,17 +31771,8 @@
     "aliases": [
       "wgrv-fm-noord-holland-amsterdam"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "192 kbps MP3",
-        "url": "https://caster08.streampakket.com/proxy/wgrv/stream",
-        "bitrate": 192,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://caster08.streampakket.com:8332/stream"
-        ]
-      }
+    "alternate_urls": [
+      "http://caster08.streampakket.com:8332/stream"
     ]
   },
   {

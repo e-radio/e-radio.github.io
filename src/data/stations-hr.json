@@ -675,13 +675,6 @@
     },
     "streams": [
       {
-        "id": "aac-96",
-        "label": "Default AAC",
-        "url": "https://audio.social3.hr/listen/antena_aac/stream",
-        "bitrate": 96,
-        "codec": "AAC"
-      },
-      {
         "id": "mp3-96",
         "label": "Alternative MP3",
         "url": "http://live.antenazagreb.hr:8002/;",
@@ -1173,13 +1166,6 @@
       "3981699f-44b0-41cd-88c8-5dbaf0a2f831"
     ],
     "streams": [
-      {
-        "id": "mp3-320-1",
-        "label": "Default",
-        "url": "https://cmr-hosting.com:7005/;stream/1",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
       {
         "id": "mp3-320-2",
         "label": "Alternative HTTP",
@@ -2240,15 +2226,6 @@
     ],
     "streams": [
       {
-        "url": "https://audio.social3.hr/listen/happy_legenda/stream",
-        "bitrate": 128,
-        "codec": "MP3",
-        "nowplaying_url": "https://audio.social3.hr/api/nowplaying/happy_legenda",
-        "metadata_server": "azuracast",
-        "id": "stream-1",
-        "label": "Default"
-      },
-      {
         "url": "http://c5.hostingcentar.com:8396/stream",
         "bitrate": 128,
         "codec": "AAC",
@@ -2350,15 +2327,6 @@
       "ef83df56-8ccf-48ea-9223-1b2773fb7cf9"
     ],
     "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Default MP3",
-        "url": "https://audio.social3.hr/listen/happy_party/stream",
-        "bitrate": 128,
-        "codec": "MP3",
-        "nowplaying_url": "https://audio.social3.hr/api/nowplaying/happy_party",
-        "metadata_server": "azuracast"
-      },
       {
         "id": "aac-128-1",
         "label": "Alternative",
@@ -2867,13 +2835,6 @@
       }
     },
     "streams": [
-      {
-        "id": "aac-64",
-        "label": "Default",
-        "url": "http://23613.live.streamtheworld.com/SLJEMEAAC_SC",
-        "bitrate": 64,
-        "codec": "AAC"
-      },
       {
         "id": "mp3-64",
         "label": "Alternative MP3",
@@ -4143,13 +4104,6 @@
     ],
     "streams": [
       {
-        "id": "aac-48-1",
-        "label": "Default",
-        "url": "https://stream2.otvoreni.hr/otvoreni",
-        "bitrate": 48,
-        "codec": "AAC"
-      },
-      {
         "id": "aac-48-2",
         "label": "Alternative",
         "url": "https://stream.otvoreni.hr/stream48",
@@ -5321,13 +5275,6 @@
     ],
     "streams": [
       {
-        "id": "aac-320",
-        "label": "Default AAC",
-        "url": "http://radiocentar.hr:8282/stream.aac",
-        "bitrate": 320,
-        "codec": "AAC"
-      },
-      {
         "id": "mp3-192",
         "label": "Alternative",
         "url": "http://radiocentar.hr:8282/mp3",
@@ -5859,13 +5806,6 @@
       "b233072c-f994-403f-84ff-11cc258b2f19"
     ],
     "streams": [
-      {
-        "id": "aac-128-1",
-        "label": "Default",
-        "url": "http://de4.streamingpulse.com:7117/stream",
-        "bitrate": 128,
-        "codec": "AAC"
-      },
       {
         "id": "aac-128-2",
         "label": "Alternative",
@@ -7179,13 +7119,6 @@
       "39cbaf46-82a7-41e0-8406-4d54ecb79146"
     ],
     "streams": [
-      {
-        "id": "aac-128-1",
-        "label": "Default",
-        "url": "http://161.53.122.184:8000/AAC128.aac",
-        "bitrate": 128,
-        "codec": "AAC"
-      },
       {
         "id": "aac-128-2",
         "label": "Alternative",

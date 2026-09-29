@@ -332,22 +332,11 @@
     ],
     "streams": [
       {
-        "id": "mp3-128",
-        "label": "Default",
-        "url": "https://radio.1055rock.gr:31056/live",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-128-alternative",
         "label": "Alternative",
         "url": "http://radio.1055rock.gr:30000/1055",
         "bitrate": 128,
         "codec": "MP3",
-        "alternate_urls": [
-          "http://radio.1055rock.gr:30000/1055?ver=324406",
-          "http://radio.1055rock.gr:30000/1055?ver=334672"
-        ],
         "nowplaying_url": "http://radio.1055rock.gr:30000/stats?sid=1&json=1",
         "metadata_server": "shoutcast",
         "history_url": "http://radio.1055rock.gr:30000/played?sid=1&type=json"
@@ -443,13 +432,6 @@
       "234bb5f1-2059-4d5b-b6df-5d92b236e709"
     ],
     "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Save data",
-        "url": "https://stream.newageradio.gr/listen/hq/radio.mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
       {
         "id": "aac-320",
         "label": "High quality",
@@ -1044,15 +1026,6 @@
     "alternate_stationuuids": [
       "9cca6ce4-03a6-49f8-9e4e-07566f0008c4"
     ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/4nwwcyesv8hvv",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
-    ],
     "history_url": "https://www.radiojar.com/api/stations/4nwwcyesv8hvv/tracks/",
     "formats": [
       "christmas"
@@ -1306,15 +1279,6 @@
     ],
     "alternate_stationuuids": [
       "67753078-db5c-4a33-a043-0a18d8a0e6a5"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/t0x7dyqmsuhvv",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ],
     "history_url": "https://www.radiojar.com/api/stations/t0x7dyqmsuhvv/tracks/",
     "formats": [
@@ -1727,15 +1691,6 @@
     ],
     "alternate_stationuuids": [
       "27ec79b2-2d6d-4bdd-8c9b-939d31af65ea"
-    ],
-    "streams": [
-      {
-        "id": "mp3-256",
-        "label": "Standard",
-        "url": "https://akradio.radiq.gr/listen/ak_radio/radio.mp3",
-        "bitrate": 256,
-        "codec": "MP3"
-      }
     ]
   },
   {
@@ -2029,15 +1984,6 @@
       "63928282-2cf2-4d9c-9f67-f71aed5f3fdc",
       "3219b33d-2416-4207-b1cc-b78958be026a"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/h693vkmhe5uvv",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
-    ],
     "history_url": "https://www.radiojar.com/api/stations/h693vkmhe5uvv/tracks/"
   },
   {
@@ -2169,15 +2115,6 @@
       "e6d38cbb-868b-4345-8e5e-5cd76a770843",
       "6f616c84-bd8d-4b47-8126-932544b6ae9b",
       "4232c4aa-662a-41d1-877f-b8b13635e375"
-    ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/xcdg6yggzfeuv",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
     ],
     "formats": [
       "local news",
@@ -3341,7 +3278,7 @@
     "city": "Athens",
     "stream_url": "https://radio.athensnoise.rocks/listen/athensnoise.rocks/radio.mp3",
     "homepage": "https://www.athensnoise.rocks/radio/",
-    "favicon": "/station-icons/gr/athens-noise-rocks-placeholder.webp",
+    "favicon": "/station-icons/gr/athens-noise-rocks.webp",
     "genres": [
       "alternative rock",
       "classic hip hop",
@@ -3374,15 +3311,6 @@
     "alternate_stationuuids": [
       "dc1bec0a-0665-4510-bec6-f33565c783e0",
       "420f85b3-b8d0-4132-906e-7bbd64c333f2"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://radio.athensnoise.rocks/listen/athensnoise.rocks/radio.mp3",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ]
   },
   {
@@ -4550,19 +4478,10 @@
       "070bfd23-6b2c-4293-b2ce-fefaf6f58f11",
       "ce7e3407-69d1-4d20-a2e5-6d5bd89ab336"
     ],
-    "streams": [
-      {
-        "id": "mp3-320",
-        "label": "High quality",
-        "url": "https://i4.streams.ovh/sc/bluesrad/stream",
-        "bitrate": 320,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://cast3.radiohost.ovh:8352/;",
-          "http://i4.streams.ovh:8352/listen.pls?sid=1",
-          "http://i4.streams.ovh:8352/stream"
-        ]
-      }
+    "alternate_urls": [
+      "http://cast3.radiohost.ovh:8352/;",
+      "http://i4.streams.ovh:8352/listen.pls?sid=1",
+      "http://i4.streams.ovh:8352/stream"
     ]
   },
   {
@@ -4615,13 +4534,6 @@
         "url": "https://blueswave.radio:8100/bluesogg",
         "bitrate": 96,
         "codec": "OGG"
-      },
-      {
-        "id": "aac-128",
-        "label": "Standard",
-        "url": "https://blueswave.radio:8100/icyblues",
-        "bitrate": 128,
-        "codec": "AAC"
       },
       {
         "id": "mp3-192",
@@ -6232,17 +6144,8 @@
     "alternate_stationuuids": [
       "1a2894ba-496c-4f8a-8490-3bc055d8b3c1"
     ],
-    "streams": [
-      {
-        "id": "mp3-320",
-        "label": "Default",
-        "url": "https://everest.streams.ovh:1145/stream",
-        "bitrate": 320,
-        "codec": "MP3",
-        "alternate_urls": [
-          "https://everest.streams.ovh:1145/stream?x=1741852250498"
-        ]
-      }
+    "alternate_urls": [
+      "https://everest.streams.ovh:1145/stream?x=1741852250498"
     ]
   },
   {
@@ -11059,7 +10962,7 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "hot adult contemporary"
+      "adult contemporary"
     ]
   },
   {
@@ -15100,15 +15003,6 @@
     "alternate_stationuuids": [
       "74cbce65-6633-4b90-87c8-573597683404"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/kdf46t0c1quvv",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
-    ],
     "history_url": "https://www.radiojar.com/api/stations/kdf46t0c1quvv/tracks/",
     "formats": [
       "mainstream"
@@ -15216,15 +15110,6 @@
     ],
     "alternate_stationuuids": [
       "ac967725-990a-4b60-87e9-f05c93514c47"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://s2.e-resellers.gr/proxy/radio888/stream",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ]
   },
   {
@@ -15582,22 +15467,13 @@
     "alternate_stationuuids": [
       "695d1d91-671d-4f6b-a4f8-eebdd0c5816f"
     ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://eu2.fastcast4u.com/proxy/loopradiostation",
-        "bitrate": 128,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://eu2.fastcast4u.com/proxy/loopradiostation?mp=/;",
-          "https://eu2.fastcast4u.com/proxy/loopradiostation?mp=/;"
-        ]
-      }
-    ],
     "genre_review": [
       "deep",
       "melodic"
+    ],
+    "alternate_urls": [
+      "http://eu2.fastcast4u.com/proxy/loopradiostation?mp=/;",
+      "https://eu2.fastcast4u.com/proxy/loopradiostation?mp=/;"
     ]
   },
   {
@@ -15790,15 +15666,6 @@
     ],
     "alternate_stationuuids": [
       "c3cc0c68-418f-40c4-aeec-f4f98157361b"
-    ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://netradio.live24.gr/loveradio-1000",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
     ],
     "unavailable_streams": [
       {
@@ -18113,15 +17980,6 @@
     "alternate_stationuuids": [
       "3b2fb322-5ad8-4015-9a78-9e6805a67c3c",
       "1ac2e8a4-901b-4d4c-9af0-6eb05c5d8f3f"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://eu9.fastcast4u.com/proxy/musicart?mp=/1",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ]
   },
   {
@@ -18350,15 +18208,6 @@
     "alternate_stationuuids": [
       "0c8b98ae-6c3b-4822-89d6-6bf3ad1829f1",
       "150b854c-3799-4048-bc27-98076ab87242"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/opa-radio",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ],
     "history_url": "https://www.radiojar.com/api/stations/opa-radio/tracks/",
     "formats": [
@@ -19444,17 +19293,6 @@
         "codec": "AAC"
       },
       {
-        "id": "mp3-160",
-        "label": "Standard",
-        "url": "https://s3.yesstreaming.net:17062/stream",
-        "bitrate": 160,
-        "codec": "MP3",
-        "alternate_urls": [
-          "https://s3.yesstreaming.net:2199/tunein/offradio.pls",
-          "http://s3.yesstreaming.net:7062/stream"
-        ]
-      },
-      {
         "id": "mp3-320",
         "label": "High quality",
         "url": "https://ec5.yesstreaming.net:2025/stream",
@@ -19472,6 +19310,10 @@
     "formats": [
       "eclectic",
       "lounge"
+    ],
+    "alternate_urls": [
+      "https://s3.yesstreaming.net:2199/tunein/offradio.pls",
+      "http://s3.yesstreaming.net:7062/stream"
     ]
   },
   {
@@ -20773,15 +20615,6 @@
     "alternate_stationuuids": [
       "921e3b83-63fe-4557-b890-dc71d3fe647d"
     ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/48cz219puzzuv",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
-    ],
     "formats": [
       "christian",
       "orthodox christian",
@@ -20824,19 +20657,6 @@
       "01d3a1ec-ca1c-4cc0-9e0a-86b1f38a575e",
       "f28d16cd-4515-43ed-9cc8-c25e56190e23"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://netradio.live24.gr/pepper9660",
-        "bitrate": 192,
-        "codec": "MP3",
-        "alternate_urls": [
-          "https://stream.radiojar.com/pepper.m4a",
-          "https://stream.radiojar.com/pepper"
-        ]
-      }
-    ],
     "nowplaying_url": "https://www.radiojar.com/api/stations/pepper/now_playing/",
     "metadata_server": "radiojar",
     "history_url": "https://www.radiojar.com/api/stations/pepper/tracks/",
@@ -20845,6 +20665,10 @@
     ],
     "genre_review": [
       "smooth"
+    ],
+    "alternate_urls": [
+      "https://stream.radiojar.com/pepper.m4a",
+      "https://stream.radiojar.com/pepper"
     ]
   },
   {
@@ -20876,15 +20700,6 @@
     ],
     "alternate_stationuuids": [
       "5a5f0277-d346-486f-84df-38f2c0f7114d"
-    ],
-    "streams": [
-      {
-        "id": "mp3-320",
-        "label": "High quality",
-        "url": "https://stream.radiojar.com/s87smqqfewzuv",
-        "bitrate": 320,
-        "codec": "MP3"
-      }
     ],
     "formats": [
       "greek-language music"
@@ -21088,20 +20903,11 @@
     "alternate_stationuuids": [
       "7dfaa6c2-dc6d-40b3-b8af-513a50583b80"
     ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/0zs50dbr274tv",
-        "bitrate": 128,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://eco.onestreaming.com:8222/;"
-        ]
-      }
-    ],
     "formats": [
       "hits"
+    ],
+    "alternate_urls": [
+      "http://eco.onestreaming.com:8222/;"
     ]
   },
   {
@@ -21740,13 +21546,6 @@
     "geo_long": null,
     "streams": [
       {
-        "id": "mp3-128",
-        "label": "Standard (HTTPS)",
-        "url": "https://centova.gr-net.gr/proxy/radiokos/stream",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-128-alternative",
         "label": "Alternative server (HTTP)",
         "url": "http://server.insms.gr:45114/;stream.mp3",
@@ -22060,7 +21859,7 @@
     "name": "Radio 5 GR",
     "state": null,
     "city": null,
-    "stream_url": "https://streamer.out.gr/8006/stream",
+    "stream_url": "https://streamer.out.gr:8006/stream",
     "homepage": "https://radio5.gr/",
     "favicon": "/station-icons/gr/radio-5-gr.jpg",
     "genres": [],
@@ -29079,13 +28878,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-192",
-        "label": "Default",
-        "url": "https://realfm.live24.gr/realfm",
-        "bitrate": 192,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-192-alternative",
         "label": "Alternative",
         "url": "https://netradio.live24.gr/realfm",
@@ -29198,15 +28990,6 @@
     "alternate_stationuuids": [
       "c71655f6-ee0c-4605-af6c-b4ffa00b7292",
       "a70b4c5d-9cfb-438b-8834-26bf92449fdd"
-    ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://netradio.live24.gr/rebel1052",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
     ]
   },
   {
@@ -29566,17 +29349,8 @@
       "ed3dd158-bef7-4c6c-9af6-81b79ae8099e",
       "3ad5fa1d-60b0-40d6-b40f-7c55ca0f4f47"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://azuracast.streams.ovh/listen/rockangels/radio.mp3",
-        "bitrate": 192,
-        "codec": "MP3",
-        "alternate_urls": [
-          "https://azuracast.streams.ovh/radio/8030/radio.mp3"
-        ]
-      }
+    "alternate_urls": [
+      "https://azuracast.streams.ovh/radio/8030/radio.mp3"
     ]
   },
   {
@@ -29740,13 +29514,6 @@
     "metadata_server": "shoutcast",
     "history_url": "http://live.rockmelodic-radio.com:8124/played?sid=1&type=json",
     "streams": [
-      {
-        "id": "mp3-320",
-        "label": "Default",
-        "url": "https://i4.streams.ovh:2200/ssl/rockmelo?mp=/stream",
-        "bitrate": 320,
-        "codec": "MP3"
-      },
       {
         "id": "mp3-320-alternative",
         "label": "Alternative",
@@ -29983,15 +29750,6 @@
     ],
     "alternate_stationuuids": [
       "5cde3f39-c6a5-4b8b-8dce-c1b8ee13f4a7"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.radiojar.com/aay95tkmb",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ],
     "history_url": "https://www.radiojar.com/api/stations/aay95tkmb/tracks/"
   },
@@ -31081,20 +30839,11 @@
       "2d9dfa25-7379-460b-8cd0-fe163af26ebe",
       "ccdc8e96-f3bc-4703-86ba-5b6aa0c92304"
     ],
-    "streams": [
-      {
-        "id": "mp3-192",
-        "label": "Standard",
-        "url": "https://netradio.live24.gr/skai1003",
-        "bitrate": 192,
-        "codec": "MP3",
-        "alternate_urls": [
-          "https://skai.live24.gr/skai1003"
-        ]
-      }
-    ],
     "formats": [
       "news"
+    ],
+    "alternate_urls": [
+      "https://skai.live24.gr/skai1003"
     ]
   },
   {
@@ -31863,13 +31612,6 @@
     ],
     "streams": [
       {
-        "id": "mp3-128",
-        "label": "Default",
-        "url": "https://sportfm.live24.gr/sportfm7712",
-        "bitrate": 128,
-        "codec": "MP3"
-      },
-      {
         "id": "mp3-128-alternative",
         "label": "Alternative",
         "url": "https://netradio.live24.gr/sportfm7712",
@@ -32292,22 +32034,13 @@
     "alternate_stationuuids": [
       "85280f71-e502-44e2-8e8c-a2d303c25e44"
     ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://eco.onestreaming.com/proxy/statusradio/stream",
-        "bitrate": 128,
-        "codec": "MP3",
-        "alternate_urls": [
-          "http://eco.onestreaming.com:8131/stream"
-        ]
-      }
-    ],
     "formats": [
       "greek-language music",
       "news",
       "talk"
+    ],
+    "alternate_urls": [
+      "http://eco.onestreaming.com:8131/stream"
     ]
   },
   {
@@ -33678,7 +33411,7 @@
     "city": "Thessaloniki",
     "stream_url": "https://radio.streamings.gr/proxy/yellownewstream?mp=/stream",
     "homepage": "https://tivoliradio.gr/",
-    "favicon": "/station-icons/gr/tivoli-thessaloniki-placeholder.webp",
+    "favicon": "/station-icons/gr/tivoli-thessaloniki.webp",
     "genres": [],
     "language": null,
     "bitrate": 192,
@@ -33974,19 +33707,9 @@
       "47f14c6e-741e-42fe-980b-98a6d1615225",
       "7e990e80-cf13-493b-9a7d-5cdc7e79fe02"
     ],
-    "streams": [
-      {
-        "id": "mp3-320",
-        "label": "High quality",
-        "url": "https://cast.streams.ovh:8008/stream",
-        "bitrate": 320,
-        "codec": "MP3",
-        "alternate_urls": [
-          "https://cast.streams.ovh:2199/tunein/tranceathena.pls",
-          "https://cast.streams.ovh:8008/stream",
-          "https://cast.streams.ovh:8008/;"
-        ]
-      }
+    "alternate_urls": [
+      "https://cast.streams.ovh:2199/tunein/tranceathena.pls",
+      "https://cast.streams.ovh:8008/;"
     ]
   },
   {
@@ -34242,15 +33965,6 @@
     "alternate_stationuuids": [
       "ba59c7f8-d4fa-45ca-8a5f-50d5e9b69daf",
       "71ab890f-453f-4b65-999d-077ba222280e"
-    ],
-    "streams": [
-      {
-        "id": "mp3-128",
-        "label": "Standard",
-        "url": "https://stream.vanillaradio.com:8016/stream/stream",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
     ],
     "unavailable_streams": [
       {
@@ -43823,7 +43537,9 @@
     "stream_url": "https://stream.radiojar.com/ybz2g5nh5ehvv",
     "homepage": "https://radiopanteion.com/",
     "favicon": "/station-icons/gr/athens-ccba37c5.jpg",
-    "genres": [],
+    "genres": [
+      "folk"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -43838,8 +43554,7 @@
     "metadata_server": "radiojar",
     "history_url": "https://www.radiojar.com/api/stations/ybz2g5nh5ehvv/tracks/",
     "formats": [
-      "student radio",
-      "folk"
+      "student radio"
     ]
   },
   {
@@ -46144,10 +45859,8 @@
     "metadata_server": "icecast",
     "formats": [
       "politics",
-      "talk"
-    ],
-    "genre_review": [
-      "antifa news"
+      "talk",
+      "news"
     ]
   },
   {
@@ -46191,13 +45904,6 @@
         "url": "https://stream.newageradio.gr/listen/flac_gr/radio.mp3",
         "bitrate": 128,
         "codec": "MP3"
-      },
-      {
-        "id": "aac-320",
-        "label": "High quality",
-        "url": "https://stream.newageradio.gr/listen/flac_gr/radio.aac",
-        "bitrate": 320,
-        "codec": "AAC"
       },
       {
         "id": "flac",
@@ -48775,11 +48481,13 @@
     "stationuuid": "1b19cf0b-b676-4cff-a293-22f2683a5bae",
     "name": "More Fm 103.9 Alexandroupoli",
     "state": "Eastern Macedonia and Thrace",
+    "city": "Alexandroupolis",
     "stream_url": "http://37.139.5.45:8000/more",
     "homepage": "https://www.morefmgr.com/",
     "favicon": "/station-icons/gr/more-fm-103-9-alexandroupoli-alexandroupolis.webp",
     "genres": [
-      "pop"
+      "pop",
+      "dance"
     ],
     "language": null,
     "bitrate": 192,
@@ -48791,7 +48499,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "city": "Alexandroupolis"
+    "formats": [
+      "classic hits"
+    ]
   },
   {
     "slug": "must-97-nafpli",
@@ -49583,12 +49293,15 @@
     "slug": "radio-politia",
     "stationuuid": "1af055c2-7e6c-46aa-986d-365cc008b838",
     "name": "Radio Politia",
-    "state": null,
-    "city": null,
+    "state": "Peloponnese",
+    "city": "Sparta",
     "stream_url": "https://eco.onestreaming.com/proxy/politia/stream",
     "homepage": "https://politiaradio.gr/",
     "favicon": "/station-icons/gr/radio-politia.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "folk"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -49600,7 +49313,8 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "variety"
+      "variety",
+      "news"
     ]
   },
   {
@@ -49751,7 +49465,26 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "hot adult contemporary"
+      "adult contemporary",
+      "90",
+      "80",
+      "hits"
+    ],
+    "streams": [
+      {
+        "id": "alternative-istoikona",
+        "label": "Alternative 1 MP3",
+        "url": "http://live3.istoikona.net/proxy/moreradio/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      },
+      {
+        "id": "alternative-onestreaming",
+        "label": "Alternative 2 MP3",
+        "url": "http://eco.onestreaming.com:8041/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {

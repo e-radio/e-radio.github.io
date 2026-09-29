@@ -31,6 +31,13 @@ test('ordinary updates and genuinely new stations still import', () => {
   assert.equal(result.merged[0].bitrate,128);
   assert.equal(result.automaticallyAddedStations.length,1);
 });
+
+test('default stream aliases retained on a station prevent duplicate imports', () => {
+  const local = {...station, alternate_urls:['https://radio/old-default']};
+  const result = mergeStations([local], [{stationuuid:'new-alias', stream_url:'https://radio/old-default'}]);
+  assert.deepEqual(result.merged, [local]);
+  assert.equal(result.rejectedDuplicateStreams.length, 1);
+});
 test('existing field order survives import and missing city is appended', () => {
   const local = {slug:'ordered', stationuuid:'ordered', state:'Zagreb', city:'Zagreb', stream_url:'https://radio/ordered', bitrate:64};
   const remote = {...local, bitrate:128};
