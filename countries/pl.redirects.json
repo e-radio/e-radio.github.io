@@ -533,5 +533,6 @@
   "/stations/vox-fm-e9931568/": "/stations/vox-fm/",
   "/stations/vox-fm-128kbps/": "/stations/vox-fm/",
   "/stations/vox-fm-best-lista-dedffd6c/": "/stations/vox-fm-best-lista/",
-  "/stations/kiss-fm-poland/": "/stations/kiss-online-radio/"
+  "/stations/kiss-fm-poland/": "/stations/wave-fm/",
+  "/stations/kiss-online-radio/": "/stations/wave-fm/"
 }

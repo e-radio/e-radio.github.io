@@ -39,7 +39,7 @@ def main():
         s['state']=normalized;s['city']=city
         if normalized or city or s.get('locationNames'):
             names=s.setdefault('locationNames',{})
-            names['en']={'city':city,'state':normalized}
+            names['en']={'city':policy.get('englishCityNames', {}).get(city, city),'state':normalized}
             names['pl']={'city':city,'state':policy['polishNames'].get(normalized)}
         new={k:s.get(k) for k in old}
         if old!=new:changes.append({'stationuuid':s['stationuuid'],'before':old,'after':new})

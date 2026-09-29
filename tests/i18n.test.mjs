@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import ts from 'typescript';
 // Exercise the same pure translator used by Astro and the player on Node 20+.
 const source = readFileSync(new URL('../src/i18n/translate.ts', import.meta.url), 'utf8')
+  .replace("import en from './en.json';", `const en = ${readFileSync(new URL('../src/i18n/en.json', import.meta.url), 'utf8')};`)
   .replace("import hr from './hr.json';", `const hr = ${readFileSync(new URL('../src/i18n/hr.json', import.meta.url), 'utf8')};`);
 const localizedSource = source.replace("import pl from './pl.json';", `const pl = ${readFileSync(new URL('../src/i18n/pl.json', import.meta.url), 'utf8')};`).replace("import el from './el.json';", `const el = ${readFileSync(new URL('../src/i18n/el.json', import.meta.url), 'utf8')};`);
 const js = ts.transpileModule(localizedSource.replace("import nl from './nl.json';", `const nl = ${readFileSync(new URL('../src/i18n/nl.json', import.meta.url), 'utf8')};`).replace("import sv from './sv.json';", `const sv = ${readFileSync(new URL('../src/i18n/sv.json', import.meta.url), 'utf8')};`), { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
@@ -114,4 +115,12 @@ test('Polish default locale retains root URLs and puts English under /en/', asyn
   assert.equal(en.localizePath('/en/city/warsaw/'), '/en/city/warsaw/');
   assert.equal(en.localizePath('/station-icons/pl/example.webp'), '/station-icons/pl/example.webp');
   assert.equal(en.localizePath('https://radio.example/live.mp3'), 'https://radio.example/live.mp3');
+});
+
+test('Polish and English location labels use the appropriate city names', () => {
+ assert.equal(t('Warszawa', 'en'), 'Warsaw');
+ assert.equal(t('Kraków', 'en'), 'Krakow');
+ assert.equal(t('Warsaw', 'pl'), 'Warszawa');
+ assert.equal(t('Wrocław', 'en'), 'Wrocław');
+ assert.equal(t('Masovian Voivodeship', 'pl'), 'województwo mazowieckie');
 });

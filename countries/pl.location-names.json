@@ -307,5 +307,9 @@
     "Warmian-Masurian Voivodeship": "województwo warmińsko-mazurskie",
     "Greater Poland Voivodeship": "województwo wielkopolskie",
     "West Pomeranian Voivodeship": "województwo zachodniopomorskie"
+  },
+  "englishCityNames": {
+    "Warszawa": "Warsaw",
+    "Kraków": "Krakow"
   }
 }
