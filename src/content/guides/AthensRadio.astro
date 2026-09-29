@@ -57,7 +57,7 @@ const article = {'@type':'Article',headline:title,description,url:localizePath(c
    <h2 class="h3">{group[lang]}</h2>
    <ul class="station-list" role="list">{group.stations.map(station=><li class="d-flex align-items-start gap-3 mb-4">
     <img src={station.image} alt={el ? `Λογότυπο ${station.name}` : `${station.name} logo`} width="72" height="72" loading="lazy" decoding="async" class="station-logo rounded border bg-white flex-shrink-0" />
-    <div class="station-details"><strong>{station.name}</strong><br />{station.fm} FM · {station[lang]}<br /><a href={localizePath(`/search/?q=${encodeURIComponent(station.query)}`)}>{el ? 'Βρείτε ροή ακρόασης' : 'Find a listening stream'} <span class="visually-hidden">{station.name}</span></a></div>
+    <div class="station-details"><strong><a href={localizePath(`/stations/${station.slug}/`)}>{station.name}</a></strong><br />{station.fm} FM · {station[lang]}<br /><a href={localizePath(`/stations/${station.slug}/`)}>{el ? 'Ακούστε ζωντανά' : 'Listen live'} <span class="visually-hidden">{station.name}</span></a></div>
    </li>)}</ul>
    {group.id === 'news' && <p class="small">{el ? 'Σημείωση: ο Αθήνα 9.84 εκπέμπει στους 98.3 FM.' : 'Note: Athina 9.84 broadcasts on 98.3 FM.'} <a href={sources[3].url}>{el ? 'Πηγή: Αθήνα 9.84' : 'Source: Athina 9.84'}</a>.</p>}
    {group.id === 'sports' && <p class="small">{el ? 'ΕΡΑ Σπορ: 101.8 FM (Υμηττός) και 100.9 FM (Πάρνηθα).' : 'ERA Sport: 101.8 FM (Hymettus) and 100.9 FM (Parnitha).'} <a href={sources[2].url}>{el ? 'Συχνότητες ΕΡΤ' : 'ERT frequencies'}</a>.</p>}
@@ -65,8 +65,8 @@ const article = {'@type':'Article',headline:title,description,url:localizePath(c
   </section>)}
   <section id="listen" class="my-5"><h2 class="h3">{el ? 'Πώς να ακούσετε ραδιόφωνο Αθήνας online' : 'How to listen to Athens radio online'}</h2>
    <ol>
-    <li>{el ? 'Επιλέξτε «Βρείτε ροή ακρόασης» κάτω από έναν σταθμό για να ανοίξετε την αναζήτηση με το όνομά του.' : 'Select “Find a listening stream” under a station to search for its name.'}</li>
-    <li>{el ? 'Ελέγξτε όνομα, πόλη και συχνότητα και ανοίξτε την αντίστοιχη σελίδα σταθμού.' : 'Check the name, city and frequency, then open the matching station page.'}</li>
+    <li>{el ? 'Επιλέξτε το όνομα του σταθμού ή «Ακούστε ζωντανά» για να ανοίξετε απευθείας τη σελίδα του.' : 'Select the station name or “Listen live” to open its station page directly.'}</li>
+    <li>{el ? 'Στη σελίδα του σταθμού, βρείτε το πρόγραμμα αναπαραγωγής και τις διαθέσιμες ροές.' : 'On the station page, find the player and available streams.'}</li>
     <li>{el ? 'Πατήστε αναπαραγωγή. Αν μια ροή δεν ανταποκρίνεται, δοκιμάστε άλλη διαθέσιμη ροή ή την επίσημη ιστοσελίδα.' : 'Press Play. If a stream fails, try another available stream or the official station website.'}</li>
    </ol>
    <p>{el ? 'Η online ακρόαση χρησιμοποιεί δεδομένα ή Wi-Fi. Για ακρόαση σε δέκτη FM, χρησιμοποιήστε τις παραπάνω συχνότητες· η ποιότητα λήψης εξαρτάται από την περιοχή, την κεραία και τα εμπόδια.' : 'Online listening uses mobile data or Wi-Fi. On an FM receiver, use the frequencies above; reception depends on location, antenna and obstructions.'}</p>

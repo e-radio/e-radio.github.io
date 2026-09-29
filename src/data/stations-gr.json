@@ -43821,7 +43821,7 @@
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream.radiojar.com/ybz2g5nh5ehvv",
-    "homepage": "https://radiopanteion.wordpress.com/",
+    "homepage": "https://radiopanteion.com/",
     "favicon": "/station-icons/gr/athens-ccba37c5.jpg",
     "genres": [],
     "language": "greek",
@@ -43838,7 +43838,8 @@
     "metadata_server": "radiojar",
     "history_url": "https://www.radiojar.com/api/stations/ybz2g5nh5ehvv/tracks/",
     "formats": [
-      "student radio"
+      "student radio",
+      "folk"
     ]
   },
   {
@@ -43848,7 +43849,7 @@
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream.radiojar.com/ypdwy53ce6hvv",
-    "homepage": "https://radiopanteion.wordpress.com/",
+    "homepage": "https://radiopanteion.com/",
     "favicon": "/station-icons/gr/sports-athens.jpg",
     "genres": [],
     "language": "greek",
