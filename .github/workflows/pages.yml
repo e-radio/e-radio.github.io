@@ -18,7 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      COUNTRY: ${{ vars.COUNTRY || 'gr' }}
+      COUNTRY: ${{ vars.COUNTRY || (github.event.repository.name == 'radio-nederland.github.io' && 'nl') || 'gr' }}
+      SITE: ${{ vars.SITE || (github.event.repository.name == 'radio-nederland.github.io' && 'nl-fm') || '' }}
       SITE_URL: ${{ vars.SITE_URL }}
     steps:
       - name: Checkout

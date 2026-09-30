@@ -670,3 +670,15 @@ are excluded from live references; dynamically selected guide covers are kept.
 After future station merges, remove icons made unused by the merge only after
 checking references across all countries. Update the cleanup tool's dynamic
 asset list if new image paths are assembled at runtime.
+
+### Separate Netherlands branding
+
+`countries/nl.json` keeps the Netherlands FM branding. Radio Nederland uses
+`countries/nl-fm.json`, sharing the same Dutch station data and redirects.
+Run it locally with `COUNTRY=nl SITE=nl-fm npm run dev`, or build with
+`COUNTRY=nl SITE=nl-fm npm run build`. Restart the development server after changing selectors.
+
+For deployment, set repository variables `COUNTRY=nl` and `SITE=nl-fm`.
+The `radio-nederland.github.io` repository selects these defaults automatically.
+`SITE_URL`, when set, overrides only the origin; the selected configuration
+supplies the navbar name, page-title branding and other site settings.
