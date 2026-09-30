@@ -64,8 +64,7 @@ const {
             <img src={site.logo} width="32" height="32" alt={t(`${site.siteName} app icon`)} />
             <span>{t(site.siteName)}</span>
           </a>
-          <a href={localizePath('/formats/')} class="nav-link ms-auto" aria-current={Astro.url.pathname.replace(/\/$/, '') === localizePath('/formats/')!.replace(/\/$/, '') ? 'page' : undefined}>{t('Radio formats')}</a>
-          <a href={localizePath('/search/')} class="btn btn-outline-primary d-inline-flex align-items-center gap-2">
+          <a href={localizePath('/search/')} class="btn btn-outline-primary d-inline-flex align-items-center gap-2 ms-auto">
             <i class="bi bi-search" aria-hidden="true"></i><span>{t('Search')}</span>
           </a>
           {multilingual && <nav aria-label={t('Language selection')} class="d-flex gap-3 ms-auto">
