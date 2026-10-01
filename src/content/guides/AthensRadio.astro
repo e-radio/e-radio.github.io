@@ -57,7 +57,7 @@ const article = {'@type':'Article',headline:title,description,url:localizePath(c
    <h2 class="h3">{group[lang]}</h2>
    <ul class="station-list" role="list">{group.stations.map(station=><li class="d-flex align-items-start gap-3 mb-4">
     <img src={station.image} alt={el ? `Λογότυπο ${station.name}` : `${station.name} logo`} width="72" height="72" loading="lazy" decoding="async" class="station-logo rounded border bg-white flex-shrink-0" />
-    <div class="station-details"><strong><a href={localizePath(`/stations/${station.slug}/`)}>{station.name}</a></strong><br />{station.fm} FM · {station[lang]}<br /><a href={localizePath(`/stations/${station.slug}/`)}>{el ? 'Ακούστε ζωντανά' : 'Listen live'} <span class="visually-hidden">{station.name}</span></a></div>
+    <div class="station-details"><strong><a href={localizePath(`/stations/${station.slug}/`)}>{station.name}</a></strong><br />{station.fm} FM · {station[lang]}<br /><a href={localizePath(`/stations/${station.slug}/`)}>{el ? 'Ακούστε ζωντανά' : 'Listen live'} {station.name}</a></div>
    </li>)}</ul>
    {group.id === 'news' && <p class="small">{el ? 'Σημείωση: ο Αθήνα 9.84 εκπέμπει στους 98.3 FM.' : 'Note: Athina 9.84 broadcasts on 98.3 FM.'} <a href={sources[3].url}>{el ? 'Πηγή: Αθήνα 9.84' : 'Source: Athina 9.84'}</a>.</p>}
    {group.id === 'sports' && <p class="small">{el ? 'ΕΡΑ Σπορ: 101.8 FM (Υμηττός) και 100.9 FM (Πάρνηθα).' : 'ERA Sport: 101.8 FM (Hymettus) and 100.9 FM (Parnitha).'} <a href={sources[2].url}>{el ? 'Συχνότητες ΕΡΤ' : 'ERT frequencies'}</a>.</p>}
