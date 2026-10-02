@@ -758,8 +758,8 @@ const structuredData = {
             <button class="btn btn-link p-0 text-danger text-decoration-none text-start" id="btnReport" type="button">{t("Report Stream Issue")}</button>
             </div>
           </div>
-          <details class="border-top pt-3">
-            <summary class="fw-semibold">{t("Technical details")}</summary>
+          <section class="border-top pt-3" aria-labelledby="technical-details-heading">
+            <h2 id="technical-details-heading" class="h6 fw-semibold mb-0">{t("Technical details")}</h2>
             <div class="vstack gap-3 mt-3">
           {station.stationuuid && (
             <div>
@@ -794,7 +794,7 @@ const structuredData = {
                 </div>
               )}
             </div>
-          </details>
+          </section>
         </div>
       </aside>
 

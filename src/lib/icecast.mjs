@@ -1,4 +1,25 @@
 const clean = value => typeof value === 'string' ? value.trim() : '';
+const xmlText = value => value.replace(/&(?:amp|lt|gt|quot|apos|#\d+|#x[\da-f]+);/gi, entity => {
+  const named = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" };
+  const key = entity.slice(1, -1).toLowerCase();
+  if (key in named) return named[key];
+  const codepoint = key.startsWith('#x') ? Number.parseInt(key.slice(2), 16) : Number.parseInt(key.slice(1), 10);
+  return Number.isInteger(codepoint) && codepoint >= 0 && codepoint <= 0x10ffff
+    && !(codepoint >= 0xd800 && codepoint <= 0xdfff) ? String.fromCodePoint(codepoint) : entity;
+});
+const xmlAttribute = (tag, name) => {
+  const match = tag.match(new RegExp(`\\b${name}\\s*=\\s*(["'])(.*?)\\1`, 'i'));
+  return match ? xmlText(match[2]).trim() : '';
+};
+const jazlerSong = value => {
+  if (!/<Schedule\b[^>]*\bSystem\s*=\s*["']Jazler["']/i.test(value)) return null;
+  const song = value.match(/<Song\b[^>]*>/i)?.[0];
+  if (!song) return null;
+  const title = xmlAttribute(song, 'title');
+  if (!title) return null;
+  const artist = xmlAttribute(value.match(/<Artist\b[^>]*\/?\s*>/i)?.[0] || '', 'name');
+  return { title, artist };
+};
 const normalizeMount = value => {
   try { return decodeURIComponent(value).replace(/\/+$/, '') || '/'; }
   catch { return value.replace(/\/+$/, '') || '/'; }
@@ -29,6 +50,9 @@ export function icecastTrack(payload, streamUrl, endpoint) {
   if (!source) return null;
   let title = clean(source.title) || clean(source.yp_currently_playing) || clean(source.songtitle);
   let artist = clean(source.artist);
+  const jazler = jazlerSong(title);
+  if (jazler) ({ title, artist } = jazler);
+  else if (/^<\?xml\b/i.test(title) || /^<Schedule\b/i.test(title)) return null;
   // Split only the first spaced hyphen so hyphenated names and song titles survive.
   const separator = /\s+-\s+/.exec(title);
   if (separator) {

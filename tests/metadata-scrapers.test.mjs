@@ -21,6 +21,17 @@ test('Icecast chooses endpoint mount rather than a different station', () => {
  assert.equal(parseMetadata('icecast',payload,context).listeners,2);
  assert.equal(parseMetadata('icecast',payload,{...context,endpoint:'https://relay.example/status-json.xsl?mount=/missing'}).text,null);
 });
+test('Icecast extracts Jazler song and artist from embedded XML', () => {
+ const xml = '<?xml version="1.0"?><Schedule System="Jazler"><Event eventType="song"><Song title="CAN`T TAKE MY EYES (acoustic)"><Artist name="SAGI REI"/></Song></Event></Schedule>';
+ const payload = {icestats:{source:{title:xml,listeners:9}}};
+ const song = parseMetadata('icecast',payload,context);
+ assert.equal(song.song.title,'CAN`T TAKE MY EYES (acoustic)');
+ assert.equal(song.song.artist,'SAGI REI');
+ assert.equal(song.text,'SAGI REI – CAN`T TAKE MY EYES (acoustic)');
+ const escaped = xml.replace('CAN`T TAKE MY EYES (acoustic)', 'ROCK &amp; ROLL &#39;LIVE&#39;');
+ assert.equal(parseMetadata('icecast',{icestats:{source:{title:escaped}}},context).song.title,"ROCK & ROLL 'LIVE'");
+ assert.equal(parseMetadata('icecast',{icestats:{source:{title:'<Schedule System="Jazler">broken'}}},context).text,null);
+});
 test('Icecast splits combined track fields into artist and title', () => {
  for (const field of ['title', 'yp_currently_playing', 'songtitle']) {
   const result = parseMetadata('icecast', {icestats:{source:{[field]:' Selena Gomez - Love On ',listeners:0}}}, context);
@@ -189,4 +200,19 @@ test('ZPR keeps current, past and all future songs separate and ordered', () => 
  assert.deepEqual(result.payload.song_history.map(x=>x.song.title),['Past']);
  assert.deepEqual(parseMetadata('zpr',{}).payload.upcoming,[]);
  assert.deepEqual(parseHistory('zpr','{"futures":[{"name":"Future"}]}').song_history,[]);
+});
+
+test('CentovaCast repairs Latin-1 mojibake in Greek current songs and history', () => {
+ const title = "ΤΙ ΣΟΥ'ΧΩ ΚΆΝΕΙ";
+ const broken = Buffer.from(title, 'utf8').toString('latin1');
+ const payload = {type:'result',data:[{song:`ANTONIS REMOS - ${broken}`,track:{artist:'ANTONIS REMOS',title:broken}}]};
+ const result = parseMetadata('centovacast',payload,context);
+ assert.equal(result.song.title,title);
+ assert.equal(result.text,`ANTONIS REMOS - ${title}`);
+ const history = parseHistory('centovacast',JSON.stringify({type:'result',data:[[{title:broken,artist:'ANTONIS REMOS',time:100}]]}));
+ assert.equal(history.song_history[0].song.title,title);
+ for (const normal of ['Ελληνικά', 'Beyoncé', 'ANTONIS REMOS', 'Ã', 'Live Ελληνικά']) {
+  assert.equal(parseMetadata('centovacast',{type:'result',data:[{track:{title:normal}}]},context).song.title,normal);
+ }
+ assert.equal(payload.data[0].track.title,broken);
 });
