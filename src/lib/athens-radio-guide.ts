@@ -172,7 +172,7 @@ export const athensGroups = [
         "el": "Adult contemporary",
         "en": "Adult contemporary",
         "query": "Kiss 92.9",
-        "slug": "kiss-92-9-athens-4baef746"
+        "slug": "kiss-92-9-athens"
       },
       {
         "name": "Easy 97.2",
@@ -180,7 +180,7 @@ export const athensGroups = [
         "el": "Soft pop / Melodic",
         "en": "Soft pop / Melodic",
         "query": "Easy 97.2",
-        "slug": "easy-attiki"
+        "slug": "easy-97-2"
       },
       {
         "name": "HiT 88.9",

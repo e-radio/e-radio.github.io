@@ -17,7 +17,7 @@
     "git push nl": "git add . && git commit -m \"update\" && git push dutch main", 
     "git push nl-fm": "git add . && git commit -m \"update\" && git push dutch-fm main", 
     "git push pl": "git add . && git commit -m \"update\" && git push poland main", 
-    "git push": "git push",
+    "git push": "git add . && git commit -m \"update\" && git push origin main && git push croatia main && git push sweden main && git push dutch main && git push dutch-fm main && git push poland main",
     "find metadata": "node tools/find-station-metadata-endpoints.mjs --write",
     "fill locations": "python3 tools/fill-station-locations.py",
     "fff brobe": "python3 tools/ffprobe-metadata.py --url https://22713.live.streamtheworld.com/SERVICE07.mp3",
