@@ -41,6 +41,9 @@ def check(root):
         assert page.lang in ('en','hr','el','sv','nl'),path
         expected=next((lang for lang in languages if lang!='en' and path.startswith('/'+lang+'/')), 'en')
         assert page.lang==expected,(path,page.lang)
+        if 'noindex' in page.meta.get('robots',''):
+            assert not any(tag=='link' and a.get('rel')=='canonical' for tag,a in page.links),(path,'noindex page has a canonical')
+            continue
         canonical=[a['href'] for tag,a in page.links if tag=='link' and a.get('rel')=='canonical']
         assert len(canonical)==1,(path,'canonical count',canonical)
         origin=urlsplit(canonical[0]).scheme+'://'+urlsplit(canonical[0]).netloc

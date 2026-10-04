@@ -240,7 +240,7 @@
   "/genres/community-radio/": "/formats/community-radio/",
   "/genres/talke/": "/formats/talk/",
   "/genres/student-radio/": "/formats/student-radio/",
-  "/genres/hot-ac/": "/formats/hot-adult-contemporary/",
+  "/genres/hot-ac/": "/formats/adult-contemporary/",
   "/genres/anime/": "/formats/anime/",
   "/genres/soundtracks/": "/formats/soundtracks/",
   "/genres/public/": "/formats/public-radio/",

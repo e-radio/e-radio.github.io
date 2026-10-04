@@ -156,7 +156,7 @@ export const athensGroups = [
         "el": "Dance / Electronic",
         "en": "Dance / Electronic",
         "query": "Best 92.6",
-        "slug": "best-92-6"
+        "slug": "best-radio-92-6-athens"
       },
       {
         "name": "Red 96.3",
