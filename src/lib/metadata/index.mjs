@@ -1,4 +1,5 @@
 import * as zpr from './providers/zpr.mjs';
+import * as sonicpanel from './providers/sonicpanel.mjs';
 import * as strefa from './providers/strefa.mjs';
 import * as azuracast from './providers/azuracast.mjs';
 import * as centovacast from './providers/centovacast.mjs';
@@ -14,7 +15,7 @@ import * as unknown from './providers/unknown.mjs';
 import { artworkUrl, gatherSongHistory, parseTextHistory } from './common.mjs';
 export { artworkUrl, gatherSongHistory } from './common.mjs';
 
-const providers = { zpr, strefa, jolene, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
+const providers = { zpr, sonicpanel, strefa, jolene, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
 export const scraperFor = server => providers[server] || unknown;
 
 export function decodeMetadata(text) {

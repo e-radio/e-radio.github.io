@@ -56,6 +56,22 @@ test('Shoutcast uses songtitle, never the station title', () => {
  const payload=parseHistory('shoutcast',JSON.stringify([{title:'Current',playedat:200},{title:'Previous',playedat:100}]));
  assert.equal(payload.now_playing.song.text,'Current');assert.equal(payload.song_history[0].song.text,'Previous');
 });
+test('SonicPanel maps current song, artwork, listeners and numbered history without jingles', () => {
+ const raw={title:'Prince - Purple Rain feat. The Revolution',art:'https://stream1.468.gr/cp/musiclibrary/now.png',listeners:'19',
+  history:['1.) Prince - Purple Rain feat. The Revolution<br>','2.) Julee Cruise - Summer Kisses, Winter Tears<br>',
+   '3.) JINGLE - STATION ID<br>','4.) Johnny Logan - Hold Me Now<br>']};
+ const result=parseMetadata('sonicpanel',raw,context);
+ assert.equal(result.song.artist,'Prince');
+ assert.equal(result.song.title,'Purple Rain feat. The Revolution');
+ assert.equal(result.song.art,raw.art);
+ assert.equal(result.listeners,'19');
+ assert.deepEqual(result.payload.song_history.map(entry=>entry.song.title),['Summer Kisses, Winter Tears','Hold Me Now']);
+ const history=parseHistory('sonicpanel',JSON.stringify(raw));
+ assert.equal(history.now_playing.song.title,'Purple Rain feat. The Revolution');
+ assert.deepEqual(history.song_history,result.payload.song_history);
+ assert.equal(supportsNowPlaying('sonicpanel'),true);
+ assert.equal(parseMetadata('sonicpanel',{},context).text,null);
+});
 test('Radiojar and Radio.co have independent adapters', () => {
  assert.equal(parseMetadata('radiojar',{title:'Track',artist:'Artist',thumb:'https://img.example/x'},context).song.art,'https://img.example/x');
  assert.equal(parseMetadata('radio.co',{current_track:{title:'Song',artist:'Artist'}},context).text,'Artist – Song');

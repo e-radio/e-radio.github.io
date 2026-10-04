@@ -671,6 +671,54 @@ After future station merges, remove icons made unused by the merge only after
 checking references across all countries. Update the cleanup tool's dynamic
 asset list if new image paths are assembled at runtime.
 
+### Merge station records by UUID
+
+Create `merge.json` in the project root with the retained station UUID in
+`parent` and one or more UUIDs to merge in `childs`:
+
+```json
+{
+  "parent": "da858352-e07b-40da-808d-248d9080db2f",
+  "childs": ["b3b5204f-bf7c-11e9-8502-52543be04c81"]
+}
+```
+
+The command previews its decisions by default:
+
+```sh
+python3 tools/merge-stations.py --country gr merge.json
+```
+
+After reviewing the preview, apply it with:
+
+```sh
+python3 tools/merge-stations.py --country gr merge.json --write
+```
+
+The earlier direct-UUID form still works if needed:
+
+```sh
+python3 tools/merge-stations.py --country gr --parent PARENT_UUID CHILD_UUID
+```
+
+Review the printed merged station record, conflicts, redirects, guide references
+and images. Repeating an
+already applied merge reports `already_merged` and makes no changes. `COUNTRY`
+can replace `--country`; Greece is the default. The tool does not probe stream
+availability or infer whether different URLs carry the same programme, so
+verify the station identities and stream URLs before applying a merge.
+
+The parent keeps its slug, name, icon, default stream and existing field order.
+Missing location/language fields and curated categories are combined. Exact
+duplicate stream URLs are kept once; distinct streams retain their own codec,
+bitrate and metadata. Playlist files (`.pls`, `.asx`, `.m3u`) become import
+aliases rather than player options; add their resolved direct stream separately
+if needed. The tool preserves old UUIDs and slugs, writes direct redirects,
+updates exact station slug references in guides, and deletes only icons made
+unused after checking every country and shared content. Conflicting nonempty
+values appear in the preview; the parent value wins. No file changes during
+preview. Run `npm run test:merge` for the tool's tests.
+
 ### Separate Netherlands branding
 
 `countries/nl.json` keeps the Netherlands FM branding. Radio Nederland uses

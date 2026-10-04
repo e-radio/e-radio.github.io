@@ -67,6 +67,7 @@ const wrapWithCorsProxy = (rawUrl: string) => {
 };
 
 type ServerKind =
+  | "sonicpanel"
   | "gamerzinn"
   | "otvoreni"
   | "azuracast"
@@ -583,7 +584,7 @@ const structuredData = {
       </section>
       <section>
         <div class="mt-4">
-            <div class="ff-app-banner px-4 py-3">
+            <a class="ff-app-banner d-block px-4 py-3 text-decoration-none" href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener" aria-label={t(`Listen to ${station.name} on Radddio App`)}>
               <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
                 <div class="flex-shrink-0">
                   <picture>
@@ -606,11 +607,11 @@ const structuredData = {
                     <span>{t("100K+ Downloads")}</span>
                   </div>
                 </div>
-                <a href={localizePath(radddioURL)} target="_blank" rel="nofollow noopener" aria-label={t(`Listen to ${station.name} on Radddio App`)}>
+                <span>
                   <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1618444800" alt={t("Download Radddio on the App Store")} width="142" decoding="async" loading="lazy" />
-                </a>
+                </span>
               </div>
-            </div>
+            </a>
           </div>
       </section>
 
@@ -763,8 +764,13 @@ const structuredData = {
             <div class="vstack gap-3 mt-3">
           {station.stationuuid && (
             <div>
-              <div class="small-muted mb-1">{t("Station ID")}</div>
-              <div class="mono text-break">{station.stationuuid}</div>
+              <div class="small-muted mb-1 d-inline-flex align-items-center gap-1">
+                <span>{t("Station ID")}</span>
+                <button id="btnCopyStationId" type="button" class="btn btn-link btn-sm p-0 lh-1" data-station-id={station.stationuuid} aria-label={t("Copy station ID")} title={t("Copy station ID")}>
+                  <i class="bi bi-copy" aria-hidden="true" />
+                </button>
+              </div>
+              <div id="stationId" class="mono text-break">{station.stationuuid}</div>
             </div>
           )}
 
@@ -844,6 +850,7 @@ import { clientTranslate as t } from '../../i18n/translate';
     const volume = /** @type {HTMLInputElement | null} */ (document.getElementById('volume'));
     const timeHint = /** @type {HTMLElement | null} */ (document.getElementById('timeHint'));
     const btnCopyLink = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnCopyLink'));
+    const btnCopyStationId = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnCopyStationId'));
     const btnReport = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnReport'));
     const btnShare = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnShare'));
     const btnFavorite = /** @type {HTMLButtonElement | null} */ (document.getElementById('btnFavorite'));
@@ -1292,6 +1299,31 @@ import { clientTranslate as t } from '../../i18n/translate';
       }
     });
 
+    btnCopyStationId?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btnCopyStationId.dataset.stationId || '');
+        const icon = btnCopyStationId.querySelector('i');
+        icon?.classList.replace('bi-copy', 'bi-check2');
+        btnCopyStationId.setAttribute('aria-label', t('Copied'));
+        btnCopyStationId.title = t('Copied');
+        setTimeout(() => {
+          icon?.classList.replace('bi-check2', 'bi-copy');
+          btnCopyStationId.setAttribute('aria-label', t('Copy station ID'));
+          btnCopyStationId.title = t('Copy station ID');
+        }, 1800);
+      } catch (error) {
+        const stationId = document.getElementById('stationId');
+        if (stationId) {
+          const selection = window.getSelection();
+          const range = document.createRange();
+          range.selectNodeContents(stationId);
+          selection?.removeAllRanges();
+          selection?.addRange(range);
+        }
+        setStatus(t('Select and copy the station ID.'));
+      }
+    });
+
     btnReport?.addEventListener('click', () => {
       alert(t('Thanks. Please describe the issue on the report page.'));
     });
@@ -1503,6 +1535,7 @@ import { clientTranslate as t } from '../../i18n/translate';
       border: 1px solid rgba(112, 72, 72, 0.1);
       border-radius: 1.25rem;
     }
+    .ff-app-banner:focus-visible { outline: 3px solid #8b5cf6; outline-offset: 3px; }
 
     .ff-meta { color: rgba(255, 255, 255, 0.75); }
     .ff-stars { color: #ffc107; }

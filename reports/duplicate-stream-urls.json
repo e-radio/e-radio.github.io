@@ -1,0 +1,2288 @@
+{
+  "scope": "Exact, case-sensitive matches of nonempty primary stream_url values in live src/data/stations-*.json files; alternative streams are excluded.",
+  "station_files": [
+    "src/data/stations-gr.json",
+    "src/data/stations-hr.json",
+    "src/data/stations-nl.json",
+    "src/data/stations-pl.json",
+    "src/data/stations-se.json"
+  ],
+  "duplicate_url_count": 127,
+  "affected_station_count": 286,
+  "duplicates": [
+    {
+      "stream_url": "http://89.163.217.252:9800/;",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "90efd5b5-6879-43ee-a3fe-ef76cbde40df",
+          "name": "Peiratikos FM",
+          "slug": "peiratikos-fm"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "27b34bf7-f8e1-45a0-ac01-ca89537dc48e",
+          "name": "Πειρατικός",
+          "slug": "athens-27b34bf7"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://cast5.magicstreams.gr:8041/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d08ed5fb-51c3-4aa1-8fe6-4c7f81e9430e",
+          "name": "Radio Mytilini",
+          "slug": "radio-mytilini"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "248944a9-9a77-44ee-a3c0-da74223eec9a",
+          "name": "Μυτιλήνη 90",
+          "slug": "90-lesvos"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://eco.onestreaming.com:8019/;stream.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "ab862554-d468-4c73-a1dd-a8134c817856",
+          "name": "Ιερά Μονή Παμμεγίστων Ταξιαρχών",
+          "slug": "volos-ab862554"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "c778502c-1206-4f2b-82d3-ac91903000fc",
+          "name": "Μοναχική Διακονία 87.5",
+          "slug": "87-5-volos"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://eco.onestreaming.com:8316/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "3a38d39e-0d75-46d0-8d1e-512926c5f175",
+          "name": "Santorini 106.4",
+          "slug": "santorini-106-4-santorini"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "4a06aa78-1352-497f-bf12-111f56fa0ddb",
+          "name": "Σαντορίνη",
+          "slug": "santorini"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://eco.onestreaming.com:8510/;",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "89147fe4-e369-44fe-b7e7-ffde152ad5c7",
+          "name": "ANT1 Νότιας Ελλάδας",
+          "slug": "ant1-molaoi"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "2ed1a211-418a-4770-bb41-1930269d3ef6",
+          "name": "Antenna Νότιας Ελλάδας 97.2",
+          "slug": "antenna-97-2-sparti"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://i3.streams.ovh:12022/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "c052806d-a2eb-4340-87f4-090e04269d48",
+          "name": "7 Μέρες 101.5",
+          "slug": "7-101-5-arta"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "5b808d0c-f81f-4b9b-834a-66d52255b30b",
+          "name": "Music 102.1",
+          "slug": "music-102-1-arta"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://ice.streamcloud.mediacdn.com/epiloges1028",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "0330b31a-f668-4cc4-a882-f5037dfa0c10",
+          "name": "Epiloges Κιλκίς",
+          "slug": "epiloges-kilkis"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "a15e589d-9459-4b1e-b825-4b8830cbad6f",
+          "name": "Επιλογές 102.8",
+          "slug": "102-8-kilkis"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://live.cast-control.eu:9118/stream;?1552397300972",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "0bb6f662-0784-41e4-8f62-056a140dae10",
+          "name": "Kerkyra 100.1",
+          "slug": "kerkyra-100-1-corfu"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "4c8e0aa6-fed1-42f4-9277-3227b1d6ca27",
+          "name": "Κέρκυρα",
+          "slug": "corfu"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://proradio.gr:8004/radio981m",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "48ee7403-cf5e-4ec5-a22a-68d0d4d41b93",
+          "name": "98.1 Radio 1",
+          "slug": "98-1-radio-1-chalkida"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "5bb25ca9-c6ab-4767-b46d-e33422bda0f1",
+          "name": "Ράδιο 1 Χαλκίδα",
+          "slug": "1-chalkida"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://pstnet6.shoutcastnet.com:60160/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "3c8af901-fc35-416e-ab1d-1693cdd5d5de",
+          "name": "Radio Drama 99.1",
+          "slug": "radio-drama-99-1-dramas"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b67ed2a5-41c1-4f05-99d4-65fb879d19e4",
+          "name": "Ράδιο Δράμα 99.1",
+          "slug": "99-1-drama"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://radio.lts-group.eu:52390/ANS",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "c919b0d8-74f9-445e-8049-b0e4797a2ed8",
+          "name": "Orthodoxia kai Paradosi",
+          "slug": "orthodoxia-kai-paradosi"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "ea388340-3ebe-11e9-aa55-52543be04c81",
+          "name": "Ορθοδοξία και Παράδοση 103",
+          "slug": "103-siatista-greece"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://ro3.reformatorischeomroep.nl:8072/live",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "35a25ae7-7a20-4060-9154-9d25b52e3986",
+          "name": "Reformatorische Omroep Radio 2",
+          "slug": "reformatorische-omroep-radio-2"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "ea24b884-87c3-41f2-9b99-4bd4c76b8787",
+          "name": "Reformatorische Omroep Radio 3",
+          "slug": "reformatorische-omroep-radio-3"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://s1.onweb.gr:8052/;",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d815d038-65de-442f-bd6c-282a9716a53e",
+          "name": "Proto 99",
+          "slug": "proto-99-karditsa"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "3366f97e-f616-4ba2-910e-050eb480fa56",
+          "name": "Πρώτο 99",
+          "slug": "99-karditsa"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://s3.onweb.gr:8016/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "4ea557ef-b9d5-4de8-b48e-9d37f8bfc5fc",
+          "name": "Stoxos Θάσος",
+          "slug": "stoxos-thasos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "790885d1-6f98-4b1f-82fc-d95d984bee8c",
+          "name": "Στόχος 99",
+          "slug": "99-thasos"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://sc2.streamwithq.com:8092/;listen.pls",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "0e4a47a7-7d3a-40df-85d6-1a4e0e8ec404",
+          "name": "96.2 FM1",
+          "slug": "96-2-fm1-lamia"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "1c9813bb-387f-4aca-bfb1-624309971129",
+          "name": "Λαμία FM 1",
+          "slug": "fm-1-lamia"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://shoutcast1.hardcoreradio.nl/",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "96244e9c-0601-11e8-ae97-52543be04c81",
+          "name": "Hardcore Radio",
+          "slug": "hardcore-radio-zuid-holland"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "3a5bd5ae-376a-403e-b532-7d527d801447",
+          "name": "Masters Of Hardcore",
+          "slug": "masters-of-hardcore-netherlands-3a5bd5ae"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://sp2.streams.ovh:8104/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "3f47eb56-03b4-4b99-879a-4011e42e4a34",
+          "name": "Ηχόραμα 106.6",
+          "slug": "106-6-larisa"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "32c6a3fd-8377-4816-985b-e49279c3f5b4",
+          "name": "Παραδοσιακός 106.6",
+          "slug": "106-6-larisa-32c6a3fd"
+        }
+      ]
+    },
+    {
+      "stream_url": "http://www.gointernet.gr:8014/;stream.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "c85b2a4d-848f-4e46-86cc-f264a111bdbd",
+          "name": "Volos 98.6",
+          "slug": "volos-98-6-volos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "09bc322a-cf66-4120-bcab-6b87a7220d01",
+          "name": "Βόλος",
+          "slug": "volos-09bc322a"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://ams-pioneer02.dedicateware.com:1215/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "042da7c2-48bd-4e94-b4dc-0b92273f1f2f",
+          "name": "Radio Sfakia",
+          "slug": "radio-sfakia"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "17cb80e2-2c26-4706-8448-8c64f6a61f2d",
+          "name": "Ράδιο Σφακιά",
+          "slug": "crete"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://ams-pioneer02.dedicateware.com:1955/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "eac51716-d07a-4ba1-b05a-de502e22cd68",
+          "name": "Farsala Web Radio",
+          "slug": "farsala-web-radio-farsala"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f1208689-6bff-4d29-b37e-661ff3d19736",
+          "name": "Πρώτος Τύπος Φαρσάλων",
+          "slug": "farsala"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://athina984.live24.gr/athina984",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "ca932026-594e-11e9-a622-52543be04c81",
+          "name": "Athina 984",
+          "slug": "athina-984-attiki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "ed0fc701-e752-4d3e-a972-18b5638c41db",
+          "name": "04.Αθήνα 984",
+          "slug": "04-984-athens-greece"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://c32.radioboss.fm/stream/563",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "96ab8dcd-d81e-46a5-a24f-88df423f63f6",
+          "name": "Koinoniko Radiofono Xaniwn",
+          "slug": "koinoniko-radiofono-xaniwn"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "a16cda22-5527-427c-93fd-e2851c640261",
+          "name": "Κραχ",
+          "slug": "chania-a16cda22"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://cast.radiohost.ovh:9031/live",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "45b54bde-4328-4d69-a7a5-fa4245afd0a2",
+          "name": "Xryses Notes",
+          "slug": "xryses-notes"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b53f7de8-6499-40ad-ac1a-7038e8b6f3f9",
+          "name": "Χρυσές Νότες",
+          "slug": "station-b53f7de8"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://cast6.asurahosting.com/proxy/theroomfm/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "hr",
+          "stationuuid": "a73e6138-6284-4712-ac4c-ba1ba7ac7ca0",
+          "name": "Room FM",
+          "slug": "room-fm"
+        },
+        {
+          "country": "hr",
+          "stationuuid": "022bfd11-9339-4725-9c5b-6cd53a87cb3f",
+          "name": "The Room FM",
+          "slug": "the-room-fm"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://cdn2.cloudrad.io/mercuryradio/listen.pls",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "253f2607-41b3-4490-aecd-9fee93a3032f",
+          "name": "Bhasa FM",
+          "slug": "bhasa-fm"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "9ea337a4-5b78-4169-b8f6-fc6a969284a4",
+          "name": "Mercury Radio",
+          "slug": "mercury-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://ec4.yesstreaming.net:2135/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "5df1550d-d7f3-494f-a5cb-69968efcf44b",
+          "name": "Epic Radio",
+          "slug": "epic-radio"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "73d54100-b207-4c17-982e-7719915b9edc",
+          "name": "Jockey Radio",
+          "slug": "jockey-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://entasistream.tuc.gr:8000/main.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d9a8ba21-4a11-4896-b1e6-73a170b787ee",
+          "name": "Entasi Radio 93.5",
+          "slug": "entasi-radio-93-5"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "7da9600e-0681-4d1b-8b05-f00719bb8c8e",
+          "name": "Ένταση 93.5",
+          "slug": "93-5-chania"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://eu1.fastcast4u.com/proxy/radiomartino?mp=/1",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "40ffb457-e19b-42d1-a14b-b70756629bac",
+          "name": "Radio Martino",
+          "slug": "radio-martino"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "753aef0e-e148-4fcf-a861-eb4204113f78",
+          "name": "Ράδιο Μαρτίνο",
+          "slug": "station-753aef0e"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://eu7.fastcast4u.com/proxy/nmarog02?mp=/1",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "a9583fef-347d-41da-a1b5-0f7a5d8f15c9",
+          "name": "Thess 94.5",
+          "slug": "thess-94-5-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "bdb3a9d6-e2ec-4030-8b23-da3a4c35ba18",
+          "name": "Ράδιο Θεσσαλονίκη 94.5 FM",
+          "slug": "94-5-fm-thessaloniki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://everestcast.streams.ovh:1940/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "77cf9b2e-2e52-45b9-8153-7b2cc4c8e7bb",
+          "name": "Mousikotherapia",
+          "slug": "mousikotherapia"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "09fdaca2-59f4-43af-b006-ea5f46acb2ef",
+          "name": "Μουσικοθεραπεία",
+          "slug": "athens-09fdaca2"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://hroma1058thess.live24.gr/hroma1058thess",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "9442a34d-7ab2-41ef-9734-ffaaf6e3fbf3",
+          "name": "Chroma 105.8 - Thessaloniki",
+          "slug": "chroma-105-8-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "fafa833d-7974-11e8-83fa-52543be04c81",
+          "name": "XROMA 105.8",
+          "slug": "xroma-105-8-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e6ae1436-3d0b-465c-8448-2031b8e7ed35",
+          "name": "Χρώμα 105.8 Θεσσαλονίκη",
+          "slug": "105-8-thessaloniki-e6ae1436"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://i6.streams.ovh/sc/radiolampsi/stream",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "4e5e46b3-7fb0-4761-83c1-d352e15ede29",
+          "name": "Lampsi GR",
+          "slug": "lampsi-gr-lesvos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "7e003898-1de0-4a34-8757-ad6e52de4b17",
+          "name": "Radio Lampsi",
+          "slug": "radio-lampsi"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f4bb74c0-69e3-4234-837f-318b4befaecd",
+          "name": "Λάμψη",
+          "slug": "lesvos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://i8.streams.ovh/sc/radiostournareika/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "caa4aa2c-d32b-45d6-8e7a-145590006d83",
+          "name": "Radio Stournareika 92.5 fm Stereo",
+          "slug": "radio-stournareika-92-5-fm-stereo-trikala-greece"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "65f9c7ca-4ae6-4c82-95db-aae591428469",
+          "name": "Στουρναραίικα 92.5",
+          "slug": "92-5-trikala"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://i9.streams.ovh/sc/radiome2/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "088e5594-4094-453e-a77c-d15fce1ae591",
+          "name": "Melody",
+          "slug": "melody"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "a5b57552-1132-4fa7-a749-f744f4a172c4",
+          "name": "Radio Melody Oldies",
+          "slug": "radio-melody-oldies"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://ice.greekstream.net/gnomi",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "3acd0946-e505-4c31-94be-9123304ea09b",
+          "name": "GNOMI 93.7 FM",
+          "slug": "gnomi-93-7-fm-makedonia"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "51535588-be3b-4fbc-b957-66689c0abf82",
+          "name": "Γνώμη 93.7",
+          "slug": "93-7-thessaloniki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://ice.greekstream.net/superfm",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "eee907e9-40db-4d1b-bd7f-c37bab8a37ab",
+          "name": "Super FM 101 Thessaloniki",
+          "slug": "super-fm-101-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "10fb0625-1641-4978-bc0b-185bd54bf15f",
+          "name": "Super FM Thessaloniki",
+          "slug": "super-fm-thessaloniki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://icecast.902.gr:8001/904",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "411d453c-5a42-4895-9f20-3284d0f9b6f3",
+          "name": "902.gr",
+          "slug": "902-gr"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e999e8bb-5767-4966-ada9-9b510888031f",
+          "name": "Radio 90.4",
+          "slug": "radio-90-4-thessaloniki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://icecast.omroep.nl/radio1-bb-mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "96126f56-0601-11e8-ae97-52543be04c81",
+          "name": "NPO Radio 1",
+          "slug": "npo-radio-1-96126f56"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "2e96250c-0918-47f6-b778-8d2fef3be807",
+          "name": "Radio 1",
+          "slug": "radio-1"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://icecast.omroep.nl/radio1-sb-aac",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "962894ff-0601-11e8-ae97-52543be04c81",
+          "name": "NPO Radio 1",
+          "slug": "npo-radio-1"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "41537cc5-896b-4e5c-abf6-82449b6be5bd",
+          "name": "NPO Radio 1",
+          "slug": "npo-radio-1-noord-holland-hilversum"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://icecast.omroep.nl/radio5-bb-mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "46e55863-cef7-4f50-954e-3fa7feede49f",
+          "name": "NPO Radio 5",
+          "slug": "npo-radio-5-46e55863"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "96127036-0601-11e8-ae97-52543be04c81",
+          "name": "NPO Radio 5",
+          "slug": "npo-radio-5-96127036"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://maxhfm.streams.gr/ic/maxhfm/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "9e1fb996-1303-4e0c-8c5e-d6471ea8e01e",
+          "name": "Μάχη 99.8",
+          "slug": "99-8-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "7ffc5fad-14f0-4a02-8610-daac4ef3c212",
+          "name": "Μάχη FM",
+          "slug": "fm-athens-greece"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://metrovolos882.live24.gr/metrovolos882",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "c8eb2711-c20c-4148-9200-44e9e654657a",
+          "name": "HROMA - VOLOS 88.2",
+          "slug": "hroma-volos-88-2-thesalia"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "5f2ca6c2-9430-4328-9062-a20db11c7f6c",
+          "name": "Χρώμα 88.2",
+          "slug": "88-2-volos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://neos.win:48420/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "19a3da81-cfc6-4f06-8742-958dcfbdb805",
+          "name": "DREAM FM 90.7",
+          "slug": "dream-fm-90-7"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "c6d31a0b-7ac9-45b1-87dc-c6bd74c6b3cb",
+          "name": "Dream Ηράκλειο",
+          "slug": "dream-heraclion"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://neos.win:59261/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d722b212-4f14-4b51-b703-fa21a93a7938",
+          "name": "101 FM1",
+          "slug": "101-fm1-cyclades"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "3ff75054-1101-4841-afd4-e4e779bc4e64",
+          "name": "Thira Radio",
+          "slug": "thira-radio-santorini"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/ant1patra1053",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "a3138253-d906-4804-ba84-774574cd4959",
+          "name": "Ant1 Patra",
+          "slug": "ant1-patra"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "20a32a94-ba95-41c7-a088-f818887f7180",
+          "name": "ΑΝΤ1 Πάτρας 105.3",
+          "slug": "1-105-3-patra"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/athinaradio",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "8f174c53-5547-44d2-bb92-75a985cdb5ef",
+          "name": "Parapolitika 90.1",
+          "slug": "parapolitika-90-1-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "962418d1-0601-11e8-ae97-52543be04c81",
+          "name": "Παραπολιτικά FM 90.1",
+          "slug": "fm-90-1-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/bootleg",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "f12c6c71-4af7-4ff8-96b0-7ebe7159b883",
+          "name": "Bootleg",
+          "slug": "bootleg"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "0bbc4c6a-e094-48af-b4e7-0552bf80e24d",
+          "name": "Hit Eclectic",
+          "slug": "hit-eclectic"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/dromos2",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "54eec2ef-54a2-4190-af4d-762f2b5001ec",
+          "name": "Dromos 89.8",
+          "slug": "89-8-dromos-89-8-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "94ccfb6e-3d68-4ec0-a106-908ad7b85292",
+          "name": "Δρόμος 89,8 FM",
+          "slug": "89-8-fm-attiki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/north98thess",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d4c61efa-9b45-4a08-84f3-61a391717711",
+          "name": "North",
+          "slug": "north-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "408fe120-61e0-45ab-9b2c-f7d2b70c1d71",
+          "name": "Μελωδία Θεσσαλονίκης 98",
+          "slug": "98-thessaloniki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/orange9320",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "96463caa-0601-11e8-ae97-52543be04c81",
+          "name": "Ellinikos 93.2",
+          "slug": "ellinikos-93-2-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "d94038a5-3001-4d8c-8508-39ca116853c2",
+          "name": "Ελληνικός 93.2",
+          "slug": "93-2-athens-greece"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/palmos1032",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "fafd67d4-8588-4182-836c-d1cd2bfeda6b",
+          "name": "Palmos 103.2",
+          "slug": "palmos-103-2"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e1ab7d00-074f-4cf8-97a0-136965ecf297",
+          "name": "Παλμός 103.2",
+          "slug": "103-2-kavala"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://netradio.live24.gr/radiohotlips",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "5f3498a1-1417-443c-bb88-2d7e7f2230ed",
+          "name": "Avanti Classic",
+          "slug": "avanti-classic-larisa"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "76e403ee-10b8-4ea7-9d38-8819458c218b",
+          "name": "Hot Lips",
+          "slug": "hot-lips-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://onairmediagroup.live24.gr/glenti1011xanthi",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d31d88d3-5a6c-43ff-a8be-bf974f11b385",
+          "name": "Glenti FM",
+          "slug": "glenti-fm"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f2cadd18-ad6d-4a27-9130-524fd02db594",
+          "name": "Γλέντι 101.1",
+          "slug": "101-1-xanthi"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://orange.live24.gr/orange9320",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "4e79c0af-4dea-4b83-a850-f11329460dc7",
+          "name": "Δίεση 101.3",
+          "slug": "101-3-athens-greece"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b9c876b2-b36c-46c2-8a19-38db10c132db",
+          "name": "Ελληνικός 93.2",
+          "slug": "93-2-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radio.platinumradio.nl/listen/platinum_90s/radio.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "5775383d-19f3-48ca-bfde-918bc99605a7",
+          "name": "Platinum Radio - 90's",
+          "slug": "platinum-radio-90s-netherlands"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "c72be165-24fb-4269-81bc-506a1030a861",
+          "name": "Platinum Radio - 90's",
+          "slug": "platinum-radio-90s-netherlands-c72be165"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radio.platinumradio.nl/listen/platinum_radio/radio.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "f4bff92d-aaea-401b-8220-684bb8001cf8",
+          "name": "Platinum Radio",
+          "slug": "platinum-radio-netherlands"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "51cc5ff4-d9f7-48ba-9ac9-ae9f4aea99e6",
+          "name": "Platinum Radio",
+          "slug": "platinum-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radio.wt5.net/radio/8000/radio.mp3",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "36fe2f31-0b35-4eda-a8db-9a53a67a2670",
+          "name": "2000 sta FM",
+          "slug": "2000-sta-fm-corfu"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e8a48103-8fd8-461e-81dc-c68b6c983699",
+          "name": "2000 στα FM",
+          "slug": "2000-fm-corfu"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "7be067da-2c18-4c35-99af-b10ff3db2bb7",
+          "name": "2000staFM",
+          "slug": "2000stafm-corfu"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiogold.live24.gr/radiogold",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "96294281-0601-11e8-ae97-52543be04c81",
+          "name": "Radio Gold @net",
+          "slug": "radio-gold-net-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f06a5442-a993-4415-821c-c1416111247b",
+          "name": "Radio GOLD 103.3 FM Greece",
+          "slug": "radio-gold-103-3-fm-greece"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "d8756b97-afc0-408a-bffc-24532a45fcc9",
+          "name": "Gold",
+          "slug": "gold-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiogold.live24.gr/radiogoldies",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "630e1ec3-42ed-457c-b3e5-d04de1f876c6",
+          "name": "Radio Gold 2",
+          "slug": "radio-gold-2-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "7b9b5294-8755-498d-a57f-1daaaf7faba3",
+          "name": "Gold 2",
+          "slug": "gold-2-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-102fm",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "961d3712-0601-11e8-ae97-52543be04c81",
+          "name": "ERT3 102 FM",
+          "slug": "ert3-102-fm"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "977a6d58-0f4a-4981-9fa4-03c67efd6c2e",
+          "name": "ΕΡΤ 102fm",
+          "slug": "102fm"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-958fm",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "464eaf39-57f9-459a-ba0a-7b5d17d6fd6b",
+          "name": "ERT 958FM",
+          "slug": "ert-958fm"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "aec00c97-9869-4ba2-99e6-d17fc9ba2a41",
+          "name": "22.ΕΡΑ 95.8 Culture Channel",
+          "slug": "22-95-8-culture-channel-thessaloniki-notia-macedonia"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-deftero",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "960e5aeb-0601-11e8-ae97-52543be04c81",
+          "name": "ERA Deftero Programma",
+          "slug": "era-deftero-programma"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "388c7f4c-9911-49e0-b7c9-3643c1373003",
+          "name": "ERA-DEFTERO 103.7 FM",
+          "slug": "era-deftero-103-7-fm-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "30c8fd30-39f6-461c-9056-fd79a6e2eb58",
+          "name": "ΕΡΤ Δεύτερο Πρόγραμμα",
+          "slug": "station-30c8fd30"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-defteroparadosiaka",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "cd902523-6c34-4c17-8854-d991bd207662",
+          "name": "2o ΠΑΡΑΔΟΣΙΑΚΑ",
+          "slug": "2o"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "3e0ef068-a982-490b-ad70-6b2fc2e92dfc",
+          "name": "ΕΡΤ Δεύτερο Παραδοσιακά",
+          "slug": "athens-3e0ef068"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-erasport",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "5796e42b-1ff0-438c-a0bb-b5bf3f72bda2",
+          "name": "ERA Sport 101.8",
+          "slug": "era-sport-101-8"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "446a3e3d-a2fb-453d-abbd-3369bde1c214",
+          "name": "ΕΡΑσπορ",
+          "slug": "station-446a3e3d"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-kosmos",
+      "count": 4,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "da2e57f2-fa35-41b5-87c9-10572177e394",
+          "name": "ERA KOSMOS",
+          "slug": "era-kosmos-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "96183962-0601-11e8-ae97-52543be04c81",
+          "name": "ERA Kosmos",
+          "slug": "era-kosmos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b29e5a1b-8548-475e-bf01-1d9c45c03524",
+          "name": "ERT echo KOSMOS",
+          "slug": "ert-echo-kosmos-attica-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b4489557-58f3-4971-bc3a-c57c9a6b497d",
+          "name": "ΕΡΤ Kosmos",
+          "slug": "kosmos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-patra",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "48b09cf5-f7ec-11e8-a471-52543be04c81",
+          "name": "ERT Patra 92.5 93.9 89.9",
+          "slug": "ert-patra-92-5-93-9-89-9"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "61b850a7-92e8-4cc8-a359-874076dea379",
+          "name": "ΕΡΤ Πάτρας 92.5",
+          "slug": "92-5"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-proto",
+      "count": 6,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "961bcdba-0601-11e8-ae97-52543be04c81",
+          "name": "ERA Proto Programma",
+          "slug": "era-proto-programma"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "ab044907-7d8f-43ad-bb09-8431207aaf5a",
+          "name": "ERT news",
+          "slug": "ert-news-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "535b9d6c-5d31-477d-9944-d801eaba95d4",
+          "name": "ΕΡΑ Πρώτο Πρόγραμμα",
+          "slug": "athens-535b9d6c"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "51fe4c41-f03f-4ae2-a426-d52b48bd7135",
+          "name": "ΕΡΤ Πρώτο Πρόγραμμα",
+          "slug": "station-51fe4c41"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "c3cb95e3-8943-4aee-ba84-9da807d71150",
+          "name": "ΕΡΤ Πρώτο Πρόγραμμα",
+          "slug": "athens-c3cb95e3"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "32cc288a-f7d0-47ad-be1f-bb6ffe701e18",
+          "name": "Πρώτο Πρόγραμμα 105.8",
+          "slug": "105-8-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-talaika",
+      "count": 4,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "4206f0a5-ee44-47fc-9693-725f34a1ac3b",
+          "name": "2o laika",
+          "slug": "2o-laika"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "77d13110-deb0-41d3-964d-b1458f9eb3d1",
+          "name": "Déftero Laïká",
+          "slug": "d-ftero-la-k"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "9f45dd09-170a-4bdb-b0f4-f72c4871f1bd",
+          "name": "ΕΡΑ Δεύτερο Λαϊκά",
+          "slug": "athens-9f45dd09"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "101c3185-4e10-4a41-9903-fa1beead08db",
+          "name": "ΕΡΤ Δεύτερο Λαϊκά",
+          "slug": "athens-101c3185"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-trito",
+      "count": 4,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "961d1adb-0601-11e8-ae97-52543be04c81",
+          "name": "ERA Trito Programma",
+          "slug": "era-trito-programma"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "ca5f7478-6631-40d8-84b7-cc60ae3acf3d",
+          "name": "ERA Trito Programma",
+          "slug": "era-trito-programma-attiki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "07cdff02-57c7-46ef-8a7c-33ead8434b12",
+          "name": "ERA Trito Programma",
+          "slug": "era-trito-programma-attiki-07cdff02"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "06101631-24f0-4305-b325-40d6279d17a0",
+          "name": "ΕΡΤ Τρίτο Πρόγραμμα",
+          "slug": "station-06101631"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-voiceofgreece",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "961d3565-0601-11e8-ae97-52543be04c81",
+          "name": "ERA I Foni tis Elladas",
+          "slug": "era-i-foni-tis-elladas"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b0f134a9-e8c4-43c1-a005-e4f7a700cbd4",
+          "name": "Η Φωνή της Ελλάδας",
+          "slug": "station-b0f134a9"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://radiostreaming.ert.gr/ert-webjazz",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "9c5b9610-805c-478f-ac5d-b6b561b78cab",
+          "name": "Kosmos Jazz GR",
+          "slug": "kosmos-jazz-gr-attiki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "8cb1e9af-1135-4f45-b25f-fb6bcbf7a32c",
+          "name": "ΕΡΤ Kosmos jazz",
+          "slug": "kosmos-jazz-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://rdst.win:59670/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "de35b480-551d-48ef-a178-cf83cbbedd71",
+          "name": "Rizes",
+          "slug": "rizes"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "1c32e6f8-9915-4d76-b361-42fb44f17775",
+          "name": "Ρίζες",
+          "slug": "station-1c32e6f8"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://rdst.win:59962/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "7c598881-99dc-4dcf-8587-cd23e6f2c7ff",
+          "name": "Mandra Radio",
+          "slug": "mandra-radio-mandra"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "be8a0a52-eefa-4799-addc-5b9fb18f9d0c",
+          "name": "Omega Radio Greek Music",
+          "slug": "omega-radio-greek-music"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://realfm.live24.gr/realfm",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "041e668c-567c-4d5c-931e-2e63b752ee95",
+          "name": "Real FM 97.8",
+          "slug": "real-fm-97-8"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "79225ba4-8f30-44fd-bccd-6c963432ff38",
+          "name": "realfm97.8",
+          "slug": "realfm97-8-attiki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://rebetiko.sealabs.net/radio",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "2447dbd6-575b-4124-8d6e-2ffb6d044778",
+          "name": "rebetiko sealabs",
+          "slug": "rebetiko-sealabs"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e87fda89-97d8-4660-b049-0c0b8b84e6f3",
+          "name": "Rebetiko Sealabs",
+          "slug": "rebetiko-sealabs-e87fda89"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://s15.myradiostream.com/:13980/listen.mp3",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "590d7147-9a0a-4a75-8788-5308c84d30c7",
+          "name": "D-Code 96,2",
+          "slug": "d-code-96-2"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "4a382d48-2c06-4151-8eb4-080f6d284045",
+          "name": "D-code 96.2",
+          "slug": "d-code-96-2-4a382d48"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b317a787-4772-413e-9295-d15320cb7446",
+          "name": "D-Code 96.2",
+          "slug": "d-code-96-2-chania"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://s2.radio.co/s4648f1c61/listen",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "99e4c23c-57c4-4281-878f-d8b411bd5308",
+          "name": "Dice Radio",
+          "slug": "dice-radio"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "25ae8a24-e5d8-40b6-b1d6-67fd27653a1c",
+          "name": "Diceradio",
+          "slug": "diceradio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://s6.onweb.gr/8034/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "1ad467e4-442f-4be0-bf82-cecc4edb1799",
+          "name": "RADIO MIRES 97.1",
+          "slug": "radio-mires-97-1-1ad467e4"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "73bcaa80-5d17-460c-ad92-52736e4ada95",
+          "name": "RADIO MIRES 97.1",
+          "slug": "radio-mires-97-1-73bcaa80"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://s6.onweb.gr:8046/;",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "fdd59905-9567-43b0-813a-00d4a7ce69df",
+          "name": "Cafe 102.4",
+          "slug": "cafe-102-4-samos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "8b1df626-aea8-4c5e-bdea-fc9fe13600b0",
+          "name": "Radio Cafe",
+          "slug": "radio-cafe"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://s8.iqstreaming.com:8048/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "hr",
+          "stationuuid": "cad2749b-c654-41fc-9aa5-6370e11f7ba9",
+          "name": "Prigorski Radio",
+          "slug": "prigorski-radio-antuna-gustava-mato-a-3-kri-evci"
+        },
+        {
+          "country": "hr",
+          "stationuuid": "3eba933a-a037-447b-b3ca-ffeb8ca90b08",
+          "name": "Radio Križevci",
+          "slug": "radio-kri-evci"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sc2.streamwithq.com:2000/stream/offifans",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "0ed74952-36d5-4869-bb1f-c1cad081ac28",
+          "name": "Creta Fans",
+          "slug": "creta-fans-crete"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "8c12bc50-2280-4f0b-ad1f-a1bbac919ffd",
+          "name": "Creta Fans Radio",
+          "slug": "creta-fans-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sc2.streamwithq.com:8008/;stream.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "adfe382c-5d49-49a4-8b57-670d3b883e3b",
+          "name": "Αντέννα Δυτικής Κρήτης",
+          "slug": "chania"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "fbeb03d9-f9e3-4be6-88ed-0e2e82cfa506",
+          "name": "Αντέννα Δυτικής Κρήτης 97.1",
+          "slug": "97-1-chania"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sh.onweb.gr/8818/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "db9bf78a-9c06-4898-9ada-1f969b1b1e70",
+          "name": "Galaxy 106,1 Patra",
+          "slug": "galaxy-106-1-patra"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "0966527a-0308-4adc-927b-18dba91d57db",
+          "name": "Galaxy 106.1",
+          "slug": "galaxy-106-1-patra-0966527a"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sh.onweb.gr:7048/;",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "a013301d-5b46-49a4-9307-0e2730024ca6",
+          "name": "Πρακτορείο",
+          "slug": "thessaloniki-a013301d"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "d2a194c9-ce38-4e24-b60b-a2fa3d2c53a7",
+          "name": "Πρακτορείο 104.9",
+          "slug": "104-9-thessaloniki"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sh.onweb.gr:7060/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "74f493da-c353-441b-9cca-95006d48b7ab",
+          "name": "Rádio Pólis 99.4",
+          "slug": "r-dio-p-lis-99-4"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "6ee57039-7904-4d3a-b009-87eff8f4883d",
+          "name": "Πόλις 99.4",
+          "slug": "99-4-larisa-6ee57039"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sonic.serverps.gr/8018/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "b62c0f3c-534e-404c-ab9c-2e10c7ab9270",
+          "name": "GALAXIAS FM 92.1 MHZ",
+          "slug": "galaxias-fm-92-1-mhz"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "11dd646e-7067-4b0e-8037-983d072ac322",
+          "name": "Γαλαξίας 92.1",
+          "slug": "92-1-amfissa"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sp.streams.ovh/8026/;stream/1",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "793eec2a-a048-4fb6-ba39-0f58cac5d2de",
+          "name": "Fokida FM",
+          "slug": "fokida-fm-itea"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e9f32eea-2f74-441c-80e1-09877a4f40c5",
+          "name": "Star Radio",
+          "slug": "star-radio-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sp3.streams.ovh/8014/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "73cd224f-2940-4c46-ac1b-a65b8b0d0cee",
+          "name": "Island 88.6",
+          "slug": "island-88-6-zakynthos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "9016b1c6-cec3-48b4-bc49-210b92f47e20",
+          "name": "Island FM Zakynthos",
+          "slug": "island-fm-zakynthos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://sp3.streams.ovh/8046/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "b273b11d-f07b-41bd-b5fb-081010700cf8",
+          "name": "Bravo 89.6",
+          "slug": "bravo-89-6-zakynthos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "108d1653-66a4-4fd6-8269-5c35759be31a",
+          "name": "Bravo FM 89.6",
+          "slug": "bravo-fm-89-6"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream-mp3aac.live24.gr/max925-her",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "3faaf017-da7f-4778-a8a0-73581ed4b639",
+          "name": "Έντεχνος 92.5",
+          "slug": "92-5-heraclion"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "7ec93361-6355-4061-a938-1d2b4cb663c8",
+          "name": "Πένα 92.5",
+          "slug": "92-5-heraclion-7ec93361"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.crete.ovh:8443/kardia",
+      "count": 4,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "4aabc32a-5bba-4d70-b6dd-fabf3ca8be82",
+          "name": "Kardia",
+          "slug": "kardia"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "58c9754e-2605-4931-b7bc-2409f202c239",
+          "name": "Kardia",
+          "slug": "kardia-58c9754e"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e87433c0-f600-4e4a-a486-704d32c454d1",
+          "name": "Kardia",
+          "slug": "kardia-e87433c0"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "1a2a13c4-ebca-448e-9ba1-f500c0b7f731",
+          "name": "Kardia",
+          "slug": "kardia-heraclion"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.jazzradiobymaestro.com/relaxin",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "7aacd38f-fb3e-4e6d-a229-b6d6a09b6543",
+          "name": "Jazz Radio by Maestro - Relaxin'",
+          "slug": "jazz-radio-by-maestro-relaxin-nh"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "552b4440-fcdc-4966-a494-31a374fed0f5",
+          "name": "Jazz Radio by Maestro - Releaxin'",
+          "slug": "jazz-radio-by-maestro-releaxin"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiocontinu.nl/radiocontinu",
+      "count": 2,
+      "stations": [
+        {
+          "country": "nl",
+          "stationuuid": "9633f4ec-0601-11e8-ae97-52543be04c81",
+          "name": "Radio Continu",
+          "slug": "radio-continu"
+        },
+        {
+          "country": "nl",
+          "stationuuid": "c4eba97e-d692-43ed-8735-73e12e4b6f32",
+          "name": "Radio Continu",
+          "slug": "radio-continu-c4eba97e"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/5tyqrwpgpfeuv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "a08d83c5-f458-4a77-970b-df8a819880c2",
+          "name": "Monkey Bros",
+          "slug": "monkey-bros-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b46afdc2-b062-43e3-ba95-1cf8cba64e36",
+          "name": "Monkey Bros Radio",
+          "slug": "monkey-bros-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/819r8wupdrruv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "854d0452-c4d3-48b9-9e00-8486ec1af61b",
+          "name": "Σκύλος 90",
+          "slug": "90-patra"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "0937e595-f7ff-4f2f-a7fe-0e4b8a2c7e55",
+          "name": "Skylos FM",
+          "slug": "skylos-fm-athens-greece"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/apb4wybq36duv.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "1fc81891-6e9d-4908-90bf-11d44b00d848",
+          "name": "Energy 101.5",
+          "slug": "energy-101-5-ioannina"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "4ea5b338-960c-4cf3-bebd-586b4d137b9e",
+          "name": "NRG 101.5",
+          "slug": "nrg-101-5-ioannina"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/e206r95qsp8uv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "5f774691-05c7-48d6-89e0-26f39aacb3aa",
+          "name": "Athens Free Radio",
+          "slug": "athens-free-radio-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "a53b0fc9-06dd-47ca-a27c-9dc63be90c8d",
+          "name": "Free radio",
+          "slug": "free-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/f4pqr7wu48hvv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "7aa55185-af26-4125-9ebc-4ba0b3aeeddf",
+          "name": "Mple 99 fm",
+          "slug": "mple-99-fm-chalkida"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "33f351da-8afa-4454-b2fa-66c500e7b9f7",
+          "name": "Μπλε 99",
+          "slug": "99-chalkida"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/garavelas-radio-gr.m4a",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "7568e93f-dd39-4723-92b1-24361c7297bf",
+          "name": "garavelas-radio-gr",
+          "slug": "garavelas-radio-gr"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "b59fd3a7-0e4e-41f2-8681-7431cabdcd94",
+          "name": "G Radio (Garavelas Radio)",
+          "slug": "g-radio-garavelas-radio"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/gbrgkbcfnq5tv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "82097938-fc28-43b7-8228-d41607c56c8c",
+          "name": "Radiotsambouno",
+          "slug": "radiotsambouno"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "65416f93-5cc7-4d3c-90b2-748827b3bf87",
+          "name": "Ραδιοτσάμπουνο",
+          "slug": "karpathos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/gby4re6bhnuvv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "227c167f-de9d-4748-8fa5-d7642c60b819",
+          "name": "102.2 Αλιβέρι 1",
+          "slug": "102-2-1-chalkida"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "30067f22-2373-4670-be32-7d2bf100332f",
+          "name": "ΡΑΔΙΟ ΑΛΙΒΕΡΙ 1",
+          "slug": "1-aliveri"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/gt0xy4z88f0uv",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "245d49d3-e306-49d4-82fb-f87332e1472c",
+          "name": "Love Classic",
+          "slug": "love-classic-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "1b291f22-f6ba-44d7-b3fd-f61275aea007",
+          "name": "Love Xmas",
+          "slug": "love-xmas-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "6efe0ad3-0ca7-4da8-a55e-866adfdaad21",
+          "name": "Xmas Love 97.5",
+          "slug": "xmas-love-97-5-athens-greece"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/kokkino-ath.mp3",
+      "count": 6,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "9622b8e0-0601-11e8-ae97-52543be04c81",
+          "name": "stokokkino",
+          "slug": "stokokkino-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "19ca2fc7-a5c9-40a8-b8e0-31c73a2ac9c4",
+          "name": "Στο κόκκινο 105,5 Αθήνα",
+          "slug": "105-5-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "8f8bfe13-9411-46b4-9780-5d5f399f6e7e",
+          "name": "Στο κόκκινο 105.5",
+          "slug": "105-5"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "313dbd5d-f9f3-474a-82cc-1b5472676982",
+          "name": "Στο Κόκκινο 105.5",
+          "slug": "105-5-athens-313dbd5d"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "43a3c60b-0544-431a-8018-6fedba8fc3a4",
+          "name": "Στο Κόκκινο 105.5 Αθήνα",
+          "slug": "105-5-athens-43a3c60b"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "6270750e-5da4-4496-96a4-46b1c6194675",
+          "name": "01.Στο κόκκινο 105.5",
+          "slug": "01-105-5-attica-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.radiojar.com/radio-apopsi",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "835c96b3-fd59-43f1-a968-1136cbdc9d95",
+          "name": "Apopsi GR",
+          "slug": "apopsi-gr-thessaloniki"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "e6b6bd94-fd79-41c4-adfd-991bb1b01e9e",
+          "name": "Radio Apopsi",
+          "slug": "radio-apopsi"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.rcs.revma.com/gkfwrhqxbfhvv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "ad459f75-6490-4b24-8333-f965f4731fbc",
+          "name": "Diesi 101.3",
+          "slug": "diesi-101-3"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "83615195-5b83-4054-9d01-e8f9cdd60037",
+          "name": "Δίεση 101.3",
+          "slug": "101-3-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.zeno.fm/r4k1wdsshkhvv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "ec6dbe36-f911-47b0-b52f-bb5ed23dcc58",
+          "name": "Merakia",
+          "slug": "merakia-trikala"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f1c6668a-e0d2-424a-86da-99275f4bd56a",
+          "name": "Merakia.Gr",
+          "slug": "merakia-gr-thessaly"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.zeno.fm/uft90xvk4nhvv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "d6cc5874-e9bf-4542-aecc-bdb8a761dcb6",
+          "name": "Rock Club Classic Rock",
+          "slug": "rock-club-classic-rock"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "071973f7-d913-4321-b507-c66f277c911e",
+          "name": "Rock Club",
+          "slug": "rock-club-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.zeno.fm/wqcp8gq67vzuv",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "851b010a-bf42-4a78-a59b-9af0da444da7",
+          "name": "Pame Rebetiko kai laiko",
+          "slug": "zeno-fm-pame-rebetiko-kai-laiko"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "63df793a-5816-451d-ad09-33e30161ad41",
+          "name": "23. Πάμε Ρεμπέτικο και Λαϊκό",
+          "slug": "23-athens-greece"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f223edcf-6b85-40e5-98e2-3adec1370749",
+          "name": "Ρεμπέτικο για λίγους",
+          "slug": "athens-f223edcf"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream.zeno.fm/yetzdv442k8uv",
+      "count": 2,
+      "stations": [
+        {
+          "country": "hr",
+          "stationuuid": "94ec1212-bbd5-45fe-ae26-3f107c5c18c0",
+          "name": "Folk Radio Kneginec",
+          "slug": "folk-radio-kneginec"
+        },
+        {
+          "country": "hr",
+          "stationuuid": "8e9af197-9772-49ae-a288-9bbc420827b5",
+          "name": "Online Radio Kneginec",
+          "slug": "online-radio-kneginec"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream1.468.gr/8004/stream",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "4ea2d213-d064-422c-bde9-e57550318023",
+          "name": "Disco Net",
+          "slug": "disco-net-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "0153b411-f5f3-48e9-ac72-d8e4c6765feb",
+          "name": "Disco Net Radio Athens",
+          "slug": "disco-net-radio-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://stream1.468.gr/8010/stream",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "ee99b63d-32c7-4d99-b95e-5f3f73def33b",
+          "name": "Andromeda Net Radio",
+          "slug": "andromeda-net-radio"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "9687eaf7-a306-4ffb-b1e0-0b1c10a0e644",
+          "name": "Essential Mix",
+          "slug": "essential-mix-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "84e2ab98-8ff1-4804-a2e3-011823865af4",
+          "name": "Music Corner",
+          "slug": "music-corner"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://streaming.radionomy.com/JamendoLounge",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "561f0c13-9235-481a-b7ca-a3fa3d2d2afa",
+          "name": "Agrinio",
+          "slug": "agrinio-agrinio"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "94f0bdf5-8c1f-4f78-844a-05da4145eded",
+          "name": "Classic Radio Greece",
+          "slug": "classic-radio-greece"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "ed1b67eb-8de5-4d9e-991c-ba0e41917280",
+          "name": "Elium Club",
+          "slug": "elium-club"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://streamyourdream.org:8050/radioactive",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "12f45ca4-3d96-4937-85e0-a424d36a4d09",
+          "name": "RadioActive",
+          "slug": "radioactive"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "4af04ebc-fc21-4088-8675-819e987b92da",
+          "name": "RadioActive 91.3 - Sifnos",
+          "slug": "radioactive-91-3-sifnos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://streamyourdream.org:8100/stream",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "c321866d-b9e4-4017-ad1b-b49c132c8102",
+          "name": "Blu Lounge Radio",
+          "slug": "blu-lounge-radio"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "f1daf4ef-d9dc-45f3-9c85-90b801cdf865",
+          "name": "Blu Radio",
+          "slug": "blu-radio-volos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "820b2a8f-67cd-42c9-a7d7-db3517c3173d",
+          "name": "Blu Radio",
+          "slug": "blu-radio-athens"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://tls-chrome.live24.gr/3297?http://stream.ellada943.gr:10198/radio.mp3",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "177697c8-ed39-4eea-b7cd-eca610e436fa",
+          "name": "ELLADA SPORTS",
+          "slug": "ellada-sports"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "229e9129-9b07-4c14-a753-f2e3abe1af62",
+          "name": "ELLADA SPORTS",
+          "slug": "ellada-sports-229e9129"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://tls-chrome.live24.gr/3858?http://37.157.242.101:24467/",
+      "count": 2,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "fad0582e-9a2c-4a6d-af04-489d1ac098c9",
+          "name": "PALMOS 94,9 FM KOS",
+          "slug": "palmos-94-9-fm-kos"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "a6b601c3-94af-4908-8522-f721ac4efa02",
+          "name": "Παλμός 94,9",
+          "slug": "94-9-kos"
+        }
+      ]
+    },
+    {
+      "stream_url": "https://uk1.streamingpulse.com/ssl/b7artradio",
+      "count": 3,
+      "stations": [
+        {
+          "country": "gr",
+          "stationuuid": "e51bb156-8aa8-4897-adaf-4f026bcaeee9",
+          "name": "Beton7 Art",
+          "slug": "beton7-art-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "1986484a-f525-42a7-9245-5c8d9353b5bc",
+          "name": "Beton7 Art Radio",
+          "slug": "beton7-art-radio-athens"
+        },
+        {
+          "country": "gr",
+          "stationuuid": "1356620c-43f0-49bb-b0a8-444c5b4d45a4",
+          "name": "Βeton7Art",
+          "slug": "eton7art-athens"
+        }
+      ]
+    }
+  ]
+}

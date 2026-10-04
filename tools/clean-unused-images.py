@@ -10,7 +10,9 @@ TEXT = {'.json', '.astro', '.ts', '.tsx', '.js', '.mjs', '.css', '.html', '.md',
 # These two guide covers are selected using a template literal at runtime.
 DYNAMIC = {'/images/guides/croatian-radio-en.jpg', '/images/guides/croatian-radio-hr.jpg'}
 
-def audit():
+def audit(overrides=None):
+    """List unused images; overrides supply proposed text for live source files."""
+    overrides = overrides or {}
     sources = []
     for folder in ['src', 'countries', 'public']:
         for path in (ROOT / folder).rglob('*'):
@@ -20,7 +22,7 @@ def audit():
                 continue  # Historical import/review reports are not site inputs.
             if folder == 'public' and (path.suffix in IMAGES or 'prompt' in path.name):
                 continue
-            sources.append(path.read_text())
+            sources.append(overrides.get(path.resolve(), path.read_text()))
     content = '\n'.join(sources)
     unused = []
     for folder in ['public', 'src/assets']:
