@@ -1,3 +1,5 @@
+import { repairMetadataText } from './metadata-text.mjs';
+
 const clean = value => typeof value === 'string' ? value.trim() : '';
 const xmlText = value => value.replace(/&(?:amp|lt|gt|quot|apos|#\d+|#x[\da-f]+);/gi, entity => {
   const named = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" };
@@ -48,8 +50,8 @@ export function icecastSource(payload, streamUrl, endpoint) {
 export function icecastTrack(payload, streamUrl, endpoint) {
   const source = icecastSource(payload, streamUrl, endpoint);
   if (!source) return null;
-  let title = clean(source.title) || clean(source.yp_currently_playing) || clean(source.songtitle);
-  let artist = clean(source.artist);
+  let title = repairMetadataText(clean(source.title) || clean(source.yp_currently_playing) || clean(source.songtitle));
+  let artist = repairMetadataText(clean(source.artist));
   const jazler = jazlerSong(title);
   if (jazler) ({ title, artist } = jazler);
   else if (/^<\?xml\b/i.test(title) || /^<Schedule\b/i.test(title)) return null;

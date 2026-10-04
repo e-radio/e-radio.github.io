@@ -24,7 +24,7 @@ SKIP_FIELDS = set(LIST_FIELDS) | set(STREAM_FIELDS) | {
     'slug', 'stationuuid', 'name', 'stream_url', 'streams', 'favicon',
     'clickcount', 'votes', 'ssl_error', 'unavailable_streams',
 }
-GUIDE_DIRS = (ROOT / 'src/lib', ROOT / 'src/content/guides')
+GUIDE_DIRS = (ROOT / 'src/lib', ROOT / 'src/components/guides')
 
 
 def unique(values):

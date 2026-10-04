@@ -51,10 +51,30 @@ test('Icecast preserves hyphenated names, title suffixes and explicit artists', 
  assert.equal(parse({title:'Title-Only'}).artist, '');
  assert.equal(parse({title:' ',yp_currently_playing:'Selena Gomez - Love On'}).title, 'Love On');
 });
+test('Icecast repairs Greek titles misdecoded as Latin-1', () => {
+ const track = 'ΓΙΩΡΓΟΣ ΓΙΑΝΝΙΑΣ - ΔΩΣ ΜΟΥ ΠΙΣΩ ΤΗΝ ΚΑΡΔΙΑ ΜΟΥ';
+ const broken = Buffer.from(track, 'utf8').toString('latin1');
+ const result = parseMetadata('icecast', {icestats:{source:{title:broken}}}, context);
+ assert.equal(result.song.artist, 'ΓΙΩΡΓΟΣ ΓΙΑΝΝΙΑΣ');
+ assert.equal(result.song.title, 'ΔΩΣ ΜΟΥ ΠΙΣΩ ΤΗΝ ΚΑΡΔΙΑ ΜΟΥ');
+ assert.equal(result.text, 'ΓΙΩΡΓΟΣ ΓΙΑΝΝΙΑΣ – ΔΩΣ ΜΟΥ ΠΙΣΩ ΤΗΝ ΚΑΡΔΙΑ ΜΟΥ');
+});
 test('Shoutcast uses songtitle, never the station title', () => {
  assert.equal(parseMetadata('shoutcast',{title:'Station name',songtitle:'Actual song'},context).text,'Actual song');
  const payload=parseHistory('shoutcast',JSON.stringify([{title:'Current',playedat:200},{title:'Previous',playedat:100}]));
  assert.equal(payload.now_playing.song.text,'Current');assert.equal(payload.song_history[0].song.text,'Previous');
+});
+test('Shoutcast removes repeated Now On Air labels from current and past songs', () => {
+ const current = parseMetadata('shoutcast',{songtitle:'Now On Air: Now On Air: PRESTIGE - POTE'},context);
+ assert.equal(current.song.artist,'PRESTIGE');
+ assert.equal(current.song.title,'POTE');
+ assert.equal(current.text,'PRESTIGE - POTE');
+ const history = parseHistory('shoutcast',JSON.stringify([
+  {title:'Now On Air: PRESTIGE - POTE',playedat:200},
+  {title:'Now On Air: OIKONOMOPOYLOS NIKOS - TORA TI NA TO KANO',playedat:100}
+ ]));
+ assert.equal(history.now_playing.song.text,'PRESTIGE - POTE');
+ assert.equal(history.song_history[0].song.artist,'OIKONOMOPOYLOS NIKOS');
 });
 test('SonicPanel maps current song, artwork, listeners and numbered history without jingles', () => {
  const raw={title:'Prince - Purple Rain feat. The Revolution',art:'https://stream1.468.gr/cp/musiclibrary/now.png',listeners:'19',
@@ -135,6 +155,12 @@ test('Radio.co v2 current and history retain separate fields, art and timestamps
  assert.equal(result.payload.now_playing.played_at,track.start_time);
  const history=parseHistory('radio.co',JSON.stringify({data:[track]}));
  assert.equal(history.song_history.length,1);assert.equal(history.now_playing,undefined);
+});
+test('Radio.co status history skips the current track when it is repeated first', () => {
+ const payload={current_track:{title:'Live mix',artwork_url:'https://img.example/live.jpg'},history:[{title:'Live mix'},{title:'Previous mix'}]};
+ assert.equal(parseMetadata('radio.co',payload,context).song.art,payload.current_track.artwork_url);
+ assert.deepEqual(parseMetadata('radio.co',payload,context).payload.song_history.map(track=>track.title),['Previous mix']);
+ assert.deepEqual(parseHistory('radio.co',JSON.stringify(payload)).song_history.map(track=>track.title),['Previous mix']);
 });
 
 test('Shoutcast panel response provides artwork, listeners and deduplicated history', () => {
@@ -231,4 +257,12 @@ test('CentovaCast repairs Latin-1 mojibake in Greek current songs and history', 
   assert.equal(parseMetadata('centovacast',{type:'result',data:[{track:{title:normal}}]},context).song.title,normal);
  }
  assert.equal(payload.data[0].track.title,broken);
+});
+test('CentovaCast repairs Windows-1253 Greek metadata represented as Latin-1', () => {
+ const payload = {type:'result',data:[{song:'Ð ÃÁÚÔÁÍÏÓ - ËÁÈÏÓ ÅÐÏ×Ç',track:{artist:'Ð ÃÁÚÔÁÍÏÓ',title:'ËÁÈÏÓ ÅÐÏ×Ç'}}]};
+ assert.equal(parseMetadata('centovacast',payload,context).text,'Π ΓΑΪΤΑΝΟΣ - ΛΑΘΟΣ ΕΠΟΧΗ');
+ const history = {type:'result',data:[[{artist:'ÓôáìÜôçò ÓðáíïõäÜêçò',title:'ÈñÞíïò',time:100}]]};
+ assert.equal(parseHistory('centovacast',JSON.stringify(history)).song_history[0].song.artist,'Σταμάτης Σπανουδάκης');
+ assert.equal(parseHistory('centovacast',JSON.stringify(history)).song_history[0].song.title,'Θρήνος');
+ assert.equal(parseMetadata('centovacast',{type:'result',data:[{track:{title:'Beyoncé'}}]},context).song.title,'Beyoncé');
 });

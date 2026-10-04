@@ -1,6 +1,8 @@
 import { parseTextHistory } from '../common.mjs';
 const splitSong = value => {
-  const text = typeof value === 'string' ? value.trim() : '';
+  const text = typeof value === 'string'
+    ? value.replace(/^(?:\s*now on air\s*:\s*)+/i, '').trim()
+    : '';
   const separator = /\s+-\s+/.exec(text);
   if (!separator) return { text, title: text };
   const artist = text.slice(0, separator.index).trim();
