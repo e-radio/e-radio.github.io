@@ -89,6 +89,25 @@ test('Shoutcast removes repeated Now On Air labels from current and past songs',
  assert.equal(history.now_playing.song.text,'PRESTIGE - POTE');
  assert.equal(history.song_history[0].song.artist,'OIKONOMOPOYLOS NIKOS');
 });
+test('Shoutcast removes trailing catalog IDs from current and past songs', () => {
+ const current = parseMetadata('shoutcast',{songtitle:'Alexander Rybak - Fairytale [2KGU]'},context);
+ assert.equal(current.song.artist,'Alexander Rybak');
+ assert.equal(current.song.title,'Fairytale');
+ assert.equal(current.text,'Alexander Rybak - Fairytale');
+ const history = parseHistory('shoutcast',JSON.stringify([
+  {title:'Alexander Rybak - Fairytale [2KGU]',playedat:200},
+  {title:'Artist - Song [2KGU]',playedat:100}
+ ]));
+ assert.equal(history.song_history[0].song.title,'Song');
+ const blue = parseMetadata('shoutcast',{songtitle:'Freeky Cleen and Dickey F - Anyway [VUG]'},context);
+ assert.equal(blue.song.title,'Anyway');
+ const blueHistory = parseHistory('shoutcast',JSON.stringify([
+  {title:'Freeky Cleen and Dickey F - Anyway [VUG]',playedat:200},
+  {title:'Matt Andersen - Coal Mining Blues [W4e]',playedat:100}
+ ]));
+ assert.equal(blueHistory.song_history[0].song.title,'Coal Mining Blues');
+ assert.equal(parseMetadata('shoutcast',{songtitle:'Artist - Song [Live]'},context).song.title,'Song [Live]');
+});
 test('SonicPanel maps current song, artwork, listeners and numbered history without jingles', () => {
  const raw={title:'Prince - Purple Rain feat. The Revolution',art:'https://stream1.468.gr/cp/musiclibrary/now.png',listeners:'19',
   history:['1.) Prince - Purple Rain feat. The Revolution<br>','2.) Julee Cruise - Summer Kisses, Winter Tears<br>',
@@ -109,6 +128,15 @@ test('Radiojar and Radio.co have independent adapters', () => {
  assert.equal(parseMetadata('radiojar',{title:'Track',artist:'Artist',thumb:'https://img.example/x'},context).song.art,'https://img.example/x');
  assert.equal(parseMetadata('radio.co',{current_track:{title:'Song',artist:'Artist'}},context).text,'Artist – Song');
  assert.notEqual(scraperFor('radiojar'),scraperFor('radio.co'));
+});
+test('Ellinadiko parses its station feed and supplied artwork', () => {
+ const result = parseMetadata('ellinadiko', {nowOnAir: {
+  artist: 'Singer', title: 'Track', image: 'https://ellinadiko.eu/cover.jpg',
+ }}, context);
+ assert.equal(result.text, 'Singer – Track');
+ assert.equal(result.song.art, 'https://ellinadiko.eu/cover.jpg');
+ assert.equal(parseMetadata('ellinadiko', {}, context).text, null);
+ assert.equal(supportsNowPlaying('ellinadiko'), true);
 });
 test('JSON and Jina wrappers share decoding, provider errors fail', () => {
  assert.deepEqual(decodeMetadata('Title: x\nMarkdown Content:\n{"songtitle":"Song"}'),{songtitle:'Song'});

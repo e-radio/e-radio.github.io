@@ -37,7 +37,7 @@ const description = 'Discover what is playing right now on radio stations with s
         <div class="track-copy">
           <h3 class="track-title h6 fw-semibold mb-0">{t("Loading song…")}</h3>
           <p class="text-muted mb-0"><span class="track-artist" /><a href={localizePath(`/stations/${station.slug}/`)} class="text-reset">{station.name}</a>{t(station.city ? ` · ${station.city}` : '')}</p>
-          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{t(station.metadata_server === 'azuracast' ? 'AzuraCast' : station.metadata_server === 'radiojar' ? 'Radiojar' : station.metadata_server === 'icecast' ? 'Icecast' : 'CentovaCast')}</span>
+          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{t(station.metadata_server === 'azuracast' ? 'AzuraCast' : station.metadata_server === 'radiojar' ? 'Radiojar' : station.metadata_server === 'icecast' ? 'Icecast' : station.metadata_server === 'ellinadiko' ? 'Ellinadiko' : 'CentovaCast')}</span>
           <span class="track-listeners small text-muted" />
           <span class="track-status small text-muted" role="status" />
         </div>
@@ -159,4 +159,3 @@ import { clientTranslate as t } from '../i18n/translate';
   document.addEventListener('visibilitychange', () => { clearTimeout(timer); if (!document.hidden) refresh(); });
   refresh();
 </script>
-

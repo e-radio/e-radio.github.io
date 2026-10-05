@@ -744,5 +744,7 @@
   "/stations/bravo-fm-89-6/": "/stations/bravo-89-6-zakynthos/",
   "/stations/nrg-radio-88-3-macedonia/": "/stations/energy-88-3/",
   "/stations/23-athens-greece/": "/stations/athens-f223edcf/",
-  "/stations/ble-93-3-kozani-48d768e9/": "/stations/ble-93-3-kozani/"
+  "/stations/ble-93-3-kozani-48d768e9/": "/stations/ble-93-3-kozani/",
+  "/stations/1o-gargaliani/": "/stations/1-88-8-gargaliani/",
+  "/stations/livefm-97-8/": "/stations/live-97-8-agrinio/"
 }
