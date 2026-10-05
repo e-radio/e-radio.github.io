@@ -103,6 +103,8 @@ main {
 }
 
 .track-art {
+  width: 64px;
+  height: 64px;
   background: var(--bs-tertiary-bg);
   box-shadow: 0 2px 8px rgb(15 23 42 / 10%);
 }

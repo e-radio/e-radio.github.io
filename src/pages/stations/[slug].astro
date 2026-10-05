@@ -429,6 +429,7 @@ const playerScriptConfig = {
   nowPlayingEndpoint,
   historyEndpoint,
   serverType,
+  appleStoreCountry: site.countryCode,
   pollIntervalMs: Math.max(5000, Number(metadataConfig.pollIntervalMs) || 15000),
   requestTimeoutMs: Math.max(1000, Number(metadataConfig.requestTimeoutMs) || 10000),
 };
@@ -495,7 +496,7 @@ const structuredData = {
     </nav>
     <div class="small-muted"> {t("Updated {0}", [new Date().toLocaleDateString(locale, { year: "numeric", month: "short", day: "numeric" })])} </div>
   </div>
-  <div class="row g-4">
+  <div class="row g-4 justify-content-center">
     <div class="col-12 col-lg-8">
       <section class="glass rounded-3 px-3 pt-3 p-md-4 pb-md-0">
         <div class="d-flex align-items-center justify-content-between gap-3 pb-4">
@@ -532,7 +533,7 @@ const structuredData = {
           <div class="row g-3 align-items-center">
             {streamOptions.length > 0 && (station as Station & { streams?: unknown[] }).streams && (
               <div class="col-12">
-                <label for="streamQuality" class="form-label">{t("Stream quality")}</label>
+                <label for="streamQuality" class="form-label">{t("Select the stream:")}</label>
                 <select id="streamQuality" class="form-select" disabled={streamOptions.length < 2}>
                   {streamOptions.map(option => (
                     <option value={option.url} selected={option.url === station.stream_url}> {t("{0} · {1}", [option.label, option.quality])} </option>
@@ -619,8 +620,8 @@ const structuredData = {
         <div class="vstack gap-3" id="recently-played">
           <div id="recent-next-card" hidden>
             <h2 class="h3 fw-normal mb-0 small-muted mb-2">{t("Up next")}</h2>
-            <div class="history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
-              <img id="recent-next-art" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt={t("")} hidden />
+            <div class="p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
+              <img id="recent-next-art" class=" rounded object-fit-cover flex-shrink-0" width="48" height="48" alt={t("")} hidden />
               <div class="track-details flex-grow-1">
                 <div class="d-flex align-items-baseline justify-content-between gap-3">
                   <div class="fw-semibold text-truncate" id="recent-next-title" />
@@ -631,17 +632,19 @@ const structuredData = {
             </div>
           </div>
           <div id="now-playing-card">
-            <p id="nowPlayingListeners" class="small-muted mb-2" hidden />
-            <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
-              <h2 class="h3 fw-normal mb-0 small-muted">{t("Now playing")}</h2><span class="badge rounded-pill badge-soft-green">{t("Live")}</span>
+            <div class="d-flex align-items-center flex-wrap gap-2 mb-2 pt-2">
+              <h2 class="h3 fw-normal mb-0 small-muted">{t("Now playing")}</h2>
+              <span class="badge rounded-pill badge-soft-green">{t("Live")}</span>
+              <p id="nowPlayingListeners" class="small-muted small mb-0" hidden />
             </div>
             <div class="history-track-item p-3 bg-white rounded-3 border border-light-subtle d-flex align-items-center gap-3">
-              <img id="nowPlayingArt" class="track-art rounded object-fit-cover flex-shrink-0" width="48" height="48" alt={t("")} hidden />
+              <img id="nowPlayingArt" class="track-art rounded object-fit-cover flex-shrink-0" alt={t("")} hidden />
               <div class="track-details flex-grow-1">
                 <div class="d-flex align-items-baseline justify-content-between gap-3">
                   <div class="fw-semibold text-truncate" id="nowPlaying">{station.name}</div>
                 </div>
                 <div class="small-muted text-truncate" id="nowPlayingMeta">{t("Live broadcast")}</div>
+                <a id="appleMusicLink" class="small" href="#" target="_blank" rel="nofollow noopener" hidden>{t("Listen on Apple Music")}</a>
               </div>
               <time class="small-muted flex-shrink-0" id="nowPlayingTime" hidden />
             </div>
@@ -649,50 +652,12 @@ const structuredData = {
         </div>
         <div class="mt-3 pt-3">
           <h2 class="h3 fw-normal mb-0 small-muted mb-2">{t("Recent tracks")}</h2>
-          <ul class="list-unstyled mb-0 small rounded-3 border border-light-subtle" id="recent-history" data-default-message={t("Waiting for station metadata…")}>
+          <ul class="list-unstyled mb-0 small rounded-3 border border-light-subtle py-1" id="recent-history" data-default-message={t("Waiting for station metadata…")}>
             <li>{t("Waiting for station metadata…")}</li>
           </ul>
         </div>
       </section>
-      {recommendedStations.length > 0 && (
-    <section class="glass rounded-3 p-3 p-md-4 mt-4">
-      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2" />{t("More stations")}</h2>
-      <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
-        {recommendedStations.map((recStation, index) => (
-          <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
-            <a href={localizePath(`/stations/${recStation.slug}/`)} class="stretched-link" aria-label={t(`Go to ${recStation.name}`)} itemprop="url" />
-            <div class="station-item-body p-3">
-              <div class="row align-items-center g-3">
-                <div class="col-auto">
-                  {recStation.favicon ? (
-                    <Image src={recStation.favicon} alt={t(`${recStation.name} logo`)} class="rounded station-logo" width={60} height={60} itemprop="image" />
-                  ) : (
-                    <Image src={radioAppIconUrl} alt={t("Radddio app icon")} class="rounded station-logo" width={60} height={60} itemprop="image" />
-                  )}
-                </div>
-                <div class="col flex-grow-1">
-                  <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{recStation.name}</h3>
-                  <p class="small text-muted mb-1">
-                    {recStation.state ? <span><i class="bi bi-geo-alt me-1" />{t(recStation.state)}</span> : null}
-                    {recStation.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" />{t("{0} kbps", [recStation.bitrate])}</span> : null}
-                  </p>
-                  <div class="d-flex gap-2 flex-wrap">
-                    {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
-                      <a href={localizePath(`/genres/${genreSlug(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
-    </div>
-
-    <div class="col-12 col-lg-4">
-      <aside id="details" class="glass rounded-3 p-3 p-md-4">
+      <aside id="details" class="glass rounded-3 p-3 p-md-4 mt-4">
         <h2 class="h6 fw-bold mb-3"><i class="bi bi-card-text me-2" />{t("Station details")}</h2>
 
         <div class="vstack gap-3">
@@ -812,7 +777,44 @@ const structuredData = {
           <li>{t("Prefer streams 128 kbps or higher for best quality.")}</li>
         </ul>
       </section>
+
+      {recommendedStations.length > 0 && (
+    <section class="glass rounded-3 p-3 p-md-4 mt-4">
+      <h2 class="h6 fw-bold mb-3"><i class="bi bi-broadcast-pin me-2" />{t("More stations")}</h2>
+      <div class="station-list border border-light-subtle rounded-3 overflow-hidden">
+        {recommendedStations.map((recStation, index) => (
+          <div class={`station-item position-relative ${index !== recommendedStations.length - 1 ? 'border-bottom border-light-subtle' : ''}`} itemscope itemtype="https://schema.org/RadioStation">
+            <a href={localizePath(`/stations/${recStation.slug}/`)} class="stretched-link" aria-label={t(`Go to ${recStation.name}`)} itemprop="url" />
+            <div class="station-item-body p-3">
+              <div class="row align-items-center g-3">
+                <div class="col-auto">
+                  {recStation.favicon ? (
+                    <Image src={recStation.favicon} alt={t(`${recStation.name} logo`)} class="rounded station-logo" width={60} height={60} itemprop="image" />
+                  ) : (
+                    <Image src={radioAppIconUrl} alt={t("Radddio app icon")} class="rounded station-logo" width={60} height={60} itemprop="image" />
+                  )}
+                </div>
+                <div class="col flex-grow-1">
+                  <h3 class="mb-1 fs-6 fw-bold text-dark" itemprop="name">{recStation.name}</h3>
+                  <p class="small text-muted mb-1">
+                    {recStation.state ? <span><i class="bi bi-geo-alt me-1" />{t(recStation.state)}</span> : null}
+                    {recStation.bitrate ? <span class="ms-2"><i class="bi bi-soundwave me-1" />{t("{0} kbps", [recStation.bitrate])}</span> : null}
+                  </p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    {recStation.genres && recStation.genres.slice(0, 3).map((genre) => (
+                      <a href={localizePath(`/genres/${genreSlug(genre)}/`)} class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill text-decoration-none genre-badge-link">{t(genre)}</a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
     </div>
+
   </div>
 
   <div id="player-config" data-config={JSON.stringify({ ...playerScriptConfig, shareTitle: t(playerScriptConfig.shareTitle), shareText: t(playerScriptConfig.shareText) })} hidden />
@@ -823,6 +825,7 @@ import { clientTranslate as t } from '../../i18n/translate';
     import { metadataPollDelay } from "../../lib/metadata-polling.mjs";
     import { parseMetadata, parseHistory, decodeProviderMetadata, artworkUrl, gatherSongHistory } from "../../lib/metadata/index.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
+    import { createAppleTrackArtwork, hasTrackArtwork } from "../../lib/apple-track-artwork.mjs";
 
     const configEl = document.getElementById('player-config');
     const defaultConfig = {
@@ -858,6 +861,7 @@ import { clientTranslate as t } from '../../i18n/translate';
     const nowPlayingEl = /** @type {HTMLElement | null} */ (document.getElementById('nowPlaying'));
     const nowPlayingMetaEl = /** @type {HTMLElement | null} */ (document.getElementById('nowPlayingMeta'));
     const nowPlayingArtEl = /** @type {HTMLImageElement | null} */ (document.getElementById('nowPlayingArt'));
+    const appleMusicLink = /** @type {HTMLAnchorElement | null} */ (document.getElementById('appleMusicLink'));
     const nowPlayingDefault = nowPlayingEl?.textContent || '';
     const nowPlayingMetaDefault = nowPlayingMetaEl?.textContent || '';
     const nextCardEl = /** @type {HTMLElement | null} */ (document.getElementById('recent-next-card'));
@@ -872,8 +876,12 @@ import { clientTranslate as t } from '../../i18n/translate';
     const HISTORY_REFRESH_INTERVAL = 60000;
     let lastHistoryFetch = 0;
     let lastNowPlayingText = null;
+    let currentTrackIdentity = null;
+    let currentTrackStart = null;
     let lastHistoryRenderedSignature = null;
     let historyDisabled = !playerConfig.historyEndpoint;
+    const findAppleArtwork = createAppleTrackArtwork({ country: playerConfig.appleStoreCountry });
+    let artworkSequence = 0;
 
     /**
      * @param {string} text
@@ -1010,22 +1018,46 @@ import { clientTranslate as t } from '../../i18n/translate';
     const formatCurrentTrack = (payload, fallbackText) =>
       formatSongEntry(payload?.now_playing?.song || (fallbackText ? { text: fallbackText } : null));
 
+    const trackIdentity = info => info?.primary && info?.meta
+      ? `${info.meta.trim().toLocaleLowerCase()}|${info.primary.trim().toLocaleLowerCase()}` : null;
+
+    const setNowPlayingTime = timestamp => {
+      const timeEl = document.getElementById('nowPlayingTime');
+      if (!timeEl) return;
+      const seconds = Number(timestamp);
+      const startedAt = new Date(seconds * 1000);
+      const valid = Number.isFinite(seconds) && seconds > 0 && !Number.isNaN(startedAt.getTime());
+      timeEl.hidden = !valid;
+      timeEl.textContent = valid ? startedAt.toLocaleTimeString(document.documentElement.lang || 'en', { hour: '2-digit', minute: '2-digit' }) : '';
+      if (valid) timeEl.setAttribute('datetime', startedAt.toISOString());
+      else timeEl.removeAttribute('datetime');
+    };
+
     const updateNowPlayingTrack = (payload, fallbackText) => {
       if (!nowPlayingEl) return;
       const info = formatCurrentTrack(payload, fallbackText);
-      const timeEl = document.getElementById('nowPlayingTime');
-      if (timeEl) {
-        const timestamp = Number(payload?.now_playing?.played_at ?? payload?.played_at ?? payload?.playedat);
-        const startedAt = new Date(timestamp * 1000);
-        const valid = Number.isFinite(timestamp) && timestamp > 0 && !Number.isNaN(startedAt.getTime());
-        timeEl.hidden = !valid;
-        timeEl.textContent = valid ? startedAt.toLocaleTimeString(document.documentElement.lang || 'en', { hour: '2-digit', minute: '2-digit' }) : '';
-        if (valid) timeEl.setAttribute('datetime', startedAt.toISOString());
-        else timeEl.removeAttribute('datetime');
-      }
+      const identity = trackIdentity(info);
+      if (identity !== currentTrackIdentity) currentTrackStart = null;
+      currentTrackIdentity = identity;
+      const timestamp = Number(payload?.now_playing?.played_at ?? payload?.played_at ?? payload?.playedat);
+      if (Number.isFinite(timestamp) && timestamp > 0) currentTrackStart = timestamp;
+      setNowPlayingTime(currentTrackStart);
 
       nowPlayingEl.textContent = info?.primary || fallbackText || nowPlayingDefault;
-      setTrackArtwork(nowPlayingArtEl, info);
+      const sequence = ++artworkSequence;
+      const hasArtwork = hasTrackArtwork(info?.artwork);
+      setTrackArtwork(nowPlayingArtEl, hasArtwork ? info : { ...info, artwork: null });
+      if (appleMusicLink) appleMusicLink.hidden = true;
+      if (!hasArtwork && info?.meta && info?.primary) {
+        findAppleArtwork(info.meta, info.primary).then(result => {
+          if (sequence !== artworkSequence || !result) return;
+          setTrackArtwork(nowPlayingArtEl, { ...info, artwork: result.artwork });
+          if (appleMusicLink) {
+            appleMusicLink.href = result.url;
+            appleMusicLink.hidden = false;
+          }
+        });
+      }
       if (nowPlayingMetaEl) {
         nowPlayingMetaEl.textContent = info?.meta || (info ? '' : nowPlayingMetaDefault);
         nowPlayingMetaEl.hidden = Boolean(info && !info.meta);
@@ -1379,6 +1411,14 @@ import { clientTranslate as t } from '../../i18n/translate';
       try {
         const payload = await metadataFetcher.request(playerConfig.historyEndpoint, text => parseHistory(server, text));
         if (generation !== metadataGeneration) return false;
+        const latest = payload?.song_history?.[0];
+        const latestTime = Number(latest?.played_at ?? latest?.time);
+        if (trackIdentity(formatSongEntry(latest)) === currentTrackIdentity
+          && currentTrackIdentity && Number.isFinite(latestTime) && latestTime > 0
+          && !currentTrackStart) {
+          currentTrackStart = latestTime;
+          setNowPlayingTime(currentTrackStart);
+        }
         const historyApplied = applyRecentTracks(payload);
         const text = extractNowPlayingText(payload);
         if (text && nowPlayingEl) updateNowPlayingTrack(payload, text);
@@ -1413,7 +1453,7 @@ import { clientTranslate as t } from '../../i18n/translate';
         const listeners = parsed.listeners;
         if (listenersEl) {
           const valid = (typeof listeners === 'number' || typeof listeners === 'string') && String(listeners).trim() !== '' && Number.isFinite(Number(listeners)) && Number(listeners) >= 0;
-          listenersEl.textContent = valid ? t(`Listeners: ${Number(listeners).toLocaleString()}`) : '';
+          listenersEl.textContent = valid ? t(`${Number(listeners).toLocaleString()} Listeners`) : '';
           listenersEl.hidden = !valid;
         }
         const text = extractNowPlayingText(data);
@@ -1461,6 +1501,11 @@ import { clientTranslate as t } from '../../i18n/translate';
       historyDisabled = !playerConfig.historyEndpoint;
       lastHistoryFetch = 0;
       lastNowPlayingText = null;
+      currentTrackIdentity = null;
+      currentTrackStart = null;
+      setNowPlayingTime(null);
+      artworkSequence++;
+      if (appleMusicLink) appleMusicLink.hidden = true;
       lastHistoryRenderedSignature = null;
       if (nowPlayingEl) nowPlayingEl.textContent = nowPlayingDefault;
       if (nowPlayingMetaEl) nowPlayingMetaEl.textContent = nowPlayingMetaDefault;

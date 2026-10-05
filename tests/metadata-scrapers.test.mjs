@@ -9,6 +9,19 @@ test('AzuraCast keeps current track, history, upcoming song and listener count',
  assert.equal(result.payload.playing_next.song.title,'Next');assert.equal(result.payload.song_history.length,1);
  assert.equal(result.payload.now_playing.played_at,100);
 });
+test('AzuraCast repairs Windows-1253 Greek song fields without changing normal tracks', () => {
+ const broken = {artist:'ÌÐÅËËÏÕ ÓÙÔÇÑÉÁ',title:'ÈÁÑÈÅÉ ÌÉÁ ÌÅÑÁ ÍÁ ÐÏÍÁÓ',
+  text:'ÌÐÅËËÏÕ ÓÙÔÇÑÉÁ - ÈÁÑÈÅÉ ÌÉÁ ÌÅÑÁ ÍÁ ÐÏÍÁÓ',art:'https://example.com/art.jpg'};
+ const payload = {now_playing:{song:{title:'Κάτι Τέτοιες Ώρες',artist:'Tolis Voskopoulos'}},
+  song_history:[{song:broken,played_at:100}],playing_next:{song:broken}};
+ const parsed = parseMetadata('azuracast',payload,context);
+ assert.equal(parsed.song.title,'Κάτι Τέτοιες Ώρες');
+ assert.equal(parsed.payload.song_history[0].song.artist,'ΜΠΕΛΛΟΥ ΣΩΤΗΡΙΑ');
+ assert.equal(parsed.payload.playing_next.song.title,'ΘΑΡΘΕΙ ΜΙΑ ΜΕΡΑ ΝΑ ΠΟΝΑΣ');
+ assert.equal(parsed.payload.playing_next.song.art,broken.art);
+ assert.equal(parseHistory('azuracast',JSON.stringify(payload)).song_history[0].song.title,'ΘΑΡΘΕΙ ΜΙΑ ΜΕΡΑ ΝΑ ΠΟΝΑΣ');
+ assert.equal(broken.artist,'ÌÐÅËËÏÕ ÓÙÔÇÑÉÁ');
+});
 test('CentovaCast parses current song and wrapped recent tracks', () => {
  const result=parseMetadata('centovacast',{type:'result',data:[{song:'Artist - Track',track:{artist:'Artist',title:'Track',imageurl:'/cover.jpg'},listeners:12}]},context);
  assert.equal(result.song.title,'Track');assert.equal(result.song.art,'https://relay.example/cover.jpg');assert.equal(result.listeners,12);
