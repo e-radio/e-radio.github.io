@@ -44418,27 +44418,6 @@
     "geo_long": null
   },
   {
-    "slug": "freshfm",
-    "stationuuid": "ebfbd899-55c2-4622-8f9a-4162dd09eebd",
-    "name": "FreshFM",
-    "state": "Attica",
-    "city": "Athens",
-    "stream_url": "https://radio.onlinehost.ro/listen/freshfm/radio.mp3",
-    "homepage": "https://freshfm.ro/",
-    "favicon": "/station-icons/gr/freshfm.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 0,
-    "hls": 0,
-    "ssl_error": 1,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "fun-radio-104-3-loutraki",
     "stationuuid": "b27fd89b-fa12-42cb-b00a-2730bdaa6746",
     "name": "Fun Radio 104.3",
@@ -45270,6 +45249,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "nowplaying_url": "https://cast.mndbng.com/api/nowplaying/mondobongo",
+    "metadata_server": "azuracast",
+    "metadata_mode": "direct",
+    "history_url": "https://cast.mndbng.com/api/nowplaying/mondobongo",
     "formats": [
       "eclectic",
       "variety"
@@ -46451,7 +46434,7 @@
     "name": "Shook 104.4",
     "state": "Central Macedonia",
     "stream_url": "https://sh.onweb.gr/8812/;/chillout.mp3",
-    "homepage": "https://www.shook.gr/",
+    "homepage": "https://shouk.gr/",
     "favicon": "/station-icons/gr/shook-104-4-thessaloniki.webp",
     "genres": [
       "pop"
@@ -47843,7 +47826,7 @@
     "stream_url": "https://station.aptaliko.gr/radio/8000/radio.mp3",
     "homepage": "https://live.aptaliko.gr/radio",
     "favicon": "/station-icons/gr/athens.webp",
-    "genres": [],
+    "genres": ["folk"],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -47854,6 +47837,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "nowplaying_url": "https://station.aptaliko.gr/radio/8000/status-json.xsl?mount=%2Fradio.mp3",
+    "metadata_server": "icecast",
+    "metadata_mode": "direct",
     "formats": [
       "oldies"
     ]
