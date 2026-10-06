@@ -333,7 +333,7 @@
     "stationuuid": "476542e6-43b7-4468-9bad-1ed5322b3d3d",
     "name": "1st Greek New Age Radio",
     "state": "Attica",
-    "city": null,
+    "city": "Athens",
     "stream_url": "https://stream.newageradio.gr/listen/hq/radio.mp3",
     "homepage": "https://www.newageradio.gr/",
     "favicon": "/station-icons/gr/1st-greek-new-age-radio.webp",
@@ -1702,14 +1702,14 @@
     ]
   },
   {
-    "slug": "aktina-korinthos",
+    "slug": "aktina-radio-95",
     "stationuuid": "386aa866-0c3d-4ffd-ac0f-df21cb4a44d1",
-    "name": "Aktina",
+    "name": "Aktina Radio 95",
     "state": "Peloponnese",
     "city": "Korinthos",
-    "stream_url": "http://live.e-streaming.eu:8110/stream",
+    "stream_url": "https://stream.aktinaradio.gr/stream",
     "homepage": "https://www.aktinaradio.gr/",
-    "favicon": "/station-icons/gr/aktina-korinthos-placeholder.webp",
+    "favicon": "/station-icons/gr/aktina-radio-95.webp",
     "genres": [
       "dance",
       "electronic",
@@ -1724,7 +1724,19 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "aliases": [
+      "aktina-korinthos"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://live.e-streaming.eu:8110/stream",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "aktina-104-7-corfu",
@@ -1732,11 +1744,12 @@
     "name": "Aktina 104.7",
     "state": "Ionian Islands",
     "city": "Corfu",
-    "stream_url": "http://sc2.streamwithq.com:8016/stream",
+    "stream_url": "https://sc2.streamwithq.com:2000/stream/Aktina1047",
     "homepage": "https://aktinaradio.fm/",
-    "favicon": "/station-icons/gr/aktina-104-7-corfu-placeholder.webp",
+    "favicon": "/station-icons/gr/aktina-104-7-corfu.webp",
     "genres": [
-      "pop"
+      "pop",
+      "folk"
     ],
     "language": "greek",
     "bitrate": 320,
@@ -1748,12 +1761,27 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://sc2.streamwithq.com:8016/stats?sid=1&json=1",
+    "nowplaying_url": "https://sc2.streamwithq.com:2000/json/stream/Aktina1047",
     "metadata_server": "shoutcast",
+    "metadata_mode": "direct",
     "history_url": "http://sc2.streamwithq.com:8016/played?sid=1&type=json",
     "formats": [
       "greek-language music",
-      "mainstream"
+      "mainstream",
+      "80s",
+      "news"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://sc2.streamwithq.com:8016/stream",
+        "bitrate": 320,
+        "codec": "MP3",
+        "nowplaying_url": "http://sc2.streamwithq.com:8016/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://sc2.streamwithq.com:8016/played?sid=1&type=json"
+      }
     ]
   },
   {
@@ -1889,32 +1917,6 @@
     "geo_long": null
   },
   {
-    "slug": "alpha-88-6-kavala",
-    "stationuuid": "2a98dd80-67d9-4b72-a287-12271c2fa970",
-    "name": "Alpha 88.6",
-    "state": "Eastern Macedonia and Thrace",
-    "city": "Kavala",
-    "stream_url": "http://proradio.gr:8004/alpharadio",
-    "homepage": "https://www.alpharadio.gr/",
-    "favicon": "/station-icons/gr/alpha-88-6-kavala-placeholder.webp",
-    "genres": [
-      "pop"
-    ],
-    "language": "greek",
-    "bitrate": 128,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 29,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "greek-language music"
-    ]
-  },
-  {
     "slug": "alpha-98-9",
     "stationuuid": "8aab6e13-f494-4f60-995c-8516a982479d",
     "name": "Alpha 98.9",
@@ -2041,11 +2043,13 @@
     "name": "Alpha Radio 88,6 Kavala",
     "state": "Eastern Macedonia and Thrace",
     "city": "Kavala",
-    "stream_url": "http://stream2.proradio.gr:8004/alpharadio",
+    "stream_url": "https://stream3.proradio.gr/listen/alpharadio/alpharadio",
     "homepage": "https://www.alpharadio.gr/",
-    "favicon": "/station-icons/gr/alpha-radio-88-6-kavala-kavala-placeholder.webp",
-    "genres": [],
-    "language": null,
+    "favicon": "/station-icons/gr/alpha-radio-88-6-kavala-kavala.webp",
+    "genres": [
+      "pop"
+    ],
+    "language": "greek",
     "bitrate": 128,
     "codec": "AAC+",
     "clickcount": 0,
@@ -2057,6 +2061,32 @@
     "geo_long": null,
     "formats": [
       "greek-language music"
+    ],
+    "aliases": [
+      "alpha-88-6-kavala"
+    ],
+    "alternate_stationuuids": [
+      "2a98dd80-67d9-4b72-a287-12271c2fa970"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://proradio.gr:8004/alpharadio",
+        "bitrate": 128,
+        "codec": "AAC+",
+        "hls": 0,
+        "lastcheckok": 1
+      },
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://stream2.proradio.gr:8004/alpharadio",
+        "bitrate": 128,
+        "codec": "AAC+",
+        "hls": 0,
+        "lastcheckok": 1
+      }
     ]
   },
   {
@@ -2543,7 +2573,7 @@
     ]
   },
   {
-    "slug": "aquarius-pyrgos",
+    "slug": "aquarius-fm-105-5",
     "stationuuid": "6fcf5562-8872-4b93-8910-491537178503",
     "name": "Aquarius",
     "state": "Western Greece",
@@ -2566,32 +2596,19 @@
     "geo_long": null,
     "nowplaying_url": "https://cast6.my-control-panel.com/rpc/aquarius1055/streaminfo.get",
     "metadata_server": "centovacast",
+    "metadata_mode": "direct",
     "history_url": "https://cast6.my-control-panel.com/external/rpc.php?m=recenttracks.get&username=aquarius1055&limit=10",
     "formats": [
       "greek-language music",
-      "mainstream"
+      "mainstream",
+      "top 40"
+    ],
+    "aliases": [
+      "aquarius-pyrgos"
+    ],
+    "alternate_stationuuids": [
+      "056690af-fe79-42f8-9c54-277523e9fac1"
     ]
-  },
-  {
-    "slug": "aquarius-fm-105-5",
-    "stationuuid": "056690af-fe79-42f8-9c54-277523e9fac1",
-    "name": "AQUARIUS FM 105,5",
-    "state": null,
-    "city": null,
-    "stream_url": "https://sh.onweb.gr:7011/stream",
-    "homepage": "https://aquariusfm.gr/",
-    "favicon": "/station-icons/gr/aquarius-fm-105-5.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 160,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 4,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
   },
   {
     "slug": "arcadia-tripoli",
@@ -4412,39 +4429,18 @@
     "metadata_server": "icecast"
   },
   {
-    "slug": "capital-90-7",
-    "stationuuid": "36ca1735-240d-426a-8e81-25266b504be3",
-    "name": "Capital 90.7",
-    "state": null,
-    "city": null,
-    "stream_url": "https://hotsoft.net.gr:9100/?1741851418662",
-    "homepage": "https://www.capitalradio.gr/",
-    "favicon": "/station-icons/gr/capital-90-7.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 5,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "top 40"
-    ]
-  },
-  {
     "slug": "capital-radio-90-7",
     "stationuuid": "3b5c7abf-ebf4-4714-864b-439e9d079df4",
     "name": "Capital Radio 90,7",
-    "state": null,
-    "city": null,
-    "stream_url": "https://hotsoft.net.gr:9100/?1732451962720",
+    "state": "Crete",
+    "city": "Rethimno",
+    "stream_url": "https://hotsoft.net.gr:9100/stream",
     "homepage": "https://www.capitalradio.gr/",
     "favicon": "/station-icons/gr/capital-radio-90-7.webp",
-    "genres": [],
+    "genres": [
+      "electronic",
+      "alternative rock"
+    ],
     "language": null,
     "bitrate": 192,
     "codec": "MP3",
@@ -4457,6 +4453,12 @@
     "geo_long": null,
     "formats": [
       "top 40"
+    ],
+    "aliases": [
+      "capital-90-7"
+    ],
+    "alternate_stationuuids": [
+      "36ca1735-240d-426a-8e81-25266b504be3"
     ]
   },
   {
@@ -5161,14 +5163,15 @@
   {
     "slug": "cool-106-8-rethimno",
     "stationuuid": "2cb1d842-1796-4c6c-aa44-0ea0bf586abd",
-    "name": "Cool 106.8",
+    "name": "Cool FM 106.8",
     "state": "Crete",
     "city": "Rethimno",
-    "stream_url": "https://netradio.live24.gr/coolfm10680",
+    "stream_url": "https://sh.onweb.gr/8826/stream",
     "homepage": "https://www.coolfm.gr/",
     "favicon": "/station-icons/gr/cool-106-8-rethimno.png",
     "genres": [
-      "pop"
+      "pop",
+      "rock"
     ],
     "language": null,
     "bitrate": 128,
@@ -5179,7 +5182,14 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://www.coolfm.gr/stream_metadata.php",
+    "metadata_server": "coolfm",
+    "history_url": "https://r.jina.ai/https://sh.onweb.gr/8826/played?sid=1&type=json",
+    "formats": [
+      "news",
+      "talk"
+    ]
   },
   {
     "slug": "cool-90-7-argolida",
@@ -6950,30 +6960,9 @@
     "geo_long": null
   },
   {
-    "slug": "ellada-94-3-athens",
-    "stationuuid": "f5a6fd33-479e-4953-94f4-712c5234695d",
-    "name": "Ellada 94.3",
-    "state": "Attica",
-    "city": "Athens",
-    "stream_url": "https://stream.ellada943.gr:10198/radio.mp3",
-    "homepage": "https://elladafm.gr/",
-    "favicon": "/station-icons/gr/ellada-94-3-athens.webp",
-    "genres": [],
-    "language": "greek",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 128,
-    "hls": 0,
-    "ssl_error": 1,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "ellada-sports",
+    "slug": "ellada-sports-94-3-fm",
     "stationuuid": "229e9129-9b07-4c14-a753-f2e3abe1af62",
-    "name": "ELLADA SPORTS",
+    "name": "Ellada Sports 94.3 FM",
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://tls-chrome.live24.gr/3297",
@@ -6982,7 +6971,7 @@
     "genres": [
       "rock"
     ],
-    "language": null,
+    "language": "greek",
     "bitrate": 320,
     "codec": "MP3",
     "clickcount": 1,
@@ -6993,13 +6982,20 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "sports"
+      "sports",
+      "sports talk"
     ],
     "aliases": [
-      "ellada-sports-229e9129"
+      "ellada-sports-229e9129",
+      "ellada-94-3-athens",
+      "ellada-94-3-fm",
+      "ellada-sports-94-3-fm"
     ],
     "alternate_stationuuids": [
-      "177697c8-ed39-4eea-b7cd-eca610e436fa"
+      "177697c8-ed39-4eea-b7cd-eca610e436fa",
+      "f5a6fd33-479e-4953-94f4-712c5234695d",
+      "e035dc81-6802-45f0-8a91-1aec5b86af54",
+      "ca2d0314-9ca4-40bf-9087-29d090a12f79"
     ],
     "streams": [
       {
@@ -7008,32 +7004,18 @@
         "url": "http://stream.ellada943.gr:10198/radio.mp3",
         "bitrate": 320,
         "codec": "MP3",
-        "hls": 0
+        "hls": 0,
+        "lastcheckok": 1
+      },
+      {
+        "id": "alternative-2",
+        "label": "Alternative",
+        "url": "http://stream.ellada943.gr:10308/live.ogg",
+        "bitrate": 320,
+        "codec": "MP3",
+        "hls": 0,
+        "lastcheckok": 1
       }
-    ]
-  },
-  {
-    "slug": "ellada-sports-94-3-fm",
-    "stationuuid": "ca2d0314-9ca4-40bf-9087-29d090a12f79",
-    "name": "Ellada Sports 94.3 FM",
-    "state": null,
-    "city": null,
-    "stream_url": "https://stream.ellada943.gr:10308/live.ogg",
-    "homepage": "https://elladafm.gr/",
-    "favicon": "/station-icons/gr/ellada-sports-94-3-fm.jpg",
-    "genres": [],
-    "language": "greek",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 14,
-    "hls": 0,
-    "ssl_error": 1,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "sports talk"
     ]
   },
   {
@@ -7709,39 +7691,17 @@
     ]
   },
   {
-    "slug": "erotokritos",
-    "stationuuid": "362ed000-4250-41d2-89bb-83b32f9435b5",
-    "name": "EROTOKRITOS",
-    "state": null,
-    "city": null,
-    "stream_url": "https://tls-chrome.live24.gr/1510?http://stream2.proradio.gr:8004/erotokritos",
-    "homepage": "https://www.erotokritos.gr/",
-    "favicon": "/station-icons/gr/erotokritos.png",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 1,
-    "lastcheckok": 1,
-    "votes": 17,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "variety"
-    ]
-  },
-  {
     "slug": "erotokritos-87-9-fm-crete",
     "stationuuid": "2e438d66-0a8d-11e8-ae97-52543be04c81",
-    "name": "Erotokritos 87.9 fm",
+    "name": "Erotokritos 87.9 FM",
     "state": "Crete",
-    "city": null,
+    "city": "Heraklion",
     "stream_url": "http://stream2.proradio.gr:8004/erotokritos",
-    "homepage": "https://www.easyradio.gr/erotokritos/",
-    "favicon": "/station-icons/gr/erotokritos-87-9-fm-crete-placeholder.webp",
-    "genres": [],
+    "homepage": "https://www.erotokritos.gr/",
+    "favicon": "/station-icons/gr/erotokritos-87-9-fm-crete.webp",
+    "genres": [
+      "folk"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "MP3",
@@ -7753,7 +7713,26 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "variety"
+      "variety",
+      "news",
+      "talk"
+    ],
+    "aliases": [
+      "erotokritos"
+    ],
+    "alternate_stationuuids": [
+      "362ed000-4250-41d2-89bb-83b32f9435b5"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "https://tls-chrome.live24.gr/1510",
+        "bitrate": 128,
+        "codec": "MP3",
+        "hls": 0,
+        "lastcheckok": 1
+      }
     ]
   },
   {
@@ -27119,12 +27098,14 @@
     "slug": "rock-lab-ballads",
     "stationuuid": "05b390fc-7e45-46ac-bcac-35febc95b970",
     "name": "Rock Lab Ballads",
-    "state": null,
-    "city": null,
+    "state": "Central Macedonia",
+    "city": "Thessaloniki",
     "stream_url": "https://stream.zeno.fm/xqyzz6vzmg8uv",
-    "homepage": "https://zeno.fm/radio/rock-lab-radio-ballads/",
+    "homepage": "https://rocklabradio.wixsite.com/rock-lab-radio",
     "favicon": "/station-icons/gr/rock-lab-ballads.webp",
-    "genres": [],
+    "genres": [
+      "rock"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -29749,36 +29730,13 @@
     ]
   },
   {
-    "slug": "stone-radio",
-    "stationuuid": "6e349a60-7e62-4f63-9686-d5c4fa00fc7b",
-    "name": "Stone Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "http://eu4.fastcast4u.com:5248/;&type=mp3",
-    "homepage": "http://www.stoneradio.gr/",
-    "favicon": "/station-icons/gr/stone-radio.png",
-    "genres": [
-      "rock"
-    ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 5,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "stone-radio-962faec2",
     "stationuuid": "962faec2-0601-11e8-ae97-52543be04c81",
     "name": "Stone Radio",
     "state": null,
     "city": null,
     "stream_url": "http://eu4.fastcast4u.com:5248/;stream.mp3",
-    "homepage": "https://www.stoneradio.gr/",
+    "homepage": "http://www.stoneradio.gr/",
     "favicon": "/station-icons/gr/stone-radio-962faec2.png",
     "genres": [
       "alternative rock",
@@ -29807,6 +29765,23 @@
     ],
     "genre_review": [
       "power rock"
+    ],
+    "aliases": [
+      "stone-radio"
+    ],
+    "alternate_stationuuids": [
+      "6e349a60-7e62-4f63-9686-d5c4fa00fc7b"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://eu4.fastcast4u.com:5248/;&type=mp3",
+        "bitrate": 128,
+        "codec": "MP3",
+        "hls": 0,
+        "lastcheckok": 1
+      }
     ]
   },
   {
@@ -31691,15 +31666,17 @@
     "geo_long": null
   },
   {
-    "slug": "venus-amaliada",
+    "slug": "venus-fm-105-1-greece",
     "stationuuid": "50a22df5-8f79-11e8-a3de-52543be04c81",
     "name": "Venus FM 105,1",
     "state": "Western Greece",
     "city": "Amaliada",
     "stream_url": "https://cast6.my-control-panel.com/proxy/venus1051/stream",
     "homepage": "https://venusfm.gr/",
-    "favicon": "/station-icons/gr/venus-amaliada.webp",
-    "genres": [],
+    "favicon": "/station-icons/gr/venus-fm-105-1-greece.webp",
+    "genres": [
+      "pop"
+    ],
     "language": "greek",
     "bitrate": 160,
     "codec": "MP3",
@@ -31714,39 +31691,16 @@
     "history_url": "https://cast6.my-control-panel.com/external/rpc.php?m=recenttracks.get&username=venus1051&limit=10",
     "metadata_server": "centovacast",
     "formats": [
-      "top 40"
+      "top 40",
+      "mainstream"
     ],
     "aliases": [
-      "venus-fm-105-1-greece"
+      "venus-amaliada",
+      "venus-105-1-amaliada"
     ],
     "alternate_stationuuids": [
-      "9d23634b-e3ff-4af5-bbfa-5f8c2b5d0804"
-    ]
-  },
-  {
-    "slug": "venus-105-1-amaliada",
-    "stationuuid": "6c177147-e4a4-46e4-81ab-c9113f877a5c",
-    "name": "Venus 105.1",
-    "state": "Western Greece",
-    "city": "Amaliada",
-    "stream_url": "https://sh.onweb.gr:7124/stream",
-    "homepage": "https://venusfm.gr/",
-    "favicon": "/station-icons/gr/venus-105-1-amaliada.png",
-    "genres": [
-      "pop"
-    ],
-    "language": "greek",
-    "bitrate": 160,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 46,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "mainstream"
+      "9d23634b-e3ff-4af5-bbfa-5f8c2b5d0804",
+      "6c177147-e4a4-46e4-81ab-c9113f877a5c"
     ]
   },
   {
@@ -31803,33 +31757,6 @@
     ]
   },
   {
-    "slug": "venus-radio",
-    "stationuuid": "db8f786b-5e30-4898-ac0c-581b483a8016",
-    "name": "Venus Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "http://s1.onweb.gr:8410/;",
-    "homepage": "https://venusradio.gr/",
-    "favicon": "/station-icons/gr/venus-radio.png",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 7,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://s1.onweb.gr:8410/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://s1.onweb.gr:8410/played?sid=1&type=json",
-    "formats": [
-      "variety"
-    ]
-  },
-  {
     "slug": "venus-radio-99-3",
     "stationuuid": "5dbd6331-6b6e-45f4-a932-0b41d73b0e55",
     "name": "Venus Radio 99.3",
@@ -31853,7 +31780,28 @@
     "geo_long": 25.346145629882816,
     "formats": [
       "classic hits",
-      "hits"
+      "hits",
+      "variety"
+    ],
+    "aliases": [
+      "venus-radio"
+    ],
+    "alternate_stationuuids": [
+      "db8f786b-5e30-4898-ac0c-581b483a8016"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://s1.onweb.gr:8410/;",
+        "bitrate": 128,
+        "codec": "MP3",
+        "hls": 0,
+        "lastcheckok": 1,
+        "nowplaying_url": "http://s1.onweb.gr:8410/stats?sid=1&json=1",
+        "metadata_server": "shoutcast",
+        "history_url": "http://s1.onweb.gr:8410/played?sid=1&type=json"
+      }
     ]
   },
   {
@@ -32104,12 +32052,15 @@
     "state": "Western Greece",
     "city": "Patras",
     "stream_url": "https://sp1.32bit.gr/8018/;",
-    "homepage": "https://el-gr.facebook.com/Wave97.4/",
-    "favicon": "/station-icons/gr/wave-fm-97-4.png",
+    "homepage": "https://www.wave974.gr/",
+    "favicon": "/station-icons/gr/wave-fm-97-4.webp",
     "genres": [
       "classic rock",
       "rock",
-      "soft rock"
+      "soft rock",
+      "alternative",
+      "pop",
+      "pop rock"
     ],
     "language": "greek",
     "bitrate": 128,
@@ -32120,57 +32071,26 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "wave-fm-974-patras",
-    "stationuuid": "e3db2fa8-424b-4fa7-aec4-61ed0c4cf446",
-    "name": "Wave FM 974 Patras",
-    "state": "Western Greece",
-    "city": "Patras",
-    "stream_url": "https://sp1.32bit.gr/cp/links.php?p=8018&m=pls",
-    "homepage": "https://www.wave974.gr/",
-    "favicon": "/station-icons/gr/wave-fm-974-patras.webp",
-    "genres": [
-      "alternative",
-      "pop",
-      "rock"
+    "geo_long": null,
+    "aliases": [
+      "wave-fm-974-patras",
+      "wave-fm-974-patras-gr"
     ],
-    "language": null,
-    "bitrate": 0,
-    "codec": null,
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 4,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "wave-fm-974-patras-gr",
-    "stationuuid": "399fc6ca-aa22-4c09-b79c-fa2d06fe67f1",
-    "name": "Wave FM 974 Patras GR",
-    "state": "Western Greece",
-    "city": "Patras",
-    "stream_url": "http://sp1.32bit.gr:8018/",
-    "homepage": "https://www.wave974.gr/",
-    "favicon": "/station-icons/gr/wave-fm-974-patras-gr.webp",
-    "genres": [
-      "pop",
-      "pop rock",
-      "rock"
+    "alternate_stationuuids": [
+      "e3db2fa8-424b-4fa7-aec4-61ed0c4cf446",
+      "399fc6ca-aa22-4c09-b79c-fa2d06fe67f1"
     ],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://sp1.32bit.gr:8018/;",
+        "bitrate": 128,
+        "codec": "MP3",
+        "hls": 0,
+        "lastcheckok": 1
+      }
+    ]
   },
   {
     "slug": "weird-fishes",
@@ -35244,7 +35164,7 @@
     "city": "Volos",
     "stream_url": "http://solid55.streamupsolutions.com:32015/stream",
     "homepage": "https://www.facebook.com/radioena.gr",
-    "favicon": "/station-icons/gr/volos-4c86a26c.png",
+    "favicon": "/station-icons/gr/radio-1-102-5.webp",
     "genres": [
       "folk",
       "pop"
@@ -35259,9 +35179,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://solid55.streamupsolutions.com:32015/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://solid55.streamupsolutions.com:32015/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "news",
@@ -44078,27 +43995,6 @@
     ]
   },
   {
-    "slug": "ellada-94-3-fm",
-    "stationuuid": "e035dc81-6802-45f0-8a91-1aec5b86af54",
-    "name": "ELLADA 94.3 FM",
-    "state": null,
-    "city": null,
-    "stream_url": "http://stream.ellada943.gr:10308/live.ogg",
-    "homepage": "https://elladafm.gr/",
-    "favicon": "/station-icons/gr/ellada-94-3-fm-placeholder.webp",
-    "genres": [],
-    "language": null,
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 51,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "ellinadiko",
     "stationuuid": "e94b15c9-a68f-41c6-80c5-2078bb0df142",
     "name": "Ellinadiko",
@@ -46624,7 +46520,7 @@
     "stationuuid": "374c5a52-e304-44b4-aa0c-dfd4f9c58e10",
     "name": "tiamo.gr",
     "state": "Attica",
-    "stream_url": "https://i5.streams.ovh:14126/stream",
+    "stream_url": "http://i5.streams.ovh:14126/stream",
     "homepage": "https://tiamo.gr/",
     "favicon": "/station-icons/gr/tiamo-gr.webp",
     "genres": [],

@@ -138,6 +138,18 @@ test('Ellinadiko parses its station feed and supplied artwork', () => {
  assert.equal(parseMetadata('ellinadiko', {}, context).text, null);
  assert.equal(supportsNowPlaying('ellinadiko'), true);
 });
+test('Cool FM separates the current track from the next song', () => {
+ const result = parseMetadata('coolfm', {
+  title: 'Remastered 2001 - Althea And Donna', artist: 'Uptown Top Ranking',
+  art: 'CoolFm.png', next: 'Tiwayo: Rise Up And Shine', history: [],
+ }, { endpoint: 'https://www.coolfm.gr/stream_metadata.php' });
+ assert.equal(result.song.title, 'Remastered 2001 - Althea And Donna');
+ assert.equal(result.song.artist, 'Uptown Top Ranking');
+ assert.equal(result.song.art, 'https://www.coolfm.gr/CoolFm.png');
+ assert.equal(result.payload.playing_next.song.artist, 'Tiwayo');
+ assert.equal(result.payload.playing_next.song.title, 'Rise Up And Shine');
+ assert.equal(parseMetadata('coolfm', {}, context).payload.playing_next, null);
+});
 test('JSON and Jina wrappers share decoding, provider errors fail', () => {
  assert.deepEqual(decodeMetadata('Title: x\nMarkdown Content:\n{"songtitle":"Song"}'),{songtitle:'Song'});
  assert.throws(()=>decodeMetadata('{"type":"error"}'));
