@@ -114,6 +114,23 @@ class MergeStationsTests(unittest.TestCase):
         self.assertEqual(report['added_stream_urls'], ['https://radio.example/flac'])
         self.assertEqual(len(result[0]['streams']), 2)
 
+    def test_alternatives_keep_only_positive_hls_and_omit_check_results(self):
+        records = fixture()
+        records[0]['hls'] = 0
+        records[0]['lastcheckok'] = 1
+        records[0]['streams'][0].update({'hls': 0, 'lastcheckok': 1})
+        records[1].update({'hls': 0, 'lastcheckok': 1})
+        records[1]['streams'][0].update({'url': 'https://radio.example/hls', 'hls': 1, 'lastcheckok': 1})
+        result, _, _ = merge.merge_records(records, 'parent', ['child'])
+        station = result[0]
+        self.assertEqual(station['hls'], 0)
+        self.assertEqual(station['lastcheckok'], 1)
+        for stream in station['streams']:
+            self.assertNotIn('lastcheckok', stream)
+        self.assertNotIn('hls', station['streams'][0])
+        self.assertNotIn('hls', station['streams'][1])
+        self.assertEqual(station['streams'][2]['hls'], 1)
+
     def test_conflicting_metadata_is_reported_and_parent_value_wins(self):
         records = fixture()
         records[1]['stream_url'] = records[0]['stream_url']

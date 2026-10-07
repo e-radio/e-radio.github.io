@@ -150,6 +150,21 @@ test('Cool FM separates the current track from the next song', () => {
  assert.equal(result.payload.playing_next.song.title, 'Rise Up And Shine');
  assert.equal(parseMetadata('coolfm', {}, context).payload.playing_next, null);
 });
+test('Diesi parses its nested Greek now-playing response', () => {
+ const result = parseMetadata('diesi', {data: {status: 'success', artist: 'ΜΠΟΦΙΛΙΟΥ Ν - ΧΑΡΟΥΛΗΣ Γ', song: 'ΚΟΙΤΑ ΕΓΩ'}}, context);
+ assert.equal(result.song.artist, 'ΜΠΟΦΙΛΙΟΥ Ν - ΧΑΡΟΥΛΗΣ Γ');
+ assert.equal(result.song.title, 'ΚΟΙΤΑ ΕΓΩ');
+ assert.equal(parseMetadata('diesi', {data: {status: 'error', song: 'Stale'}}, context).text, null);
+});
+test('Rcast parses plain text and Jina-wrapped now-playing responses', () => {
+ const raw = 'Bryan Adams - Have You Ever Really Loved A Woman';
+ const plain = parseMetadata('rcast', decodeProviderMetadata('rcast', raw), context);
+ assert.equal(plain.song.artist, 'Bryan Adams');
+ assert.equal(plain.song.title, 'Have You Ever Really Loved A Woman');
+ const wrapped = parseMetadata('rcast', decodeProviderMetadata('rcast', `Title: \nURL Source: https://status.rcast.net/68849\nMarkdown Content:\n${raw}`), context);
+ assert.equal(wrapped.text, plain.text);
+ assert.throws(() => decodeProviderMetadata('rcast', '<html>Error</html>'));
+});
 test('JSON and Jina wrappers share decoding, provider errors fail', () => {
  assert.deepEqual(decodeMetadata('Title: x\nMarkdown Content:\n{"songtitle":"Song"}'),{songtitle:'Song'});
  assert.throws(()=>decodeMetadata('{"type":"error"}'));

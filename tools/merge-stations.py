@@ -43,21 +43,26 @@ def is_playlist(url):
     return bool(re.search(r'\.(?:pls|asx|m3u)(?:[?#]|$)', url, re.I))
 
 
+def useful_stream_field(key, value):
+    # Keep an HLS indication, but omit non-HLS defaults and temporary check results.
+    return key != 'lastcheckok' and (key != 'hls' or value == 1)
+
+
 def stream_from_station(station):
     stream = {'url': station.get('stream_url')}
     for key in STREAM_FIELDS:
-        if key in station:
+        if key in station and useful_stream_field(key, station[key]):
             stream[key] = station[key]
     return stream
 
 
 def merge_stream_fields(destination, incoming, conflicts, url):
     for key, value in incoming.items():
-        if key in ('url', 'id', 'label') or not has_value(value):
+        if key in ('url', 'id', 'label') or not has_value(value) or not useful_stream_field(key, value):
             continue
         if not has_value(destination.get(key)):
             destination[key] = copy.deepcopy(value)
-        elif destination[key] != value and key != 'lastcheckok':
+        elif destination[key] != value:
             conflicts.append({'field': f'stream:{url}:{key}', 'parent': destination[key], 'incoming': value})
 
 
@@ -117,7 +122,8 @@ def merge_records(stations, parent_uuid, child_uuids):
     if unavailable:
         parent['unavailable_streams'] = unavailable
 
-    streams = copy.deepcopy(parent.get('streams', []))
+    streams = [{key: copy.deepcopy(value) for key, value in stream.items()
+                if useful_stream_field(key, value)} for stream in parent.get('streams', [])]
     by_url = {parent['stream_url']: parent}
     for stream in streams:
         if stream.get('url'):
@@ -140,7 +146,7 @@ def merge_records(stations, parent_uuid, child_uuids):
             stream = {'id': f'alternative-{len(streams) + 1}',
                       'label': candidate.get('label') or 'Alternative', 'url': url}
             for key, value in candidate.items():
-                if key not in ('url', 'id', 'label'):
+                if key not in ('url', 'id', 'label') and useful_stream_field(key, value):
                     stream[key] = copy.deepcopy(value)
             streams.append(stream)
             by_url[url] = stream

@@ -10,5 +10,9 @@
   {
     "stationuuid": "ebfbd899-55c2-4622-8f9a-4162dd09eebd",
     "reason": "FreshFM belongs to other country"
+  },
+  {
+    "stationuuid": "4e79c0af-4dea-4b83-a850-f11329460dc7",
+    "reason": "wrong entry: the stream belongs to Ellinikos 93.2 96463caa-0601-11e8-ae97-52543be04c81"
   }
 ]
