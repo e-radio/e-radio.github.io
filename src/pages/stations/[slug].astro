@@ -410,7 +410,14 @@ const resolveEncodingFormat = (currentStation: typeof rawStations[0]) => {
 
 const encodingFormat = resolveEncodingFormat(station);
 
-const title = countryText(`${station.name} – Live Radio Station in Greece | ${site.siteShortName}`);
+const titleCountry = site.countryName === "Netherlands" ? "the Netherlands" : site.countryName;
+const titlePlaces = [station.city, station.state]
+  .filter((place): place is string => typeof place === "string" && Boolean(place.trim()))
+  .map(place => place.trim());
+const titleLocation = titlePlaces.filter((place, index) =>
+  titlePlaces.findIndex(other => other.toLocaleLowerCase() === place.toLocaleLowerCase()) === index
+).join(", ") || titleCountry;
+const title = `${station.name} – Listen Live Online in ${titleLocation} | ${site.siteShortName}`;
 const genreLabel = station.genres.length > 0
   ? station.genres.slice(0, 2).join(", ").toLowerCase()
   : "live";

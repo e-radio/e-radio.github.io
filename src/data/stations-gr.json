@@ -2124,14 +2124,14 @@
     ]
   },
   {
-    "slug": "amore-87-5-chania",
+    "slug": "radio-amore-87-5-fm",
     "stationuuid": "e0293a99-1641-4172-b068-e7d6e522ac0e",
-    "name": "Amore 87.5",
+    "name": "Radio Amore 87.5",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://s4.onweb.gr:8442/;",
+    "stream_url": "https://sh.onweb.gr:7072/;",
     "homepage": "https://www.radioamore.gr/",
-    "favicon": "/station-icons/gr/amore-87-5-chania-placeholder.webp",
+    "favicon": "/station-icons/gr/radio-amore-87-5-fm.webp",
     "genres": [
       "folk"
     ],
@@ -2146,7 +2146,24 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "greek-language music"
+      "greek-language music",
+      "variety",
+      "hits"
+    ],
+    "aliases": [
+      "amore-87-5-chania"
+    ],
+    "alternate_stationuuids": [
+      "d83fd7c8-0072-4d4d-9090-397d2d2abcde"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://s4.onweb.gr:8442/;",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -18485,10 +18502,14 @@
     "name": "Peiratikos FM",
     "state": "Peloponnese",
     "city": "Kalamata",
-    "stream_url": "http://89.163.217.252:9800/;",
+    "stream_url": "https://shoutcast.k-planet.eu/9800/stream;",
     "homepage": "https://www.peiratikos.com/",
     "favicon": "/station-icons/gr/peiratikos-fm-placeholder.webp",
-    "genres": [],
+    "genres": [
+      "folk",
+      "greek folk",
+      "laika"
+    ],
     "language": null,
     "bitrate": 128,
     "codec": "MP3",
@@ -18498,7 +18519,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "greek-language music",
+      "oldies"
+    ]
   },
   {
     "slug": "pella-103-3-pella",
@@ -20069,30 +20094,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null
-  },
-  {
-    "slug": "radio-amore-87-5-fm",
-    "stationuuid": "d83fd7c8-0072-4d4d-9090-397d2d2abcde",
-    "name": "RADIO AMORE 87,5 FM",
-    "state": "Crete",
-    "city": "Chania",
-    "stream_url": "https://sh.onweb.gr:7072/;",
-    "homepage": "https://www.radioamore.gr/",
-    "favicon": "/station-icons/gr/radio-amore-87-5-fm.gif",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 8,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "variety"
-    ]
   },
   {
     "slug": "radio-anemos",
@@ -39485,16 +39486,16 @@
     "name": "Πειρατικός",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://89.163.217.252:9800/;",
+    "stream_url": "https://shoutcast.k-planet.eu/9800/stream;",
     "homepage": "https://www.peiratikos.com/",
-    "favicon": "/station-icons/gr/athens-27b34bf7-placeholder.webp",
+    "favicon": "/station-icons/gr/peiratikos-fm.webp",
     "genres": [
       "folk",
       "greek folk",
       "laika"
     ],
     "language": "greek",
-    "bitrate": 128,
+    "bitrate": 192,
     "codec": "MP3",
     "clickcount": 1,
     "lastcheckok": 0,
@@ -39515,17 +39516,6 @@
     "alternate_stationuuids": [
       "94dced48-965d-41f2-93ab-702fcbe6998b",
       "e1305c38-d6ab-4087-8d94-e355d9401bb6"
-    ],
-    "streams": [
-      {
-        "id": "alternative-1",
-        "label": "Alternative",
-        "url": "https://shoutcast.k-planet.eu/9800/stream;",
-        "bitrate": 192,
-        "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1
-      }
     ]
   },
   {
@@ -45966,12 +45956,14 @@
     "slug": "radiomore",
     "stationuuid": "f7e71129-6cf8-4291-857f-f361ace933cd",
     "name": "RadioMore",
-    "state": null,
-    "city": null,
+    "state": "Central Macedonia",
+    "city": "Thessaloniki",
     "stream_url": "https://eco.onestreaming.com/proxy/moreradio/stream",
     "homepage": "https://radiomore.gr/",
-    "favicon": "/station-icons/gr/radiomore-placeholder.webp",
-    "genres": [],
+    "favicon": "/station-icons/gr/radiomore.webp",
+    "genres": [
+      "pop"
+    ],
     "language": "english",
     "bitrate": 128,
     "codec": "MP3",
@@ -45985,7 +45977,7 @@
     "formats": [
       "adult contemporary",
       "90",
-      "80",
+      "80s",
       "hits"
     ],
     "streams": [
