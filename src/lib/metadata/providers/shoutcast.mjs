@@ -1,9 +1,11 @@
 import { parseTextHistory } from '../common.mjs';
+import { repairMetadataText } from '../../metadata-text.mjs';
+import { history as radioPointHistory } from './radiopoint.mjs';
 // Some Shoutcast automation systems append short catalog IDs to every track.
 const removeTrackId = value => value.replace(/\s*\[(?:[A-Za-z0-9]{3}|(?=[A-Za-z0-9]*\d)[A-Za-z0-9]{4})\]\s*$/u, '');
 const splitSong = value => {
   const text = typeof value === 'string'
-    ? removeTrackId(value.replace(/^(?:\s*now on air\s*:\s*)+/i, '')).trim()
+    ? repairMetadataText(removeTrackId(value.replace(/^(?:\s*now on air\s*:\s*)+/i, '')).trim())
     : '';
   const separator = /\s+-\s+/.exec(text);
   if (!separator) return { text, title: text };
@@ -20,6 +22,7 @@ export function parse(payload) {
   return { song: splitSong(payload?.songtitle), listeners: payload?.currentlisteners };
 }
 export function history(payload) {
+  if (Array.isArray(payload?.items)) return radioPointHistory(payload);
   if (Array.isArray(payload?.trackhistory)) {
     const result = parse(payload);
     return { now_playing: { song: result.song }, song_history: result.history };

@@ -89,7 +89,7 @@ const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationDat
     metadata_server?: ServerKind | null;
     metadata_direct?: boolean;
   };
-  if (savedMetadata.nowplaying_url) {
+  if (savedMetadata.nowplaying_url || savedMetadata.history_url) {
     const savedServerType = savedMetadata.metadata_server || "unknown";
     const resolveSavedEndpoint = (endpoint: string) => {
       const isHttps = /^https:\/\//i.test(endpoint);
@@ -100,7 +100,7 @@ const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationDat
         : (needsCorsProxy ? wrapWithCorsProxy(endpoint) : endpoint);
     };
     return {
-      nowPlaying: resolveSavedEndpoint(savedMetadata.nowplaying_url),
+      nowPlaying: savedMetadata.nowplaying_url ? resolveSavedEndpoint(savedMetadata.nowplaying_url) : null,
       history: savedMetadata.history_url
         ? resolveSavedEndpoint(savedMetadata.history_url)
         : null,
@@ -1491,7 +1491,11 @@ import { clientTranslate as t } from '../../i18n/translate';
       const generation = metadataGeneration;
       await pollNowPlaying();
       if (generation !== metadataGeneration) return;
-      if (!document.hidden && playerConfig.nowPlayingEndpoint && !metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint)) {
+      if (!playerConfig.nowPlayingEndpoint) await fetchAndApplyHistory();
+      if (generation !== metadataGeneration) return;
+      const hasMetadataEndpoint = (playerConfig.nowPlayingEndpoint && !metadataFetcher.isBlocked(playerConfig.nowPlayingEndpoint))
+        || (playerConfig.historyEndpoint && !metadataFetcher.isBlocked(playerConfig.historyEndpoint));
+      if (!document.hidden && hasMetadataEndpoint) {
         metadataTimer = setTimeout(refreshMetadata, nextMetadataDelay);
       }
     };

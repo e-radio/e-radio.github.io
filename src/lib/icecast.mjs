@@ -1,4 +1,4 @@
-import { repairMetadataText } from './metadata-text.mjs';
+import { repairMetadataText, stripBroadcastLabel } from './metadata-text.mjs';
 
 const clean = value => typeof value === 'string' ? value.trim() : '';
 const xmlText = value => value.replace(/&(?:amp|lt|gt|quot|apos|#\d+|#x[\da-f]+);/gi, entity => {
@@ -52,6 +52,10 @@ export function icecastTrack(payload, streamUrl, endpoint) {
   if (!source) return null;
   let title = repairMetadataText(clean(source.title) || clean(source.yp_currently_playing) || clean(source.songtitle));
   let artist = repairMetadataText(clean(source.artist));
+  // Some Icecast feeds prepend their station name before the broadcast label.
+  // Remove that wrapper before splitting the actual artist and title.
+  title = title.replace(/^.+?\s+-\s+(?=(?:now\s+(?:playing|on\s+air)|playing)\s*:)/iu, '');
+  title = stripBroadcastLabel(title);
   const jazler = jazlerSong(title);
   if (jazler) ({ title, artist } = jazler);
   else if (/^<\?xml\b/i.test(title) || /^<Schedule\b/i.test(title)) return null;

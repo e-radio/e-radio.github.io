@@ -2,6 +2,21 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseMetadata, parseHistory, decodeMetadata, decodeProviderMetadata, supportsNowPlaying, isLiveTrackStation, scraperFor } from '../src/lib/metadata/index.mjs';
 const context = { streamUrl: 'https://relay.example/radio/8000/stream', endpoint: 'https://relay.example/status-json.xsl?mount=%2Fchosen' };
+test('Shoutcast current track and RadioPoint archive history work together', () => {
+ const raw = {ok:true,items:[
+  {artist:'Singer',title:'Current',played_ts:1791336248,cover:'https://covers.example/current.jpg',cover_source:'deezer'},
+  {artist:'Earlier Singer',title:'Earlier',played_ts:1791336014,cover:'https://radiopoint.gr/placeholder.png',cover_source:'placeholder'},
+ ]};
+ const current = parseMetadata('shoutcast',decodeProviderMetadata('shoutcast','Title: \n\nMarkdown Content:\n6,1,32,200,6,128,United - Gillespie Oblique'),context);
+ assert.equal(current.song.artist,'United');
+ assert.equal(current.song.title,'Gillespie Oblique');
+ const history = parseHistory('shoutcast',JSON.stringify(raw));
+ assert.equal(history.song_history.length,2);
+ assert.equal(history.song_history[0].song.artist,'Singer');
+ assert.equal(history.song_history[0].song.art,'https://covers.example/current.jpg');
+ assert.equal(history.song_history[1].song.art,'https://radiopoint.gr/placeholder.png');
+ assert.equal(history.song_history[1].played_at,1791336014);
+});
 test('AzuraCast keeps current track, history, upcoming song and listener count', () => {
  const raw={now_playing:{song:{title:'Track',artist:'Artist',text:'Artist - Track',art:'https://images.example/cover.jpg'},played_at:100},listeners:{current:0},song_history:[{song:{title:'Earlier'}}],playing_next:{song:{title:'Next'}}};
  const result=parseMetadata('azuracast',raw,context);
@@ -28,6 +43,14 @@ test('CentovaCast parses current song and wrapped recent tracks', () => {
  const history=parseHistory('centovacast',JSON.stringify({type:'result',data:[[{title:'Earlier',artist:'Singer',time:100}]]}));
  assert.equal(history.song_history[0].song.title,'Earlier');
 });
+test('CentovaCast omits Unknown artist and nocover placeholder from station promos', () => {
+ const payload={type:'result',data:[{song:'Unknown - Station promo',track:{artist:'Unknown',title:'Station promo',imageurl:'https://radio.example/covers/nocover.png'},listeners:2}]};
+ const result=parseMetadata('centovacast',payload,context);
+ assert.equal(result.text,'Station promo');
+ assert.equal(result.song.artist,'');
+ assert.equal(result.song.art,null);
+ assert.equal(result.listeners,2);
+});
 test('Icecast chooses endpoint mount rather than a different station', () => {
  const payload={icestats:{source:[{listenurl:'http://host/other',title:'Wrong',listeners:9},{listenurl:'http://host/chosen',title:'Right',listeners:2}]}};
  assert.equal(parseMetadata('icecast',payload,context).text,'Right');
@@ -53,6 +76,42 @@ test('Icecast splits combined track fields into artist and title', () => {
   assert.equal(result.payload.now_playing.song.artist, 'Selena Gomez');
   assert.equal(result.listeners, 0);
  }
+});
+test('Leading broadcast labels are removed across providers and track lists', () => {
+ const icecast = parseMetadata('icecast', {icestats:{source:{
+  title:'Now Playing: HARRY STYLES - AMERICAN GIRLS',listeners:4,
+ }}}, context);
+ assert.equal(icecast.song.artist,'HARRY STYLES');
+ assert.equal(icecast.song.title,'AMERICAN GIRLS');
+ assert.equal(icecast.text,'HARRY STYLES – AMERICAN GIRLS');
+ const pulsar = parseMetadata('icecast', {icestats:{source:{
+  title:'PULSAR Radio - Now On Air:Bob Margolin - The Same Thing',
+ }}}, context);
+ assert.equal(pulsar.song.artist,'Bob Margolin');
+ assert.equal(pulsar.song.title,'The Same Thing');
+ const playing = parseMetadata('icecast', {icestats:{source:{title:'Playing: Singer - Song'}}}, context);
+ assert.equal(playing.song.artist,'Singer');
+ assert.equal(playing.song.title,'Song');
+ const azura = parseMetadata('azuracast', {
+  now_playing:{song:{artist:'Now Playing: Singer',title:'Now Playing: Song',text:'Now Playing: Singer - Song'}},
+  song_history:[{song:{artist:'Now Playing: Previous',title:'Older'}}],
+  playing_next:{song:{title:'Now Playing: Next'}},
+  queue:[{song:{title:'Now Playing: Later'}}],
+ }, context);
+ assert.equal(azura.song.artist,'Singer');
+ assert.equal(azura.song.title,'Song');
+ assert.equal(azura.text,'Singer - Song');
+ assert.equal(azura.payload.song_history[0].song.artist,'Previous');
+ assert.equal(azura.payload.playing_next.song.title,'Next');
+ const history = parseHistory('azuracast', JSON.stringify({
+  now_playing:{song:{title:'Now Playing: Current'}},
+  song_history:[{song:{text:'Playing: Earlier'}}],
+  playing_next:{song:{title:'Now Playing: Next'}},
+ }));
+ assert.equal(history.now_playing.song.title,'Current');
+ assert.equal(history.song_history[0].song.text,'Earlier');
+ assert.equal(history.playing_next.song.title,'Next');
+ assert.equal(parseMetadata('radio.co',{current_track:{title:'Artist - Now Playing: Love',artist:'Singer'}},context).song.title,'Artist - Now Playing: Love');
 });
 test('Icecast preserves hyphenated names, title suffixes and explicit artists', () => {
  const parse = source => parseMetadata('icecast', {icestats:{source}}, context).song;
@@ -88,6 +147,15 @@ test('Shoutcast removes repeated Now On Air labels from current and past songs',
  ]));
  assert.equal(history.now_playing.song.text,'PRESTIGE - POTE');
  assert.equal(history.song_history[0].song.artist,'OIKONOMOPOYLOS NIKOS');
+ const heaven = parseMetadata('shoutcast',{songtitle:'Now On Air:Eddie Amador - House Music (Full Intention Mix)'},context);
+ assert.equal(heaven.song.artist,'Eddie Amador');
+ assert.equal(heaven.song.title,'House Music (Full Intention Mix)');
+ const heavenHistory = parseHistory('shoutcast',JSON.stringify([
+  {title:'Now On Air:Eddie Amador - House Music (Full Intention Mix)',playedat:200},
+  {title:"Now On Air:Lil' Mo' Yin Yang - Reach (Little More Mix)",playedat:100},
+ ]));
+ assert.equal(heavenHistory.song_history[0].song.artist,"Lil' Mo' Yin Yang");
+ assert.equal(heavenHistory.song_history[0].song.title,'Reach (Little More Mix)');
 });
 test('Shoutcast removes trailing catalog IDs from current and past songs', () => {
  const current = parseMetadata('shoutcast',{songtitle:'Alexander Rybak - Fairytale [2KGU]'},context);
@@ -107,6 +175,19 @@ test('Shoutcast removes trailing catalog IDs from current and past songs', () =>
  ]));
  assert.equal(blueHistory.song_history[0].song.title,'Coal Mining Blues');
  assert.equal(parseMetadata('shoutcast',{songtitle:'Artist - Song [Live]'},context).song.title,'Song [Live]');
+});
+test('Shoutcast repairs Windows-1253 Greek metadata in current song and history', () => {
+ const raw = 'ÊÁÉ ÐÏÔÁÌÉ ÐÏÕ ÔÑÅ×ÅÉ ÔÏ ÄÁÊÑÕ ÌÏÕ - ÑÉÔÁ ÓÁÊÅËËÁÑÉÏÕ';
+ const current = parseMetadata('shoutcast',{songtitle:raw},context);
+ assert.equal(current.song.artist,'ΚΑΙ ΠΟΤΑΜΙ ΠΟΥ ΤΡΕΧΕΙ ΤΟ ΔΑΚΡΥ ΜΟΥ');
+ assert.equal(current.song.title,'ΡΙΤΑ ΣΑΚΕΛΛΑΡΙΟΥ');
+ const history = parseHistory('shoutcast',JSON.stringify([
+  {title:raw,playedat:200},
+  {title:raw,playedat:100},
+ ]));
+ assert.equal(history.song_history[0].song.artist,'ΚΑΙ ΠΟΤΑΜΙ ΠΟΥ ΤΡΕΧΕΙ ΤΟ ΔΑΚΡΥ ΜΟΥ');
+ assert.equal(history.song_history[0].song.title,'ΡΙΤΑ ΣΑΚΕΛΛΑΡΙΟΥ');
+ assert.equal(parseMetadata('shoutcast',{songtitle:'Beyoncé - Halo'},context).song.artist,'Beyoncé');
 });
 test('SonicPanel maps current song, artwork, listeners and numbered history without jingles', () => {
  const raw={title:'Prince - Purple Rain feat. The Revolution',art:'https://stream1.468.gr/cp/musiclibrary/now.png',listeners:'19',
