@@ -31905,10 +31905,10 @@
   {
     "slug": "viva-88-3-katerini",
     "stationuuid": "cff7e69b-889f-4a2e-b76d-fd7550088e19",
-    "name": "Viva 88.3",
+    "name": "Viva 88.3 FM",
     "state": "Central Macedonia",
     "city": "Katerini",
-    "stream_url": "http://s3.onweb.gr:8030/stream",
+    "stream_url": "https://sh.onweb.gr:7122/stream?nx=1791469548150",
     "homepage": "https://viva883.gr/",
     "favicon": "/station-icons/gr/viva-88-3-katerini.webp",
     "genres": [
@@ -31929,6 +31929,15 @@
     "history_url": "http://s3.onweb.gr:8030/played?sid=1&type=json",
     "formats": [
       "greek-language music"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://s3.onweb.gr:8030/stream",
+        "bitrate": 320,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -32054,8 +32063,6 @@
         "url": "https://ice.streams.ovh:1060/volosrtv.com",
         "bitrate": 320,
         "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1,
         "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
         "metadata_server": "shoutcast",
         "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json"
@@ -32138,7 +32145,7 @@
     "name": "Wild Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://sip.wildradio.gr:8037/stream",
+    "stream_url": "https://a.tunzilla.com/http://sip.wildradio.gr:8037/stream",
     "homepage": "https://www.wildradio.gr/",
     "favicon": "/station-icons/gr/wild-radio.jpg",
     "genres": [
@@ -32188,7 +32195,7 @@
     "name": "X Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://cast.radiohost.ovh:8850/stream",
+    "stream_url": "https://cast.radiohost.ovh/xradio?mp=/stream",
     "homepage": "https://xradio.gr/",
     "favicon": "/station-icons/gr/x-radio.webp",
     "genres": [
@@ -32206,7 +32213,16 @@
     "geo_long": null,
     "nowplaying_url": "http://cast.radiohost.ovh:8850/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cast.radiohost.ovh:8850/played?sid=1&type=json"
+    "history_url": "http://cast.radiohost.ovh:8850/played?sid=1&type=json",
+    "streams": [
+      {
+        "id": "mp3-192-https",
+        "label": "Alternative",
+        "url": "http://cast.radiohost.ovh:8850/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "x-radio-91-3-livadia",
@@ -32701,16 +32717,14 @@
         "label": "Alternative",
         "url": "https://netradio.live24.gr/zoo908thess",
         "bitrate": 192,
-        "codec": "MP3",
-        "hls": 0
+        "codec": "MP3"
       },
       {
         "id": "mp3-192-metromedia",
         "label": "Alternative",
         "url": "https://metromedia.live24.gr/zoo908thess",
         "bitrate": 192,
-        "codec": "MP3",
-        "hls": 0
+        "codec": "MP3"
       }
     ]
   },
@@ -46723,10 +46737,10 @@
   {
     "slug": "viral-102-7-athens",
     "stationuuid": "58798a32-ff0d-4a7b-88fb-103eba0f85f6",
-    "name": "Viral 102.7",
+    "name": "Viral FM 102.7",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://5.104.111.225:8040/stream",
+    "stream_url": "https://shoutcast.k-planet.eu/8040/stream",
     "homepage": "https://www.viralfm.gr/",
     "favicon": "/station-icons/gr/viral-102-7-athens.webp",
     "genres": [],
@@ -46751,6 +46765,15 @@
     ],
     "genre_review": [
       "right wing"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-http",
+        "label": "Alternative",
+        "url": "http://5.104.111.225:8040/stream",
+        "bitrate": 160,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -46851,8 +46874,7 @@
         "label": "Alternative",
         "url": "http://solid2.streamupsolutions.com:24896/stream",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0
+        "codec": "MP3"
       }
     ]
   },
