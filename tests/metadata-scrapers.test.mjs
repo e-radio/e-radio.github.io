@@ -174,7 +174,16 @@ test('Shoutcast removes trailing catalog IDs from current and past songs', () =>
   {title:'Matt Andersen - Coal Mining Blues [W4e]',playedat:100}
  ]));
  assert.equal(blueHistory.song_history[0].song.title,'Coal Mining Blues');
+ const freakout = parseMetadata('shoutcast',{songtitle:'The Ultra Electric Mega Galactic - Through the Dark Matter [tR]'},context);
+ assert.equal(freakout.song.title,'Through the Dark Matter');
+ const freakoutHistory = parseHistory('shoutcast',JSON.stringify([
+  {title:'The Ultra Electric Mega Galactic - Through the Dark Matter [tR]',playedat:200},
+  {title:'Riot Horse - Shine [td]',playedat:100},
+ ]));
+ assert.equal(freakoutHistory.song_history[0].song.title,'Shine');
+ assert.equal(parseMetadata('shoutcast',{songtitle:'Artist - Song [u1]'},context).song.title,'Song');
  assert.equal(parseMetadata('shoutcast',{songtitle:'Artist - Song [Live]'},context).song.title,'Song [Live]');
+ assert.equal(parseMetadata('shoutcast',{songtitle:'Artist - Song [UK]'},context).song.title,'Song [UK]');
 });
 test('Shoutcast repairs Windows-1253 Greek metadata in current song and history', () => {
  const raw = 'ÊÁÉ ÐÏÔÁÌÉ ÐÏÕ ÔÑÅ×ÅÉ ÔÏ ÄÁÊÑÕ ÌÏÕ - ÑÉÔÁ ÓÁÊÅËËÁÑÉÏÕ';

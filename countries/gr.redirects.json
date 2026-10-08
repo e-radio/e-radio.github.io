@@ -719,7 +719,6 @@
   "/stations/volosrtv-volos/": "/stations/volos-rtv-87-9-volos/",
   "/stations/satradio-0731ecb1/": "/stations/sat-radio/",
   "/stations/satradio/": "/stations/sat-radio/",
-  "/stations/radio-play-91-5-fm-stereo-gr-xanthi/": "/stations/radio-play-91-5-fm-stereo-gr-xanthi-xanthi/",
   "/stations/studio-19-3baed355/": "/stations/studio-19/",
   "/stations/88miso-thessaloniki/": "/stations/radio-88miso-thessaloniki/",
   "/stations/radio-90-4-thessaloniki/": "/stations/radio-90-4-thessaloniki-314b8d5b/",
@@ -786,7 +785,6 @@
   "/stations/i-m-97-9-kastoria/": "/stations/i-m-97-9/",
   "/stations/99-4-larisa-6ee57039/": "/stations/99-4-larisa/",
   "/stations/99-2-serres-ab99dc1d/": "/stations/99-2-serres/",
-  "/stations/greca-99-4/": "/stations/greca-99-4-pyrgos/",
   "/stations/100-7-patra-a09d796d/": "/stations/100-7-patra/",
   "/stations/101-6-larisa-cdfd4050/": "/stations/101-6-larisa/",
   "/stations/more-fm-103-9-alexandroupoli-alexandroupolis/": "/stations/more-103-9-alexandroupolis/",
@@ -795,5 +793,12 @@
   "/stations/106-5-patra-96b72a1f/": "/stations/106-5-patra/",
   "/stations/radio-madness/": "/stations/madness-95-ierapetra/",
   "/stations/amore-87-5-chania/": "/stations/radio-amore-87-5-fm/",
-  "/stations/80/": "/stations/radio-rempetika/"
+  "/stations/80/": "/stations/radio-rempetika/",
+  "/stations/greca-99-4/": "/stations/greca-99-4-pyrgos/",
+  "/stations/greca-fm-99-4-western-greece/": "/stations/greca-99-4-pyrgos/",
+  "/stations/mancode/": "/stations/mancode-radio/",
+  "/stations/nitro-radio-athens/": "/stations/nitro-radio/",
+  "/stations/ok-94-5-volos/": "/stations/radio-zima-94-5-volos/",
+  "/stations/radio-play-91-5-fm-stereo-gr-xanthi/": "/stations/play-91-5-xanthi/",
+  "/stations/radio-play-91-5-fm-stereo-gr-xanthi-xanthi/": "/stations/play-91-5-xanthi/"
 }
