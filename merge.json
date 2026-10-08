@@ -2,5 +2,14 @@
   "parent": "98db81c7-d684-4ff6-942f-7b80b251f21c",
   "childs": [
     "6a04909e-b650-41fc-be95-fdd3914772a9"
-  ]
+  ],
+    "streams": [
+      {
+        "id": "mp3-128-alternative",
+        "label": "Alternative",
+        "url": "http://radio.1055rock.gr:30000/1055",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
 }

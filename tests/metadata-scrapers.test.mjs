@@ -2,6 +2,27 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseMetadata, parseHistory, decodeMetadata, decodeProviderMetadata, supportsNowPlaying, isLiveTrackStation, scraperFor } from '../src/lib/metadata/index.mjs';
 const context = { streamUrl: 'https://relay.example/radio/8000/stream', endpoint: 'https://relay.example/status-json.xsl?mount=%2Fchosen' };
+test('Radio 1 orders songs by Rhodes start time and separates future tracks', () => {
+ const feed = [
+  {songName:'Next',artistName:'Next Artist',type:'Song',startTime:'09/10/2026 02:24:23'},
+  {songName:'Current',artistName:'Current Artist',type:'Song',startTime:'09/10/2026 02:21:02'},
+  {songName:'Jingle',artistName:'empty',type:'Link',startTime:'09/10/2026 02:24:17'},
+  {songName:'Previous',artistName:'Previous Artist',type:'Song',startTime:'09/10/2026 02:17:08'},
+ ];
+ const now = Date.parse('2026-10-08T23:22:00Z');
+ const parsed = parseMetadata('radio1',feed,{...context,now});
+ assert.equal(parsed.song.title,'Current');
+ assert.equal(parsed.payload.now_playing.played_at,Date.parse('2026-10-08T23:21:02Z') / 1000);
+ assert.equal(parsed.payload.playing_next.song.title,'Next');
+ assert.deepEqual(parsed.payload.upcoming.map(entry => entry.song.title),['Next']);
+ const history = parseHistory('radio1',JSON.stringify(feed));
+ assert.deepEqual(history.song_history.map(entry => entry.song.title),['Next','Current','Previous']);
+ assert.equal(history.song_history[0].played_at,Date.parse('2026-10-08T23:24:23Z') / 1000);
+ const winter = parseMetadata('radio1',[
+  {songName:'Winter',artistName:'Singer',type:'Song',startTime:'09/01/2026 02:21:02'},
+ ],{now:Date.parse('2026-01-09T00:22:00Z')});
+ assert.equal(winter.payload.now_playing.played_at,Date.parse('2026-01-09T00:21:02Z') / 1000);
+});
 test('Shoutcast current track and RadioPoint archive history work together', () => {
  const raw = {ok:true,items:[
   {artist:'Singer',title:'Current',played_ts:1791336248,cover:'https://covers.example/current.jpg',cover_source:'deezer'},

@@ -800,5 +800,12 @@
   "/stations/nitro-radio-athens/": "/stations/nitro-radio/",
   "/stations/ok-94-5-volos/": "/stations/radio-zima-94-5-volos/",
   "/stations/radio-play-91-5-fm-stereo-gr-xanthi/": "/stations/play-91-5-xanthi/",
-  "/stations/radio-play-91-5-fm-stereo-gr-xanthi-xanthi/": "/stations/play-91-5-xanthi/"
+  "/stations/radio-play-91-5-fm-stereo-gr-xanthi-xanthi/": "/stations/play-91-5-xanthi/",
+  "/stations/alexandroupolis/": "/stations/delta-fm-102-3/",
+  "/stations/90-patra/": "/stations/skylos-90-fm/",
+  "/stations/paros/": "/stations/echo-fm-102-1-paros/",
+  "/stations/korinthos/": "/stations/radio-energeia-106-4/",
+  "/stations/97-8-larisa/": "/stations/campos-97-8-larisa/",
+  "/stations/89-2-trikala/": "/stations/rythmos-89-2-trikala/",
+  "/stations/94-3-zakynthos/": "/stations/rythmos-94-3-zakynthos/"
 }
