@@ -857,10 +857,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://radio1.gr/wp-content/uploads/zeta/latestFeed.json",
+    "nowplaying_url": "https://r.jina.ai/https://radio1.gr/wp-content/uploads/zeta/latestFeed.json",
     "metadata_server": "radio1",
-    "metadata_mode": "direct",
-    "history_url": "https://radio1.gr/wp-content/uploads/zeta/songHistory.json",
+    "history_url": "https://r.jina.ai/https://radio1.gr/wp-content/uploads/zeta/songHistory.json",
     "formats": [
       "top 40"
     ],
