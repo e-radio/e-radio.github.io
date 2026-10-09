@@ -36168,14 +36168,14 @@
     ]
   },
   {
-    "slug": "radio-evia--104-1-fm",
+    "slug": "radio-evia-104-1",
     "stationuuid": "30164470-f326-4d56-b744-d3833f79348a",
     "name": "Ράδιο Εύβοια 104.1 FM",
     "state": "Central Greece",
     "city": "Chalkida",
     "stream_url": "https://shoutcast.k-planet.eu/9900/stream",
     "homepage": "https://www.radioevia.gr/",
-    "favicon": "/station-icons/gr/radio-evia--104-1-fm.webp",
+    "favicon": "/station-icons/gr/radio-evia-104-1-fm.webp",
     "genres": [
       "greek pop"
     ],
