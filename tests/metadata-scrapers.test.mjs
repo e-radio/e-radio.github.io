@@ -266,6 +266,14 @@ test('Ellinadiko parses its station feed and supplied artwork', () => {
  assert.equal(result.text, 'Singer – Track');
  assert.equal(result.song.art, 'https://ellinadiko.eu/cover.jpg');
  assert.equal(parseMetadata('ellinadiko', {}, context).text, null);
+ const history = parseHistory('ellinadiko',JSON.stringify([
+  {artist:'Ρία Ελληνίδου',title:'Σαφάρι',cover:'https://panoramafm.gr/cover.jpg',played_at:'15:50:05'},
+  {artist:'Ηλίας Βρεττός',title:'Πρόστιμο',cover:'',played_at:'15:46:54'},
+ ]));
+ assert.equal(history.song_history[0].song.title,'Σαφάρι');
+ assert.equal(history.song_history[0].song.art,'https://panoramafm.gr/cover.jpg');
+ assert.equal(history.song_history[0].time,'15:50:05');
+ assert.equal(history.song_history[1].song.artist,'Ηλίας Βρεττός');
  assert.equal(supportsNowPlaying('ellinadiko'), true);
 });
 test('Cool FM separates the current track from the next song', () => {
