@@ -98,6 +98,25 @@ test('Icecast splits combined track fields into artist and title', () => {
   assert.equal(result.listeners, 0);
  }
 });
+test('Icecast playlist history is newest first and removes repeated AutoDJ labels', () => {
+ const payload = {icestats:{source:{
+  title:'AutoDJ: Current Artist - Current Song',
+  yp_currently_playing:'AutoDJ: Stale Artist - Stale Song',
+  playlist:{trackList:[
+   {title:'AutoDJ: Old Artist - Old Song'},
+   {title:'AutoDJ: ÎÁÍÈÏÐÏÕËÏÓ ÍÉÊÏÓ - ΧΙΛΙΕΣ ΞΕΝΙΤΙΕΣ'},
+   {title:'AutoDJ: AutoDJ: New Artist - New Song'},
+   {title:'AutoDJ: Current Artist - Current Song'},
+  ]},
+ }}};
+ const result = parseMetadata('icecast',payload,context);
+ assert.equal(result.song.artist,'Current Artist');
+ assert.equal(result.song.title,'Current Song');
+ assert.deepEqual(result.payload.song_history.map(entry => [entry.song.artist,entry.song.title]),[
+  ['New Artist','New Song'],['ΞΑΝΘΟΠΟΥΛΟΣ ΝΙΚΟΣ','ΧΙΛΙΕΣ ΞΕΝΙΤΙΕΣ'],['Old Artist','Old Song'],
+ ]);
+ assert.equal(parseMetadata('icecast',{icestats:{source:{title:'Artist - AutoDJ: The Song'}}},context).song.title,'The Song');
+});
 test('Leading broadcast labels are removed across providers and track lists', () => {
  const icecast = parseMetadata('icecast', {icestats:{source:{
   title:'Now Playing: HARRY STYLES - AMERICAN GIRLS',listeners:4,

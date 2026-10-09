@@ -807,5 +807,11 @@
   "/stations/korinthos/": "/stations/radio-energeia-106-4/",
   "/stations/97-8-larisa/": "/stations/campos-97-8-larisa/",
   "/stations/89-2-trikala/": "/stations/rythmos-89-2-trikala/",
-  "/stations/94-3-zakynthos/": "/stations/rythmos-94-3-zakynthos/"
+  "/stations/94-3-zakynthos/": "/stations/rythmos-94-3-zakynthos/",
+  "/stations/volos/": "/stations/radio-vera-91-8/",
+  "/stations/volos-09bc322a/": "/stations/radio-vera-91-8/",
+  "/stations/92-kastoria/": "/stations/erotas-92-fm-kastoria/",
+  "/stations/104-1-chalkida/": "/stations/erotas-92-fm-kastoria/",
+  "/stations/trikala/": "/stations/radio-zygos-fm-100/",
+  "/stations/ierapetra/": "/stations/hxo-fm-99-8/"
 }

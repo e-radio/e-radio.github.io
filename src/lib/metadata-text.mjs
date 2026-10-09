@@ -2,7 +2,7 @@
 // Decode only valid byte sequences; leave normal Unicode and malformed data alone.
 export function stripBroadcastLabel(value) {
   return typeof value === 'string'
-    ? value.replace(/^(?:\s*(?:now\s+(?:playing|on\s+air)|playing)\s*:\s*)+/iu, '').trim()
+    ? value.replace(/^(?:\s*(?:now\s+(?:playing|on\s+air)|playing|autodj)\s*:\s*)+/iu, '').trim()
     : value;
 }
 

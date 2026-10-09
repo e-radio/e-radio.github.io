@@ -65,8 +65,8 @@ export function icecastTrack(payload, streamUrl, endpoint) {
     const parsedArtist = title.slice(0, separator.index).trim();
     const parsedTitle = title.slice(separator.index + separator[0].length).trim();
     if (parsedArtist && parsedTitle && (!artist || artist === parsedArtist)) {
-      artist = artist || parsedArtist;
-      title = parsedTitle;
+      artist = artist || repairMetadataText(parsedArtist);
+      title = repairMetadataText(parsedTitle);
     }
   }
   return {
