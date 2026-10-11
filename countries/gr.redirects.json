@@ -530,7 +530,6 @@
   "/stations/kiss-92-9-athens-4baef746/": "/stations/kiss-92-9-athens/",
   "/stations/kiss-92-9-athens-aff145d7/": "/stations/kiss-92-9-athens/",
   "/stations/kiss-98-thessaly/": "/stations/kiss-98-volos/",
-  "/stations/kiss-100-4-karditsa/": "/stations/kiss-fm-100-4-karditsa/",
   "/stations/kiss-100-6-kefalonia/": "/stations/kiss-fm-100-6-kefalonia/",
   "/stations/ellinikos-93-2-athens-greece/": "/stations/ellinikos-93-2-athens/",
   "/stations/ellinikos-93-2-fm-athens/": "/stations/ellinikos-93-2-athens/",
@@ -813,5 +812,10 @@
   "/stations/92-kastoria/": "/stations/erotas-92-fm-kastoria/",
   "/stations/104-1-chalkida/": "/stations/radio-evia-104-1/",
   "/stations/trikala/": "/stations/radio-zygos-fm-100/",
-  "/stations/ierapetra/": "/stations/hxo-fm-99-8/"
+  "/stations/ierapetra/": "/stations/hxo-fm-99-8/",
+  "/stations/kiss-100-4-karditsa/": "/stations/kiss-fm-100-4-karditsa/",
+  "/stations/kiss-fm-100-4/": "/stations/kiss-fm-100-4-karditsa/",
+  "/stations/mousiko-kanali-105-1-heraclion/": "/stations/mousiko-kanali-crete/",
+  "/stations/radio-must-athens/": "/stations/must-athens/",
+  "/stations/must-x/": "/stations/must-x-gr-athens/"
 }

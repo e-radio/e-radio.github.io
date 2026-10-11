@@ -16,12 +16,17 @@ import * as coolfm from './providers/coolfm.mjs';
 import * as diesi from './providers/diesi.mjs';
 import * as rcast from './providers/rcast.mjs';
 import * as radio1 from './providers/radio1.mjs';
+import * as radiomust from './providers/radiomust.mjs';
+import * as mustcafe from './providers/mustcafe.mjs';
+import * as musthero from './providers/musthero.mjs';
+import * as mustx from './providers/mustx.mjs';
+import * as planetlakonias from './providers/planetlakonias.mjs';
 import * as unknown from './providers/unknown.mjs';
 import { artworkUrl, gatherSongHistory, parseTextHistory } from './common.mjs';
 import { stripBroadcastLabel } from '../metadata-text.mjs';
 export { artworkUrl, gatherSongHistory } from './common.mjs';
 
-const providers = { zpr, sonicpanel, strefa, jolene, ellinadiko, coolfm, diesi, rcast, radio1, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
+const providers = { zpr, sonicpanel, strefa, jolene, ellinadiko, coolfm, diesi, rcast, radio1, radiomust, mustcafe, musthero, mustx, planetlakonias, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
 export const scraperFor = server => providers[server] || unknown;
 
 const cleanSong = song => song && typeof song === 'object'

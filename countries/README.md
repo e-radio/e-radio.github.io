@@ -403,6 +403,25 @@ python3 tools/fill-stream-audio-info.py --country gr --write
 
 Reports are saved even in preview mode: `reports/stream-audio-info.json` for Greece and `reports/stream-audio-info-<code>.json` for other countries. They include probe results and proposed/applied field changes. The summary counts bitrate, codec and genre updates separately. The script aborts the data write if the dataset changes during probing.
 
+## Discover HTTPS streams from station homepages
+
+Use the homepage scanner for stations whose primary `stream_url` still uses HTTP. It tries the same URL over HTTPS, inspects bounded homepage/player HTML and local scripts, expands PLS/M3U playlists, and checks candidates with verified TLS and `ffprobe` audio detection. A playable candidate may still belong to a different channel on a multi-station website, so review its page evidence and station identity before approving it. The scanner does not change station data in preview mode.
+
+```sh
+python3 tools/find-https-streams.py --country gr
+# Optional short preview: --max 10 --workers 4
+```
+
+Review `reports/https-homepage-candidates-gr.json`. Each station's `streams` array contains verified candidates in the same `id`, `label`, `url`, `bitrate`, `codec` format used by station data; `bitrate` is omitted if the stream does not report it. The `candidates` array retains source-page evidence and failed-check reasons. A verified stream may still be another channel on the same site. Create a separate approval file containing only selections you have matched to the correct station:
+
+```json
+[
+  {"stationuuid": "station-uuid-here", "https_url": "https://verified.example/stream"}
+]
+```
+
+Apply only those selections with `python3 tools/find-https-streams.py --country gr --write --approved approvals.json`. The tool rechecks each approved URL, refuses stale station data, and changes only the primary `stream_url` value, preserving JSON field order and alternatives. Repeat for another country with `--country <code>`. Pages that return HTML, invalid certificates, and unverified candidates are excluded.
+
 The Greece run on 2026-09-23 filled 304 empty genre lists, 9 missing bitrates and 1 codec; 187 genre lists remained empty. These are results of that run, not expected counts for future scans.
 
 Run the genre extraction tests with:

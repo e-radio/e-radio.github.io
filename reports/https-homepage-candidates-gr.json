@@ -1,0 +1,5382 @@
+{
+  "country": "gr",
+  "generated_at": "2026-10-11T07:06:38.963046+00:00",
+  "complete": true,
+  "checked_stations": 153,
+  "verified_stations": 0,
+  "results": [
+    {
+      "stationuuid": "7b069cea-7862-41f6-9b56-2067646e51de",
+      "name": "Ble.fm",
+      "homepage": "https://ble.fm/",
+      "http_url": "http://radio.lancom.gr:8004/stream1",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.lancom.gr:9006/stream1",
+          "verified": false,
+          "final_url": "https://radio.lancom.gr:9006/stream1",
+          "content_type": "audio/mpeg",
+          "icy_name": "Ble 92.5",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.lancom.gr:9004/stream3",
+          "verified": false,
+          "final_url": "https://radio.lancom.gr:9004/stream3",
+          "content_type": "audio/mpeg",
+          "icy_name": "Ble 93.3 Kozani",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.lancom.gr:8004/stream1",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.lancom.gr:8004/stream1",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.lancom.gr:9020/stream10",
+          "verified": false,
+          "final_url": "https://radio.lancom.gr:9020/stream10",
+          "content_type": "audio/mpeg",
+          "icy_name": "BLE 93",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://ble.fm/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "3a6bd3be-12c5-4370-9e36-ff5729e4f627",
+      "name": "City International",
+      "homepage": "https://www.cityinternational.gr/",
+      "http_url": "http://radio.lancom.gr:8012/stream5",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.lancom.gr:8012/stream5",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.lancom.gr:8012/stream5",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.lancom.gr:9012/stream5",
+          "verified": false,
+          "final_url": "https://radio.lancom.gr:9012/stream5",
+          "content_type": "audio/mpeg",
+          "icy_name": "City 106.1",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.cityinternational.gr/index.php/city106-1-onair",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "839bd798-b13a-4540-9c43-e0573ef3961b",
+      "name": "Cool 90.7",
+      "homepage": "https://www.coolfmnet.gr/",
+      "http_url": "http://solid1.streamupsolutions.com:11004/coolfmnet",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://solid1.streamupsolutions.com:11004/coolfmnet",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://solid1.streamupsolutions.com:11004/coolfmnet",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.coolfmnet.gr/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.coolfmnet.gr'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "960d1eb6-0601-11e8-ae97-52543be04c81",
+      "name": "Cosmoradio 95,1",
+      "homepage": "https://www.cosmoradio.gr/",
+      "http_url": "http://eco.onestreaming.com:8689/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8689/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8689/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.cosmoradio.gr/",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "stationuuid": "1f9536b9-4652-42ca-a8cb-d7140e3f53f2",
+      "name": "Cult 99.8",
+      "homepage": "https://cultradio.gr/",
+      "http_url": "http://s4.onweb.gr:8876/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s4.onweb.gr:8876/;",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s4.onweb.gr:8876/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live24.gr/radio/generic.jsp?sid=2882",
+          "verified": false,
+          "final_url": "https://live24.gr/radio/generic.jsp?sid=2882",
+          "content_type": "text/html;charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://cultradio.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "d4e63d36-5800-4d86-a7ba-aa1190cb5df8",
+      "name": "Discomania",
+      "homepage": "https://www.discomania.gr/",
+      "http_url": "http://radio2.discomaniaradio.com:7000/live",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio2.discomaniaradio.com:7000/live",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'radio2.discomaniaradio.com'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://radio2.discomaniaradio.com:7000/live",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "7ff60e03-bf3a-40f1-9981-0c8bcde2e57d",
+      "name": "DOD Sports",
+      "homepage": "https://www.fmtop.gr/",
+      "http_url": "http://live3.istoikona.com:8376/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live3.istoikona.com:8376/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live3.istoikona.com:8376/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "d374a5e4-e3be-47cb-98e2-5b386978a1e6",
+      "name": "Downtuned Radio",
+      "homepage": "https://www.downtunedmag.com/",
+      "http_url": "http://195.242.237.14:8020/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://195.242.237.14:8020/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 61] Connection refused>",
+          "evidence": [
+            {
+              "page": "http://195.242.237.14:8020/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://a7.asurahosting.com/listen/downtuned_radio/radio.mp3",
+          "verified": false,
+          "final_url": "https://a7.asurahosting.com/listen/downtuned_radio/radio.mp3",
+          "content_type": "audio/mpeg",
+          "icy_name": "Downtuned Radio",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.downtunedmag.com/",
+              "source": "link"
+            },
+            {
+              "page": "https://a7.asurahosting.com/public/downtuned_radio/playlist.pls",
+              "source": "playlist"
+            },
+            {
+              "page": "https://a7.asurahosting.com/public/downtuned_radio/playlist.m3u",
+              "source": "playlist"
+            },
+            {
+              "page": "https://www.downtunedmag.com/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.downtunedmag.com/2025/04/kalabrian-syndrome-attic-live.html",
+              "source": "link"
+            },
+            {
+              "page": "https://www.downtunedmag.com/2025/04/kalabrian-syndrome-attic-live.html#comment-form",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://a7.asurahosting.com/listen/downtuned_radio/status-json.xsl",
+          "verified": false,
+          "final_url": "https://a7.asurahosting.com/listen/downtuned_radio/status-json.xsl",
+          "content_type": "application/json; charset=UTF-8",
+          "icy_name": null,
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.downtunedmag.com/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.downtunedmag.com/2025/04/kalabrian-syndrome-attic-live.html",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.downtunedmag.com/2025/04/kalabrian-syndrome-attic-live.html#comment-form",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.downtunedmag.com/search/label/Live",
+          "verified": false,
+          "final_url": "https://www.downtunedmag.com/search/label/Live",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.downtunedmag.com/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.downtunedmag.com/2025/04/kalabrian-syndrome-attic-live.html",
+              "source": "link"
+            },
+            {
+              "page": "https://www.downtunedmag.com/2025/04/kalabrian-syndrome-attic-live.html#comment-form",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "7c5f61c8-4270-4c3e-9bda-5c15fda4b543",
+      "name": "Echo FM",
+      "homepage": "https://www.parosradio.gr/",
+      "http_url": "http://online-radio.eu/export/winamp/87702-echo-fm",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://online-radio.eu/export/winamp/87702-echo-fm",
+          "verified": false,
+          "final_url": "https://online-radio.eu/export/winamp/87702-echo-fm",
+          "content_type": "audio/x-scpls; charset=UTF-8",
+          "icy_name": null,
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://online-radio.eu/export/winamp/87702-echo-fm",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.e-radio.gr/Echo-FM-1021-Paros-i374/live",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/Echo-FM-1021-Paros-i374/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.parosradio.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "f4fe957f-eb0a-4936-97dd-9d782603137d",
+      "name": "Echoes.gr",
+      "homepage": "https://www.echoes.gr/el/home",
+      "http_url": "http://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+          "verified": false,
+          "reason": "<urlopen error [Errno 51] Network is unreachable>",
+          "evidence": [
+            {
+              "page": "http://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "56b0690b-23ae-4d09-9b7e-6e6fb77e8c8d",
+      "name": "Echoes.gr NetRadio - Thessaloniki",
+      "homepage": "https://www.echoes.gr/",
+      "http_url": "http://85.17.75.146/echoes",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://85.17.75.146/echoes",
+          "verified": false,
+          "reason": "<urlopen error [Errno 51] Network is unreachable>",
+          "evidence": [
+            {
+              "page": "http://85.17.75.146/echoes",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.echoes.gr/",
+          "error": "HTTPS request redirects to HTTP"
+        }
+      ]
+    },
+    {
+      "stationuuid": "0330b31a-f668-4cc4-a882-f5037dfa0c10",
+      "name": "Epiloges Κιλκίς",
+      "homepage": "https://www.epilogesfm.gr/",
+      "http_url": "http://ice.streamcloud.mediacdn.com/epiloges1028",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://ice.streamcloud.mediacdn.com/epiloges1028",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://ice.streamcloud.mediacdn.com/epiloges1028",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "2e438d66-0a8d-11e8-ae97-52543be04c81",
+      "name": "Erotokritos 87.9 FM",
+      "homepage": "https://www.erotokritos.gr/",
+      "http_url": "http://stream2.proradio.gr:8004/erotokritos",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://stream2.proradio.gr:8004/erotokritos",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://stream2.proradio.gr:8004/erotokritos",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://erotokritos.gr/radio/",
+          "verified": false,
+          "final_url": "https://erotokritos.gr/radio/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://erotokritos.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "89ed0444-7c1b-4956-962b-b6f0d230a1e8",
+      "name": "Ertopen web radio",
+      "homepage": "https://www.ertopen.com/",
+      "http_url": "http://radio.ertopen.com/erasport",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.ertopen.com/erasport",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.ertopen.com/erasport",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.ertopen.com/index.php/radio",
+          "verified": false,
+          "final_url": "https://www.ertopen.com/index.php/radio",
+          "content_type": "text/html; charset=utf-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.ertopen.com/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "2e11c764-dbe5-44ec-b3f1-a3c1be7ceaec",
+      "name": "Euro Sky 100.4",
+      "homepage": "https://www.facebook.com/profile.php?id=1399631302",
+      "http_url": "http://cast4.magicstreams.gr:10155/;stream.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://cast4.magicstreams.gr:10155/;stream.mp3",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://cast4.magicstreams.gr:10155/;stream.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "3b522235-f12f-4c3e-90e7-6721c8f19ffb",
+      "name": "Fly 95.9",
+      "homepage": "https://flyfm959.gr/",
+      "http_url": "http://sc2.streamwithq.com:8040/stream/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:2000/json/stream/FlyFm959",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:2000/json/stream/FlyFm959",
+          "content_type": "application/json;charset=utf-8",
+          "icy_name": null,
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://flyfm959.gr/assets/js/app.js?v=790145cdbc",
+              "source": "site-script"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sc2.streamwithq.com:2000/stream/FlyFm959",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:2000/stream/FlyFm959",
+          "content_type": "audio/mpeg",
+          "icy_name": "Netcast",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://flyfm959.gr/assets/js/app.js?v=790145cdbc",
+              "source": "site-script"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sc2.streamwithq.com:8040/stream/;",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8040/stream/;",
+          "content_type": "audio/mpeg",
+          "icy_name": "Netcast",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8040/stream/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "e5e797ff-c1d8-46e8-ac54-47a00c9651ac",
+      "name": "Fly Σπάρτη",
+      "homepage": "https://www.flynews.gr/",
+      "http_url": "http://eco.onestreaming.com:8272/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8272/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8272/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.flynews.gr/live/",
+          "verified": false,
+          "final_url": "https://www.flynews.gr/live/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.flynews.gr/live/#breadcrumb",
+          "verified": false,
+          "final_url": "https://www.flynews.gr/live/#breadcrumb",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.flynews.gr/live/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.flynews.gr/radio-arvyla-telos-apo-ton-ant1-o-antwnis-kanakis-apoxwrei/",
+          "verified": false,
+          "final_url": "https://www.flynews.gr/radio-arvyla-telos-apo-ton-ant1-o-antwnis-kanakis-apoxwrei/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.flynews.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c329e81c-1ade-417a-8733-f9bbcd9c1057",
+      "name": "Free GR",
+      "homepage": "https://freegr.blogspot.com/",
+      "http_url": "http://63.141.244.222:59540/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://63.141.244.222:59540/;",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: IP address mismatch, certificate is not valid for '63.141.244.222'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://63.141.244.222:59540/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "13ebc645-8354-4d2a-97e5-0c998ea70065",
+      "name": "Fresh 92.9",
+      "homepage": "https://fresh929.gr/",
+      "http_url": "http://178.33.135.244:3062/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://178.33.135.244:3062/stream",
+          "verified": false,
+          "reason": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://178.33.135.244:3062/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://fresh929.gr/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'fresh929.gr'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "9d1075bc-fb58-4185-94dc-18c7a9224dd1",
+      "name": "Fresh Salad",
+      "homepage": "https://www.freshsalad.gr/",
+      "http_url": "http://178.33.135.246:5262/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://178.33.135.246:5262/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://178.33.135.246:5262/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.freshsalad.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "688d08eb-a0ed-4713-85b7-71cc50e38b3a",
+      "name": "Giga 105.4",
+      "homepage": "https://www.gigafm.gr/",
+      "http_url": "http://s46.myradiostream.com/:7322/listen.mp3?nocache=1667217152",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s46.myradiostream.com/:7322/listen.mp3?nocache=1667217152",
+          "verified": false,
+          "reason": "HTTP Error 503: Service Unavailable",
+          "evidence": [
+            {
+              "page": "http://s46.myradiostream.com/:7322/listen.mp3?nocache=1667217152",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.gigafm.gr/",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "stationuuid": "44f0447e-58f7-4582-9609-9fcedb6d9140",
+      "name": "Glenti 892",
+      "homepage": "https://www.glenti892.gr/",
+      "http_url": "http://s2.e-resellers.gr:8076/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s2.e-resellers.gr:8076/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s2.e-resellers.gr:8076/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.glenti892.gr/playerlinks/listen.pls ",
+          "error": "Page did not return HTML"
+        }
+      ]
+    },
+    {
+      "stationuuid": "1ed978aa-912a-44b7-be5b-5d2ae47e9690",
+      "name": "Graceland",
+      "homepage": "https://www.facebook.com/graceland.greece/",
+      "http_url": "http://s1.nexuscast.com:8133/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.nexuscast.com:8133/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s1.nexuscast.com:8133/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4c60ee03-655a-41df-8236-c7eb40e6c698",
+      "name": "Griechenland - Akroama",
+      "homepage": "http://akroamaradio.gr",
+      "http_url": "http://live.e-streaming.eu:8100/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.e-streaming.eu:8100/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.e-streaming.eu:8100/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://stream.akroamaradio.gr/stream",
+          "verified": false,
+          "final_url": "https://stream.akroamaradio.gr/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "Akroama 95.5 | Korinthos",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://akroamaradio.gr/",
+              "source": "audio"
+            },
+            {
+              "page": "https://akroamaradio.gr/player",
+              "source": "audio"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "64009925-d98b-4879-a5c5-9f3b8eaea3b3",
+      "name": "Griechenland - Aktina Radio",
+      "homepage": "https://aktinaradio.gr",
+      "http_url": "http://live.e-streaming.eu:8110/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.e-streaming.eu:8110/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.e-streaming.eu:8110/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://stream.aktinaradio.gr/stream",
+          "verified": false,
+          "final_url": "https://stream.aktinaradio.gr/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "Aktina Radio 95",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://aktinaradio.gr",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "e38dea4f-2118-437d-87ab-be6c3d64764d",
+      "name": "I.R.A 106.7",
+      "homepage": "https://ira1067.gr/",
+      "http_url": "http://radio.streamings.gr:8027/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.streamings.gr:8027/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.streamings.gr:8027/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://ira1067.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "d6d19af9-5201-4705-b22e-7db3f2efcc33",
+      "name": "Ikaria",
+      "homepage": "https://www.radio-ikaria.gr/",
+      "http_url": "http://stream.radio-ikaria.gr:8000/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://stream.radio-ikaria.gr:8000/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 61] Connection refused>",
+          "evidence": [
+            {
+              "page": "http://stream.radio-ikaria.gr:8000/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9737cee8-1d10-42e8-bcb0-7118d427c095",
+      "name": "Ikariaki",
+      "homepage": "https://www.ikariaki.gr/",
+      "http_url": "http://sc2.streamwithq.com:8042/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8042/;",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8042/;",
+          "content_type": "audio/mpeg",
+          "icy_name": "Ikariaki",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8042/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "61513aca-b280-4817-bec5-125d98e4d0bf",
+      "name": "Ionio 99.9",
+      "homepage": "https://www.facebook.com/radioionio/",
+      "http_url": "http://167.114.131.90:5192/;listen.pls",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://167.114.131.90:5192/;listen.pls",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://167.114.131.90:5192/;listen.pls",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "b63c7a18-f544-4fd9-aae8-7388fb7bd30f",
+      "name": "Kastoria 91.5",
+      "homepage": "https://kastoriafm.gr/",
+      "http_url": "http://eco.onestreaming.com:8107/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8107/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8107/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "ba00d458-43b7-4d69-b51c-c2ddc4e4a6b0",
+      "name": "Katara",
+      "homepage": "https://www.facebook.com/Kataragr-244167062288548/?ref=page_internal",
+      "http_url": "http://www.katrafm.net:9000/live",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://www.katrafm.net:9000/live",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://www.katrafm.net:9000/live",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "56eeb4da-ace0-4c63-8238-e1a36a98427e",
+      "name": "Katerini Gas",
+      "homepage": "https://www.katerinigas.gr/",
+      "http_url": "http://radio.katerinigas.gr:8000/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.katerinigas.gr:8000/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://radio.katerinigas.gr:8000/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "0bb6f662-0784-41e4-8f62-056a140dae10",
+      "name": "Kerkyra 100.1",
+      "homepage": "https://www.startmediacorfu.gr/",
+      "http_url": "http://live.cast-control.eu:9118/stream;?1552397300972",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.cast-control.eu:9118/stream;?1552397300972",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.cast-control.eu:9118/stream;?1552397300972",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "94452fc2-d332-4a17-9975-a106e1b0ec5b",
+      "name": "KIIS 95.8",
+      "homepage": "https://kiis958.gr/",
+      "http_url": "http://streams.enjoyfm.gr:48500/kiis958.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://streams.enjoyfm.gr:48500/kiis958.mp3",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://streams.enjoyfm.gr:48500/kiis958.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "d0e308a4-2feb-4471-accf-fe819e59b438",
+      "name": "KIIS Extra 93.8",
+      "homepage": "https://kiisextra.gr/",
+      "http_url": "http://stream.kiisextra.gr:48500/kiis.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://stream.kiisextra.gr:48500/kiis.mp3",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://stream.kiisextra.gr:48500/kiis.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "1895c82b-e4ae-4119-80e1-1c9ef7dbdfa5",
+      "name": "Kiss Fm 100.4",
+      "homepage": "https://www.orionmedia.gr/",
+      "http_url": "http://sp2.streams.ovh:8096/;stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sp2.streams.ovh/8098/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8098/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "My Station name",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh/8100/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8100/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh/8102/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8102/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh/8106/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8106/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "LAIKOS 105 70",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:7041/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh:7041/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:7047/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh:7047/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:7051/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh:7051/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "HXOPAMA 106 60",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:8096/;stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://sp2.streams.ovh:8096/;stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "96f31173-d5d7-4819-9cc4-da2c43c5317e",
+      "name": "Kiss Fm 100.4 Karditsa",
+      "homepage": "https://www.orionmedia.gr/",
+      "http_url": "http://sp2.streams.ovh:8096/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sp2.streams.ovh/8098/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8098/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "My Station name",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh/8100/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8100/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh/8102/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8102/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh/8106/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh/8106/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "LAIKOS 105 70",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:7041/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh:7041/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:7047/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh:7047/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:7051/stream",
+          "verified": false,
+          "final_url": "https://sp2.streams.ovh:7051/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "HXOPAMA 106 60",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.orionmedia.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sp2.streams.ovh:8096/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://sp2.streams.ovh:8096/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "49b26b50-549b-4bb2-a40c-f71fe78352a0",
+      "name": "Kiss Fm 91.1 Ioannina",
+      "homepage": "https://thekiss.gr/",
+      "http_url": "http://168.119.74.185:9110/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://168.119.74.185:9110/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://168.119.74.185:9110/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://thekiss.gr/",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    {
+      "stationuuid": "ab2c744e-79ca-4ea8-99be-90a29711f4ac",
+      "name": "Kiss MJT 101.5",
+      "homepage": "https://www.kissmjt.gr/",
+      "http_url": "http://eco.onestreaming.com:8550/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8550/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8550/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.kissmjt.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "9c39439d-86a1-49d7-ad4e-638dd3e6ee25",
+      "name": "Kosmos 100",
+      "homepage": "https://kosmos100.gr/",
+      "http_url": "http://s1.onweb.gr:8856/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.onweb.gr:8856/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s1.onweb.gr:8856/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "63ed2d40-3f3a-49f1-9ce8-57118fe384c6",
+      "name": "KRITIKOS 88.7",
+      "homepage": "https://www.kritikosfm.gr/",
+      "http_url": "http://144.76.19.82:8443/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://144.76.19.82:8443/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://144.76.19.82:8443/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "40636c66-76de-4c5f-8cab-ef44459b50d5",
+      "name": "Laikos 105.7",
+      "homepage": "https://www.laikosradio.gr/",
+      "http_url": "http://sp2.streams.ovh:8106/;stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sp2.streams.ovh:8106/;stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://sp2.streams.ovh:8106/;stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "02458747-2800-4ff2-bebf-0137a82b6324",
+      "name": "Lamia DeeJay 91.2",
+      "homepage": "https://912lamiadeejay.blogspot.com/",
+      "http_url": "http://mediacp.32bit.gr:8014/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://mediacp.32bit.gr:8014/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://mediacp.32bit.gr:8014/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "f3a2174d-e9b6-4748-9b87-57f34f453bfe",
+      "name": "Life 106.3",
+      "homepage": "https://life1063.gr/",
+      "http_url": "http://cast.streams.ovh:9130/live",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://cast.streams.ovh/ic/zstexxkq/stream",
+          "verified": false,
+          "final_url": "https://cast.streams.ovh/ic/zstexxkq/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "Life Radio 106,3",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://life1063.gr/player/?fbclid=IwY2xjawSBeSxleHRuA2FlbQIxMABicmlkETBOeXhjeG9BSlhxWTlCN2x0c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHpX8gn0xgMGevCuF8mNc9IiMP2RQ8M1450618q3ZjbNJH4qt6cm8PdbT5uWH_aem_57Z9MbdqnA4khUo9ESNA5A",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://cast.streams.ovh:9130/live",
+          "verified": false,
+          "reason": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://cast.streams.ovh:9130/live",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.sodah.de/work/radio-player-plugin/",
+          "verified": false,
+          "final_url": "https://www.sodah.de/tools/radio-player-plugin/",
+          "content_type": "text/html",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://life1063.gr/player/js/lunaradio.min.js",
+              "source": "site-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "46e669a0-2565-11e8-91bf-52543be04c81",
+      "name": "Mikis Radio",
+      "homepage": "https://mikisradio.gr/",
+      "http_url": "http://radio.hostchefs.net:8046/stream?1520818130148",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.hostchefs.net:8046/stream?1520818130148",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.hostchefs.net:8046/stream?1520818130148",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "beb41915-15a4-4585-9c7d-861ad5975f1f",
+      "name": "MiniWatt 1125",
+      "homepage": "https://radiominiwatt.blogspot.com/",
+      "http_url": "http://solid1.streamupsolutions.com:11003/live",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://solid1.streamupsolutions.com:11003/live",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://solid1.streamupsolutions.com:11003/live",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4f2930f2-327c-4cea-8204-73213975e205",
+      "name": "moisiki lampsi",
+      "homepage": "https://mousikilampsi.gr/",
+      "http_url": "http://stream.myip.gr:9214/;listen.pls",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://stream.myip.gr:9214/;listen.pls",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://stream.myip.gr:9214/;listen.pls",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://mousikilampsi.gr/",
+          "error": "Remote end closed connection without response"
+        }
+      ]
+    },
+    {
+      "stationuuid": "7b5eebc4-689a-467f-97d0-29e3bfc6f91a",
+      "name": "Molonoti Radio",
+      "homepage": "https://molonotiradio.gr/",
+      "http_url": "http://molonotiradio.gr:8000/molonoti-radio-stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://molonotiradio.gr:8000/molonoti-radio-stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://molonotiradio.gr:8000/molonoti-radio-stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://molonotiradio.gr/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'molonotiradio.gr'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "26566135-95b9-41e0-832b-ac3296556497",
+      "name": "Monahiki Diakonia",
+      "homepage": "https://www.impt.gr/radiolive.html",
+      "http_url": "http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "196b1a5a-a084-498e-9c73-c40cee763415",
+      "name": "Morias",
+      "homepage": "https://www.radiomorias.gr/",
+      "http_url": "http://live.e-streaming.eu:8120/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.e-streaming.eu:8120/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.e-streaming.eu:8120/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://stream.radiomorias.gr/stream",
+          "verified": false,
+          "final_url": "https://stream.radiomorias.gr/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "Radio Morias 102.7",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://radiomorias.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "5b808d0c-f81f-4b9b-834a-66d52255b30b",
+      "name": "Music 102.1",
+      "homepage": "https://el-gr.facebook.com/238519766193009/posts/music-radio-1021-fm-arta-1008-fm-ioanninawwwmusicradiofmgr/918223781555934/",
+      "http_url": "http://i3.streams.ovh:12022/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://i3.streams.ovh:12022/stream",
+          "verified": false,
+          "reason": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://i3.streams.ovh:12022/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "792cafd0-b0c9-466c-a254-0b6b1cfb8644",
+      "name": "Must",
+      "homepage": "https://www.radiomustathens.com/",
+      "http_url": "http://176.58.122.60:8000/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://176.58.122.60:8000/stream",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://176.58.122.60:8000/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c59df065-6ebf-4725-bc22-5eebd35ea017",
+      "name": "My FM 89.5",
+      "homepage": "https://www.myfm.gr/",
+      "http_url": "http://cast.radiohost.ovh:9037/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://cast.radiohost.ovh:9037/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://cast.radiohost.ovh:9037/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.myfm.gr/",
+          "error": "<urlopen error [Errno 61] Connection refused>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "6e7c812d-252c-4aca-840f-cbc2b35f3229",
+      "name": "Mykonos 98.1",
+      "homepage": "https://www.mykonosfm981.gr/",
+      "http_url": "http://radio.streamings.gr:8007/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.streamings.gr:8007/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.streamings.gr:8007/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.mykonosfm981.gr/",
+          "error": "HTTP Error 403: Forbidden: Access is denied."
+        }
+      ]
+    },
+    {
+      "stationuuid": "57aded39-a6d6-4b15-8f44-81dbc50130f5",
+      "name": "Nauagos.net",
+      "homepage": "https://nauagos.net/",
+      "http_url": "http://radio.streamings.gr:8064/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.streamings.gr/start/nauagos",
+          "verified": false,
+          "final_url": "https://radio.streamings.gr/start/nauagos/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://nauagos.net/",
+              "source": "link"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.streamings.gr/start/nauagos/",
+          "verified": false,
+          "final_url": "https://radio.streamings.gr/start/nauagos/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://nauagos.net/",
+              "source": "link"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.streamings.gr:8064/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.streamings.gr:8064/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "581e71c7-94df-469e-8709-52d96a17c691",
+      "name": "Nova 106",
+      "homepage": "https://www.novafm106.gr/",
+      "http_url": "http://novafm106.media.friktoria.net:8000/novafm106.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://novafm106.media.friktoria.net/novafm106.mp3",
+          "verified": false,
+          "final_url": "https://novafm106.media.friktoria.net/novafm106.mp3",
+          "content_type": "audio/mpeg",
+          "icy_name": "NovaFM 106",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.novafm106.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://novafm106.gr/player",
+              "source": "link"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://novafm106.media.friktoria.net:8000/novafm106.mp3",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://novafm106.media.friktoria.net:8000/novafm106.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://novafm106.gr/player/novafm106.apk",
+          "error": "Page did not return HTML"
+        }
+      ]
+    },
+    {
+      "stationuuid": "ef63eb13-66f7-4034-96bb-2aa464713c58",
+      "name": "Olympos 100.2",
+      "homepage": "https://www.radioolympos.gr/",
+      "http_url": "http://eco.onestreaming.com:8146/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8146/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8146/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.radioolympos.gr/",
+          "error": "<urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "c919b0d8-74f9-445e-8049-b0e4797a2ed8",
+      "name": "Orthodoxia kai Paradosi",
+      "homepage": "https://siatistaagiosnikolaos.gr/%CF%81%CE%B1%CE%B4%CE%B9%CF%8C%CF%86%CF%89%CE%BD%CE%BF/",
+      "http_url": "http://radio.lts-group.eu:52390/ANS",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.lts-group.eu:52390/ANS",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://radio.lts-group.eu:52390/ANS",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "a3bdf3a0-88cc-439d-bba2-3d86e2a91a47",
+      "name": "Oscar 90.9",
+      "homepage": "https://www.facebook.com/Oscar-Lamia-909-1471390016486390/",
+      "http_url": "http://mediacp.32bit.gr:8008/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://mediacp.32bit.gr:8008/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://mediacp.32bit.gr:8008/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "0afe7694-6ea5-4ea8-932e-fc6dfd8d6148",
+      "name": "Palace 91.4",
+      "homepage": "https://www.palaceradio.gr/",
+      "http_url": "http://s1.onweb.gr:8848/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.onweb.gr:8848/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s1.onweb.gr:8848/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://palaceradio.gr/wp-content/plugins/radio-player",
+          "verified": false,
+          "final_url": "https://palaceradio.gr/wp-content/plugins/radio-player/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://palaceradio.gr/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://palaceradio.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "fed8fadf-226d-4fd0-a234-d5eabb365f81",
+      "name": "Palmos 95",
+      "homepage": "https://www.palmos95.gr/",
+      "http_url": "http://s7.onweb.gr:8554/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s7.onweb.gr:8554/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "evidence": [
+            {
+              "page": "http://s7.onweb.gr:8554/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "84ad9d90-fd69-46f1-8d6f-554268cdd6c4",
+      "name": "Palmos 98.3",
+      "homepage": "https://www.facebook.com/Palmos983fm/",
+      "http_url": "http://ice.streamcloud.mediacdn.com/palmos983",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://ice.streamcloud.mediacdn.com/palmos983",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://ice.streamcloud.mediacdn.com/palmos983",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "dce18e91-9a18-4a04-92b2-38706a5c96bd",
+      "name": "Planet 102.3",
+      "homepage": "https://www.planetlakonias.gr/",
+      "http_url": "http://nemstream.ddns.net:12032/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://nemstream.ddns.net:12032/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nemstream.ddns.net'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://nemstream.ddns.net:12032/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live.planetlakonias.gr/",
+          "verified": false,
+          "final_url": "https://live.planetlakonias.gr/",
+          "content_type": "audio/mpeg",
+          "icy_name": "planet laakonias",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.planetlakonias.gr/",
+              "source": "audio"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "b0f7af64-4e12-42b5-8e7b-23e8acaf2655",
+      "name": "Polis 100",
+      "homepage": "https://www.facebook.com/pg/polisfm100/",
+      "http_url": "http://s2.onweb.gr:8628/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s2.onweb.gr:8628/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s2.onweb.gr:8628/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "29520b48-7973-11e8-83fa-52543be04c81",
+      "name": "PRAKTORIO F.M.",
+      "homepage": "https://www.praktoreiofm.gr/",
+      "http_url": "http://s3.onweb.gr:8436/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8436/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8436/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sh.onweb.gr:7048/",
+          "verified": false,
+          "final_url": "https://sh.onweb.gr:7048/",
+          "content_type": "audio/mpeg",
+          "icy_name": "RADIODETH 104.9",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.praktoreiofm.gr/playerPopup.php",
+              "source": "audio"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "d815d038-65de-442f-bd6c-282a9716a53e",
+      "name": "Proto 99",
+      "homepage": "https://www.protofm.gr/",
+      "http_url": "http://s1.onweb.gr:8052/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.onweb.gr:8052/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s1.onweb.gr:8052/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "fa76bf70-a0d0-43ab-98c9-f9681160c4aa",
+      "name": "Radio 108",
+      "homepage": "https://www.facebook.com/radiofono108/",
+      "http_url": "http://s5.onweb.gr:8498/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s5.onweb.gr:8498/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s5.onweb.gr:8498/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9639540f-0601-11e8-ae97-52543be04c81",
+      "name": "Radio Lehovo",
+      "homepage": "https://www.radio-lehovo.gr/",
+      "http_url": "http://s4.onweb.gr:8468/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s4.onweb.gr:8468/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s4.onweb.gr:8468/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.radio-lehovo.gr/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.radio-lehovo.gr'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "961c80b6-0601-11e8-ae97-52543be04c81",
+      "name": "radiotirnavos",
+      "homepage": "https://www.radiotirnavos.gr/",
+      "http_url": "http://s3.onweb.gr:8528/listen.pls",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8528/listen.pls",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8528/listen.pls",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.radiotirnavos.gr/",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ]
+    },
+    {
+      "stationuuid": "cb225cee-b752-4fa8-bb3b-5fc621c5ad12",
+      "name": "Rock Station",
+      "homepage": "https://www.rockstation.gr/",
+      "http_url": "http://89.163.217.252:9898/stream?type=http&amp;nocache=8",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://89.163.217.252:9898/stream?type=http&amp;nocache=8",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://89.163.217.252:9898/stream?type=http&amp;nocache=8",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.rockstation.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "aa459c4f-d41f-47bb-b921-f02d2400308f",
+      "name": "Rodon 95",
+      "homepage": "https://rodonfm.net/",
+      "http_url": "http://live3.istoikona.net:8324/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live3.istoikona.net:8324/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live3.istoikona.net:8324/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "961d4058-0601-11e8-ae97-52543be04c81",
+      "name": "RSO 91.7",
+      "homepage": "https://www.rso.gr/",
+      "http_url": "http://tachyon.shoutca.st:8594/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://tachyon.shoutca.st:8594/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://tachyon.shoutca.st:8594/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.rso.gr/",
+          "error": "The read operation timed out"
+        }
+      ]
+    },
+    {
+      "stationuuid": "c6a1cb56-286b-4469-aaef-b12429ecfe86",
+      "name": "Scanner 102.2",
+      "homepage": "https://www.scannerfm.gr/",
+      "http_url": "http://s1.onweb.gr:8074/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.onweb.gr:8074/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's1.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s1.onweb.gr:8074/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sh.onweb.gr/8074/stream",
+          "verified": false,
+          "final_url": "https://sh.onweb.gr/8074/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "SCANNER FM 102,2",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.scannerfm.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "fd969266-ae35-4918-b1a8-ff6dff0aaeb4",
+      "name": "Siatista 95.7",
+      "homepage": "https://www.radiosiatista.gr/",
+      "http_url": "http://eco.onestreaming.com:8606/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8606/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8606/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.radiosiatista.gr/",
+          "error": "[Errno 54] Connection reset by peer"
+        }
+      ]
+    },
+    {
+      "stationuuid": "9af96394-7dd7-4680-bb11-481f543099d3",
+      "name": "Silibre",
+      "homepage": "https://www.silibre.gr/",
+      "http_url": "http://89.163.217.252/8010/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://89.163.217.252/8010/stream",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://89.163.217.252/8010/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.silibre.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "89a633f0-0649-411d-a7dc-90277c413338",
+      "name": "Sitia 95.5",
+      "homepage": "https://www.sitiafm.blogspot.gr/",
+      "http_url": "http://sitiafm.no-ip.info:8000/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sitiafm.no-ip.info:8000/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://sitiafm.no-ip.info:8000/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.sitiafm.blogspot.gr/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.sitiafm.blogspot.gr'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "86bad49e-9dec-4cfd-b650-8d1b570142f1",
+      "name": "Skai Kritis",
+      "homepage": "https://www.skaikritis.gr/",
+      "http_url": "http://sc2.streamwithq.com:8056/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:2000/stream/SkaiKritis",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:2000/stream/SkaiKritis",
+          "content_type": "audio/mpeg",
+          "icy_name": "SKAI KRITIS 92.1 IRAKLIO CRETE",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "audio"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sc2.streamwithq.com:8056/stream",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8056/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "SKAI KRITIS 92.1 IRAKLIO CRETE",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8056/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.skaikritis.gr/live-aek-ofi/",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live-aek-ofi/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live/",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live-aek-ofi/#primaryimage",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live-aek-ofi/#primaryimage",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live/#primaryimage",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live/#primaryimage",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live-aek-ofi/#breadcrumb",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live-aek-ofi/#breadcrumb",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live/#breadcrumb",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live/#breadcrumb",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.skaikritis.gr/live/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://creta24.gr/live-aek-ofi/\\",
+          "verified": false,
+          "reason": "HTTP Error 404: Not Found",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://tvcreta.gr/live/",
+          "verified": false,
+          "final_url": "https://tvcreta.gr/live/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live-aek-ofi",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live-aek-ofi/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live-aek-ofi/#article",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live-aek-ofi/#article",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/live-aek-ofi/#comments",
+          "verified": false,
+          "final_url": "https://www.skaikritis.gr/live-aek-ofi/#comments",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.skaikritis.gr/wp-content/uploads/2026/10/live-aek-ofi.jpg\\",
+          "verified": false,
+          "reason": "HTTP Error 404: Not Found",
+          "evidence": [
+            {
+              "page": "https://www.skaikritis.gr/live-aek-ofi/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "01fef817-0744-4e52-adcf-795cc4ca5a3a",
+      "name": "Skai Patras",
+      "homepage": "https://www.skaipatras.gr/",
+      "http_url": "http://i.streams.ovh:9519/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://i.streams.ovh:9519/stream",
+          "verified": false,
+          "final_url": "https://i.streams.ovh:9519/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://i.streams.ovh:9519/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "bc7b85a4-59c1-40b6-b786-e01ceb0eec74",
+      "name": "Sky 100.7",
+      "homepage": "https://sky1007.gr/",
+      "http_url": "http://sc2.streamwithq.com:8060/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8060/;",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8060/;",
+          "content_type": "audio/mpeg",
+          "icy_name": "Netcast",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8060/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "009f0ed1-6092-4283-b85f-8d6a4e18270d",
+      "name": "Smart 104.5",
+      "homepage": "https://www.smartradio.gr/",
+      "http_url": "http://smartradio1045.live24.gr/smartradio1045",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://smartradio1045.live24.gr/smartradio1045",
+          "verified": false,
+          "reason": "HTTP Error 502: Bad Gateway",
+          "evidence": [
+            {
+              "page": "http://smartradio1045.live24.gr/smartradio1045",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "bd80e484-878d-41e8-927f-1c1e9fe9e727",
+      "name": "Star 93.3",
+      "homepage": "https://www.star-fm.gr/",
+      "http_url": "http://proradio.gr:8004/star933",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://proradio.gr:8004/star933",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://proradio.gr:8004/star933",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "955010b2-6760-4dc1-8ebc-aa9089e5473a",
+      "name": "Star Λαμία",
+      "homepage": "https://tvstar.gr/",
+      "http_url": "http://eco.onestreaming.com:8434/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8434/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8434/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "962faec2-0601-11e8-ae97-52543be04c81",
+      "name": "Stone Radio",
+      "homepage": "http://www.stoneradio.gr/",
+      "http_url": "http://eu4.fastcast4u.com:5248/;stream.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eu4.fastcast4u.com:5248/;stream.mp3",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eu4.fastcast4u.com:5248/;stream.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4ea557ef-b9d5-4de8-b48e-9d37f8bfc5fc",
+      "name": "Stoxos Θάσος",
+      "homepage": "https://www.stoxosfm.gr/",
+      "http_url": "http://s3.onweb.gr:8016/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8016/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8016/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "577892b3-fb5b-4d34-b24f-0060ad1c6062",
+      "name": "Studio E 103",
+      "homepage": "https://studioe.gr/",
+      "http_url": "http://music.1host.gr:9045/stream/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://music.1host.gr:9045/stream/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 61] Connection refused>",
+          "evidence": [
+            {
+              "page": "http://music.1host.gr:9045/stream/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "82b18b89-4687-4940-a982-6fcf1e8dc468",
+      "name": "Studio Ρέθυμνο 980",
+      "homepage": "https://studio980.gr/",
+      "http_url": "http://sc2.streamwithq.com:8120/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8120/;",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8120/;",
+          "content_type": "audio/mpeg",
+          "icy_name": "Netcast",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8120/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "44d155f7-50b4-457b-8314-36b884321da9",
+      "name": "Super 90.4",
+      "homepage": "https://www.super904.gr/",
+      "http_url": "http://dione.shoutca.st:8530/;?1644228381005",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://dione.shoutca.st:8530/;?1644228381005",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://dione.shoutca.st:8530/;?1644228381005",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "2e2cfb03-6f71-11e9-af37-52543be04c81",
+      "name": "Super FM Chania",
+      "homepage": "https://superfm896.gr/",
+      "http_url": "http://s3.onweb.gr:8454/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8454/",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8454/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://superfm896.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "374c5a52-e304-44b4-aa0c-dfd4f9c58e10",
+      "name": "tiamo.gr",
+      "homepage": "https://tiamo.gr/",
+      "http_url": "http://i5.streams.ovh:14126/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://i5.streams.ovh:14126/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 61] Connection refused>",
+          "evidence": [
+            {
+              "page": "http://i5.streams.ovh:14126/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "5565917c-7b61-47b1-b1ff-bc38cd0a9b7f",
+      "name": "To Pikap Radio",
+      "homepage": "https://www.topikap.gr/",
+      "http_url": "http://comet.shoutca.st:8430/live",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://comet.shoutca.st:8430/live",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://comet.shoutca.st:8430/live",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.topikap.gr/radio",
+          "verified": false,
+          "final_url": "https://www.topikap.gr/radio",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.topikap.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "d91248a1-2322-4d8b-952d-c7758d79adc7",
+      "name": "Top 106.5",
+      "homepage": "https://www.topfm1065.gr/",
+      "http_url": "http://sc2.streamwithq.com:8086/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8086/stream",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8086/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "TOP FM 106.5",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8086/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "d74721c4-c315-4008-8663-9757d477ae43",
+      "name": "Traffic FM 91.8",
+      "homepage": "https://www.trafficfm.gr/",
+      "http_url": "http://s5.onweb.gr:8506/listen.pls",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s5.onweb.gr:8506/listen.pls",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s5.onweb.gr:8506/listen.pls",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.trafficfm.gr/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.trafficfm.gr'. (_ssl.c:1129)>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "8a2c4187-bb3f-42e3-8a21-b4fe862e7a7f",
+      "name": "Up 92.9",
+      "homepage": "https://www.929.gr/",
+      "http_url": "http://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "df1d996d-acef-4c3c-8990-f2caf6e04e38",
+      "name": "Velvet Groove Radio",
+      "homepage": "http://152.53.229.53:8080/public/velvet_groove_radio",
+      "http_url": "http://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "http://152.53.229.53:8080/public/velvet_groove_radio",
+          "error": "<urlopen error timed out>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "5032bba2-1b09-4d7f-97fe-c737db5636d7",
+      "name": "Velvet Jazz Radio",
+      "homepage": "http://v2202605357352458399.happysrv.de/velvet-jazz/",
+      "http_url": "http://152.53.229.53:8000/radio.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://152.53.229.53:8000/radio.mp3",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://152.53.229.53:8000/radio.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "http://v2202605357352458399.happysrv.de/velvet-jazz/",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "stationuuid": "2270e382-5d8d-4e6c-a3a7-f1e1f00b576e",
+      "name": "Venus 91",
+      "homepage": "https://www.facebook.com/Venus-91-fm-chania-162748463736962/",
+      "http_url": "http://dos.venus91.gr:9100/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://dos.venus91.gr:9100/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dos.venus91.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://dos.venus91.gr:9100/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c85b2a4d-848f-4e46-86cc-f264a111bdbd",
+      "name": "Volos 98.6",
+      "homepage": "https://www.volos986.gr/",
+      "http_url": "http://www.gointernet.gr:8014/;stream.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://www.gointernet.gr:8014/;stream.mp3",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://www.gointernet.gr:8014/;stream.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.volos986.gr/wp-content/plugins/radio-player",
+          "verified": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "evidence": [
+            {
+              "page": "https://www.volos986.gr/liveradio/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c9639043-4d98-4478-9265-471f605a9aaa",
+      "name": "Volos Dee Jay 104.5",
+      "homepage": "https://www.radiodeejay.gr/",
+      "http_url": "http://cast3.radiohost.ovh:8008/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://cast3.radiohost.ovh:8008/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://cast3.radiohost.ovh:8008/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://s6.onweb.gr/8450/stream",
+          "verified": false,
+          "final_url": "https://s6.onweb.gr/8450/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "RadioCaster Stream",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://radiodeejay.gr/",
+              "source": "source"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9eb9a6a7-3f11-4552-a6bb-137edf0837b6",
+      "name": "You 98.7",
+      "homepage": "https://www.youradio.gr/",
+      "http_url": "http://eco.onestreaming.com:8880/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8880/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8880/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.youradio.gr/showgenre/live-shows/",
+          "verified": false,
+          "final_url": "https://www.youradio.gr/showgenre/live-shows/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.youradio.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.youradio.gr/showgenre/live-shows/#primaryimage",
+          "verified": false,
+          "final_url": "https://www.youradio.gr/showgenre/live-shows/#primaryimage",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.youradio.gr/showgenre/live-shows/#breadcrumb",
+          "verified": false,
+          "final_url": "https://www.youradio.gr/showgenre/live-shows/#breadcrumb",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://www.youradio.gr/showgenre/live-shows/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.e-radio.gr/You-987-Alexandroupoli-i2396/live",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/You-Radio-987-Alexandroupoli-i2396/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.youradio.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "2fb28148-dcd1-48e7-949b-dd40c866bf7b",
+      "name": "Zarpa Χανιά",
+      "homepage": "https://zarparadio.gr/",
+      "http_url": "http://s3.onweb.gr:8454/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8454/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8454/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "f56adbeb-3e9d-11e9-aa55-52543be04c81",
+      "name": "Άγιος Οικουμένιος 102",
+      "homepage": "https://imtks.gr/",
+      "http_url": "http://s5.onweb.gr:8508/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s5.onweb.gr:8508/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s5.onweb.gr:8508/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.e-radio.gr/Agios-Oikoumenios-102-Trikala-i2384/live",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/Agios-Oikoumenios-102-Trikala-i2384/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://imtks.gr/index.php/el/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9f4e21c3-3e9f-11e9-aa55-52543be04c81",
+      "name": "Άγιος Σπυρίδων 91.1",
+      "homepage": "https://imcorfu.gr/",
+      "http_url": "http://s3.onweb.gr:8462/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8462/;",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8462/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://player.castr.com/live_c50cd760659d11f19421b1e2f3503400",
+          "verified": false,
+          "final_url": "https://player.castr.com/live_c50cd760659d11f19421b1e2f3503400",
+          "content_type": "text/html; charset=utf-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://imcorfu.gr/",
+              "source": "iframe"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.sodah.de/tools/radio-player-plugin/",
+          "verified": false,
+          "final_url": "https://www.sodah.de/tools/radio-player-plugin/",
+          "content_type": "text/html",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://imcorfu.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "47bf34e4-ed7a-4934-bde7-8b627e1e1f35",
+      "name": "Ακρόαμα 95.5",
+      "homepage": "https://akroamaradio.gr/",
+      "http_url": "http://live.e-streaming.eu:8100/1",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.e-streaming.eu:8100/1",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.e-streaming.eu:8100/1",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://stream.akroamaradio.gr/stream",
+          "verified": false,
+          "final_url": "https://stream.akroamaradio.gr/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "Akroama 95.5 | Korinthos",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://akroamaradio.gr/",
+              "source": "audio"
+            },
+            {
+              "page": "https://akroamaradio.gr/player",
+              "source": "audio"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "392d70ec-e82d-47f6-b5d9-24c6216e7dd2",
+      "name": "Αλμωπία 97.1",
+      "homepage": "https://www.aridaia-gegonota.gr/",
+      "http_url": "http://s2.free-shoutcast.com:18132/;stream.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s2.free-shoutcast.com:18132/;stream.mp3",
+          "verified": false,
+          "reason": "HTTP Error 403: Service Forbidden",
+          "evidence": [
+            {
+              "page": "http://s2.free-shoutcast.com:18132/;stream.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live24.gr/radio/generic.jsp?sid=3124",
+          "verified": false,
+          "final_url": "https://live24.gr/radio/generic.jsp?sid=3124",
+          "content_type": "text/html;charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.aridaia-gegonota.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "3ad1a11e-95ce-4737-a2af-72beb73d501e",
+      "name": "Ελληνικός 90.3",
+      "homepage": "https://www.ellinikos.gr/",
+      "http_url": "http://live.ellinikos.gr:8010/903.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.ellinikos.gr:8010/903.mp3",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://live.ellinikos.gr:8010/903.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "daceff3e-9406-4f48-8099-6f56fb59ed33",
+      "name": "Θαλασσόλυκος 102.1",
+      "homepage": "https://www.facebook.com/thalassolikosfm/?_rdc=1&_rdr",
+      "http_url": "http://sc2.streamwithq.com:8130/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8130/;",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8130/;",
+          "content_type": "audio/mpeg",
+          "icy_name": "Sky radio",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8130/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "f2f21ce6-e1b3-4615-a8e2-52c819ed8bd9",
+      "name": "Ι. Μ. Λαρίσης και Τυρνάβου 96.3",
+      "homepage": "https://imlarisis.gr/",
+      "http_url": "http://in.icss.com.gr:8000/stream_007",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://in.icss.com.gr:8000/stream_007",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://in.icss.com.gr:8000/stream_007",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4f59924c-6600-4fe8-a61d-fb8a5dcb2c95",
+      "name": "Ι.Μ. Αιτωλίας και Ακαρνανίας 106.3",
+      "homepage": "https://www.imaa.gr/",
+      "http_url": "http://s3.onweb.gr:8038/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8038/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8038/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4cd6d35b-fc90-44c9-b1dc-79e5dab94d89",
+      "name": "Ι.Μ. Παροναξίας 92.3",
+      "homepage": "https://www.i-m-paronaxias.gr/",
+      "http_url": "http://live.onweb.gr:8212/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.onweb.gr:8212/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.onweb.gr:8212/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.i-m-paronaxias.gr/",
+          "error": "HTTPS request redirects to HTTP"
+        }
+      ]
+    },
+    {
+      "stationuuid": "38577bf8-3eac-11e9-aa55-52543be04c81",
+      "name": "Ι.Μ. Σπάρτης 88.8",
+      "homepage": "https://www.immspartis.gr/",
+      "http_url": "http://s4.onweb.gr:8862/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s4.onweb.gr:8862/;",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's4.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s4.onweb.gr:8862/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live24.gr/radio/generic.jsp?sid=2555",
+          "verified": false,
+          "final_url": "https://live24.gr/radio/generic.jsp?sid=2555",
+          "content_type": "text/html;charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://immspartis.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c725047d-109c-4ef9-8943-f771539cf18a",
+      "name": "Ι.Μ. Τρίκκης Γαρδικίου και Πύλης 102",
+      "homepage": "https://imtks.gr/",
+      "http_url": "http://s5.onweb.gr:8508/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s5.onweb.gr:8508/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s5.onweb.gr:8508/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.e-radio.gr/Agios-Oikoumenios-102-Trikala-i2384/live",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/Agios-Oikoumenios-102-Trikala-i2384/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://imtks.gr/index.php/el/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c7e426c8-3ead-11e9-aa55-52543be04c81",
+      "name": "Ιερά Μητροπόλη Φθιώτιδος 89.4",
+      "homepage": "https://www.imfth.gr/",
+      "http_url": "http://eco.onestreaming.com:8264/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com/proxy/imf894/stream",
+          "verified": false,
+          "final_url": "https://eco.onestreaming.com/proxy/imf894/stream",
+          "content_type": "audio/mpeg",
+          "icy_name": "Iera Mhtopolis Fthiotidos 89,4",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://www.imfth.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://eco.onestreaming.com:8264/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8264/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.e-radio.gr/IM-Fthiotidas-894-Lamia-i1384/live",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/IM-Fthiotidas-894-Lamia-i1384/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.imfth.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "6e853aa8-5b64-4876-8d2c-cf9d5e7e239d",
+      "name": "ΙΕΡΑ ΜΗΤΡΟΠΟΛΗ ΧΑΛΚΙΔΟΣ",
+      "homepage": "https://radioimchalkidos977fm.blogspot.com/",
+      "http_url": "http://212.95.39.229:2740/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://212.95.39.229:2740/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://212.95.39.229:2740/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "3e64ce47-a692-4188-a501-d539753ea38d",
+      "name": "Λαϊκό Ραδιόφωνο",
+      "homepage": "https://www.laikoradio.eu/",
+      "http_url": "http://i2.streams.ovh:7017/;s.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://i2.streams.ovh:7017/;s.mp3",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://i2.streams.ovh:7017/;s.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.laikoradio.eu/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "dd315f35-ee9f-4ec6-a138-8c539452f7b0",
+      "name": "Λόφος",
+      "homepage": "http://my.aegean.gr/radio/Lesvos/",
+      "http_url": "http://radio.myaegean.gr:8000/lofosradio.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.myaegean.gr:8000/lofosradio.mp3",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.myaegean.gr:8000/lofosradio.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://facebook.com/Radio.Lofos",
+          "verified": false,
+          "final_url": "https://www.facebook.com/Radio.Lofos",
+          "content_type": "text/html; charset=\"utf-8\"",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "http://my.aegean.gr/radio/Lesvos/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.garden/listen/lofos-student-radio-lesvos-university-of-the-aegean/VFmf7JA0",
+          "verified": false,
+          "final_url": "https://radio.garden/listen/lofos-student-radio-lesvos-university-of-the-aegean/VFmf7JA0",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "http://my.aegean.gr/radio/Lesvos/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "14544540-61b2-47aa-bb80-86fe6c09aa1a",
+      "name": "ΟΚ! Anytime Markets",
+      "homepage": "https://www.okmarkets.gr/",
+      "http_url": "http://okshop.live24.gr/okshop",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://okshop.live24.gr/okshop",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://okshop.live24.gr/okshop",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "ea388340-3ebe-11e9-aa55-52543be04c81",
+      "name": "Ορθοδοξία και Παράδοση 103",
+      "homepage": "https://siatistaagiosnikolaos.gr/",
+      "http_url": "http://radio.lts-group.eu:52390/ANS",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.lts-group.eu:52390/ANS",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://radio.lts-group.eu:52390/ANS",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "09f935ae-385b-4f80-8e87-15de144b80ce",
+      "name": "Παμβώτις 105.7",
+      "homepage": "https://el-gr.facebook.com/RadioPambotis1057FmSereoIoannina/?ref=page_internal",
+      "http_url": "http://iphone.live24.gr/pamvotis1057ioannina",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://iphone.live24.gr/pamvotis1057ioannina",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://iphone.live24.gr/pamvotis1057ioannina",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9130d4cc-a726-4e44-8b88-5b9c25d404ea",
+      "name": "Πολύγυρος Χαλκιδική",
+      "homepage": "https://radio.polygyros.gr/",
+      "http_url": "http://eco.onestreaming.com:8526/;?1492734743419.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8526/;?1492734743419.mp3",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8526/;?1492734743419.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://radio.polygyros.gr/",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/wp-admin/admin-ajax.php",
+          "verified": false,
+          "reason": "HTTP Error 400: Bad Request",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            },
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/category/news/",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/category/news/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/i-psychiki-ygeia-einai-ypothesi-olon/",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/i-psychiki-ygeia-einai-ypothesi-olon/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/#primary",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/#primary",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/about/",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/about/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/contact/",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/contact/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/home",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/programma/",
+          "verified": false,
+          "final_url": "https://radio.polygyros.gr/programma/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/wp-content/plugins/cookie-law-info/lite/frontend/images/",
+          "verified": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/wp-content/plugins/elementor/assets/",
+          "verified": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/",
+          "verified": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://radio.polygyros.gr/wp-content/uploads",
+          "verified": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "evidence": [
+            {
+              "page": "https://radio.polygyros.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "3366f97e-f616-4ba2-910e-050eb480fa56",
+      "name": "Πρώτο 99",
+      "homepage": "https://www.facebook.com/Protofm99",
+      "http_url": "http://s1.onweb.gr:8052/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.onweb.gr:8052/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s1.onweb.gr:8052/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "5bb25ca9-c6ab-4767-b46d-e33422bda0f1",
+      "name": "Ράδιο 1 Χαλκίδα",
+      "homepage": "https://www.radio981.gr/",
+      "http_url": "http://proradio.gr:8004/radio981m",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://proradio.gr:8004/radio981m",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://proradio.gr:8004/radio981m",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.radio981.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "b67ed2a5-41c1-4f05-99d4-65fb879d19e4",
+      "name": "Ράδιο Δράμα 99.1",
+      "homepage": "https://www.facebook.com/www.radiodrama.gr/",
+      "http_url": "http://pstnet6.shoutcastnet.com:60160/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://pstnet6.shoutcastnet.com:60160/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://pstnet6.shoutcastnet.com:60160/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "1ac38ed3-3ec3-11e9-aa55-52543be04c81",
+      "name": "Ράδιο Ελπίδα 96.1",
+      "homepage": "https://www.imalex.gr/",
+      "http_url": "http://eco.onestreaming.com:8564/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8564/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8564/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live24.gr/radio/generic.jsp?sid=32",
+          "verified": false,
+          "final_url": "https://live24.gr/radio/generic.jsp?sid=32",
+          "content_type": "text/html;charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://imalex.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "ab99dc1d-3ec3-11e9-aa55-52543be04c81",
+      "name": "Ράδιο Κιβωτός 99.2",
+      "homepage": "https://www.imsn.gr/",
+      "http_url": "http://s3.onweb.gr:8452/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8452/;",
+          "verified": false,
+          "reason": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8452/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.imsn.gr/radio-kivotos-synaxi-2026/",
+          "verified": false,
+          "final_url": "https://www.imsn.gr/radio-kivotos-synaxi-2026/",
+          "content_type": "text/html; charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.imsn.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.imsn.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "185051fe-3ec4-11e9-aa55-52543be04c81",
+      "name": "Ράδιο Μαρτυρία 95.5",
+      "homepage": "https://martiria.imka.gr/",
+      "http_url": "http://sc2.streamwithq.com:8006/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:2000/stream/martiria",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:2000/stream/martiria",
+          "content_type": "audio/mpeg",
+          "icy_name": "Radio Martyria",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "https://martiria.imka.gr/",
+              "source": "inline-script"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://sc2.streamwithq.com:8006/",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8006/",
+          "content_type": "audio/mpeg",
+          "icy_name": "Radio Martyria",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8006/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "c3179cbe-7c6b-47ed-97a4-3ea37027a358",
+      "name": "Ραδιοκύματα 102.6",
+      "homepage": "https://www.radiowaves.gr/",
+      "http_url": "http://s8.onweb.gr:8702/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s8.onweb.gr:8702/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "evidence": [
+            {
+              "page": "http://s8.onweb.gr:8702/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4fa3c805-f86f-45fd-a3e8-f085e6a13640",
+      "name": "Ραδιοφράγματα",
+      "homepage": "https://radiofragmata.squat.gr/",
+      "http_url": "http://185.86.150.52:8000/live",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://185.86.150.52:8000/live",
+          "verified": false,
+          "reason": "<urlopen error timed out>",
+          "evidence": [
+            {
+              "page": "http://185.86.150.52:8000/live",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "94eff28a-f1cd-4e99-b20d-bc97e935d3ba",
+      "name": "Ραδιοφωνία Κυκλαδων 101.3",
+      "homepage": "https://www.facebook.com/pages/%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CF%89%CE%BD%CE%AF%CE%B1%20%CE%9A%CF%85%CE%BA%CE%BB%CE%AC%CE%B4%CF%89%CE%BD%20101,3%20Fm%20Stereo/417816424952179/",
+      "http_url": "http://ice.streamcloud.mediacdn.com/rkykladwn",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://ice.streamcloud.mediacdn.com/rkykladwn",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ice.streamcloud.mediacdn.com'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://ice.streamcloud.mediacdn.com/rkykladwn",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "ae983a01-e1b2-4fee-b06b-7b73efebdb86",
+      "name": "Ραδιοφωνική Λέσχη 97.6",
+      "homepage": "https://www.976.gr/",
+      "http_url": "http://s3.onweb.gr:8438/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8438/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8438/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "019b7466-3ec5-11e9-aa55-52543be04c81",
+      "name": "ΡΣ. Ι.Μ. Αργολίδος 105.2",
+      "homepage": "https://www.imargolidos.gr/",
+      "http_url": "http://eco.onestreaming.com:8556/",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8556/",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8556/",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9d92503e-4931-4f37-afed-7037806deea6",
+      "name": "Ρυθμός 94.6",
+      "homepage": "https://www.rythmos946.gr/",
+      "http_url": "http://sc2.streamwithq.com:8098/;listen.pls",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8098/;listen.pls",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8098/;listen.pls",
+          "content_type": "audio/mpeg",
+          "icy_name": "No Name",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8098/;listen.pls",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.rythmos946.gr/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "619efe62-29f2-4b69-9f4a-b6bb643acc72",
+      "name": "Ρυθμός 97.4",
+      "homepage": "https://rythmosfm974.gr/",
+      "http_url": "http://sc2.streamwithq.com:8034/;stream.mp3",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://sc2.streamwithq.com:8034/;stream.mp3",
+          "verified": false,
+          "final_url": "https://sc2.streamwithq.com:8034/;stream.mp3",
+          "content_type": "audio/mpeg",
+          "icy_name": "Notes 97.4 Chania",
+          "codecs": [],
+          "reason": "No audio stream detected",
+          "evidence": [
+            {
+              "page": "http://sc2.streamwithq.com:8034/;stream.mp3",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "791fd9bf-a37f-4f7a-9716-81696faed7b9",
+      "name": "Σέρρες 98.9",
+      "homepage": "https://www.radioserres.gr/",
+      "http_url": "http://solid33.streamupsolutions.com:32014/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://solid33.streamupsolutions.com:32014/stream",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://solid33.streamupsolutions.com:32014/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "1659f361-2ffc-49f4-887a-87c451bdb5fb",
+      "name": "Σήμαντρο 93.1",
+      "homepage": "https://simantrochios.blogspot.com/",
+      "http_url": "http://65.108.133.10:8050/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://65.108.133.10:8050/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://65.108.133.10:8050/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://muse.multiserver.gr:2199/tunein/simantro.pls",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "4a06aa78-1352-497f-bf12-111f56fa0ddb",
+      "name": "Σαντορίνη",
+      "homepage": "https://santorinifm.gr/",
+      "http_url": "http://eco.onestreaming.com:8316/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8316/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8316/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "4c8b2c5d-b5a0-4866-8c71-094f2ddaa1f3",
+      "name": "Σκάι Αιγαίου 99.8",
+      "homepage": "https://www.skaiaegean.gr/",
+      "http_url": "http://live.isol.biz:8500/;stream.nsv",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://live.isol.biz:8500/;stream.nsv",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://live.isol.biz:8500/;stream.nsv",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live24.gr/radio/generic.jsp?sid=2540",
+          "verified": false,
+          "final_url": "https://live24.gr/radio/generic.jsp?sid=2540",
+          "content_type": "text/html;charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://skaiaegean.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://skaiaegean.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "fb053dae-fb9e-4651-8b29-c806b6d8eaa4",
+      "name": "Σοκολάτα 102.4",
+      "homepage": "https://www.sokolatafm.gr/",
+      "http_url": "http://radio.streamings.gr:8043/stream?1546865665943",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://radio.streamings.gr:8043/stream?1546865665943",
+          "verified": false,
+          "reason": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+          "evidence": [
+            {
+              "page": "http://radio.streamings.gr:8043/stream?1546865665943",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "cae8af84-72f5-469c-84d0-efd351117bf7",
+      "name": "Σταγών Καλαμπάκα",
+      "homepage": "https://www.stagonnews.gr/",
+      "http_url": "http://s1.onweb.gr:8830/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s1.onweb.gr:8830/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s1.onweb.gr:8830/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "7968b901-5dbc-45ac-9774-2087ac6d330e",
+      "name": "Στο Νησί Λέσβος",
+      "homepage": "https://www.stonisi.gr/",
+      "http_url": "http://eco.onestreaming.com:8165/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8165/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8165/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.e-radio.gr/Sto-Nisi-99-Mytilini-i964/live",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/Sto-Nisi-99-Mytilini-i964/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.stonisi.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "790885d1-6f98-4b1f-82fc-d95d984bee8c",
+      "name": "Στόχος 99",
+      "homepage": "https://el-gr.facebook.com/stoxosfm/",
+      "http_url": "http://s3.onweb.gr:8016/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8016/stream",
+          "verified": false,
+          "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3.onweb.gr'. (_ssl.c:1129)>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8016/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "7bd81d72-83fe-4c06-b99d-c4e0fbd2889c",
+      "name": "Σφαίρα Θεσσαλίας 90.7",
+      "homepage": "https://www.sfaira.gr/",
+      "http_url": "http://cast3.radiohost.ovh:8243/stream",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://cast3.radiohost.ovh:8243/stream",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://cast3.radiohost.ovh:8243/stream",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.sfaira.gr/",
+          "error": "<urlopen error [Errno 54] Connection reset by peer>"
+        }
+      ]
+    },
+    {
+      "stationuuid": "14ad3897-4fc1-4027-8366-231627c71d1b",
+      "name": "Τσιρίγο",
+      "homepage": "https://tsirigofm.blogspot.com/",
+      "http_url": "http://s2.onweb.gr:8622/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s2.onweb.gr:8622/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s2.onweb.gr:8622/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://live24.gr/radio/generic.jsp?sid=1527",
+          "verified": false,
+          "final_url": "https://live24.gr/radio/generic.jsp?sid=1527",
+          "content_type": "text/html;charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://tsirigofm.blogspot.com/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "5bfc98c1-b6af-482f-99d7-90c1a801b9a7",
+      "name": "Τύρναβος 103.8",
+      "homepage": "https://www.radiotirnavos.gr/",
+      "http_url": "http://s3.onweb.gr:8528/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8528/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8528/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": [
+        {
+          "url": "https://www.radiotirnavos.gr/",
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      ]
+    },
+    {
+      "stationuuid": "d8c909fe-d330-4ac8-b50a-d576a580a86a",
+      "name": "Υπάρχω 103.7",
+      "homepage": "https://el-gr.facebook.com/groups/56325783108/",
+      "http_url": "http://s4.onweb.gr:8080/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s4.onweb.gr:8080/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s4.onweb.gr:8080/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "9e17edd3-e9fd-4c0e-a128-43aa3565dbbd",
+      "name": "Φάρος 91.8",
+      "homepage": "https://radiofaros918.gr/",
+      "http_url": "http://s3.onweb.gr:8012/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://s3.onweb.gr:8012/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://s3.onweb.gr:8012/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "23f04a0f-8eee-4464-82a2-2e5396b032a0",
+      "name": "Φίλοι του Ραδιοφώνου 92",
+      "homepage": "https://mesradio92.gr/",
+      "http_url": "http://eco.onestreaming.com:8021/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://eco.onestreaming.com:8021/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://eco.onestreaming.com:8021/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        }
+      ],
+      "errors": []
+    },
+    {
+      "stationuuid": "e7938f98-3698-4896-abb3-76305df90472",
+      "name": "Χερσόνησος",
+      "homepage": "https://www.radio972.gr/",
+      "http_url": "http://193.227.111.111:8008/;",
+      "streams": [],
+      "candidates": [
+        {
+          "url": "https://193.227.111.111:8008/;",
+          "verified": false,
+          "reason": "<urlopen error [Errno 54] Connection reset by peer>",
+          "evidence": [
+            {
+              "page": "http://193.227.111.111:8008/;",
+              "source": "same-url-upgrade"
+            }
+          ],
+          "same_host": true
+        },
+        {
+          "url": "https://www.facebook.com/Radio-Hersonissos-972-142971052474349",
+          "verified": false,
+          "final_url": "https://www.facebook.com/people/Radio-Hersonissos-972/100057546936036/",
+          "content_type": "text/html; charset=\"utf-8\"",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.radio972.gr/",
+              "source": "link"
+            },
+            {
+              "page": "https://www.radio972.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.e-radio.gr/Radio-Hersonissos-972-Heraklion-i460/live?lang=el",
+          "verified": false,
+          "final_url": "https://www.e-radio.gr/Radio-Hersonissos-972-Heraklion-i460/live",
+          "content_type": "text/html; Charset=UTF-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.radio972.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.facebook.com/Radio-Hersonissos-972-142971052474349/",
+          "verified": false,
+          "final_url": "https://www.facebook.com/people/Radio-Hersonissos-972/100057546936036/",
+          "content_type": "text/html; charset=\"utf-8\"",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.radio972.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        },
+        {
+          "url": "https://www.radio972.gr/live.php",
+          "verified": false,
+          "final_url": "https://onlineradiobox.com/gr/hersonissos/",
+          "content_type": "text/html; charset=utf-8",
+          "icy_name": null,
+          "reason": "Response is HTML, not audio",
+          "evidence": [
+            {
+              "page": "https://www.radio972.gr/",
+              "source": "link"
+            }
+          ],
+          "same_host": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

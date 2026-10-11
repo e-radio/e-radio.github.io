@@ -2,6 +2,60 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseMetadata, parseHistory, decodeMetadata, decodeProviderMetadata, supportsNowPlaying, isLiveTrackStation, scraperFor } from '../src/lib/metadata/index.mjs';
 const context = { streamUrl: 'https://relay.example/radio/8000/stream', endpoint: 'https://relay.example/status-json.xsl?mount=%2Fchosen' };
+test('Radio Must selects only the radiomust channel from its four-channel feed', () => {
+ const feed = [
+  {stream:'mustcafe',current:{artist:'Wrong',title:'Wrong song'},history:[{artist:'Wrong',title:'Earlier',played:200}]},
+  {stream:'radiomust',current:{artist:'Right',title:'Current',artwork:'https://covers.example/current.jpg'},
+   next:{artist:'Next',title:'Coming'},history:[{artist:'Older',title:'Earlier',played:100},{artist:'Recent',title:'Previous',played:200}]},
+  {stream:'musthero',current:{artist:'Wrong',title:'Hero'}},
+  {stream:'mustx',current:{artist:'Wrong',title:'X'}},
+ ];
+ const current = parseMetadata('radiomust',feed,{endpoint:'https://metadata.radiomustathens.com/'});
+ assert.equal(current.text,'Right – Current');
+ assert.equal(current.song.art,'https://covers.example/current.jpg');
+ assert.equal(current.payload.playing_next.song.title,'Coming');
+ assert.deepEqual(current.payload.song_history.map(entry => entry.song.title),['Previous','Earlier']);
+ assert.deepEqual(parseHistory('radiomust',JSON.stringify(feed)).song_history.map(entry => entry.song.title),['Previous','Earlier']);
+ assert.equal(parseMetadata('radiomust',feed.filter(entry => entry.stream !== 'radiomust')).text,null);
+});
+test('Must Cafe selects only the mustcafe channel from the shared feed', () => {
+ const feed = [
+  {stream:'radiomust',current:{artist:'Wrong',title:'Athens'}},
+  {stream:'mustcafe',current:{artist:'Cafe Artist',title:'Cafe Song'},next:{artist:'Next',title:'Cafe Next'},
+   history:[{artist:'Earlier',title:'Cafe Earlier',played:100}]},
+ ];
+ const current = parseMetadata('mustcafe',feed,{endpoint:'https://metadata.radiomustathens.com/'});
+ assert.equal(current.text,'Cafe Artist – Cafe Song');
+ assert.equal(current.payload.playing_next.song.title,'Cafe Next');
+ assert.equal(parseHistory('mustcafe',JSON.stringify(feed)).song_history[0].song.title,'Cafe Earlier');
+});
+test('all four Radio Must providers keep their own current, next, and history tracks', () => {
+ const channels = ['radiomust', 'mustcafe', 'musthero', 'mustx'];
+ const feed = channels.map((stream, index) => ({stream,
+  current:{artist:`Artist ${index}`,title:`Current ${stream}`},
+  next:{artist:`Next ${index}`,title:`Next ${stream}`},
+  history:[{artist:`Earlier ${index}`,title:`History ${stream}`,played:100 + index}]}));
+ for (const channel of channels) {
+  const parsed = parseMetadata(channel,feed,{endpoint:'https://metadata.radiomustathens.com/'});
+  assert.equal(parsed.song.title,`Current ${channel}`);
+  assert.equal(parsed.payload.playing_next.song.title,`Next ${channel}`);
+  assert.deepEqual(parsed.payload.song_history.map(entry => entry.song.title),[`History ${channel}`]);
+  assert.deepEqual(parseHistory(channel,JSON.stringify(feed)).song_history.map(entry => entry.song.title),[`History ${channel}`]);
+ }
+});
+test('Planet Lakonias removes its on-air label and station jingles from history', () => {
+ const label = '<<<<< PLANET  LAKONIAS : ONAIR ';
+ const current = parseMetadata('planetlakonias',{songtitle:`${label}Singer - Current`,currentlisteners:8});
+ assert.equal(current.text,'Singer - Current');
+ assert.equal(current.listeners,8);
+ const htmlLabel = '&lt;&lt;&lt;&lt;&lt; PLANET  LAKONIAS : ONAIR ';
+ const html = `<table><tr><td>12:49:39</td><td>${htmlLabel}Singer - Current</td><td>Current Song</td></tr>`
+  + '<tr><td>12:45:13</td><td>PLANET LAKONIAS 102,3 FM STEREO</td></tr>'
+  + `<tr><td>12:43:11</td><td>${htmlLabel}Another Artist - Previous</td></tr></table>`;
+ const history = parseHistory('planetlakonias',html);
+ assert.deepEqual(history.song_history.map(entry => entry.text),['Another Artist - Previous']);
+ assert.equal(history.now_playing.song.text,'Singer - Current');
+});
 test('Radio 1 orders songs by Rhodes start time and separates future tracks', () => {
  const feed = [
   {songName:'Next',artistName:'Next Artist',type:'Song',startTime:'09/10/2026 02:24:23'},
