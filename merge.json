@@ -1,13 +1,13 @@
 {
-  "parent": "d87672f1-b1e1-460c-9816-28c2cb680d92",
+  "parent": "9c39439d-86a1-49d7-ad4e-638dd3e6ee25",
   "childs": [
-    "1cf0116e-68b2-4920-a64a-fbbceb4a6b86"
+    "ba96209c-b451-47ed-9b3f-a64c90bdfda1"
   ],
     "streams": [
       {
-        "id": "mp3-128-alternative",
-        "label": "Alternative",
-        "url": "http://radio.1055rock.gr:30000/1055",
+        "id": "mp3-128-alternative-1",
+        "label": "Alternative http",
+        "url": "http://s10.voscast.com:9942/;",
         "bitrate": 128,
         "codec": "MP3"
       }

@@ -33,6 +33,14 @@ const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 const { station } = Astro.props as Props;
+const stationStatus = station as Station & { status?: string; status_checked_at?: string };
+const isMarkedOffline = stationStatus.status === "offline";
+const statusCheckedDate = stationStatus.status_checked_at && /^\d{4}-\d{2}-\d{2}$/.test(stationStatus.status_checked_at)
+  ? new Date(`${stationStatus.status_checked_at}T12:00:00Z`)
+  : null;
+const formattedStatusCheckedAt = statusCheckedDate && !Number.isNaN(statusCheckedDate.getTime())
+  ? new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(statusCheckedDate)
+  : null;
 
 const streamOptions: Array<{ id: string; label: string; url: string; quality: string; bitrate?: number; codec?: string }> = stationStreams(station);
 const hasStream = Boolean(station.stream_url);
@@ -545,6 +553,15 @@ const structuredData = {
               <span id="statusText">{t("Idle")}</span>
             </span>
         </div>
+
+        {isMarkedOffline && (
+          <div class="alert alert-warning mb-3" role="status">
+            <strong>{t("Station temporarily offline")}</strong>
+            <p class="mb-1">{t("This station's streams were unavailable when last checked. You can try playing it again or visit its website.")}</p>
+            {formattedStatusCheckedAt && <div class="small">{t("Last checked: {0}", [formattedStatusCheckedAt])}</div>}
+            {station.homepage && <a href={localizePath(station.homepage)} target="_blank" rel="noopener">{t("Visit website")}</a>}
+          </div>
+        )}
 
         {hasStream ? (
           <div class="row g-3 align-items-center">

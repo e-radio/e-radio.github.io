@@ -817,5 +817,8 @@
   "/stations/kiss-fm-100-4/": "/stations/kiss-fm-100-4-karditsa/",
   "/stations/mousiko-kanali-105-1-heraclion/": "/stations/mousiko-kanali-crete/",
   "/stations/radio-must-athens/": "/stations/must-athens/",
-  "/stations/must-x/": "/stations/must-x-gr-athens/"
+  "/stations/must-x/": "/stations/must-x-gr-athens/",
+  "/stations/downtuned/": "/stations/downtuned-radio/",
+  "/stations/fresh-salad-thessaloniki/": "/stations/minore-961/",
+  "/stations/kosmos-100-chalkida-ba96209c/": "/stations/kosmos-100-chalkida/"
 }

@@ -3914,7 +3914,7 @@
     "name": "Ble.fm",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://radio.lancom.gr:8004/stream1",
+    "stream_url": "https://radio.lancom.gr:9006/stream1",
     "homepage": "https://ble.fm/",
     "favicon": "/station-icons/gr/ble-fm-thessaloniki.webp",
     "genres": [
@@ -3930,8 +3930,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://radio.lancom.gr:8004/status-json.xsl?mount=%2Fstream1",
-    "metadata_server": "icecast",
     "formats": [
       "greek-language music",
       "mainstream"
@@ -3950,11 +3948,7 @@
         "label": "Alternative",
         "url": "http://radio.lancom.gr:8006/stream1",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1,
-        "nowplaying_url": "http://radio.lancom.gr:8006/status-json.xsl?mount=%2Fstream1",
-        "metadata_server": "icecast"
+        "codec": "MP3"
       }
     ]
   },
@@ -5397,12 +5391,12 @@
   {
     "slug": "cosmoradio-95-1-thessaloniki",
     "stationuuid": "960d1eb6-0601-11e8-ae97-52543be04c81",
-    "name": "Cosmoradio 95,1",
+    "name": "Cosmoradio 95.1",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://eco.onestreaming.com:8689/",
+    "stream_url": "https://a.tunzilla.com/http://eco.onestreaming.com:8689/;",
     "homepage": "https://www.cosmoradio.gr/",
-    "favicon": "/station-icons/gr/cosmoradio-95-1-thessaloniki-placeholder.webp",
+    "favicon": "/station-icons/gr/cosmoradio-95-1-thessaloniki.webp",
     "genres": [],
     "language": "greek",
     "bitrate": 128,
@@ -6451,9 +6445,9 @@
     "geo_long": null
   },
   {
-    "slug": "downtuned",
+    "slug": "downtuned-radio",
     "stationuuid": "ae4139e2-2ef2-4fc7-965d-04f129e238a6",
-    "name": "Downtuned",
+    "name": "Downtuned Radio",
     "state": null,
     "city": null,
     "stream_url": "https://free.rcast.net/62232",
@@ -6471,28 +6465,26 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
-  },
-  {
-    "slug": "downtuned-radio",
-    "stationuuid": "d374a5e4-e3be-47cb-98e2-5b386978a1e6",
-    "name": "Downtuned Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "http://195.242.237.14:8020/stream",
-    "homepage": "https://www.downtunedmag.com/",
-    "favicon": "/station-icons/gr/downtuned-radio.png",
-    "genres": [],
-    "language": null,
-    "bitrate": 128,
-    "codec": "AAC+",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 2,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "nowplaying_url": "https://a7.asurahosting.com/api/nowplaying/downtuned_radio",
+    "metadata_server": "azuracast",
+    "metadata_mode": "direct",
+    "history_url": "https://a7.asurahosting.com/api/nowplaying/downtuned_radio",
+    "aliases": [
+      "downtuned"
+    ],
+    "alternate_stationuuids": [
+      "d374a5e4-e3be-47cb-98e2-5b386978a1e6"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "https://a7.asurahosting.com/listen/downtuned_radio/radio.mp3",
+        "bitrate": 128,
+        "codec": "AAC+"
+      }
+    ]
   },
   {
     "slug": "dp-radio-athens",
@@ -6840,12 +6832,15 @@
     "slug": "echo-fm",
     "stationuuid": "7c5f61c8-4270-4c3e-9bda-5c15fda4b543",
     "name": "Echo FM",
-    "state": null,
-    "city": null,
-    "stream_url": "http://online-radio.eu/export/winamp/87702-echo-fm",
+    "state": "South Aegean",
+    "city": "Paros",
+    "stream_url": "https://eco.onestreaming.com/proxy/echoparos/stream",
     "homepage": "https://www.parosradio.gr/",
     "favicon": "/station-icons/gr/echo-fm.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "folk"
+    ],
     "language": null,
     "bitrate": 48,
     "codec": "MP3",
@@ -6855,7 +6850,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "news"
+    ]
   },
   {
     "slug": "echoes-gr-thessaloniki",
@@ -6863,7 +6861,7 @@
     "name": "Echoes.gr",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
+    "stream_url": "https://85.17.75.147:1935/echoes_relay/l-live.stream/playlist.m3u8",
     "homepage": "https://www.echoes.gr/el/home",
     "favicon": "/station-icons/gr/echoes-gr-thessaloniki.png",
     "genres": [],
@@ -6876,7 +6874,9 @@
     "hls": 1,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "echoes-gr-netradio-thessaloniki-thessaloniki",
@@ -6884,7 +6884,7 @@
     "name": "Echoes.gr NetRadio - Thessaloniki",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://85.17.75.146/echoes",
+    "stream_url": "https://85.17.75.146/echoes",
     "homepage": "https://www.echoes.gr/",
     "favicon": "/station-icons/gr/echoes-gr-netradio-thessaloniki-thessaloniki.webp",
     "genres": [],
@@ -6897,7 +6897,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "ecobeat-gr-karditsa",
@@ -8609,8 +8611,8 @@
     "name": "Euro Sky 100.4",
     "state": "Eastern Macedonia and Thrace",
     "city": "Orestiada",
-    "stream_url": "http://cast4.magicstreams.gr:10155/;stream.mp3",
-    "homepage": "https://www.facebook.com/profile.php?id=1399631302",
+    "stream_url": "https://tls-chrome.live24.gr/46?http://cast4.magicstreams.gr:10155/;stream.mp3",
+    "homepage": "https://www.facebook.com/EUROSKY100.4/",
     "favicon": "/station-icons/gr/euro-sky-100-4-orestiada.png",
     "genres": [
       "folk",
@@ -9591,14 +9593,14 @@
     "geo_long": null
   },
   {
-    "slug": "fresh-salad-thessaloniki",
+    "slug": "minore-961",
     "stationuuid": "9d1075bc-fb58-4185-94dc-18c7a9224dd1",
-    "name": "Fresh Salad",
+    "name": "Μινόρε 96.1",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://178.33.135.246:5262/stream",
-    "homepage": "https://www.freshsalad.gr/",
-    "favicon": "/station-icons/gr/fresh-salad-thessaloniki.png",
+    "stream_url": "https://eu3.fastcast4u.com/proxy/nmarog00?mp=/1",
+    "homepage": "https://www.minore961.gr/el/",
+    "favicon": "/station-icons/gr/fresh-salad-thessaloniki.webp",
     "genres": [
       "pop"
     ],
@@ -9615,6 +9617,18 @@
     "formats": [
       "greek-language music",
       "mainstream"
+    ],
+    "aliases": [
+      "fresh-salad-thessaloniki"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-alternative",
+        "label": "Alternative",
+        "url": "http://178.33.135.246:5262/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -9828,8 +9842,7 @@
         "label": "Alternative",
         "url": "https://galaxy.live24.gr/galaxy9292",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0
+        "codec": "MP3"
       }
     ]
   },
@@ -10243,7 +10256,7 @@
     "name": "Giga FM 105.4",
     "state": "Epirus",
     "city": "Ioannina",
-    "stream_url": "http://s46.myradiostream.com/:7322/listen.mp3",
+    "stream_url": "https://s46.myradiostream.com/:7322/listen.mp3",
     "homepage": "https://www.gigafm.gr/",
     "favicon": "/station-icons/gr/giga-105-4-ioannina.jpg",
     "genres": [
@@ -10261,7 +10274,9 @@
     "geo_long": null,
     "formats": [
       "mainstream"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "glenti-892-agrinio",
@@ -10401,7 +10416,7 @@
     "name": "Graceland",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://s1.nexuscast.com:8133/;",
+    "stream_url": "https://s1.nexuscast.com:8133/;",
     "homepage": "https://www.facebook.com/graceland.greece/",
     "favicon": "/station-icons/gr/graceland-athens.png",
     "genres": [
@@ -10419,7 +10434,9 @@
     "geo_long": null,
     "formats": [
       "oldies"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "grande-rock",
@@ -11381,7 +11398,7 @@
     "name": "Ikaria 87.6",
     "state": null,
     "city": null,
-    "stream_url": "http://stream.radio-ikaria.gr:8000/;",
+    "stream_url": "https://stream.radio-ikaria.gr:8000/;",
     "homepage": "https://www.radio-ikaria.gr/",
     "favicon": "/station-icons/gr/ikaria.webp",
     "genres": [],
@@ -11397,7 +11414,9 @@
     "geo_long": null,
     "formats": [
       "news"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "ikariaki",
@@ -11596,7 +11615,7 @@
     "name": "Ionio 99.9",
     "state": "Epirus",
     "city": "Preveza",
-    "stream_url": "http://167.114.131.90:5192/;listen.pls",
+    "stream_url": "https://167.114.131.90:5192/;listen.pls",
     "homepage": "https://www.facebook.com/radioionio/",
     "favicon": "/station-icons/gr/ionio-99-9-preveza.jpg",
     "genres": [
@@ -11614,7 +11633,9 @@
     "geo_long": null,
     "formats": [
       "mainstream"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "ionion-95-5-pirgos",
@@ -12136,7 +12157,7 @@
     "name": "Katara",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://www.katrafm.net:9000/live",
+    "stream_url": "https://www.katrafm.net:9000/live",
     "homepage": "https://www.facebook.com/Kataragr-244167062288548/?ref=page_internal",
     "favicon": "/station-icons/gr/katara.png",
     "genres": [
@@ -12151,7 +12172,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "katerini-gas-katerini",
@@ -12159,7 +12182,7 @@
     "name": "Katerini Gas",
     "state": "Central Macedonia",
     "city": "Katerini",
-    "stream_url": "http://radio.katerinigas.gr:8000/;",
+    "stream_url": "https://a.tunzilla.com/http://radio.katerinigas.gr:8000/;",
     "homepage": "https://www.katerinigas.gr/",
     "favicon": "/station-icons/gr/katerini-gas-katerini.webp",
     "genres": [],
@@ -12633,7 +12656,7 @@
     "name": "Kiss MJT 101.5",
     "state": "North Aegean",
     "city": "Lesvos",
-    "stream_url": "http://eco.onestreaming.com:8550/;",
+    "stream_url": "https://a.tunzilla.com/http://eco.onestreaming.com:8550/;",
     "homepage": "https://www.kissmjt.gr/",
     "favicon": "/station-icons/gr/kiss-mjt-101-5-lesvos-placeholder.webp",
     "genres": [
@@ -12911,10 +12934,10 @@
   {
     "slug": "kosmos-100-chalkida",
     "stationuuid": "9c39439d-86a1-49d7-ad4e-638dd3e6ee25",
-    "name": "Kosmos 100",
+    "name": "Kosmos FM 100",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "http://s1.onweb.gr:8856/;",
+    "stream_url": "https://sh.onweb.gr/8856/;",
     "homepage": "https://kosmos100.gr/",
     "favicon": "/station-icons/gr/kosmos-100-chalkida.webp",
     "genres": [
@@ -12932,34 +12955,15 @@
     "geo_lat": null,
     "geo_long": null,
     "formats": [
-      "greek-language music"
-    ]
-  },
-  {
-    "slug": "kosmos-100-chalkida-ba96209c",
-    "stationuuid": "ba96209c-b451-47ed-9b3f-a64c90bdfda1",
-    "name": "Kosmos 100",
-    "state": "Central Greece",
-    "city": "Chalkida",
-    "stream_url": "https://sh.onweb.gr/8856/;",
-    "homepage": "https://kosmos100.gr/",
-    "favicon": "/station-icons/gr/kosmos-100-chalkida-ba96209c.gif",
-    "genres": [
-      "pop"
-    ],
-    "language": "greek",
-    "bitrate": 64,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 7,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
+      "greek-language music",
       "news",
       "talk"
+    ],
+    "aliases": [
+      "kosmos-100-chalkida-ba96209c"
+    ],
+    "alternate_stationuuids": [
+      "ba96209c-b451-47ed-9b3f-a64c90bdfda1"
     ]
   },
   {
@@ -15647,7 +15651,7 @@
     "name": "Mikis Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://radio.hostchefs.net:8046/stream?1520818130148",
+    "stream_url": "https://a.tunzilla.com/http://radio.hostchefs.net:8046/stream",
     "homepage": "https://mikisradio.gr/",
     "favicon": "/station-icons/gr/mikis-radio.webp",
     "genres": [],
@@ -15705,10 +15709,10 @@
   {
     "slug": "miniwatt-1125-athens",
     "stationuuid": "beb41915-15a4-4585-9c7d-861ad5975f1f",
-    "name": "MiniWatt 1125",
+    "name": "MiniWatt Radio 1125",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://solid1.streamupsolutions.com:11003/live",
+    "stream_url": "https://a.tunzilla.com/http://solid1.streamupsolutions.com:11003/live",
     "homepage": "https://radiominiwatt.blogspot.com/",
     "favicon": "/station-icons/gr/miniwatt-1125-athens.webp",
     "genres": [
@@ -15754,9 +15758,9 @@
   {
     "slug": "minore-96-1-thessaloniki",
     "stationuuid": "ea46bae3-3e29-403d-a6e5-505a74bcc260",
-    "name": "Minore 96,1",
+    "name": "Minore 96.1",
     "state": "Central Macedonia",
-    "city": "Nea Kallikrateia",
+    "city": "Thessaloniki",
     "stream_url": "https://eu3.fastcast4u.com/proxy/nmarog00?mp=/1",
     "homepage": "https://www.minore961.gr/",
     "favicon": "/station-icons/gr/minore-96-1-thessaloniki.webp",
@@ -15902,13 +15906,16 @@
   {
     "slug": "molonoti-radio",
     "stationuuid": "7b5eebc4-689a-467f-97d0-29e3bfc6f91a",
-    "name": "Molonoti Radio",
-    "state": null,
-    "city": null,
-    "stream_url": "http://molonotiradio.gr:8000/molonoti-radio-stream",
+    "name": "Imera FM 90.4 By Molonoti.gr",
+    "state": "Western Greece",
+    "city": "Patras",
+    "stream_url": "https://a.tunzilla.com/http://molonotiradio.gr:8000/molonoti-radio-stream",
     "homepage": "https://molonotiradio.gr/",
     "favicon": "/station-icons/gr/molonoti-radio.webp",
-    "genres": [],
+    "genres": [
+      "jazz",
+      "blues"
+    ],
     "language": null,
     "bitrate": 320,
     "codec": "MP3",
@@ -16051,10 +16058,10 @@
   {
     "slug": "morias-korinthos",
     "stationuuid": "196b1a5a-a084-498e-9c73-c40cee763415",
-    "name": "Morias",
+    "name": "Morias 102.7",
     "state": "Peloponnese",
     "city": "Korinthos",
-    "stream_url": "http://live.e-streaming.eu:8120/;",
+    "stream_url": "https://stream.radiomorias.gr/stream",
     "homepage": "https://www.radiomorias.gr/",
     "favicon": "/station-icons/gr/morias-korinthos.ico",
     "genres": [
@@ -16859,10 +16866,10 @@
   {
     "slug": "mykonos-98-1-mykonos",
     "stationuuid": "6e7c812d-252c-4aca-840f-cbc2b35f3229",
-    "name": "Mykonos 98.1",
+    "name": "Mykonos FM 98.1",
     "state": "South Aegean",
     "city": "Mykonos",
-    "stream_url": "http://radio.streamings.gr:8007/stream",
+    "stream_url": "https://radio.streamings.gr/proxy/mykonosfm981?mp=/stream",
     "homepage": "https://www.mykonosfm981.gr/",
     "favicon": "/station-icons/gr/mykonos-98-1-mykonos-placeholder.webp",
     "genres": [
@@ -17978,7 +17985,7 @@
     "name": "Orthodoxia kai Paradosi",
     "state": "Western Macedonia",
     "city": "Siatista",
-    "stream_url": "http://radio.lts-group.eu:52390/ANS",
+    "stream_url": "https://a.tunzilla.com/http://radio.lts-group.eu:52390/ANS",
     "homepage": "https://siatistaagiosnikolaos.gr/%CF%81%CE%B1%CE%B4%CE%B9%CF%8C%CF%86%CF%89%CE%BD%CE%BF/",
     "favicon": "/station-icons/gr/orthodoxia-kai-paradosi.webp",
     "genres": [
@@ -27521,7 +27528,7 @@
     "name": "Rock Station",
     "state": null,
     "city": null,
-    "stream_url": "http://89.163.217.252:9898/stream?type=http&amp;nocache=8",
+    "stream_url": "https://89.163.217.252:9898/stream",
     "homepage": "https://www.rockstation.gr/",
     "favicon": "/station-icons/gr/rock-station-placeholder.webp",
     "genres": [
@@ -27536,7 +27543,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "rockarolla-radio-athens-greece",
@@ -27591,10 +27600,10 @@
   {
     "slug": "rodon-95-serres",
     "stationuuid": "aa459c4f-d41f-47bb-b921-f02d2400308f",
-    "name": "Rodon 95",
+    "name": "Rodon FM 95",
     "state": "Central Macedonia",
     "city": "Serres",
-    "stream_url": "http://live3.istoikona.net:8324/stream",
+    "stream_url": "https://eco.onestreaming.com/proxy/rodonfm/stream",
     "homepage": "https://rodonfm.net/",
     "favicon": "/station-icons/gr/rodon-95-serres.png",
     "genres": [
@@ -27613,7 +27622,16 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://live3.istoikona.net:8324/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
+    ]
   },
   {
     "slug": "rodos-fm-rhodes",
@@ -27729,7 +27747,7 @@
     "name": "RSO 91.7",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://tachyon.shoutca.st:8594/stream",
+    "stream_url": "https://rso917greece.radioca.st/;",
     "homepage": "https://www.rso.gr/",
     "favicon": "/station-icons/gr/rso-91-7-thessaloniki-thessaloniki.png",
     "genres": [
@@ -27758,11 +27776,9 @@
       {
         "id": "alternative-1",
         "label": "Alternative",
-        "url": "https://rso917greece.radioca.st/;",
+        "url": "http://tachyon.shoutca.st:8594/stream",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1
+        "codec": "MP3"
       }
     ]
   },
@@ -28083,7 +28099,7 @@
     "name": "Scanner 102.2",
     "state": "Thessaly",
     "city": "Larissa",
-    "stream_url": "http://s1.onweb.gr:8074/stream",
+    "stream_url": "https://sh.onweb.gr/8074/stream",
     "homepage": "https://www.scannerfm.gr/",
     "favicon": "/station-icons/gr/scanner-102-2-larisa.webp",
     "genres": [
@@ -28107,10 +28123,9 @@
       {
         "id": "mp3-128-https",
         "label": "Alternative",
-        "url": "https://sh.onweb.gr/8074/stream",
+        "url": "http://s1.onweb.gr:8074/stream",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0
+        "codec": "MP3"
       }
     ]
   },
@@ -28494,10 +28509,10 @@
   {
     "slug": "siatista-95-7-kozani",
     "stationuuid": "fd969266-ae35-4918-b1a8-ff6dff0aaeb4",
-    "name": "Siatista 95.7",
+    "name": "Radio Siatista 95.7",
     "state": "Western Macedonia",
     "city": "Kozani",
-    "stream_url": "http://eco.onestreaming.com:8606/;",
+    "stream_url": "https://eco.onestreaming.com/proxy/radiosiatistas/stream",
     "homepage": "https://www.radiosiatista.gr/",
     "favicon": "/station-icons/gr/siatista-95-7-kozani.png",
     "genres": [
@@ -28546,14 +28561,16 @@
   {
     "slug": "silibre-athens",
     "stationuuid": "9af96394-7dd7-4680-bb11-481f543099d3",
-    "name": "Silibre",
+    "name": "Silibre Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://89.163.217.252/8010/stream",
+    "stream_url": "https://shoutcast.k-planet.eu:10951/stream",
     "homepage": "https://www.silibre.gr/",
     "favicon": "/station-icons/gr/silibre-athens-placeholder.webp",
     "genres": [
-      "pop"
+      "pop",
+      "dance",
+      "electronic"
     ],
     "language": "greek",
     "bitrate": 128,
@@ -28633,11 +28650,11 @@
   {
     "slug": "sitia-95-5-sitia",
     "stationuuid": "89a633f0-0649-411d-a7dc-90277c413338",
-    "name": "Sitia 95.5",
+    "name": "Sitia FM 95.5",
     "state": "Crete",
     "city": "Sitia",
-    "stream_url": "http://sitiafm.no-ip.info:8000/;",
-    "homepage": "https://www.sitiafm.blogspot.gr/",
+    "stream_url": "https://tls-chrome.live24.gr/1515?http://sitiafm.no-ip.info:8000/;listen.pls",
+    "homepage": "https://sitiafm.blogspot.com/",
     "favicon": "/station-icons/gr/sitia-95-5-sitia-placeholder.webp",
     "genres": [
       "jazz",
@@ -28714,7 +28731,7 @@
     "name": "Skai Kritis",
     "state": "Crete",
     "city": "Heraklion",
-    "stream_url": "http://sc2.streamwithq.com:8056/stream",
+    "stream_url": "https://sc2.streamwithq.com:8056/stream",
     "homepage": "https://www.skaikritis.gr/",
     "favicon": "/station-icons/gr/skai-kritis-heraclion.webp",
     "genres": [
@@ -28734,15 +28751,24 @@
     "formats": [
       "news",
       "talk"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "https://sc2.streamwithq.com:2000/stream/SkaiKritis",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
     "slug": "skai-patras-patra",
     "stationuuid": "01fef817-0744-4e52-adcf-795cc4ca5a3a",
-    "name": "Skai Patras",
+    "name": "Skai Patras 89.4 FM",
     "state": "Western Greece",
     "city": "Patras",
-    "stream_url": "http://i.streams.ovh:9519/stream",
+    "stream_url": "https://i.streams.ovh/sc/skaipatras/stream",
     "homepage": "https://www.skaipatras.gr/",
     "favicon": "/station-icons/gr/skai-patras-patra.png",
     "genres": [],
@@ -28875,7 +28901,7 @@
     "name": "Sky 100.7",
     "state": "Eastern Macedonia and Thrace",
     "city": "Orestiada",
-    "stream_url": "http://sc2.streamwithq.com:8060/;",
+    "stream_url": "https://tls-chrome.live24.gr/1531?http://sc2.streamwithq.com:8060/;",
     "homepage": "https://sky1007.gr/",
     "favicon": "/station-icons/gr/sky-100-7-orestiada.png",
     "genres": [
@@ -29083,7 +29109,7 @@
     "name": "Smart 104.5",
     "state": "Crete",
     "city": "Heraklion",
-    "stream_url": "http://smartradio1045.live24.gr/smartradio1045",
+    "stream_url": "https://smartradio1045.live24.gr/smartradio1045",
     "homepage": "https://www.smartradio.gr/",
     "favicon": "/station-icons/gr/smart-104-5-heraclion.png",
     "genres": [
@@ -29100,7 +29126,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "smok-web-radio",
@@ -29516,7 +29544,7 @@
   {
     "slug": "star-929-argolida",
     "stationuuid": "20bdbeda-02de-4155-80c4-a53cfb0bc7bc",
-    "name": "Star 929",
+    "name": "Star 92.9",
     "state": "Peloponnese",
     "city": "Argolida",
     "stream_url": "https://netradio.live24.gr/star929-nauplio",
@@ -29543,10 +29571,10 @@
   {
     "slug": "star-93-3-grevena",
     "stationuuid": "bd80e484-878d-41e8-927f-1c1e9fe9e727",
-    "name": "Star 93.3",
+    "name": "Star FM 93.3",
     "state": "Western Macedonia",
     "city": "Grevena",
-    "stream_url": "http://proradio.gr:8004/star933",
+    "stream_url": "https://stream3.proradio.gr/listen/star933/star933",
     "homepage": "https://www.star-fm.gr/",
     "favicon": "/station-icons/gr/star-93-3-grevena.gif",
     "genres": [
@@ -29572,6 +29600,15 @@
     ],
     "alternate_stationuuids": [
       "994676b2-d69a-4847-a718-21829e21f039"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "https://stream3.proradio.gr/listen/star933/star933mobile",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -29767,10 +29804,10 @@
   {
     "slug": "star-lamia",
     "stationuuid": "955010b2-6760-4dc1-8ebc-aa9089e5473a",
-    "name": "Star Λαμία",
+    "name": "Star FM 97.1",
     "state": "Central Greece",
     "city": "Lamia",
-    "stream_url": "http://eco.onestreaming.com:8434/stream",
+    "stream_url": "https://streaming-01.cloudbox.gr/listen/starfm/stream",
     "homepage": "https://tvstar.gr/",
     "favicon": "/station-icons/gr/star-lamia.png",
     "genres": [
@@ -29790,7 +29827,17 @@
       "greek-language music",
       "news",
       "talk"
+    ],
+    "streams": [
+      {
+        "id": "alternative-1",
+        "label": "Alternative",
+        "url": "http://eco.onestreaming.com:8434/stream",
+        "bitrate": 96,
+        "codec": "MP3"
+      }
     ]
+
   },
   {
     "slug": "status-107-7-thessaloniki",
@@ -30029,7 +30076,7 @@
     "name": "Stone Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://eu4.fastcast4u.com:5248/;stream.mp3",
+    "stream_url": "https://a.tunzilla.com/http://eu4.fastcast4u.com:5248/;stream.mp3",
     "homepage": "http://www.stoneradio.gr/",
     "favicon": "/station-icons/gr/stone-radio-962faec2.png",
     "genres": [
@@ -30072,19 +30119,17 @@
         "label": "Alternative",
         "url": "http://eu4.fastcast4u.com:5248/;&type=mp3",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1
+        "codec": "MP3"
       }
     ]
   },
   {
     "slug": "stoxos-thasos",
     "stationuuid": "4ea557ef-b9d5-4de8-b48e-9d37f8bfc5fc",
-    "name": "Stoxos Θάσος",
+    "name": "Stoxos FM",
     "state": "Eastern Macedonia and Thrace",
     "city": "Thasos",
-    "stream_url": "http://s3.onweb.gr:8016/stream",
+    "stream_url": "https://a.tunzilla.com/http://s3.onweb.gr:8016/stream",
     "homepage": "https://www.stoxosfm.gr/",
     "favicon": "/station-icons/gr/stoxos-thasos.webp",
     "genres": [
@@ -30417,7 +30462,7 @@
     "name": "Studio E 103",
     "state": "Epirus",
     "city": "Ioannina",
-    "stream_url": "http://music.1host.gr:9045/stream/",
+    "stream_url": "https://music.1host.gr:9045/stream/",
     "homepage": "https://studioe.gr/",
     "favicon": "/station-icons/gr/studio-e-103-ioannina.png",
     "genres": [],
@@ -30433,7 +30478,9 @@
     "geo_long": null,
     "formats": [
       "sports talk"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "studio-fm-94-4-trikala",
@@ -30465,10 +30512,10 @@
   {
     "slug": "studio-980-rethimno",
     "stationuuid": "82b18b89-4687-4940-a982-6fcf1e8dc468",
-    "name": "Studio Ρέθυμνο 980",
+    "name": "Studio Ρέθυμνο 98.0",
     "state": "Crete",
     "city": "Rethimno",
-    "stream_url": "http://sc2.streamwithq.com:8120/;",
+    "stream_url": "https://sc2.streamwithq.com:2000/stream/studio980/stream",
     "homepage": "https://studio980.gr/",
     "favicon": "/station-icons/gr/studio-980-rethimno.png",
     "genres": [
@@ -30662,10 +30709,10 @@
   {
     "slug": "super-90-4-heraclion",
     "stationuuid": "44d155f7-50b4-457b-8314-36b884321da9",
-    "name": "Super 90.4",
+    "name": "Super 904 FM",
     "state": "Crete",
     "city": "Heraklion",
-    "stream_url": "http://dione.shoutca.st:8530/;?1644228381005",
+    "stream_url": "https://super904-spirosb.radioca.st/;",
     "homepage": "https://www.super904.gr/",
     "favicon": "/station-icons/gr/super-90-4-heraclion.png",
     "genres": [
@@ -30711,11 +30758,11 @@
   {
     "slug": "super-fm-chania-crete",
     "stationuuid": "2e2cfb03-6f71-11e9-af37-52543be04c81",
-    "name": "Super FM Chania",
+    "name": "ZARPA RADIO 89.6",
     "state": "Crete",
     "city": null,
-    "stream_url": "http://s3.onweb.gr:8454/",
-    "homepage": "https://superfm896.gr/",
+    "stream_url": "https://sh.onweb.gr/8454/stream/",
+    "homepage": "https://www.zarparadio.gr//",
     "favicon": "/station-icons/gr/super-fm-chania-crete.png",
     "genres": [],
     "language": "greek",
@@ -31289,7 +31336,7 @@
     "name": "To Pikap Radio",
     "state": "Central Macedonia",
     "city": "Thessaloniki",
-    "stream_url": "http://comet.shoutca.st:8430/live",
+    "stream_url": "https://a.tunzilla.com/http://comet.shoutca.st:8430/live",
     "homepage": "https://www.topikap.gr/",
     "favicon": "/station-icons/gr/to-pikap-thessaloniki.jpg",
     "genres": [
@@ -31362,7 +31409,7 @@
     "name": "DOD Sports",
     "state": "South Aegean",
     "city": "Rhodes",
-    "stream_url": "http://live3.istoikona.com:8376/;",
+    "stream_url": "https://live3.istoikona.com:8376/;",
     "homepage": "https://www.fmtop.gr/",
     "favicon": "/station-icons/gr/dod-sports.webp",
     "genres": [],
@@ -31410,10 +31457,10 @@
   {
     "slug": "top-106-5-chania",
     "stationuuid": "d91248a1-2322-4d8b-952d-c7758d79adc7",
-    "name": "Top 106.5",
+    "name": "Top FM 106.5",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://sc2.streamwithq.com:8086/stream",
+    "stream_url": "https://sc2.streamwithq.com:8086/stream",
     "homepage": "https://www.topfm1065.gr/",
     "favicon": "/station-icons/gr/top-106-5-chania.png",
     "genres": [
@@ -31431,7 +31478,10 @@
     "geo_long": null,
     "nowplaying_url": "http://sc2.streamwithq.com:8086/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://sc2.streamwithq.com:8086/played?sid=1&type=json"
+    "history_url": "http://sc2.streamwithq.com:8086/played?sid=1&type=json",
+    "formats": [
+      "top 40"
+    ]
   },
   {
     "slug": "top-93-patra",
@@ -31487,12 +31537,15 @@
     "slug": "traffic-fm-91-8",
     "stationuuid": "d74721c4-c315-4008-8663-9757d477ae43",
     "name": "Traffic FM 91.8",
-    "state": null,
-    "city": null,
-    "stream_url": "http://s5.onweb.gr:8506/listen.pls",
+    "state": "Crete",
+    "city": "Malia",
+    "stream_url": "https://tls-chrome.live24.gr/1136?http://s5.onweb.gr:8506/;type=mp3",
     "homepage": "https://www.trafficfm.gr/",
     "favicon": "/station-icons/gr/traffic-fm-91-8.ico",
-    "genres": [],
+    "genres": [
+      "dance",
+      "pop"
+    ],
     "language": null,
     "bitrate": 96,
     "codec": "MP3",
@@ -31742,10 +31795,10 @@
   {
     "slug": "up-92-9-heraclion",
     "stationuuid": "8a2c4187-bb3f-42e3-8a21-b4fe862e7a7f",
-    "name": "Up 92.9",
+    "name": "Up 92.9 FM",
     "state": "Crete",
     "city": "Heraklion",
-    "stream_url": "http://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+    "stream_url": "https://netradio.live24.gr/lampsi929herakleio",
     "homepage": "https://www.929.gr/",
     "favicon": "/station-icons/gr/up-92-9-heraclion.webp",
     "genres": [
@@ -31764,6 +31817,15 @@
     "formats": [
       "greek-language music",
       "mainstream"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-alternative-1",
+        "label": "Alternative http",
+        "url": "http://ice.streamcloud.mediacdn.com/lampsi929herakleio",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -31995,10 +32057,10 @@
   {
     "slug": "venus-91-chania",
     "stationuuid": "2270e382-5d8d-4e6c-a3a7-f1e1f00b576e",
-    "name": "Venus 91",
+    "name": "Venus 91 FM",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://dos.venus91.gr:9100/stream",
+    "stream_url": "https://i3.streams.ovh:9100/stream",
     "homepage": "https://www.facebook.com/Venus-91-fm-chania-162748463736962/",
     "favicon": "/station-icons/gr/venus-91-chania.png",
     "genres": [
@@ -32245,10 +32307,10 @@
   {
     "slug": "volos-98-6-volos",
     "stationuuid": "c85b2a4d-848f-4e46-86cc-f264a111bdbd",
-    "name": "Volos 98.6",
+    "name": "Volos 98.6 FM",
     "state": "Thessaly",
     "city": "Volos",
-    "stream_url": "http://www.gointernet.gr:8014/;stream.mp3",
+    "stream_url": "https://www.gointernet.gr:7012/stream.mp3",
     "homepage": "https://www.volos986.gr/",
     "favicon": "/station-icons/gr/volos-98-6-volos.webp",
     "genres": [
@@ -32275,7 +32337,7 @@
     "name": "Volos Dee Jay 104.5",
     "state": "Thessaly",
     "city": "Volos",
-    "stream_url": "http://cast3.radiohost.ovh:8008/stream",
+    "stream_url": "https://s6.onweb.gr/8450/stream",
     "homepage": "https://www.radiodeejay.gr/",
     "favicon": "/station-icons/gr/volos-dee-jay-104-5-volos-placeholder.webp",
     "genres": [
@@ -32769,7 +32831,7 @@
     "name": "You 98.7",
     "state": "Eastern Macedonia and Thrace",
     "city": "Alexandroupolis",
-    "stream_url": "http://eco.onestreaming.com:8880/stream",
+    "stream_url": "https://eco.onestreaming.com/proxy/youradio/stream",
     "homepage": "https://www.youradio.gr/",
     "favicon": "/station-icons/gr/you-98-7-alexandroupolis.png",
     "genres": [
@@ -32786,10 +32848,17 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://eco.onestreaming.com:8880/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast",
     "formats": [
       "mainstream"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-alternative-1",
+        "label": "Alternative http",
+        "url": "http://eco.onestreaming.com:8880/stream",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -32825,7 +32894,7 @@
     "name": "Zarpa Χανιά",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://s3.onweb.gr:8454/stream",
+    "stream_url": "https://sh.onweb.gr/8454/stream",
     "homepage": "https://zarparadio.gr/",
     "favicon": "/station-icons/gr/zarpa-chania.webp",
     "genres": [
@@ -33069,7 +33138,7 @@
     "name": "Άγιος Οικουμένιος 102",
     "state": "Thessaly",
     "city": "Trikala",
-    "stream_url": "http://s5.onweb.gr:8508/",
+    "stream_url": "https://s5.onweb.gr:8508/",
     "homepage": "https://imtks.gr/",
     "favicon": "/station-icons/gr/102-trikala-greece-placeholder.webp",
     "genres": [],
@@ -33087,7 +33156,9 @@
       "religious",
       "greek-language music",
       "orthodox christian"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "91-1-corfu",
@@ -33095,7 +33166,7 @@
     "name": "Άγιος Σπυρίδων 91.1",
     "state": "Ionian Islands",
     "city": "Corfu",
-    "stream_url": "http://s3.onweb.gr:8462/;",
+    "stream_url": "https://sh.onweb.gr:8462/church.mp3",
     "homepage": "https://imcorfu.gr/",
     "favicon": "/station-icons/gr/91-1-corfu.webp",
     "genres": [],
@@ -33321,7 +33392,7 @@
     "name": "Ακρόαμα 95.5",
     "state": "Peloponnese",
     "city": "Korinthos",
-    "stream_url": "http://live.e-streaming.eu:8100/1",
+    "stream_url": "https://stream.akroamaradio.gr/stream",
     "homepage": "https://akroamaradio.gr/",
     "favicon": "/station-icons/gr/95-5-korinthos.png",
     "genres": [
@@ -33484,10 +33555,10 @@
   {
     "slug": "97-1-almopia",
     "stationuuid": "392d70ec-e82d-47f6-b5d9-24c6216e7dd2",
-    "name": "Αλμωπία 97.1",
+    "name": "Ράδιο Αλμωπία 97.1",
     "state": "Central Macedonia",
     "city": "Almopia",
-    "stream_url": "http://s2.free-shoutcast.com:18132/;stream.mp3",
+    "stream_url": "https://tls-chrome.live24.gr/3124?http://s2.free-shoutcast.com:18132/;stream.mp3",
     "homepage": "https://www.aridaia-gegonota.gr/",
     "favicon": "/station-icons/gr/97-1-almopia.png",
     "genres": [],
@@ -35362,7 +35433,7 @@
     "name": "Ελληνικός 90.3",
     "state": "Central Greece",
     "city": "Livadeia",
-    "stream_url": "http://live.ellinikos.gr:8010/903.mp3",
+    "stream_url": "https://live.sugarweb.gr/903.aac",
     "homepage": "https://www.ellinikos.gr/",
     "favicon": "/station-icons/gr/90-3-livadia.webp",
     "genres": [
@@ -36700,10 +36771,10 @@
   {
     "slug": "102-1-evros",
     "stationuuid": "daceff3e-9406-4f48-8099-6f56fb59ed33",
-    "name": "Θαλασσόλυκος 102.1",
+    "name": "Ράδιο Θαλασσόλυκος 102.1 FM",
     "state": "Eastern Macedonia and Thrace",
     "city": "Evros",
-    "stream_url": "http://sc2.streamwithq.com:8130/;",
+    "stream_url": "https://tls-chrome.live24.gr/3029?http://sc2.streamwithq.com:8130/;",
     "homepage": "https://www.facebook.com/thalassolikosfm/?_rdc=1&_rdr",
     "favicon": "/station-icons/gr/102-1-evros.png",
     "genres": [
@@ -36869,7 +36940,7 @@
     "name": "Ι. Μ. Λαρίσης και Τυρνάβου 96.3",
     "state": "Thessaly",
     "city": "Larissa",
-    "stream_url": "http://in.icss.com.gr:8000/stream_007",
+    "stream_url": "https://a.tunzilla.com/http://in.icss.com.gr:8000/stream_007?raw=1",
     "homepage": "https://imlarisis.gr/",
     "favicon": "/station-icons/gr/96-3-larisa.png",
     "genres": [],
@@ -36919,7 +36990,7 @@
     "name": "Ι.Μ. Αιτωλίας και Ακαρνανίας 106.3",
     "state": "Western Greece",
     "city": "Agrinio",
-    "stream_url": "http://s3.onweb.gr:8038/stream",
+    "stream_url": "https://a.tunzilla.com/http://s3.onweb.gr:8038/stream",
     "homepage": "https://www.imaa.gr/",
     "favicon": "/station-icons/gr/106-3-agrinio.jpg",
     "genres": [],
@@ -36944,7 +37015,7 @@
     "name": "Ι.Μ. Παροναξίας 92.3",
     "state": "South Aegean",
     "city": "Naxos",
-    "stream_url": "http://live.onweb.gr:8212/;",
+    "stream_url": "https://a.tunzilla.com/http://live.onweb.gr:8212/;",
     "homepage": "https://www.i-m-paronaxias.gr/",
     "favicon": "/station-icons/gr/92-3-naxos.png",
     "genres": [],
@@ -36969,7 +37040,7 @@
     "name": "Ι.Μ. Σπάρτης 88.8",
     "state": "Peloponnese",
     "city": "Sparta",
-    "stream_url": "http://s4.onweb.gr:8862/;",
+    "stream_url": "https://a.tunzilla.com/http://s4.onweb.gr:8862/;",
     "homepage": "https://www.immspartis.gr/",
     "favicon": "/station-icons/gr/88-8-sparta.webp",
     "genres": [],
@@ -37001,7 +37072,7 @@
     "name": "Ι.Μ. Τρίκκης Γαρδικίου και Πύλης 102",
     "state": "Thessaly",
     "city": "Trikala",
-    "stream_url": "http://s5.onweb.gr:8508/;",
+    "stream_url": "https://a.tunzilla.com/http://s5.onweb.gr:8508/;",
     "homepage": "https://imtks.gr/",
     "favicon": "/station-icons/gr/102-trikala.jpg",
     "genres": [],
@@ -37076,7 +37147,7 @@
     "name": "Ιερά Μητροπόλη Φθιώτιδος 89.4",
     "state": "Central Greece",
     "city": "Lamia",
-    "stream_url": "http://eco.onestreaming.com:8264/;",
+    "stream_url": "https://eco.onestreaming.com/proxy/imf894/stream",
     "homepage": "https://www.imfth.gr/",
     "favicon": "/station-icons/gr/89-4-lamia-greece.webp",
     "genres": [],
@@ -37736,7 +37807,7 @@
     "name": "Λαϊκό Ραδιόφωνο",
     "state": null,
     "city": null,
-    "stream_url": "http://i2.streams.ovh:7017/;s.mp3",
+    "stream_url": "https://a.tunzilla.com/http://i2.streams.ovh:7017/;s.mp3",
     "homepage": "https://www.laikoradio.eu/",
     "favicon": "/station-icons/gr/station-3e64ce47.jpg",
     "genres": [
@@ -39254,7 +39325,7 @@
     "name": "ΟΚ! Anytime Markets",
     "state": null,
     "city": null,
-    "stream_url": "http://okshop.live24.gr/okshop",
+    "stream_url": "https://a.tunzilla.com/http://okshop.live24.gr/okshop",
     "homepage": "https://www.okmarkets.gr/",
     "favicon": "/station-icons/gr/anytime-markets.jpg",
     "genres": [],
@@ -39354,7 +39425,7 @@
     "name": "Ορθοδοξία και Παράδοση 103",
     "state": "Western Macedonia",
     "city": "Siatista",
-    "stream_url": "http://radio.lts-group.eu:52390/ANS",
+    "stream_url": "https://a.tunzilla.com/http://radio.lts-group.eu:52390/ANS",
     "homepage": "https://siatistaagiosnikolaos.gr/",
     "favicon": "/station-icons/gr/103-siatista-greece.webp",
     "genres": [
@@ -39568,10 +39639,10 @@
   {
     "slug": "105-7-ioannina",
     "stationuuid": "09f935ae-385b-4f80-8e87-15de144b80ce",
-    "name": "Παμβώτις 105.7",
+    "name": "ΡΑΔΙΟ Παμβώτις 105.7 FM",
     "state": "Epirus",
     "city": "Ioannina",
-    "stream_url": "http://iphone.live24.gr/pamvotis1057ioannina",
+    "stream_url": "https://a.tunzilla.com/http://iphone.live24.gr/pamvotis1057ioannina",
     "homepage": "https://el-gr.facebook.com/RadioPambotis1057FmSereoIoannina/?ref=page_internal",
     "favicon": "/station-icons/gr/105-7-ioannina.png",
     "genres": [],
@@ -40258,7 +40329,7 @@
     "name": "Πολύγυρος Χαλκιδική",
     "state": "Central Macedonia",
     "city": "Halkidiki",
-    "stream_url": "http://eco.onestreaming.com:8526/;?1492734743419.mp3",
+    "stream_url": "https://a.tunzilla.com/http://eco.onestreaming.com:8526/;?1492734743419.mp3",
     "homepage": "https://radio.polygyros.gr/",
     "favicon": "/station-icons/gr/halkidiki.webp",
     "genres": [],
@@ -40394,10 +40465,10 @@
   {
     "slug": "99-karditsa",
     "stationuuid": "3366f97e-f616-4ba2-910e-050eb480fa56",
-    "name": "Πρώτο 99",
+    "name": "Πρώτο FM 99.0",
     "state": "Thessaly",
     "city": "Karditsa",
-    "stream_url": "http://s1.onweb.gr:8052/;",
+    "stream_url": "https://tls-chrome.live24.gr/1577?http://s1.onweb.gr:8052/;",
     "homepage": "https://www.facebook.com/Protofm99",
     "favicon": "/station-icons/gr/99-karditsa.png",
     "genres": [
@@ -40518,10 +40589,10 @@
   {
     "slug": "1-chalkida",
     "stationuuid": "5bb25ca9-c6ab-4767-b46d-e33422bda0f1",
-    "name": "Ράδιο 1 Χαλκίδα",
+    "name": "Ράδιο 1 98.1 Χαλκίδα",
     "state": "Central Greece",
     "city": "Chalkida",
-    "stream_url": "http://proradio.gr:8004/radio981m",
+    "stream_url": "https://tls-chrome.live24.gr/1803?http://proradio.gr:8004/radio981m",
     "homepage": "https://www.radio981.gr/",
     "favicon": "/station-icons/gr/1-chalkida-placeholder.webp",
     "genres": [],
@@ -40775,7 +40846,7 @@
     "name": "Ράδιο Δράμα 99.1",
     "state": "Eastern Macedonia and Thrace",
     "city": "Drama",
-    "stream_url": "http://pstnet6.shoutcastnet.com:60160/stream",
+    "stream_url": "https://pstnet6.shoutcastnet.com:60164/stream",
     "homepage": "https://www.facebook.com/www.radiodrama.gr/",
     "favicon": "/station-icons/gr/99-1-drama.png",
     "genres": [
@@ -40822,7 +40893,7 @@
     "name": "Ράδιο Ελπίδα 96.1",
     "state": "Eastern Macedonia and Thrace",
     "city": "Alexandroupolis",
-    "stream_url": "http://eco.onestreaming.com:8564/",
+    "stream_url": "https://eco.onestreaming.com/proxy/elpida1023/stream",
     "homepage": "https://www.imalex.gr/",
     "favicon": "/station-icons/gr/96-1-greece.png",
     "genres": [
@@ -40926,7 +40997,7 @@
     "name": "Ράδιο Κιβωτός 99.2",
     "state": "Central Macedonia",
     "city": "Serres",
-    "stream_url": "http://s3.onweb.gr:8452/;",
+    "stream_url": "https://a.tunzilla.com/http://s3.onweb.gr:8452/;",
     "homepage": "https://www.imsn.gr/",
     "favicon": "/station-icons/gr/99-2-serres.webp",
     "genres": [
@@ -41007,7 +41078,7 @@
     "name": "Ράδιο Μαρτυρία 95.5",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://sc2.streamwithq.com:8006/",
+    "stream_url": "https://sc2.streamwithq.com:2000/stream/martiria",
     "homepage": "https://martiria.imka.gr/",
     "favicon": "/station-icons/gr/95-5-chania-greece.png",
     "genres": [
@@ -41195,7 +41266,7 @@
     "name": "Ραδιοκύματα 102.6",
     "state": "Crete",
     "city": "Rethimno",
-    "stream_url": "http://s8.onweb.gr:8702/;",
+    "stream_url": "https://sh.onweb.gr/8702/;",
     "homepage": "https://www.radiowaves.gr/",
     "favicon": "/station-icons/gr/102-6-rethimno.png",
     "genres": [
@@ -41246,7 +41317,7 @@
     "name": "Ραδιοφράγματα",
     "state": null,
     "city": null,
-    "stream_url": "http://185.86.150.52:8000/live",
+    "stream_url": "https://185.86.150.52:8000/live",
     "homepage": "https://radiofragmata.squat.gr/",
     "favicon": "/station-icons/gr/station-4fa3c805.webp",
     "genres": [
@@ -41262,7 +41333,9 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "campos-97-8-larisa",
@@ -41299,10 +41372,10 @@
   {
     "slug": "101-3-naxos",
     "stationuuid": "94eff28a-f1cd-4e99-b20d-bc97e935d3ba",
-    "name": "Ραδιοφωνία Κυκλαδων 101.3",
+    "name": "Ραδιοφωνία Κυκλαδων 101.3 FM",
     "state": "South Aegean",
     "city": "Naxos",
-    "stream_url": "http://ice.streamcloud.mediacdn.com/rkykladwn",
+    "stream_url": "https://netradio.live24.gr/rkykladwn",
     "homepage": "https://www.facebook.com/pages/%CE%A1%CE%B1%CE%B4%CE%B9%CE%BF%CF%86%CF%89%CE%BD%CE%AF%CE%B1%20%CE%9A%CF%85%CE%BA%CE%BB%CE%AC%CE%B4%CF%89%CE%BD%20101,3%20Fm%20Stereo/417816424952179/",
     "favicon": "/station-icons/gr/101-3-naxos.png",
     "genres": [
@@ -41321,6 +41394,15 @@
     "geo_long": null,
     "formats": [
       "greek-language music"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-alternative-1",
+        "label": "Alternative http",
+        "url": "http://ice.streamcloud.mediacdn.com/rkykladwn",
+        "bitrate": 128,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -41329,7 +41411,7 @@
     "name": "Ραδιοφωνική Λέσχη 97.6",
     "state": "Thessaly",
     "city": "Trikala",
-    "stream_url": "http://s3.onweb.gr:8438/stream",
+    "stream_url": "https://sh.onweb.gr/8438/stream",
     "homepage": "https://www.976.gr/",
     "favicon": "/station-icons/gr/97-6-trikala.jpg",
     "genres": [
@@ -41452,7 +41534,7 @@
     "name": "ΡΣ. Ι.Μ. Αργολίδος 105.2",
     "state": "Peloponnese",
     "city": "Argolis",
-    "stream_url": "http://eco.onestreaming.com:8556/",
+    "stream_url": "https://eco.onestreaming.com/proxy/imargol1052/stream",
     "homepage": "https://www.imargolidos.gr/",
     "favicon": "/station-icons/gr/105-2-argolis-greece.jpg",
     "genres": [],
@@ -41624,8 +41706,8 @@
     "name": "Ρυθμός 94.6",
     "state": "Central Greece",
     "city": "Lamia",
-    "stream_url": "http://sc2.streamwithq.com:8098/;listen.pls",
-    "homepage": "https://www.rythmos946.gr/",
+    "stream_url": "https://sc2.streamwithq.com:2000/stream/Rithmos946",
+    "homepage": "https://live24.gr/radio/generic.jsp?sid=1421",
     "favicon": "/station-icons/gr/94-6-lamia-placeholder.webp",
     "genres": [
       "pop"
@@ -41674,7 +41756,7 @@
     "name": "Ρυθμός 97.4",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://sc2.streamwithq.com:8034/;stream.mp3",
+    "stream_url": "https://sc2.streamwithq.com:8034/;stream.mp3",
     "homepage": "https://rythmosfm974.gr/",
     "favicon": "/station-icons/gr/97-4-chania.webp",
     "genres": [
@@ -41886,10 +41968,10 @@
   {
     "slug": "santorini",
     "stationuuid": "4a06aa78-1352-497f-bf12-111f56fa0ddb",
-    "name": "Σαντορίνη",
+    "name": "Σαντορίνη FM 106.4",
     "state": "South Aegean",
     "city": "Santorini",
-    "stream_url": "http://eco.onestreaming.com:8316/stream",
+    "stream_url": "https://eco.onestreaming.com/proxy/santorini1/stream",
     "homepage": "https://santorinifm.gr/",
     "favicon": "/station-icons/gr/santorini-placeholder.webp",
     "genres": [
@@ -41942,7 +42024,7 @@
     "name": "Σέρρες 98.9",
     "state": "Central Macedonia",
     "city": "Serres",
-    "stream_url": "http://solid33.streamupsolutions.com:32014/stream",
+    "stream_url": "https://tls-chrome.live24.gr/1712?http://solid33.streamupsolutions.com:32014/stream",
     "homepage": "https://www.radioserres.gr/",
     "favicon": "/station-icons/gr/98-9-serres-placeholder.webp",
     "genres": [
@@ -41966,10 +42048,10 @@
   {
     "slug": "93-1-chios",
     "stationuuid": "1659f361-2ffc-49f4-887a-87c451bdb5fb",
-    "name": "Σήμαντρο 93.1",
+    "name": "Σήμαντρο 93.1 FM",
     "state": "North Aegean",
     "city": "Chios",
-    "stream_url": "http://65.108.133.10:8050/;",
+    "stream_url": "https://a.tunzilla.com/http://65.108.133.10:8050/;",
     "homepage": "https://simantrochios.blogspot.com/",
     "favicon": "/station-icons/gr/93-1-chios-placeholder.webp",
     "genres": [],
@@ -41993,7 +42075,7 @@
     "name": "Σκάι Αιγαίου 99.8",
     "state": "North Aegean",
     "city": "Lesvos",
-    "stream_url": "http://live.isol.biz:8500/;stream.nsv",
+    "stream_url": "https://live.isol.biz:8500/;stream.nsv",
     "homepage": "https://www.skaiaegean.gr/",
     "favicon": "/station-icons/gr/99-8-lesvos.jpg",
     "genres": [],
@@ -42009,7 +42091,9 @@
     "geo_long": null,
     "formats": [
       "greek-language music"
-    ]
+    ],
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "skylos-90-fm",
@@ -42081,12 +42165,12 @@
   {
     "slug": "kalambaka",
     "stationuuid": "cae8af84-72f5-469c-84d0-efd351117bf7",
-    "name": "Σταγών Καλαμπάκα",
+    "name": "Σταγών 87.6 Καλαμπάκα",
     "state": "Thessaly",
     "city": "Kalambaka",
-    "stream_url": "http://s1.onweb.gr:8830/stream",
+    "stream_url": "https://sh.onweb.gr/8830/stream",
     "homepage": "https://www.stagonnews.gr/",
-    "favicon": "/station-icons/gr/kalambaka.gif",
+    "favicon": "/station-icons/gr/kalambaka.webp",
     "genres": [
       "folk"
     ],
@@ -42219,10 +42303,10 @@
   {
     "slug": "lesvos-7968b901",
     "stationuuid": "7968b901-5dbc-45ac-9774-2087ac6d330e",
-    "name": "Στο Νησί Λέσβος",
+    "name": "Στο Νησί 99 Λέσβος",
     "state": "North Aegean",
     "city": "Lesvos",
-    "stream_url": "http://eco.onestreaming.com:8165/;",
+    "stream_url": "https://eco.onestreaming.com/proxy/stonisi99/stream",
     "homepage": "https://www.stonisi.gr/",
     "favicon": "/station-icons/gr/lesvos-7968b901.png",
     "genres": [
@@ -42325,10 +42409,10 @@
   {
     "slug": "99-thasos",
     "stationuuid": "790885d1-6f98-4b1f-82fc-d95d984bee8c",
-    "name": "Στόχος 99",
+    "name": "Στόχος 99 FM",
     "state": "Eastern Macedonia and Thrace",
     "city": "Thasos",
-    "stream_url": "http://s3.onweb.gr:8016/stream",
+    "stream_url": "https://a.tunzilla.com/http://s3.onweb.gr:8016/stream",
     "homepage": "https://el-gr.facebook.com/stoxosfm/",
     "favicon": "/station-icons/gr/99-thasos.png",
     "genres": [],
@@ -42443,7 +42527,7 @@
     "name": "Σφαίρα Θεσσαλίας 90.7",
     "state": "Thessaly",
     "city": "Volos",
-    "stream_url": "http://cast3.radiohost.ovh:8243/stream",
+    "stream_url": "https://tls-chrome.live24.gr/190?http://cast3.radiohost.ovh:8243/stream",
     "homepage": "https://www.sfaira.gr/",
     "favicon": "/station-icons/gr/90-7-volos.webp",
     "genres": [],
@@ -42633,10 +42717,10 @@
   {
     "slug": "kythira",
     "stationuuid": "14ad3897-4fc1-4027-8366-231627c71d1b",
-    "name": "Τσιρίγο",
+    "name": "Τσιρίγο FM 105.6",
     "state": "Attica",
     "city": "Kythira",
-    "stream_url": "http://s2.onweb.gr:8622/;",
+    "stream_url": "https://tls-chrome.live24.gr/1527?http://s2.onweb.gr:8622/;",
     "homepage": "https://tsirigofm.blogspot.com/",
     "favicon": "/station-icons/gr/kythira.png",
     "genres": [],
@@ -42661,7 +42745,7 @@
     "name": "Τύρναβος 103.8",
     "state": "Thessaly",
     "city": "Larissa",
-    "stream_url": "http://s3.onweb.gr:8528/;",
+    "stream_url": "https://sh.onweb.gr:7063/;",
     "homepage": "https://www.radiotirnavos.gr/",
     "favicon": "/station-icons/gr/103-8-larisa-placeholder.webp",
     "genres": [
@@ -42737,10 +42821,10 @@
   {
     "slug": "103-7-rethimno",
     "stationuuid": "d8c909fe-d330-4ac8-b50a-d576a580a86a",
-    "name": "Υπάρχω 103.7",
+    "name": "Ράδιο Υπάρχω 103.7",
     "state": "Crete",
     "city": "Rethimno",
-    "stream_url": "http://s4.onweb.gr:8080/;",
+    "stream_url": "https://sh.onweb.gr/8080/;",
     "homepage": "https://el-gr.facebook.com/groups/56325783108/",
     "favicon": "/station-icons/gr/103-7-rethimno.png",
     "genres": [
@@ -42763,10 +42847,10 @@
   {
     "slug": "91-8-chania",
     "stationuuid": "9e17edd3-e9fd-4c0e-a128-43aa3565dbbd",
-    "name": "Φάρος 91.8",
+    "name": "Ράδιο Φάρος 91.8",
     "state": "Crete",
     "city": "Chania",
-    "stream_url": "http://s3.onweb.gr:8012/;",
+    "stream_url": "https://tls-chrome.live24.gr/1238?http://s3.onweb.gr:8012/;listen.pls;",
     "homepage": "https://radiofaros918.gr/",
     "favicon": "/station-icons/gr/91-8-chania.ico",
     "genres": [],
@@ -42788,10 +42872,10 @@
   {
     "slug": "92-messologi",
     "stationuuid": "23f04a0f-8eee-4464-82a2-2e5396b032a0",
-    "name": "Φίλοι του Ραδιοφώνου 92",
+    "name": "Ραδιόφωνο Μεσολογγίου 92",
     "state": "Western Greece",
     "city": "Mesolongi",
-    "stream_url": "http://eco.onestreaming.com:8021/;",
+    "stream_url": "https://eco.onestreaming.com/proxy/mesologgi/stream",
     "homepage": "https://mesradio92.gr/",
     "favicon": "/station-icons/gr/92-messologi.png",
     "genres": [],
@@ -42863,10 +42947,10 @@
   {
     "slug": "heraclion-e7938f98",
     "stationuuid": "e7938f98-3698-4896-abb3-76305df90472",
-    "name": "Χερσόνησος",
+    "name": "Ράδιο Χερσόνησος 97.2 FM",
     "state": "Crete",
     "city": "Heraklion",
-    "stream_url": "http://193.227.111.111:8008/;",
+    "stream_url": "https://www.fmlive.gr/8008/stream",
     "homepage": "https://www.radio972.gr/",
     "favicon": "/station-icons/gr/heraclion-e7938f98.webp",
     "genres": [
@@ -44185,10 +44269,10 @@
   {
     "slug": "discomania-athens",
     "stationuuid": "d4e63d36-5800-4d86-a7ba-aa1190cb5df8",
-    "name": "Discomania",
+    "name": "Discomania Radio",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "http://radio2.discomaniaradio.com:7000/live",
+    "stream_url": "https://a.tunzilla.com/http://radio2.discomaniaradio.com:7000/live",
     "homepage": "https://www.discomania.gr/",
     "favicon": "/station-icons/gr/discomania-athens.webp",
     "genres": [
@@ -44203,7 +44287,11 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null
+    "geo_long": null,
+    "formats": [
+      "90s",
+      "80s"
+    ]
   },
   {
     "slug": "dreamer-thessaloniki-9795c59e",
@@ -45556,7 +45644,7 @@
     "name": "Monahiki Diakonia",
     "state": null,
     "city": null,
-    "stream_url": "http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
+    "stream_url": "https://a.tunzilla.com/http://eco.onestreaming.com:8019/;stream.mp3&&duration=999999999999999999&id=scplayer&autostart=true",
     "homepage": "https://www.impt.gr/radiolive.html",
     "favicon": "/station-icons/gr/monahiki-diakonia.webp",
     "genres": [],
@@ -45658,10 +45746,10 @@
   {
     "slug": "nauagos-net",
     "stationuuid": "57aded39-a6d6-4b15-8f44-81dbc50130f5",
-    "name": "Nauagos.net",
+    "name": "Nauagos Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://radio.streamings.gr:8064/stream",
+    "stream_url": "https://a.tunzilla.com/http://radio.streamings.gr:8064/stream",
     "homepage": "https://nauagos.net/",
     "favicon": "/station-icons/gr/nauagos-net.webp",
     "genres": [
@@ -46904,7 +46992,8 @@
     "stationuuid": "374c5a52-e304-44b4-aa0c-dfd4f9c58e10",
     "name": "tiamo.gr",
     "state": "Attica",
-    "stream_url": "http://i5.streams.ovh:14126/stream",
+    "city": "Aigaleo",
+    "stream_url": "https://i5.streams.ovh:14126/stream",
     "homepage": "https://tiamo.gr/",
     "favicon": "/station-icons/gr/tiamo-gr.webp",
     "genres": [],
@@ -46918,12 +47007,13 @@
     "ssl_error": 1,
     "geo_lat": 37.99830849691911,
     "geo_long": 23.690942202251104,
-    "city": "Aigaleo"
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "top-fm-102-4-south-aegean",
     "stationuuid": "f553bbbc-42e1-4b40-9e97-3e02e0bdda3a",
-    "name": "TOP fm 102.4",
+    "name": "TOP FM 102.4",
     "state": "South Aegean",
     "city": null,
     "stream_url": "https://mcr.streams.gr/listen/topfm1024",
@@ -47099,7 +47189,8 @@
     "stationuuid": "df1d996d-acef-4c3c-8990-f2caf6e04e38",
     "name": "Velvet Groove Radio",
     "state": "Central Greece",
-    "stream_url": "http://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
+    "city": "Nea Artaki",
+    "stream_url": "https://152.53.229.53:8080/listen/velvet_groove_radio/radio.mp3",
     "homepage": "http://152.53.229.53:8080/public/velvet_groove_radio",
     "favicon": "/station-icons/gr/velvet-groove-radio-placeholder.webp",
     "genres": [],
@@ -47113,7 +47204,8 @@
     "ssl_error": 0,
     "geo_lat": 38.5125922433553,
     "geo_long": 23.637245893478397,
-    "city": "Nea Artaki"
+    "status": "offline",
+    "status_checked_at": "2026-10-11"
   },
   {
     "slug": "velvet-jazz-radio",
@@ -47121,8 +47213,8 @@
     "name": "Velvet Jazz Radio",
     "state": null,
     "city": null,
-    "stream_url": "http://152.53.229.53:8000/radio.mp3",
-    "homepage": "http://v2202605357352458399.happysrv.de/velvet-jazz/",
+    "stream_url": "https://a.tunzilla.com/http://152.53.229.53:8000/radio.mp3",
+    "homepage": "https://www.velvetjazzradio.com/",
     "favicon": "/station-icons/gr/velvet-jazz-radio.webp",
     "genres": [
       "jazz",
@@ -47540,7 +47632,7 @@
     "stationuuid": "6e853aa8-5b64-4876-8d2c-cf9d5e7e239d",
     "name": "ΙΕΡΑ ΜΗΤΡΟΠΟΛΗ ΧΑΛΚΙΔΟΣ",
     "state": "Central Greece",
-    "stream_url": "http://212.95.39.229:2740/stream",
+    "stream_url": "https://a.tunzilla.com/http://212.95.39.229:2740/stream",
     "homepage": "https://radioimchalkidos977fm.blogspot.com/",
     "favicon": "/station-icons/gr/chalkida.webp",
     "genres": [],
@@ -47587,7 +47679,7 @@
     "stationuuid": "dd315f35-ee9f-4ec6-a138-8c539452f7b0",
     "name": "Λόφος",
     "state": "North Aegean",
-    "stream_url": "http://radio.myaegean.gr:8000/lofosradio.mp3",
+    "stream_url": "https://a.tunzilla.com/http://radio.myaegean.gr:8000/lofosradio.mp3",
     "homepage": "http://my.aegean.gr/radio/Lesvos/",
     "favicon": "/station-icons/gr/lesvos.webp",
     "genres": [],
