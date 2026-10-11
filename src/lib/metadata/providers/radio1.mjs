@@ -31,5 +31,7 @@ export function parse(payload, context = {}) {
 }
 
 export function history(payload) {
-  return { song_history: songs(payload).reverse().slice(0, 10) };
+  const now = Date.now() / 1000;
+  const played = songs(payload).filter(entry => entry.played_at <= now);
+  return { song_history: played.slice(0, -1).reverse().slice(0, 10) };
 }

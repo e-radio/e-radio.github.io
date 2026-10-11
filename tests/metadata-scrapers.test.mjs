@@ -70,8 +70,8 @@ test('Radio 1 orders songs by Rhodes start time and separates future tracks', ()
  assert.equal(parsed.payload.playing_next.song.title,'Next');
  assert.deepEqual(parsed.payload.upcoming.map(entry => entry.song.title),['Next']);
  const history = parseHistory('radio1',JSON.stringify(feed));
- assert.deepEqual(history.song_history.map(entry => entry.song.title),['Next','Current','Previous']);
- assert.equal(history.song_history[0].played_at,Date.parse('2026-10-08T23:24:23Z') / 1000);
+ assert.deepEqual(history.song_history.map(entry => entry.song.title),['Current','Previous']);
+ assert.equal(history.song_history[0].played_at,Date.parse('2026-10-08T23:21:02Z') / 1000);
  const winter = parseMetadata('radio1',[
   {songName:'Winter',artistName:'Singer',type:'Song',startTime:'09/01/2026 02:21:02'},
  ],{now:Date.parse('2026-01-09T00:22:00Z')});
@@ -525,4 +525,16 @@ test('CentovaCast repairs Windows-1253 Greek metadata represented as Latin-1', (
  assert.equal(parseHistory('centovacast',JSON.stringify(history)).song_history[0].song.artist,'Σταμάτης Σπανουδάκης');
  assert.equal(parseHistory('centovacast',JSON.stringify(history)).song_history[0].song.title,'Θρήνος');
  assert.equal(parseMetadata('centovacast',{type:'result',data:[{track:{title:'Beyoncé'}}]},context).song.title,'Beyoncé');
+});
+test('Radio Ta Asteria keeps readable Greek metadata and skips characters lost at source', () => {
+ const current = {type:'result',data:[{song:'ΓΙΩΡΓΟΣ - ΤΡΑΓΟΥΔΙ',track:{artist:'ΓΙΩΡΓΟΣ',title:'ΤΡΑΓΟΥΔΙ'}}]};
+ assert.equal(parseMetadata('radioasteria',current,context).song.title,'ΤΡΑΓΟΥΔΙ');
+ const brokenCurrent = {type:'result',data:[{song:'t?? Se??? - Se G??e??',track:{artist:'t?? Se???',title:'Se G??e??'}}]};
+ assert.equal(parseMetadata('radioasteria',brokenCurrent,context).text,null);
+ const history = {type:'result',data:[[
+  {artist:'t?? Se???',title:'Se G??e?? ??? ???te?',time:300},
+  {artist:'Unknown',title:'Unknown',time:200},
+  {artist:'ΜΑΡΙΑΝΘΗ ΚΕΦΑΛΑ',title:'ΣΕ ΧΑΝΩ.',time:100},
+ ]]};
+ assert.deepEqual(parseHistory('radioasteria',JSON.stringify(history)).song_history.map(entry => entry.song.title),['ΣΕ ΧΑΝΩ.']);
 });

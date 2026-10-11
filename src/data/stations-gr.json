@@ -857,9 +857,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://r.jina.ai/https://radio1.gr/wp-content/uploads/zeta/latestFeed.json",
+    "nowplaying_url": "https://r.jina.ai/http://radio1.gr/wp-content/uploads/zeta/latestFeed.json",
     "metadata_server": "radio1",
-    "history_url": "https://r.jina.ai/https://radio1.gr/wp-content/uploads/zeta/songHistory.json",
+    "history_url": "https://r.jina.ai/http://radio1.gr/wp-content/uploads/zeta/songHistory.json",
     "formats": [
       "top 40"
     ],
@@ -1524,9 +1524,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://europa.shoutca.st:8721/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "http://europa.shoutca.st:8721/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "news"
@@ -7222,8 +7219,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://live.sugarweb.gr/status-json.xsl?mount=%2F903.aac",
-    "metadata_server": "icecast",
     "formats": [
       "greek-language music"
     ]
@@ -15664,9 +15659,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "http://radio.hostchefs.net:8046/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast"
+    "geo_long": null
   },
   {
     "slug": "minima",
@@ -26266,7 +26259,7 @@
     "geo_lat": null,
     "geo_long": null,
     "nowplaying_url": "https://cast.serverps.gr/rpc/radioasteria/streaminfo.get",
-    "metadata_server": "centovacast",
+    "metadata_server": "radioasteria",
     "history_url": "https://cast.serverps.gr/external/rpc.php?m=recenttracks.get&username=radioasteria&limit=10"
   },
   {
@@ -42705,9 +42698,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://s6.onweb.gr:8004/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "history_url": "https://s6.onweb.gr:8004/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "news",
@@ -44596,9 +44586,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": null,
-    "geo_long": null,
-    "nowplaying_url": "https://solid67.streamupsolutions.com/rpc/wvsivbgn/streaminfo.get",
-    "metadata_server": "centovacast"
+    "geo_long": null
   },
   {
     "slug": "en-lefko-87-7-attica",

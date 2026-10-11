@@ -2,14 +2,5 @@
   "parent": "9c39439d-86a1-49d7-ad4e-638dd3e6ee25",
   "childs": [
     "ba96209c-b451-47ed-9b3f-a64c90bdfda1"
-  ],
-    "streams": [
-      {
-        "id": "mp3-128-alternative-1",
-        "label": "Alternative http",
-        "url": "http://s10.voscast.com:9942/;",
-        "bitrate": 128,
-        "codec": "MP3"
-      }
-    ]
+  ]
 }

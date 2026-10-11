@@ -28,24 +28,26 @@ const description = 'Discover what is playing right now on radio stations with s
   <h1 class="display-5 fw-bold mb-2">{t("Live Tracks")}</h1>
   <p class="lead text-muted">{t("What’s playing right now across {0} stations.", [stations.length])}</p>
   <CategorySwitch current="live-tracks" />
-    <div class="d-flex align-items-center flex-nowrap gap-2 mb-2">
+    <div class="col-12 col-lg-8 mx-auto d-flex align-items-center flex-nowrap gap-2 mb-2">
         <h2 class="h6 mb-0">{t("On Air")}</h2><span class="badge rounded-pill badge-soft-green">{t("Live")}</span>
     </div>
-  <div class="live-track-list">
+  <ul class="live-track-list col-12 col-lg-8 mx-auto list-unstyled mb-0 rounded-3 border border-light-subtle">
     {stations.map(station => (
-      <article class="live-track p-2 px-3" data-server={station.metadata_server} data-endpoint={endpointFor(station)} data-stream={station.stream_url} data-name={station.name}>
-        <img class="track-cover rounded" src={station.favicon || '/radddio-app-icon.png'} data-fallback={station.favicon || '/radddio-app-icon.png'} alt={t(`${station.name} cover artwork`)} width="60" height="60" loading="lazy" />
+      <li class="live-track p-3" data-server={station.metadata_server} data-endpoint={endpointFor(station)} data-stream={station.stream_url} data-name={station.name}>
+        <img class="track-cover rounded" src={station.favicon || '/radddio-app-icon.png'} data-fallback={station.favicon || '/radddio-app-icon.png'} alt={t(`${station.name} cover artwork`)} width="64" height="64" loading="lazy" />
         <div class="track-copy">
           <h3 class="track-title h6 fw-semibold mb-0">{t("Loading song…")}</h3>
-          <p class="text-muted mb-0"><span class="track-artist" /><a href={localizePath(`/stations/${station.slug}/`)} class="text-reset">{station.name}</a>{t(station.city ? ` · ${station.city}` : '')}</p>
-          <span class={`badge rounded-pill me-2 ${station.metadata_server === 'azuracast' ? 'bg-primary-subtle text-primary-emphasis' : 'bg-success-subtle text-success-emphasis'}`}>{t(station.metadata_server === 'azuracast' ? 'AzuraCast' : station.metadata_server === 'radiojar' ? 'Radiojar' : station.metadata_server === 'icecast' ? 'Icecast' : station.metadata_server === 'ellinadiko' ? 'Ellinadiko' : station.metadata_server === 'coolfm' ? 'Cool FM' : station.metadata_server === 'diesi' ? 'Diesi' : station.metadata_server === 'rcast' ? 'Rcast' : station.metadata_server === 'radio1' ? 'Radio 1' : 'CentovaCast')}</span>
-          <span class="track-listeners small text-muted" />
-          <span class="track-status small text-muted" role="status" />
+          <p class="track-artist text-muted mb-0" hidden />
+          <div class="track-source small">
+            <a href={localizePath(`/stations/${station.slug}/`)} class="track-station-link"><i class="bi bi-broadcast me-1" aria-hidden="true" />{station.name}</a>
+            <span class="track-listeners text-muted" hidden />
+            <span class="track-status text-muted" role="status" />
+          </div>
         </div>
         <button class="track-play btn rounded-circle" type="button" aria-label={t(`Play ${station.name}`)}><i class="bi bi-play-fill" aria-hidden="true" /></button>
-      </article>
+      </li>
     ))}
-  </div>
+  </ul>
   <div id="live-metadata-config" data-poll={metadataConfig.pollIntervalMs} data-timeout={metadataConfig.requestTimeoutMs} hidden />
   <audio id="live-tracks-audio" preload="none" />
 </Layout>
@@ -130,7 +132,9 @@ import { clientTranslate as t } from '../i18n/translate';
             updateTrackText(listenersEl, hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '');
             listenersEl.hidden = !hasCount;
             updateTrackText(card.querySelector('.track-title'), song?.title || song?.text || t('Song information unavailable'));
-            updateTrackText(card.querySelector('.track-artist'), song?.artist ? `${song.artist} · ` : '');
+            const artistEl = card.querySelector<HTMLElement>('.track-artist')!;
+            updateTrackText(artistEl, song?.artist || '');
+            artistEl.hidden = !song?.artist;
             const cover = card.querySelector<HTMLImageElement>('img')!;
             const usesFallback = artworkControllers.get(card)!(song?.art);
             const alt = usesFallback ? t(`${card.dataset.name} logo`) : t(`${song?.title || 'Current song'} cover artwork`);
