@@ -95,6 +95,7 @@ type ServerKind =
   | "mustx"
   | "planetlakonias"
   | "radioasteria"
+  | "aiir"
   | "unknown";
 
 const resolveMetadataEndpoints = (inputStreamUrl: string | undefined, stationData: typeof rawStations[0]) => {
@@ -455,6 +456,7 @@ const playerScriptConfig = {
   nowPlayingEndpoint,
   historyEndpoint,
   serverType,
+  metadataServiceId: (station as Station & { metadata_service_id?: string }).metadata_service_id || null,
   appleStoreCountry: site.countryCode,
   pollIntervalMs: Math.max(5000, Number(metadataConfig.pollIntervalMs) || 15000),
   requestTimeoutMs: Math.max(1000, Number(metadataConfig.requestTimeoutMs) || 10000),
@@ -861,6 +863,7 @@ import { clientTranslate as t } from '../../i18n/translate';
     import { parseMetadata, parseHistory, decodeProviderMetadata, artworkUrl, gatherSongHistory } from "../../lib/metadata/index.mjs";
     import { replaceStream } from "../../lib/station-streams.mjs";
     import { createAppleTrackArtwork, hasTrackArtwork } from "../../lib/apple-track-artwork.mjs";
+    import { subscribeAiir } from "../../lib/metadata/aiir-socket.mjs";
 
     const configEl = document.getElementById('player-config');
     const defaultConfig = {
@@ -1517,6 +1520,7 @@ import { clientTranslate as t } from '../../i18n/translate';
     };
 
     let metadataTimer;
+    let stopAiir = null;
     const refreshMetadata = async () => {
       clearTimeout(metadataTimer);
       if (metadataPollInFlight) return;
@@ -1531,9 +1535,20 @@ import { clientTranslate as t } from '../../i18n/translate';
         metadataTimer = setTimeout(refreshMetadata, nextMetadataDelay);
       }
     };
+    const startMetadata = () => {
+      if (playerConfig.serverType !== 'aiir') { refreshMetadata(); return; }
+      if (!playerConfig.metadataServiceId) return;
+      stopAiir = subscribeAiir(playerConfig.metadataServiceId, raw => {
+        const parsed = parseMetadata('aiir', raw, { endpoint: playerConfig.nowPlayingEndpoint });
+        if (parsed.text) updateNowPlayingTrack(parsed.payload, parsed.text);
+        applyRecentTracks(parsed.payload);
+      });
+    };
     const switchMetadata = option => {
       metadataGeneration++;
       clearTimeout(metadataTimer);
+      stopAiir?.();
+      stopAiir = null;
       metadataPollInFlight = false;
       playerConfig.nowPlayingEndpoint = option.nowPlayingEndpoint;
       playerConfig.historyEndpoint = option.historyEndpoint;
@@ -1554,13 +1569,14 @@ import { clientTranslate as t } from '../../i18n/translate';
       if (listeners) { listeners.textContent = ''; listeners.hidden = true; }
       resetHistoryList();
       resetTrackCards();
-      refreshMetadata();
+      startMetadata();
     };
     document.addEventListener('visibilitychange', () => {
       clearTimeout(metadataTimer);
-      if (!document.hidden) refreshMetadata();
+      if (!document.hidden && playerConfig.serverType !== 'aiir') refreshMetadata();
     });
-    refreshMetadata();
+    window.addEventListener('pagehide', () => stopAiir?.());
+    startMetadata();
   </script>
   <style>
     .audio-control-strip {

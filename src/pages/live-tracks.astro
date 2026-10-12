@@ -33,7 +33,7 @@ const description = 'Discover what is playing right now on radio stations with s
     </div>
   <ul class="live-track-list col-12 col-lg-8 mx-auto list-unstyled mb-0 rounded-3 border border-light-subtle">
     {stations.map(station => (
-      <li class="live-track p-3" data-server={station.metadata_server} data-endpoint={endpointFor(station)} data-stream={station.stream_url} data-name={station.name}>
+      <li class="live-track p-3" data-server={station.metadata_server} data-service-id={(station as typeof station & { metadata_service_id?: string }).metadata_service_id} data-endpoint={endpointFor(station)} data-stream={station.stream_url} data-name={station.name}>
         <img class="track-cover rounded" src={station.favicon || '/radddio-app-icon.png'} data-fallback={station.favicon || '/radddio-app-icon.png'} alt={t(`${station.name} cover artwork`)} width="64" height="64" loading="lazy" />
         <div class="track-copy">
           <h3 class="track-title h6 fw-semibold mb-0">{t("Loading song…")}</h3>
@@ -58,6 +58,7 @@ import { clientTranslate as t } from '../i18n/translate';
   import { updateTrackText, trackArtworkController } from '../lib/live-track-view.mjs';
   import { createMetadataFetcher } from '../lib/metadata-fetch.mjs';
   import { metadataPollDelay } from '../lib/metadata-polling.mjs';
+  import { subscribeAiir } from '../lib/metadata/aiir-socket.mjs';
 
 
   const settings = document.querySelector<HTMLElement>('#live-metadata-config')!;
@@ -104,6 +105,7 @@ import { clientTranslate as t } from '../i18n/translate';
   audio.addEventListener('ended', () => { if (active) resetButton(active); active = null; });
   const groups = new Map<string, HTMLElement[]>();
   cards.forEach(card => {
+    if (card.dataset.server === 'aiir') return;
     const endpoint = card.dataset.endpoint!;
     groups.set(endpoint, [...(groups.get(endpoint) || []), card]);
   });
@@ -111,6 +113,28 @@ import { clientTranslate as t } from '../i18n/translate';
   const nextRefresh = new Map<string, number>();
   let refreshing = false;
   let timer: ReturnType<typeof setTimeout>;
+  const applyMetadata = (card: HTMLElement, data: unknown, endpoint: string) => {
+    const parsed = parseMetadata(card.dataset.server, data, { streamUrl: card.dataset.stream, endpoint });
+    const song = parsed.song;
+    const listenersEl = card.querySelector<HTMLElement>('.track-listeners')!;
+    const count = parsed.listeners;
+    const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;
+    updateTrackText(listenersEl, hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '');
+    listenersEl.hidden = !hasCount;
+    updateTrackText(card.querySelector('.track-title'), song?.title || song?.text || t('Song information unavailable'));
+    const artistEl = card.querySelector<HTMLElement>('.track-artist')!;
+    updateTrackText(artistEl, song?.artist || '');
+    artistEl.hidden = !song?.artist;
+    const cover = card.querySelector<HTMLImageElement>('img')!;
+    const usesFallback = artworkControllers.get(card)!(song?.art);
+    const alt = usesFallback ? t(`${card.dataset.name} logo`) : t(`${song?.title || 'Current song'} cover artwork`);
+    if (cover.alt !== alt) cover.alt = alt;
+    card.dataset.loaded = 'true';
+    card.querySelector('.track-title')!.removeAttribute('title');
+  };
+  const stopAiir = cards.filter(card => card.dataset.server === 'aiir' && card.dataset.serviceId)
+    .map(card => subscribeAiir(card.dataset.serviceId, (data: unknown) => applyMetadata(card, data, card.dataset.endpoint!)));
+  window.addEventListener('pagehide', () => stopAiir.forEach(stop => stop()));
   async function refresh() {
     clearTimeout(timer);
     if (document.hidden || refreshing) return;
@@ -124,23 +148,7 @@ import { clientTranslate as t } from '../i18n/translate';
           const delay = Math.min(...entries.map(card => metadataPollDelay(card.dataset.server, data, pollInterval)));
           nextRefresh.set(endpoint, Date.now() + delay);
           for (const card of entries) {
-            const parsed = parseMetadata(card.dataset.server, data, { streamUrl: card.dataset.stream, endpoint });
-            const song = parsed.song;
-            const listenersEl = card.querySelector<HTMLElement>('.track-listeners')!;
-            const count = parsed.listeners;
-            const hasCount = typeof count === 'number' && Number.isInteger(count) && count >= 0;
-            updateTrackText(listenersEl, hasCount ? `${count.toLocaleString()} ${count === 1 ? 'listener' : 'listeners'}` : '');
-            listenersEl.hidden = !hasCount;
-            updateTrackText(card.querySelector('.track-title'), song?.title || song?.text || t('Song information unavailable'));
-            const artistEl = card.querySelector<HTMLElement>('.track-artist')!;
-            updateTrackText(artistEl, song?.artist || '');
-            artistEl.hidden = !song?.artist;
-            const cover = card.querySelector<HTMLImageElement>('img')!;
-            const usesFallback = artworkControllers.get(card)!(song?.art);
-            const alt = usesFallback ? t(`${card.dataset.name} logo`) : t(`${song?.title || 'Current song'} cover artwork`);
-            if (cover.alt !== alt) cover.alt = alt;
-            card.dataset.loaded = 'true';
-            card.querySelector('.track-title')!.removeAttribute('title');
+            applyMetadata(card, data, endpoint);
           }
         } catch {
           nextRefresh.set(endpoint, Date.now() + pollInterval);

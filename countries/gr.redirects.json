@@ -753,7 +753,6 @@
   "/stations/capital-90-7/": "/stations/capital-radio-90-7/",
   "/stations/aquarius-pyrgos/": "/stations/aquarius-fm-105-5/",
   "/stations/alpha-88-6-kavala/": "/stations/alpha-radio-88-6-kavala-kavala/",
-  "/stations/aktina-korinthos/": "/stations/aktina-radio-95/",
   "/stations/venus-105-1-amaliada/": "/stations/venus-fm-105-1-greece/",
   "/stations/venus-amaliada/": "/stations/venus-fm-105-1-greece/",
   "/stations/venus-radio/": "/stations/venus-radio-99-3/",
@@ -820,5 +819,7 @@
   "/stations/must-x/": "/stations/must-x-gr-athens/",
   "/stations/downtuned/": "/stations/downtuned-radio/",
   "/stations/fresh-salad-thessaloniki/": "/stations/minore-961/",
-  "/stations/kosmos-100-chalkida-ba96209c/": "/stations/kosmos-100-chalkida/"
+  "/stations/kosmos-100-chalkida-ba96209c/": "/stations/kosmos-100-chalkida/",
+  "/stations/aktina-korinthos/": "/stations/aktina-radio-95/",
+  "/stations/griechenland-aktina-radio/": "/stations/aktina-radio-95/"
 }

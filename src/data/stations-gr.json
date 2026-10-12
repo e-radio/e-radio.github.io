@@ -1755,7 +1755,8 @@
     "genres": [
       "dance",
       "electronic",
-      "pop"
+      "pop",
+      "rock"
     ],
     "language": "greek",
     "bitrate": 192,
@@ -1768,7 +1769,8 @@
     "geo_lat": null,
     "geo_long": null,
     "aliases": [
-      "aktina-korinthos"
+      "aktina-korinthos",
+      "griechenland-aktina-radio"
     ],
     "streams": [
       {
@@ -1777,13 +1779,26 @@
         "url": "http://live.e-streaming.eu:8110/stream",
         "bitrate": 192,
         "codec": "MP3"
+      },
+      {
+        "id": "alternative-2",
+        "label": "Alternative",
+        "url": "http://live.e-streaming.eu:8110/;",
+        "bitrate": 192,
+        "codec": "MP3"
       }
+    ],
+    "formats": [
+      "public radio"
+    ],
+    "alternate_stationuuids": [
+      "64009925-d98b-4879-a5c5-9f3b8eaea3b3"
     ]
   },
   {
     "slug": "aktina-104-7-corfu",
     "stationuuid": "c3d92ba0-5549-4f04-a8fe-e9ce9c1cb006",
-    "name": "Aktina 104.7",
+    "name": "Aktina FM xx§104.7",
     "state": "Ionian Islands",
     "city": "Corfu",
     "stream_url": "https://sc2.streamwithq.com:2000/stream/Aktina1047",
@@ -1806,7 +1821,7 @@
     "nowplaying_url": "https://sc2.streamwithq.com:2000/json/stream/Aktina1047",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "http://sc2.streamwithq.com:8016/played?sid=1&type=json",
+    "history_url": "https://sc2.streamwithq.com:8016/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "mainstream",
@@ -4132,9 +4147,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/http://cast3.radiohost.ovh:8352/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
+    "metadata_mode": "direct",
+    "history_url": "https://a.tunzilla.com/http://cast3.radiohost.ovh:8352/played?sid=1&type=json",
     "aliases": [
       "blues-radio-2cc1fd64",
       "blues-radio-athens",
@@ -10621,42 +10637,6 @@
     "geo_long": null,
     "formats": [
       "public radio"
-    ]
-  },
-  {
-    "slug": "griechenland-aktina-radio",
-    "stationuuid": "64009925-d98b-4879-a5c5-9f3b8eaea3b3",
-    "name": "Aktina Radio 95",
-    "state": null,
-    "city": null,
-    "stream_url": "https://stream.aktinaradio.gr/stream",
-    "homepage": "https://aktinaradio.gr",
-    "favicon": "/station-icons/gr/griechenland-aktina-radio-placeholder.webp",
-    "genres": [
-      "pop",
-      "rock"
-    ],
-    "language": "greek",
-    "bitrate": 192,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 1,
-    "votes": 14,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null,
-    "formats": [
-      "public radio"
-    ],
-    "streams": [
-      {
-        "id": "mp3-192-alternative",
-        "label": "Alternative",
-        "url": "http://live.e-streaming.eu:8110/;",
-        "bitrate": 192,
-        "codec": "MP3"
-      }
     ]
   },
   {
@@ -27031,6 +27011,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "nowplaying_url": "wss://metadata.aiir.net/now-playing",
+    "metadata_server": "aiir",
+    "metadata_service_id": "3581",
     "streams": [
       {
         "id": "mp3-320-alternative",
@@ -29830,7 +29813,6 @@
         "codec": "MP3"
       }
     ]
-
   },
   {
     "slug": "status-107-7-thessaloniki",

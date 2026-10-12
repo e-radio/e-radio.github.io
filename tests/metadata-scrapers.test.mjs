@@ -538,3 +538,12 @@ test('Radio Ta Asteria keeps readable Greek metadata and skips characters lost a
  ]]};
  assert.deepEqual(parseHistory('radioasteria',JSON.stringify(history)).song_history.map(entry => entry.song.title),['ΣΕ ΧΑΝΩ.']);
 });
+test('AIIR maps RED 96.3 live song, artwork, and previous tracks', () => {
+ const feed = {serviceId:'3581',nowPlaying:{type:'track',title:'Come As You Are',artist:'Nirvana',imageUrl:'https://covers.example/now.jpg'},
+  previouslyPlayed:[{title:'Rock & Roll Queen',artist:'Subways',imageUrl:'https://covers.example/old.jpg'}]};
+ const parsed = parseMetadata('aiir',feed,{endpoint:'wss://metadata.aiir.net/now-playing'});
+ assert.equal(parsed.song.title,'Come As You Are');
+ assert.equal(parsed.song.art,'https://covers.example/now.jpg');
+ assert.deepEqual(parsed.payload.song_history.map(entry => entry.song.title),['Rock & Roll Queen']);
+ assert.equal(parsed.payload.song_history[0].song.art,'https://covers.example/old.jpg');
+});
