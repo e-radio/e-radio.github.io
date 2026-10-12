@@ -43285,6 +43285,32 @@
     "geo_long": null
   },
   {
+    "slug": "melodia-99-2",
+    "stationuuid": "c320801b-7d2f-493b-af29-4f37b83bb112",
+    "name": "Μελωδία 99.2",
+    "state": "Attica",
+    "city": "Athens",
+    "stream_url": "https://stream.rcs.revma.com/8tdwa6ez1duvv",
+    "homepage": "https://www.melodia.gr/",
+    "favicon": "/station-icons/gr/melodia-99-2.webp",
+    "genres": [
+      "pop"
+    ],
+    "language": "greek",
+    "bitrate": 0,
+    "codec": "AAC",
+    "clickcount": 14,
+    "lastcheckok": 1,
+    "votes": 132,
+    "hls": 0,
+    "ssl_error": 0,
+    "geo_lat": 37.967045064643656,
+    "geo_long": 23.733215332031257,
+    "formats": [
+      "greek-language music"
+    ]
+  },
+  {
     "slug": "melodia-patras-100-4",
     "stationuuid": "05444d01-76ef-4dc6-b85b-9b433ee20236",
     "name": "Μελωδία Πάτρας 100.4",
@@ -43308,10 +43334,7 @@
     "geo_long": null,
     "formats": [
       "greek-language music"
-    ],
-    "nowplaying_url": "wss://metadata.aiir.net/now-playing",
-    "metadata_server": "aiir",
-    "metadata_service_id": "3583"
+    ]
   },
   {
     "slug": "03-107-7-patra",
