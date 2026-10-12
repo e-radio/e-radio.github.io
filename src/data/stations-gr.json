@@ -2926,7 +2926,7 @@
     "geo_long": null,
     "nowplaying_url": "https://cast4.magicstreams.gr:12108/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://a.tunzilla.com/https://cast4.magicstreams.gr:12108/played?sid=1&type=json",
+    "history_url": "https://cast4.magicstreams.gr:12108/played?sid=1&type=json",
     "formats": [
       "greek-language music"
     ]
@@ -6107,9 +6107,9 @@
     "ssl_error": 0,
     "geo_lat": 39.639045132131045,
     "geo_long": 22.416679859161377,
-    "nowplaying_url": "https://sh.onweb.gr:9050/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sh.onweb.gr:9050/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://sh.onweb.gr:9050/played?sid=1&type=json"
+    "history_url": "https://a.tunzilla.com/https://sh.onweb.gr:9050/played?sid=1&type=json"
   },
   {
     "slug": "derti-98-6",
@@ -6395,9 +6395,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://s6.e-resellers.gr:8126/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://s6.e-resellers.gr:8126/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://s6.e-resellers.gr:8126/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://s6.e-resellers.gr:8126/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "mainstream"
@@ -6981,9 +6982,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://sc.cast-control.eu:8054/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sc.cast-control.eu:8054/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://sc.cast-control.eu:8054/played?sid=1&type=json"
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://sc.cast-control.eu:8054/played?sid=1&type=json"
   },
   {
     "slug": "ekfrasi",
@@ -7510,9 +7512,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://entasistream.tuc.gr:8000/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://entasistream.tuc.gr:8000/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://entasistream.tuc.gr:8000/played?sid=1&type=json",
     "formats": [
       "variety"
     ]
@@ -12684,7 +12687,7 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/ttp://eco.onestreaming.com:8550/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/http://eco.onestreaming.com:8550/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode":"direct",
     "history_url": "https://a.tunzilla.com/http://eco.onestreaming.com:8550/played?sid=1&type=json"
@@ -13100,9 +13103,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://sh.onweb.gr:8878/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sh.onweb.gr:8878/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://sh.onweb.gr:8878/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://sh.onweb.gr:8878/played?sid=1&type=json",
     "formats": [
       "greek-language music",
       "cukture"
@@ -13190,9 +13194,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://cast.magicstreams.gr:9010/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://cast.magicstreams.gr:9010/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://cast.magicstreams.gr:9010/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://cast.magicstreams.gr:9010/played?sid=1&type=json",
     "formats": [
       "mainstream"
     ]
@@ -13867,9 +13872,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://s6.e-resellers.gr:8088/stats?sid=1&json=1",
-    "history_url": "https://s6.e-resellers.gr:8088/played?sid=1&type=json",
+    "nowplaying_url": "https://a.tunzilla.com/https://s6.e-resellers.gr:8088/stats?sid=1&json=1",
+    "history_url": "https://a.tunzilla.com/https://s6.e-resellers.gr:8088/played?sid=1&type=json",
     "metadata_server": "shoutcast",
+    "metadata_mode":"direct",
     "formats": [
       "greek-language music",
       "mainstream"
@@ -17993,10 +17999,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://eu11.fastcast4u.com:1660/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://eu11.fastcast4u.com:1660/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "https://eu11.fastcast4u.com:1660/played?sid=1&type=json",
+    "history_url": "https://a.tunzilla.com/https://eu11.fastcast4u.com:1660/played?sid=1&type=json",
     "formats": [
       "mainstream"
     ]
@@ -18102,10 +18108,10 @@
     "ssl_error": 0,
     "geo_lat": 40.64605318337046,
     "geo_long": 22.94151306152344,
-    "nowplaying_url": "https://paidaki975.radioca.st/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://paidaki975.radioca.st/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "https://paidaki975.radioca.st/played?sid=1&type=json",
+    "history_url": "https://a.tunzilla.com/https://paidaki975.radioca.st/played?sid=1&type=json",
     "formats": [
       "variety",
       "children"
@@ -18773,10 +18779,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://pathos-spirosb.radioca.st/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://pathos-spirosb.radioca.st/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "https://pathos-spirosb.radioca.st/played?sid=1&type=json",
+    "history_url": "https://a.tunzilla.com/https://pathos-spirosb.radioca.st/played?sid=1&type=json",
     "formats": [
       "traditional music"
     ],
@@ -31932,8 +31938,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://smooth.vanillaradio.com:8032/status-json.xsl",
-    "metadata_server": "icecast"
+    "nowplaying_url": "https://a.tunzilla.com/https://smooth.vanillaradio.com:8032/status-json.xsl",
+    "metadata_server": "icecast",
+    "metadata_mode":"direct"
   },
   {
     "slug": "vanilla-radio-com-fresh-flavours-stream",
@@ -45010,9 +45017,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://shoutcast.k-planet.eu:8032/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://shoutcast.k-planet.eu:8032/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://shoutcast.k-planet.eu:8032/played?sid=1&type=json"
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://shoutcast.k-planet.eu:8032/played?sid=1&type=json"
   },
   {
     "slug": "greca-lounge-pyrgos",
@@ -45517,9 +45525,10 @@
     "geo_lat": 39.63923932816319,
     "geo_long": 22.42606599113883,
     "city": "Larissa",
-    "nowplaying_url": "https://a6.asurahosting.com:7030/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://a6.asurahosting.com:7030/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://a6.asurahosting.com:7030/played?sid=1&type=json"
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://a6.asurahosting.com:7030/played?sid=1&type=json"
   },
   {
     "slug": "laterna",
