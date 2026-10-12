@@ -43285,14 +43285,14 @@
     "geo_long": null
   },
   {
-    "slug": "melodia-99-2",
-    "stationuuid": "05444D01-76EF-4DC6-B85B-9B433EE20236",
-    "name": "Melodia 99.2",
-    "state": "Attica",
-    "city": "Athens",
-    "stream_url": "https://stream.rcs.revma.com/8tdwa6ez1duvv",
+    "slug": "melodia-patras-100-4",
+    "stationuuid": "05444d01-76ef-4dc6-b85b-9b433ee20236",
+    "name": "Μελωδία Πάτρας 100.4",
+    "state": "Western Greece",
+    "city": "Patras",
+    "stream_url": "https://i.streams.ovh/sc/melodiapatras/stream",
     "homepage": "https://www.melodiapatras.gr/",
-    "favicon": "/station-icons/gr/melodia-99-2.webp",
+    "favicon": "/station-icons/gr/melodia-patras-100-4.webp",
     "genres": [
       "folk"
     ],
@@ -43304,11 +43304,14 @@
     "votes": 122,
     "hls": 0,
     "ssl_error": 0,
-    "geo_lat": 37.967045064643656,
-    "geo_long": 23.733215332031257,
+    "geo_lat": null,
+    "geo_long": null,
     "formats": [
       "greek-language music"
-    ]
+    ],
+    "nowplaying_url": "wss://metadata.aiir.net/now-playing",
+    "metadata_server": "aiir",
+    "metadata_service_id": "3583"
   },
   {
     "slug": "03-107-7-patra",
@@ -44680,7 +44683,7 @@
     "name": "En Lefko 87.7",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://stream.rcs.revma.com/trm75ret4c3vv",
+    "stream_url": "https://stream.rcs.revma.com/kwste9dz1duvv",
     "homepage": "https://www.enlefko.fm/",
     "favicon": "/station-icons/gr/en-lefko-87-7-attica.webp",
     "genres": [
@@ -44702,9 +44705,9 @@
     "formats": [
       "eclectic"
     ],
-    "nowplaying_url": "https://www.radiojar.com/api/stations/enlefko877/now_playing/",
-    "metadata_server": "radiojar",
-    "history_url": "https://www.radiojar.com/api/stations/enlefko877/tracks/",
+    "nowplaying_url": "wss://metadata.aiir.net/now-playing",
+    "metadata_server": "aiir",
+    "metadata_service_id": "3580",
     "aliases": [
       "enlefko-87-7-attica-athens"
     ],
@@ -44722,9 +44725,12 @@
       {
         "id": "alternative-2",
         "label": "Alternative",
-        "url": "https://stream.rcs.revma.com/kwste9dz1duvv",
+        "url": "https://stream.rcs.revma.com/trm75ret4c3vv",
         "bitrate": 128,
-        "codec": "AAC"
+        "codec": "AAC",
+        "nowplaying_url": "https://www.radiojar.com/api/stations/enlefko877/now_playing/",
+        "metadata_server": "radiojar",
+        "history_url": "https://www.radiojar.com/api/stations/enlefko877/tracks/"
       }
     ]
   },
@@ -45292,7 +45298,10 @@
     "geo_long": null,
     "formats": [
       "mainstream"
-    ]
+    ],
+    "nowplaying_url": "wss://metadata.aiir.net/now-playing",
+    "metadata_server": "aiir",
+    "metadata_service_id": "3582"
   },
   {
     "slug": "iraklis-radio-thessaloniki",
@@ -45357,13 +45366,16 @@
   {
     "slug": "kids-radio",
     "stationuuid": "3f73e918-41a0-4b54-9d98-2ed949a8353d",
-    "name": "Kids Radio",
+    "name": "Kids Radio 88.6",
     "state": null,
     "city": null,
     "stream_url": "https://stream.rcs.revma.com/n7d6z9ez1duvv",
     "homepage": "https://www.kidsradio.com/",
     "favicon": "/station-icons/gr/kids-radio.webp",
-    "genres": [],
+    "genres": [
+      "pop",
+      "r&b"
+    ],
     "language": "greek",
     "bitrate": 128,
     "codec": "AAC",
@@ -45376,7 +45388,10 @@
     "geo_long": null,
     "formats": [
       "children"
-    ]
+    ],
+    "nowplaying_url": "wss://metadata.aiir.net/now-playing",
+    "metadata_server": "aiir",
+    "metadata_service_id": "3730"
   },
   {
     "slug": "kiss-101-2-chalkida",
@@ -47806,7 +47821,7 @@
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream.rcs.revma.com/xecq4980ubuvv",
-    "homepage": "https://www.melodia.gr/player/ta-megala-klasika/",
+    "homepage": "https://www.melodia.gr/player/",
     "favicon": "/station-icons/gr/athens.webp",
     "genres": [],
     "language": "greek",
@@ -47827,7 +47842,7 @@
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream.rcs.revma.com/cdkb8a90ubuvv",
-    "homepage": "https://www.melodia.gr/player/ta-tragoydia-toy-90/",
+    "homepage": "https://www.melodia.gr/player/",
     "favicon": "/station-icons/gr/90-athens-greece.webp",
     "genres": [],
     "language": null,
@@ -47927,7 +47942,7 @@
     "state": "Attica",
     "city": "Athens",
     "stream_url": "https://stream.rcs.revma.com/z0ymkz80ubuvv",
-    "homepage": "https://www.melodia.gr/player/o-neos-freedom/",
+    "homepage": "https://www.melodia.gr/player/",
     "favicon": "/station-icons/gr/freedom-athens.webp",
     "genres": [],
     "language": "greek",
