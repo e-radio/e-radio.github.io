@@ -405,6 +405,22 @@ test('Gamerz Inn history maps artwork, artist and millisecond timestamps', () =>
  assert.equal(parseHistory('gamerzinn',JSON.stringify(raw)).song_history.length,1);
  assert.equal(parseMetadata('gamerzinn',{},context).text,null);
 });
+test('Laiki Kivotos uses newest API result for now playing and excludes it from history', () => {
+ const feed = {results:[
+  {id:3,ts:1791841713000,metadata:'AutoDJ: ΠΑΝΑΓΙΩΤΗΣ ΜΙΧΑΛΟΠΟΥΛΟΣ-ΘΑ ΠΑΙΞΩ ΜΕ ΤΟΝ ΧΑΡΟ',author:'',title:'ΠΑΝΑΓΙΩΤΗΣ ΜΙΧΑΛΟΠΟΥΛΟΣ-ΘΑ ΠΑΙΞΩ ΜΕ ΤΟΝ ΧΑΡΟ',img_url:'https://example.com/current.jpg',n_listeners:2},
+  {id:2,ts:1791841523000,metadata:'AutoDJ: ΝΙΝΤΑ ΚΑΝΑΚΗ - Μ\' έχεις δέσει',author:'ΝΙΝΤΑ ΚΑΝΑΚΗ',title:'Μ\' έχεις δέσει',img_url:'https://example.com/previous.jpg'},
+  {id:1,ts:1791841351000,metadata:'AutoDJ: ΒΑΓΓΕΛΗΣ ΠΕΡΠΙΝΙΑΔΗΣ - ΘΕΛΩ ΝΑ ΚΛΑΙΣ',author:'',title:'',img_url:null},
+ ]};
+ const current = parseMetadata('laikikivotos', {results:feed.results.slice(0,1)}, context);
+ assert.equal(current.text,'ΠΑΝΑΓΙΩΤΗΣ ΜΙΧΑΛΟΠΟΥΛΟΣ – ΘΑ ΠΑΙΞΩ ΜΕ ΤΟΝ ΧΑΡΟ');
+ assert.equal(current.song.art,'https://example.com/current.jpg');
+ assert.equal(current.listeners,2);
+ assert.equal(current.payload.now_playing.played_at,1791841713);
+ const history = parseHistory('laikikivotos',JSON.stringify(feed));
+ assert.equal(history.now_playing.song.title,'ΘΑ ΠΑΙΞΩ ΜΕ ΤΟΝ ΧΑΡΟ');
+ assert.deepEqual(history.song_history.map(entry => entry.song.title),["Μ' έχεις δέσει",'ΘΕΛΩ ΝΑ ΚΛΑΙΣ']);
+ assert.equal(history.song_history[0].played_at,1791841523);
+});
 
 test('Shoutcast v1 decodes HTML or Jina text and preserves commas in titles', () => {
  for(const text of ['<HTML><body>38,1,173,512,38,256,Artist - Song, Part 2</body></html>','Markdown Content:\n38,1,173,512,38,256,Artist - Song, Part 2']) {

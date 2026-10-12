@@ -205,9 +205,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://sh.onweb.gr:9110/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sh.onweb.gr:9110/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://sh.onweb.gr:9110/played?sid=1&type=json"
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://sh.onweb.gr:9110/played?sid=1&type=json"
   },
   {
     "slug": "102-7-radio-athens",
@@ -1045,10 +1046,10 @@
       "90s",
       "greek-language music"
     ],
-    "nowplaying_url": "https://sp3.streams.ovh:8070/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sp3.streams.ovh:8070/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "https://sp3.streams.ovh:8070/played?sid=1&type=json"
+    "history_url": "https://a.tunzilla.com/https://sp3.streams.ovh:8070/played?sid=1&type=json"
   },
   {
     "slug": "96-2-fm1-lamia",
@@ -2925,7 +2926,7 @@
     "geo_long": null,
     "nowplaying_url": "https://cast4.magicstreams.gr:12108/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://cast4.magicstreams.gr:12108/played?sid=1&type=json",
+    "history_url": "https://a.tunzilla.com/https://cast4.magicstreams.gr:12108/played?sid=1&type=json",
     "formats": [
       "greek-language music"
     ]
@@ -3747,9 +3748,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://i2.streams.ovh:9470/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://i2.streams.ovh:9470/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://i2.streams.ovh:9470/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://i2.streams.ovh:9470/played?sid=1&type=json",
     "genre_review": [
       "ethnik"
     ],
@@ -4645,10 +4647,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://sh.onweb.gr:9540/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sh.onweb.gr:9540/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "https://sh.onweb.gr:9540/played?sid=1&type=json",
+    "history_url": "https://a.tunzilla.com/https://sh.onweb.gr:9540/played?sid=1&type=json",
     "formats": [
       "variety"
     ],
@@ -16046,7 +16048,7 @@
       "mainstream",
       "classic hits"
     ],
-    "nowplaying_url": "https://status.rcast.net/68849",
+    "nowplaying_url": "https://r.jina.ai/https://status.rcast.net/68849",
     "metadata_server": "rcast",
     "metadata_mode": "jina",
     "aliases": [
@@ -31621,9 +31623,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://cast.streams.ovh:8008/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://cast.streams.ovh:8008/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://cast.streams.ovh:8008/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://cast.streams.ovh:8008/played?sid=1&type=json",
     "aliases": [
       "trance-athena-radio-athens",
       "athens-radio-trance"
@@ -32419,9 +32422,10 @@
     "ssl_error": 0,
     "geo_lat": 39.35702961620431,
     "geo_long": 22.97494988873726,
-    "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://ice.streams.ovh:1060/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json",
+    "metadata_mode": "direct",
+    "history_url": "https://a.tunzilla.com/https://ice.streams.ovh:1060/played?sid=1&type=json",
     "formats": [
       "adult hits"
     ],
@@ -32438,9 +32442,9 @@
         "url": "https://ice.streams.ovh:1060/volosrtv.com",
         "bitrate": 320,
         "codec": "MP3",
-        "nowplaying_url": "https://ice.streams.ovh:1060/stats?sid=1&json=1",
+        "nowplaying_url": "https://a.tunzilla.com/https://ice.streams.ovh:1060/stats?sid=1&json=1",
         "metadata_server": "shoutcast",
-        "history_url": "https://ice.streams.ovh:1060/played?sid=1&type=json"
+        "history_url": "https://a.tunzilla.com/https://ice.streams.ovh:1060/played?sid=1&type=json"
       }
     ]
   },
@@ -32625,8 +32629,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
+    "nowplaying_url": "https://a.tunzilla.com/https://live.sugarweb.gr/status-json.xsl?mount=%2F913.aac",
     "metadata_server": "icecast",
+    "metadata_mode":"direct",
     "formats": [
       "mainstream"
     ]
@@ -34767,9 +34772,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://sc2.streamwithq.com:8028/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sc2.streamwithq.com:8028/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://sc2.streamwithq.com:8028/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://sc2.streamwithq.com:8028/played?sid=1&type=json",
     "formats": [
       "municipal radio",
       "news",
@@ -36492,9 +36498,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://www.gointernet.gr:9034/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://www.gointernet.gr:9034/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://www.gointernet.gr:9034/played?sid=1&type=json"
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://www.gointernet.gr:9034/played?sid=1&type=json"
   },
   {
     "slug": "96-5-volos",
@@ -36519,9 +36526,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://www.gointernet.gr:9012/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://www.gointernet.gr:9012/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://www.gointernet.gr:9012/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://www.gointernet.gr:9012/played?sid=1&type=json",
     "formats": [
       "greek-language music"
     ]
@@ -37838,9 +37846,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a.tunzilla.com/http://everest.streams.ovh:1310/status-json.xsl?mount=%2Fstream",
-    "metadata_server": "icecast",
-    "metadata_mode":"direct",
+    "nowplaying_url": "https://everest.streams.ovh:1300/api/v2/history/?format=json&limit=1&offset=0",
+    "metadata_server": "laikikivotos",
+    "metadata_mode":"jina",
+    "history_url": "https://everest.streams.ovh:1300/api/v2/history/?format=json&limit=10",
     "streams": [
       {
         "id": "mp3-128-alternative",
@@ -39737,6 +39746,7 @@
     "geo_long": null,
     "nowplaying_url": "https://r.jina.ai/https://panoramafm.gr/api/NowOnAir.json",
     "metadata_server": "ellinadiko",
+    "metadata_mode":"jina",
     "history_url": "https://r.jina.ai/https://panoramafm.gr/api/History.json",
     "formats": [
       "greek-language music",
@@ -40857,10 +40867,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://a8.asurahosting.com:6770/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://a8.asurahosting.com:6770/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
     "metadata_mode": "direct",
-    "history_url": "https://a8.asurahosting.com:6770/played?sid=1&type=json",
+    "history_url": "https://a.tunzilla.com/https://a8.asurahosting.com:6770/played?sid=1&type=json",
     "formats": [
       "news talk"
     ]
@@ -41882,9 +41892,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://24streams.gr:8088/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://24streams.gr:8088/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://24streams.gr:8088/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://24streams.gr:8088/played?sid=1&type=json",
     "formats": [
       "mainstream"
     ]
@@ -42269,9 +42280,10 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://s7.myradiostream.com:10432/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://s7.myradiostream.com:10432/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://s7.myradiostream.com:10432/played?sid=1&type=json"
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://s7.myradiostream.com:10432/played?sid=1&type=json"
   },
   {
     "slug": "97-6-zakynthos",
@@ -43727,9 +43739,10 @@
     "ssl_error": 0,
     "geo_lat": 39.64076365238007,
     "geo_long": 22.421054894256827,
-    "nowplaying_url": "https://sh.onweb.gr:8905/stats?sid=1&json=1",
+    "nowplaying_url": "https://a.tunzilla.com/https://sh.onweb.gr:8905/stats?sid=1&json=1",
     "metadata_server": "shoutcast",
-    "history_url": "https://sh.onweb.gr:8905/played?sid=1&type=json",
+    "metadata_mode":"direct",
+    "history_url": "https://a.tunzilla.com/https://sh.onweb.gr:8905/played?sid=1&type=json",
     "aliases": [
       "905rock-larisa"
     ],
@@ -44598,8 +44611,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://ellinadiko.eu/api/NowOnAir.json",
+    "nowplaying_url": "https://r.jina.ai/https://ellinadiko.eu/api/NowOnAir.json",
     "metadata_server": "ellinadiko",
+    "metadata_mode":"jina",
     "formats": [
       "variety"
     ]
