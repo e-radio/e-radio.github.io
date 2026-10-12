@@ -132,6 +132,15 @@ test('Icecast chooses endpoint mount rather than a different station', () => {
  assert.equal(parseMetadata('icecast',payload,context).listeners,2);
  assert.equal(parseMetadata('icecast',payload,{...context,endpoint:'https://relay.example/status-json.xsl?mount=/missing'}).text,null);
 });
+test('Flocafe splits its underscore-delimited artist and title', () => {
+ const payload = {icestats:{source:{title:'Jayda G_Meant To Be',listeners:3}}};
+ const result = parseMetadata('flocafe', payload, context);
+ assert.equal(result.song.artist, 'Jayda G');
+ assert.equal(result.song.title, 'Meant To Be');
+ assert.equal(result.text, 'Jayda G – Meant To Be');
+ assert.equal(result.listeners, 3);
+ assert.equal(parseMetadata('icecast', payload, context).song.title, 'Jayda G_Meant To Be');
+});
 test('Icecast extracts Jazler song and artist from embedded XML', () => {
  const xml = '<?xml version="1.0"?><Schedule System="Jazler"><Event eventType="song"><Song title="CAN`T TAKE MY EYES (acoustic)"><Artist name="SAGI REI"/></Song></Event></Schedule>';
  const payload = {icestats:{source:{title:xml,listeners:9}}};
@@ -546,4 +555,11 @@ test('AIIR maps RED 96.3 live song, artwork, and previous tracks', () => {
  assert.equal(parsed.song.art,'https://covers.example/now.jpg');
  assert.deepEqual(parsed.payload.song_history.map(entry => entry.song.title),['Rock & Roll Queen']);
  assert.equal(parsed.payload.song_history[0].song.art,'https://covers.example/old.jpg');
+});
+test('Kiss 92.9 reads only its Live24 now-playing mount', () => {
+ const feed = {icestats:{'/other':{title:'Wrong - Song'},'/kiss2111':{title:'IMAGINE DRAGONS - BELIEVER'}}};
+ const parsed = parseMetadata('kiss929',feed,{endpoint:'https://songs.live24.gr/live24stats/songs.xsl'});
+ assert.equal(parsed.song.artist,'IMAGINE DRAGONS');
+ assert.equal(parsed.song.title,'BELIEVER');
+ assert.equal(parseMetadata('kiss929',{icestats:{'/other':{title:'Wrong - Song'}}}).text,null);
 });

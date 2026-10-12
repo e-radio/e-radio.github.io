@@ -4,6 +4,7 @@ import * as strefa from './providers/strefa.mjs';
 import * as azuracast from './providers/azuracast.mjs';
 import * as centovacast from './providers/centovacast.mjs';
 import * as icecast from './providers/icecast.mjs';
+import * as flocafe from './providers/flocafe.mjs';
 import * as shoutcast from './providers/shoutcast.mjs';
 import * as radiojar from './providers/radiojar.mjs';
 import * as radioCo from './providers/radio-co.mjs';
@@ -23,12 +24,13 @@ import * as mustx from './providers/mustx.mjs';
 import * as planetlakonias from './providers/planetlakonias.mjs';
 import * as radioasteria from './providers/radioasteria.mjs';
 import * as aiir from './providers/aiir.mjs';
+import * as kiss929 from './providers/kiss929.mjs';
 import * as unknown from './providers/unknown.mjs';
 import { artworkUrl, gatherSongHistory, parseTextHistory } from './common.mjs';
 import { stripBroadcastLabel } from '../metadata-text.mjs';
 export { artworkUrl, gatherSongHistory } from './common.mjs';
 
-const providers = { zpr, sonicpanel, strefa, jolene, ellinadiko, coolfm, diesi, rcast, radio1, radiomust, mustcafe, musthero, mustx, planetlakonias, radioasteria, aiir, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, shoutcast, radiojar, 'radio.co': radioCo, unknown };
+const providers = { zpr, sonicpanel, strefa, jolene, ellinadiko, coolfm, diesi, rcast, radio1, radiomust, mustcafe, musthero, mustx, planetlakonias, radioasteria, aiir, kiss929, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, flocafe, shoutcast, radiojar, 'radio.co': radioCo, unknown };
 export const scraperFor = server => providers[server] || unknown;
 
 const cleanSong = song => song && typeof song === 'object'
