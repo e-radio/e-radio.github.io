@@ -539,7 +539,7 @@ const structuredData = {
             )}
             <div class="flex-grow-1" style="min-width: 0; overflow-wrap: anywhere;">
               <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
-                <h1 class="h4 fw-bold mb-0">{station.name}</h1>
+                <h1 class="h4 fw-bold mb-0">{station.name} Live</h1>
               </div>
               <div class="d-flex flex-wrap gap-2 gap-md-3 small-muted">
                 {locationLabel && (
@@ -1111,7 +1111,8 @@ import { clientTranslate as t } from '../../i18n/translate';
       const historyEntries = gatherSongHistory(payload);
       const rendered = historyEntries
         .map((entry) => formatSongEntry(entry))
-        .filter((info) => Boolean(info));
+        .filter((info, index) => Boolean(info)
+          && !(index === 0 && currentTrackIdentity && trackIdentity(info) === currentTrackIdentity));
 
       if (rendered.length === 0) {
         // Now-playing-only responses and temporary empty results must not erase history.

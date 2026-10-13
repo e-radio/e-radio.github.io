@@ -10900,7 +10900,7 @@
   {
     "slug": "hit-103-5-chalkida",
     "stationuuid": "8f08c46a-7c6b-4d63-ae22-538a0b0a5036",
-    "name": "Hit 103.5",
+    "name": "Hit FM 103.5",
     "state": "Central Greece",
     "city": "Chalkida",
     "stream_url": "https://cast.radiohost.ovh:2200/proxy/hitfm?mp=/stream",
@@ -11013,7 +11013,7 @@
   {
     "slug": "hit-radio-greece",
     "stationuuid": "28c4f41f-3524-4868-8880-dab12a43b1e1",
-    "name": "hit radio greece",
+    "name": "HiT Radio Greece",
     "state": null,
     "city": null,
     "stream_url": "https://solid2.streamupsolutions.com/proxy/lposuiem?mp=/stream",
@@ -11054,7 +11054,8 @@
         "bitrate": 128,
         "codec": "MP3",
         "nowplaying_url": "http://solid2.streamupsolutions.com:24952/status-json.xsl?mount=%2Fstream",
-        "metadata_server": "icecast"
+        "metadata_server": "icecast",
+        "history_url": "https://solid2.streamupsolutions.com/external/rpc.php?m=recenttracks.get&username=lposuiem&limit=10"
       }
     ]
   },
