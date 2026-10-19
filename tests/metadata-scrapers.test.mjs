@@ -141,6 +141,24 @@ test('Flocafe splits its underscore-delimited artist and title', () => {
  assert.equal(result.listeners, 3);
  assert.equal(parseMetadata('icecast', payload, context).song.title, 'Jayda G_Meant To Be');
 });
+test('Attica Radios maps Lampsi artist and song without treating a dash image as artwork', () => {
+ const result = parseMetadata('atticaradios', {
+  radioStation:'lampsi',artist:'Foureira Eleni',song:'Alleluia',artistImage:'-'
+ }, context);
+ assert.equal(result.text,'Foureira Eleni – Alleluia');
+ assert.equal(result.song.art,null);
+ const athens = parseMetadata('atticaradios', {
+  radioStation:'athens_dee_jay',artist:'Ed Sheeran',song:'Azizam',artistImage:'//wsrv.nl/cover.png'
+ }, context);
+ assert.equal(athens.text,'Ed Sheeran – Azizam');
+ assert.equal(athens.song.art,'https://wsrv.nl/cover.png');
+ const rock = parseMetadata('atticaradios', {
+  radioStation:'rockfm',artist:'Alice Cooper',song:'Hell is living without you',artistImage:'//wsrv.nl/rock.png'
+ }, context);
+ assert.equal(rock.text,'Alice Cooper – Hell is living without you');
+ assert.equal(rock.song.art,'https://wsrv.nl/rock.png');
+ assert.equal(parseMetadata('atticaradios',{radioStation:'lampsi',artist:'',song:''},context).text,null);
+});
 test('Icecast extracts Jazler song and artist from embedded XML', () => {
  const xml = '<?xml version="1.0"?><Schedule System="Jazler"><Event eventType="song"><Song title="CAN`T TAKE MY EYES (acoustic)"><Artist name="SAGI REI"/></Song></Event></Schedule>';
  const payload = {icestats:{source:{title:xml,listeners:9}}};

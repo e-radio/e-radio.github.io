@@ -3055,7 +3055,7 @@
     "name": "Athens Deejay 95.2",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://netradio.live24.gr/athensdeejay",
+    "stream_url": "https://stream.rcs.revma.com/f663xvvehkcwv",
     "homepage": "https://www.athensdeejay.gr/",
     "favicon": "/station-icons/gr/athens-deejay-95-2.webp",
     "genres": [
@@ -3072,6 +3072,9 @@
     "ssl_error": 0,
     "geo_lat": 37.983733365212416,
     "geo_long": 23.72833748609992,
+    "nowplaying_url": "https://playingnow.atticaradios.gr/nowplaying/athens_dee_jay",
+    "metadata_server": "atticaradios",
+    "metadata_mode": "jina",
     "formats": [
       "top 40"
     ],
@@ -3080,6 +3083,15 @@
     ],
     "alternate_stationuuids": [
       "fffa0320-34a0-406e-b3d1-3e93dd2c630d"
+    ],
+    "streams": [
+      {
+        "id": "mp3-320-http",
+        "label": "Alternative",
+        "url": "https://netradio.live24.gr/athensdeejay",
+        "bitrate": 192,
+        "codec": "MP3"
+      }
     ]
   },
   {
@@ -3665,7 +3677,7 @@
     "name": "Best Radio 92.6",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://netradio.live24.gr/best1222",
+    "stream_url": "https://stream.rcs.revma.com/vfsaq1vehkcwv",
     "homepage": "https://www.best926.gr/",
     "favicon": "/station-icons/gr/best-radio-92-6-athens.webp",
     "genres": [
@@ -3701,21 +3713,24 @@
     "streams": [
       {
         "id": "alternative-1",
-        "label": "Alternative",
+        "label": "Alternative 1",
         "url": "https://best.live24.gr/best1222",
         "bitrate": 128,
-        "codec": "MP3",
-        "hls": 0,
-        "lastcheckok": 1
+        "codec": "MP3"
       },
       {
         "id": "alternative-2",
-        "label": "Alternative",
+        "label": "Alternative 2",
+        "url": "https://netradio.live24.gr/best1222",
+        "bitrate": 128,
+        "codec": "AAC"
+      },
+      {
+        "id": "alternative-3",
+        "label": "Alternative 3",
         "url": "http://best926live.mdc.akamaized.net/strmBest/userBest/chunks.m3u8",
         "bitrate": 130,
-        "codec": "AAC",
-        "hls": 1,
-        "lastcheckok": 1
+        "codec": "AAC"
       }
     ]
   },
@@ -13409,7 +13424,7 @@
     "name": "Lampsi 92.3",
     "state": "Thessaly",
     "city": "Volos",
-    "stream_url": "https://az11.yesstreaming.net:8140/radio.mp3",
+    "stream_url": "https://stream.rcs.revma.com/hnqr3yvehkcwv",
     "homepage": "https://www.atticaradios.gr/lampsi923/",
     "favicon": "/station-icons/gr/lampsi-92-3.png",
     "genres": [],
@@ -13423,13 +13438,25 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
-    "metadata_server": "icecast",
+    "nowplaying_url": "https://playingnow.atticaradios.gr/nowplaying/lampsi",
+    "metadata_server": "atticaradios",
+    "metadata_mode": "jina",
     "aliases": [
       "lampsi-fm-92-3"
     ],
     "alternate_stationuuids": [
       "698b7737-0bb6-4976-97f2-2c9a36944e85"
+    ],
+    "streams": [
+      {
+        "id": "mp3-128-alternative",
+        "label": "Alternative",
+        "url": "https://az11.yesstreaming.net:8140/radio.mp3",
+        "bitrate": 128,
+        "codec": "MP3",
+        "nowplaying_url": "https://az11.yesstreaming.net:8140/status-json.xsl?mount=%2Fradio.mp3",
+        "metadata_server": "icecast"
+      }
     ]
   },
   {
@@ -27394,7 +27421,7 @@
     "name": "Rock FM 96.9",
     "state": "Attica",
     "city": "Athens",
-    "stream_url": "https://az10.yesstreaming.net:8060/radio.mp3",
+    "stream_url": "https://stream.rcs.revma.com/sm9b1svehkcwv",
     "homepage": "https://www.atticaradios.gr/rockfm969/",
     "favicon": "/station-icons/gr/rock-fm-96-9.png",
     "genres": [
@@ -27414,11 +27441,7 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 37.9744515616818,
-    "geo_long": 23.733386993408207,
-    "nowplaying_url": "https://az10.yesstreaming.net:8060/stats?sid=1&json=1",
-    "metadata_server": "shoutcast",
-    "metadata_mode": "direct",
-    "history_url": "https://az10.yesstreaming.net:8060/played?sid=1&type=json"
+    "geo_long": 23.733386993408207
   },
   {
     "slug": "rock-hard-greece",
@@ -44027,6 +44050,9 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "nowplaying_url": "https://playingnow.atticaradios.gr/nowplaying/rockfm",
+    "metadata_server": "atticaradios",
+    "metadata_mode": "jina",
     "aliases": [
       "athens-rock-96-9-athens"
     ],

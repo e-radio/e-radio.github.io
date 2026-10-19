@@ -4,6 +4,7 @@ import * as strefa from './providers/strefa.mjs';
 import * as azuracast from './providers/azuracast.mjs';
 import * as centovacast from './providers/centovacast.mjs';
 import * as icecast from './providers/icecast.mjs';
+import * as atticaradios from './providers/atticaradios.mjs';
 import * as laikikivotos from './providers/laikikivotos.mjs';
 import * as flocafe from './providers/flocafe.mjs';
 import * as shoutcast from './providers/shoutcast.mjs';
@@ -31,7 +32,7 @@ import { artworkUrl, gatherSongHistory, parseTextHistory } from './common.mjs';
 import { stripBroadcastLabel } from '../metadata-text.mjs';
 export { artworkUrl, gatherSongHistory } from './common.mjs';
 
-const providers = { zpr, sonicpanel, strefa, jolene, ellinadiko, coolfm, diesi, rcast, radio1, radiomust, mustcafe, musthero, mustx, planetlakonias, radioasteria, aiir, kiss929, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, flocafe, laikikivotos, shoutcast, radiojar, 'radio.co': radioCo, unknown };
+const providers = { zpr, sonicpanel, strefa, jolene, ellinadiko, coolfm, diesi, rcast, radio1, radiomust, mustcafe, musthero, mustx, planetlakonias, radioasteria, aiir, kiss929, bauer, gamerzinn, otvoreni, azuracast, centovacast, icecast, atticaradios, flocafe, laikikivotos, shoutcast, radiojar, 'radio.co': radioCo, unknown };
 export const scraperFor = server => providers[server] || unknown;
 
 const cleanSong = song => song && typeof song === 'object'
