@@ -159,6 +159,14 @@ test('Attica Radios maps Lampsi artist and song without treating a dash image as
  assert.equal(rock.song.art,'https://wsrv.nl/rock.png');
  assert.equal(parseMetadata('atticaradios',{radioStation:'lampsi',artist:'',song:''},context).text,null);
 });
+test('ERT Echo decodes JSON string metadata and splits artist from title', () => {
+ const current = parseMetadata('ertecho', decodeProviderMetadata('ertecho','"ADAMSKI - KILLER"'), context);
+ assert.equal(current.song.artist,'ADAMSKI');
+ assert.equal(current.song.title,'KILLER');
+ assert.equal(current.text,'ADAMSKI – KILLER');
+ assert.equal(parseMetadata('ertecho',decodeProviderMetadata('ertecho','"Zeppelin 106.7"'),context).text,'Zeppelin 106.7');
+ assert.throws(() => decodeProviderMetadata('ertecho','{"song":"Wrong format"}'));
+});
 test('Icecast extracts Jazler song and artist from embedded XML', () => {
  const xml = '<?xml version="1.0"?><Schedule System="Jazler"><Event eventType="song"><Song title="CAN`T TAKE MY EYES (acoustic)"><Artist name="SAGI REI"/></Song></Event></Schedule>';
  const payload = {icestats:{source:{title:xml,listeners:9}}};

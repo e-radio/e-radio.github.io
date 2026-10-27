@@ -16897,27 +16897,6 @@
     ]
   },
   {
-    "slug": "my-radio-shmera-gr-thessaloniki",
-    "stationuuid": "ab2753d6-e5aa-43e9-acba-38a5e5062cb3",
-    "name": "my-radio-shmera-gr",
-    "state": "Central Macedonia",
-    "city": "Thessaloniki",
-    "stream_url": "https://sp3.streams.ovh:8058/",
-    "homepage": "https://shmera.gr/my-radio-shmera-gr/",
-    "favicon": "/station-icons/gr/my-radio-shmera-gr-thessaloniki.webp",
-    "genres": [],
-    "language": "greek",
-    "bitrate": 320,
-    "codec": "MP3",
-    "clickcount": 0,
-    "lastcheckok": 0,
-    "votes": 1,
-    "hls": 0,
-    "ssl_error": 0,
-    "geo_lat": null,
-    "geo_long": null
-  },
-  {
     "slug": "mykonos-98-1-mykonos",
     "stationuuid": "6e7c812d-252c-4aca-840f-cbc2b35f3229",
     "name": "Mykonos FM 98.1",
@@ -26411,7 +26390,7 @@
   {
     "slug": "radio-rizitis-crete-chania-kissamos",
     "stationuuid": "43eb4530-9395-4174-aa30-c0c6d6ec376b",
-    "name": "radio-rizitis",
+    "name": "Radio Rizitis 92.4",
     "state": "Crete",
     "city": "Chania",
     "stream_url": "https://sh.onweb.gr/8040/stream",
@@ -33041,7 +33020,10 @@
     "hls": 0,
     "ssl_error": 0,
     "geo_lat": 38.01303667973779,
-    "geo_long": 23.82546186447144
+    "geo_long": 23.82546186447144,
+    "nowplaying_url": "https://www.ertecho.gr/wp-json/meta/v1/radio/838",
+    "metadata_server": "ertecho",
+    "metadata_mode": "direct"
   },
   {
     "slug": "zoo-new-hits-thessaloniki",
