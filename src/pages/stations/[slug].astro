@@ -45,9 +45,13 @@ const formattedStatusCheckedAt = statusCheckedDate && !Number.isNaN(statusChecke
 const streamOptions: Array<{ id: string; label: string; url: string; quality: string; bitrate?: number; codec?: string }> = stationStreams(station);
 const hasStream = Boolean(station.stream_url);
 const formattedVotes = station.votes ? new Intl.NumberFormat(locale).format(Number(station.votes)) : null;
-const locationLabel = station.state
-  ? `${station.state}${station.country ? `, ${station.country}` : ""}`
-  : station.country || countryText("Greece");
+const locationParts = [station.city, station.state, station.country]
+  .filter((place): place is string => typeof place === "string" && Boolean(place.trim()))
+  .map(place => place.trim());
+const locationLabel = locationParts
+  .filter((place, index) => locationParts.findIndex(other => other.toLocaleLowerCase() === place.toLocaleLowerCase()) === index)
+  .map(place => t(place))
+  .join(", ") || t(countryText("Greece"));
 const genres = (station.genres || []).filter(Boolean);
 const displayGenres = genres.slice(0, 3);
 const streamQualityParts = [
@@ -83,6 +87,7 @@ type ServerKind =
   | "shoutcast"
   | "icecast"
   | "ertecho"
+  | "galaxyfm"
   | "atticaradios"
   | "laikikivotos"
   | "flocafe"
@@ -748,7 +753,7 @@ const structuredData = {
 
           <div>
             <div class="small-muted mb-2">{t("Location")}</div>
-            <div class="fw-semibold">{t(locationLabel)}</div>
+            <div class="fw-semibold">{locationLabel}</div>
             <div class="small-muted"> {t("Country: {0}", [station.country || site.countryName])} {languageLabel && <> {t("· Language: {0}", [languageLabel])}</>}
             </div>
           </div>

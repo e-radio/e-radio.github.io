@@ -167,6 +167,16 @@ test('ERT Echo decodes JSON string metadata and splits artist from title', () =>
  assert.equal(parseMetadata('ertecho',decodeProviderMetadata('ertecho','"Zeppelin 106.7"'),context).text,'Zeppelin 106.7');
  assert.throws(() => decodeProviderMetadata('ertecho','{"song":"Wrong format"}'));
 });
+test('Galaxy FM separates current track from history and resolves covers and timestamps', () => {
+ const current = {id:'3',artist:'Daniel Powter',title:'Bad Day',cover_url:'/uploads/covers/current.webp',played_at_iso:'2026-10-30T13:15:27+02:00'};
+ const earlier = {id:'2',artist:'Benson Boone',title:'Beautiful Things',cover_url:null,played_at_iso:'2026-10-30T13:12:39+02:00'};
+ const result = parseMetadata('galaxyfm',{current,history:[current,earlier]},context);
+ assert.equal(result.text,'Daniel Powter – Bad Day');
+ assert.equal(result.song.art,'https://galaxyfm.gr/uploads/covers/current.webp');
+ assert.equal(result.payload.now_playing.played_at,1793358927);
+ assert.deepEqual(result.payload.song_history.map(track => track.song.title),['Beautiful Things']);
+ assert.equal(result.payload.song_history[0].played_at,1793358759);
+});
 test('Icecast extracts Jazler song and artist from embedded XML', () => {
  const xml = '<?xml version="1.0"?><Schedule System="Jazler"><Event eventType="song"><Song title="CAN`T TAKE MY EYES (acoustic)"><Artist name="SAGI REI"/></Song></Event></Schedule>';
  const payload = {icestats:{source:{title:xml,listeners:9}}};

@@ -9812,14 +9812,14 @@
     ]
   },
   {
-    "slug": "galaxy-106-1-patra-0966527a",
+    "slug": "galaxy-106-1-patra",
     "stationuuid": "0966527a-0308-4adc-927b-18dba91d57db",
     "name": "Galaxy 106.1",
     "state": "Western Greece",
     "city": "Patras",
     "stream_url": "https://sh.onweb.gr/8818/stream",
     "homepage": "https://galaxy1061.gr/",
-    "favicon": "/station-icons/gr/galaxy-106-1-patra-0966527a-placeholder.webp",
+    "favicon": "/station-icons/gr/galaxy-106-1-patra.webp",
     "genres": [
       "pop",
       "rock"
@@ -9834,13 +9834,16 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
+    "nowplaying_url": "https://galaxyfm.gr/api/nowplaying.php?limit=20",
+    "metadata_server": "galaxyfm",
+    "metadata_mode": "jina",
     "formats": [
       "80s",
       "90s",
       "adult contemporary"
     ],
     "aliases": [
-      "galaxy-106-1-patra"
+      "galaxy-106-1-patra-0966527a"
     ],
     "alternate_stationuuids": [
       "db9bf78a-9c06-4898-9ada-1f969b1b1e70"
