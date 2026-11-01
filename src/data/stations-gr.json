@@ -96,9 +96,6 @@
     "ssl_error": 0,
     "geo_lat": null,
     "geo_long": null,
-    "nowplaying_url": "https://centova.gr-net.gr/rpc/dimitrio/streaminfo.get",
-    "metadata_server": "centovacast",
-    "history_url": "https://centova.gr-net.gr/external/rpc.php?m=recenttracks.get&username=dimitrio&limit=10",
     "formats": [
       "adult hits"
     ]
