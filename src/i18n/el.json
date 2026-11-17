@@ -1,4 +1,13 @@
 {
+  "Weekly schedule": "Εβδομαδιαίο πρόγραμμα",
+  "Broadcast times use {0}.": "Οι ώρες μετάδοσης αναφέρονται στη ζώνη ώρας {0}.",
+  "This timetable was supplied for this page. Programs may change; check the station's official announcements.": "Το πρόγραμμα προστέθηκε βάσει των στοιχείων που δόθηκαν για αυτή τη σελίδα. Οι εκπομπές ενδέχεται να αλλάξουν· ελέγξτε τις επίσημες ανακοινώσεις του σταθμού.",
+  "Schedule source": "Πηγή προγράμματος",
+  "Time": "Ώρα",
+  "Program / presenters": "Εκπομπή / παρουσιαστές",
+  "Frequently asked questions": "Συχνές ερωτήσεις",
+  "About this station": "Σχετικά με τον σταθμό",
+  "Programs": "Εκπομπές",
   "Stations": "Σταθμοί",
   "Top Rated": "Δημοφιλέστεροι",
   "High Quality": "Υψηλή ποιότητα",

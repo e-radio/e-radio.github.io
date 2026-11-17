@@ -8,6 +8,7 @@ import { stationStreams } from "../../lib/station-streams.mjs";
 import Layout from "../../layouts/Layout.astro";
 import SEO from "../../components/SEO.astro";
 import rawStations from "../../lib/stations";
+import { getStationContent } from "../../lib/station-content";
 import metadataConfig from "../../data/metadata-config.json";
 import { genreSlug } from "../../lib/genre-links";
 import { Image } from "astro:assets";
@@ -33,6 +34,11 @@ const radddioURL = "https://apple.co/4lNPQAH";
 const radioAppIconUrl = "/radddio-app-icon.png";
 const radddioBadgeUrl = "/radddio-badge.svg";
 const { station } = Astro.props as Props;
+const editorial = getStationContent(station.stationuuid, locale);
+const scheduleDayName = (day: number) => new Intl.DateTimeFormat(locale, {
+  weekday: 'long', timeZone: 'UTC',
+}).format(new Date(Date.UTC(2024, 0, 7 + day)));
+
 const stationStatus = station as Station & { status?: string; status_checked_at?: string };
 const isMarkedOffline = stationStatus.status === "offline";
 const statusCheckedDate = stationStatus.status_checked_at && /^\d{4}-\d{2}-\d{2}$/.test(stationStatus.status_checked_at)
@@ -824,6 +830,68 @@ const structuredData = {
           <li>{t("Prefer streams 128 kbps or higher for best quality.")}</li>
         </ul>
       </section>
+
+      {editorial && (
+        <section class="glass rounded-3 p-3 p-md-4 mt-4" aria-labelledby="station-about-heading">
+          <h2 id="station-about-heading" class="h6 fw-bold mb-3">{t("About this station")}</h2>
+          <div lang={editorial.language}>
+            {editorial.content.about.map(paragraph => <p>{paragraph}</p>)}
+          </div>
+          {editorial.content.programs && editorial.content.programs.length > 0 && (
+            <>
+              <h3 class="h6 fw-bold mt-4 mb-3">{t("Programs")}</h3>
+              <dl lang={editorial.language} class="mb-0">
+                {editorial.content.programs.map(program => (
+                  <div class="mb-3">
+                    <dt>{program.name}</dt>
+                    {program.description && <dd>{program.description}</dd>}
+                  </div>
+                ))}
+              </dl>
+            </>
+          )}
+          {editorial.schedule && (
+            <div class="mt-4">
+              <h3 class="h6 fw-bold mb-3">{t("Weekly schedule")}</h3>
+              <p class="small-muted">{t("Broadcast times use {0}.", [editorial.schedule.timezone])}</p>
+              <p class="small-muted">{t("This timetable was supplied for this page. Programs may change; check the station's official announcements.")}</p>
+              <p class="small"><a href={editorial.schedule.source_url} target="_blank" rel="noopener noreferrer">{t("Schedule source")}</a></p>
+              {editorial.schedule.groups.map(group => (
+                <details class="border border-light-subtle rounded-3 p-3 mb-2">
+                  <summary class="fw-semibold">{group.days.map(scheduleDayName).join(' / ')}</summary>
+                  <div class="table-responsive mt-3">
+                    <table class="table table-sm mb-0">
+                      <caption class="visually-hidden">{group.days.map(scheduleDayName).join(' / ')} — {editorial.schedule!.timezone}</caption>
+                      <thead><tr><th scope="col">{t("Time")}</th><th scope="col">{t("Program / presenters")}</th></tr></thead>
+                      <tbody>
+                        {group.entries.map(entry => (
+                          <tr>
+                            <th scope="row" class="text-nowrap fw-normal"><time>{entry.start}</time>–<time>{entry.end}</time></th>
+                            <td lang="el">{entry.name}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </details>
+              ))}
+            </div>
+          )}
+          {editorial.content.faqs && editorial.content.faqs.length > 0 && (
+            <div class="mt-4">
+              <h3 class="h6 fw-bold mb-3">{t("Frequently asked questions")}</h3>
+              <div lang={editorial.language}>
+                {editorial.content.faqs.map(faq => (
+                  <details class="border border-light-subtle rounded-3 p-3 mb-2">
+                    <summary class="fw-semibold">{faq.question}</summary>
+                    <p class="mt-2 mb-0">{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
+      )}
 
       {recommendedStations.length > 0 && (
     <section class="glass rounded-3 p-3 p-md-4 mt-4">

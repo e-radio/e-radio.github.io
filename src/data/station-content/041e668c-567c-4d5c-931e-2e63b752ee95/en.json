@@ -1,0 +1,46 @@
+{
+  "about": [
+    "Real FM 97.8 is an Athens news and current affairs station broadcasting since 2007. Known as “the real radio”, it broadcasts on 97.8 FM in Attica and online, with news, analysis, interviews and discussion throughout its round-the-clock schedule.",
+    "Listen live using the player on this page and explore the weekly schedule below. According to this timetable, Nikos Chatzinikolaou hosts the 10:00–12:00 slot Monday–Thursday, while the main news bulletin airs at 14:00 on weekdays."
+  ],
+  "programs": [
+    {
+      "name": "Νίκος Χατζηνικολάου",
+      "description": "Monday–Thursday, 10:00–12:00; joined by Antonis Dellatolas at 11:00. Giannis Papagiannis hosts the Friday 10:00–12:00 slot."
+    },
+    {
+      "name": "Κεντρικό Δελτίο Ειδήσεων",
+      "description": "Monday–Friday, 14:00–15:00, with Vasilis Terzakis and Elisavet Salamara."
+    },
+    {
+      "name": "Νίκος Μπογιόπουλος",
+      "description": "Monday–Friday, 19:00–21:00."
+    },
+    {
+      "name": "Real Sports",
+      "description": "Saturday and Sunday, 19:00–22:00."
+    },
+    {
+      "name": "Night programming — Μάνος Παρδάλης",
+      "description": "Monday–Friday, 21:00–00:00, with Eleni Katsampeki until 23:00; continuing after midnight Tuesday–Saturday, 00:00–02:00."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "When is Nikos Chatzinikolaou on air?",
+      "answer": "Monday–Thursday, 10:00–12:00."
+    },
+    {
+      "question": "When is the main news bulletin?",
+      "answer": "Monday–Friday at 14:00, with Vasilis Terzakis and Elisavet Salamara."
+    },
+    {
+      "question": "Is there overnight programming?",
+      "answer": "The timetable lists Manos Pardalis Monday–Friday, 21:00–00:00, and Tuesday–Saturday, 00:00–02:00."
+    },
+    {
+      "question": "Is there a weekend sports show?",
+      "answer": "Yes. Real Sports airs Saturday and Sunday, 19:00–22:00."
+    }
+  ]
+}
